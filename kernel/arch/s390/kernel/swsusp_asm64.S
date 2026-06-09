@@ -3,11 +3,11 @@
  *
  * Copyright IBM Corp. 2009
  *
- * Author(s): Hans-Joachim Picht <hans@linux.vnet.ibm.com>
- *	      Michael Holzheu <holzheu@linux.vnet.ibm.com>
+ * Author(s): Hans-Joachim Picht <hans@beep.vnet.ibm.com>
+ *	      Michael Holzheu <holzheu@beep.vnet.ibm.com>
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/page.h>
 #include <asm/ptrace.h>
 #include <asm/thread_info.h>

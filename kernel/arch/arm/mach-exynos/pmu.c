@@ -9,9 +9,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/bug.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/bug.h>
 
 #include <mach/regs-clock.h>
 #include <mach/pmu.h>

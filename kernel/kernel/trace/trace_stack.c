@@ -2,17 +2,17 @@
  * Copyright (C) 2008 Steven Rostedt <srostedt@redhat.com>
  *
  */
-#include <linux/stacktrace.h>
-#include <linux/kallsyms.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/debugfs.h>
-#include <linux/ftrace.h>
-#include <linux/module.h>
-#include <linux/sysctl.h>
-#include <linux/init.h>
-#include <linux/fs.h>
+#include <beep/stacktrace.h>
+#include <beep/kallsyms.h>
+#include <beep/seq_file.h>
+#include <beep/spinlock.h>
+#include <beep/uaccess.h>
+#include <beep/debugfs.h>
+#include <beep/ftrace.h>
+#include <beep/module.h>
+#include <beep/sysctl.h>
+#include <beep/init.h>
+#include <beep/fs.h>
 
 #include <asm/setup.h>
 

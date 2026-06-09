@@ -22,8 +22,8 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
 
 #include "smiapp.h"
 #include "smiapp-regs.h"

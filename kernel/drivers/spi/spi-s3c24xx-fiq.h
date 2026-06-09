@@ -1,4 +1,4 @@
-/* linux/drivers/spi/spi_s3c24xx_fiq.h
+/* beep/drivers/spi/spi_s3c24xx_fiq.h
  *
  * Copyright 2009 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>

@@ -20,8 +20,8 @@
 
 #define MODULE_NAME "jl2005bcd"
 
-#include <linux/workqueue.h>
-#include <linux/slab.h>
+#include <beep/workqueue.h>
+#include <beep/slab.h>
 #include "gspca.h"
 
 

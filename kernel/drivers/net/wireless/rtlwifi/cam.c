@@ -27,7 +27,7 @@
  *
  *****************************************************************************/
 
-#include <linux/export.h>
+#include <beep/export.h>
 #include "wifi.h"
 #include "cam.h"
 

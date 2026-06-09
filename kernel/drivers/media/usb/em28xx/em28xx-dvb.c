@@ -19,16 +19,16 @@
  the Free Software Foundation; either version 2 of the License.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
 
 #include "em28xx.h"
 #include <media/v4l2-common.h>
 #include <media/videobuf-vmalloc.h>
 #include <media/tuner.h>
 #include "tuner-simple.h"
-#include <linux/gpio.h>
+#include <beep/gpio.h>
 
 #include "lgdt330x.h"
 #include "lgdt3305.h"

@@ -28,9 +28,9 @@
 #ifndef ADP1653_H
 #define ADP1653_H
 
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/videodev2.h>
+#include <beep/i2c.h>
+#include <beep/mutex.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-subdev.h>
 

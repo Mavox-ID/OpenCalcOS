@@ -1,5 +1,5 @@
 /*
- *    ipl/reipl/dump support for Linux on s390.
+ *    ipl/reipl/dump support for Beep on s390.
  *
  *    Copyright IBM Corp. 2005, 2012
  *    Author(s): Michael Holzheu <holzheu@de.ibm.com>
@@ -7,16 +7,16 @@
  *		 Volker Sameske <sameske@de.ibm.com>
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
-#include <linux/ctype.h>
-#include <linux/fs.h>
-#include <linux/gfp.h>
-#include <linux/crash_dump.h>
-#include <linux/debug_locks.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/delay.h>
+#include <beep/reboot.h>
+#include <beep/ctype.h>
+#include <beep/fs.h>
+#include <beep/gfp.h>
+#include <beep/crash_dump.h>
+#include <beep/debug_locks.h>
 #include <asm/ipl.h>
 #include <asm/smp.h>
 #include <asm/setup.h>
@@ -619,7 +619,7 @@ static struct shutdown_action __refdata ipl_action = {
 };
 
 /*
- * reipl shutdown action: Reboot Linux on shutdown.
+ * reipl shutdown action: Reboot Beep on shutdown.
  */
 
 /* VM IPL PARM attributes */
@@ -1318,7 +1318,7 @@ static struct shutdown_action __refdata reipl_action = {
 };
 
 /*
- * dump shutdown action: Dump Linux on shutdown.
+ * dump shutdown action: Dump Beep on shutdown.
  */
 
 /* FCP dump device attributes */
@@ -1617,7 +1617,7 @@ static struct shutdown_action vmcmd_action = {SHUTDOWN_ACTION_VMCMD_STR,
 					      vmcmd_run, vmcmd_init};
 
 /*
- * stop shutdown action: Stop Linux on shutdown.
+ * stop shutdown action: Stop Beep on shutdown.
  */
 
 static void stop_run(struct shutdown_trigger *trigger)

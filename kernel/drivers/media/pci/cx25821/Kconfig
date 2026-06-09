@@ -10,7 +10,7 @@ config VIDEO_CX25821
 	select VIDEO_CX25840
 	select VIDEO_CX2341X
 	---help---
-	  This is a video4linux driver for Conexant 25821 based
+	  This is a video4beep driver for Conexant 25821 based
 	  TV cards.
 
 	  To compile this driver as a module, choose M here: the
@@ -21,7 +21,7 @@ config VIDEO_CX25821_ALSA
 	depends on VIDEO_CX25821 && SND && EXPERIMENTAL
 	select SND_PCM
 	---help---
-	  This is a video4linux driver for direct (DMA) audio on
+	  This is a video4beep driver for direct (DMA) audio on
 	  Conexant 25821 based capture cards using ALSA.
 
 	  It only works with boards with function 01 enabled.

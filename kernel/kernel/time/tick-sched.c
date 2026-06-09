@@ -1,5 +1,5 @@
 /*
- *  linux/kernel/time/tick-sched.c
+ *  beep/kernel/time/tick-sched.c
  *
  *  Copyright(C) 2005-2006, Thomas Gleixner <tglx@linutronix.de>
  *  Copyright(C) 2005-2007, Red Hat, Inc., Ingo Molnar
@@ -11,15 +11,15 @@
  *
  *  Distribute under GPLv2.
  */
-#include <linux/cpu.h>
-#include <linux/err.h>
-#include <linux/hrtimer.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/percpu.h>
-#include <linux/profile.h>
-#include <linux/sched.h>
-#include <linux/module.h>
+#include <beep/cpu.h>
+#include <beep/err.h>
+#include <beep/hrtimer.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
+#include <beep/percpu.h>
+#include <beep/profile.h>
+#include <beep/sched.h>
+#include <beep/module.h>
 
 #include <asm/irq_regs.h>
 

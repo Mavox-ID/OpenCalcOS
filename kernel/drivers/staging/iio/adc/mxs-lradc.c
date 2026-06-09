@@ -15,32 +15,32 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/sysfs.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/stmp_device.h>
-#include <linux/bitops.h>
-#include <linux/completion.h>
+#include <beep/interrupt.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/sysfs.h>
+#include <beep/list.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/spinlock.h>
+#include <beep/wait.h>
+#include <beep/sched.h>
+#include <beep/stmp_device.h>
+#include <beep/bitops.h>
+#include <beep/completion.h>
 
 #include <mach/mxs.h>
 #include <mach/common.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/buffer.h>
+#include <beep/iio/trigger.h>
+#include <beep/iio/trigger_consumer.h>
+#include <beep/iio/triggered_buffer.h>
 
 #define DRIVER_NAME		"mxs-lradc"
 

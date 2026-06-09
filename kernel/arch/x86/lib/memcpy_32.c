@@ -1,5 +1,5 @@
-#include <linux/string.h>
-#include <linux/module.h>
+#include <beep/string.h>
+#include <beep/module.h>
 
 #undef memcpy
 #undef memset

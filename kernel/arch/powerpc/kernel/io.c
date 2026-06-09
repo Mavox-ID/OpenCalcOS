@@ -1,6 +1,6 @@
 /*
  * I/O string operations
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *    Copyright (C) 2006 IBM Corporation
  *
  * Largely rewritten by Cort Dougan (cort@cs.nmt.edu)
@@ -16,10 +16,10 @@
  * as published by the Free Software Foundation; either version
  * 2 of the License, or (at your option) any later version.
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/compiler.h>
+#include <beep/export.h>
 
 #include <asm/io.h>
 #include <asm/firmware.h>

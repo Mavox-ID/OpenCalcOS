@@ -1,6 +1,6 @@
 /*
  *	Userspace interface
- *	Linux ethernet bridge
+ *	Beep ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
@@ -11,17 +11,17 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/netpoll.h>
-#include <linux/ethtool.h>
-#include <linux/if_arp.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_ether.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/netpoll.h>
+#include <beep/ethtool.h>
+#include <beep/if_arp.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/rtnetlink.h>
+#include <beep/if_ether.h>
+#include <beep/slab.h>
 #include <net/sock.h>
 
 #include "br_private.h"

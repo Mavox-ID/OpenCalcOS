@@ -4,11 +4,11 @@
  * Licensed under GPLv2
  */
 
-#include <linux/console.h>
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/tty_driver.h>
+#include <beep/console.h>
+#include <beep/kernel.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/tty_driver.h>
 
 /*
  * This is handler for /proc/consoles

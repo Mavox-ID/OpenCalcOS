@@ -29,19 +29,19 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/mm.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/dmapool.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/highmem.h>
-#include <linux/io.h>
-#include <linux/uio.h>
-#include <linux/rbtree.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
+#include <beep/mm.h>
+#include <beep/types.h>
+#include <beep/device.h>
+#include <beep/dmapool.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/highmem.h>
+#include <beep/io.h>
+#include <beep/uio.h>
+#include <beep/rbtree.h>
+#include <beep/spinlock.h>
+#include <beep/delay.h>
 
 #include "ipath_kernel.h"
 #include "ipath_user_sdma.h"

@@ -1,7 +1,7 @@
 #ifndef _UAPI_ASM_SIGNAL_H
 #define _UAPI_ASM_SIGNAL_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #ifndef __KERNEL__
 /* Here we must cater to libcs that poke about in kernel headers.  */

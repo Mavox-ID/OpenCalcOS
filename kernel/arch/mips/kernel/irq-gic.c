@@ -3,20 +3,20 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 2008 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2008 Ralf Baechle (ralf@beep-mips.org)
  * Copyright (C) 2012 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/bitmap.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/irq.h>
+#include <beep/bitmap.h>
+#include <beep/init.h>
+#include <beep/smp.h>
+#include <beep/irq.h>
 
 #include <asm/io.h>
 #include <asm/gic.h>
 #include <asm/setup.h>
 #include <asm/traps.h>
 #include <asm/gcmpregs.h>
-#include <linux/hardirq.h>
+#include <beep/hardirq.h>
 #include <asm-generic/bitops/find.h>
 
 unsigned long _gic_base;

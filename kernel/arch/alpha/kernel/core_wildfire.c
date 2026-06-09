@@ -1,5 +1,5 @@
 /*
- *  linux/arch/alpha/kernel/core_wildfire.c
+ *  beep/arch/alpha/kernel/core_wildfire.c
  *
  *  Wildfire support.
  *
@@ -11,10 +11,10 @@
 #include <asm/core_wildfire.h>
 #undef __EXTERN_INLINE
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/sched.h>
+#include <beep/init.h>
 
 #include <asm/ptrace.h>
 #include <asm/smp.h>

@@ -9,8 +9,8 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
 
 static int no_blkdev_open(struct inode * inode, struct file * filp)
 {

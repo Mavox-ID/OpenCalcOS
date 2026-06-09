@@ -1,5 +1,5 @@
 /*
- * Code for tracing calls in Linux kernel.
+ * Code for tracing calls in Beep kernel.
  * Copyright (C) 2009 Helge Deller <deller@gmx.de>
  *
  * based on code for x86 which is:
@@ -10,8 +10,8 @@
  *	- add CONFIG_STACK_TRACER
  */
 
-#include <linux/init.h>
-#include <linux/ftrace.h>
+#include <beep/init.h>
+#include <beep/ftrace.h>
 
 #include <asm/sections.h>
 #include <asm/ftrace.h>

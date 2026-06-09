@@ -1,5 +1,5 @@
 /*
- *	linux/arch/arm/mach-nspire/classic.c
+ *	beep/arch/arm/mach-nspire/classic.c
  *
  *	Copyright (C) 2012 Daniel Tang <tangrs@tangrs.id.au>
  *
@@ -9,18 +9,18 @@
  *
  */
 
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/cpumask.h>
-#include <linux/serial_8250.h>
-#include <linux/platform_device.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/clcd.h>
-#include <linux/dma-mapping.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
+#include <beep/clockchips.h>
+#include <beep/interrupt.h>
+#include <beep/cpumask.h>
+#include <beep/serial_8250.h>
+#include <beep/platform_device.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/clcd.h>
+#include <beep/dma-mapping.h>
 
 #include <asm/mach/time.h>
 #include <asm/exception.h>

@@ -16,19 +16,19 @@
  *   - Split split split...
  *
  */
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/spinlock.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/ioport.h>
-#include <linux/export.h>
-#include <linux/pci.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/spinlock.h>
+#include <beep/adb.h>
+#include <beep/pmu.h>
+#include <beep/ioport.h>
+#include <beep/export.h>
+#include <beep/pci.h>
 #include <asm/sections.h>
 #include <asm/errno.h>
 #include <asm/ohare.h>

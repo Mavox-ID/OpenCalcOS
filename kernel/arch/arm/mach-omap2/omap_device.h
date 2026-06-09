@@ -16,7 +16,7 @@
  * Eventually this type of functionality should either be
  * a) implemented via arch-specific pointers in platform_device
  * or
- * b) implemented as a proper omap_bus/omap_device in Linux, no more
+ * b) implemented as a proper omap_bus/omap_device in Beep, no more
  *    platform_device
  *
  * omap_device differs from omap_hwmod in that it includes external
@@ -31,8 +31,8 @@
 #ifndef __ARCH_ARM_PLAT_OMAP_INCLUDE_MACH_OMAP_DEVICE_H
 #define __ARCH_ARM_PLAT_OMAP_INCLUDE_MACH_OMAP_DEVICE_H
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
 
 #include "omap_hwmod.h"
 
@@ -60,9 +60,9 @@ extern struct dev_pm_domain omap_device_pm_domain;
  * @_dev_wakeup_lat_limit: dev wakeup latency limit in nsec - set by OMAP PM
  * @_state: one of OMAP_DEVICE_STATE_* (see above)
  * @flags: device flags
- * @_driver_status: one of BUS_NOTIFY_*_DRIVER from <linux/device.h>
+ * @_driver_status: one of BUS_NOTIFY_*_DRIVER from <beep/device.h>
  *
- * Integrates omap_hwmod data into Linux platform_device.
+ * Integrates omap_hwmod data into Beep platform_device.
  *
  * Field names beginning with underscores are for the internal use of
  * the omap_device code.

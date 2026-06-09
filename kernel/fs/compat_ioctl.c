@@ -10,107 +10,107 @@
  * ioctls.
  */
 
-#include <linux/joystick.h>
+#include <beep/joystick.h>
 
-#include <linux/types.h>
-#include <linux/compat.h>
-#include <linux/kernel.h>
-#include <linux/capability.h>
-#include <linux/compiler.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/ioctl.h>
-#include <linux/if.h>
-#include <linux/if_bridge.h>
-#include <linux/raid/md_u.h>
-#include <linux/kd.h>
-#include <linux/route.h>
-#include <linux/in6.h>
-#include <linux/ipv6_route.h>
-#include <linux/skbuff.h>
-#include <linux/netlink.h>
-#include <linux/vt.h>
-#include <linux/falloc.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/ppp_defs.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/if_pppox.h>
-#include <linux/mtio.h>
-#include <linux/auto_fs.h>
-#include <linux/auto_fs4.h>
-#include <linux/tty.h>
-#include <linux/vt_kern.h>
-#include <linux/fb.h>
-#include <linux/videodev2.h>
-#include <linux/netdevice.h>
-#include <linux/raw.h>
-#include <linux/blkdev.h>
-#include <linux/elevator.h>
-#include <linux/rtc.h>
-#include <linux/pci.h>
-#include <linux/serial.h>
-#include <linux/if_tun.h>
-#include <linux/ctype.h>
-#include <linux/syscalls.h>
-#include <linux/i2c.h>
-#include <linux/i2c-dev.h>
-#include <linux/atalk.h>
-#include <linux/gfp.h>
+#include <beep/types.h>
+#include <beep/compat.h>
+#include <beep/kernel.h>
+#include <beep/capability.h>
+#include <beep/compiler.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/ioctl.h>
+#include <beep/if.h>
+#include <beep/if_bridge.h>
+#include <beep/raid/md_u.h>
+#include <beep/kd.h>
+#include <beep/route.h>
+#include <beep/in6.h>
+#include <beep/ipv6_route.h>
+#include <beep/skbuff.h>
+#include <beep/netlink.h>
+#include <beep/vt.h>
+#include <beep/falloc.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/ppp_defs.h>
+#include <beep/ppp-ioctl.h>
+#include <beep/if_pppox.h>
+#include <beep/mtio.h>
+#include <beep/auto_fs.h>
+#include <beep/auto_fs4.h>
+#include <beep/tty.h>
+#include <beep/vt_kern.h>
+#include <beep/fb.h>
+#include <beep/videodev2.h>
+#include <beep/netdevice.h>
+#include <beep/raw.h>
+#include <beep/blkdev.h>
+#include <beep/elevator.h>
+#include <beep/rtc.h>
+#include <beep/pci.h>
+#include <beep/serial.h>
+#include <beep/if_tun.h>
+#include <beep/ctype.h>
+#include <beep/syscalls.h>
+#include <beep/i2c.h>
+#include <beep/i2c-dev.h>
+#include <beep/atalk.h>
+#include <beep/gfp.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci.h>
 #include <net/bluetooth/rfcomm.h>
 
-#include <linux/capi.h>
-#include <linux/gigaset_dev.h>
+#include <beep/capi.h>
+#include <beep/gigaset_dev.h>
 
 #ifdef CONFIG_BLOCK
-#include <linux/loop.h>
-#include <linux/cdrom.h>
-#include <linux/fd.h>
+#include <beep/loop.h>
+#include <beep/cdrom.h>
+#include <beep/fd.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_ioctl.h>
 #include <scsi/sg.h>
 #endif
 
 #include <asm/uaccess.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/if_bonding.h>
-#include <linux/watchdog.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/if_bonding.h>
+#include <beep/watchdog.h>
 
-#include <linux/soundcard.h>
-#include <linux/lp.h>
-#include <linux/ppdev.h>
+#include <beep/soundcard.h>
+#include <beep/lp.h>
+#include <beep/ppdev.h>
 
-#include <linux/atm.h>
-#include <linux/atmarp.h>
-#include <linux/atmclip.h>
-#include <linux/atmdev.h>
-#include <linux/atmioc.h>
-#include <linux/atmlec.h>
-#include <linux/atmmpc.h>
-#include <linux/atmsvc.h>
-#include <linux/atm_tcp.h>
-#include <linux/sonet.h>
-#include <linux/atm_suni.h>
+#include <beep/atm.h>
+#include <beep/atmarp.h>
+#include <beep/atmclip.h>
+#include <beep/atmdev.h>
+#include <beep/atmioc.h>
+#include <beep/atmlec.h>
+#include <beep/atmmpc.h>
+#include <beep/atmsvc.h>
+#include <beep/atm_tcp.h>
+#include <beep/sonet.h>
+#include <beep/atm_suni.h>
 
-#include <linux/usb.h>
-#include <linux/usbdevice_fs.h>
-#include <linux/nbd.h>
-#include <linux/random.h>
-#include <linux/filter.h>
+#include <beep/usb.h>
+#include <beep/usbdevice_fs.h>
+#include <beep/nbd.h>
+#include <beep/random.h>
+#include <beep/filter.h>
 
-#include <linux/hiddev.h>
+#include <beep/hiddev.h>
 
 #define __DVB_CORE__
-#include <linux/dvb/audio.h>
-#include <linux/dvb/dmx.h>
-#include <linux/dvb/frontend.h>
-#include <linux/dvb/video.h>
+#include <beep/dvb/audio.h>
+#include <beep/dvb/dmx.h>
+#include <beep/dvb/frontend.h>
+#include <beep/dvb/video.h>
 
-#include <linux/sort.h>
+#include <beep/sort.h>
 
 #ifdef CONFIG_SPARC
 #include <asm/fbio.h>
@@ -838,7 +838,7 @@ COMPATIBLE_IOCTL(TCGETS)
 COMPATIBLE_IOCTL(TCSETS)
 COMPATIBLE_IOCTL(TCSETSW)
 COMPATIBLE_IOCTL(TCSETSF)
-COMPATIBLE_IOCTL(TIOCLINUX)
+COMPATIBLE_IOCTL(TIOCBEEP)
 COMPATIBLE_IOCTL(TIOCSBRK)
 COMPATIBLE_IOCTL(TIOCGDEV)
 COMPATIBLE_IOCTL(TIOCCBRK)

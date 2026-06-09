@@ -3,12 +3,12 @@
  *
  * (C) 2004 Nadia Yvette Chambers, Oracle
  */
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/wait.h>
-#include <linux/hash.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/wait.h>
+#include <beep/hash.h>
 
 void __init_waitqueue_head(wait_queue_head_t *q, const char *name, struct lock_class_key *key)
 {

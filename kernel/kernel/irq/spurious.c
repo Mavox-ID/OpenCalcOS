@@ -1,18 +1,18 @@
 /*
- * linux/kernel/irq/spurious.c
+ * beep/kernel/irq/spurious.c
  *
  * Copyright (C) 1992, 1998-2004 Linus Torvalds, Ingo Molnar
  *
  * This file contains spurious interrupt handling.
  */
 
-#include <linux/jiffies.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/kallsyms.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/timer.h>
+#include <beep/jiffies.h>
+#include <beep/irq.h>
+#include <beep/module.h>
+#include <beep/kallsyms.h>
+#include <beep/interrupt.h>
+#include <beep/moduleparam.h>
+#include <beep/timer.h>
 
 #include "internals.h"
 

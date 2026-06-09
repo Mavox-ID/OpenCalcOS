@@ -1,5 +1,5 @@
 /*
- * linux/drivers/media/platform/coda/coda_regs.h
+ * beep/drivers/media/platform/coda/coda_regs.h
  *
  * Copyright (C) 2012 Vista Silicon SL
  *    Javier Martin <javier.martin@vista-silicon.com>

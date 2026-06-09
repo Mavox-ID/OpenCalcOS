@@ -7,11 +7,11 @@
  * Released under the GPL version 2 only.
  *
  */
-#include <linux/kobject.h>
-#include <linux/string.h>
-#include <linux/sysfs.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/kobject.h>
+#include <beep/string.h>
+#include <beep/sysfs.h>
+#include <beep/module.h>
+#include <beep/init.h>
 
 /*
  * This module shows how to create a simple subdirectory in sysfs called

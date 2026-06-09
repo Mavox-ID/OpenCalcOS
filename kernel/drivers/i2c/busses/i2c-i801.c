@@ -2,7 +2,7 @@
     Copyright (c) 1998 - 2002  Frodo Looijaard <frodol@dds.nl>,
     Philip Edelbrock <phil@netroedge.com>, and Mark D. Studebaker
     <mdsxyz123@yahoo.com>
-    Copyright (C) 2007 - 2012  Jean Delvare <khali@linux-fr.org>
+    Copyright (C) 2007 - 2012  Jean Delvare <khali@beep-fr.org>
     Copyright (C) 2010         Intel Corporation,
                                David Woodhouse <dwmw2@infradead.org>
 
@@ -66,28 +66,28 @@
   See the file Documentation/i2c/busses/i2c-i801 for details.
 */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/err.h>
-#include <linux/of_i2c.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/stddef.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
+#include <beep/acpi.h>
+#include <beep/io.h>
+#include <beep/dmi.h>
+#include <beep/slab.h>
+#include <beep/wait.h>
+#include <beep/err.h>
+#include <beep/of_i2c.h>
 
 #if (defined CONFIG_I2C_MUX_GPIO || defined CONFIG_I2C_MUX_GPIO_MODULE) && \
 		defined CONFIG_DMI
-#include <linux/gpio.h>
-#include <linux/i2c-mux-gpio.h>
-#include <linux/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/i2c-mux-gpio.h>
+#include <beep/platform_device.h>
 #endif
 
 /* I801 SMBus address offsets */
@@ -154,7 +154,7 @@
 #define STATUS_FLAGS		(SMBHSTSTS_BYTE_DONE | SMBHSTSTS_INTR | \
 				 STATUS_ERROR_FLAGS)
 
-/* Older devices have their ID defined in <linux/pci_ids.h> */
+/* Older devices have their ID defined in <beep/pci_ids.h> */
 #define PCI_DEVICE_ID_INTEL_COUGARPOINT_SMBUS	0x1c22
 #define PCI_DEVICE_ID_INTEL_PATSBURG_SMBUS	0x1d22
 /* Patsburg also has three 'Integrated Device Function' SMBus controllers */
@@ -1288,7 +1288,7 @@ static void __exit i2c_i801_exit(void)
 }
 
 MODULE_AUTHOR("Mark D. Studebaker <mdsxyz123@yahoo.com>, "
-	      "Jean Delvare <khali@linux-fr.org>");
+	      "Jean Delvare <khali@beep-fr.org>");
 MODULE_DESCRIPTION("I801 SMBus driver");
 MODULE_LICENSE("GPL");
 

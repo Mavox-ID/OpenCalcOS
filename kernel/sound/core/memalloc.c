@@ -21,17 +21,17 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/seq_file.h>
+#include <beep/module.h>
+#include <beep/proc_fs.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/seq_file.h>
 #include <asm/uaccess.h>
-#include <linux/dma-mapping.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
+#include <beep/dma-mapping.h>
+#include <beep/moduleparam.h>
+#include <beep/mutex.h>
 #include <sound/memalloc.h>
 
 

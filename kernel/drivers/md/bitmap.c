@@ -15,18 +15,18 @@
  * flush after percent set rather than just time based. (maybe both).
  */
 
-#include <linux/blkdev.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/sched.h>
-#include <linux/list.h>
-#include <linux/file.h>
-#include <linux/mount.h>
-#include <linux/buffer_head.h>
-#include <linux/seq_file.h>
+#include <beep/blkdev.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/timer.h>
+#include <beep/sched.h>
+#include <beep/list.h>
+#include <beep/file.h>
+#include <beep/mount.h>
+#include <beep/buffer_head.h>
+#include <beep/seq_file.h>
 #include "md.h"
 #include "bitmap.h"
 

@@ -1,10 +1,10 @@
-#include <linux/kdebug.h>
-#include <linux/kprobes.h>
-#include <linux/export.h>
-#include <linux/notifier.h>
-#include <linux/rcupdate.h>
-#include <linux/vmalloc.h>
-#include <linux/reboot.h>
+#include <beep/kdebug.h>
+#include <beep/kprobes.h>
+#include <beep/export.h>
+#include <beep/notifier.h>
+#include <beep/rcupdate.h>
+#include <beep/vmalloc.h>
+#include <beep/reboot.h>
 
 /*
  *	Notifier list for kernel code which wants to be called

@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/common/sa1111.c
+ * beep/arch/arm/common/sa1111.c
  *
  * SA1111 support
  *
@@ -14,19 +14,19 @@
  * All initialization functions provided here are intended to be called
  * from machine specific code with proper arguments when required.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/dma-mapping.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/dma-mapping.h>
+#include <beep/clk.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 #include <asm/mach/irq.h>

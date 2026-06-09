@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <newt.h>
-#include <linux/rbtree.h>
+#include <beep/rbtree.h>
 
 #include "../../util/evsel.h"
 #include "../../util/evlist.h"

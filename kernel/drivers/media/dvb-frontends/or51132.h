@@ -22,8 +22,8 @@
 #ifndef OR51132_H
 #define OR51132_H
 
-#include <linux/firmware.h>
-#include <linux/dvb/frontend.h>
+#include <beep/firmware.h>
+#include <beep/dvb/frontend.h>
 
 struct or51132_config
 {

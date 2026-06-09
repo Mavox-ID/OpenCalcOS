@@ -43,8 +43,8 @@
 #include "elmer0.h"
 #include "suni1x10gexp_regs.h"
 
-#include <linux/crc32.h>
-#include <linux/slab.h>
+#include <beep/crc32.h>
+#include <beep/slab.h>
 
 #define OFFSET(REG_ADDR)    ((REG_ADDR) << 2)
 

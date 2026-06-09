@@ -25,7 +25,7 @@
  * in the file called LICENSE.GPL.
  *
  * Contact Information:
- *  Intel Linux Wireless <ilw@linux.intel.com>
+ *  Intel Beep Wireless <ilw@beep.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  * BSD LICENSE
@@ -60,13 +60,13 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  *****************************************************************************/
-#include <linux/pci.h>
-#include <linux/pci-aspm.h>
-#include <linux/interrupt.h>
-#include <linux/debugfs.h>
-#include <linux/sched.h>
-#include <linux/bitops.h>
-#include <linux/gfp.h>
+#include <beep/pci.h>
+#include <beep/pci-aspm.h>
+#include <beep/interrupt.h>
+#include <beep/debugfs.h>
+#include <beep/sched.h>
+#include <beep/bitops.h>
+#include <beep/gfp.h>
 
 #include "iwl-drv.h"
 #include "iwl-trans.h"

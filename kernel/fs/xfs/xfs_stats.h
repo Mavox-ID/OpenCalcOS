@@ -21,7 +21,7 @@
 
 #if defined(CONFIG_PROC_FS) && !defined(XFS_STATS_OFF)
 
-#include <linux/percpu.h>
+#include <beep/percpu.h>
 
 /*
  * XFS global statistics

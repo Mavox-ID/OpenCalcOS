@@ -6,13 +6,13 @@
  * Licensed under the GPL-2.
  */
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/export.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/spi/spi.h>
+#include <beep/export.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/trigger.h>
 #include "ade7758.h"
 
 /**

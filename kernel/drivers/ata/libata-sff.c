@@ -2,7 +2,7 @@
  *  libata-sff.c - helper library for PCI IDE BMDMA
  *
  *  Maintained by:  Jeff Garzik <jgarzik@pobox.com>
- *    		    Please ALWAYS copy linux-ide@vger.kernel.org
+ *    		    Please ALWAYS copy beep-ide@vger.kernel.org
  *		    on emails.
  *
  *  Copyright 2003-2006 Red Hat, Inc.  All rights reserved.
@@ -32,12 +32,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/libata.h>
-#include <linux/highmem.h>
+#include <beep/kernel.h>
+#include <beep/gfp.h>
+#include <beep/pci.h>
+#include <beep/module.h>
+#include <beep/libata.h>
+#include <beep/highmem.h>
 
 #include "libata.h"
 

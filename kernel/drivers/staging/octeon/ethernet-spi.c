@@ -24,9 +24,9 @@
  * This file may also be available under a different license from Cavium.
  * Contact Cavium Networks for more information
 **********************************************************************/
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/interrupt.h>
 #include <net/dst.h>
 
 #include <asm/octeon/octeon.h>

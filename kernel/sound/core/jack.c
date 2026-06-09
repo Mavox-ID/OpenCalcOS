@@ -19,9 +19,9 @@
  *
  */
 
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/input.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <sound/jack.h>
 #include <sound/core.h>
 

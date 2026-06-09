@@ -3,7 +3,7 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 2006, 07  Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 2006, 07  Ralf Baechle <ralf@beep-mips.org>
  * Copyright (C) 2007 Lemote, Inc. & Institute of Computing Technology
  * Author: Fuxin Zhang, zhangfx@lemote.com
  *

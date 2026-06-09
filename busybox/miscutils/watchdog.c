@@ -2,7 +2,7 @@
 /*
  * Mini watchdog implementation for busybox
  *
- * Copyright (C) 2003  Paul Mundt <lethal@linux-sh.org>
+ * Copyright (C) 2003  Paul Mundt <lethal@beep-sh.org>
  * Copyright (C) 2006  Bernhard Reutner-Fischer <busybox@busybox.net>
  * Copyright (C) 2008  Darius Augulis <augulis.darius@gmail.com>
  *

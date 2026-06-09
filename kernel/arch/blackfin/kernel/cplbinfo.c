@@ -6,13 +6,13 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/ctype.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
+#include <beep/ctype.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/uaccess.h>
 
 #include <asm/cplbinit.h>
 #include <asm/blackfin.h>

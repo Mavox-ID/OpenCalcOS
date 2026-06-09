@@ -1,5 +1,5 @@
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
 
 #include <asm/traps.h>
 #include <asm/apollohw.h>

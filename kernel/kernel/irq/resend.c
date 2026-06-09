@@ -1,5 +1,5 @@
 /*
- * linux/kernel/irq/resend.c
+ * beep/kernel/irq/resend.c
  *
  * Copyright (C) 1992, 1998-2006 Linus Torvalds, Ingo Molnar
  * Copyright (C) 2005-2006, Thomas Gleixner
@@ -13,10 +13,10 @@
  * we allow the resending of IRQs via a tasklet.
  */
 
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/interrupt.h>
+#include <beep/irq.h>
+#include <beep/module.h>
+#include <beep/random.h>
+#include <beep/interrupt.h>
 
 #include "internals.h"
 

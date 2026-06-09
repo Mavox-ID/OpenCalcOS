@@ -36,10 +36,10 @@
 #include <drm/ttm/ttm_page_alloc.h>
 #ifdef TTM_HAS_AGP
 #include <drm/ttm/ttm_placement.h>
-#include <linux/agp_backend.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <beep/agp_backend.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/io.h>
 #include <asm/agp.h>
 
 struct ttm_agp_backend {

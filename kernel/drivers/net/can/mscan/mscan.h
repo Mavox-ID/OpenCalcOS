@@ -21,7 +21,7 @@
 #ifndef __MSCAN_H__
 #define __MSCAN_H__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* MSCAN control register 0 (CANCTL0) bits */
 #define MSCAN_RXFRM		0x80

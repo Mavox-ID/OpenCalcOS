@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux/SuperH SH-4 backends.
+# Makefile for the Beep/SuperH SH-4 backends.
 #
 
 obj-y	:= probe.o common.o

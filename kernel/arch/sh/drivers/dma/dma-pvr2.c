@@ -9,10 +9,10 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
 #include <mach/sysasic.h>
 #include <mach/dma.h>
 #include <asm/dma.h>
@@ -103,6 +103,6 @@ static void __exit pvr2_dma_exit(void)
 subsys_initcall(pvr2_dma_init);
 module_exit(pvr2_dma_exit);
 
-MODULE_AUTHOR("Paul Mundt <lethal@linux-sh.org>");
+MODULE_AUTHOR("Paul Mundt <lethal@beep-sh.org>");
 MODULE_DESCRIPTION("NEC PowerVR 2 DMA driver");
 MODULE_LICENSE("GPL");

@@ -1,12 +1,12 @@
 /*
- * linux/fs/ext2/xattr_user.c
+ * beep/fs/ext2/xattr_user.c
  * Handler for extended user attributes.
  *
  * Copyright (C) 2001 by Andreas Gruenbacher, <a.gruenbacher@computer.org>
  */
 
-#include <linux/init.h>
-#include <linux/string.h>
+#include <beep/init.h>
+#include <beep/string.h>
 #include "ext2.h"
 #include "xattr.h"
 

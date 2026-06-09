@@ -103,7 +103,7 @@
 		user {
 			label = "Heartbeat";
 			gpios = <&gpio4 10 0>;
-			linux,default-trigger = "heartbeat";
+			beep,default-trigger = "heartbeat";
 		};
 	};
 

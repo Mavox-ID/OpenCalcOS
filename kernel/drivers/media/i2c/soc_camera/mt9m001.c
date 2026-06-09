@@ -8,11 +8,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/videodev2.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/log2.h>
-#include <linux/module.h>
+#include <beep/videodev2.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/log2.h>
+#include <beep/module.h>
 
 #include <media/soc_camera.h>
 #include <media/soc_mediabus.h>

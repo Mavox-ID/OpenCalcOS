@@ -60,10 +60,10 @@
  *                          are considered as fatal)
  */
 
-#include <linux/atomic.h>
-#include <linux/wait.h>
-#include <linux/list.h>
-#include <linux/kref.h>
+#include <beep/atomic.h>
+#include <beep/wait.h>
+#include <beep/list.h>
+#include <beep/kref.h>
 
 #include <ttm/ttm_bo_api.h>
 #include <ttm/ttm_bo_driver.h>

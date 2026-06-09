@@ -19,13 +19,13 @@
  * Author: Kent Yoder <yoder1@us.ibm.com>
  */
 
-#include <linux/device.h>
-#include <linux/kobject.h>
-#include <linux/string.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/crypto.h>
+#include <beep/device.h>
+#include <beep/kobject.h>
+#include <beep/string.h>
+#include <beep/debugfs.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/crypto.h>
 #include <crypto/hash.h>
 #include <asm/vio.h>
 

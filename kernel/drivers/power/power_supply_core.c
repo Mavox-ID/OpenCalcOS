@@ -10,14 +10,14 @@
  *  You may use this code as per GPL version 2
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/power_supply.h>
-#include <linux/thermal.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/power_supply.h>
+#include <beep/thermal.h>
 #include "power_supply.h"
 
 /* exported for the APM Power driver, APM emulation */

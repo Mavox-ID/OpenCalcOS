@@ -3,7 +3,7 @@
 
 #include <asm/page.h>   /* for __va, __pa */
 #include <arch/io.h>
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 struct cris_io_operations
 {

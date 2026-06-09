@@ -18,10 +18,10 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/dvb/frontend.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <beep/module.h>
+#include <beep/dvb/frontend.h>
+#include <beep/slab.h>
+#include <beep/types.h>
 
 #include "ix2505v.h"
 

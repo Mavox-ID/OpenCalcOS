@@ -1,5 +1,5 @@
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <sound/soc.h>
 
 #include <asm/mach-types.h>

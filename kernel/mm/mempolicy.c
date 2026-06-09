@@ -1,5 +1,5 @@
 /*
- * Simple NUMA memory policy for the Linux kernel.
+ * Simple NUMA memory policy for the Beep kernel.
  *
  * Copyright 2003,2004 Andi Kleen, SuSE Labs.
  * (C) Copyright 2005 Christoph Lameter, Silicon Graphics, Inc.
@@ -32,7 +32,7 @@
  *                process policy.
  *
  * default        Allocate on the local node first, or when on a VMA
- *                use the process policy. This is what Linux always did
+ *                use the process policy. This is what Beep always did
  *		  in a NUMA aware kernel and still does by, ahem, default.
  *
  * The process policy is applied for most non interrupt memory allocations
@@ -65,36 +65,36 @@
    kernel is not always grateful with that.
 */
 
-#include <linux/mempolicy.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/hugetlb.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/nodemask.h>
-#include <linux/cpuset.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/export.h>
-#include <linux/nsproxy.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/compat.h>
-#include <linux/swap.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/migrate.h>
-#include <linux/ksm.h>
-#include <linux/rmap.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/ctype.h>
-#include <linux/mm_inline.h>
-#include <linux/mmu_notifier.h>
+#include <beep/mempolicy.h>
+#include <beep/mm.h>
+#include <beep/highmem.h>
+#include <beep/hugetlb.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/nodemask.h>
+#include <beep/cpuset.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/export.h>
+#include <beep/nsproxy.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/compat.h>
+#include <beep/swap.h>
+#include <beep/seq_file.h>
+#include <beep/proc_fs.h>
+#include <beep/migrate.h>
+#include <beep/ksm.h>
+#include <beep/rmap.h>
+#include <beep/security.h>
+#include <beep/syscalls.h>
+#include <beep/ctype.h>
+#include <beep/mm_inline.h>
+#include <beep/mmu_notifier.h>
 
 #include <asm/tlbflush.h>
 #include <asm/uaccess.h>
-#include <linux/random.h>
+#include <beep/random.h>
 
 #include "internal.h"
 

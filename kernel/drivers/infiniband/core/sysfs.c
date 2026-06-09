@@ -34,9 +34,9 @@
 
 #include "core_priv.h"
 
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/string.h>
+#include <beep/slab.h>
+#include <beep/stat.h>
+#include <beep/string.h>
 
 #include <rdma/ib_mad.h>
 

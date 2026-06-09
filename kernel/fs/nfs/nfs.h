@@ -4,12 +4,12 @@
  * Function and structures exported by the NFS module
  * for use by NFS version-specific modules.
  */
-#ifndef __LINUX_INTERNAL_NFS_H
-#define __LINUX_INTERNAL_NFS_H
+#ifndef __BEEP_INTERNAL_NFS_H
+#define __BEEP_INTERNAL_NFS_H
 
-#include <linux/fs.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/nfs_xdr.h>
+#include <beep/fs.h>
+#include <beep/sunrpc/sched.h>
+#include <beep/nfs_xdr.h>
 
 struct nfs_subversion {
 	struct module *owner;	/* THIS_MODULE pointer */
@@ -26,4 +26,4 @@ void put_nfs_version(struct nfs_subversion *);
 void register_nfs_version(struct nfs_subversion *);
 void unregister_nfs_version(struct nfs_subversion *);
 
-#endif /* __LINUX_INTERNAL_NFS_H */
+#endif /* __BEEP_INTERNAL_NFS_H */

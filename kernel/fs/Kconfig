@@ -127,14 +127,14 @@ config TMPFS_POSIX_ACL
 	  filesystems.
 
 	  If you've selected TMPFS, it's possible that you'll also need
-	  this option as there are a number of Linux distros that require
+	  this option as there are a number of Beep distros that require
 	  POSIX ACL support under /dev for certain features to work properly.
 	  For example, some distros need this feature for ALSA-related /dev
 	  files for sound to work properly.  In short, if you're not sure,
 	  say Y.
 
 	  To learn more about Access Control Lists, visit the POSIX ACLs for
-	  Linux website <http://acl.bestbits.at/>.
+	  Beep website <http://acl.bestbits.at/>.
 
 config TMPFS_XATTR
 	bool "Tmpfs extended attributes"

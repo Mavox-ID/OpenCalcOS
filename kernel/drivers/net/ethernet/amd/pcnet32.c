@@ -1,4 +1,4 @@
-/* pcnet32.c: An AMD PCnet32 ethernet driver for linux. */
+/* pcnet32.c: An AMD PCnet32 ethernet driver for beep. */
 /*
  *	Copyright 1996-1999 Thomas Bogendoerfer
  *
@@ -31,35 +31,35 @@
 static const char *const version =
     DRV_NAME ".c:v" DRV_VERSION " " DRV_RELDATE " tsbogend@alpha.franken.de\n";
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/crc32.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/moduleparam.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/crc32.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/if_ether.h>
+#include <beep/skbuff.h>
+#include <beep/spinlock.h>
+#include <beep/moduleparam.h>
+#include <beep/bitops.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
 
 #include <asm/dma.h>
 #include <asm/irq.h>
 
 /*
- * PCI device identifiers for "new style" Linux PCI Device Drivers
+ * PCI device identifiers for "new style" Beep PCI Device Drivers
  */
 static DEFINE_PCI_DEVICE_TABLE(pcnet32_pci_tbl) = {
 	{ PCI_DEVICE(PCI_VENDOR_ID_AMD, PCI_DEVICE_ID_AMD_LANCE_HOME), },

@@ -1,7 +1,7 @@
 /*
  *  arch/arm/mach-vt8500/irq.c
  *
- *  Copyright (C) 2012 Tony Prisk <linux@prisktech.co.nz>
+ *  Copyright (C) 2012 Tony Prisk <beep@prisktech.co.nz>
  *  Copyright (C) 2010 Alexey Charkov <alchark@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -24,16 +24,16 @@
  * Alexey Charkov. Minor changes have been made for Device Tree Support.
  */
 
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
+#include <beep/interrupt.h>
+#include <beep/bitops.h>
 
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
+#include <beep/of.h>
+#include <beep/of_irq.h>
+#include <beep/of_address.h>
 
 #include <asm/irq.h>
 #include <asm/exception.h>

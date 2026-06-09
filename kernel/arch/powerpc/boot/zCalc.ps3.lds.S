@@ -3,9 +3,9 @@ ENTRY(_zimage_start)
 EXTERN(_zimage_start)
 SECTIONS
 {
-  _vmlinux_start =  .;
-  .kernel:vmlinux.bin : { *(.kernel:vmlinux.bin) }
-  _vmlinux_end =  .;
+  _vmbeep_start =  .;
+  .kernel:vmbeep.bin : { *(.kernel:vmbeep.bin) }
+  _vmbeep_end =  .;
 
   . = ALIGN(4096);
   _dtb_start = .;

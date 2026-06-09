@@ -13,14 +13,14 @@
  * Copyright (C) 2003 Jeremy Fitzhardinge <jeremy@goop.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/sched.h>	/* current */
-#include <linux/delay.h>
-#include <linux/compiler.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/cpufreq.h>
+#include <beep/sched.h>	/* current */
+#include <beep/delay.h>
+#include <beep/compiler.h>
+#include <beep/gfp.h>
 
 #include <asm/msr.h>
 #include <asm/processor.h>

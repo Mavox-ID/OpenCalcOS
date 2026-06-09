@@ -8,9 +8,9 @@
  * Version 2. See the file COPYING for more details.
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/crc-t10dif.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/crc-t10dif.h>
 
 /* Table generated using the following polynomium:
  * x^16 + x^15 + x^11 + x^9 + x^8 + x^7 + x^5 + x^4 + x^2 + x + 1

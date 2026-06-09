@@ -1,17 +1,17 @@
 /* 
  *    PDC Console support - ie use firmware to dump text via boot console
  *
- *    Copyright (C) 1999-2003 Matthew Wilcox <willy at parisc-linux.org>
+ *    Copyright (C) 1999-2003 Matthew Wilcox <willy at parisc-beep.org>
  *    Copyright (C) 2000 Martin K Petersen <mkp at mkp.net>
- *    Copyright (C) 2000 John Marvin <jsm at parisc-linux.org>
- *    Copyright (C) 2000-2003 Paul Bame <bame at parisc-linux.org>
+ *    Copyright (C) 2000 John Marvin <jsm at parisc-beep.org>
+ *    Copyright (C) 2000-2003 Paul Bame <bame at parisc-beep.org>
  *    Copyright (C) 2000 Philipp Rumpf <prumpf with tux.org>
  *    Copyright (C) 2000 Michael Ang <mang with subcarrier.org>
- *    Copyright (C) 2000 Grant Grundler <grundler with parisc-linux.org>
- *    Copyright (C) 2001-2002 Ryan Bradetich <rbrad at parisc-linux.org>
- *    Copyright (C) 2001 Helge Deller <deller at parisc-linux.org>
- *    Copyright (C) 2001 Thomas Bogendoerfer <tsbogend at parisc-linux.org>
- *    Copyright (C) 2002 Randolph Chung <tausq with parisc-linux.org>
+ *    Copyright (C) 2000 Grant Grundler <grundler with parisc-beep.org>
+ *    Copyright (C) 2001-2002 Ryan Bradetich <rbrad at parisc-beep.org>
+ *    Copyright (C) 2001 Helge Deller <deller at parisc-beep.org>
+ *    Copyright (C) 2001 Thomas Bogendoerfer <tsbogend at parisc-beep.org>
+ *    Copyright (C) 2002 Randolph Chung <tausq with parisc-beep.org>
  *    Copyright (C) 2010 Guy Martin <gmsoft at tuxicoman.be>
  *
  *
@@ -44,12 +44,12 @@
 #define EARLY_BOOTUP_DEBUG
 
 
-#include <linux/kernel.h>
-#include <linux/console.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/major.h>
-#include <linux/tty.h>
+#include <beep/kernel.h>
+#include <beep/console.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/major.h>
+#include <beep/tty.h>
 #include <asm/page.h>		/* for PAGE0 */
 #include <asm/pdc.h>		/* for iodc_call() proto and friends */
 
@@ -86,8 +86,8 @@ static int pdc_console_setup(struct console *co, char *options)
 }
 
 #if defined(CONFIG_PDC_CONSOLE)
-#include <linux/vt_kern.h>
-#include <linux/tty_flip.h>
+#include <beep/vt_kern.h>
+#include <beep/tty_flip.h>
 
 #define PDC_CONS_POLL_DELAY (30 * HZ / 1000)
 

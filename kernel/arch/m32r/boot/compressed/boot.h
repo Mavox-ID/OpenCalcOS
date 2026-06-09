@@ -13,7 +13,7 @@
  * BOOT_RELOC_ADDR		+-----------------------+
  *				|		 	|
  * KERNEL_DECOMPRESS_ADDR 	+-----------------------+
- *				|  	vmlinux		|
+ *				|  	vmbeep		|
  *				+-----------------------+
  *
  * 3. relocate copy & jump code
@@ -25,13 +25,13 @@
  * BOOT_RELOC_ADDR		+-----------------------+
  *				|    boot(copy&jump)	|
  * KERNEL_DECOMPRESS_ADDR 	+-----------------------+
- *				|  	vmlinux		|
+ *				|  	vmbeep		|
  *				+-----------------------+
  *
  * 4. relocate decompressed kernel
  *
  * CONFIG_MEMORY_START  	+-----------------------+
- *				|        vmlinux	|
+ *				|        vmbeep	|
  *				+-----------------------+
  *				|			|
  * BOOT_RELOC_ADDR		+-----------------------+

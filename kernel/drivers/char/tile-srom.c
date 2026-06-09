@@ -13,30 +13,30 @@
  *
  * SPI Flash ROM driver
  *
- * This source code is derived from code provided in "Linux Device
+ * This source code is derived from code provided in "Beep Device
  * Drivers, Third Edition", by Jonathan Corbet, Alessandro Rubini, and
  * Greg Kroah-Hartman, published by O'Reilly Media, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/kernel.h>	/* printk() */
-#include <linux/slab.h>		/* kmalloc() */
-#include <linux/fs.h>		/* everything... */
-#include <linux/errno.h>	/* error codes */
-#include <linux/types.h>	/* size_t */
-#include <linux/proc_fs.h>
-#include <linux/fcntl.h>	/* O_ACCMODE */
-#include <linux/aio.h>
-#include <linux/pagemap.h>
-#include <linux/hugetlb.h>
-#include <linux/uaccess.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/kernel.h>	/* printk() */
+#include <beep/slab.h>		/* kmalloc() */
+#include <beep/fs.h>		/* everything... */
+#include <beep/errno.h>	/* error codes */
+#include <beep/types.h>	/* size_t */
+#include <beep/proc_fs.h>
+#include <beep/fcntl.h>	/* O_ACCMODE */
+#include <beep/aio.h>
+#include <beep/pagemap.h>
+#include <beep/hugetlb.h>
+#include <beep/uaccess.h>
+#include <beep/platform_device.h>
 #include <hv/hypervisor.h>
-#include <linux/ioctl.h>
-#include <linux/cdev.h>
-#include <linux/delay.h>
+#include <beep/ioctl.h>
+#include <beep/cdev.h>
+#include <beep/delay.h>
 #include <hv/drv_srom_intf.h>
 
 /*

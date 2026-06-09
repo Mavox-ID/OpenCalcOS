@@ -14,15 +14,15 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/input.h>
+#include <beep/slab.h>
 
-#include <linux/mfd/pcf50633/core.h>
+#include <beep/mfd/pcf50633/core.h>
 
 #define PCF50633_OOCSTAT_ONKEY	0x01
 #define PCF50633_REG_OOCSTAT	0x12

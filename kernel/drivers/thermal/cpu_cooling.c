@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/thermal/cpu_cooling.c
+ *  beep/drivers/thermal/cpu_cooling.c
  *
  *  Copyright (C) 2012	Samsung Electronics Co., Ltd(http://www.samsung.com)
  *  Copyright (C) 2012  Amit Daniel <amit.kachhap@linaro.org>
@@ -20,15 +20,15 @@
  *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/thermal.h>
-#include <linux/platform_device.h>
-#include <linux/cpufreq.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/cpu_cooling.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/thermal.h>
+#include <beep/platform_device.h>
+#include <beep/cpufreq.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/cpu.h>
+#include <beep/cpu_cooling.h>
 
 /**
  * struct cpufreq_cooling_device

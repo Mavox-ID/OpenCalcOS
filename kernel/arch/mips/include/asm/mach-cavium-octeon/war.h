@@ -3,7 +3,7 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 2002, 2004, 2007 by Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 2002, 2004, 2007 by Ralf Baechle <ralf@beep-mips.org>
  * Copyright (C) 2008 Cavium Networks <support@caviumnetworks.com>
  */
 #ifndef __ASM_MIPS_MACH_CAVIUM_OCTEON_WAR_H

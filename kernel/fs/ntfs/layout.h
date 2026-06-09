@@ -1,5 +1,5 @@
 /*
- * layout.h - All NTFS associated on-disk structures. Part of the Linux-NTFS
+ * layout.h - All NTFS associated on-disk structures. Part of the Beep-NTFS
  *	      project.
  *
  * Copyright (c) 2001-2005 Anton Altaparmakov
@@ -16,17 +16,17 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program (in the main directory of the Linux-NTFS
+ * along with this program (in the main directory of the Beep-NTFS
  * distribution in the file COPYING); if not, write to the Free Software
  * Foundation,Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#ifndef _LINUX_NTFS_LAYOUT_H
-#define _LINUX_NTFS_LAYOUT_H
+#ifndef _BEEP_NTFS_LAYOUT_H
+#define _BEEP_NTFS_LAYOUT_H
 
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/list.h>
+#include <beep/types.h>
+#include <beep/bitops.h>
+#include <beep/list.h>
 #include <asm/byteorder.h>
 
 #include "types.h"
@@ -851,7 +851,7 @@ typedef le32 FILE_ATTR_FLAGS;
 /*
  * NOTE on times in NTFS: All times are in MS standard time format, i.e. they
  * are the number of 100-nanosecond intervals since 1st January 1601, 00:00:00
- * universal coordinated time (UTC). (In Linux time starts 1st January 1970,
+ * universal coordinated time (UTC). (In Beep time starts 1st January 1970,
  * 00:00:00 UTC and is stored as the number of 1-second intervals since then.)
  */
 
@@ -2432,4 +2432,4 @@ typedef struct {
 	// FIXME: Type this info, verifying it along the way. (AIA)
 } __attribute__ ((__packed__)) LOGGED_UTILITY_STREAM, EFS_ATTR;
 
-#endif /* _LINUX_NTFS_LAYOUT_H */
+#endif /* _BEEP_NTFS_LAYOUT_H */

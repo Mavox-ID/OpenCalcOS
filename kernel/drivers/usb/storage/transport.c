@@ -9,7 +9,7 @@
  *   (c) 2002 Alan Stern <stern@rowland.org>
  *
  * Initial work by:
- *   (c) 1999 Michael Gee (michael@linuxspecific.com)
+ *   (c) 1999 Michael Gee (michael@beepspecific.com)
  *
  * This driver is based on the 'USB Mass Storage Class' document. This
  * describes in detail the protocol used to communicate with such
@@ -25,7 +25,7 @@
  * Also, for certain devices, the interrupt endpoint is used to convey
  * status of a command.
  *
- * Please see http://www.one-eyed-alien.net/~mdharm/linux-usb for more
+ * Please see http://www.one-eyed-alien.net/~mdharm/beep-usb for more
  * information about this driver.
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -43,12 +43,12 @@
  * 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/sched.h>
-#include <linux/gfp.h>
-#include <linux/errno.h>
-#include <linux/export.h>
+#include <beep/sched.h>
+#include <beep/gfp.h>
+#include <beep/errno.h>
+#include <beep/export.h>
 
-#include <linux/usb/quirks.h>
+#include <beep/usb/quirks.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_eh.h>
@@ -60,7 +60,7 @@
 #include "scsiglue.h"
 #include "debug.h"
 
-#include <linux/blkdev.h>
+#include <beep/blkdev.h>
 #include "../../scsi/sd.h"
 
 

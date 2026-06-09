@@ -11,10 +11,10 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/module.h>
+#include <beep/rtc.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 
 #include "rtc-core.h"
 

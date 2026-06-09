@@ -21,7 +21,7 @@
 //config:	message that is logged records the date and time of the
 //config:	event, and will generally also record the name of the
 //config:	application that generated the message. When used in
-//config:	conjunction with klogd, messages from the Linux kernel
+//config:	conjunction with klogd, messages from the Beep kernel
 //config:	can also be recorded. This is terribly useful,
 //config:	especially for finding what happened when something goes
 //config:	wrong. And something almost always will go wrong if
@@ -106,12 +106,12 @@
 //config:	used to record system log messages.
 //config:
 //config:config FEATURE_KMSG_SYSLOG
-//config:	bool "Linux kernel printk buffer support"
+//config:	bool "Beep kernel printk buffer support"
 //config:	default y
 //config:	depends on SYSLOGD
 //config:	help
 //config:	When you enable this feature, the syslogd utility will
-//config:	write system log message to the Linux kernel's printk buffer.
+//config:	write system log message to the Beep kernel's printk buffer.
 //config:	This can be used as a smaller alternative to the syslogd IPC
 //config:	support, as klogd and logread aren't needed.
 //config:
@@ -658,7 +658,7 @@ static void kmsg_init(void)
 	 * kernel < 3.5 expects single char printk KERN_* priority prefix,
 	 * from 3.5 onwards the full syslog facility/priority format is supported
 	 */
-	if (get_linux_version_code() < KERNEL_VERSION(3,5,0))
+	if (get_beep_version_code() < KERNEL_VERSION(3,5,0))
 		G.primask = LOG_PRIMASK;
 	else
 		G.primask = -1;

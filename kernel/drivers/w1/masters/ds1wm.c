@@ -11,16 +11,16 @@
  * preserved in its entirety in all copies and derived works.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/ds1wm.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/pm.h>
+#include <beep/platform_device.h>
+#include <beep/err.h>
+#include <beep/delay.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/ds1wm.h>
+#include <beep/slab.h>
 
 #include <asm/io.h>
 

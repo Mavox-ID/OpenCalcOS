@@ -7,7 +7,7 @@
 
 #include <asm/apic.h>
 #include <asm/ipi.h>
-#include <linux/cpumask.h>
+#include <beep/cpumask.h>
 
 static int x2apic_apic_id_valid(int apicid)
 {

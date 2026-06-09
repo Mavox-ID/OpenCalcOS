@@ -19,7 +19,7 @@
 #ifndef __ASM_ARM_GENERIC_H
 #define __ASM_ARM_GENERIC_H
 
-#include <linux/clocksource.h>
+#include <beep/clocksource.h>
 
 #define ARCH_TIMER_CTRL_ENABLE		(1 << 0)
 #define ARCH_TIMER_CTRL_IMASK		(1 << 1)

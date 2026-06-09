@@ -17,7 +17,7 @@ Configuration options:
 
 #include "../comedidev.h"
 
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 
 #define PCM3730_SIZE 4		/*  consecutive io port addresses */
 

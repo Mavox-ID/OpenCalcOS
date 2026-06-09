@@ -19,15 +19,15 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/phy.h>
-#include <linux/of_address.h>
-#include <linux/of_mdio.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/phy.h>
+#include <beep/of_address.h>
+#include <beep/of_mdio.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
 
 #define MVMDIO_SMI_DATA_SHIFT              0
 #define MVMDIO_SMI_PHY_ADDR_SHIFT          16

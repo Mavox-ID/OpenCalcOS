@@ -14,8 +14,8 @@
  * TILE startup code.
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>
 #include <asm/thread_info.h>

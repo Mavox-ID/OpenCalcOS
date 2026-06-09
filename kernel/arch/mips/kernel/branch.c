@@ -6,10 +6,10 @@
  * Copyright (C) 1996, 97, 2000, 2001 by Ralf Baechle
  * Copyright (C) 2001 MIPS Technologies, Inc.
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/signal.h>
+#include <beep/module.h>
 #include <asm/branch.h>
 #include <asm/cpu.h>
 #include <asm/cpu-features.h>

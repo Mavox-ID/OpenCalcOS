@@ -25,9 +25,9 @@
  * 02110-1301 USA
  */
 
-/* Linux specific include files */
-#include <linux/device.h>
-#include <linux/slab.h>
+/* Beep specific include files */
+#include <beep/device.h>
+#include <beep/slab.h>
 
 #include "isp.h"
 #include "isph3a.h"

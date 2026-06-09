@@ -26,8 +26,8 @@
  *
  */
 
-#include <linux/export.h>
-#include <linux/dma-buf.h>
+#include <beep/export.h>
+#include <beep/dma-buf.h>
 #include <drm/drmP.h>
 
 /*

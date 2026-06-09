@@ -9,8 +9,8 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/sched.h>
-#include <linux/proc_fs.h>
+#include <beep/sched.h>
+#include <beep/proc_fs.h>
 struct  ctl_table_header;
 struct  mempolicy;
 

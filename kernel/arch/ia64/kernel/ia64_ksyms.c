@@ -5,9 +5,9 @@
  * All other exports should be put directly after the definition.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/string.h>
+#include <beep/string.h>
 EXPORT_SYMBOL(memset);
 EXPORT_SYMBOL(memcpy);
 EXPORT_SYMBOL(strlen);
@@ -24,7 +24,7 @@ EXPORT_SYMBOL(clear_page);
 EXPORT_SYMBOL(copy_page);
 
 #ifdef CONFIG_VIRTUAL_MEM_MAP
-#include <linux/bootmem.h>
+#include <beep/bootmem.h>
 EXPORT_SYMBOL(min_low_pfn);	/* defined by bootmem.c, but not exported by generic code */
 EXPORT_SYMBOL(max_low_pfn);	/* defined by bootmem.c, but not exported by generic code */
 #endif

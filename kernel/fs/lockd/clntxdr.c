@@ -1,5 +1,5 @@
 /*
- * linux/fs/lockd/clntxdr.c
+ * beep/fs/lockd/clntxdr.c
  *
  * XDR functions to encode/decode NLM version 3 RPC arguments and results.
  * NLM version 3 is backwards compatible with NLM versions 1 and 2.
@@ -9,11 +9,11 @@
  * Copyright (C) 2010, Oracle.  All rights reserved.
  */
 
-#include <linux/types.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/lockd/lockd.h>
+#include <beep/types.h>
+#include <beep/sunrpc/xdr.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/sunrpc/stats.h>
+#include <beep/lockd/lockd.h>
 
 #define NLMDBG_FACILITY		NLMDBG_XDR
 

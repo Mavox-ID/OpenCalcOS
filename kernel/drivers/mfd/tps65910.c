@@ -13,19 +13,19 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/mfd/core.h>
-#include <linux/regmap.h>
-#include <linux/mfd/tps65910.h>
-#include <linux/of_device.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
+#include <beep/mfd/core.h>
+#include <beep/regmap.h>
+#include <beep/mfd/tps65910.h>
+#include <beep/of_device.h>
 
 static struct resource rtc_resources[] = {
 	{

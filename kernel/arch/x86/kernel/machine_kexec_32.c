@@ -1,20 +1,20 @@
 /*
- * handle transition of Linux booting another kernel
+ * handle transition of Beep booting another kernel
  * Copyright (C) 2002-2005 Eric Biederman  <ebiederm@xmission.com>
  *
  * This source code is licensed under the GNU General Public License,
  * Version 2.  See the file COPYING for more details.
  */
 
-#include <linux/mm.h>
-#include <linux/kexec.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/numa.h>
-#include <linux/ftrace.h>
-#include <linux/suspend.h>
-#include <linux/gfp.h>
-#include <linux/io.h>
+#include <beep/mm.h>
+#include <beep/kexec.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/numa.h>
+#include <beep/ftrace.h>
+#include <beep/suspend.h>
+#include <beep/gfp.h>
+#include <beep/io.h>
 
 #include <asm/pgtable.h>
 #include <asm/pgalloc.h>

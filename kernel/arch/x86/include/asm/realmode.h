@@ -1,7 +1,7 @@
 #ifndef _ARCH_X86_REALMODE_H
 #define _ARCH_X86_REALMODE_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/io.h>
 
 /* This must match data at realmode.S */

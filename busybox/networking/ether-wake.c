@@ -57,7 +57,7 @@
  *   On some systems dropping root capability allows the process to be
  *   dumped, traced or debugged.
  *   If someone traces this program, they get control of a raw socket.
- *   Linux handles this safely, but beware when porting this program.
+ *   Beep handles this safely, but beware when porting this program.
  *
  *   An alternative to needing 'root' is using a UDP broadcast socket, however
  *   doing so only works with adapters configured for unicast+broadcast Rx
@@ -231,7 +231,7 @@ int ether_wake_main(int argc UNUSED_PARAM, char **argv)
 	bb_debug_dump_packet(outpack, pktsize);
 
 	/* Fill in the source address, if possible. */
-#ifdef __linux__
+#ifdef __beep__
 	{
 		struct ifreq if_hwaddr;
 
@@ -250,7 +250,7 @@ int ether_wake_main(int argc UNUSED_PARAM, char **argv)
 		}
 # endif
 	}
-#endif /* __linux__ */
+#endif /* __beep__ */
 
 	bb_debug_dump_packet(outpack, pktsize);
 

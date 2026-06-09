@@ -11,20 +11,20 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/pm_runtime.h>
-#include <linux/mutex.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/samsung/core.h>
-#include <linux/mfd/samsung/irq.h>
-#include <linux/mfd/samsung/rtc.h>
-#include <linux/regmap.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/pm_runtime.h>
+#include <beep/mutex.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/samsung/core.h>
+#include <beep/mfd/samsung/irq.h>
+#include <beep/mfd/samsung/rtc.h>
+#include <beep/regmap.h>
 
 static struct mfd_cell s5m8751_devs[] = {
 	{

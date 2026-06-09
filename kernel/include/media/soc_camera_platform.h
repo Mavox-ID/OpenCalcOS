@@ -11,7 +11,7 @@
 #ifndef __SOC_CAMERA_H__
 #define __SOC_CAMERA_H__
 
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 #include <media/soc_camera.h>
 #include <media/v4l2-mediabus.h>
 

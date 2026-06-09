@@ -11,15 +11,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/spinlock.h>
-#include <linux/hardirq.h>
-#include <linux/uaccess.h>
-#include <linux/ftrace.h>
-#include <linux/percpu.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
+#include <beep/spinlock.h>
+#include <beep/hardirq.h>
+#include <beep/uaccess.h>
+#include <beep/ftrace.h>
+#include <beep/percpu.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/module.h>
 
 #include <trace/syscall.h>
 

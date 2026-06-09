@@ -12,15 +12,15 @@
  * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/stat.h>
-#include <linux/sysfs.h>
-#include <linux/etherdevice.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/stat.h>
+#include <beep/sysfs.h>
+#include <beep/etherdevice.h>
 
 #include "cpsw_ale.h"
 

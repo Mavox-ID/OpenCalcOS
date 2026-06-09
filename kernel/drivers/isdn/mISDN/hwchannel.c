@@ -15,9 +15,9 @@
  *
  */
 
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/mISDNhw.h>
+#include <beep/gfp.h>
+#include <beep/module.h>
+#include <beep/mISDNhw.h>
 
 static void
 dchannel_bh(struct work_struct *ws)

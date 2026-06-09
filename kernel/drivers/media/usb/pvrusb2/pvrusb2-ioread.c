@@ -20,11 +20,11 @@
 
 #include "pvrusb2-ioread.h"
 #include "pvrusb2-debug.h"
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
 #include <asm/uaccess.h>
 
 #define BUFFER_COUNT 32

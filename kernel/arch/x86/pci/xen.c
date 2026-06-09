@@ -9,12 +9,12 @@
  *           Konrad Rzeszutek Wilk <konrad.wilk@oracle.com>
  *           Stefano Stabellini <stefano.stabellini@eu.citrix.com>
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/acpi.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/acpi.h>
 
-#include <linux/io.h>
+#include <beep/io.h>
 #include <asm/io_apic.h>
 #include <asm/pci_x86.h>
 
@@ -150,7 +150,7 @@ static int acpi_register_gsi_xen(struct device *dev, u32 gsi,
 #endif
 
 #if defined(CONFIG_PCI_MSI)
-#include <linux/msi.h>
+#include <beep/msi.h>
 #include <asm/msidef.h>
 
 struct xen_pci_frontend_ops *xen_pci_frontend;
@@ -446,7 +446,7 @@ static __init void xen_setup_acpi_sci(void)
 	printk(KERN_INFO "xen: sci override: global_irq=%d trigger=%d "
 			"polarity=%d\n", gsi, trigger, polarity);
 
-	/* Before we bind the GSI to a Linux IRQ, check whether
+	/* Before we bind the GSI to a Beep IRQ, check whether
 	 * we need to override it with bus_irq (IRQ) value. Usually for
 	 * IRQs below IRQ_LEGACY_IRQ this holds IRQ == GSI, as so:
 	 *  ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 low level)

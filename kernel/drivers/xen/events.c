@@ -21,15 +21,15 @@
  * Jeremy Fitzhardinge <jeremy@xensource.com>, XenSource Inc, 2007
  */
 
-#include <linux/linkage.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/bootmem.h>
-#include <linux/slab.h>
-#include <linux/irqnr.h>
-#include <linux/pci.h>
+#include <beep/linkage.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/bootmem.h>
+#include <beep/slab.h>
+#include <beep/irqnr.h>
+#include <beep/pci.h>
 
 #ifdef CONFIG_X86
 #include <asm/desc.h>
@@ -1463,7 +1463,7 @@ static int rebind_irq_to_cpu(unsigned irq, unsigned tcpu)
 	/*
 	 * If this fails, it usually just indicates that we're dealing with a
 	 * virq or IPI channel, which don't actually need to be rebound. Ignore
-	 * it, but don't do the xenlinux-level rebind in that case.
+	 * it, but don't do the xenbeep-level rebind in that case.
 	 */
 	if (HYPERVISOR_event_channel_op(EVTCHNOP_bind_vcpu, &bind_vcpu) >= 0)
 		bind_evtchn_to_cpu(evtchn, tcpu);

@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hpfs/alloc.c
+ *  beep/fs/hpfs/alloc.c
  *
  *  Mikulas Patocka (mikulas@artax.karlin.mff.cuni.cz), 1998-1999
  *

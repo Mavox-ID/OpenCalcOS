@@ -1,7 +1,7 @@
 /*
  * IPVS:        Round-Robin Scheduling module
  *
- * Authors:     Wensong Zhang <wensong@linuxvirtualserver.org>
+ * Authors:     Wensong Zhang <wensong@beepvirtualserver.org>
  *              Peter Kese <peter.kese@ijs.si>
  *
  *              This program is free software; you can redistribute it and/or
@@ -22,8 +22,8 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
 
 #include <net/ip_vs.h>
 

@@ -6,7 +6,7 @@
  */
 
 #ifdef __KERNEL__
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/cmpxchg.h>
 
 #define ATOMIC_INIT(i)		{ (i) }

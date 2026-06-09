@@ -30,8 +30,8 @@
 #ifndef FS_NFS_PNFS_H
 #define FS_NFS_PNFS_H
 
-#include <linux/nfs_fs.h>
-#include <linux/nfs_page.h>
+#include <beep/nfs_fs.h>
+#include <beep/nfs_page.h>
 
 enum {
 	NFS_LSEG_VALID = 0,	/* cleared when lseg is recalled/returned */

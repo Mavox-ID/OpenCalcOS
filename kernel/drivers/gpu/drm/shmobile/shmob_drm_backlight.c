@@ -11,7 +11,7 @@
  * (at your option) any later version.
  */
 
-#include <linux/backlight.h>
+#include <beep/backlight.h>
 
 #include "shmob_drm_backlight.h"
 #include "shmob_drm_crtc.h"

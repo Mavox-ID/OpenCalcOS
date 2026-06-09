@@ -9,10 +9,10 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
 #include <plat/mailbox.h>
 
 #define MAILBOX_ARM2DSP1		0x00

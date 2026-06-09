@@ -1,19 +1,19 @@
 /*
- * Linux for s390 qdio support, buffer handling, qdio API and module support.
+ * Beep for s390 qdio support, buffer handling, qdio API and module support.
  *
  * Copyright IBM Corp. 2000, 2008
  * Author(s): Utz Bacher <utz.bacher@de.ibm.com>
- *	      Jan Glauber <jang@linux.vnet.ibm.com>
+ *	      Jan Glauber <jang@beep.vnet.ibm.com>
  * 2.6 cio integration by Cornelia Huck <cornelia.huck@de.ibm.com>
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/io.h>
-#include <linux/atomic.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/timer.h>
+#include <beep/delay.h>
+#include <beep/gfp.h>
+#include <beep/io.h>
+#include <beep/atomic.h>
 #include <asm/debug.h>
 #include <asm/qdio.h>
 #include <asm/ipl.h>
@@ -25,7 +25,7 @@
 #include "qdio_debug.h"
 
 MODULE_AUTHOR("Utz Bacher <utz.bacher@de.ibm.com>,"\
-	"Jan Glauber <jang@linux.vnet.ibm.com>");
+	"Jan Glauber <jang@beep.vnet.ibm.com>");
 MODULE_DESCRIPTION("QDIO base support");
 MODULE_LICENSE("GPL");
 

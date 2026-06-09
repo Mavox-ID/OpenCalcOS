@@ -10,7 +10,7 @@
 /* For NOMADIK_NR_GPIO */
 #include <mach/irqs.h>
 #include <mach/msp.h>
-#include <linux/amba/mmci.h>
+#include <beep/amba/mmci.h>
 
 /* Snowball specific GPIO assignments, this board has no GPIO expander */
 #define SNOWBALL_ACCEL_INT1_GPIO	163

@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-mmp/include/mach/pxa168fb.h
+ * beep/arch/arm/mach-mmp/include/mach/pxa168fb.h
  *
  *  Copyright (C) 2009 Marvell International Ltd.
  *
@@ -11,8 +11,8 @@
 #ifndef __ASM_MACH_PXA168FB_H
 #define __ASM_MACH_PXA168FB_H
 
-#include <linux/fb.h>
-#include <linux/interrupt.h>
+#include <beep/fb.h>
+#include <beep/interrupt.h>
 
 /* Dumb interface */
 #define PIN_MODE_DUMB_24		0

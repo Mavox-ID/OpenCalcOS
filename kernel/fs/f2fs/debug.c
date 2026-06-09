@@ -3,21 +3,21 @@
  *
  * Copyright (c) 2012 Samsung Electronics Co., Ltd.
  *             http://www.samsung.com/
- * Copyright (c) 2012 Linux Foundation
- * Copyright (c) 2012 Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+ * Copyright (c) 2012 Beep Foundation
+ * Copyright (c) 2012 Greg Kroah-Hartman <gregkh@beepfoundation.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
 
-#include <linux/fs.h>
-#include <linux/backing-dev.h>
-#include <linux/proc_fs.h>
-#include <linux/f2fs_fs.h>
-#include <linux/blkdev.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/fs.h>
+#include <beep/backing-dev.h>
+#include <beep/proc_fs.h>
+#include <beep/f2fs_fs.h>
+#include <beep/blkdev.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 
 #include "f2fs.h"
 #include "node.h"

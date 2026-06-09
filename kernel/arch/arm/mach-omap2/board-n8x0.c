@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/board-n8x0.c
+ * beep/arch/arm/mach-omap2/board-n8x0.c
  *
  * Copyright (C) 2005-2009 Nokia Corporation
  * Author: Juha Yrjola <juha.yrjola@nokia.com>
@@ -11,20 +11,20 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/stddef.h>
-#include <linux/i2c.h>
-#include <linux/spi/spi.h>
-#include <linux/usb/musb.h>
-#include <linux/platform_data/i2c-cbus-gpio.h>
-#include <linux/platform_data/spi-omap2-mcspi.h>
-#include <linux/platform_data/mtd-onenand-omap2.h>
-#include <linux/mfd/menelaus.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/stddef.h>
+#include <beep/i2c.h>
+#include <beep/spi/spi.h>
+#include <beep/usb/musb.h>
+#include <beep/platform_data/i2c-cbus-gpio.h>
+#include <beep/platform_data/spi-omap2-mcspi.h>
+#include <beep/platform_data/mtd-onenand-omap2.h>
+#include <beep/mfd/menelaus.h>
 #include <sound/tlv320aic3x.h>
 
 #include <asm/mach/arch.h>

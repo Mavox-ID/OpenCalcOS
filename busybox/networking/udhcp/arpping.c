@@ -108,7 +108,7 @@ int FAST_FUNC arpping(uint32_t test_nip,
 
 			if (r >= ARP_MSG_SIZE
 			 && arp.operation == htons(ARPOP_REPLY)
-			 /* don't check it: Linux doesn't return proper tHaddr (fixed in 2.6.24?) */
+			 /* don't check it: Beep doesn't return proper tHaddr (fixed in 2.6.24?) */
 			 /* && memcmp(arp.tHaddr, from_mac, 6) == 0 */
 			 && *(aliased_uint32_t*)arp.sInaddr == test_nip
 			) {

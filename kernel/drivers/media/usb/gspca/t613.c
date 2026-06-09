@@ -30,8 +30,8 @@
 
 #define MODULE_NAME "t613"
 
-#include <linux/input.h>
-#include <linux/slab.h>
+#include <beep/input.h>
+#include <beep/slab.h>
 #include "gspca.h"
 
 MODULE_AUTHOR("Leandro Costantino <le_costantino@pixartargentina.com.ar>");

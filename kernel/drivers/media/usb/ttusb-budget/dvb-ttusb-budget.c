@@ -9,18 +9,18 @@
  *	published by the Free Software Foundation; either version 2 of
  *	the License, or (at your option) any later version.
  */
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/delay.h>
-#include <linux/time.h>
-#include <linux/errno.h>
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
-#include <linux/firmware.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/wait.h>
+#include <beep/fs.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/delay.h>
+#include <beep/time.h>
+#include <beep/errno.h>
+#include <beep/jiffies.h>
+#include <beep/mutex.h>
+#include <beep/firmware.h>
 
 #include "dvb_frontend.h"
 #include "dmxdev.h"
@@ -34,9 +34,9 @@
 #include "stv0297.h"
 #include "lnbp21.h"
 
-#include <linux/dvb/frontend.h>
-#include <linux/dvb/dmx.h>
-#include <linux/pci.h>
+#include <beep/dvb/frontend.h>
+#include <beep/dvb/dmx.h>
+#include <beep/pci.h>
 
 /*
   TTUSB_HWSECTIONS:

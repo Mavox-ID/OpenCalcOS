@@ -1,9 +1,9 @@
 /*
  * isac.c   ISAC specific routines
  *
- * Author       Karsten Keil <keil@isdn4linux.de>
+ * Author       Karsten Keil <keil@isdn4beep.de>
  *
- * Copyright 2009  by Karsten Keil <keil@isdn4linux.de>
+ * Copyright 2009  by Karsten Keil <keil@isdn4beep.de>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -20,10 +20,10 @@
  *
  */
 
-#include <linux/irqreturn.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/mISDNhw.h>
+#include <beep/irqreturn.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/mISDNhw.h>
 #include "ipac.h"
 
 

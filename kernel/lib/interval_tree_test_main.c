@@ -1,6 +1,6 @@
-#include <linux/module.h>
-#include <linux/interval_tree.h>
-#include <linux/random.h>
+#include <beep/module.h>
+#include <beep/interval_tree.h>
+#include <beep/random.h>
 #include <asm/timex.h>
 
 #define NODES        100

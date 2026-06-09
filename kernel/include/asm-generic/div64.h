@@ -17,8 +17,8 @@
  *       beware of side effects!
  */
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <beep/types.h>
+#include <beep/compiler.h>
 
 #if BITS_PER_LONG == 64
 

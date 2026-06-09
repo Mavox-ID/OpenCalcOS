@@ -15,15 +15,15 @@
 #define EVDEV_MIN_BUFFER_SIZE	64U
 #define EVDEV_BUF_PACKETS	8
 
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input/mt.h>
-#include <linux/major.h>
-#include <linux/device.h>
-#include <linux/cdev.h>
+#include <beep/poll.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/input/mt.h>
+#include <beep/major.h>
+#include <beep/device.h>
+#include <beep/cdev.h>
 #include "input-compat.h"
 
 struct evdev {

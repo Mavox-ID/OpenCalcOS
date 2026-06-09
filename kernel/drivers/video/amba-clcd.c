@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/amba-clcd.c
+ *  beep/drivers/video/amba-clcd.c
  *
  * Copyright (C) 2001 ARM Limited, by David A Rusling
  * Updated to 2.5, Deep Blue Solutions Ltd.
@@ -10,21 +10,21 @@
  *
  *  ARM PrimeCell PL110 Color LCD Controller
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/list.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/clcd.h>
-#include <linux/clk.h>
-#include <linux/hardirq.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/mm.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/list.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/clcd.h>
+#include <beep/clk.h>
+#include <beep/hardirq.h>
 
 #include <asm/sizes.h>
 

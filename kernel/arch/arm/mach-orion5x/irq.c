@@ -9,10 +9,10 @@
  * License version 2.  This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <beep/gpio.h>
+#include <beep/kernel.h>
+#include <beep/irq.h>
+#include <beep/io.h>
 #include <mach/bridge-regs.h>
 #include <plat/orion-gpio.h>
 #include <plat/irq.h>

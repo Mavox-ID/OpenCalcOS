@@ -1,5 +1,5 @@
 /*
- *	linux/drivers/video/pmag-ba-fb.c
+ *	beep/drivers/video/pmag-ba-fb.c
  *
  *	PMAG-BA TURBOchannel Color Frame Buffer (CFB) card support,
  *	derived from:
@@ -13,7 +13,7 @@
  *
  *	DECstation related code Copyright (C) 1999, 2000, 2001 by
  *	Michael Engel <engel@unix-ag.org>,
- *	Karsten Merker <merker@linuxtag.org> and
+ *	Karsten Merker <merker@beeptag.org> and
  *	Harald Koerfgen.
  *	Copyright (c) 2005, 2006  Maciej W. Rozycki
  *	Copyright (c) 2005  James Simmons
@@ -23,14 +23,14 @@
  *	archive for more details.
  */
 
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/tc.h>
-#include <linux/types.h>
+#include <beep/compiler.h>
+#include <beep/errno.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/tc.h>
+#include <beep/types.h>
 
 #include <asm/io.h>
 

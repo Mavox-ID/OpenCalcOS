@@ -7,14 +7,14 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
 struct opencores_kbd {
 	struct input_dev *input;

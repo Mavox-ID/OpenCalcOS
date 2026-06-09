@@ -8,13 +8,13 @@
  *
  */
 
-#include <linux/export.h>
-#include <linux/kobject.h>
-#include <linux/string.h>
-#include <linux/resume-trace.h>
-#include <linux/workqueue.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/export.h>
+#include <beep/kobject.h>
+#include <beep/string.h>
+#include <beep/resume-trace.h>
+#include <beep/workqueue.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 
 #include "power.h"
 

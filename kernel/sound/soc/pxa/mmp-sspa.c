@@ -1,5 +1,5 @@
 /*
- * linux/sound/soc/pxa/mmp-sspa.c
+ * beep/sound/soc/pxa/mmp-sspa.c
  * Base on pxa2xx-ssp.c
  *
  * Copyright (C) 2011 Marvell International Ltd.
@@ -19,14 +19,14 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/pxa2xx_ssp.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/clk.h>
+#include <beep/slab.h>
+#include <beep/pxa2xx_ssp.h>
+#include <beep/io.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/initval.h>

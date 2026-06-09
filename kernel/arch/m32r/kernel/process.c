@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m32r/kernel/process.c
+ *  beep/arch/m32r/kernel/process.c
  *
  *  Copyright (c) 2001, 2002  Hiroyuki Kondo, Hirokazu Takata,
  *                            Hitoshi Yamamoto
@@ -20,13 +20,13 @@
  * This file handles the architecture-dependent parts of process handling..
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/hardirq.h>
-#include <linux/rcupdate.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/ptrace.h>
+#include <beep/unistd.h>
+#include <beep/hardirq.h>
+#include <beep/rcupdate.h>
 
 #include <asm/io.h>
 #include <asm/uaccess.h>
@@ -34,7 +34,7 @@
 #include <asm/elf.h>
 #include <asm/m32r.h>
 
-#include <linux/err.h>
+#include <beep/err.h>
 
 /*
  * Return saved PC of a blocked thread.

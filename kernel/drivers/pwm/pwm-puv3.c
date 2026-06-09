@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/kernel/pwm.c
+ * beep/arch/unicore32/kernel/pwm.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -11,14 +11,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/pwm.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/pwm.h>
 
 #include <asm/div64.h>
 #include <mach/hardware.h>

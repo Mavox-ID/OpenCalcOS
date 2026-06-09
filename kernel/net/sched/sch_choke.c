@@ -10,12 +10,12 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/reciprocal_div.h>
-#include <linux/vmalloc.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/skbuff.h>
+#include <beep/reciprocal_div.h>
+#include <beep/vmalloc.h>
 #include <net/pkt_sched.h>
 #include <net/inet_ecn.h>
 #include <net/red.h>

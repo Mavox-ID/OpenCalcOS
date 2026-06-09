@@ -31,10 +31,10 @@
 #ifndef IRCOMM_TTY_H
 #define IRCOMM_TTY_H
 
-#include <linux/serial.h>
-#include <linux/termios.h>
-#include <linux/timer.h>
-#include <linux/tty.h>		/* struct tty_struct */
+#include <beep/serial.h>
+#include <beep/termios.h>
+#include <beep/timer.h>
+#include <beep/tty.h>		/* struct tty_struct */
 
 #include <net/irda/irias_object.h>
 #include <net/irda/ircomm_core.h>

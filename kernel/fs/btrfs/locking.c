@@ -15,10 +15,10 @@
  * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
  * Boston, MA 021110-1307, USA.
  */
-#include <linux/sched.h>
-#include <linux/pagemap.h>
-#include <linux/spinlock.h>
-#include <linux/page-flags.h>
+#include <beep/sched.h>
+#include <beep/pagemap.h>
+#include <beep/spinlock.h>
+#include <beep/page-flags.h>
 #include <asm/bug.h>
 #include "ctree.h"
 #include "extent_io.h"

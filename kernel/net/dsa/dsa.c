@@ -8,11 +8,11 @@
  * (at your option) any later version.
  */
 
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/list.h>
+#include <beep/netdevice.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <net/dsa.h>
 #include "dsa_priv.h"
 

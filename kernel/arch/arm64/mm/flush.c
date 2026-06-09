@@ -17,9 +17,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
+#include <beep/export.h>
+#include <beep/mm.h>
+#include <beep/pagemap.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cachetype.h>

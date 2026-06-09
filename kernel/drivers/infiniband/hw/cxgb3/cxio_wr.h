@@ -33,8 +33,8 @@
 #define __CXIO_WR_H__
 
 #include <asm/io.h>
-#include <linux/pci.h>
-#include <linux/timer.h>
+#include <beep/pci.h>
+#include <beep/timer.h>
 #include "firmware_exports.h"
 
 #define T3_MAX_SGE      4

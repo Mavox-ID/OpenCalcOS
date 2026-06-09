@@ -4,7 +4,7 @@
 #ifndef _ASM_M48T37_H
 #define _ASM_M48T37_H
 
-#include <linux/spinlock.h>
+#include <beep/spinlock.h>
 
 extern spinlock_t rtc_lock;
 

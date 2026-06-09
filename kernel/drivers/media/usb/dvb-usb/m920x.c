@@ -1,4 +1,4 @@
-/* DVB USB compliant linux driver for MSI Mega Sky 580 DVB-T USB2.0 receiver
+/* DVB USB compliant beep driver for MSI Mega Sky 580 DVB-T USB2.0 receiver
  *
  * Copyright (C) 2006 Aapo Tahkola (aet@rasterburn.org)
  *

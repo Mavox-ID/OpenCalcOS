@@ -2,13 +2,13 @@
  * \file drmP.h
  * Private header for Direct Rendering Manager
  *
- * \author Rickard E. (Rik) Faith <faith@valinux.com>
- * \author Gareth Hughes <gareth@valinux.com>
+ * \author Rickard E. (Rik) Faith <faith@vabeep.com>
+ * \author Gareth Hughes <gareth@vabeep.com>
  */
 
 /*
  * Copyright 1999 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA Beep Systems, Inc., Sunnyvale, California.
  * Copyright (c) 2009-2010, Code Aurora Forum.
  * All rights reserved.
  *
@@ -26,7 +26,7 @@
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
- * VA LINUX SYSTEMS AND/OR ITS SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+ * VA BEEP SYSTEMS AND/OR ITS SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
  * OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
@@ -42,20 +42,20 @@
  * can build the DRM (part of PI DRI). 4/21/2000 S + B */
 #include <asm/current.h>
 #endif				/* __alpha__ */
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/fs.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/file.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/jiffies.h>
-#include <linux/dma-mapping.h>
-#include <linux/mm.h>
-#include <linux/cdev.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/miscdevice.h>
+#include <beep/fs.h>
+#include <beep/proc_fs.h>
+#include <beep/init.h>
+#include <beep/file.h>
+#include <beep/platform_device.h>
+#include <beep/pci.h>
+#include <beep/jiffies.h>
+#include <beep/dma-mapping.h>
+#include <beep/mm.h>
+#include <beep/cdev.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 #if defined(__alpha__) || defined(__powerpc__)
 #include <asm/pgtable.h>	/* For pte_wrprotect */
 #endif
@@ -66,16 +66,16 @@
 #include <asm/mtrr.h>
 #endif
 #if defined(CONFIG_AGP) || defined(CONFIG_AGP_MODULE)
-#include <linux/types.h>
-#include <linux/agp_backend.h>
+#include <beep/types.h>
+#include <beep/agp_backend.h>
 #endif
-#include <linux/workqueue.h>
-#include <linux/poll.h>
+#include <beep/workqueue.h>
+#include <beep/poll.h>
 #include <asm/pgalloc.h>
 #include <drm/drm.h>
 #include <drm/drm_sarea.h>
 
-#include <linux/idr.h>
+#include <beep/idr.h>
 
 #define __OS_HAS_AGP (defined(CONFIG_AGP) || (defined(CONFIG_AGP_MODULE) && defined(MODULE)))
 #define __OS_HAS_MTRR (defined(CONFIG_MTRR))
@@ -85,7 +85,7 @@ struct module;
 struct drm_file;
 struct drm_device;
 
-#include <drm/drm_os_linux.h>
+#include <drm/drm_os_beep.h>
 #include <drm/drm_hashtab.h>
 #include <drm/drm_mm.h>
 
@@ -1014,7 +1014,7 @@ struct drm_minor {
 	int index;			/**< Minor device number */
 	int type;                       /**< Control or render */
 	dev_t device;			/**< Device number for mknod */
-	struct device kdev;		/**< Linux device */
+	struct device kdev;		/**< Beep device */
 	struct drm_device *dev;
 
 	struct proc_dir_entry *proc_root;  /**< proc directory entry */

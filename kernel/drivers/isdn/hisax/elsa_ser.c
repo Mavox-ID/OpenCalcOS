@@ -7,9 +7,9 @@
  *
  */
 
-#include <linux/serial.h>
-#include <linux/serial_reg.h>
-#include <linux/slab.h>
+#include <beep/serial.h>
+#include <beep/serial_reg.h>
+#include <beep/slab.h>
 
 #define MAX_MODEM_BUF	256
 #define WAKEUP_CHARS	(MAX_MODEM_BUF / 2)

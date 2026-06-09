@@ -53,46 +53,46 @@
  * SUCH DAMAGE.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/errno.h>
-#include <linux/string.h>	/* used in new tty drivers */
-#include <linux/signal.h>	/* used in new tty drivers */
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/interrupt.h>
+#include <beep/ptrace.h>
+#include <beep/ioport.h>
+#include <beep/in.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/errno.h>
+#include <beep/string.h>	/* used in new tty drivers */
+#include <beep/signal.h>	/* used in new tty drivers */
+#include <beep/bitops.h>
 
 #include <asm/byteorder.h>
 #include <asm/types.h>
 
-#include <linux/if.h>
+#include <beep/if.h>
 
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/inet.h>
-#include <linux/ioctl.h>
-#include <linux/vmalloc.h>
+#include <beep/if_ether.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/inet.h>
+#include <beep/ioctl.h>
+#include <beep/vmalloc.h>
 
-#include <linux/ppp_defs.h>
+#include <beep/ppp_defs.h>
 
-#include <linux/isdn.h>
-#include <linux/isdn_ppp.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/if_arp.h>
-#include <linux/ppp-comp.h>
+#include <beep/isdn.h>
+#include <beep/isdn_ppp.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/if_arp.h>
+#include <beep/ppp-comp.h>
 
 #include "isdn_ppp.h"
 
-MODULE_DESCRIPTION("ISDN4Linux: BSD Compression for PPP over ISDN");
+MODULE_DESCRIPTION("ISDN4Beep: BSD Compression for PPP over ISDN");
 MODULE_LICENSE("Dual BSD/GPL");
 
 #define BSD_VERSION(x)	((x) >> 5)

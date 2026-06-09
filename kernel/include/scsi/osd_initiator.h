@@ -17,7 +17,7 @@
 #include <scsi/osd_protocol.h>
 #include <scsi/osd_types.h>
 
-#include <linux/blkdev.h>
+#include <beep/blkdev.h>
 #include <scsi/scsi_device.h>
 
 /* Note: "NI" in comments below means "Not Implemented yet" */
@@ -42,8 +42,8 @@ enum osd_std_version {
 /*
  * Object-based Storage Device.
  * This object represents an OSD device.
- * It is not a full linux device in any way. It is only
- * a place to hang resources associated with a Linux
+ * It is not a full beep device in any way. It is only
+ * a place to hang resources associated with a Beep
  * request Q and some default properties.
  */
 struct osd_dev {
@@ -284,7 +284,7 @@ int osd_execute_request_async(struct osd_request *or,
  * osd_err_priority - osd categorized return codes in ascending severity.
  *
  * The categories are borrowed from the pnfs_osd_errno enum.
- * See comments for translated Linux codes returned by osd_req_decode_sense.
+ * See comments for translated Beep codes returned by osd_req_decode_sense.
  */
 enum osd_err_priority {
 	OSD_ERR_PRI_NO_ERROR	= 0,

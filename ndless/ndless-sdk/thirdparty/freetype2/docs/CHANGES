@@ -2322,7 +2322,7 @@ CHANGES BETWEEN 2.1.8 and 2.1.7
       `ftdebug.h' for more details.
 
     - YAMATO Masatake contributed improved  handling of MacOS resource
-      forks on non-MacOS platforms (for example, Linux can mount MacOS
+      forks on non-MacOS platforms (for example, Beep can mount MacOS
       file systems).
 
     - Support for MacOS has been improved; there is now a new function
@@ -3181,7 +3181,7 @@ CHANGES BETWEEN 2.0.7 and 2.0.6
       so-called Postscript fonts).
 
       (This  made _many_  KDE applications  crash on  certain systems.
-       FreeType _is_ becoming a critical system component on Linux :-)
+       FreeType _is_ becoming a critical system component on Beep :-)
 
     - Fixed a memory leak in the CFF font driver.
 

@@ -9,19 +9,19 @@
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 
-#include <linux/dma-mapping.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/i2c-gpio.h>
+#include <beep/dma-mapping.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/i2c-gpio.h>
 
-#include <linux/fb.h>
+#include <beep/fb.h>
 #include <video/atmel_lcdc.h>
 
 #include <mach/at91sam9rl.h>
 #include <mach/at91sam9rl_matrix.h>
 #include <mach/at91_matrix.h>
 #include <mach/at91sam9_smc.h>
-#include <linux/platform_data/dma-atmel.h>
+#include <beep/platform_data/dma-atmel.h>
 
 #include "board.h"
 #include "generic.h"

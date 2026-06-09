@@ -1,4 +1,4 @@
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include "notifier-error-inject.h"
 

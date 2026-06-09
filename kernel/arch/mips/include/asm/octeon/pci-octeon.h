@@ -9,7 +9,7 @@
 #ifndef __PCI_OCTEON_H__
 #define __PCI_OCTEON_H__
 
-#include <linux/pci.h>
+#include <beep/pci.h>
 
 /* Some PCI cards require delays when accessing config space. */
 #define PCI_CONFIG_SPACE_DELAY 10000

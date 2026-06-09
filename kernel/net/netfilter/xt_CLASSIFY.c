@@ -10,16 +10,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/ip.h>
 #include <net/checksum.h>
 
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_CLASSIFY.h>
-#include <linux/netfilter_arp.h>
+#include <beep/netfilter_ipv4.h>
+#include <beep/netfilter_ipv6.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_CLASSIFY.h>
+#include <beep/netfilter_arp.h>
 
 MODULE_AUTHOR("Patrick McHardy <kaber@trash.net>");
 MODULE_LICENSE("GPL");

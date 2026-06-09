@@ -33,15 +33,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/dma-mapping.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/dma-mapping.h>
 
 #include "musb_core.h"
 #include "musb_host.h"
@@ -1481,7 +1481,7 @@ done:
 	submit_urb ->
 		- if queue was empty, ProgramEndpoint
 		- first IN token is sent out (by setting ReqPkt)
-	LinuxIsr -> RxReady()
+	BeepIsr -> RxReady()
 	/\	=> first packet is received
 	|	- Set in mode 0 (DmaEnab, ~ReqPkt)
 	|		-> DMA Isr (transfer complete) -> RxReady()

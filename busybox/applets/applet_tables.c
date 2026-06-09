@@ -3,7 +3,7 @@
  * Applet table generator.
  * Runs on host and produces include/applet_tables.h
  *
- * Copyright (C) 2007 Denys Vlasenko <vda.linux@googlemail.com>
+ * Copyright (C) 2007 Denys Vlasenko <vda.beep@googlemail.com>
  *
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */

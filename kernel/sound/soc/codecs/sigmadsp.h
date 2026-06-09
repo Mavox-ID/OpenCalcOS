@@ -9,8 +9,8 @@
 #ifndef __SIGMA_FIRMWARE_H__
 #define __SIGMA_FIRMWARE_H__
 
-#include <linux/device.h>
-#include <linux/regmap.h>
+#include <beep/device.h>
+#include <beep/regmap.h>
 
 struct i2c_client;
 

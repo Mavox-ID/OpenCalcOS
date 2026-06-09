@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/proc-fa526.S: MMU functions for FA526
+ *  beep/arch/arm/mm/proc-fa526.S: MMU functions for FA526
  *
  *  Written by : Luke Lee
  *  Copyright (C) 2005 Faraday Corp.
@@ -14,8 +14,8 @@
  * These are the low level assembler for performing cache and TLB
  * functions on the fa526.
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/assembler.h>
 #include <asm/hwcap.h>
 #include <asm/pgtable-hwdef.h>

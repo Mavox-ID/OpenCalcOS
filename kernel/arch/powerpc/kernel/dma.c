@@ -5,13 +5,13 @@
  * directly mapped busses.
  */
 
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dma-debug.h>
-#include <linux/gfp.h>
-#include <linux/memblock.h>
-#include <linux/export.h>
-#include <linux/pci.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/dma-debug.h>
+#include <beep/gfp.h>
+#include <beep/memblock.h>
+#include <beep/export.h>
+#include <beep/pci.h>
 #include <asm/vio.h>
 #include <asm/bug.h>
 #include <asm/machdep.h>

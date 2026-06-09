@@ -6,13 +6,13 @@
  * This file is released under the GPLv2.
  */
 
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/acpi_io.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/acpi.h>
+#include <beep/acpi_io.h>
 #include <acpi/acpiosxf.h>
 
 /* ACPI NVS regions, APEI may use it */

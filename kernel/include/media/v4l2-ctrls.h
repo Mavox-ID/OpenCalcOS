@@ -21,8 +21,8 @@
 #ifndef _V4L2_CTRLS_H
 #define _V4L2_CTRLS_H
 
-#include <linux/list.h>
-#include <linux/videodev2.h>
+#include <beep/list.h>
+#include <beep/videodev2.h>
 
 /* forward references */
 struct file;

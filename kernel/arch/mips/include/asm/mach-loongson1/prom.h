@@ -10,9 +10,9 @@
 #ifndef __ASM_MACH_LOONGSON1_PROM_H
 #define __ASM_MACH_LOONGSON1_PROM_H
 
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <beep/io.h>
+#include <beep/init.h>
+#include <beep/irq.h>
 
 /* environment arguments from bootloader */
 extern unsigned long memsize, highmemsize;

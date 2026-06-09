@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-pxa/gumstix.c
+ *  beep/arch/arm/mach-pxa/gumstix.c
  *
  *  Support for the Gumstix motherboards.
  *
@@ -15,18 +15,18 @@
  *  Hughes
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/gpio.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/usb/gpio_vbus.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/gpio.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/usb/gpio_vbus.h>
 
 #include <asm/setup.h>
 #include <asm/memory.h>
@@ -41,7 +41,7 @@
 #include <asm/mach/flash.h>
 
 #include <mach/pxa25x.h>
-#include <linux/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/mmc-pxamci.h>
 #include <mach/udc.h>
 #include <mach/gumstix.h>
 

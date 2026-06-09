@@ -189,7 +189,7 @@ typedef struct drm_savage_private {
 	/* config/hardware-dependent function pointers */
 	int (*wait_fifo) (struct drm_savage_private * dev_priv, unsigned int n);
 	int (*wait_evnt) (struct drm_savage_private * dev_priv, uint16_t e);
-	/* Err, there is a macro wait_event in include/linux/wait.h.
+	/* Err, there is a macro wait_event in include/beep/wait.h.
 	 * Avoid unwanted macro expansion. */
 	void (*emit_clip_rect) (struct drm_savage_private * dev_priv,
 				const struct drm_clip_rect * pbox);

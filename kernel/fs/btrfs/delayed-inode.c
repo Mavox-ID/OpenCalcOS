@@ -17,7 +17,7 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include "delayed-inode.h"
 #include "disk-io.h"
 #include "transaction.h"

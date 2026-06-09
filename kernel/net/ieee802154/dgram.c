@@ -21,11 +21,11 @@
  * Dmitry Eremin-Solenikov <dbaryshkov@gmail.com>
  */
 
-#include <linux/net.h>
-#include <linux/module.h>
-#include <linux/if_arp.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <beep/net.h>
+#include <beep/module.h>
+#include <beep/if_arp.h>
+#include <beep/list.h>
+#include <beep/slab.h>
 #include <net/sock.h>
 #include <net/af_ieee802154.h>
 #include <net/ieee802154.h>

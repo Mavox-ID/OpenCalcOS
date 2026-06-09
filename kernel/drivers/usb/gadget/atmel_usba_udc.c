@@ -7,21 +7,21 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/list.h>
-#include <linux/platform_device.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/atmel_usba_udc.h>
-#include <linux/delay.h>
-#include <linux/platform_data/atmel.h>
+#include <beep/clk.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/list.h>
+#include <beep/platform_device.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
+#include <beep/usb/atmel_usba_udc.h>
+#include <beep/delay.h>
+#include <beep/platform_data/atmel.h>
 
 #include <asm/gpio.h>
 
@@ -32,8 +32,8 @@ static struct usba_udc the_udc;
 static struct usba_ep *usba_ep;
 
 #ifdef CONFIG_USB_GADGET_DEBUG_FS
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
+#include <beep/debugfs.h>
+#include <beep/uaccess.h>
 
 static int queue_dbg_open(struct inode *inode, struct file *file)
 {

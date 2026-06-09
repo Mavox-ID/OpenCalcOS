@@ -20,16 +20,16 @@
 #ifndef __POWERPC_KVM_HOST_H__
 #define __POWERPC_KVM_HOST_H__
 
-#include <linux/mutex.h>
-#include <linux/hrtimer.h>
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/kvm_types.h>
-#include <linux/threads.h>
-#include <linux/spinlock.h>
-#include <linux/kvm_para.h>
-#include <linux/list.h>
-#include <linux/atomic.h>
+#include <beep/mutex.h>
+#include <beep/hrtimer.h>
+#include <beep/interrupt.h>
+#include <beep/types.h>
+#include <beep/kvm_types.h>
+#include <beep/threads.h>
+#include <beep/spinlock.h>
+#include <beep/kvm_para.h>
+#include <beep/list.h>
+#include <beep/atomic.h>
 #include <asm/kvm_asm.h>
 #include <asm/processor.h>
 #include <asm/page.h>
@@ -47,7 +47,7 @@
 #endif
 
 #if !defined(CONFIG_KVM_440)
-#include <linux/mmu_notifier.h>
+#include <beep/mmu_notifier.h>
 
 #define KVM_ARCH_WANT_MMU_NOTIFIER
 

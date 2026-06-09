@@ -1,5 +1,5 @@
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 #define AD_F_CS4231     0x0001  /* Returned if a CS4232 (or compatible) detected */
 #define AD_F_CS4248     0x0001  /* Returned if a CS4248 (or compatible) detected */

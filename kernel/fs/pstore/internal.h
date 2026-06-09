@@ -1,9 +1,9 @@
 #ifndef __PSTORE_INTERNAL_H__
 #define __PSTORE_INTERNAL_H__
 
-#include <linux/types.h>
-#include <linux/time.h>
-#include <linux/pstore.h>
+#include <beep/types.h>
+#include <beep/time.h>
+#include <beep/pstore.h>
 
 #if NR_CPUS <= 2 && defined(CONFIG_ARM_THUMB)
 #define PSTORE_CPU_IN_IP 0x1

@@ -13,14 +13,14 @@
  * 10 bit touch screen interface.
  */
 
-#include <linux/module.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/tps6507x.h>
-#include <linux/input/tps6507x-ts.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/workqueue.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/platform_device.h>
+#include <beep/mfd/tps6507x.h>
+#include <beep/input/tps6507x-ts.h>
+#include <beep/delay.h>
 
 #define TSC_DEFAULT_POLL_PERIOD 30 /* ms */
 #define TPS_DEFAULT_MIN_PRESSURE 0x30

@@ -1,8 +1,8 @@
 #ifndef __NET_PKT_SCHED_H
 #define __NET_PKT_SCHED_H
 
-#include <linux/jiffies.h>
-#include <linux/ktime.h>
+#include <beep/jiffies.h>
+#include <beep/ktime.h>
 #include <net/sch_generic.h>
 
 struct qdisc_walker {

@@ -20,8 +20,8 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <beep/list.h>
+#include <beep/slab.h>
 
 #include "spufs.h"
 

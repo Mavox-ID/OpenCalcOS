@@ -6,12 +6,12 @@
  * Copyright (C) 2008 Maxime Bizon <mbizon@freebox.fr>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/bootmem.h>
-#include <linux/ioport.h>
-#include <linux/pm.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/bootmem.h>
+#include <beep/ioport.h>
+#include <beep/pm.h>
 #include <asm/bootinfo.h>
 #include <asm/time.h>
 #include <asm/reboot.h>

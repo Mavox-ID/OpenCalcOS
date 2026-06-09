@@ -3,10 +3,10 @@
 
 #ifdef __KERNEL__
 
-#include <linux/mm_types.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-attrs.h>
-#include <linux/dma-debug.h>
+#include <beep/mm_types.h>
+#include <beep/scatterlist.h>
+#include <beep/dma-attrs.h>
+#include <beep/dma-debug.h>
 
 #include <asm-generic/dma-coherent.h>
 #include <asm/memory.h>

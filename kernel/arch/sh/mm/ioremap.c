@@ -12,12 +12,12 @@
  * Public License. See the file "COPYING" in the main directory of this
  * archive for more details.
  */
-#include <linux/vmalloc.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
-#include <linux/io.h>
+#include <beep/vmalloc.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/pci.h>
+#include <beep/io.h>
 #include <asm/page.h>
 #include <asm/pgalloc.h>
 #include <asm/addrspace.h>

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m32r/lib/memcpy.S
+ *  beep/arch/m32r/lib/memcpy.S
  *
  *  Copyright (C) 2001  Hiroyuki Kondo, and Hirokazu Takata
  *  Copyright (C) 2004  Hirokazu Takata
@@ -12,7 +12,7 @@
  */
 
 	.text
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 
 #ifdef CONFIG_ISA_DUAL_ISSUE

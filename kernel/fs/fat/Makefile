@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux fat filesystem support.
+# Makefile for the Beep fat filesystem support.
 #
 
 obj-$(CONFIG_FAT_FS) += fat.o

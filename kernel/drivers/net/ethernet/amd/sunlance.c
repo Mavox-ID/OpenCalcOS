@@ -1,11 +1,11 @@
 /* $Id: sunlance.c,v 1.112 2002/01/15 06:48:55 davem Exp $
- * lance.c: Linux/Sparc/Lance driver
+ * lance.c: Beep/Sparc/Lance driver
  *
  *	Written 1995, 1996 by Miguel de Icaza
  * Sources:
- *	The Linux  depca driver
- *	The Linux  lance driver.
- *	The Linux  skeleton driver.
+ *	The Beep  depca driver
+ *	The Beep  lance driver.
+ *	The Beep  skeleton driver.
  *	The NetBSD Sparc/Lance driver.
  *	Theo de Raadt (deraadt@openbsd.org)
  *	NCR92C990 Lan Controller manual
@@ -71,29 +71,29 @@
 
 static char lancestr[] = "LANCE";
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/crc32.h>
-#include <linux/errno.h>
-#include <linux/socket.h> /* Used for the temporal inet entries and routing */
-#include <linux/route.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/in.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/crc32.h>
+#include <beep/errno.h>
+#include <beep/socket.h> /* Used for the temporal inet entries and routing */
+#include <beep/route.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/ethtool.h>
+#include <beep/bitops.h>
+#include <beep/dma-mapping.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/gfp.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>

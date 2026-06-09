@@ -19,10 +19,10 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  *
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sh_clk.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/sh_clk.h>
+#include <beep/export.h>
 
 int __init shmobile_clk_init(void)
 {

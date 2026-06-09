@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/kernel/cpu-ucv2.c: clock scaling for the UniCore-II
+ * beep/arch/unicore32/kernel/cpu-ucv2.c: clock scaling for the UniCore-II
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -11,11 +11,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/clk.h>
+#include <beep/cpufreq.h>
 
 #include <mach/hardware.h>
 

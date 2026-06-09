@@ -8,20 +8,20 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/usb.h>
-#include <linux/workqueue.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/usb.h>
+#include <beep/workqueue.h>
 
-#include <linux/regulator/consumer.h>
+#include <beep/regulator/consumer.h>
 
-#include <linux/usb/gadget.h>
-#include <linux/usb/gpio_vbus.h>
-#include <linux/usb/otg.h>
+#include <beep/usb/gadget.h>
+#include <beep/usb/gpio_vbus.h>
+#include <beep/usb/otg.h>
 
 
 /*

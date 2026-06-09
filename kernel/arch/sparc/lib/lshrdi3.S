@@ -1,4 +1,4 @@
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 ENTRY(__lshrdi3)
 	cmp	%o2, 0

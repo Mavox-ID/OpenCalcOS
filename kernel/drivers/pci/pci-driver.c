@@ -8,17 +8,17 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/mempolicy.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/cpu.h>
-#include <linux/pm_runtime.h>
-#include <linux/suspend.h>
+#include <beep/pci.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/mempolicy.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/cpu.h>
+#include <beep/pm_runtime.h>
+#include <beep/suspend.h>
 #include "pci.h"
 
 struct pci_dynid {

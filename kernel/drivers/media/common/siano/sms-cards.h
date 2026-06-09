@@ -1,7 +1,7 @@
 /*
  *  Card-specific functions for the Siano SMS1xxx USB dongle
  *
- *  Copyright (c) 2008 Michael Krufky <mkrufky@linuxtv.org>
+ *  Copyright (c) 2008 Michael Krufky <mkrufky@beeptv.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License version 2 as
@@ -20,7 +20,7 @@
 #ifndef __SMS_CARDS_H__
 #define __SMS_CARDS_H__
 
-#include <linux/usb.h>
+#include <beep/usb.h>
 #include "smscoreapi.h"
 #include "smsir.h"
 

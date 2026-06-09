@@ -2,20 +2,20 @@
 #define SUPPORT_SYSRQ
 #endif
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/serial_core.h>
-#include <linux/tty_flip.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
+#include <beep/console.h>
+#include <beep/sysrq.h>
+#include <beep/serial_core.h>
+#include <beep/tty_flip.h>
+#include <beep/slab.h>
+#include <beep/clk.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
 
-#include <linux/platform_data/efm32-uart.h>
+#include <beep/platform_data/efm32-uart.h>
 
 #define DRIVER_NAME "efm32-uart"
 #define DEV_NAME "ttyefm"

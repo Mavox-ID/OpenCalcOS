@@ -7,14 +7,14 @@
  *  2 of the License, or (at your option) any later version.
  *
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/of.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/irq.h>
+#include <beep/smp.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/cpu.h>
+#include <beep/of.h>
 
 #include <asm/smp.h>
 #include <asm/irq.h>
@@ -121,7 +121,7 @@ static unsigned int icp_hv_get_irq(void)
 		return irq;
 	}
 
-	/* We don't have a linux mapping, so have rtas mask it. */
+	/* We don't have a beep mapping, so have rtas mask it. */
 	xics_mask_unknown_vec(vec);
 
 	/* We might learn about it later, so EOI it */

@@ -5,9 +5,9 @@
  *	(C) 2007,2011 Bartlomiej Zolnierkiewicz
  *
  *    Based in part on drivers/ide/pci/aec62xx.c
- *	Copyright (C) 1999-2002	Andre Hedrick <andre@linux-ide.org>
+ *	Copyright (C) 1999-2002	Andre Hedrick <andre@beep-ide.org>
  *	865/865R fixes for Macintosh card version from a patch to the old
- *		driver by Thibaut VARENE <varenet@parisc-linux.org>
+ *		driver by Thibaut VARENE <varenet@parisc-beep.org>
  *	When setting the PCI latency we must set 0x80 or higher for burst
  *		performance Alessandro Zummo <alessandro.zummo@towertech.it>
  *
@@ -16,16 +16,16 @@
  *	Clock detect
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/device.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
-#include <linux/ata.h>
+#include <beep/libata.h>
+#include <beep/ata.h>
 
 #define DRV_NAME	"pata_artop"
 #define DRV_VERSION	"0.4.6"

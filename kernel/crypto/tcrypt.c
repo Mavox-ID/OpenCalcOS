@@ -5,7 +5,7 @@
  * (e.g. a char device).
  *
  * Copyright (c) 2002 James Morris <jmorris@intercode.com.au>
- * Copyright (c) 2002 Jean-Francois Dive <jef@linuxbe.org>
+ * Copyright (c) 2002 Jean-Francois Dive <jef@beepbe.org>
  * Copyright (c) 2007 Nokia Siemens Networks
  *
  * Updated RFC4106 AES-GCM testing.
@@ -23,16 +23,16 @@
  */
 
 #include <crypto/hash.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/string.h>
-#include <linux/moduleparam.h>
-#include <linux/jiffies.h>
-#include <linux/timex.h>
-#include <linux/interrupt.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/gfp.h>
+#include <beep/module.h>
+#include <beep/scatterlist.h>
+#include <beep/string.h>
+#include <beep/moduleparam.h>
+#include <beep/jiffies.h>
+#include <beep/timex.h>
+#include <beep/interrupt.h>
 #include "tcrypt.h"
 #include "internal.h"
 

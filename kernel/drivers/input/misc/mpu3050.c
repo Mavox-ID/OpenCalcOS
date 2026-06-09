@@ -4,7 +4,7 @@
  * Copyright (C) 2011 Wistron Co.Ltd
  * Joseph Lai <joseph_lai@wistron.com>
  *
- * Trimmed down by Alan Cox <alan@linux.intel.com> to produce this version
+ * Trimmed down by Alan Cox <alan@beep.intel.com> to produce this version
  *
  * This is a 'lite' version of the driver, while we consider the right way
  * to present the other features to user space. In particular it requires the
@@ -29,17 +29,17 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/mutex.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/input.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/pm_runtime.h>
 
 #define MPU3050_CHIP_ID		0x69
 

@@ -7,9 +7,9 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/module.h>
 
 #include <asm/checksum.h>
 #include <asm/uaccess.h>

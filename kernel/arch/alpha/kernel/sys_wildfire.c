@@ -1,18 +1,18 @@
 /*
- *  linux/arch/alpha/kernel/sys_wildfire.c
+ *  beep/arch/alpha/kernel/sys_wildfire.c
  *
  *  Wildfire support.
  *
  *  Copyright (C) 2000 Andrea Arcangeli <andrea@suse.de> SuSE
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
 
 #include <asm/ptrace.h>
 #include <asm/dma.h>

@@ -20,12 +20,12 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/i2c/tsc2007.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/i2c.h>
+#include <beep/i2c/tsc2007.h>
 
 #define TSC2007_MEASURE_TEMP0		(0x0 << 4)
 #define TSC2007_MEASURE_AUX		(0x2 << 4)

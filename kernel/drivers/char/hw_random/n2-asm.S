@@ -2,7 +2,7 @@
  *
  * Copyright (C) 2008 David S. Miller <davem@davemloft.net>
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/hypervisor.h>
 #include "n2rng.h"
 

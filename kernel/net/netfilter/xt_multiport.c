@@ -9,16 +9,16 @@
  * published by the Free Software Foundation.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/udp.h>
-#include <linux/skbuff.h>
-#include <linux/in.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/udp.h>
+#include <beep/skbuff.h>
+#include <beep/in.h>
 
-#include <linux/netfilter/xt_multiport.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <beep/netfilter/xt_multiport.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter_ipv4/ip_tables.h>
+#include <beep/netfilter_ipv6/ip6_tables.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Netfilter Core Team <coreteam@netfilter.org>");

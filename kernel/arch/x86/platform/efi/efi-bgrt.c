@@ -10,10 +10,10 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/acpi.h>
-#include <linux/efi.h>
-#include <linux/efi-bgrt.h>
+#include <beep/kernel.h>
+#include <beep/acpi.h>
+#include <beep/efi.h>
+#include <beep/efi-bgrt.h>
 
 struct acpi_table_bgrt *bgrt_tab;
 void *bgrt_image;

@@ -8,9 +8,9 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/bitmap.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/bitmap.h>
 #include <asm/msi_bitmap.h>
 #include <asm/setup.h>
 

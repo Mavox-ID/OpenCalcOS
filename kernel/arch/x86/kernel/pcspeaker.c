@@ -1,6 +1,6 @@
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/init.h>
+#include <beep/platform_device.h>
+#include <beep/err.h>
+#include <beep/init.h>
 
 static __init int add_pcspkr(void)
 {

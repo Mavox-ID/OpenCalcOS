@@ -23,20 +23,20 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/capability.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/uio.h>
-#include <linux/sched.h>
-#include <linux/splice.h>
-#include <linux/mount.h>
-#include <linux/writeback.h>
-#include <linux/falloc.h>
-#include <linux/quotaops.h>
-#include <linux/blkdev.h>
+#include <beep/capability.h>
+#include <beep/fs.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/highmem.h>
+#include <beep/pagemap.h>
+#include <beep/uio.h>
+#include <beep/sched.h>
+#include <beep/splice.h>
+#include <beep/mount.h>
+#include <beep/writeback.h>
+#include <beep/falloc.h>
+#include <beep/quotaops.h>
+#include <beep/blkdev.h>
 
 #include <cluster/masklog.h>
 

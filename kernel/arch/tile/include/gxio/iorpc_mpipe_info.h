@@ -13,8 +13,8 @@
  */
 
 /* This file is machine-generated; DO NOT EDIT! */
-#ifndef __GXIO_MPIPE_INFO_LINUX_RPC_H__
-#define __GXIO_MPIPE_INFO_LINUX_RPC_H__
+#ifndef __GXIO_MPIPE_INFO_BEEP_RPC_H__
+#define __GXIO_MPIPE_INFO_BEEP_RPC_H__
 
 #include <hv/iorpc.h>
 
@@ -22,8 +22,8 @@
 #include <asm/page.h>
 #include <gxio/kiorpc.h>
 #include <gxio/mpipe.h>
-#include <linux/string.h>
-#include <linux/module.h>
+#include <beep/string.h>
+#include <beep/module.h>
 #include <asm/pgtable.h>
 
 
@@ -43,4 +43,4 @@ int gxio_mpipe_info_get_mmio_base(gxio_mpipe_info_context_t * context,
 int gxio_mpipe_info_check_mmio_offset(gxio_mpipe_info_context_t * context,
 				      unsigned long offset, unsigned long size);
 
-#endif /* !__GXIO_MPIPE_INFO_LINUX_RPC_H__ */
+#endif /* !__GXIO_MPIPE_INFO_BEEP_RPC_H__ */

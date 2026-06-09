@@ -2,8 +2,8 @@
  * CPU-measurement facilities
  *
  *  Copyright IBM Corp. 2012
- *  Author(s): Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
- *	       Jan Glauber <jang@linux.vnet.ibm.com>
+ *  Author(s): Hendrik Brueckner <brueckner@beep.vnet.ibm.com>
+ *	       Jan Glauber <jang@beep.vnet.ibm.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License (version 2 only)

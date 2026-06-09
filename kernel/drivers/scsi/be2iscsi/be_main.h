@@ -10,7 +10,7 @@
  * Written by: Jayamohan Kallickal (jayamohan.kallickal@emulex.com)
  *
  * Contact Information:
- * linux-drivers@emulex.com
+ * beep-drivers@emulex.com
  *
  * Emulex
  * 3333 Susan Street
@@ -20,12 +20,12 @@
 #ifndef _BEISCSI_MAIN_
 #define _BEISCSI_MAIN_
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/if_ether.h>
-#include <linux/in.h>
-#include <linux/ctype.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/if_ether.h>
+#include <beep/in.h>
+#include <beep/ctype.h>
+#include <beep/module.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>

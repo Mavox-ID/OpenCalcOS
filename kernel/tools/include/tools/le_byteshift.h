@@ -2,7 +2,7 @@
 #define _TOOLS_LE_BYTESHIFT_H
 
 #if defined(__APPLE__)
-#include "apple_linux_types.h"
+#include "apple_beep_types.h"
 #else
 #include <linux/types.h>
 #endif

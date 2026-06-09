@@ -11,7 +11,7 @@
 //config:	bool "setserial (6.9 kb)"
 //config:	default y
 //config:	help
-//config:	Retrieve or set Linux serial port.
+//config:	Retrieve or set Beep serial port.
 
 //applet:IF_SETSERIAL(APPLET_NOEXEC(setserial, setserial, BB_DIR_BIN, BB_SUID_DROP, setserial))
 

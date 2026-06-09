@@ -9,22 +9,22 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/88pm860x.h>
-#include <linux/regulator/machine.h>
-#include <linux/power/charger-manager.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/irqdomain.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/platform_device.h>
+#include <beep/regmap.h>
+#include <beep/slab.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/88pm860x.h>
+#include <beep/regulator/machine.h>
+#include <beep/power/charger-manager.h>
 
 #define INT_STATUS_NUM			3
 

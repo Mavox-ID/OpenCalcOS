@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/net/ethernet/ibm/ehea/ehea_qmr.h
+ *  beep/drivers/net/ethernet/ibm/ehea/ehea_qmr.h
  *
  *  eHEA ethernet device driver for IBM eServer System p
  *
@@ -29,7 +29,7 @@
 #ifndef __EHEA_QMR_H__
 #define __EHEA_QMR_H__
 
-#include <linux/prefetch.h>
+#include <beep/prefetch.h>
 #include "ehea.h"
 #include "ehea_hw.h"
 

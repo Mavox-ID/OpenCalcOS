@@ -9,11 +9,11 @@
  * Adapted to sparc64 by David S. Miller davem@davemloft.net
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/export.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/irq.h>
+#include <beep/export.h>
+#include <beep/init.h>
 
 #include <asm/mdesc.h>
 #include <asm/vio.h>

@@ -11,10 +11,10 @@
  * Licensed under the GNU/GPL. See COPYING for details.
  */
 
-#include <linux/pci.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/ssb/ssb.h>
+#include <beep/pci.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/ssb/ssb.h>
 
 
 #ifdef CONFIG_PM

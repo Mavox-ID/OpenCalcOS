@@ -1,7 +1,7 @@
 #ifndef __ASM_SH_TRAPS_H
 #define __ASM_SH_TRAPS_H
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 
 #ifdef CONFIG_SUPERH32
 # include <asm/traps_32.h>

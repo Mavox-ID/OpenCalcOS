@@ -1,5 +1,5 @@
 /*
- *  Syncookies implementation for the Linux kernel
+ *  Syncookies implementation for the Beep kernel
  *
  *  Copyright (C) 1997 Andi Kleen
  *  Based on ideas by D.J.Bernstein and Eric Schenk.
@@ -10,12 +10,12 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/tcp.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/cryptohash.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
+#include <beep/tcp.h>
+#include <beep/slab.h>
+#include <beep/random.h>
+#include <beep/cryptohash.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
 #include <net/tcp.h>
 #include <net/route.h>
 
@@ -174,7 +174,7 @@ __u32 cookie_v4_init_sequence(struct sock *sk, struct sk_buff *skb, __u16 *mssp)
 			break;
 	*mssp = msstab[mssind];
 
-	NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_SYNCOOKIESSENT);
+	NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_SYNCOOKIESSENT);
 
 	return secure_tcp_syn_cookie(iph->saddr, iph->daddr,
 				     th->source, th->dest, ntohl(th->seq),
@@ -285,11 +285,11 @@ struct sock *cookie_v4_check(struct sock *sk, struct sk_buff *skb,
 
 	if (tcp_synq_no_recent_overflow(sk) ||
 	    (mss = cookie_check(skb, cookie)) == 0) {
-		NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_SYNCOOKIESFAILED);
+		NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_SYNCOOKIESFAILED);
 		goto out;
 	}
 
-	NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_SYNCOOKIESRECV);
+	NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_SYNCOOKIESRECV);
 
 	/* check for timestamp cookie support */
 	memset(&tcp_opt, 0, sizeof(tcp_opt));

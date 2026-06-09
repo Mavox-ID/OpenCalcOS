@@ -17,9 +17,9 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/export.h>
 
 #include "fuse.h"
 #include "iomap.h"

@@ -19,7 +19,7 @@
 #include "hardware.h"
 #include "message.h"
 #include "card.h"
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 /*
  *

@@ -23,19 +23,19 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/sched.h>
-#include <linux/cpufreq.h>
-#include <linux/compiler.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/smp.h>
+#include <beep/sched.h>
+#include <beep/cpufreq.h>
+#include <beep/compiler.h>
+#include <beep/slab.h>
 
-#include <linux/acpi.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
+#include <beep/acpi.h>
+#include <beep/io.h>
+#include <beep/spinlock.h>
+#include <beep/uaccess.h>
 
 #include <acpi/processor.h>
 

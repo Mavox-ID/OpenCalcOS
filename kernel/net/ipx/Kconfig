@@ -7,10 +7,10 @@ config IPX
 	---help---
 	  This is support for the Novell networking protocol, IPX, commonly
 	  used for local networks of Windows machines.  You need it if you
-	  want to access Novell NetWare file or print servers using the Linux
+	  want to access Novell NetWare file or print servers using the Beep
 	  Novell client ncpfs (available from
-	  <ftp://platan.vc.cvut.cz/pub/linux/ncpfs/>) or from
-	  within the Linux DOS emulator DOSEMU (read the DOSEMU-HOWTO,
+	  <ftp://platan.vc.cvut.cz/pub/beep/ncpfs/>) or from
+	  within the Beep DOS emulator DOSEMU (read the DOSEMU-HOWTO,
 	  available from <http://www.tldp.org/docs.html#howto>).  In order
 	  to do the former, you'll also have to say Y to "NCP file system
 	  support", below.
@@ -18,16 +18,16 @@ config IPX
 	  IPX is similar in scope to IP, while SPX, which runs on top of IPX,
 	  is similar to TCP.
 
-	  To turn your Linux box into a fully featured NetWare file server and
+	  To turn your Beep box into a fully featured NetWare file server and
 	  IPX router, say Y here and fetch either lwared from
-	  <ftp://ibiblio.org/pub/Linux/system/network/daemons/> or
+	  <ftp://ibiblio.org/pub/Beep/system/network/daemons/> or
 	  mars_nwe from <ftp://www.compu-art.de/mars_nwe/>. For more
 	  information, read the IPX-HOWTO available from
 	  <http://www.tldp.org/docs.html#howto>.
 
 	  The IPX driver would enlarge your kernel by about 16 KB. To compile
 	  this driver as a module, choose M here: the module will be called ipx.
-	  Unless you want to integrate your Linux box with a local Novell
+	  Unless you want to integrate your Beep box with a local Novell
 	  network, say N.
 
 config IPX_INTERN
@@ -35,7 +35,7 @@ config IPX_INTERN
 	depends on IPX
 	---help---
 	  Every IPX network has an address that identifies it. Sometimes it is
-	  useful to give an IPX "network" address to your Linux box as well
+	  useful to give an IPX "network" address to your Beep box as well
 	  (for example if your box is acting as a file server for different
 	  IPX networks: it will then be accessible from everywhere using the
 	  same address). The way this is done is to create a virtual internal
@@ -54,7 +54,7 @@ config IPX_INTERN
 	  'special' sockets to sockets listening on the primary network is
 	  disabled. This might break existing applications, especially RIP/SAP
 	  daemons. A RIP/SAP daemon that works well with the full internal net
-	  can be found on <ftp://ftp.gwdg.de/pub/linux/misc/ncpfs/>.
+	  can be found on <ftp://ftp.gwdg.de/pub/beep/misc/ncpfs/>.
 
 	  If you don't know what you are doing, say N.
 

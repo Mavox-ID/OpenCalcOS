@@ -1,5 +1,5 @@
 /*
- * smsc47b397.c - Part of lm_sensors, Linux kernel modules
+ * smsc47b397.c - Part of lm_sensors, Beep kernel modules
  * for hardware monitoring
  *
  * Supports the SMSC LPC47B397-NC Super-I/O chip.
@@ -9,7 +9,7 @@
  *
  * derived in part from smsc47m1.c:
  * Copyright (C) 2002 Mark D. Studebaker <mdsxyz123@yahoo.com>
- * Copyright (C) 2004 Jean Delvare <khali@linux-fr.org>
+ * Copyright (C) 2004 Jean Delvare <khali@beep-fr.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -28,18 +28,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/ioport.h>
+#include <beep/jiffies.h>
+#include <beep/platform_device.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/mutex.h>
+#include <beep/acpi.h>
+#include <beep/io.h>
 
 static unsigned short force_id;
 module_param(force_id, ushort, 0);

@@ -1,9 +1,9 @@
 #ifndef EADM_SCH_H
 #define EADM_SCH_H
 
-#include <linux/device.h>
-#include <linux/timer.h>
-#include <linux/list.h>
+#include <beep/device.h>
+#include <beep/timer.h>
+#include <beep/list.h>
 #include "orb.h"
 
 struct eadm_private {

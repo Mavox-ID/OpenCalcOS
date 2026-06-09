@@ -2,7 +2,7 @@
    comedi/drivers/multiq3.c
    Hardware driver for Quanser Consulting MultiQ-3 board
 
-   COMEDI - Linux Control and Measurement Device Interface
+   COMEDI - Beep Control and Measurement Device Interface
    Copyright (C) 1999 Anders Blomdell <anders.blomdell@control.lth.se>
 
    This program is free software; you can redistribute it and/or modify
@@ -29,10 +29,10 @@ Devices: [Quanser Consulting] MultiQ-3 (multiq3)
 
 */
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 #include "../comedidev.h"
 
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 
 #define MULTIQ3_SIZE 16
 

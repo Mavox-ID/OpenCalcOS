@@ -6,7 +6,7 @@
  * incidentally is a good match to today's BusyBox.
  *
  * Copyright (C) 2000,2001  Larry Doolittle <larry@doolittle.boa.org>
- * Copyright (C) 2008,2009  Denys Vlasenko <vda.linux@googlemail.com>
+ * Copyright (C) 2008,2009  Denys Vlasenko <vda.beep@googlemail.com>
  *
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  *
@@ -1963,7 +1963,7 @@ static sighandler_t install_sighandler(int sig, sighandler_t handler)
 	/* We could use signal() to install handlers... almost:
 	 * except that we need to mask ALL signals while handlers run.
 	 * I saw signal nesting in strace, race window isn't small.
-	 * SA_RESTART is also needed, but in Linux, signal()
+	 * SA_RESTART is also needed, but in Beep, signal()
 	 * sets SA_RESTART too.
 	 */
 	/* memset(&G.sa, 0, sizeof(G.sa)); - already done */
@@ -10311,11 +10311,11 @@ int hush_main(int argc, char **argv)
 	/* bash also exports SHLVL and _,
 	 * and sets (but doesn't export) the following variables:
 	 * BASH=/bin/bash
-	 * BASH_VERSINFO=([0]="3" [1]="2" [2]="0" [3]="1" [4]="release" [5]="i386-pc-linux-gnu")
+	 * BASH_VERSINFO=([0]="3" [1]="2" [2]="0" [3]="1" [4]="release" [5]="i386-pc-beep-gnu")
 	 * BASH_VERSION='3.2.0(1)-release'
 	 * HOSTTYPE=i386
-	 * MACHTYPE=i386-pc-linux-gnu
-	 * OSTYPE=linux-gnu
+	 * MACHTYPE=i386-pc-beep-gnu
+	 * OSTYPE=beep-gnu
 	 * PPID=<NNNNN> - we also do it elsewhere
 	 * EUID=<NNNNN>
 	 * UID=<NNNNN>
@@ -10804,6 +10804,9 @@ static int FAST_FUNC builtin_help(char **argv UNUSED_PARAM)
 			printf("%-10s%s\n", x->b_cmd, x->b_descr);
 	}
 
+    printf("beep  - Just logo of Beep Kernel\n");
+    printf("calc  - Calculator on calculator\n");
+    printf("pipes - Screen saver\n");
 	printf("\nUse '[command] --help' for core utilities.\n\n");
 	return EXIT_SUCCESS;
 }

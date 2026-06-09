@@ -13,10 +13,10 @@
  * See the GNU General Public License version 2 for more details.
  */
 
-#include <linux/if_arp.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/export.h>
+#include <beep/if_arp.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/export.h>
 #include <net/llc.h>
 #include <net/llc_pdu.h>
 

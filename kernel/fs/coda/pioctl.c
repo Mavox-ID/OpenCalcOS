@@ -1,27 +1,27 @@
 /*
  * Pioctl operations for Coda.
  * Original version: (C) 1996 Peter Braam
- * Rewritten for Linux 2.1: (C) 1997 Carnegie Mellon University
+ * Rewritten for Beep 2.1: (C) 1997 Carnegie Mellon University
  *
  * Carnegie Mellon encourages users of this code to contribute improvements
  * to the Coda project. Contact Peter Braam <coda@cs.cmu.edu>.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/namei.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/time.h>
+#include <beep/fs.h>
+#include <beep/stat.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/namei.h>
+#include <beep/module.h>
 #include <asm/uaccess.h>
 
-#include <linux/coda.h>
-#include <linux/coda_psdev.h>
+#include <beep/coda.h>
+#include <beep/coda_psdev.h>
 
-#include "coda_linux.h"
+#include "coda_beep.h"
 
 /* pioctl ops */
 static int coda_ioctl_permission(struct inode *inode, int mask);

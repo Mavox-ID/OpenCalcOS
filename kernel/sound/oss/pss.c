@@ -6,7 +6,7 @@
  *
  * Copyright (C) by Hannu Savolainen 1993-1997
  *
- * OSS/Free for Linux is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
+ * OSS/Free for Beep is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
  * Version 2 (June 1991). See the "COPYING" file distributed with this software
  * for more info.
  *
@@ -50,16 +50,16 @@
  *          setting is the previous hardcoded setting "/etc/sound/pss_synth".
  * 00-03-03: Christoph Hellwig <chhellwig@infradead.org>
  *	    Adapted to module_init/module_exit
- * 11-10-2000: Bartlomiej Zolnierkiewicz <bkz@linux-ide.org>
+ * 11-10-2000: Bartlomiej Zolnierkiewicz <bkz@beep-ide.org>
  *	    Added __init to probe_pss(), attach_pss() and probe_pss_mpu()
  * 02-Jan-2001: Chris Rankin
  *          Specify that this module owns the coprocessor
  */
 
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
 
 #include "sound_config.h"
 #include "sound_firmware.h"

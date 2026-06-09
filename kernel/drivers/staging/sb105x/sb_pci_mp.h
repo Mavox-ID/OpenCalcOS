@@ -1,32 +1,32 @@
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/serial_reg.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/serial.h>
+#include <beep/serial_reg.h>
+#include <beep/ioport.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/tty_driver.h>
-#include <linux/pci.h>
-#include <linux/circ_buf.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/wait.h>
+#include <beep/tty_driver.h>
+#include <beep/pci.h>
+#include <beep/circ_buf.h>
 
 #include <asm/uaccess.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/segment.h>
 #include <asm/serial.h>
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 
-#include <linux/parport.h>
-#include <linux/ctype.h>
-#include <linux/poll.h>
+#include <beep/parport.h>
+#include <beep/ctype.h>
+#include <beep/poll.h>
 
 
 #define MP_TERMIOS  ktermios

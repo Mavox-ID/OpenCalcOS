@@ -22,21 +22,21 @@
  * an SMP box will direct the access to CPU %d.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/fcntl.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/smp.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/uaccess.h>
-#include <linux/gfp.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/fcntl.h>
+#include <beep/init.h>
+#include <beep/poll.h>
+#include <beep/smp.h>
+#include <beep/major.h>
+#include <beep/fs.h>
+#include <beep/device.h>
+#include <beep/cpu.h>
+#include <beep/notifier.h>
+#include <beep/uaccess.h>
+#include <beep/gfp.h>
 
 #include <asm/processor.h>
 #include <asm/msr.h>

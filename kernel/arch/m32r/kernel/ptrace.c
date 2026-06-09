@@ -1,5 +1,5 @@
 /*
- * linux/arch/m32r/kernel/ptrace.c
+ * beep/arch/m32r/kernel/ptrace.c
  *
  * Copyright (C) 2002  Hirokazu Takata, Takeo Takahashi
  * Copyright (C) 2004  Hirokazu Takata, Kei Sakamoto
@@ -14,16 +14,16 @@
  *   Copyright (C) 2000 Russell King
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/smp.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/string.h>
-#include <linux/signal.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/err.h>
+#include <beep/smp.h>
+#include <beep/errno.h>
+#include <beep/ptrace.h>
+#include <beep/user.h>
+#include <beep/string.h>
+#include <beep/signal.h>
 
 #include <asm/cacheflush.h>
 #include <asm/io.h>

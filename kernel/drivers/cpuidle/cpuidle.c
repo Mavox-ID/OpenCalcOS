@@ -8,16 +8,16 @@
  * This code is licenced under the GPL.
  */
 
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/notifier.h>
-#include <linux/pm_qos.h>
-#include <linux/cpu.h>
-#include <linux/cpuidle.h>
-#include <linux/ktime.h>
-#include <linux/hrtimer.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/mutex.h>
+#include <beep/sched.h>
+#include <beep/notifier.h>
+#include <beep/pm_qos.h>
+#include <beep/cpu.h>
+#include <beep/cpuidle.h>
+#include <beep/ktime.h>
+#include <beep/hrtimer.h>
+#include <beep/module.h>
 #include <trace/events/power.h>
 
 #include "cpuidle.h"

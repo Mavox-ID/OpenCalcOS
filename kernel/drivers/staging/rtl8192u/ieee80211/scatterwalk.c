@@ -13,10 +13,10 @@
  * any later version.
  *
  */
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/pagemap.h>
+#include <beep/highmem.h>
 #include <asm/scatterlist.h>
 #include "internal.h"
 #include "scatterwalk.h"

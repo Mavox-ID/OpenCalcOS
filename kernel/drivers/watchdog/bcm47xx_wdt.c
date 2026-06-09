@@ -12,21 +12,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/reboot.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/watchdog.h>
-#include <linux/timer.h>
-#include <linux/jiffies.h>
-#include <linux/ssb/ssb_embedded.h>
+#include <beep/bitops.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/miscdevice.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/reboot.h>
+#include <beep/types.h>
+#include <beep/uaccess.h>
+#include <beep/watchdog.h>
+#include <beep/timer.h>
+#include <beep/jiffies.h>
+#include <beep/ssb/ssb_embedded.h>
 #include <asm/mach-bcm47xx/bcm47xx.h>
 
 #define DRV_NAME		"bcm47xx_wdt"

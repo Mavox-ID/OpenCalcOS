@@ -3,7 +3,7 @@
  * Mini mv implementation for busybox
  *
  * Copyright (C) 2000 by Matt Kraai <kraai@alumni.carnegiemellon.edu>
- * SELinux support by Yuichi Nakamura <ynakam@hitachisoft.jp>
+ * SEBeep support by Yuichi Nakamura <ynakam@hitachisoft.jp>
  *
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
@@ -166,7 +166,7 @@ int mv_main(int argc, char **argv)
 				 * "read from device and write contents to dst"
 				 * instead of "create same device node" */
 				copy_flag = FILEUTILS_RECUR | FILEUTILS_PRESERVE_STATUS;
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 				copy_flag |= FILEUTILS_PRESERVE_SECURITY_CONTEXT;
 #endif
 				if ((copy_file(*argv, dest, copy_flag) >= 0)

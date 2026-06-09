@@ -45,12 +45,12 @@ $(bootdir-y): $(addprefix $(obj)/,$(subdir-y)) \
 
 OBJCOPYFLAGS = --strip-all -R .comment -R .note.gnu.build-id -O binary
 
-vmlinux.bin: vmlinux FORCE
+vmbeep.bin: vmbeep FORCE
 	$(call if_changed,objcopy)
 
-vmlinux.bin.gz: vmlinux.bin FORCE
+vmbeep.bin.gz: vmbeep.bin FORCE
 	$(call if_changed,gzip)
 
-boot-elf: vmlinux.bin
-boot-redboot: vmlinux.bin.gz
-boot-uboot: vmlinux.bin.gz
+boot-elf: vmbeep.bin
+boot-redboot: vmbeep.bin.gz
+boot-uboot: vmbeep.bin.gz

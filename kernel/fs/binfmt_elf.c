@@ -1,5 +1,5 @@
 /*
- * linux/fs/binfmt_elf.c
+ * beep/fs/binfmt_elf.c
  *
  * These are the functions used to load ELF format executables as used
  * on SVr4 machines.  Information on the format may be found in the book
@@ -9,30 +9,30 @@
  * Copyright 1993, 1994: Eric Youngdale (ericy@cais.com).
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/binfmts.h>
-#include <linux/string.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/personality.h>
-#include <linux/elfcore.h>
-#include <linux/init.h>
-#include <linux/highuid.h>
-#include <linux/compiler.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/vmalloc.h>
-#include <linux/security.h>
-#include <linux/random.h>
-#include <linux/elf.h>
-#include <linux/utsname.h>
-#include <linux/coredump.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/binfmts.h>
+#include <beep/string.h>
+#include <beep/file.h>
+#include <beep/slab.h>
+#include <beep/personality.h>
+#include <beep/elfcore.h>
+#include <beep/init.h>
+#include <beep/highuid.h>
+#include <beep/compiler.h>
+#include <beep/highmem.h>
+#include <beep/pagemap.h>
+#include <beep/vmalloc.h>
+#include <beep/security.h>
+#include <beep/random.h>
+#include <beep/elf.h>
+#include <beep/utsname.h>
+#include <beep/coredump.h>
 #include <asm/uaccess.h>
 #include <asm/param.h>
 #include <asm/page.h>
@@ -44,7 +44,7 @@
 #define user_siginfo_t siginfo_t
 #endif
 
-static int load_elf_binary(struct linux_binprm *bprm);
+static int load_elf_binary(struct beep_binprm *bprm);
 static int load_elf_library(struct file *);
 static unsigned long elf_map(struct file *, unsigned long, struct elf_phdr *,
 				int, int, unsigned long);
@@ -73,7 +73,7 @@ static int elf_core_dump(struct coredump_params *cprm);
 #define ELF_PAGEOFFSET(_v) ((_v) & (ELF_MIN_ALIGN-1))
 #define ELF_PAGEALIGN(_v) (((_v) + ELF_MIN_ALIGN - 1) & ~(ELF_MIN_ALIGN - 1))
 
-static struct linux_binfmt elf_format = {
+static struct beep_binfmt elf_format = {
 	.module		= THIS_MODULE,
 	.load_binary	= load_elf_binary,
 	.load_shlib	= load_elf_library,
@@ -140,7 +140,7 @@ static int padzero(unsigned long elf_bss)
 #endif
 
 static int
-create_elf_tables(struct linux_binprm *bprm, struct elfhdr *exec,
+create_elf_tables(struct beep_binprm *bprm, struct elfhdr *exec,
 		unsigned long load_addr, unsigned long interp_load_addr)
 {
 	unsigned long p = bprm->p;
@@ -558,7 +558,7 @@ static unsigned long randomize_stack_top(unsigned long stack_top)
 #endif
 }
 
-static int load_elf_binary(struct linux_binprm *bprm)
+static int load_elf_binary(struct beep_binprm *bprm)
 {
 	struct file *interpreter = NULL; /* to shut gcc up */
  	unsigned long load_addr = 0, load_bias = 0;
@@ -1478,7 +1478,7 @@ static void fill_files_note(struct memelfnote *note)
 }
 
 #ifdef CORE_DUMP_USE_REGSET
-#include <linux/regset.h>
+#include <beep/regset.h>
 
 struct elf_thread_core_info {
 	struct elf_thread_core_info *next;
@@ -1570,7 +1570,7 @@ static int fill_thread_core_info(struct elf_thread_core_info *t,
 				kfree(data);
 			else {
 				if (regset->core_note_type != NT_PRFPREG)
-					fill_note(&t->notes[i], "LINUX",
+					fill_note(&t->notes[i], "BEEP",
 						  regset->core_note_type,
 						  size, data);
 				else {
@@ -1784,7 +1784,7 @@ static int elf_dump_thread_status(long signr, struct elf_thread_status *t)
 
 #ifdef ELF_CORE_COPY_XFPREGS
 	if (elf_core_copy_task_xfpregs(p, &t->xfpu)) {
-		fill_note(&t->notes[2], "LINUX", ELF_CORE_XFPREG_TYPE,
+		fill_note(&t->notes[2], "BEEP", ELF_CORE_XFPREG_TYPE,
 			  sizeof(t->xfpu), &t->xfpu);
 		t->num_notes++;
 		sz += notesize(&t->notes[2]);
@@ -1898,7 +1898,7 @@ static int fill_note_info(struct elfhdr *elf, int phdrs,
 #ifdef ELF_CORE_COPY_XFPREGS
 	if (elf_core_copy_task_xfpregs(current, info->xfpu))
 		fill_note(info->notes + info->numnote++,
-			  "LINUX", ELF_CORE_XFPREG_TYPE,
+			  "BEEP", ELF_CORE_XFPREG_TYPE,
 			  sizeof(*info->xfpu), info->xfpu);
 #endif
 
@@ -2071,7 +2071,7 @@ static int elf_core_dump(struct coredump_params *cprm)
 
 	/* If segs > PN_XNUM(0xffff), then e_phnum overflows. To avoid
 	 * this, kernel supports extended numbering. Have a look at
-	 * include/linux/elf.h for further information. */
+	 * include/beep/elf.h for further information. */
 	e_phnum = segs > PN_XNUM ? PN_XNUM : segs;
 
 	/*

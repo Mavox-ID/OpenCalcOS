@@ -1,5 +1,5 @@
 /*
- * linux/arch/mips/jz4740/board-qi_lb60.c
+ * beep/arch/mips/jz4740/board-qi_lb60.c
  *
  * QI_LB60 board support
  *
@@ -12,27 +12,27 @@
  * as published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/gpio.h>
 
-#include <linux/input.h>
-#include <linux/gpio_keys.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_gpio.h>
-#include <linux/power_supply.h>
-#include <linux/power/jz4740-battery.h>
-#include <linux/power/gpio-charger.h>
+#include <beep/input.h>
+#include <beep/gpio_keys.h>
+#include <beep/input/matrix_keypad.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/spi_gpio.h>
+#include <beep/power_supply.h>
+#include <beep/power/jz4740-battery.h>
+#include <beep/power/gpio-charger.h>
 
 #include <asm/mach-jz4740/jz4740_fb.h>
 #include <asm/mach-jz4740/jz4740_mmc.h>
 #include <asm/mach-jz4740/jz4740_nand.h>
 
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
+#include <beep/regulator/fixed.h>
+#include <beep/regulator/machine.h>
 
-#include <linux/leds_pwm.h>
+#include <beep/leds_pwm.h>
 
 #include <asm/mach-jz4740/platform.h>
 

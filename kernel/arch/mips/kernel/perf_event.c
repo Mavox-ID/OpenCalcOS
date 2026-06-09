@@ -1,5 +1,5 @@
 /*
- * Linux performance counter support for MIPS.
+ * Beep performance counter support for MIPS.
  *
  * Copyright (C) 2010 MIPS Technologies, Inc.
  * Author: Deng-Cheng Zhu
@@ -14,7 +14,7 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/perf_event.h>
+#include <beep/perf_event.h>
 
 #include <asm/stacktrace.h>
 

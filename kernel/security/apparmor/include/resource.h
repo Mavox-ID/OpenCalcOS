@@ -15,8 +15,8 @@
 #ifndef __AA_RESOURCE_H
 #define __AA_RESOURCE_H
 
-#include <linux/resource.h>
-#include <linux/sched.h>
+#include <beep/resource.h>
+#include <beep/sched.h>
 
 #include "apparmorfs.h"
 

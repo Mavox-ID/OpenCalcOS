@@ -8,16 +8,16 @@
 #warning "Sparse checking disabled for this file"
 #endif
 
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/dirent.h>
-#include <linux/syscalls.h>
-#include <linux/utime.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/delay.h>
+#include <beep/string.h>
+#include <beep/dirent.h>
+#include <beep/syscalls.h>
+#include <beep/utime.h>
 
 static __initdata char *message;
 static void __init error(char *x)
@@ -419,7 +419,7 @@ static int __init flush_buffer(void *bufv, unsigned len)
 
 static unsigned my_inptr;   /* index of next byte to be processed in inbuf */
 
-#include <linux/decompress/generic.h>
+#include <beep/decompress/generic.h>
 
 static char * __init unpack_to_rootfs(char *buf, unsigned len)
 {
@@ -495,8 +495,8 @@ __setup("retain_initrd", retain_initrd_param);
 
 extern char __initramfs_start[];
 extern unsigned long __initramfs_size;
-#include <linux/initrd.h>
-#include <linux/kexec.h>
+#include <beep/initrd.h>
+#include <beep/kexec.h>
 
 static void __init free_initrd(void)
 {
@@ -536,7 +536,7 @@ static void __init clean_rootfs(void)
 {
 	int fd;
 	void *buf;
-	struct linux_dirent64 *dirp;
+	struct beep_dirent64 *dirp;
 	int num;
 
 	fd = sys_open("/", O_RDONLY, 0);

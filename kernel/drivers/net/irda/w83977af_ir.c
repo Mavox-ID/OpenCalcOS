@@ -39,18 +39,18 @@
  *
  ********************************************************************/
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/rtnetlink.h>
-#include <linux/dma-mapping.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/rtnetlink.h>
+#include <beep/dma-mapping.h>
+#include <beep/gfp.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>
@@ -331,7 +331,7 @@ static int w83977af_probe(int iobase, int irq, int dma)
   
  		w977_write_reg(0x70, irq, efbase[i]);
 #ifdef CONFIG_ARCH_NETWINDER
-		/* Netwinder uses 1 higher than Linux */
+		/* Netwinder uses 1 higher than Beep */
  		w977_write_reg(0x74, dma+1, efbase[i]);
 #else
  		w977_write_reg(0x74, dma, efbase[i]);   

@@ -19,15 +19,15 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/gpio.h>
-#include <linux/mfd/rdc321x.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/platform_device.h>
+#include <beep/pci.h>
+#include <beep/gpio.h>
+#include <beep/mfd/rdc321x.h>
+#include <beep/slab.h>
 
 struct rdc321x_gpio {
 	spinlock_t		lock;

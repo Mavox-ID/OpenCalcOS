@@ -11,14 +11,14 @@
  *  option) any later version.
  *
  */
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/input.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
 
-#include <linux/mfd/da9052/reg.h>
-#include <linux/mfd/da9052/da9052.h>
+#include <beep/mfd/da9052/reg.h>
+#include <beep/mfd/da9052/da9052.h>
 
 #define TSI_PEN_DOWN_STATUS 0x40
 

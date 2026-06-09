@@ -7,9 +7,9 @@
  * magic northbridge registers..
  */
 
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/syscalls.h>
+#include <beep/errno.h>
+#include <beep/pci.h>
+#include <beep/syscalls.h>
 #include <asm/uaccess.h>
 #include "pci.h"
 

@@ -15,17 +15,17 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
-#include <linux/jhash.h>
-#include <linux/list.h>
-#include <linux/rcupdate.h>
-#include <linux/tracepoint.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/static_key.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/types.h>
+#include <beep/jhash.h>
+#include <beep/list.h>
+#include <beep/rcupdate.h>
+#include <beep/tracepoint.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/static_key.h>
 
 extern struct tracepoint * const __start___tracepoints_ptrs[];
 extern struct tracepoint * const __stop___tracepoints_ptrs[];
@@ -265,7 +265,7 @@ static void set_tracepoint(struct tracepoint_entry **entry,
 	 * rcu_assign_pointer has a smp_wmb() which makes sure that the new
 	 * probe callbacks array is consistent before setting a pointer to it.
 	 * This array is referenced by __DO_TRACE from
-	 * include/linux/tracepoints.h. A matching smp_read_barrier_depends()
+	 * include/beep/tracepoints.h. A matching smp_read_barrier_depends()
 	 * is used.
 	 */
 	rcu_assign_pointer(elem->funcs, (*entry)->funcs);

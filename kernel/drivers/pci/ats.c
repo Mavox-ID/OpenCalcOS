@@ -10,10 +10,10 @@
  *   PASID support added by Joerg Roedel <joerg.roedel@amd.com>
  */
 
-#include <linux/export.h>
-#include <linux/pci-ats.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <beep/export.h>
+#include <beep/pci-ats.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
 
 #include "pci.h"
 

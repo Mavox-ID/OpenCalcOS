@@ -32,7 +32,7 @@
  * SUCH DAMAGE.
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #ifndef _ECMA_167_H
 #define _ECMA_167_H 1

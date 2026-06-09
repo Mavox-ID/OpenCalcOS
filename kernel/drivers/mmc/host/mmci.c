@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mmc/host/mmci.c - ARM PrimeCell MMCI PL180/1 driver
+ *  beep/drivers/mmc/host/mmci.c - ARM PrimeCell MMCI PL180/1 driver
  *
  *  Copyright (C) 2003 Deep Blue Solutions, Ltd, All Rights Reserved.
  *  Copyright (C) 2010 ST-Ericsson SA
@@ -8,32 +8,32 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/highmem.h>
-#include <linux/log2.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/amba/bus.h>
-#include <linux/clk.h>
-#include <linux/scatterlist.h>
-#include <linux/gpio.h>
-#include <linux/of_gpio.h>
-#include <linux/regulator/consumer.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/amba/mmci.h>
-#include <linux/pm_runtime.h>
-#include <linux/types.h>
-#include <linux/pinctrl/consumer.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/highmem.h>
+#include <beep/log2.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/card.h>
+#include <beep/amba/bus.h>
+#include <beep/clk.h>
+#include <beep/scatterlist.h>
+#include <beep/gpio.h>
+#include <beep/of_gpio.h>
+#include <beep/regulator/consumer.h>
+#include <beep/dmaengine.h>
+#include <beep/dma-mapping.h>
+#include <beep/amba/mmci.h>
+#include <beep/pm_runtime.h>
+#include <beep/types.h>
+#include <beep/pinctrl/consumer.h>
 
 #include <asm/div64.h>
 #include <asm/io.h>

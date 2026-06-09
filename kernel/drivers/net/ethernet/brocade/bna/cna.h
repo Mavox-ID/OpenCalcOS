@@ -1,5 +1,5 @@
 /*
- * Linux network driver for Brocade Converged Network Adapter.
+ * Beep network driver for Brocade Converged Network Adapter.
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License (GPL) Version 2 as
@@ -19,16 +19,16 @@
 #ifndef __CNA_H__
 #define __CNA_H__
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/if_vlan.h>
-#include <linux/if_ether.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/mutex.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/bitops.h>
+#include <beep/timer.h>
+#include <beep/interrupt.h>
+#include <beep/if_vlan.h>
+#include <beep/if_ether.h>
 
 #define bfa_sm_fault(__event)    do {                            \
 	pr_err("SM Assertion failure: %s: %d: event = %d\n",	\

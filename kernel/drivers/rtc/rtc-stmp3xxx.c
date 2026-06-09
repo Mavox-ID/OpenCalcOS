@@ -17,15 +17,15 @@
  * http://www.opensource.org/licenses/gpl-license.html
  * http://www.gnu.org/copyleft/gpl.html
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/of_device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/rtc.h>
+#include <beep/slab.h>
+#include <beep/of_device.h>
 
 #include <mach/common.h>
 

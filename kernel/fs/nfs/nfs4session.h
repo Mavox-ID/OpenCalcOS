@@ -4,8 +4,8 @@
  * Copyright (c) 2012 Trond Myklebust <Trond.Myklebust@netapp.com>
  *
  */
-#ifndef __LINUX_FS_NFS_NFS4SESSION_H
-#define __LINUX_FS_NFS_NFS4SESSION_H
+#ifndef __BEEP_FS_NFS_NFS4SESSION_H
+#define __BEEP_FS_NFS_NFS4SESSION_H
 
 /* maximum number of slots to use */
 #define NFS4_DEF_SLOT_TABLE_SIZE (16U)
@@ -139,4 +139,4 @@ static inline int nfs4_has_persistent_session(const struct nfs_client *clp)
 
 #endif /* defined(CONFIG_NFS_V4_1) */
 #endif /* IS_ENABLED(CONFIG_NFS_V4) */
-#endif /* __LINUX_FS_NFS_NFS4SESSION_H */
+#endif /* __BEEP_FS_NFS_NFS4SESSION_H */

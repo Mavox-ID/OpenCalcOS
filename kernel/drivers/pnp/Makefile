@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux Plug-and-Play Support.
+# Makefile for the Beep Plug-and-Play Support.
 #
 
 obj-y		:= pnp.o

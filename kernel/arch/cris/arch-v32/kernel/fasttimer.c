@@ -1,20 +1,20 @@
 /*
- * linux/arch/cris/kernel/fasttimer.c
+ * beep/arch/cris/kernel/fasttimer.c
  *
  * Fast timers for ETRAX FS
  *
  * Copyright (C) 2000-2006 Axis Communications AB, Lund, Sweden
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/delay.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/param.h>
+#include <beep/string.h>
+#include <beep/vmalloc.h>
+#include <beep/interrupt.h>
+#include <beep/time.h>
+#include <beep/delay.h>
 
 #include <asm/irq.h>
 
@@ -22,7 +22,7 @@
 #include <hwregs/reg_rdwr.h>
 #include <hwregs/timer_defs.h>
 #include <asm/fasttimer.h>
-#include <linux/proc_fs.h>
+#include <beep/proc_fs.h>
 
 /*
  * timer0 is running at 100MHz and generating jiffies timer ticks

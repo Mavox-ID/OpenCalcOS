@@ -5,21 +5,21 @@
  *                 2003 Bas Vermeulen <bas@buyways.nl>
  *                 2002 Arcturus Networks Inc. MaTed <mated@sympatico.ca>
  *            2000-2001 Lineo, Inc. D. Jefff Dionne <jeff@lineo.ca>
- *                 1999 D. Jeff Dionne <jeff@uclinux.org>
+ *                 1999 D. Jeff Dionne <jeff@ucbeep.org>
  *                 1996 Roman Zippel
  *
  * Licensed under the GPL-2
  */
 
-#include <linux/module.h>
-#include <linux/kernel_stat.h>
-#include <linux/seq_file.h>
-#include <linux/irq.h>
-#include <linux/sched.h>
-#include <linux/syscore_ops.h>
+#include <beep/module.h>
+#include <beep/kernel_stat.h>
+#include <beep/seq_file.h>
+#include <beep/irq.h>
+#include <beep/sched.h>
+#include <beep/syscore_ops.h>
 #include <asm/delay.h>
 #ifdef CONFIG_IPIPE
-#include <linux/ipipe.h>
+#include <beep/ipipe.h>
 #endif
 #include <asm/traps.h>
 #include <asm/blackfin.h>
@@ -31,7 +31,7 @@
 /*
  * NOTES:
  * - we have separated the physical Hardware interrupt from the
- * levels that the LINUX kernel sees (see the description in irq.h)
+ * levels that the BEEP kernel sees (see the description in irq.h)
  * -
  */
 
@@ -1452,7 +1452,7 @@ int __init init_arch_irq(void)
 	/* BF52x/BF51x system reset does not properly reset SIC_IWR1 which
 	 * will screw up the bootrom as it relies on MDMA0/1 waking it
 	 * up from IDLE instructions.  See this report for more info:
-	 * http://blackfin.uclinux.org/gf/tracker/4323
+	 * http://blackfin.ucbeep.org/gf/tracker/4323
 	 */
 	if (ANOMALY_05000435)
 		bfin_write_SIC_IWR1(IWR_ENABLE(10) | IWR_ENABLE(11));
@@ -1680,7 +1680,7 @@ asmlinkage int __ipipe_grab_irq(int vec, struct pt_regs *regs)
 	}
 
 	/*
-	 * We don't want Linux interrupt handlers to run at the
+	 * We don't want Beep interrupt handlers to run at the
 	 * current core priority level (i.e. < EVT15), since this
 	 * might delay other interrupts handled by a high priority
 	 * domain. Here is what we do instead:

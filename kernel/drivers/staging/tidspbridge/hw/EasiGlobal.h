@@ -16,7 +16,7 @@
 
 #ifndef _EASIGLOBAL_H
 #define _EASIGLOBAL_H
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * DEFINE:        READ_ONLY, WRITE_ONLY &  READ_WRITE

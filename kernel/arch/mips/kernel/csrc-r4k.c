@@ -5,8 +5,8 @@
  *
  * Copyright (C) 2007 by Ralf Baechle
  */
-#include <linux/clocksource.h>
-#include <linux/init.h>
+#include <beep/clocksource.h>
+#include <beep/init.h>
 
 #include <asm/time.h>
 

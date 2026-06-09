@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/devfreq/governor_simpleondemand.c
+ *  beep/drivers/devfreq/governor_simpleondemand.c
  *
  *  Copyright (C) 2011 Samsung Electronics
  *	MyungJoo Ham <myungjoo.ham@samsung.com>
@@ -9,10 +9,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/devfreq.h>
-#include <linux/math64.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/devfreq.h>
+#include <beep/math64.h>
 #include "governor.h"
 
 /* Default constants for DevFreq-Simple-Ondemand (DFSO) */

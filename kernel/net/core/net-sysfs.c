@@ -9,18 +9,18 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#include <linux/capability.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/slab.h>
-#include <linux/nsproxy.h>
+#include <beep/capability.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/slab.h>
+#include <beep/nsproxy.h>
 #include <net/sock.h>
 #include <net/net_namespace.h>
-#include <linux/rtnetlink.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
-#include <linux/jiffies.h>
+#include <beep/rtnetlink.h>
+#include <beep/vmalloc.h>
+#include <beep/export.h>
+#include <beep/jiffies.h>
 
 #include "net-sysfs.h"
 

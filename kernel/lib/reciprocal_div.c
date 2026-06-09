@@ -1,6 +1,6 @@
 #include <asm/div64.h>
-#include <linux/reciprocal_div.h>
-#include <linux/export.h>
+#include <beep/reciprocal_div.h>
+#include <beep/export.h>
 
 u32 reciprocal_value(u32 k)
 {

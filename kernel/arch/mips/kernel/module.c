@@ -14,22 +14,22 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
  *  Copyright (C) 2001 Rusty Russell.
- *  Copyright (C) 2003, 2004 Ralf Baechle (ralf@linux-mips.org)
+ *  Copyright (C) 2003, 2004 Ralf Baechle (ralf@beep-mips.org)
  *  Copyright (C) 2005 Thiemo Seufer
  */
 
 #undef DEBUG
 
-#include <linux/moduleloader.h>
-#include <linux/elf.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/jump_label.h>
+#include <beep/moduleloader.h>
+#include <beep/elf.h>
+#include <beep/mm.h>
+#include <beep/vmalloc.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/jump_label.h>
 
 #include <asm/pgtable.h>	/* MODULE_START */
 

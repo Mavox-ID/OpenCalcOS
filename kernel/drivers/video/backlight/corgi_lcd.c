@@ -15,16 +15,16 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/fb.h>
-#include <linux/lcd.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/corgi_lcd.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/fb.h>
+#include <beep/lcd.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/corgi_lcd.h>
+#include <beep/slab.h>
 #include <asm/mach/sharpsl_param.h>
 
 #define POWER_IS_ON(pwr)	((pwr) <= FB_BLANK_NORMAL)

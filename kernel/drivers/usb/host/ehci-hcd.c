@@ -20,25 +20,25 @@
  * Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dmapool.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/vmalloc.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/hrtimer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/moduleparam.h>
-#include <linux/dma-mapping.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/dmapool.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/sched.h>
+#include <beep/vmalloc.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/hrtimer.h>
+#include <beep/list.h>
+#include <beep/interrupt.h>
+#include <beep/usb.h>
+#include <beep/usb/hcd.h>
+#include <beep/moduleparam.h>
+#include <beep/dma-mapping.h>
+#include <beep/debugfs.h>
+#include <beep/slab.h>
 
 #include <asm/byteorder.h>
 #include <asm/io.h>

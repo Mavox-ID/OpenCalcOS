@@ -9,11 +9,11 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/hardirq.h>
-#include <linux/slab.h>
+#include <beep/hardirq.h>
+#include <beep/slab.h>
 
-#include <linux/etherdevice.h>
-#include <linux/module.h>
+#include <beep/etherdevice.h>
+#include <beep/module.h>
 #include "libertas_tf.h"
 
 #define DRIVER_RELEASE_VERSION "004.p0"

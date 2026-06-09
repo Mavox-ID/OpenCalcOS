@@ -17,7 +17,7 @@
 #ifndef _GXIO_KIORPC_H
 #define _GXIO_KIORPC_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/page.h>
 #include <arch/chip.h>
 

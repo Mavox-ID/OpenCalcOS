@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-mmp/include/mach/regs-timers.h
+ * beep/arch/arm/mach-mmp/include/mach/regs-timers.h
  *
  *   Timers Module
  *

@@ -8,7 +8,7 @@
  * Public License is included in this distribution in the file called COPYING.
  *
  * Contact Information:
- * linux-drivers@emulex.com
+ * beep-drivers@emulex.com
  *
  * Emulex
  * 3333 Susan Street
@@ -18,18 +18,18 @@
 #ifndef BE_H
 #define BE_H
 
-#include <linux/pci.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
+#include <beep/pci.h>
+#include <beep/etherdevice.h>
+#include <beep/delay.h>
 #include <net/tcp.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
-#include <linux/if_vlan.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/u64_stats_sync.h>
+#include <beep/if_vlan.h>
+#include <beep/workqueue.h>
+#include <beep/interrupt.h>
+#include <beep/firmware.h>
+#include <beep/slab.h>
+#include <beep/u64_stats_sync.h>
 
 #include "be_hw.h"
 #include "be_roce.h"

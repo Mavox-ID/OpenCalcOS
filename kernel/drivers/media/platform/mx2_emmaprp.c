@@ -16,13 +16,13 @@
  * Free Software Foundation; either version 2 of the
  * License, or (at your option) any later version
  */
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/clk.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
 
-#include <linux/platform_device.h>
+#include <beep/platform_device.h>
 #include <media/v4l2-mem2mem.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>

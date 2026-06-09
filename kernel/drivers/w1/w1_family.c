@@ -19,11 +19,11 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/sched.h>	/* schedule_timeout() */
-#include <linux/delay.h>
-#include <linux/export.h>
+#include <beep/spinlock.h>
+#include <beep/list.h>
+#include <beep/sched.h>	/* schedule_timeout() */
+#include <beep/delay.h>
+#include <beep/export.h>
 
 #include "w1_family.h"
 #include "w1.h"

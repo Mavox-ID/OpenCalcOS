@@ -4,18 +4,18 @@
  * Brian Murphy <brian.murphy@eicon.com>
  *
  */
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
+#include <beep/bug.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/errno.h>
 
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/interrupt.h>
 
-#include <linux/timer.h>
-#include <linux/mutex.h>
+#include <beep/timer.h>
+#include <beep/mutex.h>
 
 #include "picvue.h"
 

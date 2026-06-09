@@ -37,17 +37,17 @@
 #ifndef MLX4_H
 #define MLX4_H
 
-#include <linux/mutex.h>
-#include <linux/radix-tree.h>
-#include <linux/rbtree.h>
-#include <linux/timer.h>
-#include <linux/semaphore.h>
-#include <linux/workqueue.h>
+#include <beep/mutex.h>
+#include <beep/radix-tree.h>
+#include <beep/rbtree.h>
+#include <beep/timer.h>
+#include <beep/semaphore.h>
+#include <beep/workqueue.h>
 
-#include <linux/mlx4/device.h>
-#include <linux/mlx4/driver.h>
-#include <linux/mlx4/doorbell.h>
-#include <linux/mlx4/cmd.h>
+#include <beep/mlx4/device.h>
+#include <beep/mlx4/driver.h>
+#include <beep/mlx4/doorbell.h>
+#include <beep/mlx4/cmd.h>
 
 #define DRV_NAME	"mlx4_core"
 #define PFX		DRV_NAME ": "

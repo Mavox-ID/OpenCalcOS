@@ -17,8 +17,8 @@
  * functions used in binfmt_elf.c to compat versions.
  */
 
-#include <linux/elfcore-compat.h>
-#include <linux/time.h>
+#include <beep/elfcore-compat.h>
+#include <beep/time.h>
 
 /*
  * Rename the basic ELF layout types to refer to the 32-bit class of files.
@@ -53,7 +53,7 @@
 
 /*
  * Compat version of cputime_to_compat_timeval, perhaps this
- * should be an inline in <linux/compat.h>.
+ * should be an inline in <beep/compat.h>.
  */
 static void cputime_to_compat_timeval(const cputime_t cputime,
 				      struct compat_timeval *value)

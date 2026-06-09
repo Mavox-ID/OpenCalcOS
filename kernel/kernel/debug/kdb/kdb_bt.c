@@ -9,12 +9,12 @@
  * Copyright (c) 2009 Wind River Systems, Inc.  All Rights Reserved.
  */
 
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/kdb.h>
-#include <linux/nmi.h>
+#include <beep/ctype.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/kdb.h>
+#include <beep/nmi.h>
 #include "kdb_private.h"
 
 

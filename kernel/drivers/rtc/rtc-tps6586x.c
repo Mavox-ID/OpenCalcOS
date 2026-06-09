@@ -20,16 +20,16 @@
  * 02111-1307, USA
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mfd/tps6586x.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/mfd/tps6586x.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/rtc.h>
+#include <beep/slab.h>
 
 #define RTC_CTRL			0xc0
 #define POR_RESET_N			BIT(7)

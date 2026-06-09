@@ -1,7 +1,7 @@
 /*
- *  linux/arch/arm/kernel/sys_arm.c
+ *  beep/arch/arm/kernel/sys_arm.c
  *
- *  Copyright (C) People who wrote linux/arch/i386/kernel/sys_i386.c
+ *  Copyright (C) People who wrote beep/arch/i386/kernel/sys_i386.c
  *  Copyright (C) 1995, 1996 Russell King.
  *
  * This program is free software; you can redistribute it and/or modify
@@ -9,24 +9,24 @@
  * published by the Free Software Foundation.
  *
  *  This file contains various random system calls that
- *  have a non-standard calling sequence on the Linux/arm
+ *  have a non-standard calling sequence on the Beep/arm
  *  platform.
  */
-#include <linux/export.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/stat.h>
-#include <linux/syscalls.h>
-#include <linux/mman.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/ipc.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <beep/export.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/sem.h>
+#include <beep/msg.h>
+#include <beep/shm.h>
+#include <beep/stat.h>
+#include <beep/syscalls.h>
+#include <beep/mman.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/ipc.h>
+#include <beep/uaccess.h>
+#include <beep/slab.h>
 
 /*
  * Since loff_t is a 64 bit type we avoid a lot of ABI hassle

@@ -1,5 +1,5 @@
 /*
- *  m68k beeper driver for Linux
+ *  m68k beeper driver for Beep
  *
  *  Copyright (c) 2002 Richard Zidlicky
  *  Copyright (c) 2002 Vojtech Pavlik
@@ -13,15 +13,15 @@
  * the Free Software Foundation
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/platform_device.h>
 #include <asm/machdep.h>
 #include <asm/io.h>
 
-MODULE_AUTHOR("Richard Zidlicky <rz@linux-m68k.org>");
+MODULE_AUTHOR("Richard Zidlicky <rz@beep-m68k.org>");
 MODULE_DESCRIPTION("m68k beeper driver");
 MODULE_LICENSE("GPL");
 

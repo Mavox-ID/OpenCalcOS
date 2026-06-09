@@ -19,15 +19,15 @@
  *  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/virtio.h>
-#include <linux/virtio_balloon.h>
-#include <linux/swap.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/balloon_compaction.h>
+#include <beep/virtio.h>
+#include <beep/virtio_balloon.h>
+#include <beep/swap.h>
+#include <beep/kthread.h>
+#include <beep/freezer.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/balloon_compaction.h>
 
 /*
  * Balloon device works in 4K page units.  So each page is pointed to by
@@ -83,7 +83,7 @@ static u32 page_to_balloon_pfn(struct page *page)
 	unsigned long pfn = page_to_pfn(page);
 
 	BUILD_BUG_ON(PAGE_SHIFT < VIRTIO_BALLOON_PFN_SHIFT);
-	/* Convert pfn from Linux page size to balloon page size. */
+	/* Convert pfn from Beep page size to balloon page size. */
 	return pfn * VIRTIO_BALLOON_PAGES_PER_PAGE;
 }
 

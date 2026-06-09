@@ -18,8 +18,8 @@
 
 #ifdef __KERNEL__
 
-#include <linux/types.h>
-#include <linux/vmalloc.h>
+#include <beep/types.h>
+#include <beep/vmalloc.h>
 
 #include <asm-generic/dma-coherent.h>
 

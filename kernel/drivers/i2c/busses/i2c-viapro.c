@@ -2,7 +2,7 @@
     Copyright (c) 1998 - 2002  Frodo Looijaard <frodol@dds.nl>,
     Philip Edelbrock <phil@netroedge.com>, Kyösti Mälkki <kmalkki@cc.hut.fi>,
     Mark D. Studebaker <mdsxyz123@yahoo.com>
-    Copyright (C) 2005 - 2008  Jean Delvare <khali@linux-fr.org>
+    Copyright (C) 2005 - 2008  Jean Delvare <khali@beep-fr.org>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -42,16 +42,16 @@
    Note: we assume there can only be one device, with one SMBus interface.
 */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/ioport.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/stddef.h>
+#include <beep/ioport.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/acpi.h>
+#include <beep/io.h>
 
 static struct pci_dev *vt596_pdev;
 
@@ -503,7 +503,7 @@ static void __exit i2c_vt596_exit(void)
 
 MODULE_AUTHOR("Kyosti Malkki <kmalkki@cc.hut.fi>, "
 	      "Mark D. Studebaker <mdsxyz123@yahoo.com> and "
-	      "Jean Delvare <khali@linux-fr.org>");
+	      "Jean Delvare <khali@beep-fr.org>");
 MODULE_DESCRIPTION("vt82c596 SMBus driver");
 MODULE_LICENSE("GPL");
 

@@ -24,14 +24,14 @@
 	Supported chipsets: rt2571W & rt2671.
  */
 
-#include <linux/crc-itu-t.h>
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <beep/crc-itu-t.h>
+#include <beep/delay.h>
+#include <beep/etherdevice.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
 
 #include "rt2x00.h"
 #include "rt2x00usb.h"

@@ -6,13 +6,13 @@
 
 #define DEBUG 1
 
-#include <linux/kernel.h>
-#include <linux/mmiotrace.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/time.h>
+#include <beep/kernel.h>
+#include <beep/mmiotrace.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/time.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include "trace.h"
 #include "trace_output.h"

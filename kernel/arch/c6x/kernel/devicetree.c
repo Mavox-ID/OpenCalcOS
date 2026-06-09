@@ -9,11 +9,11 @@
  *  published by the Free Software Foundation.
  *
  */
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/initrd.h>
-#include <linux/memblock.h>
+#include <beep/init.h>
+#include <beep/of.h>
+#include <beep/of_fdt.h>
+#include <beep/initrd.h>
+#include <beep/memblock.h>
 
 void __init early_init_devtree(void *params)
 {

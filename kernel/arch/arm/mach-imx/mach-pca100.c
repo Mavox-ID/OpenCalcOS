@@ -17,18 +17,18 @@
  * MA 02110-1301, USA.
  */
 
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/i2c.h>
-#include <linux/i2c/at24.h>
-#include <linux/dma-mapping.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/eeprom.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/ulpi.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/i2c.h>
+#include <beep/i2c/at24.h>
+#include <beep/dma-mapping.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/eeprom.h>
+#include <beep/irq.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/ulpi.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach-types.h>

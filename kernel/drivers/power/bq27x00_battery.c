@@ -1,7 +1,7 @@
 /*
  * BQ27x00 battery driver
  *
- * Copyright (C) 2008 Rodolfo Giometti <giometti@linux.it>
+ * Copyright (C) 2008 Rodolfo Giometti <giometti@beep.it>
  * Copyright (C) 2008 Eurotech S.p.A. <info@eurotech.it>
  * Copyright (C) 2010-2011 Lars-Peter Clausen <lars@metafoo.de>
  * Copyright (C) 2011 Pali Rohár <pali.rohar@gmail.com>
@@ -25,19 +25,19 @@
  * http://www.ti.com/product/bq27425-g1
  */
 
-#include <linux/module.h>
-#include <linux/param.h>
-#include <linux/jiffies.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/idr.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/param.h>
+#include <beep/jiffies.h>
+#include <beep/workqueue.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/power_supply.h>
+#include <beep/idr.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
 #include <asm/unaligned.h>
 
-#include <linux/power/bq27x00_battery.h>
+#include <beep/power/bq27x00_battery.h>
 
 #define DRIVER_VERSION			"1.2.0"
 
@@ -1046,6 +1046,6 @@ static void __exit bq27x00_battery_exit(void)
 }
 module_exit(bq27x00_battery_exit);
 
-MODULE_AUTHOR("Rodolfo Giometti <giometti@linux.it>");
+MODULE_AUTHOR("Rodolfo Giometti <giometti@beep.it>");
 MODULE_DESCRIPTION("BQ27x00 battery monitor driver");
 MODULE_LICENSE("GPL");

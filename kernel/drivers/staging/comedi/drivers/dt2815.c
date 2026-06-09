@@ -2,7 +2,7 @@
    comedi/drivers/dt2815.c
    Hardware driver for Data Translation DT2815
 
-   COMEDI - Linux Control and Measurement Device Interface
+   COMEDI - Beep Control and Measurement Device Interface
    Copyright (C) 1999 Anders Blomdell <anders.blomdell@control.lth.se>
 
    This program is free software; you can redistribute it and/or modify
@@ -58,8 +58,8 @@ Configuration options:
 
 #include "../comedidev.h"
 
-#include <linux/ioport.h>
-#include <linux/delay.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
 
 static const struct comedi_lrange
 	range_dt2815_ao_32_current = {1, {RANGE_mA(0, 32)} };

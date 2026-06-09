@@ -16,32 +16,32 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
-#include <linux/smsc911x.h>
-#include <linux/input.h>
-#include <linux/rotary_encoder.h>
-#include <linux/gpio_keys.h>
-#include <linux/input/eeti_ts.h>
-#include <linux/leds.h>
-#include <linux/w1-gpio.h>
-#include <linux/sched.h>
-#include <linux/pwm_backlight.h>
-#include <linux/i2c.h>
-#include <linux/i2c/pxa-i2c.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_gpio.h>
-#include <linux/lis3lv02d.h>
-#include <linux/pda_power.h>
-#include <linux/power_supply.h>
-#include <linux/regulator/max8660.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/consumer.h>
-#include <linux/delay.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/gpio.h>
+#include <beep/smsc911x.h>
+#include <beep/input.h>
+#include <beep/rotary_encoder.h>
+#include <beep/gpio_keys.h>
+#include <beep/input/eeti_ts.h>
+#include <beep/leds.h>
+#include <beep/w1-gpio.h>
+#include <beep/sched.h>
+#include <beep/pwm_backlight.h>
+#include <beep/i2c.h>
+#include <beep/i2c/pxa-i2c.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/spi_gpio.h>
+#include <beep/lis3lv02d.h>
+#include <beep/pda_power.h>
+#include <beep/power_supply.h>
+#include <beep/regulator/max8660.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/fixed.h>
+#include <beep/regulator/consumer.h>
+#include <beep/delay.h>
 
 #include <asm/system_info.h>
 
@@ -49,10 +49,10 @@
 #include <asm/mach/arch.h>
 
 #include <mach/pxa300.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/mtd-nand-pxa3xx.h>
+#include <beep/platform_data/usb-ohci-pxa27x.h>
+#include <beep/platform_data/video-pxafb.h>
+#include <beep/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/mtd-nand-pxa3xx.h>
 
 #include "generic.h"
 #include "devices.h"

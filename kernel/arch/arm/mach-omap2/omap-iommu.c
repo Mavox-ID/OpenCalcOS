@@ -10,12 +10,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/err.h>
+#include <beep/slab.h>
 
-#include <linux/platform_data/iommu-omap.h>
+#include <beep/platform_data/iommu-omap.h>
 #include "omap_hwmod.h"
 #include "omap_device.h"
 

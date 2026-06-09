@@ -21,8 +21,8 @@
 
 #include "udfdecl.h"
 
-#include <linux/buffer_head.h>
-#include <linux/bitops.h>
+#include <beep/buffer_head.h>
+#include <beep/bitops.h>
 
 #include "udf_i.h"
 #include "udf_sb.h"

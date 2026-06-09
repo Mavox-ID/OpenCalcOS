@@ -16,10 +16,10 @@
  *		ks8001, ks8737, ks8721, ks8041, ks8051 100/10 phy
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/micrel_phy.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/phy.h>
+#include <beep/micrel_phy.h>
 
 /* Operation Mode Strap Override */
 #define MII_KSZPHY_OMSO				0x16

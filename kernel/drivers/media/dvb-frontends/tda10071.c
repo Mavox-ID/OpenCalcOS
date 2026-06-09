@@ -944,7 +944,7 @@ static int tda10071_init(struct dvb_frontend *fe)
 		if (ret) {
 			dev_err(&priv->i2c->dev, "%s: did not find the " \
 					"firmware file. (%s) Please see " \
-					"linux/Documentation/dvb/ for more " \
+					"beep/Documentation/dvb/ for more " \
 					"details on firmware-problems. (%d)\n",
 					KBUILD_MODNAME, fw_file, ret);
 			goto error;

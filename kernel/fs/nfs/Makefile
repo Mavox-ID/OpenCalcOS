@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux nfs filesystem routines.
+# Makefile for the Beep nfs filesystem routines.
 #
 
 obj-$(CONFIG_NFS_FS) += nfs.o

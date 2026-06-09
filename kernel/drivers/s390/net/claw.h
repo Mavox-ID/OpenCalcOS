@@ -54,7 +54,7 @@
 #define CLAW_RC_NAME_MISMATCH       166  /*  names do not match */
 #define CLAW_RC_WRONG_VERSION       167  /*  wrong CLAW version number */
 #define CLAW_RC_HOST_RCV_TOO_SMALL  180  /*  Host maximum receive is   */
-					 /*  less than Linux on zSeries*/
+					 /*  less than Beep on zSeries*/
                                          /*  transmit size             */
 
 /*-----------------------------------------------------*

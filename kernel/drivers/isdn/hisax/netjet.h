@@ -3,7 +3,7 @@
  * NETjet common header file
  *
  * Author       Karsten Keil
- * Copyright    by Karsten Keil      <keil@isdn4linux.de>
+ * Copyright    by Karsten Keil      <keil@isdn4beep.de>
  *              by Matt Henderson,
  *                 Traverse Technologies P/L www.traverse.com.au
  *

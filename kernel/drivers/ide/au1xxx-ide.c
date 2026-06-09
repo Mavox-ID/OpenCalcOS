@@ -25,16 +25,16 @@
  * 675 Mass Ave, Cambridge, MA 02139, USA.
  *
  * Note: for more information, please refer "AMD Alchemy Au1200/Au1550 IDE
- *       Interface and Linux Device Driver" Application Note.
+ *       Interface and Beep Device Driver" Application Note.
  */
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/ide.h>
-#include <linux/scatterlist.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/init.h>
+#include <beep/ide.h>
+#include <beep/scatterlist.h>
 
 #include <asm/mach-au1x00/au1000.h>
 #include <asm/mach-au1x00/au1xxx_dbdma.h>

@@ -33,16 +33,16 @@
  * SOFTWARE.
  */
 
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/mlx4/cmd.h>
-#include <linux/mlx4/qp.h>
-#include <linux/if_ether.h>
-#include <linux/etherdevice.h>
+#include <beep/sched.h>
+#include <beep/pci.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/mlx4/cmd.h>
+#include <beep/mlx4/qp.h>
+#include <beep/if_ether.h>
+#include <beep/etherdevice.h>
 
 #include "mlx4.h"
 #include "fw.h"

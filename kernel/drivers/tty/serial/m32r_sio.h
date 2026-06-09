@@ -7,7 +7,7 @@
  *  Based on drivers/serial/8250.h.
  *
  *  Copyright (C) 2001  Russell King.
- *  Copyright (C) 2004  Hirokazu Takata <takata at linux-m32r.org>
+ *  Copyright (C) 2004  Hirokazu Takata <takata at beep-m32r.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -15,7 +15,7 @@
  * (at your option) any later version.
  */
 
-#include <linux/pci.h>
+#include <beep/pci.h>
 
 struct m32r_sio_probe {
 	struct module	*owner;

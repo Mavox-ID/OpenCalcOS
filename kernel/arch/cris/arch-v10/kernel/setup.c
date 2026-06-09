@@ -1,6 +1,6 @@
 /*
  *
- *  linux/arch/cris/arch-v10/kernel/setup.c
+ *  beep/arch/cris/arch-v10/kernel/setup.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  *  Copyright (c) 2001-2002  Axis Communications AB
@@ -10,10 +10,10 @@
  * This file handles the architecture-dependent parts of initialization
  */
 
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/delay.h>
-#include <linux/param.h>
+#include <beep/seq_file.h>
+#include <beep/proc_fs.h>
+#include <beep/delay.h>
+#include <beep/param.h>
 #include <arch/system.h>
 
 #ifdef CONFIG_PROC_FS
@@ -100,5 +100,5 @@ void
 show_etrax_copyright(void)
 {
 	printk(KERN_INFO
-               "Linux/CRIS port on ETRAX 100LX (c) 2001 Axis Communications AB\n");
+               "Beep/CRIS port on ETRAX 100LX (c) 2001 Axis Communications AB\n");
 }

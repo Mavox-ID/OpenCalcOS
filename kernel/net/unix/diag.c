@@ -1,9 +1,9 @@
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/sock_diag.h>
-#include <linux/unix_diag.h>
-#include <linux/skbuff.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/spinlock.h>
+#include <beep/sock_diag.h>
+#include <beep/unix_diag.h>
+#include <beep/skbuff.h>
+#include <beep/module.h>
 #include <net/netlink.h>
 #include <net/af_unix.h>
 #include <net/tcp_states.h>

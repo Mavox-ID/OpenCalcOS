@@ -1,6 +1,6 @@
 /*
- * mft.h - Defines for mft record handling in NTFS Linux kernel driver.
- *	   Part of the Linux-NTFS project.
+ * mft.h - Defines for mft record handling in NTFS Beep kernel driver.
+ *	   Part of the Beep-NTFS project.
  *
  * Copyright (c) 2001-2004 Anton Altaparmakov
  *
@@ -15,17 +15,17 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program (in the main directory of the Linux-NTFS
+ * along with this program (in the main directory of the Beep-NTFS
  * distribution in the file COPYING); if not, write to the Free Software
  * Foundation,Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#ifndef _LINUX_NTFS_MFT_H
-#define _LINUX_NTFS_MFT_H
+#ifndef _BEEP_NTFS_MFT_H
+#define _BEEP_NTFS_MFT_H
 
-#include <linux/fs.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
+#include <beep/fs.h>
+#include <beep/highmem.h>
+#include <beep/pagemap.h>
 
 #include "inode.h"
 
@@ -121,4 +121,4 @@ extern int ntfs_extent_mft_record_free(ntfs_inode *ni, MFT_RECORD *m);
 
 #endif /* NTFS_RW */
 
-#endif /* _LINUX_NTFS_MFT_H */
+#endif /* _BEEP_NTFS_MFT_H */

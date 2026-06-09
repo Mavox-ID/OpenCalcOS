@@ -1,8 +1,8 @@
 /*
  * ZTE_EV USB serial driver
  *
- * Copyright (C) 2012 Greg Kroah-Hartman <gregkh@linuxfoundation.org>
- * Copyright (C) 2012 Linux Foundation
+ * Copyright (C) 2012 Greg Kroah-Hartman <gregkh@beepfoundation.org>
+ * Copyright (C) 2012 Beep Foundation
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -12,14 +12,14 @@
  * the usb-serial generic driver.  Comments were left in that I think
  * show the commands used to talk to the device, but I am not sure.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/tty.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/tty.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/usb/serial.h>
+#include <beep/uaccess.h>
 
 #define  MAX_SETUP_DATA_SIZE	32
 

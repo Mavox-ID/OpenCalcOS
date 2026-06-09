@@ -9,9 +9,9 @@
  * Free Software Foundation;  either version 2 of the  License, or (at your
  * option) any later version.
  */
-#include <linux/bcd.h>
-#include <linux/types.h>
-#include <linux/time.h>
+#include <beep/bcd.h>
+#include <beep/types.h>
+#include <beep/time.h>
 
 #include <asm/time.h>
 #include <asm/addrspace.h>

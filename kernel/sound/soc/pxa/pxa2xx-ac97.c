@@ -1,5 +1,5 @@
 /*
- * linux/sound/pxa2xx-ac97.c -- AC97 support for the Intel PXA2xx chip.
+ * beep/sound/pxa2xx-ac97.c -- AC97 support for the Intel PXA2xx chip.
  *
  * Author:	Nicolas Pitre
  * Created:	Dec 02, 2004
@@ -10,10 +10,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
 
 #include <sound/core.h>
 #include <sound/ac97_codec.h>

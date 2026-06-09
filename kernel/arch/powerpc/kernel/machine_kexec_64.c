@@ -1,5 +1,5 @@
 /*
- * PPC64 code to handle Linux booting another kernel.
+ * PPC64 code to handle Beep booting another kernel.
  *
  * Copyright (C) 2004-2005, IBM Corp.
  *
@@ -10,13 +10,13 @@
  */
 
 
-#include <linux/kexec.h>
-#include <linux/smp.h>
-#include <linux/thread_info.h>
-#include <linux/init_task.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/cpu.h>
+#include <beep/kexec.h>
+#include <beep/smp.h>
+#include <beep/thread_info.h>
+#include <beep/init_task.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/cpu.h>
 
 #include <asm/page.h>
 #include <asm/current.h>
@@ -75,8 +75,8 @@ int default_machine_kexec_prepare(struct kimage *image)
 
 	/* We also should not overwrite the tce tables */
 	for_each_node_by_type(node, "pci") {
-		basep = of_get_property(node, "linux,tce-base", NULL);
-		sizep = of_get_property(node, "linux,tce-size", NULL);
+		basep = of_get_property(node, "beep,tce-base", NULL);
+		sizep = of_get_property(node, "beep,tce-size", NULL);
 		if (basep == NULL || sizep == NULL)
 			continue;
 
@@ -362,13 +362,13 @@ void default_machine_kexec(struct kimage *image)
 static unsigned long htab_base;
 
 static struct property htab_base_prop = {
-	.name = "linux,htab-base",
+	.name = "beep,htab-base",
 	.length = sizeof(unsigned long),
 	.value = &htab_base,
 };
 
 static struct property htab_size_prop = {
-	.name = "linux,htab-size",
+	.name = "beep,htab-size",
 	.length = sizeof(unsigned long),
 	.value = &htab_size_bytes,
 };

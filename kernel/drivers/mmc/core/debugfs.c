@@ -7,17 +7,17 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/moduleparam.h>
-#include <linux/export.h>
-#include <linux/debugfs.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/fault-inject.h>
+#include <beep/moduleparam.h>
+#include <beep/export.h>
+#include <beep/debugfs.h>
+#include <beep/fs.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/stat.h>
+#include <beep/fault-inject.h>
 
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/host.h>
 
 #include "core.h"
 #include "mmc_ops.h"

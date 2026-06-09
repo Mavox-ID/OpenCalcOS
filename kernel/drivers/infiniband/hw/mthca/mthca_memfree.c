@@ -32,10 +32,10 @@
  * SOFTWARE.
  */
 
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/mm.h>
+#include <beep/scatterlist.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 
 #include <asm/page.h>
 

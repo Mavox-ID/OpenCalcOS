@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-at91/irq.c
+ * beep/arch/arm/mach-at91/irq.c
  *
  *  Copyright (C) 2004 SAN People
  *  Copyright (C) 2004 ATMEL
@@ -20,18 +20,18 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/bitmap.h>
-#include <linux/types.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/bitmap.h>
+#include <beep/types.h>
+#include <beep/irq.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
+#include <beep/irqdomain.h>
+#include <beep/err.h>
+#include <beep/slab.h>
 
 #include <mach/hardware.h>
 #include <asm/irq.h>

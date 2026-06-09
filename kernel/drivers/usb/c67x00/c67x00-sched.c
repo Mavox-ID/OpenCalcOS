@@ -2,8 +2,8 @@
  * c67x00-sched.c: Cypress C67X00 USB Host Controller Driver - TD scheduling
  *
  * Copyright (C) 2006-2008 Barco N.V.
- *    Derived from the Cypress cy7c67200/300 ezusb linux driver and
- *    based on multiple host controller drivers inside the linux kernel.
+ *    Derived from the Cypress cy7c67200/300 ezusb beep driver and
+ *    based on multiple host controller drivers inside the beep kernel.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,8 +21,8 @@
  * MA  02110-1301  USA.
  */
 
-#include <linux/kthread.h>
-#include <linux/slab.h>
+#include <beep/kthread.h>
+#include <beep/slab.h>
 
 #include "c67x00.h"
 #include "c67x00-hcd.h"

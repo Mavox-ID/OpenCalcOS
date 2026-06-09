@@ -16,8 +16,8 @@
  * Inc.,  51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 #include "xfs.h"
-#include <linux/sysctl.h>
-#include <linux/proc_fs.h>
+#include <beep/sysctl.h>
+#include <beep/proc_fs.h>
 #include "xfs_error.h"
 
 static struct ctl_table_header *xfs_table_header;

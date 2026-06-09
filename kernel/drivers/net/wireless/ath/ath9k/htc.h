@@ -17,13 +17,13 @@
 #ifndef HTC_H
 #define HTC_H
 
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/firmware.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/firmware.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/leds.h>
+#include <beep/slab.h>
 #include <net/mac80211.h>
 
 #include "common.h"

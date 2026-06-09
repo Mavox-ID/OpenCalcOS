@@ -1,16 +1,16 @@
 /*
- * linux/kernel/futex_compat.c
+ * beep/kernel/futex_compat.c
  *
  * Futex compatibililty routines.
  *
  * Copyright 2006, Red Hat, Inc., Ingo Molnar
  */
 
-#include <linux/linkage.h>
-#include <linux/compat.h>
-#include <linux/nsproxy.h>
-#include <linux/futex.h>
-#include <linux/ptrace.h>
+#include <beep/linkage.h>
+#include <beep/compat.h>
+#include <beep/nsproxy.h>
+#include <beep/futex.h>
+#include <beep/ptrace.h>
 
 #include <asm/uaccess.h>
 

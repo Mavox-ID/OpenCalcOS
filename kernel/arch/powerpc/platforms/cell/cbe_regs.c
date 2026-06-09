@@ -6,11 +6,11 @@
  * (c) 2006 Benjamin Herrenschmidt <benh@kernel.crashing.org>, IBM Corp.
  */
 
-#include <linux/percpu.h>
-#include <linux/types.h>
-#include <linux/export.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <beep/percpu.h>
+#include <beep/types.h>
+#include <beep/export.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
 
 #include <asm/io.h>
 #include <asm/pgtable.h>

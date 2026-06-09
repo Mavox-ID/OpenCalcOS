@@ -22,7 +22,7 @@
  *
  */
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 #include "smiapp.h"
 

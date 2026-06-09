@@ -1,5 +1,5 @@
 #
-# Makefile for the linux unicore-specific parts of the memory manager.
+# Makefile for the beep unicore-specific parts of the memory manager.
 #
 
 obj-y				:= extable.o fault.o init.o pgd.o mmu.o

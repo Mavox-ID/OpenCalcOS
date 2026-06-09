@@ -4,14 +4,14 @@
  * Author(s): Martin Schwidefsky (schwidefsky@de.ibm.com)
  *	      Cornelia Huck (cornelia.huck@de.ibm.com)
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/completion.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/device.h>
+#include <beep/delay.h>
+#include <beep/completion.h>
 
 #include <asm/ccwdev.h>
 #include <asm/idals.h>

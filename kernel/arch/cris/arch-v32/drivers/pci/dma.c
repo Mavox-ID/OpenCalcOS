@@ -9,11 +9,11 @@
  * Borrowed from i386.
  */
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/gfp.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/string.h>
+#include <beep/pci.h>
+#include <beep/gfp.h>
 #include <asm/io.h>
 
 void *dma_alloc_coherent(struct device *dev, size_t size,

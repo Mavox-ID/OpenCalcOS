@@ -1,5 +1,5 @@
 /*
- * linux/arch/sh/boards/se/7721/irq.c
+ * beep/arch/sh/boards/se/7721/irq.c
  *
  * Copyright (C) 2008  Renesas Solutions Corp.
  *
@@ -7,10 +7,10 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
 #include <mach-se/mach/se7721.h>
 
 enum {

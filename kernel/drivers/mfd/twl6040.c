@@ -23,23 +23,23 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_gpio.h>
-#include <linux/of_platform.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/twl6040.h>
-#include <linux/regulator/consumer.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/of.h>
+#include <beep/of_irq.h>
+#include <beep/of_gpio.h>
+#include <beep/of_platform.h>
+#include <beep/gpio.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/regmap.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/twl6040.h>
+#include <beep/regulator/consumer.h>
 
 #define VIBRACTRL_MEMBER(reg) ((reg == TWL6040_REG_VIBCTLL) ? 0 : 1)
 #define TWL6040_NUM_SUPPLIES	(2)

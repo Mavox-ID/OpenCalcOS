@@ -20,7 +20,7 @@
  * Copyright IBM Corporation, 2007
  *      Authors:
  *               Chandra Seetharaman <sekharan@us.ibm.com>
- *               Mike Anderson <andmike@linux.vnet.ibm.com>
+ *               Mike Anderson <andmike@beep.vnet.ibm.com>
  */
 
 #include <scsi/scsi_device.h>

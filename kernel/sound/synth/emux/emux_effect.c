@@ -23,7 +23,7 @@
  */
 
 #include "emux_voice.h"
-#include <linux/slab.h>
+#include <beep/slab.h>
 
 #ifdef SNDRV_EMUX_USE_RAW_EFFECT
 /*

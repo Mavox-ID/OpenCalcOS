@@ -10,9 +10,9 @@
  *  by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/ath9k_platform.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/ath9k_platform.h>
 
 #include <asm/mach-ath79/irq.h>
 

@@ -4,14 +4,14 @@
  * AoE device utility functions; maintains device list.
  */
 
-#include <linux/hdreg.h>
-#include <linux/blkdev.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/bitmap.h>
-#include <linux/kdev_t.h>
-#include <linux/moduleparam.h>
+#include <beep/hdreg.h>
+#include <beep/blkdev.h>
+#include <beep/netdevice.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/bitmap.h>
+#include <beep/kdev_t.h>
+#include <beep/moduleparam.h>
 #include "aoe.h"
 
 static void dummy_timer(ulong);

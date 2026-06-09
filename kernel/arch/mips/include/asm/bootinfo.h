@@ -12,7 +12,7 @@
 #ifndef _ASM_BOOTINFO_H
 #define _ASM_BOOTINFO_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/setup.h>
 
 /*

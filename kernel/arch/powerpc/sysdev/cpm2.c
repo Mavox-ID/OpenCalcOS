@@ -25,15 +25,15 @@
  * process is reset, we reclaim the memory available.  There is
  * currently no deallocator for this memory.
  */
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/param.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/of.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

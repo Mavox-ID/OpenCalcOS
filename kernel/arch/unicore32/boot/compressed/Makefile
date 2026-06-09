@@ -1,7 +1,7 @@
 #
-# linux/arch/unicore32/boot/compressed/Makefile
+# beep/arch/unicore32/boot/compressed/Makefile
 #
-# create a compressed vmlinuz image from the original vmlinux
+# create a compressed vmlinuz image from the original vmbeep
 #
 # This file is subject to the terms and conditions of the GNU General Public
 # License.  See the file "COPYING" in the main directory of this archive
@@ -35,23 +35,23 @@ $(obj)/piggy.S: $(obj)/piggy.S.in
 
 $(obj)/piggy.o:  $(obj)/piggy.$(suffix_y) $(obj)/piggy.S FORCE
 
-targets		:= vmlinux vmlinux.lds font.o font.c head.o misc.o \
+targets		:= vmbeep vmbeep.lds font.o font.c head.o misc.o \
 			piggy.$(suffix_y) piggy.o piggy.S \
 
 # Make sure files are removed during clean
 extra-y		+= piggy.gzip piggy.bz2 piggy.lzo piggy.lzma
 
 # ?
-LDFLAGS_vmlinux += -p
+LDFLAGS_vmbeep += -p
 # Report unresolved symbol references
-LDFLAGS_vmlinux += --no-undefined
+LDFLAGS_vmbeep += --no-undefined
 # Delete all temporary local symbols
-LDFLAGS_vmlinux += -X
+LDFLAGS_vmbeep += -X
 # Next argument is a linker script
-LDFLAGS_vmlinux += -T
+LDFLAGS_vmbeep += -T
 
 # For uidivmod
-$(obj)/vmlinux: $(obj)/vmlinux.lds $(obj)/head.o $(obj)/piggy.o \
+$(obj)/vmbeep: $(obj)/vmbeep.lds $(obj)/head.o $(obj)/piggy.o \
 		$(obj)/misc.o FORCE
 	$(call if_changed,ld)
 	@:
@@ -63,6 +63,6 @@ ZTEXTADDR	:= 0x03000000
 ZBSSADDR	:= ALIGN(4)
 
 SEDFLAGS_lds	= s/TEXT_START/$(ZTEXTADDR)/;s/BSS_START/$(ZBSSADDR)/
-$(obj)/vmlinux.lds: $(obj)/vmlinux.lds.in arch/unicore32/boot/Makefile $(KCONFIG_CONFIG)
+$(obj)/vmbeep.lds: $(obj)/vmbeep.lds.in arch/unicore32/boot/Makefile $(KCONFIG_CONFIG)
 	@sed "$(SEDFLAGS_lds)" < $< > $@
 

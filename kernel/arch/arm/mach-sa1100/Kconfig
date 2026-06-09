@@ -61,7 +61,7 @@ config SA1100_H3100
 	help
 	  Say Y here if you intend to run this kernel on the Compaq iPAQ
 	  H3100 handheld computer.  Information about this machine and the
-	  Linux port to this machine can be found at:
+	  Beep port to this machine can be found at:
 
 	  <http://www.handhelds.org/Compaq/index.html#iPAQ_H3100>
 
@@ -72,7 +72,7 @@ config SA1100_H3600
 	help
 	  Say Y here if you intend to run this kernel on the Compaq iPAQ
 	  H3600 handheld computer.  Information about this machine and the
-	  Linux port to this machine can be found at:
+	  Beep port to this machine can be found at:
 
 	  <http://www.handhelds.org/Compaq/index.html#iPAQ_H3600>
 
@@ -114,7 +114,7 @@ config SA1100_LART
 	bool "LART"
 	select CPU_FREQ_SA1100
 	help
-	  Say Y here if you are using the Linux Advanced Radio Terminal
+	  Say Y here if you are using the Beep Advanced Radio Terminal
 	  (also known as the LART).  See <http://www.lartmaker.nl/> for
 	  information on the LART.
 
@@ -132,7 +132,7 @@ config SA1100_PLEB
 	bool "PLEB"
 	select CPU_FREQ_SA1100
 	help
-	  Say Y here if you are using version 1 of the Portable Linux
+	  Say Y here if you are using version 1 of the Portable Beep
 	  Embedded Board (also known as PLEB).
 	  See <http://www.disy.cse.unsw.edu.au/Hardware/PLEB/>
 	  for more information.

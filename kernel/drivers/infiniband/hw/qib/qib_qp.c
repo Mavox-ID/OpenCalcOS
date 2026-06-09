@@ -32,9 +32,9 @@
  * SOFTWARE.
  */
 
-#include <linux/err.h>
-#include <linux/vmalloc.h>
-#include <linux/jhash.h>
+#include <beep/err.h>
+#include <beep/vmalloc.h>
+#include <beep/jhash.h>
 
 #include "qib.h"
 

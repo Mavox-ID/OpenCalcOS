@@ -6,9 +6,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/gfp.h>
-#include <linux/export.h>
+#include <beep/dma-mapping.h>
+#include <beep/gfp.h>
+#include <beep/export.h>
 
 #include <asm/addrspace.h>
 #include <asm/cacheflush.h>

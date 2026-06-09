@@ -1,7 +1,7 @@
 #ifndef __PXA3XX_GCU_H__
 #define __PXA3XX_GCU_H__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* Number of 32bit words in display list (ring buffer). */
 #define PXA3XX_GCU_BUFFER_WORDS  ((256 * 1024 - 256) / 4)

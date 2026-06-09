@@ -12,22 +12,22 @@
  *		use bio_add_page() to build bio's just the right size
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/kdev_t.h>
-#include <linux/gfp.h>
-#include <linux/bio.h>
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/blkdev.h>
-#include <linux/highmem.h>
-#include <linux/prefetch.h>
-#include <linux/mpage.h>
-#include <linux/writeback.h>
-#include <linux/backing-dev.h>
-#include <linux/pagevec.h>
-#include <linux/cleancache.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/mm.h>
+#include <beep/kdev_t.h>
+#include <beep/gfp.h>
+#include <beep/bio.h>
+#include <beep/fs.h>
+#include <beep/buffer_head.h>
+#include <beep/blkdev.h>
+#include <beep/highmem.h>
+#include <beep/prefetch.h>
+#include <beep/mpage.h>
+#include <beep/writeback.h>
+#include <beep/backing-dev.h>
+#include <beep/pagevec.h>
+#include <beep/cleancache.h>
 
 /*
  * I/O completion handler for multipage BIOs.

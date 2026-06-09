@@ -25,10 +25,10 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/mISDNdsp.h>
-#include <linux/mISDNif.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/mISDNdsp.h>
+#include <beep/mISDNif.h>
 #include "core.h"
 #include "dsp.h"
 #include "dsp_hwec.h"

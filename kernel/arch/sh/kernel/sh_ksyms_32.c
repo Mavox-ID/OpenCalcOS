@@ -1,8 +1,8 @@
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/uaccess.h>
+#include <beep/delay.h>
+#include <beep/mm.h>
 #include <asm/checksum.h>
 #include <asm/sections.h>
 

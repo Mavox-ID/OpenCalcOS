@@ -11,16 +11,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/pwm_backlight.h>
-#include <linux/input.h>
-#include <linux/gpio.h>
-#include <linux/gpio_keys.h>
-#include <linux/leds-lp3944.h>
-#include <linux/i2c/pxa-i2c.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/pwm_backlight.h>
+#include <beep/input.h>
+#include <beep/gpio.h>
+#include <beep/gpio_keys.h>
+#include <beep/leds-lp3944.h>
+#include <beep/i2c/pxa-i2c.h>
 
 #include <media/soc_camera.h>
 
@@ -29,11 +29,11 @@
 #include <asm/mach/arch.h>
 
 #include <mach/pxa27x.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <beep/platform_data/video-pxafb.h>
+#include <beep/platform_data/usb-ohci-pxa27x.h>
 #include <mach/hardware.h>
-#include <linux/platform_data/keypad-pxa27x.h>
-#include <linux/platform_data/camera-pxa.h>
+#include <beep/platform_data/keypad-pxa27x.h>
+#include <beep/platform_data/camera-pxa.h>
 
 #include "devices.h"
 #include "generic.h"

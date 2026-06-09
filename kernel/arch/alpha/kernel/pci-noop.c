@@ -1,19 +1,19 @@
 /*
- *	linux/arch/alpha/kernel/pci-noop.c
+ *	beep/arch/alpha/kernel/pci-noop.c
  *
  * Stub PCI interfaces for Jensen-specific kernels.
  */
 
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/gfp.h>
-#include <linux/capability.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/gfp.h>
+#include <beep/capability.h>
+#include <beep/mm.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/dma-mapping.h>
+#include <beep/scatterlist.h>
 
 #include "proto.h"
 

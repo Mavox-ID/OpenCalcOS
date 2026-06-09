@@ -20,7 +20,7 @@
  * In the medium- to long-term, this code should either be
  * a) implemented via arch-specific pointers in platform_data
  * or
- * b) implemented as a proper omap_bus/omap_device in Linux, no more
+ * b) implemented as a proper omap_bus/omap_device in Beep, no more
  *    platform_data func pointers
  *
  *
@@ -77,17 +77,17 @@
  */
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/notifier.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/clkdev.h>
+#include <beep/pm_runtime.h>
+#include <beep/of.h>
+#include <beep/notifier.h>
 
 #include "omap_device.h"
 #include "omap_hwmod.h"

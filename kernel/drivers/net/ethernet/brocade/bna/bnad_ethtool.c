@@ -1,5 +1,5 @@
 /*
- * Linux network driver for Brocade Converged Network Adapter.
+ * Beep network driver for Brocade Converged Network Adapter.
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License (GPL) Version 2 as
@@ -18,10 +18,10 @@
 
 #include "cna.h"
 
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/rtnetlink.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/ethtool.h>
+#include <beep/rtnetlink.h>
 
 #include "bna.h"
 

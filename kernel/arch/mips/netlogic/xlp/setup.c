@@ -32,18 +32,18 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/kernel.h>
-#include <linux/serial_8250.h>
-#include <linux/pm.h>
-#include <linux/bootmem.h>
+#include <beep/kernel.h>
+#include <beep/serial_8250.h>
+#include <beep/pm.h>
+#include <beep/bootmem.h>
 
 #include <asm/reboot.h>
 #include <asm/time.h>
 #include <asm/bootinfo.h>
 
-#include <linux/of_fdt.h>
-#include <linux/of_platform.h>
-#include <linux/of_device.h>
+#include <beep/of_fdt.h>
+#include <beep/of_platform.h>
+#include <beep/of_device.h>
 
 #include <asm/netlogic/haldefs.h>
 #include <asm/netlogic/common.h>
@@ -58,7 +58,7 @@ cpumask_t nlm_cpumask = CPU_MASK_CPU0;
 unsigned int nlm_threads_per_core;
 extern u32 __dtb_start[];
 
-static void nlm_linux_exit(void)
+static void nlm_beep_exit(void)
 {
 	uint64_t sysbase = nlm_get_node(0)->sysbase;
 
@@ -72,9 +72,9 @@ void __init plat_mem_setup(void)
 	void *fdtp;
 
 	panic_timeout	= 5;
-	_machine_restart = (void (*)(char *))nlm_linux_exit;
-	_machine_halt	= nlm_linux_exit;
-	pm_power_off	= nlm_linux_exit;
+	_machine_restart = (void (*)(char *))nlm_beep_exit;
+	_machine_halt	= nlm_beep_exit;
+	pm_power_off	= nlm_beep_exit;
 
 	/*
 	 * If no FDT pointer is passed in, use the built-in FDT.

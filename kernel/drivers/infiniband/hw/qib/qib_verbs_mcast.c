@@ -31,7 +31,7 @@
  * SOFTWARE.
  */
 
-#include <linux/rculist.h>
+#include <beep/rculist.h>
 
 #include "qib.h"
 

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/h8300/platform/h8s/ptrace_h8s.c
+ *  beep/arch/h8300/platform/h8s/ptrace_h8s.c
  *    ptrace cpu depend helper functions
  *
  *  Yoshinori Sato <ysato@users.sourceforge.jp>
@@ -9,9 +9,9 @@
  * this archive for more details.
  */
 
-#include <linux/linkage.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
+#include <beep/linkage.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
 #include <asm/ptrace.h>
 
 #define CCR_MASK  0x6f

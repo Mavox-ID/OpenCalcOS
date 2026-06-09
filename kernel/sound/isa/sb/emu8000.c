@@ -20,18 +20,18 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/export.h>
-#include <linux/delay.h>
+#include <beep/wait.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/ioport.h>
+#include <beep/export.h>
+#include <beep/delay.h>
 #include <sound/core.h>
 #include <sound/emu8000.h>
 #include <sound/emu8000_reg.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>
-#include <linux/init.h>
+#include <beep/init.h>
 #include <sound/control.h>
 #include <sound/initval.h>
 

@@ -4,11 +4,11 @@
  * Copyright (C) 2004  Axis Communications AB
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/firmware.h>
 
 #include <hwregs/reg_rdwr.h>
 #include <hwregs/reg_map.h>

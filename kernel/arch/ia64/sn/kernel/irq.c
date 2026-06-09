@@ -8,11 +8,11 @@
  * Copyright (c) 2000-2008 Silicon Graphics, Inc.  All Rights Reserved.
  */
 
-#include <linux/irq.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/rculist.h>
-#include <linux/slab.h>
+#include <beep/irq.h>
+#include <beep/spinlock.h>
+#include <beep/init.h>
+#include <beep/rculist.h>
+#include <beep/slab.h>
 #include <asm/sn/addrs.h>
 #include <asm/sn/arch.h>
 #include <asm/sn/intr.h>

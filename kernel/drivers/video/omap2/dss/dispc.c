@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/omap2/dss/dispc.c
+ * beep/drivers/video/omap2/dss/dispc.c
  *
  * Copyright (C) 2009 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -22,20 +22,20 @@
 
 #define DSS_SUBSYS_NAME "DISPC"
 
-#include <linux/kernel.h>
-#include <linux/dma-mapping.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/seq_file.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/hardirq.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/sizes.h>
+#include <beep/kernel.h>
+#include <beep/dma-mapping.h>
+#include <beep/vmalloc.h>
+#include <beep/export.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/jiffies.h>
+#include <beep/seq_file.h>
+#include <beep/delay.h>
+#include <beep/workqueue.h>
+#include <beep/hardirq.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/sizes.h>
 
 #include <video/omapdss.h>
 

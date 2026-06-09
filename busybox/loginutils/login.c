@@ -70,10 +70,10 @@
 #include "common_bufsiz.h"
 #include <syslog.h>
 
-#if ENABLE_SELINUX
-# include <selinux/selinux.h>  /* for is_selinux_enabled()  */
-# include <selinux/get_context_list.h> /* for get_default_context() */
-# /* from deprecated <selinux/flask.h>: */
+#if ENABLE_SEBEEP
+# include <sebeep/sebeep.h>  /* for is_sebeep_enabled()  */
+# include <sebeep/get_context_list.h> /* for get_default_context() */
+# /* from deprecated <sebeep/flask.h>: */
 # undef  SECCLASS_CHR_FILE
 # define SECCLASS_CHR_FILE 10
 #endif
@@ -179,13 +179,13 @@ static void die_if_nologin(void)
 # define die_if_nologin() ((void)0)
 #endif
 
-#if ENABLE_SELINUX
-static void initselinux(char *username, char *full_tty,
+#if ENABLE_SEBEEP
+static void initsebeep(char *username, char *full_tty,
 						security_context_t *user_sid)
 {
 	security_context_t old_tty_sid, new_tty_sid;
 
-	if (!is_selinux_enabled())
+	if (!is_sebeep_enabled())
 		return;
 
 	if (get_default_context(username, NULL, user_sid)) {
@@ -333,7 +333,7 @@ int login_main(int argc UNUSED_PARAM, char **argv)
 	char *opt_user = opt_user; /* for compiler */
 	char *full_tty;
 	char *short_tty;
-	IF_SELINUX(security_context_t user_sid = NULL;)
+	IF_SEBEEP(security_context_t user_sid = NULL;)
 #if ENABLE_PAM
 	int pamret;
 	pam_handle_t *pamh;
@@ -551,7 +551,7 @@ int login_main(int argc UNUSED_PARAM, char **argv)
 	}
 #endif
 
-	IF_SELINUX(initselinux(username, full_tty, &user_sid);)
+	IF_SEBEEP(initsebeep(username, full_tty, &user_sid);)
 
 	/* Try these, but don't complain if they fail.
 	 * _f_chown is safe wrt race t=ttyname(0);...;chown(t); */
@@ -590,9 +590,9 @@ int login_main(int argc UNUSED_PARAM, char **argv)
 
 	/* well, a simple setexeccon() here would do the job as well,
 	 * but let's play the game for now */
-	IF_SELINUX(set_current_security_context(user_sid);)
+	IF_SEBEEP(set_current_security_context(user_sid);)
 
-	// util-linux login also does:
+	// util-beep login also does:
 	// /* start new session */
 	// setsid();
 	// /* TIOCSCTTY: steal tty from other process group */

@@ -126,7 +126,7 @@
 	 * need to look up the TLB entry and create a temporary mapping.
 	 *
 	 * FIXME: we don't currently handle if the lwepx faults.  PR-mode
-	 * booke doesn't handle it either.  Since Linux doesn't use
+	 * booke doesn't handle it either.  Since Beep doesn't use
 	 * broadcast tlbivax anymore, the only way this should happen is
 	 * if the guest maps its memory execute-but-not-read, or if we
 	 * somehow take a TLB miss in the middle of this entry code and

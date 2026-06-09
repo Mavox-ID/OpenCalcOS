@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-nspire/boot1.c
+ *  beep/arch/arm/mach-nspire/boot1.c
  *
  *  Copyright (C) 2012 Daniel Tang <tangrs@tangrs.id.au>
  *
@@ -8,7 +8,7 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/proc_fs.h>
+#include <beep/proc_fs.h>
 
 #include <mach/nspire_mmio.h>
 

@@ -23,9 +23,9 @@
 
 #include "debugfs.h"
 
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #include "wlcore.h"
 #include "debug.h"

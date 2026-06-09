@@ -10,9 +10,9 @@
  *    Copyright (c) 2003-2004 Silicon Graphics Inc.  All Rights Reserved.
  */
 
-#include <linux/oprofile.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
+#include <beep/oprofile.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
 #include <asm/ptrace.h>
 
 /*

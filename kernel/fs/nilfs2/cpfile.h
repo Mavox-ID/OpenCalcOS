@@ -23,9 +23,9 @@
 #ifndef _NILFS_CPFILE_H
 #define _NILFS_CPFILE_H
 
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/nilfs2_fs.h>
+#include <beep/fs.h>
+#include <beep/buffer_head.h>
+#include <beep/nilfs2_fs.h>
 
 
 int nilfs_cpfile_get_checkpoint(struct inode *, __u64, int,

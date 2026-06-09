@@ -2,7 +2,7 @@
  * (C) 2003-2004 by Harald Welte <laforge@netfilter.org>
  * based on ideas of Fabio Olive Leite <olive@unixforge.org>
  *
- * Development of this code funded by SuSE Linux AG, http://www.suse.com/
+ * Development of this code funded by SuSE Beep AG, http://www.suse.com/
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -10,22 +10,22 @@
  *
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/jhash.h>
-#include <linux/bitops.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/icmp.h>
-#include <linux/if_arp.h>
-#include <linux/seq_file.h>
-#include <linux/netfilter_arp.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv4/ipt_CLUSTERIP.h>
+#include <beep/module.h>
+#include <beep/proc_fs.h>
+#include <beep/jhash.h>
+#include <beep/bitops.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/udp.h>
+#include <beep/icmp.h>
+#include <beep/if_arp.h>
+#include <beep/seq_file.h>
+#include <beep/netfilter_arp.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter_ipv4/ip_tables.h>
+#include <beep/netfilter_ipv4/ipt_CLUSTERIP.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/net_namespace.h>
 #include <net/checksum.h>
@@ -512,7 +512,7 @@ arp_mangle(unsigned int hook,
 	if (!c)
 		return NF_ACCEPT;
 
-	/* normally the linux kernel always replies to arp queries of
+	/* normally the beep kernel always replies to arp queries of
 	 * addresses on different interfacs.  However, in the CLUSTERIP case
 	 * this wouldn't work, since we didn't subscribe the mcast group on
 	 * other interfaces */

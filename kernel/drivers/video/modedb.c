@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/modedb.c -- Standard video mode database management
+ *  beep/drivers/video/modedb.c -- Standard video mode database management
  *
  *	Copyright (C) 1999 Geert Uytterhoeven
  *
@@ -11,10 +11,10 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
-#include <linux/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/fb.h>
+#include <beep/kernel.h>
 
 #undef DEBUG
 

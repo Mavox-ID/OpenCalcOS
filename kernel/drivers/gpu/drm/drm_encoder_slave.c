@@ -24,7 +24,7 @@
  *
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include <drm/drm_encoder_slave.h>
 

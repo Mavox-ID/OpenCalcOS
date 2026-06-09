@@ -1,9 +1,9 @@
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
 
 #include <asm/pmac_feature.h>
 #include <asm/pmac_pfunc.h>

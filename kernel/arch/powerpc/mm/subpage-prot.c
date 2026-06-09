@@ -7,12 +7,12 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/gfp.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/hugetlb.h>
 
 #include <asm/pgtable.h>
 #include <asm/uaccess.h>

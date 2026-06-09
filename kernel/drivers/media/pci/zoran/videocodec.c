@@ -29,17 +29,17 @@
 
 #define VIDEOCODEC_VERSION "v0.2"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/slab.h>
 
 // kernel config is here (procfs flag)
 
 #ifdef CONFIG_PROC_FS
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 #include <asm/uaccess.h>
 #endif
 
@@ -373,7 +373,7 @@ videocodec_init (void)
 	static struct proc_dir_entry *videocodec_proc_entry;
 #endif
 
-	printk(KERN_INFO "Linux video codec intermediate layer: %s\n",
+	printk(KERN_INFO "Beep video codec intermediate layer: %s\n",
 	       VIDEOCODEC_VERSION);
 
 #ifdef CONFIG_PROC_FS

@@ -14,10 +14,10 @@
  * kind, whether express or implied.
  */
 
-#include <linux/ioport.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/pci.h>
+#include <beep/ioport.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/pci.h>
 #include <asm/io.h>
 
 #define XPLB_PCI_ADDR 0x10c
@@ -160,7 +160,7 @@ void __init xilinx_pci_init(void)
 	out_be32(pci_reg + XPLB_PCI_BUS, 0x000000ff);
 	iounmap(pci_reg);
 
-	/* Register the host bridge with the linux kernel! */
+	/* Register the host bridge with the beep kernel! */
 	pci_process_bridge_OF_ranges(hose, pci_node,
 					INDIRECT_TYPE_SET_CFG_TYPE);
 

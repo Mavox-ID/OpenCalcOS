@@ -14,19 +14,19 @@
  * (at your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/compiler.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/mod_devicetable.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/compiler.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/mod_devicetable.h>
 #include <asm/prom.h>
 #include <asm/fsl_lbc.h>
 

@@ -22,11 +22,11 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/crc-ccitt.h>
-#include <linux/isdn/hdlc.h>
-#include <linux/bitrev.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/crc-ccitt.h>
+#include <beep/isdn/hdlc.h>
+#include <beep/bitrev.h>
 
 /*-------------------------------------------------------------------*/
 

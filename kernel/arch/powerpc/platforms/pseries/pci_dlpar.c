@@ -25,8 +25,8 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/pci.h>
-#include <linux/export.h>
+#include <beep/pci.h>
+#include <beep/export.h>
 #include <asm/pci-bridge.h>
 #include <asm/ppc-pci.h>
 #include <asm/firmware.h>
@@ -70,7 +70,7 @@ EXPORT_SYMBOL_GPL(pcibios_find_pci_bus);
  * @purge_pe: destroy the PE on removal of PCI devices
  *
  * Remove all of the PCI devices under this bus both from the
- * linux pci device tree, and from the powerpc EEH address cache.
+ * beep pci device tree, and from the powerpc EEH address cache.
  * By default, the corresponding PE will be destroied during the
  * normal PCI hotplug path. For PCI hotplug during EEH recovery,
  * the corresponding PE won't be destroied and deallocated.
@@ -97,7 +97,7 @@ void __pcibios_remove_pci_devices(struct pci_bus *bus, int purge_pe)
  * pcibios_remove_pci_devices - remove all devices under this bus
  *
  * Remove all of the PCI devices under this bus both from the
- * linux pci device tree, and from the powerpc EEH address cache.
+ * beep pci device tree, and from the powerpc EEH address cache.
  */
 void pcibios_remove_pci_devices(struct pci_bus *bus)
 {

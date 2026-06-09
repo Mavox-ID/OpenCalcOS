@@ -6,9 +6,9 @@
 #ifndef NET_ATM_SIGNALING_H
 #define NET_ATM_SIGNALING_H
 
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/atmsvc.h>
+#include <beep/atm.h>
+#include <beep/atmdev.h>
+#include <beep/atmsvc.h>
 
 
 extern struct atm_vcc *sigd; /* needed in svc_release */

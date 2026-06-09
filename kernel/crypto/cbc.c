@@ -11,13 +11,13 @@
  */
 
 #include <crypto/algapi.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/log2.h>
+#include <beep/module.h>
+#include <beep/scatterlist.h>
+#include <beep/slab.h>
 
 struct crypto_cbc_ctx {
 	struct crypto_cipher *child;

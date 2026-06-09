@@ -1,4 +1,4 @@
-/* Raytheon wireless LAN PCMCIA card driver for Linux 
+/* Raytheon wireless LAN PCMCIA card driver for Beep 
    A  PCMCIA client driver for the Raylink wireless network card
    Written by Corey Thomas
 */

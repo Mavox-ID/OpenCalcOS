@@ -16,16 +16,16 @@
  *
  * See rt.c in preempt-rt for proper credits and further information
  */
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/kallsyms.h>
-#include <linux/syscalls.h>
-#include <linux/interrupt.h>
-#include <linux/plist.h>
-#include <linux/fs.h>
-#include <linux/debug_locks.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/export.h>
+#include <beep/spinlock.h>
+#include <beep/kallsyms.h>
+#include <beep/syscalls.h>
+#include <beep/interrupt.h>
+#include <beep/plist.h>
+#include <beep/fs.h>
+#include <beep/debug_locks.h>
 
 #include "rtmutex_common.h"
 

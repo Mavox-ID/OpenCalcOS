@@ -3,10 +3,10 @@
 
 #ifdef __KERNEL__
 
-#include <linux/mm_types.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-debug.h>
-#include <linux/kmemcheck.h>
+#include <beep/mm_types.h>
+#include <beep/scatterlist.h>
+#include <beep/dma-debug.h>
+#include <beep/kmemcheck.h>
 
 struct dma_iommu_mapping {
 	/* iommu specific data */

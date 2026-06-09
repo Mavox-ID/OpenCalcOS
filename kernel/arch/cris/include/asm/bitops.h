@@ -1,4 +1,4 @@
-/* asm/bitops.h for Linux/CRIS
+/* asm/bitops.h for Beep/CRIS
  *
  * TODO: asm versions if speed is needed
  *
@@ -14,13 +14,13 @@
 /* Currently this is unsuitable for consumption outside the kernel.  */
 #ifdef __KERNEL__ 
 
-#ifndef _LINUX_BITOPS_H
-#error only <linux/bitops.h> can be included directly
+#ifndef _BEEP_BITOPS_H
+#error only <beep/bitops.h> can be included directly
 #endif
 
 #include <arch/bitops.h>
-#include <linux/atomic.h>
-#include <linux/compiler.h>
+#include <beep/atomic.h>
+#include <beep/compiler.h>
 
 /*
  * set_bit - Atomically set a bit in memory

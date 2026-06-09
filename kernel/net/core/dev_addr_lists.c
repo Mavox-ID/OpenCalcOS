@@ -11,11 +11,11 @@
  * (at your option) any later version.
  */
 
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/export.h>
-#include <linux/list.h>
-#include <linux/proc_fs.h>
+#include <beep/netdevice.h>
+#include <beep/rtnetlink.h>
+#include <beep/export.h>
+#include <beep/list.h>
+#include <beep/proc_fs.h>
 
 /*
  * General list handling functions
@@ -729,7 +729,7 @@ void dev_mc_init(struct net_device *dev)
 EXPORT_SYMBOL(dev_mc_init);
 
 #ifdef CONFIG_PROC_FS
-#include <linux/seq_file.h>
+#include <beep/seq_file.h>
 
 static int dev_mc_seq_show(struct seq_file *seq, void *v)
 {

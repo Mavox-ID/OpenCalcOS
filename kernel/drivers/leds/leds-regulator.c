@@ -11,14 +11,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/leds.h>
-#include <linux/leds-regulator.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
+#include <beep/leds.h>
+#include <beep/leds-regulator.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/consumer.h>
 
 #define to_regulator_led(led_cdev) \
 	container_of(led_cdev, struct regulator_led, cdev)

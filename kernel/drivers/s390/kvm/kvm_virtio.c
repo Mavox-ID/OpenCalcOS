@@ -10,18 +10,18 @@
  *    Author(s): Christian Borntraeger <borntraeger@de.ibm.com>
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/err.h>
-#include <linux/virtio.h>
-#include <linux/virtio_config.h>
-#include <linux/slab.h>
-#include <linux/virtio_console.h>
-#include <linux/interrupt.h>
-#include <linux/virtio_ring.h>
-#include <linux/export.h>
-#include <linux/pfn.h>
+#include <beep/kernel_stat.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/err.h>
+#include <beep/virtio.h>
+#include <beep/virtio_config.h>
+#include <beep/slab.h>
+#include <beep/virtio_console.h>
+#include <beep/interrupt.h>
+#include <beep/virtio_ring.h>
+#include <beep/export.h>
+#include <beep/pfn.h>
 #include <asm/io.h>
 #include <asm/kvm_para.h>
 #include <asm/kvm_virtio.h>

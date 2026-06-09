@@ -6,10 +6,10 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/pwm.h>
+#include <beep/slab.h>
 
 #include <asm/gptimers.h>
 #include <asm/portmux.h>

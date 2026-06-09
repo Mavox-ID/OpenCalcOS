@@ -3,7 +3,7 @@
 #ifdef __KERNEL__
 
 /*
- * Common bits between 4K and 64K pages in a linux-style PTE.
+ * Common bits between 4K and 64K pages in a beep-style PTE.
  * These match the bits in the (hardware-defined) PowerPC PTE as closely
  * as possible. Additional bits may be defined in pgtable-hash64-*.h
  *
@@ -34,14 +34,14 @@
 /* Strong Access Ordering */
 #define _PAGE_SAO		(_PAGE_WRITETHRU | _PAGE_NO_CACHE | _PAGE_COHERENT)
 
-/* No page size encoding in the linux PTE */
+/* No page size encoding in the beep PTE */
 #define _PAGE_PSIZE		0
 
 /* PTEIDX nibble */
 #define _PTEIDX_SECONDARY	0x8
 #define _PTEIDX_GROUP_IX	0x7
 
-/* Hash table based platforms need atomic updates of the linux PTE */
+/* Hash table based platforms need atomic updates of the beep PTE */
 #define PTE_ATOMIC_UPDATES	1
 
 #ifdef CONFIG_PPC_64K_PAGES

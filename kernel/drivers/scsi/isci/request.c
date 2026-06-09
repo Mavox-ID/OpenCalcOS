@@ -2460,7 +2460,7 @@ sci_io_request_tc_completion(struct isci_request *ireq,
  *    layer driver.
  * @sas_task: This parameter is the task struct from the upper layer driver.
  * @resp_iu: This parameter points to the response iu of the completed request.
- * @dev: This parameter specifies the linux device struct.
+ * @dev: This parameter specifies the beep device struct.
  *
  * none.
  */

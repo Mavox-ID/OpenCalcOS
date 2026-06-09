@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/clps711xfb.c
+ *  beep/drivers/video/clps711xfb.c
  *
  *  Copyright (C) 2000-2001 Deep Blue Solutions Ltd.
  *
@@ -19,17 +19,17 @@
  *
  *  Framebuffer driver for the CLPS7111 and EP7212 processors.
  */
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/delay.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/delay.h>
 
 #include <mach/hardware.h>
 #include <asm/mach-types.h>
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 
 struct fb_info	*cfb;
 
@@ -309,6 +309,6 @@ static struct platform_driver clps711x_fb_driver = {
 };
 module_platform_driver(clps711x_fb_driver);
 
-MODULE_AUTHOR("Russell King <rmk@arm.linux.org.uk>");
+MODULE_AUTHOR("Russell King <rmk@arm.beep.org.uk>");
 MODULE_DESCRIPTION("CLPS711X framebuffer driver");
 MODULE_LICENSE("GPL");

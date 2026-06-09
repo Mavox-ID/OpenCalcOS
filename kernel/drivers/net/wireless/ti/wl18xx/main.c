@@ -19,10 +19,10 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/ip.h>
-#include <linux/firmware.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/ip.h>
+#include <beep/firmware.h>
 
 #include "../wlcore/wlcore.h"
 #include "../wlcore/debug.h"

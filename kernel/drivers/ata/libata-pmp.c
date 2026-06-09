@@ -1,16 +1,16 @@
 /*
  * libata-pmp.c - libata port multiplier support
  *
- * Copyright (c) 2007  SUSE Linux Products GmbH
+ * Copyright (c) 2007  SUSE Beep Products GmbH
  * Copyright (c) 2007  Tejun Heo <teheo@suse.de>
  *
  * This file is released under the GPLv2.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/libata.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/libata.h>
+#include <beep/slab.h>
 #include "libata.h"
 #include "libata-transport.h"
 

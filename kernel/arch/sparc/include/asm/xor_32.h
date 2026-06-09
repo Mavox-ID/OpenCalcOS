@@ -9,7 +9,7 @@
  * any later version.
  *
  * You should have received a copy of the GNU General Public License
- * (for example /usr/src/linux/COPYING); if not, write to the Free
+ * (for example /usr/src/beep/COPYING); if not, write to the Free
  * Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
@@ -17,7 +17,7 @@
  * High speed xor_block operation for RAID4/5 utilizing the
  * ldd/std SPARC instructions.
  *
- * Copyright (C) 1999 Jakub Jelinek (jj@ultra.linux.cz)
+ * Copyright (C) 1999 Jakub Jelinek (jj@ultra.beep.cz)
  */
 
 static void

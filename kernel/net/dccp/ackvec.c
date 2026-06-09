@@ -10,9 +10,9 @@
  *      Free Software Foundation; version 2 of the License;
  */
 #include "dccp.h"
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 
 static struct kmem_cache *dccp_ackvec_slab;
 static struct kmem_cache *dccp_ackvec_record_slab;

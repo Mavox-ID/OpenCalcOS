@@ -15,17 +15,17 @@
  * from freescale
  */
 
-#include <linux/mfd/mc13xxx.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <beep/mfd/mc13xxx.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/driver.h>
+#include <beep/regulator/of_regulator.h>
+#include <beep/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/of.h>
 #include "mc13xxx.h"
 
 static int mc13xxx_regulator_enable(struct regulator_dev *rdev)

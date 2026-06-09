@@ -16,7 +16,7 @@
 #	Copyright (c) 1999,2001  D. Jeff Dionne <jeff@lineo.ca>,
 #	Rt-Control Inc. / Lineo, Inc.
 #
-# Copyright (C) 1998,1999  D. Jeff Dionne <jeff@uclinux.org>,
+# Copyright (C) 1998,1999  D. Jeff Dionne <jeff@ucbeep.org>,
 #                          Kenneth Albanowski <kjahds@kjahds.com>,
 #
 # Based on arch/m68k/Makefile:
@@ -24,9 +24,9 @@
 #
 
 ifdef CONFIG_MMU
-UTS_SYSNAME = -DUTS_SYSNAME=\"Linux\"
+UTS_SYSNAME = -DUTS_SYSNAME=\"Beep\"
 else
-UTS_SYSNAME = -DUTS_SYSNAME=\"uClinux\"
+UTS_SYSNAME = -DUTS_SYSNAME=\"uCbeep\"
 endif
 
 KBUILD_AFLAGS_MODULE += -G0 -mlong-calls
@@ -44,7 +44,7 @@ endif
 endif
 endif
 
-#LDFLAGS_vmlinux	:= -Map linkmap.txt
+#LDFLAGS_vmbeep	:= -Map linkmap.txt
 
 ifdef CONFIG_GC_SECTIONS
 KBUILD_CFLAGS	+= -ffunction-sections -fdata-sections
@@ -90,7 +90,7 @@ core-$(CONFIG_MB93090_MB00)	+= arch/frv/mb93090-mb00/
 
 all: Image
 
-Image: vmlinux
+Image: vmbeep
 	$(Q)$(MAKE) $(build)=arch/frv/boot $@
 
 archclean:

@@ -14,10 +14,10 @@
  */
 
 #include <net/sock.h>
-#include <linux/compiler.h>
-#include <linux/dccp.h>
-#include <linux/list.h>
-#include <linux/module.h>
+#include <beep/compiler.h>
+#include <beep/dccp.h>
+#include <beep/list.h>
+#include <beep/module.h>
 
 /* maximum value for a CCID (RFC 4340, 19.5) */
 #define CCID_MAX		255

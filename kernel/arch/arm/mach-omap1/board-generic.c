@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/board-generic.c
+ * beep/arch/arm/mach-omap1/board-generic.c
  *
  * Modified from board-innovator1510.c
  *
@@ -12,10 +12,10 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
 
 #include <mach/hardware.h>
 #include <asm/mach-types.h>

@@ -10,8 +10,8 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/bitops.h>
-#include <linux/export.h>
+#include <beep/bitops.h>
+#include <beep/export.h>
 #include <asm/types.h>
 #include <asm/byteorder.h>
 

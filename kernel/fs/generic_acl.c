@@ -6,12 +6,12 @@
  * Generic ACL support for in-memory filesystems.
  */
 
-#include <linux/sched.h>
-#include <linux/gfp.h>
-#include <linux/fs.h>
-#include <linux/generic_acl.h>
-#include <linux/posix_acl.h>
-#include <linux/posix_acl_xattr.h>
+#include <beep/sched.h>
+#include <beep/gfp.h>
+#include <beep/fs.h>
+#include <beep/generic_acl.h>
+#include <beep/posix_acl.h>
+#include <beep/posix_acl_xattr.h>
 
 
 static size_t

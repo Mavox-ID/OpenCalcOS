@@ -15,15 +15,15 @@
  *
  */
 
-#include <linux/stddef.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/syscore_ops.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
+#include <beep/stddef.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/signal.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/syscore_ops.h>
+#include <beep/adb.h>
+#include <beep/pmu.h>
 
 #include <asm/sections.h>
 #include <asm/io.h>
@@ -534,7 +534,7 @@ void __init pmac_pic_init(void)
 #ifdef CONFIG_PPC32
 	if (!pmac_newworld)
 		of_irq_workarounds |= OF_IMAP_OLDWORLD_MAC;
-	if (of_get_property(of_chosen, "linux,bootx", NULL) != NULL)
+	if (of_get_property(of_chosen, "beep,bootx", NULL) != NULL)
 		of_irq_workarounds |= OF_IMAP_NO_PHANDLE;
 
 	/* If we don't have phandles on a newworld, then try to locate a

@@ -1,13 +1,13 @@
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include <sound/initval.h>
 
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 
-#include <linux/mfd/si476x-core.h>
+#include <beep/mfd/si476x-core.h>
 
 enum si476x_audio_registers {
 	SI476X_DIGITAL_IO_OUTPUT_FORMAT		= 0x0203,

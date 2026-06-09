@@ -6,8 +6,8 @@
 #ifndef NET_ATM_RESOURCES_H
 #define NET_ATM_RESOURCES_H
 
-#include <linux/atmdev.h>
-#include <linux/mutex.h>
+#include <beep/atmdev.h>
+#include <beep/mutex.h>
 
 
 extern struct list_head atm_devs;
@@ -18,7 +18,7 @@ int atm_dev_ioctl(unsigned int cmd, void __user *arg, int compat);
 
 #ifdef CONFIG_PROC_FS
 
-#include <linux/proc_fs.h>
+#include <beep/proc_fs.h>
 
 void *atm_dev_seq_start(struct seq_file *seq, loff_t *pos);
 void atm_dev_seq_stop(struct seq_file *seq, void *v);

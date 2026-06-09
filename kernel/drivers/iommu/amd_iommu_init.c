@@ -17,15 +17,15 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/pci.h>
-#include <linux/acpi.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/syscore_ops.h>
-#include <linux/interrupt.h>
-#include <linux/msi.h>
-#include <linux/amd-iommu.h>
-#include <linux/export.h>
+#include <beep/pci.h>
+#include <beep/acpi.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/syscore_ops.h>
+#include <beep/interrupt.h>
+#include <beep/msi.h>
+#include <beep/amd-iommu.h>
+#include <beep/export.h>
 #include <acpi/acpi.h>
 #include <asm/pci-direct.h>
 #include <asm/iommu.h>

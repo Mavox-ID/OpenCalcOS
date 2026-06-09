@@ -6,17 +6,17 @@
  *
  */
 
-#include <linux/stat.h>
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/shm.h>
-#include <linux/errno.h>
-#include <linux/mman.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/memcontrol.h>
+#include <beep/stat.h>
+#include <beep/time.h>
+#include <beep/kernel.h>
+#include <beep/gfp.h>
+#include <beep/mm.h>
+#include <beep/shm.h>
+#include <beep/errno.h>
+#include <beep/mman.h>
+#include <beep/string.h>
+#include <beep/fcntl.h>
+#include <beep/memcontrol.h>
 
 #include <asm/uaccess.h>
 

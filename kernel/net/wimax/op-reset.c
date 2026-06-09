@@ -1,9 +1,9 @@
 /*
- * Linux WiMAX
+ * Beep WiMAX
  * Implement and export a method for resetting a WiMAX device
  *
  *
- * Copyright (C) 2008 Intel Corporation <linux-wimax@intel.com>
+ * Copyright (C) 2008 Intel Corporation <beep-wimax@intel.com>
  * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
  *
  * This program is free software; you can redistribute it and/or
@@ -30,9 +30,9 @@
 
 #include <net/wimax.h>
 #include <net/genetlink.h>
-#include <linux/wimax.h>
-#include <linux/security.h>
-#include <linux/export.h>
+#include <beep/wimax.h>
+#include <beep/security.h>
+#include <beep/export.h>
 #include "wimax-internal.h"
 
 #define D_SUBMODULE op_reset

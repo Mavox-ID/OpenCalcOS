@@ -8,18 +8,18 @@
  * I like traps on v9, :))))
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/linkage.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/kdebug.h>
-#include <linux/ftrace.h>
-#include <linux/reboot.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/linkage.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/smp.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/kdebug.h>
+#include <beep/ftrace.h>
+#include <beep/reboot.h>
+#include <beep/gfp.h>
 
 #include <asm/smp.h>
 #include <asm/delay.h>

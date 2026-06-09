@@ -18,14 +18,14 @@
 #include <asm/uaccess.h>
 #include <asm/syscall.h>
 #include <asm/unistd.h>
-#include <linux/linkage.h>
-#include <linux/stringify.h>
-#include <linux/errno.h>
-#include <linux/syscalls.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/mman.h>
-#include <linux/shm.h>
+#include <beep/linkage.h>
+#include <beep/stringify.h>
+#include <beep/errno.h>
+#include <beep/syscalls.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/mman.h>
+#include <beep/shm.h>
 
 typedef void (*syscall_t)(void);
 

@@ -8,12 +8,12 @@
  * as published by the Free Software Foundation; either version
  * 2 of the License, or (at your option) any later version.
  */
-#include <linux/backing-dev.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/writeback.h>
-#include <linux/pagevec.h>
+#include <beep/backing-dev.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
+#include <beep/pagemap.h>
+#include <beep/writeback.h>
+#include <beep/pagevec.h>
 #include "internal.h"
 
 static int afs_write_back_from_locked_page(struct afs_writeback *wb,

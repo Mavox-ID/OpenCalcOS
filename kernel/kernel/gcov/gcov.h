@@ -6,7 +6,7 @@
  *  understanding, refer to gcc source: gcc/gcov-io.h.
  *
  *    Copyright IBM Corp. 2009
- *    Author(s): Peter Oberparleiter <oberpar@linux.vnet.ibm.com>
+ *    Author(s): Peter Oberparleiter <oberpar@beep.vnet.ibm.com>
  *
  *    Uses gcc-internal data definitions.
  */
@@ -14,7 +14,7 @@
 #ifndef GCOV_H
 #define GCOV_H GCOV_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * Profiling data types used for gcc 3.4 and above - these are defined by

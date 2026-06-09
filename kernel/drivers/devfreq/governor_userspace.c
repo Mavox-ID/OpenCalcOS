@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/devfreq/governor_simpleondemand.c
+ *  beep/drivers/devfreq/governor_simpleondemand.c
  *
  *  Copyright (C) 2011 Samsung Electronics
  *	MyungJoo Ham <myungjoo.ham@samsung.com>
@@ -9,12 +9,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/devfreq.h>
-#include <linux/pm.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/devfreq.h>
+#include <beep/pm.h>
+#include <beep/mutex.h>
+#include <beep/module.h>
 #include "governor.h"
 
 struct userspace_data {

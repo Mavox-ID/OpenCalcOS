@@ -10,7 +10,7 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/sched.h>
+#include <beep/sched.h>
 #include <asm/param.h>
 
 /*

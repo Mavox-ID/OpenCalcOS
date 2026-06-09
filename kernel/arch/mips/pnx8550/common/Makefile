@@ -19,7 +19,7 @@
 # #######################################################################
 #
 # Makefile for the PNX8550 specific kernel interface routines
-# under Linux.
+# under Beep.
 #
 
 obj-y := setup.o prom.o int.o reset.o time.o proc.o platform.o

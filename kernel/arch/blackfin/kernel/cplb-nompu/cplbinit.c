@@ -6,7 +6,7 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include <asm/blackfin.h>
 #include <asm/cacheflush.h>
@@ -111,7 +111,7 @@ void __init generate_cplb_tables_all(void)
 
 	i_d = 0;
 	/* Normal RAM, including MTD FS.  */
-#ifdef CONFIG_MTD_UCLINUX
+#ifdef CONFIG_MTD_UCBEEP
 	uncached_end = memory_mtd_start + mtd_size;
 #else
 	uncached_end = memory_end;

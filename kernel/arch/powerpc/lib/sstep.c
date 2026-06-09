@@ -8,10 +8,10 @@
  * as published by the Free Software Foundation; either version
  * 2 of the License, or (at your option) any later version.
  */
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
-#include <linux/ptrace.h>
-#include <linux/prefetch.h>
+#include <beep/kernel.h>
+#include <beep/kprobes.h>
+#include <beep/ptrace.h>
+#include <beep/prefetch.h>
 #include <asm/sstep.h>
 #include <asm/processor.h>
 #include <asm/uaccess.h>

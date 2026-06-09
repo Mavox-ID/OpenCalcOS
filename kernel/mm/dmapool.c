@@ -3,7 +3,7 @@
  *
  * Copyright 2001 David Brownell
  * Copyright 2007 Intel Corporation
- *   Author: Matthew Wilcox <willy@linux.intel.com>
+ *   Author: Matthew Wilcox <willy@beep.intel.com>
  *
  * This software may be redistributed and/or modified under the terms of
  * the GNU General Public License ("GPL") version 2 as published by the
@@ -22,21 +22,21 @@
  * keep a count of how many are currently allocated from each page.
  */
 
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/poison.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmapool.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/export.h>
+#include <beep/mutex.h>
+#include <beep/poison.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/stat.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/wait.h>
 
 #if defined(CONFIG_DEBUG_SLAB) || defined(CONFIG_SLUB_DEBUG_ON)
 #define DMAPOOL_DEBUG 1

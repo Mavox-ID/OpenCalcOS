@@ -3,19 +3,19 @@
  * Copyright (C) 2007, 2008 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/blkdev.h>
-#include <linux/hdreg.h>
-#include <linux/genhd.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/scatterlist.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/blkdev.h>
+#include <beep/hdreg.h>
+#include <beep/genhd.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/completion.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/scatterlist.h>
 
 #include <asm/vio.h>
 #include <asm/ldc.h>

@@ -6,25 +6,25 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/device.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
+#include <beep/device.h>
+#include <beep/etherdevice.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
 
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
+#include <beep/i2c.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
 #include <asm/dma.h>
 #include <asm/bfin5xx_spi.h>
 #include <asm/reboot.h>
 #include <asm/portmux.h>
 #include <asm/dpmc.h>
 #include <asm/bfin_sdh.h>
-#include <linux/spi/ad7877.h>
+#include <beep/spi/ad7877.h>
 #include <net/dsa.h>
 
 /*
@@ -44,7 +44,7 @@ static struct mtd_partition tcm_partitions[] = {
 		.offset     = 0,
 	},
 	{
-		.name       = "linux(nor)",
+		.name       = "beep(nor)",
 		.size       = 0x1C0000,
 		.offset     = MTDPART_OFS_APPEND,
 	}
@@ -81,7 +81,7 @@ static struct platform_device rtc_device = {
 #endif
 
 #if defined(CONFIG_BFIN_MAC) || defined(CONFIG_BFIN_MAC_MODULE)
-#include <linux/bfin_mac.h>
+#include <beep/bfin_mac.h>
 static const unsigned short bfin_mac_peripherals[] = P_MII0;
 
 static struct bfin_phydev_platform_data bfin_phydev_data[] = {
@@ -122,7 +122,7 @@ static struct mtd_partition bfin_spi_flash_partitions[] = {
 		.offset = 0,
 		.mask_flags = MTD_CAP_ROM
 	}, {
-		.name = "linux kernel(spi)",
+		.name = "beep kernel(spi)",
 		.size = MTDPART_SIZ_FULL,
 		.offset = MTDPART_OFS_APPEND,
 	}
@@ -567,8 +567,8 @@ static struct platform_device bfin_sport1_uart_device = {
 #endif
 
 #if defined(CONFIG_KEYBOARD_GPIO) || defined(CONFIG_KEYBOARD_GPIO_MODULE)
-#include <linux/input.h>
-#include <linux/gpio_keys.h>
+#include <beep/input.h>
+#include <beep/gpio_keys.h>
 
 static struct gpio_keys_button bfin_gpio_keys_table[] = {
 	{BTN_0, GPIO_PG0, 1, "gpio-keys: BTN0"},

@@ -16,14 +16,14 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/i2c-pnx.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/i2c-pnx.h>
+#include <beep/io.h>
 
 #include <asm/mach/map.h>
 #include <asm/system_info.h>

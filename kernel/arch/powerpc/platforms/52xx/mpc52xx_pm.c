@@ -1,6 +1,6 @@
-#include <linux/init.h>
-#include <linux/suspend.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/suspend.h>
+#include <beep/io.h>
 #include <asm/time.h>
 #include <asm/cacheflush.h>
 #include <asm/mpc52xx.h>

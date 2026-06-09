@@ -2,7 +2,7 @@
 #define _IOP13XX_IRQS_H_
 
 #ifndef __ASSEMBLER__
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* INTPND0 CP6 R0 Page 3
  */

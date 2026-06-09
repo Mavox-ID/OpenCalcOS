@@ -6,14 +6,14 @@
  * This code is released under the GPL version 2.
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/eisa.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/eisa.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/ioport.h>
 #include <asm/io.h>
 
 #define SLOT_ADDRESS(r,n) (r->bus_base_addr + (0x1000 * n))

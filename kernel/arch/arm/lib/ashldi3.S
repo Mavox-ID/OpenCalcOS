@@ -26,7 +26,7 @@ the Free Software Foundation, 51 Franklin Street, Fifth Floor,
 Boston, MA 02110-1301, USA.  */
 
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 #ifdef __ARMEB__
 #define al r1

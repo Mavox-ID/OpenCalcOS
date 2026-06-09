@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/vgastate.c -- VGA state save/restore
+ * beep/drivers/video/vgastate.c -- VGA state save/restore
  *
  * Copyright 2002 James Simmons
  * 
@@ -13,10 +13,10 @@
  * archive for more details.  
  *
  */
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
-#include <linux/vmalloc.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/fb.h>
+#include <beep/vmalloc.h>
 #include <video/vga.h>
 
 struct regstate {

@@ -1,5 +1,5 @@
 /*
- * IBM Real-Time Linux driver
+ * IBM Real-Time Beep driver
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,13 +24,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/dmi.h>
-#include <linux/efi.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/dmi.h>
+#include <beep/efi.h>
+#include <beep/mutex.h>
 #include <asm/bios_ebda.h>
 
 #include <asm-generic/io-64-nonatomic-lo-hi.h>

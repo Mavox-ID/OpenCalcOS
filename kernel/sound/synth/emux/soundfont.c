@@ -26,8 +26,8 @@
  * Everything may change when there is an alsa way of doing things.
  */
 #include <asm/uaccess.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 #include <sound/core.h>
 #include <sound/soundfont.h>
 #include <sound/seq_oss_legacy.h>

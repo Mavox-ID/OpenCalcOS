@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/kernel/pm.c
+ * beep/arch/unicore32/kernel/pm.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -10,12 +10,12 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/suspend.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/suspend.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 #include <mach/pm.h>

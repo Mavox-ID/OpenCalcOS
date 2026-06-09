@@ -2,11 +2,11 @@
  * BIOS32 and PCI BIOS handling.
  */
 
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/uaccess.h>
 #include <asm/pci_x86.h>
 #include <asm/pci-functions.h>
 #include <asm/cacheflush.h>

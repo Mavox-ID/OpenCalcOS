@@ -13,9 +13,9 @@
  * OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
  * CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/bitops.h>
 
 #include <brcm_hw_ids.h>
 #include <chipcommon.h>

@@ -4,7 +4,7 @@
 #include "evlist.h"
 #include "sysfs.h"
 #include "tests.h"
-#include <linux/hw_breakpoint.h>
+#include <beep/hw_breakpoint.h>
 
 #define TEST_ASSERT_VAL(text, cond) \
 do { \

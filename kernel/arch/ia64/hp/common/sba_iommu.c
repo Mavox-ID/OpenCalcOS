@@ -19,25 +19,25 @@
 **
 */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/acpi.h>
-#include <linux/efi.h>
-#include <linux/nodemask.h>
-#include <linux/bitops.h>         /* hweight64() */
-#include <linux/crash_dump.h>
-#include <linux/iommu-helper.h>
-#include <linux/dma-mapping.h>
-#include <linux/prefetch.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/string.h>
+#include <beep/pci.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/acpi.h>
+#include <beep/efi.h>
+#include <beep/nodemask.h>
+#include <beep/bitops.h>         /* hweight64() */
+#include <beep/crash_dump.h>
+#include <beep/iommu-helper.h>
+#include <beep/dma-mapping.h>
+#include <beep/prefetch.h>
 
 #include <asm/delay.h>		/* ia64_get_itc() */
 #include <asm/io.h>

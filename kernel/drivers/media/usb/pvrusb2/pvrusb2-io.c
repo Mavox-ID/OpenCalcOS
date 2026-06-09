@@ -20,10 +20,10 @@
 
 #include "pvrusb2-io.h"
 #include "pvrusb2-debug.h"
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
 
 static const char *pvr2_buffer_state_decode(enum pvr2_buffer_state);
 

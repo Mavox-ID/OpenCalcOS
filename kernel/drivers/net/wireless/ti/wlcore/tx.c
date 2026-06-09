@@ -21,9 +21,9 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/etherdevice.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/etherdevice.h>
 
 #include "wlcore.h"
 #include "debug.h"

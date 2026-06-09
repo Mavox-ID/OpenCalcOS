@@ -20,10 +20,10 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
 
 #include <asm/spu.h>
 #include <asm/spu_csa.h>

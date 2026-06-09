@@ -7,17 +7,17 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/ip.h>
-#include <linux/netfilter.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/icmp.h>
-#include <linux/sysctl.h>
+#include <beep/types.h>
+#include <beep/ip.h>
+#include <beep/netfilter.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/icmp.h>
+#include <beep/sysctl.h>
 #include <net/route.h>
 #include <net/ip.h>
 
-#include <linux/netfilter_ipv4.h>
+#include <beep/netfilter_ipv4.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_l4proto.h>
@@ -324,8 +324,8 @@ getorigdst(struct sock *sk, int optval, void __user *user, int *len)
 
 #if defined(CONFIG_NF_CT_NETLINK) || defined(CONFIG_NF_CT_NETLINK_MODULE)
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_conntrack.h>
+#include <beep/netfilter/nfnetlink.h>
+#include <beep/netfilter/nfnetlink_conntrack.h>
 
 static int ipv4_tuple_to_nlattr(struct sk_buff *skb,
 				const struct nf_conntrack_tuple *tuple)

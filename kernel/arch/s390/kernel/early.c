@@ -7,17 +7,17 @@
 #define KMSG_COMPONENT "setup"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/compiler.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/ftrace.h>
-#include <linux/lockdep.h>
-#include <linux/module.h>
-#include <linux/pfn.h>
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
+#include <beep/compiler.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/ftrace.h>
+#include <beep/lockdep.h>
+#include <beep/module.h>
+#include <beep/pfn.h>
+#include <beep/uaccess.h>
+#include <beep/kernel.h>
 #include <asm/ebcdic.h>
 #include <asm/ipl.h>
 #include <asm/lowcore.h>
@@ -149,7 +149,7 @@ static noinline __init void create_kernel_nss(void)
 	__cpcmd(defsys_cmd, NULL, 0, &response);
 
 	if (response != 0) {
-		pr_err("Defining the Linux kernel NSS failed with rc=%d\n",
+		pr_err("Defining the Beep kernel NSS failed with rc=%d\n",
 			response);
 		kernel_nss_name[0] = '\0';
 		return;
@@ -166,7 +166,7 @@ static noinline __init void create_kernel_nss(void)
 	 *	     for missing privilege class, it will be 1
 	 */
 	if (response > SAVESYS_CMD_SIZE || response == 1) {
-		pr_err("Saving the Linux kernel NSS failed with rc=%d\n",
+		pr_err("Saving the Beep kernel NSS failed with rc=%d\n",
 			response);
 		kernel_nss_name[0] = '\0';
 		return;

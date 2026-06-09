@@ -14,7 +14,7 @@
 #ifndef __ASSEMBLY__
 
 /* Keep includes the same across arches.  */
-#include <linux/mm.h>
+#include <beep/mm.h>
 
 /*
  * Primitive routines

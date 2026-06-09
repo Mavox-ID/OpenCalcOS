@@ -1,6 +1,6 @@
 # Makefile for cpupower
 #
-# Copyright (C) 2005,2006 Dominik Brodowski <linux@dominikbrodowski.net>
+# Copyright (C) 2005,2006 Dominik Brodowski <beep@dominikbrodowski.net>
 #
 # Based largely on the Makefile for udev by:
 #
@@ -88,9 +88,9 @@ INSTALL_DATA  = ${INSTALL} -m 644
 INSTALL_SCRIPT = ${INSTALL_PROGRAM}
 
 # If you are running a cross compiler, you may want to set this
-# to something more interesting, like "arm-linux-".  If you want
+# to something more interesting, like "arm-beep-".  If you want
 # to compile vs uClibc, that can be done here as well.
-CROSS = #/usr/i386-linux-uclibc/usr/bin/i386-uclibc-
+CROSS = #/usr/i386-beep-uclibc/usr/bin/i386-uclibc-
 CC = $(CROSS)gcc
 LD = $(CROSS)gcc
 AR = $(CROSS)ar

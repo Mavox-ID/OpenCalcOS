@@ -1,7 +1,7 @@
 #ifndef __I8254_H
 #define __I8254_H
 
-#include <linux/kthread.h>
+#include <beep/kthread.h>
 
 #include "iodev.h"
 

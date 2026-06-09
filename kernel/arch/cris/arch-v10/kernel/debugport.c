@@ -13,11 +13,11 @@
  *
  */
 
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/major.h>
-#include <linux/delay.h>
-#include <linux/tty.h>
+#include <beep/console.h>
+#include <beep/init.h>
+#include <beep/major.h>
+#include <beep/delay.h>
+#include <beep/tty.h>
 #include <arch/svinto.h>
 #include <asm/io.h>             /* Get SIMCOUT. */
 
@@ -374,7 +374,7 @@ enableDebugIRQ(void)
 		return;
 
 	*R_IRQ_MASK1_SET = kgdb_port->irq;
-	/* use R_VECT_MASK directly, since we really bypass Linux normal
+	/* use R_VECT_MASK directly, since we really bypass Beep normal
 	 * IRQ handling in kgdb anyway, we don't need to use enable_irq
 	 */
 	*R_VECT_MASK_SET = IO_STATE(R_VECT_MASK_SET, serial, set);

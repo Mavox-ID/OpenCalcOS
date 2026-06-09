@@ -1,5 +1,5 @@
 /*
- * linux/drivers/pcmcia/pxa2xx_lubbock.c
+ * beep/drivers/pcmcia/pxa2xx_lubbock.c
  *
  * Author:	George Davis
  * Created:	Jan 10, 2002
@@ -9,17 +9,17 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  *
- * Originally based upon linux/drivers/pcmcia/sa1100_neponset.c
+ * Originally based upon beep/drivers/pcmcia/sa1100_neponset.c
  *
  * Lubbock PCMCIA specific routines.
  *
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/delay.h>
 
 #include <mach/hardware.h>
 #include <asm/hardware/sa1111.h>

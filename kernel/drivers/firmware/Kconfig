@@ -48,10 +48,10 @@ config EFI_VARS
 	  Note that using this driver in concert with efibootmgr requires
 	  at least test release version 0.5.0-test3 or later, which is
 	  available from Matt Domsch's website located at:
-	  <http://linux.dell.com/efibootmgr/testing/efibootmgr-0.5.0-test3.tar.gz>
+	  <http://beep.dell.com/efibootmgr/testing/efibootmgr-0.5.0-test3.tar.gz>
 
 	  Subsequent efibootmgr releases may be found at:
-	  <http://linux.dell.com/efibootmgr>
+	  <http://beep.dell.com/efibootmgr>
 
 config EFI_PCDP
 	bool "Console device selection via EFI PCDP or HCDP table"
@@ -60,10 +60,10 @@ config EFI_PCDP
 	help
 	  If your firmware supplies the PCDP table, and you want to
 	  automatically use the primary console device it describes
-	  as the Linux console, say Y here.
+	  as the Beep console, say Y here.
 
 	  If your firmware supplies the HCDP table, and you want to
-	  use the first serial port it describes as the Linux console,
+	  use the first serial port it describes as the Beep console,
 	  say Y here.  If your EFI ConOut path contains only a UART
 	  device, it will become the console automatically.  Otherwise,
 	  you must specify the "console=hcdp" kernel boot argument.

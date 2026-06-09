@@ -8,27 +8,27 @@
  * (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/rcupdate.h>
-#include <linux/errno.h>
-#include <linux/ctype.h>
-#include <linux/notifier.h>
-#include <linux/netdevice.h>
-#include <linux/netpoll.h>
-#include <linux/if_vlan.h>
-#include <linux/if_arp.h>
-#include <linux/socket.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/rcupdate.h>
+#include <beep/errno.h>
+#include <beep/ctype.h>
+#include <beep/notifier.h>
+#include <beep/netdevice.h>
+#include <beep/netpoll.h>
+#include <beep/if_vlan.h>
+#include <beep/if_arp.h>
+#include <beep/socket.h>
+#include <beep/etherdevice.h>
+#include <beep/rtnetlink.h>
 #include <net/rtnetlink.h>
 #include <net/genetlink.h>
 #include <net/netlink.h>
 #include <net/sch_generic.h>
-#include <linux/if_team.h>
+#include <beep/if_team.h>
 
 #define DRV_NAME "team"
 

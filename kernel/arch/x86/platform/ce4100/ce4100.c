@@ -8,12 +8,12 @@
  * as published by the Free Software Foundation; version 2
  * of the License.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/serial_reg.h>
-#include <linux/serial_8250.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/irq.h>
+#include <beep/module.h>
+#include <beep/serial_reg.h>
+#include <beep/serial_8250.h>
 
 #include <asm/ce4100.h>
 #include <asm/prom.h>

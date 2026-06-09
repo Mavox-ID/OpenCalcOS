@@ -1,7 +1,7 @@
 /*
  *  saa7191.c - Philips SAA7191 video decoder driver
  *
- *  Copyright (C) 2003 Ladislav Michl <ladis@linux-mips.org>
+ *  Copyright (C) 2003 Ladislav Michl <ladis@beep-mips.org>
  *  Copyright (C) 2004,2005 Mikael Nousiainen <tmnousia@cc.hut.fi>
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -9,18 +9,18 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/major.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
 
-#include <linux/videodev2.h>
-#include <linux/i2c.h>
+#include <beep/videodev2.h>
+#include <beep/i2c.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-chip-ident.h>
 

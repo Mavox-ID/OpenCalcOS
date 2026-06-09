@@ -9,7 +9,7 @@ config VIDEO_TLG2300
 	select VIDEOBUF_DVB
 
 	---help---
-	  This is a video4linux driver for Telegent tlg2300 based TV cards.
+	  This is a video4beep driver for Telegent tlg2300 based TV cards.
 	  The driver supports V4L2, DVB-T and radio.
 
 	  To compile this driver as a module, choose M here: the

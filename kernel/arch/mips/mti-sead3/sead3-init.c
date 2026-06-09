@@ -5,8 +5,8 @@
  *
  * Copyright (C) 2012 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/init.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/io.h>
 
 #include <asm/bootinfo.h>
 #include <asm/cacheflush.h>

@@ -6,11 +6,11 @@
  *  Copyright (C) 2012 John Crispin <blogic@openwrt.org>
  */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/of_platform.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/module.h>
+#include <beep/firmware.h>
+#include <beep/of_platform.h>
 
 #include <lantiq_soc.h>
 

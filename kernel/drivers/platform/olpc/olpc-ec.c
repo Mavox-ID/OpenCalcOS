@@ -5,16 +5,16 @@
  *
  * Licensed under the GPL v2 or later.
  */
-#include <linux/completion.h>
-#include <linux/debugfs.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/olpc-ec.h>
+#include <beep/completion.h>
+#include <beep/debugfs.h>
+#include <beep/spinlock.h>
+#include <beep/mutex.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/olpc-ec.h>
 #include <asm/olpc.h>
 
 struct ec_cmd_desc {

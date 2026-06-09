@@ -7,9 +7,9 @@
  */
 
 .text
-#include <linux/threads.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <beep/threads.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
 #include <asm/segment.h>
 #include <asm/page_types.h>
 #include <asm/pgtable_types.h>

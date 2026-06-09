@@ -24,13 +24,13 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/string.h>
-#include <linux/mISDNif.h>
-#include <linux/mISDNdsp.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/string.h>
+#include <beep/mISDNif.h>
+#include <beep/mISDNdsp.h>
+#include <beep/export.h>
 #include "dsp.h"
 #include "dsp_hwec.h"
 

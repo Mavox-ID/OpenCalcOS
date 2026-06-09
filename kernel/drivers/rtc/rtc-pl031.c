@@ -15,15 +15,15 @@
  * as published by the Free Software Foundation; either version
  * 2 of the License, or (at your option) any later version.
  */
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/amba/bus.h>
-#include <linux/io.h>
-#include <linux/bcd.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/rtc.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/amba/bus.h>
+#include <beep/io.h>
+#include <beep/bcd.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 
 /*
  * Register definitions

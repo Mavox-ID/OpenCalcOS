@@ -10,8 +10,8 @@
 #ifndef EVENT_BUFFER_H
 #define EVENT_BUFFER_H
 
-#include <linux/types.h>
-#include <linux/mutex.h>
+#include <beep/types.h>
+#include <beep/mutex.h>
 
 int alloc_event_buffer(void);
 

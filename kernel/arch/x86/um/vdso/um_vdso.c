@@ -12,8 +12,8 @@
 /* Disable profiling for userspace code */
 #define DISABLE_BRANCH_PROFILING
 
-#include <linux/time.h>
-#include <linux/getcpu.h>
+#include <beep/time.h>
+#include <beep/getcpu.h>
 #include <asm/unistd.h>
 
 int __vdso_clock_gettime(clockid_t clock, struct timespec *ts)

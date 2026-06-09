@@ -31,10 +31,10 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/string.h>
+#include <beep/slab.h>
 
 #include "mthca_profile.h"
 

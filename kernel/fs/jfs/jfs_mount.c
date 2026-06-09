@@ -47,8 +47,8 @@
  *             fileset vfs     -> vp(1) <-> ... <-> vp(n) <->vproot;
  */
 
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
+#include <beep/fs.h>
+#include <beep/buffer_head.h>
 
 #include "jfs_incore.h"
 #include "jfs_filsys.h"

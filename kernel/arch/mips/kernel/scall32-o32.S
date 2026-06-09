@@ -3,11 +3,11 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 1995-99, 2000- 02, 06 Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 1995-99, 2000- 02, 06 Ralf Baechle <ralf@beep-mips.org>
  * Copyright (C) 2001 MIPS Technologies, Inc.
  * Copyright (C) 2004 Thiemo Seufer
  */
-#include <linux/errno.h>
+#include <beep/errno.h>
 #include <asm/asm.h>
 #include <asm/asmmacro.h>
 #include <asm/irqflags.h>
@@ -22,7 +22,7 @@
 #include <asm/asm-offsets.h>
 
 /* Highest syscall used of any syscall flavour */
-#define MAX_SYSCALL_NO	__NR_O32_Linux + __NR_O32_Linux_syscalls
+#define MAX_SYSCALL_NO	__NR_O32_Beep + __NR_O32_Beep_syscalls
 
 	.align  5
 NESTED(handle_sys, PT_SIZE, sp)
@@ -34,8 +34,8 @@ NESTED(handle_sys, PT_SIZE, sp)
 
 	lw	t1, PT_EPC(sp)		# skip syscall on return
 
-	subu	v0, v0, __NR_O32_Linux	# check syscall number
-	sltiu	t0, v0, __NR_O32_Linux_syscalls + 1
+	subu	v0, v0, __NR_O32_Beep	# check syscall number
+	sltiu	t0, v0, __NR_O32_Beep_syscalls + 1
 	addiu	t1, 4			# skip to next instruction
 	sw	t1, PT_EPC(sp)
 	beqz	t0, illegal_syscall
@@ -175,8 +175,8 @@ illegal_syscall:
 	END(handle_sys)
 
 	LEAF(sys_syscall)
-	subu	t0, a0, __NR_O32_Linux	# check syscall number
-	sltiu	v0, t0, __NR_O32_Linux_syscalls + 1
+	subu	t0, a0, __NR_O32_Beep	# check syscall number
+	sltiu	v0, t0, __NR_O32_Beep_syscalls + 1
 	beqz	t0, einval		# do not recurse
 	sll	t1, t0, 3
 	beqz	v0, einval

@@ -14,9 +14,9 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <asm/unaligned.h>
 
 #include "hw.h"

@@ -1,5 +1,5 @@
 /*
- * Squashfs - a compressed read only filesystem for Linux
+ * Squashfs - a compressed read only filesystem for Beep
  *
  * Copyright (c) 2002, 2003, 2004, 2005, 2006, 2007, 2008
  * Phillip Lougher <phillip@squashfs.org.uk>
@@ -35,11 +35,11 @@
  * without an intermediate lookup for all operations except the export ops.
  */
 
-#include <linux/fs.h>
-#include <linux/vfs.h>
-#include <linux/dcache.h>
-#include <linux/exportfs.h>
-#include <linux/slab.h>
+#include <beep/fs.h>
+#include <beep/vfs.h>
+#include <beep/dcache.h>
+#include <beep/exportfs.h>
+#include <beep/slab.h>
 
 #include "squashfs_fs.h"
 #include "squashfs_fs_sb.h"

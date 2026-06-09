@@ -17,9 +17,9 @@
  */
 
 #include <net/ipv6.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 
 #if IS_ENABLED(CONFIG_IPV6)
 

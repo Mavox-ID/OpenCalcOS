@@ -1,6 +1,6 @@
 /*
  * This file contains the driver for an XT hard disk controller
- * (at least the DTC 5150X) for Linux.
+ * (at least the DTC 5150X) for Beep.
  *
  * Author: Pat Mackinlay, pat@it.com.au
  * Date: 29/09/92
@@ -33,24 +33,24 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/genhd.h>
-#include <linux/hdreg.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/wait.h>
-#include <linux/blkdev.h>
-#include <linux/mutex.h>
-#include <linux/blkpg.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/timer.h>
+#include <beep/genhd.h>
+#include <beep/hdreg.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/wait.h>
+#include <beep/blkdev.h>
+#include <beep/mutex.h>
+#include <beep/blkpg.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/gfp.h>
 
 #include <asm/uaccess.h>
 #include <asm/dma.h>

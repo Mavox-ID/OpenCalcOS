@@ -1,8 +1,8 @@
 #ifndef __MACH_MMP_CLK_H
 #define __MACH_MMP_CLK_H
 
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
+#include <beep/clk-provider.h>
+#include <beep/clkdev.h>
 
 #define APBC_NO_BUS_CTRL	BIT(0)
 #define APBC_POWER_CTRL		BIT(1)

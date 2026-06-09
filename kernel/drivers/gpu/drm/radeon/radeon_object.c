@@ -29,8 +29,8 @@
  *    Thomas Hellstrom <thomas-at-tungstengraphics-dot-com>
  *    Dave Airlie
  */
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <beep/list.h>
+#include <beep/slab.h>
 #include <drm/drmP.h>
 #include <drm/radeon_drm.h>
 #include "radeon.h"

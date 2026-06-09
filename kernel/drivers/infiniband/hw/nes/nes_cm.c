@@ -34,26 +34,26 @@
 
 #define TCPOPT_TIMESTAMP 8
 
-#include <linux/atomic.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/init.h>
-#include <linux/if_arp.h>
-#include <linux/if_vlan.h>
-#include <linux/notifier.h>
-#include <linux/net.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/time.h>
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/random.h>
-#include <linux/list.h>
-#include <linux/threads.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
+#include <beep/atomic.h>
+#include <beep/skbuff.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/init.h>
+#include <beep/if_arp.h>
+#include <beep/if_vlan.h>
+#include <beep/notifier.h>
+#include <beep/net.h>
+#include <beep/types.h>
+#include <beep/timer.h>
+#include <beep/time.h>
+#include <beep/delay.h>
+#include <beep/etherdevice.h>
+#include <beep/netdevice.h>
+#include <beep/random.h>
+#include <beep/list.h>
+#include <beep/threads.h>
+#include <beep/highmem.h>
+#include <beep/slab.h>
 #include <net/arp.h>
 #include <net/neighbour.h>
 #include <net/route.h>

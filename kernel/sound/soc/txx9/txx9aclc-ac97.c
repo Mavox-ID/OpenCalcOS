@@ -11,12 +11,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/gfp.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/gfp.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>

@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hfsplus/catalog.c
+ *  beep/fs/hfsplus/catalog.c
  *
  * Copyright (C) 2001
  * Brad Boyer (flar@allandria.com)

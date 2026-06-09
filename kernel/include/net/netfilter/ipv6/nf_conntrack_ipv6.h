@@ -7,7 +7,7 @@ extern struct nf_conntrack_l4proto nf_conntrack_l4proto_tcp6;
 extern struct nf_conntrack_l4proto nf_conntrack_l4proto_udp6;
 extern struct nf_conntrack_l4proto nf_conntrack_l4proto_icmpv6;
 
-#include <linux/sysctl.h>
+#include <beep/sysctl.h>
 extern struct ctl_table nf_ct_ipv6_sysctl_table[];
 
 #endif /* _NF_CONNTRACK_IPV6_H*/

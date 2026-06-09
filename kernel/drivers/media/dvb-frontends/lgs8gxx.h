@@ -26,8 +26,8 @@
 #ifndef __LGS8GXX_H__
 #define __LGS8GXX_H__
 
-#include <linux/dvb/frontend.h>
-#include <linux/i2c.h>
+#include <beep/dvb/frontend.h>
+#include <beep/i2c.h>
 
 #define LGS8GXX_PROD_LGS8913 0
 #define LGS8GXX_PROD_LGS8GL5 1

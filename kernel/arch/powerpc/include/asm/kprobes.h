@@ -26,9 +26,9 @@
  * 2004-Nov	Modified for PPC64 by Ananth N Mavinakayanahalli
  *		<ananth@in.ibm.com>
  */
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/percpu.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
+#include <beep/percpu.h>
 #include <asm/probes.h>
 
 #define  __ARCH_WANT_KPROBES_INSN_SLOT

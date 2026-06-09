@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-pxa/zylonite_pxa320.c
+ * beep/arch/arm/mach-pxa/zylonite_pxa320.c
  *
  * PXA320 specific support code for the
  * PXA3xx Development Platform (aka Zylonite)
@@ -13,10 +13,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/gpio.h>
 
 #include <mach/pxa320.h>
 #include <mach/zylonite.h>

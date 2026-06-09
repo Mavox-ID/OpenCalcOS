@@ -1,14 +1,14 @@
 /*
- *  linux/lib/kasprintf.c
+ *  beep/lib/kasprintf.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
 #include <stdarg.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/string.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/string.h>
 
 /* Simplified asprintf. */
 char *kvasprintf(gfp_t gfp, const char *fmt, va_list ap)

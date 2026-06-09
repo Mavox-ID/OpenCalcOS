@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/board-h4.c
+ * beep/arch/arm/mach-omap2/board-h4.c
  *
  * Copyright (C) 2005 Nokia Corporation
  * Author: Paul Mundt <paul.mundt@nokia.com>
@@ -10,24 +10,24 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/i2c.h>
-#include <linux/i2c/at24.h>
-#include <linux/input.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/mfd/menelaus.h>
-#include <linux/omap-dma.h>
+#include <beep/gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/delay.h>
+#include <beep/workqueue.h>
+#include <beep/i2c.h>
+#include <beep/i2c/at24.h>
+#include <beep/input.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/input/matrix_keypad.h>
+#include <beep/mfd/menelaus.h>
+#include <beep/omap-dma.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

@@ -1,5 +1,5 @@
 /*
- * Interface to Linux block layer for MTD 'translation layers'.
+ * Interface to Beep block layer for MTD 'translation layers'.
  *
  * Copyright © 2003-2010 David Woodhouse <dwmw2@infradead.org>
  *
@@ -19,19 +19,19 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/fs.h>
-#include <linux/mtd/blktrans.h>
-#include <linux/mtd/mtd.h>
-#include <linux/blkdev.h>
-#include <linux/blkpg.h>
-#include <linux/spinlock.h>
-#include <linux/hdreg.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/fs.h>
+#include <beep/mtd/blktrans.h>
+#include <beep/mtd/mtd.h>
+#include <beep/blkdev.h>
+#include <beep/blkpg.h>
+#include <beep/spinlock.h>
+#include <beep/hdreg.h>
+#include <beep/init.h>
+#include <beep/mutex.h>
 #include <asm/uaccess.h>
 
 #include "mtdcore.h"

@@ -3,14 +3,14 @@
  * Author(s): Jan Glauber <jan.glauber@de.ibm.com>
  * Driver for the s390 pseudo random number generator
  */
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/random.h>
-#include <linux/slab.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/miscdevice.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/random.h>
+#include <beep/slab.h>
 #include <asm/debug.h>
 #include <asm/uaccess.h>
 

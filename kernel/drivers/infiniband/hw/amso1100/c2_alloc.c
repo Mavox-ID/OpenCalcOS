@@ -31,8 +31,8 @@
  * SOFTWARE.
  */
 
-#include <linux/errno.h>
-#include <linux/bitmap.h>
+#include <beep/errno.h>
+#include <beep/bitmap.h>
 
 #include "c2.h"
 

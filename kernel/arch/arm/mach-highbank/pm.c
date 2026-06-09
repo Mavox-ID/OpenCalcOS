@@ -14,10 +14,10 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/cpu_pm.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/suspend.h>
+#include <beep/cpu_pm.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/suspend.h>
 
 #include <asm/cacheflush.h>
 #include <asm/proc-fns.h>

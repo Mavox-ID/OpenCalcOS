@@ -9,16 +9,16 @@
  * (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/hid.h>
-#include <linux/cdev.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/uaccess.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/usb/g_hid.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/hid.h>
+#include <beep/cdev.h>
+#include <beep/mutex.h>
+#include <beep/poll.h>
+#include <beep/uaccess.h>
+#include <beep/wait.h>
+#include <beep/sched.h>
+#include <beep/usb/g_hid.h>
 
 static int major, minors;
 static struct class *hidg_class;

@@ -11,11 +11,11 @@
  * option) any later version.
  */
 
-#include <linux/phy.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <beep/phy.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
 
 #define AT803X_INTR_ENABLE			0x12
 #define AT803X_INTR_STATUS			0x13

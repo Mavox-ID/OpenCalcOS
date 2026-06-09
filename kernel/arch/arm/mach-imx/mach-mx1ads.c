@@ -2,7 +2,7 @@
  * arch/arm/mach-imx/mach-mx1ads.c
  *
  * Initially based on:
- *	linux-2.6.7-imx/arch/arm/mach-imx/scb9328.c
+ *	beep-2.6.7-imx/arch/arm/mach-imx/scb9328.c
  *	Copyright (c) 2004 Sascha Hauer <sascha@saschahauer.de>
  *
  * 2004 (c) MontaVista Software, Inc.
@@ -12,12 +12,12 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/i2c.h>
-#include <linux/i2c/pcf857x.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/physmap.h>
+#include <beep/i2c.h>
+#include <beep/i2c/pcf857x.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/physmap.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

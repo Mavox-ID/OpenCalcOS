@@ -1,6 +1,6 @@
 /*
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *  Rewritten by Cort Dougan (cort@cs.nmt.edu) for PReP
  *    Copyright (C) 1996 Cort Dougan <cort@cs.nmt.edu>
  *  Low-level exception handlers and MMU support
@@ -19,7 +19,7 @@
  *
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include <asm/processor.h>
 #include <asm/page.h>
 #include <asm/mmu.h>
@@ -70,7 +70,7 @@ _ENTRY(_start);
  * I just store it in memory location 0 (the TLB handlers are not reentrant).
  * To avoid making any decisions, I need to use the "segment" valid bit
  * in the first level table, but that would require many changes to the
- * Linux page directory/table functions that I don't want to do right now.
+ * Beep page directory/table functions that I don't want to do right now.
  *
  *	-- Dan
  */
@@ -347,10 +347,10 @@ InstructionTLBMiss:
 	cmpwi	cr0, r11, _PAGE_ACCESSED | _PAGE_PRESENT
 	bne-	cr0, 2f
 #endif
-	/* The Linux PTE won't go exactly into the MMU TLB.
+	/* The Beep PTE won't go exactly into the MMU TLB.
 	 * Software indicator bits 21 and 28 must be clear.
 	 * Software indicator bits 24, 25, 26, and 27 must be
-	 * set.  All other Linux PTE bits control the behavior
+	 * set.  All other Beep PTE bits control the behavior
 	 * of the MMU.
 	 */
 	li	r11, 0x00f0
@@ -434,15 +434,15 @@ DataStoreTLBMiss:
 	mfspr	r10, SPRN_MD_TWC	/* ....and get the pte address */
 	lwz	r10, 0(r10)	/* Get the pte */
 
-	/* Insert the Guarded flag into the TWC from the Linux PTE.
-	 * It is bit 27 of both the Linux PTE and the TWC (at least
+	/* Insert the Guarded flag into the TWC from the Beep PTE.
+	 * It is bit 27 of both the Beep PTE and the TWC (at least
 	 * I got that right :-).  It will be better when we can put
-	 * this into the Linux pgd/pmd and load it in the operation
+	 * this into the Beep pgd/pmd and load it in the operation
 	 * above.
 	 */
 	rlwimi	r11, r10, 0, 27, 27
-	/* Insert the WriteThru flag into the TWC from the Linux PTE.
-	 * It is bit 25 in the Linux PTE and bit 30 in the TWC
+	/* Insert the WriteThru flag into the TWC from the Beep PTE.
+	 * It is bit 25 in the Beep PTE and bit 30 in the TWC
 	 */
 	rlwimi	r11, r10, 32-5, 30, 30
 	DO_8xx_CPU6(0x3b80, r3)
@@ -471,10 +471,10 @@ DataStoreTLBMiss:
 	/* invert RW and 0x200 bits */
 	xori	r10, r10, _PAGE_RW | 0x200
 
-	/* The Linux PTE won't go exactly into the MMU TLB.
+	/* The Beep PTE won't go exactly into the MMU TLB.
 	 * Software indicator bits 22 and 28 must be clear.
 	 * Software indicator bits 24, 25, 26, and 27 must be
-	 * set.  All other Linux PTE bits control the behavior
+	 * set.  All other Beep PTE bits control the behavior
 	 * of the MMU.
 	 */
 2:	li	r11, 0x00f0
@@ -509,7 +509,7 @@ InstructionTLBError:
 /* This is the data TLB error on the MPC8xx.  This could be due to
  * many reasons, including a dirty update to a pte.  We can catch that
  * one here, but anything else is an error.  First, we track down the
- * Linux pte.  If it is valid, write access is allowed, but the
+ * Beep pte.  If it is valid, write access is allowed, but the
  * page dirty bit is not set, we will set it and reload the TLB.  For
  * any other case, we bail out to a higher level function that can
  * handle it.

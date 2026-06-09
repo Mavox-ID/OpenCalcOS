@@ -1,6 +1,6 @@
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/pci-aspm.h>
+#include <beep/pci.h>
+#include <beep/module.h>
+#include <beep/pci-aspm.h>
 #include "pci.h"
 
 static void pci_free_resources(struct pci_dev *dev)

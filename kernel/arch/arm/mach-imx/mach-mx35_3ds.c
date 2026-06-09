@@ -26,16 +26,16 @@
  *  - i.MX35 Platform Development Kit (i.MX35 PDK)
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/memory.h>
-#include <linux/gpio.h>
-#include <linux/usb/otg.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/memory.h>
+#include <beep/gpio.h>
+#include <beep/usb/otg.h>
 
-#include <linux/mtd/physmap.h>
-#include <linux/mfd/mc13892.h>
-#include <linux/regulator/machine.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mfd/mc13892.h>
+#include <beep/regulator/machine.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

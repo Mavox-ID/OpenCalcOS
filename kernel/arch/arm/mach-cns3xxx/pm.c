@@ -6,11 +6,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/atomic.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/atomic.h>
 #include <mach/cns3xxx.h>
 #include <mach/pm.h>
 #include "core.h"

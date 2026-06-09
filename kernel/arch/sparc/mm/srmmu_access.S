@@ -6,7 +6,7 @@
  * for the run-time patching.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 #include <asm/asmmacro.h>
 #include <asm/pgtsrmmu.h>

@@ -16,7 +16,7 @@
 #include <asm/page.h>
 #include <spaces.h>
 #ifdef CONFIG_HIGHMEM
-#include <linux/threads.h>
+#include <beep/threads.h>
 #include <asm/kmap_types.h>
 #endif
 

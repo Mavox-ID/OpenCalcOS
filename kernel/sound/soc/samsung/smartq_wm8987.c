@@ -3,7 +3,7 @@
  * Copyright 2010 Maurus Cuelenaere <mcuelenaere@gmail.com>
  *
  * Based on smdk6410_wm8987.c
- *     Copyright 2007 Wolfson Microelectronics PLC. - linux@wolfsonmicro.com
+ *     Copyright 2007 Wolfson Microelectronics PLC. - beep@wolfsonmicro.com
  *     Graeme Gregory - graeme.gregory@wolfsonmicro.com
  *
  *  This program is free software; you can redistribute  it and/or modify it
@@ -13,8 +13,8 @@
  *
  */
 
-#include <linux/gpio.h>
-#include <linux/module.h>
+#include <beep/gpio.h>
+#include <beep/module.h>
 
 #include <sound/soc.h>
 #include <sound/jack.h>

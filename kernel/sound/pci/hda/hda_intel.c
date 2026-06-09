@@ -34,22 +34,22 @@
  * 
  */
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/mutex.h>
-#include <linux/reboot.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
-#include <linux/clocksource.h>
-#include <linux/time.h>
-#include <linux/completion.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/dma-mapping.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/mutex.h>
+#include <beep/reboot.h>
+#include <beep/io.h>
+#include <beep/pm_runtime.h>
+#include <beep/clocksource.h>
+#include <beep/time.h>
+#include <beep/completion.h>
 
 #ifdef CONFIG_X86
 /* for snoop control */
@@ -58,9 +58,9 @@
 #endif
 #include <sound/core.h>
 #include <sound/initval.h>
-#include <linux/vgaarb.h>
-#include <linux/vga_switcheroo.h>
-#include <linux/firmware.h>
+#include <beep/vgaarb.h>
+#include <beep/vga_switcheroo.h>
+#include <beep/firmware.h>
 #include "hda_codec.h"
 
 

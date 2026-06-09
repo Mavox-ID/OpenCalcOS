@@ -40,23 +40,23 @@
 #undef DEBUG_HARD
 #undef USE_CTRL_O_SYSRQ
 
-#include <linux/module.h>
-#include <linux/tty.h>
+#include <beep/module.h>
+#include <beep/tty.h>
 
-#include <linux/tty_flip.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/bitops.h>
-#include <linux/sysrq.h>
-#include <linux/mutex.h>
+#include <beep/tty_flip.h>
+#include <beep/major.h>
+#include <beep/string.h>
+#include <beep/fcntl.h>
+#include <beep/mm.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/adb.h>
+#include <beep/pmu.h>
+#include <beep/bitops.h>
+#include <beep/sysrq.h>
+#include <beep/mutex.h>
 #include <asm/sections.h>
 #include <asm/io.h>
 #include <asm/irq.h>
@@ -68,7 +68,7 @@
 #include <asm/dbdma.h>
 #include <asm/macio.h>
 #else
-#include <linux/platform_device.h>
+#include <beep/platform_device.h>
 #define of_machine_is_compatible(x) (0)
 #endif
 
@@ -76,8 +76,8 @@
 #define SUPPORT_SYSRQ
 #endif
 
-#include <linux/serial.h>
-#include <linux/serial_core.h>
+#include <beep/serial.h>
+#include <beep/serial_core.h>
 
 #include "pmac_zilog.h"
 

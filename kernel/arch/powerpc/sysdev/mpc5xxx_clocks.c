@@ -6,9 +6,9 @@
  * 	or 0 if the bus frequency cannot be found.
  */
 
-#include <linux/kernel.h>
-#include <linux/of_platform.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/of_platform.h>
+#include <beep/export.h>
 
 unsigned int
 mpc5xxx_get_bus_frequency(struct device_node *node)

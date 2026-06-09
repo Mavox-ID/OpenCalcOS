@@ -15,12 +15,12 @@
 #include <crypto/scatterwalk.h>
 #include <crypto/hash.h>
 #include "internal.h"
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/completion.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 struct gcm_instance_ctx {
 	struct crypto_skcipher_spawn ctr;

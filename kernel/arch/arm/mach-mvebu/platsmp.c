@@ -17,10 +17,10 @@
  * and waking up the secondary CPUs
  */
 
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/clk.h>
-#include <linux/of.h>
+#include <beep/init.h>
+#include <beep/smp.h>
+#include <beep/clk.h>
+#include <beep/of.h>
 #include <asm/cacheflush.h>
 #include <asm/smp_plat.h>
 #include "common.h"

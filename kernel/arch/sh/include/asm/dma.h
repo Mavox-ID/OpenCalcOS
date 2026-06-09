@@ -11,10 +11,10 @@
 #define __ASM_SH_DMA_H
 #ifdef __KERNEL__
 
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/device.h>
+#include <beep/spinlock.h>
+#include <beep/wait.h>
+#include <beep/sched.h>
+#include <beep/device.h>
 #include <asm-generic/dma.h>
 
 /*

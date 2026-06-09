@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2002 Roman Zippel <zippel@linux-m68k.org>
+ * Copyright (C) 2002 Roman Zippel <zippel@beep-m68k.org>
  * Released under the terms of the GNU GPL v2.0.
  */
 
@@ -1316,7 +1316,7 @@ void ConfigMainWindow::showIntro(void)
 
 void ConfigMainWindow::showAbout(void)
 {
-	static char str[] = "qconf is Copyright (C) 2002 Roman Zippel <zippel@linux-m68k.org>.\n";
+	static char str[] = "qconf is Copyright (C) 2002 Roman Zippel <zippel@beep-m68k.org>.\n";
 
 	QMessageBox::information(this, "qconf", str);
 }

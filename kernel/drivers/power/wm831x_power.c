@@ -8,16 +8,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/power_supply.h>
+#include <beep/slab.h>
 
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/auxadc.h>
-#include <linux/mfd/wm831x/pmu.h>
-#include <linux/mfd/wm831x/pdata.h>
+#include <beep/mfd/wm831x/core.h>
+#include <beep/mfd/wm831x/auxadc.h>
+#include <beep/mfd/wm831x/pmu.h>
+#include <beep/mfd/wm831x/pdata.h>
 
 struct wm831x_power {
 	struct wm831x *wm831x;

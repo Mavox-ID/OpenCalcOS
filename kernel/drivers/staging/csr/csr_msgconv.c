@@ -8,9 +8,9 @@
 
 *****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/slab.h>
 #include "csr_sched.h"
 #include "csr_msgconv.h"
 #include "csr_macro.h"

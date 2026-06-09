@@ -1,5 +1,5 @@
-#ifndef LINUX_B43_PHY_A_H_
-#define LINUX_B43_PHY_A_H_
+#ifndef BEEP_B43_PHY_A_H_
+#define BEEP_B43_PHY_A_H_
 
 #include "phy_common.h"
 
@@ -127,4 +127,4 @@ void b43_phy_inita(struct b43_wldev *dev);
 struct b43_phy_operations;
 extern const struct b43_phy_operations b43_phyops_a;
 
-#endif /* LINUX_B43_PHY_A_H_ */
+#endif /* BEEP_B43_PHY_A_H_ */

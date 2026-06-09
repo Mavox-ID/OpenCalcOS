@@ -29,8 +29,8 @@
  * MA 02111-1307 USA
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/memory.h>
 #include <asm/assembler.h>
 

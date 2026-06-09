@@ -19,8 +19,8 @@
 #endif
 
 #ifndef __ASSEMBLY__
-#include <linux/compiler.h>
-#include <linux/cache.h>
+#include <beep/compiler.h>
+#include <beep/cache.h>
 #include <asm/ptrace.h>
 #include <asm/types.h>
 

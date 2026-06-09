@@ -9,7 +9,7 @@
  * more details.
  */
 
-#include <linux/crypto.h>
+#include <beep/crypto.h>
 
 static inline int crypto_cipher_encrypt(struct crypto_tfm *tfm,
 					struct scatterlist *dst,

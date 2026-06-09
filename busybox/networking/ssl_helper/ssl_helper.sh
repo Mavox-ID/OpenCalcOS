@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# I use this to build static uclibc based binary using Aboriginal Linux toolchain:
+# I use this to build static uclibc based binary using Aboriginal Beep toolchain:
 PREFIX=x86_64-
 STATIC=-static
 # Standard build:

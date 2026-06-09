@@ -12,13 +12,13 @@
  * License.
  */
 
-#include <linux/errno.h>
-#include <linux/fdtable.h>
-#include <linux/file.h>
-#include <linux/mount.h>
-#include <linux/syscalls.h>
-#include <linux/tracehook.h>
-#include <linux/personality.h>
+#include <beep/errno.h>
+#include <beep/fdtable.h>
+#include <beep/file.h>
+#include <beep/mount.h>
+#include <beep/syscalls.h>
+#include <beep/tracehook.h>
+#include <beep/personality.h>
 
 #include "include/audit.h"
 #include "include/apparmorfs.h"
@@ -340,7 +340,7 @@ static struct aa_profile *x_to_profile(struct aa_profile *profile,
  *
  * Returns: %0 or error on failure
  */
-int apparmor_bprm_set_creds(struct linux_binprm *bprm)
+int apparmor_bprm_set_creds(struct beep_binprm *bprm)
 {
 	struct aa_task_cxt *cxt;
 	struct aa_profile *profile, *new_profile = NULL;
@@ -537,7 +537,7 @@ cleanup:
  *
  * Returns: %1 if secureexec is needed else %0
  */
-int apparmor_bprm_secureexec(struct linux_binprm *bprm)
+int apparmor_bprm_secureexec(struct beep_binprm *bprm)
 {
 	int ret = cap_bprm_secureexec(bprm);
 
@@ -554,7 +554,7 @@ int apparmor_bprm_secureexec(struct linux_binprm *bprm)
  * apparmor_bprm_committing_creds - do task cleanup on committing new creds
  * @bprm: binprm for the exec  (NOT NULL)
  */
-void apparmor_bprm_committing_creds(struct linux_binprm *bprm)
+void apparmor_bprm_committing_creds(struct beep_binprm *bprm)
 {
 	struct aa_profile *profile = __aa_current_profile();
 	struct aa_task_cxt *new_cxt = bprm->cred->security;
@@ -574,7 +574,7 @@ void apparmor_bprm_committing_creds(struct linux_binprm *bprm)
  * apparmor_bprm_commited_cred - do cleanup after new creds committed
  * @bprm: binprm for the exec  (NOT NULL)
  */
-void apparmor_bprm_committed_creds(struct linux_binprm *bprm)
+void apparmor_bprm_committed_creds(struct beep_binprm *bprm)
 {
 	/* TODO: cleanup signals - ipc mediation */
 	return;

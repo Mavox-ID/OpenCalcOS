@@ -1,10 +1,10 @@
-#include <linux/ceph/ceph_debug.h>
+#include <beep/ceph/ceph_debug.h>
 
-#include <linux/spinlock.h>
-#include <linux/fs_struct.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
+#include <beep/spinlock.h>
+#include <beep/fs_struct.h>
+#include <beep/namei.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
 
 #include "super.h"
 #include "mds_client.h"
@@ -1296,7 +1296,7 @@ unsigned ceph_dentry_hash(struct inode *dir, struct dentry *dn)
 
 	switch (dci->i_dir_layout.dl_dir_hash) {
 	case 0:	/* for backward compat */
-	case CEPH_STR_HASH_LINUX:
+	case CEPH_STR_HASH_BEEP:
 		return dn->d_name.hash;
 
 	default:

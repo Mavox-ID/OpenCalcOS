@@ -15,19 +15,19 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/types.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/slab.h>
-#include <linux/clk-provider.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/types.h>
+#include <beep/clocksource.h>
+#include <beep/clockchips.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
+#include <beep/slab.h>
+#include <beep/clk-provider.h>
 
 #include "common.h"
 
@@ -304,7 +304,7 @@ static const __initconst struct of_device_id zynq_ttc_match[] = {
  * xttcpss_timer_init - Initialize the timer
  *
  * Initializes the timer hardware and register the clock source and clock event
- * timers with Linux kernal timer framework
+ * timers with Beep kernal timer framework
  **/
 void __init xttcpss_timer_init(void)
 {

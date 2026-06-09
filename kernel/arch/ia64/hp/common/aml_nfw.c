@@ -22,7 +22,7 @@
  * result.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <acpi/acpi_bus.h>
 #include <acpi/acpi_drivers.h>
 #include <asm/sal.h>

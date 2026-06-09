@@ -15,12 +15,12 @@
 
 #undef DEBUG
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/root_dev.h>
-#include <linux/initrd.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/root_dev.h>
+#include <beep/initrd.h>
 #include <asm/time.h>
 #include <asm/io.h>
 #include <asm/machdep.h>

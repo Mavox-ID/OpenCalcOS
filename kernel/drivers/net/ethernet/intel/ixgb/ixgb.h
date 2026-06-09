@@ -1,6 +1,6 @@
 /*******************************************************************************
 
-  Intel PRO/10GbE Linux driver
+  Intel PRO/10GbE Beep driver
   Copyright(c) 1999 - 2008 Intel Corporation.
 
   This program is free software; you can redistribute it and/or modify it
@@ -20,7 +20,7 @@
   the file called "COPYING".
 
   Contact Information:
-  Linux NICS <linux.nics@intel.com>
+  Beep NICS <beep.nics@intel.com>
   e1000-devel Mailing List <e1000-devel@lists.sourceforge.net>
   Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
 
@@ -29,42 +29,42 @@
 #ifndef _IXGB_H_
 #define _IXGB_H_
 
-#include <linux/stddef.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <beep/stddef.h>
+#include <beep/module.h>
+#include <beep/types.h>
 #include <asm/byteorder.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/pagemap.h>
-#include <linux/dma-mapping.h>
-#include <linux/bitops.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/delay.h>
+#include <beep/timer.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/interrupt.h>
+#include <beep/string.h>
+#include <beep/pagemap.h>
+#include <beep/dma-mapping.h>
+#include <beep/bitops.h>
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/capability.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
+#include <beep/capability.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/udp.h>
 #include <net/pkt_sched.h>
-#include <linux/list.h>
-#include <linux/reboot.h>
+#include <beep/list.h>
+#include <beep/reboot.h>
 #include <net/checksum.h>
 
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
+#include <beep/ethtool.h>
+#include <beep/if_vlan.h>
 
 #define BAR_0		0
 #define BAR_1		1

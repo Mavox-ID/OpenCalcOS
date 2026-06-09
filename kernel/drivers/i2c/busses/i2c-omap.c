@@ -28,22 +28,22 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/completion.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_i2c.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
-#include <linux/i2c-omap.h>
-#include <linux/pm_runtime.h>
-#include <linux/pinctrl/consumer.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/err.h>
+#include <beep/interrupt.h>
+#include <beep/completion.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/of_i2c.h>
+#include <beep/of_device.h>
+#include <beep/slab.h>
+#include <beep/i2c-omap.h>
+#include <beep/pm_runtime.h>
+#include <beep/pinctrl/consumer.h>
 
 /* I2C controller revisions */
 #define OMAP_I2C_OMAP1_REV_2		0x20

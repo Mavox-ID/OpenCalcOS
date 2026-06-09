@@ -19,7 +19,7 @@
  * Setting up the clock on the MIPS boards.
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include <asm/mach-powertv/interrupts.h>
 #include <asm/time.h>
 

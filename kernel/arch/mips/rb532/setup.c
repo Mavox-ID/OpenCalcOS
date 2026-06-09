@@ -2,13 +2,13 @@
  * setup.c - boot time setup code
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
+#include <beep/init.h>
+#include <beep/export.h>
 
 #include <asm/bootinfo.h>
 #include <asm/reboot.h>
 #include <asm/time.h>
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 
 #include <asm/mach-rc32434/rb.h>
 #include <asm/mach-rc32434/pci.h>

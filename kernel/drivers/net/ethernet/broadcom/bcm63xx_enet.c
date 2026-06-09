@@ -17,19 +17,19 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/etherdevice.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/crc32.h>
-#include <linux/err.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/if_vlan.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/clk.h>
+#include <beep/etherdevice.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/ethtool.h>
+#include <beep/crc32.h>
+#include <beep/err.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
+#include <beep/if_vlan.h>
 
 #include <bcm63xx_dev_enet.h>
 #include "bcm63xx_enet.h"

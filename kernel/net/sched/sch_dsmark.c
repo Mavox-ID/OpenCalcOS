@@ -3,15 +3,15 @@
 /* Written 1998-2000 by Werner Almesberger, EPFL ICA */
 
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/skbuff.h>
+#include <beep/rtnetlink.h>
+#include <beep/bitops.h>
 #include <net/pkt_sched.h>
 #include <net/dsfield.h>
 #include <net/inet_ecn.h>

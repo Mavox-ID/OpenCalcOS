@@ -19,8 +19,8 @@
 #ifndef _ASM_MACH_POWERTV_ASIC_H
 #define _ASM_MACH_POWERTV_ASIC_H
 
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
+#include <beep/ioport.h>
+#include <beep/platform_device.h>
 #include <asm/mach-powertv/asic_regs.h>
 
 #define DVR_CAPABLE     (1<<0)

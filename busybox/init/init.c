@@ -15,13 +15,13 @@
 //config:	help
 //config:	init is the first program run when the system boots.
 //config:
-//config:config LINUXRC
-//config:	bool "linuxrc: support running init from initrd (not initramfs)"
+//config:config BEEPRC
+//config:	bool "beeprc: support running init from initrd (not initramfs)"
 //config:	default y
 //config:	select FEATURE_SYSLOG
 //config:	help
 //config:	Legacy support for running init under the old-style initrd. Allows
-//config:	the name linuxrc to act as init, and it doesn't assume init is PID 1.
+//config:	the name beeprc to act as init, and it doesn't assume init is PID 1.
 //config:
 //config:	This does not apply to initramfs, which runs /init as PID 1 and
 //config:	requires no special support.
@@ -29,7 +29,7 @@
 //config:config FEATURE_USE_INITTAB
 //config:	bool "Support reading an inittab file"
 //config:	default y
-//config:	depends on INIT || LINUXRC
+//config:	depends on INIT || BEEPRC
 //config:	help
 //config:	Allow init to read an inittab file when the system boot.
 //config:
@@ -56,7 +56,7 @@
 //config:config FEATURE_INIT_SCTTY
 //config:	bool "Run commands with leading dash with controlling tty"
 //config:	default y
-//config:	depends on INIT || LINUXRC
+//config:	depends on INIT || BEEPRC
 //config:	help
 //config:	If this option is enabled, init will try to give a controlling
 //config:	tty to any command which has leading hyphen (often it's "-/bin/sh").
@@ -71,21 +71,21 @@
 //config:config FEATURE_INIT_SYSLOG
 //config:	bool "Enable init to write to syslog"
 //config:	default y
-//config:	depends on INIT || LINUXRC
+//config:	depends on INIT || BEEPRC
 //config:	help
 //config:	If selected, some init messages are sent to syslog.
-//config:	Otherwise, they are sent to VT #5 if linux virtual tty is detected
+//config:	Otherwise, they are sent to VT #5 if beep virtual tty is detected
 //config:	(if not, no separate logging is done).
 //config:
 //config:config FEATURE_INIT_QUIET
 //config:	bool "Be quiet on boot (no 'init started:' message)"
 //config:	default y
-//config:	depends on INIT || LINUXRC
+//config:	depends on INIT || BEEPRC
 //config:
 //config:config FEATURE_INIT_COREDUMPS
 //config:	bool "Support dumping core for child processes (debugging only)"
 //config:	default n	# not Y because this is a debug option
-//config:	depends on INIT || LINUXRC
+//config:	depends on INIT || BEEPRC
 //config:	help
 //config:	If this option is enabled and the file /.init_enable_core
 //config:	exists, then init will call setrlimit() to allow unlimited
@@ -94,20 +94,20 @@
 //config:
 //config:config INIT_TERMINAL_TYPE
 //config:	string "Initial terminal type"
-//config:	default "linux"
-//config:	depends on INIT || LINUXRC
+//config:	default "beep"
+//config:	depends on INIT || BEEPRC
 //config:	help
 //config:	This is the initial value set by init for the TERM environment
 //config:	variable. This variable is used by programs which make use of
 //config:	extended terminal capabilities.
 //config:
-//config:	Note that on Linux, init attempts to detect serial terminal and
+//config:	Note that on Beep, init attempts to detect serial terminal and
 //config:	sets TERM to "vt102" if one is found.
 //config:
 //config:config FEATURE_INIT_MODIFY_CMDLINE
 //config:	bool "Clear init's command line"
 //config:	default y
-//config:	depends on INIT || LINUXRC
+//config:	depends on INIT || BEEPRC
 //config:	help
 //config:	When launched as PID 1 and after parsing its arguments, init
 //config:	wipes all the arguments but argv[0] and rewrites argv[0] to
@@ -117,20 +117,20 @@
 //config:	otherwise, all the arguments including argv[0] will be preserved,
 //config:	be they parsed or ignored by init.
 //config:	The original command-line used to launch init can then be
-//config:	retrieved in /proc/1/cmdline on Linux, for example.
+//config:	retrieved in /proc/1/cmdline on Beep, for example.
 
 //applet:IF_INIT(APPLET(init, BB_DIR_SBIN, BB_SUID_DROP))
-//applet:IF_LINUXRC(APPLET_ODDNAME(linuxrc, init, BB_DIR_ROOT, BB_SUID_DROP, linuxrc))
+//applet:IF_BEEPRC(APPLET_ODDNAME(beeprc, init, BB_DIR_ROOT, BB_SUID_DROP, beeprc))
 
 //kbuild:lib-$(CONFIG_INIT) += init.o
-//kbuild:lib-$(CONFIG_LINUXRC) += init.o
+//kbuild:lib-$(CONFIG_BEEPRC) += init.o
 
 #define DEBUG_SEGV_HANDLER 0
 
 #include "libbb.h"
 #include "common_bufsiz.h"
 #include <syslog.h>
-#ifdef __linux__
+#ifdef __beep__
 # include <linux/vt.h>
 # include <sys/sysinfo.h>
 #endif
@@ -322,10 +322,10 @@ static void console_init(void)
 	s = getenv("TERM");
 #ifdef VT_OPENQRY
 	if (ioctl(STDIN_FILENO, VT_OPENQRY, &vtno) != 0) {
-		/* Not a linux terminal, probably serial console.
+		/* Not a beep terminal, probably serial console.
 		 * Force the TERM setting to vt102
-		 * if TERM is set to linux (the default) */
-		if (!s || strcmp(s, "linux") == 0)
+		 * if TERM is set to beep (the default) */
+		if (!s || strcmp(s, "beep") == 0)
 			putenv((char*)"TERM=vt102");
 # if !ENABLE_FEATURE_INIT_SYSLOG
 		G.log_console = NULL;
@@ -355,7 +355,7 @@ static void set_sane_term(void)
 	tty.c_cc[VSTOP] = 19;	/* C-s */
 	tty.c_cc[VSUSP] = 26;	/* C-z */
 
-#ifdef __linux__
+#ifdef __beep__
 	/* use line discipline 0 */
 	tty.c_line = 0;
 #endif
@@ -739,7 +739,7 @@ static void pause_and_low_level_reboot(unsigned magic)
 	sleep1();
 
 	/* We have to fork here, since the kernel calls do_exit(EXIT_SUCCESS)
-	 * in linux/kernel/sys.c, which can cause the machine to panic when
+	 * in beep/kernel/sys.c, which can cause the machine to panic when
 	 * the init process exits... */
 	pid = vfork();
 	if (pid == 0) { /* child */
@@ -1075,9 +1075,9 @@ int init_main(int argc UNUSED_PARAM, char **argv)
 	}
 
 #if !DEBUG_INIT
-	/* Expect to be invoked as init with PID=1 or be invoked as linuxrc */
+	/* Expect to be invoked as init with PID=1 or be invoked as beeprc */
 	if (getpid() != 1
-	 && (!ENABLE_LINUXRC || applet_name[0] != 'l') /* not linuxrc? */
+	 && (!ENABLE_BEEPRC || applet_name[0] != 'l') /* not beeprc? */
 	) {
 		bb_simple_error_msg_and_die("must be run as PID 1");
 	}
@@ -1108,7 +1108,7 @@ int init_main(int argc UNUSED_PARAM, char **argv)
 	putenv((char *) bb_PATH_root_path);
 	putenv((char *) "SHELL=/bin/sh");
 	putenv((char *) "USER=root"); /* needed? why? */
-	/* Linux kernel sets HOME="/" when execing init,
+	/* Beep kernel sets HOME="/" when execing init,
 	 * and it can be overridden (but not unset?) on kernel's command line.
 	 * We used to set it to "/" here, but now we do not:
 	 */
@@ -1139,16 +1139,16 @@ int init_main(int argc UNUSED_PARAM, char **argv)
 		parse_inittab();
 	}
 
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 	if (getenv("SELINUX_INIT") == NULL) {
 		int enforce = 0;
 
 		putenv((char*)"SELINUX_INIT=YES");
-		if (selinux_init_load_policy(&enforce) == 0) {
+		if (sebeep_init_load_policy(&enforce) == 0) {
 			BB_EXECVP(argv[0], argv);
 		} else if (enforce > 0) {
-			/* SELinux in enforcing mode but load_policy failed */
-			message(L_CONSOLE, "can't load SELinux Policy. "
+			/* SEBeep in enforcing mode but load_policy failed */
+			message(L_CONSOLE, "can't load SEBeep Policy. "
 				"Machine is in enforcing mode. Halting now.");
 			return EXIT_FAILURE;
 		}
@@ -1217,8 +1217,8 @@ int init_main(int argc UNUSED_PARAM, char **argv)
 	} /* while (1) */
 }
 
-//usage:#define linuxrc_trivial_usage NOUSAGE_STR
-//usage:#define linuxrc_full_usage ""
+//usage:#define beeprc_trivial_usage NOUSAGE_STR
+//usage:#define beeprc_full_usage ""
 
 //usage:#define init_trivial_usage
 //usage:       ""

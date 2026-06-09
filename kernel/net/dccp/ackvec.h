@@ -11,10 +11,10 @@
  *	published by the Free Software Foundation.
  */
 
-#include <linux/dccp.h>
-#include <linux/compiler.h>
-#include <linux/list.h>
-#include <linux/types.h>
+#include <beep/dccp.h>
+#include <beep/compiler.h>
+#include <beep/list.h>
+#include <beep/types.h>
 
 /*
  * Ack Vector buffer space is static, in multiples of %DCCP_SINGLE_OPT_MAXLEN,

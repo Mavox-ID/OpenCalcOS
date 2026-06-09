@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-mmp/teton_bga.c
+ *  beep/arch/arm/mach-mmp/teton_bga.c
  *
  *  Support for the Marvell PXA168 Teton BGA Development Platform.
  *
@@ -12,13 +12,13 @@
  *  publishhed by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/input.h>
-#include <linux/platform_data/keypad-pxa27x.h>
-#include <linux/i2c.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/input.h>
+#include <beep/platform_data/keypad-pxa27x.h>
+#include <beep/i2c.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

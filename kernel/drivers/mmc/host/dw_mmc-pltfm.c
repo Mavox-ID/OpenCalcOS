@@ -10,16 +10,16 @@
  * (at your option) any later version.
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/dw_mmc.h>
-#include <linux/of.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/mmc.h>
+#include <beep/mmc/dw_mmc.h>
+#include <beep/of.h>
 
 #include "dw_mmc.h"
 

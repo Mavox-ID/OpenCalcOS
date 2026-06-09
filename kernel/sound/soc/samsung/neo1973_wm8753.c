@@ -5,7 +5,7 @@
  * Author: Graeme Gregory <graeme@openmoko.org>
  * Copyright 2007 Wolfson Microelectronics PLC.
  * Author: Graeme Gregory
- *         graeme.gregory@wolfsonmicro.com or linux@wolfsonmicro.com
+ *         graeme.gregory@wolfsonmicro.com or beep@wolfsonmicro.com
  * Copyright 2009 Wolfson Microelectronics
  *
  *  This program is free software; you can redistribute  it and/or modify it
@@ -14,9 +14,9 @@
  *  option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
 
 #include <sound/soc.h>
 

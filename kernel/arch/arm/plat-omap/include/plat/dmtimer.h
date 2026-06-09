@@ -32,9 +32,9 @@
  * 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
 
 #ifndef __ASM_ARCH_DMTIMER_H
 #define __ASM_ARCH_DMTIMER_H

@@ -1,7 +1,7 @@
 #ifndef _ASM_CSS_CHARS_H
 #define _ASM_CSS_CHARS_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 struct css_general_char {
 	u64 : 12;

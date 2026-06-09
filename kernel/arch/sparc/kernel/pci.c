@@ -2,24 +2,24 @@
  *
  * Copyright (C) 1997, 1998, 1999 David S. Miller (davem@redhat.com)
  * Copyright (C) 1998, 1999 Eddie C. Dost   (ecd@skynet.be)
- * Copyright (C) 1999 Jakub Jelinek   (jj@ultra.linux.cz)
+ * Copyright (C) 1999 Jakub Jelinek   (jj@ultra.beep.cz)
  *
  * OF tree based PCI bus probing taken from the PowerPC port
  * with minor modifications, see there for credits.
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/sched.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/msi.h>
-#include <linux/irq.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/sched.h>
+#include <beep/capability.h>
+#include <beep/errno.h>
+#include <beep/pci.h>
+#include <beep/msi.h>
+#include <beep/irq.h>
+#include <beep/init.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
 
 #include <asm/uaccess.h>
 #include <asm/pgtable.h>

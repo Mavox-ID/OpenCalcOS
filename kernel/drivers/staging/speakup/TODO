@@ -1,10 +1,10 @@
-Speakup project home:  http://www.linux-speakup.org
+Speakup project home:  http://www.beep-speakup.org
 
 Mailing List:  speakup@braille.uwo.ca
 
-Speakup is a kernel based screen review package for the linux operating
+Speakup is a kernel based screen review package for the beep operating
 system.  It allows blind users to interact with applications on the
-linux console by means of synthetic speech.
+beep console by means of synthetic speech.
 
 Currently, speakup has several issues we know of.
 

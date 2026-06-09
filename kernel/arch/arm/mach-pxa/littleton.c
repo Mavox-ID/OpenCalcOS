@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-pxa/littleton.c
+ *  beep/arch/arm/mach-pxa/littleton.c
  *
  *  Support for the Marvell Littleton Development Platform.
  *
@@ -15,20 +15,20 @@
  *  publishhed by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/smc91x.h>
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/mfd/da903x.h>
-#include <linux/i2c/max732x.h>
-#include <linux/i2c/pxa-i2c.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/gpio.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/pxa2xx_spi.h>
+#include <beep/smc91x.h>
+#include <beep/i2c.h>
+#include <beep/leds.h>
+#include <beep/mfd/da903x.h>
+#include <beep/i2c/max732x.h>
+#include <beep/i2c/pxa-i2c.h>
 
 #include <asm/types.h>
 #include <asm/setup.h>
@@ -42,11 +42,11 @@
 #include <asm/mach/irq.h>
 
 #include <mach/pxa300.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/keypad-pxa27x.h>
+#include <beep/platform_data/video-pxafb.h>
+#include <beep/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/keypad-pxa27x.h>
 #include <mach/littleton.h>
-#include <linux/platform_data/mtd-nand-pxa3xx.h>
+#include <beep/platform_data/mtd-nand-pxa3xx.h>
 
 #include "generic.h"
 

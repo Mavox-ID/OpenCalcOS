@@ -26,11 +26,11 @@
 #ifndef OMAP3_ISP_QUEUE_H
 #define OMAP3_ISP_QUEUE_H
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/videodev2.h>
-#include <linux/wait.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/videodev2.h>
+#include <beep/wait.h>
 
 struct isp_video_queue;
 struct page;

@@ -23,14 +23,14 @@
  * 02110-1301 USA
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/socket.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/socket.h>
 #include <asm/ioctls.h>
 #include <net/sock.h>
 
-#include <linux/phonet.h>
-#include <linux/export.h>
+#include <beep/phonet.h>
+#include <beep/export.h>
 #include <net/phonet/phonet.h>
 
 static int pn_backlog_rcv(struct sock *sk, struct sk_buff *skb);

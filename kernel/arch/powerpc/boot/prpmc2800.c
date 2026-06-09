@@ -516,8 +516,8 @@ void platform_init(unsigned long r3, unsigned long r4, unsigned long r5,
 	struct elf_info ei;
 	char *heap_start, *dtb;
 	int dt_size = _dtb_end - _dtb_start;
-	void *vmlinuz_addr = _vmlinux_start;
-	unsigned long vmlinuz_size = _vmlinux_end - _vmlinux_start;
+	void *vmlinuz_addr = _vmbeep_start;
+	unsigned long vmlinuz_size = _vmbeep_end - _vmbeep_start;
 	char elfheader[256];
 
 	if (dt_size <= 0) /* No fdt */

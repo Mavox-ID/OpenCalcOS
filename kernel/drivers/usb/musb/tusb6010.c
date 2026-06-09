@@ -14,18 +14,18 @@
  *   interface.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/prefetch.h>
-#include <linux/usb.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/usb/nop-usb-xceiv.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/prefetch.h>
+#include <beep/usb.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/usb/nop-usb-xceiv.h>
 
 #include "musb_core.h"
 

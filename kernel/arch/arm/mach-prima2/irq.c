@@ -6,15 +6,15 @@
  * Licensed under GPLv2 or later.
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/irq.h>
 #include <mach/hardware.h>
 #include <asm/mach/irq.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/irqdomain.h>
-#include <linux/syscore_ops.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/irqdomain.h>
+#include <beep/syscore_ops.h>
 
 #define SIRFSOC_INT_RISC_MASK0          0x0018
 #define SIRFSOC_INT_RISC_MASK1          0x001C

@@ -20,7 +20,7 @@
 #ifndef __KVM_POWERPC_TLB_H__
 #define __KVM_POWERPC_TLB_H__
 
-#include <linux/kvm_host.h>
+#include <beep/kvm_host.h>
 #include <asm/mmu-44x.h>
 
 extern int kvmppc_44x_tlb_index(struct kvm_vcpu *vcpu, gva_t eaddr,

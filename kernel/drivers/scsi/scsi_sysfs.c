@@ -6,12 +6,12 @@
  * Created to pull SCSI mid layer sysfs routines into one file.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/device.h>
-#include <linux/pm_runtime.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/device.h>
+#include <beep/pm_runtime.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_device.h>

@@ -34,9 +34,9 @@
 
 #include <drm/drmP.h>
 #include <drm/drm_hashtab.h>
-#include <linux/hash.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/hash.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 
 int drm_ht_create(struct drm_open_hash *ht, unsigned int order)
 {

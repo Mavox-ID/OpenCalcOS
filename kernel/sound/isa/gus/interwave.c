@@ -22,12 +22,12 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/isa.h>
-#include <linux/delay.h>
-#include <linux/pnp.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/isa.h>
+#include <beep/delay.h>
+#include <beep/pnp.h>
+#include <beep/module.h>
 #include <asm/dma.h>
 #include <sound/core.h>
 #include <sound/gus.h>

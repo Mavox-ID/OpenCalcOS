@@ -1,5 +1,5 @@
 /*
- * linux/sound/cs42l52.h -- Platform data for CS42L52
+ * beep/sound/cs42l52.h -- Platform data for CS42L52
  *
  * Copyright (c) 2012 Cirrus Logic Inc.
  *

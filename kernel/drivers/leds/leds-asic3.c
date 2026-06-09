@@ -6,15 +6,15 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/leds.h>
+#include <beep/slab.h>
 
-#include <linux/mfd/asic3.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
+#include <beep/mfd/asic3.h>
+#include <beep/mfd/core.h>
+#include <beep/module.h>
 
 /*
  *	The HTC ASIC3 LED GPIOs are inputs, not outputs.

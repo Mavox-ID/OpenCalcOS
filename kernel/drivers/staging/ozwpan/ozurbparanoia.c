@@ -3,7 +3,7 @@
  * Released under the GNU General Public License Version 2 (GPLv2).
  * -----------------------------------------------------------------------------
  */
-#include <linux/usb.h>
+#include <beep/usb.h>
 #include "ozconfig.h"
 #ifdef WANT_URB_PARANOIA
 #include "ozurbparanoia.h"

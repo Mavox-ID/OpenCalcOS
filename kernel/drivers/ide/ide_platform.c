@@ -11,16 +11,16 @@
  * option) any later version.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/ide.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/ata_platform.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/ide.h>
+#include <beep/ioport.h>
+#include <beep/module.h>
+#include <beep/ata_platform.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
 
 static void plat_ide_setup_ports(struct ide_hw *hw, void __iomem *base,
 				 void __iomem *ctrl,

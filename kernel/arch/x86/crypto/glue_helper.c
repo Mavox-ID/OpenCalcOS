@@ -25,7 +25,7 @@
  *
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <crypto/b128ops.h>
 #include <crypto/lrw.h>
 #include <crypto/xts.h>

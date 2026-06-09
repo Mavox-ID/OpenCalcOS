@@ -3,18 +3,18 @@
  * - Split from highmem.c
  */
 
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/swap.h>
-#include <linux/gfp.h>
-#include <linux/bio.h>
-#include <linux/pagemap.h>
-#include <linux/mempool.h>
-#include <linux/blkdev.h>
-#include <linux/init.h>
-#include <linux/hash.h>
-#include <linux/highmem.h>
-#include <linux/bootmem.h>
+#include <beep/mm.h>
+#include <beep/export.h>
+#include <beep/swap.h>
+#include <beep/gfp.h>
+#include <beep/bio.h>
+#include <beep/pagemap.h>
+#include <beep/mempool.h>
+#include <beep/blkdev.h>
+#include <beep/init.h>
+#include <beep/hash.h>
+#include <beep/highmem.h>
+#include <beep/bootmem.h>
 #include <asm/tlbflush.h>
 
 #include <trace/events/block.h>

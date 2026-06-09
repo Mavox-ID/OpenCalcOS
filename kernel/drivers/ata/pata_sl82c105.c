@@ -3,7 +3,7 @@
  *			  (C) 2005 Red Hat Inc
  *			  (C) 2011 Bartlomiej Zolnierkiewicz
  *
- * Based in part on linux/drivers/ide/pci/sl82c105.c
+ * Based in part on beep/drivers/ide/pci/sl82c105.c
  * 		SL82C105/Winbond 553 IDE driver
  *
  * and in part on the documentation and errata sheet
@@ -16,14 +16,14 @@
  * timing parameters.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <beep/libata.h>
 
 #define DRV_NAME "pata_sl82c105"
 #define DRV_VERSION "0.3.3"

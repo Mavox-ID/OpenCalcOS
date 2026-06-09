@@ -33,16 +33,16 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/spinlock.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/ratelimit.h>
+#include <beep/module.h>
+#include <beep/proc_fs.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/spinlock.h>
+#include <beep/poll.h>
+#include <beep/sched.h>
+#include <beep/ratelimit.h>
 #include <asm/unaligned.h>
 
 #define MYFLIPLEN	TBUF_MAX
@@ -915,7 +915,7 @@ static int dgrp_net_release(struct inode *inode, struct file *file)
 /*
  *  In the HPUX version of the RealPort driver (which served as a basis
  *  for this driver) this locking code was used.  Saved if ever we need
- *  to review the locking under Linux.
+ *  to review the locking under Beep.
  */
 /*	spinlock(&nd->nd_lock); */
 
@@ -953,7 +953,7 @@ static int dgrp_net_release(struct inode *inode, struct file *file)
 /*
  *  In the HPUX version of the RealPort driver (which served as a basis
  *  for this driver) this locking code was used.  Saved if ever we need
- *  to review the locking under Linux.
+ *  to review the locking under Beep.
  */
 /*	spinunlock( &nd->nd_lock ); */
 
@@ -971,7 +971,7 @@ static int dgrp_net_release(struct inode *inode, struct file *file)
 /*
  *  In the HPUX version of the RealPort driver (which served as a basis
  *  for this driver) this locking code was used.  Saved if ever we need
- *  to review the locking under Linux.
+ *  to review the locking under Beep.
  */
 /*	spinlock(&nd->nd_lock); */
 
@@ -984,7 +984,7 @@ static int dgrp_net_release(struct inode *inode, struct file *file)
 /*
  *  In the HPUX version of the RealPort driver (which served as a basis
  *  for this driver) this locking code was used.  Saved if ever we need
- *  to review the locking under Linux.
+ *  to review the locking under Beep.
  */
 /*	spinunlock(&nd->nd_lock); */
 
@@ -2559,7 +2559,7 @@ data:
 			 * might not be yet.
 			 *
 			 * NOTE:  I have never actually seen the failure happen
-			 *        under Linux,  but since I have seen it occur
+			 *        under Beep,  but since I have seen it occur
 			 *        under both Solaris and HP-UX,  the assumption
 			 *        is that it *could* happen here as well...
 			 */

@@ -9,10 +9,10 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/of.h>
-#include <linux/of_pci.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/of.h>
+#include <beep/of_pci.h>
 #include "pci.h"
 
 void pci_set_of_node(struct pci_dev *dev)

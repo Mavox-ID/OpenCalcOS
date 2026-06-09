@@ -32,11 +32,11 @@
  *  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/sunrpc/svc_xprt.h>
+#include <beep/module.h>
+#include <beep/seq_file.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/sunrpc/svc_xprt.h>
 #include <net/net_namespace.h>
 #include "idmap.h"
 #include "nfsd.h"

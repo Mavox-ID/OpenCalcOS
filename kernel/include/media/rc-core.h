@@ -16,10 +16,10 @@
 #ifndef _RC_CORE
 #define _RC_CORE
 
-#include <linux/spinlock.h>
-#include <linux/kfifo.h>
-#include <linux/time.h>
-#include <linux/timer.h>
+#include <beep/spinlock.h>
+#include <beep/kfifo.h>
+#include <beep/time.h>
+#include <beep/timer.h>
 #include <media/rc-map.h>
 
 extern int rc_core_debug;

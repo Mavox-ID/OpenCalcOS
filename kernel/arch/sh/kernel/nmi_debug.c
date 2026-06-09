@@ -5,11 +5,11 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/delay.h>
-#include <linux/kdebug.h>
-#include <linux/notifier.h>
-#include <linux/sched.h>
-#include <linux/hardirq.h>
+#include <beep/delay.h>
+#include <beep/kdebug.h>
+#include <beep/notifier.h>
+#include <beep/sched.h>
+#include <beep/hardirq.h>
 
 enum nmi_action {
 	NMI_SHOW_STATE	= 1 << 0,

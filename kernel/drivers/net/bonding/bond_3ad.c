@@ -22,14 +22,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/skbuff.h>
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
-#include <linux/ethtool.h>
-#include <linux/etherdevice.h>
-#include <linux/if_bonding.h>
-#include <linux/pkt_sched.h>
+#include <beep/skbuff.h>
+#include <beep/if_ether.h>
+#include <beep/netdevice.h>
+#include <beep/spinlock.h>
+#include <beep/ethtool.h>
+#include <beep/etherdevice.h>
+#include <beep/if_bonding.h>
+#include <beep/pkt_sched.h>
 #include <net/net_namespace.h>
 #include "bonding.h"
 #include "bond_3ad.h"

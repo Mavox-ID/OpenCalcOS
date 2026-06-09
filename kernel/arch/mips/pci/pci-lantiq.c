@@ -6,19 +6,19 @@
  *  Copyright (C) 2010 John Crispin <blogic@openwrt.org>
  */
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/of_platform.h>
-#include <linux/of_gpio.h>
-#include <linux/of_irq.h>
-#include <linux/of_pci.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/mm.h>
+#include <beep/vmalloc.h>
+#include <beep/module.h>
+#include <beep/clk.h>
+#include <beep/of_platform.h>
+#include <beep/of_gpio.h>
+#include <beep/of_irq.h>
+#include <beep/of_pci.h>
 
 #include <asm/pci.h>
 #include <asm/gpio.h>

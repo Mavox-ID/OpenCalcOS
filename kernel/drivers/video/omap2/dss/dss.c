@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/omap2/dss/dss.c
+ * beep/drivers/video/omap2/dss/dss.c
  *
  * Copyright (C) 2009 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -22,17 +22,17 @@
 
 #define DSS_SUBSYS_NAME "DSS"
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/seq_file.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/gfp.h>
-#include <linux/sizes.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/export.h>
+#include <beep/err.h>
+#include <beep/delay.h>
+#include <beep/seq_file.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/gfp.h>
+#include <beep/sizes.h>
 
 #include <video/omapdss.h>
 

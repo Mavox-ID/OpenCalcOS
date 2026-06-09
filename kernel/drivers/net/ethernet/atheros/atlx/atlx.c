@@ -27,17 +27,17 @@
 #ifndef ATLX_C
 #define ATLX_C
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/etherdevice.h>
-#include <linux/if.h>
-#include <linux/netdevice.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/etherdevice.h>
+#include <beep/if.h>
+#include <beep/netdevice.h>
+#include <beep/socket.h>
+#include <beep/sockios.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/workqueue.h>
 
 #include "atlx.h"
 

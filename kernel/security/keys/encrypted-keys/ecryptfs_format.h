@@ -18,7 +18,7 @@
 #ifndef __KEYS_ECRYPTFS_H
 #define __KEYS_ECRYPTFS_H
 
-#include <linux/ecryptfs.h>
+#include <beep/ecryptfs.h>
 
 #define PGP_DIGEST_ALGO_SHA512   10
 

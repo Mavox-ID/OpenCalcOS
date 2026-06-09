@@ -49,7 +49,7 @@ all:
 
 #define MODULE_NAME "sonixb"
 
-#include <linux/input.h>
+#include <beep/input.h>
 #include "gspca.h"
 
 MODULE_AUTHOR("Jean-François Moine <http://moinejf.free.fr>");

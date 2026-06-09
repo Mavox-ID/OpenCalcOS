@@ -2,11 +2,11 @@
  * CE4100's SPI device is more or less the same one as found on PXA
  *
  */
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/of_device.h>
-#include <linux/module.h>
-#include <linux/spi/pxa2xx_spi.h>
+#include <beep/pci.h>
+#include <beep/platform_device.h>
+#include <beep/of_device.h>
+#include <beep/module.h>
+#include <beep/spi/pxa2xx_spi.h>
 
 struct ce4100_info {
 	struct ssp_device ssp;

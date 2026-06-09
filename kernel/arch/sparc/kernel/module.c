@@ -4,15 +4,15 @@
  * Copyright (C) 2002 David S. Miller.
  */
 
-#include <linux/moduleloader.h>
-#include <linux/kernel.h>
-#include <linux/elf.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/gfp.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/mm.h>
+#include <beep/moduleloader.h>
+#include <beep/kernel.h>
+#include <beep/elf.h>
+#include <beep/vmalloc.h>
+#include <beep/fs.h>
+#include <beep/gfp.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/mm.h>
 
 #include <asm/processor.h>
 #include <asm/spitfire.h>
@@ -22,7 +22,7 @@
 
 #ifdef CONFIG_SPARC64
 
-#include <linux/jump_label.h>
+#include <beep/jump_label.h>
 
 static void *module_map(unsigned long size)
 {

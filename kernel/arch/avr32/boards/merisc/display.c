@@ -7,9 +7,9 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/fb.h>
 #include <video/atmel_lcdc.h>
 #include <asm/setup.h>
 #include <mach/board.h>

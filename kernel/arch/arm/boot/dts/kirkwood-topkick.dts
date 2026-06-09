@@ -62,7 +62,7 @@
 		disk {
 			label = "topkick:yellow:disk";
 			gpios = <&gpio0 21 1>;
-			linux,default-trigger = "ide-disk";
+			beep,default-trigger = "ide-disk";
 		};
 		system2 {
 			label = "topkick:red:system";

@@ -25,26 +25,26 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/pci.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/delay.h>
-#include <linux/crc32.h>
-#include <linux/dma-mapping.h>
-#include <linux/debugfs.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/mii.h>
-#include <linux/slab.h>
-#include <linux/dmi.h>
-#include <linux/prefetch.h>
+#include <beep/in.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/pci.h>
+#include <beep/if_vlan.h>
+#include <beep/ip.h>
+#include <beep/delay.h>
+#include <beep/crc32.h>
+#include <beep/dma-mapping.h>
+#include <beep/debugfs.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/mii.h>
+#include <beep/slab.h>
+#include <beep/dmi.h>
+#include <beep/prefetch.h>
 #include <asm/irq.h>
 
 #include "skge.h"
@@ -70,7 +70,7 @@
 
 
 MODULE_DESCRIPTION("SysKonnect Gigabit Ethernet driver");
-MODULE_AUTHOR("Stephen Hemminger <shemminger@linux-foundation.org>");
+MODULE_AUTHOR("Stephen Hemminger <shemminger@beep-foundation.org>");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(DRV_VERSION);
 

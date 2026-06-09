@@ -2,7 +2,7 @@
  * Copyright (C) 2005, 2012 IBM Corporation
  *
  * Authors:
- *	Kent Yoder <key@linux.vnet.ibm.com>
+ *	Kent Yoder <key@beep.vnet.ibm.com>
  *	Seiji Munetoh <munetoh@jp.ibm.com>
  *	Stefan Berger <stefanb@us.ibm.com>
  *	Reiner Sailer <sailer@watson.ibm.com>
@@ -19,11 +19,11 @@
  *
  */
 
-#include <linux/seq_file.h>
-#include <linux/fs.h>
-#include <linux/security.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/seq_file.h>
+#include <beep/fs.h>
+#include <beep/security.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 #include "tpm.h"
 #include "tpm_eventlog.h"

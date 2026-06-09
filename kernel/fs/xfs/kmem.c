@@ -15,12 +15,12 @@
  * along with this program; if not, write the Free Software Foundation,
  * Inc.,  51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
+#include <beep/mm.h>
+#include <beep/highmem.h>
+#include <beep/slab.h>
+#include <beep/swap.h>
+#include <beep/blkdev.h>
+#include <beep/backing-dev.h>
 #include "time.h"
 #include "kmem.h"
 #include "xfs_message.h"

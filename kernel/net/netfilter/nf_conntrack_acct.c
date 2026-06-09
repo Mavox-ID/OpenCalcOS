@@ -8,11 +8,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/netfilter.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/export.h>
+#include <beep/netfilter.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/moduleparam.h>
+#include <beep/export.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_extend.h>

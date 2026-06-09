@@ -7,7 +7,7 @@
  * by the Free Software Foundation, incorporated herein by reference.
  */
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 #include "net_driver.h"
 #include "nic.h"
 #include "io.h"

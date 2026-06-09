@@ -1,20 +1,20 @@
 /*
  * Author(s)......: Holger Smolinski <Holger.Smolinski@de.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <Beep390@de.ibm.com>
  * Copyright IBM Corp. 1999, 2009
  */
 
 #define KMSG_COMPONENT "dasd-fba"
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
 #include <asm/debug.h>
 
-#include <linux/slab.h>
-#include <linux/hdreg.h>	/* HDIO_GETGEO			    */
-#include <linux/bio.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/slab.h>
+#include <beep/hdreg.h>	/* HDIO_GETGEO			    */
+#include <beep/bio.h>
+#include <beep/module.h>
+#include <beep/init.h>
 
 #include <asm/idals.h>
 #include <asm/ebcdic.h>

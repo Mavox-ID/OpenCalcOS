@@ -20,7 +20,7 @@
 # 59 Temple Place - Suite 330, Boston MA 02111-1307, USA.
 #
 # Makefile for the Cisco PowerTV-specific kernel interface routines
-# under Linux.
+# under Beep.
 #
 
 obj-y += init.o ioremap.o memory.o powertv_setup.o reset.o time.o \

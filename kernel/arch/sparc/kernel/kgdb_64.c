@@ -3,9 +3,9 @@
  * Copyright (C) 2008 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/kgdb.h>
-#include <linux/kdebug.h>
-#include <linux/ftrace.h>
+#include <beep/kgdb.h>
+#include <beep/kdebug.h>
+#include <beep/ftrace.h>
 
 #include <asm/cacheflush.h>
 #include <asm/kdebug.h>
@@ -131,7 +131,7 @@ void __irq_entry smp_kgdb_capture_client(int irq, struct pt_regs *regs)
 
 int kgdb_arch_handle_exception(int e_vector, int signo, int err_code,
 			       char *remcomInBuffer, char *remcomOutBuffer,
-			       struct pt_regs *linux_regs)
+			       struct pt_regs *beep_regs)
 {
 	unsigned long addr;
 	char *ptr;
@@ -141,16 +141,16 @@ int kgdb_arch_handle_exception(int e_vector, int signo, int err_code,
 		/* try to read optional parameter, pc unchanged if no parm */
 		ptr = &remcomInBuffer[1];
 		if (kgdb_hex2long(&ptr, &addr)) {
-			linux_regs->tpc = addr;
-			linux_regs->tnpc = addr + 4;
+			beep_regs->tpc = addr;
+			beep_regs->tnpc = addr + 4;
 		}
 		/* fallthru */
 
 	case 'D':
 	case 'k':
-		if (linux_regs->tpc == (unsigned long) arch_kgdb_breakpoint) {
-			linux_regs->tpc = linux_regs->tnpc;
-			linux_regs->tnpc += 4;
+		if (beep_regs->tpc == (unsigned long) arch_kgdb_breakpoint) {
+			beep_regs->tpc = beep_regs->tnpc;
+			beep_regs->tnpc += 4;
 		}
 		return 0;
 	}

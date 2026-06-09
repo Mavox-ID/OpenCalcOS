@@ -23,15 +23,15 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/smp.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/irq.h>
-#include <linux/errno.h>
-#include <linux/acpi.h>
-#include <linux/bootmem.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/smp.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/irq.h>
+#include <beep/errno.h>
+#include <beep/acpi.h>
+#include <beep/bootmem.h>
 
 #define PREFIX			"ACPI: "
 
@@ -326,7 +326,7 @@ static void __init check_multiple_madt(void)
 		       " using %d\n", acpi_apic_instance);
 		printk(KERN_WARNING PREFIX
 		       "If \"acpi_apic_instance=%d\" works better, "
-		       "notify linux-acpi@vger.kernel.org\n",
+		       "notify beep-acpi@vger.kernel.org\n",
 		       acpi_apic_instance ? 0 : 2);
 		early_acpi_os_unmap_memory(table, tbl_size);
 

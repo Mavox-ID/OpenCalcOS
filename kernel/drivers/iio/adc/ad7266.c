@@ -6,23 +6,23 @@
  * Licensed under the GPL-2.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/regulator/consumer.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/spi/spi.h>
+#include <beep/regulator/consumer.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/module.h>
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/buffer.h>
+#include <beep/iio/trigger_consumer.h>
+#include <beep/iio/triggered_buffer.h>
 
-#include <linux/platform_data/ad7266.h>
+#include <beep/platform_data/ad7266.h>
 
 struct ad7266_state {
 	struct spi_device	*spi;

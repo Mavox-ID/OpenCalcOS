@@ -21,7 +21,7 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  *
  */
-#include <linux/time.h>
+#include <beep/time.h>
 #include <sound/asequencer.h>
 
 typedef struct snd_seq_real_time snd_seq_real_time_t;

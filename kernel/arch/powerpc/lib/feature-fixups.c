@@ -12,10 +12,10 @@
  *  2 of the License, or (at your option) any later version.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/init.h>
 #include <asm/cputable.h>
 #include <asm/code-patching.h>
 #include <asm/page.h>
@@ -156,7 +156,7 @@ void do_final_fixups(void)
 #define check(x)	\
 	if (!(x)) printk("feature-fixups: test failed at line %d\n", __LINE__);
 
-/* This must be after the text it fixes up, vmlinux.lds.S enforces that atm */
+/* This must be after the text it fixes up, vmbeep.lds.S enforces that atm */
 static struct fixup_entry fixup;
 
 static long calc_offset(struct fixup_entry *entry, unsigned int *p)

@@ -5,9 +5,9 @@
  * All code subject to the GPL version 2.
  */
 
-#include <linux/mm.h>
-#include <linux/nmi.h>
-#include <linux/quicklist.h>
+#include <beep/mm.h>
+#include <beep/nmi.h>
+#include <beep/quicklist.h>
 
 void show_mem(unsigned int filter)
 {

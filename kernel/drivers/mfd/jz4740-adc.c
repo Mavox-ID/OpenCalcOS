@@ -15,20 +15,20 @@
  * JZ4740 battery and hwmon drivers.
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 
-#include <linux/clk.h>
-#include <linux/mfd/core.h>
+#include <beep/clk.h>
+#include <beep/mfd/core.h>
 
-#include <linux/jz4740-adc.h>
+#include <beep/jz4740-adc.h>
 
 
 #define JZ_REG_ADC_ENABLE	0x00

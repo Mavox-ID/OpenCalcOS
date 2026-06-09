@@ -38,11 +38,11 @@
 
 #define debug(format, arg...) pr_debug("hid-plff: " format "\n" , ## arg)
 
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/hid.h>
+#include <beep/input.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/hid.h>
 
 #include "hid-ids.h"
 

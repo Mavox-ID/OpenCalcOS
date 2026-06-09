@@ -1,5 +1,5 @@
-#ifndef LINUX_FC0011_H_
-#define LINUX_FC0011_H_
+#ifndef BEEP_FC0011_H_
+#define BEEP_FC0011_H_
 
 #include "dvb_frontend.h"
 
@@ -38,4 +38,4 @@ struct dvb_frontend *fc0011_attach(struct dvb_frontend *fe,
 }
 #endif
 
-#endif /* LINUX_FC0011_H_ */
+#endif /* BEEP_FC0011_H_ */

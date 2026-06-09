@@ -24,15 +24,15 @@
  */
 
 #include <asm/cacheflush.h>
-#include <linux/clk.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/omap-iommu.h>
-#include <linux/pagemap.h>
-#include <linux/scatterlist.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <beep/clk.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/omap-iommu.h>
+#include <beep/pagemap.h>
+#include <beep/scatterlist.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
 #include <media/v4l2-dev.h>
 #include <media/v4l2-ioctl.h>
 

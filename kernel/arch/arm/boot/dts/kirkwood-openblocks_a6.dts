@@ -52,7 +52,7 @@
 			};
 
 			partition@4f4000 {
-				label = "linux";
+				label = "beep";
 				reg = <0x4f4000 0x1d20000>;
 			};
 

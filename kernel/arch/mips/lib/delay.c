@@ -8,9 +8,9 @@
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  * Copyright (C) 2007  Maciej W. Rozycki
  */
-#include <linux/module.h>
-#include <linux/param.h>
-#include <linux/smp.h>
+#include <beep/module.h>
+#include <beep/param.h>
+#include <beep/smp.h>
 
 #include <asm/compiler.h>
 #include <asm/war.h>

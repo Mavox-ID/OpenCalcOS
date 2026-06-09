@@ -1,20 +1,20 @@
 /*
- * linux/net/sunrpc/xdr.c
+ * beep/net/sunrpc/xdr.c
  *
  * Generic XDR support.
  *
  * Copyright (C) 1995, 1996 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/pagemap.h>
-#include <linux/errno.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/msg_prot.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/pagemap.h>
+#include <beep/errno.h>
+#include <beep/sunrpc/xdr.h>
+#include <beep/sunrpc/msg_prot.h>
 
 /*
  * XDR functions for basic NFS types

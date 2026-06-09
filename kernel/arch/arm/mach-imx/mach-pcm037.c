@@ -12,28 +12,28 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/plat-ram.h>
-#include <linux/memory.h>
-#include <linux/gpio.h>
-#include <linux/smsc911x.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/i2c/at24.h>
-#include <linux/delay.h>
-#include <linux/spi/spi.h>
-#include <linux/irq.h>
-#include <linux/can/platform/sja1000.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/ulpi.h>
-#include <linux/gfp.h>
-#include <linux/memblock.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/fixed.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mtd/plat-ram.h>
+#include <beep/memory.h>
+#include <beep/gpio.h>
+#include <beep/smsc911x.h>
+#include <beep/interrupt.h>
+#include <beep/i2c.h>
+#include <beep/i2c/at24.h>
+#include <beep/delay.h>
+#include <beep/spi/spi.h>
+#include <beep/irq.h>
+#include <beep/can/platform/sja1000.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/ulpi.h>
+#include <beep/gfp.h>
+#include <beep/memblock.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/fixed.h>
 
 #include <media/soc_camera.h>
 

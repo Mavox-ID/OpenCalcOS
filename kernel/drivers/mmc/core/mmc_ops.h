@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mmc/core/mmc_ops.h
+ *  beep/drivers/mmc/core/mmc_ops.h
  *
  *  Copyright 2006-2007 Pierre Ossman
  *

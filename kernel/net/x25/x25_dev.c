@@ -17,12 +17,12 @@
  *      2000-09-04	Henner Eisen	Prevent freeing a dangling skb.
  */
 
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
 #include <net/sock.h>
-#include <linux/if_arp.h>
+#include <beep/if_arp.h>
 #include <net/x25.h>
 #include <net/x25device.h>
 

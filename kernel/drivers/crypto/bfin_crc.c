@@ -8,22 +8,22 @@
  * Licensed under the GPL-2.
  */
 
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/unaligned/access_ok.h>
-#include <linux/crypto.h>
-#include <linux/cryptohash.h>
+#include <beep/err.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
+#include <beep/scatterlist.h>
+#include <beep/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/unaligned/access_ok.h>
+#include <beep/crypto.h>
+#include <beep/cryptohash.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/algapi.h>
 #include <crypto/hash.h>

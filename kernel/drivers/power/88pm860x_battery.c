@@ -10,15 +10,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/string.h>
-#include <linux/power_supply.h>
-#include <linux/mfd/88pm860x.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/string.h>
+#include <beep/power_supply.h>
+#include <beep/mfd/88pm860x.h>
+#include <beep/delay.h>
 
 /* bit definitions of Status Query Interface 2 */
 #define STATUS2_CHG			(1 << 2)

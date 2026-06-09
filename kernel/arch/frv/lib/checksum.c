@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -32,7 +32,7 @@
    of the assembly has to go. */
 
 #include <net/checksum.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
 static inline unsigned short from32to16(unsigned long x)
 {

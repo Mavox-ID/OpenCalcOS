@@ -17,13 +17,13 @@
 #ifndef __PINCTRL_SAMSUNG_H
 #define __PINCTRL_SAMSUNG_H
 
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/machine.h>
+#include <beep/pinctrl/pinctrl.h>
+#include <beep/pinctrl/pinmux.h>
+#include <beep/pinctrl/pinconf.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/pinctrl/machine.h>
 
-#include <linux/gpio.h>
+#include <beep/gpio.h>
 
 /* register offsets within a pin bank */
 #define DAT_REG		0x4
@@ -118,7 +118,7 @@ struct samsung_pinctrl_drv_data;
  * @drvdata: link to controller driver data
  * @irq_domain: IRQ domain of the bank.
  * @gpio_chip: GPIO chip of the bank.
- * @grange: linux gpio pin range supported by this bank.
+ * @grange: beep gpio pin range supported by this bank.
  */
 struct samsung_pin_bank {
 	u32		pctl_offset;

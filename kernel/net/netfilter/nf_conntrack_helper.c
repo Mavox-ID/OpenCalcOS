@@ -2,25 +2,25 @@
 
 /* (C) 1999-2001 Paul `Rusty' Russell
  * (C) 2002-2006 Netfilter Core Team <coreteam@netfilter.org>
- * (C) 2003,2004 USAGI/WIDE Project <http://www.linux-ipv6.org>
+ * (C) 2003,2004 USAGI/WIDE Project <http://www.beep-ipv6.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/netfilter.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/vmalloc.h>
-#include <linux/stddef.h>
-#include <linux/random.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/rculist.h>
-#include <linux/rtnetlink.h>
+#include <beep/types.h>
+#include <beep/netfilter.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/vmalloc.h>
+#include <beep/stddef.h>
+#include <beep/random.h>
+#include <beep/err.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/rculist.h>
+#include <beep/rtnetlink.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_l3proto.h>

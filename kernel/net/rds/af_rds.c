@@ -30,12 +30,12 @@
  * SOFTWARE.
  *
  */
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/in.h>
-#include <linux/poll.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/gfp.h>
+#include <beep/in.h>
+#include <beep/poll.h>
 #include <net/sock.h>
 
 #include "rds.h"

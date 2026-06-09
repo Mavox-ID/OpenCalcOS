@@ -6,8 +6,8 @@
 #ifndef _SPARC64_TIMER_H
 #define _SPARC64_TIMER_H
 
-#include <linux/types.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/init.h>
 
 struct sparc64_tick_ops {
 	unsigned long long (*get_tick)(void);

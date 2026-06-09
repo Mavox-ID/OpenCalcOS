@@ -1,7 +1,7 @@
 /*********************************************************************
  *
- * Turtle Beach MultiSound Sound Card Driver for Linux
- * Linux 2.0/2.2 Version
+ * Turtle Beach MultiSound Sound Card Driver for Beep
+ * Beep 2.0/2.2 Version
  *
  * msnd_pinnacle.c / msnd_classic.c
  *
@@ -33,14 +33,14 @@
  *
  ********************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/mutex.h>
+#include <beep/gfp.h>
 #include <asm/irq.h>
 #include <asm/io.h>
 #include "sound_config.h"
@@ -1613,7 +1613,7 @@ static int __init msnd_pinnacle_cfg_devices(int cfg, int reset, msnd_pinnacle_cf
 
 #ifdef MODULE
 MODULE_AUTHOR				("Andrew Veliath <andrewtv@usa.net>");
-MODULE_DESCRIPTION			("Turtle Beach " LONGNAME " Linux Driver");
+MODULE_DESCRIPTION			("Turtle Beach " LONGNAME " Beep Driver");
 MODULE_LICENSE("GPL");
 
 static int io __initdata =		-1;
@@ -1746,7 +1746,7 @@ static int __init msnd_init(void)
 	static msnd_pinnacle_cfg_t pinnacle_devs;
 #endif /* MSND_CLASSIC */
 
-	printk(KERN_INFO LOGNAME ": Turtle Beach " LONGNAME " Linux Driver Version "
+	printk(KERN_INFO LOGNAME ": Turtle Beach " LONGNAME " Beep Driver Version "
 	       VERSION ", Copyright (C) 1998 Andrew Veliath\n");
 
 	if (io == -1 || irq == -1 || mem == -1)

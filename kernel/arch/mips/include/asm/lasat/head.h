@@ -8,7 +8,7 @@
 #define LASAT_K_MAGIC1_VAL	0x00bedead
 
 #ifndef _LANGUAGE_ASSEMBLY
-#include <linux/types.h>
+#include <beep/types.h>
 struct bootloader_header {
 	u32 magic[2];
 	u32 version;

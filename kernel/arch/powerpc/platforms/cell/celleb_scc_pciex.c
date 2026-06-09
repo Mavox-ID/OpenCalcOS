@@ -20,14 +20,14 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

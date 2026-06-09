@@ -11,7 +11,7 @@
 #ifndef CSR_WIFI_COMMON_H__
 #define CSR_WIFI_COMMON_H__
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include "csr_result.h"
 
 /* MAC address */

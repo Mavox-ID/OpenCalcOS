@@ -73,14 +73,14 @@
  *			Suspend Modulation - Definitions		*
  ************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/cpufreq.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/smp.h>
+#include <beep/cpufreq.h>
+#include <beep/pci.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
 
 #include <asm/cpu_device_id.h>
 #include <asm/processor-cyrix.h>

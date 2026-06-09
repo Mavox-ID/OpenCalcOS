@@ -5,7 +5,7 @@
  * Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 	.text
 ENTRY(__ashrdi3)

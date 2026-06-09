@@ -5,7 +5,7 @@
  *
  */
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 #include "hvc_console.h"
 

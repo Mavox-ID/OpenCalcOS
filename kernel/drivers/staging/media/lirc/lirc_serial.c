@@ -48,28 +48,28 @@
  * Steve Davies <steve@daviesfam.org>  July 2001
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/serial_reg.h>
-#include <linux/time.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/poll.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/fs.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/serial_reg.h>
+#include <beep/time.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/wait.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
+#include <beep/poll.h>
+#include <beep/platform_device.h>
 
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/fcntl.h>
-#include <linux/spinlock.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/fcntl.h>
+#include <beep/spinlock.h>
 
 #ifdef CONFIG_LIRC_SERIAL_NSLU2
 #include <asm/hardware.h>
@@ -203,7 +203,7 @@ static struct lirc_serial hardware[] = {
 	 * We receive on CTS of the 2nd serial port (R142,LHS), we
 	 * transmit with a IR diode between GPIO[1] (green status LED),
 	 * and ground (Matthias Goebl <matthias.goebl@goebl.net>).
-	 * See also http://www.nslu2-linux.org for this device
+	 * See also http://www.nslu2-beep.org for this device
 	 */
 	[LIRC_NSLU2] = {
 		.lock = __SPIN_LOCK_UNLOCKED(hardware[LIRC_NSLU2].lock),
@@ -255,7 +255,7 @@ static unsigned long space_width;
 #if defined(__i386__)
 /*
  * From:
- * Linux I/O port programming mini-HOWTO
+ * Beep I/O port programming mini-HOWTO
  * Author: Riku Saikkonen <Riku.Saikkonen@hut.fi>
  * v, 28 December 1997
  *
@@ -1291,7 +1291,7 @@ MODULE_PARM_DESC(iommap, "physical base for memory mapped I/O"
 /*
  * some architectures (e.g. intel xscale) align the 8bit serial registers
  * on 32bit word boundaries.
- * See linux-kernel/drivers/tty/serial/8250/8250.c serial_in()/out()
+ * See beep-kernel/drivers/tty/serial/8250/8250.c serial_in()/out()
  */
 module_param(ioshift, int, S_IRUGO);
 MODULE_PARM_DESC(ioshift, "shift I/O register offset (0 = no shift)");

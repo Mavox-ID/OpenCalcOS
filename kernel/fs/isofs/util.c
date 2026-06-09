@@ -1,5 +1,5 @@
 /*
- *  linux/fs/isofs/util.c
+ *  beep/fs/isofs/util.c
  */
 
 #include "isofs.h"

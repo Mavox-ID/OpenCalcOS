@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hfsplus/extents.c
+ *  beep/fs/hfsplus/extents.c
  *
  * Copyright (C) 2001
  * Brad Boyer (flar@allandria.com)
@@ -8,9 +8,9 @@
  * Handling of Extents both in catalog and extents overflow trees
  */
 
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/pagemap.h>
 
 #include "hfsplus_fs.h"
 #include "hfsplus_raw.h"

@@ -135,13 +135,13 @@
 		led0 {
 			label = "led0";
 			gpios = <&pioD 0 1>;
-			linux,default-trigger = "nand-disk";
+			beep,default-trigger = "nand-disk";
 		};
 
 		led1 {
 			label = "led1";
 			gpios = <&pioD 31 0>;
-			linux,default-trigger = "heartbeat";
+			beep,default-trigger = "heartbeat";
 		};
 	};
 
@@ -153,13 +153,13 @@
 		right {
 			label = "SW4";
 			gpios = <&pioE 7 1>;
-			linux,code = <106>;
+			beep,code = <106>;
 		};
 
 		up {
 			label = "SW3";
 			gpios = <&pioE 8 1>;
-			linux,code = <103>;
+			beep,code = <103>;
 		};
 	};
 };

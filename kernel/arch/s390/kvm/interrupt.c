@@ -10,11 +10,11 @@
  *    Author(s): Carsten Otte <cotte@de.ibm.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/kvm_host.h>
-#include <linux/hrtimer.h>
-#include <linux/signal.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/kvm_host.h>
+#include <beep/hrtimer.h>
+#include <beep/signal.h>
+#include <beep/slab.h>
 #include <asm/asm-offsets.h>
 #include <asm/uaccess.h>
 #include "kvm-s390.h"

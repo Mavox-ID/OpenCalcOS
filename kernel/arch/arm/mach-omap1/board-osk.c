@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/board-osk.c
+ * beep/arch/arm/mach-omap1/board-osk.c
  *
  * Board specific init for OMAP5912 OSK
  *
@@ -25,22 +25,22 @@
  * with this program; if not, write  to the Free Software Foundation, Inc.,
  * 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/smc91x.h>
-#include <linux/omapfb.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/i2c/tps65010.h>
-#include <linux/platform_data/gpio-omap.h>
-#include <linux/platform_data/omap1_bl.h>
+#include <beep/gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/i2c.h>
+#include <beep/leds.h>
+#include <beep/smc91x.h>
+#include <beep/omapfb.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/i2c/tps65010.h>
+#include <beep/platform_data/gpio-omap.h>
+#include <beep/platform_data/omap1_bl.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -299,12 +299,12 @@ static struct omap_lcd_config osk_lcd_config __initdata = {
 
 #ifdef	CONFIG_OMAP_OSK_MISTRAL
 
-#include <linux/input.h>
-#include <linux/i2c/at24.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/ads7846.h>
+#include <beep/input.h>
+#include <beep/i2c/at24.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/ads7846.h>
 
-#include <linux/platform_data/keypad-omap.h>
+#include <beep/platform_data/keypad-omap.h>
 
 static struct at24_platform_data at24c04 = {
 	.byte_len	= SZ_4K / 8,

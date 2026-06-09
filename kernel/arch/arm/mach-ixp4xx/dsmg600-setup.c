@@ -14,18 +14,18 @@
  * Author: Alessandro Zummo <a.zummo@towertech.it>
  * Author: Michael Westerhof <mwester@dls.net>
  * Author: Rod Whitby <rod@whitby.id.au>
- * Maintainers: http://www.nslu2-linux.org/
+ * Maintainers: http://www.nslu2-beep.org/
  */
-#include <linux/gpio.h>
-#include <linux/irq.h>
-#include <linux/jiffies.h>
-#include <linux/timer.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/leds.h>
-#include <linux/reboot.h>
-#include <linux/i2c.h>
-#include <linux/i2c-gpio.h>
+#include <beep/gpio.h>
+#include <beep/irq.h>
+#include <beep/jiffies.h>
+#include <beep/timer.h>
+#include <beep/serial.h>
+#include <beep/serial_8250.h>
+#include <beep/leds.h>
+#include <beep/reboot.h>
+#include <beep/i2c.h>
+#include <beep/i2c-gpio.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -277,7 +277,7 @@ static void __init dsmg600_init(void)
 }
 
 MACHINE_START(DSMG600, "D-Link DSM-G600 RevA")
-	/* Maintainer: www.nslu2-linux.org */
+	/* Maintainer: www.nslu2-beep.org */
 	.atag_offset	= 0x100,
 	.map_io		= ixp4xx_map_io,
 	.init_early	= ixp4xx_init_early,

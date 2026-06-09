@@ -6,11 +6,11 @@
 #ifndef _ATMCLIP_H
 #define _ATMCLIP_H
 
-#include <linux/netdevice.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/atmarp.h>
-#include <linux/spinlock.h>
+#include <beep/netdevice.h>
+#include <beep/atm.h>
+#include <beep/atmdev.h>
+#include <beep/atmarp.h>
+#include <beep/spinlock.h>
 #include <net/neighbour.h>
 
 

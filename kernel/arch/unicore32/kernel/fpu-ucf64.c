@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/kernel/fpu-ucf64.c
+ * beep/arch/unicore32/kernel/fpu-ucf64.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -9,12 +9,12 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/init.h>
 
 #include <asm/fpu-ucf64.h>
 

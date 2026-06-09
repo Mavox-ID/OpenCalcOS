@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/setup.c
+ *  beep/arch/arm/kernel/setup.c
  *
  *  Copyright (C) 1995-2001 Russell King
  *
@@ -7,28 +7,28 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/utsname.h>
-#include <linux/initrd.h>
-#include <linux/console.h>
-#include <linux/bootmem.h>
-#include <linux/seq_file.h>
-#include <linux/screen_info.h>
-#include <linux/init.h>
-#include <linux/kexec.h>
-#include <linux/of_fdt.h>
-#include <linux/cpu.h>
-#include <linux/interrupt.h>
-#include <linux/smp.h>
-#include <linux/proc_fs.h>
-#include <linux/memblock.h>
-#include <linux/bug.h>
-#include <linux/compiler.h>
-#include <linux/sort.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/stddef.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/utsname.h>
+#include <beep/initrd.h>
+#include <beep/console.h>
+#include <beep/bootmem.h>
+#include <beep/seq_file.h>
+#include <beep/screen_info.h>
+#include <beep/init.h>
+#include <beep/kexec.h>
+#include <beep/of_fdt.h>
+#include <beep/cpu.h>
+#include <beep/interrupt.h>
+#include <beep/smp.h>
+#include <beep/proc_fs.h>
+#include <beep/memblock.h>
+#include <beep/bug.h>
+#include <beep/compiler.h>
+#include <beep/sort.h>
 
 #include <asm/unified.h>
 #include <asm/cp15.h>
@@ -439,7 +439,7 @@ void __init smp_setup_processor_id(void)
 	for (i = 1; i < nr_cpu_ids; ++i)
 		cpu_logical_map(i) = i == cpu ? 0 : i;
 
-	printk(KERN_INFO "Booting Linux on physical CPU 0x%x\n", mpidr);
+	printk(KERN_INFO "Booting Beep on physical CPU 0x%x\n", mpidr);
 }
 
 static void __init setup_processor(void)

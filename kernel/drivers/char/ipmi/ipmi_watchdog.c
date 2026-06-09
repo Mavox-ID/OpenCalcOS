@@ -31,28 +31,28 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/ipmi.h>
-#include <linux/ipmi_smi.h>
-#include <linux/mutex.h>
-#include <linux/watchdog.h>
-#include <linux/miscdevice.h>
-#include <linux/init.h>
-#include <linux/completion.h>
-#include <linux/kdebug.h>
-#include <linux/rwsem.h>
-#include <linux/errno.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/ipmi.h>
+#include <beep/ipmi_smi.h>
+#include <beep/mutex.h>
+#include <beep/watchdog.h>
+#include <beep/miscdevice.h>
+#include <beep/init.h>
+#include <beep/completion.h>
+#include <beep/kdebug.h>
+#include <beep/rwsem.h>
+#include <beep/errno.h>
 #include <asm/uaccess.h>
-#include <linux/notifier.h>
-#include <linux/nmi.h>
-#include <linux/reboot.h>
-#include <linux/wait.h>
-#include <linux/poll.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/atomic.h>
+#include <beep/notifier.h>
+#include <beep/nmi.h>
+#include <beep/reboot.h>
+#include <beep/wait.h>
+#include <beep/poll.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/delay.h>
+#include <beep/atomic.h>
 
 #ifdef CONFIG_X86
 /*

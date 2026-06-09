@@ -1,13 +1,13 @@
-#include <linux/init.h>
-#include <linux/kernel.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
 
-#include <linux/string.h>
-#include <linux/bitops.h>
-#include <linux/smp.h>
-#include <linux/sched.h>
-#include <linux/thread_info.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <beep/string.h>
+#include <beep/bitops.h>
+#include <beep/smp.h>
+#include <beep/sched.h>
+#include <beep/thread_info.h>
+#include <beep/module.h>
+#include <beep/uaccess.h>
 
 #include <asm/processor.h>
 #include <asm/pgtable.h>
@@ -16,7 +16,7 @@
 #include <asm/cpu.h>
 
 #ifdef CONFIG_X86_64
-#include <linux/topology.h>
+#include <beep/topology.h>
 #include <asm/numa_64.h>
 #endif
 

@@ -11,10 +11,10 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/zorro.h>
-#include <linux/stat.h>
-#include <linux/string.h>
+#include <beep/kernel.h>
+#include <beep/zorro.h>
+#include <beep/stat.h>
+#include <beep/string.h>
 
 #include "zorro.h"
 

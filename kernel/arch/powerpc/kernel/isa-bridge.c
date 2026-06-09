@@ -15,13 +15,13 @@
 
 #define DEBUG
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/notifier.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/string.h>
+#include <beep/export.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/notifier.h>
 
 #include <asm/processor.h>
 #include <asm/io.h>

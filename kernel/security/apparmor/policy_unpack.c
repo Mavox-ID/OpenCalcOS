@@ -18,8 +18,8 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/ctype.h>
-#include <linux/errno.h>
+#include <beep/ctype.h>
+#include <beep/errno.h>
 
 #include "include/apparmor.h"
 #include "include/audit.h"

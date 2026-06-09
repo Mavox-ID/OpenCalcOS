@@ -36,19 +36,19 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/mm.h>
+#include <beep/module.h>
+#include <beep/firmware.h>
+#include <beep/kernel.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
+#include <beep/videodev2.h>
+#include <beep/mm.h>
 #include <media/videobuf-vmalloc.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
-#include <linux/vmalloc.h>
-#include <linux/usb.h>
+#include <beep/vmalloc.h>
+#include <beep/usb.h>
 
 #define S2255_VERSION		"1.22.1"
 #define FIRMWARE_FILE_NAME "f2255usb.bin"
@@ -542,7 +542,7 @@ static void s2255_fwchunk_complete(struct urb *urb)
 	}
 #define CHUNK_SIZE 512
 	/* all USB transfers must be done with continuous kernel memory.
-	   can't allocate more than 128k in current linux kernel, so
+	   can't allocate more than 128k in current beep kernel, so
 	   upload the firmware in chunks
 	 */
 	if (data->fw_loaded < data->fw_size) {
@@ -1942,7 +1942,7 @@ static int s2255_probe_v4l(struct s2255_dev *dev)
 	ret = v4l2_device_register(&dev->interface->dev, &dev->v4l2_dev);
 	if (ret)
 		return ret;
-	/* initialize all video 4 linux */
+	/* initialize all video 4 beep */
 	/* register 4 video devices */
 	for (i = 0; i < MAX_CHANNELS; i++) {
 		channel = &dev->channel[i];
@@ -2683,7 +2683,7 @@ static struct usb_driver s2255_driver = {
 
 module_usb_driver(s2255_driver);
 
-MODULE_DESCRIPTION("Sensoray 2255 Video for Linux driver");
+MODULE_DESCRIPTION("Sensoray 2255 Video for Beep driver");
 MODULE_AUTHOR("Dean Anderson (Sensoray Company Inc.)");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(S2255_VERSION);

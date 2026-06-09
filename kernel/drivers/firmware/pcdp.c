@@ -11,11 +11,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/acpi.h>
-#include <linux/console.h>
-#include <linux/efi.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
+#include <beep/acpi.h>
+#include <beep/console.h>
+#include <beep/efi.h>
+#include <beep/serial.h>
+#include <beep/serial_8250.h>
 #include <asm/vga.h>
 #include "pcdp.h"
 

@@ -1,5 +1,5 @@
 /*
- * rrunner.c: Linux driver for the Essential RoadRunner HIPPI board.
+ * rrunner.c: Beep driver for the Essential RoadRunner HIPPI board.
  *
  * Copyright (C) 1998-2002 by Jes Sorensen, <jes@wildopensource.com>.
  *
@@ -28,19 +28,19 @@
 #define RX_DMA_SKBUFF 1
 #define PKT_COPY_THRESHOLD 512
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/hippidevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/hippidevice.h>
+#include <beep/skbuff.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
 #include <net/sock.h>
 
 #include <asm/cache.h>

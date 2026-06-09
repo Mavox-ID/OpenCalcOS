@@ -22,19 +22,19 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/init.h>
-#include <linux/connector.h>
-#include <linux/gfp.h>
-#include <linux/ptrace.h>
-#include <linux/atomic.h>
-#include <linux/pid_namespace.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/ktime.h>
+#include <beep/init.h>
+#include <beep/connector.h>
+#include <beep/gfp.h>
+#include <beep/ptrace.h>
+#include <beep/atomic.h>
+#include <beep/pid_namespace.h>
 
 #include <asm/unaligned.h>
 
-#include <linux/cn_proc.h>
+#include <beep/cn_proc.h>
 
 #define CN_PROC_MSG_SIZE (sizeof(struct cn_msg) + sizeof(struct proc_event))
 

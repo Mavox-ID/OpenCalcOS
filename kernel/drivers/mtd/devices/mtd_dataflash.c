@@ -9,22 +9,22 @@
  * as published by the Free Software Foundation; either version
  * 2 of the License, or (at your option) any later version.
 */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/math64.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/mutex.h>
+#include <beep/err.h>
+#include <beep/math64.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
 
 /*
  * DataFlash is a kind of SPI flash.  Most AT45 chips have two buffers in

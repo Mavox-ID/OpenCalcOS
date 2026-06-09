@@ -1,14 +1,14 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/pm.h>
-#include <linux/efi.h>
-#include <linux/dmi.h>
-#include <linux/sched.h>
-#include <linux/tboot.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/reboot.h>
+#include <beep/init.h>
+#include <beep/pm.h>
+#include <beep/efi.h>
+#include <beep/dmi.h>
+#include <beep/sched.h>
+#include <beep/tboot.h>
+#include <beep/delay.h>
 #include <acpi/reboot.h>
 #include <asm/io.h>
 #include <asm/apic.h>
@@ -24,8 +24,8 @@
 #include <asm/nmi.h>
 #include <asm/smp.h>
 
-#include <linux/ctype.h>
-#include <linux/mc146818rtc.h>
+#include <beep/ctype.h>
+#include <beep/mc146818rtc.h>
 #include <asm/realmode.h>
 #include <asm/x86_init.h>
 

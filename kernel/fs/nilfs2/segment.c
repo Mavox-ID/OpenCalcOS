@@ -21,18 +21,18 @@
  *
  */
 
-#include <linux/pagemap.h>
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
-#include <linux/bio.h>
-#include <linux/completion.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
-#include <linux/crc32.h>
-#include <linux/pagevec.h>
-#include <linux/slab.h>
+#include <beep/pagemap.h>
+#include <beep/buffer_head.h>
+#include <beep/writeback.h>
+#include <beep/bio.h>
+#include <beep/completion.h>
+#include <beep/blkdev.h>
+#include <beep/backing-dev.h>
+#include <beep/freezer.h>
+#include <beep/kthread.h>
+#include <beep/crc32.h>
+#include <beep/pagevec.h>
+#include <beep/slab.h>
 #include "nilfs.h"
 #include "btnode.h"
 #include "page.h"

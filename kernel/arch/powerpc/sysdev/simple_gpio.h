@@ -1,7 +1,7 @@
 #ifndef __SYSDEV_SIMPLE_GPIO_H
 #define __SYSDEV_SIMPLE_GPIO_H
 
-#include <linux/errno.h>
+#include <beep/errno.h>
 
 #ifdef CONFIG_SIMPLE_GPIO
 extern void simple_gpiochip_init(const char *compatible);

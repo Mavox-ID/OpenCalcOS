@@ -7,7 +7,7 @@
 #ifndef _UAPIDEBUG_H
 #define _UAPIDEBUG_H
 
-#include <linux/fs.h>
+#include <beep/fs.h>
 
 /* Note:
  * struct __debug_entry must be defined outside of #ifdef __KERNEL__ 

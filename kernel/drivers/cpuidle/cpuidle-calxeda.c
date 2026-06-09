@@ -18,13 +18,13 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/cpuidle.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/time.h>
-#include <linux/delay.h>
-#include <linux/suspend.h>
+#include <beep/cpuidle.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/time.h>
+#include <beep/delay.h>
+#include <beep/suspend.h>
 #include <asm/cpuidle.h>
 #include <asm/proc-fns.h>
 #include <asm/smp_scu.h>

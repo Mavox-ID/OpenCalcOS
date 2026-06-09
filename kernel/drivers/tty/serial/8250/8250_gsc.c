@@ -9,14 +9,14 @@
  *      (at your option) any later version.
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/serial_core.h>
-#include <linux/signal.h>
-#include <linux/types.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/module.h>
+#include <beep/serial_core.h>
+#include <beep/signal.h>
+#include <beep/types.h>
 
 #include <asm/hardware.h>
 #include <asm/parisc-device.h>

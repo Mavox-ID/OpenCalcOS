@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ext2/xip.h
+ *  beep/fs/ext2/xip.h
  *
  * Copyright (C) 2005 IBM Corporation
  * Author: Carsten Otte (cotte@de.ibm.com)

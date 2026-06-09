@@ -1,7 +1,7 @@
 /*
     Driver for Zarlink VP310/MT312/ZL10313 Satellite Channel Decoder
 
-    Copyright (C) 2003 Andreas Oberritter <obi@linuxtv.org>
+    Copyright (C) 2003 Andreas Oberritter <obi@beeptv.org>
     Copyright (C) 2008 Matthias Schwarzott <zzam@gentoo.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -24,13 +24,13 @@
     http://products.zarlink.com/product_profiles/SL1935.htm
 */
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/slab.h>
 
 #include "dvb_frontend.h"
 #include "mt312_priv.h"
@@ -833,7 +833,7 @@ module_param(debug, int, 0644);
 MODULE_PARM_DESC(debug, "Turn on/off frontend debugging (default:off).");
 
 MODULE_DESCRIPTION("Zarlink VP310/MT312/ZL10313 DVB-S Demodulator driver");
-MODULE_AUTHOR("Andreas Oberritter <obi@linuxtv.org>");
+MODULE_AUTHOR("Andreas Oberritter <obi@beeptv.org>");
 MODULE_AUTHOR("Matthias Schwarzott <zzam@gentoo.org>");
 MODULE_LICENSE("GPL");
 

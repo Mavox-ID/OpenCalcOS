@@ -6,22 +6,22 @@
  * 16 Dec 2003: Yasuyuki Kozakai @USAGI <yasuyuki.kozakai@toshiba.co.jp>
  *	- generalize L3 protocol dependent part.
  *
- * Derived from include/linux/netfiter_ipv4/ip_conntrack.h
+ * Derived from include/beep/netfiter_ipv4/ip_conntrack.h
  */
 
 #ifndef _NF_CONNTRACK_H
 #define _NF_CONNTRACK_H
 
-#include <linux/netfilter/nf_conntrack_common.h>
+#include <beep/netfilter/nf_conntrack_common.h>
 
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/atomic.h>
+#include <beep/bitops.h>
+#include <beep/compiler.h>
+#include <beep/atomic.h>
 
-#include <linux/netfilter/nf_conntrack_tcp.h>
-#include <linux/netfilter/nf_conntrack_dccp.h>
-#include <linux/netfilter/nf_conntrack_sctp.h>
-#include <linux/netfilter/nf_conntrack_proto_gre.h>
+#include <beep/netfilter/nf_conntrack_tcp.h>
+#include <beep/netfilter/nf_conntrack_dccp.h>
+#include <beep/netfilter/nf_conntrack_sctp.h>
+#include <beep/netfilter/nf_conntrack_proto_gre.h>
 #include <net/netfilter/ipv6/nf_conntrack_icmpv6.h>
 
 #include <net/netfilter/nf_conntrack_tuple.h>
@@ -39,9 +39,9 @@ union nf_conntrack_expect_proto {
 	/* insert expect proto private data here */
 };
 
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/timer.h>
+#include <beep/types.h>
+#include <beep/skbuff.h>
+#include <beep/timer.h>
 
 #ifdef CONFIG_NETFILTER_DEBUG
 #define NF_CT_ASSERT(x)		WARN_ON(!(x))

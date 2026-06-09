@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hpfs/file.c
+ *  beep/fs/hpfs/file.c
  *
  *  Mikulas Patocka (mikulas@artax.karlin.mff.cuni.cz), 1998-1999
  *

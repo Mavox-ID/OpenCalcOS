@@ -32,14 +32,14 @@
  * SOFTWARE.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/pci.h>
+#include <beep/errno.h>
 
-#include <linux/mlx4/cmd.h>
-#include <linux/semaphore.h>
+#include <beep/mlx4/cmd.h>
+#include <beep/semaphore.h>
 #include <rdma/ib_smi.h>
 
 #include <asm/io.h>

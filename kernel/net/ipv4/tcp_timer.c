@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -18,8 +18,8 @@
  *		Jorge Cwik, <jorge@laser.satlink.net>
  */
 
-#include <linux/module.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/gfp.h>
 #include <net/tcp.h>
 
 int sysctl_tcp_syn_retries __read_mostly = TCP_SYN_RETRIES;
@@ -38,7 +38,7 @@ static void tcp_write_err(struct sock *sk)
 	sk->sk_error_report(sk);
 
 	tcp_done(sk);
-	NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_TCPABORTONTIMEOUT);
+	NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_TCPABORTONTIMEOUT);
 }
 
 /* Do not allow orphaned sockets to eat all our resources.
@@ -76,7 +76,7 @@ static int tcp_out_of_resources(struct sock *sk, int do_reset)
 		if (do_reset)
 			tcp_send_active_reset(sk, GFP_ATOMIC);
 		tcp_done(sk);
-		NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_TCPABORTONMEMORY);
+		NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_TCPABORTONMEMORY);
 		return 1;
 	}
 	return 0;
@@ -213,7 +213,7 @@ void tcp_delack_timer_handler(struct sock *sk)
 	if (!skb_queue_empty(&tp->ucopy.prequeue)) {
 		struct sk_buff *skb;
 
-		NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_TCPSCHEDULERFAILED);
+		NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_TCPSCHEDULERFAILED);
 
 		while ((skb = __skb_dequeue(&tp->ucopy.prequeue)) != NULL)
 			sk_backlog_rcv(sk, skb);
@@ -233,7 +233,7 @@ void tcp_delack_timer_handler(struct sock *sk)
 			icsk->icsk_ack.ato      = TCP_ATO_MIN;
 		}
 		tcp_send_ack(sk);
-		NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_DELAYEDACKS);
+		NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_DELAYEDACKS);
 	}
 
 out:
@@ -250,7 +250,7 @@ static void tcp_delack_timer(unsigned long data)
 		tcp_delack_timer_handler(sk);
 	} else {
 		inet_csk(sk)->icsk_ack.blocked = 1;
-		NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_DELAYEDACKLOCKED);
+		NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_DELAYEDACKLOCKED);
 		/* deleguate our work to tcp_release_cb() */
 		if (!test_and_set_bit(TCP_DELACK_TIMER_DEFERRED, &tcp_sk(sk)->tsq_flags))
 			sock_hold(sk);
@@ -401,19 +401,19 @@ void tcp_retransmit_timer(struct sock *sk)
 
 		if (icsk->icsk_ca_state == TCP_CA_Recovery) {
 			if (tcp_is_sack(tp))
-				mib_idx = LINUX_MIB_TCPSACKRECOVERYFAIL;
+				mib_idx = BEEP_MIB_TCPSACKRECOVERYFAIL;
 			else
-				mib_idx = LINUX_MIB_TCPRENORECOVERYFAIL;
+				mib_idx = BEEP_MIB_TCPRENORECOVERYFAIL;
 		} else if (icsk->icsk_ca_state == TCP_CA_Loss) {
-			mib_idx = LINUX_MIB_TCPLOSSFAILURES;
+			mib_idx = BEEP_MIB_TCPLOSSFAILURES;
 		} else if ((icsk->icsk_ca_state == TCP_CA_Disorder) ||
 			   tp->sacked_out) {
 			if (tcp_is_sack(tp))
-				mib_idx = LINUX_MIB_TCPSACKFAILURES;
+				mib_idx = BEEP_MIB_TCPSACKFAILURES;
 			else
-				mib_idx = LINUX_MIB_TCPRENOFAILURES;
+				mib_idx = BEEP_MIB_TCPRENOFAILURES;
 		} else {
-			mib_idx = LINUX_MIB_TCPTIMEOUTS;
+			mib_idx = BEEP_MIB_TCPTIMEOUTS;
 		}
 		NET_INC_STATS_BH(sock_net(sk), mib_idx);
 	}
@@ -538,7 +538,7 @@ static void tcp_synack_timer(struct sock *sk)
 
 void tcp_syn_ack_timeout(struct sock *sk, struct request_sock *req)
 {
-	NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_TCPTIMEOUTS);
+	NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_TCPTIMEOUTS);
 }
 EXPORT_SYMBOL(tcp_syn_ack_timeout);
 

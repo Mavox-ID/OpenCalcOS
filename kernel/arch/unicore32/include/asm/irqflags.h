@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/include/asm/irqflags.h
+ * beep/arch/unicore32/include/asm/irqflags.h
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *

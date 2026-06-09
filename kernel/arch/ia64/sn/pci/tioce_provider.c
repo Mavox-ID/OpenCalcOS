@@ -6,10 +6,10 @@
  * Copyright (C) 2003-2006 Silicon Graphics, Inc.  All Rights Reserved.
  */
 
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
 #include <asm/sn/sn_sal.h>
 #include <asm/sn/addrs.h>
 #include <asm/sn/io.h>
@@ -376,7 +376,7 @@ tioce_alloc_map(struct tioce_kernel *ce_kern, int type, int port,
 
 /**
  * tioce_dma_d32 - create a DMA mapping using 32-bit direct mode
- * @pdev: linux pci_dev representing the function
+ * @pdev: beep pci_dev representing the function
  * @paddr: system physical address
  *
  * Map @paddr into 32-bit bus space of the CE associated with @pcidev_info.
@@ -447,7 +447,7 @@ tioce_dma_barrier(u64 bus_addr, int on)
 
 /**
  * tioce_dma_unmap - release CE mapping resources
- * @pdev: linux pci_dev representing the function
+ * @pdev: beep pci_dev representing the function
  * @bus_addr: bus address returned by an earlier tioce_dma_map
  * @dir: mapping direction (unused)
  *
@@ -512,7 +512,7 @@ tioce_dma_unmap(struct pci_dev *pdev, dma_addr_t bus_addr, int dir)
 
 /**
  * tioce_do_dma_map - map pages for PCI DMA
- * @pdev: linux pci_dev representing the function
+ * @pdev: beep pci_dev representing the function
  * @paddr: host physical address to map
  * @byte_count: bytes to map
  *

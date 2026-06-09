@@ -3,22 +3,22 @@
  * CAPI 2.0 convert capi message to capi message struct
  *
  * From CAPI 2.0 Development Kit AVM 1995 (msg.c)
- * Rewritten for Linux 1996 by Carsten Paeth <calle@calle.de>
+ * Rewritten for Beep 1996 by Carsten Paeth <calle@calle.de>
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
  *
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/isdn/capiutil.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/isdn/capiutil.h>
+#include <beep/slab.h>
 
 /* from CAPI2.0 DDK AVM Berlin GmbH */
 

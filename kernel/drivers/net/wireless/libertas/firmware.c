@@ -2,9 +2,9 @@
  * Firmware loading and handling functions.
  */
 
-#include <linux/sched.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
+#include <beep/sched.h>
+#include <beep/firmware.h>
+#include <beep/module.h>
 
 #include "dev.h"
 #include "decl.h"

@@ -10,9 +10,9 @@
  *  for more details.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/zorro.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/zorro.h>
 
 
     /**

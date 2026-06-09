@@ -7,15 +7,15 @@
  * Version 2. See the file COPYING for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/crc16.h>
-#include <linux/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/device.h>
+#include <beep/types.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/crc16.h>
+#include <beep/uaccess.h>
 
 #define CRC16_INIT		0
 #define CRC16_VALID		0xb001

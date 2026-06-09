@@ -16,9 +16,9 @@
 #ifndef __ASM_C6X_SYSCALLS_H
 #define __ASM_C6X_SYSCALLS_H
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
-#include <linux/types.h>
+#include <beep/compiler.h>
+#include <beep/linkage.h>
+#include <beep/types.h>
 
 /* The array of function pointers for syscalls. */
 extern void *sys_call_table[];

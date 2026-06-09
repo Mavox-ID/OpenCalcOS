@@ -19,25 +19,25 @@
  *    Dec 2004: Added support for PXA27x and slave device probing [Liam Girdwood]
  *    Feb 2005: Rework slave mode handling [RMK]
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/i2c-pxa.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_i2c.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/i2c/pxa-i2c.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/time.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/i2c-pxa.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/of_i2c.h>
+#include <beep/platform_device.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/i2c/pxa-i2c.h>
 
 #include <asm/irq.h>
 

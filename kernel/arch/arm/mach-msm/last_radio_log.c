@@ -15,11 +15,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/proc_fs.h>
-#include <linux/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/proc_fs.h>
+#include <beep/uaccess.h>
 
 #include "smd_private.h"
 

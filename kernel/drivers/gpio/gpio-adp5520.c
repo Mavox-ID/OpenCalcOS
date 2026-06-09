@@ -6,14 +6,14 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/adp5520.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/mfd/adp5520.h>
 
-#include <linux/gpio.h>
+#include <beep/gpio.h>
 
 struct adp5520_gpio {
 	struct device *master;
@@ -195,7 +195,7 @@ static struct platform_driver adp5520_gpio_driver = {
 
 module_platform_driver(adp5520_gpio_driver);
 
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucbeep.org>");
 MODULE_DESCRIPTION("GPIO ADP5520 Driver");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("platform:adp5520-gpio");

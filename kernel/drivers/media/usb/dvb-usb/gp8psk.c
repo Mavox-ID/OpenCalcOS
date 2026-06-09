@@ -1,4 +1,4 @@
-/* DVB USB compliant Linux driver for the
+/* DVB USB compliant Beep driver for the
  *  - GENPIX 8pks/qpsk/DCII USB2.0 DVB-S module
  *
  * Copyright (C) 2006,2007 Alan Nisota (alannisota@gmail.com)
@@ -118,7 +118,7 @@ static int gp8psk_load_bcm4500fw(struct dvb_usb_device *d)
 	if ((ret = request_firmware(&fw, bcm4500_firmware,
 					&d->udev->dev)) != 0) {
 		err("did not find the bcm4500 firmware file. (%s) "
-			"Please see linux/Documentation/dvb/ for more details on firmware-problems. (%d)",
+			"Please see beep/Documentation/dvb/ for more details on firmware-problems. (%d)",
 			bcm4500_firmware,ret);
 		return ret;
 	}

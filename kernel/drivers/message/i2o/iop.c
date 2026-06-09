@@ -20,16 +20,16 @@
  *		Deepak Saxena <deepak@plexity.net>
  *		Boji T Kannanthanam <boji.t.kannanthanam@intel.com>
  *		Alan Cox <alan@lxorguk.ukuu.org.uk>:
- *			Ported to Linux 2.5.
+ *			Ported to Beep 2.5.
  *		Markus Lidel <Markus.Lidel@shadowconnect.com>:
  *			Minor fixes for 2.6.
  */
 
-#include <linux/module.h>
-#include <linux/i2o.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/i2o.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 #include "core.h"
 
 #define OSM_NAME	"i2o"

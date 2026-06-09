@@ -5,18 +5,18 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/gen_stats.h>
-#include <linux/jhash.h>
-#include <linux/rtnetlink.h>
-#include <linux/random.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/gen_stats.h>
+#include <beep/jhash.h>
+#include <beep/rtnetlink.h>
+#include <beep/random.h>
+#include <beep/slab.h>
 #include <net/gen_stats.h>
 #include <net/netlink.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_RATEEST.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_RATEEST.h>
 #include <net/netfilter/xt_rateest.h>
 
 static DEFINE_MUTEX(xt_rateest_mutex);

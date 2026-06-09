@@ -1,18 +1,18 @@
 /*
- * linux/arch/alpha/kernel/alpha_ksyms.c
+ * beep/arch/alpha/kernel/alpha_ksyms.c
  *
  * Export the alpha-specific functions that are needed for loadable
  * modules.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <asm/console.h>
 #include <asm/uaccess.h>
 #include <asm/checksum.h>
 #include <asm/fpu.h>
 #include <asm/machvec.h>
 
-#include <linux/syscalls.h>
+#include <beep/syscalls.h>
 
 /* these are C runtime functions with special calling conventions: */
 extern void __divl (void);

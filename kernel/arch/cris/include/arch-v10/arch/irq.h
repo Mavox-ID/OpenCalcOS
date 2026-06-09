@@ -1,5 +1,5 @@
 /*
- * Interrupt handling assembler and defines for Linux/CRISv10
+ * Interrupt handling assembler and defines for Beep/CRISv10
  */
 
 #ifndef _ASM_ARCH_IRQ_H

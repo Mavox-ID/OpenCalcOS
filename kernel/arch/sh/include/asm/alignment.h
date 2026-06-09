@@ -1,7 +1,7 @@
 #ifndef __ASM_SH_ALIGNMENT_H
 #define __ASM_SH_ALIGNMENT_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 extern void inc_unaligned_byte_access(void);
 extern void inc_unaligned_word_access(void);

@@ -4,8 +4,8 @@
 #if !defined(_TRACE_JBD_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_JBD_H
 
-#include <linux/jbd.h>
-#include <linux/tracepoint.h>
+#include <beep/jbd.h>
+#include <beep/tracepoint.h>
 
 TRACE_EVENT(jbd_checkpoint,
 

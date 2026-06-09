@@ -2,11 +2,11 @@
  * Setup routines for AGP 3.5 compliant bridges.
  */
 
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/agp_backend.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/list.h>
+#include <beep/pci.h>
+#include <beep/agp_backend.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 #include "agp.h"
 

@@ -23,10 +23,10 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/perf_event.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/init.h>
+#include <beep/perf_event.h>
 #include <asm/bfin_pfmon.h>
 
 /*

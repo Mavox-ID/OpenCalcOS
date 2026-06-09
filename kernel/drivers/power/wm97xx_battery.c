@@ -1,5 +1,5 @@
 /*
- * linux/drivers/power/wm97xx_battery.c
+ * beep/drivers/power/wm97xx_battery.c
  *
  * Battery measurement code for WM97xx
  *
@@ -13,17 +13,17 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/wm97xx.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/power_supply.h>
+#include <beep/wm97xx.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/gpio.h>
+#include <beep/irq.h>
+#include <beep/slab.h>
 
 static struct work_struct bat_work;
 static DEFINE_MUTEX(work_lock);

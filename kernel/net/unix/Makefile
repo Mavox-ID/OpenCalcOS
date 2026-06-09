@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux unix domain socket layer.
+# Makefile for the Beep unix domain socket layer.
 #
 
 obj-$(CONFIG_UNIX)	+= unix.o

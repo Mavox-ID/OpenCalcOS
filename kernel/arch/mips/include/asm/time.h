@@ -14,10 +14,10 @@
 #ifndef _ASM_TIME_H
 #define _ASM_TIME_H
 
-#include <linux/rtc.h>
-#include <linux/spinlock.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
+#include <beep/rtc.h>
+#include <beep/spinlock.h>
+#include <beep/clockchips.h>
+#include <beep/clocksource.h>
 
 extern spinlock_t rtc_lock;
 

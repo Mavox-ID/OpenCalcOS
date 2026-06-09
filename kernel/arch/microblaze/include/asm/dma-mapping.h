@@ -20,12 +20,12 @@
  * Documentation/DMA-API.txt for documentation.
  */
 
-#include <linux/types.h>
-#include <linux/cache.h>
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-debug.h>
-#include <linux/dma-attrs.h>
+#include <beep/types.h>
+#include <beep/cache.h>
+#include <beep/mm.h>
+#include <beep/scatterlist.h>
+#include <beep/dma-debug.h>
+#include <beep/dma-attrs.h>
 #include <asm/io.h>
 #include <asm-generic/dma-coherent.h>
 #include <asm/cacheflush.h>

@@ -1,4 +1,4 @@
-/* sbni.c:  Granch SBNI12 leased line adapters driver for linux
+/* sbni.c:  Granch SBNI12 leased line adapters driver for beep
  *
  *	Written 2001 by Denis I.Timofeev (timofeev@granch.ru)
  *
@@ -39,21 +39,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/fcntl.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/pci.h>
-#include <linux/skbuff.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/ptrace.h>
+#include <beep/fcntl.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/pci.h>
+#include <beep/skbuff.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/delay.h>
 
 #include <net/net_namespace.h>
 #include <net/arp.h>

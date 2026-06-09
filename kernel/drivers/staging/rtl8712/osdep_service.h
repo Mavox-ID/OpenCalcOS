@@ -15,7 +15,7 @@
  * this program; if not, write to the Free Software Foundation, Inc.,
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110, USA
  *
- * Modifications for inclusion into the Linux staging tree are
+ * Modifications for inclusion into the Beep staging tree are
  * Copyright(c) 2010 Larry Finger. All rights reserved.
  *
  * Contact information:
@@ -29,16 +29,16 @@
 #define _SUCCESS	1
 #define _FAIL		0
 
-#include <linux/spinlock.h>
+#include <beep/spinlock.h>
 
-#include <linux/interrupt.h>
-#include <linux/semaphore.h>
-#include <linux/sched.h>
-#include <linux/sem.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <beep/interrupt.h>
+#include <beep/semaphore.h>
+#include <beep/sched.h>
+#include <beep/sem.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
 #include <net/iw_handler.h>
-#include <linux/proc_fs.h>      /* Necessary because we use the proc fs */
+#include <beep/proc_fs.h>      /* Necessary because we use the proc fs */
 
 #include "basic_types.h"
 

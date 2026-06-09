@@ -4,7 +4,7 @@
  * CAPI encoder/decoder
  *
  * Author       Fritz Elfert
- * Copyright    by Fritz Elfert      <fritz@isdn4linux.de>
+ * Copyright    by Fritz Elfert      <fritz@isdn4beep.de>
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.

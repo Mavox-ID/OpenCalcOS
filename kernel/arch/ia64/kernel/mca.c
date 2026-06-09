@@ -69,23 +69,23 @@
  * 2007-04-27 Russ Anderson <rja@sgi.com>
  *	      Support multiple cpus going through OS_MCA in the same event.
  */
-#include <linux/jiffies.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/bootmem.h>
-#include <linux/acpi.h>
-#include <linux/timer.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/smp.h>
-#include <linux/workqueue.h>
-#include <linux/cpumask.h>
-#include <linux/kdebug.h>
-#include <linux/cpu.h>
-#include <linux/gfp.h>
+#include <beep/jiffies.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/bootmem.h>
+#include <beep/acpi.h>
+#include <beep/timer.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/smp.h>
+#include <beep/workqueue.h>
+#include <beep/cpumask.h>
+#include <beep/kdebug.h>
+#include <beep/cpu.h>
+#include <beep/gfp.h>
 
 #include <asm/delay.h>
 #include <asm/machvec.h>

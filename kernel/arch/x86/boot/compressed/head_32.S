@@ -1,5 +1,5 @@
 /*
- *  linux/boot/head.S
+ *  beep/boot/head.S
  *
  *  Copyright (C) 1991, 1992, 1993  Linus Torvalds
  */
@@ -23,8 +23,8 @@
  */
 	.text
 
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
 #include <asm/segment.h>
 #include <asm/page_types.h>
 #include <asm/boot.h>
@@ -198,7 +198,7 @@ relocated:
 	leal	z_output_len(%ebp), %edi
 
 /*
- * Calculate the delta between where vmlinux was compiled to run
+ * Calculate the delta between where vmbeep was compiled to run
  * and where it was actually loaded.
  */
 	movl	%ebp, %ebx

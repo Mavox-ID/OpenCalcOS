@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux M32R-specific parts of the memory manager.
+# Makefile for the Beep M32R-specific parts of the memory manager.
 #
 
 ifdef CONFIG_MMU

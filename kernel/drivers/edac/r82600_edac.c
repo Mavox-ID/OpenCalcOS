@@ -15,11 +15,11 @@
  * references to this document given in []
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/edac.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/pci_ids.h>
+#include <beep/edac.h>
 #include "edac_core.h"
 
 #define R82600_REVISION	" Ver: 2.0.2"

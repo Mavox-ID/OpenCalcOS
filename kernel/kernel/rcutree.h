@@ -19,14 +19,14 @@
  * Copyright IBM Corporation, 2008
  *
  * Author: Ingo Molnar <mingo@elte.hu>
- *	   Paul E. McKenney <paulmck@linux.vnet.ibm.com>
+ *	   Paul E. McKenney <paulmck@beep.vnet.ibm.com>
  */
 
-#include <linux/cache.h>
-#include <linux/spinlock.h>
-#include <linux/threads.h>
-#include <linux/cpumask.h>
-#include <linux/seqlock.h>
+#include <beep/cache.h>
+#include <beep/spinlock.h>
+#include <beep/threads.h>
+#include <beep/cpumask.h>
+#include <beep/seqlock.h>
 
 /*
  * Define shape of hierarchy based on NR_CPUS, CONFIG_RCU_FANOUT, and

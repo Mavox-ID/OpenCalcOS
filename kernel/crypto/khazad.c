@@ -19,12 +19,12 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/mm.h>
 #include <asm/byteorder.h>
-#include <linux/crypto.h>
-#include <linux/types.h>
+#include <beep/crypto.h>
+#include <beep/types.h>
 
 #define KHAZAD_KEY_SIZE		16
 #define KHAZAD_BLOCK_SIZE	8

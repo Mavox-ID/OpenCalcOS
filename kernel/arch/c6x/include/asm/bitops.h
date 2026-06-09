@@ -13,7 +13,7 @@
 
 #ifdef __KERNEL__
 
-#include <linux/bitops.h>
+#include <beep/bitops.h>
 
 #include <asm/byteorder.h>
 

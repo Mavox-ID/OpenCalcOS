@@ -6,10 +6,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s(): " fmt, __func__
 
-#include <linux/string.h>
-#include <linux/skbuff.h>
-#include <linux/hardirq.h>
-#include <linux/export.h>
+#include <beep/string.h>
+#include <beep/skbuff.h>
+#include <beep/hardirq.h>
+#include <beep/export.h>
 #include <net/caif/cfpkt.h>
 
 #define PKT_PREFIX  48

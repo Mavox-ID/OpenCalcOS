@@ -27,29 +27,29 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_mdio.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/tcp.h>      /* needed for sizeof(tcphdr) */
-#include <linux/udp.h>      /* needed for sizeof(udphdr) */
-#include <linux/phy.h>
-#include <linux/in.h>
-#include <linux/io.h>
-#include <linux/ip.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/etherdevice.h>
+#include <beep/init.h>
+#include <beep/mii.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/netdevice.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/of_mdio.h>
+#include <beep/of_platform.h>
+#include <beep/of_address.h>
+#include <beep/skbuff.h>
+#include <beep/spinlock.h>
+#include <beep/tcp.h>      /* needed for sizeof(tcphdr) */
+#include <beep/udp.h>      /* needed for sizeof(udphdr) */
+#include <beep/phy.h>
+#include <beep/in.h>
+#include <beep/io.h>
+#include <beep/ip.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
 
 #include "ll_temac.h"
 

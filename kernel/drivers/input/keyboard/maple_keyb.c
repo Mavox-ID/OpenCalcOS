@@ -20,13 +20,13 @@
  * 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/maple.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/timer.h>
+#include <beep/maple.h>
 
 /* Very simple mutex to ensure proper cleanup */
 static DEFINE_MUTEX(maple_keyb_mutex);

@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/kernel/hibernate_asm.S
+ * beep/arch/unicore32/kernel/hibernate_asm.S
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -11,9 +11,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/sys.h>
-#include <linux/errno.h>
-#include <linux/linkage.h>
+#include <beep/sys.h>
+#include <beep/errno.h>
+#include <beep/linkage.h>
 #include <generated/asm-offsets.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>

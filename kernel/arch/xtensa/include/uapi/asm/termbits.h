@@ -14,7 +14,7 @@
 #define _XTENSA_TERMBITS_H
 
 
-#include <linux/posix_types.h>
+#include <beep/posix_types.h>
 
 typedef unsigned char	cc_t;
 typedef unsigned int	speed_t;

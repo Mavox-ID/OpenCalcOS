@@ -9,7 +9,7 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/romfs_fs.h>
+#include <beep/romfs_fs.h>
 
 struct romfs_inode_info {
 	struct inode	vfs_inode;

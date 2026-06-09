@@ -1,5 +1,5 @@
 /*
- *	linux/mm/filemap.c
+ *	beep/mm/filemap.c
  *
  * Copyright (C) 1994-1999  Linus Torvalds
  */
@@ -9,36 +9,36 @@
  * most "normal" filesystems (but you don't /have/ to use this:
  * the NFS filesystem used to do this differently, for example)
  */
-#include <linux/export.h>
-#include <linux/compiler.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/aio.h>
-#include <linux/capability.h>
-#include <linux/kernel_stat.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/mman.h>
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/uio.h>
-#include <linux/hash.h>
-#include <linux/writeback.h>
-#include <linux/backing-dev.h>
-#include <linux/pagevec.h>
-#include <linux/blkdev.h>
-#include <linux/security.h>
-#include <linux/cpuset.h>
-#include <linux/hardirq.h> /* for BUG_ON(!in_atomic()) only */
-#include <linux/memcontrol.h>
-#include <linux/cleancache.h>
+#include <beep/export.h>
+#include <beep/compiler.h>
+#include <beep/fs.h>
+#include <beep/uaccess.h>
+#include <beep/aio.h>
+#include <beep/capability.h>
+#include <beep/kernel_stat.h>
+#include <beep/gfp.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/mman.h>
+#include <beep/pagemap.h>
+#include <beep/file.h>
+#include <beep/uio.h>
+#include <beep/hash.h>
+#include <beep/writeback.h>
+#include <beep/backing-dev.h>
+#include <beep/pagevec.h>
+#include <beep/blkdev.h>
+#include <beep/security.h>
+#include <beep/cpuset.h>
+#include <beep/hardirq.h> /* for BUG_ON(!in_atomic()) only */
+#include <beep/memcontrol.h>
+#include <beep/cleancache.h>
 #include "internal.h"
 
 /*
  * FIXME: remove all knowledge of the buffer layer from the core VM
  */
-#include <linux/buffer_head.h> /* for try_to_free_buffers */
+#include <beep/buffer_head.h> /* for try_to_free_buffers */
 
 #include <asm/mman.h>
 
@@ -702,7 +702,7 @@ repeat:
 		/*
 		 * Has the page moved?
 		 * This is part of the lockless pagecache protocol. See
-		 * include/linux/pagemap.h for details.
+		 * include/beep/pagemap.h for details.
 		 */
 		if (unlikely(page != *pagep)) {
 			page_cache_release(page);

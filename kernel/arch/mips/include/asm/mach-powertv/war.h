@@ -5,7 +5,7 @@
  *
  * This version for the PowerTV platform copied from the Malta version.
  *
- * Copyright (C) 2002, 2004, 2007 by Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 2002, 2004, 2007 by Ralf Baechle <ralf@beep-mips.org>
  * Portions copyright (C) 2009 Cisco Systems, Inc.
  */
 #ifndef __ASM_MACH_POWERTV_WAR_H

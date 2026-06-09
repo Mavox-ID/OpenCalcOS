@@ -8,10 +8,10 @@
  *
  * This file is released under the GPLv2
  */
-#include <linux/kobject.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
+#include <beep/kobject.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/device.h>
 
 #include "base.h"
 

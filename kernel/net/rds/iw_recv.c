@@ -30,10 +30,10 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
 #include <rdma/rdma_cm.h>
 
 #include "rds.h"

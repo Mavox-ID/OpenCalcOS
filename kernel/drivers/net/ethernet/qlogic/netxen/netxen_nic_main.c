@@ -23,29 +23,29 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/interrupt.h>
 #include "netxen_nic_hw.h"
 
 #include "netxen_nic.h"
 
-#include <linux/dma-mapping.h>
-#include <linux/if_vlan.h>
+#include <beep/dma-mapping.h>
+#include <beep/if_vlan.h>
 #include <net/ip.h>
-#include <linux/ipv6.h>
-#include <linux/inetdevice.h>
-#include <linux/sysfs.h>
-#include <linux/aer.h>
+#include <beep/ipv6.h>
+#include <beep/inetdevice.h>
+#include <beep/sysfs.h>
+#include <beep/aer.h>
 
 MODULE_DESCRIPTION("QLogic/NetXen (1/10) GbE Intelligent Ethernet Driver");
 MODULE_LICENSE("GPL");
-MODULE_VERSION(NETXEN_NIC_LINUX_VERSIONID);
+MODULE_VERSION(NETXEN_NIC_BEEP_VERSIONID);
 MODULE_FIRMWARE(NX_UNIFIED_ROMIMAGE_NAME);
 
 char netxen_nic_driver_name[] = "netxen_nic";
 static char netxen_nic_driver_string[] = "QLogic/NetXen Network Driver v"
-    NETXEN_NIC_LINUX_VERSIONID;
+    NETXEN_NIC_BEEP_VERSIONID;
 
 static int port_mode = NETXEN_PORT_MODE_AUTO_NEG;
 
@@ -981,9 +981,9 @@ netxen_start_firmware(struct netxen_adapter *adapter)
 	/*
 	 * Tell the hardware our version number.
 	 */
-	val = (_NETXEN_NIC_LINUX_MAJOR << 16)
-		| ((_NETXEN_NIC_LINUX_MINOR << 8))
-		| (_NETXEN_NIC_LINUX_SUBVERSION);
+	val = (_NETXEN_NIC_BEEP_MAJOR << 16)
+		| ((_NETXEN_NIC_BEEP_MINOR << 8))
+		| (_NETXEN_NIC_BEEP_SUBVERSION);
 	NXWR32(adapter, CRB_DRIVER_VERSION, val);
 
 pcie_strap_init:

@@ -2,11 +2,10 @@
 # scripts contains sources for various helper programs used throughout
 # the kernel for the build process.
 # ---------------------------------------------------------------------------
-# kallsyms:      Find all symbols in vmlinux
+# kallsyms:      Find all symbols in vmbeep
 # pnmttologo:    Convert pnm files to logo files
 # conmakehash:   Create chartable
 # conmakehash:	 Create arrays for initializing the kernel console tables
-# docproc:       Used in Documentation/DocBook
 
 HOST_EXTRACFLAGS += -I$(srctree)/tools/include
 
@@ -35,8 +34,8 @@ build_docproc: scripts/docproc FORCE
 
 subdir-$(CONFIG_MODVERSIONS) += genksyms
 subdir-y                     += mod
-subdir-$(CONFIG_SECURITY_SELINUX) += selinux
+subdir-$(CONFIG_SECURITY_SEBEEP) += sebeep
 subdir-$(CONFIG_DTC)         += dtc
 
 # Let clean descend into subdirs
-subdir-	+= basic kconfig package selinux
+subdir-	+= basic kconfig package sebeep

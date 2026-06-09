@@ -124,7 +124,7 @@
    by default.
 
 */
-#include <linux/types.h>
+#include <beep/types.h>
 
 static bool verbose = 0;
 static int major = PD_MAJOR;
@@ -144,19 +144,19 @@ enum {D_PRT, D_PRO, D_UNI, D_MOD, D_GEO, D_SBY, D_DLY, D_SLV};
 
 /* end of parameters */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/hdreg.h>
-#include <linux/cdrom.h>	/* for the eject ioctl */
-#include <linux/blkdev.h>
-#include <linux/blkpg.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/gfp.h>
+#include <beep/fs.h>
+#include <beep/delay.h>
+#include <beep/hdreg.h>
+#include <beep/cdrom.h>	/* for the eject ioctl */
+#include <beep/blkdev.h>
+#include <beep/blkpg.h>
+#include <beep/kernel.h>
+#include <beep/mutex.h>
 #include <asm/uaccess.h>
-#include <linux/workqueue.h>
+#include <beep/workqueue.h>
 
 static DEFINE_MUTEX(pd_mutex);
 static DEFINE_SPINLOCK(pd_lock);

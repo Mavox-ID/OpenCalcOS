@@ -9,14 +9,14 @@
  * option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/rtc.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/types.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/rtc.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/types.h>
+#include <beep/io.h>
 #include <asm/mach-loongson1/loongson1.h>
 
 #define LS1X_RTC_REG_OFFSET	(LS1X_RTC_BASE + 0x20)

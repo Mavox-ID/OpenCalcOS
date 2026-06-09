@@ -12,12 +12,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/log2.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/v4l2-mediabus.h>
+#include <beep/i2c.h>
+#include <beep/module.h>
+#include <beep/log2.h>
+#include <beep/slab.h>
+#include <beep/videodev2.h>
+#include <beep/v4l2-mediabus.h>
 
 #include <media/mt9t001.h>
 #include <media/v4l2-ctrls.h>

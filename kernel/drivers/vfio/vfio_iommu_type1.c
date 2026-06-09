@@ -24,18 +24,18 @@
  * device/bus interface rather than a group interface.
  */
 
-#include <linux/compat.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/iommu.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/pci.h>		/* pci_bus_type */
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/vfio.h>
-#include <linux/workqueue.h>
+#include <beep/compat.h>
+#include <beep/device.h>
+#include <beep/fs.h>
+#include <beep/iommu.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/pci.h>		/* pci_bus_type */
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/uaccess.h>
+#include <beep/vfio.h>
+#include <beep/workqueue.h>
 
 #define DRIVER_VERSION  "0.2"
 #define DRIVER_AUTHOR   "Alex Williamson <alex.williamson@redhat.com>"

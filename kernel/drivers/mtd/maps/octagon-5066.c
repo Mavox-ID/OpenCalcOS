@@ -23,13 +23,13 @@
 
    ##################################################################### */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
 #include <asm/io.h>
 
-#include <linux/mtd/map.h>
-#include <linux/mtd/mtd.h>
+#include <beep/mtd/map.h>
+#include <beep/mtd/mtd.h>
 
 #define WINDOW_START 0xe8000
 #define WINDOW_LENGTH 0x8000

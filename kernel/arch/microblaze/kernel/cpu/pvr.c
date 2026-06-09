@@ -10,8 +10,8 @@
  * for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/compiler.h>
+#include <beep/kernel.h>
+#include <beep/compiler.h>
 #include <asm/exceptions.h>
 #include <asm/pvr.h>
 

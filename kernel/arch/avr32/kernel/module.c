@@ -12,12 +12,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/bug.h>
-#include <linux/elf.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleloader.h>
-#include <linux/vmalloc.h>
+#include <beep/bug.h>
+#include <beep/elf.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleloader.h>
+#include <beep/vmalloc.h>
 
 void module_free(struct module *mod, void *module_region)
 {

@@ -7,9 +7,9 @@
 #include "qla_def.h"
 #include "qla_gbl.h"
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
 
 #include "qla_devtbl.h"
 
@@ -5004,7 +5004,7 @@ qla24xx_load_risc_flash(scsi_qla_host_t *vha, uint32_t *srisc_addr,
 	return rval;
 }
 
-#define QLA_FW_URL "ftp://ftp.qlogic.com/outgoing/linux/firmware/"
+#define QLA_FW_URL "ftp://ftp.qlogic.com/outgoing/beep/firmware/"
 
 int
 qla2x00_load_risc(scsi_qla_host_t *vha, uint32_t *srisc_addr)

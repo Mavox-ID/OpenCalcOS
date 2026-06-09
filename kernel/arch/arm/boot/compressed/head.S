@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/boot/compressed/head.S
+ *  beep/arch/arm/boot/compressed/head.S
  *
  *  Copyright (C) 1996-2002 Russell King
  *  Copyright (C) 2004 Hyok S. Choi (MPU support)
@@ -8,7 +8,7 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 
 /*
@@ -113,7 +113,7 @@
 #endif
 		.endm
 
-		.section ".start", #alloc, #execinstr
+                .section ".start", "ax"
 /*
  * sort out different calling conventions
  */

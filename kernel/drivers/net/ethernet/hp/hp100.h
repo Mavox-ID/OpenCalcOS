@@ -1,5 +1,5 @@
 /*
- * hp100.h: Hewlett Packard HP10/100VG ANY LAN ethernet driver for Linux.
+ * hp100.h: Hewlett Packard HP10/100VG ANY LAN ethernet driver for Beep.
  *
  * $Id: hp100.h,v 1.51 1997/04/08 14:26:42 floeff Exp floeff $
  *

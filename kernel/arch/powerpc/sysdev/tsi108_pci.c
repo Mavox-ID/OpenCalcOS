@@ -21,11 +21,11 @@
  * Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
 
 #include <asm/byteorder.h>
 #include <asm/io.h>
@@ -340,7 +340,7 @@ static inline unsigned int get_pci_source(void)
 
 
 /*
- * Linux descriptor level callbacks
+ * Beep descriptor level callbacks
  */
 
 static void tsi108_pci_irq_unmask(struct irq_data *d)

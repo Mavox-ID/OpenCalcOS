@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-pxa/capc7117.c
+ * beep/arch/arm/mach-pxa/capc7117.c
  *
  * Support for the Embedian CAPC-7117 Evaluation Kit
  * based on the Embedian MXM-8x10 Computer on Module
@@ -19,11 +19,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
-#include <linux/serial_8250.h>
-#include <linux/gpio.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/ata_platform.h>
+#include <beep/serial_8250.h>
+#include <beep/gpio.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

@@ -20,25 +20,25 @@
  * This file is licenced under the GPL.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/usb.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/hcd.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/workqueue.h>
-#include <linux/debugfs.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/timer.h>
+#include <beep/list.h>
+#include <beep/usb.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/hcd.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmapool.h>
+#include <beep/workqueue.h>
+#include <beep/debugfs.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
@@ -673,7 +673,7 @@ retry:
 	 * (SiS, OPTi ...), so reset again instead.  SiS doesn't need
 	 * this if we write fmInterval after we're OPERATIONAL.
 	 * Unclear about ALi, ServerWorks, and others ... this could
-	 * easily be a longstanding bug in chip init on Linux.
+	 * easily be a longstanding bug in chip init on Beep.
 	 */
 	if (ohci->flags & OHCI_QUIRK_INITRESET) {
 		ohci_writel (ohci, ohci->hc_control, &ohci->regs->control);

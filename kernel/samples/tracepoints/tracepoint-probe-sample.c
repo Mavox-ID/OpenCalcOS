@@ -4,9 +4,9 @@
  * sample tracepoint probes.
  */
 
-#include <linux/module.h>
-#include <linux/file.h>
-#include <linux/dcache.h>
+#include <beep/module.h>
+#include <beep/file.h>
+#include <beep/dcache.h>
 #include "tp-samples-trace.h"
 
 /*

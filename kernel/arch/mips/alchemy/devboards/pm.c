@@ -1,13 +1,13 @@
 /*
  * Alchemy Development Board example suspend userspace interface.
  *
- * (c) 2008 Manuel Lauss <mano@roarinelk.homelinux.net>
+ * (c) 2008 Manuel Lauss <mano@roarinelk.homebeep.net>
  */
 
-#include <linux/init.h>
-#include <linux/kobject.h>
-#include <linux/suspend.h>
-#include <linux/sysfs.h>
+#include <beep/init.h>
+#include <beep/kobject.h>
+#include <beep/suspend.h>
+#include <beep/sysfs.h>
 #include <asm/mach-au1x00/au1000.h>
 #include <asm/mach-au1x00/gpio.h>
 #include <asm/mach-db1x00/bcsr.h>

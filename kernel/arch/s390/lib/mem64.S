@@ -4,7 +4,7 @@
  * Copyright IBM Corp. 2012
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 /*
  * memset implementation

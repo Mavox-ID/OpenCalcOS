@@ -5,19 +5,19 @@
  * Copyright (C) 1996 Paul Mackerras.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/crc32.h>
-#include <linux/spinlock.h>
-#include <linux/bitrev.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/delay.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/crc32.h>
+#include <beep/spinlock.h>
+#include <beep/bitrev.h>
+#include <beep/slab.h>
 #include <asm/prom.h>
 #include <asm/dbdma.h>
 #include <asm/io.h>

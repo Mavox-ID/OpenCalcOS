@@ -9,8 +9,8 @@
  *  by the Free Software Foundation.
  */
 
-#include <linux/irq.h>
-#include <linux/pci.h>
+#include <beep/irq.h>
+#include <beep/pci.h>
 #include <asm/mach-ath79/ath79.h>
 #include <asm/mach-ath79/ar71xx_regs.h>
 #include <asm/mach-ath79/pci.h>

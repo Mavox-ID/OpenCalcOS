@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/net/netconsole.c
+ *  beep/drivers/net/netconsole.c
  *
  *  Copyright (C) 2001  Ingo Molnar <mingo@redhat.com>
  *
@@ -34,16 +34,16 @@
  *
  ****************************************************************/
 
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/console.h>
-#include <linux/moduleparam.h>
-#include <linux/string.h>
-#include <linux/netpoll.h>
-#include <linux/inet.h>
-#include <linux/configfs.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/console.h>
+#include <beep/moduleparam.h>
+#include <beep/string.h>
+#include <beep/netpoll.h>
+#include <beep/inet.h>
+#include <beep/configfs.h>
 
 MODULE_AUTHOR("Maintainer: Matt Mackall <mpm@selenic.com>");
 MODULE_DESCRIPTION("Console driver for network interfaces");

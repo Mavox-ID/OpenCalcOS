@@ -17,7 +17,7 @@
 #ifndef __ARCH_ARM_MACH_OMAP2_VP_H
 #define __ARCH_ARM_MACH_OMAP2_VP_H
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 struct voltagedomain;
 

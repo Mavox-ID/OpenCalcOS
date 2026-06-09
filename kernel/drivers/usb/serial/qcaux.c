@@ -15,12 +15,12 @@
  * protocol.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/tty.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/tty.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/usb/serial.h>
 
 /* NOTE: for now, only use this driver for devices that provide a CDC-ACM port
  * for normal AT commands, but also provide secondary USB interfaces for the

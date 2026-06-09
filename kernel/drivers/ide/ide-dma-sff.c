@@ -1,10 +1,10 @@
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/ide.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/ide.h>
+#include <beep/scatterlist.h>
+#include <beep/dma-mapping.h>
+#include <beep/io.h>
 
 /**
  *	config_drive_for_dma	-	attempt to activate IDE DMA

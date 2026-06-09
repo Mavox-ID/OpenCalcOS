@@ -1,9 +1,9 @@
 
 /*
- *  linux/drivers/cpufreq/cpufreq_userspace.c
+ *  beep/drivers/cpufreq/cpufreq_userspace.c
  *
  *  Copyright (C)  2001 Russell King
- *            (C)  2002 - 2004 Dominik Brodowski <linux@brodo.de>
+ *            (C)  2002 - 2004 Dominik Brodowski <beep@brodo.de>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -13,18 +13,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/cpufreq.h>
-#include <linux/cpu.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/sysfs.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/smp.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/cpufreq.h>
+#include <beep/cpu.h>
+#include <beep/types.h>
+#include <beep/fs.h>
+#include <beep/sysfs.h>
+#include <beep/mutex.h>
 
 /**
  * A few values needed by the userspace governor
@@ -211,8 +211,8 @@ static void __exit cpufreq_gov_userspace_exit(void)
 }
 
 
-MODULE_AUTHOR("Dominik Brodowski <linux@brodo.de>, "
-		"Russell King <rmk@arm.linux.org.uk>");
+MODULE_AUTHOR("Dominik Brodowski <beep@brodo.de>, "
+		"Russell King <rmk@arm.beep.org.uk>");
 MODULE_DESCRIPTION("CPUfreq policy governor 'userspace'");
 MODULE_LICENSE("GPL");
 

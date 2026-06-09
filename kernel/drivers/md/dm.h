@@ -10,11 +10,11 @@
 #ifndef DM_INTERNAL_H
 #define DM_INTERNAL_H
 
-#include <linux/fs.h>
-#include <linux/device-mapper.h>
-#include <linux/list.h>
-#include <linux/blkdev.h>
-#include <linux/hdreg.h>
+#include <beep/fs.h>
+#include <beep/device-mapper.h>
+#include <beep/list.h>
+#include <beep/blkdev.h>
+#include <beep/hdreg.h>
 
 /*
  * Suspend feature flags

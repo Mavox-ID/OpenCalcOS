@@ -6,11 +6,11 @@
  * Copyright (c) 2004-2007 Axis Communications AB.
  */
 
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/spinlock.h>
 #include <hwregs/reg_map.h>
 #include <hwregs/reg_rdwr.h>
 #include <pinmux.h>

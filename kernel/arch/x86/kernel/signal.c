@@ -9,20 +9,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/tracehook.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/personality.h>
-#include <linux/uaccess.h>
-#include <linux/user-return-notifier.h>
-#include <linux/uprobes.h>
-#include <linux/context_tracking.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/wait.h>
+#include <beep/tracehook.h>
+#include <beep/unistd.h>
+#include <beep/stddef.h>
+#include <beep/personality.h>
+#include <beep/uaccess.h>
+#include <beep/user-return-notifier.h>
+#include <beep/uprobes.h>
+#include <beep/context_tracking.h>
 
 #include <asm/processor.h>
 #include <asm/ucontext.h>

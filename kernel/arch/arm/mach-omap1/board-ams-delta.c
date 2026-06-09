@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/board-ams-delta.c
+ * beep/arch/arm/mach-omap1/board-ams-delta.c
  *
  * Modified from board-generic.c
  *
@@ -11,22 +11,22 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/basic_mmio_gpio.h>
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/serial_8250.h>
-#include <linux/export.h>
-#include <linux/omapfb.h>
-#include <linux/io.h>
-#include <linux/platform_data/gpio-omap.h>
+#include <beep/basic_mmio_gpio.h>
+#include <beep/gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/leds.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/consumer.h>
+#include <beep/regulator/fixed.h>
+#include <beep/regulator/machine.h>
+#include <beep/serial_8250.h>
+#include <beep/export.h>
+#include <beep/omapfb.h>
+#include <beep/io.h>
+#include <beep/platform_data/gpio-omap.h>
 
 #include <media/soc_camera.h>
 
@@ -36,7 +36,7 @@
 #include <asm/mach/map.h>
 
 #include <mach/board-ams-delta.h>
-#include <linux/platform_data/keypad-omap.h>
+#include <beep/platform_data/keypad-omap.h>
 #include <mach/mux.h>
 
 #include <mach/hardware.h>

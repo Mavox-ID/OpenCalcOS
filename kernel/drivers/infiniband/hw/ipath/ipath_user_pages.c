@@ -31,10 +31,10 @@
  * SOFTWARE.
  */
 
-#include <linux/mm.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
+#include <beep/mm.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
 
 #include "ipath_kernel.h"
 

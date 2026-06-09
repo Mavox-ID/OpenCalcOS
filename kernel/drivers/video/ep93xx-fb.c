@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/ep93xx-fb.c
+ * beep/drivers/video/ep93xx-fb.c
  *
  * Framebuffer support for the EP93xx series.
  *
@@ -17,14 +17,14 @@
  *
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/fb.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/clk.h>
+#include <beep/fb.h>
 
-#include <linux/platform_data/video-ep93xx.h>
+#include <beep/platform_data/video-ep93xx.h>
 
 /* Vertical Frame Timing Registers */
 #define EP93XXFB_VLINES_TOTAL			0x0000	/* SW locked */
@@ -456,7 +456,7 @@ static int __init ep93xxfb_alloc_videomem(struct fb_info *info)
 	/*
 	 * There is a bug in the ep93xx framebuffer which causes problems
 	 * if bit 27 of the physical address is set.
-	 * See: http://marc.info/?l=linux-arm-kernel&m=110061245502000&w=2
+	 * See: http://marc.info/?l=beep-arm-kernel&m=110061245502000&w=2
 	 * There does not seem to be any official errata for this, but I
 	 * have confirmed the problem exists on my hardware (ep9315) at
 	 * least.

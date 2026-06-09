@@ -8,17 +8,17 @@
  * Authors:	Alexey Kuznetsov, <kuznet@ms2.inr.ac.ru>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/if_arp.h>
-#include <linux/netdevice.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/moduleparam.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/if_arp.h>
+#include <beep/netdevice.h>
+#include <beep/init.h>
+#include <beep/skbuff.h>
+#include <beep/moduleparam.h>
 #include <net/dst.h>
 #include <net/neighbour.h>
 #include <net/pkt_sched.h>

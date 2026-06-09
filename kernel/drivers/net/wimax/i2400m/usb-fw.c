@@ -32,7 +32,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  *
- * Intel Corporation <linux-wimax@intel.com>
+ * Intel Corporation <beep-wimax@intel.com>
  * Yanir Lubetkin <yanirx.lubetkin@intel.com>
  * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
  *  - Initial implementation
@@ -72,8 +72,8 @@
  * i2400mu_bus_bm_wait_for_ack
  *   i2400m_notif_submit
  */
-#include <linux/usb.h>
-#include <linux/gfp.h>
+#include <beep/usb.h>
+#include <beep/gfp.h>
 #include "i2400m-usb.h"
 
 

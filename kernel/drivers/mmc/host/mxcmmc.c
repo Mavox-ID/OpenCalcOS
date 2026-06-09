@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mmc/host/mxcmmc.c - Freescale i.MX MMCI driver
+ *  beep/drivers/mmc/host/mxcmmc.c - Freescale i.MX MMCI driver
  *
  *  This is a driver for the SDHC controller found in Freescale MX2/MX3
  *  SoCs. It is basically the same hardware as found on MX1 (imxmmc.c).
@@ -17,30 +17,30 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/blkdev.h>
-#include <linux/dma-mapping.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/regulator/consumer.h>
-#include <linux/dmaengine.h>
-#include <linux/types.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/blkdev.h>
+#include <beep/dma-mapping.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/card.h>
+#include <beep/delay.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/regulator/consumer.h>
+#include <beep/dmaengine.h>
+#include <beep/types.h>
 
 #include <asm/dma.h>
 #include <asm/irq.h>
 #include <asm/sizes.h>
-#include <linux/platform_data/mmc-mxcmmc.h>
+#include <beep/platform_data/mmc-mxcmmc.h>
 
-#include <linux/platform_data/dma-imx.h>
+#include <beep/platform_data/dma-imx.h>
 
 #define DRIVER_NAME "mxc-mmc"
 #define MXCMCI_TIMEOUT_MS 10000

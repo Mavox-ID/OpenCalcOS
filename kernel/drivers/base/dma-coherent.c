@@ -2,10 +2,10 @@
  * Coherent per-device memory handling.
  * Borrowed from i386
  */
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/dma-mapping.h>
 
 struct dma_coherent_mem {
 	void		*virt_base;

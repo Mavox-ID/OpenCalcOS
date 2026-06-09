@@ -4,7 +4,7 @@
  *
  * Copyright 1998 by Albert Cahalan; all rights reserved.
  * Copyright (C) 2002 by Vladimir Oleynik <dzo@simtreas.ru>
- * SELinux support: (c) 2007 by Yuichi Nakamura <ynakam@hitachisoft.jp>
+ * SEBeep support: (c) 2007 by Yuichi Nakamura <ynakam@hitachisoft.jp>
  *
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
@@ -104,7 +104,7 @@ void FAST_FUNC free_procps_scan(procps_status_t* sp)
 #endif
 	free(sp->argv0);
 	free(sp->exe);
-	IF_SELINUX(free(sp->context);)
+	IF_SEBEEP(free(sp->context);)
 	free(sp);
 }
 
@@ -335,7 +335,7 @@ procps_status_t* FAST_FUNC procps_scan(procps_status_t* sp, int flags)
 		if (!(flags & ~PSSCAN_PID))
 			break; /* we needed only pid, we got it */
 
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 		if (flags & PSSCAN_CONTEXT) {
 			if (getpidcon(sp->pid, &sp->context) < 0)
 				sp->context = NULL;

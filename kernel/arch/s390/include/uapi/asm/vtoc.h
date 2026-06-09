@@ -10,7 +10,7 @@
 #ifndef _ASM_S390_VTOC_H
 #define _ASM_S390_VTOC_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 struct vtoc_ttr
 {

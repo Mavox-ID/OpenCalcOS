@@ -1,5 +1,5 @@
 /*
- * linux/include/asm-xtensa/pci.h
+ * beep/include/asm-xtensa/pci.h
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
@@ -36,10 +36,10 @@ static inline void pcibios_penalize_isa_irq(int irq)
  * Xtensa has everything mapped statically like x86.
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/slab.h>
 #include <asm/scatterlist.h>
-#include <linux/string.h>
+#include <beep/string.h>
 #include <asm/io.h>
 
 struct pci_dev;

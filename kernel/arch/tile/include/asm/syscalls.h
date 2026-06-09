@@ -1,5 +1,5 @@
 /*
- * syscalls.h - Linux syscall interfaces (arch-specific)
+ * syscalls.h - Beep syscall interfaces (arch-specific)
  *
  * Copyright (c) 2008 Jaswinder Singh Rajput
  * Copyright 2010 Tilera Corporation. All Rights Reserved.
@@ -18,11 +18,11 @@
 #ifndef _ASM_TILE_SYSCALLS_H
 #define _ASM_TILE_SYSCALLS_H
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
-#include <linux/signal.h>
-#include <linux/types.h>
-#include <linux/compat.h>
+#include <beep/compiler.h>
+#include <beep/linkage.h>
+#include <beep/signal.h>
+#include <beep/types.h>
+#include <beep/compat.h>
 
 /* The array of function pointers for syscalls. */
 extern void *sys_call_table[];

@@ -3,7 +3,7 @@
  *		    Horst Hummel <Horst.Hummel@de.ibm.com>
  *		    Carsten Otte <Cotte@de.ibm.com>
  *		    Martin Schwidefsky <schwidefsky@de.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <Beep390@de.ibm.com>
  * Copyright IBM Corp. 1999, 2001
  *
  * i/o controls for the dasd driver.
@@ -11,12 +11,12 @@
 
 #define KMSG_COMPONENT "dasd"
 
-#include <linux/interrupt.h>
-#include <linux/compat.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/blkpg.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/compat.h>
+#include <beep/major.h>
+#include <beep/fs.h>
+#include <beep/blkpg.h>
+#include <beep/slab.h>
 #include <asm/compat.h>
 #include <asm/ccwdev.h>
 #include <asm/schid.h>

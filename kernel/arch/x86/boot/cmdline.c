@@ -1,9 +1,9 @@
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- beep-c -*- ------------------------------------------------------- *
  *
  *   Copyright (C) 1991, 1992 Linus Torvalds
  *   Copyright 2007 rPath, Inc. - All Rights Reserved
  *
- *   This file is part of the Linux kernel, and is made available under
+ *   This file is part of the Beep kernel, and is made available under
  *   the terms of the GNU General Public License version 2.
  *
  * ----------------------------------------------------------------------- */
@@ -21,7 +21,7 @@ static inline int myisspace(u8 c)
 
 /*
  * Find a non-boolean option, that is, "option=argument".  In accordance
- * with standard Linux practice, if this option is repeated, this returns
+ * with standard Beep practice, if this option is repeated, this returns
  * the last instance on the command line.
  *
  * Returns the length of the argument (regardless of if it was

@@ -1,5 +1,5 @@
 /*
- * linux/sound/wm2200.h -- Platform data for WM2200
+ * beep/sound/wm2200.h -- Platform data for WM2200
  *
  * Copyright 2012 Wolfson Microelectronics. PLC.
  *
@@ -8,8 +8,8 @@
  * published by the Free Software Foundation.
  */
 
-#ifndef __LINUX_SND_WM2200_H
-#define __LINUX_SND_WM2200_H
+#ifndef __BEEP_SND_WM2200_H
+#define __BEEP_SND_WM2200_H
 
 #define WM2200_GPIO_SET 0x10000
 

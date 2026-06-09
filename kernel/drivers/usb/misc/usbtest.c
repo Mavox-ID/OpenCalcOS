@@ -1,14 +1,14 @@
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/scatterlist.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/scatterlist.h>
+#include <beep/mutex.h>
 
-#include <linux/usb.h>
+#include <beep/usb.h>
 
 
 /*-------------------------------------------------------------------------*/
@@ -602,7 +602,7 @@ static int is_good_config(struct usbtest_dev *tdev, int len)
  * we won't do I/O to bulk/interrupt endpoints here (which is how to change
  * halt or toggle).  toggle testing is impractical without support from hcds.
  *
- * this avoids failing devices linux would normally work with, by not testing
+ * this avoids failing devices beep would normally work with, by not testing
  * config/altsetting operations for devices that only support their defaults.
  * such devices rarely support those needless operations.
  *
@@ -2380,13 +2380,13 @@ static struct usbtest_info fw_info = {
 	.iso		= 1,		/* iso_ep's are #8 in/out */
 };
 
-/* peripheral running Linux and 'zero.c' test firmware, or
+/* peripheral running Beep and 'zero.c' test firmware, or
  * its user-mode cousin. different versions of this use
  * different hardware with the same vendor/product codes.
  * host side MUST rely on the endpoint descriptors.
  */
 static struct usbtest_info gz_info = {
-	.name		= "Linux gadget zero",
+	.name		= "Beep gadget zero",
 	.autoconf	= 1,
 	.ctrl_out	= 1,
 	.iso		= 1,
@@ -2394,13 +2394,13 @@ static struct usbtest_info gz_info = {
 };
 
 static struct usbtest_info um_info = {
-	.name		= "Linux user mode test driver",
+	.name		= "Beep user mode test driver",
 	.autoconf	= 1,
 	.alt		= -1,
 };
 
 static struct usbtest_info um2_info = {
-	.name		= "Linux user mode ISO test driver",
+	.name		= "Beep user mode ISO test driver",
 	.autoconf	= 1,
 	.iso		= 1,
 	.alt		= -1,
@@ -2454,7 +2454,7 @@ static const struct usb_device_id id_table[] = {
 		.driver_info = (unsigned long) &fw_info,
 	},
 
-	/* "Gadget Zero" firmware runs under Linux */
+	/* "Gadget Zero" firmware runs under Beep */
 	{ USB_DEVICE(0x0525, 0xa4a0),
 		.driver_info = (unsigned long) &gz_info,
 	},

@@ -10,13 +10,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/rtc.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 
 struct mpc5121_rtc_regs {
 	u8 set_time;		/* RTC + 0x00 */
@@ -61,7 +61,7 @@ struct mpc5121_rtc_regs {
 	 * target_time:
 	 *	intended to be used for hibernation but hibernation
 	 *	does not work on silicon rev 1.5 so use it for non-volatile
-	 *	storage of offset between the actual_time register and linux
+	 *	storage of offset between the actual_time register and beep
 	 *	time
 	 */
 	u32 target_time;	/* RTC + 0x20 */
@@ -107,7 +107,7 @@ static int mpc5121_rtc_read_time(struct device *dev, struct rtc_time *tm)
 	unsigned long now;
 
 	/*
-	 * linux time is actual_time plus the offset saved in target_time
+	 * beep time is actual_time plus the offset saved in target_time
 	 */
 	now = in_be32(&regs->actual_time) + in_be32(&regs->target_time);
 
@@ -131,7 +131,7 @@ static int mpc5121_rtc_set_time(struct device *dev, struct rtc_time *tm)
 
 	/*
 	 * The actual_time register is read only so we write the offset
-	 * between it and linux time to the target_time register.
+	 * between it and beep time to the target_time register.
 	 */
 	ret = rtc_tm_to_time(tm, &now);
 	if (ret == 0)

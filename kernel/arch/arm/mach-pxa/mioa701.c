@@ -19,39 +19,39 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/syscore_ops.h>
-#include <linux/input.h>
-#include <linux/delay.h>
-#include <linux/gpio_keys.h>
-#include <linux/pwm_backlight.h>
-#include <linux/rtc.h>
-#include <linux/leds.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/pda_power.h>
-#include <linux/power_supply.h>
-#include <linux/wm97xx.h>
-#include <linux/mtd/physmap.h>
-#include <linux/usb/gpio_vbus.h>
-#include <linux/regulator/max1586.h>
-#include <linux/slab.h>
-#include <linux/i2c/pxa-i2c.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/syscore_ops.h>
+#include <beep/input.h>
+#include <beep/delay.h>
+#include <beep/gpio_keys.h>
+#include <beep/pwm_backlight.h>
+#include <beep/rtc.h>
+#include <beep/leds.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/pda_power.h>
+#include <beep/power_supply.h>
+#include <beep/wm97xx.h>
+#include <beep/mtd/physmap.h>
+#include <beep/usb/gpio_vbus.h>
+#include <beep/regulator/max1586.h>
+#include <beep/slab.h>
+#include <beep/i2c/pxa-i2c.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 
 #include <mach/pxa27x.h>
 #include <mach/regs-rtc.h>
-#include <linux/platform_data/keypad-pxa27x.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/keypad-pxa27x.h>
+#include <beep/platform_data/video-pxafb.h>
+#include <beep/platform_data/mmc-pxamci.h>
 #include <mach/udc.h>
 #include <mach/pxa27x-udc.h>
-#include <linux/platform_data/camera-pxa.h>
+#include <beep/platform_data/camera-pxa.h>
 #include <mach/audio.h>
 #include <mach/smemc.h>
 #include <media/soc_camera.h>

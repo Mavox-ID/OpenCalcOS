@@ -18,47 +18,47 @@
  *       by Max Krasnyansky
  *
  *  This file is subject to the terms and conditions of the GNU General Public
- *  License.  See the file COPYING in the main directory of the Linux
+ *  License.  See the file COPYING in the main directory of the Beep
  *  distribution for more details.
  */
 
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/cpuset.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/list.h>
-#include <linux/mempolicy.h>
-#include <linux/mm.h>
-#include <linux/memory.h>
-#include <linux/export.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/pagemap.h>
-#include <linux/proc_fs.h>
-#include <linux/rcupdate.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/security.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/time.h>
-#include <linux/backing-dev.h>
-#include <linux/sort.h>
+#include <beep/cpu.h>
+#include <beep/cpumask.h>
+#include <beep/cpuset.h>
+#include <beep/err.h>
+#include <beep/errno.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/kmod.h>
+#include <beep/list.h>
+#include <beep/mempolicy.h>
+#include <beep/mm.h>
+#include <beep/memory.h>
+#include <beep/export.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
+#include <beep/pagemap.h>
+#include <beep/proc_fs.h>
+#include <beep/rcupdate.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/security.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/stat.h>
+#include <beep/string.h>
+#include <beep/time.h>
+#include <beep/backing-dev.h>
+#include <beep/sort.h>
 
 #include <asm/uaccess.h>
-#include <linux/atomic.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/cgroup.h>
+#include <beep/atomic.h>
+#include <beep/mutex.h>
+#include <beep/workqueue.h>
+#include <beep/cgroup.h>
 
 /*
  * Workqueue for cpuset related tasks.

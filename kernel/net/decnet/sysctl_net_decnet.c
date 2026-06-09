@@ -1,5 +1,5 @@
 /*
- * DECnet       An implementation of the DECnet protocol suite for the LINUX
+ * DECnet       An implementation of the DECnet protocol suite for the BEEP
  *              operating system.  DECnet is implemented using the  BSD Socket
  *              interface as the means of communication with the user level.
  *
@@ -13,11 +13,11 @@
  * Steve Whitehouse - Memory buffer settings, like the tcp ones
  *
  */
-#include <linux/mm.h>
-#include <linux/sysctl.h>
-#include <linux/fs.h>
-#include <linux/netdevice.h>
-#include <linux/string.h>
+#include <beep/mm.h>
+#include <beep/sysctl.h>
+#include <beep/fs.h>
+#include <beep/netdevice.h>
+#include <beep/string.h>
 #include <net/neighbour.h>
 #include <net/dst.h>
 #include <net/flow.h>

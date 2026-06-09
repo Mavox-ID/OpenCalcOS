@@ -1,7 +1,7 @@
 #ifndef __ASM_CRIS_CMPXCHG__
 #define __ASM_CRIS_CMPXCHG__
 
-#include <linux/irqflags.h>
+#include <beep/irqflags.h>
 
 static inline unsigned long __xchg(unsigned long x, volatile void * ptr, int size)
 {

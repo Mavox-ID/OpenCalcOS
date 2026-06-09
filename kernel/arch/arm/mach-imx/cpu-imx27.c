@@ -21,8 +21,8 @@
  * i.MX27 specific CPU detection code
  */
 
-#include <linux/io.h>
-#include <linux/module.h>
+#include <beep/io.h>
+#include <beep/module.h>
 
 #include "hardware.h"
 

@@ -5,8 +5,8 @@
  *
  */
 
-#ifndef _LINUX_NCP_FS_I
-#define _LINUX_NCP_FS_I
+#ifndef _BEEP_NCP_FS_I
+#define _BEEP_NCP_FS_I
 
 /*
  * This is the ncpfs part of the inode structure. This must contain
@@ -26,4 +26,4 @@ struct ncp_inode_info {
 	struct inode vfs_inode;
 };
 
-#endif	/* _LINUX_NCP_FS_I */
+#endif	/* _BEEP_NCP_FS_I */

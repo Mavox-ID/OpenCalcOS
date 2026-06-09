@@ -1,6 +1,6 @@
 /*
- * sysctl.h - Defines for sysctl handling in NTFS Linux kernel driver. Part of
- *	      the Linux-NTFS project. Adapted from the old NTFS driver,
+ * sysctl.h - Defines for sysctl handling in NTFS Beep kernel driver. Part of
+ *	      the Beep-NTFS project. Adapted from the old NTFS driver,
  *	      Copyright (C) 1997 Martin von Löwis, Régis Duchesne
  *
  * Copyright (c) 2002-2004 Anton Altaparmakov
@@ -16,13 +16,13 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program (in the main directory of the Linux-NTFS
+ * along with this program (in the main directory of the Beep-NTFS
  * distribution in the file COPYING); if not, write to the Free Software
  * Foundation,Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#ifndef _LINUX_NTFS_SYSCTL_H
-#define _LINUX_NTFS_SYSCTL_H
+#ifndef _BEEP_NTFS_SYSCTL_H
+#define _BEEP_NTFS_SYSCTL_H
 
 
 #if defined(DEBUG) && defined(CONFIG_SYSCTL)
@@ -38,4 +38,4 @@ static inline int ntfs_sysctl(int add)
 }
 
 #endif /* DEBUG && CONFIG_SYSCTL */
-#endif /* _LINUX_NTFS_SYSCTL_H */
+#endif /* _BEEP_NTFS_SYSCTL_H */

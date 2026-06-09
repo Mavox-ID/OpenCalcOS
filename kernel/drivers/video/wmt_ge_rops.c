@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/wmt_ge_rops.c
+ *  beep/drivers/video/wmt_ge_rops.c
  *
  *  Accelerators for raster operations using WonderMedia Graphics Engine
  *
@@ -15,9 +15,9 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/module.h>
-#include <linux/fb.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/fb.h>
+#include <beep/platform_device.h>
 #include "fb_draw.h"
 
 #define GE_COMMAND_OFF		0x00

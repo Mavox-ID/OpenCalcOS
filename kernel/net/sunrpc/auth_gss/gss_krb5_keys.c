@@ -54,11 +54,11 @@
  * WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
  */
 
-#include <linux/err.h>
-#include <linux/types.h>
-#include <linux/crypto.h>
-#include <linux/sunrpc/gss_krb5.h>
-#include <linux/sunrpc/xdr.h>
+#include <beep/err.h>
+#include <beep/types.h>
+#include <beep/crypto.h>
+#include <beep/sunrpc/gss_krb5.h>
+#include <beep/sunrpc/xdr.h>
 
 #ifdef RPC_DEBUG
 # define RPCDBG_FACILITY        RPCDBG_AUTH

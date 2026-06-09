@@ -19,10 +19,10 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/netlink.h>
-#include <linux/connector.h>
+#include <beep/slab.h>
+#include <beep/skbuff.h>
+#include <beep/netlink.h>
+#include <beep/connector.h>
 
 #include "w1.h"
 #include "w1_log.h"

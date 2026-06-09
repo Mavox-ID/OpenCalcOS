@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -40,31 +40,31 @@
 #ifndef _SOCK_H
 #define _SOCK_H
 
-#include <linux/hardirq.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/list_nulls.h>
-#include <linux/timer.h>
-#include <linux/cache.h>
-#include <linux/bitops.h>
-#include <linux/lockdep.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>	/* struct sk_buff */
-#include <linux/mm.h>
-#include <linux/security.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/memcontrol.h>
-#include <linux/res_counter.h>
-#include <linux/static_key.h>
-#include <linux/aio.h>
-#include <linux/sched.h>
+#include <beep/hardirq.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/list_nulls.h>
+#include <beep/timer.h>
+#include <beep/cache.h>
+#include <beep/bitops.h>
+#include <beep/lockdep.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>	/* struct sk_buff */
+#include <beep/mm.h>
+#include <beep/security.h>
+#include <beep/slab.h>
+#include <beep/uaccess.h>
+#include <beep/memcontrol.h>
+#include <beep/res_counter.h>
+#include <beep/static_key.h>
+#include <beep/aio.h>
+#include <beep/sched.h>
 
-#include <linux/filter.h>
-#include <linux/rculist_nulls.h>
-#include <linux/poll.h>
+#include <beep/filter.h>
+#include <beep/rculist_nulls.h>
+#include <beep/poll.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <net/dst.h>
 #include <net/checksum.h>
 

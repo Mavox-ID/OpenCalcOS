@@ -2,25 +2,25 @@
  * arch/sparc64/mm/fault.c: Page fault handlers for the 64-bit Sparc.
  *
  * Copyright (C) 1996, 2008 David S. Miller (davem@davemloft.net)
- * Copyright (C) 1997, 1999 Jakub Jelinek (jj@ultra.linux.cz)
+ * Copyright (C) 1997, 1999 Jakub Jelinek (jj@ultra.beep.cz)
  */
 
 #include <asm/head.h>
 
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/signal.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/perf_event.h>
-#include <linux/interrupt.h>
-#include <linux/kprobes.h>
-#include <linux/kdebug.h>
-#include <linux/percpu.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/ptrace.h>
+#include <beep/mman.h>
+#include <beep/signal.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/perf_event.h>
+#include <beep/interrupt.h>
+#include <beep/kprobes.h>
+#include <beep/kdebug.h>
+#include <beep/percpu.h>
 
 #include <asm/page.h>
 #include <asm/pgtable.h>

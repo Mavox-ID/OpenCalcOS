@@ -24,9 +24,9 @@
  * configfs Copyright (C) 2005 Oracle.  All rights reserved.
  */
 
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
 
 struct configfs_dirent {
 	atomic_t		s_count;

@@ -4,19 +4,19 @@
  * Free Software Foundation;  either version 2 of the  License, or (at your
  * option) any later version.
  *
- * Copyright (C) 2003, 04, 11 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2003, 04, 11 Ralf Baechle (ralf@beep-mips.org)
  * Copyright (C) 2011 Wind River Systems,
- *   written by Ralf Baechle (ralf@linux-mips.org)
+ *   written by Ralf Baechle (ralf@beep-mips.org)
  */
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/bootmem.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/of_address.h>
+#include <beep/bug.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/bootmem.h>
+#include <beep/export.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/of_address.h>
 
 #include <asm/cpu-info.h>
 

@@ -23,17 +23,17 @@
  * tools, see http://oss.sgi.com/projects/pcp
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/vmalloc.h>
-#include <linux/seq_file.h>
-#include <linux/miscdevice.h>
-#include <linux/utsname.h>
-#include <linux/cpumask.h>
-#include <linux/nodemask.h>
-#include <linux/smp.h>
-#include <linux/mutex.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/vmalloc.h>
+#include <beep/seq_file.h>
+#include <beep/miscdevice.h>
+#include <beep/utsname.h>
+#include <beep/cpumask.h>
+#include <beep/nodemask.h>
+#include <beep/smp.h>
+#include <beep/mutex.h>
 
 #include <asm/processor.h>
 #include <asm/topology.h>

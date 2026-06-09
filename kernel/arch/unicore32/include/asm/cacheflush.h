@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/include/asm/cacheflush.h
+ * beep/arch/unicore32/include/asm/cacheflush.h
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -12,7 +12,7 @@
 #ifndef __UNICORE_CACHEFLUSH_H__
 #define __UNICORE_CACHEFLUSH_H__
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 
 #include <asm/shmparam.h>
 

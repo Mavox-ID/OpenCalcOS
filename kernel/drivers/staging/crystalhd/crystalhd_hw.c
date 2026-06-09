@@ -4,7 +4,7 @@
  *  Name: crystalhd_hw . c
  *
  *  Description:
- *		BCM70010 Linux driver HW layer.
+ *		BCM70010 Beep driver HW layer.
  *
  **********************************************************************
  * This file is part of the crystalhd device driver.
@@ -24,9 +24,9 @@
 
 #include "crystalhd.h"
 
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
 
 /* Functions internal to this file */
 

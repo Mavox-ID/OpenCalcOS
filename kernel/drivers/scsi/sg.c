@@ -28,29 +28,29 @@ static int sg_version_num = 30534;	/* 2 digits for each component */
  *        (otherwise the macros compile to empty statements).
  *
  */
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/mtio.h>
-#include <linux/ioctl.h>
-#include <linux/slab.h>
-#include <linux/fcntl.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/moduleparam.h>
-#include <linux/cdev.h>
-#include <linux/idr.h>
-#include <linux/seq_file.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/blktrace_api.h>
-#include <linux/mutex.h>
-#include <linux/ratelimit.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/errno.h>
+#include <beep/mtio.h>
+#include <beep/ioctl.h>
+#include <beep/slab.h>
+#include <beep/fcntl.h>
+#include <beep/init.h>
+#include <beep/poll.h>
+#include <beep/moduleparam.h>
+#include <beep/cdev.h>
+#include <beep/idr.h>
+#include <beep/seq_file.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/blktrace_api.h>
+#include <beep/mutex.h>
+#include <beep/ratelimit.h>
 
 #include "scsi.h"
 #include <scsi/scsi_dbg.h>
@@ -62,7 +62,7 @@ static int sg_version_num = 30534;	/* 2 digits for each component */
 #include "scsi_logging.h"
 
 #ifdef CONFIG_SCSI_PROC_FS
-#include <linux/proc_fs.h>
+#include <beep/proc_fs.h>
 static char *sg_version_date = "20061027";
 
 static int sg_proc_init(void);
@@ -276,7 +276,7 @@ sg_open(struct inode *inode, struct file *filp)
 		goto sg_put;
 	}
 
-	/* This driver's module count bumped by fops_get in <linux/fs.h> */
+	/* This driver's module count bumped by fops_get in <beep/fs.h> */
 	/* Prevent the device driver from vanishing while we sleep */
 	retval = scsi_device_get(sdp->device);
 	if (retval)

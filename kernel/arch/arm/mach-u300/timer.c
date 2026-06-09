@@ -8,16 +8,16 @@
  * Timer COH 901 328, runs the OS timer interrupt.
  * Author: Linus Walleij <linus.walleij@stericsson.com>
  */
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/irq.h>
+#include <beep/interrupt.h>
+#include <beep/time.h>
+#include <beep/timex.h>
+#include <beep/clockchips.h>
+#include <beep/clocksource.h>
+#include <beep/types.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/irq.h>
 
 #include <mach/hardware.h>
 #include <mach/irqs.h>

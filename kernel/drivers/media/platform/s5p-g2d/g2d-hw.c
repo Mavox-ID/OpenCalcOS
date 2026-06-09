@@ -10,7 +10,7 @@
  * License, or (at your option) any later version
  */
 
-#include <linux/io.h>
+#include <beep/io.h>
 
 #include "g2d.h"
 #include "g2d-regs.h"

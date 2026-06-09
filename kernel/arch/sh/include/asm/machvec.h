@@ -4,14 +4,14 @@
  * Copyright 2000 Stuart Menefy (stuart.menefy@st.com)
  *
  * May be copied or modified under the terms of the GNU General Public
- * License.  See linux/COPYING for more information.
+ * License.  See beep/COPYING for more information.
  */
 
 #ifndef _ASM_SH_MACHVEC_H
 #define _ASM_SH_MACHVEC_H
 
-#include <linux/types.h>
-#include <linux/time.h>
+#include <beep/types.h>
+#include <beep/time.h>
 #include <generated/machtypes.h>
 
 struct sh_machine_vector {

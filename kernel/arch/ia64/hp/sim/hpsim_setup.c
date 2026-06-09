@@ -5,15 +5,15 @@
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  * Copyright (C) 1999 Vijay Chander <vijay@engr.sgi.com>
  */
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/kdev_t.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/param.h>
-#include <linux/root_dev.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <beep/console.h>
+#include <beep/init.h>
+#include <beep/kdev_t.h>
+#include <beep/kernel.h>
+#include <beep/major.h>
+#include <beep/param.h>
+#include <beep/root_dev.h>
+#include <beep/string.h>
+#include <beep/types.h>
 
 #include <asm/delay.h>
 #include <asm/irq.h>

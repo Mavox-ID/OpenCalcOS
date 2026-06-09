@@ -203,7 +203,7 @@ int FAST_FUNC bb_init_module(const char *filename, const char *options)
 
 //TODO: audit bb_init_module_24 to match error code convention
 #if ENABLE_FEATURE_2_4_MODULES
-	if (get_linux_version_code() < KERNEL_VERSION(2,6,0))
+	if (get_beep_version_code() < KERNEL_VERSION(2,6,0))
 		return bb_init_module_24(filename, options);
 #endif
 

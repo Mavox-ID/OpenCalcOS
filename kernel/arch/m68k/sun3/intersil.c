@@ -10,8 +10,8 @@
  * for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/rtc.h>
+#include <beep/kernel.h>
+#include <beep/rtc.h>
 
 #include <asm/errno.h>
 #include <asm/rtc.h>

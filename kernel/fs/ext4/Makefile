@@ -1,5 +1,5 @@
 #
-# Makefile for the linux ext4-filesystem routines.
+# Makefile for the beep ext4-filesystem routines.
 #
 
 obj-$(CONFIG_EXT4_FS) += ext4.o

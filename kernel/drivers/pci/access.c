@@ -1,10 +1,10 @@
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/wait.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/ioport.h>
+#include <beep/wait.h>
 
 #include "pci.h"
 

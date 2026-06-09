@@ -1,17 +1,17 @@
 /*
- * linux/fs/jfs/ioctl.c
+ * beep/fs/jfs/ioctl.c
  *
  * Copyright (C) 2006 Herbert Poetzl
  * adapted from Remy Card's ext2/ioctl.c
  */
 
-#include <linux/fs.h>
-#include <linux/ctype.h>
-#include <linux/capability.h>
-#include <linux/mount.h>
-#include <linux/time.h>
-#include <linux/sched.h>
-#include <linux/blkdev.h>
+#include <beep/fs.h>
+#include <beep/ctype.h>
+#include <beep/capability.h>
+#include <beep/mount.h>
+#include <beep/time.h>
+#include <beep/sched.h>
+#include <beep/blkdev.h>
 #include <asm/current.h>
 #include <asm/uaccess.h>
 
@@ -108,7 +108,7 @@ long jfs_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
 		if ((oldflags & JFS_IMMUTABLE_FL) ||
 			((flags ^ oldflags) &
 			(JFS_APPEND_FL | JFS_IMMUTABLE_FL))) {
-			if (!capable(CAP_LINUX_IMMUTABLE)) {
+			if (!capable(CAP_BEEP_IMMUTABLE)) {
 				mutex_unlock(&inode->i_mutex);
 				err = -EPERM;
 				goto setflags_out;

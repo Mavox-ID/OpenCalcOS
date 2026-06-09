@@ -2,7 +2,7 @@
  *
  * Copyright (C) 2008 Red Hat, Inc. All Rights Reserved.
  * Written by David Howells (dhowells@redhat.com)
- * - Derived from security/selinux/hooks.c
+ * - Derived from security/sebeep/hooks.c
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public Licence
@@ -10,7 +10,7 @@
  * 2 of the Licence, or (at your option) any later version.
  */
 
-#include <linux/sched.h>
+#include <beep/sched.h>
 
 /*
  * Returns true if the task does not share ->mm with another thread/process.

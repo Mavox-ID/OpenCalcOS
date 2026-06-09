@@ -22,8 +22,8 @@
 #ifndef _ASM_KPROBES_H
 #define _ASM_KPROBES_H
 
-#include <linux/ptrace.h>
-#include <linux/types.h>
+#include <beep/ptrace.h>
+#include <beep/types.h>
 
 #include <asm/cacheflush.h>
 #include <asm/kdebug.h>

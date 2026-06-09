@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/hil/hilkbd.c
+ *  beep/drivers/hil/hilkbd.c
  *
  *  Copyright (C) 1998 Philip Blundell <philb@gnu.org>
  *  Copyright (C) 1999 Matthew Wilcox <willy@bofh.ai>
@@ -15,17 +15,17 @@
  * archive for more details.
  */
 
-#include <linux/pci_ids.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/input.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/hil.h>
-#include <linux/io.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
+#include <beep/pci_ids.h>
+#include <beep/ioport.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/input.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/hil.h>
+#include <beep/io.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
 #include <asm/irq.h>
 #ifdef CONFIG_HP300
 #include <asm/hwtest.h>

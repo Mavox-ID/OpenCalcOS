@@ -28,7 +28,7 @@
 #include <drm/radeon_drm.h>
 #include "radeon.h"
 #include "atom.h"
-#include <linux/backlight.h>
+#include <beep/backlight.h>
 
 extern int atom_debug;
 

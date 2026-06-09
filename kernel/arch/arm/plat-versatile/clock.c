@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/plat-versatile/clock.c
+ *  beep/arch/arm/plat-versatile/clock.c
  *
  *  Copyright (C) 2004 ARM Limited.
  *  Written by Deep Blue Solutions Limited.
@@ -8,11 +8,11 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/clk.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/clk.h>
+#include <beep/mutex.h>
 
 #include <asm/hardware/icst.h>
 

@@ -10,8 +10,8 @@
  * in an architecture-specific manner due to speed..
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
+#include <beep/module.h>
+#include <beep/string.h>
 
 #include <asm/byteorder.h>
 

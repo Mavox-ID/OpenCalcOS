@@ -8,18 +8,18 @@
  *  publishhed by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/spi/spi.h>
-#include <linux/pm.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_device.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/workqueue.h>
+#include <beep/spi/spi.h>
+#include <beep/pm.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/of_device.h>
 
 #include "lis3lv02d.h"
 

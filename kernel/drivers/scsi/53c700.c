@@ -94,11 +94,11 @@
  * queueing support and devices which fail to provide sense data on
  * contingent allegiance conditions)
  *
- * Many thanks to Richard Hirst <rhirst@linuxcare.com> for patiently
+ * Many thanks to Richard Hirst <rhirst@beepcare.com> for patiently
  * debugging this driver on the parisc architecture and suggesting
  * many improvements and bug fixes.
  *
- * Thanks also go to Linuxcare Inc. for providing several PARISC
+ * Thanks also go to Beepcare Inc. for providing several PARISC
  * machines for me to debug the driver on.
  *
  * Version 2.2
@@ -114,20 +114,20 @@
  * */
 #define NCR_700_VERSION "2.8"
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/blkdev.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/spinlock.h>
+#include <beep/completion.h>
+#include <beep/init.h>
+#include <beep/proc_fs.h>
+#include <beep/blkdev.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/device.h>
 #include <asm/dma.h>
 #include <asm/io.h>
 #include <asm/pgtable.h>

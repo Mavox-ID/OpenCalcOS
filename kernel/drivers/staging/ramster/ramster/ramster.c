@@ -26,16 +26,16 @@
  * be added over time.
  */
 
-#include <linux/module.h>
-#include <linux/cpu.h>
-#include <linux/highmem.h>
-#include <linux/list.h>
-#include <linux/lzo.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/atomic.h>
-#include <linux/frontswap.h>
+#include <beep/module.h>
+#include <beep/cpu.h>
+#include <beep/highmem.h>
+#include <beep/list.h>
+#include <beep/lzo.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
+#include <beep/atomic.h>
+#include <beep/frontswap.h>
 #include "../tmem.h"
 #include "../zcache.h"
 #include "../zbud.h"
@@ -89,7 +89,7 @@ static unsigned long ramster_remote_page_flushes_failed;
 /* FIXME frontswap selfshrinking knobs in debugfs? */
 
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
+#include <beep/debugfs.h>
 #define	zdfs	debugfs_create_size_t
 #define	zdfs64	debugfs_create_u64
 static int __init ramster_debugfs_init(void)

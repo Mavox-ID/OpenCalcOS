@@ -1,11 +1,11 @@
-#include <linux/module.h>
-#include <linux/smp.h>
-#include <linux/user.h>
-#include <linux/elfcore.h>
-#include <linux/sched.h>
-#include <linux/in6.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
+#include <beep/module.h>
+#include <beep/smp.h>
+#include <beep/user.h>
+#include <beep/elfcore.h>
+#include <beep/sched.h>
+#include <beep/in6.h>
+#include <beep/interrupt.h>
+#include <beep/string.h>
 
 #include <asm/processor.h>
 #include <asm/uaccess.h>

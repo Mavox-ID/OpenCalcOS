@@ -1,6 +1,6 @@
 /* 
- *    Copyright (C) 2001 Matthew Wilcox <willy at parisc-linux.org>
- *    Copyright (C) 2003 Carlos O'Donell <carlos at parisc-linux.org>
+ *    Copyright (C) 2001 Matthew Wilcox <willy at parisc-beep.org>
+ *    Copyright (C) 2003 Carlos O'Donell <carlos at parisc-beep.org>
  *
  *    This program is free software; you can redistribute it and/or modify
  *    it under the terms of the GNU General Public License as published by
@@ -19,7 +19,7 @@
 #ifndef _PARISC64_KERNEL_SIGNAL32_H
 #define _PARISC64_KERNEL_SIGNAL32_H
 
-#include <linux/compat.h>
+#include <beep/compat.h>
 
 typedef compat_uptr_t compat_sighandler_t;
 
@@ -93,7 +93,7 @@ struct compat_rt_sigframe {
 /*
  * The 32-bit ABI wants at least 48 bytes for a function call frame:
  * 16 bytes for arg0-arg3, and 32 bytes for magic (the only part of
- * which Linux/parisc uses is sp-20 for the saved return pointer...)
+ * which Beep/parisc uses is sp-20 for the saved return pointer...)
  * Then, the stack pointer must be rounded to a cache line (64 bytes).
  */
 #define SIGFRAME32              64

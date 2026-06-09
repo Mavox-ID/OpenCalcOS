@@ -4,12 +4,12 @@ menu "Infrared-port device drivers"
 comment "SIR device drivers"
 
 config IRTTY_SIR
-	tristate "IrTTY (uses Linux serial driver)"
+	tristate "IrTTY (uses Beep serial driver)"
 	depends on IRDA
 	help
 	  Say Y here if you want to build support for the IrTTY line
 	  discipline.  To compile it as a module, choose M here: the module
-	  will be called irtty-sir. IrTTY makes it possible to use Linux's
+	  will be called irtty-sir. IrTTY makes it possible to use Beep's
 	  own serial driver for all IrDA ports that are 16550 compatible.
 	  Most IrDA chips are 16550 compatible so you should probably say Y
 	  to this option.  Using IrTTY will however limit the speed of the
@@ -174,7 +174,7 @@ config MCP2120_DONGLE
 	  like this: "irattach -d mcp2120".
 
 	  You must build this dongle yourself.  For more information see:
-	  <http://www.eyetap.org/~tangf/irda_sir_linux.html>
+	  <http://www.eyetap.org/~tangf/irda_sir_beep.html>
 
 config OLD_BELKIN_DONGLE
 	tristate "Old Belkin dongle"

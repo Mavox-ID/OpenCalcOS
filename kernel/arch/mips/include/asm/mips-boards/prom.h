@@ -19,7 +19,7 @@
  *
  * ########################################################################
  *
- * MIPS boards bootprom interface for the Linux kernel.
+ * MIPS boards bootprom interface for the Beep kernel.
  *
  */
 

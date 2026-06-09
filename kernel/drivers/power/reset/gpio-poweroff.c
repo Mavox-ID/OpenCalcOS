@@ -11,14 +11,14 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/of_platform.h>
-#include <linux/of_gpio.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/of_platform.h>
+#include <beep/of_gpio.h>
+#include <beep/module.h>
 
 /*
  * Hold configuration here, cannot be more than one instance of the driver

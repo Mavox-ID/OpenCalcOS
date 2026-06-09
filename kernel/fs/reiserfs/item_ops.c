@@ -2,7 +2,7 @@
  * Copyright 2000 by Hans Reiser, licensing governed by reiserfs/README
  */
 
-#include <linux/time.h>
+#include <beep/time.h>
 #include "reiserfs.h"
 
 // this contains item handlers for old item types: sd, direct,

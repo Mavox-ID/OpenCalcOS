@@ -9,26 +9,26 @@
  *  published by the Free Software Foundation
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/clk.h>
-#include <linux/gpio.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/ioport.h>
+#include <beep/errno.h>
+#include <beep/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/clk.h>
+#include <beep/gpio.h>
 
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_device.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
+#include <beep/of_device.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/mmc.h>
+#include <beep/mmc/sd.h>
 
 #include <asm/byteorder.h>
 

@@ -6,13 +6,13 @@
  * This code is licenced under the GPL.
  */
 
-#include <linux/kernel.h>
-#include <linux/cpuidle.h>
-#include <linux/sysfs.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/capability.h>
-#include <linux/device.h>
+#include <beep/kernel.h>
+#include <beep/cpuidle.h>
+#include <beep/sysfs.h>
+#include <beep/slab.h>
+#include <beep/cpu.h>
+#include <beep/capability.h>
+#include <beep/device.h>
 
 #include "cpuidle.h"
 

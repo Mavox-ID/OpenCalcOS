@@ -1,5 +1,5 @@
 /*
- * Line6 Linux USB driver - 0.9.1beta
+ * Line6 Beep USB driver - 0.9.1beta
  *
  * Copyright (C) 2004-2010 Markus Grabner (grabner@icg.tugraz.at)
  *
@@ -9,8 +9,8 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
 #include <sound/core.h>
 #include <sound/rawmidi.h>
 

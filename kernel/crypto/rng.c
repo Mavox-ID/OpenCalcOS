@@ -12,16 +12,16 @@
  *
  */
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <crypto/internal/rng.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/random.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/cryptouser.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/random.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/cryptouser.h>
 #include <net/netlink.h>
 
 static DEFINE_MUTEX(crypto_default_rng_lock);

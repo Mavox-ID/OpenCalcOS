@@ -6,10 +6,10 @@
 
 #define __GENERATING_BOUNDS_H
 /* Include headers that define the enum constants of interest */
-#include <linux/page-flags.h>
-#include <linux/mmzone.h>
-#include <linux/kbuild.h>
-#include <linux/page_cgroup.h>
+#include <beep/page-flags.h>
+#include <beep/mmzone.h>
+#include <beep/kbuild.h>
+#include <beep/page_cgroup.h>
 
 void foo(void)
 {

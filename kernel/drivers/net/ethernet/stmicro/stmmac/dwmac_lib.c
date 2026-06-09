@@ -20,7 +20,7 @@
   Author: Giuseppe Cavallaro <peppe.cavallaro@st.com>
 *******************************************************************************/
 
-#include <linux/io.h>
+#include <beep/io.h>
 #include "common.h"
 #include "dwmac_dma.h"
 

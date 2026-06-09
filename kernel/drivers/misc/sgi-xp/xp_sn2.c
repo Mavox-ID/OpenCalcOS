@@ -12,8 +12,8 @@
  *      Architecture specific implementation of common functions.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
+#include <beep/module.h>
+#include <beep/device.h>
 #include <asm/sn/bte.h>
 #include <asm/sn/sn_sal.h>
 #include "xp.h"

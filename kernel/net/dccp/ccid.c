@@ -11,7 +11,7 @@
  *	published by the Free Software Foundation.
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 
 #include "ccid.h"
 #include "ccids/lib/tfrc.h"

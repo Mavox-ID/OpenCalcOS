@@ -9,15 +9,15 @@
 #ifndef __QETH_CORE_H__
 #define __QETH_CORE_H__
 
-#include <linux/if.h>
-#include <linux/if_arp.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/ctype.h>
-#include <linux/in6.h>
-#include <linux/bitops.h>
-#include <linux/seq_file.h>
-#include <linux/ethtool.h>
+#include <beep/if.h>
+#include <beep/if_arp.h>
+#include <beep/etherdevice.h>
+#include <beep/if_vlan.h>
+#include <beep/ctype.h>
+#include <beep/in6.h>
+#include <beep/bitops.h>
+#include <beep/seq_file.h>
+#include <beep/ethtool.h>
 
 #include <net/ipv6.h>
 #include <net/if_inet6.h>

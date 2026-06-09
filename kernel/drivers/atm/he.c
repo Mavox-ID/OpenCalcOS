@@ -2,7 +2,7 @@
 
   he.c
 
-  ForeRunnerHE ATM Adapter driver for ATM on Linux
+  ForeRunnerHE ATM Adapter driver for ATM on Beep
   Copyright (C) 1999-2001  Naval Research Laboratory
 
   This library is free software; you can redistribute it and/or
@@ -25,7 +25,7 @@
 
   he.c
 
-  ForeRunnerHE ATM Adapter driver for ATM on Linux
+  ForeRunnerHE ATM Adapter driver for ATM on Beep
   Copyright (C) 1999-2001  Naval Research Laboratory
 
   Permission to use, copy, modify and distribute this software and its
@@ -53,29 +53,29 @@
 
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/bitmap.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/skbuff.h>
+#include <beep/pci.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
+#include <beep/bitmap.h>
+#include <beep/slab.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>
 #include <asm/uaccess.h>
 
-#include <linux/atmdev.h>
-#include <linux/atm.h>
-#include <linux/sonet.h>
+#include <beep/atmdev.h>
+#include <beep/atm.h>
+#include <beep/sonet.h>
 
 #undef USE_SCATTERGATHER
 #undef USE_CHECKSUM_HW			/* still confused about this */
@@ -83,7 +83,7 @@
 
 #include "he.h"
 #include "suni.h"
-#include <linux/atm_he.h>
+#include <beep/atm_he.h>
 
 #define hprintk(fmt,args...)	printk(KERN_ERR DEV_LABEL "%d: " fmt, he_dev->number , ##args)
 
@@ -1514,7 +1514,7 @@ static int he_start(struct atm_dev *dev)
 	he_dev->total_bw = 0;
 
 
-	/* atm linux initialization */
+	/* atm beep initialization */
 
 	he_dev->atm_dev->ci_range.vpi_bits = he_dev->vpibits;
 	he_dev->atm_dev->ci_range.vci_bits = he_dev->vcibits;

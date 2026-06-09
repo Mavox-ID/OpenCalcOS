@@ -30,11 +30,11 @@
  * SOFTWARE.
  */
 
-#include <linux/errno.h>
-#include <linux/if_ether.h>
-#include <linux/export.h>
+#include <beep/errno.h>
+#include <beep/if_ether.h>
+#include <beep/export.h>
 
-#include <linux/mlx4/cmd.h>
+#include <beep/mlx4/cmd.h>
 
 #include "mlx4.h"
 

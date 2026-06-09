@@ -8,27 +8,27 @@
  *	as published by the Free Software Foundation; either version
  *	2 of the License, or (at your option) any later version.
  */
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
 
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/device.h> /* struct device, et al */
-#include <linux/netdevice.h>   /* struct device, and other headers */
-#include <linux/etherdevice.h> /* eth_type_trans */
-#include <linux/ip.h>          /* struct iphdr */
-#include <linux/tcp.h>         /* struct tcphdr */
-#include <linux/skbuff.h>
-#include <linux/mii.h>         /* MII definitions */
-#include <linux/crc32.h>
+#include <beep/in.h>
+#include <beep/in6.h>
+#include <beep/device.h> /* struct device, et al */
+#include <beep/netdevice.h>   /* struct device, and other headers */
+#include <beep/etherdevice.h> /* eth_type_trans */
+#include <beep/ip.h>          /* struct iphdr */
+#include <beep/tcp.h>         /* struct tcphdr */
+#include <beep/skbuff.h>
+#include <beep/mii.h>         /* MII definitions */
+#include <beep/crc32.h>
 
 #include <asm/ip32/mace.h>
 #include <asm/ip32/ip32_ints.h>

@@ -16,7 +16,7 @@
 
 /*
  * This driver uses the 47-bit 32 kHz counter in the Freescale DryIce block
- * to implement a Linux RTC. Times and alarms are truncated to seconds.
+ * to implement a Beep RTC. Times and alarms are truncated to seconds.
  * Since the RTC framework performs API locking via rtc->ops_lock the
  * only simultaneous accesses we need to deal with is updating DryIce
  * registers while servicing an alarm.
@@ -29,16 +29,16 @@
  * not supported by the hardware.
  */
 
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/of.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/rtc.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
+#include <beep/of.h>
 
 /* DryIce Register Definitions */
 

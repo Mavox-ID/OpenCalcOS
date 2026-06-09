@@ -26,25 +26,25 @@
 #ifndef _RTL_CORE_H
 #define _RTL_CORE_H
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/rtnetlink.h>
-#include <linux/wireless.h>
-#include <linux/timer.h>
-#include <linux/proc_fs.h>
-#include <linux/if_arp.h>
-#include <linux/random.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/sched.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/netdevice.h>
+#include <beep/pci.h>
+#include <beep/etherdevice.h>
+#include <beep/delay.h>
+#include <beep/rtnetlink.h>
+#include <beep/wireless.h>
+#include <beep/timer.h>
+#include <beep/proc_fs.h>
+#include <beep/if_arp.h>
+#include <beep/random.h>
+#include <beep/io.h>
 
 /* Need this defined before including local include files */
 #define DRV_NAME "rtl819xE"

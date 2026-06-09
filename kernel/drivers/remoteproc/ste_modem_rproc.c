@@ -4,10 +4,10 @@
  * License terms:  GNU General Public License (GPL), version 2
  */
 
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/remoteproc.h>
-#include <linux/ste_modem_shm.h>
+#include <beep/module.h>
+#include <beep/dma-mapping.h>
+#include <beep/remoteproc.h>
+#include <beep/ste_modem_shm.h>
 #include "remoteproc_internal.h"
 
 #define SPROC_FW_SIZE (50 * 4096)

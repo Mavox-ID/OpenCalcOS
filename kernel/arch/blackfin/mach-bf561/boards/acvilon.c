@@ -33,27 +33,27 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/plat-ram.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/i2c-pca-platform.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/plat-ram.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/jiffies.h>
+#include <beep/i2c-pca-platform.h>
+#include <beep/delay.h>
+#include <beep/io.h>
 #include <asm/dma.h>
 #include <asm/bfin5xx_spi.h>
 #include <asm/portmux.h>
 #include <asm/dpmc.h>
 #include <asm/cacheflush.h>
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 
 /*
  * Name the Board for the /proc/cpuinfo
@@ -61,7 +61,7 @@
 const char bfin_board_name[] = "Acvilon board";
 
 #if defined(CONFIG_USB_ISP1760_HCD) || defined(CONFIG_USB_ISP1760_HCD_MODULE)
-#include <linux/usb/isp1760.h>
+#include <beep/usb/isp1760.h>
 static struct resource bfin_isp1760_resources[] = {
 	[0] = {
 	       .start = 0x20000000,
@@ -161,7 +161,7 @@ static struct platform_device mtd_ram_device = {
 #endif
 
 #if defined(CONFIG_SMSC911X) || defined(CONFIG_SMSC911X_MODULE)
-#include <linux/smsc911x.h>
+#include <beep/smsc911x.h>
 static struct resource smsc911x_resources[] = {
 	{
 	 .name = "smsc911x-memory",

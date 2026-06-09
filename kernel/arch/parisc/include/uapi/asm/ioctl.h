@@ -1,7 +1,7 @@
 /*
- *    Linux/PA-RISC Project (http://www.parisc-linux.org/)
+ *    Beep/PA-RISC Project (http://www.parisc-beep.org/)
  *    Copyright (C) 1999,2003 Matthew Wilcox < willy at debian . org >
- *    portions from "linux/ioctl.h for Linux" by H.H. Bergman.
+ *    portions from "beep/ioctl.h for Beep" by H.H. Bergman.
  *
  *    This program is free software; you can redistribute it and/or modify
  *    it under the terms of the GNU General Public License as published by

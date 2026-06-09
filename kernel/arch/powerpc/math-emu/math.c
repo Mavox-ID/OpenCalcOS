@@ -2,8 +2,8 @@
  * Copyright (C) 1999  Eddie C. Dost  (ecd@atecom.com)
  */
 
-#include <linux/types.h>
-#include <linux/sched.h>
+#include <beep/types.h>
+#include <beep/sched.h>
 
 #include <asm/uaccess.h>
 #include <asm/reg.h>

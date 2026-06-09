@@ -5,7 +5,7 @@
  *
  * Copyright (C) 2012 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/init.h>
+#include <beep/init.h>
 
 #include <asm/setup.h>
 #include <asm/time.h>

@@ -10,9 +10,9 @@
 #define _ASM_PTRACE_H
 
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
-#include <linux/types.h>
+#include <beep/compiler.h>
+#include <beep/linkage.h>
+#include <beep/types.h>
 #include <asm/isadep.h>
 #include <uapi/asm/ptrace.h>
 

@@ -2,7 +2,7 @@
  * PPS core file
  *
  *
- * Copyright (C) 2005-2009   Rodolfo Giometti <giometti@linux.it>
+ * Copyright (C) 2005-2009   Rodolfo Giometti <giometti@beep.it>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -21,17 +21,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
-#include <linux/idr.h>
-#include <linux/mutex.h>
-#include <linux/cdev.h>
-#include <linux/poll.h>
-#include <linux/pps_kernel.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/uaccess.h>
+#include <beep/idr.h>
+#include <beep/mutex.h>
+#include <beep/cdev.h>
+#include <beep/poll.h>
+#include <beep/pps_kernel.h>
+#include <beep/slab.h>
 
 #include "kc.h"
 
@@ -383,9 +383,9 @@ static int __init pps_init(void)
 		goto remove_class;
 	}
 
-	pr_info("LinuxPPS API ver. %d registered\n", PPS_API_VERS);
+	pr_info("BeepPPS API ver. %d registered\n", PPS_API_VERS);
 	pr_info("Software ver. %s - Copyright 2005-2007 Rodolfo Giometti "
-		"<giometti@linux.it>\n", PPS_VERSION);
+		"<giometti@beep.it>\n", PPS_VERSION);
 
 	return 0;
 
@@ -398,6 +398,6 @@ remove_class:
 subsys_initcall(pps_init);
 module_exit(pps_exit);
 
-MODULE_AUTHOR("Rodolfo Giometti <giometti@linux.it>");
-MODULE_DESCRIPTION("LinuxPPS support (RFC 2783) - ver. " PPS_VERSION);
+MODULE_AUTHOR("Rodolfo Giometti <giometti@beep.it>");
+MODULE_DESCRIPTION("BeepPPS support (RFC 2783) - ver. " PPS_VERSION);
 MODULE_LICENSE("GPL");

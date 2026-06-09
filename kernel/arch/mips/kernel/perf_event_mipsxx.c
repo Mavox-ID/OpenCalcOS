@@ -1,5 +1,5 @@
 /*
- * Linux performance counter support for MIPS.
+ * Beep performance counter support for MIPS.
  *
  * Copyright (C) 2010 MIPS Technologies, Inc.
  * Copyright (C) 2011 Cavium Networks, Inc.
@@ -15,12 +15,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/cpumask.h>
-#include <linux/interrupt.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/perf_event.h>
-#include <linux/uaccess.h>
+#include <beep/cpumask.h>
+#include <beep/interrupt.h>
+#include <beep/smp.h>
+#include <beep/kernel.h>
+#include <beep/perf_event.h>
+#include <beep/uaccess.h>
 
 #include <asm/irq.h>
 #include <asm/irq_regs.h>

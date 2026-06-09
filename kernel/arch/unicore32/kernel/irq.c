@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/kernel/irq.c
+ * beep/arch/unicore32/kernel/irq.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -9,22 +9,22 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel_stat.h>
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/random.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/kallsyms.h>
-#include <linux/proc_fs.h>
-#include <linux/syscore_ops.h>
-#include <linux/gpio.h>
+#include <beep/kernel_stat.h>
+#include <beep/module.h>
+#include <beep/signal.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/random.h>
+#include <beep/smp.h>
+#include <beep/init.h>
+#include <beep/seq_file.h>
+#include <beep/errno.h>
+#include <beep/list.h>
+#include <beep/kallsyms.h>
+#include <beep/proc_fs.h>
+#include <beep/syscore_ops.h>
+#include <beep/gpio.h>
 
 #include <mach/hardware.h>
 

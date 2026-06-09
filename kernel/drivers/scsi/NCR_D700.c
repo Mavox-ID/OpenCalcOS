@@ -92,12 +92,12 @@
 
 #define NCR_D700_VERSION "2.2"
 
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mca.h>
-#include <linux/slab.h>
+#include <beep/blkdev.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mca.h>
+#include <beep/slab.h>
 #include <asm/io.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_device.h>

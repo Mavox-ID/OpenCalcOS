@@ -10,22 +10,22 @@
  * more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/if_ether.h>
-#include <linux/if_arp.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/random.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/if_ether.h>
+#include <beep/if_arp.h>
 #include <asm/string.h>
-#include <linux/wireless.h>
+#include <beep/wireless.h>
 
-#include <linux/ieee80211.h>
+#include <beep/ieee80211.h>
 
-#include <linux/crypto.h>
+#include <beep/crypto.h>
 
 #include <net/lib80211.h>
 

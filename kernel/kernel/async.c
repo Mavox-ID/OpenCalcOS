@@ -2,7 +2,7 @@
  * async.c: Asynchronous function calls for boot performance
  *
  * (C) Copyright 2009 Intel Corporation
- * Author: Arjan van de Ven <arjan@linux.intel.com>
+ * Author: Arjan van de Ven <arjan@beep.intel.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -48,14 +48,14 @@ asynchronous and synchronous parts of the kernel.
 
 */
 
-#include <linux/async.h>
-#include <linux/atomic.h>
-#include <linux/ktime.h>
-#include <linux/export.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <beep/async.h>
+#include <beep/atomic.h>
+#include <beep/ktime.h>
+#include <beep/export.h>
+#include <beep/wait.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
 
 static async_cookie_t next_cookie = 1;
 

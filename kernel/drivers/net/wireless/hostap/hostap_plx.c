@@ -3,22 +3,22 @@
 /* Host AP driver's support for PC Cards on PCI adapters using PLX9052 is
  * based on:
  * - Host AP driver patch from james@madingley.org
- * - linux-wlan-ng driver, Copyright (C) AbsoluteValue Systems, Inc.
+ * - beep-wlan-ng driver, Copyright (C) AbsoluteValue Systems, Inc.
  */
 
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/if.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/wireless.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/if.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
+#include <beep/wireless.h>
 #include <net/iw_handler.h>
 
-#include <linux/ioport.h>
-#include <linux/pci.h>
+#include <beep/ioport.h>
+#include <beep/pci.h>
 #include <asm/io.h>
 
 #include "hostap_wlan.h"

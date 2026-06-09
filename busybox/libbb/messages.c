@@ -29,7 +29,7 @@ const char bb_hexdigits_upcase[] ALIGN1 = "0123456789ABCDEF";
 
 const char bb_busybox_exec_path[] ALIGN1 = CONFIG_BUSYBOX_EXEC_PATH;
 const char bb_default_login_shell[] ALIGN1 = LIBBB_DEFAULT_LOGIN_SHELL;
-/* util-linux manpage says /sbin:/bin:/usr/sbin:/usr/bin,
+/* util-beep manpage says /sbin:/bin:/usr/sbin:/usr/bin,
  * but I want to save a few bytes here. Check libbb.h before changing! */
 const char bb_PATH_root_path[] ALIGN1 = BB_PATH_ROOT_PATH;
 

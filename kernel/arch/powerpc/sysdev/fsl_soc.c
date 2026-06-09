@@ -12,26 +12,26 @@
  * option) any later version.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/major.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/export.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
-#include <linux/spi/spi.h>
-#include <linux/fsl_devices.h>
-#include <linux/fs_enet_pd.h>
-#include <linux/fs_uart_pd.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/major.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/export.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/phy.h>
+#include <beep/phy_fixed.h>
+#include <beep/spi/spi.h>
+#include <beep/fsl_devices.h>
+#include <beep/fs_enet_pd.h>
+#include <beep/fs_uart_pd.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/time.h>

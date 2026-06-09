@@ -9,9 +9,9 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/oprofile.h>
-#include <linux/interrupt.h>
+#include <beep/init.h>
+#include <beep/oprofile.h>
+#include <beep/interrupt.h>
 
 #include <loongson.h>			/* LOONGSON2_PERFCNT_IRQ */
 #include "op_impl.h"

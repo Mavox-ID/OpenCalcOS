@@ -14,23 +14,23 @@
  *  - We disable half multipliers if ACPI is used on A0 stepping CPUs.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/dmi.h>
-#include <linux/timex.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/cpufreq.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/dmi.h>
+#include <beep/timex.h>
+#include <beep/io.h>
 
 #include <asm/timer.h>		/* Needed for recalibrate_cpu_khz() */
 #include <asm/msr.h>
 #include <asm/cpu_device_id.h>
 
 #ifdef CONFIG_X86_POWERNOW_K7_ACPI
-#include <linux/acpi.h>
+#include <beep/acpi.h>
 #include <acpi/processor.h>
 #endif
 

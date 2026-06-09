@@ -1,5 +1,5 @@
 /*
- * xfi linux driver.
+ * xfi beep driver.
  *
  * Copyright (C) 2008, Creative Technology Ltd. All Rights Reserved.
  *
@@ -8,11 +8,11 @@
  * distribution for the license terms and conditions.
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/moduleparam.h>
-#include <linux/pci_ids.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/moduleparam.h>
+#include <beep/pci_ids.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include "ctatc.h"

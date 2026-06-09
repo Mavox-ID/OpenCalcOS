@@ -1,5 +1,5 @@
 /*
-   BlueZ - Bluetooth protocol stack for Linux
+   BlueZ - Bluetooth protocol stack for Beep
    Copyright (C) 2000-2001 Qualcomm Incorporated
 
    Written 2000,2001 by Maxim Krasnyansky <maxk@qualcomm.com>
@@ -24,11 +24,11 @@
 
 /* Bluetooth address family and sockets. */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <asm/ioctls.h>
 
 #include <net/bluetooth/bluetooth.h>
-#include <linux/proc_fs.h>
+#include <beep/proc_fs.h>
 
 #define VERSION "2.16"
 

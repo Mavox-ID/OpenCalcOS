@@ -2,15 +2,15 @@
  * scan.c - support for transforming the ACPI namespace into individual objects
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/acpi.h>
-#include <linux/signal.h>
-#include <linux/kthread.h>
-#include <linux/dmi.h>
-#include <linux/nls.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/acpi.h>
+#include <beep/signal.h>
+#include <beep/kthread.h>
+#include <beep/dmi.h>
+#include <beep/nls.h>
 
 #include <acpi/acpi_drivers.h>
 

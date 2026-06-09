@@ -1,5 +1,5 @@
 /*
- * Linux/PA-RISC Project (http://www.parisc-linux.org/)
+ * Beep/PA-RISC Project (http://www.parisc-beep.org/)
  *
  * Floating-point emulation code
  *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
@@ -19,7 +19,7 @@
  *    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 /*
- *  linux/arch/math-emu/driver.c.c
+ *  beep/arch/math-emu/driver.c.c
  *
  *	decodes and dispatches unimplemented FPU instructions
  *
@@ -27,7 +27,7 @@
  *  Copyright (C) 2001	      Hewlett-Packard <bame@debian.org>
  */
 
-#include <linux/sched.h>
+#include <beep/sched.h>
 #include "float.h"
 #include "math-emu.h"
 

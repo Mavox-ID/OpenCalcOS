@@ -11,10 +11,10 @@
  * (at your option) any later version.
  */
 
-#ifndef __LINUX_USB_GADGET_PXA25X_H
-#define __LINUX_USB_GADGET_PXA25X_H
+#ifndef __BEEP_USB_GADGET_PXA25X_H
+#define __BEEP_USB_GADGET_PXA25X_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*-------------------------------------------------------------------------*/
 
@@ -248,4 +248,4 @@ dump_state(struct pxa25x_udc *dev)
 #define INFO(stuff...)		pr_info("udc: " stuff)
 
 
-#endif /* __LINUX_USB_GADGET_PXA25X_H */
+#endif /* __BEEP_USB_GADGET_PXA25X_H */

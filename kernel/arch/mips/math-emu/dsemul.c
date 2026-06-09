@@ -1,7 +1,7 @@
-#include <linux/compiler.h>
-#include <linux/mm.h>
-#include <linux/signal.h>
-#include <linux/smp.h>
+#include <beep/compiler.h>
+#include <beep/mm.h>
+#include <beep/signal.h>
+#include <beep/smp.h>
 
 #include <asm/asm.h>
 #include <asm/bootinfo.h>
@@ -72,9 +72,9 @@ int mips_dsemul(struct pt_regs *regs, mips_instruction ir, unsigned long cpc)
 	 * instruction emulation!!.
 	 *
 	 * Algorithmics used a system call instruction, and
-	 * borrowed that vector.  MIPS/Linux version is a bit
+	 * borrowed that vector.  MIPS/Beep version is a bit
 	 * more heavyweight in the interests of portability and
-	 * multiprocessor support.  For Linux we generate a
+	 * multiprocessor support.  For Beep we generate a
 	 * an unaligned access and force an address error exception.
 	 *
 	 * For embedded systems (stand-alone) we prefer to use a

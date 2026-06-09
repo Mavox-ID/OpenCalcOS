@@ -22,10 +22,10 @@
 #ifndef __PNX8550_PCI_H
 #define __PNX8550_PCI_H
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
 
 #define PCI_ACCESS_READ  0
 #define PCI_ACCESS_WRITE 1

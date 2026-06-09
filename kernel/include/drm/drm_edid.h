@@ -23,7 +23,7 @@
 #ifndef __DRM_EDID_H__
 #define __DRM_EDID_H__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define EDID_LENGTH 128
 #define DDC_ADDR 0x50

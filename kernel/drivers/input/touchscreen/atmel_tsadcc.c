@@ -12,17 +12,17 @@
  *  it under the terms of the GNU General Public License version 2 as
  *  published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/platform_data/atmel.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/input.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/platform_data/atmel.h>
 #include <mach/cpu.h>
 
 /* Register definitions based on AT91SAM9RL64 preliminary draft datasheet */

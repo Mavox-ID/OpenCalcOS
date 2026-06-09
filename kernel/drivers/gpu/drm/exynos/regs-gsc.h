@@ -1,4 +1,4 @@
-/* linux/drivers/gpu/drm/exynos/regs-gsc.h
+/* beep/drivers/gpu/drm/exynos/regs-gsc.h
  *
  * Copyright (c) 2012 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com

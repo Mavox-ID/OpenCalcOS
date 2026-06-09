@@ -1,5 +1,5 @@
 #
-# Makefile for the linux ncp filesystem routines.
+# Makefile for the beep ncp filesystem routines.
 #
 
 obj-$(CONFIG_NCP_FS) += ncpfs.o

@@ -21,8 +21,8 @@
 #ifndef __MANTIS_LINK_H
 #define __MANTIS_LINK_H
 
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <beep/mutex.h>
+#include <beep/workqueue.h>
 #include "dvb_ca_en50221.h"
 
 enum mantis_sbuf_status {

@@ -24,7 +24,7 @@
  *
  ********************************************************************/
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 
 #include <net/irda/irda.h>
 #include <net/irda/irlmp.h>

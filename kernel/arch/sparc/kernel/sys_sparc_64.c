@@ -1,29 +1,29 @@
-/* linux/arch/sparc64/kernel/sys_sparc.c
+/* beep/arch/sparc64/kernel/sys_sparc.c
  *
  * This file contains various random system calls that
- * have a non-standard calling sequence on the Linux/sparc
+ * have a non-standard calling sequence on the Beep/sparc
  * platform.
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/mm.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/stat.h>
-#include <linux/mman.h>
-#include <linux/utsname.h>
-#include <linux/smp.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/ipc.h>
-#include <linux/personality.h>
-#include <linux/random.h>
-#include <linux/export.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/mm.h>
+#include <beep/sem.h>
+#include <beep/msg.h>
+#include <beep/shm.h>
+#include <beep/stat.h>
+#include <beep/mman.h>
+#include <beep/utsname.h>
+#include <beep/smp.h>
+#include <beep/slab.h>
+#include <beep/syscalls.h>
+#include <beep/ipc.h>
+#include <beep/personality.h>
+#include <beep/random.h>
+#include <beep/export.h>
 
 #include <asm/uaccess.h>
 #include <asm/utrap.h>
@@ -418,12 +418,12 @@ SYSCALL_DEFINE1(sparc64_personality, unsigned long, personality)
 {
 	int ret;
 
-	if (personality(current->personality) == PER_LINUX32 &&
-	    personality(personality) == PER_LINUX)
-		personality |= PER_LINUX32;
+	if (personality(current->personality) == PER_BEEP32 &&
+	    personality(personality) == PER_BEEP)
+		personality |= PER_BEEP32;
 	ret = sys_personality(personality);
-	if (personality(ret) == PER_LINUX32)
-		ret &= ~PER_LINUX32;
+	if (personality(ret) == PER_BEEP32)
+		ret &= ~PER_BEEP32;
 
 	return ret;
 }
@@ -447,7 +447,7 @@ int sparc_mmap_check(unsigned long addr, unsigned long len)
 	return 0;
 }
 
-/* Linux version of mmap */
+/* Beep version of mmap */
 SYSCALL_DEFINE6(mmap, unsigned long, addr, unsigned long, len,
 		unsigned long, prot, unsigned long, flags, unsigned long, fd,
 		unsigned long, off)

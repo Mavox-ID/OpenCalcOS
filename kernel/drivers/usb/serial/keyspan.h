@@ -23,15 +23,15 @@
   having the patience to sit down and explain why and where he'd changed
   stuff.
 
-  Tip 'o the hat to IBM (and previously Linuxcare :) for supporting 
+  Tip 'o the hat to IBM (and previously Beepcare :) for supporting 
   staff in their work on open source projects.
   
   See keyspan.c for update history.
 
 */
 
-#ifndef __LINUX_USB_SERIAL_KEYSPAN_H
-#define __LINUX_USB_SERIAL_KEYSPAN_H
+#ifndef __BEEP_USB_SERIAL_KEYSPAN_H
+#define __BEEP_USB_SERIAL_KEYSPAN_H
 
 
 /* Function prototypes for Keyspan serial converter */

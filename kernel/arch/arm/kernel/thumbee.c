@@ -17,8 +17,8 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
 
 #include <asm/cputype.h>
 #include <asm/system_info.h>

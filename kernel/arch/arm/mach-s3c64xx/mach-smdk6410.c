@@ -1,9 +1,9 @@
-/* linux/arch/arm/mach-s3c64xx/mach-smdk6410.c
+/* beep/arch/arm/mach-s3c64xx/mach-smdk6410.c
  *
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -11,35 +11,35 @@
  *
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/serial_core.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/fb.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/smsc911x.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/pwm_backlight.h>
-#include <linux/platform_data/s3c-hsotg.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/serial_core.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/i2c.h>
+#include <beep/leds.h>
+#include <beep/fb.h>
+#include <beep/gpio.h>
+#include <beep/delay.h>
+#include <beep/smsc911x.h>
+#include <beep/regulator/fixed.h>
+#include <beep/regulator/machine.h>
+#include <beep/pwm_backlight.h>
+#include <beep/platform_data/s3c-hsotg.h>
 
 #ifdef CONFIG_SMDK6410_WM1190_EV1
-#include <linux/mfd/wm8350/core.h>
-#include <linux/mfd/wm8350/pmic.h>
+#include <beep/mfd/wm8350/core.h>
+#include <beep/mfd/wm8350/pmic.h>
 #endif
 
 #ifdef CONFIG_SMDK6410_WM1192_EV1
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/pdata.h>
+#include <beep/mfd/wm831x/core.h>
+#include <beep/mfd/wm831x/pdata.h>
 #endif
 
 #include <video/platform_lcd.h>
@@ -61,8 +61,8 @@
 #include <mach/regs-gpio.h>
 #include <mach/regs-sys.h>
 #include <mach/regs-srom.h>
-#include <linux/platform_data/ata-samsung_cf.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/ata-samsung_cf.h>
+#include <beep/platform_data/i2c-s3c2410.h>
 #include <plat/fb.h>
 #include <plat/gpio-cfg.h>
 
@@ -70,7 +70,7 @@
 #include <plat/devs.h>
 #include <plat/cpu.h>
 #include <plat/adc.h>
-#include <linux/platform_data/touchscreen-s3c2410.h>
+#include <beep/platform_data/touchscreen-s3c2410.h>
 #include <plat/keypad.h>
 #include <plat/backlight.h>
 
@@ -696,7 +696,7 @@ static void __init smdk6410_machine_init(void)
 }
 
 MACHINE_START(SMDK6410, "SMDK6410")
-	/* Maintainer: Ben Dooks <ben-linux@fluff.org> */
+	/* Maintainer: Ben Dooks <ben-beep@fluff.org> */
 	.atag_offset	= 0x100,
 
 	.init_irq	= s3c6410_init_irq,

@@ -142,7 +142,7 @@
 				interrupt-parent = <&PIC>;
 				fsl,cpm-brg = <7>;
 				fsl,cpm-command = <0x1d000000>;
-				linux,planetcore-label = "SMC1";
+				beep,planetcore-label = "SMC1";
 			};
 
 			/* "Serial" port/SCC1 */
@@ -155,7 +155,7 @@
 				interrupt-parent = <&PIC>;
 				fsl,cpm-brg = <1>;
 				fsl,cpm-command = <0x00800000>;
-				linux,planetcore-label = "SCC1";
+				beep,planetcore-label = "SCC1";
 			};
 
 			eth0: ethernet@11300 {
@@ -167,7 +167,7 @@
 				interrupts = <32 8>;
 				interrupt-parent = <&PIC>;
 				phy-handle = <&PHY0>;
-				linux,network-index = <0>;
+				beep,network-index = <0>;
 				fsl,cpm-command = <0x12000300>;
 			};
 
@@ -180,7 +180,7 @@
 				interrupts = <33 8>;
 				interrupt-parent = <&PIC>;
 				phy-handle = <&PHY1>;
-				linux,network-index = <1>;
+				beep,network-index = <1>;
 				fsl,cpm-command = <0x16200300>;
 			};
 

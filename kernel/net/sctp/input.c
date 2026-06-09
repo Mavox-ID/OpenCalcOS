@@ -48,12 +48,12 @@
  * be incorporated into the next SCTP release.
  */
 
-#include <linux/types.h>
-#include <linux/list.h> /* For struct list_head */
-#include <linux/socket.h>
-#include <linux/ip.h>
-#include <linux/time.h> /* For struct timeval */
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/list.h> /* For struct list_head */
+#include <beep/socket.h>
+#include <beep/ip.h>
+#include <beep/time.h> /* For struct timeval */
+#include <beep/slab.h>
 #include <net/ip.h>
 #include <net/icmp.h>
 #include <net/snmp.h>
@@ -545,7 +545,7 @@ struct sock *sctp_err_lookup(struct net *net, int family, struct sk_buff *skb,
 	 * servers this needs to be solved differently.
 	 */
 	if (sock_owned_by_user(sk))
-		NET_INC_STATS_BH(net, LINUX_MIB_LOCKDROPPEDICMPS);
+		NET_INC_STATS_BH(net, BEEP_MIB_LOCKDROPPEDICMPS);
 
 	*app = asoc;
 	*tpp = transport;

@@ -1,13 +1,13 @@
 /*
  * Defines, structures, APIs for edac_core module
  *
- * (C) 2007 Linux Networx (http://lnxi.com)
+ * (C) 2007 Beep Networx (http://lnxi.com)
  * This file may be distributed under the terms of the
  * GNU General Public License.
  *
  * Written by Thayne Harbaugh
  * Based on work by Dan Hollis <goemon at anime dot net> and others.
- *	http://www.anime.net/~goemon/linux-ecc/
+ *	http://www.anime.net/~goemon/beep-ecc/
  *
  * NMI handling support added by
  *     Dave Peterson <dsp@llnl.gov> <dave_peterson@pobox.com>
@@ -20,20 +20,20 @@
 #ifndef _EDAC_CORE_H_
 #define _EDAC_CORE_H_
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/pci.h>
-#include <linux/time.h>
-#include <linux/nmi.h>
-#include <linux/rcupdate.h>
-#include <linux/completion.h>
-#include <linux/kobject.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
-#include <linux/edac.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/smp.h>
+#include <beep/pci.h>
+#include <beep/time.h>
+#include <beep/nmi.h>
+#include <beep/rcupdate.h>
+#include <beep/completion.h>
+#include <beep/kobject.h>
+#include <beep/platform_device.h>
+#include <beep/workqueue.h>
+#include <beep/edac.h>
 
 #define EDAC_DEVICE_NAME_LEN	31
 #define EDAC_ATTRIB_VALUE_LEN	15

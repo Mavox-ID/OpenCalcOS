@@ -18,15 +18,15 @@
 #ifndef __FHCI_H
 #define __FHCI_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/bug.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/kfifo.h>
-#include <linux/io.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/bug.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/kfifo.h>
+#include <beep/io.h>
+#include <beep/usb.h>
+#include <beep/usb/hcd.h>
 #include <asm/qe.h>
 #include <asm/immap_qe.h>
 

@@ -1,9 +1,9 @@
 #ifndef _TRACE_SYSCALL_H
 #define _TRACE_SYSCALL_H
 
-#include <linux/tracepoint.h>
-#include <linux/unistd.h>
-#include <linux/ftrace_event.h>
+#include <beep/tracepoint.h>
+#include <beep/unistd.h>
+#include <beep/ftrace_event.h>
 
 #include <asm/ptrace.h>
 

@@ -7,7 +7,7 @@
 #ifndef _bfin_simple_timer_h_
 #define _bfin_simple_timer_h_
 
-#include <linux/ioctl.h>
+#include <beep/ioctl.h>
 
 #define BFIN_SIMPLE_TIMER_IOCTL_MAGIC 't'
 

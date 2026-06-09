@@ -20,15 +20,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/sta2x11-mfd.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/pci.h>
+#include <beep/platform_device.h>
+#include <beep/mfd/sta2x11-mfd.h>
 
 struct gsta_regs {
 	u32 dat;		/* 0x00 */

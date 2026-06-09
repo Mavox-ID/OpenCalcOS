@@ -12,7 +12,7 @@
  *  For licencing details see kernel-base/COPYING
  */
 
-#include <linux/perf_event.h>
+#include <beep/perf_event.h>
 
 #if 0
 #undef wrmsrl

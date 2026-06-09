@@ -1,9 +1,9 @@
 /*
  * Access kernel memory without faulting.
  */
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/uaccess.h>
+#include <beep/export.h>
+#include <beep/mm.h>
+#include <beep/uaccess.h>
 
 /**
  * probe_kernel_read(): safely attempt to read from a location

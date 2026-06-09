@@ -26,17 +26,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/sysfs.h>
-#include <linux/hwmon.h>
-#include <linux/mutex.h>
-#include <linux/mod_devicetable.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/sysfs.h>
+#include <beep/hwmon.h>
+#include <beep/mutex.h>
+#include <beep/mod_devicetable.h>
+#include <beep/spi/spi.h>
+#include <beep/slab.h>
 
 
 #define DRVNAME		"lm70"
@@ -213,5 +213,5 @@ static struct spi_driver lm70_driver = {
 module_spi_driver(lm70_driver);
 
 MODULE_AUTHOR("Kaiwan N Billimoria");
-MODULE_DESCRIPTION("NS LM70 and compatibles Linux driver");
+MODULE_DESCRIPTION("NS LM70 and compatibles Beep driver");
 MODULE_LICENSE("GPL");

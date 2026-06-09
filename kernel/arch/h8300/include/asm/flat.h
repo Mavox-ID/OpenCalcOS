@@ -1,5 +1,5 @@
 /*
- * include/asm-h8300/flat.h -- uClinux flat-format executables
+ * include/asm-h8300/flat.h -- uCbeep flat-format executables
  */
 
 #ifndef __H8300_FLAT_H__

@@ -13,11 +13,11 @@
  */
 #include "kmap_types.h"
 
-#include <linux/kernel.h>
-//#include <linux/crypto.h>
+#include <beep/kernel.h>
+//#include <beep/crypto.h>
 #include "rtl_crypto.h"
-#include <linux/string.h>
-#include <linux/kmod.h>
+#include <beep/string.h>
+#include <beep/kmod.h>
 #include "internal.h"
 
 /*

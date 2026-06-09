@@ -6,11 +6,11 @@
  *
  * Author: Linus Walleij <linus.walleij@stericsson.com>
  */
-#include <linux/device.h>
-#include <linux/amba/bus.h>
-#include <linux/spi/spi.h>
-#include <linux/amba/pl022.h>
-#include <linux/err.h>
+#include <beep/device.h>
+#include <beep/amba/bus.h>
+#include <beep/spi/spi.h>
+#include <beep/amba/pl022.h>
+#include <beep/err.h>
 #include <mach/coh901318.h>
 #include "dma_channels.h"
 

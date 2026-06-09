@@ -5,7 +5,7 @@
  *
  * Copyright (C) 2005 by Thomas Winischhofer, Vienna, Austria
  *
- * If distributed as part of the Linux kernel, this code is licensed under the
+ * If distributed as part of the Beep kernel, this code is licensed under the
  * terms of the GPL v2.
  *
  * Otherwise, the following license terms apply:
@@ -47,24 +47,24 @@
  *
  */
 
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/fs.h>
-#include <linux/usb.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/string.h>
-#include <linux/kd.h>
-#include <linux/init.h>
-#include <linux/vt_kern.h>
-#include <linux/selection.h>
-#include <linux/spinlock.h>
-#include <linux/kref.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
+#include <beep/mutex.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/fs.h>
+#include <beep/usb.h>
+#include <beep/tty.h>
+#include <beep/console.h>
+#include <beep/string.h>
+#include <beep/kd.h>
+#include <beep/init.h>
+#include <beep/vt_kern.h>
+#include <beep/selection.h>
+#include <beep/spinlock.h>
+#include <beep/kref.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/vmalloc.h>
 
 #include "sisusb.h"
 #include "sisusb_init.h"

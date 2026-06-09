@@ -1,11 +1,11 @@
-/* linux/arch/arm/plat-samsung/include/plat/sdhci.h
+/* beep/arch/arm/plat-samsung/include/plat/sdhci.h
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
  *
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C Platform - SDHCI (HSMMC) platform data definitions

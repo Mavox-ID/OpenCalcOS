@@ -2,7 +2,7 @@
  * Copyright (C) 1999 - 2010 Intel Corporation.
  * Copyright (C) 2010 OKI SEMICONDUCTOR Co., LTD.
  *
- * This code was derived from the Intel e1000e Linux driver.
+ * This code was derived from the Intel e1000e Beep driver.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

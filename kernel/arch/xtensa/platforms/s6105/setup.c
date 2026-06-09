@@ -3,9 +3,9 @@
  *
  * Copyright (c) 2009 emlix GmbH
  */
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
 
 #include <asm/bootparam.h>
 

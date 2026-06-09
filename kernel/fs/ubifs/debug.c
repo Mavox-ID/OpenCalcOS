@@ -27,11 +27,11 @@
  * various local functions of those subsystems.
  */
 
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/math64.h>
-#include <linux/uaccess.h>
-#include <linux/random.h>
+#include <beep/module.h>
+#include <beep/debugfs.h>
+#include <beep/math64.h>
+#include <beep/uaccess.h>
+#include <beep/random.h>
 #include "ubifs.h"
 
 static DEFINE_SPINLOCK(dbg_lock);

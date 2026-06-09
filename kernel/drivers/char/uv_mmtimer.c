@@ -9,20 +9,20 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/ioctl.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/mmtimer.h>
-#include <linux/miscdevice.h>
-#include <linux/posix-timers.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/math64.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/ioctl.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/mmtimer.h>
+#include <beep/miscdevice.h>
+#include <beep/posix-timers.h>
+#include <beep/interrupt.h>
+#include <beep/time.h>
+#include <beep/math64.h>
 
 #include <asm/genapic.h>
 #include <asm/uv/uv_hub.h>

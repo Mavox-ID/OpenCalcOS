@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/plat-omap/sram.c
+ * beep/arch/arm/plat-omap/sram.c
  *
  * OMAP SRAM detection and management
  *
@@ -15,10 +15,10 @@
  */
 #undef DEBUG
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
 
 #include <asm/fncpy.h>
 #include <asm/tlb.h>

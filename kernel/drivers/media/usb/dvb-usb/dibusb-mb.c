@@ -1,4 +1,4 @@
-/* DVB USB compliant linux driver for mobile DVB-T USB devices based on
+/* DVB USB compliant beep driver for mobile DVB-T USB devices based on
  * reference designs made by DiBcom (http://www.dibcom.fr/) (DiB3000M-B)
  *
  * Copyright (C) 2004-5 Patrick Boettcher (patrick.boettcher@desy.de)
@@ -232,7 +232,7 @@ static struct dvb_usb_device_properties dibusb1_1_properties = {
 			{ &dibusb_dib3000mb_table[0],  NULL },
 			{ &dibusb_dib3000mb_table[1],  NULL },
 		},
-		{	"Compro Videomate DVB-U2000 - DVB-T USB1.1 (please confirm to linux-dvb)",
+		{	"Compro Videomate DVB-U2000 - DVB-T USB1.1 (please confirm to beep-dvb)",
 			{ &dibusb_dib3000mb_table[2], &dibusb_dib3000mb_table[4], NULL},
 			{ &dibusb_dib3000mb_table[3], NULL },
 		},

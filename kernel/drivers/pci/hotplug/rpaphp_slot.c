@@ -22,12 +22,12 @@
  * Send feedback to <lxie@us.ibm.com>
  *
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sysfs.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/sysfs.h>
+#include <beep/pci.h>
+#include <beep/string.h>
+#include <beep/slab.h>
 
 #include <asm/rtas.h>
 #include "rpaphp.h"

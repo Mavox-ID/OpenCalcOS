@@ -6,15 +6,15 @@
  * Licensed under the GPLv2 or later.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/i2c.h>
-#include <linux/fb.h>
-#include <linux/uaccess.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/pwm.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/i2c.h>
+#include <beep/fb.h>
+#include <beep/uaccess.h>
+#include <beep/of_device.h>
+#include <beep/of_gpio.h>
+#include <beep/pwm.h>
+#include <beep/delay.h>
 
 #define SSD1307FB_WIDTH			96
 #define SSD1307FB_HEIGHT		16

@@ -6,9 +6,9 @@
  * Copyright (c) 2006 Rafael J. Wysocki <rjw@sisk.pl>
  */
 
-#include <linux/gfp.h>
-#include <linux/suspend.h>
-#include <linux/bootmem.h>
+#include <beep/gfp.h>
+#include <beep/suspend.h>
+#include <beep/bootmem.h>
 
 #include <asm/page.h>
 #include <asm/pgtable.h>

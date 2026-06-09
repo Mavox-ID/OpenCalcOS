@@ -8,8 +8,8 @@
  * for more details.
  */
 
-#include <linux/sched.h>
-#include <linux/io.h>
+#include <beep/sched.h>
+#include <beep/io.h>
 
 #include <asm/setup.h>
 #include <asm/page.h>

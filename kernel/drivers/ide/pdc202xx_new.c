@@ -7,21 +7,21 @@
  *  2 of the License, or (at your option) any later version.
  *
  *  Split from:
- *  linux/drivers/ide/pdc202xx.c	Version 0.35	Mar. 30, 2002
- *  Copyright (C) 1998-2002		Andre Hedrick <andre@linux-ide.org>
+ *  beep/drivers/ide/pdc202xx.c	Version 0.35	Mar. 30, 2002
+ *  Copyright (C) 1998-2002		Andre Hedrick <andre@beep-ide.org>
  *  Copyright (C) 2005-2007		MontaVista Software, Inc.
  *  Portions Copyright (C) 1999 Promise Technology, Inc.
  *  Author: Frank Tiernan (frankt@promise.com)
  *  Released under terms of General Public License
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/ide.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/ide.h>
 
 #include <asm/io.h>
 

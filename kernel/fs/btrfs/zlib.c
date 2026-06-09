@@ -20,16 +20,16 @@
  * Created by David Woodhouse <dwmw2@infradead.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/zlib.h>
-#include <linux/zutil.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/pagemap.h>
-#include <linux/bio.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/zlib.h>
+#include <beep/zutil.h>
+#include <beep/vmalloc.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/sched.h>
+#include <beep/pagemap.h>
+#include <beep/bio.h>
 #include "compression.h"
 
 struct workspace {

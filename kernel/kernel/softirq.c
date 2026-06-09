@@ -1,5 +1,5 @@
 /*
- *	linux/kernel/softirq.c
+ *	beep/kernel/softirq.c
  *
  *	Copyright (C) 1992 Linus Torvalds
  *
@@ -10,21 +10,21 @@
  *	Remote softirq infrastructure is by Jens Axboe.
  */
 
-#include <linux/export.h>
-#include <linux/kernel_stat.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/notifier.h>
-#include <linux/percpu.h>
-#include <linux/cpu.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
-#include <linux/rcupdate.h>
-#include <linux/ftrace.h>
-#include <linux/smp.h>
-#include <linux/smpboot.h>
-#include <linux/tick.h>
+#include <beep/export.h>
+#include <beep/kernel_stat.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/notifier.h>
+#include <beep/percpu.h>
+#include <beep/cpu.h>
+#include <beep/freezer.h>
+#include <beep/kthread.h>
+#include <beep/rcupdate.h>
+#include <beep/ftrace.h>
+#include <beep/smp.h>
+#include <beep/smpboot.h>
+#include <beep/tick.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/irq.h>

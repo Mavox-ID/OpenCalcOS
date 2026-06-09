@@ -6,18 +6,18 @@
  * Licensed under the GPL-2 or later
  */
 
-#include <linux/kernel.h>
-#include <linux/hardirq.h>
-#include <linux/thread_info.h>
-#include <linux/mm.h>
-#include <linux/oom.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/kallsyms.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/irq.h>
+#include <beep/kernel.h>
+#include <beep/hardirq.h>
+#include <beep/thread_info.h>
+#include <beep/mm.h>
+#include <beep/oom.h>
+#include <beep/sched.h>
+#include <beep/uaccess.h>
+#include <beep/module.h>
+#include <beep/kallsyms.h>
+#include <beep/err.h>
+#include <beep/fs.h>
+#include <beep/irq.h>
 #include <asm/dma.h>
 #include <asm/trace.h>
 #include <asm/fixed_code.h>
@@ -873,7 +873,7 @@ void show_regs(struct pt_regs *fp)
 #endif
 		);
 
-	pr_notice("%s", linux_banner);
+	pr_notice("%s", beep_banner);
 
 	pr_notice("\nSEQUENCER STATUS:\t\t%s\n", print_tainted());
 	pr_notice(" SEQSTAT: %08lx  IPEND: %04lx  IMASK: %04lx  SYSCFG: %04lx\n",

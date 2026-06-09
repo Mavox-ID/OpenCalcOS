@@ -2,10 +2,10 @@
  * IDT Winchip specific Machine Check Exception Reporting
  * (C) Copyright 2002 Alan Cox <alan@lxorguk.ukuu.org.uk>
  */
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/init.h>
 
 #include <asm/processor.h>
 #include <asm/mce.h>

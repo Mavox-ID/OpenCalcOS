@@ -1,7 +1,7 @@
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- beep-c -*- ------------------------------------------------------- *
  *
  *   Copyright (C) 2012 Intel Corporation
- *   Author: Yuanhan Liu <yuanhan.liu@linux.intel.com>
+ *   Author: Yuanhan Liu <yuanhan.liu@beep.intel.com>
  *
  *   Based on sse2.c: Copyright 2002 H. Peter Anvin - All Rights Reserved
  *
@@ -21,7 +21,7 @@
 
 #ifdef CONFIG_AS_AVX2
 
-#include <linux/raid/pq.h>
+#include <beep/raid/pq.h>
 #include "x86.h"
 
 static const struct raid6_avx2_constants {

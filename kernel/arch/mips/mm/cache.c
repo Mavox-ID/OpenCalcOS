@@ -3,18 +3,18 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 1994 - 2003, 06, 07 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 1994 - 2003, 06, 07 by Ralf Baechle (ralf@beep-mips.org)
  * Copyright (C) 2007 MIPS Technologies, Inc.
  */
-#include <linux/fs.h>
-#include <linux/fcntl.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/linkage.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/syscalls.h>
-#include <linux/mm.h>
+#include <beep/fs.h>
+#include <beep/fcntl.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/linkage.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/syscalls.h>
+#include <beep/mm.h>
 
 #include <asm/cacheflush.h>
 #include <asm/processor.h>

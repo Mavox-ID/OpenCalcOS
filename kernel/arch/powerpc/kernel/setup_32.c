@@ -2,21 +2,21 @@
  * Common prep/pmac/chrp boot and setup code.
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/reboot.h>
-#include <linux/delay.h>
-#include <linux/initrd.h>
-#include <linux/tty.h>
-#include <linux/bootmem.h>
-#include <linux/seq_file.h>
-#include <linux/root_dev.h>
-#include <linux/cpu.h>
-#include <linux/console.h>
-#include <linux/memblock.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/reboot.h>
+#include <beep/delay.h>
+#include <beep/initrd.h>
+#include <beep/tty.h>
+#include <beep/bootmem.h>
+#include <beep/seq_file.h>
+#include <beep/root_dev.h>
+#include <beep/cpu.h>
+#include <beep/console.h>
+#include <beep/memblock.h>
 
 #include <asm/io.h>
 #include <asm/prom.h>

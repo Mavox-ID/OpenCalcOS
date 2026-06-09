@@ -28,7 +28,7 @@
 #ifndef NCR5380_H
 #define NCR5380_H
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 #ifdef AUTOSENSE
 #include <scsi/scsi_eh.h>

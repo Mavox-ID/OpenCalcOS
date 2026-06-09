@@ -6,22 +6,22 @@
  * Licensed under the GPL-2
  */
 
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/partitions.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mtd/partitions.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
 #include <asm/bfin5xx_spi.h>
 #include <asm/dma.h>
 #include <asm/gpio.h>
 #include <asm/nand.h>
 #include <asm/portmux.h>
 #include <asm/dpmc.h>
-#include <linux/input.h>
+#include <beep/input.h>
 
 /*
  * Name the Board for the /proc/cpuinfo
@@ -459,7 +459,7 @@ static struct platform_device bfin_can_device = {
  *  Driver needs to know address, irq and flag pin.
  */
 #if defined(CONFIG_SMC91X) || defined(CONFIG_SMC91X_MODULE)
-#include <linux/smc91x.h>
+#include <beep/smc91x.h>
 
 static struct smc91x_platdata smc91x_info = {
 	.flags = SMC91X_USE_16BIT | SMC91X_NOWAIT,
@@ -502,7 +502,7 @@ static struct mtd_partition bfin_spi_flash_partitions[] = {
 		.offset = 0,
 		.mask_flags = MTD_CAP_ROM
 	}, {
-		.name = "linux kernel(spi)",
+		.name = "beep kernel(spi)",
 		.size = 0x1c0000,
 		.offset = 0x40000
 	}
@@ -522,7 +522,7 @@ static struct bfin5xx_spi_chip spi_flash_chip_info = {
 #endif	/* CONFIG_SPI_BFIN5XX */
 
 #if defined(CONFIG_TOUCHSCREEN_AD7879) || defined(CONFIG_TOUCHSCREEN_AD7879_MODULE)
-#include <linux/spi/ad7879.h>
+#include <beep/spi/ad7879.h>
 static const struct ad7879_platform_data bfin_ad7879_ts_info = {
 	.model			= 7879,	/* Model = AD7879 */
 	.x_plate_ohms		= 620,	/* 620 Ohm from the touch datasheet */
@@ -768,7 +768,7 @@ static struct platform_device i2c_bfin_twi1_device = {
 #endif	/* CONFIG_I2C_BLACKFIN_TWI */
 
 #if defined(CONFIG_KEYBOARD_GPIO) || defined(CONFIG_KEYBOARD_GPIO_MODULE)
-#include <linux/gpio_keys.h>
+#include <beep/gpio_keys.h>
 
 static struct gpio_keys_button bfin_gpio_keys_table[] = {
 	{BTN_0, GPIO_PC7, 1, "gpio-keys: BTN0"},
@@ -822,7 +822,7 @@ static struct mtd_partition ezkit_partitions[] = {
 		.size       = 0x40000,
 		.offset     = 0,
 	}, {
-		.name       = "linux kernel(nor)",
+		.name       = "beep kernel(nor)",
 		.size       = 0x180000,
 		.offset     = MTDPART_OFS_APPEND,
 	}, {

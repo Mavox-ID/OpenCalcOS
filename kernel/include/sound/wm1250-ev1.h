@@ -1,5 +1,5 @@
 /*
- * linux/sound/wm1250-ev1.h - Platform data for WM1250-EV1
+ * beep/sound/wm1250-ev1.h - Platform data for WM1250-EV1
  *
  * Copyright 2011 Wolfson Microelectronics. PLC.
  *
@@ -8,8 +8,8 @@
  * published by the Free Software Foundation.
  */
 
-#ifndef __LINUX_SND_WM1250_EV1_H
-#define __LINUX_SND_WM1250_EV1_H
+#ifndef __BEEP_SND_WM1250_EV1_H
+#define __BEEP_SND_WM1250_EV1_H
 
 #define WM1250_EV1_NUM_GPIOS 5
 

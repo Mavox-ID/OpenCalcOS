@@ -19,9 +19,9 @@
  *
  * PROM library initialisation code.
  */
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
 
 #include <asm/bootinfo.h>
 #include <asm/gt64120.h>
@@ -197,7 +197,7 @@ void __init prom_init(void)
 	_prom_argv = (int *) fw_arg1;
 	_prom_envp = (int *) fw_arg2;
 
-	mips_display_message("LINUX");
+	mips_display_message("BEEP");
 
 	/*
 	 * early setup of _pcictrl_bonito so that we can determine

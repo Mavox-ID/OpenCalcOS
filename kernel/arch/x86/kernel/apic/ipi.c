@@ -1,15 +1,15 @@
-#include <linux/cpumask.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
+#include <beep/cpumask.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
 
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/kernel_stat.h>
-#include <linux/mc146818rtc.h>
-#include <linux/cache.h>
-#include <linux/cpu.h>
-#include <linux/module.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
+#include <beep/spinlock.h>
+#include <beep/kernel_stat.h>
+#include <beep/mc146818rtc.h>
+#include <beep/cache.h>
+#include <beep/cpu.h>
+#include <beep/module.h>
 
 #include <asm/smp.h>
 #include <asm/mtrr.h>

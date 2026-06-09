@@ -5,11 +5,11 @@
  *
  * Copyright (C) 2005-2009, 2010 Cavium Networks
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/msi.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/msi.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
 
 #include <asm/octeon/octeon.h>
 #include <asm/octeon/cvmx-npi-defs.h>

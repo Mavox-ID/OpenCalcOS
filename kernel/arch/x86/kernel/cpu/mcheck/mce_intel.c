@@ -1,15 +1,15 @@
 /*
  * Intel specific MCE features.
- * Copyright 2004 Zwane Mwaikambo <zwane@linuxpower.ca>
+ * Copyright 2004 Zwane Mwaikambo <zwane@beeppower.ca>
  * Copyright (C) 2008, 2009 Intel Corporation
  * Author: Andi Kleen
  */
 
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/percpu.h>
-#include <linux/sched.h>
+#include <beep/gfp.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/percpu.h>
+#include <beep/sched.h>
 #include <asm/apic.h>
 #include <asm/processor.h>
 #include <asm/msr.h>

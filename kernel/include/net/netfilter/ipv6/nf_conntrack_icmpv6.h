@@ -4,7 +4,7 @@
  * 21 Apl 2004: Yasuyuki Kozakai @USAGI <yasuyuki.kozakai@toshiba.co.jp>
  *	- separated from nf_conntrack_icmp.h
  *
- * Derived from include/linux/netfiter_ipv4/ip_conntrack_icmp.h
+ * Derived from include/beep/netfiter_ipv4/ip_conntrack_icmp.h
  */
 
 #ifndef _NF_CONNTRACK_ICMPV6_H

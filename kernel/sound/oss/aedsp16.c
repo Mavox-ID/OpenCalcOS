@@ -23,9 +23,9 @@
  * Include the main OSS Lite header file. It include all the os, OSS Lite, etc
  * headers needed by this source.
  */
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/init.h>
 #include "sound_config.h"
 
 /*
@@ -41,10 +41,10 @@
    Audio Excel DSP 16 is an SB pro II, Microsoft Sound System and MPU-401
    compatible card.
    It is software-only configurable (no jumpers to hard-set irq/dma/mpu-irq),
-   so before this module, the only way to configure the DSP under linux was
+   so before this module, the only way to configure the DSP under beep was
    boot the MS-DOS loading the sound.sys device driver (this driver soft-
    configure the sound board hardware by massaging someone of its registers),
-   and then ctrl-alt-del to boot linux with the DSP configured by the DOS
+   and then ctrl-alt-del to boot beep with the DSP configured by the DOS
    driver.
 
    This module works configuring your Audio Excel DSP 16's irq, dma and
@@ -109,7 +109,7 @@
 
    'Sound: DMA timed out - IRQ/DRQ config error?'
 
-   For what I can say, I have NOT any conflict at irq 7 (under linux I'm
+   For what I can say, I have NOT any conflict at irq 7 (under beep I'm
    using the lp polling driver), and dma line 1 is unused as stated by
    /proc/dma. I can suppose this is a bug of AEDSP16. I know my hardware so
    I'm pretty sure I have not any conflict, but may be I'm wrong. Who knows!
@@ -161,14 +161,14 @@
    - Initial code.
    v0.2 (ALPHA)
    - Cleanups.
-   - Integrated with Linux voxware v 2.90-2 kernel sound driver.
+   - Integrated with Beep voxware v 2.90-2 kernel sound driver.
    - SoundBlaster Pro mode configuration.
    - Microsoft Sound System mode configuration.
    - MPU-401 mode configuration.
    v0.3 (ALPHA)
    - Cleanups.
    - Rearranged the code to let aedsp16_init_board be more general.
-   - Erased the REALLY_SLOW_IO. We don't need it. Erased the linux/io.h
+   - Erased the REALLY_SLOW_IO. We don't need it. Erased the beep/io.h
    inclusion too. We rely on os.h
    - Used the  to get a variable
    len string (we are not sure about the len of Copyright string).
@@ -201,7 +201,7 @@
    v0.8 (ALPHA)
    - attached all the init routines.
    v0.9 (BETA)
-   - Integrated with linux-pre2.0.7
+   - Integrated with beep-pre2.0.7
    - Integrated with configuration scripts.
    - Cleaned up and beautyfied the code.
    v0.9.9 (BETA)
@@ -220,7 +220,7 @@
    - Refined the v0.9.11 code with conditional compilation to distinguish
      between SC-6000 and SC-6600 code.
    v1.0.0
-   - Prep for merging with OSS Lite and Linux kernel 2.1.13
+   - Prep for merging with OSS Lite and Beep kernel 2.1.13
    - Corrected a bug in request/check/release region calls (thanks to the
      new kernel exception handling).
    v1.1

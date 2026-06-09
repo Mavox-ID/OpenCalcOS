@@ -12,7 +12,7 @@
  * This version is derived from the GnuPG implementation and the
  * Tiger-Perl interface written by Rafael Sevilla
  *
- * Adapted for Linux Kernel Crypto  by Aaron Grothe 
+ * Adapted for Beep Kernel Crypto  by Aaron Grothe 
  * ajgrothe@yahoo.com, February 22, 2005
  *
  * This program is free software; you can redistribute it and/or modify
@@ -22,11 +22,11 @@
  *
  */
 #include <crypto/internal/hash.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/mm.h>
 #include <asm/byteorder.h>
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define TGR192_DIGEST_SIZE 24
 #define TGR160_DIGEST_SIZE 20

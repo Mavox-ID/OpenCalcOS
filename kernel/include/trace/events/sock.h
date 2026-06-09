@@ -5,7 +5,7 @@
 #define _TRACE_SOCK_H
 
 #include <net/sock.h>
-#include <linux/tracepoint.h>
+#include <beep/tracepoint.h>
 
 TRACE_EVENT(sock_rcvqueue_full,
 

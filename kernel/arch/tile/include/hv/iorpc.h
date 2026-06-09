@@ -19,7 +19,7 @@
  * Error codes and struct definitions for the IO RPC library.
  *
  * The hypervisor's IO RPC component provides a convenient way for
- * driver authors to proxy system calls between user space, linux, and
+ * driver authors to proxy system calls between user space, beep, and
  * the hypervisor driver.  The core of the system is a set of Python
  * files that take ".idl" files as input and generates the following
  * source code:
@@ -27,7 +27,7 @@
  * - _rpc_call() routines for use in userspace IO libraries.  These
  * routines take an argument list specified in the .idl file, pack the
  * arguments in to a buffer, and read or write that buffer via the
- * Linux iorpc driver.
+ * Beep iorpc driver.
  *
  * - dispatch_read() and dispatch_write() routines that hypervisor
  * drivers can use to implement most of their dev_pread() and
@@ -37,15 +37,15 @@
  * arrived.  The driver simply implements the set of callback
  * routines.
  *
- * The IO RPC system also includes the Linux 'iorpc' driver, which
+ * The IO RPC system also includes the Beep 'iorpc' driver, which
  * proxies calls between the userspace library and the hypervisor
- * driver.  The Linux driver is almost entirely device agnostic; it
+ * driver.  The Beep driver is almost entirely device agnostic; it
  * watches for special flags indicating cases where a memory buffer
  * address might need to be translated, etc.  As a result, driver
  * writers can avoid many of the problem cases related to registering
  * hardware resources like memory pages or interrupts.  However, the
  * drivers must be careful to obey the conventions documented below in
- * order to work properly with the generic Linux iorpc driver.
+ * order to work properly with the generic Beep iorpc driver.
  *
  * @section iorpc_domains Service Domains
  *
@@ -112,7 +112,7 @@
  *
  * The MEM_BUFFER() datatype allows user space to "register" memory
  * buffers with a device.  Registering memory accomplishes two tasks:
- * Linux keeps track of all buffers that might be modified by a
+ * Beep keeps track of all buffers that might be modified by a
  * hardware device, and the hardware device drivers bind registered
  * buffers to particular hardware resources like ingress NotifRings.
  * The MEM_BUFFER() idl syntax can take extra flags like ALIGN_64KB,
@@ -123,7 +123,7 @@
  *
  * Implementations must obey the following conventions when
  * registering memory buffers via the iorpc flow.  These rules are a
- * result of the Linux driver implementation, which needs to keep
+ * result of the Beep driver implementation, which needs to keep
  * track of how many times a particular page has been registered with
  * the hardware so that it can release the page when all those
  * registrations are cleared.
@@ -131,11 +131,11 @@
  * - Memory registrations that refer to a resource which has already
  * been bound must return GXIO_ERR_ALREADY_INIT.  Thus, it is an
  * error to register memory twice without resetting (i.e. closing) the
- * resource in between.  This convention keeps the Linux driver from
+ * resource in between.  This convention keeps the Beep driver from
  * having to track which particular devices a page is bound to.
  *
  * - At present, a memory registration is only cleared when the
- * service domain is reset.  In this case, the Linux driver simply
+ * service domain is reset.  In this case, the Beep driver simply
  * closes the HV device file handle and then decrements the reference
  * counts of all pages that were previously registered with the
  * device.
@@ -144,9 +144,9 @@
  * One possible implementation would require that the user specify
  * which buffer is currently registered.  The HV would then verify
  * that that page was actually the one currently mapped and return
- * success or failure to Linux, which would then only decrement the
+ * success or failure to Beep, which would then only decrement the
  * page reference count if the addresses were mapped.  Another scheme
- * might allow Linux to pass a token to the HV to be returned when the
+ * might allow Beep to pass a token to the HV to be returned when the
  * resource is unmapped.
  *
  * @subsection iorpc_interrupt INTERRUPT
@@ -154,17 +154,17 @@
  * The INTERRUPT .idl datatype allows the client to bind hardware
  * interrupts to a particular combination of IPI parameters - CPU, IPI
  * PL, and event bit number.  This data is passed via a special
- * datatype so that the Linux driver can validate the CPU and PL and
+ * datatype so that the Beep driver can validate the CPU and PL and
  * the HV generic iorpc code can translate client CPUs to real CPUs.
  *
  * @subsection iorpc_pollfd_setup POLLFD_SETUP
  *
  * The POLLFD_SETUP .idl datatype allows the client to set up hardware
- * interrupt bindings which are received by Linux but which are made
+ * interrupt bindings which are received by Beep but which are made
  * visible to user processes as state transitions on a file descriptor;
- * this allows user processes to use Linux primitives, such as poll(), to
+ * this allows user processes to use Beep primitives, such as poll(), to
  * await particular hardware events.  This data is passed via a special
- * datatype so that the Linux driver may recognize the pollable file
+ * datatype so that the Beep driver may recognize the pollable file
  * descriptor and translate it to a set of interrupt target information,
  * and so that the HV generic iorpc code can translate client CPUs to real
  * CPUs.
@@ -175,7 +175,7 @@
  * bindings set up via the POLLFD_SETUP datatype; common operations are
  * resetting the state of the requested interrupt events, and unbinding any
  * bound interrupts.  This data is passed via a special datatype so that
- * the Linux driver may recognize the pollable file descriptor and
+ * the Beep driver may recognize the pollable file descriptor and
  * translate it to an interrupt identifier previously supplied by the
  * hypervisor as the result of an earlier pollfd_setup operation.
  *
@@ -186,7 +186,7 @@
  * useful for passing up large, arbitrarily structured data like
  * classifier programs.  The iorpc stack takes care of validating the
  * buffer VA and CPA as the data passes up to the hypervisor.  Unlike
- * MEM_BUFFER(), the buffer is not registered - Linux does not bump
+ * MEM_BUFFER(), the buffer is not registered - Beep does not bump
  * page refcounts and the HV driver should not reuse the buffer once
  * the system call is complete.
  *
@@ -194,7 +194,7 @@
  *
  * The ::iorpc_offset structure describes the formatting of the offset
  * that is passed to pread() or pwrite() as part of the generated RPC code.
- * When the user calls up to Linux, the rpc code fills in all the fields of
+ * When the user calls up to Beep, the rpc code fills in all the fields of
  * the offset, including a 16-bit opcode, a 16 bit format indicator, and 32
  * bits of user-specified "sub-offset".  The opcode indicates which syscall
  * is being requested.  The format indicates whether there is a "prefix
@@ -202,12 +202,12 @@
  * what data is in that prefix struct.  These prefix structs are used to
  * implement special datatypes like MEM_BUFFER() and INTERRUPT - we arrange
  * to put data that needs translation and permission checks at the start of
- * the buffer so that the Linux driver and generic portions of the HV iorpc
+ * the buffer so that the Beep driver and generic portions of the HV iorpc
  * code can easily access the data.  The 32 bits of user-specified
  * "sub-offset" are most useful for pread() calls where the user needs to
  * also pass in a few bits indicating which register to read, etc.
  *
- * The Linux iorpc driver watches for system calls that contain prefix
+ * The Beep iorpc driver watches for system calls that contain prefix
  * structs so that it can translate parameters and bump reference
  * counts as appropriate.  It does not (currently) have any knowledge
  * of the per-device opcodes - it doesn't care what operation you're
@@ -219,10 +219,10 @@
  * @section iorpc_globals Global iorpc Calls
  *
  * Implementing mmap() required adding some special iorpc syscalls
- * that are only called by the Linux driver, never by userspace.
+ * that are only called by the Beep driver, never by userspace.
  * These include get_mmio_base() and check_mmio_offset().  These
  * routines are described in globals.idl and must be included in every
- * iorpc driver.  By providing these routines in every driver, Linux's
+ * iorpc driver.  By providing these routines in every driver, Beep's
  * mmap implementation can easily get the PTE bits it needs and
  * validate the PA offset without needing to know the per-device
  * opcodes to perform those tasks.
@@ -240,7 +240,7 @@
  */
 
 #ifdef __KERNEL__
-#include <linux/stddef.h>
+#include <beep/stddef.h>
 #else
 #include <stddef.h>
 #endif
@@ -249,7 +249,7 @@
 #include <hv/hypervisor.h>
 #elif defined(__KERNEL__)
 #include <hv/hypervisor.h>
-#include <linux/types.h>
+#include <beep/types.h>
 #else
 #include <stdint.h>
 #endif
@@ -352,7 +352,7 @@ struct iorpc_mem_attr
     protection levels describe memory differently, so this union
     contains all the different possible descriptions.  As a request
     moves up the call chain, each layer translates from one
-    description format to the next.  In particular, the Linux iorpc
+    description format to the next.  In particular, the Beep iorpc
     driver translates user VAs into CPAs and homing parameters. */
 union iorpc_mem_buffer
 {

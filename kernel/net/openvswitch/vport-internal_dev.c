@@ -16,13 +16,13 @@
  * 02110-1301, USA
  */
 
-#include <linux/hardirq.h>
-#include <linux/if_vlan.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
+#include <beep/hardirq.h>
+#include <beep/if_vlan.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/skbuff.h>
 
 #include <net/dst.h>
 #include <net/xfrm.h>

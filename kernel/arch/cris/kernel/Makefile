@@ -1,10 +1,10 @@
 # $Id: Makefile,v 1.12 2004/10/19 13:07:43 starvik Exp $
 #
-# Makefile for the linux kernel.
+# Makefile for the beep kernel.
 #
 
-CPPFLAGS_vmlinux.lds := -DDRAM_VIRTUAL_BASE=0x$(CONFIG_ETRAX_DRAM_VIRTUAL_BASE)
-extra-y	:= vmlinux.lds
+CPPFLAGS_vmbeep.lds := -DDRAM_VIRTUAL_BASE=0x$(CONFIG_ETRAX_DRAM_VIRTUAL_BASE)
+extra-y	:= vmbeep.lds
 
 obj-y   := process.o traps.o irq.o ptrace.o setup.o time.o sys_cris.o
 

@@ -5,12 +5,12 @@
  * Author: Linus Walleij <linus.walleij@stericsson.com>
  * Author: Jonas Aaberg <jonas.aberg@stericsson.com>
  */
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/clk-provider.h>
-#include <linux/spinlock.h>
+#include <beep/clk.h>
+#include <beep/clkdev.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/clk-provider.h>
+#include <beep/spinlock.h>
 #include <mach/syscon.h>
 
 /*
@@ -62,7 +62,7 @@
  *     +- slow:1 SYSCON (not possible to control)
  *     +- slow:2 WDOG Watchdog
  *     +- slow:3 UART0 primary UART
- *     +- slow:4 TIMER_APP Application timer - used in Linux
+ *     +- slow:4 TIMER_APP Application timer - used in Beep
  *     +- slow:5 KEYPAD controller
  *     +- slow:6 GPIO controller
  *     +- slow:7 RTC controller

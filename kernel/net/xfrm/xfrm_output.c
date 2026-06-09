@@ -9,13 +9,13 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/netfilter.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/netdevice.h>
+#include <beep/netfilter.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 #include <net/dst.h>
 #include <net/xfrm.h>
 
@@ -50,26 +50,26 @@ static int xfrm_output_one(struct sk_buff *skb, int err)
 	do {
 		err = xfrm_skb_check_space(skb);
 		if (err) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTERROR);
+			XFRM_INC_STATS(net, BEEP_MIB_XFRMOUTERROR);
 			goto error_nolock;
 		}
 
 		err = x->outer_mode->output(x, skb);
 		if (err) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTSTATEMODEERROR);
+			XFRM_INC_STATS(net, BEEP_MIB_XFRMOUTSTATEMODEERROR);
 			goto error_nolock;
 		}
 
 		spin_lock_bh(&x->lock);
 		err = xfrm_state_check_expire(x);
 		if (err) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTSTATEEXPIRED);
+			XFRM_INC_STATS(net, BEEP_MIB_XFRMOUTSTATEEXPIRED);
 			goto error;
 		}
 
 		err = x->repl->overflow(x, skb);
 		if (err) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTSTATESEQERROR);
+			XFRM_INC_STATS(net, BEEP_MIB_XFRMOUTSTATESEQERROR);
 			goto error;
 		}
 
@@ -86,13 +86,13 @@ static int xfrm_output_one(struct sk_buff *skb, int err)
 
 resume:
 		if (err) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTSTATEPROTOERROR);
+			XFRM_INC_STATS(net, BEEP_MIB_XFRMOUTSTATEPROTOERROR);
 			goto error_nolock;
 		}
 
 		dst = skb_dst_pop(skb);
 		if (!dst) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTERROR);
+			XFRM_INC_STATS(net, BEEP_MIB_XFRMOUTERROR);
 			err = -EHOSTUNREACH;
 			goto error_nolock;
 		}
@@ -185,7 +185,7 @@ int xfrm_output(struct sk_buff *skb)
 	if (skb->ip_summed == CHECKSUM_PARTIAL) {
 		err = skb_checksum_help(skb);
 		if (err) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTERROR);
+			XFRM_INC_STATS(net, BEEP_MIB_XFRMOUTERROR);
 			kfree_skb(skb);
 			return err;
 		}

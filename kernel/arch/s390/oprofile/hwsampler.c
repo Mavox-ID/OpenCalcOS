@@ -3,18 +3,18 @@
  * Author: Heinz Graalfs <graalfs@de.ibm.com>
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/smp.h>
-#include <linux/errno.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/semaphore.h>
-#include <linux/oom.h>
-#include <linux/oprofile.h>
+#include <beep/kernel_stat.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/smp.h>
+#include <beep/errno.h>
+#include <beep/workqueue.h>
+#include <beep/interrupt.h>
+#include <beep/notifier.h>
+#include <beep/cpu.h>
+#include <beep/semaphore.h>
+#include <beep/oom.h>
+#include <beep/oprofile.h>
 
 #include <asm/facility.h>
 #include <asm/cpu_mf.h>

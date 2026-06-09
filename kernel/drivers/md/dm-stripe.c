@@ -4,14 +4,14 @@
  * This file is released under the GPL.
  */
 
-#include <linux/device-mapper.h>
+#include <beep/device-mapper.h>
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/bio.h>
-#include <linux/slab.h>
-#include <linux/log2.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/bio.h>
+#include <beep/slab.h>
+#include <beep/log2.h>
 
 #define DM_MSG_PREFIX "striped"
 #define DM_IO_ERROR_THRESHOLD 15

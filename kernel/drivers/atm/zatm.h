@@ -6,11 +6,11 @@
 #ifndef DRIVER_ATM_ZATM_H
 #define DRIVER_ATM_ZATM_H
 
-#include <linux/skbuff.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/sonet.h>
-#include <linux/pci.h>
+#include <beep/skbuff.h>
+#include <beep/atm.h>
+#include <beep/atmdev.h>
+#include <beep/sonet.h>
+#include <beep/pci.h>
 
 
 #define DEV_LABEL	"zatm"

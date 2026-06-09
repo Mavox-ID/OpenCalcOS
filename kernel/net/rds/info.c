@@ -30,11 +30,11 @@
  * SOFTWARE.
  *
  */
-#include <linux/percpu.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/proc_fs.h>
-#include <linux/export.h>
+#include <beep/percpu.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/proc_fs.h>
+#include <beep/export.h>
 
 #include "rds.h"
 

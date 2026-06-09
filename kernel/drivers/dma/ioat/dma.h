@@ -21,13 +21,13 @@
 #ifndef IOATDMA_H
 #define IOATDMA_H
 
-#include <linux/dmaengine.h>
+#include <beep/dmaengine.h>
 #include "hw.h"
 #include "registers.h"
-#include <linux/init.h>
-#include <linux/dmapool.h>
-#include <linux/cache.h>
-#include <linux/pci_ids.h>
+#include <beep/init.h>
+#include <beep/dmapool.h>
+#include <beep/cache.h>
+#include <beep/pci_ids.h>
 #include <net/tcp.h>
 
 #define IOAT_DMA_VERSION  "4.00"

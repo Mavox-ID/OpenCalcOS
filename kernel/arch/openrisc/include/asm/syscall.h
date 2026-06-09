@@ -1,7 +1,7 @@
 /*
- * OpenRISC Linux
+ * OpenRISC Beep
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -19,8 +19,8 @@
 #ifndef __ASM_OPENRISC_SYSCALL_H__
 #define __ASM_OPENRISC_SYSCALL_H__
 
-#include <linux/err.h>
-#include <linux/sched.h>
+#include <beep/err.h>
+#include <beep/sched.h>
 
 static inline int
 syscall_get_nr(struct task_struct *task, struct pt_regs *regs)

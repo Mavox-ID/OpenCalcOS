@@ -1,5 +1,5 @@
 /*
- * linux/drivers/pcmcia/pxa2xx_colibri.c
+ * beep/drivers/pcmcia/pxa2xx_colibri.c
  *
  * Driver for Toradex Colibri PXA270 CF socket
  *
@@ -11,10 +11,10 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
 
 #include <asm/mach-types.h>
 

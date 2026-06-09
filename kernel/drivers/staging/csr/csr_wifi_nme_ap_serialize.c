@@ -9,8 +9,8 @@
 *****************************************************************************/
 
 /* Note: this is an auto-generated file. */
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <beep/string.h>
+#include <beep/slab.h>
 #include "csr_msgconv.h"
 
 #ifdef CSR_WIFI_NME_ENABLE

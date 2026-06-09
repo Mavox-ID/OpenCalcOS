@@ -1,7 +1,7 @@
 #ifndef _SPARC_SWAB_H
 #define _SPARC_SWAB_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/asi.h>
 
 #if defined(__sparc__) && defined(__arch64__)

@@ -1,17 +1,17 @@
 /*
- *  linux/arch/arm/mach-mmp/clock.c
+ *  beep/arch/arm/mach-mmp/clock.c
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License version 2 as
  *  published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/clk.h>
+#include <beep/io.h>
 
 #include <mach/regs-apbc.h>
 #include "clock.h"

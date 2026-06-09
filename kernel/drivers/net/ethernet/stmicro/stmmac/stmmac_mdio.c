@@ -24,9 +24,9 @@
   Maintainer: Giuseppe Cavallaro <peppe.cavallaro@st.com>
 *******************************************************************************/
 
-#include <linux/mii.h>
-#include <linux/phy.h>
-#include <linux/slab.h>
+#include <beep/mii.h>
+#include <beep/phy.h>
+#include <beep/slab.h>
 #include <asm/io.h>
 
 #include "stmmac.h"

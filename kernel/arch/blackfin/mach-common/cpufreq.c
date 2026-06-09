@@ -6,14 +6,14 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/clk.h>
+#include <beep/cpufreq.h>
+#include <beep/fs.h>
+#include <beep/delay.h>
 #include <asm/blackfin.h>
 #include <asm/time.h>
 #include <asm/dpmc.h>
@@ -250,7 +250,7 @@ static void __exit bfin_cpu_exit(void)
 	cpufreq_unregister_driver(&bfin_driver);
 }
 
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucbeep.org>");
 MODULE_DESCRIPTION("cpufreq driver for Blackfin");
 MODULE_LICENSE("GPL");
 

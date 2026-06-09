@@ -82,19 +82,19 @@
  * any (or all) other directions.
  */
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/srcu.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/kthread.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/srcu.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
-#include <linux/fsnotify_backend.h>
+#include <beep/fsnotify_backend.h>
 #include "fsnotify.h"
 
 struct srcu_struct fsnotify_mark_srcu;

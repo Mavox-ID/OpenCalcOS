@@ -11,14 +11,14 @@
  * kind, whether express or implied.
  */
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/of.h>
+#include <beep/err.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/ioport.h>
+#include <beep/of.h>
 
 #include <asm/io.h>
 #include <asm/mmu.h>

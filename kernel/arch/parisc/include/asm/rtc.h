@@ -4,7 +4,7 @@
  * Copyright 2002 Randolph CHung <tausq@debian.org>
  *
  * Based on: include/asm-ppc/rtc.h and the genrtc driver in the
- * 2.4 parisc linux tree
+ * 2.4 parisc beep tree
  */
 
 #ifndef __ASM_RTC_H__
@@ -12,7 +12,7 @@
 
 #ifdef __KERNEL__
 
-#include <linux/rtc.h>
+#include <beep/rtc.h>
 
 #include <asm/pdc.h>
 

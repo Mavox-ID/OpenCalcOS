@@ -1,12 +1,12 @@
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/workqueue.h>
-#include <linux/kfifo.h>
-#include <linux/mutex.h>
-#include <linux/iio/kfifo_buf.h>
-#include <linux/sched.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/workqueue.h>
+#include <beep/kfifo.h>
+#include <beep/mutex.h>
+#include <beep/iio/kfifo_buf.h>
+#include <beep/sched.h>
 
 struct iio_kfifo {
 	struct iio_buffer buffer;

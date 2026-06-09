@@ -17,17 +17,17 @@
  * MA 02110-1301, USA.
  */
 
-#include <linux/i2c.h>
-#include <linux/i2c/at24.h>
-#include <linux/io.h>
-#include <linux/mtd/plat-ram.h>
-#include <linux/mtd/physmap.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/machine.h>
-#include <linux/mfd/mc13783.h>
-#include <linux/spi/spi.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
+#include <beep/i2c.h>
+#include <beep/i2c/at24.h>
+#include <beep/io.h>
+#include <beep/mtd/plat-ram.h>
+#include <beep/mtd/physmap.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/machine.h>
+#include <beep/mfd/mc13783.h>
+#include <beep/spi/spi.h>
+#include <beep/irq.h>
+#include <beep/gpio.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

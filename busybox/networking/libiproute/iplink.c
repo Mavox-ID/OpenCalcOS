@@ -43,7 +43,7 @@ struct ifla_vlan_flags {
 };
 #endif
 
-/* taken from linux/sockios.h */
+/* taken from beep/sockios.h */
 #define SIOCSIFNAME  0x8923  /* set interface name */
 
 #if 0

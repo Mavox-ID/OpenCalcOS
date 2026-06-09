@@ -44,7 +44,7 @@
  * __always_inline to plain inline, but don't complain if the code
  * becomes slow.
  *
- * NOTE: System headers on GNU/Linux may #define this macro already,
+ * NOTE: System headers on GNU/Beep may #define this macro already,
  * so if you want to change it, you need to #undef it first.
  */
 #ifndef __always_inline

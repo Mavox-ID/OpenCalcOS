@@ -19,12 +19,12 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/string.h>
+#include <beep/uaccess.h>
 
 #include "masklog.h"
 

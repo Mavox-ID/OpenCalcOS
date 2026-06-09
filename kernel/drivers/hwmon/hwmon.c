@@ -1,5 +1,5 @@
 /*
- * hwmon.c - part of lm_sensors, Linux kernel modules for hardware monitoring
+ * hwmon.c - part of lm_sensors, Beep kernel modules for hardware monitoring
  *
  * This file defines the sysfs class "hwmon", for use by sensors drivers.
  *
@@ -12,15 +12,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/kdev_t.h>
-#include <linux/idr.h>
-#include <linux/hwmon.h>
-#include <linux/gfp.h>
-#include <linux/spinlock.h>
-#include <linux/pci.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/kdev_t.h>
+#include <beep/idr.h>
+#include <beep/hwmon.h>
+#include <beep/gfp.h>
+#include <beep/spinlock.h>
+#include <beep/pci.h>
 
 #define HWMON_ID_PREFIX "hwmon"
 #define HWMON_ID_FORMAT HWMON_ID_PREFIX "%d"

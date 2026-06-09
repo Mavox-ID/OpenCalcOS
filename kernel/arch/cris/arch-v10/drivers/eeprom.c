@@ -1,6 +1,6 @@
 /*!*****************************************************************************
 *!
-*!  Implements an interface for i2c compatible eeproms to run under Linux.
+*!  Implements an interface for i2c compatible eeproms to run under Beep.
 *!  Supports 2k, 8k(?) and 16k. Uses adaptive timing adjustments by
 *!  Johan.Adolfsson@axis.com
 *!
@@ -22,13 +22,13 @@
 *!        (c) 1999 Axis Communications AB, Lund, Sweden
 *!*****************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/wait.h>
 #include <asm/uaccess.h>
 #include "i2c.h"
 

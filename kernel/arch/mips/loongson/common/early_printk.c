@@ -9,7 +9,7 @@
  *  Free Software Foundation;  either version 2 of the  License, or (at your
  *  option) any later version.
  */
-#include <linux/serial_reg.h>
+#include <beep/serial_reg.h>
 
 #include <loongson.h>
 

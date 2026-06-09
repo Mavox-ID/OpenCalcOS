@@ -305,8 +305,8 @@ int cmd_probe(int argc, const char **argv, const char *prefix __maybe_unused)
 		     "Show accessible variables on PROBEDEF", opt_show_vars),
 	OPT_BOOLEAN('\0', "externs", &params.show_ext_vars,
 		    "Show external variables too (with --vars only)"),
-	OPT_STRING('k', "vmlinux", &symbol_conf.vmlinux_name,
-		   "file", "vmlinux pathname"),
+	OPT_STRING('k', "vmbeep", &symbol_conf.vmbeep_name,
+		   "file", "vmbeep pathname"),
 	OPT_STRING('s', "source", &symbol_conf.source_prefix,
 		   "directory", "path to kernel source"),
 	OPT_CALLBACK('m', "module", NULL, "modname|path",
@@ -353,7 +353,7 @@ int cmd_probe(int argc, const char **argv, const char *prefix __maybe_unused)
 	/*
 	 * Only consider the user's kernel image path if given.
 	 */
-	symbol_conf.try_vmlinux_path = (symbol_conf.vmlinux_name == NULL);
+	symbol_conf.try_vmbeep_path = (symbol_conf.vmbeep_name == NULL);
 
 	if (params.list_events) {
 		if (params.mod_events) {

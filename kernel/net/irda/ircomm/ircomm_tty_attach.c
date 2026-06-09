@@ -29,8 +29,8 @@
  *
  ********************************************************************/
 
-#include <linux/init.h>
-#include <linux/sched.h>
+#include <beep/init.h>
+#include <beep/sched.h>
 
 #include <net/irda/irda.h>
 #include <net/irda/irlmp.h>

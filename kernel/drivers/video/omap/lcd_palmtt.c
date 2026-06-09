@@ -25,9 +25,9 @@ GPIO12 - screen blanking
 GPIO13 - screen blanking
 */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
+#include <beep/io.h>
 
 #include <asm/gpio.h>
 #include "omapfb.h"

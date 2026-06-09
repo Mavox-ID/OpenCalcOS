@@ -20,12 +20,12 @@
  *   No. 450, Shenhu Road, Suzhou Industry Park, Suzhou, China
  */
 
-#include <linux/module.h>
-#include <linux/highmem.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/memstick.h>
-#include <linux/mfd/rtsx_pci.h>
+#include <beep/module.h>
+#include <beep/highmem.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/memstick.h>
+#include <beep/mfd/rtsx_pci.h>
 #include <asm/unaligned.h>
 
 struct realtek_pci_ms {

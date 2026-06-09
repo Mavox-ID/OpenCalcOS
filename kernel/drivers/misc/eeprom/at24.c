@@ -9,20 +9,20 @@
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
-#include <linux/mod_devicetable.h>
-#include <linux/log2.h>
-#include <linux/bitops.h>
-#include <linux/jiffies.h>
-#include <linux/of.h>
-#include <linux/i2c.h>
-#include <linux/i2c/at24.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/mutex.h>
+#include <beep/sysfs.h>
+#include <beep/mod_devicetable.h>
+#include <beep/log2.h>
+#include <beep/bitops.h>
+#include <beep/jiffies.h>
+#include <beep/of.h>
+#include <beep/i2c.h>
+#include <beep/i2c/at24.h>
 
 /*
  * I2C EEPROMs from most vendors are inexpensive and mostly interchangeable.
@@ -58,7 +58,7 @@ struct at24_data {
 	int use_smbus;
 
 	/*
-	 * Lock protects against activities from other Linux tasks,
+	 * Lock protects against activities from other Beep tasks,
 	 * but not from changes by other I2C masters.
 	 */
 	struct mutex lock;

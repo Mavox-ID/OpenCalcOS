@@ -12,23 +12,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/uio_driver.h>
-#include <linux/in.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/prefetch.h>
-#include <linux/random.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/uio_driver.h>
+#include <beep/in.h>
+#include <beep/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/ethtool.h>
+#include <beep/if_vlan.h>
+#include <beep/prefetch.h>
+#include <beep/random.h>
 #if defined(CONFIG_VLAN_8021Q) || defined(CONFIG_VLAN_8021Q_MODULE)
 #define BCM_VLAN 1
 #endif

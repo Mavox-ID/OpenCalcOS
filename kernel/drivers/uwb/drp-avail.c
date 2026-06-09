@@ -34,10 +34,10 @@
  * See also the documentation for struct uwb_drp_avail.
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/bitmap.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/bitmap.h>
 #include "uwb-internal.h"
 
 /**

@@ -7,24 +7,24 @@
  *
  * Copyright (C) 2007-2010 Silicon Graphics, Inc. All rights reserved.
  */
-#include <linux/cpumask.h>
-#include <linux/hardirq.h>
-#include <linux/proc_fs.h>
-#include <linux/threads.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/pci.h>
-#include <linux/kdebug.h>
-#include <linux/delay.h>
-#include <linux/crash_dump.h>
+#include <beep/cpumask.h>
+#include <beep/hardirq.h>
+#include <beep/proc_fs.h>
+#include <beep/threads.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
+#include <beep/slab.h>
+#include <beep/cpu.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/pci.h>
+#include <beep/kdebug.h>
+#include <beep/delay.h>
+#include <beep/crash_dump.h>
 
 #include <asm/uv/uv_mmrs.h>
 #include <asm/uv/uv_hub.h>

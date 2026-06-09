@@ -225,7 +225,7 @@ static inline void outsl(unsigned long addr, const void *buffer, int count)
 
 #ifdef __KERNEL__
 
-#include <linux/vmalloc.h>
+#include <beep/vmalloc.h>
 #define __io_virt(x) ((void *) (x))
 
 /* Create a virtual mapping cookie for a PCI BAR (memory or IO) */

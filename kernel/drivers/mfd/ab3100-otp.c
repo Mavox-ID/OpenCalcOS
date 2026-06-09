@@ -7,14 +7,14 @@
  * Author: Linus Walleij <linus.walleij@stericsson.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/abx500.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/mfd/abx500.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 
 /* The OTP registers */
 #define AB3100_OTP0		0xb0

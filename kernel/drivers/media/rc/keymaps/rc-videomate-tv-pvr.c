@@ -11,7 +11,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
 static struct rc_map_table videomate_tv_pvr[] = {
 	{ 0x14, KEY_MUTE },

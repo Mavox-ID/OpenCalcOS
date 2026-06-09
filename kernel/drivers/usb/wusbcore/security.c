@@ -22,11 +22,11 @@
  *
  * FIXME: docs
  */
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/usb/ch9.h>
-#include <linux/random.h>
-#include <linux/export.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/usb/ch9.h>
+#include <beep/random.h>
+#include <beep/export.h>
 #include "wusbhc.h"
 
 static void wusbhc_set_gtk_callback(struct urb *urb);

@@ -2,17 +2,17 @@
  * CPU subsystem support
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/cpu.h>
-#include <linux/topology.h>
-#include <linux/device.h>
-#include <linux/node.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/percpu.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/cpu.h>
+#include <beep/topology.h>
+#include <beep/device.h>
+#include <beep/node.h>
+#include <beep/gfp.h>
+#include <beep/slab.h>
+#include <beep/percpu.h>
 
 #include "base.h"
 
@@ -109,7 +109,7 @@ static inline void register_cpu_control(struct cpu *cpu)
 #endif /* CONFIG_HOTPLUG_CPU */
 
 #ifdef CONFIG_KEXEC
-#include <linux/kexec.h>
+#include <beep/kexec.h>
 
 static ssize_t show_crash_notes(struct device *dev, struct device_attribute *attr,
 				char *buf)
@@ -224,7 +224,7 @@ static void cpu_device_release(struct device *dev)
 	 * by the cpu device.
 	 *
 	 * Never copy this way of doing things, or you too will be made fun of
-	 * on the linux-kernel list, you have been warned.
+	 * on the beep-kernel list, you have been warned.
 	 */
 }
 

@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux IrDA IrNET protocol layer.
+# Makefile for the Beep IrDA IrNET protocol layer.
 #
 
 obj-$(CONFIG_IRNET) += irnet.o

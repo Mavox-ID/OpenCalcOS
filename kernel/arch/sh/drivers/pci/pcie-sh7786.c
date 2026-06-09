@@ -9,16 +9,16 @@
  */
 #define pr_fmt(fmt) "PCI: " fmt
 
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/async.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/sh_clk.h>
-#include <linux/sh_intc.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/async.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/clk.h>
+#include <beep/sh_clk.h>
+#include <beep/sh_intc.h>
 #include "pcie-sh7786.h"
 #include <asm/sizes.h>
 

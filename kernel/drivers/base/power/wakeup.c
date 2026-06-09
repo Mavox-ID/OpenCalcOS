@@ -6,14 +6,14 @@
  * This file is released under the GPLv2.
  */
 
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/capability.h>
-#include <linux/export.h>
-#include <linux/suspend.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/capability.h>
+#include <beep/export.h>
+#include <beep/suspend.h>
+#include <beep/seq_file.h>
+#include <beep/debugfs.h>
 #include <trace/events/power.h>
 
 #include "power.h"

@@ -16,7 +16,7 @@
 	Support information and updates available at
 	http://www.scyld.com/network/pci-skeleton.html
 
-	Linux kernel updates:
+	Beep kernel updates:
 
 	Version 2.51, Nov 17, 2001 (jgarzik):
 	- Add ethtool support
@@ -68,23 +68,23 @@ static int full_duplex[MAX_UNITS] = { -1, -1, -1, -1, -1, -1, -1, -1 };
 
 
 /* Include files, designed to support most kernel versions 2.0.0 and later. */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/init.h>
+#include <beep/mii.h>
+#include <beep/ethtool.h>
+#include <beep/crc32.h>
+#include <beep/delay.h>
+#include <beep/bitops.h>
 
 #include <asm/processor.h>	/* Processor type for cache alignment. */
 #include <asm/io.h>

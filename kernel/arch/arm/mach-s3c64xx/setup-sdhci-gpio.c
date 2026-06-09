@@ -1,8 +1,8 @@
-/* linux/arch/arm/plat-s3c64xx/setup-sdhci-gpio.c
+/* beep/arch/arm/plat-s3c64xx/setup-sdhci-gpio.c
  *
  * Copyright 2008 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *
  * S3C64XX - Helper functions for setting up SDHCI device(s) GPIO (HSMMC)
  *
@@ -11,12 +11,12 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
 
 #include <plat/gpio-cfg.h>
 #include <plat/sdhci.h>

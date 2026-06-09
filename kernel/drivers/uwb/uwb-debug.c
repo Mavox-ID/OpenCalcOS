@@ -24,16 +24,16 @@
  * FIXME: doc
  */
 
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/notifier.h>
-#include <linux/device.h>
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/seq_file.h>
+#include <beep/spinlock.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/notifier.h>
+#include <beep/device.h>
+#include <beep/debugfs.h>
+#include <beep/uaccess.h>
+#include <beep/seq_file.h>
 
-#include <linux/uwb/debug-cmd.h>
+#include <beep/uwb/debug-cmd.h>
 
 #include "uwb-internal.h"
 
@@ -42,7 +42,7 @@
  *
  * Per radio controller debugfs files (in uwb/uwbN/):
  *
- * command: Flexible command interface (see <linux/uwb/debug-cmd.h>).
+ * command: Flexible command interface (see <beep/uwb/debug-cmd.h>).
  *
  * reservations: information on reservations.
  *

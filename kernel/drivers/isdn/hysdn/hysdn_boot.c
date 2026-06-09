@@ -1,6 +1,6 @@
 /* $Id: hysdn_boot.c,v 1.4.6.4 2001/09/23 22:24:54 kai Exp $
  *
- * Linux driver for HYSDN cards
+ * Beep driver for HYSDN cards
  * specific routines for booting and pof handling
  *
  * Author    Werner Cornelius (werner@titro.de) for Hypercope GmbH
@@ -11,8 +11,8 @@
  *
  */
 
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
 
 #include "hysdn_defs.h"

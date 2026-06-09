@@ -7,24 +7,24 @@
 # as published by the Free Software Foundation; either version
 # 2 of the License, or (at your option) any later version.
 
-# This script checks the relcoations of a vmlinux for "suspicious"
+# This script checks the relcoations of a vmbeep for "suspicious"
 # relocations.
 
 use strict;
 use warnings;
 
 if ($#ARGV != 1) {
-	die "$0 [path to objdump] [path to vmlinux]\n";
+	die "$0 [path to objdump] [path to vmbeep]\n";
 }
 
 # Have Kbuild supply the path to objdump so we handle cross compilation.
 my $objdump = shift;
-my $vmlinux = shift;
+my $vmbeep = shift;
 my $bad_relocs_count = 0;
 my $bad_relocs = "";
 my $old_binutils = 0;
 
-open(FD, "$objdump -R $vmlinux|") or die;
+open(FD, "$objdump -R $vmbeep|") or die;
 while (<FD>) {
 	study $_;
 

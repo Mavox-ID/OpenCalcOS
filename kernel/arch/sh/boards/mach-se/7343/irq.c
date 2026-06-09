@@ -4,7 +4,7 @@
  * Copyright (C) 2008  Yoshihiro Shimoda
  * Copyright (C) 2012  Paul Mundt
  *
- * Based on linux/arch/sh/boards/se/7343/irq.c
+ * Based on beep/arch/sh/boards/se/7343/irq.c
  * Copyright (C) 2007  Nobuhiro Iwamatsu
  *
  * This file is subject to the terms and conditions of the GNU General Public
@@ -17,11 +17,11 @@
 #define irq_reg_readl	ioread16
 #define irq_reg_writel	iowrite16
 
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/irqdomain.h>
+#include <beep/io.h>
 #include <asm/sizes.h>
 #include <mach-se/mach/se7343.h>
 

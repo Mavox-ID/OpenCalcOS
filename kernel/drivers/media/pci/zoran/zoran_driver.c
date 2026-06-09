@@ -1,6 +1,6 @@
 /*
  * Zoran zr36057/zr36067 PCI controller driver, for the
- * Pinnacle/Miro DC10/DC10+/DC30/DC30+, Iomega Buz, Linux
+ * Pinnacle/Miro DC10/DC10+/DC30/DC30+, Iomega Buz, Beep
  * Media Labs LML33/LML33R10.
  *
  * Copyright (C) 2000 Serguei Miridonov <mirsev@cicese.mx>
@@ -9,7 +9,7 @@
  *
  * Changes for DC10/DC30 by Laurent Pinchart <laurent.pinchart@skynet.be>
  *
- * Changes for LML33R10 by Maxim Yevtyushkin <max@linuxmedialabs.com>
+ * Changes for LML33R10 by Maxim Yevtyushkin <max@beepmedialabs.com>
  *
  * Changes for videodev2/v4l2 by Ronald Bultje <rbultje@ronald.bitfreak.net>
  *
@@ -44,21 +44,21 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/vmalloc.h>
+#include <beep/wait.h>
 
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <beep/interrupt.h>
+#include <beep/i2c.h>
+#include <beep/i2c-algo-bit.h>
 
-#include <linux/spinlock.h>
+#include <beep/spinlock.h>
 
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
 #include "videocodec.h"
@@ -66,9 +66,9 @@
 #include <asm/byteorder.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>
-#include <linux/proc_fs.h>
+#include <beep/proc_fs.h>
 
-#include <linux/mutex.h>
+#include <beep/mutex.h>
 #include "zoran.h"
 #include "zoran_device.h"
 #include "zoran_card.h"

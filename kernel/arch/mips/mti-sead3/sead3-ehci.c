@@ -5,10 +5,10 @@
  *
  * Copyright (C) 2012 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/module.h>
-#include <linux/irq.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/irq.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
 
 struct resource ehci_resources[] = {
 	{

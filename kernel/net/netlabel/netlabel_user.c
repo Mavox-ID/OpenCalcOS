@@ -28,14 +28,14 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/socket.h>
-#include <linux/audit.h>
-#include <linux/tty.h>
-#include <linux/security.h>
-#include <linux/gfp.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/list.h>
+#include <beep/socket.h>
+#include <beep/audit.h>
+#include <beep/tty.h>
+#include <beep/security.h>
+#include <beep/gfp.h>
 #include <net/sock.h>
 #include <net/netlink.h>
 #include <net/genetlink.h>

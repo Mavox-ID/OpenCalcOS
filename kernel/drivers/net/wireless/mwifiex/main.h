@@ -20,18 +20,18 @@
 #ifndef _MWIFIEX_MAIN_H_
 #define _MWIFIEX_MAIN_H_
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/semaphore.h>
-#include <linux/ip.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/etherdevice.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/semaphore.h>
+#include <beep/ip.h>
+#include <beep/skbuff.h>
+#include <beep/if_arp.h>
+#include <beep/etherdevice.h>
 #include <net/sock.h>
 #include <net/lib80211.h>
-#include <linux/firmware.h>
-#include <linux/ctype.h>
+#include <beep/firmware.h>
+#include <beep/ctype.h>
 
 #include "decl.h"
 #include "ioctl.h"

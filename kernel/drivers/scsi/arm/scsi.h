@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/acorn/scsi/scsi.h
+ *  beep/drivers/acorn/scsi/scsi.h
  *
  *  Copyright (C) 2002 Russell King
  *
@@ -10,7 +10,7 @@
  *  Commonly used scsi driver functions.
  */
 
-#include <linux/scatterlist.h>
+#include <beep/scatterlist.h>
 
 #define BELT_AND_BRACES
 

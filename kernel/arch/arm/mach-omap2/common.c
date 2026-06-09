@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/common.c
+ * beep/arch/arm/mach-omap2/common.c
  *
  * Code common to all OMAP2+ machines.
  *
@@ -12,9 +12,9 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_data/dsp-omap.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_data/dsp-omap.h>
 
 #include "common.h"
 #include "omap-secure.h"

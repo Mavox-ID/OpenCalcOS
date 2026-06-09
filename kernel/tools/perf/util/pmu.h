@@ -1,8 +1,8 @@
 #ifndef __PMU_H
 #define __PMU_H
 
-#include <linux/bitops.h>
-#include <linux/perf_event.h>
+#include <beep/bitops.h>
+#include <beep/perf_event.h>
 
 enum {
 	PERF_PMU_FORMAT_VALUE_CONFIG,

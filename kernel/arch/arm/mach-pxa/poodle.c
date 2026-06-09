@@ -1,10 +1,10 @@
 /*
- * linux/arch/arm/mach-pxa/poodle.c
+ * beep/arch/arm/mach-pxa/poodle.c
  *
  *  Support for the SHARP Poodle Board.
  *
  * Based on:
- *  linux/arch/arm/mach-pxa/lubbock.c Author:	Nicolas Pitre
+ *  beep/arch/arm/mach-pxa/lubbock.c Author:	Nicolas Pitre
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License version 2 as
@@ -14,21 +14,21 @@
  *  12-Dec-2002 Sharp Corporation for Poodle
  *  John Lenz <lenz@cs.wisc.edu> updates to 2.6
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
-#include <linux/pm.h>
-#include <linux/delay.h>
-#include <linux/mtd/physmap.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/i2c/pxa-i2c.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/ads7846.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/mtd/sharpsl.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/platform_device.h>
+#include <beep/fb.h>
+#include <beep/pm.h>
+#include <beep/delay.h>
+#include <beep/mtd/physmap.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/i2c/pxa-i2c.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/ads7846.h>
+#include <beep/spi/pxa2xx_spi.h>
+#include <beep/mtd/sharpsl.h>
 
 #include <mach/hardware.h>
 #include <asm/mach-types.h>
@@ -40,11 +40,11 @@
 #include <asm/mach/irq.h>
 
 #include <mach/pxa25x.h>
-#include <linux/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/mmc-pxamci.h>
 #include <mach/udc.h>
-#include <linux/platform_data/irda-pxaficp.h>
+#include <beep/platform_data/irda-pxaficp.h>
 #include <mach/poodle.h>
-#include <linux/platform_data/video-pxafb.h>
+#include <beep/platform_data/video-pxafb.h>
 
 #include <asm/hardware/scoop.h>
 #include <asm/hardware/locomo.h>

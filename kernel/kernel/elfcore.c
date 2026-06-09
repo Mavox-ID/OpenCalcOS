@@ -1,6 +1,6 @@
-#include <linux/elf.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
+#include <beep/elf.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
 
 #include <asm/elf.h>
 

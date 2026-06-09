@@ -6,8 +6,8 @@
  * Released under the terms of the GNU GPL v2.0.
  */
 
-#include <linux/init.h>
-#include <linux/mm.h>
+#include <beep/init.h>
+#include <beep/mm.h>
 
 #include <asm/cache.h>
 #include <asm/addrspace.h>

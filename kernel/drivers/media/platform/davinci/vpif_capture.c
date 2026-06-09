@@ -18,22 +18,22 @@
  * TODO : add support for VBI & HBI data service
  *	  add static buffer allocation
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/string.h>
-#include <linux/videodev2.h>
-#include <linux/wait.h>
-#include <linux/time.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/workqueue.h>
+#include <beep/string.h>
+#include <beep/videodev2.h>
+#include <beep/wait.h>
+#include <beep/time.h>
+#include <beep/i2c.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-chip-ident.h>

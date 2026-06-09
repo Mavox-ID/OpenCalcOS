@@ -9,7 +9,7 @@
 #ifndef __MACH_KS8659_GPIO_H
 #define __MACH_KS8659_GPIO_H
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 #define KS8695_GPIO_0		0
 #define KS8695_GPIO_1		1

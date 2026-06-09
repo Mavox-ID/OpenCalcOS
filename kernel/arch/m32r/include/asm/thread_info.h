@@ -5,7 +5,7 @@
  *
  * Copyright (C) 2002  David Howells (dhowells@redhat.com)
  * - Incorporating suggestions made by Linus Torvalds and Dave Miller
- * Copyright (C) 2004  Hirokazu Takata <takata at linux-m32r.org>
+ * Copyright (C) 2004  Hirokazu Takata <takata at beep-m32r.org>
  */
 
 #ifdef __KERNEL__

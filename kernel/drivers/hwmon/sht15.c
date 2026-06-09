@@ -1,9 +1,9 @@
 /*
  * sht15.c - support for the SHT15 Temperature and Humidity Sensor
  *
- * Portions Copyright (c) 2010-2012 Savoir-faire Linux Inc.
- *          Jerome Oufella <jerome.oufella@savoirfairelinux.com>
- *          Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+ * Portions Copyright (c) 2010-2012 Savoir-faire Beep Inc.
+ *          Jerome Oufella <jerome.oufella@savoirfairebeep.com>
+ *          Vivien Didelot <vivien.didelot@savoirfairebeep.com>
  *
  * Copyright (c) 2009 Jonathan Cameron
  *
@@ -16,23 +16,23 @@
  * For further information, see the Documentation/hwmon/sht15 file.
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/mutex.h>
-#include <linux/platform_data/sht15.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/err.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/gpio.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/mutex.h>
+#include <beep/platform_data/sht15.h>
+#include <beep/platform_device.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/jiffies.h>
+#include <beep/err.h>
+#include <beep/regulator/consumer.h>
+#include <beep/slab.h>
+#include <beep/atomic.h>
 
 /* Commands */
 #define SHT15_MEASURE_TEMP		0x03

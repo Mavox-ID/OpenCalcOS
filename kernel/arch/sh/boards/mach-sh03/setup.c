@@ -1,15 +1,15 @@
 /*
- * linux/arch/sh/boards/sh03/setup.c
+ * beep/arch/sh/boards/sh03/setup.c
  *
  * Copyright (C) 2004  Interface Co.,Ltd. Saito.K
  *
  */
 
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/pci.h>
+#include <beep/platform_device.h>
+#include <beep/ata_platform.h>
 #include <asm/io.h>
 #include <asm/rtc.h>
 #include <mach-sh03/mach/io.h>

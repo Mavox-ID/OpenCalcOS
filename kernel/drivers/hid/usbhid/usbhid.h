@@ -24,14 +24,14 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/timer.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
-#include <linux/input.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/timer.h>
+#include <beep/wait.h>
+#include <beep/workqueue.h>
+#include <beep/input.h>
 
 /*  API provided by hid-core.c for USB HID drivers */
 int usbhid_wait_io(struct hid_device* hid);

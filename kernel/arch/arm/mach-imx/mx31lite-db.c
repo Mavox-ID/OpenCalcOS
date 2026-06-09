@@ -20,12 +20,12 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/gpio.h>
+#include <beep/leds.h>
+#include <beep/platform_device.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

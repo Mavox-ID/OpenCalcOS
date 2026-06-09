@@ -43,7 +43,7 @@ static inline int __attribute__ ((format (printf, 1, 2))) DBG(
 BSS_STACK(4096);
 
 /* A buffer that may be edited by tools operating on a zImage binary so as to
- * edit the command line passed to vmlinux (by setting /chosen/bootargs).
+ * edit the command line passed to vmbeep (by setting /chosen/bootargs).
  * The buffer is put in it's own section so that tools may locate it easier.
  */
 
@@ -141,8 +141,8 @@ void platform_init(unsigned long null_check)
 	dt_fixup_memory(0, rm_size);
 
 	if (_initrd_end > _initrd_start) {
-		setprop_val(chosen, "linux,initrd-start", (u32)(_initrd_start));
-		setprop_val(chosen, "linux,initrd-end", (u32)(_initrd_end));
+		setprop_val(chosen, "beep,initrd-start", (u32)(_initrd_start));
+		setprop_val(chosen, "beep,initrd-end", (u32)(_initrd_end));
 	}
 
 	prep_cmdline(chosen);

@@ -10,13 +10,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/gpio.h>
-#include <linux/i2c/twl.h>
-#include <linux/mtd/nand.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/input.h>
+#include <beep/gpio.h>
+#include <beep/i2c/twl.h>
+#include <beep/mtd/nand.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

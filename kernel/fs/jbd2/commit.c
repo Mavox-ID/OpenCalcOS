@@ -1,11 +1,11 @@
 /*
- * linux/fs/jbd2/commit.c
+ * beep/fs/jbd2/commit.c
  *
  * Written by Stephen C. Tweedie <sct@redhat.com>, 1998
  *
  * Copyright 1998 Red Hat corp --- All Rights Reserved
  *
- * This file is part of the Linux kernel and is made available under
+ * This file is part of the Beep kernel and is made available under
  * the terms of the GNU General Public License, version 2, or at your
  * option, any later version, incorporated herein by reference.
  *
@@ -13,20 +13,20 @@
  * part of the ext2fs journaling system.
  */
 
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/jbd2.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/jiffies.h>
-#include <linux/crc32.h>
-#include <linux/writeback.h>
-#include <linux/backing-dev.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/bitops.h>
+#include <beep/time.h>
+#include <beep/fs.h>
+#include <beep/jbd2.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/pagemap.h>
+#include <beep/jiffies.h>
+#include <beep/crc32.h>
+#include <beep/writeback.h>
+#include <beep/backing-dev.h>
+#include <beep/bio.h>
+#include <beep/blkdev.h>
+#include <beep/bitops.h>
 #include <trace/events/jbd2.h>
 
 /*

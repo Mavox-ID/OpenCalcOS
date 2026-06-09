@@ -18,8 +18,8 @@
 #ifndef __XFS_SUPPORT_TIME_H__
 #define __XFS_SUPPORT_TIME_H__
 
-#include <linux/sched.h>
-#include <linux/time.h>
+#include <beep/sched.h>
+#include <beep/time.h>
 
 typedef struct timespec timespec_t;
 

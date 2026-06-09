@@ -1,9 +1,9 @@
-#include <linux/kernel.h>
-#include <linux/smp.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/smp.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/cpufreq.h>
+#include <beep/slab.h>
 
 #include "mperf.h"
 

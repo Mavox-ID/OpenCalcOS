@@ -7,11 +7,11 @@
  * Copyright (C) 2008-2011 Florian Fainelli <florian@openwrt.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
 
 #include <bcm63xx_cpu.h>
 #include <bcm63xx_gpio.h>

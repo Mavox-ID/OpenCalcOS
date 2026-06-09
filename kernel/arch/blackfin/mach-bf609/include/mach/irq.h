@@ -293,7 +293,7 @@
 #define SEC_SCTL_PRIO_OFFSET	8
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <beep/types.h>
 
 extern u8 sec_int_priority[];
 

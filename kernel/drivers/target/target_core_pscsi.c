@@ -1,7 +1,7 @@
 /*******************************************************************************
  * Filename:  target_core_pscsi.c
  *
- * This file contains the generic target mode <-> Linux SCSI subsystem plugin.
+ * This file contains the generic target mode <-> Beep SCSI subsystem plugin.
  *
  * (c) Copyright 2003-2012 RisingTide Systems LLC.
  *
@@ -23,17 +23,17 @@
  *
  ******************************************************************************/
 
-#include <linux/string.h>
-#include <linux/parser.h>
-#include <linux/timer.h>
-#include <linux/blkdev.h>
-#include <linux/blk_types.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/genhd.h>
-#include <linux/cdrom.h>
-#include <linux/ratelimit.h>
-#include <linux/module.h>
+#include <beep/string.h>
+#include <beep/parser.h>
+#include <beep/timer.h>
+#include <beep/blkdev.h>
+#include <beep/blk_types.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/genhd.h>
+#include <beep/cdrom.h>
+#include <beep/ratelimit.h>
+#include <beep/module.h>
 #include <asm/unaligned.h>
 
 #include <scsi/scsi.h>
@@ -497,7 +497,7 @@ static int pscsi_configure_device(struct se_device *dev)
 		}
 		/*
 		 * If no scsi_host_id= was passed for PHV_VIRTUAL_HOST_ID,
-		 * use the original TCM hba ID to reference Linux/SCSI Host No
+		 * use the original TCM hba ID to reference Beep/SCSI Host No
 		 * and enable for PHV_LLD_SCSI_HOST_NO mode.
 		 */
 		if (!(pdv->pdv_flags & PDF_HAS_VIRT_HOST_ID)) {
@@ -1184,7 +1184,7 @@ static void pscsi_module_exit(void)
 }
 
 MODULE_DESCRIPTION("TCM PSCSI subsystem plugin");
-MODULE_AUTHOR("nab@Linux-iSCSI.org");
+MODULE_AUTHOR("nab@Beep-iSCSI.org");
 MODULE_LICENSE("GPL");
 
 module_init(pscsi_module_init);

@@ -1,7 +1,7 @@
 /*
  * ELF definitions for the Hexagon architecture
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -25,7 +25,7 @@
 #include <asm/user.h>
 
 /*
- * This should really be in linux/elf-em.h.
+ * This should really be in beep/elf-em.h.
  */
 #define EM_HEXAGON	164   /* QUALCOMM Hexagon */
 
@@ -218,12 +218,12 @@ do {					\
 
 #ifdef __KERNEL__
 #define SET_PERSONALITY(ex) \
-	set_personality(PER_LINUX | (current->personality & (~PER_MASK)))
+	set_personality(PER_BEEP | (current->personality & (~PER_MASK)))
 #endif
 
 #define ARCH_HAS_SETUP_ADDITIONAL_PAGES 1
-struct linux_binprm;
-extern int arch_setup_additional_pages(struct linux_binprm *bprm,
+struct beep_binprm;
+extern int arch_setup_additional_pages(struct beep_binprm *bprm,
 				       int uses_interp);
 
 

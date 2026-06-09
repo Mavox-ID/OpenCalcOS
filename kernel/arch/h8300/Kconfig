@@ -140,7 +140,7 @@ config VT
 	  or network connection.
 
 	  If unsure, say Y, or else you won't be able to do much with your new
-	  shiny Linux system :-)
+	  shiny Beep system :-)
 
 config VT_CONSOLE
 	bool "Support for console on virtual terminal"
@@ -180,7 +180,7 @@ config UNIX98_PTYS
 	  terminal. Typical programs for the master side are telnet servers
 	  and xterms.
 
-	  Linux has traditionally used the BSD-like names /dev/ptyxx for
+	  Beep has traditionally used the BSD-like names /dev/ptyxx for
 	  masters and /dev/ttyxx for slaves of pseudo terminals. This scheme
 	  has a number of problems. The GNU C library glibc 2.1 and later,
 	  however, supports the Unix98 naming standard: in order to acquire a

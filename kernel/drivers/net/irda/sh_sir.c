@@ -12,11 +12,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 #include <net/irda/wrapper.h>
 #include <net/irda/irda_device.h>
 #include <asm/clock.h>

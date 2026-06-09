@@ -17,15 +17,15 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/input.h>
-#include <linux/of.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/input/matrix_keypad.h>
+#include <beep/device.h>
+#include <beep/gfp.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/input.h>
+#include <beep/of.h>
+#include <beep/export.h>
+#include <beep/module.h>
+#include <beep/input/matrix_keypad.h>
 
 static bool matrix_keypad_map_key(struct input_dev *input_dev,
 				  unsigned int rows, unsigned int cols,
@@ -65,7 +65,7 @@ static int matrix_keypad_parse_of_keymap(const char *propname,
 		return -ENOENT;
 
 	if (!propname)
-		propname = "linux,keymap";
+		propname = "beep,keymap";
 
 	prop = of_get_property(np, propname, &proplen);
 	if (!prop) {
@@ -122,7 +122,7 @@ static int matrix_keypad_parse_of_keymap(const char *propname,
  *
  * If @keymap_data is not supplied and device tree support is enabled
  * it will attempt load the keymap from property specified by @keymap_name
- * argument (or "linux,keymap" if @keymap_name is %NULL).
+ * argument (or "beep,keymap" if @keymap_name is %NULL).
  *
  * If @keymap is %NULL the function will automatically allocate managed
  * block of memory to store the keymap. This memory will be associated with

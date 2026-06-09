@@ -1,8 +1,8 @@
 #
-# Makefile for the Linux/MIPS kernel.
+# Makefile for the Beep/MIPS kernel.
 #
 
-extra-y		:= head.o vmlinux.lds
+extra-y		:= head.o vmbeep.lds
 
 obj-y		+= cpu-probe.o branch.o entry.o genex.o irq.o process.o \
 		   ptrace.o reset.o setup.o signal.o syscall.o \
@@ -66,7 +66,7 @@ obj-$(CONFIG_IRQ_GIC)		+= irq-gic.o
 obj-$(CONFIG_KPROBES)		+= kprobes.o
 obj-$(CONFIG_32BIT)		+= scall32-o32.o
 obj-$(CONFIG_64BIT)		+= scall64-64.o
-obj-$(CONFIG_MIPS32_COMPAT)	+= linux32.o ptrace32.o signal32.o
+obj-$(CONFIG_MIPS32_COMPAT)	+= beep32.o ptrace32.o signal32.o
 obj-$(CONFIG_MIPS32_N32)	+= binfmt_elfn32.o scall64-n32.o signal_n32.o
 obj-$(CONFIG_MIPS32_O32)	+= binfmt_elfo32.o scall64-o32.o
 
@@ -98,4 +98,4 @@ obj-$(CONFIG_HW_PERF_EVENTS)	+= perf_event_mipsxx.o
 
 obj-$(CONFIG_JUMP_LABEL)	+= jump_label.o
 
-CPPFLAGS_vmlinux.lds		:= $(KBUILD_CFLAGS)
+CPPFLAGS_vmbeep.lds		:= $(KBUILD_CFLAGS)

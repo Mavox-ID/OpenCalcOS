@@ -4,11 +4,11 @@
  * Brian Murphy <brian.murphy@eicon.com>
  *
  */
-#include <linux/kernel.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
 #include <asm/lasat/lasat.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/init.h>
 
 #include "at93c.h"
 

@@ -7,7 +7,7 @@
  * mode at this point.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/page_types.h>
 
 /*
@@ -25,7 +25,7 @@
 .text
 ENTRY(efi_call_phys)
 	/*
-	 * 0. The function can only be called in Linux kernel. So CS has been
+	 * 0. The function can only be called in Beep kernel. So CS has been
 	 * set to 0x0010, DS and SS have been set to 0x0018. In EFI, I found
 	 * the values of these registers are the same. And, the corresponding
 	 * GDT entries are identical. So I will do nothing about segment reg

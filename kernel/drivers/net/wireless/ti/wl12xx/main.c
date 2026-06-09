@@ -19,12 +19,12 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
 
-#include <linux/err.h>
+#include <beep/err.h>
 
-#include <linux/wl12xx.h>
+#include <beep/wl12xx.h>
 
 #include "../wlcore/wlcore.h"
 #include "../wlcore/debug.h"

@@ -23,11 +23,11 @@
  * 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/elfcore.h>
-#include <linux/pm.h>
-#include <linux/rcupdate.h>
+#include <beep/module.h>
+#include <beep/reboot.h>
+#include <beep/elfcore.h>
+#include <beep/pm.h>
+#include <beep/rcupdate.h>
 
 void (*pm_power_off)(void);
 EXPORT_SYMBOL(pm_power_off);

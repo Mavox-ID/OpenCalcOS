@@ -11,15 +11,15 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/usb/otg.h>
-#include <linux/stmp_device.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/usb/otg.h>
+#include <beep/stmp_device.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/io.h>
 
 #define DRIVER_NAME "mxs_phy"
 

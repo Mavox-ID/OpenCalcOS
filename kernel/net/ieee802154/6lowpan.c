@@ -50,11 +50,11 @@
  * SUCH DAMAGE.
  */
 
-#include <linux/bitops.h>
-#include <linux/if_arp.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/netdevice.h>
+#include <beep/bitops.h>
+#include <beep/if_arp.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/netdevice.h>
 #include <net/af_ieee802154.h>
 #include <net/ieee802154.h>
 #include <net/ieee802154_netdev.h>

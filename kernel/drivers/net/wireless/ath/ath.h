@@ -17,9 +17,9 @@
 #ifndef ATH_H
 #define ATH_H
 
-#include <linux/skbuff.h>
-#include <linux/if_ether.h>
-#include <linux/spinlock.h>
+#include <beep/skbuff.h>
+#include <beep/if_ether.h>
+#include <beep/spinlock.h>
 #include <net/mac80211.h>
 
 /*

@@ -2,15 +2,15 @@
  * \file drm_bufs.c
  * Generic buffer template
  *
- * \author Rickard E. (Rik) Faith <faith@valinux.com>
- * \author Gareth Hughes <gareth@valinux.com>
+ * \author Rickard E. (Rik) Faith <faith@vabeep.com>
+ * \author Gareth Hughes <gareth@vabeep.com>
  */
 
 /*
- * Created: Thu Nov 23 03:10:50 2000 by gareth@valinux.com
+ * Created: Thu Nov 23 03:10:50 2000 by gareth@vabeep.com
  *
  * Copyright 1999, 2000 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA Beep Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -27,16 +27,16 @@
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
- * VA LINUX SYSTEMS AND/OR ITS SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+ * VA BEEP SYSTEMS AND/OR ITS SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
  * OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/log2.h>
-#include <linux/export.h>
+#include <beep/vmalloc.h>
+#include <beep/slab.h>
+#include <beep/log2.h>
+#include <beep/export.h>
 #include <asm/shmparam.h>
 #include <drm/drmP.h>
 

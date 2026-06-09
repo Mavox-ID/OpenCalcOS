@@ -1,7 +1,7 @@
-/* linux/arch/arm/plat-s3c24xx/simtec-audio.c
+/* beep/arch/arm/plat-s3c24xx/simtec-audio.c
  *
  * Copyright (c) 2009 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * Audio setup for various Simtec S3C24XX implementations
@@ -11,11 +11,11 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/io.h>
 
 #include <mach/bast-map.h>
 #include <mach/bast-irq.h>
@@ -24,7 +24,7 @@
 #include <mach/hardware.h>
 #include <mach/regs-gpio.h>
 
-#include <linux/platform_data/asoc-s3c24xx_simtec.h>
+#include <beep/platform_data/asoc-s3c24xx_simtec.h>
 #include <plat/devs.h>
 
 #include "simtec.h"

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/cris/mm/init.c
+ *  beep/arch/cris/mm/init.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  *  Copyright (C) 2000,2001  Axis Communications AB
@@ -8,9 +8,9 @@
  *
  */
 
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
+#include <beep/gfp.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
 #include <asm/tlb.h>
 
 unsigned long empty_zero_page;

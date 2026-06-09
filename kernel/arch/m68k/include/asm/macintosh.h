@@ -1,8 +1,8 @@
 #ifndef __ASM_MACINTOSH_H
 #define __ASM_MACINTOSH_H
 
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
+#include <beep/seq_file.h>
+#include <beep/interrupt.h>
 
 /*
  *	Apple Macintoshisms

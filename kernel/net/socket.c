@@ -58,37 +58,37 @@
  *	Based upon Swansea University Computer Society NET3.039
  */
 
-#include <linux/mm.h>
-#include <linux/socket.h>
-#include <linux/file.h>
-#include <linux/net.h>
-#include <linux/interrupt.h>
-#include <linux/thread_info.h>
-#include <linux/rcupdate.h>
-#include <linux/netdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/mutex.h>
-#include <linux/wanrouter.h>
-#include <linux/if_bridge.h>
-#include <linux/if_frad.h>
-#include <linux/if_vlan.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/cache.h>
-#include <linux/module.h>
-#include <linux/highmem.h>
-#include <linux/mount.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/compat.h>
-#include <linux/kmod.h>
-#include <linux/audit.h>
-#include <linux/wireless.h>
-#include <linux/nsproxy.h>
-#include <linux/magic.h>
-#include <linux/slab.h>
-#include <linux/xattr.h>
+#include <beep/mm.h>
+#include <beep/socket.h>
+#include <beep/file.h>
+#include <beep/net.h>
+#include <beep/interrupt.h>
+#include <beep/thread_info.h>
+#include <beep/rcupdate.h>
+#include <beep/netdevice.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/mutex.h>
+#include <beep/wanrouter.h>
+#include <beep/if_bridge.h>
+#include <beep/if_frad.h>
+#include <beep/if_vlan.h>
+#include <beep/init.h>
+#include <beep/poll.h>
+#include <beep/cache.h>
+#include <beep/module.h>
+#include <beep/highmem.h>
+#include <beep/mount.h>
+#include <beep/security.h>
+#include <beep/syscalls.h>
+#include <beep/compat.h>
+#include <beep/kmod.h>
+#include <beep/audit.h>
+#include <beep/wireless.h>
+#include <beep/nsproxy.h>
+#include <beep/magic.h>
+#include <beep/slab.h>
+#include <beep/xattr.h>
 
 #include <asm/uaccess.h>
 #include <asm/unistd.h>
@@ -98,13 +98,13 @@
 #include <net/cls_cgroup.h>
 
 #include <net/sock.h>
-#include <linux/netfilter.h>
+#include <beep/netfilter.h>
 
-#include <linux/if_tun.h>
-#include <linux/ipv6_route.h>
-#include <linux/route.h>
-#include <linux/sockios.h>
-#include <linux/atalk.h>
+#include <beep/if_tun.h>
+#include <beep/ipv6_route.h>
+#include <beep/route.h>
+#include <beep/sockios.h>
+#include <beep/atalk.h>
 
 static int sock_no_open(struct inode *irrelevant, struct file *dontcare);
 static ssize_t sock_aio_read(struct kiocb *iocb, const struct iovec *iov,
@@ -2112,7 +2112,7 @@ out:
 }
 
 /*
- *	Linux sendmmsg interface
+ *	Beep sendmmsg interface
  */
 
 int __sys_sendmmsg(int fd, struct mmsghdr __user *mmsg, unsigned int vlen,
@@ -2286,7 +2286,7 @@ out:
 }
 
 /*
- *     Linux recvmmsg interface
+ *     Beep recvmmsg interface
  */
 
 int __sys_recvmmsg(int fd, struct mmsghdr __user *mmsg, unsigned int vlen,

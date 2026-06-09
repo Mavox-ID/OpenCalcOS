@@ -7,13 +7,13 @@
  * Licensed under GPLv2 or later.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
 
 #define SIRFSOC_CPUIOBRG_CTRL           0x00
 #define SIRFSOC_CPUIOBRG_WRBE           0x04

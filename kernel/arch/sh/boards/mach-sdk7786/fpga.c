@@ -7,9 +7,9 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/bcd.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/bcd.h>
 #include <mach/fpga.h>
 #include <asm/sizes.h>
 

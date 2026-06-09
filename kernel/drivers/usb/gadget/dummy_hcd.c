@@ -15,34 +15,34 @@
 
 /*
  * This exposes a device side "USB gadget" API, driven by requests to a
- * Linux-USB host controller driver.  USB traffic is simulated; there's
+ * Beep-USB host controller driver.  USB traffic is simulated; there's
  * no need for USB hardware.  Use this with two other drivers:
  *
  *  - Gadget driver, responding to requests (slave);
- *  - Host-side device driver, as already familiar in Linux.
+ *  - Host-side device driver, as already familiar in Beep.
  *
  * Having this all in one kernel can help some stages of development,
  * bypassing some hardware (and driver) issues.  UML could help too.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/usb.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/hcd.h>
-#include <linux/scatterlist.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/timer.h>
+#include <beep/list.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/usb.h>
+#include <beep/usb/gadget.h>
+#include <beep/usb/hcd.h>
+#include <beep/scatterlist.h>
 
 #include <asm/byteorder.h>
-#include <linux/io.h>
+#include <beep/io.h>
 #include <asm/irq.h>
 #include <asm/unaligned.h>
 

@@ -1,8 +1,8 @@
 /******************************************************************************
- * linux/arch/ia64/xen/paravirtentry.S
+ * beep/arch/ia64/xen/paravirtentry.S
  *
- * Copyright (c) 2008 Isaku Yamahata <yamahata at valinux co jp>
- *                    VA Linux Systems Japan K.K.
+ * Copyright (c) 2008 Isaku Yamahata <yamahata at vabeep co jp>
+ *                    VA Beep Systems Japan K.K.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
  *
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include <asm/asmmacro.h>
 #include <asm/asm-offsets.h>
 #include <asm/paravirt_privop.h>

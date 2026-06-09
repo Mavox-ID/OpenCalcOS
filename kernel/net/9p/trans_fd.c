@@ -1,5 +1,5 @@
 /*
- * linux/fs/9p/trans_fd.c
+ * beep/fs/9p/trans_fd.c
  *
  * Fd transport layer.  Includes deprecated socket layer.
  *
@@ -27,25 +27,25 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/in.h>
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/ipv6.h>
-#include <linux/kthread.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/un.h>
-#include <linux/uaccess.h>
-#include <linux/inet.h>
-#include <linux/idr.h>
-#include <linux/file.h>
-#include <linux/parser.h>
-#include <linux/slab.h>
+#include <beep/in.h>
+#include <beep/module.h>
+#include <beep/net.h>
+#include <beep/ipv6.h>
+#include <beep/kthread.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/un.h>
+#include <beep/uaccess.h>
+#include <beep/inet.h>
+#include <beep/idr.h>
+#include <beep/file.h>
+#include <beep/parser.h>
+#include <beep/slab.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 #include <net/9p/transport.h>
 
-#include <linux/syscalls.h> /* killme */
+#include <beep/syscalls.h> /* killme */
 
 #define P9_PORT 564
 #define MAX_SOCK_BUF (64*1024)

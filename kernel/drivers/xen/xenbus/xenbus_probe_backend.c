@@ -9,7 +9,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the Beep kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -35,14 +35,14 @@
 	pr_debug("xenbus_probe (%s:%d) " fmt ".\n",	\
 		 __func__, __LINE__, ##args)
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/notifier.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/fcntl.h>
+#include <beep/mm.h>
+#include <beep/notifier.h>
+#include <beep/export.h>
 
 #include <asm/page.h>
 #include <asm/pgtable.h>

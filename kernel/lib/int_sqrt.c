@@ -1,6 +1,6 @@
 
-#include <linux/kernel.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
 
 /**
  * int_sqrt - rough approximation to sqrt

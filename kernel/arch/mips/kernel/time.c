@@ -10,18 +10,18 @@
  * Free Software Foundation;  either version 2 of the  License, or (at your
  * option) any later version.
  */
-#include <linux/bug.h>
-#include <linux/clockchips.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/param.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
+#include <beep/bug.h>
+#include <beep/clockchips.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/param.h>
+#include <beep/time.h>
+#include <beep/timex.h>
+#include <beep/smp.h>
+#include <beep/spinlock.h>
+#include <beep/export.h>
 
 #include <asm/cpu-features.h>
 #include <asm/div64.h>

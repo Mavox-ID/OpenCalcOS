@@ -11,7 +11,7 @@
  */
 
 /*
- * We always define HW_PAGE_SHIFT to 12 as use of 64K pages remains Linux
+ * We always define HW_PAGE_SHIFT to 12 as use of 64K pages remains Beep
  * specific, every notion of page number shared with the firmware, TCEs,
  * iommu, etc... still uses a page size of 4K.
  */

@@ -11,10 +11,10 @@
  *
  * See the GNU General Public License for more details.
  */
-#include <linux/timer.h>
+#include <beep/timer.h>
 #include <net/llc_if.h>
 #include <net/sock.h>
-#include <linux/llc.h>
+#include <beep/llc.h>
 
 #define LLC_EVENT                1
 #define LLC_PACKET               2

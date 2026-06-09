@@ -13,7 +13,7 @@
 
 #define pr_fmt(fmt) "UDPLite: " fmt
 
-#include <linux/export.h>
+#include <beep/export.h>
 #include "udp_impl.h"
 
 struct udp_table 	udplite_table __read_mostly;

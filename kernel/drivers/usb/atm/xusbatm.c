@@ -19,8 +19,8 @@
  *
  ******************************************************************************/
 
-#include <linux/module.h>
-#include <linux/etherdevice.h>		/* for eth_random_addr() */
+#include <beep/module.h>
+#include <beep/etherdevice.h>		/* for eth_random_addr() */
 
 #include "usbatm.h"
 

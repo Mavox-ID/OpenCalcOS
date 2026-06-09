@@ -16,14 +16,14 @@
  * Free Software Foundation; either version 2 of the
  * License, or (at your option) any later version
  */
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/timer.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/fs.h>
+#include <beep/timer.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 
-#include <linux/platform_device.h>
+#include <beep/platform_device.h>
 #include <media/v4l2-mem2mem.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>

@@ -7,12 +7,12 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/parser.h>
-#include <linux/fs.h>
-#include <linux/res_counter.h>
-#include <linux/uaccess.h>
-#include <linux/mm.h>
+#include <beep/types.h>
+#include <beep/parser.h>
+#include <beep/fs.h>
+#include <beep/res_counter.h>
+#include <beep/uaccess.h>
+#include <beep/mm.h>
 
 void res_counter_init(struct res_counter *counter, struct res_counter *parent)
 {

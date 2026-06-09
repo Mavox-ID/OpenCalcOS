@@ -13,19 +13,19 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/compiler.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/serial_core.h>
-#include <linux/serial_8250.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/partitions.h>
-#include <linux/usb/ehci_pdriver.h>
-#include <linux/usb/ohci_pdriver.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/compiler.h>
+#include <beep/io.h>
+#include <beep/dma-mapping.h>
+#include <beep/serial_core.h>
+#include <beep/serial_8250.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mtd/partitions.h>
+#include <beep/usb/ehci_pdriver.h>
+#include <beep/usb/ohci_pdriver.h>
 #include <asm/setup.h>
 #include <asm/mach-types.h>
 #include <asm/hardware/gic.h>

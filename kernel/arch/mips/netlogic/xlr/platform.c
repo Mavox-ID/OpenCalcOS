@@ -7,16 +7,16 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/resource.h>
-#include <linux/serial_8250.h>
-#include <linux/serial_reg.h>
-#include <linux/i2c.h>
-#include <linux/usb/ehci_pdriver.h>
-#include <linux/usb/ohci_pdriver.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/resource.h>
+#include <beep/serial_8250.h>
+#include <beep/serial_reg.h>
+#include <beep/i2c.h>
+#include <beep/usb/ehci_pdriver.h>
+#include <beep/usb/ohci_pdriver.h>
 
 #include <asm/netlogic/haldefs.h>
 #include <asm/netlogic/xlr/iomap.h>

@@ -1,14 +1,14 @@
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/blkdev.h>
-#include <linux/module.h>
-#include <linux/blkpg.h>
-#include <linux/cdrom.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/blkdev.h>
+#include <beep/module.h>
+#include <beep/blkpg.h>
+#include <beep/cdrom.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>
 

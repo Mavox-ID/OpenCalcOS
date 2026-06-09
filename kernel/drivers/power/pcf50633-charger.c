@@ -14,18 +14,18 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/device.h>
+#include <beep/sysfs.h>
+#include <beep/platform_device.h>
+#include <beep/power_supply.h>
 
-#include <linux/mfd/pcf50633/core.h>
-#include <linux/mfd/pcf50633/mbc.h>
+#include <beep/mfd/pcf50633/core.h>
+#include <beep/mfd/pcf50633/mbc.h>
 
 struct pcf50633_mbc {
 	struct pcf50633 *pcf;

@@ -19,11 +19,11 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/time.h>
-#include <linux/err.h>
-#include <linux/clockchips.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/time.h>
+#include <beep/err.h>
+#include <beep/clockchips.h>
 
 #include <asm/mach/time.h>
 

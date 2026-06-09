@@ -1,11 +1,11 @@
 /*
  * Functions related to tagged command queuing
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/bio.h>
+#include <beep/blkdev.h>
+#include <beep/slab.h>
 
 #include "blk.h"
 

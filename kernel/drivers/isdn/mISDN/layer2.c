@@ -15,8 +15,8 @@
  *
  */
 
-#include <linux/mISDNif.h>
-#include <linux/slab.h>
+#include <beep/mISDNif.h>
+#include <beep/slab.h>
 #include "core.h"
 #include "fsm.h"
 #include "layer2.h"

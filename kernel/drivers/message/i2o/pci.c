@@ -20,18 +20,18 @@
  *		Deepak Saxena <deepak@plexity.net>
  *		Boji T Kannanthanam <boji.t.kannanthanam@intel.com>
  *		Alan Cox <alan@lxorguk.ukuu.org.uk>:
- *			Ported to Linux 2.5.
+ *			Ported to Beep 2.5.
  *		Markus Lidel <Markus.Lidel@shadowconnect.com>:
  *			Minor fixes for 2.6.
  *		Markus Lidel <Markus.Lidel@shadowconnect.com>:
  *			Support for sysfs included.
  */
 
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/i2o.h>
-#include <linux/module.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/i2o.h>
+#include <beep/module.h>
 #include "core.h"
 
 #define OSM_DESCRIPTION	"I2O-subsystem"

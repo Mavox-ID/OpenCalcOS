@@ -1,5 +1,5 @@
 /*
- * linux/fs/nfs/delegation.h
+ * beep/fs/nfs/delegation.h
  *
  * Copyright (c) Trond Myklebust
  *

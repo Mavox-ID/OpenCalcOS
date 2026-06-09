@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ext3/symlink.c
+ *  beep/fs/ext3/symlink.c
  *
  * Only fast symlinks left here - the rest is done by generic code. AV, 1999
  *
@@ -10,14 +10,14 @@
  *
  *  from
  *
- *  linux/fs/minix/symlink.c
+ *  beep/fs/minix/symlink.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
  *  ext3 symlink handling code
  */
 
-#include <linux/namei.h>
+#include <beep/namei.h>
 #include "ext3.h"
 #include "xattr.h"
 

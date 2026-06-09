@@ -6,8 +6,8 @@
  * Copyright (C) 1992 - 1997, 2000-2006 Silicon Graphics, Inc. All rights reserved.
  */
 
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 #include <asm/sn/types.h>
 #include <asm/sn/addrs.h>
 #include <asm/sn/io.h>
@@ -289,7 +289,7 @@ EXPORT_SYMBOL(sn_io_slot_fixup);
 
 /*
  * sn_pci_controller_fixup() - This routine sets up a bus's resources
- *			       consistent with the Linux PCI abstraction layer.
+ *			       consistent with the Beep PCI abstraction layer.
  */
 static void __init
 sn_pci_controller_fixup(int segment, int busnum, struct pci_bus *bus)

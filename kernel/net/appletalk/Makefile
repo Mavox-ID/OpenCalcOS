@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux AppleTalk layer.
+# Makefile for the Beep AppleTalk layer.
 #
 
 obj-$(CONFIG_ATALK) += appletalk.o

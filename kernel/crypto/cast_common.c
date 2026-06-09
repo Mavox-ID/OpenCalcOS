@@ -12,7 +12,7 @@
  *
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <crypto/cast_common.h>
 
 const u32 cast_s1[256] = {

@@ -44,7 +44,7 @@ enum lasat_mtdparts {
  * See the LASAT Hardware Configuration field specification for a detailed
  * description of the config field.
  */
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define LASAT_EEPROM_VERSION 7
 struct lasat_eeprom_struct {
@@ -224,8 +224,8 @@ extern void lasat_write_eeprom_info(void);
  * early stage of the boot process where ndelay is not calibrated.
  * It is used for the bit-banging rtc and eeprom drivers */
 
-#include <linux/delay.h>
-#include <linux/smp.h>
+#include <beep/delay.h>
+#include <beep/smp.h>
 
 /* calculating with the slowest board with 100 MHz clock */
 #define LASAT_100_DIVIDER 20

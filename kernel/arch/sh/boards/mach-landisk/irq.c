@@ -14,10 +14,10 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
 #include <mach-landisk/mach/iodata_landisk.h>
 
 enum {

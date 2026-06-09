@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/omap2/dss/dsi.c
+ * beep/drivers/video/omap2/dss/dsi.c
  *
  * Copyright (C) 2009 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -19,25 +19,25 @@
 
 #define DSS_SUBSYS_NAME "DSI"
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/semaphore.h>
-#include <linux/seq_file.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
-#include <linux/pm_runtime.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/mutex.h>
+#include <beep/module.h>
+#include <beep/semaphore.h>
+#include <beep/seq_file.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/consumer.h>
+#include <beep/wait.h>
+#include <beep/workqueue.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/debugfs.h>
+#include <beep/pm_runtime.h>
 
 #include <video/omapdss.h>
 #include <video/mipi_display.h>

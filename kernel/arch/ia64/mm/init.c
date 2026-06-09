@@ -4,23 +4,23 @@
  * Copyright (C) 1998-2003 Hewlett-Packard Co
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
 
-#include <linux/bootmem.h>
-#include <linux/efi.h>
-#include <linux/elf.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
-#include <linux/mmzone.h>
-#include <linux/module.h>
-#include <linux/personality.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
-#include <linux/proc_fs.h>
-#include <linux/bitops.h>
-#include <linux/kexec.h>
+#include <beep/bootmem.h>
+#include <beep/efi.h>
+#include <beep/elf.h>
+#include <beep/memblock.h>
+#include <beep/mm.h>
+#include <beep/mmzone.h>
+#include <beep/module.h>
+#include <beep/personality.h>
+#include <beep/reboot.h>
+#include <beep/slab.h>
+#include <beep/swap.h>
+#include <beep/proc_fs.h>
+#include <beep/bitops.h>
+#include <beep/kexec.h>
 
 #include <asm/dma.h>
 #include <asm/io.h>
@@ -692,20 +692,20 @@ int arch_add_memory(int nid, u64 start, u64 size)
 
 /*
  * Even when CONFIG_IA32_SUPPORT is not enabled it is
- * useful to have the Linux/x86 domain registered to
+ * useful to have the Beep/x86 domain registered to
  * avoid an attempted module load when emulators call
- * personality(PER_LINUX32). This saves several milliseconds
+ * personality(PER_BEEP32). This saves several milliseconds
  * on each such call.
  */
 static struct exec_domain ia32_exec_domain;
 
 static int __init
-per_linux32_init(void)
+per_beep32_init(void)
 {
-	ia32_exec_domain.name = "Linux/x86";
+	ia32_exec_domain.name = "Beep/x86";
 	ia32_exec_domain.handler = NULL;
-	ia32_exec_domain.pers_low = PER_LINUX32;
-	ia32_exec_domain.pers_high = PER_LINUX32;
+	ia32_exec_domain.pers_low = PER_BEEP32;
+	ia32_exec_domain.pers_high = PER_BEEP32;
 	ia32_exec_domain.signal_map = default_exec_domain.signal_map;
 	ia32_exec_domain.signal_invmap = default_exec_domain.signal_invmap;
 	register_exec_domain(&ia32_exec_domain);
@@ -713,4 +713,4 @@ per_linux32_init(void)
 	return 0;
 }
 
-__initcall(per_linux32_init);
+__initcall(per_beep32_init);

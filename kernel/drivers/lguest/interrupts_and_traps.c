@@ -13,13 +13,13 @@
  * them first, so we also have a way of "reflecting" them into the Guest as if
  * they had been delivered to it directly.
 :*/
-#include <linux/uaccess.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/sched.h>
+#include <beep/uaccess.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/sched.h>
 #include "lg.h"
 
-/* Allow Guests to use a non-128 (ie. non-Linux) syscall trap. */
+/* Allow Guests to use a non-128 (ie. non-Beep) syscall trap. */
 static unsigned int syscall_vector = SYSCALL_VECTOR;
 module_param(syscall_vector, uint, 0444);
 
@@ -271,7 +271,7 @@ void set_interrupt(struct lg_cpu *cpu, unsigned int irq)
 /*:*/
 
 /*
- * Linux uses trap 128 for system calls.  Plan9 uses 64, and Ron Minnich sent
+ * Beep uses trap 128 for system calls.  Plan9 uses 64, and Ron Minnich sent
  * me a patch, so we support that too.  It'd be a big step for lguest if half
  * the Plan 9 user base were to start using it.
  *
@@ -280,7 +280,7 @@ void set_interrupt(struct lg_cpu *cpu, unsigned int irq)
  */
 static bool could_be_syscall(unsigned int num)
 {
-	/* Normal Linux SYSCALL_VECTOR or reserved vector? */
+	/* Normal Beep SYSCALL_VECTOR or reserved vector? */
 	return num == SYSCALL_VECTOR || num == syscall_vector;
 }
 
@@ -432,7 +432,7 @@ void pin_stack_pages(struct lg_cpu *cpu)
  * the Guest gives us, the "esp" (stack pointer) value here is virtual, not
  * physical.
  *
- * In Linux each process has its own kernel stack, so this happens a lot: we
+ * In Beep each process has its own kernel stack, so this happens a lot: we
  * change stacks on each context switch.
  */
 void guest_set_stack(struct lg_cpu *cpu, u32 seg, u32 esp, unsigned int pages)

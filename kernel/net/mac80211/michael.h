@@ -10,7 +10,7 @@
 #ifndef MICHAEL_H
 #define MICHAEL_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define MICHAEL_MIC_LEN 8
 

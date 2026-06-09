@@ -4031,7 +4031,7 @@
 	Make Jam support work again.
 
 	This is just very basic stuff and just a little bit tested on
-	GNU/Linux only.  I won't delve into this since I'm not a Jam user.
+	GNU/Beep only.  I won't delve into this since I'm not a Jam user.
 
 	* Jamfile: Call `HDRMACRO' for `ftserv.h' also.
 	(DEFINES): Replace with...

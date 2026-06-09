@@ -7,8 +7,8 @@
 #ifndef __ASM_FACILITY_H
 #define __ASM_FACILITY_H
 
-#include <linux/string.h>
-#include <linux/preempt.h>
+#include <beep/string.h>
+#include <beep/preempt.h>
 #include <asm/lowcore.h>
 
 #define MAX_FACILITY_BIT (256*8)	/* stfle_fac_list has 256 bytes */

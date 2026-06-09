@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mtd/onenand/onenand_bbt.c
+ *  beep/drivers/mtd/onenand/onenand_bbt.c
  *
  *  Bad Block Table support for the OneNAND driver
  *
@@ -12,10 +12,10 @@
  *    Split BBT core and chip specific BBT.
  */
 
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/onenand.h>
-#include <linux/export.h>
+#include <beep/slab.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/onenand.h>
+#include <beep/export.h>
 
 /**
  * check_short_pattern - [GENERIC] check if a pattern is in the buffer

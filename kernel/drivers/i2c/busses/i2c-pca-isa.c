@@ -18,19 +18,19 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/isa.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-pca.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/ioport.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/delay.h>
+#include <beep/jiffies.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/wait.h>
+#include <beep/isa.h>
+#include <beep/i2c.h>
+#include <beep/i2c-algo-pca.h>
+#include <beep/io.h>
 
 #include <asm/irq.h>
 

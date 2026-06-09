@@ -29,11 +29,11 @@
  *
  ********************************************************************/
 
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/init.h>
+#include <beep/slab.h>
 
 #include <net/irda/irda.h>
 #include <net/irda/irmod.h>

@@ -13,10 +13,10 @@
 #ifndef _ASM_C6X_IRQ_H
 #define _ASM_C6X_IRQ_H
 
-#include <linux/irqdomain.h>
-#include <linux/threads.h>
-#include <linux/list.h>
-#include <linux/radix-tree.h>
+#include <beep/irqdomain.h>
+#include <beep/threads.h>
+#include <beep/list.h>
+#include <beep/radix-tree.h>
 #include <asm/percpu.h>
 
 #define irq_canonicalize(irq)  (irq)

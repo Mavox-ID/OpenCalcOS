@@ -1,11 +1,11 @@
 #ifndef _ASM_X86_XEN_PAGE_H
 #define _ASM_X86_XEN_PAGE_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/pfn.h>
-#include <linux/mm.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/spinlock.h>
+#include <beep/pfn.h>
+#include <beep/mm.h>
 
 #include <asm/uaccess.h>
 #include <asm/page.h>

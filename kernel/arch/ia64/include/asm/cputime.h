@@ -22,8 +22,8 @@
 #include <asm-generic/cputime.h>
 #else
 
-#include <linux/time.h>
-#include <linux/jiffies.h>
+#include <beep/time.h>
+#include <beep/jiffies.h>
 #include <asm/processor.h>
 
 typedef u64 __nocast cputime_t;

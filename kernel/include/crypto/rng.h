@@ -13,7 +13,7 @@
 #ifndef _CRYPTO_RNG_H
 #define _CRYPTO_RNG_H
 
-#include <linux/crypto.h>
+#include <beep/crypto.h>
 
 extern struct crypto_rng *crypto_default_rng;
 

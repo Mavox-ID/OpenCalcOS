@@ -5,21 +5,21 @@
  *
  */
 
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/workqueue.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <beep/bitops.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/workqueue.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/string.h>
+#include <beep/types.h>
 #include <net/net_namespace.h>
-#include <linux/sched.h>
-#include <linux/prefetch.h>
+#include <beep/sched.h>
+#include <beep/prefetch.h>
 
 #include <net/dst.h>
 

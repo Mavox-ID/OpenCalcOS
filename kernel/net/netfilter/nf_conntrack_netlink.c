@@ -15,22 +15,22 @@
  * of the GNU General Public License, incorporated herein by reference.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/rculist.h>
-#include <linux/rculist_nulls.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/security.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
-#include <linux/netlink.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/rculist.h>
+#include <beep/rculist_nulls.h>
+#include <beep/types.h>
+#include <beep/timer.h>
+#include <beep/security.h>
+#include <beep/skbuff.h>
+#include <beep/errno.h>
+#include <beep/netlink.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
 
-#include <linux/netfilter.h>
+#include <beep/netfilter.h>
 #include <net/netlink.h>
 #include <net/sock.h>
 #include <net/netfilter/nf_conntrack.h>
@@ -49,8 +49,8 @@
 #include <net/netfilter/nf_nat_helper.h>
 #endif
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_conntrack.h>
+#include <beep/netfilter/nfnetlink.h>
+#include <beep/netfilter/nfnetlink_conntrack.h>
 
 MODULE_LICENSE("GPL");
 

@@ -1,7 +1,7 @@
 /*
  * Old U-boot compatibility for Walnut
  *
- * Author: Josh Boyer <jwboyer@linux.vnet.ibm.com>
+ * Author: Josh Boyer <jwboyer@beep.vnet.ibm.com>
  *
  * Copyright 2007 IBM Corporation
  *   Based on cuboot-83xx.c, which is:

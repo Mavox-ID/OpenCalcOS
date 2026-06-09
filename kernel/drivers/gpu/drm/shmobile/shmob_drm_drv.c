@@ -11,13 +11,13 @@
  * (at your option) any later version.
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/pm.h>
+#include <beep/slab.h>
 
 #include <drm/drmP.h>
 #include <drm/drm_crtc_helper.h>

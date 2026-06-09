@@ -32,9 +32,9 @@ static struct usb_device_id whitelist_table [] = {
 #endif
 
 #ifdef	CONFIG_USB_NET_CDCETHER
-/* Linux-USB CDC Ethernet gadget */
+/* Beep-USB CDC Ethernet gadget */
 { USB_DEVICE(0x0525, 0xa4a1), },
-/* Linux-USB CDC Ethernet + RNDIS gadget */
+/* Beep-USB CDC Ethernet + RNDIS gadget */
 { USB_DEVICE(0x0525, 0xa4a2), },
 #endif
 

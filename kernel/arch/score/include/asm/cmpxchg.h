@@ -1,7 +1,7 @@
 #ifndef _ASM_SCORE_CMPXCHG_H
 #define _ASM_SCORE_CMPXCHG_H
 
-#include <linux/irqflags.h>
+#include <beep/irqflags.h>
 
 struct __xchg_dummy { unsigned long a[100]; };
 #define __xg(x) ((struct __xchg_dummy *)(x))

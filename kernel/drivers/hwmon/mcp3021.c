@@ -15,13 +15,13 @@
  * (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/hwmon.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/hwmon.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/err.h>
+#include <beep/device.h>
 
 /* Vdd info */
 #define MCP3021_VDD_MAX		5500

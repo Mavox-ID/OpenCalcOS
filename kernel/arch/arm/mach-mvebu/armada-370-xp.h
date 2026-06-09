@@ -20,7 +20,7 @@
 #define ARMADA_370_XP_REGS_SIZE		SZ_1M
 
 #ifdef CONFIG_SMP
-#include <linux/cpumask.h>
+#include <beep/cpumask.h>
 
 void armada_mpic_send_doorbell(const struct cpumask *mask, unsigned int irq);
 void armada_xp_mpic_smp_cpu_init(void);

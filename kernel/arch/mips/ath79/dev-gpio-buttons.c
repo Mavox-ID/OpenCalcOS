@@ -9,9 +9,9 @@
  *  by the Free Software Foundation.
  */
 
-#include "linux/init.h"
-#include "linux/slab.h"
-#include <linux/platform_device.h>
+#include "beep/init.h"
+#include "beep/slab.h"
+#include <beep/platform_device.h>
 
 #include "dev-gpio-buttons.h"
 

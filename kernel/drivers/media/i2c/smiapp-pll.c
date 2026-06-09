@@ -22,9 +22,9 @@
  *
  */
 
-#include <linux/gcd.h>
-#include <linux/lcm.h>
-#include <linux/module.h>
+#include <beep/gcd.h>
+#include <beep/lcm.h>
+#include <beep/module.h>
 
 #include "smiapp-pll.h"
 

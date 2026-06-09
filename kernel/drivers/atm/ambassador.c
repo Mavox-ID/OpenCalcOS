@@ -17,28 +17,28 @@
   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
   The GNU GPL is contained in /usr/doc/copyright/GPL on a Debian
-  system and in the file COPYING in the Linux kernel source.
+  system and in the file COPYING in the Beep kernel source.
 */
 
 /* * dedicated to the memory of Graham Gordon 1971-1998 * */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/atmdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/poison.h>
-#include <linux/bitrev.h>
-#include <linux/mutex.h>
-#include <linux/firmware.h>
-#include <linux/ihex.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/atmdev.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/poison.h>
+#include <beep/bitrev.h>
+#include <beep/mutex.h>
+#include <beep/firmware.h>
+#include <beep/ihex.h>
+#include <beep/slab.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>
 
@@ -238,7 +238,7 @@ static inline void __init show_version (void) {
   . Note that alloc_skb rounds up size to a 16byte boundary.  
   . Ensure all areas do not traverse 4MB boundaries.
   . Ensure all areas do not start at a E00000xx bus address.
-  (I cannot be certain, but this may always hold with Linux)
+  (I cannot be certain, but this may always hold with Beep)
   . Make all failures cause a loud message.
   . Discard non-conforming SKBs (causes TX failure or RX fill delay).
   . Discard non-conforming TX fragment descriptors (the TX fails).
@@ -1003,7 +1003,7 @@ static int make_rate (unsigned int rate, rounding r,
   return 0;
 }
 
-/********** Linux ATM Operations **********/
+/********** Beep ATM Operations **********/
 
 // some are not yet implemented while others do not make sense for
 // this device
@@ -1496,7 +1496,7 @@ static const struct atmdev_ops amb_ops = {
 static void do_housekeeping (unsigned long arg) {
   amb_dev * dev = (amb_dev *) arg;
   
-  // could collect device-specific (not driver/atm-linux) stats here
+  // could collect device-specific (not driver/atm-beep) stats here
       
   // last resort refill once every ten seconds
   fill_rx_pools (dev);

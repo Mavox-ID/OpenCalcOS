@@ -6,14 +6,14 @@
  *  Copyright (C) 2012 Thomas Langer <thomas.langer@lantiq.com>
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/spi/spi.h>
+#include <beep/delay.h>
+#include <beep/workqueue.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
 
 #include <lantiq_soc.h>
 

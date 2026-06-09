@@ -317,8 +317,8 @@ struct sbecom_port_param
         unsigned long tx_bytes; /* total bytes transmitted      */
         unsigned long rx_errors;/* bad packets received         */
         unsigned long tx_errors;/* packet transmit problems     */
-        unsigned long rx_dropped;       /* no space in linux buffers    */
-        unsigned long tx_dropped;       /* no space available in linux  */
+        unsigned long rx_dropped;       /* no space in beep buffers    */
+        unsigned long tx_dropped;       /* no space available in beep  */
 
         /* detailed rx_errors: */
         unsigned long rx_length_errors;

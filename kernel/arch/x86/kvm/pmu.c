@@ -12,9 +12,9 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/kvm_host.h>
-#include <linux/perf_event.h>
+#include <beep/types.h>
+#include <beep/kvm_host.h>
+#include <beep/perf_event.h>
 #include "x86.h"
 #include "cpuid.h"
 #include "lapic.h"

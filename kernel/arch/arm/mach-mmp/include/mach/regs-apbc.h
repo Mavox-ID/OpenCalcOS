@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-mmp/include/mach/regs-apbc.h
+ * beep/arch/arm/mach-mmp/include/mach/regs-apbc.h
  *
  *   Application Peripheral Bus Clock Unit
  *

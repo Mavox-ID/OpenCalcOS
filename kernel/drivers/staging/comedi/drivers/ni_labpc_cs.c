@@ -63,8 +63,8 @@ NI manuals:
 
 #include "../comedidev.h"
 
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 
 #include "8253.h"
 #include "8255.h"

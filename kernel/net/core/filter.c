@@ -1,5 +1,5 @@
 /*
- * Linux Socket Filter - Kernel level socket filtering
+ * Beep Socket Filter - Kernel level socket filtering
  *
  * Author:
  *     Jay Schulist <jschlst@samba.org>
@@ -16,30 +16,30 @@
  * Kris Katterjohn - Added many additional checks in sk_chk_filter()
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/fcntl.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/if_packet.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/fcntl.h>
+#include <beep/socket.h>
+#include <beep/in.h>
+#include <beep/inet.h>
+#include <beep/netdevice.h>
+#include <beep/if_packet.h>
+#include <beep/gfp.h>
 #include <net/ip.h>
 #include <net/protocol.h>
 #include <net/netlink.h>
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 #include <net/sock.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
+#include <beep/errno.h>
+#include <beep/timer.h>
 #include <asm/uaccess.h>
 #include <asm/unaligned.h>
-#include <linux/filter.h>
-#include <linux/reciprocal_div.h>
-#include <linux/ratelimit.h>
-#include <linux/seccomp.h>
-#include <linux/if_vlan.h>
+#include <beep/filter.h>
+#include <beep/reciprocal_div.h>
+#include <beep/ratelimit.h>
+#include <beep/seccomp.h>
+#include <beep/if_vlan.h>
 
 /* No hurry in this branch
  *

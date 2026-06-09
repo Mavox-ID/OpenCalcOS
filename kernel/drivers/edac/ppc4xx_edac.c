@@ -9,15 +9,15 @@
  *
  */
 
-#include <linux/edac.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/types.h>
+#include <beep/edac.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
+#include <beep/types.h>
 
 #include <asm/dcr.h>
 

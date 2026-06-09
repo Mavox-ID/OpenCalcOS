@@ -2,8 +2,8 @@
  *  compress_core.c - compress offload core
  *
  *  Copyright (C) 2011 Intel Corporation
- *  Authors:	Vinod Koul <vinod.koul@linux.intel.com>
- *		Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
+ *  Authors:	Vinod Koul <vinod.koul@beep.intel.com>
+ *		Pierre-Louis Bossart <pierre-louis.bossart@beep.intel.com>
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -25,17 +25,17 @@
 #define FORMAT(fmt) "%s: %d: " fmt, __func__, __LINE__
 #define pr_fmt(fmt) KBUILD_MODNAME ": " FORMAT(fmt)
 
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/uio.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/list.h>
+#include <beep/mm.h>
+#include <beep/mutex.h>
+#include <beep/poll.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/uio.h>
+#include <beep/uaccess.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/compress_params.h>
@@ -795,5 +795,5 @@ module_init(snd_compress_init);
 module_exit(snd_compress_exit);
 
 MODULE_DESCRIPTION("ALSA Compressed offload framework");
-MODULE_AUTHOR("Vinod Koul <vinod.koul@linux.intel.com>");
+MODULE_AUTHOR("Vinod Koul <vinod.koul@beep.intel.com>");
 MODULE_LICENSE("GPL v2");

@@ -1,4 +1,4 @@
-/* include/linux/timed_output.h
+/* include/beep/timed_output.h
  *
  * Copyright (C) 2008 Google, Inc.
  *
@@ -13,8 +13,8 @@
  *
 */
 
-#ifndef _LINUX_TIMED_OUTPUT_H
-#define _LINUX_TIMED_OUTPUT_H
+#ifndef _BEEP_TIMED_OUTPUT_H
+#define _BEEP_TIMED_OUTPUT_H
 
 struct timed_output_dev {
 	const char	*name;

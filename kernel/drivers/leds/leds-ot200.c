@@ -7,13 +7,13 @@
  * License: GPL as published by the FSF.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/leds.h>
-#include <linux/io.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/leds.h>
+#include <beep/io.h>
+#include <beep/module.h>
 
 
 struct ot200_led {

@@ -10,7 +10,7 @@
 #define _ASM_POWERPC_REG_H
 #ifdef __KERNEL__
 
-#include <linux/stringify.h>
+#include <beep/stringify.h>
 #include <asm/cputable.h>
 
 /* Pickup Book E specific registers. */

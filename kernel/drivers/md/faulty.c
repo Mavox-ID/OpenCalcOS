@@ -1,5 +1,5 @@
 /*
- * faulty.c : Multiple Devices driver for Linux
+ * faulty.c : Multiple Devices driver for Beep
  *
  * Copyright (C) 2004 Neil Brown
  *
@@ -12,7 +12,7 @@
  * any later version.
  *
  * You should have received a copy of the GNU General Public License
- * (for example /usr/src/linux/COPYING); if not, write to the Free
+ * (for example /usr/src/beep/COPYING); if not, write to the Free
  * Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
@@ -62,12 +62,12 @@
 #define	ModeShift	5
 
 #define MaxFault	50
-#include <linux/blkdev.h>
-#include <linux/module.h>
-#include <linux/raid/md_u.h>
-#include <linux/slab.h>
+#include <beep/blkdev.h>
+#include <beep/module.h>
+#include <beep/raid/md_u.h>
+#include <beep/slab.h>
 #include "md.h"
-#include <linux/seq_file.h>
+#include <beep/seq_file.h>
 
 
 static void faulty_fail(struct bio *bio, int error)

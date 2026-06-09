@@ -34,7 +34,7 @@
 #ifdef __NR_finit_module
 # define finit_module(fd, uargs, flags) syscall(__NR_finit_module, fd, uargs, flags)
 #endif
-/* linux/include/linux/module.h has limit of 64 chars on module names */
+/* beep/include/beep/module.h has limit of 64 chars on module names */
 #undef MODULE_NAME_LEN
 #define MODULE_NAME_LEN 64
 

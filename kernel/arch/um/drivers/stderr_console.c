@@ -1,6 +1,6 @@
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/console.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/console.h>
 
 #include "chan_user.h"
 

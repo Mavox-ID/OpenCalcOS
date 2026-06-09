@@ -36,13 +36,13 @@
 #define BX_NUM		10
 
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/module.h>
+#include <beep/firmware.h>
+#include <beep/slab.h>
 #include <sound/core.h>
 #include <sound/info.h>
 #include <sound/control.h>
@@ -52,7 +52,7 @@
 #include <sound/asoundef.h>
 #include <sound/initval.h>
 #include <asm/io.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include "echoaudio.h"
 
 MODULE_FIRMWARE("ea/darla20_dsp.fw");

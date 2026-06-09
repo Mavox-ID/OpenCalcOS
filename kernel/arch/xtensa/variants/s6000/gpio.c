@@ -6,13 +6,13 @@
  *		Johannes Weiner <hannes@cmpxchg.org>
  *		Daniel Gloeckner <dg@emlix.com>
  */
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
+#include <beep/bitops.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/gpio.h>
 
 #include <variant/hardware.h>
 

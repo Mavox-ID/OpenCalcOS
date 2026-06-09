@@ -1,9 +1,9 @@
 /*
  *    Implements HPUX syscalls.
  *
- *    Copyright (C) 1999 Matthew Wilcox <willy with parisc-linux.org>
+ *    Copyright (C) 1999 Matthew Wilcox <willy with parisc-beep.org>
  *    Copyright (C) 2000 Philipp Rumpf
- *    Copyright (C) 2000 John Marvin <jsm with parisc-linux.org>
+ *    Copyright (C) 2000 John Marvin <jsm with parisc-beep.org>
  *    Copyright (C) 2000 Michael Ang <mang with subcarrier.org>
  *    Copyright (C) 2001 Nathan Neulinger <nneul at umr.edu>
  *
@@ -22,16 +22,16 @@
  *    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/capability.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/utsname.h>
-#include <linux/vfs.h>
-#include <linux/vmalloc.h>
+#include <beep/capability.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/namei.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/syscalls.h>
+#include <beep/utsname.h>
+#include <beep/vfs.h>
+#include <beep/vmalloc.h>
 
 #include <asm/errno.h>
 #include <asm/pgalloc.h>
@@ -121,10 +121,10 @@ struct hpux_ustat {
 /*  This function is called from hpux_utssys(); HP-UX implements
  *  ustat() as an option to utssys().
  *
- *  Now, struct ustat on HP-UX is exactly the same as on Linux, except
+ *  Now, struct ustat on HP-UX is exactly the same as on Beep, except
  *  that it contains one addition field on the end, int32_t f_blksize.
- *  So, we could have written this function to just call the Linux
- *  sys_ustat(), (defined in linux/fs/super.c), and then just
+ *  So, we could have written this function to just call the Beep
+ *  sys_ustat(), (defined in beep/fs/super.c), and then just
  *  added this additional field to the user's structure.  But I figure
  *  if we're gonna be digging through filesystem structures to get
  *  this, we might as well just do the whole enchilada all in one go.
@@ -154,7 +154,7 @@ out:
 }
 
 /*
- * Wrapper for hpux statfs call. At the moment, just calls the linux native one
+ * Wrapper for hpux statfs call. At the moment, just calls the beep native one
  * and ignores the extra fields at the end of the hpux statfs struct.
  *
  */
@@ -221,7 +221,7 @@ asmlinkage long hpux_fstatfs(unsigned int fd, struct hpux_statfs __user * buf)
  *  uname() as an option to utssys().
  *
  *  The form of this function is pretty much copied from sys_olduname(),
- *  defined in linux/arch/i386/kernel/sys_i386.c.
+ *  defined in beep/arch/i386/kernel/sys_i386.c.
  */
 /*  TODO: Are these put_user calls OK?  Should they pass an int?
  *        (I copied it from sys_i386.c like this.)
@@ -292,40 +292,40 @@ int hpux_utssys(char __user *ubuf, int n, int type)
 	case 3:
 		/*  setuname():
 		 *
-		 *  On linux (unlike HP-UX), utsname.nodename
+		 *  On beep (unlike HP-UX), utsname.nodename
 		 *  is the same as the hostname.
 		 *
-		 *  sys_sethostname() is defined in linux/kernel/sys.c.
+		 *  sys_sethostname() is defined in beep/kernel/sys.c.
 		 */
 		if (!capable(CAP_SYS_ADMIN))
 			return -EPERM;
-		/*  Unlike Linux, HP-UX returns an error if n==0:  */
+		/*  Unlike Beep, HP-UX returns an error if n==0:  */
 		if ( n <= 0 )
 			return -EINVAL ;
-		/*  Unlike Linux, HP-UX truncates it if n is too big:  */
+		/*  Unlike Beep, HP-UX truncates it if n is too big:  */
 		len = (n <= __NEW_UTS_LEN) ? n : __NEW_UTS_LEN ;
 		return sys_sethostname(ubuf, len);
 		break ;
 	case 4:
 		/*  sethostname():
 		 *
-		 *  sys_sethostname() is defined in linux/kernel/sys.c.
+		 *  sys_sethostname() is defined in beep/kernel/sys.c.
 		 */
 		if (!capable(CAP_SYS_ADMIN))
 			return -EPERM;
-		/*  Unlike Linux, HP-UX returns an error if n==0:  */
+		/*  Unlike Beep, HP-UX returns an error if n==0:  */
 		if ( n <= 0 )
 			return -EINVAL ;
-		/*  Unlike Linux, HP-UX truncates it if n is too big:  */
+		/*  Unlike Beep, HP-UX truncates it if n is too big:  */
 		len = (n <= __NEW_UTS_LEN) ? n : __NEW_UTS_LEN ;
 		return sys_sethostname(ubuf, len);
 		break ;
 	case 5:
 		/*  gethostname():
 		 *
-		 *  sys_gethostname() is defined in linux/kernel/sys.c.
+		 *  sys_gethostname() is defined in beep/kernel/sys.c.
 		 */
-		/*  Unlike Linux, HP-UX returns an error if n==0:  */
+		/*  Unlike Beep, HP-UX returns an error if n==0:  */
 		if ( n <= 0 )
 			return -EINVAL ;
 		return sys_gethostname(ubuf, n);
@@ -336,15 +336,15 @@ int hpux_utssys(char __user *ubuf, int n, int type)
 		 *        Is it ever even called?
 		 *
 		 *  This code should look a lot like sys_sethostname(),
-		 *  defined in linux/kernel/sys.c.  If that gets updated,
+		 *  defined in beep/kernel/sys.c.  If that gets updated,
 		 *  update this code similarly.
 		 */
 		if (!capable(CAP_SYS_ADMIN))
 			return -EPERM;
-		/*  Unlike Linux, HP-UX returns an error if n==0:  */
+		/*  Unlike Beep, HP-UX returns an error if n==0:  */
 		if ( n <= 0 )
 			return -EINVAL ;
-		/*  Unlike Linux, HP-UX truncates it if n is too big:  */
+		/*  Unlike Beep, HP-UX truncates it if n is too big:  */
 		len = (n <= __NEW_UTS_LEN) ? n : __NEW_UTS_LEN ;
 		/**/
 		/*  TODO:  print a warning about using this?  */
@@ -363,15 +363,15 @@ int hpux_utssys(char __user *ubuf, int n, int type)
 		 *  OS version, during OS updates.  Yuck!!!
 		 *
 		 *  This code should look a lot like sys_sethostname()
-		 *  in linux/kernel/sys.c.  If that gets updated, update
+		 *  in beep/kernel/sys.c.  If that gets updated, update
 		 *  this code similarly.
 		 */
 		if (!capable(CAP_SYS_ADMIN))
 			return -EPERM;
-		/*  Unlike Linux, HP-UX returns an error if n==0:  */
+		/*  Unlike Beep, HP-UX returns an error if n==0:  */
 		if ( n <= 0 )
 			return -EINVAL ;
-		/*  Unlike Linux, HP-UX truncates it if n is too big:  */
+		/*  Unlike Beep, HP-UX truncates it if n is too big:  */
 		len = (n <= __NEW_UTS_LEN) ? n : __NEW_UTS_LEN ;
 		/**/
 		/*  TODO:  print a warning about this?  */

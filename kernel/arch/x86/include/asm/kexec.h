@@ -19,7 +19,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/string.h>
+#include <beep/string.h>
 
 #include <asm/page.h>
 #include <asm/ptrace.h>

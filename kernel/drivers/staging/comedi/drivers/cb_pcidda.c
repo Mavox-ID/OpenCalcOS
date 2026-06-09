@@ -5,7 +5,7 @@
  * Copyright (C) 2001 Ivan Martinez <ivanmr@altavista.com>
  * Copyright (C) 2001 Frank Mori Hess <fmhess@users.sourceforge.net>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Beep Control and Measurement Device Interface
  * Copyright (C) 1997-8 David A. Schleef <ds@schleef.org>
  *
  * This program is free software; you can redistribute it and/or modify

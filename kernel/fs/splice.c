@@ -17,20 +17,20 @@
  * Copyright (C) 2006 Ingo Molnar <mingo@elte.hu>
  *
  */
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/pagemap.h>
-#include <linux/splice.h>
-#include <linux/memcontrol.h>
-#include <linux/mm_inline.h>
-#include <linux/swap.h>
-#include <linux/writeback.h>
-#include <linux/export.h>
-#include <linux/syscalls.h>
-#include <linux/uio.h>
-#include <linux/security.h>
-#include <linux/gfp.h>
-#include <linux/socket.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/pagemap.h>
+#include <beep/splice.h>
+#include <beep/memcontrol.h>
+#include <beep/mm_inline.h>
+#include <beep/swap.h>
+#include <beep/writeback.h>
+#include <beep/export.h>
+#include <beep/syscalls.h>
+#include <beep/uio.h>
+#include <beep/security.h>
+#include <beep/gfp.h>
+#include <beep/socket.h>
 
 /*
  * Attempt to steal a page from a pipe buffer. This should perhaps go into

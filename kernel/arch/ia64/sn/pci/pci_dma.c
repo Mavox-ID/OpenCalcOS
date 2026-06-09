@@ -9,9 +9,9 @@
  * a description of how these routines should be used.
  */
 
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
+#include <beep/gfp.h>
+#include <beep/module.h>
+#include <beep/dma-mapping.h>
 #include <asm/dma.h>
 #include <asm/sn/intr.h>
 #include <asm/sn/pcibus_provider_defs.h>
@@ -167,7 +167,7 @@ static void sn_dma_free_coherent(struct device *dev, size_t size, void *cpu_addr
  *
  * mappings with the DMA_ATTR_WRITE_BARRIER get mapped with
  * dma_map_consistent() so that writes force a flush of pending DMA.
- * (See "SGI Altix Architecture Considerations for Linux Device Drivers",
+ * (See "SGI Altix Architecture Considerations for Beep Device Drivers",
  * Document Number: 007-4763-001)
  *
  * TODO: simplify our interface;
@@ -266,7 +266,7 @@ static void sn_dma_unmap_sg(struct device *dev, struct scatterlist *sgl,
  *
  * mappings with the DMA_ATTR_WRITE_BARRIER get mapped with
  * dma_map_consistent() so that writes force a flush of pending DMA.
- * (See "SGI Altix Architecture Considerations for Linux Device Drivers",
+ * (See "SGI Altix Architecture Considerations for Beep Device Drivers",
  * Document Number: 007-4763-001)
  *
  * Maps each entry of @sg for DMA.

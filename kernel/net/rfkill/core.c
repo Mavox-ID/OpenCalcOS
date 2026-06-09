@@ -19,22 +19,22 @@
  * 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/workqueue.h>
-#include <linux/capability.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/rfkill.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/miscdevice.h>
-#include <linux/wait.h>
-#include <linux/poll.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/workqueue.h>
+#include <beep/capability.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/rfkill.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/device.h>
+#include <beep/miscdevice.h>
+#include <beep/wait.h>
+#include <beep/poll.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
 
 #include "rfkill.h"
 

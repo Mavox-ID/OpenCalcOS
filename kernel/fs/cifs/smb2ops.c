@@ -17,8 +17,8 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/pagemap.h>
-#include <linux/vfs.h>
+#include <beep/pagemap.h>
+#include <beep/vfs.h>
 #include "cifsglob.h"
 #include "smb2pdu.h"
 #include "smb2proto.h"
@@ -572,7 +572,7 @@ struct smb_version_operations smb21_operations = {
 	.get_next_mid = smb2_get_next_mid,
 	.read_data_offset = smb2_read_data_offset,
 	.read_data_length = smb2_read_data_length,
-	.map_error = map_smb2_to_linux_error,
+	.map_error = map_smb2_to_beep_error,
 	.find_mid = smb2_find_mid,
 	.check_message = smb2_check_message,
 	.dump_detail = smb2_dump_detail,
@@ -639,7 +639,7 @@ struct smb_version_operations smb30_operations = {
 	.get_next_mid = smb2_get_next_mid,
 	.read_data_offset = smb2_read_data_offset,
 	.read_data_length = smb2_read_data_length,
-	.map_error = map_smb2_to_linux_error,
+	.map_error = map_smb2_to_beep_error,
 	.find_mid = smb2_find_mid,
 	.check_message = smb2_check_message,
 	.dump_detail = smb2_dump_detail,

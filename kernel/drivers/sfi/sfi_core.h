@@ -56,7 +56,7 @@
 
 */
 
-#include <linux/sysfs.h>
+#include <beep/sysfs.h>
 
 struct sfi_table_key{
 	char	*sig;

@@ -31,9 +31,9 @@
  * SOFTWARE.
  */
 
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
 
 #include "ipath_kernel.h"
 #include "ipath_verbs.h"
@@ -935,7 +935,7 @@ static noinline void ipath_bad_intr(struct ipath_devdata *dd, u32 *unexpectp)
 			 * ok, we must be taking somebody else's interrupts,
 			 * due to a messed up mptable and/or PIRQ table, so
 			 * unregister the interrupt.  We've seen this during
-			 * linuxbios development work, and it may happen in
+			 * beepbios development work, and it may happen in
 			 * the future again.
 			 */
 			if (dd->pcidev && dd->ipath_irq) {

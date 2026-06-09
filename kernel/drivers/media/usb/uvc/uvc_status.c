@@ -11,11 +11,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/input.h>
+#include <beep/kernel.h>
+#include <beep/input.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
+#include <beep/usb/input.h>
 
 #include "uvcvideo.h"
 

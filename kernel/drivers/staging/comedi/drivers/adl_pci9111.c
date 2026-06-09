@@ -70,8 +70,8 @@ TODO:
 
 #include "../comedidev.h"
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
 
 #include "8253.h"
 #include "comedi_fc.h"

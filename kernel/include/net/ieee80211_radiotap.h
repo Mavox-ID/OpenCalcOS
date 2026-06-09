@@ -28,22 +28,22 @@
  */
 
 /*
- * Modifications to fit into the linux IEEE 802.11 stack,
+ * Modifications to fit into the beep IEEE 802.11 stack,
  * Mike Kershaw (dragorn@kismetwireless.net)
  */
 
 #ifndef IEEE80211RADIOTAP_H
 #define IEEE80211RADIOTAP_H
 
-#include <linux/if_ether.h>
-#include <linux/kernel.h>
+#include <beep/if_ether.h>
+#include <beep/kernel.h>
 #include <asm/unaligned.h>
 
 /* Base version of the radiotap packet header data */
 #define PKTHDR_RADIOTAP_VERSION		0
 
 /* A generic radio capture format is desirable. There is one for
- * Linux, but it is neither rigidly defined (there were not even
+ * Beep, but it is neither rigidly defined (there were not even
  * units given for some fields) nor easily extensible.
  *
  * I suggest the following extensible radio capture format. It is

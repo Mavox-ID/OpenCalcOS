@@ -5,15 +5,15 @@
  * Copyright (C) 2003 by James.Bottomley@HansenPartnership.com
  */
 
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mca.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/delay.h>
+#include <beep/blkdev.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mca.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/delay.h>
 #include <asm/io.h>
 
 #include "scsi.h"

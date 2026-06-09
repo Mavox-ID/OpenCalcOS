@@ -2,13 +2,13 @@
  * Copyright (C) 2006 Red Hat, Inc. All Rights Reserved.
  * Written by David Howells (dhowells@redhat.com)
  */
-#include <linux/module.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_idmap.h>
-#include <linux/nfs_mount.h>
-#include <linux/sunrpc/auth.h>
-#include <linux/sunrpc/xprt.h>
-#include <linux/sunrpc/bc_xprt.h>
+#include <beep/module.h>
+#include <beep/nfs_fs.h>
+#include <beep/nfs_idmap.h>
+#include <beep/nfs_mount.h>
+#include <beep/sunrpc/auth.h>
+#include <beep/sunrpc/xprt.h>
+#include <beep/sunrpc/bc_xprt.h>
 #include "internal.h"
 #include "callback.h"
 #include "delegation.h"

@@ -25,18 +25,18 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/atomic.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/of.h>
-#include <linux/pci.h>
-#include <linux/proc_fs.h>
-#include <linux/rbtree.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
+#include <beep/atomic.h>
+#include <beep/delay.h>
+#include <beep/export.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/of.h>
+#include <beep/pci.h>
+#include <beep/proc_fs.h>
+#include <beep/rbtree.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/spinlock.h>
 
 #include <asm/eeh.h>
 #include <asm/eeh_event.h>

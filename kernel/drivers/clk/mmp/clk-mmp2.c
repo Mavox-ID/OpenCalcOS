@@ -9,12 +9,12 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/err.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/err.h>
 
 #include <mach/addr-map.h>
 

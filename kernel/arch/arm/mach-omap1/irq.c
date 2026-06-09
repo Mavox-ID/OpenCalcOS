@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/irq.c
+ * beep/arch/arm/mach-omap1/irq.c
  *
  * Interrupt handler for all OMAP boards
  *
@@ -35,12 +35,12 @@
  * with this program; if not, write  to the Free Software Foundation, Inc.,
  * 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
 
 #include <asm/irq.h>
 #include <asm/mach/irq.h>
@@ -124,7 +124,7 @@ static int omap_wake_irq(struct irq_data *d, unsigned int enable)
 /*
  * Allows tuning the IRQ type and priority
  *
- * NOTE: There is currently no OMAP fiq handler for Linux. Read the
+ * NOTE: There is currently no OMAP fiq handler for Beep. Read the
  *	 mailing list threads on FIQ handlers if you are planning to
  *	 add a FIQ handler for OMAP.
  */

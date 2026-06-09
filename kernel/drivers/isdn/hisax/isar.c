@@ -2,18 +2,18 @@
  *
  * isar.c   ISAR (Siemens PSB 7110) specific routines
  *
- * Author       Karsten Keil (keil@isdn4linux.de)
+ * Author       Karsten Keil (keil@isdn4beep.de)
  *
  * This file is (c) under GNU General Public License
  *
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include "hisax.h"
 #include "isar.h"
 #include "isdnl1.h"
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
 
 #define DBG_LOADFIRM	0
 #define DUMP_MBOXFRAME	2

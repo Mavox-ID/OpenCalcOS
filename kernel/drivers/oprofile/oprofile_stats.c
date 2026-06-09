@@ -7,10 +7,10 @@
  * @author John Levon
  */
 
-#include <linux/oprofile.h>
-#include <linux/smp.h>
-#include <linux/cpumask.h>
-#include <linux/threads.h>
+#include <beep/oprofile.h>
+#include <beep/smp.h>
+#include <beep/cpumask.h>
+#include <beep/threads.h>
 
 #include "oprofile_stats.h"
 #include "cpu_buffer.h"

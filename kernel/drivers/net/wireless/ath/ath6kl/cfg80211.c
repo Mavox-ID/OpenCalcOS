@@ -17,9 +17,9 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/moduleparam.h>
-#include <linux/inetdevice.h>
-#include <linux/export.h>
+#include <beep/moduleparam.h>
+#include <beep/inetdevice.h>
+#include <beep/export.h>
 
 #include "core.h"
 #include "cfg80211.h"

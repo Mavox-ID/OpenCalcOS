@@ -1,2 +1,2 @@
-#include <linux/libfdt_env.h>
+#include <beep/libfdt_env.h>
 #include "../scripts/dtc/libfdt/fdt_wip.c"

@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/fbmon.c
+ * beep/drivers/video/fbmon.c
  *
  * Copyright (C) 2002 James Simmons <jsimmons@users.sf.net>
  *
@@ -26,10 +26,10 @@
  * for more details.
  *
  */
-#include <linux/fb.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <beep/fb.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
 #include <video/edid.h>
 #ifdef CONFIG_PPC_OF
 #include <asm/prom.h>

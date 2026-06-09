@@ -8,12 +8,12 @@
  * by the Free Software Foundation, incorporated herein by reference.
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/random.h>
+#include <beep/bitops.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/random.h>
 #include "net_driver.h"
 #include "bitfield.h"
 #include "efx.h"

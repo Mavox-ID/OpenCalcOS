@@ -8,9 +8,9 @@
  * as published by the Free Software Foundation; either version
  * 2 of the License, or (at your option) any later version.
  */
-#include <linux/kernel.h>
-#include <linux/perf_event.h>
-#include <linux/string.h>
+#include <beep/kernel.h>
+#include <beep/perf_event.h>
+#include <beep/string.h>
 #include <asm/reg.h>
 #include <asm/cputable.h>
 

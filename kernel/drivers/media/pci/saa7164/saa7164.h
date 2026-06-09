@@ -24,7 +24,7 @@
 	*******************
 
 	saa7164_core.c/buffer.c/cards.c/i2c.c/dvb.c
-		|	: Standard Linux driver framework for creating
+		|	: Standard Beep driver framework for creating
 		|	: exposing and managing interfaces to the rest
 		|	: of the kernel or userland. Also uses _fw.c to load
 		|	: firmware direct into the PCIe bus, bypassing layers.
@@ -44,13 +44,13 @@
 	<- ----------------- PCIe address space -------------------- ->
 */
 
-#include <linux/pci.h>
-#include <linux/i2c.h>
-#include <linux/kdev_t.h>
-#include <linux/mutex.h>
-#include <linux/crc32.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
+#include <beep/pci.h>
+#include <beep/i2c.h>
+#include <beep/kdev_t.h>
+#include <beep/mutex.h>
+#include <beep/crc32.h>
+#include <beep/kthread.h>
+#include <beep/freezer.h>
 
 #include <media/tuner.h>
 #include <media/tveeprom.h>

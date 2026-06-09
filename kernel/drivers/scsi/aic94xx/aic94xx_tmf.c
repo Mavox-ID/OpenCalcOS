@@ -24,8 +24,8 @@
  *
  */
 
-#include <linux/spinlock.h>
-#include <linux/gfp.h>
+#include <beep/spinlock.h>
+#include <beep/gfp.h>
 #include "aic94xx.h"
 #include "aic94xx_sas.h"
 #include "aic94xx_hwi.h"

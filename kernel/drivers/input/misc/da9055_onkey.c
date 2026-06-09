@@ -11,13 +11,13 @@
  * option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
 
-#include <linux/mfd/da9055/core.h>
-#include <linux/mfd/da9055/reg.h>
+#include <beep/mfd/da9055/core.h>
+#include <beep/mfd/da9055/reg.h>
 
 struct da9055_onkey {
 	struct da9055 *da9055;

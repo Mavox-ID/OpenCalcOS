@@ -20,8 +20,8 @@
  * along with this program; see the file COPYING.  If not, write to
  * the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_eh.h>
 #include <scsi/scsi_dh.h>
@@ -193,7 +193,7 @@ static int parse_sp_info_reply(struct scsi_device *sdev,
 			    CLARIION_NAME);
 		break;
 	case 4:
-		/* Linux failover */
+		/* Beep failover */
 		break;
 	default:
 		sdev_printk(KERN_WARNING, sdev,

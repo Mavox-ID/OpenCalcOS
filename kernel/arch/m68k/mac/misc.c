@@ -2,19 +2,19 @@
  * Miscellaneous Mac68K-specific stuff
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/miscdevice.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/time.h>
-#include <linux/rtc.h>
-#include <linux/mm.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/miscdevice.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/time.h>
+#include <beep/rtc.h>
+#include <beep/mm.h>
 
-#include <linux/adb.h>
-#include <linux/cuda.h>
-#include <linux/pmu.h>
+#include <beep/adb.h>
+#include <beep/cuda.h>
+#include <beep/pmu.h>
 
 #include <asm/uaccess.h>
 #include <asm/io.h>

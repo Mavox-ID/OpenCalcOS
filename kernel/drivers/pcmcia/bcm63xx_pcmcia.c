@@ -6,15 +6,15 @@
  * Copyright (C) 2008 Maxime Bizon <mbizon@freebox.fr>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/timer.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/timer.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/gpio.h>
 
 #include <bcm63xx_regs.h>
 #include <bcm63xx_io.h>
@@ -534,4 +534,4 @@ module_exit(bcm63xx_pcmcia_exit);
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Maxime Bizon <mbizon@freebox.fr>");
-MODULE_DESCRIPTION("Linux PCMCIA Card Services: bcm63xx Socket Controller");
+MODULE_DESCRIPTION("Beep PCMCIA Card Services: bcm63xx Socket Controller");

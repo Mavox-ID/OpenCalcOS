@@ -2,23 +2,23 @@
  *
  * ISDN low-level module implementing a dummy loop driver.
  *
- * Copyright 1997 by Fritz Elfert (fritz@isdn4linux.de)
+ * Copyright 1997 by Fritz Elfert (fritz@isdn4beep.de)
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
  *
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/sched.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/sched.h>
 #include "isdnloop.h"
 
 static char *isdnloop_id = "loop0";
 
-MODULE_DESCRIPTION("ISDN4Linux: Pseudo Driver that simulates an ISDN card");
+MODULE_DESCRIPTION("ISDN4Beep: Pseudo Driver that simulates an ISDN card");
 MODULE_AUTHOR("Fritz Elfert");
 MODULE_LICENSE("GPL");
 module_param(isdnloop_id, charp, 0);

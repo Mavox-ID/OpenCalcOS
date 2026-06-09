@@ -15,7 +15,7 @@
 #ifndef _ASM_TILE_CURRENT_H
 #define _ASM_TILE_CURRENT_H
 
-#include <linux/thread_info.h>
+#include <beep/thread_info.h>
 
 struct task_struct;
 

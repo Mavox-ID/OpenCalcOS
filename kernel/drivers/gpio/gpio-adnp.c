@@ -6,14 +6,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/irqdomain.h>
+#include <beep/module.h>
+#include <beep/of_irq.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
 
 #define GPIO_DDR(gpio) (0x00 << (gpio)->reg_shift)
 #define GPIO_PLR(gpio) (0x01 << (gpio)->reg_shift)

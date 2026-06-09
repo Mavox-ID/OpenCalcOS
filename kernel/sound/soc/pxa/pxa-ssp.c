@@ -14,13 +14,13 @@
  *  o Test network mode for > 16bit sample size
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/pxa2xx_ssp.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/pxa2xx_ssp.h>
 
 #include <asm/irq.h>
 

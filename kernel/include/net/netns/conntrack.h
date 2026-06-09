@@ -1,10 +1,10 @@
 #ifndef __NETNS_CONNTRACK_H
 #define __NETNS_CONNTRACK_H
 
-#include <linux/list.h>
-#include <linux/list_nulls.h>
-#include <linux/atomic.h>
-#include <linux/netfilter/nf_conntrack_tcp.h>
+#include <beep/list.h>
+#include <beep/list_nulls.h>
+#include <beep/atomic.h>
+#include <beep/netfilter/nf_conntrack_tcp.h>
 
 struct ctl_table_header;
 struct nf_conntrack_ecache;

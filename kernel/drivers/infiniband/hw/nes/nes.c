@@ -31,20 +31,20 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/if_vlan.h>
-#include <linux/crc32.h>
-#include <linux/in.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/if_arp.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/if_vlan.h>
+#include <beep/crc32.h>
+#include <beep/in.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/if_arp.h>
+#include <beep/highmem.h>
+#include <beep/slab.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/byteorder.h>
@@ -57,7 +57,7 @@
 
 #include <net/netevent.h>
 #include <net/neighbour.h>
-#include <linux/route.h>
+#include <beep/route.h>
 #include <net/ip_fib.h>
 
 MODULE_AUTHOR("NetEffect");
@@ -549,7 +549,7 @@ static int nes_probe(struct pci_dev *pcidev, const struct pci_device_id *ent)
 			nes_debug(NES_DBG_INIT, "MSI is enabled for device %s\n",
 					pci_name(pcidev));
 		} else {
-			nes_debug(NES_DBG_INIT, "MSI is disabled by linux for device %s\n",
+			nes_debug(NES_DBG_INIT, "MSI is disabled by beep for device %s\n",
 					pci_name(pcidev));
 		}
 	} else {

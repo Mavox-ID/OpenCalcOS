@@ -22,8 +22,8 @@
 #define _ASM_SMP_H
 
 #ifndef __ASSEMBLY__
-#include <linux/threads.h>
-#include <linux/cpumask.h>
+#include <beep/threads.h>
+#include <beep/cpumask.h>
 #endif
 
 #ifdef CONFIG_SMP

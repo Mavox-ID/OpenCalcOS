@@ -7,15 +7,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
-#include <linux/notifier.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/if.h>
+#include <beep/if_ether.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
+#include <beep/rtnetlink.h>
+#include <beep/slab.h>
+#include <beep/notifier.h>
 #include <net/mac80211.h>
 #include <net/cfg80211.h>
 #include "ieee80211_i.h"

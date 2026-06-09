@@ -1,11 +1,11 @@
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  */
 
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/sched.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/sched.h>
 #include <asm/pgtable.h>
 #include <asm/tlbflush.h>
 #include <as-layout.h>

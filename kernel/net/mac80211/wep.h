@@ -11,8 +11,8 @@
 #ifndef WEP_H
 #define WEP_H
 
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <beep/skbuff.h>
+#include <beep/types.h>
 #include "ieee80211_i.h"
 #include "key.h"
 

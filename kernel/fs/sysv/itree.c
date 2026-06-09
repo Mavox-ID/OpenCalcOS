@@ -1,13 +1,13 @@
 /*
- *  linux/fs/sysv/itree.c
+ *  beep/fs/sysv/itree.c
  *
  *  Handling of indirect blocks' trees.
  *  AV, Sep--Dec 2000
  */
 
-#include <linux/buffer_head.h>
-#include <linux/mount.h>
-#include <linux/string.h>
+#include <beep/buffer_head.h>
+#include <beep/mount.h>
+#include <beep/string.h>
 #include "sysv.h"
 
 enum {DIRECT = 10, DEPTH = 4};	/* Have triple indirect */

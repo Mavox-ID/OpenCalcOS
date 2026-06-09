@@ -11,8 +11,8 @@
  *
  */
 
-#include <linux/usb.h>
-#include <linux/usb/quirks.h>
+#include <beep/usb.h>
+#include <beep/usb/quirks.h>
 #include "usb.h"
 
 /* Lists of quirky USB devices, split in device quirks and interface quirks.

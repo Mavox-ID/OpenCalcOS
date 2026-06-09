@@ -26,11 +26,11 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/init.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/time.h>
+#include <beep/init.h>
 #include <sound/core.h>
 #include <sound/emu10k1.h>
 

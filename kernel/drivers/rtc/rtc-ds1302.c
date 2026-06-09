@@ -9,13 +9,13 @@
  * this archive for more details.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/io.h>
-#include <linux/bcd.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/rtc.h>
+#include <beep/io.h>
+#include <beep/bcd.h>
 
 #define DRV_NAME	"rtc-ds1302"
 #define DRV_VERSION	"0.1.1"

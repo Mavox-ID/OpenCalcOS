@@ -47,21 +47,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/device.h>
-#include <linux/dmaengine.h>
-#include <linux/hardirq.h>
-#include <linux/spinlock.h>
-#include <linux/percpu.h>
-#include <linux/rcupdate.h>
-#include <linux/mutex.h>
-#include <linux/jiffies.h>
-#include <linux/rculist.h>
-#include <linux/idr.h>
-#include <linux/slab.h>
+#include <beep/dma-mapping.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/device.h>
+#include <beep/dmaengine.h>
+#include <beep/hardirq.h>
+#include <beep/spinlock.h>
+#include <beep/percpu.h>
+#include <beep/rcupdate.h>
+#include <beep/mutex.h>
+#include <beep/jiffies.h>
+#include <beep/rculist.h>
+#include <beep/idr.h>
+#include <beep/slab.h>
 
 static DEFINE_MUTEX(dma_list_mutex);
 static DEFINE_IDR(dma_idr);

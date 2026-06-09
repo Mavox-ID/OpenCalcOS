@@ -2,7 +2,7 @@
     comedi/drivers/pcmda12.c
     Driver for Winsystems PC-104 based PCM-D/A-12 8-channel AO board.
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 2006 Calin A. Culianu <calin@ajvar.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -53,7 +53,7 @@ Configuration Options:
 
 #include "../comedidev.h"
 
-#include <linux/pci.h>		/* for PCI devices */
+#include <beep/pci.h>		/* for PCI devices */
 
 #define SDEV_NO ((int)(s - dev->subdevices))
 #define CHANS 8

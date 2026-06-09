@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/omap2/dss/dss_features.c
+ * beep/drivers/video/omap2/dss/dss_features.c
  *
  * Copyright (C) 2010 Texas Instruments
  * Author: Archit Taneja <archit@ti.com>
@@ -17,11 +17,11 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/err.h>
+#include <beep/slab.h>
 
 #include <video/omapdss.h>
 

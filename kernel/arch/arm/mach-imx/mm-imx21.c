@@ -18,9 +18,9 @@
  * MA 02110-1301, USA.
  */
 
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/pinctrl/machine.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/pinctrl/machine.h>
 #include <asm/pgtable.h>
 #include <asm/mach/map.h>
 

@@ -10,11 +10,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/sched.h>
-#include <linux/cpuidle.h>
-#include <linux/cpu_pm.h>
-#include <linux/export.h>
-#include <linux/clockchips.h>
+#include <beep/sched.h>
+#include <beep/cpuidle.h>
+#include <beep/cpu_pm.h>
+#include <beep/export.h>
+#include <beep/clockchips.h>
 
 #include <asm/proc-fns.h>
 

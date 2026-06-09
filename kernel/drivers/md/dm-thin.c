@@ -8,13 +8,13 @@
 #include "dm-bio-prison.h"
 #include "dm.h"
 
-#include <linux/device-mapper.h>
-#include <linux/dm-io.h>
-#include <linux/dm-kcopyd.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/device-mapper.h>
+#include <beep/dm-io.h>
+#include <beep/dm-kcopyd.h>
+#include <beep/list.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 #define	DM_MSG_PREFIX	"thin"
 

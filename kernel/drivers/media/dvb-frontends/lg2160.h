@@ -1,7 +1,7 @@
 /*
  *    Support for LG2160 - ATSC/MH
  *
- *    Copyright (C) 2010 Michael Krufky <mkrufky@linuxtv.org>
+ *    Copyright (C) 2010 Michael Krufky <mkrufky@beeptv.org>
  *
  *    This program is free software; you can redistribute it and/or modify
  *    it under the terms of the GNU General Public License as published by
@@ -22,7 +22,7 @@
 #ifndef _LG2160_H_
 #define _LG2160_H_
 
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 #include "dvb_frontend.h"
 
 enum lg_chip_type {

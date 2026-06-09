@@ -1,9 +1,9 @@
-/* linux/drivers/mmc/host/sdhci-s3c.c
+/* beep/drivers/mmc/host/sdhci-s3c.c
  *
  * Copyright 2008 Openmoko Inc.
  * Copyright 2008 Simtec Electronics
  *      Ben Dooks <ben@simtec.co.uk>
- *      http://armlinux.simtec.co.uk/
+ *      http://armbeep.simtec.co.uk/
  *
  * SDHCI (HSMMC) support for Samsung SoC
  *
@@ -12,21 +12,21 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/pinctrl/consumer.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/of_gpio.h>
+#include <beep/pm.h>
+#include <beep/pm_runtime.h>
+#include <beep/pinctrl/consumer.h>
 
-#include <linux/mmc/host.h>
+#include <beep/mmc/host.h>
 
 #include <plat/sdhci.h>
 #include <plat/regs-sdhci.h>

@@ -1,5 +1,5 @@
 /*
- * Hauppauge HD PVR USB driver - video 4 linux 2 interface
+ * Hauppauge HD PVR USB driver - video 4 beep 2 interface
  *
  * Copyright (C) 2008      Janne Grunau (j@jannau.net)
  *
@@ -9,17 +9,17 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/uaccess.h>
+#include <beep/usb.h>
+#include <beep/mutex.h>
+#include <beep/workqueue.h>
 
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-dev.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
@@ -354,7 +354,7 @@ static int hdpvr_stop_streaming(struct hdpvr_device *dev)
 
 /*=======================================================================*/
 /*
- * video 4 linux 2 file operations
+ * video 4 beep 2 file operations
  */
 
 static int hdpvr_open(struct file *file)

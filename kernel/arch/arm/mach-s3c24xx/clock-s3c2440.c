@@ -1,7 +1,7 @@
-/* linux/arch/arm/mach-s3c2440/clock.c
+/* beep/arch/arm/mach-s3c2440/clock.c
  *
  * Copyright (c) 2004-2005 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C2440 Clock support
@@ -21,22 +21,22 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/mutex.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/serial_core.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/mutex.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/serial_core.h>
 
 #include <mach/hardware.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/irq.h>
 
 #include <mach/regs-clock.h>

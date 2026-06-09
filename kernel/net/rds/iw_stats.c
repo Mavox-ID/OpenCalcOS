@@ -30,9 +30,9 @@
  * SOFTWARE.
  *
  */
-#include <linux/percpu.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
+#include <beep/percpu.h>
+#include <beep/seq_file.h>
+#include <beep/proc_fs.h>
 
 #include "rds.h"
 #include "iw.h"

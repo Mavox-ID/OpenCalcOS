@@ -23,18 +23,18 @@
  *
  ******************************************************************************/
 
-#include <linux/net.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/in.h>
-#include <linux/cdrom.h>
-#include <linux/module.h>
-#include <linux/ratelimit.h>
+#include <beep/net.h>
+#include <beep/delay.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/slab.h>
+#include <beep/blkdev.h>
+#include <beep/spinlock.h>
+#include <beep/kthread.h>
+#include <beep/in.h>
+#include <beep/cdrom.h>
+#include <beep/module.h>
+#include <beep/ratelimit.h>
 #include <asm/unaligned.h>
 #include <net/sock.h>
 #include <net/tcp.h>
@@ -557,7 +557,7 @@ static void target_complete_failure_work(struct work_struct *work)
 
 /*
  * Used when asking transport to copy Sense Data from the underlying
- * Linux/SCSI struct scsi_cmnd
+ * Beep/SCSI struct scsi_cmnd
  */
 static unsigned char *transport_get_sense_buffer(struct se_cmd *cmd)
 {
@@ -1530,7 +1530,7 @@ void transport_generic_request_failure(struct se_cmd *cmd,
 		 * No SENSE Data payload for this case, set SCSI Status
 		 * and queue the response to $FABRIC_MOD.
 		 *
-		 * Uses linux/include/scsi/scsi.h SAM status codes defs
+		 * Uses beep/include/scsi/scsi.h SAM status codes defs
 		 */
 		cmd->scsi_status = SAM_STAT_RESERVATION_CONFLICT;
 		/*
@@ -2757,7 +2757,7 @@ transport_send_check_condition_and_sense(struct se_cmd *cmd,
 		break;
 	}
 	/*
-	 * This code uses linux/include/scsi/scsi.h SAM status codes!
+	 * This code uses beep/include/scsi/scsi.h SAM status codes!
 	 */
 	cmd->scsi_status = SAM_STAT_CHECK_CONDITION;
 	/*

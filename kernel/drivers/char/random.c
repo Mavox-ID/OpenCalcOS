@@ -194,7 +194,7 @@
  *
  * For example, on most modern systems using the System V init
  * scripts, such code fragments would be found in
- * /etc/rc.d/init.d/random.  On older Linux systems, the correct script
+ * /etc/rc.d/init.d/random.  On older Beep systems, the correct script
  * location might be in /etc/rcb.d/rc.local or /etc/rc.d/rc.0.
  *
  * Effectively, these commands cause the contents of the entropy pool
@@ -206,10 +206,10 @@
  * of the entropy pool requires knowledge of the previous history of
  * the system.
  *
- * Configuring the /dev/random driver under Linux
+ * Configuring the /dev/random driver under Beep
  * ==============================================
  *
- * The /dev/random driver under Linux uses minor numbers 8 and 9 of
+ * The /dev/random driver under Beep uses minor numbers 8 and 9 of
  * the /dev/mem major number (#1).  So if your system does not have
  * /dev/random and /dev/urandom created already, they can be created
  * by using the commands:
@@ -235,29 +235,29 @@
  * Eastlake, Steve Crocker, and Jeff Schiller.
  */
 
-#include <linux/utsname.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/genhd.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/percpu.h>
-#include <linux/cryptohash.h>
-#include <linux/fips.h>
-#include <linux/ptrace.h>
-#include <linux/kmemcheck.h>
+#include <beep/utsname.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/major.h>
+#include <beep/string.h>
+#include <beep/fcntl.h>
+#include <beep/slab.h>
+#include <beep/random.h>
+#include <beep/poll.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/genhd.h>
+#include <beep/interrupt.h>
+#include <beep/mm.h>
+#include <beep/spinlock.h>
+#include <beep/percpu.h>
+#include <beep/cryptohash.h>
+#include <beep/fips.h>
+#include <beep/ptrace.h>
+#include <beep/kmemcheck.h>
 
 #ifdef CONFIG_GENERIC_HARDIRQS
-# include <linux/irq.h>
+# include <beep/irq.h>
 #endif
 
 #include <asm/processor.h>
@@ -1353,7 +1353,7 @@ EXPORT_SYMBOL(generate_random_uuid);
 
 #ifdef CONFIG_SYSCTL
 
-#include <linux/sysctl.h>
+#include <beep/sysctl.h>
 
 static int min_read_thresh = 8, min_write_thresh;
 static int max_read_thresh = INPUT_POOL_WORDS * 32;

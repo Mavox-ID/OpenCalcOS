@@ -21,7 +21,7 @@
 
 #ifndef __TSL2X7X_H
 #define __TSL2X7X_H
-#include <linux/pm.h>
+#include <beep/pm.h>
 
 /* Max number of segments allowable in LUX table */
 #define TSL2X7X_MAX_LUX_TABLE_SIZE		9

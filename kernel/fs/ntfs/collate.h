@@ -1,6 +1,6 @@
 /*
  * collate.h - Defines for NTFS kernel collation handling.  Part of the
- *	       Linux-NTFS project.
+ *	       Beep-NTFS project.
  *
  * Copyright (c) 2004 Anton Altaparmakov
  *
@@ -15,13 +15,13 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program (in the main directory of the Linux-NTFS
+ * along with this program (in the main directory of the Beep-NTFS
  * distribution in the file COPYING); if not, write to the Free Software
  * Foundation,Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#ifndef _LINUX_NTFS_COLLATE_H
-#define _LINUX_NTFS_COLLATE_H
+#ifndef _BEEP_NTFS_COLLATE_H
+#define _BEEP_NTFS_COLLATE_H
 
 #include "types.h"
 #include "volume.h"
@@ -47,4 +47,4 @@ extern int ntfs_collate(ntfs_volume *vol, COLLATION_RULE cr,
 		const void *data1, const int data1_len,
 		const void *data2, const int data2_len);
 
-#endif /* _LINUX_NTFS_COLLATE_H */
+#endif /* _BEEP_NTFS_COLLATE_H */

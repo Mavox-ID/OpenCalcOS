@@ -22,7 +22,7 @@
 #ifndef STKWEBCAM_H
 #define STKWEBCAM_H
 
-#include <linux/usb.h>
+#include <beep/usb.h>
 #include <media/v4l2-common.h>
 
 #define DRIVER_VERSION		"v0.0.1"

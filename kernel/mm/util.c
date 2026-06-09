@@ -1,10 +1,10 @@
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/security.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/export.h>
+#include <beep/err.h>
+#include <beep/sched.h>
+#include <beep/security.h>
 #include <asm/uaccess.h>
 
 #include "internal.h"

@@ -1,6 +1,6 @@
 /*
  * Copyright IBM Corporation, 2007
- * Josh Boyer <jwboyer@linux.vnet.ibm.com>
+ * Josh Boyer <jwboyer@beep.vnet.ibm.com>
  *
  * Based on ebony wrapper:
  * Copyright 2007 David Gibson, IBM Corporation.

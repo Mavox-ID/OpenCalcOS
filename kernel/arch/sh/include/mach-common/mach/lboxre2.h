@@ -11,7 +11,7 @@
  * for more details.
  *
  */
-#include <linux/sh_intc.h>
+#include <beep/sh_intc.h>
 
 #define IRQ_CF1		evt2irq(0x320)	/* CF1 */
 #define IRQ_CF0		evt2irq(0x340)	/* CF0 */

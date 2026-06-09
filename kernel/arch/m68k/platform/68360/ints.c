@@ -1,5 +1,5 @@
 /*
- * linux/arch/$(ARCH)/platform/$(PLATFORM)/ints.c
+ * beep/arch/$(ARCH)/platform/$(PLATFORM)/ints.c
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file COPYING in the main directory of this archive
@@ -7,14 +7,14 @@
  *
  * Copyright (c) 2000  Michael Leslie <mleslie@lineo.com>
  * Copyright (c) 1996 Roman Zippel
- * Copyright (c) 1999 D. Jeff Dionne <jeff@uclinux.org>
+ * Copyright (c) 1999 D. Jeff Dionne <jeff@ucbeep.org>
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
 #include <asm/traps.h>
 #include <asm/machdep.h>
 #include <asm/m68360.h>

@@ -4,10 +4,10 @@
  * Parse symbolic events/counts passed in as options:
  */
 
-#include <linux/list.h>
+#include <beep/list.h>
 #include <stdbool.h>
 #include "types.h"
-#include <linux/perf_event.h>
+#include <beep/perf_event.h>
 #include "types.h"
 
 struct list_head;

@@ -3,23 +3,23 @@
  *
  * Copyright 2006-2008 Analog Devices Inc.
  *
- * Enter bugs at http://blackfin.uclinux.org/
+ * Enter bugs at http://blackfin.ucbeep.org/
  *
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/prefetch.h>
-#include <linux/usb/nop-usb-xceiv.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/gpio.h>
+#include <beep/io.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/prefetch.h>
+#include <beep/usb/nop-usb-xceiv.h>
 
 #include <asm/cacheflush.h>
 

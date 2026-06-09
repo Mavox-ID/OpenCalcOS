@@ -24,14 +24,14 @@
  *
  ********************************************************************/
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/skbuff.h>
+#include <beep/fs.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
 
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
@@ -127,7 +127,7 @@ int __init iriap_init(void)
 
 	/* Register the Device object with LM-IAS */
 	obj = irias_new_object("Device", IAS_DEVICE_ID);
-	irias_add_string_attrib(obj, "DeviceName", "Linux", IAS_KERNEL_ATTR);
+	irias_add_string_attrib(obj, "DeviceName", "Beep", IAS_KERNEL_ATTR);
 
 	oct_seq[0] = 0x01;  /* Version 1 */
 	oct_seq[1] = 0x00;  /* IAS support bits */

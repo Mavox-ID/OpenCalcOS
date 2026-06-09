@@ -22,15 +22,15 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/backing-dev.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/types.h>
+#include <beep/backing-dev.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/concat.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/concat.h>
 
 #include <asm/div64.h>
 

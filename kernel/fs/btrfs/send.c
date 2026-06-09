@@ -16,16 +16,16 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/bsearch.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/sort.h>
-#include <linux/mount.h>
-#include <linux/xattr.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/radix-tree.h>
-#include <linux/crc32c.h>
-#include <linux/vmalloc.h>
+#include <beep/bsearch.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/sort.h>
+#include <beep/mount.h>
+#include <beep/xattr.h>
+#include <beep/posix_acl_xattr.h>
+#include <beep/radix-tree.h>
+#include <beep/crc32c.h>
+#include <beep/vmalloc.h>
 
 #include "send.h"
 #include "backref.h"

@@ -242,7 +242,7 @@ config CTTYHACK
 	cttyhack provides a "quick and dirty" solution to this problem.
 	It analyzes stdin with various ioctls, trying to determine whether
 	it is a /dev/ttyN or /dev/ttySN (virtual terminal or serial line).
-	On Linux it also checks sysfs for a pointer to the active console.
+	On Beep it also checks sysfs for a pointer to the active console.
 	If cttyhack is able to find the real console device, it closes
 	stdin/out/err and reopens that device.
 	Then it executes the given program. Opening the device will make

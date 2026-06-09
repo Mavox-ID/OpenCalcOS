@@ -30,11 +30,11 @@
 /*
  * Veritas filesystem driver - inode routines.
  */
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/pagemap.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <beep/fs.h>
+#include <beep/buffer_head.h>
+#include <beep/pagemap.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
 
 #include "vxfs.h"
 #include "vxfs_inode.h"
@@ -184,7 +184,7 @@ vxfs_stiget(struct super_block *sbp, ino_t ino)
  * @vip:	VxFS inode
  *
  * Description:
- *  vxfs_transmod returns a Linux mode_t for a given
+ *  vxfs_transmod returns a Beep mode_t for a given
  *  VxFS inode structure.
  */
 static __inline__ umode_t

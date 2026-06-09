@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/board-rx51-video.c
+ * beep/arch/arm/mach-omap2/board-rx51-video.c
  *
  * Copyright (C) 2010 Nokia
  *
@@ -8,15 +8,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/spi/spi.h>
-#include <linux/mm.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/spi/spi.h>
+#include <beep/mm.h>
 #include <asm/mach-types.h>
 #include <video/omapdss.h>
-#include <linux/platform_data/spi-omap2-mcspi.h>
+#include <beep/platform_data/spi-omap2-mcspi.h>
 
 #include "board-rx51.h"
 

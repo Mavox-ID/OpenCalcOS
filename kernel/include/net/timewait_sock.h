@@ -11,8 +11,8 @@
 #ifndef _TIMEWAIT_SOCK_H
 #define _TIMEWAIT_SOCK_H
 
-#include <linux/slab.h>
-#include <linux/bug.h>
+#include <beep/slab.h>
+#include <beep/bug.h>
 #include <net/sock.h>
 
 struct timewait_sock_ops {

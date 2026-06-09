@@ -12,11 +12,11 @@
  * 0xff600000 when COREB_SRAM_INIT is cleared.
  */
 
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
+#include <beep/device.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/miscdevice.h>
+#include <beep/module.h>
 
 #define CMD_COREB_START		_IO('b', 0)
 #define CMD_COREB_STOP		_IO('b', 1)

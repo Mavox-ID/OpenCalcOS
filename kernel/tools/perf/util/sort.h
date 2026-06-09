@@ -5,9 +5,9 @@
 #include "util.h"
 
 #include "color.h"
-#include <linux/list.h>
+#include <beep/list.h>
 #include "cache.h"
-#include <linux/rbtree.h>
+#include <beep/rbtree.h>
 #include "symbol.h"
 #include "string.h"
 #include "callchain.h"

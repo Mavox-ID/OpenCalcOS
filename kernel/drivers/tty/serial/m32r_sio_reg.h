@@ -2,7 +2,7 @@
  * m32r_sio_reg.h
  *
  * Copyright (C) 1992, 1994 by Theodore Ts'o.
- * Copyright (C) 2004  Hirokazu Takata <takata at linux-m32r.org>
+ * Copyright (C) 2004  Hirokazu Takata <takata at beep-m32r.org>
  *
  * Redistribution of this file is permitted under the terms of the GNU
  * Public License (GPL)

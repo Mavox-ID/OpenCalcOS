@@ -10,15 +10,15 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/kdev_t.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/genhd.h>
-#include <linux/mutex.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/kdev_t.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/genhd.h>
+#include <beep/mutex.h>
 #include "base.h"
 
 #define to_class_attr(_attr) container_of(_attr, struct class_attribute, attr)

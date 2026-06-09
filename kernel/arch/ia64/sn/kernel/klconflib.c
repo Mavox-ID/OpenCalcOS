@@ -6,10 +6,10 @@
  * Copyright (C) 1992 - 1997, 2000-2004 Silicon Graphics, Inc. All rights reserved.
  */
 
-#include <linux/types.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
+#include <beep/types.h>
+#include <beep/ctype.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
 #include <asm/sn/types.h>
 #include <asm/sn/module.h>
 #include <asm/sn/l1.h>

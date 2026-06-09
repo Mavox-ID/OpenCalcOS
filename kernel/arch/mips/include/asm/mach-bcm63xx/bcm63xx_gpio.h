@@ -1,7 +1,7 @@
 #ifndef BCM63XX_GPIO_H
 #define BCM63XX_GPIO_H
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include <bcm63xx_cpu.h>
 
 int __init bcm63xx_gpio_init(void);

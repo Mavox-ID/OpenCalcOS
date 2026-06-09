@@ -13,9 +13,9 @@
 #ifndef _REGMAP_INTERNAL_H
 #define _REGMAP_INTERNAL_H
 
-#include <linux/regmap.h>
-#include <linux/fs.h>
-#include <linux/list.h>
+#include <beep/regmap.h>
+#include <beep/fs.h>
+#include <beep/list.h>
 
 struct regmap;
 struct regcache_ops;

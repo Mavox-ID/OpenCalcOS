@@ -10,16 +10,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/mfd/88pm860x.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/of.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
+#include <beep/leds.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
+#include <beep/mfd/88pm860x.h>
+#include <beep/module.h>
 
 #define LED_PWM_MASK		(0x1F)
 #define LED_CURRENT_MASK	(0x07 << 5)

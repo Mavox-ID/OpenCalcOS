@@ -2,7 +2,7 @@
     comedi/drivers/das16cs.c
     Driver for Computer Boards PC-CARD DAS16/16.
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 2000, 2001, 2002 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -20,7 +20,7 @@
     Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
     PCMCIA support code for this driver is adapted from the dummy_cs.c
-    driver of the Linux PCMCIA Card Services package.
+    driver of the Beep PCMCIA Card Services package.
 
     The initial developer of the original code is David A. Hinds
     <dahinds@users.sourceforge.net>.  Portions created by David A. Hinds
@@ -38,10 +38,10 @@ Status: experimental
 
 */
 
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
 #include "../comedidev.h"
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>

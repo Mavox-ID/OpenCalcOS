@@ -12,20 +12,20 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/mfd/core.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/irq.h>
+#include <beep/mfd/core.h>
+#include <beep/interrupt.h>
+#include <beep/irqdomain.h>
 
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/pdata.h>
-#include <linux/mfd/wm831x/gpio.h>
-#include <linux/mfd/wm831x/irq.h>
+#include <beep/mfd/wm831x/core.h>
+#include <beep/mfd/wm831x/pdata.h>
+#include <beep/mfd/wm831x/gpio.h>
+#include <beep/mfd/wm831x/irq.h>
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 struct wm831x_irq_data {
 	int primary;

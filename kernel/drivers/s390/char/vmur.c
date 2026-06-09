@@ -1,5 +1,5 @@
 /*
- * Linux driver for System z and s390 unit record devices
+ * Beep driver for System z and s390 unit record devices
  * (z/VM virtual punch, reader, printer)
  *
  * Copyright IBM Corp. 2001, 2009
@@ -11,9 +11,9 @@
 #define KMSG_COMPONENT "vmur"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/cdev.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/cdev.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #include <asm/uaccess.h>
 #include <asm/cio.h>
@@ -165,10 +165,10 @@ static void urdev_put(struct urdev *urd)
 
 /*
  * State and contents of ur devices can be changed by class D users issuing
- * CP commands such as PURGE or TRANSFER, while the Linux guest is suspended.
- * Also the Linux guest might be logged off, which causes all active spool
+ * CP commands such as PURGE or TRANSFER, while the Beep guest is suspended.
+ * Also the Beep guest might be logged off, which causes all active spool
  * files to be closed.
- * So we cannot guarantee that spool files are still the same when the Linux
+ * So we cannot guarantee that spool files are still the same when the Beep
  * guest is resumed. In order to avoid unpredictable results at resume time
  * we simply refuse to suspend if a ur device node is open.
  */

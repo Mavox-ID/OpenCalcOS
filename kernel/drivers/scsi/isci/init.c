@@ -53,11 +53,11 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/efi.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/firmware.h>
+#include <beep/efi.h>
 #include <asm/string.h>
 #include <scsi/scsi_host.h>
 #include "host.h"
@@ -93,7 +93,7 @@ static DEFINE_PCI_DEVICE_TABLE(isci_id_table) = {
 
 MODULE_DEVICE_TABLE(pci, isci_id_table);
 
-/* linux isci specific settings */
+/* beep isci specific settings */
 
 unsigned char no_outbound_task_to = 2;
 module_param(no_outbound_task_to, byte, 0);

@@ -3,7 +3,7 @@
  * Along with common page table handling code
  *
  *  Derived from arch/powerpc/mm/tlb_64.c:
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -21,13 +21,13 @@
  *  2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/percpu.h>
-#include <linux/hardirq.h>
-#include <linux/hugetlb.h>
+#include <beep/kernel.h>
+#include <beep/gfp.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/percpu.h>
+#include <beep/hardirq.h>
+#include <beep/hugetlb.h>
 #include <asm/pgalloc.h>
 #include <asm/tlbflush.h>
 #include <asm/tlb.h>
@@ -181,7 +181,7 @@ static pte_t set_access_flags_filter(pte_t pte, struct vm_area_struct *vma,
 #endif /* !(defined(CONFIG_PPC_STD_MMU) || _PAGE_EXEC == 0) */
 
 /*
- * set_pte stores a linux PTE into the linux page table.
+ * set_pte stores a beep PTE into the beep page table.
  */
 void set_pte_at(struct mm_struct *mm, unsigned long addr, pte_t *ptep,
 		pte_t pte)

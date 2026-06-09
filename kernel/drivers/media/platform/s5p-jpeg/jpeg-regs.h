@@ -1,4 +1,4 @@
-/* linux/drivers/media/platform/s5p-jpeg/jpeg-regs.h
+/* beep/drivers/media/platform/s5p-jpeg/jpeg-regs.h
  *
  * Register definition file for Samsung JPEG codec driver
  *

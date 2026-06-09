@@ -25,19 +25,19 @@
 /* Partially rewriten by Oleg I. Vdovikin for mmapped support of
    for Alpha Processor Inc. UP-2000(+) boards */
 
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/wait.h>
+#include <beep/kernel.h>
+#include <beep/ioport.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/wait.h>
 
-#include <linux/isa.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-pcf.h>
-#include <linux/io.h>
+#include <beep/isa.h>
+#include <beep/i2c.h>
+#include <beep/i2c-algo-pcf.h>
+#include <beep/io.h>
 
 #include <asm/irq.h>
 

@@ -12,8 +12,8 @@
  *   more details.
  */
 
-#include <linux/uaccess.h>
-#include <linux/module.h>
+#include <beep/uaccess.h>
+#include <beep/module.h>
 
 int __range_ok(unsigned long addr, unsigned long size)
 {

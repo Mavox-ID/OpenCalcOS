@@ -8,7 +8,7 @@
 #ifndef __ASM_AVR32_PAGE_H
 #define __ASM_AVR32_PAGE_H
 
-#include <linux/const.h>
+#include <beep/const.h>
 
 /* PAGE_SHIFT determines the page size */
 #define PAGE_SHIFT	12

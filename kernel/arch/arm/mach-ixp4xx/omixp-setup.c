@@ -12,13 +12,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
+#include <beep/kernel.h>
+#include <beep/serial.h>
+#include <beep/serial_8250.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
 #ifdef CONFIG_LEDS_CLASS
-#include <linux/leds.h>
+#include <beep/leds.h>
 #endif
 
 #include <asm/setup.h>

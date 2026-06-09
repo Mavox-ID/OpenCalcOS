@@ -7,8 +7,8 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
+#include <beep/dma-mapping.h>
+#include <beep/io.h>
 
 static dma_addr_t nommu_map_page(struct device *dev, struct page *page,
 				 unsigned long offset, size_t size,

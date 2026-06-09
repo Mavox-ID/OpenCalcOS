@@ -10,20 +10,20 @@
  * option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/rio.h>
-#include <linux/rio_drv.h>
-#include <linux/slab.h>
-#include <linux/rio_ids.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/rio.h>
+#include <beep/rio_drv.h>
+#include <beep/slab.h>
+#include <beep/rio_ids.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/crc32.h>
-#include <linux/ethtool.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/crc32.h>
+#include <beep/ethtool.h>
 
 #define DRV_NAME        "rionet"
 #define DRV_VERSION     "0.3"

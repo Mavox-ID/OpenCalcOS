@@ -10,9 +10,9 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/etherdevice.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/etherdevice.h>
 #include <net/rtnetlink.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>

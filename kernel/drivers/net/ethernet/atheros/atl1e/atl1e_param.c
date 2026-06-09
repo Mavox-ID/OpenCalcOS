@@ -19,7 +19,7 @@
  * Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 
-#include <linux/netdevice.h>
+#include <beep/netdevice.h>
 
 #include "atl1e.h"
 

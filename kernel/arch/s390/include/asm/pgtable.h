@@ -12,7 +12,7 @@
 #define _ASM_S390_PGTABLE_H
 
 /*
- * The Linux memory management assumes a three-level page table setup. For
+ * The Beep memory management assumes a three-level page table setup. For
  * s390 31 bit we "fold" the mid level into the top-level page table, so
  * that we physically have the same two-level page table as the s390 mmu
  * expects in 31 bit mode. For s390 64 bit we use three of the five levels
@@ -27,8 +27,8 @@
  * the S390 page table tree.
  */
 #ifndef __ASSEMBLY__
-#include <linux/sched.h>
-#include <linux/mm_types.h>
+#include <beep/sched.h>
+#include <beep/mm_types.h>
 #include <asm/bug.h>
 #include <asm/page.h>
 

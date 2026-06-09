@@ -12,9 +12,9 @@
  *
  */
 
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/pm.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/pm.h>
 
 #include <asm/reboot.h>
 

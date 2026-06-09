@@ -20,14 +20,14 @@
 **
 **-----------------------------------------------------------------------------
 */
-#include <linux/device.h>
-#include <linux/enclosure.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/device.h>
+#include <beep/enclosure.h>
+#include <beep/err.h>
+#include <beep/list.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 
 static LIST_HEAD(container_list);
 static DEFINE_MUTEX(container_list_lock);

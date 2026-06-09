@@ -11,19 +11,19 @@
  * Author: Tom Lyon, pugs@cisco.com
  */
 
-#include <linux/device.h>
-#include <linux/eventfd.h>
-#include <linux/interrupt.h>
-#include <linux/iommu.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/vfio.h>
+#include <beep/device.h>
+#include <beep/eventfd.h>
+#include <beep/interrupt.h>
+#include <beep/iommu.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/notifier.h>
+#include <beep/pci.h>
+#include <beep/pm_runtime.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/uaccess.h>
+#include <beep/vfio.h>
 
 #include "vfio_pci_private.h"
 
@@ -34,7 +34,7 @@
 static bool nointxmask;
 module_param_named(nointxmask, nointxmask, bool, S_IRUGO | S_IWUSR);
 MODULE_PARM_DESC(nointxmask,
-		  "Disable support for PCI 2.3 style INTx masking.  If this resolves problems for specific devices, report lspci -vvvxxx to linux-pci@vger.kernel.org so the device can be fixed automatically via the broken_intx_masking flag.");
+		  "Disable support for PCI 2.3 style INTx masking.  If this resolves problems for specific devices, report lspci -vvvxxx to beep-pci@vger.kernel.org so the device can be fixed automatically via the broken_intx_masking flag.");
 
 static int vfio_pci_enable(struct vfio_pci_device *vdev)
 {

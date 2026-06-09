@@ -14,7 +14,7 @@
 #ifndef __SHMOB_DRM_REGS_H__
 #define __SHMOB_DRM_REGS_H__
 
-#include <linux/io.h>
+#include <beep/io.h>
 
 /* Register definitions */
 #define LDDCKPAT1R		0x400

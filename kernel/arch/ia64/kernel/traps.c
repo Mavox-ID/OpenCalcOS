@@ -7,16 +7,16 @@
  * 05/12/00 grao <goutham.rao@intel.com> : added isr in siginfo for SIGFPE
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/tty.h>
-#include <linux/vt_kern.h>		/* For unblank_screen() */
-#include <linux/module.h>       /* for EXPORT_SYMBOL */
-#include <linux/hardirq.h>
-#include <linux/kprobes.h>
-#include <linux/delay.h>		/* for ssleep() */
-#include <linux/kdebug.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/tty.h>
+#include <beep/vt_kern.h>		/* For unblank_screen() */
+#include <beep/module.h>       /* for EXPORT_SYMBOL */
+#include <beep/hardirq.h>
+#include <beep/kprobes.h>
+#include <beep/delay.h>		/* for ssleep() */
+#include <beep/kdebug.h>
 
 #include <asm/fpswa.h>
 #include <asm/intrinsics.h>

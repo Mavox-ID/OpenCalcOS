@@ -25,12 +25,12 @@
  *	Not publicly available.
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/ide.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/ide.h>
+#include <beep/init.h>
 
 #define DRV_NAME "triflex"
 

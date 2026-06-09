@@ -6,7 +6,7 @@
 #ifndef _UAPICRYPTOCOP_H
 #define _UAPICRYPTOCOP_H
 
-#include <linux/uio.h>
+#include <beep/uio.h>
 
 
 #define CRYPTOCOP_SESSION_ID_NONE (0)

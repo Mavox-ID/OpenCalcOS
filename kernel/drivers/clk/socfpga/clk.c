@@ -14,9 +14,9 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
+#include <beep/clk.h>
+#include <beep/clkdev.h>
+#include <beep/clk-provider.h>
 
 #define SOCFPGA_OSC1_CLK	10000000
 #define SOCFPGA_MPU_CLK		800000000

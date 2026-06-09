@@ -26,7 +26,7 @@
 #ifndef OCFS2_BUFFER_HEAD_IO_H
 #define OCFS2_BUFFER_HEAD_IO_H
 
-#include <linux/buffer_head.h>
+#include <beep/buffer_head.h>
 
 void ocfs2_end_buffer_io_sync(struct buffer_head *bh,
 			     int uptodate);

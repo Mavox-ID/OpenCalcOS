@@ -10,15 +10,15 @@
  * Copyright (C) 2009 Vivek Goyal <vgoyal@redhat.com>
  * 	              Nauman Rafique <nauman@google.com>
  */
-#include <linux/ioprio.h>
-#include <linux/kdev_t.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/genhd.h>
-#include <linux/delay.h>
-#include <linux/atomic.h>
+#include <beep/ioprio.h>
+#include <beep/kdev_t.h>
+#include <beep/module.h>
+#include <beep/err.h>
+#include <beep/blkdev.h>
+#include <beep/slab.h>
+#include <beep/genhd.h>
+#include <beep/delay.h>
+#include <beep/atomic.h>
 #include "blk-cgroup.h"
 #include "blk.h"
 

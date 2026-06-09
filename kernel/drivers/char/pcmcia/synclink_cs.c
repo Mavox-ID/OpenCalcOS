@@ -1,5 +1,5 @@
 /*
- * linux/drivers/char/pcmcia/synclink_cs.c
+ * beep/drivers/char/pcmcia/synclink_cs.c
  *
  * $Id: synclink_cs.c,v 4.34 2005/09/08 13:20:54 paulkf Exp $
  *
@@ -35,39 +35,39 @@
 
 #define MAX_DEVICE_COUNT 4
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/time.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/ioctl.h>
-#include <linux/synclink.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
+#include <beep/time.h>
+#include <beep/interrupt.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/serial.h>
+#include <beep/major.h>
+#include <beep/string.h>
+#include <beep/fcntl.h>
+#include <beep/ptrace.h>
+#include <beep/ioport.h>
+#include <beep/mm.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/netdevice.h>
+#include <beep/vmalloc.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/ioctl.h>
+#include <beep/synclink.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/dma.h>
-#include <linux/bitops.h>
+#include <beep/bitops.h>
 #include <asm/types.h>
-#include <linux/termios.h>
-#include <linux/workqueue.h>
-#include <linux/hdlc.h>
+#include <beep/termios.h>
+#include <beep/workqueue.h>
+#include <beep/hdlc.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/cisreg.h>

@@ -3,9 +3,9 @@
  *
  * \u00a9 Copyright 2007-2011 RisingTide Systems LLC.
  *
- * Licensed to the Linux Foundation under the General Public License (GPL) version 2.
+ * Licensed to the Beep Foundation under the General Public License (GPL) version 2.
  *
- * Author: Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Author: Nicholas A. Bellinger <nab@beep-iscsi.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,10 +18,10 @@
  * GNU General Public License for more details.
  ******************************************************************************/
 
-#include <linux/string.h>
-#include <linux/kthread.h>
-#include <linux/crypto.h>
-#include <linux/idr.h>
+#include <beep/string.h>
+#include <beep/kthread.h>
+#include <beep/crypto.h>
+#include <beep/idr.h>
 #include <scsi/iscsi_proto.h>
 #include <target/target_core_base.h>
 #include <target/target_core_fabric.h>
@@ -348,7 +348,7 @@ static int iscsi_login_zero_tsih_s2(
 	/*
 	 * Workaround for Initiators that have broken connection recovery logic.
 	 *
-	 * "We would really like to get rid of this." Linux-iSCSI.org team
+	 * "We would really like to get rid of this." Beep-iSCSI.org team
 	 */
 	memset(buf, 0, 32);
 	sprintf(buf, "ErrorRecoveryLevel=%d", na->default_erl);

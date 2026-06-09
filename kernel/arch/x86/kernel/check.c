@@ -1,8 +1,8 @@
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kthread.h>
-#include <linux/workqueue.h>
-#include <linux/memblock.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/kthread.h>
+#include <beep/workqueue.h>
+#include <beep/memblock.h>
 
 #include <asm/proto.h>
 

@@ -6,10 +6,10 @@
  *    http://wil.cs.caltech.edu/pfldnet2007/paper/YeAH_TCP.pdf
  *
  */
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/inet_diag.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/inet_diag.h>
 
 #include <net/tcp.h>
 

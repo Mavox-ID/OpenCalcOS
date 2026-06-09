@@ -5,7 +5,7 @@
  * ELF-specific definitions.
  *
  * Copyright (C) 1999-2004, Renesas Technology Corp.
- *      Hirokazu Takata <takata at linux-m32r.org>
+ *      Hirokazu Takata <takata at beep-m32r.org>
  */
 
 #include <asm/ptrace.h>
@@ -129,6 +129,6 @@ typedef elf_fpreg_t elf_fpregset_t;
 #define ELF_PLATFORM	(NULL)
 
 #define SET_PERSONALITY(ex) \
-	set_personality(PER_LINUX | (current->personality & (~PER_MASK)))
+	set_personality(PER_BEEP | (current->personality & (~PER_MASK)))
 
 #endif  /* _ASM_M32R__ELF_H */

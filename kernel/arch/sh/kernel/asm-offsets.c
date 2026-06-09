@@ -8,11 +8,11 @@
  * #defines from the assembly-language output.
  */
 
-#include <linux/stddef.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/kbuild.h>
-#include <linux/suspend.h>
+#include <beep/stddef.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/kbuild.h>
+#include <beep/suspend.h>
 
 #include <asm/thread_info.h>
 #include <asm/suspend.h>

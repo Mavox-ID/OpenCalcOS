@@ -23,26 +23,26 @@
  */
 
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include <asm/uaccess.h>
 #include <net/sock.h>
 
-#include <linux/drbd.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/in.h>
-#include <linux/mm.h>
-#include <linux/memcontrol.h>
-#include <linux/mm_inline.h>
-#include <linux/slab.h>
-#include <linux/pkt_sched.h>
+#include <beep/drbd.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/in.h>
+#include <beep/mm.h>
+#include <beep/memcontrol.h>
+#include <beep/mm_inline.h>
+#include <beep/slab.h>
+#include <beep/pkt_sched.h>
 #define __KERNEL_SYSCALLS__
-#include <linux/unistd.h>
-#include <linux/vmalloc.h>
-#include <linux/random.h>
-#include <linux/string.h>
-#include <linux/scatterlist.h>
+#include <beep/unistd.h>
+#include <beep/vmalloc.h>
+#include <beep/random.h>
+#include <beep/string.h>
+#include <beep/scatterlist.h>
 #include "drbd_int.h"
 #include "drbd_req.h"
 
@@ -612,7 +612,7 @@ static struct socket *drbd_try_connect(struct drbd_tconn *tconn)
 	*  for the outgoing connections.
 	*  This is needed for multihomed hosts and to be
 	*  able to use lo: interfaces for drbd.
-	* Make sure to use 0 as port number, so linux selects
+	* Make sure to use 0 as port number, so beep selects
 	*  a free one dynamically.
 	*/
 	what = "bind before connect";

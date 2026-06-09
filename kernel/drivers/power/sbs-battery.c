@@ -18,17 +18,17 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/power_supply.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/power_supply.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/gpio.h>
 
-#include <linux/power/sbs-battery.h>
+#include <beep/power/sbs-battery.h>
 
 enum {
 	REG_MANUFACTURER_DATA,
@@ -602,8 +602,8 @@ static void sbs_delayed_work(struct work_struct *work)
 
 #if defined(CONFIG_OF)
 
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
+#include <beep/of_device.h>
+#include <beep/of_gpio.h>
 
 static const struct of_device_id sbs_dt_ids[] = {
 	{ .compatible = "sbs,sbs-battery" },

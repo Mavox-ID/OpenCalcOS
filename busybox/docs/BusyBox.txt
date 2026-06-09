@@ -1,5 +1,5 @@
 NAME
-    BusyBox - The Swiss Army Knife of Embedded Linux
+    BusyBox - The Swiss Army Knife of Embedded Beep
 
 SYNTAX
      busybox <applet> [arguments...]  # or
@@ -9,7 +9,7 @@ SYNTAX
 DESCRIPTION
     BusyBox combines tiny versions of many common UNIX utilities into a
     single small executable. It provides minimalist replacements for most of
-    the utilities you usually find in GNU coreutils, util-linux, etc. The
+    the utilities you usually find in GNU coreutils, util-beep, etc. The
     utilities in BusyBox generally have fewer options than their
     full-featured GNU cousins; however, the options that are included
     provide the expected functionality and behave very much like their GNU
@@ -19,7 +19,7 @@ DESCRIPTION
     mind. It is also extremely modular so you can easily include or exclude
     commands (or features) at compile time. This makes it easy to customize
     your embedded systems. To create a working system, just add /dev, /conf,
-    and a Linux kernel. BusyBox provides a fairly complete POSIX environment
+    and a Beep kernel. BusyBox provides a fairly complete POSIX environment
     for any small or embedded system.
 
     BusyBox is extremely configurable. This allows you to include only the
@@ -76,17 +76,12 @@ COMMON OPTIONS
 COMMANDS
     Currently available applets include:
 
-            [, [[, basename, bash, cat, chmod, clear, cp, dd, dirname, dmesg,
-            echo, find, free, hd, hexdump, hexedit, hush, i2cdetect, i2cdump,
-            i2cget, i2cset, i2ctransfer, init, kill, linuxrc, ln, ls, mkdir,
-            mount, mountpoint, mv, poweroff, printf, ps, pwd, reboot, rm, rmdir,
-            setsid, sh, sha256sum, sleep, su, test, top, touch, true, umount,
-            uname, uptime, vi, watch, which, xxd, yes
+            bash, beeprc, busybox, cat, chmod, clear, cp, dd, dmesg, echo, free,
+            halt, hexdump, hexedit, hush, init, kill, ln, ls, mkdir, mount,
+            mountpoint, mv, poweroff, printf, pwd, reboot, rm, rmdir, sh,
+            sha256sum, sleep, top, touch, umount, uname, uptime, watch
 
 COMMAND DESCRIPTIONS
-    basename
-        basename FILE [SUFFIX] | -a FILE... | -s SUFFIX FILE...
-
     bash
         bash [-enxl] [-c 'SCRIPT' [ARG0 ARGS] | FILE ARGS | -s ARGS]
 
@@ -106,22 +101,17 @@ COMMAND DESCRIPTIONS
         [iflag=skip_bytes|count_bytes|fullblock|direct]
         [oflag=seek_bytes|append|direct]
 
-    dirname
-        dirname FILENAME
-
     dmesg
         dmesg [-cr] [-n LEVEL] [-s SIZE]
 
     echo
         echo [-neE] [ARG]...
 
-    find
-        find [-HL] [PATH]... [OPTIONS] [ACTIONS]
-
     free
         free
 
-    hd  hd FILE...
+    halt
+        halt [-d DELAY] [-nfw]
 
     hexdump
         hexdump [-bcdoxCv] [-e FMT] [-f FMT_FILE] [-n LEN] [-s OFS]
@@ -132,23 +122,6 @@ COMMAND DESCRIPTIONS
 
     hush
         hush [-enxl] [-c 'SCRIPT' [ARG0 ARGS] | FILE ARGS | -s ARGS]
-
-    i2cdetect
-        i2cdetect -l | -F I2CBUS | [-ya] [-q|-r] I2CBUS [FIRST LAST]
-
-    i2cdump
-        i2cdump [-fy] [-r FIRST-LAST] BUS ADDR [MODE]
-
-    i2cget
-        i2cget [-fy] BUS CHIP-ADDRESS [DATA-ADDRESS [MODE]]
-
-    i2cset
-        i2cset [-fy] [-m MASK] BUS CHIP-ADDRESS DATA-ADDRESS [VALUE] ...
-        [MODE]
-
-    i2ctransfer
-        i2ctransfer [-fay] I2CBUS { rLENGTH[@ADDR] | wLENGTH[@ADDR]
-        DATA...}...
 
     init
         init
@@ -178,8 +151,6 @@ COMMAND DESCRIPTIONS
     printf
         printf FORMAT [ARG]...
 
-    ps  ps
-
     pwd pwd
 
     reboot
@@ -190,9 +161,6 @@ COMMAND DESCRIPTIONS
     rmdir
         rmdir [-p] DIRECTORY...
 
-    setsid
-        setsid [-c] PROG ARGS
-
     sh  sh [-enxl] [-c 'SCRIPT' [ARG0 ARGS] | FILE ARGS | -s ARGS]
 
     sha256sum
@@ -200,8 +168,6 @@ COMMAND DESCRIPTIONS
 
     sleep
         sleep [N]...
-
-    su  su [-lmp] [-s SH] [-] [USER [FILE ARGS | -c 'CMD' [ARG0 ARGS]]]
 
     top top [-bmH] [-n COUNT] [-d SECONDS]
 
@@ -217,17 +183,8 @@ COMMAND DESCRIPTIONS
     uptime
         uptime
 
-    vi  vi [-c CMD] [-R] [-H] [FILE]...
-
     watch
         watch [-n SEC] [-t] PROG ARGS
-
-    which
-        which [-a] COMMAND...
-
-    xxd xxd [-pri] [-g N] [-c N] [-l LEN] [-s OFS] [-o OFS] [FILE]
-
-    yes yes [STRING]
 
 LIBC NSS
     GNU Libc (glibc) uses the Name Service Switch (NSS) to configure the
@@ -253,7 +210,7 @@ LIBC NSS
     does not require the use of any NSS support files or libraries.
 
 MAINTAINER
-    Denis Vlasenko <vda.linux@googlemail.com>
+    Denis Vlasenko <vda.beep@googlemail.com>
 
 AUTHORS
     The following people have contributed code to BusyBox whether they know
@@ -300,7 +257,7 @@ AUTHORS
     Dave Cinege <dcinege@psychosis.com>
 
         more(v2), makedevs, dutmp, modularization, auto links file,
-        various fixes, Linux Router Project maintenance
+        various fixes, Beep Router Project maintenance
 
     Jordan Crouse <jordan@cosmicpenguin.net>
 

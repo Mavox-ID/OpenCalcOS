@@ -5,7 +5,7 @@
  * Subject to the GNU public license, v.2. No warranty of any kind.
  */
 
-	#include <linux/linkage.h>
+	#include <beep/linkage.h>
 
 #ifdef CONFIG_TRACE_IRQFLAGS
 	/* put return address in eax (arg1) */

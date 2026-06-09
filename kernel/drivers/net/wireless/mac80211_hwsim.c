@@ -15,19 +15,19 @@
  * - RX filtering based on filter configuration (data->rx_filter)
  */
 
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 #include <net/dst.h>
 #include <net/xfrm.h>
 #include <net/mac80211.h>
 #include <net/ieee80211_radiotap.h>
-#include <linux/if_arp.h>
-#include <linux/rtnetlink.h>
-#include <linux/etherdevice.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/ktime.h>
+#include <beep/if_arp.h>
+#include <beep/rtnetlink.h>
+#include <beep/etherdevice.h>
+#include <beep/debugfs.h>
+#include <beep/module.h>
+#include <beep/ktime.h>
 #include <net/genetlink.h>
 #include "mac80211_hwsim.h"
 

@@ -14,7 +14,7 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/export.h>
+#include <beep/export.h>
 #include "ath9k.h"
 #include "reg.h"
 #include "hw-ops.h"

@@ -12,10 +12,10 @@
  * Parts inspired by u-boot
  */
 
-#include <linux/io.h>
+#include <beep/io.h>
 #include <mach/mmc.h>
-#include <linux/mmc/boot.h>
-#include <linux/mmc/tmio.h>
+#include <beep/mmc/boot.h>
+#include <beep/mmc/tmio.h>
 
 #include "sdhi-shmobile.h"
 

@@ -13,11 +13,11 @@
  * to not introduce bugs.
  */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
-#include <linux/m48t86.h>
-#include <linux/bcd.h>
+#include <beep/module.h>
+#include <beep/rtc.h>
+#include <beep/platform_device.h>
+#include <beep/m48t86.h>
+#include <beep/bcd.h>
 
 #define M48T86_REG_SEC		0x00
 #define M48T86_REG_SECALRM	0x01

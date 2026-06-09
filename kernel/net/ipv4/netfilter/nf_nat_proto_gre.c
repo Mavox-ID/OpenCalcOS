@@ -23,13 +23,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/ip.h>
 
 #include <net/netfilter/nf_nat.h>
 #include <net/netfilter/nf_nat_l4proto.h>
-#include <linux/netfilter/nf_conntrack_proto_gre.h>
+#include <beep/netfilter/nf_conntrack_proto_gre.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Harald Welte <laforge@gnumonks.org>");

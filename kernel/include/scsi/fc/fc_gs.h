@@ -20,7 +20,7 @@
 #ifndef _FC_GS_H_
 #define	_FC_GS_H_
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * Fibre Channel Services - Common Transport.

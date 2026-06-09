@@ -1,13 +1,13 @@
 /*
  * Copyright (C) 2003 PathScale, Inc.
- * Copyright (C) 2003 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2003 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  */
 
 
-#include <linux/personality.h>
-#include <linux/ptrace.h>
-#include <linux/kernel.h>
+#include <beep/personality.h>
+#include <beep/ptrace.h>
+#include <beep/kernel.h>
 #include <asm/unistd.h>
 #include <asm/uaccess.h>
 #include <asm/ucontext.h>

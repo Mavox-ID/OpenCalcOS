@@ -1,28 +1,28 @@
 
-#include <linux/ceph/ceph_debug.h>
-#include <linux/backing-dev.h>
-#include <linux/ctype.h>
-#include <linux/fs.h>
-#include <linux/inet.h>
-#include <linux/in6.h>
-#include <linux/key.h>
+#include <beep/ceph/ceph_debug.h>
+#include <beep/backing-dev.h>
+#include <beep/ctype.h>
+#include <beep/fs.h>
+#include <beep/inet.h>
+#include <beep/in6.h>
+#include <beep/key.h>
 #include <keys/ceph-type.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/parser.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/statfs.h>
-#include <linux/string.h>
+#include <beep/module.h>
+#include <beep/mount.h>
+#include <beep/parser.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/statfs.h>
+#include <beep/string.h>
 
 
-#include <linux/ceph/ceph_features.h>
-#include <linux/ceph/libceph.h>
-#include <linux/ceph/debugfs.h>
-#include <linux/ceph/decode.h>
-#include <linux/ceph/mon_client.h>
-#include <linux/ceph/auth.h>
+#include <beep/ceph/ceph_features.h>
+#include <beep/ceph/libceph.h>
+#include <beep/ceph/debugfs.h>
+#include <beep/ceph/decode.h>
+#include <beep/ceph/mon_client.h>
+#include <beep/ceph/auth.h>
 #include "crypto.h"
 
 
@@ -614,5 +614,5 @@ module_exit(exit_ceph_lib);
 MODULE_AUTHOR("Sage Weil <sage@newdream.net>");
 MODULE_AUTHOR("Yehuda Sadeh <yehuda@hq.newdream.net>");
 MODULE_AUTHOR("Patience Warnick <patience@newdream.net>");
-MODULE_DESCRIPTION("Ceph filesystem for Linux");
+MODULE_DESCRIPTION("Ceph filesystem for Beep");
 MODULE_LICENSE("GPL");

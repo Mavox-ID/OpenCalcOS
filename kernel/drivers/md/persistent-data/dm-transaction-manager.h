@@ -4,8 +4,8 @@
  * This file is released under the GPL.
  */
 
-#ifndef _LINUX_DM_TRANSACTION_MANAGER_H
-#define _LINUX_DM_TRANSACTION_MANAGER_H
+#ifndef _BEEP_DM_TRANSACTION_MANAGER_H
+#define _BEEP_DM_TRANSACTION_MANAGER_H
 
 #include "dm-block-manager.h"
 
@@ -128,4 +128,4 @@ int dm_tm_open_with_sm(struct dm_block_manager *bm, dm_block_t sb_location,
 		       struct dm_transaction_manager **tm,
 		       struct dm_space_map **sm);
 
-#endif	/* _LINUX_DM_TRANSACTION_MANAGER_H */
+#endif	/* _BEEP_DM_TRANSACTION_MANAGER_H */

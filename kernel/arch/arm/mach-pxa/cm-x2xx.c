@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-pxa/cm-x2xx.c
+ * beep/arch/arm/mach-pxa/cm-x2xx.c
  *
  * Copyright (C) 2008 CompuLab, Ltd.
  * Mike Rapoport <mike@compulab.co.il>
@@ -9,13 +9,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/platform_device.h>
-#include <linux/syscore_ops.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/syscore_ops.h>
+#include <beep/irq.h>
+#include <beep/gpio.h>
 
-#include <linux/dm9000.h>
-#include <linux/leds.h>
+#include <beep/dm9000.h>
+#include <beep/leds.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach-types.h>
@@ -25,7 +25,7 @@
 #undef GPIO24_SSP1_SFRM
 #include <mach/pxa27x.h>
 #include <mach/audio.h>
-#include <linux/platform_data/video-pxafb.h>
+#include <beep/platform_data/video-pxafb.h>
 #include <mach/smemc.h>
 
 #include <asm/hardware/it8152.h>

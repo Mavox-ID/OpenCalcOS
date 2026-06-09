@@ -1,7 +1,7 @@
 #ifndef _M32R_TERMIOS_H
 #define _M32R_TERMIOS_H
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <uapi/asm/termios.h>
 
 /*	intr=^C		quit=^\		erase=del	kill=^U

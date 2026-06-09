@@ -23,20 +23,20 @@
  * during SPI transfers by setting max_speed_hz via the device tree.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/of_platform.h>
-#include <linux/of_gpio.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/wait.h>
+#include <beep/of_platform.h>
+#include <beep/of_gpio.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
 
-#include <linux/gpio.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
+#include <beep/gpio.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/spi_bitbang.h>
 
 #include <asm/io.h>
 #include <asm/dcr.h>

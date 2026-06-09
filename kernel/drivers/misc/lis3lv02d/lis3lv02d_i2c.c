@@ -24,16 +24,16 @@
  * 02110-1301 USA
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/pm_runtime.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_device.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/pm_runtime.h>
+#include <beep/delay.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/of_device.h>
 
 #include "lis3lv02d.h"
 

@@ -22,18 +22,18 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/i2c/bh1770glc.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/mutex.h>
+#include <beep/i2c/bh1770glc.h>
+#include <beep/regulator/consumer.h>
+#include <beep/pm_runtime.h>
+#include <beep/workqueue.h>
+#include <beep/delay.h>
+#include <beep/wait.h>
+#include <beep/slab.h>
 
 #define BH1770_ALS_CONTROL	0x80 /* ALS operation mode control */
 #define BH1770_PS_CONTROL	0x81 /* PS operation mode control */

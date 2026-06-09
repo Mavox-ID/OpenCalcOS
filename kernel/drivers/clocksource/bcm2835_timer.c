@@ -16,19 +16,19 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/bcm2835_timer.h>
-#include <linux/bitops.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/interrupt.h>
-#include <linux/irqreturn.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <beep/bcm2835_timer.h>
+#include <beep/bitops.h>
+#include <beep/clockchips.h>
+#include <beep/clocksource.h>
+#include <beep/interrupt.h>
+#include <beep/irqreturn.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
+#include <beep/of_platform.h>
+#include <beep/slab.h>
+#include <beep/string.h>
 
 #include <asm/sched_clock.h>
 #include <asm/irq.h>

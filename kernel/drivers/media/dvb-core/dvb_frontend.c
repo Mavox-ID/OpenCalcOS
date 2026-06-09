@@ -28,23 +28,23 @@
 /* Enables DVBv3 compatibility bits at the headers */
 #define __DVB_CORE__
 
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/semaphore.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/freezer.h>
-#include <linux/jiffies.h>
-#include <linux/kthread.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/wait.h>
+#include <beep/slab.h>
+#include <beep/poll.h>
+#include <beep/semaphore.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/freezer.h>
+#include <beep/jiffies.h>
+#include <beep/kthread.h>
 #include <asm/processor.h>
 
 #include "dvb_frontend.h"
 #include "dvbdev.h"
-#include <linux/dvb/version.h>
+#include <beep/dvb/version.h>
 
 static int dvb_frontend_debug;
 static int dvb_shutdown_timeout;

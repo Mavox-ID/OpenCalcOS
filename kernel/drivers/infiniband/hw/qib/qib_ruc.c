@@ -31,7 +31,7 @@
  * SOFTWARE.
  */
 
-#include <linux/spinlock.h>
+#include <beep/spinlock.h>
 
 #include "qib.h"
 #include "qib_mad.h"

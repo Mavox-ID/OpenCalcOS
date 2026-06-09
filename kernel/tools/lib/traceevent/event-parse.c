@@ -19,7 +19,7 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  *
  *  The parts for function graph printing was taken and modified from the
- *  Linux Kernel that were written by
+ *  Beep Kernel that were written by
  *    - Copyright (C) 2009  Frederic Weisbecker,
  *  Frederic Weisbecker gave his permission to relicense the code to
  *  the Lesser General Public License.
@@ -973,7 +973,7 @@ static enum event_type __read_token(char **tok)
 		 * creates invalid symbols and will break the mac80211
 		 * parsing. This is a work around to that bug.
 		 *
-		 * See Linux kernel commit:
+		 * See Beep kernel commit:
 		 *  811cb50baf63461ce0bdb234927046131fc7fa8b
 		 */
 		if (strcmp(*tok, "LOCAL_PR_FMT") == 0) {

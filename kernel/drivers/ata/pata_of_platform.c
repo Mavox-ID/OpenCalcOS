@@ -9,12 +9,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
-#include <linux/libata.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/of_address.h>
+#include <beep/platform_device.h>
+#include <beep/ata_platform.h>
+#include <beep/libata.h>
 
 static int pata_of_platform_probe(struct platform_device *ofdev)
 {

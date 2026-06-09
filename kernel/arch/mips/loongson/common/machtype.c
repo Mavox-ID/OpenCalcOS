@@ -9,7 +9,7 @@
  * Free Software Foundation;  either version 2 of the  License, or (at your
  * option) any later version.
  */
-#include <linux/errno.h>
+#include <beep/errno.h>
 #include <asm/bootinfo.h>
 
 #include <loongson.h>

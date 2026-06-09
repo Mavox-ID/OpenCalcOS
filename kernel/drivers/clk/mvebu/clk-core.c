@@ -10,13 +10,13 @@
  * License version 2.  This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/of_address.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <beep/kernel.h>
+#include <beep/clk.h>
+#include <beep/clkdev.h>
+#include <beep/clk-provider.h>
+#include <beep/of_address.h>
+#include <beep/io.h>
+#include <beep/of.h>
 #include "clk-core.h"
 
 struct core_ratio {

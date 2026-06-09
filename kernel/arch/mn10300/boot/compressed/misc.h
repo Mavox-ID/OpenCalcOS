@@ -12,7 +12,7 @@
 extern int end;
 
 /*
- * vmlinux.lds
+ * vmbeep.lds
  */
 extern char input_data[];
 extern int input_len;

@@ -39,7 +39,7 @@
 #include <asm/processor.h>
 #include <asm/percpu.h>
 #include <asm/desc.h>
-#include <linux/random.h>
+#include <beep/random.h>
 
 /*
  * 24 byte read-only segment initializer for stack canary.  Linker
@@ -105,7 +105,7 @@ static inline void load_stack_canary_segment(void)
 
 #define GDT_STACK_CANARY_INIT
 
-/* dummy boot_init_stack_canary() is defined in linux/stackprotector.h */
+/* dummy boot_init_stack_canary() is defined in beep/stackprotector.h */
 
 static inline void setup_stack_canary_segment(int cpu)
 { }

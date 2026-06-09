@@ -10,19 +10,19 @@
  * any later version.
  */
 
-#include <linux/atomic.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/hid.h>
-#include <linux/input.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/uhid.h>
-#include <linux/wait.h>
+#include <beep/atomic.h>
+#include <beep/device.h>
+#include <beep/fs.h>
+#include <beep/hid.h>
+#include <beep/input.h>
+#include <beep/miscdevice.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/poll.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/uhid.h>
+#include <beep/wait.h>
 
 #define UHID_NAME	"uhid"
 #define UHID_BUFSIZE	32

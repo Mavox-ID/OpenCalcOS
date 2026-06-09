@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-omap1/opp.h
+ *  beep/arch/arm/mach-omap1/opp.h
  *
  *  Copyright (C) 2004 - 2005 Nokia corporation
  *  Written by Tuukka Tikkanen <tuukka.tikkanen@elektrobit.com>
@@ -13,7 +13,7 @@
 #ifndef __ARCH_ARM_MACH_OMAP1_OPP_H
 #define __ARCH_ARM_MACH_OMAP1_OPP_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 struct mpu_rate {
 	unsigned long		rate;

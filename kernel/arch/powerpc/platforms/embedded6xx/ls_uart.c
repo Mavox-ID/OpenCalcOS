@@ -9,11 +9,11 @@
  * version 2.  This program is licensed "as is" without any warranty of
  * any kind, whether express or implied.
  */
-#include <linux/workqueue.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/serial_reg.h>
-#include <linux/serial_8250.h>
+#include <beep/workqueue.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/serial_reg.h>
+#include <beep/serial_8250.h>
 #include <asm/io.h>
 #include <asm/prom.h>
 #include <asm/termbits.h>

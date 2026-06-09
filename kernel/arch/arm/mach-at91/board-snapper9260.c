@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-at91/board-snapper9260.c
+ * beep/arch/arm/mach-at91/board-snapper9260.c
  *
  *  Copyright (C) 2010 Bluewater System Ltd
  *
@@ -22,11 +22,11 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/i2c/pca953x.h>
+#include <beep/init.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/spi/spi.h>
+#include <beep/i2c/pca953x.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

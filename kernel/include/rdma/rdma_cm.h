@@ -34,8 +34,8 @@
 #if !defined(RDMA_CM_H)
 #define RDMA_CM_H
 
-#include <linux/socket.h>
-#include <linux/in6.h>
+#include <beep/socket.h>
+#include <beep/in6.h>
 #include <rdma/ib_addr.h>
 #include <rdma/ib_sa.h>
 

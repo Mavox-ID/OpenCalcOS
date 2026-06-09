@@ -16,7 +16,7 @@
 #define __SOUND_DMAENGINE_PCM_H__
 
 #include <sound/pcm.h>
-#include <linux/dmaengine.h>
+#include <beep/dmaengine.h>
 
 /**
  * snd_pcm_substream_to_dma_direction - Get dma_transfer_direction for a PCM

@@ -17,8 +17,8 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/uaccess.h>
 
 #include "trace_probe.h"
 

@@ -2,7 +2,7 @@
 #define _POWERPC_RTAS_H
 #ifdef __KERNEL__
 
-#include <linux/spinlock.h>
+#include <beep/spinlock.h>
 #include <asm/page.h>
 
 /*

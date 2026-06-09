@@ -11,14 +11,14 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/usb.h>
-#include <linux/unistd.h>
-#include <linux/slab.h>
-#include <linux/firmware.h>
+#include <beep/uaccess.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/usb.h>
+#include <beep/unistd.h>
+#include <beep/slab.h>
+#include <beep/firmware.h>
 
 #include <asm/byteorder.h>
 #include "gdm_usb.h"
@@ -254,7 +254,7 @@ out:
 
 /*#define GDM7205_PADDING		256 */
 #define DOWNLOAD_CHUCK			2048
-#define KERNEL_TYPE_STRING		"linux"
+#define KERNEL_TYPE_STRING		"beep"
 #define FS_TYPE_STRING			"rootfs"
 
 static int em_wait_ack(struct usb_device *usbdev, int send_zlp)

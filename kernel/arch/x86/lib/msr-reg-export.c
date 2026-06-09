@@ -1,4 +1,4 @@
-#include <linux/module.h>
+#include <beep/module.h>
 #include <asm/msr.h>
 
 EXPORT_SYMBOL(rdmsr_safe_regs);

@@ -10,9 +10,9 @@
  * (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/delay.h>
 
 #include "ec_kb3310b.h"
 

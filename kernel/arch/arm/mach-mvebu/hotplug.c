@@ -11,9 +11,9 @@
  * License version 2.  This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/smp.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/smp.h>
 #include <asm/proc-fns.h>
 
 /*

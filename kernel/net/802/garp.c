@@ -7,15 +7,15 @@
  *	modify it under the terms of the GNU General Public License
  *	version 2 as published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/llc.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/timer.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/rtnetlink.h>
+#include <beep/llc.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <net/llc.h>
 #include <net/llc_pdu.h>
 #include <net/garp.h>

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-omap1/clock.h
+ *  beep/arch/arm/mach-omap1/clock.h
  *
  *  Copyright (C) 2004 - 2005, 2009 Nokia corporation
  *  Written by Tuukka Tikkanen <tuukka.tikkanen@elektrobit.com>
@@ -13,10 +13,10 @@
 #ifndef __ARCH_ARM_MACH_OMAP1_CLOCK_H
 #define __ARCH_ARM_MACH_OMAP1_CLOCK_H
 
-#include <linux/clk.h>
-#include <linux/list.h>
+#include <beep/clk.h>
+#include <beep/list.h>
 
-#include <linux/clkdev.h>
+#include <beep/clkdev.h>
 
 struct module;
 struct clk;

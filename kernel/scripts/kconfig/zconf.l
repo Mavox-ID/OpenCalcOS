@@ -4,7 +4,7 @@
 %x COMMAND HELP STRING PARAM
 %{
 /*
- * Copyright (C) 2002 Roman Zippel <zippel@linux-m68k.org>
+ * Copyright (C) 2002 Roman Zippel <zippel@beep-m68k.org>
  * Released under the terms of the GNU GPL v2.0.
  */
 

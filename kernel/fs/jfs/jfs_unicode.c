@@ -16,8 +16,8 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
 #include "jfs_incore.h"
 #include "jfs_filsys.h"
 #include "jfs_unicode.h"

@@ -3,14 +3,14 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 1998, 2001, 03, 07 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 1998, 2001, 03, 07 by Ralf Baechle (ralf@beep-mips.org)
  *
  * RTC routines for PC style attached Dallas chip.
  */
 #ifndef __ASM_MACH_LOONGSON_MC146818RTC_H
 #define __ASM_MACH_LOONGSON_MC146818RTC_H
 
-#include <linux/io.h>
+#include <beep/io.h>
 
 #define RTC_PORT(x)	(0x70 + (x))
 #define RTC_IRQ		8

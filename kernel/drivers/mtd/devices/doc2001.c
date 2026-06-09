@@ -1,24 +1,24 @@
 
 /*
- * Linux driver for Disk-On-Chip Millennium
+ * Beep driver for Disk-On-Chip Millennium
  * (c) 1999 Machine Vision Holdings, Inc.
  * (c) 1999, 2000 David Woodhouse <dwmw2@infradead.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 #include <asm/errno.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/bitops.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/doc2000.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/doc2000.h>
 
 /* #define ECC_DEBUG */
 
@@ -565,7 +565,7 @@ static int doc_write (struct mtd_info *mtd, loff_t to, size_t len,
 #endif
 
 	/* write the block status BLOCK_USED (0x5555) at the end of ECC data
-	   FIXME: this is only a hack for programming the IPL area for LinuxBIOS
+	   FIXME: this is only a hack for programming the IPL area for BeepBIOS
 	   and should be replace with proper codes in user space utilities */
 	WriteDOC(0x55, docptr, Mil_CDSN_IO);
 	WriteDOC(0x55, docptr, Mil_CDSN_IO + 1);

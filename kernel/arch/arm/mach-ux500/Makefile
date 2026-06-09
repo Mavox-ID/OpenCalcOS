@@ -1,5 +1,5 @@
 #
-# Makefile for the linux kernel, U8500 machine.
+# Makefile for the beep kernel, U8500 machine.
 #
 
 obj-y				:= cpu.o devices.o devices-common.o \

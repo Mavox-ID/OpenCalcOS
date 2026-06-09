@@ -1,15 +1,15 @@
 #define pr_fmt(fmt) "IPsec: " fmt
 
 #include <crypto/hash.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 #include <net/ip.h>
 #include <net/xfrm.h>
 #include <net/ah.h>
-#include <linux/crypto.h>
-#include <linux/pfkeyv2.h>
-#include <linux/scatterlist.h>
+#include <beep/crypto.h>
+#include <beep/pfkeyv2.h>
+#include <beep/scatterlist.h>
 #include <net/icmp.h>
 #include <net/protocol.h>
 

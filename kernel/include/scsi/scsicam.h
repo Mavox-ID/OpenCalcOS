@@ -3,7 +3,7 @@
  *
  * Copyright 1993, 1994 Drew Eckhardt
  *      Visionary Computing 
- *      (Unix and Linux consulting and custom programming)
+ *      (Unix and Beep consulting and custom programming)
  *      drew@Colorado.EDU
  *	+1 (303) 786-7975
  *

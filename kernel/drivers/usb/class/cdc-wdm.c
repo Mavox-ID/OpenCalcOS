@@ -11,19 +11,19 @@
  *
  * Many thanks to Carl Nordbeck
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/bitops.h>
-#include <linux/poll.h>
-#include <linux/usb.h>
-#include <linux/usb/cdc.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/uaccess.h>
+#include <beep/bitops.h>
+#include <beep/poll.h>
+#include <beep/usb.h>
+#include <beep/usb/cdc.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
-#include <linux/usb/cdc-wdm.h>
+#include <beep/usb/cdc-wdm.h>
 
 /*
  * Version Information

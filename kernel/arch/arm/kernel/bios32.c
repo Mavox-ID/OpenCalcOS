@@ -1,16 +1,16 @@
 /*
- *  linux/arch/arm/kernel/bios32.c
+ *  beep/arch/arm/kernel/bios32.c
  *
  *  PCI bios-type initialisation for PCI machines
  *
  *  Bits taken from various places.
  */
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/io.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/map.h>

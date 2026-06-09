@@ -1,6 +1,6 @@
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
 #include <asm/page.h>
 #include <asm/setup.h>
 #include <asm/io.h>

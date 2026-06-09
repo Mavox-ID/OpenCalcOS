@@ -2,18 +2,18 @@
  * Copyright 2002 Andi Kleen, SuSE Labs.
  * Thanks to Ben LaHaise for precious feedback.
  */
-#include <linux/highmem.h>
-#include <linux/bootmem.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/pfn.h>
-#include <linux/percpu.h>
-#include <linux/gfp.h>
-#include <linux/pci.h>
+#include <beep/highmem.h>
+#include <beep/bootmem.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/pfn.h>
+#include <beep/percpu.h>
+#include <beep/gfp.h>
+#include <beep/pci.h>
 
 #include <asm/e820.h>
 #include <asm/processor.h>
@@ -301,7 +301,7 @@ static inline pgprot_t static_protections(pgprot_t prot, unsigned long address,
 		 * No need to work hard to preserve large page mappings in this
 		 * case.
 		 *
-		 * This also fixes the Linux Xen paravirt guest boot failure
+		 * This also fixes the Beep Xen paravirt guest boot failure
 		 * (because of unexpected read-only mappings for kernel identity
 		 * mappings). In this paravirt guest case, the kernel text
 		 * mapping and the kernel identity mapping share the same
@@ -309,7 +309,7 @@ static inline pgprot_t static_protections(pgprot_t prot, unsigned long address,
 		 * protections for the kernel text and identity mappings. Also,
 		 * these shared mappings are made of small page mappings.
 		 * Thus this don't enforce !RW mapping for small page kernel
-		 * text mapping logic will help Linux Xen parvirt guest boot
+		 * text mapping logic will help Beep Xen parvirt guest boot
 		 * as well.
 		 */
 		if (lookup_address(address, &level) && (level != PG_LEVEL_4K))

@@ -2,7 +2,7 @@
  * arch/h8300/boot/compressed/misc.c
  *
  * This is a collection of several routines from gzip-1.0.3
- * adapted for Linux.
+ * adapted for Beep.
  *
  * malloc by Hannu Savolainen 1993 and Matthias Urlichs 1994
  *
@@ -79,7 +79,7 @@ static void error(char *m);
 
 int puts(const char *);
 
-extern int _text;		/* Defined in vmlinux.lds.S */
+extern int _text;		/* Defined in vmbeep.lds.S */
 extern int _end;
 static unsigned long free_mem_ptr;
 static unsigned long free_mem_end_ptr;
@@ -175,7 +175,7 @@ void decompress_kernel(void)
 	free_mem_end_ptr = free_mem_ptr + HEAP_SIZE;
 
 	makecrc();
-	puts("Uncompressing Linux... ");
+	puts("Uncompressing Beep... ");
 	gunzip();
 	puts("Ok, booting the kernel.\n");
 }

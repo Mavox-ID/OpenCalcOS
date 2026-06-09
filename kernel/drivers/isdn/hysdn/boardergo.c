@@ -1,6 +1,6 @@
 /* $Id: boardergo.c,v 1.5.6.7 2001/11/06 21:58:19 kai Exp $
  *
- * Linux driver for HYSDN cards, specific routines for ergo type boards.
+ * Beep driver for HYSDN cards, specific routines for ergo type boards.
  *
  * Author    Werner Cornelius (werner@titro.de) for Hypercope GmbH
  * Copyright 1999 by Werner Cornelius (werner@titro.de)
@@ -8,18 +8,18 @@
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
  *
- * As all Linux supported cards Champ2, Ergo and Metro2/4 use the same
+ * As all Beep supported cards Champ2, Ergo and Metro2/4 use the same
  * DPRAM interface and layout with only minor differences all related
  * stuff is done here, not in separate modules.
  *
  */
 
-#include <linux/signal.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
+#include <beep/signal.h>
+#include <beep/kernel.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/vmalloc.h>
+#include <beep/delay.h>
 #include <asm/io.h>
 
 #include "hysdn_defs.h"

@@ -32,7 +32,7 @@
  * SOFTWARE.
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define MTHCA_RD_DOORBELL      0x00
 #define MTHCA_SEND_DOORBELL    0x10

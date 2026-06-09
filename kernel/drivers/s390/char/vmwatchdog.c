@@ -11,15 +11,15 @@
 #define KMSG_COMPONENT "vmwatchdog"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
-#include <linux/watchdog.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/miscdevice.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/slab.h>
+#include <beep/suspend.h>
+#include <beep/watchdog.h>
 
 #include <asm/ebcdic.h>
 #include <asm/io.h>

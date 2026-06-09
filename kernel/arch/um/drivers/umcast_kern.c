@@ -1,7 +1,7 @@
 /*
- * user-mode-linux networking multicast transport
+ * user-mode-beep networking multicast transport
  * Copyright (C) 2001 by Harald Welte <laforge@gnumonks.org>
- * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  *
  * based on the existing uml-networking code, which is
  * Copyright (C) 2001 Lennert Buytenhek (buytenh@gnu.org) and
@@ -11,8 +11,8 @@
  * Licensed under the GPL.
  */
 
-#include <linux/init.h>
-#include <linux/netdevice.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
 #include "umcast.h"
 #include <net_kern.h>
 

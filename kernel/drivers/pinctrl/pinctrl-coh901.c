@@ -7,22 +7,22 @@
  * Author: Linus Walleij <linus.walleij@linaro.org>
  * Author: Jonas Aaberg <jonas.aberg@stericsson.com>
  */
-#include <linux/module.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/irqdomain.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/platform_data/pinctrl-coh901.h>
+#include <beep/module.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/io.h>
+#include <beep/irqdomain.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/pinctrl/pinconf-generic.h>
+#include <beep/platform_data/pinctrl-coh901.h>
 #include "pinctrl-coh901.h"
 
 #define U300_GPIO_PORT_STRIDE				(0x30)

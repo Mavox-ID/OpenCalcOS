@@ -8,15 +8,15 @@
  * Nspire keypad controller driver
  */
 
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/module.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/input.h>
+#include <beep/slab.h>
+#include <beep/clk.h>
+#include <beep/module.h>
 
 #include <mach/keypad.h>
 

@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap3/sram.S
+ * beep/arch/arm/mach-omap3/sram.S
  *
  * Omap3 specific functions that need to be run in internal SRAM
  *
@@ -25,7 +25,7 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston,
  * MA 02111-1307 USA
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 #include <asm/assembler.h>
 

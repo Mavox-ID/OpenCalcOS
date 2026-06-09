@@ -12,8 +12,8 @@
  */
 
 #include <keys/asymmetric-subtype.h>
-#include <linux/module.h>
-#include <linux/err.h>
+#include <beep/module.h>
+#include <beep/err.h>
 #include <crypto/public_key.h>
 #include "asymmetric_keys.h"
 

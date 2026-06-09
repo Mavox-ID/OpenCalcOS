@@ -6,10 +6,10 @@
  * as published by the Free Software Foundation; either version
  * 2 of the License, or (at your option) any later version.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/stddef.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/ptrace.h>
+#include <beep/stddef.h>
 
 #include <asm/bugs.h>
 #include <asm/compiler.h>
@@ -21,7 +21,7 @@
 static char bug64hit[] __initdata =
 	"reliable operation impossible!\n%s";
 static char nowar[] __initdata =
-	"Please report to <linux-mips@linux-mips.org>.";
+	"Please report to <beep-mips@beep-mips.org>.";
 static char r4kwar[] __initdata =
 	"Enable CPU_R4000_WORKAROUNDS to rectify.";
 static char daddiwar[] __initdata =

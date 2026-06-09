@@ -33,7 +33,7 @@ do {						\
 
 #endif
 
-#include <linux/param.h>
+#include <beep/param.h>
 
 #ifndef jiffies_to_msecs
 #define jiffies_to_msecs(x) _kc_jiffies_to_msecs(x)

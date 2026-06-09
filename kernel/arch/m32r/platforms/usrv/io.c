@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m32r/platforms/usrv/io.c
+ *  beep/arch/m32r/platforms/usrv/io.c
  *
  *  Typical I/O routines for uServer board.
  *
@@ -16,7 +16,7 @@
 #include <asm/page.h>
 #include <asm/io.h>
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include "../../../../drivers/pcmcia/m32r_cfc.h"
 
 extern void pcc_ioread_byte(int, unsigned long, void *, size_t, size_t, int);

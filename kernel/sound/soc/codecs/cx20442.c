@@ -13,10 +13,10 @@
  *  option) any later version.
  */
 
-#include <linux/tty.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
+#include <beep/tty.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/regulator/consumer.h>
 
 #include <sound/core.h>
 #include <sound/initval.h>

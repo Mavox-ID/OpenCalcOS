@@ -14,32 +14,32 @@
  *	Mikael Pettersson	:	PM converted to driver model.
  */
 
-#include <linux/perf_event.h>
-#include <linux/kernel_stat.h>
-#include <linux/mc146818rtc.h>
-#include <linux/acpi_pmtmr.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/bootmem.h>
-#include <linux/ftrace.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/syscore_ops.h>
-#include <linux/delay.h>
-#include <linux/timex.h>
-#include <linux/i8253.h>
-#include <linux/dmar.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/dmi.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
+#include <beep/perf_event.h>
+#include <beep/kernel_stat.h>
+#include <beep/mc146818rtc.h>
+#include <beep/acpi_pmtmr.h>
+#include <beep/clockchips.h>
+#include <beep/interrupt.h>
+#include <beep/bootmem.h>
+#include <beep/ftrace.h>
+#include <beep/ioport.h>
+#include <beep/module.h>
+#include <beep/syscore_ops.h>
+#include <beep/delay.h>
+#include <beep/timex.h>
+#include <beep/i8253.h>
+#include <beep/dmar.h>
+#include <beep/init.h>
+#include <beep/cpu.h>
+#include <beep/dmi.h>
+#include <beep/smp.h>
+#include <beep/mm.h>
 
 #include <asm/irq_remapping.h>
 #include <asm/perf_event.h>
 #include <asm/x86_init.h>
 #include <asm/pgalloc.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/mpspec.h>
 #include <asm/i8259.h>
 #include <asm/proto.h>
@@ -1055,10 +1055,10 @@ void disable_local_APIC(void)
 }
 
 /*
- * If Linux enabled the LAPIC against the BIOS default disable it down before
+ * If Beep enabled the LAPIC against the BIOS default disable it down before
  * re-entering the BIOS on shutdown.  Otherwise the BIOS may get confused and
  * not power-off.  Additionally clear all LVT entries before disable_local_APIC
- * for the case where Linux didn't enable the LAPIC.
+ * for the case where Beep didn't enable the LAPIC.
  */
 void lapic_shutdown(void)
 {

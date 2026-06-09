@@ -5,10 +5,10 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/sched.h>
-#include <linux/stacktrace.h>
-#include <linux/thread_info.h>
-#include <linux/module.h>
+#include <beep/sched.h>
+#include <beep/stacktrace.h>
+#include <beep/thread_info.h>
+#include <beep/module.h>
 
 register unsigned long current_frame_pointer asm("FP");
 

@@ -2,8 +2,8 @@
  * $Id: gdth_proc.c,v 1.43 2006/01/11 16:15:00 achim Exp $
  */
 
-#include <linux/completion.h>
-#include <linux/slab.h>
+#include <beep/completion.h>
+#include <beep/slab.h>
 
 int gdth_proc_info(struct Scsi_Host *host, char *buffer,char **start,off_t offset,int length,   
                    int inout)

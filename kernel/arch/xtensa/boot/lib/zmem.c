@@ -1,4 +1,4 @@
-#include <linux/zlib.h>
+#include <beep/zlib.h>
 
 /* bits taken from ppc */
 

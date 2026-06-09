@@ -15,17 +15,17 @@
  *  2 of the License, or (at your option) any later version.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/kmod.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_bridge/ebtables.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/kmod.h>
+#include <beep/module.h>
+#include <beep/vmalloc.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter_bridge/ebtables.h>
+#include <beep/spinlock.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
-#include <linux/smp.h>
-#include <linux/cpumask.h>
+#include <beep/smp.h>
+#include <beep/cpumask.h>
 #include <net/sock.h>
 /* needed for logical [in,out]-dev filtering */
 #include "../br_private.h"

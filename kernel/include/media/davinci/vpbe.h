@@ -17,8 +17,8 @@
 #ifndef _VPBE_H
 #define _VPBE_H
 
-#include <linux/videodev2.h>
-#include <linux/i2c.h>
+#include <beep/videodev2.h>
+#include <beep/i2c.h>
 
 #include <media/v4l2-dev.h>
 #include <media/v4l2-ioctl.h>

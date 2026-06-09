@@ -30,12 +30,12 @@
 #include "mid_bios.h"
 #include <drm/drm_pciids.h>
 #include "power.h"
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/spinlock.h>
-#include <linux/pm_runtime.h>
+#include <beep/cpu.h>
+#include <beep/notifier.h>
+#include <beep/spinlock.h>
+#include <beep/pm_runtime.h>
 #include <acpi/video.h>
-#include <linux/module.h>
+#include <beep/module.h>
 
 static int drm_psb_trap_pagefaults;
 
@@ -677,6 +677,6 @@ static void __exit psb_exit(void)
 late_initcall(psb_init);
 module_exit(psb_exit);
 
-MODULE_AUTHOR("Alan Cox <alan@linux.intel.com> and others");
+MODULE_AUTHOR("Alan Cox <alan@beep.intel.com> and others");
 MODULE_DESCRIPTION(DRIVER_DESC);
 MODULE_LICENSE("GPL");

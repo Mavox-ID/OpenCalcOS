@@ -16,7 +16,7 @@
 #ifndef _M68K_AMIGAHW_H
 #define _M68K_AMIGAHW_H
 
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 
     /*
      *  Different Amiga models

@@ -576,7 +576,7 @@ int sort_main(int argc UNUSED_PARAM, char **argv)
 				size_t len;
 				char *new_line;
 
-				/* On kernel/linux/arch/ *.[ch] files,
+				/* On kernel/beep/arch/ *.[ch] files,
 				 * this reduces memory usage by 6%.
 				 *  yes | head -99999999 | sort
 				 * goes down from 1900Mb to 380 Mb.

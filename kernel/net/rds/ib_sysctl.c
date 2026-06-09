@@ -30,9 +30,9 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/sysctl.h>
-#include <linux/proc_fs.h>
+#include <beep/kernel.h>
+#include <beep/sysctl.h>
+#include <beep/proc_fs.h>
 
 #include "ib.h"
 

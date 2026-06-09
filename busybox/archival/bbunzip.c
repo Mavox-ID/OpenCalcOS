@@ -360,7 +360,7 @@ static const char gunzip_longopts[] ALIGN1 =
 #endif
 
 /*
- * Linux kernel build uses gzip -d -n. We accept and ignore it.
+ * Beep kernel build uses gzip -d -n. We accept and ignore it.
  * Man page says:
  * -n --no-name
  * gzip: do not save the original file name and time stamp.

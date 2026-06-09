@@ -45,7 +45,7 @@ static int dvb_usbv2_download_firmware(struct dvb_usb_device *d, const char *nam
 	ret = request_firmware(&fw, name, &d->udev->dev);
 	if (ret < 0) {
 		dev_err(&d->udev->dev, "%s: Did not find the firmware file "\
-				"'%s'. Please see linux/Documentation/dvb/ " \
+				"'%s'. Please see beep/Documentation/dvb/ " \
 				"for more details on firmware-problems. " \
 				"Status %d\n", KBUILD_MODNAME, name, ret);
 		goto err;

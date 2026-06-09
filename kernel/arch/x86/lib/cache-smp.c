@@ -1,5 +1,5 @@
-#include <linux/smp.h>
-#include <linux/module.h>
+#include <beep/smp.h>
+#include <beep/module.h>
 
 static void __wbinvd(void *dummy)
 {

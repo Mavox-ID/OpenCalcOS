@@ -40,7 +40,7 @@ char* FAST_FUNC safe_gethostname(void)
 	 * Note that there is no standard that says that the hostname
 	 * set by sethostname(2) is the same string as the nodename field of the
 	 * struct returned by uname (indeed, some systems allow a 256-byte host-
-	 * name and an 8-byte nodename), but this is true on Linux. The same holds
+	 * name and an 8-byte nodename), but this is true on Beep. The same holds
 	 * for setdomainname(2) and the domainname field.
 	 */
 

@@ -11,12 +11,12 @@
  * is licensed "as is" without any warranty of any kind, whether express
  * or implied.
  */
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/cpufreq.h>
-#include <linux/regulator/consumer.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/cpufreq.h>
+#include <beep/regulator/consumer.h>
 
 #include <asm/mach/map.h>
 

@@ -31,20 +31,20 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/if_arp.h>
-#include <linux/if_vlan.h>
-#include <linux/ethtool.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/if_arp.h>
+#include <beep/if_vlan.h>
+#include <beep/ethtool.h>
+#include <beep/slab.h>
 #include <net/tcp.h>
 
 #include <net/inet_common.h>
-#include <linux/inet.h>
+#include <beep/inet.h>
 
 #include "nes.h"
 
@@ -1851,7 +1851,7 @@ void nes_netdev_destroy(struct net_device *netdev)
 {
 	struct nes_vnic *nesvnic = netdev_priv(netdev);
 
-	/* make sure 'stop' method is called by Linux stack */
+	/* make sure 'stop' method is called by Beep stack */
 	/* nes_netdev_stop(netdev); */
 
 	list_del(&nesvnic->list);

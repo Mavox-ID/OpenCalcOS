@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-integrator/integrator_cp.c
+ *  beep/arch/arm/mach-integrator/integrator_cp.c
  *
  *  Copyright (C) 2003 Deep Blue Solutions Ltd
  *
@@ -7,27 +7,27 @@
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License.
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/string.h>
-#include <linux/device.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/kmi.h>
-#include <linux/amba/clcd.h>
-#include <linux/amba/mmci.h>
-#include <linux/io.h>
-#include <linux/irqchip/versatile-fpga.h>
-#include <linux/gfp.h>
-#include <linux/mtd/physmap.h>
-#include <linux/platform_data/clk-integrator.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/sys_soc.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/string.h>
+#include <beep/device.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/kmi.h>
+#include <beep/amba/clcd.h>
+#include <beep/amba/mmci.h>
+#include <beep/io.h>
+#include <beep/irqchip/versatile-fpga.h>
+#include <beep/gfp.h>
+#include <beep/mtd/physmap.h>
+#include <beep/platform_data/clk-integrator.h>
+#include <beep/of_irq.h>
+#include <beep/of_address.h>
+#include <beep/of_platform.h>
+#include <beep/sys_soc.h>
 
 #include <mach/hardware.h>
 #include <mach/platform.h>

@@ -9,12 +9,12 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/smp.h>
-#include <linux/cpumask.h>
-#include <linux/delay.h>
-#include <linux/of.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/smp.h>
+#include <beep/cpumask.h>
+#include <beep/delay.h>
+#include <beep/of.h>
 #include <mach/common.h>
 #include <mach/r8a7779.h>
 #include <mach/emev2.h>

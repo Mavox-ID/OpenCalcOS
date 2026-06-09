@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/serial.c
+ * beep/arch/arm/mach-omap1/serial.c
  *
  * OMAP1 serial support.
  *
@@ -7,18 +7,18 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/serial.h>
-#include <linux/tty.h>
-#include <linux/serial_8250.h>
-#include <linux/serial_reg.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <beep/gpio.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/delay.h>
+#include <beep/serial.h>
+#include <beep/tty.h>
+#include <beep/serial_8250.h>
+#include <beep/serial_reg.h>
+#include <beep/clk.h>
+#include <beep/io.h>
 
 #include <asm/mach-types.h>
 

@@ -14,8 +14,8 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
  * 02110-1301, USA.
  */
-#include <linux/module.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
 #include "gpiomux.h"
 
 static DEFINE_SPINLOCK(gpiomux_lock);

@@ -8,10 +8,10 @@
 #ifndef __ASM_BLACKFIN_SMP_H
 #define __ASM_BLACKFIN_SMP_H
 
-#include <linux/kernel.h>
-#include <linux/threads.h>
-#include <linux/cpumask.h>
-#include <linux/cache.h>
+#include <beep/kernel.h>
+#include <beep/threads.h>
+#include <beep/cpumask.h>
+#include <beep/cache.h>
 #include <asm/blackfin.h>
 #include <mach/smp.h>
 

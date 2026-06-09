@@ -42,7 +42,7 @@
  *          !list_empty(&pchnl->io_completions) ==> pchnl->sync_event is set.
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*  ----------------------------------- OS */
 #include <dspbridge/host_os.h>

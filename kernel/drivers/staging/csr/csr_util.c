@@ -8,7 +8,7 @@
 
 *****************************************************************************/
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 MODULE_DESCRIPTION("CSR Operating System Kernel Abstraction");
 MODULE_AUTHOR("Cambridge Silicon Radio Ltd.");

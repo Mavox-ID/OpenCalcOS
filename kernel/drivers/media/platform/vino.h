@@ -5,7 +5,7 @@
  * License version 2 as published by the Free Software Foundation.
  *
  * Copyright (C) 1999 Ulf Karlsson <ulfc@bun.falkenberg.se>
- * Copyright (C) 2003 Ladislav Michl <ladis@linux-mips.org>
+ * Copyright (C) 2003 Ladislav Michl <ladis@beep-mips.org>
  */
 
 #ifndef _VINO_H_

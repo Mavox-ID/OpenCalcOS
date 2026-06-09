@@ -1,7 +1,7 @@
 #define DEBUG
 
-#include <linux/wait.h>
-#include <linux/ptrace.h>
+#include <beep/wait.h>
+#include <beep/ptrace.h>
 
 #include <asm/spu.h>
 #include <asm/spu_priv1.h>

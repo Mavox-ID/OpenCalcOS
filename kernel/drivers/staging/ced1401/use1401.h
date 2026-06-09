@@ -28,7 +28,7 @@
 #define U14LONG long
 #endif
 
-#ifdef LINUX
+#ifdef BEEP
 #define U14ERRBASE -1000
 #define U14LONG int
 #endif
@@ -63,7 +63,7 @@
 #define U14ERR_U14013        10
 #define U14ERR_POWER3        11
 
-/// NBNB Error numbers need shifting as some linux error codes start at 512
+/// NBNB Error numbers need shifting as some beep error codes start at 512
 #define U14ERR(n)             (n+U14ERRBASE)
 #define U14ERR_OFF            U14ERR(0)      /* 1401 there but switched off    */
 #define U14ERR_NC             U14ERR(-1)     /* 1401 not connected             */
@@ -177,7 +177,7 @@ typedef TGET_TX_BLOCK *LPGET_TX_BLOCK;
 #pragma pack()
 #endif
 
-#ifdef LINUX
+#ifdef BEEP
 typedef struct                          /* used for U14_GetTransfer results */
 {                                       /* Info on a single mapped block */
    long long physical;

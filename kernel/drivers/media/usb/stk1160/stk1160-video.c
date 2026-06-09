@@ -20,10 +20,10 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/slab.h>
-#include <linux/ratelimit.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/slab.h>
+#include <beep/ratelimit.h>
 
 #include "stk1160.h"
 

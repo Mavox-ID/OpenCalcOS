@@ -1,5 +1,5 @@
-#include <linux/kernel.h>
-#include <linux/stat.h>
+#include <beep/kernel.h>
+#include <beep/stat.h>
 /* FIX UP */
 #include "soundbus.h"
 

@@ -2,7 +2,7 @@
  * Pixart PAC7302 driver
  *
  * Copyright (C) 2008-2012 Jean-Francois Moine <http://moinejf.free.fr>
- * Copyright (C) 2005 Thomas Kaiser thomas@kaiser-linux.li
+ * Copyright (C) 2005 Thomas Kaiser thomas@kaiser-beep.li
  *
  * Separated from Pixart PAC7311 library by Márton Németh
  * Camera button input handling by Márton Németh <nm127@freemail.hu>
@@ -92,7 +92,7 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/input.h>
+#include <beep/input.h>
 #include <media/v4l2-chip-ident.h>
 #include "gspca.h"
 /* Include pac common sof detection functions */
@@ -107,7 +107,7 @@
 #define PAC7302_EXPOSURE_KNEE		133 /* 66 ms / 15 fps */
 
 MODULE_AUTHOR("Jean-Francois Moine <http://moinejf.free.fr>, "
-		"Thomas Kaiser thomas@kaiser-linux.li");
+		"Thomas Kaiser thomas@kaiser-beep.li");
 MODULE_DESCRIPTION("Pixart PAC7302");
 MODULE_LICENSE("GPL");
 

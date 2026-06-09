@@ -7,10 +7,10 @@
  * @author John Levon <levon@movementarian.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/oprofile.h>
-#include <linux/errno.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/oprofile.h>
+#include <beep/errno.h>
+#include <beep/init.h>
 
 int __init oprofile_arch_init(struct oprofile_operations *ops)
 {

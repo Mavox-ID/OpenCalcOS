@@ -13,11 +13,11 @@
  * 	              Nauman Rafique <nauman@google.com>
  */
 
-#include <linux/cgroup.h>
-#include <linux/u64_stats_sync.h>
-#include <linux/seq_file.h>
-#include <linux/radix-tree.h>
-#include <linux/blkdev.h>
+#include <beep/cgroup.h>
+#include <beep/u64_stats_sync.h>
+#include <beep/seq_file.h>
+#include <beep/radix-tree.h>
+#include <beep/blkdev.h>
 
 /* Max limits for throttle policy */
 #define THROTL_IOPS_MAX		UINT_MAX

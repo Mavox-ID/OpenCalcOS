@@ -15,8 +15,8 @@
 #ifndef _ZRAM_DRV_H_
 #define _ZRAM_DRV_H_
 
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
+#include <beep/spinlock.h>
+#include <beep/mutex.h>
 
 #include "../zsmalloc/zsmalloc.h"
 

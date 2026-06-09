@@ -24,11 +24,11 @@
  * General Public License for more details.
  */
 
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/highmem.h>
-#include <linux/bitops.h>
-#include <linux/list.h>
+#include <beep/fs.h>
+#include <beep/types.h>
+#include <beep/highmem.h>
+#include <beep/bitops.h>
+#include <beep/list.h>
 
 #include <cluster/masklog.h>
 

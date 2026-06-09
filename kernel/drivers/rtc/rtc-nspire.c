@@ -1,5 +1,5 @@
 /*
- *	linux/drivers/rtc/rtc-nspire.c
+ *	beep/drivers/rtc/rtc-nspire.c
  *
  *	Copyright (C) 2012 Daniel Tang <tangrs@tangrs.id.au>
  *
@@ -9,13 +9,13 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
+#include <beep/rtc.h>
+#include <beep/platform_device.h>
 
 #define RTC_CURR	0x00
 #define RTC_ALRM	0x04

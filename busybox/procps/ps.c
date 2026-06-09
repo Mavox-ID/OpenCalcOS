@@ -3,7 +3,7 @@
  * Mini ps implementation(s) for busybox
  *
  * Copyright (C) 1999-2004 by Erik Andersen <andersen@codepoet.org>
- * Fix for SELinux Support:(c)2007 Hiroshi Shinji <shiroshi@my.email.ne.jp>
+ * Fix for SEBeep Support:(c)2007 Hiroshi Shinji <shiroshi@my.email.ne.jp>
  *                         (c)2007 Yuichi Nakamura <ynakam@hitachisoft.jp>
  *
  * Licensed under GPLv2, see file LICENSE in this source tree.
@@ -37,12 +37,12 @@
 //config:	depends on (PS || MINIPS) && DESKTOP
 //config:
 //config:config FEATURE_PS_UNUSUAL_SYSTEMS
-//config:	bool "Support Linux prior to 2.4.0 and non-ELF systems"
+//config:	bool "Support Beep prior to 2.4.0 and non-ELF systems"
 //config:	default n
 //config:	depends on FEATURE_PS_TIME
 //config:	help
 //config:	Include support for measuring HZ on old kernels and non-ELF systems
-//config:	(if you are on Linux 2.4.0+ and use ELF, you don't need this)
+//config:	(if you are on Beep 2.4.0+ and use ELF, you don't need this)
 //config:
 //config:config FEATURE_PS_ADDITIONAL_COLUMNS
 //config:	bool "Enable -o rgroup, -o ruser, -o nice specifiers"
@@ -69,7 +69,7 @@
 //usage:
 //usage:#else /* !ENABLE_DESKTOP */
 //usage:
-//usage:#if !ENABLE_SELINUX && !ENABLE_FEATURE_PS_WIDE
+//usage:#if !ENABLE_SEBEEP && !ENABLE_FEATURE_PS_WIDE
 //usage:#define USAGE_PS "\nThis version of ps accepts no options"
 //usage:#else
 //usage:#define USAGE_PS ""
@@ -80,8 +80,8 @@
 //usage:#define ps_full_usage "\n\n"
 //usage:       "Show list of processes\n"
 //usage:	USAGE_PS
-//usage:	IF_SELINUX(
-//usage:     "\n	-Z	Show selinux context"
+//usage:	IF_SEBEEP(
+//usage:     "\n	-Z	Show sebeep context"
 //usage:	)
 //usage:	IF_FEATURE_PS_WIDE(
 //usage:     "\n	w	Wide output"
@@ -110,7 +110,7 @@
 
 #include "libbb.h"
 #include "common_bufsiz.h"
-#ifdef __linux__
+#ifdef __beep__
 # include <sys/sysinfo.h>
 #endif
 
@@ -120,7 +120,7 @@ enum { MAX_WIDTH = 2*1024 };
 #if ENABLE_FEATURE_PS_TIME || ENABLE_FEATURE_PS_LONG
 static unsigned long get_uptime(void)
 {
-#ifdef __linux__
+#ifdef __beep__
 	struct sysinfo info;
 	if (sysinfo(&info) < 0)
 		return 0;
@@ -182,7 +182,7 @@ struct globals {
 	char *buffer;
 	unsigned terminal_width;
 #if ENABLE_FEATURE_PS_TIME
-# if ENABLE_FEATURE_PS_UNUSUAL_SYSTEMS || !defined(__linux__)
+# if ENABLE_FEATURE_PS_UNUSUAL_SYSTEMS || !defined(__beep__)
 	unsigned kernel_HZ;
 # endif
 	unsigned long seconds_since_boot;
@@ -198,10 +198,10 @@ struct globals {
 #define INIT_G() do { setup_common_bufsiz(); } while (0)
 
 #if ENABLE_FEATURE_PS_TIME
-# if ENABLE_FEATURE_PS_UNUSUAL_SYSTEMS || !defined(__linux__)
+# if ENABLE_FEATURE_PS_UNUSUAL_SYSTEMS || !defined(__beep__)
 #  define get_kernel_HZ() (G.kernel_HZ)
 # else
-    /* non-ancient Linux standardized on 100 for "times" freq */
+    /* non-ancient Beep standardized on 100 for "times" freq */
 #  define get_kernel_HZ() ((unsigned)100)
 # endif
 #endif
@@ -362,7 +362,7 @@ static void func_time(char *buf, int size, const procps_status_t *ps)
 }
 #endif
 
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 static void func_label(char *buf, int size, const procps_status_t *ps)
 {
 	safe_strncpy(buf, ps->context ? ps->context : "unknown", size+1);
@@ -402,7 +402,7 @@ static const ps_out_t out_spec[] ALIGN_PTR = {
 	{ 5                  , "sid"   ,"SID"    ,func_sid   ,PSSCAN_SID     },
 	{ 4                  , "stat"  ,"STAT"   ,func_state ,PSSCAN_STATE   },
 	{ 4                  , "rss"   ,"RSS"    ,func_rss   ,PSSCAN_RSS     },
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 	{ 35                 , "label" ,"LABEL"  ,func_label ,PSSCAN_CONTEXT },
 #endif
 };
@@ -488,8 +488,8 @@ static void alloc_line_buffer(void)
 			break;
 		}
 	}
-#if ENABLE_SELINUX
-	if (!is_selinux_enabled())
+#if ENABLE_SEBEEP
+	if (!is_sebeep_enabled())
 		need_flags &= ~PSSCAN_CONTEXT;
 #endif
 	buffer = xmalloc(width + 1); /* for trailing \0 */
@@ -541,7 +541,7 @@ static void format_process(const procps_status_t *ps)
 	printf("%.*s\n", terminal_width, buffer);
 }
 
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 # define SELINUX_O_PREFIX "label,"
 # define DEFAULT_O_STR    (SELINUX_O_PREFIX "pid,user" IF_FEATURE_PS_TIME(",time") ",args")
 #else
@@ -554,7 +554,7 @@ int ps_main(int argc UNUSED_PARAM, char **argv)
 	procps_status_t *p;
 	llist_t* opt_o = NULL;
 	char default_o[sizeof(DEFAULT_O_STR)];
-#if ENABLE_SELINUX || ENABLE_FEATURE_SHOW_THREADS
+#if ENABLE_SEBEEP || ENABLE_FEATURE_SHOW_THREADS
 	int opt;
 #endif
 	enum {
@@ -572,7 +572,7 @@ int ps_main(int argc UNUSED_PARAM, char **argv)
 	INIT_G();
 #if ENABLE_FEATURE_PS_TIME
 	G.seconds_since_boot = get_uptime();
-# if ENABLE_FEATURE_PS_UNUSUAL_SYSTEMS || !defined(__linux__)
+# if ENABLE_FEATURE_PS_UNUSUAL_SYSTEMS || !defined(__beep__)
 	G.kernel_HZ = bb_clk_tck(); /* this is sysconf(_SC_CLK_TCK) */
 # endif
 #endif
@@ -592,7 +592,7 @@ int ps_main(int argc UNUSED_PARAM, char **argv)
 	 * procps v3.2.7 supports -T and shows tids as SPID column,
 	 * it also supports -L where it shows tids as LWP column.
 	 */
-#if ENABLE_SELINUX || ENABLE_FEATURE_SHOW_THREADS
+#if ENABLE_SEBEEP || ENABLE_FEATURE_SHOW_THREADS
 	opt =
 #endif
 		getopt32(argv, "Zo:*aAdefl"IF_FEATURE_SHOW_THREADS("T"), &opt_o);
@@ -605,9 +605,9 @@ int ps_main(int argc UNUSED_PARAM, char **argv)
 		/* Below: parse_o() needs char*, NOT const char*,
 		 * can't pass it constant string. Need to make a copy first.
 		 */
-#if ENABLE_SELINUX
-		if (!(opt & OPT_Z) || !is_selinux_enabled()) {
-			/* no -Z or no SELinux: do not show LABEL */
+#if ENABLE_SEBEEP
+		if (!(opt & OPT_Z) || !is_sebeep_enabled()) {
+			/* no -Z or no SEBeep: do not show LABEL */
 			strcpy(default_o, DEFAULT_O_STR + sizeof(SELINUX_O_PREFIX)-1);
 		} else
 #endif
@@ -652,23 +652,23 @@ int ps_main(int argc UNUSED_PARAM, char **argv UNUSED_PARAM)
 			| PSSCAN_STATE | PSSCAN_VSZ | PSSCAN_COMM;
 	unsigned terminal_width IF_NOT_FEATURE_PS_WIDE(= 79);
 	enum {
-		OPT_Z = (1 << 0) * ENABLE_SELINUX,
-		OPT_T = (1 << ENABLE_SELINUX) * ENABLE_FEATURE_SHOW_THREADS,
-		OPT_l = (1 << ENABLE_SELINUX) * (1 << ENABLE_FEATURE_SHOW_THREADS) * ENABLE_FEATURE_PS_LONG,
+		OPT_Z = (1 << 0) * ENABLE_SEBEEP,
+		OPT_T = (1 << ENABLE_SEBEEP) * ENABLE_FEATURE_SHOW_THREADS,
+		OPT_l = (1 << ENABLE_SEBEEP) * (1 << ENABLE_FEATURE_SHOW_THREADS) * ENABLE_FEATURE_PS_LONG,
 	};
 #if ENABLE_FEATURE_PS_LONG
 	time_t now = now; /* for compiler */
 	unsigned long uptime = uptime;
 #endif
 	/* If we support any options, parse argv */
-#if ENABLE_SELINUX || ENABLE_FEATURE_SHOW_THREADS || ENABLE_FEATURE_PS_WIDE || ENABLE_FEATURE_PS_LONG
+#if ENABLE_SEBEEP || ENABLE_FEATURE_SHOW_THREADS || ENABLE_FEATURE_PS_WIDE || ENABLE_FEATURE_PS_LONG
 	int opts = 0;
 # if ENABLE_FEATURE_PS_WIDE
 	/* -w is a bit complicated */
 	int w_count = 0;
 	make_all_argv_opts(argv);
 	opts = getopt32(argv, "^"
-		IF_SELINUX("Z")IF_FEATURE_SHOW_THREADS("T")IF_FEATURE_PS_LONG("l")"w"
+		IF_SEBEEP("Z")IF_FEATURE_SHOW_THREADS("T")IF_FEATURE_PS_LONG("l")"w"
 		"\0" "ww",
 		&w_count
 	);
@@ -686,11 +686,11 @@ int ps_main(int argc UNUSED_PARAM, char **argv UNUSED_PARAM)
 # else
 	/* -w is not supported, only -Z and/or -T */
 	make_all_argv_opts(argv);
-	opts = getopt32(argv, IF_SELINUX("Z")IF_FEATURE_SHOW_THREADS("T")IF_FEATURE_PS_LONG("l"));
+	opts = getopt32(argv, IF_SEBEEP("Z")IF_FEATURE_SHOW_THREADS("T")IF_FEATURE_PS_LONG("l"));
 # endif
 
-# if ENABLE_SELINUX
-	if ((opts & OPT_Z) && is_selinux_enabled()) {
+# if ENABLE_SEBEEP
+	if ((opts & OPT_Z) && is_sebeep_enabled()) {
 		psscan_flags = PSSCAN_PID | PSSCAN_CONTEXT
 				| PSSCAN_STATE | PSSCAN_COMM;
 		puts("  PID CONTEXT                          STAT COMMAND");
@@ -735,7 +735,7 @@ int ps_main(int argc UNUSED_PARAM, char **argv UNUSED_PARAM)
 	p = NULL;
 	while ((p = procps_scan(p, psscan_flags)) != NULL) {
 		int len;
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 		if (psscan_flags & PSSCAN_CONTEXT) {
 			len = printf("%5u %-32.32s %s  ",
 					p->pid,

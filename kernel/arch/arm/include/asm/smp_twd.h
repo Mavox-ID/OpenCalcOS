@@ -18,7 +18,7 @@
 #define TWD_TIMER_CONTROL_PERIODIC	(1 << 1)
 #define TWD_TIMER_CONTROL_IT_ENABLE	(1 << 2)
 
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 
 struct twd_local_timer {
 	struct resource	res[2];

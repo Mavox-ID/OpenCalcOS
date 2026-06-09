@@ -1,15 +1,15 @@
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/export.h>
-#include <linux/suspend.h>
-#include <linux/bcd.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/export.h>
+#include <beep/suspend.h>
+#include <beep/bcd.h>
 #include <asm/uaccess.h>
 
 #include <acpi/acpi_bus.h>
 #include <acpi/acpi_drivers.h>
 
 #ifdef CONFIG_X86
-#include <linux/mc146818rtc.h>
+#include <beep/mc146818rtc.h>
 #endif
 
 #include "sleep.h"

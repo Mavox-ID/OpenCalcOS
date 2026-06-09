@@ -8,17 +8,17 @@
 #include "dm.h"
 #include "dm-uevent.h"
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/moduleparam.h>
-#include <linux/blkpg.h>
-#include <linux/bio.h>
-#include <linux/mempool.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
-#include <linux/hdreg.h>
-#include <linux/delay.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/moduleparam.h>
+#include <beep/blkpg.h>
+#include <beep/bio.h>
+#include <beep/mempool.h>
+#include <beep/slab.h>
+#include <beep/idr.h>
+#include <beep/hdreg.h>
+#include <beep/delay.h>
 
 #include <trace/events/block.h>
 

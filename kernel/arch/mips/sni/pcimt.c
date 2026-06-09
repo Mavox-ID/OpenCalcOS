@@ -5,15 +5,15 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 1996, 97, 98, 2000, 03, 04, 06 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 1996, 97, 98, 2000, 03, 04, 06 Ralf Baechle (ralf@beep-mips.org)
  * Copyright (C) 2006,2007 Thomas Bogendoerfer (tsbogend@alpha.franken.de)
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/pci.h>
-#include <linux/serial_8250.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/pci.h>
+#include <beep/serial_8250.h>
 
 #include <asm/sni.h>
 #include <asm/time.h>

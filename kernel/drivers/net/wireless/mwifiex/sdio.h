@@ -21,11 +21,11 @@
 #define	_MWIFIEX_SDIO_H
 
 
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
+#include <beep/mmc/sdio.h>
+#include <beep/mmc/sdio_ids.h>
+#include <beep/mmc/sdio_func.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/host.h>
 
 #include "main.h"
 

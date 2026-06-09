@@ -17,14 +17,14 @@
  */
 
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
 #include <acpi/acpi_drivers.h>
-#include <linux/backlight.h>
-#include <linux/input.h>
-#include <linux/rfkill.h>
+#include <beep/backlight.h>
+#include <beep/input.h>
+#include <beep/rfkill.h>
 
 MODULE_LICENSE("GPL");
 

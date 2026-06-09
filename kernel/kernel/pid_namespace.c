@@ -8,16 +8,16 @@
  *
  */
 
-#include <linux/pid.h>
-#include <linux/pid_namespace.h>
-#include <linux/user_namespace.h>
-#include <linux/syscalls.h>
-#include <linux/err.h>
-#include <linux/acct.h>
-#include <linux/slab.h>
-#include <linux/proc_fs.h>
-#include <linux/reboot.h>
-#include <linux/export.h>
+#include <beep/pid.h>
+#include <beep/pid_namespace.h>
+#include <beep/user_namespace.h>
+#include <beep/syscalls.h>
+#include <beep/err.h>
+#include <beep/acct.h>
+#include <beep/slab.h>
+#include <beep/proc_fs.h>
+#include <beep/reboot.h>
+#include <beep/export.h>
 
 #define BITS_PER_PAGE		(PAGE_SIZE*8)
 
@@ -285,13 +285,13 @@ int reboot_pid_ns(struct pid_namespace *pid_ns, int cmd)
 		return 0;
 
 	switch (cmd) {
-	case LINUX_REBOOT_CMD_RESTART2:
-	case LINUX_REBOOT_CMD_RESTART:
+	case BEEP_REBOOT_CMD_RESTART2:
+	case BEEP_REBOOT_CMD_RESTART:
 		pid_ns->reboot = SIGHUP;
 		break;
 
-	case LINUX_REBOOT_CMD_POWER_OFF:
-	case LINUX_REBOOT_CMD_HALT:
+	case BEEP_REBOOT_CMD_POWER_OFF:
+	case BEEP_REBOOT_CMD_HALT:
 		pid_ns->reboot = SIGINT;
 		break;
 	default:

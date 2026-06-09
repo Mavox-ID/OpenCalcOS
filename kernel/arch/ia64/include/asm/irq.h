@@ -11,8 +11,8 @@
  * 02/29/00     D.Mosberger	moved most things into hw_irq.h
  */
 
-#include <linux/types.h>
-#include <linux/cpumask.h>
+#include <beep/types.h>
+#include <beep/cpumask.h>
 #include <generated/nr-irqs.h>
 
 static __inline__ int

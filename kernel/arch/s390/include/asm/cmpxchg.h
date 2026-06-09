@@ -7,9 +7,9 @@
 #ifndef __ASM_CMPXCHG_H
 #define __ASM_CMPXCHG_H
 
-#include <linux/mmdebug.h>
-#include <linux/types.h>
-#include <linux/bug.h>
+#include <beep/mmdebug.h>
+#include <beep/types.h>
+#include <beep/bug.h>
 
 extern void __xchg_called_with_bad_pointer(void);
 

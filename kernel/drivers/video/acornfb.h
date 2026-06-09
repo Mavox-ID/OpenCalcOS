@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/acornfb.h
+ *  beep/drivers/video/acornfb.h
  *
  *  Copyright (C) 1998,1999 Russell King
  *

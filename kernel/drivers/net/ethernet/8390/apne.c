@@ -1,5 +1,5 @@
 /*
- * Amiga Linux/68k 8390 based PCMCIA Ethernet Driver for the Amiga 1200
+ * Amiga Beep/68k 8390 based PCMCIA Ethernet Driver for the Amiga 1200
  *
  * (C) Copyright 1997 Alain Malek
  *                    (Alain.Malek@cryogen.com)
@@ -8,10 +8,10 @@
  *
  * This program is based on
  *
- * ne.c:       A general non-shared-memory NS8390 ethernet driver for linux
+ * ne.c:       A general non-shared-memory NS8390 ethernet driver for beep
  *             Written 1992-94 by Donald Becker.
  *
- * 8390.c:     A general NS8390 ethernet driver core for linux.
+ * 8390.c:     A general NS8390 ethernet driver core for beep.
  *             Written 1992-94 by Donald Becker.
  *
  * cnetdevice: A Sana-II ethernet driver for AmigaOS
@@ -20,7 +20,7 @@
  * ----------------------------------------------------------------------------
  *
  * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file COPYING in the main directory of the Linux
+ * License.  See the file COPYING in the main directory of the Beep
  * distribution for more details.
  *
  * ----------------------------------------------------------------------------
@@ -28,16 +28,16 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/interrupt.h>
+#include <beep/jiffies.h>
 
 #include <asm/io.h>
 #include <asm/setup.h>

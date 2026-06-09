@@ -5,13 +5,13 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 1996, 1997, 2004 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 1996, 1997, 2004 by Ralf Baechle (ralf@beep-mips.org)
  * Copyright (C) 2006, Wind River System Inc. Rongkai.zhan <rongkai.zhan@windriver.com>
  */
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/pm.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/pm.h>
 
 #include <asm/io.h>
 #include <asm/bootinfo.h>

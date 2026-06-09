@@ -1,11 +1,11 @@
 /*
- * linux/fs/jbd2/revoke.c
+ * beep/fs/jbd2/revoke.c
  *
  * Written by Stephen C. Tweedie <sct@redhat.com>, 2000
  *
  * Copyright 2000 Red Hat corp --- All Rights Reserved
  *
- * This file is part of the Linux kernel and is made available under
+ * This file is part of the Beep kernel and is made available under
  * the terms of the GNU General Public License, version 2, or at your
  * option, any later version, incorporated herein by reference.
  *
@@ -83,16 +83,16 @@
 #ifndef __KERNEL__
 #include "jfs_user.h"
 #else
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/jbd2.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/bio.h>
+#include <beep/time.h>
+#include <beep/fs.h>
+#include <beep/jbd2.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/init.h>
+#include <beep/bio.h>
 #endif
-#include <linux/log2.h>
+#include <beep/log2.h>
 
 static struct kmem_cache *jbd2_revoke_record_cache;
 static struct kmem_cache *jbd2_revoke_table_cache;

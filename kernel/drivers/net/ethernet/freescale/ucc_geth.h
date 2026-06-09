@@ -18,9 +18,9 @@
 #ifndef __UCC_GETH_H__
 #define __UCC_GETH_H__
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/if_ether.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/if_ether.h>
 
 #include <asm/immap_qe.h>
 #include <asm/qe.h>

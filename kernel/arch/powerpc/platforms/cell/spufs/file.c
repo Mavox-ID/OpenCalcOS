@@ -22,14 +22,14 @@
 
 #undef DEBUG
 
-#include <linux/fs.h>
-#include <linux/ioctl.h>
-#include <linux/export.h>
-#include <linux/pagemap.h>
-#include <linux/poll.h>
-#include <linux/ptrace.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <beep/fs.h>
+#include <beep/ioctl.h>
+#include <beep/export.h>
+#include <beep/pagemap.h>
+#include <beep/poll.h>
+#include <beep/ptrace.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
 
 #include <asm/io.h>
 #include <asm/time.h>

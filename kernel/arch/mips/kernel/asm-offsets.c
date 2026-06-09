@@ -8,12 +8,12 @@
  * Kevin Kissell, kevink@mips.com and Carsten Langgaard, carstenl@mips.com
  * Copyright (C) 2000 MIPS Technologies, Inc.
  */
-#include <linux/compat.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/kbuild.h>
-#include <linux/suspend.h>
+#include <beep/compat.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/kbuild.h>
+#include <beep/suspend.h>
 #include <asm/ptrace.h>
 #include <asm/processor.h>
 
@@ -172,7 +172,7 @@ void output_mm_defines(void)
 	COMMENT("Size of struct page");
 	DEFINE(STRUCT_PAGE_SIZE, sizeof(struct page));
 	BLANK();
-	COMMENT("Linux mm_struct offsets.");
+	COMMENT("Beep mm_struct offsets.");
 	OFFSET(MM_USERS, mm_struct, mm_users);
 	OFFSET(MM_PGD, mm_struct, pgd);
 	OFFSET(MM_CONTEXT, mm_struct, context);
@@ -208,7 +208,7 @@ void output_mm_defines(void)
 #ifdef CONFIG_32BIT
 void output_sc_defines(void)
 {
-	COMMENT("Linux sigcontext offsets.");
+	COMMENT("Beep sigcontext offsets.");
 	OFFSET(SC_REGS, sigcontext, sc_regs);
 	OFFSET(SC_FPREGS, sigcontext, sc_fpregs);
 	OFFSET(SC_ACX, sigcontext, sc_acx);
@@ -230,7 +230,7 @@ void output_sc_defines(void)
 #ifdef CONFIG_64BIT
 void output_sc_defines(void)
 {
-	COMMENT("Linux sigcontext offsets.");
+	COMMENT("Beep sigcontext offsets.");
 	OFFSET(SC_REGS, sigcontext, sc_regs);
 	OFFSET(SC_FPREGS, sigcontext, sc_fpregs);
 	OFFSET(SC_MDHI, sigcontext, sc_mdhi);
@@ -244,7 +244,7 @@ void output_sc_defines(void)
 #ifdef CONFIG_MIPS32_COMPAT
 void output_sc32_defines(void)
 {
-	COMMENT("Linux 32-bit sigcontext offsets.");
+	COMMENT("Beep 32-bit sigcontext offsets.");
 	OFFSET(SC32_FPREGS, sigcontext32, sc_fpregs);
 	OFFSET(SC32_FPC_CSR, sigcontext32, sc_fpc_csr);
 	OFFSET(SC32_FPC_EIR, sigcontext32, sc_fpc_eir);
@@ -254,7 +254,7 @@ void output_sc32_defines(void)
 
 void output_signal_defined(void)
 {
-	COMMENT("Linux signal numbers.");
+	COMMENT("Beep signal numbers.");
 	DEFINE(_SIGHUP, SIGHUP);
 	DEFINE(_SIGINT, SIGINT);
 	DEFINE(_SIGQUIT, SIGQUIT);
@@ -320,7 +320,7 @@ void output_octeon_cop2_state_defines(void)
 #ifdef CONFIG_HIBERNATION
 void output_pbe_defines(void)
 {
-	COMMENT(" Linux struct pbe offsets. ");
+	COMMENT(" Beep struct pbe offsets. ");
 	OFFSET(PBE_ADDRESS, pbe, address);
 	OFFSET(PBE_ORIG_ADDRESS, pbe, orig_address);
 	OFFSET(PBE_NEXT, pbe, next);

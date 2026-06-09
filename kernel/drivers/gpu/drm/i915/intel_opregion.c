@@ -27,8 +27,8 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/acpi_io.h>
+#include <beep/acpi.h>
+#include <beep/acpi_io.h>
 #include <acpi/video.h>
 
 #include <drm/drmP.h>
@@ -300,7 +300,7 @@ static int intel_opregion_video_event(struct notifier_block *nb,
 {
 	/* The only video events relevant to opregion are 0x80. These indicate
 	   either a docking event, lid switch or display switch request. In
-	   Linux, these are handled by the dock, button and video drivers.
+	   Beep, these are handled by the dock, button and video drivers.
 	*/
 
 	struct opregion_acpi __iomem *acpi;

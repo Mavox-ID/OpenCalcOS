@@ -18,13 +18,13 @@
  *
  * Licensed under the GNU/GPL. See COPYING for details.
  */
-#include <linux/bcma/bcma.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb/ehci_pdriver.h>
-#include <linux/usb/ohci_pdriver.h>
+#include <beep/bcma/bcma.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/usb/ehci_pdriver.h>
+#include <beep/usb/ohci_pdriver.h>
 
 MODULE_AUTHOR("Hauke Mehrtens");
 MODULE_DESCRIPTION("Common USB driver for BCMA Bus");

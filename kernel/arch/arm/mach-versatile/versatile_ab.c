@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-versatile/versatile_ab.c
+ *  beep/arch/arm/mach-versatile/versatile_ab.c
  *
  *  Copyright (C) 2004 ARM Limited
  *  Copyright (C) 2000 Deep Blue Solutions Ltd
@@ -19,10 +19,10 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/amba/bus.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/amba/bus.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 #include <asm/irq.h>

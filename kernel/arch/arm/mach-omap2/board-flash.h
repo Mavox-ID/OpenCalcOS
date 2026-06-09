@@ -10,8 +10,8 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
 #include "gpmc.h"
 
 #define PDC_NOR		1

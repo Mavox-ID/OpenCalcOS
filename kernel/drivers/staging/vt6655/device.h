@@ -29,40 +29,40 @@
 #ifndef __DEVICE_H__
 #define __DEVICE_H__
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/wait.h>
-#include <linux/if_arp.h>
-#include <linux/sched.h>
-#include <linux/io.h>
-#include <linux/if.h>
-//#include <linux/config.h>
-#include <linux/uaccess.h>
-#include <linux/proc_fs.h>
-#include <linux/inetdevice.h>
-#include <linux/reboot.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/delay.h>
+#include <beep/timer.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/string.h>
+#include <beep/wait.h>
+#include <beep/if_arp.h>
+#include <beep/sched.h>
+#include <beep/io.h>
+#include <beep/if.h>
+//#include <beep/config.h>
+#include <beep/uaccess.h>
+#include <beep/proc_fs.h>
+#include <beep/inetdevice.h>
+#include <beep/reboot.h>
 #ifdef SIOCETHTOOL
 #define DEVICE_ETHTOOL_IOCTL_SUPPORT
-#include <linux/ethtool.h>
+#include <beep/ethtool.h>
 #else
 #undef DEVICE_ETHTOOL_IOCTL_SUPPORT
 #endif
 /* Include Wireless Extension definition and check version - Jean II */
-#include <linux/wireless.h>
+#include <beep/wireless.h>
 #include <net/iw_handler.h>	// New driver API
 
 //2008-0409-07, <Add> by Einsn Liu

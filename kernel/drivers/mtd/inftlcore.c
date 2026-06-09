@@ -1,5 +1,5 @@
 /*
- * inftlcore.c -- Linux driver for Inverse Flash Translation Layer (INFTL)
+ * inftlcore.c -- Beep driver for Inverse Flash Translation Layer (INFTL)
  *
  * Copyright © 2002, Greg Ungerer (gerg@snapgear.com)
  *
@@ -22,18 +22,18 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/kmod.h>
-#include <linux/hdreg.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nftl.h>
-#include <linux/mtd/inftl.h>
-#include <linux/mtd/nand.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/kmod.h>
+#include <beep/hdreg.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nftl.h>
+#include <beep/mtd/inftl.h>
+#include <beep/mtd/nand.h>
 #include <asm/uaccess.h>
 #include <asm/errno.h>
 #include <asm/io.h>

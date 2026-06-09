@@ -14,9 +14,9 @@
  */
 
 #include "gigaset.h"
-#include <linux/usb.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <beep/usb.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
 
 /* Version Information */
 #define DRIVER_AUTHOR "Tilman Schmidt <tilman@imap.cc>, Hansjoerg Lipp <hjlipp@web.de>, Stefan Eilers"
@@ -30,7 +30,7 @@ static int cidmode = 1;
 
 module_param(startmode, int, S_IRUGO);
 module_param(cidmode, int, S_IRUGO);
-MODULE_PARM_DESC(startmode, "start in isdn4linux mode");
+MODULE_PARM_DESC(startmode, "start in isdn4beep mode");
 MODULE_PARM_DESC(cidmode, "Call-ID mode");
 
 #define GIGASET_MINORS     1

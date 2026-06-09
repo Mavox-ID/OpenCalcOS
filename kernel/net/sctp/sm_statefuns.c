@@ -5,7 +5,7 @@
  * Copyright (c) 2001-2002 Intel Corp.
  * Copyright (c) 2002      Nokia Corp.
  *
- * This is part of the SCTP Linux Kernel Implementation.
+ * This is part of the SCTP Beep Kernel Implementation.
  *
  * These are the state functions for the state machine.
  *
@@ -52,16 +52,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/net.h>
-#include <linux/inet.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/ip.h>
+#include <beep/ipv6.h>
+#include <beep/net.h>
+#include <beep/inet.h>
+#include <beep/slab.h>
 #include <net/sock.h>
 #include <net/inet_ecn.h>
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 #include <net/sctp/sctp.h>
 #include <net/sctp/sm.h>
 #include <net/sctp/structs.h>

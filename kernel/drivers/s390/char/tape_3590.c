@@ -10,10 +10,10 @@
 #define KMSG_COMPONENT "tape_3590"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/bio.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/bio.h>
 #include <asm/ebcdic.h>
 
 #define TAPE_DBF_AREA	tape_3590_dbf
@@ -1699,7 +1699,7 @@ tape_3590_exit(void)
 
 MODULE_DEVICE_TABLE(ccw, tape_3590_ids);
 MODULE_AUTHOR("(C) 2001,2006 IBM Corporation");
-MODULE_DESCRIPTION("Linux on zSeries channel attached 3590 tape device driver");
+MODULE_DESCRIPTION("Beep on zSeries channel attached 3590 tape device driver");
 MODULE_LICENSE("GPL");
 
 module_init(tape_3590_init);

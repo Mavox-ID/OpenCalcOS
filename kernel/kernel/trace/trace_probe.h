@@ -22,19 +22,19 @@
  * Author:     Srikar Dronamraju
  */
 
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/debugfs.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/ptrace.h>
-#include <linux/perf_event.h>
-#include <linux/kprobes.h>
-#include <linux/stringify.h>
-#include <linux/limits.h>
-#include <linux/uaccess.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/smp.h>
+#include <beep/debugfs.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/ptrace.h>
+#include <beep/perf_event.h>
+#include <beep/kprobes.h>
+#include <beep/stringify.h>
+#include <beep/limits.h>
+#include <beep/uaccess.h>
 #include <asm/bitsperlong.h>
 
 #include "trace.h"

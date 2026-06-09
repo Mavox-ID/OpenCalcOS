@@ -1,8 +1,8 @@
 #ifndef _ALPHA_PGALLOC_H
 #define _ALPHA_PGALLOC_H
 
-#include <linux/mm.h>
-#include <linux/mmzone.h>
+#include <beep/mm.h>
+#include <beep/mmzone.h>
 
 /*      
  * Allocate and free page tables. The xxx_kernel() versions are

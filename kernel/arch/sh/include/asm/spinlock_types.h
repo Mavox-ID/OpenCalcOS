@@ -1,7 +1,7 @@
 #ifndef __ASM_SH_SPINLOCK_TYPES_H
 #define __ASM_SH_SPINLOCK_TYPES_H
 
-#ifndef __LINUX_SPINLOCK_TYPES_H
+#ifndef __BEEP_SPINLOCK_TYPES_H
 # error "please don't include this file directly"
 #endif
 

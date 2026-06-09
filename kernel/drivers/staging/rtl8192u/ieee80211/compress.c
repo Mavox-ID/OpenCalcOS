@@ -11,12 +11,12 @@
  * any later version.
  *
  */
-#include <linux/types.h>
-/*#include <linux/crypto.h>*/
+#include <beep/types.h>
+/*#include <beep/crypto.h>*/
 #include "rtl_crypto.h"
-#include <linux/errno.h>
-#include <linux/scatterlist.h>
-#include <linux/string.h>
+#include <beep/errno.h>
+#include <beep/scatterlist.h>
+#include <beep/string.h>
 #include "internal.h"
 
 static int crypto_compress(struct crypto_tfm *tfm,

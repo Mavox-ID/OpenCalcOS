@@ -2,20 +2,20 @@
  *
  * Module init for DSS1 diversion services for i4l.
  *
- * Copyright 1999       by Werner Cornelius (werner@isdn4linux.de)
+ * Copyright 1999       by Werner Cornelius (werner@isdn4beep.de)
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
 
 #include "isdn_divert.h"
 
-MODULE_DESCRIPTION("ISDN4Linux: Call diversion support");
+MODULE_DESCRIPTION("ISDN4Beep: Call diversion support");
 MODULE_AUTHOR("Werner Cornelius");
 MODULE_LICENSE("GPL");
 

@@ -1,5 +1,5 @@
 /*
- *  linux/include/linux/hfsplus_raw.h
+ *  beep/include/beep/hfsplus_raw.h
  *
  * Copyright (C) 1999
  * Brad Boyer (flar@pants.nu)
@@ -10,10 +10,10 @@
  *
  */
 
-#ifndef _LINUX_HFSPLUS_RAW_H
-#define _LINUX_HFSPLUS_RAW_H
+#ifndef _BEEP_HFSPLUS_RAW_H
+#define _BEEP_HFSPLUS_RAW_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* Some constants */
 #define HFSPLUS_SECTOR_SIZE        512

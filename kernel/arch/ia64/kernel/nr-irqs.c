@@ -7,8 +7,8 @@
 
 #define ASM_OFFSETS_C 1
 
-#include <linux/kbuild.h>
-#include <linux/threads.h>
+#include <beep/kbuild.h>
+#include <beep/threads.h>
 #include <asm/native/irq.h>
 #include <asm/xen/irq.h>
 

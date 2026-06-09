@@ -1,5 +1,5 @@
 /*
- *  linux/fs/minix/bitmap.c
+ *  beep/fs/minix/bitmap.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
@@ -12,9 +12,9 @@
 /* bitmap.c contains the code that handles the inode and block bitmaps */
 
 #include "minix.h"
-#include <linux/buffer_head.h>
-#include <linux/bitops.h>
-#include <linux/sched.h>
+#include <beep/buffer_head.h>
+#include <beep/bitops.h>
+#include <beep/sched.h>
 
 static DEFINE_SPINLOCK(bitmap_lock);
 

@@ -14,17 +14,17 @@
  * option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/device.h>
-#include <linux/bootmem.h>
-#include <linux/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/reboot.h>
+#include <beep/slab.h>
+#include <beep/stddef.h>
+#include <beep/sched.h>
+#include <beep/signal.h>
+#include <beep/device.h>
+#include <beep/bootmem.h>
+#include <beep/spinlock.h>
 #include <asm/irq.h>
 #include <asm/io.h>
 #include <asm/prom.h>

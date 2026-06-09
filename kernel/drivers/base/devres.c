@@ -1,15 +1,15 @@
 /*
  * drivers/base/devres.c - device resource management
  *
- * Copyright (c) 2006  SUSE Linux Products GmbH
+ * Copyright (c) 2006  SUSE Beep Products GmbH
  * Copyright (c) 2006  Tejun Heo <teheo@suse.de>
  *
  * This file is released under the GPLv2.
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 #include "base.h"
 

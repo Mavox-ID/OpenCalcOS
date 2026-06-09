@@ -18,7 +18,7 @@
  * 02110-1301 USA
  *
  */
-#include <linux/module.h>
+#include <beep/module.h>
 #include <sound/soc.h>
 
 #define DRV_NAME "hdmi-audio-codec"

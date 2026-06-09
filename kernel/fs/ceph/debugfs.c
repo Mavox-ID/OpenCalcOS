@@ -1,16 +1,16 @@
-#include <linux/ceph/ceph_debug.h>
+#include <beep/ceph/ceph_debug.h>
 
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/ctype.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 
-#include <linux/ceph/libceph.h>
-#include <linux/ceph/mon_client.h>
-#include <linux/ceph/auth.h>
-#include <linux/ceph/debugfs.h>
+#include <beep/ceph/libceph.h>
+#include <beep/ceph/mon_client.h>
+#include <beep/ceph/auth.h>
+#include <beep/ceph/debugfs.h>
 
 #include "super.h"
 

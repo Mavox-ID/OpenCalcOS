@@ -21,9 +21,9 @@
  *  02110-1301, USA.
  */
 
-#include <linux/slab.h>
-#include <linux/kfifo.h>
-#include <linux/module.h>
+#include <beep/slab.h>
+#include <beep/kfifo.h>
+#include <beep/module.h>
 #include <media/cx25840.h>
 #include <media/rc-core.h>
 

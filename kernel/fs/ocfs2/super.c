@@ -23,25 +23,25 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/init.h>
-#include <linux/random.h>
-#include <linux/statfs.h>
-#include <linux/moduleparam.h>
-#include <linux/blkdev.h>
-#include <linux/socket.h>
-#include <linux/inet.h>
-#include <linux/parser.h>
-#include <linux/crc32.h>
-#include <linux/debugfs.h>
-#include <linux/mount.h>
-#include <linux/seq_file.h>
-#include <linux/quotaops.h>
-#include <linux/cleancache.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/highmem.h>
+#include <beep/init.h>
+#include <beep/random.h>
+#include <beep/statfs.h>
+#include <beep/moduleparam.h>
+#include <beep/blkdev.h>
+#include <beep/socket.h>
+#include <beep/inet.h>
+#include <beep/parser.h>
+#include <beep/crc32.h>
+#include <beep/debugfs.h>
+#include <beep/mount.h>
+#include <beep/seq_file.h>
+#include <beep/quotaops.h>
+#include <beep/cleancache.h>
 
 #define CREATE_TRACE_POINTS
 #include "ocfs2_trace.h"

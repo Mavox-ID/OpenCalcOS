@@ -1,7 +1,7 @@
 /*
  *
  * device driver for Conexant 2388x based TV cards
- * video4linux video interface
+ * video4beep video interface
  *
  * (c) 2003-04 Gerd Knorr <kraxel@bytesex.org> [SuSE Labs]
  *
@@ -25,16 +25,16 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/kmod.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/kthread.h>
 #include <asm/div64.h>
 
 #include "cx88.h"

@@ -13,17 +13,17 @@
  * This file handles the architecture-dependent parts of hardware exceptions
  */
 
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kallsyms.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/kallsyms.h>
+#include <beep/module.h>
 
 #include <asm/exceptions.h>
 #include <asm/entry.h>		/* For KM CPU var */
-#include <linux/uaccess.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
+#include <beep/uaccess.h>
+#include <beep/errno.h>
+#include <beep/ptrace.h>
 #include <asm/current.h>
 #include <asm/cacheflush.h>
 

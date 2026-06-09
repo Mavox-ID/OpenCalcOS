@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2005 MIPS Technologies, Inc.  All rights reserved.
- * Copyright (C) 2005, 06 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2005, 06 Ralf Baechle (ralf@beep-mips.org)
  *
  *  This program is free software; you can distribute it and/or modify it
  *  under the terms of the GNU General Public License (Version 2) as
@@ -17,25 +17,25 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/init.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/init.h>
 #include <asm/uaccess.h>
-#include <linux/list.h>
-#include <linux/vmalloc.h>
-#include <linux/elf.h>
-#include <linux/seq_file.h>
-#include <linux/syscalls.h>
-#include <linux/moduleloader.h>
-#include <linux/interrupt.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
+#include <beep/list.h>
+#include <beep/vmalloc.h>
+#include <beep/elf.h>
+#include <beep/seq_file.h>
+#include <beep/syscalls.h>
+#include <beep/moduleloader.h>
+#include <beep/interrupt.h>
+#include <beep/poll.h>
+#include <beep/sched.h>
+#include <beep/wait.h>
 #include <asm/mipsmtregs.h>
 #include <asm/mips_mt.h>
 #include <asm/cacheflush.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/cpu.h>
 #include <asm/processor.h>
 #include <asm/vpe.h>

@@ -247,7 +247,7 @@ typedef unsigned long elf_greg_t;
 #define ELF_PLATFORM  ("PARISC\0")
 
 #define SET_PERSONALITY(ex) \
-	current->personality = PER_LINUX; \
+	current->personality = PER_BEEP; \
 	current->thread.map_base = DEFAULT_MAP_BASE; \
 	current->thread.task_size = DEFAULT_TASK_SIZE \
 
@@ -316,7 +316,7 @@ struct pt_regs;	/* forward declaration... */
  */
 #define ELF_DATA	ELFDATA2MSB
 #define ELF_ARCH	EM_PARISC
-#define ELF_OSABI 	ELFOSABI_LINUX
+#define ELF_OSABI 	ELFOSABI_BEEP
 
 /* %r23 is set by ld.so to a pointer to a function which might be 
    registered using atexit.  This provides a means for the dynamic

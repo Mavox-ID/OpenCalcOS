@@ -23,9 +23,9 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/pci.h>
-#include <linux/export.h>
-#include <linux/pci_hotplug.h>
+#include <beep/pci.h>
+#include <beep/export.h>
+#include <beep/pci_hotplug.h>
 
 static struct hpp_type0 pci_default_type0 = {
 	.revision = 1,

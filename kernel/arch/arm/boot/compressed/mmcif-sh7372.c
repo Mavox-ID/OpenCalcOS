@@ -9,8 +9,8 @@
  * for more details.
  */
 
-#include <linux/mmc/sh_mmcif.h>
-#include <linux/mmc/boot.h>
+#include <beep/mmc/sh_mmcif.h>
+#include <beep/mmc/boot.h>
 #include <mach/mmc.h>
 
 #define MMCIF_BASE      (void __iomem *)0xe6bd0000

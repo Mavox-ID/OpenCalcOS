@@ -14,7 +14,7 @@
  */
 
 
-#include <linux/etherdevice.h>
+#include <beep/etherdevice.h>
 
 #include "ieee80211.h"
 

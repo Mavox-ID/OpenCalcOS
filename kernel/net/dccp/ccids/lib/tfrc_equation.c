@@ -10,7 +10,7 @@
  *  (at your option) any later version.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include "../../dccp.h"
 #include "tfrc.h"
 

@@ -81,8 +81,8 @@ void sc_check_reset(unsigned long data)
  * an interrupt handler.
  *
  * Send check sc_adapter->phystat to see if the channels are up
- * If they are, tell ISDN4Linux that the board is up. If not,
- * tell IADN4Linux that it is up. Always reset the timer to
+ * If they are, tell ISDN4Beep that the board is up. If not,
+ * tell IADN4Beep that it is up. Always reset the timer to
  * fire again (endless loop).
  */
 void check_phystat(unsigned long data)

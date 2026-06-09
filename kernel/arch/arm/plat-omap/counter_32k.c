@@ -12,12 +12,12 @@
  *
  * NOTE: This timer is not the same timer as the old OMAP1 MPU timer.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/clocksource.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/clocksource.h>
 
 #include <asm/mach/time.h>
 #include <asm/sched_clock.h>

@@ -1,8 +1,8 @@
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/thread_info.h>
-#include <linux/uaccess.h>
-#include <linux/errno.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/thread_info.h>
+#include <beep/uaccess.h>
+#include <beep/errno.h>
 
 #include <asm/sigcontext.h>
 #include <asm/fpumacro.h>

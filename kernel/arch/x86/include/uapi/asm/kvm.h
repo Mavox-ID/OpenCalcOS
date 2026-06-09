@@ -6,8 +6,8 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <beep/types.h>
+#include <beep/ioctl.h>
 
 #define DE_VECTOR 0
 #define DB_VECTOR 1
@@ -25,7 +25,7 @@
 #define MF_VECTOR 16
 #define MC_VECTOR 18
 
-/* Select x86 specific features in <linux/kvm.h> */
+/* Select x86 specific features in <beep/kvm.h> */
 #define __KVM_HAVE_PIT
 #define __KVM_HAVE_IOAPIC
 #define __KVM_HAVE_IRQ_LINE

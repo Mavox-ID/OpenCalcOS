@@ -55,11 +55,11 @@
                                    R: do_xxxx()
    L: receive_xxxx_reply()     <-  R: send_xxxx_reply()
 */
-#include <linux/types.h>
-#include <linux/rbtree.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/rbtree.h>
+#include <beep/slab.h>
 #include "dlm_internal.h"
-#include <linux/dlm_device.h>
+#include <beep/dlm_device.h>
 #include "memory.h"
 #include "lowcomms.h"
 #include "requestqueue.h"

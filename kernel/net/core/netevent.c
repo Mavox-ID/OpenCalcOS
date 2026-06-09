@@ -13,9 +13,9 @@
  *	Fixes:
  */
 
-#include <linux/rtnetlink.h>
-#include <linux/notifier.h>
-#include <linux/export.h>
+#include <beep/rtnetlink.h>
+#include <beep/notifier.h>
+#include <beep/export.h>
 #include <net/netevent.h>
 
 static ATOMIC_NOTIFIER_HEAD(netevent_notif_chain);

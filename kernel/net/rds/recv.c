@@ -30,11 +30,11 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
 #include <net/sock.h>
-#include <linux/in.h>
-#include <linux/export.h>
+#include <beep/in.h>
+#include <beep/export.h>
 
 #include "rds.h"
 

@@ -9,14 +9,14 @@
  *
  */
 
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/lp3972.h>
-#include <linux/slab.h>
+#include <beep/bug.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/regulator/driver.h>
+#include <beep/regulator/lp3972.h>
+#include <beep/slab.h>
 
 struct lp3972 {
 	struct device *dev;

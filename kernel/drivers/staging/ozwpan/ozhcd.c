@@ -24,12 +24,12 @@
  *   usb_hcd_check_unlink_urb()
  * -----------------------------------------------------------------------------
  */
-#include <linux/platform_device.h>
-#include <linux/usb.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include "linux/usb/hcd.h"
+#include <beep/platform_device.h>
+#include <beep/usb.h>
+#include <beep/jiffies.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include "beep/usb/hcd.h"
 #include <asm/unaligned.h>
 #include "ozconfig.h"
 #include "ozusbif.h"

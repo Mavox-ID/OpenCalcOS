@@ -4,17 +4,17 @@
  * Detect the decompression method based on magic number
  */
 
-#include <linux/decompress/generic.h>
+#include <beep/decompress/generic.h>
 
-#include <linux/decompress/bunzip2.h>
-#include <linux/decompress/unlzma.h>
-#include <linux/decompress/unxz.h>
-#include <linux/decompress/inflate.h>
-#include <linux/decompress/unlzo.h>
+#include <beep/decompress/bunzip2.h>
+#include <beep/decompress/unlzma.h>
+#include <beep/decompress/unxz.h>
+#include <beep/decompress/inflate.h>
+#include <beep/decompress/unlzo.h>
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/init.h>
 
 #ifndef CONFIG_DECOMPRESS_GZIP
 # define gunzip NULL

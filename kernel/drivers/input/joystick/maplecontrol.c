@@ -6,13 +6,13 @@
  *	Adrian McMenamin, 2008 - 2009
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/maple.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/timer.h>
+#include <beep/maple.h>
 
 MODULE_AUTHOR("Adrian McMenamin <adrian@mcmen.demon.co.uk>");
 MODULE_DESCRIPTION("SEGA Dreamcast controller driver");

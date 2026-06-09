@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2009. SUSE Linux Products GmbH. All rights reserved.
+ * Copyright (C) 2009. SUSE Beep Products GmbH. All rights reserved.
  *
  * Authors:
  *    Alexander Graf <agraf@suse.de>
@@ -14,10 +14,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kvm_host.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <beep/kvm_host.h>
+#include <beep/err.h>
+#include <beep/export.h>
+#include <beep/slab.h>
 
 #include <asm/reg.h>
 #include <asm/cputable.h>
@@ -29,10 +29,10 @@
 #include <asm/kvm_book3s.h>
 #include <asm/mmu_context.h>
 #include <asm/page.h>
-#include <linux/gfp.h>
-#include <linux/sched.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
+#include <beep/gfp.h>
+#include <beep/sched.h>
+#include <beep/vmalloc.h>
+#include <beep/highmem.h>
 
 #include "trace.h"
 

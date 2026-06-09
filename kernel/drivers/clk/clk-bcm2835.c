@@ -17,9 +17,9 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/clk/bcm2835.h>
+#include <beep/clk-provider.h>
+#include <beep/clkdev.h>
+#include <beep/clk/bcm2835.h>
 
 /*
  * These are fixed clocks. They're probably not all root clocks and it may

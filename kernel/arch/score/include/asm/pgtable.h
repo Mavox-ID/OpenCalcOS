@@ -1,7 +1,7 @@
 #ifndef _ASM_SCORE_PGTABLE_H
 #define _ASM_SCORE_PGTABLE_H
 
-#include <linux/const.h>
+#include <beep/const.h>
 #include <asm-generic/pgtable-nopmd.h>
 
 #include <asm/fixmap.h>

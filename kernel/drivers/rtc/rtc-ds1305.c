@@ -8,16 +8,16 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/bcd.h>
-#include <linux/slab.h>
-#include <linux/rtc.h>
-#include <linux/workqueue.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/bcd.h>
+#include <beep/slab.h>
+#include <beep/rtc.h>
+#include <beep/workqueue.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/ds1305.h>
-#include <linux/module.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/ds1305.h>
+#include <beep/module.h>
 
 
 /*
@@ -77,7 +77,7 @@
 #define DS1305_STATUS		0x10
 /* status has just AEIx bits, mirrored as IRQFx */
 #define DS1305_TRICKLE		0x11
-/* trickle bits are defined in <linux/spi/ds1305.h> */
+/* trickle bits are defined in <beep/spi/ds1305.h> */
 
 /* a bunch of NVRAM */
 #define DS1305_NVRAM_LEN	96		/* bytes of NVRAM */
@@ -102,7 +102,7 @@ struct ds1305 {
 /*----------------------------------------------------------------------*/
 
 /*
- * Utilities ...  tolerate 12-hour AM/PM notation in case of non-Linux
+ * Utilities ...  tolerate 12-hour AM/PM notation in case of non-Beep
  * software (like a bootloader) which may require it.
  */
 
@@ -320,7 +320,7 @@ static int ds1305_get_alarm(struct device *dev, struct rtc_wkalrm *alm)
 	alm->time.tm_mday = -1;
 	alm->time.tm_mon = -1;
 	alm->time.tm_year = -1;
-	/* next three fields are unused by Linux */
+	/* next three fields are unused by Beep */
 	alm->time.tm_wday = -1;
 	alm->time.tm_mday = -1;
 	alm->time.tm_isdst = -1;
@@ -728,7 +728,7 @@ static int ds1305_probe(struct spi_device *spi)
 				ds1305->ctrl[1], ds1305->ctrl[2]);
 	}
 
-	/* see if non-Linux software set up AM/PM mode */
+	/* see if non-Beep software set up AM/PM mode */
 	addr = DS1305_HOUR;
 	status = spi_write_then_read(spi, &addr, sizeof addr,
 				&value, sizeof value);

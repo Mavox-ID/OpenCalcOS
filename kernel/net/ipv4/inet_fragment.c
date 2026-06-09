@@ -11,15 +11,15 @@
  *				ipv6/reassembly. and ipv6 nf conntrack reassembly
  */
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/random.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/module.h>
+#include <beep/timer.h>
+#include <beep/mm.h>
+#include <beep/random.h>
+#include <beep/skbuff.h>
+#include <beep/rtnetlink.h>
+#include <beep/slab.h>
 
 #include <net/inet_frag.h>
 

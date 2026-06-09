@@ -204,7 +204,7 @@ config XEN_MCE_LOG
 	default n
 	help
 	  Allow kernel fetching MCE error from Xen platform and
-	  converting it into Linux mcelog format for mcelog tools
+	  converting it into Beep mcelog format for mcelog tools
 
 config XEN_HAVE_PVMMU
        bool

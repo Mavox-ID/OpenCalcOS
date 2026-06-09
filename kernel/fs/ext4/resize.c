@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ext4/resize.c
+ *  beep/fs/ext4/resize.c
  *
  * Support for resizing an ext4 filesystem while it is mounted.
  *
@@ -11,8 +11,8 @@
 
 #define EXT4FS_DEBUG
 
-#include <linux/errno.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
 
 #include "ext4_jbd2.h"
 

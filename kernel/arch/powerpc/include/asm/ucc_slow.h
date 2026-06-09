@@ -15,7 +15,7 @@
 #ifndef __UCC_SLOW_H__
 #define __UCC_SLOW_H__
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 #include <asm/immap_qe.h>
 #include <asm/qe.h>

@@ -6,7 +6,7 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/serial_reg.h>
+#include <beep/serial_reg.h>
 #include <mach/kirkwood.h>
 
 #define SERIAL_BASE	((unsigned char *)UART0_PHYS_BASE)

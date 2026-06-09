@@ -10,17 +10,17 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/maple.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/maple.h>
+#include <beep/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/module.h>
 #include <asm/cacheflush.h>
 #include <asm/dma.h>
 #include <asm/io.h>

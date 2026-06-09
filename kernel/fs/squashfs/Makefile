@@ -1,5 +1,5 @@
 #
-# Makefile for the linux squashfs routines.
+# Makefile for the beep squashfs routines.
 #
 
 obj-$(CONFIG_SQUASHFS) += squashfs.o

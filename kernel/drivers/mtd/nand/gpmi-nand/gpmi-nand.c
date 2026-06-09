@@ -21,15 +21,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mtd/partitions.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_mtd.h>
+#include <beep/clk.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/mtd/partitions.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/of_mtd.h>
 #include "gpmi-nand.h"
 
 /* Resource names for the GPMI NAND driver. */

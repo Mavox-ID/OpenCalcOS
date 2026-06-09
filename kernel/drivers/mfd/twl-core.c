@@ -28,24 +28,24 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
+#include <beep/init.h>
+#include <beep/mutex.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/regmap.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/device.h>
+#include <beep/of.h>
+#include <beep/of_irq.h>
+#include <beep/of_platform.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
 
-#include <linux/regulator/machine.h>
+#include <beep/regulator/machine.h>
 
-#include <linux/i2c.h>
-#include <linux/i2c/twl.h>
+#include <beep/i2c.h>
+#include <beep/i2c/twl.h>
 
 #include "twl-core.h"
 
@@ -184,7 +184,7 @@ static struct twl_mapping *twl_map;
 static struct twl_mapping twl4030_map[] = {
 	/*
 	 * NOTE:  don't change this table without updating the
-	 * <linux/i2c/twl.h> defines for TWL4030_MODULE_*
+	 * <beep/i2c/twl.h> defines for TWL4030_MODULE_*
 	 * so they continue to match the order in this table.
 	 */
 
@@ -248,7 +248,7 @@ static struct regmap_config twl4030_regmap_config[4] = {
 static struct twl_mapping twl6030_map[] = {
 	/*
 	 * NOTE:  don't change this table without updating the
-	 * <linux/i2c/twl.h> defines for TWL4030_MODULE_*
+	 * <beep/i2c/twl.h> defines for TWL4030_MODULE_*
 	 * so they continue to match the order in this table.
 	 */
 	{ SUB_CHIP_ID1, TWL6030_BASEADD_USB },
@@ -655,7 +655,7 @@ add_children(struct twl4030_platform_data *pdata, unsigned irq_base,
 		 * REVISIT platform_data here currently might expose the
 		 * "msecure" line ... but for now we just expect board
 		 * setup to tell the chip "it's always ok to SET_TIME".
-		 * Eventually, Linux might become more aware of such
+		 * Eventually, Beep might become more aware of such
 		 * HW security concerns, and "least privilege".
 		 */
 		sub_chip_id = twl_map[TWL_MODULE_RTC].sid;

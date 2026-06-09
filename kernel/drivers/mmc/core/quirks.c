@@ -9,10 +9,10 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/mmc/card.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/mmc/card.h>
 
 #ifndef SDIO_VENDOR_ID_TI
 #define SDIO_VENDOR_ID_TI		0x0097

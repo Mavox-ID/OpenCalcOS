@@ -2,15 +2,15 @@
 #define __M32R_LOCAL_H
 
 /*
- *  linux/include/asm-m32r/local.h
+ *  beep/include/asm-m32r/local.h
  *
  *  M32R version:
  *    Copyright (C) 2001, 2002  Hitoshi Yamamoto
- *    Copyright (C) 2004  Hirokazu Takata <takata at linux-m32r.org>
+ *    Copyright (C) 2004  Hirokazu Takata <takata at beep-m32r.org>
  *    Copyright (C) 2007  Mathieu Desnoyers <mathieu.desnoyers@polymtl.ca>
  */
 
-#include <linux/percpu.h>
+#include <beep/percpu.h>
 #include <asm/assembler.h>
 #include <asm/local.h>
 

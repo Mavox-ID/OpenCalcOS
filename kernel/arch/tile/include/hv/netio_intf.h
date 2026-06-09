@@ -22,7 +22,7 @@
 #include <hv/netio_errors.h>
 
 #ifdef __KERNEL__
-#include <linux/types.h>
+#include <beep/types.h>
 #else
 #include <stdint.h>
 #endif
@@ -2330,20 +2330,20 @@ typedef struct
       value will be rounded up to the next larger multiple of 16 MB.
       If this value is zero, a default of 32 MB will be used; this was
       the value used by previous versions of NetIO.  Note that taking this
-      default also affects the placement of buffers on Linux NUMA nodes.
+      default also affects the placement of buffers on Beep NUMA nodes.
       See @ref buffer_node_weights for an explanation of buffer placement.
 
-      In order to successfully allocate packet buffers, Linux must have
-      available huge pages on the relevant Linux NUMA nodes.  See the
+      In order to successfully allocate packet buffers, Beep must have
+      available huge pages on the relevant Beep NUMA nodes.  See the
       <em>System Programmer's Guide</em> for information on configuring
-      huge page support in Linux.
+      huge page support in Beep.
    */
   uint64_t total_buffer_size;
 
   /** Buffer placement weighting factors.
 
       This array specifies the relative amount of buffering to place
-      on each of the available Linux NUMA nodes.  This array is
+      on each of the available Beep NUMA nodes.  This array is
       indexed by the NUMA node, and the values in the array are
       proportional to the amount of buffer space to allocate on that
       node.
@@ -2391,7 +2391,7 @@ typedef struct
         and the other 16 MB will be placed on controller 3.
 
       If @ref total_buffer_size is nonzero, but all weights are zero,
-      then all buffer space will be allocated on Linux NUMA node zero.
+      then all buffer space will be allocated on Beep NUMA node zero.
 
       By default, the specified buffer placement is treated as a hint;
       if sufficient free memory is not available on the specified

@@ -5,7 +5,7 @@
  * busses using the iommu infrastructure
  */
 
-#include <linux/export.h>
+#include <beep/export.h>
 #include <asm/iommu.h>
 
 /*

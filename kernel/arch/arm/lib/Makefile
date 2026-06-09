@@ -1,5 +1,5 @@
 #
-# linux/arch/arm/lib/Makefile
+# beep/arch/arm/lib/Makefile
 #
 # Copyright (C) 1995-2000 Russell King
 #

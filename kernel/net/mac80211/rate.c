@@ -8,10 +8,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/rtnetlink.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include "rate.h"
 #include "ieee80211_i.h"
 #include "debugfs.h"

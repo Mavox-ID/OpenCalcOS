@@ -19,7 +19,7 @@
  *
  * Version 0.99 is the first release of this driver and there are
  * certainly a few bugs.
- * It isn't testet on linux 2.4 yet, so consider this code to be
+ * It isn't testet on beep 2.4 yet, so consider this code to be
  * beta.
  *
  * Please don't report me any malfunction without sending
@@ -64,10 +64,10 @@
 #include "isac.h"
 #include "isdnl1.h"
 #include "amd7930_fn.h"
-#include <linux/interrupt.h>
-#include <linux/ppp_defs.h>
-#include <linux/pci.h>
-#include <linux/init.h>
+#include <beep/interrupt.h>
+#include <beep/ppp_defs.h>
+#include <beep/pci.h>
+#include <beep/init.h>
 #include "netjet.h"
 
 

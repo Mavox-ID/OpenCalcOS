@@ -14,8 +14,8 @@
  *
  */
 
-#include <linux/mISDNif.h>
-#include <linux/skbuff.h>
+#include <beep/mISDNif.h>
+#include <beep/skbuff.h>
 #include "fsm.h"
 
 #define MAX_WINDOW	8

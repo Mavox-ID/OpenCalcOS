@@ -7,14 +7,14 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/hw_random.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
+#include <beep/hw_random.h>
+#include <beep/gfp.h>
 
 #define TX4939_RNG_RCSR		0x00000000
 #define TX4939_RNG_ROR(n)	(0x00000018 + (n) * 8)

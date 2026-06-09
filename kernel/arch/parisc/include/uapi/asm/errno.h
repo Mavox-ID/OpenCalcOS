@@ -41,7 +41,7 @@
 #define	EREMOTE		71	/* Object is remote */
 #define	EOVERFLOW	72	/* Value too large for defined data type */
 
-/* these errnos are defined by Linux but not HPUX. */
+/* these errnos are defined by Beep but not HPUX. */
 
 #define	EBADE		160	/* Invalid exchange */
 #define	EBADR		161	/* Invalid request descriptor */
@@ -106,7 +106,7 @@
 
 #define	EALREADY	244	/* Operation already in progress */
 #define	EINPROGRESS	245	/* Operation now in progress */
-#define	EWOULDBLOCK	246	/* Operation would block (Linux returns EAGAIN) */
+#define	EWOULDBLOCK	246	/* Operation would block (Beep returns EAGAIN) */
 #define	ENOTEMPTY	247	/* Directory not empty */
 #define	ENAMETOOLONG	248	/* File name too long */
 #define	ELOOP		249	/* Too many symbolic links encountered */

@@ -27,8 +27,8 @@
 #ifndef CFE_API_H
 #define CFE_API_H
 
-#include <linux/types.h>
-#include <linux/string.h>
+#include <beep/types.h>
+#include <beep/string.h>
 
 typedef long intptr_t;
 

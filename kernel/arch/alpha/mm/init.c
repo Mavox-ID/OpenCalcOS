@@ -1,26 +1,26 @@
 /*
- *  linux/arch/alpha/mm/init.c
+ *  beep/arch/alpha/mm/init.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  */
 
 /* 2.3.x zone allocator, 1999 Andrea Arcangeli <andrea@suse.de> */
 
-#include <linux/pagemap.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/init.h>
-#include <linux/bootmem.h> /* max_low_pfn */
-#include <linux/vmalloc.h>
-#include <linux/gfp.h>
+#include <beep/pagemap.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
+#include <beep/mman.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/init.h>
+#include <beep/bootmem.h> /* max_low_pfn */
+#include <beep/vmalloc.h>
+#include <beep/gfp.h>
 
 #include <asm/uaccess.h>
 #include <asm/pgtable.h>
@@ -60,8 +60,8 @@ pgd_alloc(struct mm_struct *mm)
 
 
 /*
- * BAD_PAGE is the page that is used for page faults when linux
- * is out-of-memory. Older versions of linux just did a
+ * BAD_PAGE is the page that is used for page faults when beep
+ * is out-of-memory. Older versions of beep just did a
  * do_exit(), but using this instead means there is less risk
  * for a process dying in kernel mode, possibly leaving an inode
  * unused etc..
@@ -102,7 +102,7 @@ switch_to_system_map(void)
 	unsigned long newptbr;
 	unsigned long original_pcb_ptr;
 
-	/* Initialize the kernel's page tables.  Linux puts the vptb in
+	/* Initialize the kernel's page tables.  Beep puts the vptb in
 	   the last slot of the L1 page table.  */
 	memset(swapper_pg_dir, 0, PAGE_SIZE);
 	newptbr = ((unsigned long) swapper_pg_dir - PAGE_OFFSET) >> PAGE_SHIFT;

@@ -1,6 +1,6 @@
 /*
  *	IPV6 GSO/GRO offload support
- *	Linux INET6 implementation
+ *	Beep INET6 implementation
  *
  *	This program is free software; you can redistribute it and/or
  *      modify it under the terms of the GNU General Public License
@@ -9,7 +9,7 @@
  *
  *      TCPv6 GSO/GRO support
  */
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 #include <net/protocol.h>
 #include <net/tcp.h>
 #include <net/ip6_checksum.h>

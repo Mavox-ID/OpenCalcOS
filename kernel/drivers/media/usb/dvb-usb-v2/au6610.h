@@ -1,5 +1,5 @@
 /*
- * DVB USB Linux driver for Alcor Micro AU6610 DVB-T USB2.0.
+ * DVB USB Beep driver for Alcor Micro AU6610 DVB-T USB2.0.
  *
  * Copyright (C) 2006 Antti Palosaari <crope@iki.fi>
  *

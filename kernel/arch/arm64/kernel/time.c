@@ -18,19 +18,19 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/timex.h>
-#include <linux/errno.h>
-#include <linux/profile.h>
-#include <linux/syscore_ops.h>
-#include <linux/timer.h>
-#include <linux/irq.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/time.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/timex.h>
+#include <beep/errno.h>
+#include <beep/profile.h>
+#include <beep/syscore_ops.h>
+#include <beep/timer.h>
+#include <beep/irq.h>
 
 #include <clocksource/arm_generic.h>
 

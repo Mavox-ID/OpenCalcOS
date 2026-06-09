@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/copypage-xsc3.S
+ *  beep/arch/arm/mm/copypage-xsc3.S
  *
  *  Copyright (C) 2004 Intel Corp.
  *
@@ -10,8 +10,8 @@
  * Adapted for 3rd gen XScale core, no more mini-dcache
  * Author: Matt Gilbert (matthew.m.gilbert@intel.com)
  */
-#include <linux/init.h>
-#include <linux/highmem.h>
+#include <beep/init.h>
+#include <beep/highmem.h>
 
 /*
  * General note:

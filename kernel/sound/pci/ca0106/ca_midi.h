@@ -22,7 +22,7 @@
  *
  */
 
-#include <linux/spinlock.h>
+#include <beep/spinlock.h>
 #include <sound/rawmidi.h>
 #include <sound/mpu401.h>
 

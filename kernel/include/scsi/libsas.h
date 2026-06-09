@@ -27,16 +27,16 @@
 #define _LIBSAS_H_
 
 
-#include <linux/timer.h>
-#include <linux/pci.h>
+#include <beep/timer.h>
+#include <beep/pci.h>
 #include <scsi/sas.h>
-#include <linux/libata.h>
-#include <linux/list.h>
+#include <beep/libata.h>
+#include <beep/list.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_transport_sas.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <beep/scatterlist.h>
+#include <beep/slab.h>
 
 struct block_device;
 

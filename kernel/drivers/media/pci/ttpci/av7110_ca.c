@@ -25,16 +25,16 @@
  * Or, point your browser to http://www.gnu.org/copyleft/gpl.html
  *
  *
- * the project's page is at http://www.linuxtv.org/ 
+ * the project's page is at http://www.beeptv.org/ 
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/timer.h>
-#include <linux/poll.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/delay.h>
+#include <beep/fs.h>
+#include <beep/timer.h>
+#include <beep/poll.h>
+#include <beep/gfp.h>
 
 #include "av7110.h"
 #include "av7110_hw.h"

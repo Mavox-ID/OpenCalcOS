@@ -10,12 +10,12 @@
 #define KMSG_COMPONENT "cio"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/init.h>
-#include <linux/vmalloc.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/ctype.h>
-#include <linux/device.h>
+#include <beep/init.h>
+#include <beep/vmalloc.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/ctype.h>
+#include <beep/device.h>
 
 #include <asm/cio.h>
 #include <asm/uaccess.h>
@@ -29,7 +29,7 @@
 /*
  * "Blacklisting" of certain devices:
  * Device numbers given in the commandline as cio_ignore=... won't be known
- * to Linux.
+ * to Beep.
  *
  * These can be single devices or ranges of devices
  */

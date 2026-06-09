@@ -1,5 +1,5 @@
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 
 #include "hostap_80211.h"
 #include "hostap_common.h"

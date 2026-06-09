@@ -1,7 +1,7 @@
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/types.h>
 #include <cpu/irq.h>
 #include "pci-sh5.h"
 

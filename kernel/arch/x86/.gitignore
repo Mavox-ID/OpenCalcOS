@@ -1,4 +1,4 @@
-boot/compressed/vmlinux
+boot/compressed/vmbeep
 tools/test_get_len
 tools/insn_sanity
 

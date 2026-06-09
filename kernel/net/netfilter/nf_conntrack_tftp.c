@@ -5,18 +5,18 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/in.h>
-#include <linux/udp.h>
-#include <linux/netfilter.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/in.h>
+#include <beep/udp.h>
+#include <beep/netfilter.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_tuple.h>
 #include <net/netfilter/nf_conntrack_expect.h>
 #include <net/netfilter/nf_conntrack_ecache.h>
 #include <net/netfilter/nf_conntrack_helper.h>
-#include <linux/netfilter/nf_conntrack_tftp.h>
+#include <beep/netfilter/nf_conntrack_tftp.h>
 
 MODULE_AUTHOR("Magnus Boden <mb@ozaba.mine.nu>");
 MODULE_DESCRIPTION("TFTP connection tracking helper");

@@ -1,4 +1,4 @@
-/* Linux driver for Philips webcam
+/* Beep driver for Philips webcam
    Decompression for chipset version 2 et 3
    (C) 2004-2006  Luc Saillard (luc@saillard.org)
 
@@ -28,8 +28,8 @@
 #include "pwc-kiara.h"
 #include "pwc-dec23.h"
 
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <beep/string.h>
+#include <beep/slab.h>
 
 /*
  * USE_LOOKUP_TABLE_TO_CLAMP

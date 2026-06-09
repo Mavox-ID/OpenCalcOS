@@ -4,11 +4,11 @@
  *  For licencing details see kernel-base/COPYING
  */
 
-#include <linux/highmem.h>
-#include <linux/module.h>
+#include <beep/highmem.h>
+#include <beep/module.h>
 
 #include <asm/word-at-a-time.h>
-#include <linux/sched.h>
+#include <beep/sched.h>
 
 /*
  * best effort, GUP based copy_from_user() that is NMI-safe

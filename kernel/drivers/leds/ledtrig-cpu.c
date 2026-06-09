@@ -19,13 +19,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/percpu.h>
-#include <linux/syscore_ops.h>
-#include <linux/rwsem.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/percpu.h>
+#include <beep/syscore_ops.h>
+#include <beep/rwsem.h>
 #include "leds.h"
 
 #define MAX_NAME_LEN	8

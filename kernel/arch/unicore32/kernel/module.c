@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/kernel/module.c
+ * beep/arch/unicore32/kernel/module.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -9,15 +9,15 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/moduleloader.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/elf.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/moduleloader.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/elf.h>
+#include <beep/vmalloc.h>
+#include <beep/fs.h>
+#include <beep/string.h>
+#include <beep/gfp.h>
 
 #include <asm/pgtable.h>
 #include <asm/sections.h>

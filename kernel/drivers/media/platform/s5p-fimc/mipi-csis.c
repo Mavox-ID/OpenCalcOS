@@ -9,24 +9,24 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/memory.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/videodev2.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/kernel.h>
+#include <beep/memory.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/regulator/consumer.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-subdev.h>
-#include <linux/platform_data/mipi-csis.h>
+#include <beep/platform_data/mipi-csis.h>
 #include "mipi-csis.h"
 
 static int debug;

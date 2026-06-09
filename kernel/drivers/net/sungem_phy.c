@@ -19,21 +19,21 @@
  */
 
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/mii.h>
+#include <beep/ethtool.h>
+#include <beep/delay.h>
 
 #ifdef CONFIG_PPC_PMAC
 #include <asm/prom.h>
 #endif
 
-#include <linux/sungem_phy.h>
+#include <beep/sungem_phy.h>
 
 /* Link modes of the BCM5400 PHY */
 static const int phy_BCM5400_link_table[8][3] = {

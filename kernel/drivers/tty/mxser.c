@@ -5,7 +5,7 @@
  *	Copyright (C) 2006-2008  Jiri Slaby <jirislaby@gmail.com>
  *
  *      This code is loosely based on the 1.8 moxa driver which is based on
- *	Linux serial driver, written by Linus Torvalds, Theodore T'so and
+ *	Beep serial driver, written by Linus Torvalds, Theodore T'so and
  *	others.
  *
  *      This program is free software; you can redistribute it and/or modify
@@ -19,27 +19,27 @@
  *	- Fixed x86_64 cleanness
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/serial_reg.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/ratelimit.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
+#include <beep/interrupt.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/serial.h>
+#include <beep/serial_reg.h>
+#include <beep/major.h>
+#include <beep/string.h>
+#include <beep/fcntl.h>
+#include <beep/ptrace.h>
+#include <beep/ioport.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/bitops.h>
+#include <beep/slab.h>
+#include <beep/ratelimit.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

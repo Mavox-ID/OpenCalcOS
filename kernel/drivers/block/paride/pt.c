@@ -109,7 +109,7 @@
 #define PT_NAME		"pt"
 #define PT_UNITS	4
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* Here are things one can override from the insmod command.
    Most are autoprobed by paride unless set here.  Verbose is on
@@ -140,15 +140,15 @@ static int (*drives[4])[6] = {&drive0, &drive1, &drive2, &drive3};
 
 /* end of parameters */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/mtio.h>
-#include <linux/device.h>
-#include <linux/sched.h>	/* current, TASK_*, schedule_timeout() */
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/mtio.h>
+#include <beep/device.h>
+#include <beep/sched.h>	/* current, TASK_*, schedule_timeout() */
+#include <beep/mutex.h>
 
 #include <asm/uaccess.h>
 

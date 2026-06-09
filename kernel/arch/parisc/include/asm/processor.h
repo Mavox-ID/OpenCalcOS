@@ -9,7 +9,7 @@
 #define __ASM_PARISC_PROCESSOR_H
 
 #ifndef __ASSEMBLY__
-#include <linux/threads.h>
+#include <beep/threads.h>
 
 #include <asm/prefetch.h>
 #include <asm/hardware.h>
@@ -200,7 +200,7 @@ typedef unsigned int elf_caddr_t;
 	regs->iasq[1] = spaceid;			\
 	regs->iaoq[0] = pc;				\
 	regs->iaoq[1] = pc + 4;                         \
-	regs->sr[2] = LINUX_GATEWAY_SPACE;              \
+	regs->sr[2] = BEEP_GATEWAY_SPACE;              \
 	regs->sr[3] = 0xffff;				\
 	regs->sr[4] = spaceid;				\
 	regs->sr[5] = spaceid;				\
@@ -302,7 +302,7 @@ on downward growing arches, it looks like this:
 	regs->iasq[1] = spaceid;			\
 	regs->iaoq[0] = pc;				\
 	regs->iaoq[1] = pc + 4;                         \
-	regs->sr[2] = LINUX_GATEWAY_SPACE;              \
+	regs->sr[2] = BEEP_GATEWAY_SPACE;              \
 	regs->sr[3] = 0xffff;				\
 	regs->sr[4] = spaceid;				\
 	regs->sr[5] = spaceid;				\

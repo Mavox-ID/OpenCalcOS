@@ -1,9 +1,9 @@
 /*
- * linux/arch/frv/mm/extable.c
+ * beep/arch/frv/mm/extable.c
  */
 
-#include <linux/module.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
 #include <asm/uaccess.h>
 
 extern const struct exception_table_entry __attribute__((aligned(8))) __start___ex_table[];

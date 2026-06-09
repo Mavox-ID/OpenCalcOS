@@ -23,13 +23,13 @@
  *              <anil.s.keshavamurthy@intel.com> adapted from i386
  */
 
-#include <linux/kprobes.h>
-#include <linux/ptrace.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/preempt.h>
-#include <linux/moduleloader.h>
-#include <linux/kdebug.h>
+#include <beep/kprobes.h>
+#include <beep/ptrace.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/preempt.h>
+#include <beep/moduleloader.h>
+#include <beep/kdebug.h>
 
 #include <asm/pgtable.h>
 #include <asm/sections.h>

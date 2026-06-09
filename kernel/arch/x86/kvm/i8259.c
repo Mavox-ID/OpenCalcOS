@@ -26,12 +26,12 @@
  *   Yaozu (Eddie) Dong <Eddie.dong@intel.com>
  *   Port from Qemu.
  */
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/bitops.h>
 #include "irq.h"
 
-#include <linux/kvm_host.h>
+#include <beep/kvm_host.h>
 #include "trace.h"
 
 #define pr_pic_unimpl(fmt, ...)	\

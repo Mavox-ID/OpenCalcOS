@@ -1,17 +1,17 @@
 /*
- * linux/kernel/irq/proc.c
+ * beep/kernel/irq/proc.c
  *
  * Copyright (C) 1992, 1998-2004 Linus Torvalds, Ingo Molnar
  *
  * This file contains the /proc/irq/ handling code.
  */
 
-#include <linux/irq.h>
-#include <linux/gfp.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
+#include <beep/irq.h>
+#include <beep/gfp.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
 
 #include "internals.h"
 

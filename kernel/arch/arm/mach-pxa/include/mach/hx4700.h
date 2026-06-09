@@ -12,8 +12,8 @@
 #ifndef _HX4700_H_
 #define _HX4700_H_
 
-#include <linux/gpio.h>
-#include <linux/mfd/asic3.h>
+#include <beep/gpio.h>
+#include <beep/mfd/asic3.h>
 
 #define HX4700_ASIC3_GPIO_BASE	PXA_NR_BUILTIN_GPIO
 #define HX4700_EGPIO_BASE	(HX4700_ASIC3_GPIO_BASE + ASIC3_NUM_GPIOS)

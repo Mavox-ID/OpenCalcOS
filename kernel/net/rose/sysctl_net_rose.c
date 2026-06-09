@@ -6,9 +6,9 @@
  *
  * Copyright (C) 1996 Mike Shaver (shaver@zeroknowledge.com)
  */
-#include <linux/mm.h>
-#include <linux/sysctl.h>
-#include <linux/init.h>
+#include <beep/mm.h>
+#include <beep/sysctl.h>
+#include <beep/init.h>
 #include <net/ax25.h>
 #include <net/rose.h>
 

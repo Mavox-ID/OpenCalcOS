@@ -10,8 +10,8 @@
  * (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 
 #include "u_ether.h"
 #include "u_serial.h"

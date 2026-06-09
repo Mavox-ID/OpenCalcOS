@@ -8,13 +8,13 @@
  *	Free Software Foundation, version 2.
  */
 
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/init.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
-#include <linux/atalk.h>
-#include <linux/export.h>
+#include <beep/atalk.h>
+#include <beep/export.h>
 
 
 static __inline__ struct atalk_iface *atalk_get_interface_idx(loff_t pos)

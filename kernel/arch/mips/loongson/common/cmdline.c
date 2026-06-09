@@ -1,5 +1,5 @@
 /*
- * Based on Ocelot Linux port, which is
+ * Based on Ocelot Beep port, which is
  * Copyright 2001 MontaVista Software Inc.
  * Author: jsun@mvista.com or jsun@junsun.net
  *

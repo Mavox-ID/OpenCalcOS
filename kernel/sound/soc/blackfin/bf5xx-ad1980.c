@@ -8,7 +8,7 @@
  * Modified:
  *               Copyright 2008 Analog Devices Inc.
  *
- * Bugs:         Enter bugs at http://blackfin.uclinux.org/
+ * Bugs:         Enter bugs at http://blackfin.ucbeep.org/
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,16 +34,16 @@
  * by ADI now.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/device.h>
 #include <asm/dma.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>
 
-#include <linux/gpio.h>
+#include <beep/gpio.h>
 #include <asm/portmux.h>
 
 #include "../codecs/ad1980.h"

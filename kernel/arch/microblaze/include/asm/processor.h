@@ -58,7 +58,7 @@ extern void ret_from_kernel_thread(void);
  */
 # define TASK_UNMAPPED_BASE	0
 
-/* definition in include/linux/sched.h */
+/* definition in include/beep/sched.h */
 struct task_struct;
 
 /* thread_struct is gone. use thread_info instead. */

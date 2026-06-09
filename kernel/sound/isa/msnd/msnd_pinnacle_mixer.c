@@ -15,8 +15,8 @@
  *									   *
  ***************************************************************************/
 
-#include <linux/io.h>
-#include <linux/export.h>
+#include <beep/io.h>
+#include <beep/export.h>
 
 #include <sound/core.h>
 #include <sound/control.h>

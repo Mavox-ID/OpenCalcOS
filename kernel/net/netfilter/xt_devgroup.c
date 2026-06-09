@@ -6,12 +6,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
 
-#include <linux/netfilter/xt_devgroup.h>
-#include <linux/netfilter/x_tables.h>
+#include <beep/netfilter/xt_devgroup.h>
+#include <beep/netfilter/x_tables.h>
 
 MODULE_AUTHOR("Patrick McHardy <kaber@trash.net>");
 MODULE_LICENSE("GPL");

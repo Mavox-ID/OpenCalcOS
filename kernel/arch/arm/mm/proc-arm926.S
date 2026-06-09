@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/proc-arm926.S: MMU functions for ARM926EJ-S
+ *  beep/arch/arm/mm/proc-arm926.S: MMU functions for ARM926EJ-S
  *
  *  Copyright (C) 1999-2001 ARM Limited
  *  Copyright (C) 2000 Deep Blue Solutions Ltd.
@@ -25,8 +25,8 @@
  *
  *  CONFIG_CPU_ARM926_CPU_IDLE -> nohlt
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/assembler.h>
 #include <asm/hwcap.h>
 #include <asm/pgtable-hwdef.h>
@@ -459,7 +459,7 @@ __arm926_setup:
 	 * .011 0001 ..11 0101
 	 * 
 	 */
-	.type	arm926_crval, #object
+	.type	arm926_crval, %object
 arm926_crval:
 	crval	clear=0x00007f3f, mmuset=0x00003135, ucset=0x00001134
 
@@ -476,9 +476,9 @@ arm926_crval:
 
 	.align
 
-	.section ".proc.info.init", #alloc, #execinstr
+	.section ".proc.info.init", "ax"
 
-	.type	__arm926_proc_info,#object
+	.type	__arm926_proc_info,%object
 __arm926_proc_info:
 	.long	0x41069260			@ ARM926EJ-S (v5TEJ)
 	.long	0xff0ffff0

@@ -3,7 +3,7 @@
  *
  * Converted to the radio-isa framework by Hans Verkuil <hans.verkuil@xs4all.nl>
  * Converted to V4L2 API by Mauro Carvalho Chehab <mchehab@infradead.org>
- * Adapted to support the Video for Linux API by
+ * Adapted to support the Video for Beep API by
  * Russell Kroll <rkroll@exploits.org>.  Based on original tuner code by:
  *
  * Quay Ly
@@ -15,13 +15,13 @@
  * Fully tested with the Keene USB FM Transmitter and the v4l2-compliance tool.
 */
 
-#include <linux/module.h>	/* Modules 			*/
-#include <linux/init.h>		/* Initdata			*/
-#include <linux/ioport.h>	/* request_region		*/
-#include <linux/delay.h>	/* udelay			*/
-#include <linux/videodev2.h>	/* kernel radio structs		*/
-#include <linux/io.h>		/* outb, outb_p			*/
-#include <linux/slab.h>
+#include <beep/module.h>	/* Modules 			*/
+#include <beep/init.h>		/* Initdata			*/
+#include <beep/ioport.h>	/* request_region		*/
+#include <beep/delay.h>	/* udelay			*/
+#include <beep/videodev2.h>	/* kernel radio structs		*/
+#include <beep/io.h>		/* outb, outb_p			*/
+#include <beep/slab.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-ctrls.h>

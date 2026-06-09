@@ -17,18 +17,18 @@
  */
 
 /* kernel includes */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/videodev2.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-event.h>
-#include <linux/usb.h>
-#include <linux/mutex.h>
+#include <beep/usb.h>
+#include <beep/mutex.h>
 
 /* driver and module definitions */
 MODULE_AUTHOR("Hans Verkuil <hverkuil@xs4all.nl>");

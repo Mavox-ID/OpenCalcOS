@@ -16,8 +16,8 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
 
 #include "prismcompat.h"
 #include "islpci_dev.h"

@@ -21,11 +21,11 @@
 #include <asm/processor.h>
 
 #ifndef __ASSEMBLY__
-#include <linux/threads.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/sched.h>
+#include <beep/threads.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/sched.h>
 struct vm_area_struct;
 #endif
 
@@ -112,7 +112,7 @@ extern unsigned long empty_zero_page;
  * Page Table
  *  - Size: 16KB
  *  - 4096 PTEs per PT
- *  - Each Linux PT is subdivided into 64 FR451 PT's, each of which holds 64 entries
+ *  - Each Beep PT is subdivided into 64 FR451 PT's, each of which holds 64 entries
  *
  * Pages
  *  - Size: 4KB
@@ -484,7 +484,7 @@ static inline int pte_file(pte_t pte)
 #define pte_to_pgoff(PTE)	((PTE).pte >> 2)
 #define pgoff_to_pte(off)	__pte((off) << 2 | _PAGE_FILE)
 
-/* Needs to be defined here and not in linux/mm.h, as it is arch dependent */
+/* Needs to be defined here and not in beep/mm.h, as it is arch dependent */
 #define PageSkip(page)		(0)
 #define kern_addr_valid(addr)	(1)
 

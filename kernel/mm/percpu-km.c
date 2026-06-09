@@ -1,7 +1,7 @@
 /*
  * mm/percpu-km.c - kernel memory based chunk allocation
  *
- * Copyright (C) 2010		SUSE Linux Products GmbH
+ * Copyright (C) 2010		SUSE Beep Products GmbH
  * Copyright (C) 2010		Tejun Heo <tj@kernel.org>
  *
  * This file is released under the GPLv2.
@@ -31,7 +31,7 @@
 #error "contiguous percpu allocation is incompatible with paged first chunk"
 #endif
 
-#include <linux/log2.h>
+#include <beep/log2.h>
 
 static int pcpu_populate_chunk(struct pcpu_chunk *chunk, int off, int size)
 {

@@ -14,31 +14,31 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/gpio.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/input/navpoint.h>
-#include <linux/lcd.h>
-#include <linux/mfd/htc-egpio.h>
-#include <linux/mfd/asic3.h>
-#include <linux/mtd/physmap.h>
-#include <linux/pda_power.h>
-#include <linux/pwm.h>
-#include <linux/pwm_backlight.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/gpio-regulator.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/max1586.h>
-#include <linux/spi/ads7846.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/usb/gpio_vbus.h>
-#include <linux/i2c/pxa-i2c.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/gpio.h>
+#include <beep/gpio_keys.h>
+#include <beep/input.h>
+#include <beep/input/navpoint.h>
+#include <beep/lcd.h>
+#include <beep/mfd/htc-egpio.h>
+#include <beep/mfd/asic3.h>
+#include <beep/mtd/physmap.h>
+#include <beep/pda_power.h>
+#include <beep/pwm.h>
+#include <beep/pwm_backlight.h>
+#include <beep/regulator/driver.h>
+#include <beep/regulator/gpio-regulator.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/max1586.h>
+#include <beep/spi/ads7846.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/pxa2xx_spi.h>
+#include <beep/usb/gpio_vbus.h>
+#include <beep/i2c/pxa-i2c.h>
 
 #include <mach/hardware.h>
 #include <asm/mach-types.h>
@@ -46,7 +46,7 @@
 
 #include <mach/pxa27x.h>
 #include <mach/hx4700.h>
-#include <linux/platform_data/irda-pxaficp.h>
+#include <beep/platform_data/irda-pxaficp.h>
 
 #include <sound/ak4641.h>
 #include <video/platform_lcd.h>

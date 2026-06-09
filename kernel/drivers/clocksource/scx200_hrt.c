@@ -16,11 +16,11 @@
  * License, or (at your option) any later version.
  */
 
-#include <linux/clocksource.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/scx200.h>
+#include <beep/clocksource.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/scx200.h>
 
 #define NAME "scx200_hrt"
 

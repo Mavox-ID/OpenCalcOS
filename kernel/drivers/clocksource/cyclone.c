@@ -1,8 +1,8 @@
-#include <linux/clocksource.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/timex.h>
-#include <linux/init.h>
+#include <beep/clocksource.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/timex.h>
+#include <beep/init.h>
 
 #include <asm/pgtable.h>
 #include <asm/io.h>

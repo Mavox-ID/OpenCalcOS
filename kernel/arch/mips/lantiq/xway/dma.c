@@ -15,12 +15,12 @@
  *   Copyright (C) 2011 John Crispin <blogic@openwrt.org>
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/clk.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/dma-mapping.h>
+#include <beep/module.h>
+#include <beep/clk.h>
 
 #include <lantiq_soc.h>
 #include <xway_dma.h>

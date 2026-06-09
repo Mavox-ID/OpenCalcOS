@@ -16,11 +16,11 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/err.h>
+#include <beep/delay.h>
 
 #include <asm/system_misc.h>
 #include <asm/proc-fns.h>

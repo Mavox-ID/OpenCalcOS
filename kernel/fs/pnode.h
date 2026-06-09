@@ -1,14 +1,14 @@
 /*
- *  linux/fs/pnode.h
+ *  beep/fs/pnode.h
  *
  * (C) Copyright IBM Corporation 2005.
  *	Released under GPL v2.
  *
  */
-#ifndef _LINUX_PNODE_H
-#define _LINUX_PNODE_H
+#ifndef _BEEP_PNODE_H
+#define _BEEP_PNODE_H
 
-#include <linux/list.h>
+#include <beep/list.h>
 #include "mount.h"
 
 #define IS_MNT_SHARED(m) ((m)->mnt.mnt_flags & MNT_SHARED)
@@ -45,4 +45,4 @@ void umount_tree(struct mount *, int, struct list_head *);
 struct mount *copy_tree(struct mount *, struct dentry *, int);
 bool is_path_reachable(struct mount *, struct dentry *,
 			 const struct path *root);
-#endif /* _LINUX_PNODE_H */
+#endif /* _BEEP_PNODE_H */

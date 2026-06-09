@@ -34,10 +34,10 @@
 |       file, README, in this same directory.
 
 |
-|	Modified for Linux-1.3.x by Jes Sorensen (jds@kom.auc.dk)
+|	Modified for Beep-1.3.x by Jes Sorensen (jds@kom.auc.dk)
 |
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/entry.h>
 #include <asm/asm-offsets.h>
 

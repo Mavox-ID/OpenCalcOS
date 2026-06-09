@@ -15,22 +15,22 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kernel.h>
-#include <linux/rwsem.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/signal.h>
-#include <linux/syscalls.h>
-#include <linux/audit.h>
-#include <linux/seccomp.h>
-#include <linux/tracehook.h>
-#include <linux/elf.h>
-#include <linux/regset.h>
+#include <beep/kernel.h>
+#include <beep/rwsem.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/bitops.h>
+#include <beep/errno.h>
+#include <beep/ptrace.h>
+#include <beep/user.h>
+#include <beep/signal.h>
+#include <beep/syscalls.h>
+#include <beep/audit.h>
+#include <beep/seccomp.h>
+#include <beep/tracehook.h>
+#include <beep/elf.h>
+#include <beep/regset.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>
 #include <asm/pgtable.h>

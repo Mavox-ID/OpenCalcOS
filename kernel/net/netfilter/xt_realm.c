@@ -7,14 +7,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
 #include <net/route.h>
 
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter/xt_realm.h>
-#include <linux/netfilter/x_tables.h>
+#include <beep/netfilter_ipv4.h>
+#include <beep/netfilter/xt_realm.h>
+#include <beep/netfilter/x_tables.h>
 
 MODULE_AUTHOR("Sampsa Ranta <sampsa@netsonic.fi>");
 MODULE_LICENSE("GPL");

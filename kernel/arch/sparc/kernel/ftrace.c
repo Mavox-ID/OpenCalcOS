@@ -1,9 +1,9 @@
-#include <linux/spinlock.h>
-#include <linux/hardirq.h>
-#include <linux/ftrace.h>
-#include <linux/percpu.h>
-#include <linux/init.h>
-#include <linux/list.h>
+#include <beep/spinlock.h>
+#include <beep/hardirq.h>
+#include <beep/ftrace.h>
+#include <beep/percpu.h>
+#include <beep/init.h>
+#include <beep/list.h>
 #include <trace/syscall.h>
 
 #include <asm/ftrace.h>

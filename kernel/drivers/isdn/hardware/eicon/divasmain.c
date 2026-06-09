@@ -9,17 +9,17 @@
  * of the GNU General Public License, incorporated herein by reference.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
 #include <asm/uaccess.h>
 #include <asm/io.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/poll.h>
-#include <linux/kmod.h>
+#include <beep/ioport.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/poll.h>
+#include <beep/kmod.h>
 
 #include "platform.h"
 #undef ID_MASK

@@ -1,4 +1,4 @@
-/*      cops.c: LocalTalk driver for Linux.
+/*      cops.c: LocalTalk driver for Beep.
  *
  *	Authors:
  *      - Jay Schulist <jschlst@samba.org>
@@ -7,7 +7,7 @@
  *	- Alan Cox <alan@lxorguk.ukuu.org.uk>
  *
  *      Derived from:
- *      - skeleton.c: A network driver outline for linux.
+ *      - skeleton.c: A network driver outline for beep.
  *        Written 1993-94 by Donald Becker.
  *	- ltpc.c: A driver for the LocalTalk PC card.
  *	  Written by Bradford W. Johnson.
@@ -48,27 +48,27 @@ static const char *version =
  *	  the driver figure it out.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/if_ltalk.h>
-#include <linux/delay.h>	/* For udelay() */
-#include <linux/atalk.h>
-#include <linux/spinlock.h>
-#include <linux/bitops.h>
-#include <linux/jiffies.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/interrupt.h>
+#include <beep/ptrace.h>
+#include <beep/ioport.h>
+#include <beep/in.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/if_arp.h>
+#include <beep/if_ltalk.h>
+#include <beep/delay.h>	/* For udelay() */
+#include <beep/atalk.h>
+#include <beep/spinlock.h>
+#include <beep/bitops.h>
+#include <beep/jiffies.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>
@@ -267,7 +267,7 @@ static const struct net_device_ops cops_netdev_ops = {
 };
 
 /*
- *      This is the real probe routine. Linux has a history of friendly device
+ *      This is the real probe routine. Beep has a history of friendly device
  *      probes on the ISA bus. A good device probes avoids doing writes, and
  *      verifies that the correct device exists and functions.
  */

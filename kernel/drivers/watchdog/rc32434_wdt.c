@@ -19,19 +19,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>		/* For module specific items */
-#include <linux/moduleparam.h>		/* For new moduleparam's */
-#include <linux/types.h>		/* For standard types (like size_t) */
-#include <linux/errno.h>		/* For the -ENODEV/... values */
-#include <linux/kernel.h>		/* For printk/panic/... */
-#include <linux/fs.h>			/* For file operations */
-#include <linux/miscdevice.h>		/* For MODULE_ALIAS_MISCDEV
+#include <beep/module.h>		/* For module specific items */
+#include <beep/moduleparam.h>		/* For new moduleparam's */
+#include <beep/types.h>		/* For standard types (like size_t) */
+#include <beep/errno.h>		/* For the -ENODEV/... values */
+#include <beep/kernel.h>		/* For printk/panic/... */
+#include <beep/fs.h>			/* For file operations */
+#include <beep/miscdevice.h>		/* For MODULE_ALIAS_MISCDEV
 							(WATCHDOG_MINOR) */
-#include <linux/watchdog.h>		/* For the watchdog specific items */
-#include <linux/init.h>			/* For __init/__exit/... */
-#include <linux/platform_device.h>	/* For platform_driver framework */
-#include <linux/spinlock.h>		/* For spin_lock/spin_unlock/... */
-#include <linux/uaccess.h>		/* For copy_to_user/put_user/... */
+#include <beep/watchdog.h>		/* For the watchdog specific items */
+#include <beep/init.h>			/* For __init/__exit/... */
+#include <beep/platform_device.h>	/* For platform_driver framework */
+#include <beep/spinlock.h>		/* For spin_lock/spin_unlock/... */
+#include <beep/uaccess.h>		/* For copy_to_user/put_user/... */
 
 #include <asm/mach-rc32434/integ.h>	/* For the Watchdog registers */
 

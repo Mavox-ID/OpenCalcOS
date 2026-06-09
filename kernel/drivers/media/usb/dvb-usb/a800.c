@@ -1,4 +1,4 @@
-/* DVB USB framework compliant Linux driver for the AVerMedia AverTV DVB-T
+/* DVB USB framework compliant Beep driver for the AVerMedia AverTV DVB-T
  * USB2.0 (A800) DVB-T receiver.
  *
  * Copyright (C) 2005 Patrick Boettcher (patrick.boettcher@desy.de)

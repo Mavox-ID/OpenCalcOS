@@ -18,7 +18,7 @@
  *
  * Note that the ordering of these steps is crucial to avoid races on MP machines.
  *
- * The Linux kernel defines several platform-specific hooks for TLB-shootdown.  When
+ * The Beep kernel defines several platform-specific hooks for TLB-shootdown.  When
  * unmapping a portion of the virtual address space, these hooks are called according to
  * the following template:
  *
@@ -37,9 +37,9 @@
  *	}
  *	tlb_finish_mmu(tlb, start, end);	// finish unmap for address space MM
  */
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
+#include <beep/mm.h>
+#include <beep/pagemap.h>
+#include <beep/swap.h>
 
 #include <asm/pgalloc.h>
 #include <asm/processor.h>

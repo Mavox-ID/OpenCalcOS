@@ -2,8 +2,8 @@
  * Split spinlock implementation out into its own file, so it can be
  * compiled in a FTRACE-compatible way.
  */
-#include <linux/spinlock.h>
-#include <linux/module.h>
+#include <beep/spinlock.h>
+#include <beep/module.h>
 
 #include <asm/paravirt.h>
 

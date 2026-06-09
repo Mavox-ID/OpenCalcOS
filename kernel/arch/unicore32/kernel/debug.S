@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/kernel/debug.S
+ * beep/arch/unicore32/kernel/debug.S
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -11,7 +11,7 @@
  *
  *  32-bit debugging code
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 
 		.text

@@ -12,13 +12,13 @@
  *                        SPEEDSTEP - DEFINITIONS                    *
  *********************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/cpufreq.h>
+#include <beep/delay.h>
+#include <beep/io.h>
 #include <asm/ist.h>
 #include <asm/cpu_device_id.h>
 

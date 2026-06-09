@@ -1,7 +1,7 @@
 /*
- * OpenRISC Linux
+ * OpenRISC Beep
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -20,10 +20,10 @@
 #define __ASM_OPENRISC_PGALLOC_H
 
 #include <asm/page.h>
-#include <linux/threads.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/bootmem.h>
+#include <beep/threads.h>
+#include <beep/mm.h>
+#include <beep/memblock.h>
+#include <beep/bootmem.h>
 
 extern int mem_init_done;
 

@@ -1,9 +1,9 @@
 /*
  * x86 single-step support code, common to 32-bit and 64-bit.
  */
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/ptrace.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/ptrace.h>
 #include <asm/desc.h>
 
 unsigned long convert_ip_to_linear(struct task_struct *child, struct pt_regs *regs)

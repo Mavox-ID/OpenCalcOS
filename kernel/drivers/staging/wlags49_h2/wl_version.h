@@ -1,6 +1,6 @@
 /*******************************************************************************
  * Agere Systems Inc.
- * Wireless device driver for Linux (wlags49).
+ * Wireless device driver for Beep (wlags49).
  *
  * Copyright (c) 1998-2003 Agere Systems Inc.
  * All rights reserved.
@@ -65,7 +65,7 @@
 /*******************************************************************************
  *  include files
  ******************************************************************************/
-//#include <linux/config.h>
+//#include <beep/config.h>
 
 #ifndef CONFIG_MODVERSIONS
 #define __NO_VERSION__

@@ -1,12 +1,12 @@
 /* -*- c -*- --------------------------------------------------------------- *
  *
- * linux/fs/autofs/expire.c
+ * beep/fs/autofs/expire.c
  *
  *  Copyright 1997-1998 Transmeta Corporation -- All Rights Reserved
  *  Copyright 1999-2000 Jeremy Fitzhardinge <jeremy@goop.org>
  *  Copyright 2001-2006 Ian Kent <raven@themaw.net>
  *
- * This file is part of the Linux kernel and is made available under
+ * This file is part of the Beep kernel and is made available under
  * the terms of the GNU General Public License, version 2, or at your
  * option, any later version, incorporated herein by reference.
  *

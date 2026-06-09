@@ -1,5 +1,5 @@
 /*
- * linux/drivers/pcmcia/pxa2xx_palmld.c
+ * beep/drivers/pcmcia/pxa2xx_palmld.c
  *
  * Driver for Palm LifeDrive PCMCIA
  *
@@ -12,9 +12,9 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
 
 #include <asm/mach-types.h>
 #include <mach/palmld.h>

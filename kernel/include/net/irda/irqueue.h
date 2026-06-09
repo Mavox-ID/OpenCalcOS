@@ -14,7 +14,7 @@
  *     All Rights Reserved.
  *      
  *     This code is taken from the Vortex Operating System written by Aage
- *     Kvalnes and has been ported to Linux and Linux/IR by Dag Brattli
+ *     Kvalnes and has been ported to Beep and Beep/IR by Dag Brattli
  *
  *     This program is free software; you can redistribute it and/or 
  *     modify it under the terms of the GNU General Public License as 
@@ -27,8 +27,8 @@
  *     
  ********************************************************************/
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
+#include <beep/types.h>
+#include <beep/spinlock.h>
 
 #ifndef IRDA_QUEUE_H
 #define IRDA_QUEUE_H

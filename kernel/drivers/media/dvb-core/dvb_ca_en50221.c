@@ -28,15 +28,15 @@
  * Or, point your browser to http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/sched.h>
-#include <linux/kthread.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/vmalloc.h>
+#include <beep/delay.h>
+#include <beep/spinlock.h>
+#include <beep/sched.h>
+#include <beep/kthread.h>
 
 #include "dvb_ca_en50221.h"
 #include "dvb_ringbuffer.h"

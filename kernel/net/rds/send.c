@@ -30,14 +30,14 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/moduleparam.h>
+#include <beep/gfp.h>
 #include <net/sock.h>
-#include <linux/in.h>
-#include <linux/list.h>
-#include <linux/ratelimit.h>
-#include <linux/export.h>
+#include <beep/in.h>
+#include <beep/list.h>
+#include <beep/ratelimit.h>
+#include <beep/export.h>
 
 #include "rds.h"
 
@@ -932,7 +932,7 @@ int rds_sendmsg(struct kiocb *iocb, struct socket *sock, struct msghdr *msg,
 	int nonblock = msg->msg_flags & MSG_DONTWAIT;
 	long timeo = sock_sndtimeo(sk, nonblock);
 
-	/* Mirror Linux UDP mirror of BSD error message compatibility */
+	/* Mirror Beep UDP mirror of BSD error message compatibility */
 	/* XXX: Perhaps MSG_MORE someday */
 	if (msg->msg_flags & ~(MSG_DONTWAIT | MSG_CMSG_COMPAT)) {
 		ret = -EOPNOTSUPP;

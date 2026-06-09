@@ -12,10 +12,10 @@
 #ifndef __DRM_IPU_H__
 #define __DRM_IPU_H__
 
-#include <linux/types.h>
-#include <linux/videodev2.h>
-#include <linux/bitmap.h>
-#include <linux/fb.h>
+#include <beep/types.h>
+#include <beep/videodev2.h>
+#include <beep/bitmap.h>
+#include <beep/fb.h>
 
 struct ipu_soc;
 

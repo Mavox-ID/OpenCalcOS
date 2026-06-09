@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/dma-mapping.c
+ *  beep/arch/arm/mm/dma-mapping.c
  *
  *  Copyright (C) 2000-2004 Russell King
  *
@@ -9,22 +9,22 @@
  *
  *  DMA uncached mapping support.
  */
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/gfp.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dma-contiguous.h>
-#include <linux/highmem.h>
-#include <linux/memblock.h>
-#include <linux/slab.h>
-#include <linux/iommu.h>
-#include <linux/io.h>
-#include <linux/vmalloc.h>
-#include <linux/sizes.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/gfp.h>
+#include <beep/errno.h>
+#include <beep/list.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/dma-contiguous.h>
+#include <beep/highmem.h>
+#include <beep/memblock.h>
+#include <beep/slab.h>
+#include <beep/iommu.h>
+#include <beep/io.h>
+#include <beep/vmalloc.h>
+#include <beep/sizes.h>
 
 #include <asm/memory.h>
 #include <asm/highmem.h>

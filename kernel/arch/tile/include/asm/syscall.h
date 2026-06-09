@@ -18,8 +18,8 @@
 #ifndef _ASM_TILE_SYSCALL_H
 #define _ASM_TILE_SYSCALL_H
 
-#include <linux/sched.h>
-#include <linux/err.h>
+#include <beep/sched.h>
+#include <beep/err.h>
 #include <arch/abi.h>
 
 /*

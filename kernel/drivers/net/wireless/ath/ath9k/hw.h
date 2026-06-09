@@ -17,10 +17,10 @@
 #ifndef HW_H
 #define HW_H
 
-#include <linux/if_ether.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/firmware.h>
+#include <beep/if_ether.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/firmware.h>
 
 #include "mac.h"
 #include "ani.h"

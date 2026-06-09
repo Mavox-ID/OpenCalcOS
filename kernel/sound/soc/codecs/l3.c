@@ -17,9 +17,9 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
 
 #include <sound/l3.h>
 

@@ -21,28 +21,28 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/omap-dma.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/consumer.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmaengine.h>
+#include <beep/omap-dma.h>
+#include <beep/platform_device.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/pm_runtime.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/pinctrl/consumer.h>
 
-#include <linux/spi/spi.h>
+#include <beep/spi/spi.h>
 
-#include <linux/platform_data/spi-omap2-mcspi.h>
+#include <beep/platform_data/spi-omap2-mcspi.h>
 
 #define OMAP2_MCSPI_MAX_FREQ		48000000
 #define SPI_AUTOSUSPEND_TIMEOUT		2000

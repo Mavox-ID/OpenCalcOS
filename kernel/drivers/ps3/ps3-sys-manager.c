@@ -18,10 +18,10 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/workqueue.h>
-#include <linux/reboot.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/workqueue.h>
+#include <beep/reboot.h>
 
 #include <asm/firmware.h>
 #include <asm/lv1call.h>

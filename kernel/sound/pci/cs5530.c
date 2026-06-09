@@ -36,10 +36,10 @@
  *	same manner.
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
 #include <sound/core.h>
 #include <sound/sb.h>
 #include <sound/initval.h>

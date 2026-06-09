@@ -1,5 +1,5 @@
-#include <linux/kernel.h>
-#include <linux/errno.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
 
 long compat_ni_syscall(void)
 {

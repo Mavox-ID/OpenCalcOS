@@ -10,15 +10,15 @@
 #define KMSG_COMPONENT "cio"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/reboot.h>
-#include <linux/suspend.h>
-#include <linux/proc_fs.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/list.h>
+#include <beep/reboot.h>
+#include <beep/suspend.h>
+#include <beep/proc_fs.h>
 #include <asm/isc.h>
 #include <asm/crw.h>
 

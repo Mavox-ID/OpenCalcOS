@@ -22,9 +22,9 @@
  *
  ********************************************************************/
 
-#include <linux/skbuff.h>
-#include <linux/random.h>
-#include <linux/seq_file.h>
+#include <beep/skbuff.h>
+#include <beep/random.h>
+#include <beep/seq_file.h>
 
 #include <net/irda/irlan_common.h>
 #include <net/irda/irlan_filter.h>

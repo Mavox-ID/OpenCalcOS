@@ -62,7 +62,7 @@ void FAST_FUNC data_extract_to_command(archive_handle_t *archive_handle)
 {
 	file_header_t *file_header = archive_handle->file_header;
 
-#if 0 /* do we need this? ENABLE_FEATURE_TAR_SELINUX */
+#if 0 /* do we need this? ENABLE_FEATURE_TAR_SEBEEP */
 	char *sctx = archive_handle->tar__sctx[PAX_NEXT_FILE];
 	if (!sctx)
 		sctx = archive_handle->tar__sctx[PAX_GLOBAL];
@@ -128,7 +128,7 @@ void FAST_FUNC data_extract_to_command(archive_handle_t *archive_handle)
 		}
 	}
 
-#if 0 /* ENABLE_FEATURE_TAR_SELINUX */
+#if 0 /* ENABLE_FEATURE_TAR_SEBEEP */
 	if (sctx)
 		/* reset the context after creating an entry */
 		setfscreatecon(NULL);

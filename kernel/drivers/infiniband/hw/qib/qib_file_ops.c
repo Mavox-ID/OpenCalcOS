@@ -32,18 +32,18 @@
  * SOFTWARE.
  */
 
-#include <linux/pci.h>
-#include <linux/poll.h>
-#include <linux/cdev.h>
-#include <linux/swap.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
-#include <linux/io.h>
-#include <linux/uio.h>
-#include <linux/jiffies.h>
+#include <beep/pci.h>
+#include <beep/poll.h>
+#include <beep/cdev.h>
+#include <beep/swap.h>
+#include <beep/vmalloc.h>
+#include <beep/highmem.h>
+#include <beep/io.h>
+#include <beep/uio.h>
+#include <beep/jiffies.h>
 #include <asm/pgtable.h>
-#include <linux/delay.h>
-#include <linux/export.h>
+#include <beep/delay.h>
+#include <beep/export.h>
 
 #include "qib.h"
 #include "qib_common.h"

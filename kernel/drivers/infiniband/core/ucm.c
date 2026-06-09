@@ -31,20 +31,20 @@
  * SOFTWARE.
  */
 
-#include <linux/completion.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/file.h>
-#include <linux/mount.h>
-#include <linux/cdev.h>
-#include <linux/idr.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/completion.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/poll.h>
+#include <beep/sched.h>
+#include <beep/file.h>
+#include <beep/mount.h>
+#include <beep/cdev.h>
+#include <beep/idr.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 
 #include <asm/uaccess.h>
 

@@ -6,12 +6,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/skbuff.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_NFLOG.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_NFLOG.h>
 #include <net/netfilter/nf_log.h>
 #include <net/netfilter/nfnetlink_log.h>
 

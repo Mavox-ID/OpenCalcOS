@@ -1,20 +1,20 @@
 #ifndef _FS_CEPH_SUPER_H
 #define _FS_CEPH_SUPER_H
 
-#include <linux/ceph/ceph_debug.h>
+#include <beep/ceph/ceph_debug.h>
 
 #include <asm/unaligned.h>
-#include <linux/backing-dev.h>
-#include <linux/completion.h>
-#include <linux/exportfs.h>
-#include <linux/fs.h>
-#include <linux/mempool.h>
-#include <linux/pagemap.h>
-#include <linux/wait.h>
-#include <linux/writeback.h>
-#include <linux/slab.h>
+#include <beep/backing-dev.h>
+#include <beep/completion.h>
+#include <beep/exportfs.h>
+#include <beep/fs.h>
+#include <beep/mempool.h>
+#include <beep/pagemap.h>
+#include <beep/wait.h>
+#include <beep/writeback.h>
+#include <beep/slab.h>
 
-#include <linux/ceph/libceph.h>
+#include <beep/ceph/libceph.h>
 
 /* f_type in struct statfs */
 #define CEPH_SUPER_MAGIC 0x00c36400

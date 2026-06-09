@@ -7,16 +7,16 @@
  * console, a network and a block driver.  Each one expects some configuration
  * information and a "virtqueue" or two to send and receive data.
 :*/
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/lguest_launcher.h>
-#include <linux/virtio.h>
-#include <linux/virtio_config.h>
-#include <linux/interrupt.h>
-#include <linux/virtio_ring.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/lguest_launcher.h>
+#include <beep/virtio.h>
+#include <beep/virtio_config.h>
+#include <beep/interrupt.h>
+#include <beep/virtio_ring.h>
+#include <beep/err.h>
+#include <beep/export.h>
+#include <beep/slab.h>
 #include <asm/io.h>
 #include <asm/paravirt.h>
 #include <asm/lguest_hcall.h>
@@ -137,7 +137,7 @@ static void lg_finalize_features(struct virtio_device *vdev)
 	vring_transport_features(vdev);
 
 	/*
-	 * The vdev->feature array is a Linux bitmask: this isn't the same as a
+	 * The vdev->feature array is a Beep bitmask: this isn't the same as a
 	 * the simple array of bits used by lguest devices for features.  So we
 	 * do this slow, manual conversion which is completely general.
 	 */
@@ -432,7 +432,7 @@ static void add_lguest_device(struct lguest_device_desc *d,
 {
 	struct lguest_device *ldev;
 
-	/* Start with zeroed memory; Linux's device layer counts on it. */
+	/* Start with zeroed memory; Beep's device layer counts on it. */
 	ldev = kzalloc(sizeof(*ldev), GFP_KERNEL);
 	if (!ldev) {
 		printk(KERN_EMERG "Cannot allocate lguest dev %u type %u\n",

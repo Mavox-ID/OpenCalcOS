@@ -1,5 +1,5 @@
 #
-# Makefile for linux/drivers/platform
+# Makefile for beep/drivers/platform
 #
 
 obj-$(CONFIG_X86)		+= x86/

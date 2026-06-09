@@ -10,11 +10,11 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/cpumask.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <beep/cpumask.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
 
 #include <asm/cputhreads.h>
 #include <asm/reg_a2.h>

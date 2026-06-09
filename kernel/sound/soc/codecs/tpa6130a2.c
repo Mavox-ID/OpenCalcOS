@@ -20,13 +20,13 @@
  * 02110-1301 USA
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/gpio.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/device.h>
+#include <beep/i2c.h>
+#include <beep/gpio.h>
+#include <beep/regulator/consumer.h>
+#include <beep/slab.h>
 #include <sound/tpa6130a2-plat.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>

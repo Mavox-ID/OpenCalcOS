@@ -1,7 +1,7 @@
-#include <linux/kernel.h>
-#include <linux/gcd.h>
-#include <linux/export.h>
-#include <linux/lcm.h>
+#include <beep/kernel.h>
+#include <beep/gcd.h>
+#include <beep/export.h>
+#include <beep/lcm.h>
 
 /* Lowest common multiple */
 unsigned long lcm(unsigned long a, unsigned long b)

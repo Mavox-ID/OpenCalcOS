@@ -19,14 +19,14 @@
  * file called LICENSE.
  *
  * Contact Information:
- *  Intel Linux Wireless <ilw@linux.intel.com>
+ *  Intel Beep Wireless <ilw@beep.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  *****************************************************************************/
 
 #if !defined(__IWLWIFI_DEVICE_TRACE) || defined(TRACE_HEADER_MULTI_READ)
-#include <linux/skbuff.h>
-#include <linux/ieee80211.h>
+#include <beep/skbuff.h>
+#include <beep/ieee80211.h>
 #include <net/cfg80211.h>
 #include "iwl-trans.h"
 #if !defined(__IWLWIFI_DEVICE_TRACE)
@@ -60,8 +60,8 @@ static inline size_t iwl_rx_trace_len(const struct iwl_trans *trans,
 
 #define __IWLWIFI_DEVICE_TRACE
 
-#include <linux/tracepoint.h>
-#include <linux/device.h>
+#include <beep/tracepoint.h>
+#include <beep/device.h>
 #include "iwl-trans.h"
 
 

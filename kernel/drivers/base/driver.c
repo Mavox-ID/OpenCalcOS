@@ -10,11 +10,11 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/string.h>
 #include "base.h"
 
 static struct device *next_device(struct klist_iter *i)

@@ -1,7 +1,7 @@
 #ifndef __NET_NEXTHOP_H
 #define __NET_NEXTHOP_H
 
-#include <linux/rtnetlink.h>
+#include <beep/rtnetlink.h>
 #include <net/netlink.h>
 
 static inline int rtnh_ok(const struct rtnexthop *rtnh, int remaining)

@@ -19,17 +19,17 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/module.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
-#include <linux/kdev_t.h>
-#include <linux/sched.h>
-#include <linux/time.h>
-#include <linux/err.h>
+#include <beep/module.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/jiffies.h>
+#include <beep/mutex.h>
+#include <beep/dmi.h>
+#include <beep/slab.h>
+#include <beep/kdev_t.h>
+#include <beep/sched.h>
+#include <beep/time.h>
+#include <beep/err.h>
 #include <acpi/acpi_drivers.h>
 #include <acpi/acpi_bus.h>
 

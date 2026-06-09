@@ -1,7 +1,7 @@
 #ifndef __NET_IPIP_H
 #define __NET_IPIP_H 1
 
-#include <linux/if_tunnel.h>
+#include <beep/if_tunnel.h>
 #include <net/gro_cells.h>
 #include <net/ip.h>
 

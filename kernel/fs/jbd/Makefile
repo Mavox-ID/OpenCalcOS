@@ -1,5 +1,5 @@
 #
-# Makefile for the linux journaling routines.
+# Makefile for the beep journaling routines.
 #
 
 obj-$(CONFIG_JBD) += jbd.o

@@ -16,8 +16,8 @@
  * Copyright (C) 2005 Hewlett-Packard Co
  *	Dan Magenheimer <dan.magenheimer@hp.com>
  *      Xen paravirtualization
- * Copyright (c) 2008 Isaku Yamahata <yamahata at valinux co jp>
- *                    VA Linux Systems Japan K.K.
+ * Copyright (c) 2008 Isaku Yamahata <yamahata at vabeep co jp>
+ *                    VA Beep Systems Japan K.K.
  *                    pv_ops.
  *      Yaozu (Eddie) Dong <eddie.dong@intel.com>
  */
@@ -1108,7 +1108,7 @@ ENTRY(page_not_present)
 	MOV_FROM_IFA(r16)
 	RSM_PSR_DT
 	/*
-	 * The Linux page fault handler doesn't expect non-present pages to be in
+	 * The Beep page fault handler doesn't expect non-present pages to be in
 	 * the TLB.  Flush the existing entry now, so we meet that expectation.
 	 */
 	mov r17=PAGE_SHIFT<<2

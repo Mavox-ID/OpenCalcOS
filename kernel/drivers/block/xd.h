@@ -1,5 +1,5 @@
-#ifndef _LINUX_XD_H
-#define _LINUX_XD_H
+#ifndef _BEEP_XD_H
+#define _BEEP_XD_H
 
 /*
  * This file contains the definitions for the IO ports and errors etc. for XT hard disk controllers (at least the DTC 5150X).
@@ -13,7 +13,7 @@
  * Also thanks to: Salvador Abreu, Dave Thaler, Risto Kankkunen and Wim Van Dorst.
  */
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 /* XT hard disk controller registers */
 #define XD_DATA		(xd_iobase + 0x00)	/* data RW register */
@@ -131,4 +131,4 @@ static void xd_xebec_init_drive (u_char drive);
 static void xd_setparam (u_char command,u_char drive,u_char heads,u_short cylinders,u_short rwrite,u_short wprecomp,u_char ecc);
 static void xd_override_init_drive (u_char drive);
 
-#endif /* _LINUX_XD_H */
+#endif /* _BEEP_XD_H */

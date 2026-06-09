@@ -17,16 +17,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/watchdog.h>
-#include <linux/platform_device.h>
-#include <linux/mv643xx.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/miscdevice.h>
+#include <beep/module.h>
+#include <beep/watchdog.h>
+#include <beep/platform_device.h>
+#include <beep/mv643xx.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
 
 #define MV64x60_WDT_WDC_OFFSET	0
 

@@ -17,10 +17,10 @@
  *
  */
 
-#ifndef _LINUX_BINDER_H
-#define _LINUX_BINDER_H
+#ifndef _BEEP_BINDER_H
+#define _BEEP_BINDER_H
 
-#include <linux/ioctl.h>
+#include <beep/ioctl.h>
 
 #define B_PACK_CHARS(c1, c2, c3, c4) \
 	((((c1)<<24)) | (((c2)<<16)) | (((c3)<<8)) | (c4))
@@ -326,5 +326,5 @@ enum BinderDriverCommandProtocol {
 	 */
 };
 
-#endif /* _LINUX_BINDER_H */
+#endif /* _BEEP_BINDER_H */
 

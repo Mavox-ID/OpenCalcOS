@@ -1,5 +1,5 @@
 /*
- * DECnet       An implementation of the DECnet protocol suite for the LINUX
+ * DECnet       An implementation of the DECnet protocol suite for the BEEP
  *              operating system.  DECnet is implemented using the  BSD Socket
  *              interface as the means of communication with the user level.
  *
@@ -55,29 +55,29 @@
     GNU General Public License for more details.
 *******************************************************************************/
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/inet.h>
-#include <linux/route.h>
-#include <linux/in_route.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/socket.h>
+#include <beep/in.h>
+#include <beep/kernel.h>
+#include <beep/sockios.h>
+#include <beep/net.h>
+#include <beep/netdevice.h>
+#include <beep/inet.h>
+#include <beep/route.h>
+#include <beep/in_route.h>
+#include <beep/slab.h>
 #include <net/sock.h>
-#include <linux/mm.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/rtnetlink.h>
-#include <linux/string.h>
-#include <linux/netfilter_decnet.h>
-#include <linux/rcupdate.h>
-#include <linux/times.h>
-#include <linux/export.h>
+#include <beep/mm.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/init.h>
+#include <beep/rtnetlink.h>
+#include <beep/string.h>
+#include <beep/netfilter_decnet.h>
+#include <beep/rcupdate.h>
+#include <beep/times.h>
+#include <beep/export.h>
 #include <asm/errno.h>
 #include <net/net_namespace.h>
 #include <net/netlink.h>

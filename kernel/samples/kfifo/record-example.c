@@ -7,11 +7,11 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/mutex.h>
-#include <linux/kfifo.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/proc_fs.h>
+#include <beep/mutex.h>
+#include <beep/kfifo.h>
 
 /*
  * This module shows how to create a variable sized record fifo.

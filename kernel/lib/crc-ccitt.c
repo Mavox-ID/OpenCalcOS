@@ -1,13 +1,13 @@
 /*
- *	linux/lib/crc-ccitt.c
+ *	beep/lib/crc-ccitt.c
  *
  *	This source code is licensed under the GNU General Public License,
  *	Version 2. See the file COPYING for more details.
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/crc-ccitt.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/crc-ccitt.h>
 
 /*
  * This mysterious table is just the CRC of each possible byte. It can be

@@ -1,5 +1,5 @@
 /*
- * adm9240.c	Part of lm_sensors, Linux kernel modules for hardware
+ * adm9240.c	Part of lm_sensors, Beep kernel modules for hardware
  *		monitoring
  *
  * Copyright (C) 1999	Frodo Looijaard <frodol@dds.nl>
@@ -41,16 +41,16 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-vid.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/jiffies.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-vid.h>
+#include <beep/err.h>
+#include <beep/mutex.h>
+#include <beep/jiffies.h>
 
 /* Addresses to scan */
 static const unsigned short normal_i2c[] = { 0x2c, 0x2d, 0x2e, 0x2f,

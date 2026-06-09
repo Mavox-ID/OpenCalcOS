@@ -16,22 +16,22 @@
  *
  */
 
-#include <linux/list.h>
-#include <linux/irq.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/if_ether.h>
-#include <linux/inetdevice.h>
-#include <linux/init.h>
-#include <linux/if_tun.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/ioctl.h>
-#include <linux/bootmem.h>
-#include <linux/ethtool.h>
-#include <linux/rtnetlink.h>
-#include <linux/platform_device.h>
+#include <beep/list.h>
+#include <beep/irq.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/timer.h>
+#include <beep/if_ether.h>
+#include <beep/inetdevice.h>
+#include <beep/init.h>
+#include <beep/if_tun.h>
+#include <beep/etherdevice.h>
+#include <beep/interrupt.h>
+#include <beep/ioctl.h>
+#include <beep/bootmem.h>
+#include <beep/ethtool.h>
+#include <beep/rtnetlink.h>
+#include <beep/platform_device.h>
 
 #include <platform/simcall.h>
 

@@ -19,16 +19,16 @@
    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/bitmap.h>
-#include <linux/usb.h>
-#include <linux/i2c.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/bitmap.h>
+#include <beep/usb.h>
+#include <beep/i2c.h>
+#include <beep/mm.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>

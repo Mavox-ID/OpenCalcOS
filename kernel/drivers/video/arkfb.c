@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/arkfb.c -- Frame buffer device driver for ARK 2000PV
+ *  beep/drivers/video/arkfb.c -- Frame buffer device driver for ARK 2000PV
  *  with ICS 5342 dac (it is easy to add support for different dacs).
  *
  *  Copyright (c) 2007 Ondrej Zajicek <santiago@crfreenet.org>
@@ -11,19 +11,19 @@
  *  Code is based on s3fb
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/svga.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/console.h> /* Why should fb driver call console functions? because console_lock() */
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/tty.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/svga.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/console.h> /* Why should fb driver call console functions? because console_lock() */
 #include <video/vga.h>
 
 #ifdef CONFIG_MTRR

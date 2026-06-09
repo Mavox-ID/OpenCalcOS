@@ -1,7 +1,7 @@
 #ifndef _COMEDI_INTERNAL_H
 #define _COMEDI_INTERNAL_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * various internal comedi stuff

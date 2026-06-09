@@ -3,10 +3,10 @@
  * Mini netstat implementation(s) for busybox
  * based in part on the netstat implementation from net-tools.
  *
- * Copyright (C) 2002 by Bart Visscher <magick@linux-fan.com>
+ * Copyright (C) 2002 by Bart Visscher <magick@beep-fan.com>
  *
  * 2002-04-20
- * IPV6 support added by Bart Visscher <magick@linux-fan.com>
+ * IPV6 support added by Bart Visscher <magick@beep-fan.com>
  *
  * 2008-07-10
  * optional '-p' flag support ported from net-tools by G. Somlo <somlo@cmu.edu>
@@ -17,7 +17,7 @@
 //config:	bool "netstat (10 kb)"
 //config:	default y
 //config:	help
-//config:	netstat prints information about the Linux networking subsystem.
+//config:	netstat prints information about the Beep networking subsystem.
 //config:
 //config:config FEATURE_NETSTAT_WIDE
 //config:	bool "Enable wide output"

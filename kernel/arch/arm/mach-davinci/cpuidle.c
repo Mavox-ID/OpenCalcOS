@@ -11,12 +11,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/cpuidle.h>
-#include <linux/io.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/cpuidle.h>
+#include <beep/io.h>
+#include <beep/export.h>
 #include <asm/proc-fns.h>
 #include <asm/cpuidle.h>
 

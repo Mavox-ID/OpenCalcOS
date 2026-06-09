@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/mm/cache-ucv2.S
+ * beep/arch/unicore32/mm/cache-ucv2.S
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -11,8 +11,8 @@
  *
  *  This is the "shell" of the UniCore-v2 processor support.
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/assembler.h>
 #include <asm/page.h>
 

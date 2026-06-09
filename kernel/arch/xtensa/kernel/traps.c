@@ -23,14 +23,14 @@
  * for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/stringify.h>
-#include <linux/kallsyms.h>
-#include <linux/delay.h>
-#include <linux/hardirq.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/stringify.h>
+#include <beep/kallsyms.h>
+#include <beep/delay.h>
+#include <beep/hardirq.h>
 
 #include <asm/ptrace.h>
 #include <asm/timex.h>

@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/include/asm/memory.h
+ * beep/arch/unicore32/include/asm/memory.h
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -14,8 +14,8 @@
 #ifndef __UNICORE_MEMORY_H__
 #define __UNICORE_MEMORY_H__
 
-#include <linux/compiler.h>
-#include <linux/const.h>
+#include <beep/compiler.h>
+#include <beep/const.h>
 #include <asm/sizes.h>
 #include <mach/memory.h>
 

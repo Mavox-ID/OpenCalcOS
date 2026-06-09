@@ -12,10 +12,10 @@
  *   more details.
  */
 
-#include <linux/string.h>
-#include <linux/smp.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <beep/string.h>
+#include <beep/smp.h>
+#include <beep/module.h>
+#include <beep/uaccess.h>
 #include <asm/fixmap.h>
 #include <asm/kmap_types.h>
 #include <asm/tlbflush.h>

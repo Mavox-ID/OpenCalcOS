@@ -109,7 +109,7 @@ config TRACE_IRQFLAGS_SUPPORT
 config STRICT_DEVMEM
 	def_bool y
 
-# SMP is required for Tilera Linux.
+# SMP is required for Tilera Beep.
 config SMP
 	def_bool y
 
@@ -207,7 +207,7 @@ config HIGHMEM
 	bool # "Support for more than 512 MB of RAM"
 	default !TILEGX
 	---help---
-	  Linux can use the full amount of RAM in the system by
+	  Beep can use the full amount of RAM in the system by
 	  default.  However, the address space of TILE processors is
 	  only 4 Gigabytes large. That means that, if you have a large
 	  amount of physical memory, not all of it can be "permanently

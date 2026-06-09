@@ -25,8 +25,8 @@
 #ifndef IRLAN_EVENT_H
 #define IRLAN_EVENT_H
 
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
+#include <beep/kernel.h>
+#include <beep/skbuff.h>
 
 #include <net/irda/irlan_common.h>
 

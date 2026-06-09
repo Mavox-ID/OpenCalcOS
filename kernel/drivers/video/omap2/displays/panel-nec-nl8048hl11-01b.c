@@ -16,11 +16,11 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/spi/spi.h>
-#include <linux/backlight.h>
-#include <linux/fb.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/spi/spi.h>
+#include <beep/backlight.h>
+#include <beep/fb.h>
 
 #include <video/omapdss.h>
 

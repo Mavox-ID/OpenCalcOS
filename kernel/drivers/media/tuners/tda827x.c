@@ -18,11 +18,11 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 #include <asm/types.h>
-#include <linux/dvb/frontend.h>
-#include <linux/videodev2.h>
+#include <beep/dvb/frontend.h>
+#include <beep/videodev2.h>
 
 #include "tda827x.h"
 
@@ -905,7 +905,7 @@ EXPORT_SYMBOL_GPL(tda827x_attach);
 
 MODULE_DESCRIPTION("DVB TDA827x driver");
 MODULE_AUTHOR("Hartmut Hackmann <hartmut.hackmann@t-online.de>");
-MODULE_AUTHOR("Michael Krufky <mkrufky@linuxtv.org>");
+MODULE_AUTHOR("Michael Krufky <mkrufky@beeptv.org>");
 MODULE_LICENSE("GPL");
 
 /*

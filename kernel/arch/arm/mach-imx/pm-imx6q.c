@@ -10,10 +10,10 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/suspend.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/suspend.h>
 #include <asm/cacheflush.h>
 #include <asm/proc-fns.h>
 #include <asm/suspend.h>

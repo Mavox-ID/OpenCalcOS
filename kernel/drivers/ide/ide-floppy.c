@@ -15,28 +15,28 @@
  * Documentation/ide/ChangeLog.ide-floppy.1996-2002
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/genhd.h>
-#include <linux/cdrom.h>
-#include <linux/ide.h>
-#include <linux/hdreg.h>
-#include <linux/bitops.h>
-#include <linux/mutex.h>
-#include <linux/scatterlist.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/timer.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/major.h>
+#include <beep/errno.h>
+#include <beep/genhd.h>
+#include <beep/cdrom.h>
+#include <beep/ide.h>
+#include <beep/hdreg.h>
+#include <beep/bitops.h>
+#include <beep/mutex.h>
+#include <beep/scatterlist.h>
 
 #include <scsi/scsi_ioctl.h>
 
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
 #include <asm/unaligned.h>
 
 #include "ide-floppy.h"

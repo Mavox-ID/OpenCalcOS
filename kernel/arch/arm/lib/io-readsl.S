@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/lib/io-readsl.S
+ *  beep/arch/arm/lib/io-readsl.S
  *
  *  Copyright (C) 1995-2000 Russell King
  *
@@ -7,7 +7,7 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 
 ENTRY(__raw_readsl)

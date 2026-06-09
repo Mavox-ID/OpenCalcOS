@@ -14,7 +14,7 @@
 #include "exynos_drm_drv.h"
 #include "exynos_drm_gem.h"
 
-#include <linux/dma-buf.h>
+#include <beep/dma-buf.h>
 
 struct exynos_drm_dmabuf_attachment {
 	struct sg_table sgt;

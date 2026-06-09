@@ -28,14 +28,14 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/capability.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/moduleparam.h>
+#include <beep/pci.h>
+#include <beep/capability.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/init.h>
+#include <beep/mutex.h>
+#include <beep/moduleparam.h>
 
 #include <sound/core.h>
 #include <sound/tlv.h>

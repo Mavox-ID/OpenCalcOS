@@ -2,10 +2,10 @@
  *
  * Copyright (C) 2007 David S. Miller (davem@davemloft.net)
  */
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/irq.h>
 
 #include "pci_impl.h"
 

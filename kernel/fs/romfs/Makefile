@@ -1,5 +1,5 @@
 #
-# Makefile for the linux RomFS filesystem routines.
+# Makefile for the beep RomFS filesystem routines.
 #
 
 obj-$(CONFIG_ROMFS_FS) += romfs.o

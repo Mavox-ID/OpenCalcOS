@@ -16,13 +16,13 @@
  * 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  *
  * Copyright IBM Corporation, 2007
- * 	Author: Mike Anderson <andmike@linux.vnet.ibm.com>
+ * 	Author: Mike Anderson <andmike@beep.vnet.ibm.com>
  */
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/kobject.h>
-#include <linux/dm-ioctl.h>
-#include <linux/export.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/kobject.h>
+#include <beep/dm-ioctl.h>
+#include <beep/export.h>
 
 #include "dm.h"
 #include "dm-uevent.h"

@@ -11,7 +11,7 @@
  *
  */
 
-#include <linux/exportfs.h>
+#include <beep/exportfs.h>
 #include "fat.h"
 
 /**

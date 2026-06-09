@@ -11,20 +11,20 @@
  * option) any later version.
  */
 
-#include <linux/atomic.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iio/events.h>
-#include <linux/iio/iio.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/mfd/core.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <beep/atomic.h>
+#include <beep/fs.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/iio/events.h>
+#include <beep/iio/iio.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/mfd/core.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/uaccess.h>
 
-#include <linux/mfd/lm3533.h>
+#include <beep/mfd/lm3533.h>
 
 
 #define LM3533_ALS_RESISTOR_MIN			1

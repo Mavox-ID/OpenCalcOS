@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hfsplus/inode.c
+ *  beep/fs/hfsplus/inode.c
  *
  * Copyright (C) 2001
  * Brad Boyer (flar@allandria.com)
@@ -8,12 +8,12 @@
  * Inode handling routines
  */
 
-#include <linux/blkdev.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/mpage.h>
-#include <linux/sched.h>
+#include <beep/blkdev.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/pagemap.h>
+#include <beep/mpage.h>
+#include <beep/sched.h>
 
 #include "hfsplus_fs.h"
 #include "hfsplus_raw.h"

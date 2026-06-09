@@ -1,6 +1,6 @@
-#include <linux/pagemap.h>
-#include <linux/blkdev.h>
-#include <linux/genhd.h>
+#include <beep/pagemap.h>
+#include <beep/blkdev.h>
+#include <beep/genhd.h>
 
 /*
  * add_gd_partition adds a partitions details to the devices partition

@@ -61,9 +61,9 @@
 			};
 
 			partition@80000 {
-				/* 3.5 MB for Linux Kernel Image */
+				/* 3.5 MB for Beep Kernel Image */
 				reg = <0x00080000 0x00380000>;
-				label = "NOR (RO) Linux Kernel Image";
+				label = "NOR (RO) Beep Kernel Image";
 				read-only;
 			};
 
@@ -106,9 +106,9 @@
 			};
 
 			partition@200000 {
-				/* 4MB for Linux Kernel Image */
+				/* 4MB for Beep Kernel Image */
 				reg = <0x00200000 0x00400000>;
-				label = "NAND (RO) Linux Kernel Image";
+				label = "NAND (RO) Beep Kernel Image";
 				read-only;
 			};
 
@@ -174,9 +174,9 @@
 				};
 
 				partition@100000 {
-					/* 4MB for Linux Kernel Image */
+					/* 4MB for Beep Kernel Image */
 					reg = <0x00100000 0x00400000>;
-					label = "SPI (RO) Linux Kernel Image";
+					label = "SPI (RO) Beep Kernel Image";
 					read-only;
 				};
 

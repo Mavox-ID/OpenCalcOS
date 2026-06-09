@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-rpc/dma.c
+ *  beep/arch/arm/mach-rpc/dma.c
  *
  *  Copyright (C) 1998 Russell King
  *
@@ -9,11 +9,11 @@
  *
  *  DMA functions specific to RiscPC architecture
  */
-#include <linux/mman.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
+#include <beep/mman.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/dma-mapping.h>
+#include <beep/io.h>
 
 #include <asm/page.h>
 #include <asm/dma.h>

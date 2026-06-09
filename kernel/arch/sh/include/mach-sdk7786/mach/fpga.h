@@ -1,9 +1,9 @@
 #ifndef __MACH_SDK7786_FPGA_H
 #define __MACH_SDK7786_FPGA_H
 
-#include <linux/io.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
+#include <beep/io.h>
+#include <beep/types.h>
+#include <beep/bitops.h>
 
 #define SRSTR		0x000
 #define  SRSTR_MAGIC	0x1971	/* Fixed magical read value */

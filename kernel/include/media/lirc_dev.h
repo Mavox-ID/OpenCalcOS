@@ -6,19 +6,19 @@
  *
  */
 
-#ifndef _LINUX_LIRC_DEV_H
-#define _LINUX_LIRC_DEV_H
+#ifndef _BEEP_LIRC_DEV_H
+#define _BEEP_LIRC_DEV_H
 
 #define MAX_IRCTL_DEVICES 8
 #define BUFLEN            16
 
 #define mod(n, div) ((n) % (div))
 
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/ioctl.h>
-#include <linux/poll.h>
-#include <linux/kfifo.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
+#include <beep/ioctl.h>
+#include <beep/poll.h>
+#include <beep/kfifo.h>
 #include <media/lirc.h>
 
 struct lirc_buffer {

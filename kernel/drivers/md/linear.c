@@ -1,5 +1,5 @@
 /*
-   linear.c : Multiple Devices driver for Linux
+   linear.c : Multiple Devices driver for Beep
 	      Copyright (C) 1994-96 Marc ZYNGIER
 	      <zyngier@ufr-info-p7.ibp.fr> or
 	      <maz@gloups.fdn.fr>
@@ -12,15 +12,15 @@
    any later version.
    
    You should have received a copy of the GNU General Public License
-   (for example /usr/src/linux/COPYING); if not, write to the Free
+   (for example /usr/src/beep/COPYING); if not, write to the Free
    Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.  
 */
 
-#include <linux/blkdev.h>
-#include <linux/raid/md_u.h>
-#include <linux/seq_file.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/blkdev.h>
+#include <beep/raid/md_u.h>
+#include <beep/seq_file.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 #include "md.h"
 #include "linear.h"
 

@@ -5,15 +5,15 @@
  * Licensed under the terms of the GNU General Public License, version 2.
  */
 
-#include <linux/device.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
+#include <beep/device.h>
+#include <beep/firewire.h>
+#include <beep/firewire-constants.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/wait.h>
+#include <beep/delay.h>
 #include "fcp.h"
 #include "lib.h"
 

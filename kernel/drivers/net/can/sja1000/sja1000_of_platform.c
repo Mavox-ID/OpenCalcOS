@@ -33,17 +33,17 @@
  * information.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/can/dev.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/can/dev.h>
 
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <beep/of_platform.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
 #include <asm/prom.h>
 
 #include "sja1000.h"

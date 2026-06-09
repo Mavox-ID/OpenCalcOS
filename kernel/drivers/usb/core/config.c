@@ -1,11 +1,11 @@
-#include <linux/usb.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/quirks.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/device.h>
+#include <beep/usb.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/hcd.h>
+#include <beep/usb/quirks.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/device.h>
 #include <asm/byteorder.h>
 #include "usb.h"
 

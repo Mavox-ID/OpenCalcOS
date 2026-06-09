@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux/Xtensa-specific parts of the memory manager.
+# Makefile for the Beep/Xtensa-specific parts of the memory manager.
 #
 
 obj-y			:= init.o cache.o misc.o

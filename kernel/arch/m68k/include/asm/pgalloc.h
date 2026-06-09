@@ -1,8 +1,8 @@
 #ifndef M68K_PGALLOC_H
 #define M68K_PGALLOC_H
 
-#include <linux/mm.h>
-#include <linux/highmem.h>
+#include <beep/mm.h>
+#include <beep/highmem.h>
 #include <asm/setup.h>
 
 #ifdef CONFIG_MMU

@@ -1,26 +1,26 @@
 /*
- *  linux/fs/proc/inode.c
+ *  beep/fs/proc/inode.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/time.h>
-#include <linux/proc_fs.h>
-#include <linux/kernel.h>
-#include <linux/pid_namespace.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/completion.h>
-#include <linux/poll.h>
-#include <linux/file.h>
-#include <linux/limits.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/sysctl.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/mount.h>
+#include <beep/time.h>
+#include <beep/proc_fs.h>
+#include <beep/kernel.h>
+#include <beep/pid_namespace.h>
+#include <beep/mm.h>
+#include <beep/string.h>
+#include <beep/stat.h>
+#include <beep/completion.h>
+#include <beep/poll.h>
+#include <beep/file.h>
+#include <beep/limits.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/sysctl.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/mount.h>
 
 #include <asm/uaccess.h>
 

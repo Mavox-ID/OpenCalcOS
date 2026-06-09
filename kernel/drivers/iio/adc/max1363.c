@@ -2,10 +2,10 @@
   * iio/adc/max1363.c
   * Copyright (C) 2008-2010 Jonathan Cameron
   *
-  * based on linux/drivers/i2c/chips/max123x
+  * based on beep/drivers/i2c/chips/max123x
   * Copyright (C) 2002-2004 Stefan Eletzhofer
   *
-  * based on linux/drivers/acron/char/pcf8583.c
+  * based on beep/drivers/acron/char/pcf8583.c
   * Copyright (C) 2000 Russell King
   *
   * This program is free software; you can redistribute it and/or modify
@@ -21,24 +21,24 @@
   * - Control of internal reference.
   */
 
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/sysfs.h>
-#include <linux/list.h>
-#include <linux/i2c.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/module.h>
+#include <beep/interrupt.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/sysfs.h>
+#include <beep/list.h>
+#include <beep/i2c.h>
+#include <beep/regulator/consumer.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/module.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/driver.h>
-#include <linux/iio/kfifo_buf.h>
-#include <linux/iio/trigger_consumer.h>
+#include <beep/iio/iio.h>
+#include <beep/iio/sysfs.h>
+#include <beep/iio/events.h>
+#include <beep/iio/buffer.h>
+#include <beep/iio/driver.h>
+#include <beep/iio/kfifo_buf.h>
+#include <beep/iio/trigger_consumer.h>
 
 #define MAX1363_SETUP_BYTE(a) ((a) | 0x80)
 

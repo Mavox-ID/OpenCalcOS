@@ -28,11 +28,11 @@
  *
  */
 
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/videodev2.h>
-#include <linux/module.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/videodev2.h>
+#include <beep/module.h>
 
 #include <media/v4l2-device.h>
 #include <media/v4l2-common.h>
@@ -57,7 +57,7 @@ module_param(debug, bool, 0644);
 MODULE_PARM_DESC(debug, "Debug level (0-1)");
 
 MODULE_AUTHOR("Texas Instruments");
-MODULE_DESCRIPTION("TVP514X linux decoder driver");
+MODULE_DESCRIPTION("TVP514X beep decoder driver");
 MODULE_LICENSE("GPL");
 
 /* enum tvp514x_std - enum for supported standards */

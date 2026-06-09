@@ -6,8 +6,8 @@
  * under the terms of the GNU General Public License version 2 as published
  * by the Free Software Foundation, incorporated herein by reference.
  */
-#include <linux/pci.h>
-#include <linux/module.h>
+#include <beep/pci.h>
+#include <beep/module.h>
 #include "net_driver.h"
 #include "efx.h"
 #include "nic.h"

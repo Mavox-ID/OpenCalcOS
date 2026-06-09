@@ -12,27 +12,27 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/mmc/host.h>
-#include <linux/mtd/physmap.h>
-#include <linux/pm.h>
-#include <linux/gpio.h>
-#include <linux/backlight.h>
-#include <linux/i2c.h>
-#include <linux/i2c/pxa-i2c.h>
-#include <linux/io.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/ads7846.h>
-#include <linux/spi/corgi_lcd.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/mtd/sharpsl.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/major.h>
+#include <beep/fs.h>
+#include <beep/interrupt.h>
+#include <beep/mmc/host.h>
+#include <beep/mtd/physmap.h>
+#include <beep/pm.h>
+#include <beep/gpio.h>
+#include <beep/backlight.h>
+#include <beep/i2c.h>
+#include <beep/i2c/pxa-i2c.h>
+#include <beep/io.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/ads7846.h>
+#include <beep/spi/corgi_lcd.h>
+#include <beep/spi/pxa2xx_spi.h>
+#include <beep/mtd/sharpsl.h>
+#include <beep/input/matrix_keypad.h>
+#include <beep/module.h>
 #include <video/w100fb.h>
 
 #include <asm/setup.h>
@@ -46,8 +46,8 @@
 #include <asm/mach/irq.h>
 
 #include <mach/pxa25x.h>
-#include <linux/platform_data/irda-pxaficp.h>
-#include <linux/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/irda-pxaficp.h>
+#include <beep/platform_data/mmc-pxamci.h>
 #include <mach/udc.h>
 #include <mach/corgi.h>
 #include <mach/sharpsl_pm.h>

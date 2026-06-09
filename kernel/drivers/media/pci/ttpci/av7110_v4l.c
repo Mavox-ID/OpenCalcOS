@@ -1,5 +1,5 @@
 /*
- * av7110_v4l.c: av7110 video4linux interface for DVB and Siemens DVB-C analog module
+ * av7110_v4l.c: av7110 video4beep interface for DVB and Siemens DVB-C analog module
  *
  * Copyright (C) 1999-2002 Ralph  Metzler
  *                       & Marcus Metzler for convergence integrated media GmbH
@@ -22,17 +22,17 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  * Or, point your browser to http://www.gnu.org/copyleft/gpl.html
  *
- * the project's page is at http://www.linuxtv.org/ 
+ * the project's page is at http://www.beeptv.org/ 
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/timer.h>
-#include <linux/poll.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/delay.h>
+#include <beep/fs.h>
+#include <beep/timer.h>
+#include <beep/poll.h>
 
 #include "av7110.h"
 #include "av7110_hw.h"

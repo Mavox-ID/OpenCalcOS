@@ -35,24 +35,24 @@
  *  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/param.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/in.h>
-#include <linux/pagemap.h>
-#include <linux/proc_fs.h>
-#include <linux/kdev_t.h>
-#include <linux/module.h>
-#include <linux/utsname.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/msg_prot.h>
-#include <linux/sunrpc/gss_api.h>
-#include <linux/nfs.h>
-#include <linux/nfs4.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_idmap.h>
+#include <beep/param.h>
+#include <beep/time.h>
+#include <beep/mm.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/in.h>
+#include <beep/pagemap.h>
+#include <beep/proc_fs.h>
+#include <beep/kdev_t.h>
+#include <beep/module.h>
+#include <beep/utsname.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/sunrpc/msg_prot.h>
+#include <beep/sunrpc/gss_api.h>
+#include <beep/nfs.h>
+#include <beep/nfs4.h>
+#include <beep/nfs_fs.h>
+#include <beep/nfs_idmap.h>
 
 #include "nfs4_fs.h"
 #include "internal.h"
@@ -1343,7 +1343,7 @@ static void encode_share_access(struct xdr_stream *xdr, fmode_t fmode)
 	default:
 		*p++ = cpu_to_be32(0);
 	}
-	*p = cpu_to_be32(0);		/* for linux, share_deny = 0 always */
+	*p = cpu_to_be32(0);		/* for beep, share_deny = 0 always */
 }
 
 static inline void encode_openhdr(struct xdr_stream *xdr, const struct nfs_openargs *arg)
@@ -7206,7 +7206,7 @@ nfs4_stat_to_errno(int stat)
 	/* If we cannot translate the error, the recovery routines should
 	 * handle it.
 	 * Note: remaining NFSv4 error codes have values > 10000, so should
-	 * not conflict with native Linux error codes.
+	 * not conflict with native Beep error codes.
 	 */
 	return -stat;
 }

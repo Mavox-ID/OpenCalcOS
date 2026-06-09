@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2000-2002 Andre Hedrick <andre@linux-ide.org>
+ *  Copyright (C) 2000-2002 Andre Hedrick <andre@beep-ide.org>
  *  Copyright (C) 2006-2007 MontaVista Software, Inc. <source@mvista.com>
  *
  * This is a look-alike variation of the ICH0 PIIX4 Ultra-66,
@@ -7,12 +7,12 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/ide.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/ide.h>
+#include <beep/init.h>
 
 #define DRV_NAME "slc90e66"
 

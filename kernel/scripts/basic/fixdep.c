@@ -34,7 +34,7 @@
  * the config symbols are rebuilt.
  *
  * So if the user changes his CONFIG_HIS_DRIVER option, only the objects
- * which depend on "include/linux/config/his/driver.h" will be rebuilt,
+ * which depend on "include/beep/config/his/driver.h" will be rebuilt,
  * so most likely only his driver ;-)
  *
  * The idea above dates, by the way, back to Michael E Chastain, AFAIK.
@@ -97,8 +97,8 @@
 /*
  * Note 2: if somebody writes HELLO_CONFIG_BOOM in a file, it will depend onto
  * CONFIG_BOOM. This could seem a bug (not too hard to fix), but please do not
- * fix it! Some UserModeLinux files (look at arch/um/) call CONFIG_BOOM as
- * UML_CONFIG_BOOM, to avoid conflicts with /usr/include/linux/autoconf.h,
+ * fix it! Some UserModeBeep files (look at arch/um/) call CONFIG_BOOM as
+ * UML_CONFIG_BOOM, to avoid conflicts with /usr/include/beep/autoconf.h,
  * through arch/um/include/uml-config.h; this fixdep "bug" makes sure that
  * those files will have correct dependencies.
  */
@@ -345,7 +345,7 @@ static void parse_dep_file(void *map, size_t len)
 		memcpy(s, m, p-m); s[p-m] = 0;
 		if (strrcmp(s, "include/generated/autoconf.h") &&
 		    strrcmp(s, "arch/um/include/uml-config.h") &&
-		    strrcmp(s, "include/linux/kconfig.h") &&
+		    strrcmp(s, "include/beep/kconfig.h") &&
 		    strrcmp(s, ".ver")) {
 			/*
 			 * Do not list the source file as dependency, so that

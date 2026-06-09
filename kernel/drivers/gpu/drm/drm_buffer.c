@@ -32,7 +32,7 @@
  * Pauli Nieminen <suokkos-at-gmail-dot-com>
  */
 
-#include <linux/export.h>
+#include <beep/export.h>
 #include <drm/drm_buffer.h>
 
 /**

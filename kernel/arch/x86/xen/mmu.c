@@ -38,16 +38,16 @@
  *
  * Jeremy Fitzhardinge <jeremy@xensource.com>, XenSource Inc, 2007
  */
-#include <linux/sched.h>
-#include <linux/highmem.h>
-#include <linux/debugfs.h>
-#include <linux/bug.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/memblock.h>
-#include <linux/seq_file.h>
-#include <linux/crash_dump.h>
+#include <beep/sched.h>
+#include <beep/highmem.h>
+#include <beep/debugfs.h>
+#include <beep/bug.h>
+#include <beep/vmalloc.h>
+#include <beep/module.h>
+#include <beep/gfp.h>
+#include <beep/memblock.h>
+#include <beep/seq_file.h>
+#include <beep/crash_dump.h>
 
 #include <trace/events/xen.h>
 
@@ -435,7 +435,7 @@ static pteval_t xen_pte_val(pte_t pte)
 {
 	pteval_t pteval = pte.pte;
 #if 0
-	/* If this is a WC pte, convert back from Xen WC to Linux WC */
+	/* If this is a WC pte, convert back from Xen WC to Beep WC */
 	if ((pteval & (_PAGE_PAT | _PAGE_PCD | _PAGE_PWT)) == _PAGE_PAT) {
 		WARN_ON(!pat_enabled);
 		pteval = (pteval & ~_PAGE_PAT) | _PAGE_PWT;
@@ -459,9 +459,9 @@ PV_CALLEE_SAVE_REGS_THUNK(xen_pgd_val);
  * are reserved for now, to correspond to the Intel-reserved PAT
  * types.
  *
- * We expect Linux's PAT set as follows:
+ * We expect Beep's PAT set as follows:
  *
- * Idx  PTE flags        Linux    Xen    Default
+ * Idx  PTE flags        Beep    Xen    Default
  * 0                     WB       WB     WB
  * 1            PWT      WC       WT     WT
  * 2        PCD          UC-      UC-    UC-
@@ -474,7 +474,7 @@ PV_CALLEE_SAVE_REGS_THUNK(xen_pgd_val);
 
 void xen_set_pat(u64 pat)
 {
-	/* We expect Linux to use a PAT setting of
+	/* We expect Beep to use a PAT setting of
 	 * UC UC- WC WB (ignoring the PAT flag) */
 	WARN_ON(pat != 0x0007010600070106ull);
 }
@@ -483,7 +483,7 @@ static pte_t xen_make_pte(pteval_t pte)
 {
 	phys_addr_t addr = (pte & PTE_PFN_MASK);
 #if 0
-	/* If Linux is trying to set a WC pte, then map to the Xen WC.
+	/* If Beep is trying to set a WC pte, then map to the Xen WC.
 	 * If _PAGE_PAT is set, then it probably means it is really
 	 * _PAGE_PSE, so avoid fiddling with the PAT mapping and hope
 	 * things work out OK...

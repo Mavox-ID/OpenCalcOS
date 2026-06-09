@@ -11,7 +11,7 @@
 
 #ifdef CONFIG_EARLY_PRINTK
 /* For those that don't include it already */
-#include <linux/console.h>
+#include <beep/console.h>
 
 extern int setup_early_printk(char *);
 extern void enable_shadow_console(void);

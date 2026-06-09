@@ -10,11 +10,11 @@
  *	the License, or (at your option) any later version.
  */
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/types.h>
 
 #include <dvb_frontend.h>
 

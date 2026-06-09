@@ -6,9 +6,9 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/ptrace.h>		/* for linux pt_regs struct */
-#include <linux/kgdb.h>
-#include <linux/uaccess.h>
+#include <beep/ptrace.h>		/* for beep pt_regs struct */
+#include <beep/kgdb.h>
+#include <beep/uaccess.h>
 
 void pt_regs_to_gdb_regs(unsigned long *gdb_regs, struct pt_regs *regs)
 {

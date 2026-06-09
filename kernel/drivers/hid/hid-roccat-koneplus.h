@@ -12,7 +12,7 @@
  * any later version.
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 enum {
 	KONEPLUS_SIZE_ACTUAL_PROFILE = 0x03,

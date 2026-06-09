@@ -18,10 +18,10 @@
  * Setting up the clock on the MIPS boards.
  */
 
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/err.h>
-#include <linux/clk.h>
+#include <beep/init.h>
+#include <beep/time.h>
+#include <beep/err.h>
+#include <beep/clk.h>
 
 #include <asm/time.h>
 #include <asm/mach-ar7/ar7.h>

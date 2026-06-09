@@ -9,11 +9,11 @@
  * the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/gpio.h>
-#include <linux/fb.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
+#include <beep/gpio.h>
+#include <beep/fb.h>
+#include <beep/platform_device.h>
 
 #include <video/atmel_lcdc.h>
 

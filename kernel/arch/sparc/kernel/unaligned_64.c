@@ -7,20 +7,20 @@
  */
 
 
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/module.h>
+#include <beep/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/module.h>
 #include <asm/asi.h>
 #include <asm/ptrace.h>
 #include <asm/pstate.h>
 #include <asm/processor.h>
 #include <asm/uaccess.h>
-#include <linux/smp.h>
-#include <linux/bitops.h>
-#include <linux/perf_event.h>
-#include <linux/ratelimit.h>
+#include <beep/smp.h>
+#include <beep/bitops.h>
+#include <beep/perf_event.h>
+#include <beep/ratelimit.h>
 #include <asm/fpumacro.h>
 #include <asm/cacheflush.h>
 

@@ -193,7 +193,7 @@ netrx_radiotap(unifi_priv_t *priv,
     skb->protocol = __constant_htons(ETH_P_80211_RAW);
     memset(skb->cb, 0, sizeof(skb->cb));
 
-    /* Pass up to Linux network stack */
+    /* Pass up to Beep network stack */
     netif_rx_ni(skb);
 
     dev->last_rx = jiffies;
@@ -304,7 +304,7 @@ netrx_prism(unifi_priv_t *priv,
     skb->protocol = __constant_htons(ETH_P_80211_RAW);
     memset(skb->cb, 0, sizeof(skb->cb));
 
-    /* Pass up to Linux network stack */
+    /* Pass up to Beep network stack */
     netif_rx_ni(skb);
 
     dev->last_rx = jiffies;

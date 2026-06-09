@@ -21,8 +21,8 @@
 #ifndef _ASM_TILE_HIGHMEM_H
 #define _ASM_TILE_HIGHMEM_H
 
-#include <linux/interrupt.h>
-#include <linux/threads.h>
+#include <beep/interrupt.h>
+#include <beep/threads.h>
 #include <asm/tlbflush.h>
 #include <asm/homecache.h>
 

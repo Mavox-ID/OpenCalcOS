@@ -1,5 +1,5 @@
 /*
- * helper functions for vmalloc video4linux capture buffers
+ * helper functions for vmalloc video4beep capture buffers
  *
  * The functions expect the hardware being able to scatter gather
  * (i.e. the buffers are not linear in physical memory, but fragmented
@@ -13,15 +13,15 @@
  * the Free Software Foundation; either version 2
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
 
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
+#include <beep/pci.h>
+#include <beep/vmalloc.h>
+#include <beep/pagemap.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>
 
@@ -40,7 +40,7 @@
 static int debug;
 module_param(debug, int, 0644);
 
-MODULE_DESCRIPTION("helper module to manage video4linux vmalloc buffers");
+MODULE_DESCRIPTION("helper module to manage video4beep vmalloc buffers");
 MODULE_AUTHOR("Mauro Carvalho Chehab <mchehab@infradead.org>");
 MODULE_LICENSE("GPL");
 

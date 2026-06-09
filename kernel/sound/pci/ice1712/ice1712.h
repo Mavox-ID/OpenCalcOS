@@ -22,7 +22,7 @@
  *
  */
 
-#include <linux/io.h>
+#include <beep/io.h>
 #include <sound/control.h>
 #include <sound/ac97_codec.h>
 #include <sound/rawmidi.h>

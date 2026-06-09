@@ -7,7 +7,7 @@
 #ifndef __ARCH_SPARC64_ATOMIC__
 #define __ARCH_SPARC64_ATOMIC__
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/cmpxchg.h>
 
 #define ATOMIC_INIT(i)		{ (i) }

@@ -430,7 +430,7 @@
 #define IRQ_PINT3_POS		28
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * bfin pint registers layout

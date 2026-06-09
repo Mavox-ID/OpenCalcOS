@@ -10,13 +10,13 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/spinlock.h>
+#include <beep/fb.h>
+#include <beep/backlight.h>
 
 #include <cpu/dac.h>
 #include <mach/hp6xx.h>

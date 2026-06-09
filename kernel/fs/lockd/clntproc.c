@@ -1,22 +1,22 @@
 /*
- * linux/fs/lockd/clntproc.c
+ * beep/fs/lockd/clntproc.c
  *
  * RPC procedures for the client side NLM implementation
  *
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/nfs_fs.h>
-#include <linux/utsname.h>
-#include <linux/freezer.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/lockd/lockd.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/nfs_fs.h>
+#include <beep/utsname.h>
+#include <beep/freezer.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/sunrpc/svc.h>
+#include <beep/lockd/lockd.h>
 
 #define NLMDBG_FACILITY		NLMDBG_CLIENT
 #define NLMCLNT_GRACE_WAIT	(5*HZ)
@@ -643,7 +643,7 @@ nlmclnt_reclaim(struct nlm_host *host, struct file_lock *fl)
 	 * FIXME: This is a serious failure. We can
 	 *
 	 *  a.	Ignore the problem
-	 *  b.	Send the owning process some signal (Linux doesn't have
+	 *  b.	Send the owning process some signal (Beep doesn't have
 	 *	SIGLOST, though...)
 	 *  c.	Retry the operation
 	 *

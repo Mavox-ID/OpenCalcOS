@@ -1,5 +1,5 @@
 /*
- * PPP synchronous tty channel driver for Linux.
+ * PPP synchronous tty channel driver for Beep.
  *
  * This is a ppp channel driver that can be used with tty device drivers
  * that are frame oriented, such as synchronous HDLC devices.
@@ -32,20 +32,20 @@
  * ==FILEVERSION 20040616==
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/tty.h>
-#include <linux/netdevice.h>
-#include <linux/poll.h>
-#include <linux/ppp_defs.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/ppp_channel.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/skbuff.h>
+#include <beep/tty.h>
+#include <beep/netdevice.h>
+#include <beep/poll.h>
+#include <beep/ppp_defs.h>
+#include <beep/ppp-ioctl.h>
+#include <beep/ppp_channel.h>
+#include <beep/spinlock.h>
+#include <beep/completion.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
 #include <asm/unaligned.h>
 #include <asm/uaccess.h>
 

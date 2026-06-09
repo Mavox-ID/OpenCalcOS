@@ -14,23 +14,23 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  *
  * Copyright (C) 2001, 2002, 2003 Broadcom Corporation
- * Copyright (C) 2007 Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 2007 Ralf Baechle <ralf@beep-mips.org>
  * Copyright (C) 2007 MIPS Technologies, Inc.
- *    written by Ralf Baechle <ralf@linux-mips.org>
+ *    written by Ralf Baechle <ralf@beep-mips.org>
  */
 
 #undef DEBUG
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/vmalloc.h>
+#include <beep/fs.h>
+#include <beep/errno.h>
+#include <beep/wait.h>
 #include <asm/io.h>
 #include <asm/sibyte/sb1250.h>
 
@@ -602,5 +602,5 @@ module_init(sbprof_tb_init);
 module_exit(sbprof_tb_cleanup);
 
 MODULE_ALIAS_CHARDEV_MAJOR(SBPROF_TB_MAJOR);
-MODULE_AUTHOR("Ralf Baechle <ralf@linux-mips.org>");
+MODULE_AUTHOR("Ralf Baechle <ralf@beep-mips.org>");
 MODULE_LICENSE("GPL");

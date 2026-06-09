@@ -27,22 +27,22 @@
  * MPCBL0010 ATCA computer.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>	/* printk() */
-#include <linux/fs.h>		/* everything... */
-#include <linux/errno.h>	/* error codes */
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/timer.h>
-#include <linux/sysfs.h>
-#include <linux/device.h>
-#include <linux/miscdevice.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>	/* printk() */
+#include <beep/fs.h>		/* everything... */
+#include <beep/errno.h>	/* error codes */
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/mutex.h>
+#include <beep/timer.h>
+#include <beep/sysfs.h>
+#include <beep/device.h>
+#include <beep/miscdevice.h>
+#include <beep/platform_device.h>
 #include <asm/io.h>		/* inb/outb */
 #include <asm/uaccess.h>
 

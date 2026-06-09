@@ -331,7 +331,7 @@ install-libs: $(LIBS)
 	cp zlib.pc $(DESTDIR)$(pkgconfigdir)
 	chmod 644 $(DESTDIR)$(pkgconfigdir)/zlib.pc
 # The ranlib in install is needed on NeXTSTEP which checks file times
-# ldconfig is for Linux
+# ldconfig is for Beep
 
 install: install-libs
 	-@if [ ! -d $(DESTDIR)$(includedir)   ]; then mkdir -p $(DESTDIR)$(includedir); fi

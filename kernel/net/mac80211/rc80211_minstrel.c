@@ -44,13 +44,13 @@
  *   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  *   THE POSSIBILITY OF SUCH DAMAGES.
  */
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/debugfs.h>
-#include <linux/random.h>
-#include <linux/ieee80211.h>
-#include <linux/slab.h>
+#include <beep/netdevice.h>
+#include <beep/types.h>
+#include <beep/skbuff.h>
+#include <beep/debugfs.h>
+#include <beep/random.h>
+#include <beep/ieee80211.h>
+#include <beep/slab.h>
 #include <net/mac80211.h>
 #include "rate.h"
 #include "rc80211_minstrel.h"

@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -37,32 +37,32 @@
  *		2 of the License, or (at your option) any later version.
  */
 
-#include <linux/types.h>
-#include <linux/atomic.h>
+#include <beep/types.h>
+#include <beep/atomic.h>
 #include <asm/byteorder.h>
 #include <asm/current.h>
 #include <asm/uaccess.h>
 #include <asm/ioctls.h>
-#include <linux/stddef.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/aio.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/sockios.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/mroute.h>
-#include <linux/netdevice.h>
-#include <linux/in_route.h>
-#include <linux/route.h>
-#include <linux/skbuff.h>
+#include <beep/stddef.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/aio.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/spinlock.h>
+#include <beep/sockios.h>
+#include <beep/socket.h>
+#include <beep/in.h>
+#include <beep/mroute.h>
+#include <beep/netdevice.h>
+#include <beep/in_route.h>
+#include <beep/route.h>
+#include <beep/skbuff.h>
 #include <net/net_namespace.h>
 #include <net/dst.h>
 #include <net/sock.h>
-#include <linux/ip.h>
-#include <linux/net.h>
+#include <beep/ip.h>
+#include <beep/net.h>
 #include <net/ip.h>
 #include <net/icmp.h>
 #include <net/udp.h>
@@ -72,12 +72,12 @@
 #include <net/inet_common.h>
 #include <net/checksum.h>
 #include <net/xfrm.h>
-#include <linux/rtnetlink.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/compat.h>
+#include <beep/rtnetlink.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter_ipv4.h>
+#include <beep/compat.h>
 
 static struct raw_hashinfo raw_v4_hashinfo = {
 	.lock = __RW_LOCK_UNLOCKED(raw_v4_hashinfo.lock),
@@ -547,7 +547,7 @@ static int raw_sendmsg(struct kiocb *iocb, struct sock *sk, struct msghdr *msg,
 
 	if (ipc.opt) {
 		err = -EINVAL;
-		/* Linux does not mangle headers on raw sockets,
+		/* Beep does not mangle headers on raw sockets,
 		 * so that IP options + IP_HDRINCL is non-sense.
 		 */
 		if (inet->hdrincl)

@@ -12,8 +12,8 @@
  * (C) 1999		David A. Hinds
  */
 
-#ifndef _LINUX_CISCODE_H
-#define _LINUX_CISCODE_H
+#ifndef _BEEP_CISCODE_H
+#define _BEEP_CISCODE_H
 
 /* Manufacturer and Product ID codes */
 
@@ -128,4 +128,4 @@
 
 #define MANFID_NEC			0x0010
 
-#endif /* _LINUX_CISCODE_H */
+#endif /* _BEEP_CISCODE_H */

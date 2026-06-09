@@ -7,18 +7,18 @@
  *
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/rtc.h>
-#include <linux/types.h>
-#include <linux/bcd.h>
-#include <linux/rtc-ds2404.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/rtc.h>
+#include <beep/types.h>
+#include <beep/bcd.h>
+#include <beep/rtc-ds2404.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
 
-#include <linux/io.h>
+#include <beep/io.h>
 
 #define DS2404_STATUS_REG 0x200
 #define DS2404_CONTROL_REG 0x201

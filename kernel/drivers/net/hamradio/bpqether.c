@@ -49,43 +49,43 @@
  *						and accepted source address
  *						can be configured by an ioctl()
  *						call.
- *						Fixed to match Linux networking
+ *						Fixed to match Beep networking
  *						changes - 2.1.15.
  *	BPQ   004	Joerg(DL1BKE)		Fixed to not lock up on ifconfig.
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/net.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/socket.h>
+#include <beep/in.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/net.h>
+#include <beep/slab.h>
 #include <net/ax25.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
+#include <beep/inet.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/if_arp.h>
+#include <beep/skbuff.h>
 #include <net/sock.h>
 #include <asm/uaccess.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/stat.h>
-#include <linux/netfilter.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/rtnetlink.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/notifier.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/stat.h>
+#include <beep/netfilter.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/rtnetlink.h>
 
 #include <net/ip.h>
 #include <net/arp.h>
 #include <net/net_namespace.h>
 
-#include <linux/bpqether.h>
+#include <beep/bpqether.h>
 
 static const char banner[] __initconst = KERN_INFO \
 	"AX.25: bpqether driver version 004\n";

@@ -12,25 +12,25 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/gpio_keys.h>
-#include <linux/gpio.h>
-#include <linux/leds.h>
-#include <linux/i2c.h>
-#include <linux/i2c/pxa-i2c.h>
-#include <linux/i2c/pca953x.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/ads7846.h>
-#include <linux/spi/corgi_lcd.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/mtd/sharpsl.h>
-#include <linux/mtd/physmap.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/regulator/machine.h>
-#include <linux/io.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/gpio_keys.h>
+#include <beep/gpio.h>
+#include <beep/leds.h>
+#include <beep/i2c.h>
+#include <beep/i2c/pxa-i2c.h>
+#include <beep/i2c/pca953x.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/ads7846.h>
+#include <beep/spi/corgi_lcd.h>
+#include <beep/spi/pxa2xx_spi.h>
+#include <beep/mtd/sharpsl.h>
+#include <beep/mtd/physmap.h>
+#include <beep/input/matrix_keypad.h>
+#include <beep/regulator/machine.h>
+#include <beep/io.h>
+#include <beep/module.h>
 
 #include <asm/setup.h>
 #include <asm/mach-types.h>
@@ -41,10 +41,10 @@
 #include <mach/pxa27x.h>
 #include <mach/pxa27x-udc.h>
 #include <mach/reset.h>
-#include <linux/platform_data/irda-pxaficp.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
-#include <linux/platform_data/video-pxafb.h>
+#include <beep/platform_data/irda-pxaficp.h>
+#include <beep/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/usb-ohci-pxa27x.h>
+#include <beep/platform_data/video-pxafb.h>
 #include <mach/spitz.h>
 #include <mach/sharpsl_pm.h>
 #include <mach/smemc.h>

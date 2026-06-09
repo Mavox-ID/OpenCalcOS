@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/fault.c
+ *  beep/arch/arm/mm/fault.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  *  Modifications for ARM processor (c) 1995-2004 Russell King
@@ -8,17 +8,17 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/mm.h>
-#include <linux/hardirq.h>
-#include <linux/init.h>
-#include <linux/kprobes.h>
-#include <linux/uaccess.h>
-#include <linux/page-flags.h>
-#include <linux/sched.h>
-#include <linux/highmem.h>
-#include <linux/perf_event.h>
+#include <beep/module.h>
+#include <beep/signal.h>
+#include <beep/mm.h>
+#include <beep/hardirq.h>
+#include <beep/init.h>
+#include <beep/kprobes.h>
+#include <beep/uaccess.h>
+#include <beep/page-flags.h>
+#include <beep/sched.h>
+#include <beep/highmem.h>
+#include <beep/perf_event.h>
 
 #include <asm/exception.h>
 #include <asm/pgtable.h>
@@ -459,7 +459,7 @@ do_translation_fault(unsigned long addr, unsigned int fsr,
 	index = 0;
 #else
 	/*
-	 * On ARM one Linux PGD entry contains two hardware entries (see page
+	 * On ARM one Beep PGD entry contains two hardware entries (see page
 	 * tables layout in pgtable.h). We normally guarantee that we always
 	 * fill both L1 entries. But create_mapping() doesn't follow the rule.
 	 * It can create inidividual L1 entries, so here we have to call

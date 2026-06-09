@@ -12,7 +12,7 @@
  */
 
 #include <asm/cacheflush.h>
-#include <linux/ftrace.h>
+#include <beep/ftrace.h>
 
 #ifdef CONFIG_FUNCTION_GRAPH_TRACER
 /*

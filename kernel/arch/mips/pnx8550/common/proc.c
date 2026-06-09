@@ -12,13 +12,13 @@
  *  with this program; if not, write to the Free Software Foundation, Inc.,
  *  59 Temple Place - Suite 330, Boston MA 02111-1307, USA.
  */
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/irq.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/random.h>
+#include <beep/init.h>
+#include <beep/proc_fs.h>
+#include <beep/irq.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
+#include <beep/random.h>
 
 #include <asm/io.h>
 #include <int.h>

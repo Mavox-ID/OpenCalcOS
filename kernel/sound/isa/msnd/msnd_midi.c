@@ -24,12 +24,12 @@
  *
  */
 
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
-#include <linux/export.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/errno.h>
+#include <beep/export.h>
 #include <sound/core.h>
 #include <sound/rawmidi.h>
 

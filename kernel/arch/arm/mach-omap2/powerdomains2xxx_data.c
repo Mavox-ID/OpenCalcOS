@@ -11,8 +11,8 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
 
 #include "soc.h"
 #include "powerdomain.h"

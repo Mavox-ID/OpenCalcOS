@@ -21,7 +21,7 @@
  * driver for VIA VT1636 LVDS Transmitter
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include "via_aux.h"
 
 

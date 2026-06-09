@@ -43,19 +43,19 @@
  * Code formatting improvements
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/usb.h>
-#include <linux/types.h>
-#include <linux/ethtool.h>
-#include <linux/dma-mapping.h>
-#include <linux/wait.h>
-#include <linux/firmware.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/usb.h>
+#include <beep/types.h>
+#include <beep/ethtool.h>
+#include <beep/dma-mapping.h>
+#include <beep/wait.h>
+#include <beep/firmware.h>
 #include <asm/uaccess.h>
 #include <asm/byteorder.h>
 

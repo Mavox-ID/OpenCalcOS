@@ -8,7 +8,7 @@
  * Originally written by Brett Russ.
  * Extensive overhaul and enhancement by Mark Lord <mlord@pobox.com>.
  *
- * Please ALWAYS copy linux-ide@vger.kernel.org on emails.
+ * Please ALWAYS copy beep-ide@vger.kernel.org on emails.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -33,7 +33,7 @@
  * --> Add sysfs attributes for per-chip / per-HC IRQ coalescing thresholds.
  *
  * --> [Experiment, Marvell value added] Is it possible to use target
- *       mode to cross-connect two Linux boxes with Marvell cards?  If so,
+ *       mode to cross-connect two Beep boxes with Marvell cards?  If so,
  *       creating LibATA target mode support would be very interesting.
  *
  *       Target mode, for those without docs, is the ability to directly
@@ -49,28 +49,28 @@
  * work correctly otherwise  (note: this is a pretty rare condition).
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dmapool.h>
-#include <linux/dma-mapping.h>
-#include <linux/device.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
-#include <linux/mbus.h>
-#include <linux/bitops.h>
-#include <linux/gfp.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/dmapool.h>
+#include <beep/dma-mapping.h>
+#include <beep/device.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/ata_platform.h>
+#include <beep/mbus.h>
+#include <beep/bitops.h>
+#include <beep/gfp.h>
+#include <beep/of.h>
+#include <beep/of_irq.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>
-#include <linux/libata.h>
+#include <beep/libata.h>
 
 #define DRV_NAME	"sata_mv"
 #define DRV_VERSION	"1.28"
@@ -2072,7 +2072,7 @@ static void mv_qc_prep(struct ata_queued_cmd *qc)
 	default:
 		/* The only other commands EDMA supports in non-queued and
 		 * non-NCQ mode are: [RW] STREAM DMA and W DMA FUA EXT, none
-		 * of which are defined/used by Linux.  If we get here, this
+		 * of which are defined/used by Beep.  If we get here, this
 		 * driver needs work.
 		 *
 		 * FIXME: modify libata to give qc_prep a return value and
@@ -3819,7 +3819,7 @@ static int mv_chip_id(struct ata_host *host, unsigned int board_idx)
 			 *
 			 * Unconfigured drives are treated as "Legacy"
 			 * by the BIOS, and it overwrites sector 8 with
-			 * a "Lgcy" metadata block prior to Linux boot.
+			 * a "Lgcy" metadata block prior to Beep boot.
 			 *
 			 * Configured drives (RAID or JBOD) leave sector 8
 			 * alone, but instead overwrite a high numbered

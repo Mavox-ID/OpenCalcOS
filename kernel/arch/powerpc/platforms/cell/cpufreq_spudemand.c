@@ -20,12 +20,12 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/cpufreq.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/atomic.h>
+#include <beep/cpufreq.h>
+#include <beep/sched.h>
+#include <beep/module.h>
+#include <beep/timer.h>
+#include <beep/workqueue.h>
+#include <beep/atomic.h>
 #include <asm/machdep.h>
 #include <asm/spu.h>
 

@@ -11,16 +11,16 @@
  * (at your option) any later version.
  */
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_gpio.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/slab.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_gpio.h>
+#include <beep/pinctrl/pinctrl.h>
+#include <beep/slab.h>
 
 /* Private data structure for of_gpiochip_find_and_xlate */
 struct gg_data {
@@ -56,7 +56,7 @@ static int of_gpiochip_find_and_xlate(struct gpio_chip *gc, void *data)
  * @index:	index of the GPIO
  * @flags:	a flags pointer to fill in
  *
- * Returns GPIO number to use with Linux generic GPIO API, or one of the errno
+ * Returns GPIO number to use with Beep generic GPIO API, or one of the errno
  * value on the error condition. If @flags is not NULL the function also fills
  * in flags for the GPIO.
  */

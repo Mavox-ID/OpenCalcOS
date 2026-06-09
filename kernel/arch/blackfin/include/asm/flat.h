@@ -1,5 +1,5 @@
 /*
- * uClinux flat-format executables
+ * uCbeep flat-format executables
  *
  * Copyright 2003-2009 Analog Devices Inc.
  *

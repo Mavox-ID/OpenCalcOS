@@ -48,8 +48,8 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/zutil.h>
+#include <beep/module.h>
+#include <beep/zutil.h>
 #include "defutil.h"
 
 

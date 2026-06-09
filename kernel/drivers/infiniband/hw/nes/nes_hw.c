@@ -31,15 +31,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/if_vlan.h>
-#include <linux/inet_lro.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/if_vlan.h>
+#include <beep/inet_lro.h>
+#include <beep/slab.h>
 
 #include "nes.h"
 

@@ -1,4 +1,4 @@
-/* linux/arch/arm/plat-samsung/include/plat/irq.h
+/* beep/arch/arm/plat-samsung/include/plat/irq.h
  *
  * Copyright (c) 2004-2005 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
@@ -10,7 +10,7 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/io.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 #include <mach/regs-irq.h>

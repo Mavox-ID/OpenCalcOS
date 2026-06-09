@@ -21,9 +21,9 @@
  * XXX What about pad muxing?
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/platform_data/gpio-omap.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/platform_data/gpio-omap.h>
 
 #include "prm.h"
 #include "common.h"

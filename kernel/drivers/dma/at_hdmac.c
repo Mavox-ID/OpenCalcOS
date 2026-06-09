@@ -14,16 +14,16 @@
  * found on AT91SAM9263.
  */
 
-#include <linux/clk.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <beep/clk.h>
+#include <beep/dmaengine.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmapool.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
 
 #include "at_hdmac_regs.h"
 #include "dmaengine.h"

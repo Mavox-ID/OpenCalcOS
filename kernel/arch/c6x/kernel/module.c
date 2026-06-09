@@ -9,10 +9,10 @@
  *  published by the Free Software Foundation.
  *
  */
-#include <linux/moduleloader.h>
-#include <linux/elf.h>
-#include <linux/vmalloc.h>
-#include <linux/kernel.h>
+#include <beep/moduleloader.h>
+#include <beep/elf.h>
+#include <beep/vmalloc.h>
+#include <beep/kernel.h>
 
 static inline int fixup_pcr(u32 *ip, Elf32_Addr dest, u32 maskbits, int shift)
 {

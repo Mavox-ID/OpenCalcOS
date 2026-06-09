@@ -1,8 +1,8 @@
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/ceph/pagelist.h>
+#include <beep/module.h>
+#include <beep/gfp.h>
+#include <beep/pagemap.h>
+#include <beep/highmem.h>
+#include <beep/ceph/pagelist.h>
 
 static void ceph_pagelist_unmap_tail(struct ceph_pagelist *pl)
 {

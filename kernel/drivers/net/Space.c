@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -27,11 +27,11 @@
  *		as published by the Free Software Foundation; either version
  *		2 of the License, or (at your option) any later version.
  */
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/netlink.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/netlink.h>
 
 /* A unified ethernet device probe.  This is the easiest way to have every
    ethernet adaptor have the name "eth[0123...]".

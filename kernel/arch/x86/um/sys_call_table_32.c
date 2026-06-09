@@ -3,9 +3,9 @@
  * with some changes for UML.
  */
 
-#include <linux/linkage.h>
-#include <linux/sys.h>
-#include <linux/cache.h>
+#include <beep/linkage.h>
+#include <beep/sys.h>
+#include <beep/cache.h>
 #include <generated/user_constants.h>
 
 #define __NO_STUBS

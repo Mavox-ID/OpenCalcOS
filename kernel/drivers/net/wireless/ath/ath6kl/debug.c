@@ -17,10 +17,10 @@
 
 #include "core.h"
 
-#include <linux/skbuff.h>
-#include <linux/fs.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
+#include <beep/skbuff.h>
+#include <beep/fs.h>
+#include <beep/vmalloc.h>
+#include <beep/export.h>
 
 #include "debug.h"
 #include "target.h"

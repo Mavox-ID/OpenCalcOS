@@ -11,27 +11,27 @@
  * License terms: GNU General Public License (GPL) version 2
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/klist.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/crypto.h>
+#include <beep/clk.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/klist.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/crypto.h>
 
-#include <linux/regulator/consumer.h>
-#include <linux/dmaengine.h>
-#include <linux/bitops.h>
+#include <beep/regulator/consumer.h>
+#include <beep/dmaengine.h>
+#include <beep/bitops.h>
 
 #include <crypto/internal/hash.h>
 #include <crypto/sha.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/algapi.h>
 
-#include <linux/platform_data/crypto-ux500.h>
+#include <beep/platform_data/crypto-ux500.h>
 #include <mach/hardware.h>
 
 #include "hash_alg.h"

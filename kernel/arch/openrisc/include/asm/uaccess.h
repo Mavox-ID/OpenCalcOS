@@ -1,7 +1,7 @@
 /*
- * OpenRISC Linux
+ * OpenRISC Beep
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -22,10 +22,10 @@
 /*
  * User space memory access functions
  */
-#include <linux/errno.h>
-#include <linux/thread_info.h>
-#include <linux/prefetch.h>
-#include <linux/string.h>
+#include <beep/errno.h>
+#include <beep/thread_info.h>
+#include <beep/prefetch.h>
+#include <beep/string.h>
 #include <asm/page.h>
 
 #define VERIFY_READ	0

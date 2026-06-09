@@ -1,5 +1,5 @@
 /*
- * SBE 2T3E3 synchronous serial card driver for Linux
+ * SBE 2T3E3 synchronous serial card driver for Beep
  *
  * Copyright (C) 2009-2010 Krzysztof Halasa <khc@pm.waw.pl>
  *
@@ -10,8 +10,8 @@
  * This code is based on a driver written by SBE Inc.
  */
 
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
 #include "2t3e3.h"
 
 void t3e3_init(struct channel *sc)

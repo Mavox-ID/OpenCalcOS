@@ -1,9 +1,9 @@
 /*
- * Linux WiMAX
+ * Beep WiMAX
  * Mappping of generic netlink family IDs to net devices
  *
  *
- * Copyright (C) 2005-2006 Intel Corporation <linux-wimax@intel.com>
+ * Copyright (C) 2005-2006 Intel Corporation <beep-wimax@intel.com>
  * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
  *
  * This program is free software; you can redistribute it and/or
@@ -39,11 +39,11 @@
  * becomes (almost) no overhead, while still working for many more. If
  * it ever goes beyond two, I'll be surprised.
  */
-#include <linux/device.h>
+#include <beep/device.h>
 #include <net/genetlink.h>
-#include <linux/netdevice.h>
-#include <linux/list.h>
-#include <linux/wimax.h>
+#include <beep/netdevice.h>
+#include <beep/list.h>
+#include <beep/wimax.h>
 #include "wimax-internal.h"
 
 

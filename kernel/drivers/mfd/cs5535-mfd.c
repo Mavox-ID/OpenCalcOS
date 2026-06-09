@@ -22,11 +22,11 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/mfd/core.h>
+#include <beep/module.h>
+#include <beep/pci.h>
 #include <asm/olpc.h>
 
 #define DRV_NAME "cs5535-mfd"

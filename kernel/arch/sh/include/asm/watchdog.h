@@ -14,8 +14,8 @@
 #define __ASM_SH_WATCHDOG_H
 #ifdef __KERNEL__
 
-#include <linux/types.h>
-#include <linux/io.h>
+#include <beep/types.h>
+#include <beep/io.h>
 
 #define WTCNT_HIGH	0x5a
 #define WTCSR_HIGH	0xa5

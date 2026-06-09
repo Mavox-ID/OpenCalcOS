@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/board-rx51-peripherals.c
+ * beep/arch/arm/mach-omap2/board-rx51-peripherals.c
  *
  * Copyright (C) 2008-2009 Nokia
  *
@@ -8,30 +8,30 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/spi/spi.h>
-#include <linux/wl12xx.h>
-#include <linux/spi/tsc2005.h>
-#include <linux/i2c.h>
-#include <linux/i2c/twl.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/regulator/machine.h>
-#include <linux/gpio.h>
-#include <linux/gpio_keys.h>
-#include <linux/mmc/host.h>
-#include <linux/power/isp1704_charger.h>
-#include <linux/platform_data/spi-omap2-mcspi.h>
-#include <linux/platform_data/mtd-onenand-omap2.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/input.h>
+#include <beep/input/matrix_keypad.h>
+#include <beep/spi/spi.h>
+#include <beep/wl12xx.h>
+#include <beep/spi/tsc2005.h>
+#include <beep/i2c.h>
+#include <beep/i2c/twl.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/regulator/machine.h>
+#include <beep/gpio.h>
+#include <beep/gpio_keys.h>
+#include <beep/mmc/host.h>
+#include <beep/power/isp1704_charger.h>
+#include <beep/platform_data/spi-omap2-mcspi.h>
+#include <beep/platform_data/mtd-onenand-omap2.h>
 
 #include <asm/system_info.h>
 
 #include "common.h"
-#include <linux/omap-dma.h>
+#include <beep/omap-dma.h>
 #include "gpmc-smc91x.h"
 
 #include "board-rx51.h"
@@ -40,10 +40,10 @@
 #include <sound/tpa6130a2-plat.h>
 #include <media/radio-si4713.h>
 #include <media/si4713.h>
-#include <linux/leds-lp5523.h>
+#include <beep/leds-lp5523.h>
 
 #include <../drivers/staging/iio/light/tsl2563.h>
-#include <linux/lis3lv02d.h>
+#include <beep/lis3lv02d.h>
 
 #if defined(CONFIG_IR_RX51) || defined(CONFIG_IR_RX51_MODULE)
 #include <media/ir-rx51.h>

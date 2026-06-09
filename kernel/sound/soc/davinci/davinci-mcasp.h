@@ -18,8 +18,8 @@
 #ifndef DAVINCI_MCASP_H
 #define DAVINCI_MCASP_H
 
-#include <linux/io.h>
-#include <linux/platform_data/davinci_asp.h>
+#include <beep/io.h>
+#include <beep/platform_data/davinci_asp.h>
 
 #include "davinci-pcm.h"
 

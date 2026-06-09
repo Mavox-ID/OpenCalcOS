@@ -1,4 +1,4 @@
-/* 	smc-ultra32.c: An SMC Ultra32 EISA ethernet driver for linux.
+/* 	smc-ultra32.c: An SMC Ultra32 EISA ethernet driver for beep.
 
 Sources:
 
@@ -19,7 +19,7 @@ Theory of Operation:
 	set for a bus-mastering mode of operation via the ECU, but that
 	is not (and probably will never be) supported by this driver.
 	The ECU should be run to enable shared memory and to disable the
-	bus-mastering feature for use with linux.
+	bus-mastering feature for use with beep.
 
 	By programming the 8390 to use only 8KB RAM, the modifications
 	to the ISA driver can be limited to the probe and initialization
@@ -46,15 +46,15 @@ Theory of Operation:
 static const char *version = "smc-ultra32.c: 06/97 v1.00\n";
 
 
-#include <linux/module.h>
-#include <linux/eisa.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <beep/module.h>
+#include <beep/eisa.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
 
 #include <asm/io.h>
 

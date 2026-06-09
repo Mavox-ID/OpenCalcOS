@@ -1,5 +1,5 @@
 /*
- *  linux/mm/vmalloc.c
+ *  beep/mm/vmalloc.c
  *
  *  Copyright (C) 1993  Linus Torvalds
  *  Support of BIGMEM added by Gerhard Wichert, Siemens AG, July 1999
@@ -8,25 +8,25 @@
  *  Numa awareness, Christoph Lameter, SGI, June 2005
  */
 
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/highmem.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/debugobjects.h>
-#include <linux/kallsyms.h>
-#include <linux/list.h>
-#include <linux/rbtree.h>
-#include <linux/radix-tree.h>
-#include <linux/rcupdate.h>
-#include <linux/pfn.h>
-#include <linux/kmemleak.h>
-#include <linux/atomic.h>
+#include <beep/vmalloc.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/highmem.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/debugobjects.h>
+#include <beep/kallsyms.h>
+#include <beep/list.h>
+#include <beep/rbtree.h>
+#include <beep/radix-tree.h>
+#include <beep/rcupdate.h>
+#include <beep/pfn.h>
+#include <beep/kmemleak.h>
+#include <beep/atomic.h>
 #include <asm/uaccess.h>
 #include <asm/tlbflush.h>
 #include <asm/shmparam.h>

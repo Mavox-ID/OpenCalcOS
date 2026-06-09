@@ -12,9 +12,9 @@
 
 #include "matroxfb_base.h"
 #include "matroxfb_maven.h"
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/i2c-algo-bit.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/i2c-algo-bit.h>
 
 /* MGA-TVO I2C for G200, G400 */
 #define MAT_CLK		0x20

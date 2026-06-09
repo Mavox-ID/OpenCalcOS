@@ -1,7 +1,7 @@
 /*
  * HTC Herald board configuration
  * Copyright (C) 2009 Cory Maccarrone <darkstar6262@gmail.com>
- * Copyright (C) 2009 Wing Linux
+ * Copyright (C) 2009 Wing Beep
  *
  * Based on the board-htcwizard.c file from the linwizard project:
  * Copyright (C) 2006 Unai Uribarri
@@ -23,21 +23,21 @@
  * 02110-1301, USA.
  *
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/gpio_keys.h>
-#include <linux/i2c.h>
-#include <linux/i2c-gpio.h>
-#include <linux/htcpld.h>
-#include <linux/leds.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/ads7846.h>
-#include <linux/omapfb.h>
-#include <linux/platform_data/keypad-omap.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/input.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/gpio_keys.h>
+#include <beep/i2c.h>
+#include <beep/i2c-gpio.h>
+#include <beep/htcpld.h>
+#include <beep/leds.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/ads7846.h>
+#include <beep/omapfb.h>
+#include <beep/platform_data/keypad-omap.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -596,7 +596,7 @@ static void __init htcherald_init(void)
 
 MACHINE_START(HERALD, "HTC Herald")
 	/* Maintainer: Cory Maccarrone <darkstar6262@gmail.com> */
-	/* Maintainer: wing-linux.sourceforge.net */
+	/* Maintainer: wing-beep.sourceforge.net */
 	.atag_offset    = 0x100,
 	.map_io         = htcherald_map_io,
 	.init_early     = omap1_init_early,

@@ -21,15 +21,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
-#include <linux/pm_runtime.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/err.h>
+#include <beep/delay.h>
+#include <beep/mutex.h>
+#include <beep/sysfs.h>
+#include <beep/pm_runtime.h>
 
 #define ALS_MIN_RANGE_VAL 1
 #define ALS_MAX_RANGE_VAL 2

@@ -22,7 +22,7 @@
 #include "h/fddi.h"
 #include "h/smc.h"
 #include "h/supern_2.h"
-#include <linux/bitrev.h>
+#include <beep/bitrev.h>
 
 #ifndef	lint
 static const char ID_sccs[] = "@(#)fplustm.c	1.32 99/02/23 (C) SK " ;

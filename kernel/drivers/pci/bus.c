@@ -7,14 +7,14 @@
  *	David Miller (davem@redhat.com)
  *	Ivan Kokshaysky (ink@jurassic.park.msu.ru)
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/proc_fs.h>
+#include <beep/init.h>
+#include <beep/slab.h>
 
 #include "pci.h"
 

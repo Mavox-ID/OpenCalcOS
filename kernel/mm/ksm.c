@@ -14,28 +14,28 @@
  * This work is licensed under the terms of the GNU GPL, version 2.
  */
 
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/mman.h>
-#include <linux/sched.h>
-#include <linux/rwsem.h>
-#include <linux/pagemap.h>
-#include <linux/rmap.h>
-#include <linux/spinlock.h>
-#include <linux/jhash.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/rbtree.h>
-#include <linux/memory.h>
-#include <linux/mmu_notifier.h>
-#include <linux/swap.h>
-#include <linux/ksm.h>
-#include <linux/hash.h>
-#include <linux/freezer.h>
-#include <linux/oom.h>
+#include <beep/errno.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/mman.h>
+#include <beep/sched.h>
+#include <beep/rwsem.h>
+#include <beep/pagemap.h>
+#include <beep/rmap.h>
+#include <beep/spinlock.h>
+#include <beep/jhash.h>
+#include <beep/delay.h>
+#include <beep/kthread.h>
+#include <beep/wait.h>
+#include <beep/slab.h>
+#include <beep/rbtree.h>
+#include <beep/memory.h>
+#include <beep/mmu_notifier.h>
+#include <beep/swap.h>
+#include <beep/ksm.h>
+#include <beep/hash.h>
+#include <beep/freezer.h>
+#include <beep/oom.h>
 
 #include <asm/tlbflush.h>
 #include "internal.h"
@@ -483,7 +483,7 @@ static void remove_node_from_stable_tree(struct stable_node *stable_node)
  * page to reset its page->mapping to NULL, and relies on no other use of
  * a page to put something that might look like our key in page->mapping.
  *
- * include/linux/pagemap.h page_cache_get_speculative() is a good reference,
+ * include/beep/pagemap.h page_cache_get_speculative() is a good reference,
  * but this is different - made simpler by ksm_thread_mutex being held, but
  * interesting for assuming that no other use of the struct page could ever
  * put our expected_mapping into page->mapping (or a field of the union which

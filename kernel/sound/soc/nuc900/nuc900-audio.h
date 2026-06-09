@@ -12,7 +12,7 @@
 #ifndef _NUC900_AUDIO_H
 #define _NUC900_AUDIO_H
 
-#include <linux/io.h>
+#include <beep/io.h>
 
 /* Audio Control Registers */
 #define ACTL_CON		0x00

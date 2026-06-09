@@ -11,11 +11,11 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
+#include <beep/of_irq.h>
+#include <beep/of_platform.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
 
 #include <asm/mach/arch.h>
 #include <asm/hardware/gic.h>

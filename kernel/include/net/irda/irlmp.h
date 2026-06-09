@@ -29,7 +29,7 @@
 
 #include <asm/param.h>  /* for HZ */
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #include <net/irda/irda.h>
 #include <net/irda/qos.h>

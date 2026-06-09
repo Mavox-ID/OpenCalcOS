@@ -18,13 +18,13 @@
 	Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/string.h>
-#include <linux/dvb/ca.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/mutex.h>
+#include <beep/string.h>
+#include <beep/dvb/ca.h>
 #include "dvbdev.h"
 #include "dvb_frontend.h"
 #include "dst_ca.h"

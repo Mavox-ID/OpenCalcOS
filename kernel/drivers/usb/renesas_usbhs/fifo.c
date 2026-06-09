@@ -14,9 +14,9 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  *
  */
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/scatterlist.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/scatterlist.h>
 #include "common.h"
 #include "pipe.h"
 

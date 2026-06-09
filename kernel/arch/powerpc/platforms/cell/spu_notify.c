@@ -21,8 +21,8 @@
 
 #undef DEBUG
 
-#include <linux/export.h>
-#include <linux/notifier.h>
+#include <beep/export.h>
+#include <beep/notifier.h>
 #include <asm/spu.h>
 #include "spufs/spufs.h"
 

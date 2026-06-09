@@ -32,7 +32,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  *
- * Intel Corporation <linux-wimax@intel.com>
+ * Intel Corporation <beep-wimax@intel.com>
  * Yanir Lubetkin <yanirx.lubetkin@intel.com>
  *  - Initial implementation
  * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
@@ -82,9 +82,9 @@
  *
  * i2400mu_rx_release()            called from i2400mu_bus_dev_stop()
  */
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <beep/workqueue.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
 #include "i2400m-usb.h"
 
 

@@ -24,16 +24,16 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
-#include <linux/slab.h>
+#include <beep/serial.h>
+#include <beep/serial_core.h>
+#include <beep/serial_reg.h>
+#include <beep/slab.h>
 
 #include <asm/bootinfo.h>
 #include <asm/io.h>
 #include <asm/processor.h>
 #include <asm/serial.h>
-#include <linux/serial_8250.h>
+#include <beep/serial_8250.h>
 
 #include <msp_prom.h>
 #include <msp_int.h>

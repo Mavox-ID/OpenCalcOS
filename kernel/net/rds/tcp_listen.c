@@ -30,9 +30,9 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/in.h>
+#include <beep/kernel.h>
+#include <beep/gfp.h>
+#include <beep/in.h>
 #include <net/tcp.h>
 
 #include "rds.h"

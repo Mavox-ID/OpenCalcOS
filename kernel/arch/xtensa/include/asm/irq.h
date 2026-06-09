@@ -11,7 +11,7 @@
 #ifndef _XTENSA_IRQ_H
 #define _XTENSA_IRQ_H
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include <platform/hardware.h>
 #include <variant/core.h>
 

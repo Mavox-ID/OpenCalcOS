@@ -8,17 +8,17 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/ftrace.h>
-#include <linux/kernel.h>
-#include <linux/hardirq.h>
-#include <linux/interrupt.h>
-#include <linux/irqflags.h>
-#include <linux/seq_file.h>
-#include <linux/kernel_stat.h>
-#include <linux/irq.h>
-#include <linux/of_irq.h>
-#include <linux/export.h>
+#include <beep/init.h>
+#include <beep/ftrace.h>
+#include <beep/kernel.h>
+#include <beep/hardirq.h>
+#include <beep/interrupt.h>
+#include <beep/irqflags.h>
+#include <beep/seq_file.h>
+#include <beep/kernel_stat.h>
+#include <beep/irq.h>
+#include <beep/of_irq.h>
+#include <beep/export.h>
 
 #include <asm/prom.h>
 

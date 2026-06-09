@@ -1,5 +1,5 @@
 /*
- *	Linux IPv6 multicast routing support for BSD pim6sd
+ *	Beep IPv6 multicast routing support for BSD pim6sd
  *	Based on net/ipv4/ipmr.c.
  *
  *	(c) 2004 Mickael Hoerdt, <hoerdt@clarinet.u-strasbg.fr>
@@ -7,7 +7,7 @@
  *	(c) 2004 Jean-Philippe Andriot, <jean-philippe.andriot@6WIND.com>
  *		6WIND, Paris, France
  *	Copyright (C)2007,2008 USAGI/WIDE Project
- *		YOSHIFUJI Hideaki <yoshfuji@linux-ipv6.org>
+ *		YOSHIFUJI Hideaki <yoshfuji@beep-ipv6.org>
  *
  *	This program is free software; you can redistribute it and/or
  *	modify it under the terms of the GNU General Public License
@@ -17,42 +17,42 @@
  */
 
 #include <asm/uaccess.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/fcntl.h>
-#include <linux/stat.h>
-#include <linux/socket.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/compat.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/timer.h>
+#include <beep/mm.h>
+#include <beep/kernel.h>
+#include <beep/fcntl.h>
+#include <beep/stat.h>
+#include <beep/socket.h>
+#include <beep/inet.h>
+#include <beep/netdevice.h>
+#include <beep/inetdevice.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/compat.h>
 #include <net/protocol.h>
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 #include <net/sock.h>
 #include <net/raw.h>
-#include <linux/notifier.h>
-#include <linux/if_arp.h>
+#include <beep/notifier.h>
+#include <beep/if_arp.h>
 #include <net/checksum.h>
 #include <net/netlink.h>
 #include <net/fib_rules.h>
 
 #include <net/ipv6.h>
 #include <net/ip6_route.h>
-#include <linux/mroute6.h>
-#include <linux/pim.h>
+#include <beep/mroute6.h>
+#include <beep/pim.h>
 #include <net/addrconf.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/export.h>
+#include <beep/netfilter_ipv6.h>
+#include <beep/export.h>
 #include <net/ip6_checksum.h>
-#include <linux/netconf.h>
+#include <beep/netconf.h>
 
 struct mr6_table {
 	struct list_head	list;

@@ -48,7 +48,7 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 #include <net/sctp/sctp.h>
 #include <net/sctp/sm.h>
 

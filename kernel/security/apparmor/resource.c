@@ -12,7 +12,7 @@
  * License.
  */
 
-#include <linux/audit.h>
+#include <beep/audit.h>
 
 #include "include/audit.h"
 #include "include/resource.h"

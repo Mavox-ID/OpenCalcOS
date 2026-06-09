@@ -6,7 +6,7 @@
  *
  * Portions based on wistron_btns.c:
  * Copyright (C) 2005 Miloslav Trmac <mitr@volny.cz>
- * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arklinux.org>
+ * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arkbeep.org>
  * Copyright (C) 2005 Dmitry Torokhov <dtor@mail.ru>
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -26,25 +26,25 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/leds.h>
-#include <linux/rfkill.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/platform_device.h>
-#include <linux/thermal.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/input/sparse-keymap.h>
+#include <beep/fb.h>
+#include <beep/backlight.h>
+#include <beep/leds.h>
+#include <beep/rfkill.h>
+#include <beep/pci.h>
+#include <beep/pci_hotplug.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/platform_device.h>
+#include <beep/thermal.h>
 #include <acpi/acpi_bus.h>
 #include <acpi/acpi_drivers.h>
 #include <acpi/video.h>

@@ -1,7 +1,7 @@
 /*
- * Initial page table for Linux kernel under Hexagon VM,
+ * Initial page table for Beep kernel under Hexagon VM,
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and

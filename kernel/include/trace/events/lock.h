@@ -4,8 +4,8 @@
 #if !defined(_TRACE_LOCK_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_LOCK_H
 
-#include <linux/lockdep.h>
-#include <linux/tracepoint.h>
+#include <beep/lockdep.h>
+#include <beep/tracepoint.h>
 
 #ifdef CONFIG_LOCKDEP
 

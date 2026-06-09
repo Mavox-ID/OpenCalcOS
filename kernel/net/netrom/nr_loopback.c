@@ -6,14 +6,14 @@
  *
  * Copyright Tomi Manninen OH2BNS (oh2bns@sral.fi)
  */
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/socket.h>
-#include <linux/timer.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/socket.h>
+#include <beep/timer.h>
 #include <net/ax25.h>
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 #include <net/netrom.h>
-#include <linux/init.h>
+#include <beep/init.h>
 
 static void nr_loopback_timer(unsigned long);
 

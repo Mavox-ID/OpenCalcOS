@@ -8,25 +8,25 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/semaphore.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/dmaengine.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/fsl/mxs-dma.h>
-#include <linux/stmp_device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/clk.h>
+#include <beep/wait.h>
+#include <beep/sched.h>
+#include <beep/semaphore.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/dmaengine.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/fsl/mxs-dma.h>
+#include <beep/stmp_device.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
 
 #include <asm/irq.h>
 

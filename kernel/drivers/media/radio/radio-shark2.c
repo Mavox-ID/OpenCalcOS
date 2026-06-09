@@ -1,5 +1,5 @@
 /*
- * Linux V4L2 radio driver for the Griffin radioSHARK2 USB radio receiver
+ * Beep V4L2 radio driver for the Griffin radioSHARK2 USB radio receiver
  *
  * Note the radioSHARK2 offers the audio through a regular USB audio device,
  * this driver only handles the tuning.
@@ -25,13 +25,13 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/workqueue.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/leds.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
+#include <beep/workqueue.h>
 #include <media/v4l2-device.h>
 #include "radio-tea5777.h"
 

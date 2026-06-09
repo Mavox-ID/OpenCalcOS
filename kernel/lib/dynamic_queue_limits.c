@@ -1,14 +1,14 @@
 /*
- * Dynamic byte queue limits.  See include/linux/dynamic_queue_limits.h
+ * Dynamic byte queue limits.  See include/beep/dynamic_queue_limits.h
  *
  * Copyright (c) 2011, Tom Herbert <therbert@google.com>
  */
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/ctype.h>
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/dynamic_queue_limits.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/ctype.h>
+#include <beep/kernel.h>
+#include <beep/jiffies.h>
+#include <beep/dynamic_queue_limits.h>
 
 #define POSDIFF(A, B) ((int)((A) - (B)) > 0 ? (A) - (B) : 0)
 #define AFTER_EQ(A, B) ((int)((A) - (B)) >= 0)

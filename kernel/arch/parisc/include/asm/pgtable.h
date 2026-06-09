@@ -7,11 +7,11 @@
 
 #ifndef __ASSEMBLY__
 /*
- * we simulate an x86-style page table for the linux mm code
+ * we simulate an x86-style page table for the beep mm code
  */
 
-#include <linux/bitops.h>
-#include <linux/spinlock.h>
+#include <beep/bitops.h>
+#include <beep/spinlock.h>
 #include <asm/processor.h>
 #include <asm/cache.h>
 
@@ -206,7 +206,7 @@ struct vm_area_struct;
 #define PAGE_SHARED	__pgprot(_PAGE_PRESENT | _PAGE_USER | _PAGE_READ | _PAGE_WRITE | _PAGE_ACCESSED)
 /* Others seem to make this executable, I don't know if that's correct
    or not.  The stack is mapped this way though so this is necessary
-   in the short term - dhd@linuxcare.com, 2000-08-08 */
+   in the short term - dhd@beepcare.com, 2000-08-08 */
 #define PAGE_READONLY	__pgprot(_PAGE_PRESENT | _PAGE_USER | _PAGE_READ | _PAGE_ACCESSED)
 #define PAGE_WRITEONLY  __pgprot(_PAGE_PRESENT | _PAGE_USER | _PAGE_WRITE | _PAGE_ACCESSED)
 #define PAGE_EXECREAD   __pgprot(_PAGE_PRESENT | _PAGE_USER | _PAGE_READ | _PAGE_EXEC |_PAGE_ACCESSED)

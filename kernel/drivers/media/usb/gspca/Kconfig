@@ -6,10 +6,10 @@ menuconfig USB_GSPCA
 	  Say Y here if you want to enable selecting webcams based
 	  on the GSPCA framework.
 
-	  See <file:Documentation/video4linux/gspca.txt> for more info.
+	  See <file:Documentation/video4beep/gspca.txt> for more info.
 
-	  This driver uses the Video For Linux API. You must say Y or M to
-	  "Video For Linux" to use this driver.
+	  This driver uses the Video For Beep API. You must say Y or M to
+	  "Video For Beep" to use this driver.
 
 	  To compile this driver as modules, choose M here: the
 	  module will be called gspca_main.

@@ -5,11 +5,11 @@
  * Version 2.  See the file COPYING for more details.
  */
 
-#include <linux/export.h>
-#include <linux/average.h>
-#include <linux/kernel.h>
-#include <linux/bug.h>
-#include <linux/log2.h>
+#include <beep/export.h>
+#include <beep/average.h>
+#include <beep/kernel.h>
+#include <beep/bug.h>
+#include <beep/log2.h>
 
 /**
  * DOC: Exponentially Weighted Moving Average (EWMA)

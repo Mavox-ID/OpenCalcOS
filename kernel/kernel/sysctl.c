@@ -1,5 +1,5 @@
 /*
- * sysctl.c: General linux system control interface
+ * sysctl.c: General beep system control interface
  *
  * Begun 24 March 1995, Stephen Tweedie
  * Added /proc support, Dec 1995
@@ -18,49 +18,49 @@
  *  Removed it and replaced it with older style, 03/23/00, Bill Wendling
  */
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
-#include <linux/bitmap.h>
-#include <linux/signal.h>
-#include <linux/printk.h>
-#include <linux/proc_fs.h>
-#include <linux/security.h>
-#include <linux/ctype.h>
-#include <linux/kmemcheck.h>
-#include <linux/kmemleak.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/kobject.h>
-#include <linux/net.h>
-#include <linux/sysrq.h>
-#include <linux/highuid.h>
-#include <linux/writeback.h>
-#include <linux/ratelimit.h>
-#include <linux/compaction.h>
-#include <linux/hugetlb.h>
-#include <linux/initrd.h>
-#include <linux/key.h>
-#include <linux/times.h>
-#include <linux/limits.h>
-#include <linux/dcache.h>
-#include <linux/dnotify.h>
-#include <linux/syscalls.h>
-#include <linux/vmstat.h>
-#include <linux/nfs_fs.h>
-#include <linux/acpi.h>
-#include <linux/reboot.h>
-#include <linux/ftrace.h>
-#include <linux/perf_event.h>
-#include <linux/kprobes.h>
-#include <linux/pipe_fs_i.h>
-#include <linux/oom.h>
-#include <linux/kmod.h>
-#include <linux/capability.h>
-#include <linux/binfmts.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/slab.h>
+#include <beep/sysctl.h>
+#include <beep/bitmap.h>
+#include <beep/signal.h>
+#include <beep/printk.h>
+#include <beep/proc_fs.h>
+#include <beep/security.h>
+#include <beep/ctype.h>
+#include <beep/kmemcheck.h>
+#include <beep/kmemleak.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/kobject.h>
+#include <beep/net.h>
+#include <beep/sysrq.h>
+#include <beep/highuid.h>
+#include <beep/writeback.h>
+#include <beep/ratelimit.h>
+#include <beep/compaction.h>
+#include <beep/hugetlb.h>
+#include <beep/initrd.h>
+#include <beep/key.h>
+#include <beep/times.h>
+#include <beep/limits.h>
+#include <beep/dcache.h>
+#include <beep/dnotify.h>
+#include <beep/syscalls.h>
+#include <beep/vmstat.h>
+#include <beep/nfs_fs.h>
+#include <beep/acpi.h>
+#include <beep/reboot.h>
+#include <beep/ftrace.h>
+#include <beep/perf_event.h>
+#include <beep/kprobes.h>
+#include <beep/pipe_fs_i.h>
+#include <beep/oom.h>
+#include <beep/kmod.h>
+#include <beep/capability.h>
+#include <beep/binfmts.h>
 
 #include <asm/uaccess.h>
 #include <asm/processor.h>
@@ -74,20 +74,20 @@
 #include <asm/setup.h>
 #endif
 #ifdef CONFIG_BSD_PROCESS_ACCT
-#include <linux/acct.h>
+#include <beep/acct.h>
 #endif
 #ifdef CONFIG_RT_MUTEXES
-#include <linux/rtmutex.h>
+#include <beep/rtmutex.h>
 #endif
 #if defined(CONFIG_PROVE_LOCKING) || defined(CONFIG_LOCK_STAT)
-#include <linux/lockdep.h>
+#include <beep/lockdep.h>
 #endif
 #ifdef CONFIG_CHR_DEV_SG
 #include <scsi/sg.h>
 #endif
 
 #ifdef CONFIG_LOCKUP_DETECTOR
-#include <linux/nmi.h>
+#include <beep/nmi.h>
 #endif
 
 
@@ -146,7 +146,7 @@ static int ngroups_max = NGROUPS_MAX;
 static const int cap_last_cap = CAP_LAST_CAP;
 
 #ifdef CONFIG_INOTIFY_USER
-#include <linux/inotify.h>
+#include <beep/inotify.h>
 #endif
 #ifdef CONFIG_SPARC
 #endif

@@ -16,14 +16,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/cpu_pm.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/cpu.h>
+#include <beep/notifier.h>
+#include <beep/cpu_pm.h>
 
 #include <asm/hardware/gic.h>
 

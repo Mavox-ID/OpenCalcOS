@@ -8,15 +8,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/gpio.h>
-#include <linux/pm_runtime.h>
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/regulator/consumer.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/gpio.h>
+#include <beep/pm_runtime.h>
+#include <beep/fb.h>
+#include <beep/delay.h>
+#include <beep/uaccess.h>
+#include <beep/vmalloc.h>
+#include <beep/regulator/consumer.h>
 
 #include <video/auo_k190xfb.h>
 

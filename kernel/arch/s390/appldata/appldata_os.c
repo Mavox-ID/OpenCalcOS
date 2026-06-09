@@ -1,5 +1,5 @@
 /*
- * Data gathering module for Linux-VM Monitor Stream, Stage 1.
+ * Data gathering module for Beep-VM Monitor Stream, Stage 1.
  * Collects misc. OS related data (CPU utilization, running processes).
  *
  * Copyright IBM Corp. 2003, 2006
@@ -10,13 +10,13 @@
 #define KMSG_COMPONENT	"appldata"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/kernel_stat.h>
-#include <linux/netdevice.h>
-#include <linux/sched.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/kernel_stat.h>
+#include <beep/netdevice.h>
+#include <beep/sched.h>
 #include <asm/appldata.h>
 #include <asm/smp.h>
 
@@ -34,9 +34,9 @@
  * as well and all documentation and z/VM applications using it must be
  * updated.
  *
- * The record layout is documented in the Linux for zSeries Device Drivers
+ * The record layout is documented in the Beep for zSeries Device Drivers
  * book:
- * http://oss.software.ibm.com/developerworks/opensource/linux390/index.shtml
+ * http://oss.software.ibm.com/developerworks/opensource/beep390/index.shtml
  */
 struct appldata_os_per_cpu {
 	u32 per_cpu_user;	/* timer ticks spent in user mode   */
@@ -59,7 +59,7 @@ struct appldata_os_data {
 	u32 sync_count_1;	/* after VM collected the record data, */
 	u32 sync_count_2;	/* sync_count_1 and sync_count_2 should be the
 				   same. If not, the record has been updated on
-				   the Linux side while VM was collecting the
+				   the Beep side while VM was collecting the
 				   (possibly corrupt) data */
 
 	u32 nr_cpus;		/* number of (virtual) CPUs        */
@@ -215,4 +215,4 @@ module_exit(appldata_os_exit);
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Gerald Schaefer");
-MODULE_DESCRIPTION("Linux-VM Monitor Stream, OS statistics");
+MODULE_DESCRIPTION("Beep-VM Monitor Stream, OS statistics");

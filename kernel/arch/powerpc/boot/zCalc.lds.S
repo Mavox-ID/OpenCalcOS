@@ -38,11 +38,11 @@ SECTIONS
   }
 
   . = ALIGN(4096);
-  .kernel:vmlinux.strip :
+  .kernel:vmbeep.strip :
   {
-    _vmlinux_start =  .;
-    *(.kernel:vmlinux.strip)
-    _vmlinux_end =  .;
+    _vmbeep_start =  .;
+    *(.kernel:vmbeep.strip)
+    _vmbeep_end =  .;
   }
 
   . = ALIGN(4096);

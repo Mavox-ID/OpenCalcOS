@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ufs/balloc.c
+ *  beep/fs/ufs/balloc.c
  *
  * Copyright (C) 1998
  * Daniel Pirkl <daniel.pirkl@email.cz>
@@ -8,13 +8,13 @@
  * UFS2 write support Evgeniy Dushistov <dushistov@mail.ru>, 2007
  */
 
-#include <linux/fs.h>
-#include <linux/stat.h>
-#include <linux/time.h>
-#include <linux/string.h>
-#include <linux/buffer_head.h>
-#include <linux/capability.h>
-#include <linux/bitops.h>
+#include <beep/fs.h>
+#include <beep/stat.h>
+#include <beep/time.h>
+#include <beep/string.h>
+#include <beep/buffer_head.h>
+#include <beep/capability.h>
+#include <beep/bitops.h>
 #include <asm/byteorder.h>
 
 #include "ufs_fs.h"

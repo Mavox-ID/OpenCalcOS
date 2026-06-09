@@ -16,12 +16,12 @@
  * any later version.
  */
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
+#include <beep/device.h>
+#include <beep/hid.h>
+#include <beep/module.h>
+#include <beep/random.h>
+#include <beep/sched.h>
+#include <beep/wait.h>
 
 #include "hid-ids.h"
 #include "hid-lg.h"

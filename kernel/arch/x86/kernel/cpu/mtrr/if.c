@@ -1,12 +1,12 @@
-#include <linux/capability.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
-#include <linux/proc_fs.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/init.h>
+#include <beep/capability.h>
+#include <beep/seq_file.h>
+#include <beep/uaccess.h>
+#include <beep/proc_fs.h>
+#include <beep/module.h>
+#include <beep/ctype.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/init.h>
 
 #define LINE_SIZE 80
 

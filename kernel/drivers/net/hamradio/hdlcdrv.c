@@ -42,25 +42,25 @@
 
 /*****************************************************************************/
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/net.h>
-#include <linux/in.h>
-#include <linux/if.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
+#include <beep/capability.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/net.h>
+#include <beep/in.h>
+#include <beep/if.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
 
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/hdlcdrv.h>
-#include <linux/random.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/skbuff.h>
+#include <beep/hdlcdrv.h>
+#include <beep/random.h>
 #include <net/ax25.h> 
 #include <asm/uaccess.h>
 
-#include <linux/crc-ccitt.h>
+#include <beep/crc-ccitt.h>
 
 /* --------------------------------------------------------------------- */
 

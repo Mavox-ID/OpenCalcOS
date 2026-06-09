@@ -8,23 +8,23 @@
  * This file is released under the GPLv2.
  */
 
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/cpu.h>
-#include <linux/syscalls.h>
-#include <linux/gfp.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/suspend.h>
-#include <linux/syscore_ops.h>
-#include <linux/ftrace.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/cpu.h>
+#include <beep/syscalls.h>
+#include <beep/gfp.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/suspend.h>
+#include <beep/syscore_ops.h>
+#include <beep/ftrace.h>
 #include <trace/events/power.h>
 
 #include "power.h"

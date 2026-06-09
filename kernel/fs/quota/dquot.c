@@ -1,12 +1,12 @@
 /*
- * Implementation of the diskquota system for the LINUX operating system. QUOTA
+ * Implementation of the diskquota system for the BEEP operating system. QUOTA
  * is implemented using the BSD system call interface as the means of
  * communication with the user level. This file contains the generic routines
  * called by the different filesystems on allocation of an inode or block.
  * These routines take care of the administration needed to have a consistent
  * diskquota tracking system. The ideas of both user and group quotas are based
  * on the Melbourne quota system as used on BSD derived systems. The internal
- * implementation is based on one of the several variants of the LINUX
+ * implementation is based on one of the several variants of the BEEP
  * inode-subsystem with added complexity of the diskquota system.
  * 
  * Author:	Marco van Wieringen <mvw@planets.elm.net>
@@ -53,32 +53,32 @@
  * (C) Copyright 1994 - 1997 Marco van Wieringen 
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/mm.h>
-#include <linux/time.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/stat.h>
-#include <linux/tty.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/security.h>
-#include <linux/sched.h>
-#include <linux/kmod.h>
-#include <linux/namei.h>
-#include <linux/capability.h>
-#include <linux/quotaops.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/mount.h>
+#include <beep/mm.h>
+#include <beep/time.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/fcntl.h>
+#include <beep/stat.h>
+#include <beep/tty.h>
+#include <beep/file.h>
+#include <beep/slab.h>
+#include <beep/sysctl.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/proc_fs.h>
+#include <beep/security.h>
+#include <beep/sched.h>
+#include <beep/kmod.h>
+#include <beep/namei.h>
+#include <beep/capability.h>
+#include <beep/quotaops.h>
 #include "../internal.h" /* ugh */
 
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 
 /*
  * There are three quota SMP locks. dq_list_lock protects all lists with quotas

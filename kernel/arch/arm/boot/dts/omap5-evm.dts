@@ -129,13 +129,13 @@
 &keypad {
 	keypad,num-rows = <8>;
 	keypad,num-columns = <8>;
-	linux,keymap = <0x02020073	/* VOLUP */
+	beep,keymap = <0x02020073	/* VOLUP */
 			0x02030072	/* VOLDOWM */
 			0x020400e7	/* SEND */
 			0x02050066	/* HOME */
 			0x0206006b	/* END */
 			0x020700d9>;	/* SEARCH */
-	linux,input-no-autorepeat;
+	beep,input-no-autorepeat;
 };
 
 &mcbsp3 {

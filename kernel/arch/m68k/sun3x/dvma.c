@@ -10,12 +10,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/mm.h>
-#include <linux/bootmem.h>
-#include <linux/vmalloc.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
+#include <beep/mm.h>
+#include <beep/bootmem.h>
+#include <beep/vmalloc.h>
 
 #include <asm/sun3x.h>
 #include <asm/dvma.h>

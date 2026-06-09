@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/lib/memmove.S
+ *  beep/arch/arm/lib/memmove.S
  *
  *  Author:	Nicolas Pitre
  *  Created:	Sep 28, 2005
@@ -10,7 +10,7 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/assembler.h>
 
 		.text

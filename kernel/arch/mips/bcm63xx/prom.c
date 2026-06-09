@@ -6,8 +6,8 @@
  * Copyright (C) 2008 Maxime Bizon <mbizon@freebox.fr>
  */
 
-#include <linux/init.h>
-#include <linux/bootmem.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
 #include <asm/bootinfo.h>
 #include <bcm63xx_board.h>
 #include <bcm63xx_cpu.h>

@@ -26,7 +26,7 @@
 #ifndef __ACPI_DRIVERS_H__
 #define __ACPI_DRIVERS_H__
 
-#include <linux/acpi.h>
+#include <beep/acpi.h>
 #include <acpi/acpi_bus.h>
 
 #define ACPI_MAX_STRING			80
@@ -53,7 +53,7 @@
 /*
  * _HID definitions
  * HIDs must conform to ACPI spec(6.1.4)
- * Linux specific HIDs do not apply to this and begin with LNX:
+ * Beep specific HIDs do not apply to this and begin with LNX:
  */
 
 #define ACPI_POWER_HID			"LNXPOWER"

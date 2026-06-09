@@ -26,8 +26,8 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
 #include <msp_regs.h>
 
 static int __init msp_elb_setup(void)

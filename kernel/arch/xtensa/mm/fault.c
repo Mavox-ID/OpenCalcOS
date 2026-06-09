@@ -12,9 +12,9 @@
  * Joe Taylor	<joe@tensilica.com, joetylr@yahoo.com>
  */
 
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/hardirq.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/hardirq.h>
 #include <asm/mmu_context.h>
 #include <asm/cacheflush.h>
 #include <asm/hardirq.h>

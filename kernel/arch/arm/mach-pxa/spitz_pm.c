@@ -9,16 +9,16 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/stat.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/gpio-pxa.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/apm-emulation.h>
+#include <beep/module.h>
+#include <beep/stat.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/gpio-pxa.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/apm-emulation.h>
 
 #include <asm/irq.h>
 #include <asm/mach-types.h>

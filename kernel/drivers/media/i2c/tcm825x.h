@@ -15,7 +15,7 @@
 #ifndef TCM825X_H
 #define TCM825X_H
 
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 
 #include <media/v4l2-int-device.h>
 

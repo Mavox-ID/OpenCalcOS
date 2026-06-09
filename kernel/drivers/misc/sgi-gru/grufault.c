@@ -24,16 +24,16 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/security.h>
-#include <linux/prefetch.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/spinlock.h>
+#include <beep/mm.h>
+#include <beep/hugetlb.h>
+#include <beep/device.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
+#include <beep/security.h>
+#include <beep/prefetch.h>
 #include <asm/pgtable.h>
 #include "gru.h"
 #include "grutables.h"
@@ -522,7 +522,7 @@ failactive:
 /*
  * Process an external interrupt from the GRU. This interrupt is
  * caused by a TLB miss.
- * Note that this is the interrupt handler that is registered with linux
+ * Note that this is the interrupt handler that is registered with beep
  * interrupt handlers.
  */
 static irqreturn_t gru_intr(int chiplet, int blade)

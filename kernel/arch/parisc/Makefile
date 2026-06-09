@@ -13,7 +13,7 @@
 # Copyright (C) 1994 by Linus Torvalds
 # Portions Copyright (C) 1999 The Puffin Group
 #
-# Modified for PA-RISC Linux by Paul Lahaie, Alex deVries, 
+# Modified for PA-RISC Beep by Paul Lahaie, Alex deVries, 
 # Mike Shaver, Helge Deller and Martin K. Petersen
 #
 
@@ -35,7 +35,7 @@ WIDTH		:= 64
 
 # FIXME: if no default set, should really try to locate dynamically
 ifeq ($(CROSS_COMPILE),)
-CROSS_COMPILE	:= hppa64-linux-gnu-
+CROSS_COMPILE	:= hppa64-beep-gnu-
 endif
 else # 32-bit
 WIDTH		:=
@@ -43,14 +43,14 @@ endif
 
 # attempt to help out folks who are cross-compiling
 ifeq ($(NATIVE),1)
-CROSS_COMPILE	:= hppa$(WIDTH)-linux-
+CROSS_COMPILE	:= hppa$(WIDTH)-beep-
 endif
 
 OBJCOPY_FLAGS =-O binary -R .note -R .comment -S
 
 cflags-y	:= -pipe
 
-# These flags should be implied by an hppa-linux configuration, but they
+# These flags should be implied by an hppa-beep configuration, but they
 # are not in gcc 3.2.
 cflags-y	+= -mno-space-regs -mfast-indirect-calls
 
@@ -92,7 +92,7 @@ PALOCONF := $(shell if [ -f $(src)/palo.conf ]; then echo $(src)/palo.conf; \
 	else echo $(obj)/palo.conf; \
 	fi)
 
-palo: vmlinux
+palo: vmbeep
 	@if test ! -x "$(PALO)"; then \
 		echo 'ERROR: Please install palo first (apt-get install palo)';\
 		echo 'or build it from source and install it somewhere in your $$PATH';\
@@ -107,10 +107,10 @@ palo: vmlinux
 	fi
 	$(PALO) -f $(PALOCONF)
 
-# Shorthands for known targets not supported by parisc, use vmlinux as default
-Image zCalc bzImage: vmlinux
+# Shorthands for known targets not supported by parisc, use vmbeep as default
+Image zCalc bzImage: vmbeep
 
-kernel_install: vmlinux
+kernel_install: vmbeep
 	sh $(src)/arch/parisc/install.sh \
 			$(KERNELRELEASE) $< System.map "$(INSTALL_PATH)"
 
@@ -120,7 +120,7 @@ CLEAN_FILES	+= lifimage
 MRPROPER_FILES	+= palo.conf
 
 define archhelp
-	@echo  '* vmlinux	- Uncompressed kernel image (./vmlinux)'
+	@echo  '* vmbeep	- Uncompressed kernel image (./vmbeep)'
 	@echo  '  palo		- Bootable image (./lifimage)'
 	@echo  '  install	- Install kernel using'
 	@echo  '		  (your) ~/bin/$(INSTALLKERNEL) or'

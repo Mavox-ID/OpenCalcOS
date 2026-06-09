@@ -19,7 +19,7 @@
  *
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 
 #include "reg.h"
 #include "boot.h"

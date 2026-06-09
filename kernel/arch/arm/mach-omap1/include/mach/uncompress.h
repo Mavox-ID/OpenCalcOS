@@ -4,7 +4,7 @@
  * Serial port stubs for kernel decompress status messages
  *
  * Initially based on:
- * linux-2.4.15-rmk1-dsplinux1.6/arch/arm/plat-omap/include/mach1510/uncompress.h
+ * beep-2.4.15-rmk1-dspbeep1.6/arch/arm/plat-omap/include/mach1510/uncompress.h
  * Copyright (C) 2000 RidgeRun, Inc.
  * Author: Greg Lonnon <glonnon@ridgerun.com>
  *
@@ -17,8 +17,8 @@
  * kind, whether express or implied.
  */
 
-#include <linux/types.h>
-#include <linux/serial_reg.h>
+#include <beep/types.h>
+#include <beep/serial_reg.h>
 
 #include <asm/memory.h>
 #include <asm/mach-types.h>

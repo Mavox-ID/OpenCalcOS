@@ -4,9 +4,9 @@
 
 #undef DEBUG
 
-#include <linux/kallsyms.h>
-#include <linux/export.h>
-#include <linux/syscalls.h>
+#include <beep/kallsyms.h>
+#include <beep/export.h>
+#include <beep/syscalls.h>
 
 #include <asm/spu.h>
 #include <asm/syscalls.h>

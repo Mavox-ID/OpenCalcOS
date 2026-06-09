@@ -9,15 +9,15 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/ptrace.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/bitops.h>
+#include <beep/ptrace.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/bitops.h>
 
 #include <asm/io.h>
 #include <asm/delay.h>

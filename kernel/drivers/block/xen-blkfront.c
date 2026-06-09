@@ -1,7 +1,7 @@
 /*
  * blkfront.c
  *
- * XenLinux virtual block device driver.
+ * XenBeep virtual block device driver.
  *
  * Copyright (c) 2003-2004, Keir Fraser & Steve Hand
  * Modifications by Mark A. Williamson are (c) Intel Research Cambridge
@@ -13,7 +13,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the Beep kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -35,16 +35,16 @@
  * IN THE SOFTWARE.
  */
 
-#include <linux/interrupt.h>
-#include <linux/blkdev.h>
-#include <linux/hdreg.h>
-#include <linux/cdrom.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/scatterlist.h>
-#include <linux/bitmap.h>
-#include <linux/llist.h>
+#include <beep/interrupt.h>
+#include <beep/blkdev.h>
+#include <beep/hdreg.h>
+#include <beep/cdrom.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/scatterlist.h>
+#include <beep/bitmap.h>
+#include <beep/llist.h>
 
 #include <xen/xen.h>
 #include <xen/xenbus.h>
@@ -278,7 +278,7 @@ static int blkif_ioctl(struct block_device *bdev, fmode_t mode,
 	default:
 		/*printk(KERN_ALERT "ioctl %08x not supported by Xen blkdev\n",
 		  command);*/
-		return -EINVAL; /* same return as native Linux */
+		return -EINVAL; /* same return as native Beep */
 	}
 
 	return 0;

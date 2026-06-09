@@ -20,9 +20,9 @@
    Software Foundation, 51 Franklin Street - Fifth Floor, Boston, MA
    02110-1301, USA.  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/bug.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/bug.h>
 #include "nonstdio.h"
 #include "ppc.h"
 

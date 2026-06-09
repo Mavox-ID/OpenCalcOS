@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/proc-arm9tdmi.S: utility functions for ARM9TDMI
+ *  beep/arch/arm/mm/proc-arm9tdmi.S: utility functions for ARM9TDMI
  *
  *  Copyright (C) 2003-2006 Hyok S. Choi <hyok.choi@samsung.com>
  *
@@ -8,8 +8,8 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/assembler.h>
 #include <asm/asm-offsets.h>
 #include <asm/hwcap.h>

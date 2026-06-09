@@ -19,16 +19,16 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
+#include <beep/rtc.h>
+#include <beep/seq_file.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
 
 #include <mach/hardware.h>
 

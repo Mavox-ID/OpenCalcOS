@@ -36,9 +36,9 @@
 /*
  * Generic range manager structs
  */
-#include <linux/list.h>
+#include <beep/list.h>
 #ifdef CONFIG_DEBUG_FS
-#include <linux/seq_file.h>
+#include <beep/seq_file.h>
 #endif
 
 struct drm_mm_node {

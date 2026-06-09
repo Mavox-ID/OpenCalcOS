@@ -9,7 +9,7 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/setup.h>
 #include <asm/segment.h>
 #include <asm/ptrace.h>

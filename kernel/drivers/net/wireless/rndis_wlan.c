@@ -26,24 +26,24 @@
 // #define	DEBUG			// error path messages, extra info
 // #define	VERBOSE			// more; success messages
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/usb/cdc.h>
-#include <linux/ieee80211.h>
-#include <linux/if_arp.h>
-#include <linux/ctype.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/workqueue.h>
+#include <beep/mutex.h>
+#include <beep/mii.h>
+#include <beep/usb.h>
+#include <beep/usb/cdc.h>
+#include <beep/ieee80211.h>
+#include <beep/if_arp.h>
+#include <beep/ctype.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
 #include <net/cfg80211.h>
-#include <linux/usb/usbnet.h>
-#include <linux/usb/rndis_host.h>
+#include <beep/usb/usbnet.h>
+#include <beep/usb/rndis_host.h>
 
 
 /* NOTE: All these are settings for Broadcom chipset */
@@ -1224,7 +1224,7 @@ static int set_infra_mode(struct usbnet *usbdev, int mode)
 	}
 
 	/* NDIS drivers clear keys when infrastructure mode is
-	 * changed. But Linux tools assume otherwise. So set the
+	 * changed. But Beep tools assume otherwise. So set the
 	 * keys */
 	restore_keys(usbdev);
 

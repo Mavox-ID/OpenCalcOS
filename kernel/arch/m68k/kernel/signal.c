@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/kernel/signal.c
+ *  beep/arch/m68k/kernel/signal.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -9,7 +9,7 @@
  */
 
 /*
- * Linux/m68k support by Hamish Macdonald
+ * Beep/m68k support by Hamish Macdonald
  *
  * 68060 fixes by Jesper Skov
  *
@@ -28,22 +28,22 @@
  * signal handlers!
  */
 
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/syscalls.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/highuid.h>
-#include <linux/personality.h>
-#include <linux/tty.h>
-#include <linux/binfmts.h>
-#include <linux/module.h>
-#include <linux/tracehook.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/syscalls.h>
+#include <beep/errno.h>
+#include <beep/wait.h>
+#include <beep/ptrace.h>
+#include <beep/unistd.h>
+#include <beep/stddef.h>
+#include <beep/highuid.h>
+#include <beep/personality.h>
+#include <beep/tty.h>
+#include <beep/binfmts.h>
+#include <beep/module.h>
+#include <beep/tracehook.h>
 
 #include <asm/setup.h>
 #include <asm/uaccess.h>

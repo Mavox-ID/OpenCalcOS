@@ -17,12 +17,12 @@
  * You should have received a copy of the GNU General Public License along with
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/module.h>
 
 #define BH1780_REG_CONTROL	0x80
 #define BH1780_REG_PARTID	0x8A

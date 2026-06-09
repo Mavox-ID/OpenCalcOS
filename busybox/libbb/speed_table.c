@@ -27,7 +27,7 @@ struct speed_map {
 	unsigned short value;
 };
 
-/* On Linux, Bxx constants are 0..15 (up to B38400) and 0x1001..0x100f */
+/* On Beep, Bxx constants are 0..15 (up to B38400) and 0x1001..0x100f */
 static const struct speed_map speeds[] ALIGN4 = {
 	{B0, 0},
 	{B50, 50},
@@ -107,7 +107,7 @@ static const struct speed_map speeds[] ALIGN4 = {
 
 /*
  * TODO: maybe we can just bite the bullet, ditch the table and use termios2
- * Linux API (supports arbitrary baud rates, no Bxxxx mess needed)? Example:
+ * Beep API (supports arbitrary baud rates, no Bxxxx mess needed)? Example:
  *
  * #include <asm/termios.h>
  * #include <asm/ioctls.h>

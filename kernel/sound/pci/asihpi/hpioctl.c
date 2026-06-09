@@ -16,7 +16,7 @@
     along with this program; if not, write to the Free Software
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-Common Linux HPI ioctl and module probe/remove functions
+Common Beep HPI ioctl and module probe/remove functions
 *******************************************************************************/
 #define SOURCEFILE_NAME "hpioctl.c"
 
@@ -28,13 +28,13 @@ Common Linux HPI ioctl and module probe/remove functions
 #include "hpioctl.h"
 #include "hpicmn.h"
 
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/moduleparam.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/moduleparam.h>
 #include <asm/uaccess.h>
-#include <linux/pci.h>
-#include <linux/stringify.h>
-#include <linux/module.h>
+#include <beep/pci.h>
+#include <beep/stringify.h>
+#include <beep/module.h>
 
 #ifdef MODULE_FIRMWARE
 MODULE_FIRMWARE("asihpi/dsp5000.bin");
@@ -100,7 +100,7 @@ int asihpi_hpi_release(struct file *file)
 
 long asihpi_hpi_ioctl(struct file *file, unsigned int cmd, unsigned long arg)
 {
-	struct hpi_ioctl_linux __user *phpi_ioctl_data;
+	struct hpi_ioctl_beep __user *phpi_ioctl_data;
 	void __user *puhm;
 	void __user *puhr;
 	union hpi_message_buffer_v1 *hm;
@@ -109,7 +109,7 @@ long asihpi_hpi_ioctl(struct file *file, unsigned int cmd, unsigned long arg)
 	u32 uncopied_bytes;
 	int err = 0;
 
-	if (cmd != HPI_IOCTL_LINUX)
+	if (cmd != HPI_IOCTL_BEEP)
 		return -EINVAL;
 
 	hm = kmalloc(sizeof(*hm), GFP_KERNEL);
@@ -119,7 +119,7 @@ long asihpi_hpi_ioctl(struct file *file, unsigned int cmd, unsigned long arg)
 		goto out;
 	}
 
-	phpi_ioctl_data = (struct hpi_ioctl_linux __user *)arg;
+	phpi_ioctl_data = (struct hpi_ioctl_beep __user *)arg;
 
 	/* Read the message and response pointers from user space.  */
 	if (get_user(puhm, &phpi_ioctl_data->phm)

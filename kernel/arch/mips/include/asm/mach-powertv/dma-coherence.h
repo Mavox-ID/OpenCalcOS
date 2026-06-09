@@ -5,15 +5,15 @@
  *
  * Version from mach-generic modified to support PowerTV port
  * Portions Copyright (C) 2009  Cisco Systems, Inc.
- * Copyright (C) 2006  Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 2006  Ralf Baechle <ralf@beep-mips.org>
  *
  */
 
 #ifndef __ASM_MACH_POWERTV_DMA_COHERENCE_H
 #define __ASM_MACH_POWERTV_DMA_COHERENCE_H
 
-#include <linux/sched.h>
-#include <linux/device.h>
+#include <beep/sched.h>
+#include <beep/device.h>
 #include <asm/mach-powertv/asic.h>
 
 static inline bool is_kseg2(void *addr)

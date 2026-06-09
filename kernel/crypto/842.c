@@ -17,17 +17,17 @@
  *
  * Copyright (C) IBM Corporation, 2011
  *
- * Authors: Robert Jennings <rcj@linux.vnet.ibm.com>
- *          Seth Jennings <sjenning@linux.vnet.ibm.com>
+ * Authors: Robert Jennings <rcj@beep.vnet.ibm.com>
+ *          Seth Jennings <sjenning@beep.vnet.ibm.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/crypto.h>
-#include <linux/vmalloc.h>
-#include <linux/nx842.h>
-#include <linux/lzo.h>
-#include <linux/timer.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/crypto.h>
+#include <beep/vmalloc.h>
+#include <beep/nx842.h>
+#include <beep/lzo.h>
+#include <beep/timer.h>
 
 static int nx842_uselzo;
 

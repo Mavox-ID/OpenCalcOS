@@ -4,11 +4,11 @@
  * Author: Mian Yousaf Kaukab <mian.yousaf.kaukab@stericsson.com>
  * License terms: GNU General Public License (GPL) version 2
  */
-#include <linux/platform_device.h>
-#include <linux/usb/musb.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_data/usb-musb-ux500.h>
-#include <linux/platform_data/dma-ste-dma40.h>
+#include <beep/platform_device.h>
+#include <beep/usb/musb.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_data/usb-musb-ux500.h>
+#include <beep/platform_data/dma-ste-dma40.h>
 
 #include <mach/hardware.h>
 

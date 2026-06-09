@@ -1,9 +1,9 @@
 /*
- *  linux/arch/m32r/kernel/entry.S
+ *  beep/arch/m32r/kernel/entry.S
  *
  *  Copyright (c) 2001, 2002  Hirokazu Takata, Hitoshi Yamamoto, H. Kondo
  *  Copyright (c) 2003  Hitoshi Yamamoto
- *  Copyright (c) 2004  Hirokazu Takata <takata at linux-m32r.org>
+ *  Copyright (c) 2004  Hirokazu Takata <takata at beep-m32r.org>
  *
  *  Taken from i386 version.
  *    Copyright (C) 1991, 1992  Linus Torvalds
@@ -54,7 +54,7 @@
  *       @(0x6c,sp) - orig_r0
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/irq.h>
 #include <asm/unistd.h>
 #include <asm/assembler.h>

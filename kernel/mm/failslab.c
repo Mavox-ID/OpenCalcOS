@@ -1,5 +1,5 @@
-#include <linux/fault-inject.h>
-#include <linux/slab.h>
+#include <beep/fault-inject.h>
+#include <beep/slab.h>
 
 static struct {
 	struct fault_attr attr;

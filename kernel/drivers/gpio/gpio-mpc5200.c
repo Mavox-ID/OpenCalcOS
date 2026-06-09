@@ -17,13 +17,13 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/of.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/of_gpio.h>
-#include <linux/io.h>
-#include <linux/of_platform.h>
-#include <linux/module.h>
+#include <beep/of.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/of_gpio.h>
+#include <beep/io.h>
+#include <beep/of_platform.h>
+#include <beep/module.h>
 
 #include <asm/gpio.h>
 #include <asm/mpc52xx.h>

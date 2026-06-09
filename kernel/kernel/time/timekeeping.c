@@ -1,27 +1,27 @@
 /*
- *  linux/kernel/time/timekeeping.c
+ *  beep/kernel/time/timekeeping.c
  *
  *  Kernel timekeeping code and accessor functions
  *
- *  This code was moved from linux/kernel/timer.c.
+ *  This code was moved from beep/kernel/timer.c.
  *  Please see that file for copyright and history logs.
  *
  */
 
-#include <linux/timekeeper_internal.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/percpu.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/syscore_ops.h>
-#include <linux/clocksource.h>
-#include <linux/jiffies.h>
-#include <linux/time.h>
-#include <linux/tick.h>
-#include <linux/stop_machine.h>
-#include <linux/pvclock_gtod.h>
+#include <beep/timekeeper_internal.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/percpu.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/syscore_ops.h>
+#include <beep/clocksource.h>
+#include <beep/jiffies.h>
+#include <beep/time.h>
+#include <beep/tick.h>
+#include <beep/stop_machine.h>
+#include <beep/pvclock_gtod.h>
 
 
 static struct timekeeper timekeeper;

@@ -1,5 +1,5 @@
 /*
- *    wd33c93.h -  Linux device driver definitions for the
+ *    wd33c93.h -  Beep device driver definitions for the
  *                 Commodore Amiga A2091/590 SCSI controller card
  *
  *    IMPORTANT: This file is for version 1.25 - 09/Jul/1997

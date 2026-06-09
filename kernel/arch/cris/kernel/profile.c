@@ -1,9 +1,9 @@
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/proc_fs.h>
+#include <beep/slab.h>
+#include <beep/types.h>
 #include <asm/ptrace.h>
 #include <asm/uaccess.h>
 

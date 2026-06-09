@@ -1,6 +1,6 @@
 /* $Id: hycapi.c,v 1.8.6.4 2001/09/23 22:24:54 kai Exp $
  *
- * Linux driver for HYSDN cards, CAPI2.0-Interface.
+ * Beep driver for HYSDN cards, CAPI2.0-Interface.
  *
  * Author    Ulrich Albrecht <u.albrecht@hypercope.de> for Hypercope GmbH
  * Copyright 2000 by Hypercope GmbH
@@ -10,14 +10,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/signal.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/signal.h>
+#include <beep/kernel.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/slab.h>
 
 #define	VER_DRIVER	0
 #define	VER_CARDTYPE	1
@@ -29,7 +29,7 @@
 #define	VER_CAPI	7
 
 #include "hysdn_defs.h"
-#include <linux/kernelcapi.h>
+#include <beep/kernelcapi.h>
 
 static char hycapi_revision[] = "$Revision: 1.8.6.4 $";
 

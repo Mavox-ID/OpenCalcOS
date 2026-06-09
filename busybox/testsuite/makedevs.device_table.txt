@@ -98,7 +98,7 @@
 #/dev/dsp1	c	666	0	29	14	19	-	-	-
 #/dev/sndstat	c	666	0	29	14	6	-	-	-
 
-# User-mode Linux stuff
+# User-mode Beep stuff
 #/dev/ubda	b	640	0	0	98	0	0	0	-
 #/dev/ubda	b	640	0	0	98	1	1	1	15
 

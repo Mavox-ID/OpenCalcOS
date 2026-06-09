@@ -13,12 +13,12 @@
  *
  */
 
-#include <linux/bitops.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/module.h>
+#include <beep/bitops.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/module.h>
 #include <mach/cpu.h>
 #include <mach/msm_gpiomux.h>
 #include <mach/msm_iomap.h>

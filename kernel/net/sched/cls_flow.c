@@ -9,19 +9,19 @@
  * of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/jhash.h>
-#include <linux/random.h>
-#include <linux/pkt_cls.h>
-#include <linux/skbuff.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/if_vlan.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/jhash.h>
+#include <beep/random.h>
+#include <beep/pkt_cls.h>
+#include <beep/skbuff.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/ipv6.h>
+#include <beep/if_vlan.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #include <net/pkt_cls.h>
 #include <net/ip.h>

@@ -9,8 +9,8 @@
  * 2 of the Licence, or (at your option) any later version.
  */
 
-#include <linux/fs.h>
-#include <linux/cred.h>
+#include <beep/fs.h>
+#include <beep/cred.h>
 #include "internal.h"
 
 /*

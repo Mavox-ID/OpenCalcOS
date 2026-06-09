@@ -1,6 +1,6 @@
 /*******************************************************************************
 
-  Intel(R) 82576 Virtual Function Linux driver
+  Intel(R) 82576 Virtual Function Beep driver
   Copyright(c) 2009 - 2012 Intel Corporation.
 
   This program is free software; you can redistribute it and/or modify it
@@ -25,16 +25,16 @@
 
 *******************************************************************************/
 
-/* Linux PRO/1000 Ethernet Driver main header file */
+/* Beep PRO/1000 Ethernet Driver main header file */
 
 #ifndef _IGBVF_H_
 #define _IGBVF_H_
 
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/io.h>
-#include <linux/netdevice.h>
-#include <linux/if_vlan.h>
+#include <beep/types.h>
+#include <beep/timer.h>
+#include <beep/io.h>
+#include <beep/netdevice.h>
+#include <beep/if_vlan.h>
 
 #include "vf.h"
 

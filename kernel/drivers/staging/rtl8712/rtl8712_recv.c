@@ -2,7 +2,7 @@
  * rtl8712_recv.c
  *
  * Copyright(c) 2007 - 2010 Realtek Corporation. All rights reserved.
- * Linux device driver for RTL8192SU
+ * Beep device driver for RTL8192SU
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of version 2 of the GNU General Public License as
@@ -17,7 +17,7 @@
  * this program; if not, write to the Free Software Foundation, Inc.,
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110, USA
  *
- * Modifications for inclusion into the Linux staging tree are
+ * Modifications for inclusion into the Beep staging tree are
  * Copyright(c) 2010 Larry Finger. All rights reserved.
  *
  * Contact information:
@@ -28,8 +28,8 @@
 
 #define _RTL8712_RECV_C_
 
-#include <linux/if_ether.h>
-#include <linux/ip.h>
+#include <beep/if_ether.h>
+#include <beep/ip.h>
 
 #include "osdep_service.h"
 #include "drv_types.h"

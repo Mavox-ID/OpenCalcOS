@@ -12,8 +12,8 @@
 #ifndef _REGS_FIMV_V6_H
 #define _REGS_FIMV_V6_H
 
-#include <linux/kernel.h>
-#include <linux/sizes.h>
+#include <beep/kernel.h>
+#include <beep/sizes.h>
 
 #define S5P_FIMV_REG_SIZE_V6	(S5P_FIMV_END_ADDR - S5P_FIMV_START_ADDR)
 #define S5P_FIMV_REG_COUNT_V6	((S5P_FIMV_END_ADDR - S5P_FIMV_START_ADDR) / 4)

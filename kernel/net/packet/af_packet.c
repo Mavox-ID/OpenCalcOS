@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -15,7 +15,7 @@
  *		Alan Cox	:	tidied skbuff lists.
  *		Alan Cox	:	Now uses generic datagram routines I
  *					added. Also fixed the peek/read crash
- *					from all old Linux datagram code.
+ *					from all old Beep datagram code.
  *		Alan Cox	:	Uses the improved datagram code.
  *		Alan Cox	:	Added NULL's for socket options.
  *		Alan Cox	:	Re-commented the code.
@@ -52,42 +52,42 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/capability.h>
-#include <linux/fcntl.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/if_packet.h>
-#include <linux/wireless.h>
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/capability.h>
+#include <beep/fcntl.h>
+#include <beep/socket.h>
+#include <beep/in.h>
+#include <beep/inet.h>
+#include <beep/netdevice.h>
+#include <beep/if_packet.h>
+#include <beep/wireless.h>
+#include <beep/kernel.h>
+#include <beep/kmod.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
 #include <net/net_namespace.h>
 #include <net/ip.h>
 #include <net/protocol.h>
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 #include <net/sock.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
+#include <beep/errno.h>
+#include <beep/timer.h>
 #include <asm/uaccess.h>
 #include <asm/ioctls.h>
 #include <asm/page.h>
 #include <asm/cacheflush.h>
 #include <asm/io.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/poll.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/if_vlan.h>
-#include <linux/virtio_net.h>
-#include <linux/errqueue.h>
-#include <linux/net_tstamp.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/poll.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/mutex.h>
+#include <beep/if_vlan.h>
+#include <beep/virtio_net.h>
+#include <beep/errqueue.h>
+#include <beep/net_tstamp.h>
 
 #ifdef CONFIG_INET
 #include <net/inet_common.h>

@@ -10,7 +10,7 @@
 
 NM := $(NM) -B
 
-LDFLAGS_vmlinux	:= -static -N #-relax
+LDFLAGS_vmbeep	:= -static -N #-relax
 CHECKFLAGS	+= -D__alpha__ -m64
 cflags-y	:= -pipe -mno-fp-regs -ffixed-8 -msmall-data
 cflags-y	+= $(call cc-option, -fno-jump-tables)
@@ -50,19 +50,19 @@ export LIBS_Y
 boot := arch/alpha/boot
 
 #Default target when executing make with no arguments
-all boot: $(boot)/vmlinux.gz
+all boot: $(boot)/vmbeep.gz
 
-$(boot)/vmlinux.gz: vmlinux
+$(boot)/vmbeep.gz: vmbeep
 	$(Q)$(MAKE) $(build)=$(boot) $@
 
-bootimage bootpfile bootpzfile: vmlinux
+bootimage bootpfile bootpzfile: vmbeep
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
 archclean:
 	$(Q)$(MAKE) $(clean)=$(boot)
 
 define archhelp
-  echo '* boot		- Compressed kernel image (arch/alpha/boot/vmlinux.gz)'
+  echo '* boot		- Compressed kernel image (arch/alpha/boot/vmbeep.gz)'
   echo '  bootimage	- SRM bootable image (arch/alpha/boot/bootimage)'
   echo '  bootpfile	- BOOTP bootable image (arch/alpha/boot/bootpfile)'
   echo '  bootpzfile	- compressed kernel BOOTP image (arch/alpha/boot/bootpzfile)'

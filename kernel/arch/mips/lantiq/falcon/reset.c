@@ -7,11 +7,11 @@
  * Copyright (C) 2012 John Crispin <blogic@openwrt.org>
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/pm.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/pm.h>
 #include <asm/reboot.h>
-#include <linux/export.h>
+#include <beep/export.h>
 
 #include <lantiq_soc.h>
 

@@ -13,18 +13,18 @@
 
 #undef DEBUG
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/cpufreq.h>
-#include <linux/init.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
-#include <linux/time.h>
-#include <linux/of.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/cpufreq.h>
+#include <beep/init.h>
+#include <beep/completion.h>
+#include <beep/mutex.h>
+#include <beep/time.h>
+#include <beep/of.h>
 
 #define DBG(fmt...) pr_debug(fmt)
 

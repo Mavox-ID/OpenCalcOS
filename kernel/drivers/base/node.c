@@ -2,21 +2,21 @@
  * Basic Node interface support
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/memory.h>
-#include <linux/vmstat.h>
-#include <linux/node.h>
-#include <linux/hugetlb.h>
-#include <linux/compaction.h>
-#include <linux/cpumask.h>
-#include <linux/topology.h>
-#include <linux/nodemask.h>
-#include <linux/cpu.h>
-#include <linux/device.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/memory.h>
+#include <beep/vmstat.h>
+#include <beep/node.h>
+#include <beep/hugetlb.h>
+#include <beep/compaction.h>
+#include <beep/cpumask.h>
+#include <beep/topology.h>
+#include <beep/nodemask.h>
+#include <beep/cpu.h>
+#include <beep/device.h>
+#include <beep/swap.h>
+#include <beep/slab.h>
 
 static struct bus_type node_subsys = {
 	.name = "node",

@@ -10,7 +10,7 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/errno.h>
+#include <beep/errno.h>
 #include <asm/cacheflush.h>
 #include <asm/cp15.h>
 

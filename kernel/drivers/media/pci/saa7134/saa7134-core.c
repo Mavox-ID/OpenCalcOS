@@ -20,18 +20,18 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/kmod.h>
-#include <linux/sound.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/dma-mapping.h>
-#include <linux/pm.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/kmod.h>
+#include <beep/sound.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/mutex.h>
+#include <beep/dma-mapping.h>
+#include <beep/pm.h>
 
 #include "saa7134-reg.h"
 #include "saa7134.h"
@@ -773,7 +773,7 @@ static void must_configure_manually(int has_eeprom)
 		       "saa7134: Board is currently unknown. You might try to use the card=<nr>\n"
 		       "saa7134: insmod option to specify which board do you have, but this is\n"
 		       "saa7134: somewhat risky, as might damage your card. It is better to ask\n"
-		       "saa7134: for support at linux-media@vger.kernel.org.\n"
+		       "saa7134: for support at beep-media@vger.kernel.org.\n"
 		       "saa7134: The supported cards are:\n");
 
 	for (i = 0; i < saa7134_bcount; i++) {

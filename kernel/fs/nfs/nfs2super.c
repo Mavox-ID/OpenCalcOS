@@ -1,8 +1,8 @@
 /*
  * Copyright (c) 2012 Netapp, Inc. All rights reserved.
  */
-#include <linux/module.h>
-#include <linux/nfs_fs.h>
+#include <beep/module.h>
+#include <beep/nfs_fs.h>
 #include "internal.h"
 #include "nfs.h"
 

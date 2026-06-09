@@ -8,8 +8,8 @@
  * Authors: Matthew Garrett
  *          Dave Airlie
  */
-#include <linux/module.h>
-#include <linux/console.h>
+#include <beep/module.h>
+#include <beep/console.h>
 #include <drm/drmP.h>
 
 #include "cirrus_drv.h"

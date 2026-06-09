@@ -15,7 +15,7 @@
 #ifndef _ASM_TILE_MMU_CONTEXT_H
 #define _ASM_TILE_MMU_CONTEXT_H
 
-#include <linux/smp.h>
+#include <beep/smp.h>
 #include <asm/setup.h>
 #include <asm/page.h>
 #include <asm/pgalloc.h>
@@ -72,9 +72,9 @@ static inline void install_page_table(pgd_t *pgdir, int asid)
  * shootdowns, is a reasonable thing to do.  And importantly, this
  * lets us use the hypervisor's internal APIs for TLB shootdown, which
  * means we don't have to worry about having TLB shootdowns blocked
- * when Linux is disabling interrupts; see the page migration code for
+ * when Beep is disabling interrupts; see the page migration code for
  * an example of where it's important for TLB shootdowns to complete
- * even when interrupts are disabled at the Linux level.
+ * even when interrupts are disabled at the Beep level.
  */
 static inline void enter_lazy_tlb(struct mm_struct *mm, struct task_struct *t)
 {

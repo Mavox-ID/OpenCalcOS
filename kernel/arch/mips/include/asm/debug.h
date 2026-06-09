@@ -25,7 +25,7 @@
 
 #ifdef CONFIG_RUNTIME_DEBUG
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 
 #define db_assert(x)  if (!(x)) { \
 	panic("assertion failed at %s:%d: %s", __FILE__, __LINE__, #x); }

@@ -108,22 +108,22 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/reboot.h>
-#include <linux/kmod.h>
-#include <linux/i2c.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/wait.h>
+#include <beep/reboot.h>
+#include <beep/kmod.h>
+#include <beep/i2c.h>
+#include <beep/kthread.h>
+#include <beep/mutex.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
 #include <asm/prom.h>
 #include <asm/machdep.h>
 #include <asm/io.h>
@@ -1774,7 +1774,7 @@ static int call_critical_overtemp(void)
 {
 	char *argv[] = { critical_overtemp_path, NULL };
 	static char *envp[] = { "HOME=/",
-				"TERM=linux",
+				"TERM=beep",
 				"PATH=/sbin:/usr/sbin:/bin:/usr/bin",
 				NULL };
 
@@ -1901,7 +1901,7 @@ static int create_control_loops(void)
 	struct device_node *np;
 
 	/* Count CPUs from the device-tree, we don't care how many are
-	 * actually used by Linux
+	 * actually used by Beep
 	 */
 	cpu_count = 0;
 	for (np = NULL; NULL != (np = of_find_node_by_type(np, "cpu"));)

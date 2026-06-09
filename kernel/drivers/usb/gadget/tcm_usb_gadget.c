@@ -6,16 +6,16 @@
  * Author: Sebastian Andrzej Siewior <bigeasy at linutronix dot de>
  * License: GPLv2 as published by FSF.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/configfs.h>
-#include <linux/ctype.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/composite.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/storage.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/configfs.h>
+#include <beep/ctype.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/composite.h>
+#include <beep/usb/gadget.h>
+#include <beep/usb/storage.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_tcq.h>
 #include <target/target_core_base.h>
@@ -2184,7 +2184,7 @@ static struct usb_descriptor_header *uasp_ss_function_desc[] = {
 };
 
 #define UAS_VENDOR_ID	0x0525	/* NetChip */
-#define UAS_PRODUCT_ID	0xa4a5	/* Linux-USB File-backed Storage Gadget */
+#define UAS_PRODUCT_ID	0xa4a5	/* Beep-USB File-backed Storage Gadget */
 
 static struct usb_device_descriptor usbg_device_desc = {
 	.bLength =		sizeof(usbg_device_desc),
@@ -2222,7 +2222,7 @@ static int guas_unbind(struct usb_composite_dev *cdev)
 }
 
 static struct usb_configuration usbg_config_driver = {
-	.label                  = "Linux Target",
+	.label                  = "Beep Target",
 	.bConfigurationValue    = 1,
 	.bmAttributes           = USB_CONFIG_ATT_SELFPOWER,
 };

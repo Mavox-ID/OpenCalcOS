@@ -19,12 +19,12 @@
  *
  */
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/if_arp.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
+#include <beep/capability.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/if_arp.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
 
 #include <asm/uaccess.h>
 
@@ -59,9 +59,9 @@ static const unsigned char scan_rate_list[] = { 2, 4, 11, 22,
  *
  *  This is a helper function, hence it does not lock. Make sure
  *  caller deals with locking *if* necessary. This function sets the
- *  mode-dependent mib values and does the mapping of the Linux
+ *  mode-dependent mib values and does the mapping of the Beep
  *  Wireless API modes to Device firmware modes. It also checks for
- *  correct valid Linux wireless modes.
+ *  correct valid Beep wireless modes.
  */
 static int
 prism54_mib_mode_helper(islpci_private *priv, u32 iw_mode)
@@ -329,7 +329,7 @@ prism54_set_mode(struct net_device *ndev, struct iw_request_info *info,
 	islpci_private *priv = netdev_priv(ndev);
 	u32 mlmeautolevel = CARD_DEFAULT_MLME_MODE;
 
-	/* Let's see if the user passed a valid Linux Wireless mode */
+	/* Let's see if the user passed a valid Beep Wireless mode */
 	if (*uwrq > IW_MODE_MONITOR || *uwrq < IW_MODE_AUTO) {
 		printk(KERN_DEBUG
 		       "%s: %s() You passed a non-valid init_mode.\n",

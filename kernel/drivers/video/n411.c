@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/n411.c -- Platform device for N411 EPD kit
+ * beep/drivers/video/n411.c -- Platform device for N411 EPD kit
  *
  * Copyright (C) 2008, Jaya Kumar
  *
@@ -23,18 +23,18 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/list.h>
-#include <linux/uaccess.h>
-#include <linux/irq.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/list.h>
+#include <beep/uaccess.h>
+#include <beep/irq.h>
 
 #include <video/hecubafb.h>
 

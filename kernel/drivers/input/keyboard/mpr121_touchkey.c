@@ -12,15 +12,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/i2c/mpr121_touchkey.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/bitops.h>
+#include <beep/interrupt.h>
+#include <beep/i2c/mpr121_touchkey.h>
 
 /* Register definitions */
 #define ELE_TOUCH_STATUS_0_ADDR	0x0

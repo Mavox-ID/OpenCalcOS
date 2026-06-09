@@ -10,10 +10,10 @@
 #ifndef _SPARC64_WATCHDOG_H
 #define _SPARC64_WATCHDOG_H
 
-#include <linux/watchdog.h>
+#include <beep/watchdog.h>
 
 /* Solaris compatibility ioctls--
- * Ref. <linux/watchdog.h> for standard linux watchdog ioctls
+ * Ref. <beep/watchdog.h> for standard beep watchdog ioctls
  */
 #define WIOCSTART _IO (WATCHDOG_IOCTL_BASE, 10)		/* Start Timer		*/
 #define WIOCSTOP  _IO (WATCHDOG_IOCTL_BASE, 11)		/* Stop Timer		*/

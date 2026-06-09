@@ -1,5 +1,5 @@
 /*
- * Guillemot Maxi Radio FM 2000 PCI radio card driver for Linux
+ * Guillemot Maxi Radio FM 2000 PCI radio card driver for Beep
  * (C) 2001 Dimitromanolakis Apostolos <apdim@grecian.net>
  *
  * Based in the radio Maestro PCI driver. Actually it uses the same chip
@@ -33,15 +33,15 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/videodev2.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/mutex.h>
+#include <beep/pci.h>
+#include <beep/videodev2.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 #include <sound/tea575x-tuner.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>

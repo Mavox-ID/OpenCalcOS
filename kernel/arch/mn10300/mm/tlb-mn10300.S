@@ -12,8 +12,8 @@
 # 2 of the Licence, or (at your option) any later version.
 #
 ###############################################################################
-#include <linux/sys.h>
-#include <linux/linkage.h>
+#include <beep/sys.h>
+#include <beep/linkage.h>
 #include <asm/smp.h>
 #include <asm/intctl-regs.h>
 #include <asm/frame.inc>

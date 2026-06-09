@@ -12,13 +12,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/m48t86.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/m48t86.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
 
 #include <mach/hardware.h>
 
@@ -115,7 +115,7 @@ static struct mtd_partition ts72xx_nand_parts[] = {
 		.size		= TS72XX_BOOTROM_PART_SIZE,
 		.mask_flags	= MTD_WRITEABLE,	/* force read-only */
 	}, {
-		.name		= "Linux",
+		.name		= "Beep",
 		.offset		= MTDPART_OFS_RETAIN,
 		.size		= TS72XX_REDBOOT_PART_SIZE,
 				/* leave so much for last partition */

@@ -4,7 +4,7 @@
 #if !defined(_TRACE_GPIO_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_GPIO_H
 
-#include <linux/tracepoint.h>
+#include <beep/tracepoint.h>
 
 TRACE_EVENT(gpio_direction,
 

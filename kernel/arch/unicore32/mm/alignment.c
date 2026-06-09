@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/mm/alignment.c
+ * beep/arch/unicore32/mm/alignment.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -13,13 +13,13 @@
  * TODO:
  *  FPU ldm/stm not handling
  */
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
+#include <beep/compiler.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/uaccess.h>
 
 #include <asm/tlbflush.h>
 #include <asm/unaligned.h>

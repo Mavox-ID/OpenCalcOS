@@ -1,4 +1,4 @@
-#include <linux/platform_device.h>
+#include <beep/platform_device.h>
 
 #include <asm/cpu_type.h>
 

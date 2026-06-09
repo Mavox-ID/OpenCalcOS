@@ -1,4 +1,4 @@
-/* linux/drivers/i2c/busses/scx200_i2c.c
+/* beep/drivers/i2c/busses/scx200_i2c.c
 
    Copyright (c) 2001,2002 Christer Weinigel <wingel@nano-system.com>
 
@@ -23,15 +23,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/i2c.h>
+#include <beep/i2c-algo-bit.h>
+#include <beep/io.h>
 
-#include <linux/scx200_gpio.h>
+#include <beep/scx200_gpio.h>
 
 MODULE_AUTHOR("Christer Weinigel <wingel@nano-system.com>");
 MODULE_DESCRIPTION("NatSemi SCx200 I2C Driver");

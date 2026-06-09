@@ -2,7 +2,7 @@
 /*
  * A tiny 'top' utility.
  *
- * This is written specifically for the linux /proc/<PID>/stat(m)
+ * This is written specifically for the beep /proc/<PID>/stat(m)
  * files format.
  *
  * This reads the PIDs of all processes and their status and shows
@@ -135,7 +135,7 @@ typedef struct top_status_t {
 } top_status_t;
 
 typedef struct jiffy_counts_t {
-	/* Linux 2.4.x has only first four */
+	/* Beep 2.4.x has only first four */
 	unsigned long long usr, nic, sys, idle;
 	unsigned long long iowait, irq, softirq, steal;
 	unsigned long long total;
@@ -233,7 +233,7 @@ enum {
 static int pid_sort(top_status_t *P, top_status_t *Q)
 {
 	/* Buggy wrt pids with high bit set */
-	/* (linux pids are in [1..2^15-1]) */
+	/* (beep pids are in [1..2^15-1]) */
 	return (Q->pid - P->pid);
 }
 #endif

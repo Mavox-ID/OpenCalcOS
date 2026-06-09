@@ -11,12 +11,12 @@
 # 2 of the Licence, or (at your option) any later version.
 #
 ###############################################################################
-#include <linux/sys.h>
-#include <linux/linkage.h>
+#include <beep/sys.h>
+#include <beep/linkage.h>
 #include <asm/intctl-regs.h>
 #include <asm/timer-regs.h>
 #include <asm/frame.inc>
-#include <linux/threads.h>
+#include <beep/threads.h>
 
 	.text
 
@@ -46,7 +46,7 @@ watchdog_handler:
 ###############################################################################
 #
 # Watchdog touch entry point
-# - kept to absolute minimum (unfortunately, it's prototyped in linux/nmi.h so
+# - kept to absolute minimum (unfortunately, it's prototyped in beep/nmi.h so
 #   we can't inline it)
 #
 ###############################################################################

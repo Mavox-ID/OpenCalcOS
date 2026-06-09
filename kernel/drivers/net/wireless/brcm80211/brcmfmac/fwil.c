@@ -18,8 +18,8 @@
  * are located to set and get variables to and from the firmware.
  */
 
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
 #include <brcmu_utils.h>
 #include <brcmu_wifi.h>
 #include "dhd.h"

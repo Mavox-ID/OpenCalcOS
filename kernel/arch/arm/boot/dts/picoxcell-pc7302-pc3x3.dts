@@ -23,7 +23,7 @@
 	};
 
 	chosen {
-		linux,stdout-path = &uart0;
+		beep,stdout-path = &uart0;
 	};
 
 	clocks {

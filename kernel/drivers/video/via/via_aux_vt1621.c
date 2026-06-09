@@ -21,7 +21,7 @@
  * driver for VIA VT1621(M) TV Encoder
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include "via_aux.h"
 
 

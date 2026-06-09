@@ -3,11 +3,11 @@
  *
  *   Author: Ryan Wilson <hap9@epoch.ncsc.mil>
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/vmalloc.h>
+#include <beep/workqueue.h>
 #include <xen/xenbus.h>
 #include <xen/events.h>
 #include <asm/xen/pci.h>

@@ -22,9 +22,9 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/bootmem.h>
-#include <linux/memblock.h>
-#include <linux/module.h>
+#include <beep/bootmem.h>
+#include <beep/memblock.h>
+#include <beep/module.h>
 
 #include "numa_internal.h"
 

@@ -20,32 +20,32 @@
  * Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 
-#include <linux/atomic.h>
-#include <linux/crc32.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/hardirq.h>
-#include <linux/if_vlan.h>
-#include <linux/in.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/irqflags.h>
-#include <linux/irqreturn.h>
-#include <linux/mii.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/pm.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/tcp.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <beep/atomic.h>
+#include <beep/crc32.h>
+#include <beep/dma-mapping.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/hardirq.h>
+#include <beep/if_vlan.h>
+#include <beep/in.h>
+#include <beep/interrupt.h>
+#include <beep/ip.h>
+#include <beep/irqflags.h>
+#include <beep/irqreturn.h>
+#include <beep/mii.h>
+#include <beep/net.h>
+#include <beep/netdevice.h>
+#include <beep/pci.h>
+#include <beep/pci_ids.h>
+#include <beep/pm.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/tcp.h>
+#include <beep/timer.h>
+#include <beep/types.h>
+#include <beep/workqueue.h>
 
 #include "atl2.h"
 
@@ -1294,7 +1294,7 @@ static void atl2_setup_pcicmd(struct pci_dev *pdev)
 
 	/*
 	 * some motherboards BIOS(PXE/EFI) driver may set PME
-	 * while they transfer control to OS (Windows/Linux)
+	 * while they transfer control to OS (Windows/Beep)
 	 * so we should clear this bit before NIC work normally
 	 */
 	pci_write_config_dword(pdev, REG_PM_CTRLSTAT, 0);

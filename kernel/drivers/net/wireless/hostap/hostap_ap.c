@@ -16,13 +16,13 @@
  *   (8802.11: 5.5)
  */
 
-#include <linux/proc_fs.h>
-#include <linux/delay.h>
-#include <linux/random.h>
-#include <linux/if_arp.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/moduleparam.h>
+#include <beep/proc_fs.h>
+#include <beep/delay.h>
+#include <beep/random.h>
+#include <beep/if_arp.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/moduleparam.h>
 
 #include "hostap_wlan.h"
 #include "hostap.h"

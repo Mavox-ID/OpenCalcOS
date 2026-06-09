@@ -10,15 +10,15 @@
  * option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/of.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/of.h>
 
 #include <video/exynos_dp.h>
 

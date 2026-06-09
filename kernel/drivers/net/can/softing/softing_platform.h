@@ -1,5 +1,5 @@
 
-#include <linux/platform_device.h>
+#include <beep/platform_device.h>
 
 #ifndef _SOFTING_DEVICE_H_
 #define _SOFTING_DEVICE_H_

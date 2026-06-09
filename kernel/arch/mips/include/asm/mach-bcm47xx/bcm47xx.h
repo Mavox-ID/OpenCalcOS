@@ -19,9 +19,9 @@
 #ifndef __ASM_BCM47XX_H
 #define __ASM_BCM47XX_H
 
-#include <linux/ssb/ssb.h>
-#include <linux/bcma/bcma.h>
-#include <linux/bcma/bcma_soc.h>
+#include <beep/ssb/ssb.h>
+#include <beep/bcma/bcma.h>
+#include <beep/bcma/bcma_soc.h>
 
 enum bcm47xx_bus_type {
 #ifdef CONFIG_BCM47XX_SSB

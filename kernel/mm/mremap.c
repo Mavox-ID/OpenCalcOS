@@ -7,18 +7,18 @@
  *	(C) Copyright 2002 Red Hat Inc, All Rights Reserved
  */
 
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/shm.h>
-#include <linux/ksm.h>
-#include <linux/mman.h>
-#include <linux/swap.h>
-#include <linux/capability.h>
-#include <linux/fs.h>
-#include <linux/highmem.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/mmu_notifier.h>
+#include <beep/mm.h>
+#include <beep/hugetlb.h>
+#include <beep/shm.h>
+#include <beep/ksm.h>
+#include <beep/mman.h>
+#include <beep/swap.h>
+#include <beep/capability.h>
+#include <beep/fs.h>
+#include <beep/highmem.h>
+#include <beep/security.h>
+#include <beep/syscalls.h>
+#include <beep/mmu_notifier.h>
 
 #include <asm/uaccess.h>
 #include <asm/cacheflush.h>

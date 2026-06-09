@@ -25,10 +25,10 @@
  * 02110-1301 USA
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/omap-iommu.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <beep/dma-mapping.h>
+#include <beep/omap-iommu.h>
+#include <beep/slab.h>
+#include <beep/uaccess.h>
 
 #include "isp.h"
 

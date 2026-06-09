@@ -6,7 +6,7 @@
  * for all vDSO implementations.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/unistd_32.h>
 #include <asm/asm-offsets.h>
 

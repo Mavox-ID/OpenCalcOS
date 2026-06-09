@@ -16,15 +16,15 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/i2c.h>
-#include <linux/i2c-mux.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of_i2c.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/i2c-mux-pinctrl.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/i2c.h>
+#include <beep/i2c-mux.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/of_i2c.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/i2c-mux-pinctrl.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
 struct i2c_mux_pinctrl {
 	struct device *dev;

@@ -19,7 +19,7 @@
 
 #include "omap_drv.h"
 
-#include <linux/dma-buf.h>
+#include <beep/dma-buf.h>
 
 static struct sg_table *omap_gem_map_dma_buf(
 		struct dma_buf_attachment *attachment,

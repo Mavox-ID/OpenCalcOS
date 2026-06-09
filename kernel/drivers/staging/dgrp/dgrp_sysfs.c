@@ -16,13 +16,13 @@
 
 #include "dgrp_common.h"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/serial_reg.h>
-#include <linux/pci.h>
-#include <linux/kdev_t.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/ctype.h>
+#include <beep/string.h>
+#include <beep/serial_reg.h>
+#include <beep/pci.h>
+#include <beep/kdev_t.h>
 
 
 #define PORTSERVER_DIVIDEND 1843200

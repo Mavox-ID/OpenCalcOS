@@ -24,12 +24,12 @@
  *
  ********************************************************************/
 
-#include <linux/skbuff.h>
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
-#include <linux/irda.h>
-#include <linux/slab.h>
+#include <beep/skbuff.h>
+#include <beep/if.h>
+#include <beep/if_ether.h>
+#include <beep/netdevice.h>
+#include <beep/irda.h>
+#include <beep/slab.h>
 
 #include <net/pkt_sched.h>
 #include <net/sock.h>

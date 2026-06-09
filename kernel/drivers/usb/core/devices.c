@@ -49,15 +49,15 @@
  *   per device, not per bus
  */
 
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/gfp.h>
-#include <linux/poll.h>
-#include <linux/usb.h>
-#include <linux/usbdevice_fs.h>
-#include <linux/usb/hcd.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/gfp.h>
+#include <beep/poll.h>
+#include <beep/usb.h>
+#include <beep/usbdevice_fs.h>
+#include <beep/usb/hcd.h>
+#include <beep/mutex.h>
+#include <beep/uaccess.h>
 
 #include "usb.h"
 

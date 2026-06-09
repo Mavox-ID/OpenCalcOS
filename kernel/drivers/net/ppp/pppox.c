@@ -1,5 +1,5 @@
-/** -*- linux-c -*- ***********************************************************
- * Linux PPP over X/Ethernet (PPPoX/PPPoE) Sockets
+/** -*- beep-c -*- ***********************************************************
+ * Beep PPP over X/Ethernet (PPPoX/PPPoE) Sockets
  *
  * PPPoX --- Generic PPP encapsulation socket family
  * PPPoE --- PPP over Ethernet (RFC 2516)
@@ -19,18 +19,18 @@
  *
  */
 
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/net.h>
-#include <linux/init.h>
-#include <linux/if_pppox.h>
-#include <linux/ppp_defs.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/ppp_channel.h>
-#include <linux/kmod.h>
+#include <beep/string.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/netdevice.h>
+#include <beep/net.h>
+#include <beep/init.h>
+#include <beep/if_pppox.h>
+#include <beep/ppp_defs.h>
+#include <beep/ppp-ioctl.h>
+#include <beep/ppp_channel.h>
+#include <beep/kmod.h>
 
 #include <net/sock.h>
 

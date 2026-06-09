@@ -1,9 +1,9 @@
 /* This is a module which is used to mark packets for tracing.
  */
-#include <linux/module.h>
-#include <linux/skbuff.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
 
-#include <linux/netfilter/x_tables.h>
+#include <beep/netfilter/x_tables.h>
 
 MODULE_DESCRIPTION("Xtables: packet flow tracing");
 MODULE_LICENSE("GPL");

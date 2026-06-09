@@ -31,20 +31,20 @@
 /* Thanx to gkh and the rest of the usb dev group for all code I have
    assimilated :-) */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/serial.h>
-#include <linux/usb/serial.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/mutex.h>
+#include <beep/uaccess.h>
+#include <beep/usb.h>
+#include <beep/serial.h>
+#include <beep/usb/serial.h>
 #include "ftdi_sio.h"
 #include "ftdi_sio_ids.h"
 
@@ -2443,7 +2443,7 @@ static int ftdi_ioctl(struct tty_struct *tty,
 	 *   (use |'ed TIOCM_RNG/DSR/CD/CTS for masking)
 	 * Caller should use TIOCGICOUNT to see which one it was.
 	 *
-	 * This code is borrowed from linux/drivers/char/serial.c
+	 * This code is borrowed from beep/drivers/char/serial.c
 	 */
 	case TIOCMIWAIT:
 		cprev = priv->icount;

@@ -1,8 +1,8 @@
 #
-# Makefile for the linux kernel.
+# Makefile for the beep kernel.
 #
 
-CPPFLAGS_vmlinux.lds := -DTEXT_OFFSET=$(TEXT_OFFSET)
+CPPFLAGS_vmbeep.lds := -DTEXT_OFFSET=$(TEXT_OFFSET)
 AFLAGS_head.o        := -DTEXT_OFFSET=$(TEXT_OFFSET)
 
 ifdef CONFIG_FUNCTION_TRACER
@@ -83,4 +83,4 @@ obj-$(CONFIG_EARLY_PRINTK)	+= early_printk.o
 
 obj-$(CONFIG_ARM_VIRT_EXT)	+= hyp-stub.o
 
-extra-y := $(head-y) vmlinux.lds
+extra-y := $(head-y) vmbeep.lds

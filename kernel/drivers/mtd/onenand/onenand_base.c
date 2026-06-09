@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mtd/onenand/onenand_base.c
+ *  beep/drivers/mtd/onenand/onenand_base.c
  *
  *  Copyright © 2005-2009 Samsung Electronics
  *  Copyright © 2007 Nokia Corporation
@@ -20,18 +20,18 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/onenand.h>
-#include <linux/mtd/partitions.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/jiffies.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/onenand.h>
+#include <beep/mtd/partitions.h>
 
 #include <asm/io.h>
 

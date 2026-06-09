@@ -21,7 +21,7 @@
 #ifndef __UBI_USER_H__
 #define __UBI_USER_H__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * UBI device creation (the same as MTD device attachment)

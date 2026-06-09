@@ -1,7 +1,7 @@
 /*
  * ip_vs_proto_tcp.c:	TCP load balancing support for IPVS
  *
- * Authors:     Wensong Zhang <wensong@linuxvirtualserver.org>
+ * Authors:     Wensong Zhang <wensong@beepvirtualserver.org>
  *              Julian Anastasov <ja@ssi.bg>
  *
  *              This program is free software; you can redistribute it and/or
@@ -20,14 +20,14 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>                  /* for tcphdr */
+#include <beep/kernel.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>                  /* for tcphdr */
 #include <net/ip.h>
 #include <net/tcp.h>                    /* for csum_tcpudp_magic */
 #include <net/ip6_checksum.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter_ipv4.h>
 
 #include <net/ip_vs.h>
 

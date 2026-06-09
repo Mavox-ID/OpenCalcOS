@@ -1,8 +1,8 @@
 /*
- * linux/arch/arm/mach-sa1100/collie.c
+ * beep/arch/arm/mach-sa1100/collie.c
  *
  * May be copied or modified under the terms of the GNU General Public
- * License.  See linux/COPYING for more information.
+ * License.  See beep/COPYING for more information.
  *
  * This file contains all Collie-specific tweaks.
  *
@@ -17,18 +17,18 @@
  *  04-16-2001 Lineo Japan,Inc. ...
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/delay.h>
-#include <linux/platform_data/sa11x0-serial.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/ucb1x00.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/timer.h>
-#include <linux/gpio.h>
-#include <linux/pda_power.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/tty.h>
+#include <beep/delay.h>
+#include <beep/platform_data/sa11x0-serial.h>
+#include <beep/platform_device.h>
+#include <beep/mfd/ucb1x00.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/timer.h>
+#include <beep/gpio.h>
+#include <beep/pda_power.h>
 
 #include <video/sa1100fb.h>
 
@@ -45,7 +45,7 @@
 #include <asm/hardware/scoop.h>
 #include <asm/mach/sharpsl_param.h>
 #include <asm/hardware/locomo.h>
-#include <linux/platform_data/mfd-mcp-sa11x0.h>
+#include <beep/platform_data/mfd-mcp-sa11x0.h>
 #include <mach/irqs.h>
 
 #include "generic.h"

@@ -32,8 +32,8 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/types.h>
-#include <linux/serial_reg.h>
+#include <beep/types.h>
+#include <beep/serial_reg.h>
 
 #include <asm/mipsregs.h>
 #include <asm/netlogic/haldefs.h>

@@ -7,20 +7,20 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/resource.h>
-#include <linux/spi/flash.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/resource.h>
+#include <beep/spi/flash.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
 
 #include <asm/netlogic/haldefs.h>
 #include <asm/netlogic/xlr/iomap.h>

@@ -6,15 +6,15 @@
  * Copyright (C) 2007 Aurelien Jarno <aurelien@aurel32.net>
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/leds.h>
-#include <linux/mtd/physmap.h>
-#include <linux/ssb/ssb.h>
-#include <linux/ssb/ssb_embedded.h>
-#include <linux/interrupt.h>
-#include <linux/reboot.h>
-#include <linux/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
+#include <beep/leds.h>
+#include <beep/mtd/physmap.h>
+#include <beep/ssb/ssb.h>
+#include <beep/ssb/ssb_embedded.h>
+#include <beep/interrupt.h>
+#include <beep/reboot.h>
+#include <beep/gpio.h>
 #include <asm/mach-bcm47xx/bcm47xx.h>
 
 /* GPIO definitions for the WGT634U */
@@ -64,7 +64,7 @@ static struct mtd_partition wgt634u_partitions[] = {
 		.size   = 0x20000		/* 128k */
 	},
 	{
-		.name   = "linux",
+		.name   = "beep",
 		.offset = 0x80000,
 		.size   = 0x140000 		/* 1280k */
 	},

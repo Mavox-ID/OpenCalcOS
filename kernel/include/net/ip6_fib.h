@@ -1,5 +1,5 @@
 /*
- *	Linux INET6 implementation 
+ *	Beep INET6 implementation 
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>	
@@ -13,9 +13,9 @@
 #ifndef _IP6_FIB_H
 #define _IP6_FIB_H
 
-#include <linux/ipv6_route.h>
-#include <linux/rtnetlink.h>
-#include <linux/spinlock.h>
+#include <beep/ipv6_route.h>
+#include <beep/rtnetlink.h>
+#include <beep/spinlock.h>
 #include <net/dst.h>
 #include <net/flow.h>
 #include <net/netlink.h>

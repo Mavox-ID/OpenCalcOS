@@ -1,5 +1,5 @@
 /*
- *  linux/arch/powerpc/platforms/cell/qpace_setup.c
+ *  beep/arch/powerpc/platforms/cell/qpace_setup.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  *  Adapted from 'alpha' version by Gary Thomas
@@ -14,14 +14,14 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/console.h>
-#include <linux/of_platform.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/console.h>
+#include <beep/of_platform.h>
 
 #include <asm/mmu.h>
 #include <asm/processor.h>

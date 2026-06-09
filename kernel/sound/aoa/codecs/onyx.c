@@ -31,9 +31,9 @@
  *	 of hiding it in the aoa_snd_* functions...
  *
  */
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 MODULE_AUTHOR("Johannes Berg <johannes@sipsolutions.net>");
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("pcm3052 (onyx) codec driver for snd-aoa");

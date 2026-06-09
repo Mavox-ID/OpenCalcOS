@@ -21,14 +21,14 @@
 
 #define SAA7134_VERSION "0, 2, 17"
 
-#include <linux/pci.h>
-#include <linux/i2c.h>
-#include <linux/videodev2.h>
-#include <linux/kdev_t.h>
-#include <linux/input.h>
-#include <linux/notifier.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
+#include <beep/pci.h>
+#include <beep/i2c.h>
+#include <beep/videodev2.h>
+#include <beep/kdev_t.h>
+#include <beep/input.h>
+#include <beep/notifier.h>
+#include <beep/delay.h>
+#include <beep/mutex.h>
 
 #include <asm/io.h>
 

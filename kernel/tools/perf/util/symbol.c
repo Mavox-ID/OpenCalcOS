@@ -28,13 +28,13 @@ static int dso__load_kernel_sym(struct dso *dso, struct map *map,
 				symbol_filter_t filter);
 static int dso__load_guest_kernel_sym(struct dso *dso, struct map *map,
 			symbol_filter_t filter);
-static int vmlinux_path__nr_entries;
-static char **vmlinux_path;
+static int vmbeep_path__nr_entries;
+static char **vmbeep_path;
 
 struct symbol_conf symbol_conf = {
 	.exclude_other	  = true,
 	.use_modules	  = true,
-	.try_vmlinux_path = true,
+	.try_vmbeep_path = true,
 	.annotate_src	  = true,
 	.symfs            = "",
 };
@@ -532,7 +532,7 @@ static int dso__load_all_kallsyms(struct dso *dso, const char *filename,
 /*
  * Split the symbols into maps, making sure there are no overlaps, i.e. the
  * kernel range is broken in several maps, named [kernel].N, as we don't have
- * the original ELF section names vmlinux have.
+ * the original ELF section names vmbeep have.
  */
 static int dso__split_kallsyms(struct dso *dso, struct map *map,
 			       symbol_filter_t filter)
@@ -954,7 +954,7 @@ static char *get_kernel_version(const char *root_dir)
 	char version[PATH_MAX];
 	FILE *file;
 	char *name, *tmp;
-	const char *prefix = "Linux version ";
+	const char *prefix = "Beep version ";
 
 	sprintf(version, "%s/proc/version", root_dir);
 	file = fopen(version, "r");
@@ -1081,58 +1081,58 @@ out_failure:
 	return -1;
 }
 
-int dso__load_vmlinux(struct dso *dso, struct map *map,
-		      const char *vmlinux, symbol_filter_t filter)
+int dso__load_vmbeep(struct dso *dso, struct map *map,
+		      const char *vmbeep, symbol_filter_t filter)
 {
 	int err = -1;
 	struct symsrc ss;
-	char symfs_vmlinux[PATH_MAX];
+	char symfs_vmbeep[PATH_MAX];
 	enum dso_binary_type symtab_type;
 
-	snprintf(symfs_vmlinux, sizeof(symfs_vmlinux), "%s%s",
-		 symbol_conf.symfs, vmlinux);
+	snprintf(symfs_vmbeep, sizeof(symfs_vmbeep), "%s%s",
+		 symbol_conf.symfs, vmbeep);
 
 	if (dso->kernel == DSO_TYPE_GUEST_KERNEL)
-		symtab_type = DSO_BINARY_TYPE__GUEST_VMLINUX;
+		symtab_type = DSO_BINARY_TYPE__GUEST_VMBEEP;
 	else
-		symtab_type = DSO_BINARY_TYPE__VMLINUX;
+		symtab_type = DSO_BINARY_TYPE__VMBEEP;
 
-	if (symsrc__init(&ss, dso, symfs_vmlinux, symtab_type))
+	if (symsrc__init(&ss, dso, symfs_vmbeep, symtab_type))
 		return -1;
 
 	err = dso__load_sym(dso, map, &ss, &ss, filter, 0);
 	symsrc__destroy(&ss);
 
 	if (err > 0) {
-		dso__set_long_name(dso, (char *)vmlinux);
+		dso__set_long_name(dso, (char *)vmbeep);
 		dso__set_loaded(dso, map->type);
-		pr_debug("Using %s for symbols\n", symfs_vmlinux);
+		pr_debug("Using %s for symbols\n", symfs_vmbeep);
 	}
 
 	return err;
 }
 
-int dso__load_vmlinux_path(struct dso *dso, struct map *map,
+int dso__load_vmbeep_path(struct dso *dso, struct map *map,
 			   symbol_filter_t filter)
 {
 	int i, err = 0;
 	char *filename;
 
-	pr_debug("Looking at the vmlinux_path (%d entries long)\n",
-		 vmlinux_path__nr_entries + 1);
+	pr_debug("Looking at the vmbeep_path (%d entries long)\n",
+		 vmbeep_path__nr_entries + 1);
 
 	filename = dso__build_id_filename(dso, NULL, 0);
 	if (filename != NULL) {
-		err = dso__load_vmlinux(dso, map, filename, filter);
+		err = dso__load_vmbeep(dso, map, filename, filter);
 		if (err > 0)
 			goto out;
 		free(filename);
 	}
 
-	for (i = 0; i < vmlinux_path__nr_entries; ++i) {
-		err = dso__load_vmlinux(dso, map, vmlinux_path[i], filter);
+	for (i = 0; i < vmbeep_path__nr_entries; ++i) {
+		err = dso__load_vmbeep(dso, map, vmbeep_path[i], filter);
 		if (err > 0) {
-			dso__set_long_name(dso, strdup(vmlinux_path[i]));
+			dso__set_long_name(dso, strdup(vmbeep_path[i]));
 			break;
 		}
 	}
@@ -1147,18 +1147,18 @@ static int dso__load_kernel_sym(struct dso *dso, struct map *map,
 	const char *kallsyms_filename = NULL;
 	char *kallsyms_allocated_filename = NULL;
 	/*
-	 * Step 1: if the user specified a kallsyms or vmlinux filename, use
+	 * Step 1: if the user specified a kallsyms or vmbeep filename, use
 	 * it and only it, reporting errors to the user if it cannot be used.
 	 *
 	 * For instance, try to analyse an ARM perf.data file _without_ a
 	 * build-id, or if the user specifies the wrong path to the right
-	 * vmlinux file, obviously we can't fallback to another vmlinux (a
+	 * vmbeep file, obviously we can't fallback to another vmbeep (a
 	 * x86_86 one, on the machine where analysis is being performed, say),
 	 * or worse, /proc/kallsyms.
 	 *
 	 * If the specified file _has_ a build-id and there is a build-id
 	 * section in the perf.data file, we will still do the expected
-	 * validation in dso__load_vmlinux and will bail out if they don't
+	 * validation in dso__load_vmbeep and will bail out if they don't
 	 * match.
 	 */
 	if (symbol_conf.kallsyms_name != NULL) {
@@ -1166,19 +1166,19 @@ static int dso__load_kernel_sym(struct dso *dso, struct map *map,
 		goto do_kallsyms;
 	}
 
-	if (symbol_conf.vmlinux_name != NULL) {
-		err = dso__load_vmlinux(dso, map,
-					symbol_conf.vmlinux_name, filter);
+	if (symbol_conf.vmbeep_name != NULL) {
+		err = dso__load_vmbeep(dso, map,
+					symbol_conf.vmbeep_name, filter);
 		if (err > 0) {
 			dso__set_long_name(dso,
-					   strdup(symbol_conf.vmlinux_name));
+					   strdup(symbol_conf.vmbeep_name));
 			goto out_fixup;
 		}
 		return err;
 	}
 
-	if (vmlinux_path != NULL) {
-		err = dso__load_vmlinux_path(dso, map, filter);
+	if (vmbeep_path != NULL) {
+		err = dso__load_vmbeep_path(dso, map, filter);
 		if (err > 0)
 			goto out_fixup;
 	}
@@ -1220,7 +1220,7 @@ static int dso__load_kernel_sym(struct dso *dso, struct map *map,
 		kallsyms_filename = kallsyms_allocated_filename;
 
 		if (access(kallsyms_filename, F_OK)) {
-			pr_err("No kallsyms or vmlinux with build-id %s "
+			pr_err("No kallsyms or vmbeep with build-id %s "
 			       "was found\n", sbuild_id);
 			free(kallsyms_allocated_filename);
 			return -1;
@@ -1228,7 +1228,7 @@ static int dso__load_kernel_sym(struct dso *dso, struct map *map,
 	} else {
 		/*
 		 * Last resort, if we don't have a build-id and couldn't find
-		 * any vmlinux file, try the running kernel kallsyms table.
+		 * any vmbeep file, try the running kernel kallsyms table.
 		 */
 		kallsyms_filename = "/proc/kallsyms";
 	}
@@ -1265,13 +1265,13 @@ static int dso__load_guest_kernel_sym(struct dso *dso, struct map *map,
 
 	if (machine__is_default_guest(machine)) {
 		/*
-		 * if the user specified a vmlinux filename, use it and only
+		 * if the user specified a vmbeep filename, use it and only
 		 * it, reporting errors to the user if it cannot be used.
 		 * Or use file guest_kallsyms inputted by user on commandline
 		 */
-		if (symbol_conf.default_guest_vmlinux_name != NULL) {
-			err = dso__load_vmlinux(dso, map,
-				symbol_conf.default_guest_vmlinux_name, filter);
+		if (symbol_conf.default_guest_vmbeep_name != NULL) {
+			err = dso__load_vmbeep(dso, map,
+				symbol_conf.default_guest_vmbeep_name, filter);
 			goto out_try_fixup;
 		}
 
@@ -1336,27 +1336,27 @@ size_t machines__fprintf_dsos_buildid(struct rb_root *machines,
 
 static struct dso *machine__get_kernel(struct machine *machine)
 {
-	const char *vmlinux_name = NULL;
+	const char *vmbeep_name = NULL;
 	struct dso *kernel;
 
 	if (machine__is_host(machine)) {
-		vmlinux_name = symbol_conf.vmlinux_name;
-		if (!vmlinux_name)
-			vmlinux_name = "[kernel.kallsyms]";
+		vmbeep_name = symbol_conf.vmbeep_name;
+		if (!vmbeep_name)
+			vmbeep_name = "[kernel.kallsyms]";
 
-		kernel = dso__kernel_findnew(machine, vmlinux_name,
+		kernel = dso__kernel_findnew(machine, vmbeep_name,
 					     "[kernel]",
 					     DSO_TYPE_KERNEL);
 	} else {
 		char bf[PATH_MAX];
 
 		if (machine__is_default_guest(machine))
-			vmlinux_name = symbol_conf.default_guest_vmlinux_name;
-		if (!vmlinux_name)
-			vmlinux_name = machine__mmap_name(machine, bf,
+			vmbeep_name = symbol_conf.default_guest_vmbeep_name;
+		if (!vmbeep_name)
+			vmbeep_name = machine__mmap_name(machine, bf,
 							  sizeof(bf));
 
-		kernel = dso__kernel_findnew(machine, vmlinux_name,
+		kernel = dso__kernel_findnew(machine, vmbeep_name,
 					     "[guest.kernel]",
 					     DSO_TYPE_GUEST_KERNEL);
 	}
@@ -1418,17 +1418,17 @@ int __machine__create_kernel_maps(struct machine *machine, struct dso *kernel)
 	for (type = 0; type < MAP__NR_TYPES; ++type) {
 		struct kmap *kmap;
 
-		machine->vmlinux_maps[type] = map__new2(start, kernel, type);
-		if (machine->vmlinux_maps[type] == NULL)
+		machine->vmbeep_maps[type] = map__new2(start, kernel, type);
+		if (machine->vmbeep_maps[type] == NULL)
 			return -1;
 
-		machine->vmlinux_maps[type]->map_ip =
-			machine->vmlinux_maps[type]->unmap_ip =
+		machine->vmbeep_maps[type]->map_ip =
+			machine->vmbeep_maps[type]->unmap_ip =
 				identity__map_ip;
-		kmap = map__kmap(machine->vmlinux_maps[type]);
+		kmap = map__kmap(machine->vmbeep_maps[type]);
 		kmap->kmaps = &machine->kmaps;
 		map_groups__insert(&machine->kmaps,
-				   machine->vmlinux_maps[type]);
+				   machine->vmbeep_maps[type]);
 	}
 
 	return 0;
@@ -1441,12 +1441,12 @@ void machine__destroy_kernel_maps(struct machine *machine)
 	for (type = 0; type < MAP__NR_TYPES; ++type) {
 		struct kmap *kmap;
 
-		if (machine->vmlinux_maps[type] == NULL)
+		if (machine->vmbeep_maps[type] == NULL)
 			continue;
 
-		kmap = map__kmap(machine->vmlinux_maps[type]);
+		kmap = map__kmap(machine->vmbeep_maps[type]);
 		map_groups__remove(&machine->kmaps,
-				   machine->vmlinux_maps[type]);
+				   machine->vmbeep_maps[type]);
 		if (kmap->ref_reloc_sym) {
 			/*
 			 * ref_reloc_sym is shared among all maps, so free just
@@ -1460,8 +1460,8 @@ void machine__destroy_kernel_maps(struct machine *machine)
 			kmap->ref_reloc_sym = NULL;
 		}
 
-		map__delete(machine->vmlinux_maps[type]);
-		machine->vmlinux_maps[type] = NULL;
+		map__delete(machine->vmbeep_maps[type]);
+		machine->vmbeep_maps[type] = NULL;
 	}
 }
 
@@ -1489,34 +1489,34 @@ int machine__create_kernel_maps(struct machine *machine)
 	return 0;
 }
 
-static void vmlinux_path__exit(void)
+static void vmbeep_path__exit(void)
 {
-	while (--vmlinux_path__nr_entries >= 0) {
-		free(vmlinux_path[vmlinux_path__nr_entries]);
-		vmlinux_path[vmlinux_path__nr_entries] = NULL;
+	while (--vmbeep_path__nr_entries >= 0) {
+		free(vmbeep_path[vmbeep_path__nr_entries]);
+		vmbeep_path[vmbeep_path__nr_entries] = NULL;
 	}
 
-	free(vmlinux_path);
-	vmlinux_path = NULL;
+	free(vmbeep_path);
+	vmbeep_path = NULL;
 }
 
-static int vmlinux_path__init(void)
+static int vmbeep_path__init(void)
 {
 	struct utsname uts;
 	char bf[PATH_MAX];
 
-	vmlinux_path = malloc(sizeof(char *) * 5);
-	if (vmlinux_path == NULL)
+	vmbeep_path = malloc(sizeof(char *) * 5);
+	if (vmbeep_path == NULL)
 		return -1;
 
-	vmlinux_path[vmlinux_path__nr_entries] = strdup("vmlinux");
-	if (vmlinux_path[vmlinux_path__nr_entries] == NULL)
+	vmbeep_path[vmbeep_path__nr_entries] = strdup("vmbeep");
+	if (vmbeep_path[vmbeep_path__nr_entries] == NULL)
 		goto out_fail;
-	++vmlinux_path__nr_entries;
-	vmlinux_path[vmlinux_path__nr_entries] = strdup("/boot/vmlinux");
-	if (vmlinux_path[vmlinux_path__nr_entries] == NULL)
+	++vmbeep_path__nr_entries;
+	vmbeep_path[vmbeep_path__nr_entries] = strdup("/boot/vmbeep");
+	if (vmbeep_path[vmbeep_path__nr_entries] == NULL)
 		goto out_fail;
-	++vmlinux_path__nr_entries;
+	++vmbeep_path__nr_entries;
 
 	/* only try running kernel version if no symfs was given */
 	if (symbol_conf.symfs[0] != 0)
@@ -1525,35 +1525,35 @@ static int vmlinux_path__init(void)
 	if (uname(&uts) < 0)
 		return -1;
 
-	snprintf(bf, sizeof(bf), "/boot/vmlinux-%s", uts.release);
-	vmlinux_path[vmlinux_path__nr_entries] = strdup(bf);
-	if (vmlinux_path[vmlinux_path__nr_entries] == NULL)
+	snprintf(bf, sizeof(bf), "/boot/vmbeep-%s", uts.release);
+	vmbeep_path[vmbeep_path__nr_entries] = strdup(bf);
+	if (vmbeep_path[vmbeep_path__nr_entries] == NULL)
 		goto out_fail;
-	++vmlinux_path__nr_entries;
-	snprintf(bf, sizeof(bf), "/lib/modules/%s/build/vmlinux", uts.release);
-	vmlinux_path[vmlinux_path__nr_entries] = strdup(bf);
-	if (vmlinux_path[vmlinux_path__nr_entries] == NULL)
+	++vmbeep_path__nr_entries;
+	snprintf(bf, sizeof(bf), "/lib/modules/%s/build/vmbeep", uts.release);
+	vmbeep_path[vmbeep_path__nr_entries] = strdup(bf);
+	if (vmbeep_path[vmbeep_path__nr_entries] == NULL)
 		goto out_fail;
-	++vmlinux_path__nr_entries;
-	snprintf(bf, sizeof(bf), "/usr/lib/debug/lib/modules/%s/vmlinux",
+	++vmbeep_path__nr_entries;
+	snprintf(bf, sizeof(bf), "/usr/lib/debug/lib/modules/%s/vmbeep",
 		 uts.release);
-	vmlinux_path[vmlinux_path__nr_entries] = strdup(bf);
-	if (vmlinux_path[vmlinux_path__nr_entries] == NULL)
+	vmbeep_path[vmbeep_path__nr_entries] = strdup(bf);
+	if (vmbeep_path[vmbeep_path__nr_entries] == NULL)
 		goto out_fail;
-	++vmlinux_path__nr_entries;
+	++vmbeep_path__nr_entries;
 
 	return 0;
 
 out_fail:
-	vmlinux_path__exit();
+	vmbeep_path__exit();
 	return -1;
 }
 
-size_t machine__fprintf_vmlinux_path(struct machine *machine, FILE *fp)
+size_t machine__fprintf_vmbeep_path(struct machine *machine, FILE *fp)
 {
 	int i;
 	size_t printed = 0;
-	struct dso *kdso = machine->vmlinux_maps[MAP__FUNCTION]->dso;
+	struct dso *kdso = machine->vmbeep_maps[MAP__FUNCTION]->dso;
 
 	if (kdso->has_build_id) {
 		char filename[PATH_MAX];
@@ -1561,9 +1561,9 @@ size_t machine__fprintf_vmlinux_path(struct machine *machine, FILE *fp)
 			printed += fprintf(fp, "[0] %s\n", filename);
 	}
 
-	for (i = 0; i < vmlinux_path__nr_entries; ++i)
+	for (i = 0; i < vmbeep_path__nr_entries; ++i)
 		printed += fprintf(fp, "[%d] %s\n",
-				   i + kdso->has_build_id, vmlinux_path[i]);
+				   i + kdso->has_build_id, vmbeep_path[i]);
 
 	return printed;
 }
@@ -1616,7 +1616,7 @@ int symbol__init(void)
 		symbol_conf.priv_size += (sizeof(struct symbol_name_rb_node) -
 					  sizeof(struct symbol));
 
-	if (symbol_conf.try_vmlinux_path && vmlinux_path__init() < 0)
+	if (symbol_conf.try_vmbeep_path && vmbeep_path__init() < 0)
 		return -1;
 
 	if (symbol_conf.field_sep && *symbol_conf.field_sep == '.') {
@@ -1667,7 +1667,7 @@ void symbol__exit(void)
 	strlist__delete(symbol_conf.sym_list);
 	strlist__delete(symbol_conf.dso_list);
 	strlist__delete(symbol_conf.comm_list);
-	vmlinux_path__exit();
+	vmbeep_path__exit();
 	symbol_conf.sym_list = symbol_conf.dso_list = symbol_conf.comm_list = NULL;
 	symbol_conf.initialized = false;
 }
@@ -1691,7 +1691,7 @@ int machines__create_guest_kernel_maps(struct rb_root *machines)
 	pid_t pid;
 	char *endp;
 
-	if (symbol_conf.default_guest_vmlinux_name ||
+	if (symbol_conf.default_guest_vmbeep_name ||
 	    symbol_conf.default_guest_modules ||
 	    symbol_conf.default_guest_kallsyms) {
 		machines__create_kernel_maps(machines, DEFAULT_GUEST_KERNEL_ID);
@@ -1747,7 +1747,7 @@ void machines__destroy_guest_kernel_maps(struct rb_root *machines)
 int machine__load_kallsyms(struct machine *machine, const char *filename,
 			   enum map_type type, symbol_filter_t filter)
 {
-	struct map *map = machine->vmlinux_maps[type];
+	struct map *map = machine->vmbeep_maps[type];
 	int ret = dso__load_kallsyms(map->dso, filename, map, filter);
 
 	if (ret > 0) {
@@ -1763,15 +1763,15 @@ int machine__load_kallsyms(struct machine *machine, const char *filename,
 	return ret;
 }
 
-int machine__load_vmlinux_path(struct machine *machine, enum map_type type,
+int machine__load_vmbeep_path(struct machine *machine, enum map_type type,
 			       symbol_filter_t filter)
 {
-	struct map *map = machine->vmlinux_maps[type];
-	int ret = dso__load_vmlinux_path(map->dso, map, filter);
+	struct map *map = machine->vmbeep_maps[type];
+	int ret = dso__load_vmbeep_path(map->dso, map, filter);
 
 	if (ret > 0) {
 		dso__set_loaded(map->dso, type);
-		map__reloc_vmlinux(map);
+		map__reloc_vmbeep(map);
 	}
 
 	return ret;

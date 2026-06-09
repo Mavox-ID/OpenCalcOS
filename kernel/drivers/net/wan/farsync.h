@@ -1,5 +1,5 @@
 /*
- *      FarSync X21 driver for Linux
+ *      FarSync X21 driver for Beep
  *
  *      Actually sync driver for X.21, V.35 and V.24 on FarSync T-series cards
  *

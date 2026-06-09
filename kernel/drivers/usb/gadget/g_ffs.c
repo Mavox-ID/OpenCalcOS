@@ -12,7 +12,7 @@
 
 #define pr_fmt(fmt) "g_ffs: " fmt
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 /*
  * kbuild is not very cooperative with respect to linking separately
@@ -57,7 +57,7 @@ MODULE_DESCRIPTION(DRIVER_DESC);
 MODULE_AUTHOR("Michal Nazarewicz");
 MODULE_LICENSE("GPL");
 
-#define GFS_VENDOR_ID	0x1d6b	/* Linux Foundation */
+#define GFS_VENDOR_ID	0x1d6b	/* Beep Foundation */
 #define GFS_PRODUCT_ID	0x0105	/* FunctionFS Gadget */
 
 #define GFS_MAX_DEVS	10

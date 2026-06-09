@@ -12,16 +12,16 @@
  * or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
  * for more details.
  */
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
+#include <beep/export.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/io.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/clk-provider.h>
+#include <beep/clkdev.h>
 
 #include "imx-ipu-v3.h"
 #include "ipu-prv.h"

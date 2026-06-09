@@ -18,11 +18,11 @@
  *
  */
 
-#include <linux/seq_file.h>
-#include <linux/fs.h>
-#include <linux/security.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/seq_file.h>
+#include <beep/fs.h>
+#include <beep/security.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 #include <acpi/acpi.h>
 
 #include "tpm.h"

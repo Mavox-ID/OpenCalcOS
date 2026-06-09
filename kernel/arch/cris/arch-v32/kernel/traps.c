@@ -2,8 +2,8 @@
  * Copyright (C) 2003-2006, Axis Communications AB.
  */
 
-#include <linux/ptrace.h>
-#include <linux/module.h>
+#include <beep/ptrace.h>
+#include <beep/module.h>
 #include <asm/uaccess.h>
 #include <hwregs/supp_reg.h>
 #include <hwregs/intr_vect_defs.h>

@@ -157,7 +157,7 @@ const unsigned short *v4l2_i2c_tuner_addrs(enum v4l2_i2c_tuner_type type);
 /* SPI Helper functions */
 #if defined(CONFIG_SPI)
 
-#include <linux/spi/spi.h>
+#include <beep/spi/spi.h>
 
 struct spi_device;
 

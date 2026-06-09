@@ -22,25 +22,25 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/unistd.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/debugfs.h>
-#include <linux/pm.h>
-#include <linux/dmapool.h>
-#include <linux/dma-mapping.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/bitops.h>
-#include <linux/dmi.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/unistd.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/debugfs.h>
+#include <beep/pm.h>
+#include <beep/dmapool.h>
+#include <beep/dma-mapping.h>
+#include <beep/usb.h>
+#include <beep/usb/hcd.h>
+#include <beep/bitops.h>
+#include <beep/dmi.h>
 
 #include <asm/uaccess.h>
 #include <asm/io.h>

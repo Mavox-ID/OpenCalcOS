@@ -17,13 +17,13 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/mempool.h>
-#include <linux/poll.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
-#include <linux/freezer.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/mempool.h>
+#include <beep/poll.h>
+#include <beep/kthread.h>
+#include <beep/slab.h>
+#include <beep/freezer.h>
+#include <beep/export.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/pcm.h>

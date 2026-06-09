@@ -4,10 +4,10 @@
 #ifndef __NET_NET_NAMESPACE_H
 #define __NET_NET_NAMESPACE_H
 
-#include <linux/atomic.h>
-#include <linux/workqueue.h>
-#include <linux/list.h>
-#include <linux/sysctl.h>
+#include <beep/atomic.h>
+#include <beep/workqueue.h>
+#include <beep/list.h>
+#include <beep/sysctl.h>
 
 #include <net/netns/core.h>
 #include <net/netns/mib.h>
@@ -126,7 +126,7 @@ struct net {
 
 #define LOOPBACK_IFINDEX	1
 
-#include <linux/seq_file_net.h>
+#include <beep/seq_file_net.h>
 
 /* Init's network namespace */
 extern struct net init_net;
@@ -136,8 +136,8 @@ extern struct net *copy_net_ns(unsigned long flags,
 	struct user_namespace *user_ns, struct net *old_net);
 
 #else /* CONFIG_NET_NS */
-#include <linux/sched.h>
-#include <linux/nsproxy.h>
+#include <beep/sched.h>
+#include <beep/nsproxy.h>
 static inline struct net *copy_net_ns(unsigned long flags,
 	struct user_namespace *user_ns, struct net *old_net)
 {

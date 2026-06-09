@@ -16,23 +16,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/printk.h>
-#include <linux/pci_ids.h>
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/card.h>
-#include <linux/semaphore.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/bcma/bcma.h>
-#include <linux/debugfs.h>
-#include <linux/vmalloc.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/kthread.h>
+#include <beep/printk.h>
+#include <beep/pci_ids.h>
+#include <beep/netdevice.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/mmc/sdio.h>
+#include <beep/mmc/sdio_func.h>
+#include <beep/mmc/card.h>
+#include <beep/semaphore.h>
+#include <beep/firmware.h>
+#include <beep/module.h>
+#include <beep/bcma/bcma.h>
+#include <beep/debugfs.h>
+#include <beep/vmalloc.h>
 #include <asm/unaligned.h>
 #include <defs.h>
 #include <brcmu_wifi.h>

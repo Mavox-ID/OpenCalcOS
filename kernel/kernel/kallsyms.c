@@ -11,18 +11,18 @@
  *      Changed the compression method from stem compression to "table lookup"
  *      compression (see scripts/kallsyms.c for a more complete description)
  */
-#include <linux/kallsyms.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/fs.h>
-#include <linux/kdb.h>
-#include <linux/err.h>
-#include <linux/proc_fs.h>
-#include <linux/sched.h>	/* for cond_resched */
-#include <linux/mm.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
+#include <beep/kallsyms.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/seq_file.h>
+#include <beep/fs.h>
+#include <beep/kdb.h>
+#include <beep/err.h>
+#include <beep/proc_fs.h>
+#include <beep/sched.h>	/* for cond_resched */
+#include <beep/mm.h>
+#include <beep/ctype.h>
+#include <beep/slab.h>
 
 #include <asm/sections.h>
 

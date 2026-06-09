@@ -6,7 +6,7 @@
  * Authors:  Pierre-Hugues Husson <phhusson@free.fr>
  *           Ilya Petrov <ilya.muromec@gmail.com>
  *           Marc Dietrich <marvin24@gmx.de>
- *           Julian Andres Klode <jak@jak-linux.org>
+ *           Julian Andres Klode <jak@jak-beep.org>
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
@@ -16,27 +16,27 @@
 
 /* #define DEBUG */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/atomic.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/list.h>
-#include <linux/mfd/core.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/atomic.h>
+#include <beep/clk.h>
+#include <beep/completion.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/of.h>
+#include <beep/of_gpio.h>
+#include <beep/list.h>
+#include <beep/mfd/core.h>
+#include <beep/mutex.h>
+#include <beep/notifier.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
 
 #include <mach/clk.h>
 

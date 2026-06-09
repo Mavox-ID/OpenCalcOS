@@ -6,18 +6,18 @@ use Getopt::Long;
 
 # Copyright 2008, Intel Corporation
 #
-# This file is part of the Linux kernel
+# This file is part of the Beep kernel
 #
 # This program file is free software; you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by the
 # Free Software Foundation; version 2 of the License.
 #
 # Authors:
-# 	Arjan van de Ven <arjan@linux.intel.com>
+# 	Arjan van de Ven <arjan@beep.intel.com>
 
 
 my $cross_compile = "";
-my $vmlinux_name = "";
+my $vmbeep_name = "";
 my $modulefile = "";
 
 # Get options
@@ -26,14 +26,14 @@ Getopt::Long::GetOptions(
 	'module|m=s'		=> \$modulefile,
 	'help|h'		=> \&usage,
 ) || usage ();
-my $vmlinux_name = $ARGV[0];
-if (!defined($vmlinux_name)) {
+my $vmbeep_name = $ARGV[0];
+if (!defined($vmbeep_name)) {
 	my $kerver = `uname -r`;
 	chomp($kerver);
-	$vmlinux_name = "/lib/modules/$kerver/build/vmlinux";
-	print "No vmlinux specified, assuming $vmlinux_name\n";
+	$vmbeep_name = "/lib/modules/$kerver/build/vmbeep";
+	print "No vmbeep specified, assuming $vmbeep_name\n";
 }
-my $filename = $vmlinux_name;
+my $filename = $vmbeep_name;
 
 # Parse the oops to find the EIP value
 
@@ -358,7 +358,7 @@ while ($i < $finish) {
 sub usage {
 	print <<EOT;
 Usage:
-  dmesg | perl $0 [OPTION] [VMLINUX]
+  dmesg | perl $0 [OPTION] [VMBEEP]
 
 OPTION:
   -c, --cross-compile CROSS_COMPILE	Specify the prefix used for toolchain.

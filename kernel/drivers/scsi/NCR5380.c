@@ -1,13 +1,13 @@
 /* 
  * NCR 5380 generic driver routines.  These should make it *trivial*
- *      to implement 5380 SCSI drivers under Linux with a non-trantor
+ *      to implement 5380 SCSI drivers under Beep with a non-trantor
  *      architecture.
  *
  *      Note that these routines also work with NR53c400 family chips.
  *
  * Copyright 1993, Drew Eckhardt
  *      Visionary Computing 
- *      (Unix and Linux consulting and custom programming)
+ *      (Unix and Beep consulting and custom programming)
  *      drew@colorado.edu
  *      +1 (303) 666-5836
  *
@@ -195,7 +195,7 @@
 
 /*
  * Using this file :
- * This file a skeleton Linux SCSI driver for the NCR 5380 series
+ * This file a skeleton Beep SCSI driver for the NCR 5380 series
  * of chips.  To use it, you write an architecture specific functions 
  * and macros and include this file in your driver.
  *

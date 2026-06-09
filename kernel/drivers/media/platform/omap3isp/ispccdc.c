@@ -24,15 +24,15 @@
  * 02110-1301 USA
  */
 
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/mm.h>
-#include <linux/omap-iommu.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/uaccess.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/mm.h>
+#include <beep/omap-iommu.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 #include <media/v4l2-event.h>
 
 #include "isp.h"

@@ -3,7 +3,7 @@
  *
  *  Copyright (C) 2009 Conexant Systems Inc.
  *  Authors  <shu.lin@conexant.com>, <hiep.huynh@conexant.com>
- *  Based on Steven Toth <stoth@linuxtv.org> cx23885 driver
+ *  Based on Steven Toth <stoth@beeptv.org> cx23885 driver
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -24,12 +24,12 @@
 #ifndef CX25821_H_
 #define CX25821_H_
 
-#include <linux/pci.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/kdev_t.h>
+#include <beep/pci.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/kdev_t.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-device.h>
@@ -45,8 +45,8 @@
 #include "cx25821-audio.h"
 #include "media/cx2341x.h"
 
-#include <linux/version.h>
-#include <linux/mutex.h>
+#include <beep/version.h>
+#include <beep/mutex.h>
 
 #define CX25821_VERSION_CODE KERNEL_VERSION(0, 0, 106)
 

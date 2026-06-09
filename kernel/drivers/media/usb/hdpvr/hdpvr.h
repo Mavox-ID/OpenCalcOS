@@ -9,11 +9,11 @@
  *
  */
 
-#include <linux/usb.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/videodev2.h>
+#include <beep/usb.h>
+#include <beep/i2c.h>
+#include <beep/mutex.h>
+#include <beep/workqueue.h>
+#include <beep/videodev2.h>
 
 #include <media/v4l2-device.h>
 #include <media/ir-kbd-i2c.h>

@@ -22,10 +22,10 @@
  * Maxim Osipov <maxim.osipov@siemens.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/gfp.h>
 #include <net/genetlink.h>
-#include <linux/nl802154.h>
+#include <beep/nl802154.h>
 
 #include "ieee802154.h"
 

@@ -25,10 +25,10 @@
 #include "originator.h"
 #include "translation-table.h"
 #include "routing.h"
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/udp.h>
-#include <linux/if_vlan.h>
+#include <beep/ip.h>
+#include <beep/ipv6.h>
+#include <beep/udp.h>
+#include <beep/if_vlan.h>
 
 /* This is the offset of the options field in a dhcp packet starting at
  * the beginning of the dhcp header

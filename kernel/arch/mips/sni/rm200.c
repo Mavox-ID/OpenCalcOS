@@ -10,13 +10,13 @@
  * i8259 parts ripped out of arch/mips/kernel/i8259.c
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/serial_8250.h>
-#include <linux/io.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/serial_8250.h>
+#include <beep/io.h>
 
 #include <asm/sni.h>
 #include <asm/time.h>
@@ -273,7 +273,7 @@ spurious_8259A_irq:
 		atomic_inc(&irq_err_count);
 		/*
 		 * Theoretically we do not have to handle this IRQ,
-		 * but in Linux this does not cause problems and is
+		 * but in Beep this does not cause problems and is
 		 * simpler for us.
 		 */
 		goto handle_real_irq;

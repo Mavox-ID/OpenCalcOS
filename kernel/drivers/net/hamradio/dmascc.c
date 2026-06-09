@@ -20,23 +20,23 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/if_arp.h>
-#include <linux/in.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/rtnetlink.h>
-#include <linux/sockios.h>
-#include <linux/workqueue.h>
-#include <linux/atomic.h>
+#include <beep/module.h>
+#include <beep/bitops.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/if_arp.h>
+#include <beep/in.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/netdevice.h>
+#include <beep/slab.h>
+#include <beep/rtnetlink.h>
+#include <beep/sockios.h>
+#include <beep/workqueue.h>
+#include <beep/atomic.h>
 #include <asm/dma.h>
 #include <asm/io.h>
 #include <asm/irq.h>

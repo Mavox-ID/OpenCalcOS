@@ -1,9 +1,9 @@
 /*
- *  linux/arch/m68knommu/platform/68360/config.c
+ *  beep/arch/m68knommu/platform/68360/config.c
  *
  *  Copyright (c) 2000 Michael Leslie <mleslie@lineo.com>
  *  Copyright (C) 1993 Hamish Macdonald
- *  Copyright (C) 1999 D. Jeff Dionne <jeff@uclinux.org>
+ *  Copyright (C) 1999 D. Jeff Dionne <jeff@ucbeep.org>
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file COPYING in the main directory of this archive
@@ -11,11 +11,11 @@
  */
 
 #include <stdarg.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
 
 #include <asm/setup.h>
 #include <asm/pgtable.h>

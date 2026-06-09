@@ -19,16 +19,16 @@
  * http://www.gnu.org/copyleft/gpl.html.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/kref.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/usb.h>
-#include <linux/usb/tmc.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/uaccess.h>
+#include <beep/kref.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/usb.h>
+#include <beep/usb/tmc.h>
 
 
 #define USBTMC_MINOR_BASE	176

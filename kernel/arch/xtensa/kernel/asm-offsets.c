@@ -15,12 +15,12 @@
 #include <asm/processor.h>
 #include <asm/coprocessor.h>
 
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/thread_info.h>
-#include <linux/ptrace.h>
-#include <linux/mm.h>
-#include <linux/kbuild.h>
+#include <beep/types.h>
+#include <beep/stddef.h>
+#include <beep/thread_info.h>
+#include <beep/ptrace.h>
+#include <beep/mm.h>
+#include <beep/kbuild.h>
 
 #include <asm/ptrace.h>
 #include <asm/uaccess.h>

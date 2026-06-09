@@ -12,11 +12,11 @@
  *			     Ravikiran Thirumalai <kiran@scalemp.com>
  */
 
-#include <linux/init.h>
-#include <linux/pci_ids.h>
-#include <linux/pci_regs.h>
-#include <linux/smp.h>
-#include <linux/irq.h>
+#include <beep/init.h>
+#include <beep/pci_ids.h>
+#include <beep/pci_regs.h>
+#include <beep/smp.h>
+#include <beep/irq.h>
 
 #include <asm/apic.h>
 #include <asm/pci-direct.h>

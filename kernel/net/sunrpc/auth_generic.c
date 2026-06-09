@@ -4,15 +4,15 @@
  * Copyright (C) 2008, Trond Myklebust <Trond.Myklebust@netapp.com>
  */
 
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/sunrpc/auth.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/debug.h>
-#include <linux/sunrpc/sched.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/sunrpc/auth.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/sunrpc/debug.h>
+#include <beep/sunrpc/sched.h>
 
 #ifdef RPC_DEBUG
 # define RPCDBG_FACILITY	RPCDBG_AUTH

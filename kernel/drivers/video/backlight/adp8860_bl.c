@@ -6,19 +6,19 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/pm.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
+#include <beep/fb.h>
+#include <beep/backlight.h>
+#include <beep/leds.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
 
-#include <linux/i2c/adp8860.h>
+#include <beep/i2c/adp8860.h>
 #define ADP8860_EXT_FEATURES
 #define ADP8860_USE_LEDS
 
@@ -814,6 +814,6 @@ static struct i2c_driver adp8860_driver = {
 module_i2c_driver(adp8860_driver);
 
 MODULE_LICENSE("GPL v2");
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucbeep.org>");
 MODULE_DESCRIPTION("ADP8860 Backlight driver");
 MODULE_ALIAS("i2c:adp8860-backlight");

@@ -7,7 +7,7 @@
 #ifndef _BLACKFIN_BITOPS_H
 #define _BLACKFIN_BITOPS_H
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 
 #include <asm-generic/bitops/__ffs.h>
 #include <asm-generic/bitops/ffz.h>
@@ -16,8 +16,8 @@
 #include <asm-generic/bitops/fls64.h>
 #include <asm-generic/bitops/find.h>
 
-#ifndef _LINUX_BITOPS_H
-#error only <linux/bitops.h> can be included directly
+#ifndef _BEEP_BITOPS_H
+#error only <beep/bitops.h> can be included directly
 #endif
 
 #include <asm-generic/bitops/sched.h>
@@ -28,7 +28,7 @@
 #include <asm-generic/bitops/ext2-atomic.h>
 
 #ifndef CONFIG_SMP
-#include <linux/irqflags.h>
+#include <beep/irqflags.h>
 
 /*
  * clear_bit may not imply a memory barrier
@@ -42,7 +42,7 @@
 #else
 
 #include <asm/byteorder.h>	/* swab32 */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 asmlinkage int __raw_bit_set_asm(volatile unsigned long *addr, int nr);
 

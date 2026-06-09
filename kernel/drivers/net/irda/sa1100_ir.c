@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/net/irda/sa1100_ir.c
+ *  beep/drivers/net/irda/sa1100_ir.c
  *
  *  Copyright (C) 2000-2001 Russell King
  *
@@ -18,20 +18,20 @@
  *	power_level:level	- set the transmitter power level
  *	tx_lpm:0|1		- set transmit low power mode
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/rtnetlink.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/sa11x0-dma.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/netdevice.h>
+#include <beep/slab.h>
+#include <beep/rtnetlink.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmaengine.h>
+#include <beep/sa11x0-dma.h>
 
 #include <net/irda/irda.h>
 #include <net/irda/wrapper.h>
@@ -1142,7 +1142,7 @@ module_param(power_level, int, 0);
 module_param(tx_lpm, int, 0);
 module_param(max_rate, int, 0);
 
-MODULE_AUTHOR("Russell King <rmk@arm.linux.org.uk>");
+MODULE_AUTHOR("Russell King <rmk@arm.beep.org.uk>");
 MODULE_DESCRIPTION("StrongARM SA1100 IrDA driver");
 MODULE_LICENSE("GPL");
 MODULE_PARM_DESC(power_level, "IrDA power level, 1 (low) to 3 (high)");

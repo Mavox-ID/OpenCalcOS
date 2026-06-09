@@ -29,10 +29,10 @@
  * code in here.  If there is it should be reported as a bug.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/seq_kernel.h>
 #include <sound/seq_midi_emul.h>
@@ -40,7 +40,7 @@
 #include <sound/asoundef.h>
 
 MODULE_AUTHOR("Takashi Iwai / Steve Ratcliffe");
-MODULE_DESCRIPTION("Advanced Linux Sound Architecture sequencer MIDI emulation.");
+MODULE_DESCRIPTION("Advanced Beep Sound Architecture sequencer MIDI emulation.");
 MODULE_LICENSE("GPL");
 
 /* Prototypes for static functions */

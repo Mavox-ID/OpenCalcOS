@@ -9,12 +9,12 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/device.h>
+#include <beep/gpio.h>
 
 #include <asm/hardware/vic.h>
 

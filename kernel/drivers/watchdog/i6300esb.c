@@ -29,18 +29,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/miscdevice.h>
+#include <beep/watchdog.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/ioport.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
 
 /* Module and version information */
 #define ESB_VERSION "0.05"

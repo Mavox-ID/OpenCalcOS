@@ -6,9 +6,9 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/mtd/nand.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/mtd/nand.h>
+#include <beep/module.h>
 #include "sm_common.h"
 
 static struct nand_ecclayout nand_oob_sm = {

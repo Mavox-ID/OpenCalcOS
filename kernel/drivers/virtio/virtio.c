@@ -1,8 +1,8 @@
-#include <linux/virtio.h>
-#include <linux/spinlock.h>
-#include <linux/virtio_config.h>
-#include <linux/module.h>
-#include <linux/idr.h>
+#include <beep/virtio.h>
+#include <beep/spinlock.h>
+#include <beep/virtio_config.h>
+#include <beep/module.h>
+#include <beep/idr.h>
 
 /* Unique numbering for virtio devices. */
 static DEFINE_IDA(virtio_index_ida);

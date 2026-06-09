@@ -1,7 +1,7 @@
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/bug.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/bug.h>
+#include <beep/export.h>
 #include <asm/hypervisor.h>
 #include <asm/xen/hypercall.h>
 

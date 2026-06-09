@@ -1,4 +1,4 @@
-/* ZD1211 USB-WLAN driver for Linux
+/* ZD1211 USB-WLAN driver for Beep
  *
  * Copyright (C) 2005-2007 Ulrich Kunitz <kune@deine-taler.de>
  * Copyright (C) 2006-2007 Daniel Drake <dsd@gentoo.org>
@@ -20,11 +20,11 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/jiffies.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
+#include <beep/jiffies.h>
 #include <net/ieee80211_radiotap.h>
 
 #include "zd_def.h"

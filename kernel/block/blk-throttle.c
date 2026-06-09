@@ -4,11 +4,11 @@
  * Copyright (C) 2010 Vivek Goyal <vgoyal@redhat.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/bio.h>
-#include <linux/blktrace_api.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/blkdev.h>
+#include <beep/bio.h>
+#include <beep/blktrace_api.h>
 #include "blk-cgroup.h"
 #include "blk.h"
 

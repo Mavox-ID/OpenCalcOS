@@ -1,5 +1,5 @@
 /*
- *	Intel CPU Microcode Update Driver for Linux
+ *	Intel CPU Microcode Update Driver for Beep
  *
  *	Copyright (C) 2000-2006 Tigran Aivazian <tigran@aivazian.fsnet.co.uk>
  *		      2006	Shaohua Li <shaohua.li@intel.com>
@@ -73,16 +73,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/platform_device.h>
-#include <linux/miscdevice.h>
-#include <linux/capability.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/cpu.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/syscore_ops.h>
+#include <beep/platform_device.h>
+#include <beep/miscdevice.h>
+#include <beep/capability.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/cpu.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/syscore_ops.h>
 
 #include <asm/microcode.h>
 #include <asm/processor.h>

@@ -4,10 +4,10 @@
  * to extract and format the required data.
  */
 
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/personality.h>
-#include <linux/kbuild.h>
+#include <beep/sched.h>
+#include <beep/signal.h>
+#include <beep/personality.h>
+#include <beep/kbuild.h>
 #include <asm/ucontext.h>
 #include <asm/processor.h>
 #include <asm/thread_info.h>

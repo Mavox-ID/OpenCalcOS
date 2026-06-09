@@ -19,22 +19,22 @@
 # define SUPPORT_SYSRQ
 #endif
 
-#include <linux/hrtimer.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
+#include <beep/hrtimer.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/irq.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/serial_core.h>
+#include <beep/serial.h>
+#include <beep/slab.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/of.h>
 
 /*
  * UART Register offsets

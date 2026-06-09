@@ -11,7 +11,7 @@
  */
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <beep/types.h>
 #else
 #include <asm/types.h>
 #endif

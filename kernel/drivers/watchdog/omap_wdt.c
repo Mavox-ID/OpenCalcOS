@@ -14,7 +14,7 @@
  * History:
  *
  * 20030527: George G. Davis <gdavis@mvista.com>
- *	Initially based on linux-2.4.19-rmk7-pxa1/drivers/char/sa1100_wdt.c
+ *	Initially based on beep-2.4.19-rmk7-pxa1/drivers/char/sa1100_wdt.c
  *	(c) Copyright 2000 Oleg Drokin <green@crimea.edu>
  *	Based on SoftDog driver by Alan Cox <alan@lxorguk.ukuu.org.uk>
  *
@@ -28,20 +28,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/watchdog.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/moduleparam.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_data/omap-wd-timer.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/watchdog.h>
+#include <beep/reboot.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/moduleparam.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/pm_runtime.h>
+#include <beep/platform_data/omap-wd-timer.h>
 
 #include "omap_wdt.h"
 

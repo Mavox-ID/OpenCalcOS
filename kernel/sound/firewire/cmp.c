@@ -5,11 +5,11 @@
  * Licensed under the terms of the GNU General Public License, version 2.
  */
 
-#include <linux/device.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/module.h>
-#include <linux/sched.h>
+#include <beep/device.h>
+#include <beep/firewire.h>
+#include <beep/firewire-constants.h>
+#include <beep/module.h>
+#include <beep/sched.h>
 #include "lib.h"
 #include "iso-resources.h"
 #include "cmp.h"

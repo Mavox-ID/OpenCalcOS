@@ -10,19 +10,19 @@
  * Copyright (C) 1999 Silicon Graphics, Inc.
  * Copyright (C) 2000, 2001, 2002, 2007  Maciej W. Rozycki
  */
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/export.h>
-#include <linux/screen_info.h>
-#include <linux/memblock.h>
-#include <linux/bootmem.h>
-#include <linux/initrd.h>
-#include <linux/root_dev.h>
-#include <linux/highmem.h>
-#include <linux/console.h>
-#include <linux/pfn.h>
-#include <linux/debugfs.h>
-#include <linux/kexec.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/export.h>
+#include <beep/screen_info.h>
+#include <beep/memblock.h>
+#include <beep/bootmem.h>
+#include <beep/initrd.h>
+#include <beep/root_dev.h>
+#include <beep/highmem.h>
+#include <beep/console.h>
+#include <beep/pfn.h>
+#include <beep/debugfs.h>
+#include <beep/kexec.h>
 
 #include <asm/addrspace.h>
 #include <asm/bootinfo.h>

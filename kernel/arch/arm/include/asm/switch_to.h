@@ -1,7 +1,7 @@
 #ifndef __ASM_ARM_SWITCH_TO_H
 #define __ASM_ARM_SWITCH_TO_H
 
-#include <linux/thread_info.h>
+#include <beep/thread_info.h>
 
 /*
  * switch_to(prev, next) should switch from task `prev' to `next'

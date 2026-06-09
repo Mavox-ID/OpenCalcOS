@@ -17,13 +17,13 @@
  *  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
  */
 
-#include <linux/err.h>
-#include <linux/hw_random.h>
-#include <linux/scatterlist.h>
-#include <linux/spinlock.h>
-#include <linux/virtio.h>
-#include <linux/virtio_rng.h>
-#include <linux/module.h>
+#include <beep/err.h>
+#include <beep/hw_random.h>
+#include <beep/scatterlist.h>
+#include <beep/spinlock.h>
+#include <beep/virtio.h>
+#include <beep/virtio_rng.h>
+#include <beep/module.h>
 
 static struct virtqueue *vq;
 static unsigned int data_avail;

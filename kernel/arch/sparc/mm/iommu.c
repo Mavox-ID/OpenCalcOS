@@ -7,14 +7,14 @@
  * Copyright (C) 1997,1998 Jakub Jelinek    (jj@sunsite.mff.cuni.cz)
  */
  
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>	/* pte_offset_map => kmap_atomic */
-#include <linux/scatterlist.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/highmem.h>	/* pte_offset_map => kmap_atomic */
+#include <beep/scatterlist.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
 
 #include <asm/pgalloc.h>
 #include <asm/pgtable.h>

@@ -1,5 +1,5 @@
-#include <linux/linkage.h>
-#include <linux/threads.h>
+#include <beep/linkage.h>
+#include <beep/threads.h>
 #include <asm/asm-offsets.h>
 #include <asm/assembler.h>
 #include <asm/glue-cache.h>

@@ -19,9 +19,9 @@
  * a global buffer was used.
  */
 
-#include <linux/sched.h>
-#include <linux/oprofile.h>
-#include <linux/errno.h>
+#include <beep/sched.h>
+#include <beep/oprofile.h>
+#include <beep/errno.h>
 
 #include "event_buffer.h"
 #include "cpu_buffer.h"

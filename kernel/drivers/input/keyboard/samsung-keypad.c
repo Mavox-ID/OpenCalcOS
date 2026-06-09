@@ -11,22 +11,22 @@
  * option) any later version.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/sched.h>
-#include <linux/input/samsung-keypad.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/pm.h>
+#include <beep/pm_runtime.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/of_gpio.h>
+#include <beep/sched.h>
+#include <beep/input/samsung-keypad.h>
 
 #define SAMSUNG_KEYIFCON			0x00
 #define SAMSUNG_KEYIFSTSCLR			0x04
@@ -293,13 +293,13 @@ static struct samsung_keypad_platdata *samsung_keypad_parse_dt(
 		u32 row, col, key_code;
 		of_property_read_u32(key_np, "keypad,row", &row);
 		of_property_read_u32(key_np, "keypad,column", &col);
-		of_property_read_u32(key_np, "linux,code", &key_code);
+		of_property_read_u32(key_np, "beep,code", &key_code);
 		*keymap++ = KEY(row, col, key_code);
 	}
 
-	if (of_get_property(np, "linux,input-no-autorepeat", NULL))
+	if (of_get_property(np, "beep,input-no-autorepeat", NULL))
 		pdata->no_autorepeat = true;
-	if (of_get_property(np, "linux,input-wakeup", NULL))
+	if (of_get_property(np, "beep,input-wakeup", NULL))
 		pdata->wakeup = true;
 
 	return pdata;

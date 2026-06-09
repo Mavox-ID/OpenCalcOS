@@ -34,11 +34,11 @@
 #ifndef IPATH_VERBS_H
 #define IPATH_VERBS_H
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/kref.h>
+#include <beep/types.h>
+#include <beep/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/kref.h>
 #include <rdma/ib_pack.h>
 #include <rdma/ib_user_verbs.h>
 

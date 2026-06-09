@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-footbridge/common.c
+ *  beep/arch/arm/mach-footbridge/common.c
  *
  *  Copyright (C) 1998-2000 Russell King, Dave Gilbert.
  *
@@ -7,14 +7,14 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/ioport.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/ioport.h>
+#include <beep/list.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/spinlock.h>
 
 #include <asm/pgtable.h>
 #include <asm/page.h>

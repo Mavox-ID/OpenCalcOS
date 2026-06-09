@@ -10,18 +10,18 @@
  * 2 of the Licence, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/completion.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
-#include <linux/statfs.h>
-#include <linux/sysctl.h>
-#include <linux/miscdevice.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/completion.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/namei.h>
+#include <beep/mount.h>
+#include <beep/statfs.h>
+#include <beep/sysctl.h>
+#include <beep/miscdevice.h>
 #include "internal.h"
 
 unsigned cachefiles_debug;

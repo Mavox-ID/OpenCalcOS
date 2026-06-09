@@ -18,15 +18,15 @@
  * been made separate from ucb1x00-core/ucb1x00-ts on Russell's request.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/input.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/ucb1400.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/wait.h>
+#include <beep/input.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
+#include <beep/ucb1400.h>
 
 #define UCB1400_TS_POLL_PERIOD	10 /* ms */
 

@@ -8,12 +8,12 @@
 #ifndef _NCP_FS_SB
 #define _NCP_FS_SB
 
-#include <linux/types.h>
-#include <linux/ncp_mount.h>
-#include <linux/net.h>
-#include <linux/mutex.h>
-#include <linux/backing-dev.h>
-#include <linux/workqueue.h>
+#include <beep/types.h>
+#include <beep/ncp_mount.h>
+#include <beep/net.h>
+#include <beep/mutex.h>
+#include <beep/backing-dev.h>
+#include <beep/workqueue.h>
 
 #define NCP_DEFAULT_OPTIONS 0		/* 2 for packet signatures */
 

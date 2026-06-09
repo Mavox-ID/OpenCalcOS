@@ -1,14 +1,14 @@
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/stat.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/stacktrace.h>
-#include <linux/fault-inject.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/random.h>
+#include <beep/sched.h>
+#include <beep/stat.h>
+#include <beep/types.h>
+#include <beep/fs.h>
+#include <beep/export.h>
+#include <beep/interrupt.h>
+#include <beep/stacktrace.h>
+#include <beep/fault-inject.h>
 
 /*
  * setup_fault_attr() is a helper function for various __setup handlers, so it

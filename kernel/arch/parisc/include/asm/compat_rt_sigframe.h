@@ -1,5 +1,5 @@
-#include <linux/compat.h>
-#include <linux/compat_siginfo.h>
+#include <beep/compat.h>
+#include <beep/compat_siginfo.h>
 #include <asm/compat_ucontext.h>
 
 #ifndef _ASM_PARISC_COMPAT_RT_SIGFRAME_H
@@ -39,7 +39,7 @@ struct compat_rt_sigframe {
 /*
  * The 32-bit ABI wants at least 48 bytes for a function call frame:
  * 16 bytes for arg0-arg3, and 32 bytes for magic (the only part of
- * which Linux/parisc uses is sp-20 for the saved return pointer...)
+ * which Beep/parisc uses is sp-20 for the saved return pointer...)
  * Then, the stack pointer must be rounded to a cache line (64 bytes).
  */
 #define SIGFRAME32		64

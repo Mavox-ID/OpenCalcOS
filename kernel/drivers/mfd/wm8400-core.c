@@ -12,16 +12,16 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/wm8400-private.h>
-#include <linux/mfd/wm8400-audio.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/bug.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/kernel.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/wm8400-private.h>
+#include <beep/mfd/wm8400-audio.h>
+#include <beep/regmap.h>
+#include <beep/slab.h>
 
 static bool wm8400_volatile(struct device *dev, unsigned int reg)
 {

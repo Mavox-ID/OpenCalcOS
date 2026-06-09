@@ -18,18 +18,18 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/mfd/syscon.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/of_regulator.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/mfd/syscon.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/regmap.h>
+#include <beep/regulator/driver.h>
+#include <beep/regulator/of_regulator.h>
 
 struct anatop_regulator {
 	const char *name;

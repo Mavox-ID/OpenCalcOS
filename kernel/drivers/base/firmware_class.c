@@ -7,26 +7,26 @@
  *
  */
 
-#include <linux/capability.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/highmem.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/file.h>
-#include <linux/list.h>
-#include <linux/async.h>
-#include <linux/pm.h>
-#include <linux/suspend.h>
-#include <linux/syscore_ops.h>
+#include <beep/capability.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/timer.h>
+#include <beep/vmalloc.h>
+#include <beep/interrupt.h>
+#include <beep/bitops.h>
+#include <beep/mutex.h>
+#include <beep/workqueue.h>
+#include <beep/highmem.h>
+#include <beep/firmware.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/file.h>
+#include <beep/list.h>
+#include <beep/async.h>
+#include <beep/pm.h>
+#include <beep/suspend.h>
+#include <beep/syscore_ops.h>
 
 #include <generated/utsrelease.h>
 

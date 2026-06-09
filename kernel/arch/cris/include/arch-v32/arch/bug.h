@@ -1,7 +1,7 @@
 #ifndef __ASM_CRISv32_ARCH_BUG_H
 #define __ASM_CRISv32_ARCH_BUG_H
 
-#include <linux/stringify.h>
+#include <beep/stringify.h>
 
 #ifdef CONFIG_BUG
 #ifdef CONFIG_DEBUG_BUGVERBOSE

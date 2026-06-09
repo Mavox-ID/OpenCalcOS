@@ -29,14 +29,14 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/skbuff.h>
-#include <linux/timer.h>
-#include <linux/notifier.h>
-#include <linux/inetdevice.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
+#include <beep/skbuff.h>
+#include <beep/timer.h>
+#include <beep/notifier.h>
+#include <beep/inetdevice.h>
 
 #include <net/neighbour.h>
 #include <net/netevent.h>

@@ -1,5 +1,5 @@
 /*
- * include/asm-m68knommu/flat.h -- uClinux flat-format executables
+ * include/asm-m68knommu/flat.h -- uCbeep flat-format executables
  */
 
 #ifndef __M68KNOMMU_FLAT_H__

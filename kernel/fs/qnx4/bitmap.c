@@ -1,5 +1,5 @@
 /*
- * QNX4 file system, Linux implementation.
+ * QNX4 file system, Beep implementation.
  *
  * Version : 0.2.1
  *
@@ -13,8 +13,8 @@
  * 28-06-1998 by Frank Denis : qnx4_free_inode (to be fixed) .
  */
 
-#include <linux/buffer_head.h>
-#include <linux/bitops.h>
+#include <beep/buffer_head.h>
+#include <beep/bitops.h>
 #include "qnx4.h"
 
 unsigned long qnx4_count_free_blocks(struct super_block *sb)

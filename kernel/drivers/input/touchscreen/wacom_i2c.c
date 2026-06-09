@@ -11,13 +11,13 @@
  * or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
+#include <beep/module.h>
+#include <beep/input.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/gpio.h>
 #include <asm/unaligned.h>
 
 #define WACOM_CMD_QUERY0	0x04

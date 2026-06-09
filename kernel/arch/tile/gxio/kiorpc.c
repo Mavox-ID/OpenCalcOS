@@ -14,9 +14,9 @@
  * TILE-Gx IORPC support for kernel I/O drivers.
  */
 
-#include <linux/mmzone.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <beep/mmzone.h>
+#include <beep/module.h>
+#include <beep/io.h>
 #include <gxio/iorpc_globals.h>
 #include <gxio/kiorpc.h>
 

@@ -32,14 +32,14 @@
  */
 
 #include <asm/page.h>
-#include <linux/mlx4/cq.h>
-#include <linux/slab.h>
-#include <linux/mlx4/qp.h>
-#include <linux/skbuff.h>
-#include <linux/if_vlan.h>
-#include <linux/vmalloc.h>
-#include <linux/tcp.h>
-#include <linux/moduleparam.h>
+#include <beep/mlx4/cq.h>
+#include <beep/slab.h>
+#include <beep/mlx4/qp.h>
+#include <beep/skbuff.h>
+#include <beep/if_vlan.h>
+#include <beep/vmalloc.h>
+#include <beep/tcp.h>
+#include <beep/moduleparam.h>
 
 #include "mlx4_en.h"
 

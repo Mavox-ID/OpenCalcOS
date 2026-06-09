@@ -14,19 +14,19 @@
  * (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ctype.h>
-#include <linux/ethtool.h>
-#include <linux/workqueue.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/crc32.h>
-#include <linux/usb/cdc.h>
-#include <linux/usb/usbnet.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/ctype.h>
+#include <beep/ethtool.h>
+#include <beep/workqueue.h>
+#include <beep/mii.h>
+#include <beep/usb.h>
+#include <beep/crc32.h>
+#include <beep/usb/cdc.h>
+#include <beep/usb/usbnet.h>
+#include <beep/gfp.h>
 
 /*
  * The Samsung Kalmia based LTE USB modems have a CDC ACM port for modem control
@@ -45,7 +45,7 @@
  * forum and the project page:
  *
  * http://www.draisberghof.de/usb_modeswitch/bb/viewtopic.php?t=465
- * https://github.com/mkotsbak/Samsung-GT-B3730-linux-driver
+ * https://github.com/mkotsbak/Samsung-GT-B3730-beep-driver
  */
 
 /* #define	DEBUG */

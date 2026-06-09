@@ -11,15 +11,15 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/msi.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/msi.h>
 
 #include <asm/sections.h>
 #include <asm/io.h>
@@ -503,7 +503,7 @@ static void pnv_pci_ioda_setup_dma_pe(struct pnv_phb *phb,
 		}
 	}
 
-	/* Setup linux iommu table */
+	/* Setup beep iommu table */
 	tbl = &pe->tce32_table;
 	pnv_pci_setup_iommu_table(tbl, addr, TCE32_TABLE_SIZE * segs,
 				  base << 28);

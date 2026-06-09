@@ -2,9 +2,9 @@
  * Handle interrupts from the SRM, assuming no additional weirdness.
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/irq.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/irq.h>
 
 #include "proto.h"
 #include "irq_impl.h"

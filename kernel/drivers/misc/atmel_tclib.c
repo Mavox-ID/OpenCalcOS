@@ -1,15 +1,15 @@
-#include <linux/atmel_tc.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/of.h>
+#include <beep/atmel_tc.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/of.h>
 
 /*
  * This is a thin library to solve the problem of how to portably allocate

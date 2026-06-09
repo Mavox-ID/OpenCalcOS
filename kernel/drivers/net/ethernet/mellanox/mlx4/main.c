@@ -33,18 +33,18 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/io-mapping.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/io-mapping.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
 
-#include <linux/mlx4/device.h>
-#include <linux/mlx4/doorbell.h>
+#include <beep/mlx4/device.h>
+#include <beep/mlx4/doorbell.h>
 
 #include "mlx4.h"
 #include "fw.h"

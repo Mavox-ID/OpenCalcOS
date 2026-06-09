@@ -11,8 +11,8 @@
 #ifndef __ASM_SH7372_H__
 #define __ASM_SH7372_H__
 
-#include <linux/sh_clk.h>
-#include <linux/pm_domain.h>
+#include <beep/sh_clk.h>
+#include <beep/pm_domain.h>
 #include <mach/pm-rmobile.h>
 
 /*

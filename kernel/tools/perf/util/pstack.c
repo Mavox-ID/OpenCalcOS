@@ -6,7 +6,7 @@
 
 #include "util.h"
 #include "pstack.h"
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include <stdlib.h>
 
 struct pstack {

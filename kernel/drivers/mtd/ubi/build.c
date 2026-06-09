@@ -29,18 +29,18 @@
  * later using the "UBI control device".
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/stringify.h>
-#include <linux/namei.h>
-#include <linux/stat.h>
-#include <linux/miscdevice.h>
-#include <linux/mtd/partitions.h>
-#include <linux/log2.h>
-#include <linux/kthread.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/stringify.h>
+#include <beep/namei.h>
+#include <beep/stat.h>
+#include <beep/miscdevice.h>
+#include <beep/mtd/partitions.h>
+#include <beep/log2.h>
+#include <beep/kthread.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
 #include "ubi.h"
 
 /* Maximum length of the 'mtd=' parameter */

@@ -9,7 +9,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the Beep kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -31,22 +31,22 @@
  * IN THE SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/major.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/poll.h>
-#include <linux/irq.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/cpu.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/miscdevice.h>
+#include <beep/major.h>
+#include <beep/proc_fs.h>
+#include <beep/stat.h>
+#include <beep/poll.h>
+#include <beep/irq.h>
+#include <beep/init.h>
+#include <beep/mutex.h>
+#include <beep/cpu.h>
 
 #include <xen/xen.h>
 #include <xen/events.h>

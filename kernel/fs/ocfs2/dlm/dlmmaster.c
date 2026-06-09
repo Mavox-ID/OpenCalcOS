@@ -25,19 +25,19 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/init.h>
-#include <linux/sysctl.h>
-#include <linux/random.h>
-#include <linux/blkdev.h>
-#include <linux/socket.h>
-#include <linux/inet.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/highmem.h>
+#include <beep/init.h>
+#include <beep/sysctl.h>
+#include <beep/random.h>
+#include <beep/blkdev.h>
+#include <beep/socket.h>
+#include <beep/inet.h>
+#include <beep/spinlock.h>
+#include <beep/delay.h>
 
 
 #include "cluster/heartbeat.h"

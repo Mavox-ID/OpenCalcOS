@@ -17,12 +17,12 @@
  */
 
 #include <asm/io.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
+#include <beep/init.h>
+#include <beep/time.h>
+#include <beep/wait.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/firmware.h>
 #include <sound/core.h>
 #include <sound/snd_wavefront.h>
 #include <sound/initval.h>

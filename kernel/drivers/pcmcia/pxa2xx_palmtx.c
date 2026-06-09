@@ -1,5 +1,5 @@
 /*
- * linux/drivers/pcmcia/pxa2xx_palmtx.c
+ * beep/drivers/pcmcia/pxa2xx_palmtx.c
  *
  * Driver for Palm T|X PCMCIA
  *
@@ -11,9 +11,9 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
 
 #include <asm/mach-types.h>
 #include <mach/palmtx.h>

@@ -22,17 +22,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/net.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/delay.h>
-#include <linux/hdlc.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/net.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/delay.h>
+#include <beep/hdlc.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
 #include <net/arp.h>
 
 #include <asm/irq.h>
@@ -218,7 +218,7 @@ static struct z8530_dev *sv11_init(int iobase, int irq)
 	outb(0, iobase + 4);		/* DMA off */
 
 	/* We want a fast IRQ for this device. Actually we'd like an even faster
-	   IRQ ;) - This is one driver RtLinux is made for */
+	   IRQ ;) - This is one driver RtBeep is made for */
 
 	if (request_irq(irq, z8530_interrupt, IRQF_DISABLED,
 			"Hostess SV11", sv) < 0) {

@@ -1,8 +1,8 @@
 #ifndef SOUND_FIREWIRE_CMP_H_INCLUDED
 #define SOUND_FIREWIRE_CMP_H_INCLUDED
 
-#include <linux/mutex.h>
-#include <linux/types.h>
+#include <beep/mutex.h>
+#include <beep/types.h>
 #include "iso-resources.h"
 
 struct fw_unit;

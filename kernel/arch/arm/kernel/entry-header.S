@@ -1,5 +1,5 @@
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
 
 #include <asm/assembler.h>
 #include <asm/asm-offsets.h>
@@ -175,5 +175,5 @@
  */
 scno	.req	r7		@ syscall number
 tbl	.req	r8		@ syscall table pointer
-why	.req	r8		@ Linux syscall (!= 0)
+why	.req	r8		@ Beep syscall (!= 0)
 tsk	.req	r9		@ current thread_info

@@ -4,12 +4,12 @@
  * Copyright (C) 1999  David S. Miller (davem@redhat.com)
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <beep/export.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
 
 #include <asm/ebus_dma.h>
 #include <asm/io.h>

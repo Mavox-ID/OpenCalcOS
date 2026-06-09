@@ -1,8 +1,8 @@
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/netpoll.h>
-#include <linux/export.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/if_vlan.h>
+#include <beep/netpoll.h>
+#include <beep/export.h>
 #include "vlan.h"
 
 bool vlan_do_receive(struct sk_buff **skbp)

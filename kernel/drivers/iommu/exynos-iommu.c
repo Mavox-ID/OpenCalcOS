@@ -1,4 +1,4 @@
-/* linux/drivers/iommu/exynos_iommu.c
+/* beep/drivers/iommu/exynos_iommu.c
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -12,19 +12,19 @@
 #define DEBUG
 #endif
 
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/mm.h>
-#include <linux/iommu.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/memblock.h>
-#include <linux/export.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/pm_runtime.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/mm.h>
+#include <beep/iommu.h>
+#include <beep/errno.h>
+#include <beep/list.h>
+#include <beep/memblock.h>
+#include <beep/export.h>
 
 #include <asm/cacheflush.h>
 #include <asm/pgtable.h>

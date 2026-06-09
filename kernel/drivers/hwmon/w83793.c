@@ -1,5 +1,5 @@
 /*
- * w83793.c - Linux kernel driver for hardware monitoring
+ * w83793.c - Beep kernel driver for hardware monitoring
  * Copyright (C) 2006 Winbond Electronics Corp.
  *	      Yuan Mu
  *	      Rudolf Marek <r.marek@assembler.cz>
@@ -30,23 +30,23 @@
  * w83793	10	12	8	6	0x7b	0x5ca3	yes	no
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-vid.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/fs.h>
-#include <linux/watchdog.h>
-#include <linux/miscdevice.h>
-#include <linux/uaccess.h>
-#include <linux/kref.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/jiffies.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-vid.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/err.h>
+#include <beep/mutex.h>
+#include <beep/fs.h>
+#include <beep/watchdog.h>
+#include <beep/miscdevice.h>
+#include <beep/uaccess.h>
+#include <beep/kref.h>
+#include <beep/notifier.h>
+#include <beep/reboot.h>
+#include <beep/jiffies.h>
 
 /* Default values */
 #define WATCHDOG_TIMEOUT 2	/* 2 minute default timeout */

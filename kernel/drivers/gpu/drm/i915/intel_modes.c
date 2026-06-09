@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2007 Dave Airlie <airlied@linux.ie>
+ * Copyright (c) 2007 Dave Airlie <airlied@beep.ie>
  * Copyright (c) 2007, 2010 Intel Corporation
  *   Jesse Barnes <jesse.barnes@intel.com>
  *
@@ -23,9 +23,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/fb.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/fb.h>
 #include <drm/drm_edid.h>
 #include <drm/drmP.h>
 #include <drm/drm_edid.h>

@@ -17,7 +17,7 @@
 #ifndef DFS_PRI_DETECTOR_H
 #define DFS_PRI_DETECTOR_H
 
-#include <linux/list.h>
+#include <beep/list.h>
 
 /**
  * struct pri_detector - PRI detector element for a dedicated radar type

@@ -1,5 +1,5 @@
 /*
- * QNX6 file system, Linux implementation.
+ * QNX6 file system, Beep implementation.
  *
  * Version : 1.0.0
  *
@@ -9,9 +9,9 @@
  *
  */
 
-#include <linux/buffer_head.h>
-#include <linux/slab.h>
-#include <linux/crc32.h>
+#include <beep/buffer_head.h>
+#include <beep/slab.h>
+#include <beep/crc32.h>
 #include "qnx6.h"
 
 static void qnx6_mmi_copy_sb(struct qnx6_super_block *qsb,

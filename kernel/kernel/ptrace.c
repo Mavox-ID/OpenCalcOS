@@ -1,5 +1,5 @@
 /*
- * linux/kernel/ptrace.c
+ * beep/kernel/ptrace.c
  *
  * (C) Copyright 1999 Linus Torvalds
  *
@@ -7,23 +7,23 @@
  * to continually duplicate across every architecture.
  */
 
-#include <linux/capability.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/ptrace.h>
-#include <linux/security.h>
-#include <linux/signal.h>
-#include <linux/audit.h>
-#include <linux/pid_namespace.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
-#include <linux/regset.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/cn_proc.h>
+#include <beep/capability.h>
+#include <beep/export.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/mm.h>
+#include <beep/highmem.h>
+#include <beep/pagemap.h>
+#include <beep/ptrace.h>
+#include <beep/security.h>
+#include <beep/signal.h>
+#include <beep/audit.h>
+#include <beep/pid_namespace.h>
+#include <beep/syscalls.h>
+#include <beep/uaccess.h>
+#include <beep/regset.h>
+#include <beep/hw_breakpoint.h>
+#include <beep/cn_proc.h>
 
 
 static int ptrace_trapping_sleep_fn(void *flags)
@@ -970,7 +970,7 @@ int generic_ptrace_pokedata(struct task_struct *tsk, unsigned long addr,
 }
 
 #if defined CONFIG_COMPAT
-#include <linux/compat.h>
+#include <beep/compat.h>
 
 int compat_ptrace_request(struct task_struct *child, compat_long_t request,
 			  compat_ulong_t addr, compat_ulong_t data)

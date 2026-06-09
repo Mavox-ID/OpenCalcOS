@@ -20,13 +20,13 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
-#include <linux/reboot.h>
-#include <linux/hyperv.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/sysctl.h>
+#include <beep/reboot.h>
+#include <beep/hyperv.h>
 
 static void shutdown_onchannelcallback(void *context);
 static struct hv_util_service util_shutdown = {

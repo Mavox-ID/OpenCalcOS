@@ -1,5 +1,5 @@
 /*
- * linux/kernel/time/clocksource.c
+ * beep/kernel/time/clocksource.c
  *
  * This file contains the functions which manage clocksource drivers.
  *
@@ -23,13 +23,13 @@
  *   o Allow clocksource drivers to be unregistered
  */
 
-#include <linux/device.h>
-#include <linux/clocksource.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/sched.h> /* for spin_unlock_irq() using preempt_count() m68k */
-#include <linux/tick.h>
-#include <linux/kthread.h>
+#include <beep/device.h>
+#include <beep/clocksource.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/sched.h> /* for spin_unlock_irq() using preempt_count() m68k */
+#include <beep/tick.h>
+#include <beep/kthread.h>
 
 void timecounter_init(struct timecounter *tc,
 		      const struct cyclecounter *cc,

@@ -12,13 +12,13 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/irqchip/bcm2835.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/bcm2835_timer.h>
-#include <linux/clk/bcm2835.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/irqchip/bcm2835.h>
+#include <beep/of_address.h>
+#include <beep/of_platform.h>
+#include <beep/bcm2835_timer.h>
+#include <beep/clk/bcm2835.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

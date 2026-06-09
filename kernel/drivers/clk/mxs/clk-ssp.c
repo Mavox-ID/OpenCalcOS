@@ -16,13 +16,13 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/spi/mxs-spi.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/clk.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/io.h>
+#include <beep/spi/mxs-spi.h>
 
 void mxs_ssp_set_clk_rate(struct mxs_ssp *ssp, unsigned int rate)
 {

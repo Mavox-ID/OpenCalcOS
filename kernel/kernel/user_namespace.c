@@ -5,22 +5,22 @@
  *  License.
  */
 
-#include <linux/export.h>
-#include <linux/nsproxy.h>
-#include <linux/slab.h>
-#include <linux/user_namespace.h>
-#include <linux/proc_fs.h>
-#include <linux/highuid.h>
-#include <linux/cred.h>
-#include <linux/securebits.h>
-#include <linux/keyctl.h>
-#include <linux/key-type.h>
+#include <beep/export.h>
+#include <beep/nsproxy.h>
+#include <beep/slab.h>
+#include <beep/user_namespace.h>
+#include <beep/proc_fs.h>
+#include <beep/highuid.h>
+#include <beep/cred.h>
+#include <beep/securebits.h>
+#include <beep/keyctl.h>
+#include <beep/key-type.h>
 #include <keys/user-type.h>
-#include <linux/seq_file.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/ctype.h>
-#include <linux/projid.h>
+#include <beep/seq_file.h>
+#include <beep/fs.h>
+#include <beep/uaccess.h>
+#include <beep/ctype.h>
+#include <beep/projid.h>
 
 static struct kmem_cache *user_ns_cachep __read_mostly;
 

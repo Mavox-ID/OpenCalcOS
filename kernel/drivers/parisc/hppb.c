@@ -12,12 +12,12 @@
 **
 */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/ioport.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/dma-mapping.h>
+#include <beep/ioport.h>
 
 #include <asm/io.h>
 #include <asm/hardware.h>

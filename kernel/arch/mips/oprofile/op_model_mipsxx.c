@@ -6,10 +6,10 @@
  * Copyright (C) 2004, 05, 06 by Ralf Baechle
  * Copyright (C) 2005 by MIPS Technologies, Inc.
  */
-#include <linux/cpumask.h>
-#include <linux/oprofile.h>
-#include <linux/interrupt.h>
-#include <linux/smp.h>
+#include <beep/cpumask.h>
+#include <beep/oprofile.h>
+#include <beep/interrupt.h>
+#include <beep/smp.h>
 #include <asm/irq_regs.h>
 
 #include "op_impl.h"
@@ -57,7 +57,7 @@ static int cpu_has_mipsmt_pertccounters;
 /*
  * The number of bits to shift to convert between counters per core and
  * counters per VPE.  There is no reasonable interface atm to obtain the
- * number of VPEs used by Linux and in the 34K this number is fixed to two
+ * number of VPEs used by Beep and in the 34K this number is fixed to two
  * anyways so we hardcore a few things here for the moment.  The way it's
  * done here will ensure that oprofile VSMP kernel will run right on a lesser
  * core like a 24K also or with maxcpus=1.

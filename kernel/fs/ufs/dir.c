@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ufs/ufs_dir.c
+ *  beep/fs/ufs/ufs_dir.c
  *
  * Copyright (C) 1996
  * Adrian Rodriguez (adrian@franklins-tower.rutgers.edu)
@@ -16,9 +16,9 @@
  * Evgeniy Dushistov <dushistov@mail.ru> based on ext2 code base.
  */
 
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/swap.h>
+#include <beep/time.h>
+#include <beep/fs.h>
+#include <beep/swap.h>
 
 #include "ufs_fs.h"
 #include "ufs.h"

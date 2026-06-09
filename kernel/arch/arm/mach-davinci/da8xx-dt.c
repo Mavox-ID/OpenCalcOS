@@ -7,10 +7,10 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/io.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/irqdomain.h>
+#include <beep/io.h>
+#include <beep/of_irq.h>
+#include <beep/of_platform.h>
+#include <beep/irqdomain.h>
 
 #include <asm/mach/arch.h>
 

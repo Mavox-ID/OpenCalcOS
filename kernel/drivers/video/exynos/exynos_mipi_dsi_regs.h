@@ -1,4 +1,4 @@
-/* linux/driver/video/exynos/exynos_mipi_dsi_regs.h
+/* beep/driver/video/exynos/exynos_mipi_dsi_regs.h
  *
  * Register definition file for Samsung MIPI-DSIM driver
  *

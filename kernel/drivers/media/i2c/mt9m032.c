@@ -20,15 +20,15 @@
  * 02110-1301 USA
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/v4l2-mediabus.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/math64.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
+#include <beep/v4l2-mediabus.h>
 
 #include <media/media-entity.h>
 #include <media/mt9m032.h>

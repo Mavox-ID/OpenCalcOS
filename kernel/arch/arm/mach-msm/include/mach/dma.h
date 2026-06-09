@@ -1,4 +1,4 @@
-/* linux/include/asm-arm/arch-msm/dma.h
+/* beep/include/asm-arm/arch-msm/dma.h
  *
  * Copyright (C) 2007 Google, Inc.
  *
@@ -15,7 +15,7 @@
 
 #ifndef __ASM_ARCH_MSM_DMA_H
 
-#include <linux/list.h>
+#include <beep/list.h>
 #include <mach/msm_iomap.h>
 
 struct msm_dmov_errdata {

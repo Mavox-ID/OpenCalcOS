@@ -11,19 +11,19 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/crypto.h>
-#include <linux/interrupt.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/scatterlist.h>
+#include <beep/dma-mapping.h>
+#include <beep/io.h>
+#include <beep/crypto.h>
+#include <beep/interrupt.h>
 
 #include <crypto/algapi.h>
 #include <crypto/aes.h>

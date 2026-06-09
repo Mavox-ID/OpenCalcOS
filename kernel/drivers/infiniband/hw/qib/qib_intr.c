@@ -32,8 +32,8 @@
  * SOFTWARE.
  */
 
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
 
 #include "qib.h"
 #include "qib_common.h"

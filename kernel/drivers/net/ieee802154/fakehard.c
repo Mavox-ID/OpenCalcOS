@@ -19,12 +19,12 @@
  * Written by:
  * Dmitry Eremin-Solenikov <dmitry.baryshkov@siemens.com>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/if_arp.h>
 
 #include <net/af_ieee802154.h>
 #include <net/ieee802154_netdev.h>

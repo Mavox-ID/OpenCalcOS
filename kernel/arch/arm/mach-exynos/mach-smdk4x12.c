@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-exynos4/mach-smdk4x12.c
+ * beep/arch/arm/mach-exynos4/mach-smdk4x12.c
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -9,20 +9,20 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/io.h>
-#include <linux/lcd.h>
-#include <linux/mfd/max8997.h>
-#include <linux/mmc/host.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/pwm_backlight.h>
-#include <linux/regulator/machine.h>
-#include <linux/serial_core.h>
-#include <linux/platform_data/i2c-s3c2410.h>
-#include <linux/platform_data/s3c-hsotg.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/input.h>
+#include <beep/io.h>
+#include <beep/lcd.h>
+#include <beep/mfd/max8997.h>
+#include <beep/mmc/host.h>
+#include <beep/platform_device.h>
+#include <beep/pwm.h>
+#include <beep/pwm_backlight.h>
+#include <beep/regulator/machine.h>
+#include <beep/serial_core.h>
+#include <beep/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/s3c-hsotg.h>
 
 #include <asm/mach/arch.h>
 #include <asm/hardware/gic.h>

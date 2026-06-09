@@ -1,6 +1,6 @@
 /*
  *	Spanning tree protocol; BPDU handling
- *	Linux ethernet bridge
+ *	Beep ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
@@ -11,11 +11,11 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/netfilter_bridge.h>
-#include <linux/etherdevice.h>
-#include <linux/llc.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/netfilter_bridge.h>
+#include <beep/etherdevice.h>
+#include <beep/llc.h>
+#include <beep/slab.h>
 #include <net/net_namespace.h>
 #include <net/llc.h>
 #include <net/llc_pdu.h>

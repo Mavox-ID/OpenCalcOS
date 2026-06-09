@@ -1,5 +1,5 @@
 /*
- *	PCI Bus Services, see include/linux/pci.h for further explanation.
+ *	PCI Bus Services, see include/beep/pci.h for further explanation.
  *
  *	Copyright 1993 -- 1997 Drew Eckhardt, Frederic Potter,
  *	David Mosberger-Tang
@@ -7,21 +7,21 @@
  *	Copyright 1997 -- 2000 Martin Mares <mj@ucw.cz>
  */
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/log2.h>
-#include <linux/pci-aspm.h>
-#include <linux/pm_wakeup.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/pm_runtime.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/pm.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/log2.h>
+#include <beep/pci-aspm.h>
+#include <beep/pm_wakeup.h>
+#include <beep/interrupt.h>
+#include <beep/device.h>
+#include <beep/pm_runtime.h>
 #include <asm-generic/pci-bridge.h>
 #include <asm/setup.h>
 #include "pci.h"

@@ -17,12 +17,12 @@
  *
  */
 
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/usb.h>
-#include <linux/usb/audio.h>
-#include <linux/usb/audio-v2.h>
+#include <beep/bitops.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/usb.h>
+#include <beep/usb/audio.h>
+#include <beep/usb/audio-v2.h>
 
 #include <sound/core.h>
 #include <sound/info.h>

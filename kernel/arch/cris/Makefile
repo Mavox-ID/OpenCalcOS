@@ -40,12 +40,12 @@ else
 MACH :=
 endif
 
-LD = $(CROSS_COMPILE)ld -mcrislinux
+LD = $(CROSS_COMPILE)ld -mcrisbeep
 
 OBJCOPYFLAGS := -O binary -R .note -R .comment -S
 
-KBUILD_AFLAGS += -mlinux -march=$(arch-y) $(inc)
-KBUILD_CFLAGS += -mlinux -march=$(arch-y) -pipe $(inc)
+KBUILD_AFLAGS += -mbeep -march=$(arch-y) $(inc)
+KBUILD_CFLAGS += -mbeep -march=$(arch-y) -pipe $(inc)
 KBUILD_CPPFLAGS += $(inc)
 
 ifdef CONFIG_FRAME_POINTER
@@ -75,7 +75,7 @@ MACHINE := arch/cris/$(SARCH)
 
 all: zCalc
 
-zCalc Image: vmlinux
+zCalc Image: vmbeep
 	$(Q)$(MAKE) $(build)=$(boot) MACHINE=$(MACHINE) $(boot)/$@
 
 archprepare:

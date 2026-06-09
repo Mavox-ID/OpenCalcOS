@@ -6,21 +6,21 @@
  * published by the Free Software Foundation.
  */
 #undef DEBUG
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/ptrace.h>
-#include <linux/errno.h>
-#include <linux/user.h>
-#include <linux/security.h>
-#include <linux/unistd.h>
-#include <linux/notifier.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/ptrace.h>
+#include <beep/errno.h>
+#include <beep/user.h>
+#include <beep/security.h>
+#include <beep/unistd.h>
+#include <beep/notifier.h>
 
 #include <asm/traps.h>
 #include <asm/uaccess.h>
 #include <asm/ocd.h>
 #include <asm/mmu_context.h>
-#include <linux/kdebug.h>
+#include <beep/kdebug.h>
 
 static struct pt_regs *get_user_regs(struct task_struct *tsk)
 {

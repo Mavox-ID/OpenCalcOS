@@ -22,7 +22,7 @@
  * in the file called LICENSE.GPL.
  *
  * Contact Information:
- *  Intel Linux Wireless <ilw@linux.intel.com>
+ *  Intel Beep Wireless <ilw@beep.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  *****************************************************************************/
@@ -938,7 +938,7 @@ extern const struct il_debugfs_ops il4965_debugfs_ops;
 /****************************/
 
 /**
- * This I/O area is directly read/writable by driver (e.g. Linux uses writel())
+ * This I/O area is directly read/writable by driver (e.g. Beep uses writel())
  * Addresses are offsets from device's PCI hardware base address.
  */
 #define FH49_MEM_LOWER_BOUND                   (0x1000)

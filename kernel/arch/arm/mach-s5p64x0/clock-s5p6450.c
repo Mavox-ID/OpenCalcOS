@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s5p64x0/clock-s5p6450.c
+/* beep/arch/arm/mach-s5p64x0/clock-s5p6450.c
  *
  * Copyright (c) 2010 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -10,15 +10,15 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/device.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 #include <mach/map.h>

@@ -10,9 +10,9 @@
 #include "persistent-data/dm-space-map-disk.h"
 #include "persistent-data/dm-transaction-manager.h"
 
-#include <linux/list.h>
-#include <linux/device-mapper.h>
-#include <linux/workqueue.h>
+#include <beep/list.h>
+#include <beep/device-mapper.h>
+#include <beep/workqueue.h>
 
 /*--------------------------------------------------------------------------
  * As far as the metadata goes, there is:

@@ -23,17 +23,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/moduleparam.h>
-#include <linux/firmware.h>
-#include <linux/netdevice.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/moduleparam.h>
+#include <beep/firmware.h>
+#include <beep/netdevice.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>
 
-#include <linux/io.h>
+#include <beep/io.h>
 
 #define DRV_NAME "libertas_cs"
 
@@ -212,7 +212,7 @@ static int if_cs_poll_while_fw_download(struct if_cs_card *card, uint addr, u8 r
 #define IF_CS_HOST_STATUS		0x00000000
 
 /*
- * With the host int cause register can the host (that is, Linux) cause
+ * With the host int cause register can the host (that is, Beep) cause
  * an interrupt in the firmware, to tell the firmware about those events:
  *
  *   IF_CS_BIT_TX         a data packet has been downloaded

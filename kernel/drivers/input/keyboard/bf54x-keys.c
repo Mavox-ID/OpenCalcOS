@@ -1,7 +1,7 @@
 /*
  * File:         drivers/input/keyboard/bf54x-keys.c
  * Based on:
- * Author:       Michael Hennerich <hennerich@blackfin.uclinux.org>
+ * Author:       Michael Hennerich <hennerich@blackfin.ucbeep.org>
  *
  * Created:
  * Description:  keypad driver for Analog Devices Blackfin BF54x Processors
@@ -10,7 +10,7 @@
  * Modified:
  *               Copyright 2007-2008 Analog Devices Inc.
  *
- * Bugs:         Enter bugs at http://blackfin.uclinux.org/
+ * Bugs:         Enter bugs at http://blackfin.ucbeep.org/
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -28,20 +28,20 @@
  * 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/pm.h>
-#include <linux/sysctl.h>
-#include <linux/proc_fs.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/pm.h>
+#include <beep/sysctl.h>
+#include <beep/proc_fs.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/input.h>
 
 #include <asm/portmux.h>
 #include <mach/bf54x_keys.h>
@@ -397,6 +397,6 @@ static struct platform_driver bfin_kpad_device_driver = {
 module_platform_driver(bfin_kpad_device_driver);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucbeep.org>");
 MODULE_DESCRIPTION("Keypad driver for BF54x Processors");
 MODULE_ALIAS("platform:bf54x-keys");

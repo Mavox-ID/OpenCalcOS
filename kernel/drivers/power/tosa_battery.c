@@ -9,14 +9,14 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/power_supply.h>
-#include <linux/wm97xx.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/power_supply.h>
+#include <beep/wm97xx.h>
+#include <beep/delay.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/gpio.h>
 
 #include <asm/mach-types.h>
 #include <mach/tosa.h>

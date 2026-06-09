@@ -17,19 +17,19 @@
  * Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/ulpi.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/ulpi.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
+#include <beep/usb/hcd.h>
 
-#include <linux/platform_data/usb-ehci-mxc.h>
+#include <beep/platform_data/usb-ehci-mxc.h>
 
 #include <asm/mach-types.h>
 

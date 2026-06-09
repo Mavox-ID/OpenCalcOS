@@ -8,27 +8,27 @@
  * Copyright (c) 2002, Trond Myklebust <trond.myklebust@fys.uio.no>
  *
  */
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/pagemap.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/fsnotify.h>
-#include <linux/kernel.h>
-#include <linux/rcupdate.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/pagemap.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
+#include <beep/fsnotify.h>
+#include <beep/kernel.h>
+#include <beep/rcupdate.h>
 
 #include <asm/ioctls.h>
-#include <linux/poll.h>
-#include <linux/wait.h>
-#include <linux/seq_file.h>
+#include <beep/poll.h>
+#include <beep/wait.h>
+#include <beep/seq_file.h>
 
-#include <linux/sunrpc/clnt.h>
-#include <linux/workqueue.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
-#include <linux/sunrpc/cache.h>
-#include <linux/nsproxy.h>
-#include <linux/notifier.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/workqueue.h>
+#include <beep/sunrpc/rpc_pipe_fs.h>
+#include <beep/sunrpc/cache.h>
+#include <beep/nsproxy.h>
+#include <beep/notifier.h>
 
 #include "netns.h"
 #include "sunrpc.h"

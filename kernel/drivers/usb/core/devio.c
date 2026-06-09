@@ -34,23 +34,23 @@
 
 /*****************************************************************************/
 
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/signal.h>
-#include <linux/poll.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usbdevice_fs.h>
-#include <linux/usb/hcd.h>	/* for usbcore internals */
-#include <linux/cdev.h>
-#include <linux/notifier.h>
-#include <linux/security.h>
-#include <linux/user_namespace.h>
-#include <linux/scatterlist.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/signal.h>
+#include <beep/poll.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/usbdevice_fs.h>
+#include <beep/usb/hcd.h>	/* for usbcore internals */
+#include <beep/cdev.h>
+#include <beep/notifier.h>
+#include <beep/security.h>
+#include <beep/user_namespace.h>
+#include <beep/scatterlist.h>
 #include <asm/uaccess.h>
 #include <asm/byteorder.h>
-#include <linux/moduleparam.h>
+#include <beep/moduleparam.h>
 
 #include "usb.h"
 

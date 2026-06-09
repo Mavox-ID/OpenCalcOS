@@ -11,8 +11,8 @@
  *               Christian Borntraeger <borntraeger@de.ibm.com>
  */
 
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
+#include <beep/kvm.h>
+#include <beep/kvm_host.h>
 #include "kvm-s390.h"
 #include "trace.h"
 #include "trace-s390.h"

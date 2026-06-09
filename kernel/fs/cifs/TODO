@@ -59,7 +59,7 @@ o) Add GUI tool to configure /proc/fs/cifs settings and for display of
 the CIFS statistics (started)
 
 p) implement support for security and trusted categories of xattrs
-(requires minor protocol extension) to enable better support for SELINUX
+(requires minor protocol extension) to enable better support for SEBEEP
 
 q) Implement O_DIRECT flag on open (already supported on mount)
 
@@ -83,7 +83,7 @@ v) mount check for unmatched uids
 
 w) Add support for new vfs entry point for fallocate
 
-x) Fix Samba 3 server to handle Linux kernel aio so dbench with lots of 
+x) Fix Samba 3 server to handle Beep kernel aio so dbench with lots of 
 processes can proceed better in parallel (on the server)
 
 y) Fix Samba 3 to handle reads/writes over 127K (and remove the cifs mount

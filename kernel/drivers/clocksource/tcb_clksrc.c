@@ -1,15 +1,15 @@
-#include <linux/init.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <beep/init.h>
+#include <beep/clocksource.h>
+#include <beep/clockchips.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/atmel_tc.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/ioport.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
+#include <beep/atmel_tc.h>
 
 
 /*
@@ -29,7 +29,7 @@
  * A boot clocksource and clockevent source are also currently needed,
  * unless the relevant platforms (ARM/AT91, AVR32/AT32) are changed so
  * this code can be used when init_timers() is called, well before most
- * devices are set up.  (Some low end AT91 parts, which can run uClinux,
+ * devices are set up.  (Some low end AT91 parts, which can run uCbeep,
  * have only the timers in one TC block... they currently don't support
  * the tclib code, because of that initialization issue.)
  *

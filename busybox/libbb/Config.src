@@ -16,7 +16,7 @@ choice
 	- Put them on stack. For some very small machines with limited stack
 	space, this can be deadly. For most folks, this works just fine.
 	- Put them in BSS. This works beautifully for computers with a real
-	MMU (and OS support), but wastes runtime RAM for uCLinux. This
+	MMU (and OS support), but wastes runtime RAM for uCBeep. This
 	behavior was the only one available for versions 0.48 and earlier.
 
 config FEATURE_BUFFERS_USE_MALLOC
@@ -44,7 +44,7 @@ config MD5_SMALL
 	help
 	Trade binary size versus speed for the md5 algorithm.
 	Approximate values running uClibc and hashing
-	linux-2.4.4.tar.bz2 were:
+	beep-2.4.4.tar.bz2 were:
 	value           user times (sec)  text size (386)
 	0 (fastest)     1.1               6144
 	1               1.4               5392
@@ -124,7 +124,7 @@ config FEATURE_USE_SENDFILE
 	(for example, cp command does this a lot).
 	If sendfile() doesn't work, copying code falls back to read/write
 	loop. sendfile() was originally implemented for faster I/O
-	from files to sockets, but since Linux 2.6.33 it was extended
+	from files to sockets, but since Beep 2.6.33 it was extended
 	to work for many more file types.
 
 config FEATURE_COPYBUF_KB
@@ -143,7 +143,7 @@ config MONOTONIC_SYSCALL
 	help
 	Use clock_gettime(CLOCK_MONOTONIC) syscall for measuring
 	time intervals (time, ping, traceroute etc need this).
-	Probably requires Linux 2.6+. If not selected, gettimeofday
+	Probably requires Beep 2.6+. If not selected, gettimeofday
 	will be used instead (which gives wrong results if date/time
 	is reset).
 
@@ -374,7 +374,7 @@ choice
 	prompt "Use LOOP_CONFIGURE for losetup and loop mounts"
 	default TRY_LOOP_CONFIGURE
 	help
-	LOOP_CONFIGURE is added to Linux 5.8
+	LOOP_CONFIGURE is added to Beep 5.8
 	https://lwn.net/Articles/820408/
 	This allows userspace to completely setup a loop device with a single
 	ioctl, removing the in-between state where the device can be partially

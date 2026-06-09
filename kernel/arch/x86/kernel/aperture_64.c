@@ -10,16 +10,16 @@
  *
  * Copyright 2002 Andi Kleen, SuSE Labs.
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/mmzone.h>
-#include <linux/pci_ids.h>
-#include <linux/pci.h>
-#include <linux/bitops.h>
-#include <linux/ioport.h>
-#include <linux/suspend.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/memblock.h>
+#include <beep/mmzone.h>
+#include <beep/pci_ids.h>
+#include <beep/pci.h>
+#include <beep/bitops.h>
+#include <beep/ioport.h>
+#include <beep/suspend.h>
 #include <asm/e820.h>
 #include <asm/io.h>
 #include <asm/iommu.h>

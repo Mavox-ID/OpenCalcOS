@@ -1,8 +1,8 @@
 /* Exports for assembly files.
    All C exports should go in the respective C files. */
 
-#include <linux/module.h>
-#include <linux/smp.h>
+#include <beep/module.h>
+#include <beep/smp.h>
 
 #include <net/checksum.h>
 

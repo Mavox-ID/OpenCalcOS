@@ -1,7 +1,7 @@
 language: c
 
 sudo: false
-os: linux
+os: beep
 dist: trusty
 
 script:

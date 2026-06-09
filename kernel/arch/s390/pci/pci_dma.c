@@ -2,15 +2,15 @@
  * Copyright IBM Corp. 2012
  *
  * Author(s):
- *   Jan Glauber <jang@linux.vnet.ibm.com>
+ *   Jan Glauber <jang@beep.vnet.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/iommu-helper.h>
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/iommu-helper.h>
+#include <beep/dma-mapping.h>
+#include <beep/pci.h>
 #include <asm/pci_dma.h>
 
 static struct kmem_cache *dma_region_table_cache;

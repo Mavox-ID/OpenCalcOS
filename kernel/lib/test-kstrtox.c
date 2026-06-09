@@ -1,6 +1,6 @@
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 
 #define for_each_test(i, test)	\
 	for (i = 0; i < sizeof(test) / sizeof(test[0]); i++)
@@ -277,7 +277,7 @@ static void __init test_kstrtoll_fail(void)
 		{"-9223372036854775809",	10},
 		{"-18446744073709551614",	10},
 		{"-18446744073709551615",	10},
-		/* negative zero isn't an integer in Linux */
+		/* negative zero isn't an integer in Beep */
 		{"-0",	0},
 		{"-0",	8},
 		{"-0",	10},

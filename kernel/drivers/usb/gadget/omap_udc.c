@@ -15,36 +15,36 @@
 #undef	DEBUG
 #undef	VERBOSE
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/mm.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg.h>
-#include <linux/dma-mapping.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/prefetch.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/ioport.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/timer.h>
+#include <beep/list.h>
+#include <beep/interrupt.h>
+#include <beep/proc_fs.h>
+#include <beep/mm.h>
+#include <beep/moduleparam.h>
+#include <beep/platform_device.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
+#include <beep/usb/otg.h>
+#include <beep/dma-mapping.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/prefetch.h>
+#include <beep/io.h>
 
 #include <asm/byteorder.h>
 #include <asm/irq.h>
 #include <asm/unaligned.h>
 #include <asm/mach-types.h>
 
-#include <linux/omap-dma.h>
+#include <beep/omap-dma.h>
 
 #include <mach/usb.h>
 
@@ -2166,7 +2166,7 @@ static int omap_udc_stop(struct usb_gadget_driver *driver)
 
 #ifdef CONFIG_USB_GADGET_DEBUG_FILES
 
-#include <linux/seq_file.h>
+#include <beep/seq_file.h>
 
 static const char proc_filename[] = "driver/udc";
 

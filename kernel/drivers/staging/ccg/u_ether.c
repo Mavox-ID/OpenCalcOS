@@ -13,12 +13,12 @@
 
 /* #define VERBOSE_DEBUG */
 
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/device.h>
-#include <linux/ctype.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
+#include <beep/kernel.h>
+#include <beep/gfp.h>
+#include <beep/device.h>
+#include <beep/ctype.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
 
 #include "u_ether.h"
 

@@ -31,7 +31,7 @@
  */
 
 #include <rdma/ib_umem.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include "iw_cxgb4.h"
 

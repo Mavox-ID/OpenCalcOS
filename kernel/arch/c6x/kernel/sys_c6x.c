@@ -8,9 +8,9 @@
  *  it under the terms of the GNU General Public License version 2 as
  *  published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/syscalls.h>
+#include <beep/uaccess.h>
 
 #include <asm/syscalls.h>
 
@@ -65,7 +65,7 @@ asmlinkage int sys_cache_sync(unsigned long s, unsigned long e)
 #define sys_mmap2 sys_mmap_pgoff
 
 /*
- * Note that we can't include <linux/unistd.h> here since the header
+ * Note that we can't include <beep/unistd.h> here since the header
  * guard will defeat us; <asm/unistd.h> checks for __SYSCALL as well.
  */
 void *sys_call_table[__NR_syscalls] = {

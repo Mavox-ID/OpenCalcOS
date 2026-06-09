@@ -9,9 +9,9 @@
  * (C) Copyright TOSHIBA CORPORATION 2005-2007
  * All Rights Reserved.
  */
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/map_to_7segment.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/map_to_7segment.h>
 #include <asm/txx9/generic.h>
 
 static unsigned int tx_7segled_num;

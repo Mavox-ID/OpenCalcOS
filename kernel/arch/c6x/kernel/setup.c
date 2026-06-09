@@ -8,24 +8,24 @@
  *  it under the terms of the GNU General Public License version 2 as
  *  published by the Free Software Foundation.
  */
-#include <linux/dma-mapping.h>
-#include <linux/memblock.h>
-#include <linux/seq_file.h>
-#include <linux/bootmem.h>
-#include <linux/clkdev.h>
-#include <linux/initrd.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_fdt.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/cache.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/clk.h>
-#include <linux/cpu.h>
-#include <linux/fs.h>
-#include <linux/of.h>
+#include <beep/dma-mapping.h>
+#include <beep/memblock.h>
+#include <beep/seq_file.h>
+#include <beep/bootmem.h>
+#include <beep/clkdev.h>
+#include <beep/initrd.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/of_fdt.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/cache.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/clk.h>
+#include <beep/cpu.h>
+#include <beep/fs.h>
+#include <beep/of.h>
 
 
 #include <asm/sections.h>
@@ -377,7 +377,7 @@ void __init setup_arch(char **cmdline_p)
 	/* Set the whole external memory as non-cacheable */
 	disable_caching(ram_start, ram_end - 1);
 
-	/* Set caching of external RAM used by Linux */
+	/* Set caching of external RAM used by Beep */
 	for_each_memblock(memory, reg)
 		enable_caching(CACHE_REGION_START(reg->base),
 			       CACHE_REGION_START(reg->base + reg->size - 1));

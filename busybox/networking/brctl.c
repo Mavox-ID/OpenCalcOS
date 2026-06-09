@@ -300,7 +300,7 @@ static void show_bridge_timer(const char *msg)
 
 static const char *show_bridge_state(unsigned state)
 {
-	/* See linux/if_bridge.h, BR_STATE_ constants */
+	/* See beep/if_bridge.h, BR_STATE_ constants */
 	static const char state_names[] ALIGN1 =
 		"disabled\0"	//BR_STATE_DISABLED   0
 		"listening\0"   //BR_STATE_LISTENING  1

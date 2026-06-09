@@ -1,24 +1,24 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/prctl.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/clockchips.h>
-#include <linux/random.h>
-#include <linux/user-return-notifier.h>
-#include <linux/dmi.h>
-#include <linux/utsname.h>
-#include <linux/stackprotector.h>
-#include <linux/tick.h>
-#include <linux/cpuidle.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/prctl.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/module.h>
+#include <beep/pm.h>
+#include <beep/clockchips.h>
+#include <beep/random.h>
+#include <beep/user-return-notifier.h>
+#include <beep/dmi.h>
+#include <beep/utsname.h>
+#include <beep/stackprotector.h>
+#include <beep/tick.h>
+#include <beep/cpuidle.h>
 #include <trace/events/power.h>
-#include <linux/hw_breakpoint.h>
+#include <beep/hw_breakpoint.h>
 #include <asm/cpu.h>
 #include <asm/apic.h>
 #include <asm/syscalls.h>
@@ -30,7 +30,7 @@
 #include <asm/nmi.h>
 
 /*
- * per-CPU TSS segments. Threads are completely 'soft' on Linux,
+ * per-CPU TSS segments. Threads are completely 'soft' on Beep,
  * no more per-task TSS's. The TSS size is kept cacheline-aligned
  * so they are allowed to end up in the .data..cacheline_aligned
  * section. Since TSS's are completely CPU-local, we want them

@@ -8,7 +8,7 @@
  *	Copyright (C) 2002 Intel Corporation.
  *	Copyright (C) 2003-2004 MontaVista Software, Inc.
  *
- * Maintainer: http://www.nslu2-linux.org/
+ * Maintainer: http://www.nslu2-beep.org/
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -16,9 +16,9 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/irq.h>
 #include <asm/mach/pci.h>
 #include <asm/mach-types.h>
 

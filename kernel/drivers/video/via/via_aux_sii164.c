@@ -21,7 +21,7 @@
  * driver for Silicon Image SiI 164 PanelLink Transmitter
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include "via_aux.h"
 
 

@@ -8,9 +8,9 @@
  *
  */
 
-#include <linux/irq.h>
-#include <linux/of_platform.h>
-#include <linux/io.h>
+#include <beep/irq.h>
+#include <beep/of_platform.h>
+#include <beep/io.h>
 
 /*
  * The FPGA supports 9 interrupt sources, which can be routed to 3

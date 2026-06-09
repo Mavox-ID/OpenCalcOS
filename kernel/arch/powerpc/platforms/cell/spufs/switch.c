@@ -32,16 +32,16 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/export.h>
-#include <linux/errno.h>
-#include <linux/hardirq.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
+#include <beep/export.h>
+#include <beep/errno.h>
+#include <beep/hardirq.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/vmalloc.h>
+#include <beep/smp.h>
+#include <beep/stddef.h>
+#include <beep/unistd.h>
 
 #include <asm/io.h>
 #include <asm/spu.h>

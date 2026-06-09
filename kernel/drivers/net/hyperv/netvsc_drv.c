@@ -20,19 +20,19 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/atomic.h>
-#include <linux/module.h>
-#include <linux/highmem.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/in.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/atomic.h>
+#include <beep/module.h>
+#include <beep/highmem.h>
+#include <beep/device.h>
+#include <beep/io.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/inetdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/in.h>
+#include <beep/slab.h>
 #include <net/arp.h>
 #include <net/route.h>
 #include <net/sock.h>

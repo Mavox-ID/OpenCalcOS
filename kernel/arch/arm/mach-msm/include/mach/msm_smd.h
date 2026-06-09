@@ -1,4 +1,4 @@
-/* linux/include/asm-arm/arch-msm/msm_smd.h
+/* beep/include/asm-arm/arch-msm/msm_smd.h
  *
  * Copyright (C) 2007 Google, Inc.
  * Author: Brian Swetland <swetland@google.com>

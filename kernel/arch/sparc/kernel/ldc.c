@@ -3,18 +3,18 @@
  * Copyright (C) 2007, 2008 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/scatterlist.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/bitmap.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/scatterlist.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/init.h>
+#include <beep/bitmap.h>
 
 #include <asm/hypervisor.h>
 #include <asm/iommu.h>

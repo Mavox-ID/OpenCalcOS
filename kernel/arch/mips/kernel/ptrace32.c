@@ -11,19 +11,19 @@
  * Copyright (C) 1999 MIPS Technologies, Inc.
  * Copyright (C) 2000 Ulf Carlsson
  *
- * At this time Linux/MIPS64 only supports syscall tracing, even for 32-bit
+ * At this time Beep/MIPS64 only supports syscall tracing, even for 32-bit
  * binaries.
  */
-#include <linux/compiler.h>
-#include <linux/compat.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/smp.h>
-#include <linux/user.h>
-#include <linux/security.h>
+#include <beep/compiler.h>
+#include <beep/compat.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/errno.h>
+#include <beep/ptrace.h>
+#include <beep/smp.h>
+#include <beep/user.h>
+#include <beep/security.h>
 
 #include <asm/cpu.h>
 #include <asm/dsp.h>

@@ -1,6 +1,6 @@
 #ifndef _IOP13XX_PCI_H_
 #define _IOP13XX_PCI_H_
-#include <linux/io.h>
+#include <beep/io.h>
 #include <mach/irqs.h>
 
 struct pci_sys_data;

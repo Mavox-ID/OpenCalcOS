@@ -3,7 +3,7 @@
  *
  * Copyright (c) 2000 Ani Joshi <ajoshi@kernel.crashing.org>
  * Copyright (c) 2003 Benjamin Herrenschmidt <benh@kernel.crashing.org>
- * Copyright (c) 2006 Michael Hanselmann <linux-kernel@hansmi.ch>
+ * Copyright (c) 2006 Michael Hanselmann <beep-kernel@hansmi.ch>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -11,8 +11,8 @@
  */
 
 #include "radeonfb.h"
-#include <linux/backlight.h>
-#include <linux/slab.h>
+#include <beep/backlight.h>
+#include <beep/slab.h>
 
 #ifdef CONFIG_PMAC_BACKLIGHT
 #include <asm/backlight.h>

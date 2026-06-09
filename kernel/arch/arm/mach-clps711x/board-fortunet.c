@@ -1,7 +1,7 @@
 /*
- *  linux/arch/arm/mach-clps711x/fortunet.c
+ *  beep/arch/arm/mach-clps711x/fortunet.c
  *
- *  Derived from linux/arch/arm/mach-integrator/arch.c
+ *  Derived from beep/arch/arm/mach-integrator/arch.c
  *
  *  Copyright (C) 2000 Deep Blue Solutions Ltd
  *
@@ -19,9 +19,9 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/initrd.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/initrd.h>
 
 #include <mach/hardware.h>
 #include <asm/setup.h>

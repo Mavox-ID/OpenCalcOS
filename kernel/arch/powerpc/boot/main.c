@@ -30,8 +30,8 @@ struct addr_range {
 static struct addr_range prep_kernel(void)
 {
 	char elfheader[256];
-	void *vmlinuz_addr = _vmlinux_start;
-	unsigned long vmlinuz_size = _vmlinux_end - _vmlinux_start;
+	void *vmlinuz_addr = _vmbeep_start;
+	unsigned long vmlinuz_size = _vmbeep_end - _vmbeep_start;
 	void *addr = 0;
 	struct elf_info ei;
 	int len;
@@ -53,8 +53,8 @@ static struct addr_range prep_kernel(void)
 	 */
 	printf("Allocating 0x%lx bytes for kernel ...\n\r", ei.memsize);
 
-	if (platform_ops.vmlinux_alloc) {
-		addr = platform_ops.vmlinux_alloc(ei.memsize);
+	if (platform_ops.vmbeep_alloc) {
+		addr = platform_ops.vmbeep_alloc(ei.memsize);
 	} else {
 		/*
 		 * Check if the kernel image (without bss) would overwrite the
@@ -87,7 +87,7 @@ static struct addr_range prep_kernel(void)
 	return (struct addr_range){addr, ei.memsize};
 }
 
-static struct addr_range prep_initrd(struct addr_range vmlinux, void *chosen,
+static struct addr_range prep_initrd(struct addr_range vmbeep, void *chosen,
 				     unsigned long initrd_addr,
 				     unsigned long initrd_size)
 {
@@ -112,7 +112,7 @@ static struct addr_range prep_initrd(struct addr_range vmlinux, void *chosen,
 	 * kernel relocates to its final location.  In this case,
 	 * allocate a safer place and move it.
 	 */
-	if (initrd_addr < vmlinux.size) {
+	if (initrd_addr < vmbeep.size) {
 		void *old_addr = (void *)initrd_addr;
 
 		printf("Allocating 0x%lx bytes for initrd ...\n\r",
@@ -129,14 +129,14 @@ static struct addr_range prep_initrd(struct addr_range vmlinux, void *chosen,
 	printf("initrd head: 0x%lx\n\r", *((unsigned long *)initrd_addr));
 
 	/* Tell the kernel initrd address via device tree */
-	setprop_val(chosen, "linux,initrd-start", (u32)(initrd_addr));
-	setprop_val(chosen, "linux,initrd-end", (u32)(initrd_addr+initrd_size));
+	setprop_val(chosen, "beep,initrd-start", (u32)(initrd_addr));
+	setprop_val(chosen, "beep,initrd-end", (u32)(initrd_addr+initrd_size));
 
 	return (struct addr_range){(void *)initrd_addr, initrd_size};
 }
 
 /* A buffer that may be edited by tools operating on a zImage binary so as to
- * edit the command line passed to vmlinux (by setting /chosen/bootargs).
+ * edit the command line passed to vmbeep (by setting /chosen/bootargs).
  * The buffer is put in it's own section so that tools may locate it easier.
  */
 static char cmdline[COMMAND_LINE_SIZE]
@@ -147,7 +147,7 @@ static void prep_cmdline(void *chosen)
 	if (cmdline[0] == '\0')
 		getprop(chosen, "bootargs", cmdline, COMMAND_LINE_SIZE-1);
 
-	printf("\n\rLinux/PowerPC load: %s", cmdline);
+	printf("\n\rBeep/PowerPC load: %s", cmdline);
 	/* If possible, edit the command line */
 	if (console_ops.edit_cmdline)
 		console_ops.edit_cmdline(cmdline, COMMAND_LINE_SIZE);
@@ -164,7 +164,7 @@ struct loader_info loader_info;
 
 void start(void)
 {
-	struct addr_range vmlinux, initrd;
+	struct addr_range vmbeep, initrd;
 	kernel_entry_t kentry;
 	unsigned long ft_addr = 0;
 	void *chosen;
@@ -189,8 +189,8 @@ void start(void)
 	if (!chosen)
 		chosen = create_node(NULL, "chosen");
 
-	vmlinux = prep_kernel();
-	initrd = prep_initrd(vmlinux, chosen,
+	vmbeep = prep_kernel();
+	initrd = prep_initrd(vmbeep, chosen,
 			     loader_info.initrd_addr, loader_info.initrd_size);
 	prep_cmdline(chosen);
 
@@ -205,7 +205,7 @@ void start(void)
 	if (console_ops.close)
 		console_ops.close();
 
-	kentry = (kernel_entry_t) vmlinux.addr;
+	kentry = (kernel_entry_t) vmbeep.addr;
 	if (ft_addr)
 		kentry(ft_addr, 0, NULL);
 	else
@@ -213,5 +213,5 @@ void start(void)
 		       loader_info.promptr);
 
 	/* console closed so printf in fatal below may not work */
-	fatal("Error: Linux kernel returned to zImage boot wrapper!\n\r");
+	fatal("Error: Beep kernel returned to zImage boot wrapper!\n\r");
 }

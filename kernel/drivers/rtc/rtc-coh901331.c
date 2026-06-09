@@ -6,15 +6,15 @@
  * Based on rtc-pl031.c by Deepak Saxena <dsaxena@plexity.net>
  * Copyright 2006 (c) MontaVista Software, Inc.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/rtc.h>
+#include <beep/clk.h>
+#include <beep/interrupt.h>
+#include <beep/pm.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 
 /*
  * Registers in the COH 901 331

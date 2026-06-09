@@ -11,9 +11,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
 #include <asm/mach/irq.h>
 #include <asm/irq.h>
 #include <mach/hardware.h>

@@ -20,8 +20,8 @@
 #if !defined(_ASM_RM9K_OCD_H)
 #define _ASM_RM9K_OCD_H
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
+#include <beep/types.h>
+#include <beep/spinlock.h>
 #include <asm/io.h>
 
 extern volatile void __iomem * const ocd_base;

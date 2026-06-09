@@ -18,18 +18,18 @@
  * systems with no controllable regulators.
  */
 
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/fixed.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/regulator/machine.h>
+#include <beep/err.h>
+#include <beep/mutex.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/driver.h>
+#include <beep/regulator/fixed.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/of_gpio.h>
+#include <beep/regulator/of_regulator.h>
+#include <beep/regulator/machine.h>
 
 struct fixed_voltage_data {
 	struct regulator_desc desc;

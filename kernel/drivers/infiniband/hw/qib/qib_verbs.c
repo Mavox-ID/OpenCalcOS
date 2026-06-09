@@ -34,12 +34,12 @@
 
 #include <rdma/ib_mad.h>
 #include <rdma/ib_user_verbs.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/utsname.h>
-#include <linux/rculist.h>
-#include <linux/mm.h>
-#include <linux/random.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/utsname.h>
+#include <beep/rculist.h>
+#include <beep/mm.h>
+#include <beep/random.h>
 
 #include "qib.h"
 #include "qib_common.h"

@@ -1,5 +1,5 @@
 /*
- * Intel IXP4xx Ethernet driver for Linux
+ * Intel IXP4xx Ethernet driver for Beep
  *
  * Copyright (C) 2007 Krzysztof Halasa <khc@pm.waw.pl>
  *
@@ -24,18 +24,18 @@
  * bits 5 -> 31	- physical descriptor address
  */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/etherdevice.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/net_tstamp.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/ptp_classify.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmapool.h>
+#include <beep/etherdevice.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/net_tstamp.h>
+#include <beep/phy.h>
+#include <beep/platform_device.h>
+#include <beep/ptp_classify.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <mach/ixp46x_ts.h>
 #include <mach/npe.h>
 #include <mach/qmgr.h>

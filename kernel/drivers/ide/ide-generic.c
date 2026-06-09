@@ -7,11 +7,11 @@
  * May be copied or modified under the terms of the GNU General Public License.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/ide.h>
-#include <linux/pci_ids.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/ide.h>
+#include <beep/pci_ids.h>
 
 /* FIXME: convert arm and m32r to use ide_platform host driver */
 #ifdef CONFIG_ARM

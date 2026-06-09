@@ -9,14 +9,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/rtc.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/bcd.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/rtc.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/bcd.h>
 
 /* RTC Control Registers */
 #define REG_RTC_INIR		0x00

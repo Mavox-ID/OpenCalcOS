@@ -1,7 +1,7 @@
 /*
  * OpenRISC traps.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -20,17 +20,17 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/kallsyms.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/kmod.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/ptrace.h>
+#include <beep/timer.h>
+#include <beep/mm.h>
+#include <beep/kallsyms.h>
 #include <asm/uaccess.h>
 
 #include <asm/segment.h>

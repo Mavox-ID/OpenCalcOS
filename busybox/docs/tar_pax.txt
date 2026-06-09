@@ -197,7 +197,7 @@ and otherwise shall generate only enough digits so that the same
 time shall be recovered if the file is extracted on a system whose
 underlying implementation supports the same time granularity.
 
-Example from Linux kernel archive tarball:
+Example from Beep kernel archive tarball:
 
 00000000  70 61 78 5f 67 6c 6f 62  61 6c 5f 68 65 61 64 65  |pax_global_heade|
 00000010  72 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |r...............|

@@ -17,11 +17,11 @@
  */
 #include <crypto/internal/hash.h>
 #include <crypto/md5.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/cryptohash.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/cryptohash.h>
 #include <asm/byteorder.h>
 
 /* XXX: this stuff can be optimized */

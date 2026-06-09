@@ -1,9 +1,9 @@
 /*
- * Linux WiMAX
+ * Beep WiMAX
  * RF-kill framework integration
  *
  *
- * Copyright (C) 2008 Intel Corporation <linux-wimax@intel.com>
+ * Copyright (C) 2008 Intel Corporation <beep-wimax@intel.com>
  * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
  *
  * This program is free software; you can redistribute it and/or
@@ -21,7 +21,7 @@
  * 02110-1301, USA.
  *
  *
- * This integrates into the Linux Kernel rfkill susbystem so that the
+ * This integrates into the Beep Kernel rfkill susbystem so that the
  * drivers just have to do the bare minimal work, which is providing a
  * method to set the software RF-Kill switch and to report changes in
  * the software and hardware switch status.
@@ -62,10 +62,10 @@
 
 #include <net/wimax.h>
 #include <net/genetlink.h>
-#include <linux/wimax.h>
-#include <linux/security.h>
-#include <linux/rfkill.h>
-#include <linux/export.h>
+#include <beep/wimax.h>
+#include <beep/security.h>
+#include <beep/rfkill.h>
+#include <beep/export.h>
 #include "wimax-internal.h"
 
 #define D_SUBMODULE op_rfkill

@@ -8,7 +8,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the Beep kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -30,11 +30,11 @@
  * IN THE SOFTWARE.
  */
 
-#ifndef __LINUX_PUBLIC_PRIVCMD_H__
-#define __LINUX_PUBLIC_PRIVCMD_H__
+#ifndef __BEEP_PUBLIC_PRIVCMD_H__
+#define __BEEP_PUBLIC_PRIVCMD_H__
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <beep/types.h>
+#include <beep/compiler.h>
 #include <xen/interface/xen.h>
 
 struct privcmd_hypercall {
@@ -95,4 +95,4 @@ struct privcmd_mmapbatch_v2 {
 #define IOCTL_PRIVCMD_MMAPBATCH_V2				\
 	_IOC(_IOC_NONE, 'P', 4, sizeof(struct privcmd_mmapbatch_v2))
 
-#endif /* __LINUX_PUBLIC_PRIVCMD_H__ */
+#endif /* __BEEP_PUBLIC_PRIVCMD_H__ */

@@ -5,7 +5,7 @@
  * Kevin Kissell, kevink@mips.com and Carsten Langgaard, carstenl@mips.com
  * Copyright (C) 2000 MIPS Technologies, Inc.
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -22,12 +22,12 @@
  * 02110-1301, USA.
  */
 
-#include <linux/compat.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/kbuild.h>
+#include <beep/compat.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/kbuild.h>
 #include <asm/ptrace.h>
 #include <asm/processor.h>
 

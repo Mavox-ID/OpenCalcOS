@@ -1,35 +1,35 @@
 /*
- *  linux/mm/swap.c
+ *  beep/mm/swap.c
  *
  *  Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  */
 
 /*
  * This file contains the default values for the operation of the
- * Linux VM subsystem. Fine-tuning documentation can be found in
+ * Beep VM subsystem. Fine-tuning documentation can be found in
  * Documentation/sysctl/vm.txt.
  * Started 18.12.91
  * Swap aging added 23.2.95, Stephen Tweedie.
  * Buffermem limits added 12.3.98, Rik van Riel.
  */
 
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/kernel_stat.h>
-#include <linux/swap.h>
-#include <linux/mman.h>
-#include <linux/pagemap.h>
-#include <linux/pagevec.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/mm_inline.h>
-#include <linux/percpu_counter.h>
-#include <linux/percpu.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/backing-dev.h>
-#include <linux/memcontrol.h>
-#include <linux/gfp.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/kernel_stat.h>
+#include <beep/swap.h>
+#include <beep/mman.h>
+#include <beep/pagemap.h>
+#include <beep/pagevec.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/mm_inline.h>
+#include <beep/percpu_counter.h>
+#include <beep/percpu.h>
+#include <beep/cpu.h>
+#include <beep/notifier.h>
+#include <beep/backing-dev.h>
+#include <beep/memcontrol.h>
+#include <beep/gfp.h>
 
 #include "internal.h"
 

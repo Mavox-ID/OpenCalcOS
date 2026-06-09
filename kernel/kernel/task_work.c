@@ -1,6 +1,6 @@
-#include <linux/spinlock.h>
-#include <linux/task_work.h>
-#include <linux/tracehook.h>
+#include <beep/spinlock.h>
+#include <beep/task_work.h>
+#include <beep/tracehook.h>
 
 static struct callback_head work_exited; /* all we need is ->next == NULL */
 

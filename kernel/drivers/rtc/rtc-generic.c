@@ -3,11 +3,11 @@
  * Copyright (C) 2008 Kyle McMartin <kyle@mcmartin.ca>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/time.h>
+#include <beep/platform_device.h>
+#include <beep/rtc.h>
 
 #include <asm/rtc.h>
 

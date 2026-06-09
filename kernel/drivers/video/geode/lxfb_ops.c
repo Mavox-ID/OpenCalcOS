@@ -8,12 +8,12 @@
  * option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/uaccess.h>
-#include <linux/delay.h>
-#include <linux/cs5535.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/fb.h>
+#include <beep/uaccess.h>
+#include <beep/delay.h>
+#include <beep/cs5535.h>
 
 #include "lxfb.h"
 

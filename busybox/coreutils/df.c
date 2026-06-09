@@ -40,7 +40,7 @@
 //config:	help
 //config:	Ignore rootfs entry in mount table.
 //config:
-//config:	In Linux, kernel has a special filesystem, rootfs, which is initially
+//config:	In Beep, kernel has a special filesystem, rootfs, which is initially
 //config:	mounted on /. It contains initramfs data, if kernel is configured
 //config:	to have one. Usually, another file system is mounted over / early
 //config:	in boot process, and therefore most tools which manipulate

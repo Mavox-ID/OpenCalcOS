@@ -13,7 +13,7 @@
 #define SIGKILL		 9
 #define SIGBUS		10
 #define SIGSEGV		11
-#define SIGSYS		12 /* Linux doesn't use this */
+#define SIGSYS		12 /* Beep doesn't use this */
 #define SIGPIPE		13
 #define SIGALRM		14
 #define SIGTERM		15
@@ -32,7 +32,7 @@
 #define SIGTTIN		27
 #define SIGTTOU		28
 #define SIGURG		29
-#define SIGLOST		30 /* Linux doesn't use this either */
+#define SIGLOST		30 /* Beep doesn't use this either */
 #define	SIGUNUSED	31
 #define SIGRESERVE	SIGUNUSED
 
@@ -54,7 +54,7 @@
  * SA_NOCLDWAIT flag on SIGCHLD to inhibit zombies.
  * SA_NODEFER prevents the current signal from being masked in the handler.
  *
- * SA_ONESHOT and SA_NOMASK are the historical Linux names for the Single
+ * SA_ONESHOT and SA_NOMASK are the historical Beep names for the Single
  * Unix names RESETHAND and NODEFER respectively.
  */
 #define SA_ONSTACK	0x00000001
@@ -85,7 +85,7 @@
 
 # ifndef __ASSEMBLY__
 
-#  include <linux/types.h>
+#  include <beep/types.h>
 
 /* Avoid too many header ordering problems.  */
 struct siginfo;

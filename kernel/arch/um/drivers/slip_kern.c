@@ -1,11 +1,11 @@
 /*
- * Copyright (C) 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL.
  */
 
-#include <linux/if_arp.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
 #include <net_kern.h>
 #include "slip.h"
 

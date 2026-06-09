@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PREFIX="i486-linux-uclibc-"
+PREFIX="i486-beep-uclibc-"
 OPTS="-static -static-libgcc \
 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 \
 -Wall -Wshadow -Wwrite-strings -Wundef -Wstrict-prototypes -Werror \

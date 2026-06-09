@@ -129,16 +129,16 @@ enum {D_PRT, D_PRO, D_UNI, D_MOD, D_SLV, D_DLY};
 
 /* end of parameters */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/cdrom.h>
-#include <linux/spinlock.h>
-#include <linux/blkdev.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/cdrom.h>
+#include <beep/spinlock.h>
+#include <beep/blkdev.h>
+#include <beep/mutex.h>
 #include <asm/uaccess.h>
 
 static DEFINE_MUTEX(pcd_mutex);

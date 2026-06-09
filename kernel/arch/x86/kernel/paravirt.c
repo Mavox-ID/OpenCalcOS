@@ -18,11 +18,11 @@
     2007 - x86_64 support added by Glauber de Oliveira Costa, Red Hat Inc
 */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/efi.h>
-#include <linux/bcd.h>
-#include <linux/highmem.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/efi.h>
+#include <beep/bcd.h>
+#include <beep/highmem.h>
 
 #include <asm/bug.h>
 #include <asm/paravirt.h>

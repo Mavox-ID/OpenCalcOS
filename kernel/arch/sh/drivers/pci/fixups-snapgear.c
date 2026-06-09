@@ -3,20 +3,20 @@
  *
  * Author:  David McCullough <davidm@snapgear.com>
  *
- * Ported to new API by Paul Mundt <lethal@linux-sh.org>
+ * Ported to new API by Paul Mundt <lethal@beep-sh.org>
  *
  * Highly leveraged from pci-bigsur.c, written by Dustin McIntire.
  *
  * May be copied or modified under the terms of the GNU General Public
- * License.  See linux/COPYING for more information.
+ * License.  See beep/COPYING for more information.
  *
  * PCI initialization for the SnapGear boards
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/sh_intc.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/sh_intc.h>
 #include "pci-sh4.h"
 
 int __init pcibios_map_platform_irq(const struct pci_dev *pdev, u8 slot, u8 pin)

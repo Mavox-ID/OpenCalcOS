@@ -14,7 +14,7 @@
 #define LI_PCIA_VADDR   (fix_to_virt(FIX_LI_PCIA))
 #define LI_PCIB_VADDR   (fix_to_virt(FIX_LI_PCIB))
 
-/* Not a standard PCI? (not in linux/pci.h) */
+/* Not a standard PCI? (not in beep/pci.h) */
 #define	LI_PCI_BUSNUM	0x44			/* lo8: primary, hi8: sub */
 #define LI_PCI_INTEN    0x46
 

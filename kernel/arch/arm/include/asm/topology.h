@@ -3,7 +3,7 @@
 
 #ifdef CONFIG_ARM_CPU_TOPOLOGY
 
-#include <linux/cpumask.h>
+#include <beep/cpumask.h>
 
 struct cputopo_arm {
 	int thread_id;

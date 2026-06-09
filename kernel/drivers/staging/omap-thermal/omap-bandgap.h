@@ -23,9 +23,9 @@
 #ifndef __OMAP_BANDGAP_H
 #define __OMAP_BANDGAP_H
 
-#include <linux/mutex.h>
-#include <linux/types.h>
-#include <linux/err.h>
+#include <beep/mutex.h>
+#include <beep/types.h>
+#include <beep/err.h>
 
 /* TEMP_SENSOR OMAP4430 */
 #define OMAP4430_BGAP_TSHUT_SHIFT			11

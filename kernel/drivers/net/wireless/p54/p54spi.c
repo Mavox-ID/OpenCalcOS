@@ -20,16 +20,16 @@
  * 02110-1301 USA
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/firmware.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/spi/spi.h>
-#include <linux/etherdevice.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/firmware.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/spi/spi.h>
+#include <beep/etherdevice.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
 
 #include "p54spi.h"
 #include "p54.h"
@@ -45,7 +45,7 @@ MODULE_FIRMWARE("3826.arm");
 /*
  * gpios should be handled in board files and provided via platform data,
  * but because it's currently impossible for p54spi to have a header file
- * in include/linux, let's use module paramaters for now
+ * in include/beep, let's use module paramaters for now
  */
 
 static int p54spi_gpio_power = 97;

@@ -1,4 +1,4 @@
-/*-*-linux-c-*-*/
+/*-*-beep-c-*-*/
 
 /*
   Copyright (C) 2008 Cezary Jackiewicz <cezary.jackiewicz (at) gmail.com>
@@ -30,7 +30,7 @@
  *   wake_up_XXX   Whether or not we listen to such wake up events (rw)
  *
  * In addition to these platform device attributes the driver
- * registers itself in the Linux backlight control, power_supply, rfkill
+ * registers itself in the Beep backlight control, power_supply, rfkill
  * and hwmon subsystem and is available to userspace under:
  *
  *   /sys/class/backlight/compal-laptop/
@@ -61,7 +61,7 @@
  * power, wake_on_XXX, a hwmon and power_supply interface.
  *
  * In case this gets merged into the kernel source: I want to dedicate this
- * to Kasper Meerts, the awesome guy who showed me Linux and C!
+ * to Kasper Meerts, the awesome guy who showed me Beep and C!
  */
 
 /* NOTE: currently the wake_on_XXX, hwmon and power_supply interfaces are
@@ -70,18 +70,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/backlight.h>
-#include <linux/platform_device.h>
-#include <linux/rfkill.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/power_supply.h>
-#include <linux/fb.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/acpi.h>
+#include <beep/dmi.h>
+#include <beep/backlight.h>
+#include <beep/platform_device.h>
+#include <beep/rfkill.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/power_supply.h>
+#include <beep/fb.h>
 
 
 /* ======= */

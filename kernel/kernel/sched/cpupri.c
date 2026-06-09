@@ -27,7 +27,7 @@
  *  of the License.
  */
 
-#include <linux/gfp.h>
+#include <beep/gfp.h>
 #include "cpupri.h"
 
 /* Convert between a 140 based task->prio, and our 102 based cpupri */

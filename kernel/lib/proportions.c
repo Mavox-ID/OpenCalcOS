@@ -70,8 +70,8 @@
  *   x_{j} /= 2^(c - c_{j}), c_{j} = c
  */
 
-#include <linux/proportions.h>
-#include <linux/rcupdate.h>
+#include <beep/proportions.h>
+#include <beep/rcupdate.h>
 
 int prop_descriptor_init(struct prop_descriptor *pd, int shift)
 {

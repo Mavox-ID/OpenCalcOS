@@ -20,15 +20,15 @@
  * Thus, we choose CONFIG_MTD_CFI_I2 & CONFIG_MTD_CFI_B4 at
  * kernel configuration.
  */
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/slab.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/map.h>
+#include <beep/mtd/partitions.h>
 
 #include <asm/io.h>
 
@@ -53,7 +53,7 @@ static void __iomem *start_scan_addr;
 
 /*
  * Here are partition information for all known TQM8xxL series devices.
- * See include/linux/mtd/partitions.h for definition of the mtd_partition
+ * See include/beep/mtd/partitions.h for definition of the mtd_partition
  * structure.
  *
  * The *_max_flash_size is the maximum possible mapped flash size which

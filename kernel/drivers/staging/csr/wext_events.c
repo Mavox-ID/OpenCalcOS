@@ -12,9 +12,9 @@
  *
  * ---------------------------------------------------------------------------
  */
-#include <linux/types.h>
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
+#include <beep/types.h>
+#include <beep/etherdevice.h>
+#include <beep/if_arp.h>
 #include "csr_wifi_hip_unifi.h"
 #include "unifi_priv.h"
 

@@ -9,8 +9,8 @@
 #ifndef IXP4XX_QMGR_H
 #define IXP4XX_QMGR_H
 
-#include <linux/io.h>
-#include <linux/kernel.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
 
 #define DEBUG_QMGR	0
 

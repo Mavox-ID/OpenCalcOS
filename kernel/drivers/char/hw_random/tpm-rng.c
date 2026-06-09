@@ -17,9 +17,9 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/module.h>
-#include <linux/hw_random.h>
-#include <linux/tpm.h>
+#include <beep/module.h>
+#include <beep/hw_random.h>
+#include <beep/tpm.h>
 
 #define MODULE_NAME "tpm-rng"
 
@@ -46,5 +46,5 @@ static void __exit rng_exit(void)
 module_exit(rng_exit);
 
 MODULE_LICENSE("GPL v2");
-MODULE_AUTHOR("Kent Yoder <key@linux.vnet.ibm.com>");
+MODULE_AUTHOR("Kent Yoder <key@beep.vnet.ibm.com>");
 MODULE_DESCRIPTION("RNG driver for TPM devices");

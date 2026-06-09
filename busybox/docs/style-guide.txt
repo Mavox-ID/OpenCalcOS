@@ -509,7 +509,7 @@ assigning them to a global pointer thusly:
 
 This last approach has some advantages (low code size, space not used until
 it's needed), but can be a problem in some low resource machines that have
-very limited stack space (e.g., uCLinux).
+very limited stack space (e.g., uCBeep).
 
 A macro is declared in busybox.h that implements compile-time selection
 between xmalloc() and stack creation, so you can code the line in question as

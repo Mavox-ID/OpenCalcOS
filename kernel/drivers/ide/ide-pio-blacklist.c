@@ -6,7 +6,7 @@
  * to avoid breaking the fragile cmd640.c support.
  */
 
-#include <linux/string.h>
+#include <beep/string.h>
 
 static struct ide_pio_info {
 	const char	*name;

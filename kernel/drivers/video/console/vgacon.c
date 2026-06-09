@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/vgacon.c -- Low level VGA based console driver
+ *  beep/drivers/video/vgacon.c -- Low level VGA based console driver
  *
  *	Created 28 Sep 1997 by Geert Uytterhoeven
  *
@@ -14,7 +14,7 @@
  *	<crosser@average.org>
  *
  *	Improved loadable font/UTF-8 support by H. Peter Anvin
- *	Feb-Sep 1995 <peter.anvin@linux.org>
+ *	Feb-Sep 1995 <peter.anvin@beep.org>
  *
  *	Colour palette handling, by Simon Tatham
  *	17-Jun-95 <sgt20@cam.ac.uk>
@@ -33,20 +33,20 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/console.h>
-#include <linux/string.h>
-#include <linux/kd.h>
-#include <linux/slab.h>
-#include <linux/vt_kern.h>
-#include <linux/selection.h>
-#include <linux/spinlock.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/screen_info.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/console.h>
+#include <beep/string.h>
+#include <beep/kd.h>
+#include <beep/slab.h>
+#include <beep/vt_kern.h>
+#include <beep/selection.h>
+#include <beep/spinlock.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/screen_info.h>
 #include <video/vga.h>
 #include <asm/io.h>
 

@@ -20,11 +20,11 @@
 /* BB_AUDIT SUSv3 N/A -- Matches GNU behavior. */
 
 //usage:#define mknod_trivial_usage
-//usage:       "[-m MODE] " IF_SELINUX("[-Z] ") "NAME TYPE [MAJOR MINOR]"
+//usage:       "[-m MODE] " IF_SEBEEP("[-Z] ") "NAME TYPE [MAJOR MINOR]"
 //usage:#define mknod_full_usage "\n\n"
 //usage:       "Create a special file (block, character, or pipe)\n"
 //usage:     "\n	-m MODE	Creation mode (default a=rw)"
-//usage:	IF_SELINUX(
+//usage:	IF_SEBEEP(
 //usage:     "\n	-Z	Set security context"
 //usage:	)
 //usage:     "\nTYPE:"
@@ -36,7 +36,7 @@
 //usage:       "$ mknod /dev/fd0 b 2 0\n"
 //usage:       "$ mknod -m 644 /libs/pipe p\n"
 
-#ifdef __linux__
+#ifdef __beep__
 # include <sys/sysmacros.h>  // For makedev
 #endif
 

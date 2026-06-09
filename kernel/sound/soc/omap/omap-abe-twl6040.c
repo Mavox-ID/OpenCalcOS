@@ -20,12 +20,12 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/twl6040.h>
-#include <linux/platform_data/omap-abe-twl6040.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/mfd/twl6040.h>
+#include <beep/platform_data/omap-abe-twl6040.h>
+#include <beep/module.h>
+#include <beep/of.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

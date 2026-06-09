@@ -1,10 +1,10 @@
 /*
- * linux/arch/arm/mach-omap2/gpmc-smsc911x.c
+ * beep/arch/arm/mach-omap2/gpmc-smsc911x.c
  *
  * Copyright (C) 2009 Li-Pro.Net
  * Stephan Linz <linz@li-pro.net>
  *
- * Modified from linux/arch/arm/mach-omap2/gpmc-smc91x.c
+ * Modified from beep/arch/arm/mach-omap2/gpmc-smc91x.c
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
@@ -12,13 +12,13 @@
  */
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/smsc911x.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/smsc911x.h>
 
 #include "gpmc.h"
 #include "gpmc-smsc911x.h"

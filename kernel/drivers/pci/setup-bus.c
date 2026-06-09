@@ -17,14 +17,14 @@
  *	     tighter packing. Prefetchable range support.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/cache.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/cache.h>
+#include <beep/slab.h>
 #include <asm-generic/pci-bridge.h>
 #include "pci.h"
 

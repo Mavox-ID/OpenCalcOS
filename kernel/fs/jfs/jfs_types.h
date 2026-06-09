@@ -27,8 +27,8 @@
  * of JFS include list in all JFS .c file.
  */
 
-#include <linux/types.h>
-#include <linux/nls.h>
+#include <beep/types.h>
+#include <beep/nls.h>
 
 #include "endian24.h"
 
@@ -42,7 +42,7 @@ typedef u16 tid_t;
 typedef u16 lid_t;
 
 /*
- * Almost identical to Linux's timespec, but not quite
+ * Almost identical to Beep's timespec, but not quite
  */
 struct timestruc_t {
 	__le32 tv_sec;

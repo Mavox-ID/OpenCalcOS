@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s3c2416/irq.c
+/* beep/arch/arm/mach-s3c2416/irq.c
  *
  * Copyright (c) 2009 Yauhen Kharuzhy <jekhor@gmail.com>,
  *	as part of OpenInkpot project
@@ -21,13 +21,13 @@
  *
 */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/syscore_ops.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/device.h>
+#include <beep/io.h>
+#include <beep/syscore_ops.h>
 
 #include <mach/hardware.h>
 #include <asm/irq.h>

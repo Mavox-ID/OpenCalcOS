@@ -16,18 +16,18 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/vmalloc.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/consumer.h>
+#include <beep/slab.h>
+#include <beep/pm_runtime.h>
+#include <beep/vmalloc.h>
 
 #include <media/soc_camera.h>
 #include <media/v4l2-common.h>

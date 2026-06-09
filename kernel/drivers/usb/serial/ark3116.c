@@ -22,20 +22,20 @@
  * option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/ioctl.h>
-#include <linux/tty.h>
-#include <linux/slab.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/serial.h>
-#include <linux/serial_reg.h>
-#include <linux/uaccess.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/ioctl.h>
+#include <beep/tty.h>
+#include <beep/slab.h>
+#include <beep/tty_flip.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/usb/serial.h>
+#include <beep/serial.h>
+#include <beep/serial_reg.h>
+#include <beep/uaccess.h>
+#include <beep/mutex.h>
+#include <beep/spinlock.h>
 
 #define DRIVER_AUTHOR "Bart Hartgers <bart.hartgers+ark3116@gmail.com>"
 #define DRIVER_DESC "USB ARK3116 serial/IrDA driver"

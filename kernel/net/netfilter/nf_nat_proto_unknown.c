@@ -10,10 +10,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/init.h>
 
-#include <linux/netfilter.h>
+#include <beep/netfilter.h>
 #include <net/netfilter/nf_nat.h>
 #include <net/netfilter/nf_nat_l4proto.h>
 

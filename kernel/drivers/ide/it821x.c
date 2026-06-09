@@ -38,7 +38,7 @@
  *  block on the disk. The hardware extra commands are get/set chip status,
  *  rebuild, get rebuild status.
  *
- *  In Linux the driver supports pass through mode as if the device was
+ *  In Beep the driver supports pass through mode as if the device was
  *  just another IDE controller. If the smart mode is running then
  *  volumes are managed by the controller firmware and each IDE "disk"
  *  is a raid volume. Even more cute - the controller can do automated
@@ -59,12 +59,12 @@
  *	-	Move to libata once it grows up
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/ide.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/ide.h>
+#include <beep/init.h>
 
 #define DRV_NAME "it821x"
 

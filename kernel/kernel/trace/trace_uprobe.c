@@ -15,14 +15,14 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
  * Copyright (C) IBM Corporation, 2010-2012
- * Author:	Srikar Dronamraju <srikar@linux.vnet.ibm.com>
+ * Author:	Srikar Dronamraju <srikar@beep.vnet.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/uprobes.h>
-#include <linux/namei.h>
-#include <linux/string.h>
+#include <beep/module.h>
+#include <beep/uaccess.h>
+#include <beep/uprobes.h>
+#include <beep/namei.h>
+#include <beep/string.h>
 
 #include "trace_probe.h"
 

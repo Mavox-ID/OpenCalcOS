@@ -16,10 +16,10 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/writeback.h>
-#include <linux/pagevec.h>
+#include <beep/slab.h>
+#include <beep/blkdev.h>
+#include <beep/writeback.h>
+#include <beep/pagevec.h>
 #include "ctree.h"
 #include "transaction.h"
 #include "btrfs_inode.h"

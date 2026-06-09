@@ -1,21 +1,21 @@
-/* linux/drivers/mtd/maps/scx200_docflash.c
+/* beep/drivers/mtd/maps/scx200_docflash.c
 
    Copyright (c) 2001,2002 Christer Weinigel <wingel@nano-system.com>
 
    National Semiconductor SCx200 flash mapped with DOCCS
 */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
 #include <asm/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/map.h>
+#include <beep/mtd/partitions.h>
 
-#include <linux/pci.h>
-#include <linux/scx200.h>
+#include <beep/pci.h>
+#include <beep/scx200.h>
 
 #define NAME "scx200_docflash"
 

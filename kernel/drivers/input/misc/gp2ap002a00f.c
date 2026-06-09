@@ -9,15 +9,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/input/gp2ap002a00f.h>
+#include <beep/i2c.h>
+#include <beep/irq.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/gpio.h>
+#include <beep/delay.h>
+#include <beep/input/gp2ap002a00f.h>
 
 struct gp2a_data {
 	struct input_dev *input;

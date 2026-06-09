@@ -17,10 +17,10 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
-#include <linux/init.h>
-#include <linux/stat.h>
-#include <linux/kdev_t.h>
-#include <linux/syscalls.h>
+#include <beep/init.h>
+#include <beep/stat.h>
+#include <beep/kdev_t.h>
+#include <beep/syscalls.h>
 
 /*
  * Create a simple rootfs that is similar to the default initramfs

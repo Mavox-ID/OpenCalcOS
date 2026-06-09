@@ -7,14 +7,14 @@
 
 #include "dm.h"
 
-#include <linux/device-mapper.h>
+#include <beep/device-mapper.h>
 
-#include <linux/bio.h>
-#include <linux/mempool.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/dm-io.h>
+#include <beep/bio.h>
+#include <beep/mempool.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/dm-io.h>
 
 #define DM_MSG_PREFIX "io"
 

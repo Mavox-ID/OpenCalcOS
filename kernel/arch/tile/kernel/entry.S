@@ -12,8 +12,8 @@
  *   more details.
  */
 
-#include <linux/linkage.h>
-#include <linux/unistd.h>
+#include <beep/linkage.h>
+#include <beep/unistd.h>
 #include <asm/irqflags.h>
 #include <asm/processor.h>
 #include <arch/abi.h>

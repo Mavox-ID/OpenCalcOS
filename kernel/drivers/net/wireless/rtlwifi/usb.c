@@ -31,7 +31,7 @@
 #include "base.h"
 #include "ps.h"
 #include "rtl8192c/fw_common.h"
-#include <linux/export.h>
+#include <beep/export.h>
 
 #define	REALTEK_USB_VENQT_READ			0xC0
 #define	REALTEK_USB_VENQT_WRITE			0x40

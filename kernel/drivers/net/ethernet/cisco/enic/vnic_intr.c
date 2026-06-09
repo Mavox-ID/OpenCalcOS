@@ -17,11 +17,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
 
 #include "vnic_dev.h"
 #include "vnic_intr.h"

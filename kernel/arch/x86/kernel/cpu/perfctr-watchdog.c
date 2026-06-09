@@ -11,13 +11,13 @@
  *
  */
 
-#include <linux/percpu.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/smp.h>
+#include <beep/percpu.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/bitops.h>
+#include <beep/smp.h>
 #include <asm/nmi.h>
-#include <linux/kprobes.h>
+#include <beep/kprobes.h>
 
 #include <asm/apic.h>
 #include <asm/perf_event.h>

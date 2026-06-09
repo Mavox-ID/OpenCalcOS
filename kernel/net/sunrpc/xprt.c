@@ -1,5 +1,5 @@
 /*
- *  linux/net/sunrpc/xprt.c
+ *  beep/net/sunrpc/xprt.c
  *
  *  This is a generic RPC call interface supporting congestion avoidance,
  *  and asynchronous calls.
@@ -37,17 +37,17 @@
  *  Transport switch API copyright (C) 2005, Chuck Lever <cel@netapp.com>
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/net.h>
-#include <linux/ktime.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/workqueue.h>
+#include <beep/net.h>
+#include <beep/ktime.h>
 
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/metrics.h>
-#include <linux/sunrpc/bc_xprt.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/sunrpc/metrics.h>
+#include <beep/sunrpc/bc_xprt.h>
 
 #include "sunrpc.h"
 

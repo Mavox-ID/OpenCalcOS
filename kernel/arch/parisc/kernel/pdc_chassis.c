@@ -2,7 +2,7 @@
  *    interfaces to Chassis Codes via PDC (firmware)
  *
  *    Copyright (C) 2002 Laurent Canet <canetl@esiee.fr>
- *    Copyright (C) 2002-2006 Thibaut VARENE <varenet@parisc-linux.org>
+ *    Copyright (C) 2002-2006 Thibaut VARENE <varenet@parisc-beep.org>
  *
  *    This program is free software; you can redistribute it and/or modify
  *    it under the terms of the GNU General Public License, version 2, as
@@ -29,12 +29,12 @@
 #define DPRINTK(fmt, args...)
 #endif
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/reboot.h>
-#include <linux/notifier.h>
-#include <linux/cache.h>
-#include <linux/proc_fs.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/reboot.h>
+#include <beep/notifier.h>
+#include <beep/cache.h>
+#include <beep/proc_fs.h>
 
 #include <asm/pdc_chassis.h>
 #include <asm/processor.h>

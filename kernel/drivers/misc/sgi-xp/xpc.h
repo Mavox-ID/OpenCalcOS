@@ -13,10 +13,10 @@
 #ifndef _DRIVERS_MISC_SGIXP_XPC_H
 #define _DRIVERS_MISC_SGIXP_XPC_H
 
-#include <linux/wait.h>
-#include <linux/completion.h>
-#include <linux/timer.h>
-#include <linux/sched.h>
+#include <beep/wait.h>
+#include <beep/completion.h>
+#include <beep/timer.h>
+#include <beep/sched.h>
 #include "xp.h"
 
 /*

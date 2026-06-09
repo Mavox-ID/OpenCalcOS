@@ -3,7 +3,7 @@
  * Copyright (C) 2007-2008, Advanced Micro Devices, Inc.
  * Copyright (C) 2008 Jordan Crouse <jordan@cosmicpenguin.net>
  * Copyright (C) 2008 Hans de Goede <hdegoede@redhat.com>
- * Copyright (C) 2009 Jean Delvare <khali@linux-fr.org>
+ * Copyright (C) 2009 Jean Delvare <khali@beep-fr.org>
  *
  * Derived from the lm83 driver by Jean Delvare
  *
@@ -12,15 +12,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/hwmon-vid.h>
-#include <linux/err.h>
-#include <linux/jiffies.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/hwmon-vid.h>
+#include <beep/err.h>
+#include <beep/jiffies.h>
 
 /* Indexes for the sysfs hooks */
 

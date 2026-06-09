@@ -5,7 +5,7 @@
     Copyright (C) 2006 Jon Grierson <jd@renko.co.uk>
     Copyright (C) 2006 Frank Mori Hess <fmhess@users.sourceforge.net>
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 1999,2002,2003 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -50,8 +50,8 @@ except maybe the 6514.
 
 #define DEBUG 1
 #define DEBUG_FLAGS
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
 #include "../comedidev.h"
 
 #include "comedi_fc.h"

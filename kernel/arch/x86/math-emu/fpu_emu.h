@@ -73,7 +73,7 @@
 
 #include <asm/sigcontext.h>	/* for struct _fpstate */
 #include <asm/math_emu.h>
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 /*
 #define RE_ENTRANT_CHECKING

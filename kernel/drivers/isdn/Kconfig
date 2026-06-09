@@ -21,7 +21,7 @@ menuconfig ISDN
 if ISDN
 
 menuconfig ISDN_I4L
-	tristate "Old ISDN4Linux (deprecated)"
+	tristate "Old ISDN4Beep (deprecated)"
 	---help---
 	  This driver allows you to use an ISDN adapter for networking
 	  connections and as dialin/out device.  The isdn-tty's have a built
@@ -32,9 +32,9 @@ menuconfig ISDN_I4L
 	  (Euro-ISDN) and 1TR6 (German style) are supported.  See
 	  <file:Documentation/isdn/README> for more information.
 
-	  ISDN support in the linux kernel is moving towards a new API,
+	  ISDN support in the beep kernel is moving towards a new API,
 	  called CAPI (Common ISDN Application Programming Interface).
-	  Therefore the old ISDN4Linux layer will eventually become obsolete.
+	  Therefore the old ISDN4Beep layer will eventually become obsolete.
 	  It is still available, though, for use with adapters that are not
 	  supported by the new CAPI subsystem yet.
 

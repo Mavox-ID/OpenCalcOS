@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mmc/card/mmc_test.c
+ *  beep/drivers/mmc/card/mmc_test.c
  *
  *  Copyright 2007-2008 Pierre Ossman
  *
@@ -9,20 +9,20 @@
  * your option) any later version.
  */
 
-#include <linux/mmc/core.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/slab.h>
+#include <beep/mmc/core.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/mmc.h>
+#include <beep/slab.h>
 
-#include <linux/scatterlist.h>
-#include <linux/swap.h>		/* For nr_free_buffer_pages() */
-#include <linux/list.h>
+#include <beep/scatterlist.h>
+#include <beep/swap.h>		/* For nr_free_buffer_pages() */
+#include <beep/list.h>
 
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/seq_file.h>
-#include <linux/module.h>
+#include <beep/debugfs.h>
+#include <beep/uaccess.h>
+#include <beep/seq_file.h>
+#include <beep/module.h>
 
 #define RESULT_OK		0
 #define RESULT_FAIL		1

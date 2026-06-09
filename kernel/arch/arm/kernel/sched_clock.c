@@ -5,14 +5,14 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/clocksource.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/sched.h>
-#include <linux/syscore_ops.h>
-#include <linux/timer.h>
+#include <beep/clocksource.h>
+#include <beep/init.h>
+#include <beep/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/moduleparam.h>
+#include <beep/sched.h>
+#include <beep/syscore_ops.h>
+#include <beep/timer.h>
 
 #include <asm/sched_clock.h>
 

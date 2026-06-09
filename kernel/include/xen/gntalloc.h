@@ -8,8 +8,8 @@
  * This file is in the public domain.
  */
 
-#ifndef __LINUX_PUBLIC_GNTALLOC_H__
-#define __LINUX_PUBLIC_GNTALLOC_H__
+#ifndef __BEEP_PUBLIC_GNTALLOC_H__
+#define __BEEP_PUBLIC_GNTALLOC_H__
 
 /*
  * Allocates a new page and creates a new grant reference.
@@ -79,4 +79,4 @@ struct ioctl_gntalloc_unmap_notify {
 /* Send an interrupt on the indicated event channel */
 #define UNMAP_NOTIFY_SEND_EVENT 0x2
 
-#endif /* __LINUX_PUBLIC_GNTALLOC_H__ */
+#endif /* __BEEP_PUBLIC_GNTALLOC_H__ */

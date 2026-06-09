@@ -11,8 +11,8 @@
  * for more details.
  *
  */
-#include <linux/sys.h>
-#include <linux/linkage.h>
+#include <beep/sys.h>
+#include <beep/linkage.h>
 
 	.data
 ENTRY(sys_call_table)

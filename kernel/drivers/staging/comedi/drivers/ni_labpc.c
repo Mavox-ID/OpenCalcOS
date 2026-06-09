@@ -73,12 +73,12 @@ NI manuals:
 
 */
 
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/io.h>
 #include "../comedidev.h"
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 #include <asm/dma.h>
 
 #include "8253.h"

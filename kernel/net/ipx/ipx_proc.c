@@ -4,12 +4,12 @@
  * 	Copyright(C) Arnaldo Carvalho de Melo <acme@conectiva.com.br>, 2002
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #ifdef CONFIG_PROC_FS
-#include <linux/proc_fs.h>
-#include <linux/spinlock.h>
-#include <linux/seq_file.h>
-#include <linux/export.h>
+#include <beep/proc_fs.h>
+#include <beep/spinlock.h>
+#include <beep/seq_file.h>
+#include <beep/export.h>
 #include <net/net_namespace.h>
 #include <net/tcp_states.h>
 #include <net/ipx.h>

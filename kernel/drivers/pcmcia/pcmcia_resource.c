@@ -14,14 +14,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/device.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/device.h>
+#include <beep/netdevice.h>
+#include <beep/slab.h>
 
 #include <asm/irq.h>
 

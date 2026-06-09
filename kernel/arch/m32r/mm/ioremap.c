@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m32r/mm/ioremap.c
+ *  beep/arch/m32r/mm/ioremap.c
  *
  *  Copyright (c) 2001, 2002  Hiroyuki Kondo
  *
@@ -15,12 +15,12 @@
  *
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <asm/addrspace.h>
 #include <asm/byteorder.h>
 
-#include <linux/vmalloc.h>
-#include <linux/io.h>
+#include <beep/vmalloc.h>
+#include <beep/io.h>
 #include <asm/pgalloc.h>
 
 /*

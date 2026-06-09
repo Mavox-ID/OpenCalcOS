@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mmc/core/host.c
+ *  beep/drivers/mmc/core/host.c
  *
  *  Copyright (C) 2003 Russell King, All Rights Reserved.
  *  Copyright (C) 2007-2008 Pierre Ossman
@@ -12,17 +12,17 @@
  *  MMC host class device management
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/idr.h>
-#include <linux/pagemap.h>
-#include <linux/export.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/idr.h>
+#include <beep/pagemap.h>
+#include <beep/export.h>
+#include <beep/leds.h>
+#include <beep/slab.h>
+#include <beep/suspend.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/card.h>
 
 #include "core.h"
 #include "host.h"

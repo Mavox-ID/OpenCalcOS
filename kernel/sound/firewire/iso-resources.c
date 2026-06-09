@@ -5,14 +5,14 @@
  * Licensed under the terms of the GNU General Public License, version 2.
  */
 
-#include <linux/device.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/export.h>
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
+#include <beep/device.h>
+#include <beep/firewire.h>
+#include <beep/firewire-constants.h>
+#include <beep/export.h>
+#include <beep/jiffies.h>
+#include <beep/mutex.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
 #include "iso-resources.h"
 
 /**

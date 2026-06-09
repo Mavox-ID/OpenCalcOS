@@ -1,11 +1,11 @@
 #ifndef _ASM_IA64_PCI_H
 #define _ASM_IA64_PCI_H
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/types.h>
 
 #include <asm/io.h>
 #include <asm/scatterlist.h>

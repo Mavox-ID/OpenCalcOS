@@ -1,10 +1,10 @@
 #ifndef _SBP_BASE_H
 #define _SBP_BASE_H
 
-#include <linux/firewire.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <beep/firewire.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
+#include <beep/workqueue.h>
 #include <target/target_core_base.h>
 
 #define SBP_VERSION  "v0.1"

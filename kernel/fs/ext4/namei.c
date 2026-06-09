@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ext4/namei.c
+ *  beep/fs/ext4/namei.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -8,7 +8,7 @@
  *
  *  from
  *
- *  linux/fs/minix/namei.c
+ *  beep/fs/minix/namei.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -24,16 +24,16 @@
  *	Theodore Ts'o, 2002
  */
 
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/jbd2.h>
-#include <linux/time.h>
-#include <linux/fcntl.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/quotaops.h>
-#include <linux/buffer_head.h>
-#include <linux/bio.h>
+#include <beep/fs.h>
+#include <beep/pagemap.h>
+#include <beep/jbd2.h>
+#include <beep/time.h>
+#include <beep/fcntl.h>
+#include <beep/stat.h>
+#include <beep/string.h>
+#include <beep/quotaops.h>
+#include <beep/buffer_head.h>
+#include <beep/bio.h>
 #include "ext4.h"
 #include "ext4_jbd2.h"
 
@@ -2849,7 +2849,7 @@ static int ext4_symlink(struct inode *dir,
 		 * For non-fast symlinks, we just allocate inode and put it on
 		 * orphan list in the first transaction => we need bitmap,
 		 * group descriptor, sb, inode block, quota blocks, and
-		 * possibly selinux xattr blocks.
+		 * possibly sebeep xattr blocks.
 		 */
 		credits = 4 + EXT4_MAXQUOTAS_INIT_BLOCKS(dir->i_sb) +
 			  EXT4_XATTR_TRANS_BLOCKS;

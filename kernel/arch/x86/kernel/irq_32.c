@@ -8,16 +8,16 @@
  * io_apic.c.)
  */
 
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/percpu.h>
-#include <linux/mm.h>
+#include <beep/module.h>
+#include <beep/seq_file.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
+#include <beep/notifier.h>
+#include <beep/cpu.h>
+#include <beep/delay.h>
+#include <beep/uaccess.h>
+#include <beep/percpu.h>
+#include <beep/mm.h>
 
 #include <asm/apic.h>
 

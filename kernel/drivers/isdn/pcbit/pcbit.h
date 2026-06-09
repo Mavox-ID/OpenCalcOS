@@ -12,7 +12,7 @@
 #ifndef PCBIT_H
 #define PCBIT_H
 
-#include <linux/workqueue.h>
+#include <beep/workqueue.h>
 
 #define MAX_PCBIT_CARDS 4
 
@@ -52,7 +52,7 @@ struct pcbit_dev {
 	unsigned int interrupt;			/* set during interrupt
 						   processing */
 	spinlock_t lock;
-	/* isdn4linux */
+	/* isdn4beep */
 
 	struct msn_entry *msn_list;		/* ISDN address list */
 

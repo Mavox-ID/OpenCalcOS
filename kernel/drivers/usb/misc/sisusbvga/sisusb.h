@@ -3,7 +3,7 @@
  *
  * Copyright (C) 2005 by Thomas Winischhofer, Vienna, Austria
  *
- * If distributed as part of the Linux kernel, this code is licensed under the
+ * If distributed as part of the Beep kernel, this code is licensed under the
  * terms of the GPL v2.
  *
  * Otherwise, the following license terms apply:
@@ -41,7 +41,7 @@
 #define SISUSB_NEW_CONFIG_COMPAT
 #endif
 
-#include <linux/mutex.h>
+#include <beep/mutex.h>
 
 /* For older kernels, support for text consoles is by default
  * off. To enable text console support, change the following:
@@ -60,8 +60,8 @@
 #define INCL_SISUSB_CON		1
 #endif
 
-#include <linux/console.h>
-#include <linux/vt_kern.h>
+#include <beep/console.h>
+#include <beep/vt_kern.h>
 #include "sisusb_struct.h"
 
 /* USB related */

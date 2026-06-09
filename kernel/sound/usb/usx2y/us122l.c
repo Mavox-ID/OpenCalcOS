@@ -16,10 +16,10 @@
  * Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/audio.h>
-#include <linux/module.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
+#include <beep/usb/audio.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/hwdep.h>
 #include <sound/pcm.h>

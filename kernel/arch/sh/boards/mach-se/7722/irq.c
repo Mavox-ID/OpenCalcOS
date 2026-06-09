@@ -14,12 +14,12 @@
 #define irq_reg_readl	ioread16
 #define irq_reg_writel	iowrite16
 
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/io.h>
-#include <linux/err.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/irqdomain.h>
+#include <beep/io.h>
+#include <beep/err.h>
 #include <asm/sizes.h>
 #include <mach-se/mach/se7722.h>
 

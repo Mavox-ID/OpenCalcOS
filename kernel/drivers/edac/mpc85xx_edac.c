@@ -9,18 +9,18 @@
  * or implied.
  *
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ctype.h>
-#include <linux/io.h>
-#include <linux/mod_devicetable.h>
-#include <linux/edac.h>
-#include <linux/smp.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ctype.h>
+#include <beep/io.h>
+#include <beep/mod_devicetable.h>
+#include <beep/edac.h>
+#include <beep/smp.h>
+#include <beep/gfp.h>
 
-#include <linux/of_platform.h>
-#include <linux/of_device.h>
+#include <beep/of_platform.h>
+#include <beep/of_device.h>
 #include "edac_module.h"
 #include "edac_core.h"
 #include "mpc85xx_edac.h"

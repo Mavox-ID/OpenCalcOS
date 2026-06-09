@@ -3,14 +3,14 @@
  * Copyright (C) 2001, 2002, 2003, 2007, 2008 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/of_device.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/interrupt.h>
+#include <beep/of_device.h>
 
 #include <asm/iommu.h>
 #include <asm/irq.h>
@@ -1310,7 +1310,7 @@ static int schizo_pbm_init(struct pci_pbm_info *pbm,
 			   struct platform_device *op, u32 portid,
 			   int chip_type)
 {
-	const struct linux_prom64_registers *regs;
+	const struct beep_prom64_registers *regs;
 	struct device_node *dp = op->dev.of_node;
 	const char *chipset_name;
 	int err;

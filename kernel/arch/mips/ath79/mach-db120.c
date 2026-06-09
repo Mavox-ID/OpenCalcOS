@@ -18,8 +18,8 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/ath9k_platform.h>
+#include <beep/pci.h>
+#include <beep/ath9k_platform.h>
 
 #include "machtypes.h"
 #include "dev-gpio-buttons.h"

@@ -1,6 +1,6 @@
 /*******************************************************************************
 
-  Intel 10 Gigabit PCI Express Linux driver
+  Intel 10 Gigabit PCI Express Beep driver
   Copyright(c) 1999 - 2012 Intel Corporation.
 
   This program is free software; you can redistribute it and/or modify it
@@ -25,18 +25,18 @@
 
 *******************************************************************************/
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/string.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/ipv6.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/netdevice.h>
+#include <beep/vmalloc.h>
+#include <beep/string.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/ipv6.h>
 #ifdef NETIF_F_HW_VLAN_TX
-#include <linux/if_vlan.h>
+#include <beep/if_vlan.h>
 #endif
 
 #include "ixgbe.h"

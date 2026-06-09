@@ -4,7 +4,7 @@
 #ifndef _ASM_SH_TITAN_H
 #define _ASM_SH_TITAN_H
 
-#include <linux/sh_intc.h>
+#include <beep/sh_intc.h>
 
 #define __IO_PREFIX titan
 #include <asm/io_generic.h>

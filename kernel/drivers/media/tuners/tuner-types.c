@@ -4,8 +4,8 @@
  *
  */
 
-#include <linux/i2c.h>
-#include <linux/module.h>
+#include <beep/i2c.h>
+#include <beep/module.h>
 #include <media/tuner.h>
 #include <media/tuner-types.h>
 

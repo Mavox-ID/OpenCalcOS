@@ -6,11 +6,11 @@
  * directly mapped busses.
  */
 
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/gfp.h>
-#include <linux/dma-debug.h>
-#include <linux/export.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/gfp.h>
+#include <beep/dma-debug.h>
+#include <beep/export.h>
 #include <asm/bug.h>
 
 /*

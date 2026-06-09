@@ -20,7 +20,7 @@
 #ifndef _FC_NS_H_
 #define	_FC_NS_H_
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * Fibre Channel Services - Name Service (dNS)

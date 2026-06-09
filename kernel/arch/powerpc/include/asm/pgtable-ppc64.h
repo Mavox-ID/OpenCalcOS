@@ -291,7 +291,7 @@ static inline void pte_clear(struct mm_struct *mm, unsigned long addr,
 }
 
 
-/* Set the dirty and/or accessed bits atomically in a linux PTE, this
+/* Set the dirty and/or accessed bits atomically in a beep PTE, this
  * function doesn't need to flush the hash entry
  */
 static inline void __ptep_set_access_flags(pte_t *ptep, pte_t entry)
@@ -342,10 +342,10 @@ void pgtable_cache_add(unsigned shift, void (*ctor)(void *));
 void pgtable_cache_init(void);
 
 /*
- * find_linux_pte returns the address of a linux pte for a given
+ * find_beep_pte returns the address of a beep pte for a given
  * effective address and directory.  If not found, it returns zero.
  */
-static inline pte_t *find_linux_pte(pgd_t *pgdir, unsigned long ea)
+static inline pte_t *find_beep_pte(pgd_t *pgdir, unsigned long ea)
 {
 	pgd_t *pg;
 	pud_t *pu;
@@ -365,15 +365,15 @@ static inline pte_t *find_linux_pte(pgd_t *pgdir, unsigned long ea)
 }
 
 #ifdef CONFIG_HUGETLB_PAGE
-pte_t *find_linux_pte_or_hugepte(pgd_t *pgdir, unsigned long ea,
+pte_t *find_beep_pte_or_hugepte(pgd_t *pgdir, unsigned long ea,
 				 unsigned *shift);
 #else
-static inline pte_t *find_linux_pte_or_hugepte(pgd_t *pgdir, unsigned long ea,
+static inline pte_t *find_beep_pte_or_hugepte(pgd_t *pgdir, unsigned long ea,
 					       unsigned *shift)
 {
 	if (shift)
 		*shift = 0;
-	return find_linux_pte(pgdir, ea);
+	return find_beep_pte(pgdir, ea);
 }
 #endif /* !CONFIG_HUGETLB_PAGE */
 

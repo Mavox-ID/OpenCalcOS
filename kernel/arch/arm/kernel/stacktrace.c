@@ -1,6 +1,6 @@
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/stacktrace.h>
+#include <beep/export.h>
+#include <beep/sched.h>
+#include <beep/stacktrace.h>
 
 #include <asm/stacktrace.h>
 

@@ -10,9 +10,9 @@
  * Licensed under the GNU/GPL. See COPYING for details.
  */
 
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/ssb/ssb.h>
+#include <beep/pci.h>
+#include <beep/module.h>
+#include <beep/ssb/ssb.h>
 
 #include "ssb_private.h"
 

@@ -17,14 +17,14 @@ boot-y		:= bootstrap.o
 
 OBJS		:= $(addprefix $(obj)/,$(boot-y))
 
-$(obj)/Image.o: vmlinux.bin $(OBJS)
+$(obj)/Image.o: vmbeep.bin $(OBJS)
 	$(Q)$(OBJCOPY) $(OBJCOPY_ARGS) -R .comment \
-		--add-section image=vmlinux.bin \
+		--add-section image=vmbeep.bin \
 		--set-section-flags image=contents,alloc,load,load,data \
 		$(OBJS) $@
 
 $(obj)/../Image.elf: $(obj)/Image.o $(obj)/boot.lds
-	$(Q)$(LD) $(LDFLAGS) $(LDFLAGS_vmlinux) \
+	$(Q)$(LD) $(LDFLAGS) $(LDFLAGS_vmbeep) \
 		-T $(obj)/boot.lds \
 		--build-id=none \
 		-o $@ $(obj)/Image.o

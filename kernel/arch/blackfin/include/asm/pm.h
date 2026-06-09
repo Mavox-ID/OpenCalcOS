@@ -9,7 +9,7 @@
 #ifndef __PM_H__
 #define __PM_H__
 
-#include <linux/suspend.h>
+#include <beep/suspend.h>
 
 struct bfin_cpu_pm_fns {
 	void    (*save)(unsigned long *);

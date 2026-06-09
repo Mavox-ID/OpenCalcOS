@@ -8,14 +8,14 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/mfd/88pm860x.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
+#include <beep/input.h>
+#include <beep/mfd/88pm860x.h>
+#include <beep/slab.h>
 
 #define MEAS_LEN		(8)
 #define ACCURATE_BIT		(12)

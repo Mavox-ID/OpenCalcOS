@@ -30,7 +30,7 @@
 //config:	depends on HALT || POWEROFF || REBOOT
 //config:	help
 //config:	In rare cases, poweroff may be commanded by firmware to OS
-//config:	even before init process exists. On Linux, this spawns
+//config:	even before init process exists. On Beep, this spawns
 //config:	"/sbin/poweroff" very early. This option adds code
 //config:	which checks that init is ready to receive poweroff
 //config:	commands. Code size increase of ~80 bytes.
@@ -120,12 +120,12 @@ static void write_wtmp(void)
 #endif
 
 #if ENABLE_FEATURE_WAIT_FOR_INIT
-/* In Linux, "poweroff" may be spawned even before init.
+/* In Beep, "poweroff" may be spawned even before init.
  * For example, with ACPI:
- * linux/drivers/acpi/bus.c:
+ * beep/drivers/acpi/bus.c:
  *  static void sb_notify_work(struct work_struct *dummy)
  *      orderly_poweroff(true);
- * linux/kernel/reboot.c:
+ * beep/kernel/reboot.c:
  *  static int run_cmd(const char *cmd)
  *      ret = call_usermodehelper(argv[0], argv, envp, UMH_WAIT_EXEC);
  *  poweroff_cmd[] = "/sbin/poweroff";
@@ -207,12 +207,12 @@ int halt_main(int argc UNUSED_PARAM, char **argv)
 	/* Perform action. */
 	rc = 1;
 	if (!(flags & 4)) { /* no -f */
-//TODO: I tend to think that signalling linuxrc is wrong
+//TODO: I tend to think that signalling beeprc is wrong
 // pity original author didn't comment on it...
-		if (ENABLE_LINUXRC) {
-			/* talk to linuxrc */
-			/* bbox init/linuxrc assumed */
-			pid_t *pidlist = find_pid_by_name("linuxrc");
+		if (ENABLE_BEEPRC) {
+			/* talk to beeprc */
+			/* bbox init/beeprc assumed */
+			pid_t *pidlist = find_pid_by_name("beeprc");
 			if (pidlist[0] > 0)
 				rc = kill(pidlist[0], signals[which]);
 			if (ENABLE_FEATURE_CLEAN_UP)

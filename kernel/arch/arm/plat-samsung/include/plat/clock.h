@@ -1,7 +1,7 @@
-/* linux/arch/arm/plat-s3c/include/plat/clock.h
+/* beep/arch/arm/plat-s3c/include/plat/clock.h
  *
  * Copyright (c) 2004-2005 Simtec Electronics
- *	http://www.simtec.co.uk/products/SWLINUX/
+ *	http://www.simtec.co.uk/products/SWBEEP/
  *	Written by Ben Dooks, <ben@simtec.co.uk>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -12,8 +12,8 @@
 #ifndef __ASM_PLAT_CLOCK_H
 #define __ASM_PLAT_CLOCK_H __FILE__
 
-#include <linux/spinlock.h>
-#include <linux/clkdev.h>
+#include <beep/spinlock.h>
+#include <beep/clkdev.h>
 
 struct clk;
 

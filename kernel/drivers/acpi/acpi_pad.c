@@ -18,16 +18,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/cpumask.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/cpu.h>
-#include <linux/clockchips.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/cpumask.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/kthread.h>
+#include <beep/freezer.h>
+#include <beep/cpu.h>
+#include <beep/clockchips.h>
+#include <beep/slab.h>
 #include <acpi/acpi_bus.h>
 #include <acpi/acpi_drivers.h>
 #include <asm/mwait.h>

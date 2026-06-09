@@ -9,22 +9,22 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/mman.h>
-#include <linux/proc_fs.h>
-#include <linux/mm.h>
-#include <linux/mmzone.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/smp.h>
-#include <linux/seq_file.h>
-#include <linux/hugetlb.h>
-#include <linux/vmalloc.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/time.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/mman.h>
+#include <beep/proc_fs.h>
+#include <beep/mm.h>
+#include <beep/mmzone.h>
+#include <beep/pagemap.h>
+#include <beep/swap.h>
+#include <beep/smp.h>
+#include <beep/seq_file.h>
+#include <beep/hugetlb.h>
+#include <beep/vmalloc.h>
 #include <asm/uaccess.h>
 #include <asm/pgtable.h>
 #include <asm/tlb.h>

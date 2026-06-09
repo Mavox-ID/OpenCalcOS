@@ -24,13 +24,13 @@
  */
 
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/kmod.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/string.h>
 #include <sound/core.h>
 #include <asm/io.h>
 #include <asm/irq.h>

@@ -17,23 +17,23 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/clk.h>
+#include <beep/uaccess.h>
+#include <beep/vmalloc.h>
+#include <beep/spinlock.h>
 
 #include <sysdev/fsl_soc.h>
-#include <linux/fsl-diu-fb.h>
+#include <beep/fsl-diu-fb.h>
 #include "edid.h"
 
 #define NUM_AOIS	5	/* 1 for plane 0, 2 for planes 1 & 2 each */

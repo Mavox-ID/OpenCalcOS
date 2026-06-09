@@ -6,15 +6,15 @@
  *
  * Copyright (C) 1998, 1999 Hewlett-Packard Co
  *	David Mosberger-Tang <davidm@hpl.hp.com>
- * Copyright (C) 1999 VA Linux Systems
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 VA Beep Systems
+ * Copyright (C) 1999 Walt Drummond <drummond@vabeep.com>
  * Copyright (C) 1999 Asit Mallick <asit.k.mallick@intel.com>
  * Copyright (C) 1999 Don Dugger <don.dugger@intel.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/compiler.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/compiler.h>
 
 #include <asm/intrinsics.h>
 #include <asm/processor.h>

@@ -18,7 +18,7 @@
 #ifndef MM_MIGRATE_H
 #define MM_MIGRATE_H
 
-#include <linux/cpumask.h>
+#include <beep/cpumask.h>
 #include <hv/hypervisor.h>
 
 /*

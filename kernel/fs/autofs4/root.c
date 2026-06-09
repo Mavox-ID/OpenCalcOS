@@ -1,25 +1,25 @@
 /* -*- c -*- --------------------------------------------------------------- *
  *
- * linux/fs/autofs/root.c
+ * beep/fs/autofs/root.c
  *
  *  Copyright 1997-1998 Transmeta Corporation -- All Rights Reserved
  *  Copyright 1999-2000 Jeremy Fitzhardinge <jeremy@goop.org>
  *  Copyright 2001-2006 Ian Kent <raven@themaw.net>
  *
- * This file is part of the Linux kernel and is made available under
+ * This file is part of the Beep kernel and is made available under
  * the terms of the GNU General Public License, version 2, or at your
  * option, any later version, incorporated herein by reference.
  *
  * ------------------------------------------------------------------------- */
 
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/stat.h>
-#include <linux/slab.h>
-#include <linux/param.h>
-#include <linux/time.h>
-#include <linux/compat.h>
-#include <linux/mutex.h>
+#include <beep/capability.h>
+#include <beep/errno.h>
+#include <beep/stat.h>
+#include <beep/slab.h>
+#include <beep/param.h>
+#include <beep/time.h>
+#include <beep/compat.h>
+#include <beep/mutex.h>
 
 #include "autofs_i.h"
 

@@ -12,8 +12,8 @@
 #ifndef _DAVINCI_PCM_H
 #define _DAVINCI_PCM_H
 
-#include <linux/genalloc.h>
-#include <linux/platform_data/davinci_asp.h>
+#include <beep/genalloc.h>
+#include <beep/platform_data/davinci_asp.h>
 #include <mach/edma.h>
 
 struct davinci_pcm_dma_params {

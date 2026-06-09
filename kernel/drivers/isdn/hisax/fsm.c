@@ -3,7 +3,7 @@
  * Finite state machine
  *
  * Author       Karsten Keil
- * Copyright    by Karsten Keil      <keil@isdn4linux.de>
+ * Copyright    by Karsten Keil      <keil@isdn4beep.de>
  *              by Kai Germaschewski <kai.germaschewski@gmx.de>
  *
  * This software may be used and distributed according to the terms
@@ -14,9 +14,9 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
 #include "hisax.h"
 
 #define FSM_TIMER_DEBUG 0

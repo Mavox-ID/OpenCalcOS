@@ -1,11 +1,11 @@
-#include <linux/ceph/ceph_debug.h>
+#include <beep/ceph/ceph_debug.h>
 
-#include <linux/file.h>
-#include <linux/namei.h>
+#include <beep/file.h>
+#include <beep/namei.h>
 
 #include "super.h"
 #include "mds_client.h"
-#include <linux/ceph/pagelist.h>
+#include <beep/ceph/pagelist.h>
 
 /**
  * Implement fcntl and flock locking functions.

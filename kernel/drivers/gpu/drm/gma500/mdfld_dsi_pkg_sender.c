@@ -24,7 +24,7 @@
  * Jackie Li<yaodong.li@intel.com>
  */
 
-#include <linux/freezer.h>
+#include <beep/freezer.h>
 
 #include "mdfld_dsi_output.h"
 #include "mdfld_dsi_pkg_sender.h"

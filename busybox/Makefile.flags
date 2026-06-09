@@ -176,15 +176,15 @@ ifeq ($(CONFIG_PAM),y)
 LDLIBS += pam pam_misc
 endif
 
-ifeq ($(CONFIG_SELINUX),y)
-SELINUX_PC_MODULES = libselinux libsepol
-$(eval $(call pkg_check_modules,SELINUX,$(SELINUX_PC_MODULES)))
+ifeq ($(CONFIG_SEBEEP),y)
+SELINUX_PC_MODULES = libsebeep libsepol
+$(eval $(call pkg_check_modules,SEBEEP,$(SELINUX_PC_MODULES)))
 CPPFLAGS += $(SELINUX_CFLAGS)
 LDLIBS += $(if $(SELINUX_LIBS),$(SELINUX_LIBS:-l%=%),$(SELINUX_PC_MODULES:lib%=%))
 endif
 
 ifeq ($(CONFIG_FEATURE_NSLOOKUP_BIG),y)
-ifneq (,$(findstring linux,$(shell $(CC) $(CFLAGS) -dumpmachine)))
+ifneq (,$(findstring beep,$(shell $(CC) $(CFLAGS) -dumpmachine)))
 LDLIBS += resolv
 endif
 ifneq (,$(findstring gnu,$(shell $(CC) $(CFLAGS) -dumpmachine)))

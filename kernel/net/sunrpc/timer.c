@@ -1,5 +1,5 @@
 /*
- * linux/net/sunrpc/timer.c
+ * beep/net/sunrpc/timer.c
  *
  * Estimate RPC request round trip time.
  *
@@ -15,11 +15,11 @@
 
 #include <asm/param.h>
 
-#include <linux/types.h>
-#include <linux/unistd.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/unistd.h>
+#include <beep/module.h>
 
-#include <linux/sunrpc/clnt.h>
+#include <beep/sunrpc/clnt.h>
 
 #define RPC_RTO_MAX (60*HZ)
 #define RPC_RTO_INIT (HZ/5)

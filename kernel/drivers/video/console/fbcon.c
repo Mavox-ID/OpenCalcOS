@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/fbcon.c -- Low level frame buffer based console driver
+ *  beep/drivers/video/fbcon.c -- Low level frame buffer based console driver
  *
  *	Copyright (C) 1995 Geert Uytterhoeven
  *
@@ -27,7 +27,7 @@
  *  Hardware cursor support added by Emmanuel Marty (core@ggi-project.org)
  *  Smart redraw scrolling, arbitrary font width support, 512char font support
  *  and software scrollback added by 
- *                         Jakub Jelinek (jj@ultra.linux.cz)
+ *                         Jakub Jelinek (jj@ultra.beep.cz)
  *
  *  Random hacking by Martin Mares <mj@ucw.cz>
  *
@@ -58,23 +58,23 @@
 
 #undef FBCONDEBUG
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>	/* MSch: for IRQ probe */
-#include <linux/console.h>
-#include <linux/string.h>
-#include <linux/kd.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
-#include <linux/vt_kern.h>
-#include <linux/selection.h>
-#include <linux/font.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/crc32.h> /* For counting font checksums */
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>	/* MSch: for IRQ probe */
+#include <beep/console.h>
+#include <beep/string.h>
+#include <beep/kd.h>
+#include <beep/slab.h>
+#include <beep/fb.h>
+#include <beep/vt_kern.h>
+#include <beep/selection.h>
+#include <beep/font.h>
+#include <beep/smp.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/crc32.h> /* For counting font checksums */
 #include <asm/fb.h>
 #include <asm/irq.h>
 
@@ -2589,7 +2589,7 @@ static int fbcon_set_font(struct vc_data *vc, struct console_font *font, unsigne
 		memcpy(new_data + i*h*pitch, data +  i*32*pitch, h*pitch);
 	}
 
-	/* Since linux has a nice crc32 function use it for counting font
+	/* Since beep has a nice crc32 function use it for counting font
 	 * checksums. */
 	csum = crc32(0, new_data, size);
 

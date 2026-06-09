@@ -2,15 +2,15 @@
  * Copyright IBM Corp. 2012
  *
  * Author(s):
- *   Jan Glauber <jang@linux.vnet.ibm.com>
+ *   Jan Glauber <jang@beep.vnet.ibm.com>
  */
 
 #define COMPONENT "zPCI"
 #define pr_fmt(fmt) COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/stat.h>
-#include <linux/pci.h>
+#include <beep/kernel.h>
+#include <beep/stat.h>
+#include <beep/pci.h>
 
 static ssize_t show_fid(struct device *dev, struct device_attribute *attr,
 			char *buf)

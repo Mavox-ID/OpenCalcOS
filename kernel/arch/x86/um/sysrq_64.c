@@ -4,10 +4,10 @@
  * Licensed under the GPL
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/utsname.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/utsname.h>
 #include <asm/current.h>
 #include <asm/ptrace.h>
 #include <asm/sysrq.h>

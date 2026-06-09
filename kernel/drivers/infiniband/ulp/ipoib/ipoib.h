@@ -35,23 +35,23 @@
 #ifndef _IPOIB_H
 #define _IPOIB_H
 
-#include <linux/list.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/workqueue.h>
-#include <linux/kref.h>
-#include <linux/if_infiniband.h>
-#include <linux/mutex.h>
+#include <beep/list.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/workqueue.h>
+#include <beep/kref.h>
+#include <beep/if_infiniband.h>
+#include <beep/mutex.h>
 
 #include <net/neighbour.h>
 #include <net/sch_generic.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_pack.h>
 #include <rdma/ib_sa.h>
-#include <linux/sched.h>
+#include <beep/sched.h>
 
 /* constants */
 

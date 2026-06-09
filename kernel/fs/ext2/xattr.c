@@ -1,5 +1,5 @@
 /*
- * linux/fs/ext2/xattr.c
+ * beep/fs/ext2/xattr.c
  *
  * Copyright (C) 2001-2003 Andreas Gruenbacher <agruen@suse.de>
  *
@@ -53,13 +53,13 @@
  * to avoid deadlocks.
  */
 
-#include <linux/buffer_head.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mbcache.h>
-#include <linux/quotaops.h>
-#include <linux/rwsem.h>
-#include <linux/security.h>
+#include <beep/buffer_head.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/mbcache.h>
+#include <beep/quotaops.h>
+#include <beep/rwsem.h>
+#include <beep/security.h>
 #include "ext2.h"
 #include "xattr.h"
 #include "acl.h"

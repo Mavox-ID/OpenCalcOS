@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/plat-omap/ocpi.c
+ * beep/arch/arm/plat-omap/ocpi.c
  *
  * Minimal OCP bus support for omap16xx
  *
@@ -24,15 +24,15 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 

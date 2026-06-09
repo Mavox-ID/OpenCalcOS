@@ -3,16 +3,16 @@
  *
  * Copyright 1997 Paul Mackerras
  */
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/of.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/time.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/stat.h>
+#include <beep/string.h>
+#include <beep/of.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 #include <asm/prom.h>
 #include <asm/uaccess.h>
 #include "internal.h"

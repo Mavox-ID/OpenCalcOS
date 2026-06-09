@@ -66,11 +66,11 @@
  */
 
 #include <asm/io.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/gameport.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/gameport.h>
+#include <beep/module.h>
+#include <beep/dma-mapping.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/rawmidi.h>

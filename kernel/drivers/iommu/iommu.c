@@ -18,17 +18,17 @@
 
 #define pr_fmt(fmt)    "%s: " fmt, __func__
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/bug.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/iommu.h>
-#include <linux/idr.h>
-#include <linux/notifier.h>
-#include <linux/err.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/bug.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/iommu.h>
+#include <beep/idr.h>
+#include <beep/notifier.h>
+#include <beep/err.h>
 
 static struct kset *iommu_group_kset;
 static struct ida iommu_group_ida;
@@ -444,7 +444,7 @@ EXPORT_SYMBOL_GPL(iommu_group_put);
  * @nb: notifier block to signal
  *
  * This function allows iommu group users to track changes in a group.
- * See include/linux/iommu.h for actions sent via this notifier.  Caller
+ * See include/beep/iommu.h for actions sent via this notifier.  Caller
  * should hold a reference to the group throughout notifier registration.
  */
 int iommu_group_register_notifier(struct iommu_group *group,

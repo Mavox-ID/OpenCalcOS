@@ -4,7 +4,7 @@
   (C) 2001 Andreas Gruenbacher, <a.gruenbacher@computer.org>
 */
 
-#include <linux/posix_acl_xattr.h>
+#include <beep/posix_acl_xattr.h>
 
 #define EXT2_ACL_VERSION	0x0001
 
@@ -59,7 +59,7 @@ extern int ext2_acl_chmod (struct inode *);
 extern int ext2_init_acl (struct inode *, struct inode *);
 
 #else
-#include <linux/sched.h>
+#include <beep/sched.h>
 #define ext2_get_acl	NULL
 #define ext2_set_acl	NULL
 

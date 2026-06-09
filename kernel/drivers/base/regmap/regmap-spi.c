@@ -10,10 +10,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <beep/regmap.h>
+#include <beep/spi/spi.h>
+#include <beep/init.h>
+#include <beep/module.h>
 
 static int regmap_spi_write(void *context, const void *data, size_t count)
 {

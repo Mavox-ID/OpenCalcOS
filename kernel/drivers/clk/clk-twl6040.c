@@ -20,12 +20,12 @@
 *
 */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/twl6040.h>
-#include <linux/clk-provider.h>
+#include <beep/clk.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/mfd/twl6040.h>
+#include <beep/clk-provider.h>
 
 struct twl6040_clk {
 	struct twl6040 *twl6040;

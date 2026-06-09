@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-h720x/h7202-eval.c
+ * beep/arch/arm/mach-h720x/h7202-eval.c
  *
  * Copyright (C) 2003 Thomas Gleixner <tglx@linutronix.de>
  *               2003 Robert Schwebel <r.schwebel@pengutronix.de>
@@ -13,11 +13,11 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/platform_device.h>
 
 #include <asm/setup.h>
 #include <asm/types.h>

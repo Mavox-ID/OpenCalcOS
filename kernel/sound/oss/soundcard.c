@@ -1,12 +1,12 @@
 /*
- * linux/sound/oss/soundcard.c
+ * beep/sound/oss/soundcard.c
  *
- * Sound card driver for Linux
+ * Sound card driver for Beep
  *
  *
  * Copyright (C) by Hannu Savolainen 1993-1997
  *
- * OSS/Free for Linux is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
+ * OSS/Free for Beep is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
  * Version 2 (June 1991). See the "COPYING" file distributed with this software
  * for more info.
  *
@@ -15,7 +15,7 @@
  *                   integrated sound_switch.c
  * Stefan Reinauer   : integrated /proc/sound (equals to /dev/sndstat,
  *                   which should disappear in the near future)
- * Eric Dumas	     : devfs support (22-Jan-98) <dumas@linux.eu.org> with
+ * Eric Dumas	     : devfs support (22-Jan-98) <dumas@beep.eu.org> with
  *                   fixups by C. Scott Ananian <cananian@alumni.princeton.edu>
  * Richard Gooch     : moved common (non OSS-specific) devices to sound_core.c
  * Rob Riggs	     : Added persistent DMA buffers support (1998/10/17)
@@ -24,26 +24,26 @@
 
 
 #include "sound_config.h"
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/fcntl.h>
-#include <linux/ctype.h>
-#include <linux/stddef.h>
-#include <linux/kmod.h>
-#include <linux/kernel.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/fcntl.h>
+#include <beep/ctype.h>
+#include <beep/stddef.h>
+#include <beep/kmod.h>
+#include <beep/kernel.h>
 #include <asm/dma.h>
 #include <asm/io.h>
-#include <linux/wait.h>
-#include <linux/ioport.h>
-#include <linux/major.h>
-#include <linux/delay.h>
-#include <linux/proc_fs.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/device.h>
+#include <beep/wait.h>
+#include <beep/ioport.h>
+#include <beep/major.h>
+#include <beep/delay.h>
+#include <beep/proc_fs.h>
+#include <beep/mutex.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/device.h>
 
 /*
  * This ought to be moved into include/asm/dma.h

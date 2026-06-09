@@ -21,8 +21,8 @@
  * generic EDID driver
  */
 
-#include <linux/slab.h>
-#include <linux/fb.h>
+#include <beep/slab.h>
+#include <beep/fb.h>
 #include "via_aux.h"
 #include "../edid.h"
 

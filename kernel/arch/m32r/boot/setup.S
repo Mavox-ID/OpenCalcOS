@@ -1,12 +1,12 @@
 /*
- *  linux/arch/m32r/boot/setup.S -- A setup code.
+ *  beep/arch/m32r/boot/setup.S -- A setup code.
  *
  *  Copyright (C) 2001-2005   Hiroyuki Kondo, Hirokazu Takata,
  *                            Hitoshi Yamamoto, Hayato Fujiwara
  *
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/segment.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>

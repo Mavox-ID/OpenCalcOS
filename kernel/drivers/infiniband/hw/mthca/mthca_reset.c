@@ -30,10 +30,10 @@
  * SOFTWARE.
  */
 
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 
 #include "mthca_dev.h"
 #include "mthca_cmd.h"

@@ -28,13 +28,13 @@
 		heartbeat {
 			label = "beagleboard::usr0";
 			gpios = <&gpio5 22 0>; /* 150 -> D6 LED */
-			linux,default-trigger = "heartbeat";
+			beep,default-trigger = "heartbeat";
 		};
 
 		mmc {
 			label = "beagleboard::usr1";
 			gpios = <&gpio5 21 0>; /* 149 -> D7 LED */
-			linux,default-trigger = "mmc0";
+			beep,default-trigger = "mmc0";
 		};
 	};
 

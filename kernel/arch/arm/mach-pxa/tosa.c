@@ -12,38 +12,38 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/mmc/host.h>
-#include <linux/mfd/tc6393xb.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/pm.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/gpio.h>
-#include <linux/pda_power.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/i2c/pxa-i2c.h>
-#include <linux/usb/gpio_vbus.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/major.h>
+#include <beep/fs.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/mmc/host.h>
+#include <beep/mfd/tc6393xb.h>
+#include <beep/mfd/tmio.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/pm.h>
+#include <beep/gpio_keys.h>
+#include <beep/input.h>
+#include <beep/gpio.h>
+#include <beep/pda_power.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/pxa2xx_spi.h>
+#include <beep/input/matrix_keypad.h>
+#include <beep/i2c/pxa-i2c.h>
+#include <beep/usb/gpio_vbus.h>
 
 #include <asm/setup.h>
 #include <asm/mach-types.h>
 
 #include <mach/pxa25x.h>
 #include <mach/reset.h>
-#include <linux/platform_data/irda-pxaficp.h>
-#include <linux/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/irda-pxaficp.h>
+#include <beep/platform_data/mmc-pxamci.h>
 #include <mach/udc.h>
 #include <mach/tosa_bt.h>
 #include <mach/audio.h>

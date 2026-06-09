@@ -11,11 +11,11 @@
  *
  ********************************************************************/    
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/kmod.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/kmod.h>
+#include <beep/mutex.h>
 
 #include <net/irda/irda.h>
 

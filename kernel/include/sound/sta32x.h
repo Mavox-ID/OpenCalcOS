@@ -9,8 +9,8 @@
  * Free Software Foundation;  either version 2 of the  License, or (at your
  * option) any later version.
  */
-#ifndef __LINUX_SND__STA32X_H
-#define __LINUX_SND__STA32X_H
+#ifndef __BEEP_SND__STA32X_H
+#define __BEEP_SND__STA32X_H
 
 #define STA32X_OCFG_2CH		0
 #define STA32X_OCFG_2_1CH	1
@@ -32,4 +32,4 @@ struct sta32x_platform_data {
 	int needs_esd_watchdog;
 };
 
-#endif /* __LINUX_SND__STA32X_H */
+#endif /* __BEEP_SND__STA32X_H */

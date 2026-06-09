@@ -18,7 +18,7 @@ menuconfig ATA
 	select SCSI
 	---help---
 	  If you want to use a ATA hard disk, ATA tape drive, ATA CD-ROM or
-	  any other ATA device under Linux, say Y and make sure that you know
+	  any other ATA device under Beep, say Y and make sure that you know
 	  the name of your ATA host adapter (the card inside your computer
 	  that "speaks" the ATA protocol, also called ATA controller),
 	  because you will be asked for it.

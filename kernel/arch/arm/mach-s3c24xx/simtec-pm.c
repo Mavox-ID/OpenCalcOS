@@ -1,9 +1,9 @@
-/* linux/arch/arm/plat-s3c24xx/pm-simtec.c
+/* beep/arch/arm/plat-s3c24xx/pm-simtec.c
  *
  * Copyright 2004 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
  *
- * http://armlinux.simtec.co.uk/
+ * http://armbeep.simtec.co.uk/
  *
  * Power Management helpers for Simtec S3C24XX implementations
  *
@@ -12,14 +12,14 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/io.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

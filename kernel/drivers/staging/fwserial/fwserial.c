@@ -18,22 +18,22 @@
  * Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/rculist.h>
-#include <linux/workqueue.h>
-#include <linux/ratelimit.h>
-#include <linux/bug.h>
-#include <linux/uaccess.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/mod_devicetable.h>
+#include <beep/rculist.h>
+#include <beep/workqueue.h>
+#include <beep/ratelimit.h>
+#include <beep/bug.h>
+#include <beep/uaccess.h>
 
 #include "fwserial.h"
 
 #define be32_to_u64(hi, lo)  ((u64)be32_to_cpu(hi) << 32 | be32_to_cpu(lo))
 
-#define LINUX_VENDOR_ID   0xd00d1eU  /* same id used in card root directory   */
-#define FWSERIAL_VERSION  0x00e81cU  /* must be unique within LINUX_VENDOR_ID */
+#define BEEP_VENDOR_ID   0xd00d1eU  /* same id used in card root directory   */
+#define FWSERIAL_VERSION  0x00e81cU  /* must be unique within BEEP_VENDOR_ID */
 
 /* configurable options */
 static int num_ttys = 4;	    /* # of std ttys to create per fw_card    */
@@ -2485,7 +2485,7 @@ static const struct ieee1394_device_id fwserial_id_table[] = {
 	{
 		.match_flags  = IEEE1394_MATCH_SPECIFIER_ID |
 				IEEE1394_MATCH_VERSION,
-		.specifier_id = LINUX_VENDOR_ID,
+		.specifier_id = BEEP_VENDOR_ID,
 		.version      = FWSERIAL_VERSION,
 	},
 	{ }
@@ -2526,14 +2526,14 @@ struct fwserial_unit_directory_data {
 
 static struct fwserial_unit_directory_data fwserial_unit_directory_data = {
 	.len = 4,
-	.unit_specifier = FW_UNIT_SPECIFIER(LINUX_VENDOR_ID),
+	.unit_specifier = FW_UNIT_SPECIFIER(BEEP_VENDOR_ID),
 	.unit_sw_version = FW_UNIT_VERSION(FWSERIAL_VERSION),
 	.desc1_ofs = FW_ROM_DESCRIPTOR(1),
 	.desc1_len = 5,
 	.desc1_data = {
 		0x00000000,			/*   type = text            */
 		0x00000000,			/*   enc = ASCII, lang EN   */
-		0x4c696e75,			/* 'Linux TTY'              */
+		0x4c696e75,			/* 'Beep TTY'              */
 		0x78205454,
 		0x59000000,
 	},

@@ -7,14 +7,14 @@
  *			Charles Eidsness <charles@cooper-street.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/suspend.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/delay.h>
+#include <beep/mutex.h>
+#include <beep/platform_device.h>
+#include <beep/suspend.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/initval.h>

@@ -23,17 +23,17 @@
 
  */
 
-#include <linux/module.h>
-#include <linux/drbd.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/mm.h>
-#include <linux/memcontrol.h>
-#include <linux/mm_inline.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/string.h>
-#include <linux/scatterlist.h>
+#include <beep/module.h>
+#include <beep/drbd.h>
+#include <beep/sched.h>
+#include <beep/wait.h>
+#include <beep/mm.h>
+#include <beep/memcontrol.h>
+#include <beep/mm_inline.h>
+#include <beep/slab.h>
+#include <beep/random.h>
+#include <beep/string.h>
+#include <beep/scatterlist.h>
 
 #include "drbd_int.h"
 #include "drbd_req.h"

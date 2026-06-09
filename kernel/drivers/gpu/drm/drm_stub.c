@@ -2,13 +2,13 @@
  * \file drm_stub.h
  * Stub support
  *
- * \author Rickard E. (Rik) Faith <faith@valinux.com>
+ * \author Rickard E. (Rik) Faith <faith@vabeep.com>
  */
 
 /*
  * Created: Fri Jan 19 10:48:35 2001 by faith@acm.org
  *
- * Copyright 2001 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2001 VA Beep Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -31,9 +31,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/slab.h>
 #include <drm/drmP.h>
 #include <drm/drm_core.h>
 

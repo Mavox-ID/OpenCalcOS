@@ -1,13 +1,13 @@
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/of.h>
-#include <linux/spinlock.h>
-#include <linux/msi.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/irq.h>
+#include <beep/smp.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/cpu.h>
+#include <beep/of.h>
+#include <beep/spinlock.h>
+#include <beep/msi.h>
 
 #include <asm/prom.h>
 #include <asm/smp.h>

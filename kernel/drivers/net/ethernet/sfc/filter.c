@@ -7,7 +7,7 @@
  * by the Free Software Foundation, incorporated herein by reference.
  */
 
-#include <linux/in.h>
+#include <beep/in.h>
 #include <net/ip.h>
 #include "efx.h"
 #include "filter.h"

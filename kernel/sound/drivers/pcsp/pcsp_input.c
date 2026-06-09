@@ -1,5 +1,5 @@
 /*
- *  PC Speaker beeper driver for Linux
+ *  PC Speaker beeper driver for Beep
  *
  *  Copyright (c) 2002 Vojtech Pavlik
  *  Copyright (c) 1992 Orest Zborowski
@@ -12,8 +12,8 @@
  * the Free Software Foundation
  */
 
-#include <linux/init.h>
-#include <linux/input.h>
+#include <beep/init.h>
+#include <beep/input.h>
 #include <asm/io.h>
 #include "pcsp.h"
 

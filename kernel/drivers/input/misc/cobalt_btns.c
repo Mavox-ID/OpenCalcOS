@@ -1,7 +1,7 @@
 /*
  *  Cobalt button interface driver.
  *
- *  Copyright (C) 2007-2008  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2007-2008  Yoichi Yuasa <yuasa@beep-mips.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -17,12 +17,12 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  */
-#include <linux/init.h>
-#include <linux/input-polldev.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/input-polldev.h>
+#include <beep/ioport.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
 #define BUTTONS_POLL_INTERVAL	30	/* msec */
 #define BUTTONS_COUNT_THRESHOLD	3
@@ -149,7 +149,7 @@ static int cobalt_buttons_remove(struct platform_device *pdev)
 	return 0;
 }
 
-MODULE_AUTHOR("Yoichi Yuasa <yuasa@linux-mips.org>");
+MODULE_AUTHOR("Yoichi Yuasa <yuasa@beep-mips.org>");
 MODULE_DESCRIPTION("Cobalt button interface driver");
 MODULE_LICENSE("GPL");
 /* work with hotplug and coldplug */

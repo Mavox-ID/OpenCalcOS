@@ -316,7 +316,7 @@
 #define OS_ID_OSF		3	/* OSF OS		*/
 #define OS_ID_HPRT		4	/* HP-RT OS		*/
 #define OS_ID_NOVEL		5	/* NOVELL OS		*/
-#define OS_ID_LINUX		6	/* Linux		*/
+#define OS_ID_BEEP		6	/* Beep		*/
 
 
 /* constants for PDC_CHASSIS */
@@ -339,7 +339,7 @@
 
 #if !defined(__ASSEMBLY__)
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 
 /* flags of the device_path */

@@ -18,13 +18,13 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/root_dev.h>
-#include <linux/console.h>
-#include <linux/export.h>
-#include <linux/bootmem.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/fs.h>
+#include <beep/root_dev.h>
+#include <beep/console.h>
+#include <beep/export.h>
+#include <beep/bootmem.h>
 
 #include <asm/machdep.h>
 #include <asm/firmware.h>

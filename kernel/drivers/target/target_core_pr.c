@@ -24,9 +24,9 @@
  *
  ******************************************************************************/
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/list.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <asm/unaligned.h>

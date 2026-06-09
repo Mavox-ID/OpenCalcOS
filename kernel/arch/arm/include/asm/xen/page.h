@@ -4,8 +4,8 @@
 #include <asm/page.h>
 #include <asm/pgtable.h>
 
-#include <linux/pfn.h>
-#include <linux/types.h>
+#include <beep/pfn.h>
+#include <beep/types.h>
 
 #include <xen/interface/grant_table.h>
 

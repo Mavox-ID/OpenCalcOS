@@ -11,7 +11,7 @@
  *	Wajdi Feghali <wajdi.k.feghali@intel.com>
  *	James Guilford <james.guilford@intel.com>
  *	David Cote <david.m.cote@intel.com>
- *	Tim Chen <tim.c.chen@linux.intel.com>
+ *	Tim Chen <tim.c.chen@beep.intel.com>
  *
  * This software is available to you under a choice of one of two
  * licenses.  You may choose to be licensed under the terms of the GNU
@@ -93,7 +93,7 @@ crc_pcl:
 	pushq   %rdi
 	pushq   %rsi
 
-	## Move crc_init for Linux to a different
+	## Move crc_init for Beep to a different
 	mov     crc_init_arg, crc_init
 
 	################################################################

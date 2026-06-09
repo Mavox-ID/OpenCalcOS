@@ -4,7 +4,7 @@
  */
 
 /*
- * Gravis Stinger gamepad driver for Linux
+ * Gravis Stinger gamepad driver for Beep
  */
 
 /*
@@ -27,12 +27,12 @@
  * Vojtech Pavlik, Simunkova 1594, Prague 8, 182 00 Czech Republic
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/serio.h>
+#include <beep/init.h>
 
 #define DRIVER_DESC	"Gravis Stinger gamepad driver"
 

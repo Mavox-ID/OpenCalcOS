@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/mm/proc-syms.c
+ * beep/arch/unicore32/mm/proc-syms.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -9,8 +9,8 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/mm.h>
+#include <beep/module.h>
+#include <beep/mm.h>
 
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>

@@ -7,19 +7,19 @@
  *      and others.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/nubus.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/nubus.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 #include <asm/setup.h>
 #include <asm/page.h>
 #include <asm/hwtest.h>
-#include <linux/proc_fs.h>
+#include <beep/proc_fs.h>
 #include <asm/mac_via.h>
 #include <asm/mac_oss.h>
 
@@ -774,7 +774,7 @@ static void __init nubus_find_rom_dir(struct nubus_board* board)
 	   "The HORROR ROM" (LC-series) uses 0x7e, while "The HORROR
 	   Continues" (Q630) uses 0x7b.  The DAFB Macs evidently use
 	   something else.  Please run "Slots" on your Mac (see
-	   include/linux/nubus.h for where to get this program) and
+	   include/beep/nubus.h for where to get this program) and
 	   tell us where the 'SiDirPtr' for Slot 0 is.  If you feel
 	   brave, you should also use MacsBug to walk down the ROM
 	   directories like this function does and try to find the

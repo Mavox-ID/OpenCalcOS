@@ -1,11 +1,11 @@
 /* -*- c -*- ------------------------------------------------------------- *
  *   
- * linux/fs/autofs/autofs_i.h
+ * beep/fs/autofs/autofs_i.h
  *
  *   Copyright 1997-1998 Transmeta Corporation - All Rights Reserved
  *   Copyright 2005-2006 Ian Kent <raven@themaw.net>
  *
- * This file is part of the Linux kernel and is made available under
+ * This file is part of the Beep kernel and is made available under
  * the terms of the GNU General Public License, version 2, or at your
  * option, any later version, incorporated herein by reference.
  *
@@ -13,11 +13,11 @@
 
 /* Internal header file for autofs */
 
-#include <linux/auto_fs4.h>
-#include <linux/auto_dev-ioctl.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
+#include <beep/auto_fs4.h>
+#include <beep/auto_dev-ioctl.h>
+#include <beep/mutex.h>
+#include <beep/spinlock.h>
+#include <beep/list.h>
 
 /* This is the range of ioctl() numbers we claim as ours */
 #define AUTOFS_IOC_FIRST     AUTOFS_IOC_READY
@@ -26,14 +26,14 @@
 #define AUTOFS_DEV_IOCTL_IOC_FIRST	(AUTOFS_DEV_IOCTL_VERSION)
 #define AUTOFS_DEV_IOCTL_IOC_COUNT	(AUTOFS_IOC_COUNT - 11)
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/string.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/time.h>
+#include <beep/string.h>
+#include <beep/wait.h>
+#include <beep/sched.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
 #include <asm/current.h>
 #include <asm/uaccess.h>
 

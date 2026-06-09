@@ -8,15 +8,15 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#ifndef _LINUX_F2FS_H
-#define _LINUX_F2FS_H
+#ifndef _BEEP_F2FS_H
+#define _BEEP_F2FS_H
 
-#include <linux/types.h>
-#include <linux/page-flags.h>
-#include <linux/buffer_head.h>
-#include <linux/slab.h>
-#include <linux/crc32.h>
-#include <linux/magic.h>
+#include <beep/types.h>
+#include <beep/page-flags.h>
+#include <beep/buffer_head.h>
+#include <beep/slab.h>
+#include <beep/crc32.h>
+#include <beep/magic.h>
 
 /*
  * For mount options

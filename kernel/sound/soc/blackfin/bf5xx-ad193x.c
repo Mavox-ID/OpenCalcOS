@@ -5,7 +5,7 @@
  * Created:      Thur June 4 2009
  * Description:  Board driver for ad193x sound chip
  *
- * Bugs:         Enter bugs at http://blackfin.uclinux.org/
+ * Bugs:         Enter bugs at http://blackfin.ucbeep.org/
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,9 +23,9 @@
  * 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/device.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>

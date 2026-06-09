@@ -3,8 +3,8 @@
 
 /* TLB flushing routines.... */
 
-#include <linux/mm.h>
-#include <linux/sched.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
 #include <asm/mmu_context.h>
 
 
@@ -33,7 +33,7 @@ extern void flush_tlb_all_local(void *);
  * personality in order to do that, but the personality is not
  * currently being set correctly.
  *
- * Of course, Linux processes could do the same thing, but
+ * Of course, Beep processes could do the same thing, but
  * we don't support that (and the compilers, dynamic linker,
  * etc. do not do that).
  */

@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/omap2/omapfb-ioctl.c
+ * beep/drivers/video/omap2/omapfb-ioctl.c
  *
  * Copyright (C) 2008 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -20,15 +20,15 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/fb.h>
-#include <linux/device.h>
-#include <linux/uaccess.h>
-#include <linux/platform_device.h>
-#include <linux/mm.h>
-#include <linux/omapfb.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
-#include <linux/sizes.h>
+#include <beep/fb.h>
+#include <beep/device.h>
+#include <beep/uaccess.h>
+#include <beep/platform_device.h>
+#include <beep/mm.h>
+#include <beep/omapfb.h>
+#include <beep/vmalloc.h>
+#include <beep/export.h>
+#include <beep/sizes.h>
 
 #include <video/omapdss.h>
 #include <video/omapvrfb.h>

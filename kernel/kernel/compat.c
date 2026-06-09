@@ -1,5 +1,5 @@
 /*
- *  linux/kernel/compat.c
+ *  beep/kernel/compat.c
  *
  *  Kernel compatibililty routines for e.g. 32 bit syscall support
  *  on 64 bit kernels.
@@ -11,22 +11,22 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/linkage.h>
-#include <linux/compat.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/signal.h>
-#include <linux/sched.h>	/* for MAX_SCHEDULE_TIMEOUT */
-#include <linux/syscalls.h>
-#include <linux/unistd.h>
-#include <linux/security.h>
-#include <linux/timex.h>
-#include <linux/export.h>
-#include <linux/migrate.h>
-#include <linux/posix-timers.h>
-#include <linux/times.h>
-#include <linux/ptrace.h>
-#include <linux/gfp.h>
+#include <beep/linkage.h>
+#include <beep/compat.h>
+#include <beep/errno.h>
+#include <beep/time.h>
+#include <beep/signal.h>
+#include <beep/sched.h>	/* for MAX_SCHEDULE_TIMEOUT */
+#include <beep/syscalls.h>
+#include <beep/unistd.h>
+#include <beep/security.h>
+#include <beep/timex.h>
+#include <beep/export.h>
+#include <beep/migrate.h>
+#include <beep/posix-timers.h>
+#include <beep/times.h>
+#include <beep/ptrace.h>
+#include <beep/gfp.h>
 
 #include <asm/uaccess.h>
 

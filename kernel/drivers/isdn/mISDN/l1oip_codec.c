@@ -46,9 +46,9 @@
 
 */
 
-#include <linux/vmalloc.h>
-#include <linux/mISDNif.h>
-#include <linux/in.h>
+#include <beep/vmalloc.h>
+#include <beep/mISDNif.h>
+#include <beep/in.h>
 #include "core.h"
 #include "l1oip.h"
 

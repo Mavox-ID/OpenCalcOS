@@ -1,5 +1,5 @@
-#include <linux/kbuild.h>
-#include <linux/sched.h>
+#include <beep/kbuild.h>
+#include <beep/sched.h>
 #include <asm/thread_info.h>
 
 /*

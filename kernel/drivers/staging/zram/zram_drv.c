@@ -19,19 +19,19 @@
 #define DEBUG
 #endif
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/bio.h>
-#include <linux/bitops.h>
-#include <linux/blkdev.h>
-#include <linux/buffer_head.h>
-#include <linux/device.h>
-#include <linux/genhd.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
-#include <linux/lzo.h>
-#include <linux/string.h>
-#include <linux/vmalloc.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/bio.h>
+#include <beep/bitops.h>
+#include <beep/blkdev.h>
+#include <beep/buffer_head.h>
+#include <beep/device.h>
+#include <beep/genhd.h>
+#include <beep/highmem.h>
+#include <beep/slab.h>
+#include <beep/lzo.h>
+#include <beep/string.h>
+#include <beep/vmalloc.h>
 
 #include "zram_drv.h"
 

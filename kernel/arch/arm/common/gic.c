@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/common/gic.c
+ *  beep/arch/arm/common/gic.c
  *
  *  Copyright (C) 2002 ARM Limited, All Rights Reserved.
  *
@@ -22,22 +22,22 @@
  * As such, the enable set/clear, pending set/clear and active bit
  * registers are banked per-cpu for these sources.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/smp.h>
-#include <linux/cpu_pm.h>
-#include <linux/cpumask.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/interrupt.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/smp.h>
+#include <beep/cpu_pm.h>
+#include <beep/cpumask.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
+#include <beep/irqdomain.h>
+#include <beep/interrupt.h>
+#include <beep/percpu.h>
+#include <beep/slab.h>
 
 #include <asm/irq.h>
 #include <asm/exception.h>

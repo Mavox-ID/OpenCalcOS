@@ -8,8 +8,8 @@
 ;  it under the terms of the GNU General Public License version 2 as
 ;  published by the Free Software Foundation.
 ;
-#include <linux/linkage.h>
-#include <linux/of_fdt.h>
+#include <beep/linkage.h>
+#include <beep/of_fdt.h>
 #include <asm/asm-offsets.h>
 
 	__HEAD
@@ -72,7 +72,7 @@ bss_loop:
 	CALLP	.S2	machine_init,B3
 #endif
 
-	;; Jump to Linux init
+	;; Jump to Beep init
 #ifdef CONFIG_C6X_BIG_KERNEL
 	MVKL	.S1	start_kernel,A0
 	MVKH	.S1	start_kernel,A0

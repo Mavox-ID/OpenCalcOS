@@ -1,7 +1,7 @@
 #ifndef __MACH_SE_MRSHPC_H
 #define __MACH_SE_MRSHPC_H
 
-#include <linux/io.h>
+#include <beep/io.h>
 
 static inline void __init mrshpc_setup_windows(void)
 {

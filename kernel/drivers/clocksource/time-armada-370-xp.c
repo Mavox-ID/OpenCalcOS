@@ -15,18 +15,18 @@
  * used as clock_event_device.
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/timer.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/irq.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/clk.h>
+#include <beep/timer.h>
+#include <beep/clockchips.h>
+#include <beep/interrupt.h>
+#include <beep/of.h>
+#include <beep/of_irq.h>
+#include <beep/of_address.h>
+#include <beep/irq.h>
+#include <beep/module.h>
 #include <asm/sched_clock.h>
 
 /*

@@ -1,5 +1,5 @@
 /*
- *  IBM eServer eHCA Infiniband device driver for Linux on POWER
+ *  IBM eServer eHCA Infiniband device driver for Beep on POWER
  *
  *  internal queue handling
  *
@@ -72,7 +72,7 @@ struct ipz_small_queue_page {
 	struct list_head list;
 };
 
-/* struct generic queue in linux kernel virtual memory (kv) */
+/* struct generic queue in beep kernel virtual memory (kv) */
 struct ipz_queue {
 	u64 current_q_offset;	/* current queue entry */
 

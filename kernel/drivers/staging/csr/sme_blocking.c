@@ -1313,12 +1313,12 @@ int sme_sys_suspend(unifi_priv_t *priv)
          * the card interrupt only wakes the host. The card will be polled
          * after resume to handle any pending data.
          */
-        if (csr_sdio_linux_remove_irq(priv->sdio)) {
-            unifi_notice(priv, "WOL csr_sdio_linux_remove_irq failed\n");
+        if (csr_sdio_beep_remove_irq(priv->sdio)) {
+            unifi_notice(priv, "WOL csr_sdio_beep_remove_irq failed\n");
         }
 
         if (enable_wol == UNIFI_WOL_SDIO) {
-            /* Because csr_sdio_linux_remove_irq() disabled the card SDIO interrupt,
+            /* Because csr_sdio_beep_remove_irq() disabled the card SDIO interrupt,
              * it must be left enabled to wake-on-SDIO.
              */
             unifi_trace(priv, UDBG1, "Enable card SDIO interrupt for SDIO WOL\n");

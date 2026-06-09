@@ -5,7 +5,7 @@
  *   (c) 1999-2002 Matthew Dharm (mdharm-usb@one-eyed-alien.net)
  *
  * Initial work by:
- *   (c) 1999 Michael Gee (michael@linuxspecific.com)
+ *   (c) 1999 Michael Gee (michael@beepspecific.com)
  *
  * This driver is based on the 'USB Mass Storage Class' document. This
  * describes in detail the protocol used to communicate with such
@@ -21,7 +21,7 @@
  * Also, for certain devices, the interrupt endpoint is used to convey
  * status of a command.
  *
- * Please see http://www.one-eyed-alien.net/~mdharm/linux-usb for more
+ * Please see http://www.one-eyed-alien.net/~mdharm/beep-usb for more
  * information about this driver.
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -42,12 +42,12 @@
 #ifndef _USB_H_
 #define _USB_H_
 
-#include <linux/usb.h>
-#include <linux/usb_usual.h>
-#include <linux/blkdev.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <beep/usb.h>
+#include <beep/usb_usual.h>
+#include <beep/blkdev.h>
+#include <beep/completion.h>
+#include <beep/mutex.h>
+#include <beep/workqueue.h>
 #include <scsi/scsi_host.h>
 
 struct us_data;

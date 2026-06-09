@@ -23,11 +23,11 @@
  */
 #define pr_fmt(fmt) "hw-breakpoint: " fmt
 
-#include <linux/errno.h>
-#include <linux/hardirq.h>
-#include <linux/perf_event.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/smp.h>
+#include <beep/errno.h>
+#include <beep/hardirq.h>
+#include <beep/perf_event.h>
+#include <beep/hw_breakpoint.h>
+#include <beep/smp.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cputype.h>

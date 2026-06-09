@@ -11,22 +11,22 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/iommu.h>
-#include <linux/omap-iommu.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/platform_device.h>
+#include <beep/iommu.h>
+#include <beep/omap-iommu.h>
+#include <beep/mutex.h>
+#include <beep/spinlock.h>
+#include <beep/io.h>
+#include <beep/pm_runtime.h>
 
 #include <asm/cacheflush.h>
 
-#include <linux/platform_data/iommu-omap.h>
+#include <beep/platform_data/iommu-omap.h>
 
 #include "omap-iopgtable.h"
 #include "omap-iommu.h"

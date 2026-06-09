@@ -14,15 +14,15 @@
 #ifdef __KERNEL__
 #ifndef __ASSEMBLY__
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/sched.h> /* RLIMIT_FSIZE */
-#include <linux/mm.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/sched.h> /* RLIMIT_FSIZE */
+#include <beep/mm.h>
 
 #include <asm/mmu.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>
-#include <linux/string.h>
+#include <beep/string.h>
 
 #define VERIFY_READ	0
 #define VERIFY_WRITE	1

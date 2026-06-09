@@ -1,20 +1,20 @@
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  *
  * Ported the filesystem routines to 2.5.
  * 2003-02-10 Petr Baudis <pasky@ucw.cz>
  */
 
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/statfs.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
+#include <beep/fs.h>
+#include <beep/module.h>
+#include <beep/mm.h>
+#include <beep/pagemap.h>
+#include <beep/statfs.h>
+#include <beep/slab.h>
+#include <beep/seq_file.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
 #include "hostfs.h"
 #include <init.h>
 #include <kern.h>
@@ -199,7 +199,7 @@ static struct inode *hostfs_iget(struct super_block *sb)
 int hostfs_statfs(struct dentry *dentry, struct kstatfs *sf)
 {
 	/*
-	 * do_statfs uses struct statfs64 internally, but the linux kernel
+	 * do_statfs uses struct statfs64 internally, but the beep kernel
 	 * struct statfs still has 32-bit versions for most of these fields,
 	 * so we convert them here
 	 */

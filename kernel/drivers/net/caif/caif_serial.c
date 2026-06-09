@@ -4,21 +4,21 @@
  * License terms: GNU General Public License (GPL) version 2
  */
 
-#include <linux/hardirq.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/tty.h>
-#include <linux/file.h>
-#include <linux/if_arp.h>
+#include <beep/hardirq.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/types.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/rtnetlink.h>
+#include <beep/tty.h>
+#include <beep/file.h>
+#include <beep/if_arp.h>
 #include <net/caif/caif_device.h>
 #include <net/caif/cfcnfg.h>
-#include <linux/err.h>
-#include <linux/debugfs.h>
+#include <beep/err.h>
+#include <beep/debugfs.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Sjur Brendeland<sjur.brandeland@stericsson.com>");

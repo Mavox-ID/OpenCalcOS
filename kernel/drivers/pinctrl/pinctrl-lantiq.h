@@ -1,6 +1,6 @@
 /*
- *  linux/drivers/pinctrl/pinctrl-lantiq.h
- *  based on linux/drivers/pinctrl/pinctrl-pxa3xx.h
+ *  beep/drivers/pinctrl/pinctrl-lantiq.h
+ *  based on beep/drivers/pinctrl/pinctrl-pxa3xx.h
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License version 2 as
@@ -11,12 +11,12 @@
 
 #ifndef __PINCTRL_LANTIQ_H
 
-#include <linux/clkdev.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/machine.h>
+#include <beep/clkdev.h>
+#include <beep/pinctrl/pinctrl.h>
+#include <beep/pinctrl/pinconf.h>
+#include <beep/pinctrl/pinmux.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/pinctrl/machine.h>
 
 #include "core.h"
 

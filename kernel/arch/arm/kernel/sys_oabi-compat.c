@@ -73,17 +73,17 @@
  *   wrappers provided below.
  */
 
-#include <linux/syscalls.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/fcntl.h>
-#include <linux/eventpoll.h>
-#include <linux/sem.h>
-#include <linux/socket.h>
-#include <linux/net.h>
-#include <linux/ipc.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <beep/syscalls.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/fcntl.h>
+#include <beep/eventpoll.h>
+#include <beep/sem.h>
+#include <beep/socket.h>
+#include <beep/net.h>
+#include <beep/ipc.h>
+#include <beep/uaccess.h>
+#include <beep/slab.h>
 
 struct oldabi_stat64 {
 	unsigned long long st_dev;

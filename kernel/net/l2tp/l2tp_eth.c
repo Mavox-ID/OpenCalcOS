@@ -11,14 +11,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/socket.h>
-#include <linux/hash.h>
-#include <linux/l2tp.h>
-#include <linux/in.h>
-#include <linux/etherdevice.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/socket.h>
+#include <beep/hash.h>
+#include <beep/l2tp.h>
+#include <beep/in.h>
+#include <beep/etherdevice.h>
+#include <beep/spinlock.h>
 #include <net/sock.h>
 #include <net/ip.h>
 #include <net/icmp.h>

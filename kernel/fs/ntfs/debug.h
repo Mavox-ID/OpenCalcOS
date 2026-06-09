@@ -1,5 +1,5 @@
 /*
- * debug.h - NTFS kernel debug support. Part of the Linux-NTFS project.
+ * debug.h - NTFS kernel debug support. Part of the Beep-NTFS project.
  *
  * Copyright (c) 2001-2004 Anton Altaparmakov
  *
@@ -14,15 +14,15 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program (in the main directory of the Linux-NTFS
+ * along with this program (in the main directory of the Beep-NTFS
  * distribution in the file COPYING); if not, write to the Free Software
  * Foundation,Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#ifndef _LINUX_NTFS_DEBUG_H
-#define _LINUX_NTFS_DEBUG_H
+#ifndef _BEEP_NTFS_DEBUG_H
+#define _BEEP_NTFS_DEBUG_H
 
-#include <linux/fs.h>
+#include <beep/fs.h>
 
 #include "runlist.h"
 
@@ -63,4 +63,4 @@ void __ntfs_error(const char *function, const struct super_block *sb,
 		  const char *fmt, ...);
 #define ntfs_error(sb, f, a...)		__ntfs_error(__func__, sb, f, ##a)
 
-#endif /* _LINUX_NTFS_DEBUG_H */
+#endif /* _BEEP_NTFS_DEBUG_H */

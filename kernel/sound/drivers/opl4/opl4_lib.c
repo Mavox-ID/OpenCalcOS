@@ -19,10 +19,10 @@
 
 #include "opl4_local.h"
 #include <sound/initval.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
 #include <asm/io.h>
 
 MODULE_AUTHOR("Clemens Ladisch <clemens@ladisch.de>");

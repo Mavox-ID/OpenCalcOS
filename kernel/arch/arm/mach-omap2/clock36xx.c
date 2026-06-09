@@ -18,9 +18,9 @@
  */
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/clk.h>
+#include <beep/io.h>
 
 #include "clock.h"
 #include "clock36xx.h"

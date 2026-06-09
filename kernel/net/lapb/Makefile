@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux LAPB layer.
+# Makefile for the Beep LAPB layer.
 #
 
 obj-$(CONFIG_LAPB) += lapb.o

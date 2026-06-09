@@ -3,7 +3,7 @@
 # see docs/Kconfig-language.txt.
 #
 
-menu "Linux Ext2 FS Progs"
+menu "Beep Ext2 FS Progs"
 
 INSERT
 
@@ -11,7 +11,7 @@ INSERT
 ###	bool "e2fsck"
 ###	default y
 ###	help
-###	  e2fsck is used to check Linux second extended file systems (ext2fs).
+###	  e2fsck is used to check Beep second extended file systems (ext2fs).
 ###	  e2fsck also supports ext2 filesystems countaining a journal (ext3).
 ###	  The normal compat symlinks 'fsck.ext2' and 'fsck.ext3' are also
 ###	  provided.
@@ -31,7 +31,7 @@ INSERT
 ###	  e2label will display or change the filesystem label on the ext2
 ###	  filesystem located on device.
 
-### NB: this one is now provided by util-linux/volume_id/*
+### NB: this one is now provided by util-beep/volume_id/*
 ### config FINDFS
 ###	bool "findfs"
 ###	default y

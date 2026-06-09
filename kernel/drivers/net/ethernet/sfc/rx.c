@@ -8,14 +8,14 @@
  * by the Free Software Foundation, incorporated herein by reference.
  */
 
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/slab.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/prefetch.h>
-#include <linux/moduleparam.h>
+#include <beep/socket.h>
+#include <beep/in.h>
+#include <beep/slab.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/udp.h>
+#include <beep/prefetch.h>
+#include <beep/moduleparam.h>
 #include <net/ip.h>
 #include <net/checksum.h>
 #include "net_driver.h"

@@ -12,10 +12,10 @@
  * warranty of any kind, whether express or implied.
  *
  */
-#include <linux/module.h>
-#include <linux/edac.h>
-#include <linux/atomic.h>
-#include <linux/device.h>
+#include <beep/module.h>
+#include <beep/edac.h>
+#include <beep/atomic.h>
+#include <beep/device.h>
 #include <asm/edac.h>
 
 int edac_op_state = EDAC_OPSTATE_INVAL;

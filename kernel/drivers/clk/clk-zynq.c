@@ -15,11 +15,11 @@
  * You should have received a copy of the GNU General Public License along with
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/clk-provider.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
+#include <beep/clk-provider.h>
 
 static void __iomem *slcr_base;
 

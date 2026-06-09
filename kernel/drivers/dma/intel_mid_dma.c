@@ -23,11 +23,11 @@
  *
  *
  */
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/pm_runtime.h>
-#include <linux/intel_mid_dma.h>
-#include <linux/module.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/pm_runtime.h>
+#include <beep/intel_mid_dma.h>
+#include <beep/module.h>
 
 #include "dmaengine.h"
 

@@ -30,10 +30,10 @@
 #define _IDT77252_H 1
 
 
-#include <linux/ptrace.h>
-#include <linux/skbuff.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
+#include <beep/ptrace.h>
+#include <beep/skbuff.h>
+#include <beep/workqueue.h>
+#include <beep/mutex.h>
 
 /*****************************************************************************/
 /*                                                                           */

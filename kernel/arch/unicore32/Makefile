@@ -12,11 +12,11 @@
 #
 ifneq ($(SUBARCH),$(ARCH))
 	ifeq ($(CROSS_COMPILE),)
-		CROSS_COMPILE := $(call cc-cross-prefix, unicore32-linux-)
+		CROSS_COMPILE := $(call cc-cross-prefix, unicore32-beep-)
 	endif
 endif
 
-LDFLAGS_vmlinux		:= -p --no-undefined -X
+LDFLAGS_vmbeep		:= -p --no-undefined -X
 
 OBJCOPYFLAGS		:= -O binary -R .note -R .note.gnu.build-id -R .comment -S
 
@@ -47,7 +47,7 @@ KBUILD_IMAGE		:= zCalc
 
 all:	$(KBUILD_IMAGE)
 
-zCalc Image uImage: vmlinux
+zCalc Image uImage: vmbeep
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
 archclean:

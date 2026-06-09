@@ -9,13 +9,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/tle62x0.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/tle62x0.h>
 
 
 #define CMD_READ	0x00

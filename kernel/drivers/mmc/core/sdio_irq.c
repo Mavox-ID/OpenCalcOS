@@ -1,5 +1,5 @@
 /*
- * linux/drivers/mmc/core/sdio_irq.c
+ * beep/drivers/mmc/core/sdio_irq.c
  *
  * Author:      Nicolas Pitre
  * Created:     June 18, 2007
@@ -13,18 +13,18 @@
  * your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/kthread.h>
-#include <linux/export.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/kthread.h>
+#include <beep/export.h>
+#include <beep/wait.h>
+#include <beep/delay.h>
 
-#include <linux/mmc/core.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sdio_func.h>
+#include <beep/mmc/core.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/sdio.h>
+#include <beep/mmc/sdio_func.h>
 
 #include "sdio_ops.h"
 

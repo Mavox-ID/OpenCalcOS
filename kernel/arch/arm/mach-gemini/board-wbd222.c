@@ -8,16 +8,16 @@
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/input.h>
-#include <linux/skbuff.h>
-#include <linux/gpio_keys.h>
-#include <linux/mdio-gpio.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/leds.h>
+#include <beep/input.h>
+#include <beep/skbuff.h>
+#include <beep/gpio_keys.h>
+#include <beep/mdio-gpio.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/time.h>

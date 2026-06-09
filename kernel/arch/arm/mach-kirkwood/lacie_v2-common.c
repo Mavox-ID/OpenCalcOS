@@ -6,14 +6,14 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mtd/physmap.h>
-#include <linux/spi/flash.h>
-#include <linux/spi/spi.h>
-#include <linux/i2c.h>
-#include <linux/i2c/at24.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/mtd/physmap.h>
+#include <beep/spi/flash.h>
+#include <beep/spi/spi.h>
+#include <beep/i2c.h>
+#include <beep/i2c/at24.h>
+#include <beep/gpio.h>
 #include <asm/mach/time.h>
 #include <mach/kirkwood.h>
 #include <mach/irqs.h>

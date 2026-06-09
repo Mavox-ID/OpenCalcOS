@@ -11,12 +11,12 @@
  * This work is licensed under the terms of the GNU GPL, version 2.
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/exportfs.h>
-#include <linux/mm.h>
-#include <linux/debugfs.h>
-#include <linux/cleancache.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/exportfs.h>
+#include <beep/mm.h>
+#include <beep/debugfs.h>
+#include <beep/cleancache.h>
 
 /*
  * This global enablement flag may be read thousands of times per second

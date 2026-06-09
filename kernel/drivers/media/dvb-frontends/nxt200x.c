@@ -25,7 +25,7 @@
 /*
  *                      NOTES ABOUT THIS DRIVER
  *
- * This Linux driver supports:
+ * This Beep driver supports:
  *   B2C2/BBTI Technisat Air2PC - ATSC (NXT2002)
  *   AverTVHD MCE A180 (NXT2004)
  *   ATI HDTV Wonder (NXT2004)
@@ -43,11 +43,11 @@
 #define NXT2004_DEFAULT_FIRMWARE "dvb-fe-nxt2004.fw"
 #define CRC_CCIT_MASK 0x1021
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/string.h>
 
 #include "dvb_frontend.h"
 #include "nxt200x.h"

@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/devfreq/governor_powersave.c
+ *  beep/drivers/devfreq/governor_powersave.c
  *
  *  Copyright (C) 2011 Samsung Electronics
  *	MyungJoo Ham <myungjoo.ham@samsung.com>
@@ -9,8 +9,8 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/devfreq.h>
-#include <linux/module.h>
+#include <beep/devfreq.h>
+#include <beep/module.h>
 #include "governor.h"
 
 static int devfreq_powersave_func(struct devfreq *df,

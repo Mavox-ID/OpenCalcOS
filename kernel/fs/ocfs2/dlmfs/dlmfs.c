@@ -28,22 +28,22 @@
 
 /* Simple VFS hooks based on: */
 /*
- * Resizable simple ram filesystem for Linux.
+ * Resizable simple ram filesystem for Beep.
  *
  * Copyright (C) 2000 Linus Torvalds.
  *               2000 Transmeta Corp.
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/backing-dev.h>
-#include <linux/poll.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/pagemap.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/highmem.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/backing-dev.h>
+#include <beep/poll.h>
 
 #include <asm/uaccess.h>
 
@@ -71,7 +71,7 @@ struct workqueue_struct *user_dlm_worker;
  *
  * Over time, dlmfs has added some features that were not part of the
  * initial ABI.  Unfortunately, some of these features are not detectable
- * via standard usage.  For example, Linux's default poll always returns
+ * via standard usage.  For example, Beep's default poll always returns
  * POLLIN, so there is no way for a caller of poll(2) to know when dlmfs
  * added poll support.  Instead, we provide this list of new capabilities.
  *

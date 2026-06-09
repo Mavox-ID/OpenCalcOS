@@ -1,5 +1,5 @@
 /*
- * Transparent proxy support for Linux/iptables
+ * Transparent proxy support for Beep/iptables
  *
  * Copyright (c) 2006-2007 BalaBit IT Ltd.
  * Author: Balazs Scheidler, Krisztian Kovacs
@@ -10,11 +10,11 @@
  *
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/net.h>
-#include <linux/if.h>
-#include <linux/netdevice.h>
+#include <beep/net.h>
+#include <beep/if.h>
+#include <beep/netdevice.h>
 #include <net/udp.h>
 #include <net/netfilter/nf_tproxy_core.h>
 

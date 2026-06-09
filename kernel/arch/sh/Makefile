@@ -11,7 +11,7 @@
 #
 ifneq ($(SUBARCH),$(ARCH))
   ifeq ($(CROSS_COMPILE),)
-    CROSS_COMPILE := $(call cc-cross-prefix, $(UTS_MACHINE)-linux-  $(UTS_MACHINE)-linux-gnu-  $(UTS_MACHINE)-unknown-linux-gnu-)
+    CROSS_COMPILE := $(call cc-cross-prefix, $(UTS_MACHINE)-beep-  $(UTS_MACHINE)-beep-gnu-  $(UTS_MACHINE)-unknown-beep-gnu-)
   endif
 endif
 
@@ -88,8 +88,8 @@ defaultimage-$(CONFIG_SH_MIGOR)			:= uImage
 defaultimage-$(CONFIG_SH_AP325RXA)		:= uImage
 defaultimage-$(CONFIG_SH_SH7757LCR)		:= uImage
 defaultimage-$(CONFIG_SH_7724_SOLUTION_ENGINE)	:= uImage
-defaultimage-$(CONFIG_SH_7206_SOLUTION_ENGINE)	:= vmlinux
-defaultimage-$(CONFIG_SH_7619_SOLUTION_ENGINE)	:= vmlinux
+defaultimage-$(CONFIG_SH_7206_SOLUTION_ENGINE)	:= vmbeep
+defaultimage-$(CONFIG_SH_7619_SOLUTION_ENGINE)	:= vmbeep
 
 # Set some sensible Kbuild defaults
 KBUILD_IMAGE		:= $(defaultimage-y)
@@ -101,24 +101,24 @@ KBUILD_IMAGE		:= $(defaultimage-y)
 ifdef CONFIG_SUPERH32
 UTS_MACHINE		:= sh
 BITS			:= 32
-LDFLAGS_vmlinux		+= -e _stext
+LDFLAGS_vmbeep		+= -e _stext
 KBUILD_DEFCONFIG	:= shx3_defconfig
 else
 UTS_MACHINE		:= sh64
 BITS			:= 64
-LDFLAGS_vmlinux		+= --defsym phys_stext=_stext-$(CONFIG_PAGE_OFFSET) \
+LDFLAGS_vmbeep		+= --defsym phys_stext=_stext-$(CONFIG_PAGE_OFFSET) \
 			   --defsym phys_stext_shmedia=phys_stext+1 \
 			   -e phys_stext_shmedia
 KBUILD_DEFCONFIG	:= cayman_defconfig
 endif
 
 ifdef CONFIG_CPU_LITTLE_ENDIAN
-ld-bfd			:= elf32-$(UTS_MACHINE)-linux
-LDFLAGS_vmlinux		+= --defsym jiffies=jiffies_64 --oformat $(ld-bfd)
+ld-bfd			:= elf32-$(UTS_MACHINE)-beep
+LDFLAGS_vmbeep		+= --defsym jiffies=jiffies_64 --oformat $(ld-bfd)
 LDFLAGS			+= -EL
 else
-ld-bfd			:= elf32-$(UTS_MACHINE)big-linux
-LDFLAGS_vmlinux		+= --defsym jiffies=jiffies_64+4 --oformat $(ld-bfd)
+ld-bfd			:= elf32-$(UTS_MACHINE)big-beep
+LDFLAGS_vmbeep		+= --defsym jiffies=jiffies_64+4 --oformat $(ld-bfd)
 LDFLAGS			+= -EB
 endif
 
@@ -207,13 +207,13 @@ libs-$(CONFIG_SUPERH32)		:= arch/sh/lib/	$(libs-y)
 libs-$(CONFIG_SUPERH64)		:= arch/sh/lib64/ $(libs-y)
 
 BOOT_TARGETS = uImage uImage.bz2 uImage.gz uImage.lzma uImage.xz uImage.lzo \
-	       uImage.srec uImage.bin zCalc vmlinux.bin vmlinux.srec \
+	       uImage.srec uImage.bin zCalc vmbeep.bin vmbeep.srec \
 	       romImage
 PHONY += $(BOOT_TARGETS)
 
 all: $(KBUILD_IMAGE)
 
-$(BOOT_TARGETS): vmlinux
+$(BOOT_TARGETS): vmbeep
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
 compressed: zCalc
@@ -228,8 +228,8 @@ archclean:
 define archhelp
 	@echo '  zCalc 	           - Compressed kernel image'
 	@echo '  romImage	           - Compressed ROM image, if supported'
-	@echo '  vmlinux.srec	           - Create an ELF S-record'
-	@echo '  vmlinux.bin	           - Create an uncompressed binary image'
+	@echo '  vmbeep.srec	           - Create an ELF S-record'
+	@echo '  vmbeep.bin	           - Create an uncompressed binary image'
 	@echo '* uImage  	           - Alias to bootable U-Boot image'
 	@echo '  uImage.srec	           - Create an S-record for U-Boot'
 	@echo '  uImage.bin	           - Kernel-only image for U-Boot (bin)'

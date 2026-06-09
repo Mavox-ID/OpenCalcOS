@@ -23,13 +23,13 @@
  * This driver is based on max8997-irq.c
  */
 
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/irqdomain.h>
-#include <linux/mfd/max77693.h>
-#include <linux/mfd/max77693-private.h>
+#include <beep/err.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/irqdomain.h>
+#include <beep/mfd/max77693.h>
+#include <beep/mfd/max77693-private.h>
 
 static const u8 max77693_mask_reg[] = {
 	[LED_INT] = MAX77693_LED_REG_FLASH_INT_MASK,

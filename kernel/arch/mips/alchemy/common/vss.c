@@ -6,8 +6,8 @@
  * for various media blocks are enabled/disabled.
  */
 
-#include <linux/module.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
 #include <asm/mach-au1x00/au1000.h>
 
 #define VSS_GATE	0x00	/* gate wait timers */

@@ -10,15 +10,15 @@
  * License terms: GNU General Public License (GPL) version 2
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/tps6105x.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/driver.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/tps6105x.h>
 
 static const unsigned int tps6105x_voltages[] = {
 	4500000,

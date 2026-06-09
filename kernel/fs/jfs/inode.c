@@ -17,12 +17,12 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/fs.h>
-#include <linux/mpage.h>
-#include <linux/buffer_head.h>
-#include <linux/pagemap.h>
-#include <linux/quotaops.h>
-#include <linux/writeback.h>
+#include <beep/fs.h>
+#include <beep/mpage.h>
+#include <beep/buffer_head.h>
+#include <beep/pagemap.h>
+#include <beep/quotaops.h>
+#include <beep/writeback.h>
 #include "jfs_incore.h"
 #include "jfs_inode.h"
 #include "jfs_filsys.h"

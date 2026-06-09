@@ -8,15 +8,15 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/usb.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/omap-dma.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/usb.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/omap-dma.h>
 
 #include "musb_core.h"
 #include "tusb6010.h"

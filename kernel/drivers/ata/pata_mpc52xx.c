@@ -14,13 +14,13 @@
  * kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/delay.h>
-#include <linux/libata.h>
-#include <linux/of_platform.h>
-#include <linux/types.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/gfp.h>
+#include <beep/delay.h>
+#include <beep/libata.h>
+#include <beep/of_platform.h>
+#include <beep/types.h>
 
 #include <asm/cacheflush.h>
 #include <asm/prom.h>

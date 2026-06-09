@@ -86,17 +86,17 @@
  *   [WUSB-AM] Association Models Supplement to the Certified Wireless
  *             Universal Serial Bus Specification, version 1.0.
  */
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/usb.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/uwb.h>
-#include <linux/usb/wusb.h>
-#include <linux/usb/association.h>
+#include <beep/module.h>
+#include <beep/ctype.h>
+#include <beep/usb.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/random.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/uwb.h>
+#include <beep/usb/wusb.h>
+#include <beep/usb/association.h>
 
 #define CBA_NAME_LEN 0x40 /* [WUSB-AM] table 4-7 */
 

@@ -1,7 +1,7 @@
 /*
  * OpenRISC or32_ksyms.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -15,13 +15,13 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/elfcore.h>
-#include <linux/sched.h>
-#include <linux/in6.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
-#include <linux/semaphore.h>
+#include <beep/module.h>
+#include <beep/elfcore.h>
+#include <beep/sched.h>
+#include <beep/in6.h>
+#include <beep/interrupt.h>
+#include <beep/vmalloc.h>
+#include <beep/semaphore.h>
 
 #include <asm/processor.h>
 #include <asm/uaccess.h>

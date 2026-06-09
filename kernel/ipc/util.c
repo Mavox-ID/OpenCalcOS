@@ -1,5 +1,5 @@
 /*
- * linux/ipc/util.c
+ * beep/ipc/util.c
  * Copyright (C) 1992 Krishna Balasubramanian
  *
  * Sep 1997 - Call suser() last after "normal" permission checks so we
@@ -17,24 +17,24 @@
  *            Pavel Emelianov <xemul@openvz.org>
  */
 
-#include <linux/mm.h>
-#include <linux/shm.h>
-#include <linux/init.h>
-#include <linux/msg.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/capability.h>
-#include <linux/highuid.h>
-#include <linux/security.h>
-#include <linux/rcupdate.h>
-#include <linux/workqueue.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/audit.h>
-#include <linux/nsproxy.h>
-#include <linux/rwsem.h>
-#include <linux/memory.h>
-#include <linux/ipc_namespace.h>
+#include <beep/mm.h>
+#include <beep/shm.h>
+#include <beep/init.h>
+#include <beep/msg.h>
+#include <beep/vmalloc.h>
+#include <beep/slab.h>
+#include <beep/capability.h>
+#include <beep/highuid.h>
+#include <beep/security.h>
+#include <beep/rcupdate.h>
+#include <beep/workqueue.h>
+#include <beep/seq_file.h>
+#include <beep/proc_fs.h>
+#include <beep/audit.h>
+#include <beep/nsproxy.h>
+#include <beep/rwsem.h>
+#include <beep/memory.h>
+#include <beep/ipc_namespace.h>
 
 #include <asm/unistd.h>
 
@@ -609,7 +609,7 @@ void ipc_rcu_putref(void *ptr)
  *	Check user, group, other permissions for access
  *	to ipc resources. return 0 if allowed
  *
- * 	@flag will most probably be 0 or S_...UGO from <linux/stat.h>
+ * 	@flag will most probably be 0 or S_...UGO from <beep/stat.h>
  */
  
 int ipcperms(struct ipc_namespace *ns, struct kern_ipc_perm *ipcp, short flag)

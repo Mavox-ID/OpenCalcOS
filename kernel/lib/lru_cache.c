@@ -23,12 +23,12 @@
 
  */
 
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/string.h> /* for memset */
-#include <linux/seq_file.h> /* for seq_printf */
-#include <linux/lru_cache.h>
+#include <beep/module.h>
+#include <beep/bitops.h>
+#include <beep/slab.h>
+#include <beep/string.h> /* for memset */
+#include <beep/seq_file.h> /* for seq_printf */
+#include <beep/lru_cache.h>
 
 MODULE_AUTHOR("Philipp Reisner <phil@linbit.com>, "
 	      "Lars Ellenberg <lars@linbit.com>");

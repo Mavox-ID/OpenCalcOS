@@ -1,5 +1,5 @@
 /*
- *  linux/fs/vfat/namei.c
+ *  beep/fs/vfat/namei.c
  *
  *  Written 1992,1993 by Werner Almesberger
  *
@@ -15,12 +15,12 @@
  *				OGAWA Hirofumi <hirofumi@mail.parknet.co.jp>
  */
 
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/buffer_head.h>
-#include <linux/namei.h>
+#include <beep/module.h>
+#include <beep/jiffies.h>
+#include <beep/ctype.h>
+#include <beep/slab.h>
+#include <beep/buffer_head.h>
+#include <beep/namei.h>
 #include "fat.h"
 
 /*

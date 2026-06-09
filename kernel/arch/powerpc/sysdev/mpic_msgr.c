@@ -11,12 +11,12 @@
  *
  */
 
-#include <linux/list.h>
-#include <linux/of_platform.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <beep/list.h>
+#include <beep/of_platform.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/export.h>
+#include <beep/slab.h>
 #include <asm/prom.h>
 #include <asm/hw_irq.h>
 #include <asm/ppc-pci.h>

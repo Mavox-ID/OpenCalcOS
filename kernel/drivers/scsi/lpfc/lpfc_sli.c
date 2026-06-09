@@ -1,5 +1,5 @@
 /*******************************************************************
- * This file is part of the Emulex Linux Device Driver for         *
+ * This file is part of the Emulex Beep Device Driver for         *
  * Fibre Channel Host Bus Adapters.                                *
  * Copyright (C) 2004-2012 Emulex.  All rights reserved.           *
  * EMULEX and SLI are trademarks of Emulex.                        *
@@ -19,11 +19,11 @@
  * included with this package.                                     *
  *******************************************************************/
 
-#include <linux/blkdev.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/blkdev.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -31,7 +31,7 @@
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_transport_fc.h>
 #include <scsi/fc/fc_fs.h>
-#include <linux/aer.h>
+#include <beep/aer.h>
 
 #include "lpfc_hw4.h"
 #include "lpfc_hw.h"
@@ -15726,10 +15726,10 @@ lpfc_sli_read_link_ste(struct lpfc_hba *phba)
 			break;
 		/*
 		 * If the TLV is not driver specific TLV or driver id is
-		 * not linux driver id, skip the record.
+		 * not beep driver id, skip the record.
 		 */
 		if ((rgn23_data[offset] != DRIVER_SPECIFIC_TYPE) ||
-		    (rgn23_data[offset + 2] != LINUX_DRIVER_ID) ||
+		    (rgn23_data[offset + 2] != BEEP_DRIVER_ID) ||
 		    (rgn23_data[offset + 3] != 0)) {
 			offset += rgn23_data[offset + 1] * 4 + 4;
 			continue;

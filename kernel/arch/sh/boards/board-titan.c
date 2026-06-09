@@ -7,8 +7,8 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <beep/init.h>
+#include <beep/irq.h>
 #include <mach/titan.h>
 #include <asm/io.h>
 

@@ -1,12 +1,12 @@
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/init.h>
-#include <linux/syscalls.h>
-#include <linux/unistd.h>
-#include <linux/slab.h>
-#include <linux/mount.h>
-#include <linux/major.h>
-#include <linux/root_dev.h>
+#include <beep/kernel.h>
+#include <beep/blkdev.h>
+#include <beep/init.h>
+#include <beep/syscalls.h>
+#include <beep/unistd.h>
+#include <beep/slab.h>
+#include <beep/mount.h>
+#include <beep/major.h>
+#include <beep/root_dev.h>
 
 void  change_floppy(char *fmt, ...);
 void  mount_block_root(char *name, int flags);

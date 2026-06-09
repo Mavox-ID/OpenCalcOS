@@ -1,5 +1,5 @@
 /*
- * Linux driver for Disk-On-Chip Millennium Plus
+ * Beep driver for Disk-On-Chip Millennium Plus
  *
  * (c) 2002-2003 Greg Ungerer <gerg@snapgear.com>
  * (c) 2002-2003 SnapGear Inc
@@ -9,20 +9,20 @@
  * Released under GPL
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 #include <asm/errno.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/bitops.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/doc2000.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/doc2000.h>
 
 /* #define ECC_DEBUG */
 

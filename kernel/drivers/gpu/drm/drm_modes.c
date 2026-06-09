@@ -30,9 +30,9 @@
  * authorization from the copyright holder(s) and author(s).
  */
 
-#include <linux/list.h>
-#include <linux/list_sort.h>
-#include <linux/export.h>
+#include <beep/list.h>
+#include <beep/list_sort.h>
+#include <beep/export.h>
 #include <drm/drmP.h>
 #include <drm/drm_crtc.h>
 

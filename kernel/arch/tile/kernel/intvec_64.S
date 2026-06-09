@@ -11,12 +11,12 @@
  *   NON INFRINGEMENT.  See the GNU General Public License for
  *   more details.
  *
- * Linux interrupt vectors.
+ * Beep interrupt vectors.
  */
 
-#include <linux/linkage.h>
-#include <linux/errno.h>
-#include <linux/unistd.h>
+#include <beep/linkage.h>
+#include <beep/errno.h>
+#include <beep/unistd.h>
 #include <asm/ptrace.h>
 #include <asm/thread_info.h>
 #include <asm/irqflags.h>
@@ -152,22 +152,22 @@ intvec_\vecname:
 	.ifc    \c_routine, do_page_fault
 	/*
 	 * The page_fault handler may be downcalled directly by the
-	 * hypervisor even when Linux is running and has ICS set.
+	 * hypervisor even when Beep is running and has ICS set.
 	 *
 	 * In this case the contents of EX_CONTEXT_K_1 reflect the
 	 * previous fault and can't be relied on to choose whether or
 	 * not to reinitialize the stack pointer.  So we add a test
 	 * to see whether SYSTEM_SAVE_K_2 has the high bit set,
 	 * and if so we don't reinitialize sp, since we must be coming
-	 * from Linux.  (In fact the precise case is !(val & ~1),
-	 * but any Linux PC has to have the high bit set.)
+	 * from Beep.  (In fact the precise case is !(val & ~1),
+	 * but any Beep PC has to have the high bit set.)
 	 *
 	 * Note that the hypervisor *always* sets SYSTEM_SAVE_K_2 for
 	 * any path that turns into a downcall to one of our TLB handlers.
 	 *
 	 * FIXME: if we end up never using this path, perhaps we should
 	 * prevent the hypervisor from generating downcalls in this case.
-	 * The advantage of getting a downcall is we can panic in Linux.
+	 * The advantage of getting a downcall is we can panic in Beep.
 	 */
 	mfspr   r0, SPR_SYSTEM_SAVE_K_2
 	{
@@ -710,7 +710,7 @@ STD_ENTRY(interrupt_return)
 	 * In the NMI case we
 	 * omit the call to single_process_check_nohz, which normally checks
 	 * to see if we should start or stop the scheduler tick, because
-	 * we can't call arbitrary Linux code from an NMI context.
+	 * we can't call arbitrary Beep code from an NMI context.
 	 * We always call the homecache TLB deferral code to re-trigger
 	 * the deferral mechanism.
 	 *

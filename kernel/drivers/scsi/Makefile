@@ -1,5 +1,5 @@
 #
-# Makefile for linux/drivers/scsi
+# Makefile for beep/drivers/scsi
 #
 # 30 May 2000, Christoph Hellwig <hch@infradead.org>
 # Rewritten to use lists instead of if-statements.

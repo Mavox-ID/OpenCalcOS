@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux network device drivers.
+# Makefile for the Beep network device drivers.
 #
 
 #

@@ -31,7 +31,7 @@ Configuration options:
 
 #include "../comedidev.h"
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 #include "8255.h"
 #include "8253.h"

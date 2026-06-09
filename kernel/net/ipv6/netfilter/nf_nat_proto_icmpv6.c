@@ -9,11 +9,11 @@
  * NAT funded by Astaro.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/icmpv6.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/icmpv6.h>
 
-#include <linux/netfilter.h>
+#include <beep/netfilter.h>
 #include <net/netfilter/nf_nat.h>
 #include <net/netfilter/nf_nat_core.h>
 #include <net/netfilter/nf_nat_l3proto.h>

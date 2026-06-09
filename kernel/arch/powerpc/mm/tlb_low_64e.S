@@ -380,7 +380,7 @@ normal_tlb_miss:
 	 * or'ing the fourth high bit.
 	 *
 	 * NOTE: For 64K pages, we do things slightly differently in
-	 * order to handle the weird page table format used by linux
+	 * order to handle the weird page table format used by beep
 	 */
 	ori	r10,r15,0x1
 #ifdef CONFIG_PPC_64K_PAGES

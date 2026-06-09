@@ -10,7 +10,7 @@
  * Copyright (c) 2002-2003, Jouni Malinen <jkmaline@cc.hut.fi>
  *
  * Adaption to a generic IEEE 802.11 stack by James Ketrenos
- * <jketreno@linux.intel.com>
+ * <jketreno@beep.intel.com>
  * Copyright (c) 2004, Intel Corporation
  *
  * Modified for Realtek's wi-fi cards by Andrea Merello
@@ -23,15 +23,15 @@
  */
 #ifndef IEEE80211_H
 #define IEEE80211_H
-#include <linux/if_ether.h> /* ETH_ALEN */
-#include <linux/kernel.h>   /* ARRAY_SIZE */
-#include <linux/jiffies.h>
-#include <linux/timer.h>
-#include <linux/sched.h>
-#include <linux/semaphore.h>
-#include <linux/wireless.h>
-#include <linux/ieee80211.h>
-#include <linux/interrupt.h>
+#include <beep/if_ether.h> /* ETH_ALEN */
+#include <beep/kernel.h>   /* ARRAY_SIZE */
+#include <beep/jiffies.h>
+#include <beep/timer.h>
+#include <beep/sched.h>
+#include <beep/semaphore.h>
+#include <beep/wireless.h>
+#include <beep/ieee80211.h>
+#include <beep/interrupt.h>
 
 #define KEY_TYPE_NA		0x0
 #define KEY_TYPE_WEP40 		0x1
@@ -214,8 +214,8 @@ do { if (ieee80211_debug_level & (level)) \
 #define IEEE80211_DEBUG_DROP(f, a...)  IEEE80211_DEBUG(IEEE80211_DL_DROP, f, ## a)
 #define IEEE80211_DEBUG_TX(f, a...)  IEEE80211_DEBUG(IEEE80211_DL_TX, f, ## a)
 #define IEEE80211_DEBUG_RX(f, a...)  IEEE80211_DEBUG(IEEE80211_DL_RX, f, ## a)
-#include <linux/netdevice.h>
-#include <linux/if_arp.h> /* ARPHRD_ETHER */
+#include <beep/netdevice.h>
+#include <beep/if_arp.h> /* ARPHRD_ETHER */
 
 #ifndef WIRELESS_SPY
 #define WIRELESS_SPY		// enable iwspy support

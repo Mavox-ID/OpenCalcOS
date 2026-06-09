@@ -1,5 +1,5 @@
 /*
- * Video capture interface for Linux version 2
+ * Video capture interface for Beep version 2
  *
  * A generic framework to process V4L2 ioctl commands.
  *
@@ -12,13 +12,13 @@
  *              Mauro Carvalho Chehab <mchehab@infradead.org> (version 2)
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/version.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/version.h>
 
-#include <linux/videodev2.h>
+#include <beep/videodev2.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
@@ -74,7 +74,7 @@ static const struct std_descr standards[] = {
 	{ 0, 			"Unknown"   }
 };
 
-/* video4linux standard ID conversion to standard name
+/* video4beep standard ID conversion to standard name
  */
 const char *v4l2_norm_to_name(v4l2_std_id id)
 {
@@ -951,7 +951,7 @@ static int v4l_querycap(const struct v4l2_ioctl_ops *ops,
 {
 	struct v4l2_capability *cap = (struct v4l2_capability *)arg;
 
-	cap->version = LINUX_VERSION_CODE;
+	cap->version = BEEP_VERSION_CODE;
 	return ops->vidioc_querycap(file, fh, cap);
 }
 

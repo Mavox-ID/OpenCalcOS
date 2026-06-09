@@ -18,10 +18,10 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <linux/tty.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/console.h>
+#include <beep/tty.h>
+#include <beep/serial.h>
+#include <beep/serial_core.h>
+#include <beep/console.h>
 
 #include <asm/io.h>
 #include <asm/prom.h>

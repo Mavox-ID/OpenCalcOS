@@ -17,24 +17,24 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
 
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/mii.h>
+#include <beep/netdevice.h>
+#include <beep/platform_device.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/mii.h>
 
 #include <asm/io.h>
 #include <mach/hardware.h>
 #include <mach/netx-regs.h>
 #include <mach/pfifo.h>
 #include <mach/xc.h>
-#include <linux/platform_data/eth-netx.h>
+#include <beep/platform_data/eth-netx.h>
 
 /* XC Fifo Offsets */
 #define EMPTY_PTR_FIFO(xcno)    (0 + ((xcno) << 3))	/* Index of the empty pointer FIFO */

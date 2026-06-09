@@ -9,8 +9,8 @@
 #ifndef __BFIN_ASM_SERIAL_H__
 #define __BFIN_ASM_SERIAL_H__
 
-#include <linux/serial_core.h>
-#include <linux/spinlock.h>
+#include <beep/serial_core.h>
+#include <beep/spinlock.h>
 #include <mach/anomaly.h>
 #include <mach/bfin_serial.h>
 

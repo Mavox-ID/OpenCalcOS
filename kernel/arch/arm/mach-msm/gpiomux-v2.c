@@ -14,7 +14,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
  * 02110-1301, USA.
  */
-#include <linux/io.h>
+#include <beep/io.h>
 #include <mach/msm_iomap.h>
 #include "gpiomux.h"
 

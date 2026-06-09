@@ -14,9 +14,9 @@
  * CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/cordic.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/cordic.h>
 
 #include <pmu.h>
 #include <d11.h>

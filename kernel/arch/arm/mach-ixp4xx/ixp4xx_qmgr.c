@@ -1,5 +1,5 @@
 /*
- * Intel IXP4xx Queue Manager driver for Linux
+ * Intel IXP4xx Queue Manager driver for Beep
  *
  * Copyright (C) 2007 Krzysztof Halasa <khc@pm.waw.pl>
  *
@@ -8,10 +8,10 @@
  * as published by the Free Software Foundation.
  */
 
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 #include <mach/qmgr.h>
 
 static struct qmgr_regs __iomem *qmgr_regs = IXP4XX_QMGR_BASE_VIRT;

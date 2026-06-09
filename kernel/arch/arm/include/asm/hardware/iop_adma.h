@@ -17,9 +17,9 @@
  */
 #ifndef IOP_ADMA_H
 #define IOP_ADMA_H
-#include <linux/types.h>
-#include <linux/dmaengine.h>
-#include <linux/interrupt.h>
+#include <beep/types.h>
+#include <beep/dmaengine.h>
+#include <beep/interrupt.h>
 
 #define IOP_ADMA_SLOT_SIZE 32
 #define IOP_ADMA_THRESHOLD 4

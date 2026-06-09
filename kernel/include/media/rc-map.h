@@ -9,7 +9,7 @@
  * (at your option) any later version.
  */
 
-#include <linux/input.h>
+#include <beep/input.h>
 
 enum rc_type {
 	RC_TYPE_UNKNOWN		= 0,	/* Protocol not known */

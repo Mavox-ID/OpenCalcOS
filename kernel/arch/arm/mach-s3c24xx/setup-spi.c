@@ -9,8 +9,8 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
 
 #include <plat/gpio-cfg.h>
 

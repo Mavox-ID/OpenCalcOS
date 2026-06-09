@@ -1,7 +1,7 @@
 #ifndef NILFS_EXPORT_H
 #define NILFS_EXPORT_H
 
-#include <linux/exportfs.h>
+#include <beep/exportfs.h>
 
 extern const struct export_operations nilfs_export_ops;
 

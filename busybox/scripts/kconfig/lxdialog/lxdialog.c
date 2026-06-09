@@ -2,7 +2,7 @@
  *  dialog - Display simple dialog boxes from shell scripts
  *
  *  ORIGINAL AUTHOR: Savio Lam (lam836@cs.cuhk.hk)
- *  MODIFIED FOR LINUX KERNEL CONFIG BY: William Roadcap (roadcap@cfw.com)
+ *  MODIFIED FOR BEEP KERNEL CONFIG BY: William Roadcap (roadcap@cfw.com)
  *
  *  This program is free software; you can redistribute it and/or
  *  modify it under the terms of the GNU General Public License
@@ -139,7 +139,7 @@ static void Usage(const char *name)
 	fprintf(stderr, "\
 \ndialog, by Savio Lam (lam836@cs.cuhk.hk).\
 \n  patched by Stuart Herbert (S.Herbert@shef.ac.uk)\
-\n  modified/gutted for use as a Linux kernel config tool by \
+\n  modified/gutted for use as a Beep kernel config tool by \
 \n  William Roadcap (roadcapw@cfw.com)\
 \n\
 \n* Display dialog boxes from shell scripts *\

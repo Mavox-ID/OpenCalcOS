@@ -13,16 +13,16 @@
  * This driver is based on wm8350 implementation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/slab.h>
-#include <linux/gpio.h>
-#include <linux/mfd/tps65912.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/driver.h>
+#include <beep/regulator/machine.h>
+#include <beep/slab.h>
+#include <beep/gpio.h>
+#include <beep/mfd/tps65912.h>
 
 /* DCDC's */
 #define TPS65912_REG_DCDC1	0

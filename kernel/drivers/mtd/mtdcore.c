@@ -21,24 +21,24 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/err.h>
-#include <linux/ioctl.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/idr.h>
-#include <linux/backing-dev.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/ptrace.h>
+#include <beep/seq_file.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/major.h>
+#include <beep/fs.h>
+#include <beep/err.h>
+#include <beep/ioctl.h>
+#include <beep/init.h>
+#include <beep/proc_fs.h>
+#include <beep/idr.h>
+#include <beep/backing-dev.h>
+#include <beep/gfp.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
 
 #include "mtdcore.h"
 /*

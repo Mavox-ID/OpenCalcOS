@@ -14,24 +14,24 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/completion.h>
-#include <linux/platform_device.h>
-#include <linux/jiffies.h>
-#include <linux/io.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/stmp_device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_i2c.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/fsl/mxs-dma.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/err.h>
+#include <beep/interrupt.h>
+#include <beep/completion.h>
+#include <beep/platform_device.h>
+#include <beep/jiffies.h>
+#include <beep/io.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/stmp_device.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/of_i2c.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmaengine.h>
+#include <beep/fsl/mxs-dma.h>
 
 #define DRIVER_NAME "mxs-i2c"
 

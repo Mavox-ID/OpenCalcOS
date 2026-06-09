@@ -205,7 +205,7 @@ define set_kernel_parameters
   # M32R_TIMER_DIVIDE
   set *(unsigned long *)($param + 0x0020) = 0d128
 
-  set {char[0x200]}($param + 0x100) = "console=ttyS0,115200n8x console=tty1 root=/dev/nfsroot nfsroot=192.168.0.1:/project/m32r-linux/export/rootfs nfsaddrs=192.168.0.101:192.168.0.1:192.168.0.1:255.255.255.0:mappi001 \0"
+  set {char[0x200]}($param + 0x100) = "console=ttyS0,115200n8x console=tty1 root=/dev/nfsroot nfsroot=192.168.0.1:/project/m32r-beep/export/rootfs nfsaddrs=192.168.0.101:192.168.0.1:192.168.0.1:255.255.255.0:mappi001 \0"
 end
 
 # Boot
@@ -233,7 +233,7 @@ end
 
 sdireset
 sdireset
-file vmlinux
+file vmbeep
 target m32rsdi
 setup
 #load_modules

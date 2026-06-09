@@ -22,12 +22,12 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/bitops.h>
-#include <linux/threads.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/pfn.h>
+#include <beep/bitops.h>
+#include <beep/threads.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/pfn.h>
 #include <asm/processor.h>
 #include <asm/fixmap.h>
 #include <asm/page.h>
@@ -49,7 +49,7 @@ extern spinlock_t pgd_lock;
 extern struct list_head pgd_list;
 
 /*
- * The very last slots in the pgd_t are for addresses unusable by Linux
+ * The very last slots in the pgd_t are for addresses unusable by Beep
  * (pgd_addr_invalid() returns true).  So we use them for the list structure.
  * The x86 code we are modelled on uses the page->private/index fields
  * (older 2.6 kernels) or the lru list (newer 2.6 kernels), but since
@@ -296,7 +296,7 @@ extern void check_mm_caching(struct mm_struct *prev, struct mm_struct *next);
 #define pgoff_to_pte(off) ((pte_t) { (((long long)(off)) << 32) | _PAGE_FILE })
 
 /*
- * Encode and de-code a swap entry (see <linux/swapops.h>).
+ * Encode and de-code a swap entry (see <beep/swapops.h>).
  * We put the swap file type+offset in the 32 high bits;
  * I believe we can just leave the low bits clear.
  */

@@ -9,7 +9,7 @@
  *  Hotplug & misc device support: Jochen Roehrig (roehrig@de.ibm.com)
  *  Major cleanup & driver split: Martin Schwidefsky <schwidefsky@de.ibm.com>
  *				  Ralph Wuerthner <rwuerthn@de.ibm.com>
- *  MSGTYPE restruct:		  Holger Dengler <hd@linux.vnet.ibm.com>
+ *  MSGTYPE restruct:		  Holger Dengler <hd@beep.vnet.ibm.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -26,19 +26,19 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/miscdevice.h>
-#include <linux/fs.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/compat.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/miscdevice.h>
+#include <beep/fs.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/compat.h>
+#include <beep/slab.h>
+#include <beep/atomic.h>
 #include <asm/uaccess.h>
-#include <linux/hw_random.h>
-#include <linux/debugfs.h>
+#include <beep/hw_random.h>
+#include <beep/debugfs.h>
 #include <asm/debug.h>
 
 #include "zcrypt_debug.h"

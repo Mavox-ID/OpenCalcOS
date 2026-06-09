@@ -6,16 +6,16 @@
  * Licensed under GPLv2 or later.
  */
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/of_i2c.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
+#include <beep/of_i2c.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/io.h>
 
 #define SIRFSOC_I2C_CLK_CTRL		0x00
 #define SIRFSOC_I2C_STATUS		0x0C

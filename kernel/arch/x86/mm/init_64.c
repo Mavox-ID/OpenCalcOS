@@ -1,37 +1,37 @@
 /*
- *  linux/arch/x86_64/mm/init.c
+ *  beep/arch/x86_64/mm/init.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  *  Copyright (C) 2000  Pavel Machek <pavel@ucw.cz>
  *  Copyright (C) 2002,2003 Andi Kleen <ak@suse.de>
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/initrd.h>
-#include <linux/pagemap.h>
-#include <linux/bootmem.h>
-#include <linux/memblock.h>
-#include <linux/proc_fs.h>
-#include <linux/pci.h>
-#include <linux/pfn.h>
-#include <linux/poison.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/memory.h>
-#include <linux/memory_hotplug.h>
-#include <linux/nmi.h>
-#include <linux/gfp.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
+#include <beep/mman.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/smp.h>
+#include <beep/init.h>
+#include <beep/initrd.h>
+#include <beep/pagemap.h>
+#include <beep/bootmem.h>
+#include <beep/memblock.h>
+#include <beep/proc_fs.h>
+#include <beep/pci.h>
+#include <beep/pfn.h>
+#include <beep/poison.h>
+#include <beep/dma-mapping.h>
+#include <beep/module.h>
+#include <beep/memory.h>
+#include <beep/memory_hotplug.h>
+#include <beep/nmi.h>
+#include <beep/gfp.h>
 
 #include <asm/processor.h>
 #include <asm/bios_ebda.h>

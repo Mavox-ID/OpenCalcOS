@@ -1,6 +1,6 @@
 /*
- * user-mode-linux networking multicast transport
- * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * user-mode-beep networking multicast transport
+ * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Copyright (C) 2001 by Harald Welte <laforge@gnumonks.org>
  *
  * based on the existing uml-networking code, which is

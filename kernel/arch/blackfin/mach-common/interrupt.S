@@ -10,7 +10,7 @@
 
 #include <asm/blackfin.h>
 #include <mach/irq.h>
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/entry.h>
 #include <asm/asm-offsets.h>
 #include <asm/trace.h>
@@ -212,7 +212,7 @@ ENDPROC(_evt_ivhw)
 
 /* Interrupt routine for evt2 (NMI).
  * For inner circle type details, please see:
- * http://docs.blackfin.uclinux.org/doku.php?id=linux-kernel:nmi
+ * http://docs.blackfin.ucbeep.org/doku.php?id=beep-kernel:nmi
  */
 ENTRY(_evt_nmi)
 #ifndef CONFIG_NMI_WATCHDOG
@@ -284,11 +284,11 @@ ENDPROC(_evt_system_call)
  *   so that we may reschedule immediately.
  *
  * - before branching to __ipipe_sync_root(), in order to play any interrupt
- *   pending for the root domain (i.e. the Linux kernel). This lowers
- *   the core priority level enough so that Linux IRQ handlers may
+ *   pending for the root domain (i.e. the Beep kernel). This lowers
+ *   the core priority level enough so that Beep IRQ handlers may
  *   never delay interrupts handled by high priority domains; we defer
  *   those handlers until this point instead. This is a substitute
- *   to using a threaded interrupt model for the Linux kernel.
+ *   to using a threaded interrupt model for the Beep kernel.
  *
  * r0: address of user-defined routine
  * context: caller must have preempted EVT15, hw interrupts must be off.

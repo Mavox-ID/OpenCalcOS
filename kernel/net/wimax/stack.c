@@ -1,9 +1,9 @@
 /*
- * Linux WiMAX
+ * Beep WiMAX
  * Initialization, addition and removal of wimax devices
  *
  *
- * Copyright (C) 2005-2006 Intel Corporation <linux-wimax@intel.com>
+ * Copyright (C) 2005-2006 Intel Corporation <beep-wimax@intel.com>
  * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
  *
  * This program is free software; you can redistribute it and/or
@@ -50,12 +50,12 @@
  *   wimax_gnl_rm()
  *   wimax_rfkill_rm()
  */
-#include <linux/device.h>
-#include <linux/gfp.h>
+#include <beep/device.h>
+#include <beep/gfp.h>
 #include <net/genetlink.h>
-#include <linux/netdevice.h>
-#include <linux/wimax.h>
-#include <linux/module.h>
+#include <beep/netdevice.h>
+#include <beep/wimax.h>
+#include <beep/module.h>
 #include "wimax-internal.h"
 
 
@@ -334,7 +334,7 @@ out:
  *
  * - verify that the state transition is legal (for now it'll just
  *   print a warning if not) according to the table in
- *   linux/wimax.h's documentation for 'enum wimax_st'.
+ *   beep/wimax.h's documentation for 'enum wimax_st'.
  *
  * - perform the actions needed for leaving the current state and
  *   whichever are needed for entering the new state.
@@ -629,7 +629,7 @@ void __exit wimax_subsys_exit(void)
 }
 module_exit(wimax_subsys_exit);
 
-MODULE_AUTHOR("Intel Corporation <linux-wimax@intel.com>");
-MODULE_DESCRIPTION("Linux WiMAX stack");
+MODULE_AUTHOR("Intel Corporation <beep-wimax@intel.com>");
+MODULE_DESCRIPTION("Beep WiMAX stack");
 MODULE_LICENSE("GPL");
 

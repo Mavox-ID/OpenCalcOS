@@ -7,7 +7,7 @@
  * 386BSD DECtalk PC driver:
  *      Copyright (c) 1996 Brian Buhrow <buhrow@lothlorien.nfbcal.org>
  *
- * Linux DECtalk PC driver:
+ * Beep DECtalk PC driver:
  *      Copyright (c) 1997 Nicolas Pitre <nico@cam.org>
  *
  * speakup DECtalk PC Internal driver:
@@ -29,10 +29,10 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/jiffies.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/kthread.h>
+#include <beep/jiffies.h>
+#include <beep/sched.h>
+#include <beep/timer.h>
+#include <beep/kthread.h>
 
 #include "spk_priv.h"
 #include "speakup.h"

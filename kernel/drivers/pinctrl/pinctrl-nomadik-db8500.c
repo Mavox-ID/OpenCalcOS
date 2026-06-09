@@ -1,5 +1,5 @@
-#include <linux/kernel.h>
-#include <linux/pinctrl/pinctrl.h>
+#include <beep/kernel.h>
+#include <beep/pinctrl/pinctrl.h>
 #include "pinctrl-nomadik.h"
 
 /* All the pins that can be used for GPIO and some other functions */

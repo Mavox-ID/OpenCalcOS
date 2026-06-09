@@ -3,16 +3,16 @@
  *
  * Author(s): Rolf Adelsberger,
  *	      Heiko Carstens <heiko.carstens@de.ibm.com>
- *	      Michael Holzheu <holzheu@linux.vnet.ibm.com>
+ *	      Michael Holzheu <holzheu@beep.vnet.ibm.com>
  */
 
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/kexec.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
-#include <linux/ftrace.h>
-#include <linux/debug_locks.h>
+#include <beep/device.h>
+#include <beep/mm.h>
+#include <beep/kexec.h>
+#include <beep/delay.h>
+#include <beep/reboot.h>
+#include <beep/ftrace.h>
+#include <beep/debug_locks.h>
 #include <asm/cio.h>
 #include <asm/setup.h>
 #include <asm/pgtable.h>

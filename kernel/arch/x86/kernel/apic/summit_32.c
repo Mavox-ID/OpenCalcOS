@@ -28,26 +28,26 @@
 
 #define pr_fmt(fmt) "summit: %s: " fmt, __func__
 
-#include <linux/mm.h>
-#include <linux/init.h>
+#include <beep/mm.h>
+#include <beep/init.h>
 #include <asm/io.h>
 #include <asm/bios_ebda.h>
 
 /*
  * APIC driver for the IBM "Summit" chipset.
  */
-#include <linux/threads.h>
-#include <linux/cpumask.h>
+#include <beep/threads.h>
+#include <beep/cpumask.h>
 #include <asm/mpspec.h>
 #include <asm/apic.h>
 #include <asm/smp.h>
 #include <asm/fixmap.h>
 #include <asm/apicdef.h>
 #include <asm/ipi.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/gfp.h>
-#include <linux/smp.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/gfp.h>
+#include <beep/smp.h>
 
 static unsigned summit_get_apic_id(unsigned long x)
 {

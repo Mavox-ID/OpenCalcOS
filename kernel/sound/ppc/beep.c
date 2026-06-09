@@ -20,11 +20,11 @@
 
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include "pmac.h"

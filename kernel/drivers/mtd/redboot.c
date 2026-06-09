@@ -1,6 +1,6 @@
 /*
  * Parse RedBoot-style Flash Image System (FIS) tables and
- * produce a Linux partition array to match.
+ * produce a Beep partition array to match.
  *
  * Copyright © 2001      Red Hat UK Limited
  * Copyright © 2001-2010 David Woodhouse <dwmw2@infradead.org>
@@ -21,14 +21,14 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/vmalloc.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/module.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/module.h>
 
 struct fis_image_desc {
     unsigned char name[16];      // Null terminated name

@@ -8,15 +8,15 @@
 #warning "Sparse checking disabled for this file"
 #endif
 
-#include <linux/unistd.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/minix_fs.h>
-#include <linux/romfs_fs.h>
-#include <linux/initrd.h>
-#include <linux/sched.h>
-#include <linux/freezer.h>
-#include <linux/kmod.h>
+#include <beep/unistd.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/minix_fs.h>
+#include <beep/romfs_fs.h>
+#include <beep/initrd.h>
+#include <beep/sched.h>
+#include <beep/freezer.h>
+#include <beep/kmod.h>
 
 #include "do_mounts.h"
 
@@ -33,10 +33,10 @@ static int __init no_initrd(char *str)
 
 __setup("noinitrd", no_initrd);
 
-static int init_linuxrc(struct subprocess_info *info, struct cred *new)
+static int init_beeprc(struct subprocess_info *info, struct cred *new)
 {
 	sys_unshare(CLONE_FS | CLONE_FILES);
-	/* stdin/stdout/stderr for /linuxrc */
+	/* stdin/stdout/stderr for /beeprc */
 	sys_open("/dev/console", O_RDWR, 0);
 	sys_dup(0);
 	sys_dup(0);
@@ -50,7 +50,7 @@ static int init_linuxrc(struct subprocess_info *info, struct cred *new)
 
 static void __init handle_initrd(void)
 {
-	static char *argv[] = { "linuxrc", NULL, };
+	static char *argv[] = { "beeprc", NULL, };
 	extern char *envp_init[];
 	int error;
 
@@ -62,13 +62,13 @@ static void __init handle_initrd(void)
 	sys_chdir("/old");
 
 	/*
-	 * In case that a resume from disk is carried out by linuxrc or one of
+	 * In case that a resume from disk is carried out by beeprc or one of
 	 * its children, we need to tell the freezer not to wait for us.
 	 */
 	current->flags |= PF_FREEZER_SKIP;
 
-	call_usermodehelper_fns("/linuxrc", argv, envp_init, UMH_WAIT_PROC,
-			init_linuxrc, NULL, NULL);
+	call_usermodehelper_fns("/beeprc", argv, envp_init, UMH_WAIT_PROC,
+			init_beeprc, NULL, NULL);
 
 	current->flags &= ~PF_FREEZER_SKIP;
 

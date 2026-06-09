@@ -37,7 +37,7 @@
 #include "core.h"
 #include "port.h"
 
-#include <linux/export.h>
+#include <beep/export.h>
 #include <net/sock.h>
 
 #define SS_LISTENING	-1	/* socket is listening */

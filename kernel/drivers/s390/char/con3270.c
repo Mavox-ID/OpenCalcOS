@@ -7,14 +7,14 @@
  *     Copyright IBM Corp. 2003, 2009
  */
 
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/reboot.h>
+#include <beep/console.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/reboot.h>
 
 #include <asm/ccwdev.h>
 #include <asm/cio.h>

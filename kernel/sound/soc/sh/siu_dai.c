@@ -19,11 +19,11 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/delay.h>
+#include <beep/firmware.h>
+#include <beep/pm_runtime.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 #include <asm/clock.h>
 #include <asm/siu.h>

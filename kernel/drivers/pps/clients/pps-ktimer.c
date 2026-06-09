@@ -2,7 +2,7 @@
  * pps-ktimer.c -- kernel timer test client
  *
  *
- * Copyright (C) 2005-2006   Rodolfo Giometti <giometti@linux.it>
+ * Copyright (C) 2005-2006   Rodolfo Giometti <giometti@beep.it>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -21,12 +21,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/timer.h>
-#include <linux/pps_kernel.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/time.h>
+#include <beep/timer.h>
+#include <beep/pps_kernel.h>
 
 /*
  * Global variables
@@ -96,6 +96,6 @@ static int __init pps_ktimer_init(void)
 module_init(pps_ktimer_init);
 module_exit(pps_ktimer_exit);
 
-MODULE_AUTHOR("Rodolfo Giometti <giometti@linux.it>");
+MODULE_AUTHOR("Rodolfo Giometti <giometti@beep.it>");
 MODULE_DESCRIPTION("dummy PPS source by using a kernel timer (just for debug)");
 MODULE_LICENSE("GPL");

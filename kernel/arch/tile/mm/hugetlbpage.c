@@ -16,15 +16,15 @@
  * Copyright (C) 2002, Rohit Seth <rohit.seth@intel.com>
  */
 
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/sysctl.h>
-#include <linux/mman.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/hugetlb.h>
+#include <beep/pagemap.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/sysctl.h>
+#include <beep/mman.h>
 #include <asm/tlb.h>
 #include <asm/tlbflush.h>
 #include <asm/setup.h>
@@ -388,7 +388,7 @@ __setup("hugepagesz=", setup_hugepagesz);
  * Provide an additional huge page size if no "hugepagesz" args are given.
  * In that case, all the cores have properly set up their hv super_shift
  * already, but we need to notify the hugetlb code to enable the
- * new huge page size from the Linux point of view.
+ * new huge page size from the Beep point of view.
  */
 static __init int add_default_hugepagesz(void)
 {

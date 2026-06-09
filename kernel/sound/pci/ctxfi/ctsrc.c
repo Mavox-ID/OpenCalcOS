@@ -18,7 +18,7 @@
 
 #include "ctsrc.h"
 #include "cthardware.h"
-#include <linux/slab.h>
+#include <beep/slab.h>
 
 #define SRC_RESOURCE_NUM	256
 #define SRCIMP_RESOURCE_NUM	256

@@ -6,11 +6,11 @@
  * Sun3/3x models added by David Monro (davidm@psrg.cs.usyd.edu.au)
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/string.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/string.h>
 
 #include <asm/oplib.h>
 #include <asm/idprom.h>

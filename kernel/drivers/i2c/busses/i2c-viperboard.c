@@ -12,18 +12,18 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/mutex.h>
+#include <beep/platform_device.h>
 
-#include <linux/usb.h>
-#include <linux/i2c.h>
+#include <beep/usb.h>
+#include <beep/i2c.h>
 
-#include <linux/mfd/viperboard.h>
+#include <beep/mfd/viperboard.h>
 
 struct vprbrd_i2c {
 	struct i2c_adapter i2c;

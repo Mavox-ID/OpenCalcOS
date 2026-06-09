@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m32r/kernel/smp.c
+ *  beep/arch/m32r/kernel/smp.c
  *
  *  M32R SMP support routines.
  *
@@ -15,18 +15,18 @@
 
 #undef DEBUG_SMP
 
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/profile.h>
-#include <linux/cpu.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/profile.h>
+#include <beep/cpu.h>
 
 #include <asm/cacheflush.h>
 #include <asm/pgalloc.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/io.h>
 #include <asm/mmu_context.h>
 #include <asm/m32r.h>

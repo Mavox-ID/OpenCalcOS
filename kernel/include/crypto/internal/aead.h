@@ -15,7 +15,7 @@
 
 #include <crypto/aead.h>
 #include <crypto/algapi.h>
-#include <linux/types.h>
+#include <beep/types.h>
 
 struct rtattr;
 

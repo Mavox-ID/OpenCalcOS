@@ -3,7 +3,7 @@
  * ISAC specific routines
  *
  * Author       Karsten Keil
- * Copyright    by Karsten Keil      <keil@isdn4linux.de>
+ * Copyright    by Karsten Keil      <keil@isdn4beep.de>
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
@@ -17,9 +17,9 @@
 #include "isac.h"
 #include "arcofi.h"
 #include "isdnl1.h"
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/init.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/init.h>
 
 #define DBUSY_TIMER_VALUE 80
 #define ARCOFI_USE 1

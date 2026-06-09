@@ -32,8 +32,8 @@
 #ifndef _ASM_X86_RWSEM_H
 #define _ASM_X86_RWSEM_H
 
-#ifndef _LINUX_RWSEM_H
-#error "please don't include asm/rwsem.h directly, use linux/rwsem.h instead"
+#ifndef _BEEP_RWSEM_H
+#error "please don't include asm/rwsem.h directly, use beep/rwsem.h instead"
 #endif
 
 #ifdef __KERNEL__

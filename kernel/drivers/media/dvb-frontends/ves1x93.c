@@ -4,7 +4,7 @@
     Copyright (C) 1999 Convergence Integrated Media GmbH <ralph@convergence.de>
     Copyright (C) 2001 Ronny Strutz <3des@elitedvb.de>
     Copyright (C) 2002 Dennis Noermann <dennis.noermann@noernet.de>
-    Copyright (C) 2002-2003 Andreas Oberritter <obi@linuxtv.org>
+    Copyright (C) 2002-2003 Andreas Oberritter <obi@beeptv.org>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -23,12 +23,12 @@
 
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
 
 #include "dvb_frontend.h"
 #include "ves1x93.h"

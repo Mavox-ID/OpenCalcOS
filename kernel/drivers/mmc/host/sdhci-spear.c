@@ -4,7 +4,7 @@
  * Support of SDHCI platform devices for spear soc family
  *
  * Copyright (C) 2010 ST Microelectronics
- * Viresh Kumar <viresh.linux@gmail.com>
+ * Viresh Kumar <viresh.beep@gmail.com>
  *
  * Inspired by sdhci-pltfm.c
  *
@@ -13,21 +13,21 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/sdhci-spear.h>
-#include <linux/io.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/highmem.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/of.h>
+#include <beep/of_gpio.h>
+#include <beep/platform_device.h>
+#include <beep/pm.h>
+#include <beep/slab.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/sdhci-spear.h>
+#include <beep/io.h>
 #include "sdhci.h"
 
 struct spear_sdhci {
@@ -345,5 +345,5 @@ static struct platform_driver sdhci_driver = {
 module_platform_driver(sdhci_driver);
 
 MODULE_DESCRIPTION("SPEAr Secure Digital Host Controller Interface driver");
-MODULE_AUTHOR("Viresh Kumar <viresh.linux@gmail.com>");
+MODULE_AUTHOR("Viresh Kumar <viresh.beep@gmail.com>");
 MODULE_LICENSE("GPL v2");

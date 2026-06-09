@@ -1,11 +1,11 @@
 #ifndef SCM_BLK_H
 #define SCM_BLK_H
 
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/blkdev.h>
-#include <linux/genhd.h>
-#include <linux/list.h>
+#include <beep/interrupt.h>
+#include <beep/spinlock.h>
+#include <beep/blkdev.h>
+#include <beep/genhd.h>
+#include <beep/list.h>
 
 #include <asm/debug.h>
 #include <asm/eadm.h>

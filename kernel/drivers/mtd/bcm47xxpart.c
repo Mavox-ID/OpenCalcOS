@@ -9,11 +9,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
 #include <asm/mach-bcm47xx/nvram.h>
 
 /* 10 parts were found on sflash on Netgear WNDR4500 */
@@ -141,7 +141,7 @@ static int bcm47xxpart_parse(struct mtd_info *master,
 				i++;
 			}
 
-			bcm47xxpart_add_part(&parts[curr_part++], "linux",
+			bcm47xxpart_add_part(&parts[curr_part++], "beep",
 					     offset + trx->offset[i], 0);
 			i++;
 

@@ -27,7 +27,7 @@
  * http://oss.sgi.com/projects/GenInfo/NoticeExplan
  */
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 #include <asm/sn/pda.h>
 #include <asm/sn/leds.h>
 

@@ -22,18 +22,18 @@
  * - completely modularize elevator setup and teardown
  *
  */
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/blkdev.h>
-#include <linux/elevator.h>
-#include <linux/bio.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/compiler.h>
-#include <linux/blktrace_api.h>
-#include <linux/hash.h>
-#include <linux/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/blkdev.h>
+#include <beep/elevator.h>
+#include <beep/bio.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/compiler.h>
+#include <beep/blktrace_api.h>
+#include <beep/hash.h>
+#include <beep/uaccess.h>
 
 #include <trace/events/block.h>
 

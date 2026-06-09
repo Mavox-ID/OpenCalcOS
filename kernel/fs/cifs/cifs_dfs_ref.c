@@ -12,12 +12,12 @@
  *   2 of the License, or (at your option) any later version.
  */
 
-#include <linux/dcache.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
-#include <linux/vfs.h>
-#include <linux/fs.h>
+#include <beep/dcache.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
+#include <beep/slab.h>
+#include <beep/vfs.h>
+#include <beep/fs.h>
 #include "cifsglob.h"
 #include "cifsproto.h"
 #include "cifsfs.h"

@@ -11,14 +11,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/bcd.h>
-#include <linux/i2c.h>
-#include <linux/mfd/max8907.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
+#include <beep/bcd.h>
+#include <beep/i2c.h>
+#include <beep/mfd/max8907.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/regmap.h>
+#include <beep/rtc.h>
+#include <beep/slab.h>
 
 enum {
 	RTC_SEC = 0,

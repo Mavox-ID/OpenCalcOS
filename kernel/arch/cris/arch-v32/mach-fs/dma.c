@@ -1,14 +1,14 @@
 /* Wrapper for DMA channel allocator that starts clocks etc */
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
 #include <asm/dma.h>
 #include <hwregs/reg_map.h>
 #include <hwregs/reg_rdwr.h>
 #include <hwregs/marb_defs.h>
 #include <hwregs/config_defs.h>
 #include <hwregs/strmux_defs.h>
-#include <linux/errno.h>
+#include <beep/errno.h>
 #include <mach/arbiter.h>
 
 static char used_dma_channels[MAX_DMA_CHANNELS];

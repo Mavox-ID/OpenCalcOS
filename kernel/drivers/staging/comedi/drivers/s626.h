@@ -2,10 +2,10 @@
   comedi/drivers/s626.h
   Sensoray s626 Comedi driver, header file
 
-  COMEDI - Linux Control and Measurement Device Interface
+  COMEDI - Beep Control and Measurement Device Interface
   Copyright (C) 2000 David A. Schleef <ds@schleef.org>
 
-  Based on Sensoray Model 626 Linux driver Version 0.2
+  Based on Sensoray Model 626 Beep driver Version 0.2
   Copyright (C) 2002-2004 Sensoray Co., Inc.
 
   This program is free software; you can redistribute it and/or modify
@@ -70,7 +70,7 @@
 #define FALSE   (0)
 #endif
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 
 #define S626_SIZE 0x0200
 #define DMABUF_SIZE			4096	/*  4k pages */

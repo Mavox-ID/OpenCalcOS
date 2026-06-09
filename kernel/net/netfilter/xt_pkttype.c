@@ -5,16 +5,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/if_ether.h>
-#include <linux/if_packet.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/if_ether.h>
+#include <beep/if_packet.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/ipv6.h>
 
-#include <linux/netfilter/xt_pkttype.h>
-#include <linux/netfilter/x_tables.h>
+#include <beep/netfilter/xt_pkttype.h>
+#include <beep/netfilter/x_tables.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Michal Ludvig <michal@logix.cz>");

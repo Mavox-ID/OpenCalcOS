@@ -11,12 +11,12 @@
  * See Documentation/security/keys-request-key.txt
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kmod.h>
-#include <linux/err.h>
-#include <linux/keyctl.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/kmod.h>
+#include <beep/err.h>
+#include <beep/keyctl.h>
+#include <beep/slab.h>
 #include "internal.h"
 
 #define key_negative_timeout	60	/* default timeout on a negative key's existence */

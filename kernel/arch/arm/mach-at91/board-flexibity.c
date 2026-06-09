@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-at91/board-flexibity.c
+ * beep/arch/arm/mach-at91/board-flexibity.c
  *
  *  Copyright (C) 2010-2011 Flexibity
  *  Copyright (C) 2005 SAN People
@@ -20,11 +20,11 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/input.h>
-#include <linux/gpio.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/spi/spi.h>
+#include <beep/input.h>
+#include <beep/gpio.h>
 
 #include <asm/mach-types.h>
 

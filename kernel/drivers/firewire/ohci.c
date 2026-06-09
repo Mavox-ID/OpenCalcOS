@@ -18,31 +18,31 @@
  * Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/compiler.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/time.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
+#include <beep/bitops.h>
+#include <beep/bug.h>
+#include <beep/compiler.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/firewire.h>
+#include <beep/firewire-constants.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/mutex.h>
+#include <beep/pci.h>
+#include <beep/pci_ids.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/time.h>
+#include <beep/vmalloc.h>
+#include <beep/workqueue.h>
 
 #include <asm/byteorder.h>
 #include <asm/page.h>
@@ -1948,7 +1948,7 @@ static void bus_reset_work(struct work_struct *work)
 	 * the DMA buffer will be overwritten with new self IDs and we
 	 * will read out inconsistent data.  The OHCI specification
 	 * (section 11.2) recommends a technique similar to
-	 * linux/seqlock.h, where we remember the generation of the
+	 * beep/seqlock.h, where we remember the generation of the
 	 * self IDs in the buffer before reading them out and compare
 	 * it to the current generation after reading them out.  If
 	 * the two generations match we know we have a consistent set

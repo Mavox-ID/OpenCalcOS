@@ -26,12 +26,12 @@
  * any later version.
  */
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/input/mt.h>
+#include <beep/device.h>
+#include <beep/hid.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
+#include <beep/input/mt.h>
 #include "usbhid/usbhid.h"
 
 

@@ -7,7 +7,7 @@
  * and the adl_pci7432 driver written by:
  *	Michel Lachaine <mike@mikelachaine.ca>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - Beep Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  *
  * This program is free software; you can redistribute it and/or modify

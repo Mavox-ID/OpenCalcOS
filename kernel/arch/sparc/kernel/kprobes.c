@@ -3,11 +3,11 @@
  * Copyright (C) 2004 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
-#include <linux/module.h>
-#include <linux/kdebug.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/kprobes.h>
+#include <beep/module.h>
+#include <beep/kdebug.h>
+#include <beep/slab.h>
 #include <asm/signal.h>
 #include <asm/cacheflush.h>
 #include <asm/uaccess.h>

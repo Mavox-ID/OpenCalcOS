@@ -20,7 +20,7 @@
 #define NOFORK_SUPPORT ((NUM_APPLETS > 1) && (ENABLE_FEATURE_PREFER_APPLETS || ENABLE_FEATURE_SH_NOFORK))
 #define NOEXEC_SUPPORT ((NUM_APPLETS > 1) && (ENABLE_FEATURE_PREFER_APPLETS || ENABLE_FEATURE_SH_STANDALONE))
 
-#if defined(__linux__) && (NUM_APPLETS > 1)
+#if defined(__beep__) && (NUM_APPLETS > 1)
 # include <sys/prctl.h>
 # ifndef PR_SET_NAME
 # define PR_SET_NAME 15
@@ -315,7 +315,7 @@ void FAST_FUNC bb_daemonize_or_rexec(int flags, char **argv)
 		dup2(fd, 1);
 		dup2(fd, 2);
 //		if (flags & DAEMON_DOUBLE_FORK) {
-//			/* On Linux, session leader can acquire ctty
+//			/* On Beep, session leader can acquire ctty
 //			 * unknowingly, by opening a tty.
 //			 * Prevent this: stop being a session leader.
 //			 */

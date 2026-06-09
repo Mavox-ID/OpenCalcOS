@@ -20,14 +20,14 @@
  */
 #define pr_fmt(fmt) "hw perfevents: " fmt
 
-#include <linux/bitmap.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
+#include <beep/bitmap.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/perf_event.h>
+#include <beep/platform_device.h>
+#include <beep/spinlock.h>
+#include <beep/uaccess.h>
 
 #include <asm/cputype.h>
 #include <asm/irq.h>

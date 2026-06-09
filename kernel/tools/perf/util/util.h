@@ -70,7 +70,7 @@
 #include <sys/socket.h>
 #include <sys/ioctl.h>
 #include <inttypes.h>
-#include <linux/magic.h>
+#include <beep/magic.h>
 #include "types.h"
 #include <sys/ttydefaults.h>
 
@@ -128,7 +128,7 @@ extern void die(const char *err, ...) NORETURN __attribute__((format (printf, 1,
 extern int error(const char *err, ...) __attribute__((format (printf, 1, 2)));
 extern void warning(const char *err, ...) __attribute__((format (printf, 1, 2)));
 
-#include "../../../include/linux/stringify.h"
+#include "../../../include/beep/stringify.h"
 
 #define DIE_IF(cnd)	\
 	do { if (cnd)	\

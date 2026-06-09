@@ -15,7 +15,7 @@
 * ============================================================================
 * Please look at the bitkeeper changelog (or any other scm tool that ends up
 * importing bitkeeper changelog or that replaces bitkeeper in the future as
-* main tool for linux development).
+* main tool for beep development).
 * 
 * 2001/05/09	acme		Fix MODULE_DESC for debug, .bss nitpicks,
 * 				some cleanups
@@ -42,17 +42,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/stddef.h>	/* offsetof(), etc. */
-#include <linux/errno.h>	/* return codes */
-#include <linux/string.h>	/* inline memset(), etc. */
-#include <linux/slab.h>		/* kmalloc(), kfree() */
-#include <linux/kernel.h>	/* printk(), and other useful stuff */
-#include <linux/module.h>	/* support for loadable modules */
-#include <linux/ioport.h>	/* request_region(), release_region() */
-#include <linux/wanrouter.h>	/* WAN router definitions */
-#include <linux/cyclomx.h>	/* cyclomx common user API definitions */
-#include <linux/init.h>         /* __init (when not using as a module) */
-#include <linux/interrupt.h>
+#include <beep/stddef.h>	/* offsetof(), etc. */
+#include <beep/errno.h>	/* return codes */
+#include <beep/string.h>	/* inline memset(), etc. */
+#include <beep/slab.h>		/* kmalloc(), kfree() */
+#include <beep/kernel.h>	/* printk(), and other useful stuff */
+#include <beep/module.h>	/* support for loadable modules */
+#include <beep/ioport.h>	/* request_region(), release_region() */
+#include <beep/wanrouter.h>	/* WAN router definitions */
+#include <beep/cyclomx.h>	/* cyclomx common user API definitions */
+#include <beep/init.h>         /* __init (when not using as a module) */
+#include <beep/interrupt.h>
 
 unsigned int cycx_debug;
 

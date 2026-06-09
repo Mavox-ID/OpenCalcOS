@@ -1,6 +1,6 @@
 /*******************************************************************************
 
-  Intel(R) Gigabit Ethernet Linux driver
+  Intel(R) Gigabit Ethernet Beep driver
   Copyright(c) 2007-2012 Intel Corporation.
 
   This program is free software; you can redistribute it and/or modify it
@@ -27,35 +27,35 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/netdevice.h>
-#include <linux/ipv6.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
+#include <beep/vmalloc.h>
+#include <beep/pagemap.h>
+#include <beep/netdevice.h>
+#include <beep/ipv6.h>
+#include <beep/slab.h>
 #include <net/checksum.h>
 #include <net/ip6_checksum.h>
-#include <linux/net_tstamp.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
-#include <linux/pci.h>
-#include <linux/pci-aspm.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/sctp.h>
-#include <linux/if_ether.h>
-#include <linux/aer.h>
-#include <linux/prefetch.h>
-#include <linux/pm_runtime.h>
+#include <beep/net_tstamp.h>
+#include <beep/mii.h>
+#include <beep/ethtool.h>
+#include <beep/if.h>
+#include <beep/if_vlan.h>
+#include <beep/pci.h>
+#include <beep/pci-aspm.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/sctp.h>
+#include <beep/if_ether.h>
+#include <beep/aer.h>
+#include <beep/prefetch.h>
+#include <beep/pm_runtime.h>
 #ifdef CONFIG_IGB_DCA
-#include <linux/dca.h>
+#include <beep/dca.h>
 #endif
 #include "igb.h"
 

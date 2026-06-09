@@ -2,7 +2,7 @@
 #define _ASM_X86_E820_H
 
 #ifdef CONFIG_EFI
-#include <linux/numa.h>
+#include <beep/numa.h>
 #define E820_X_MAX (E820MAX + 3 * MAX_NUMNODES)
 #else	/* ! CONFIG_EFI */
 #define E820_X_MAX E820MAX
@@ -71,7 +71,7 @@ static inline bool is_ISA_range(u64 s, u64 e)
 }
 
 #endif /* __ASSEMBLY__ */
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 
 #define HIGH_MEMORY	(1024*1024)
 #endif /* _ASM_X86_E820_H */

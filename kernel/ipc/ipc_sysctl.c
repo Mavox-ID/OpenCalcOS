@@ -9,13 +9,13 @@
  *  License.
  */
 
-#include <linux/module.h>
-#include <linux/ipc.h>
-#include <linux/nsproxy.h>
-#include <linux/sysctl.h>
-#include <linux/uaccess.h>
-#include <linux/ipc_namespace.h>
-#include <linux/msg.h>
+#include <beep/module.h>
+#include <beep/ipc.h>
+#include <beep/nsproxy.h>
+#include <beep/sysctl.h>
+#include <beep/uaccess.h>
+#include <beep/ipc_namespace.h>
+#include <beep/msg.h>
 #include "util.h"
 
 static void *get_ipc(ctl_table *table)

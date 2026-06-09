@@ -9,15 +9,15 @@
  * or implied.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/mv643xx.h>
-#include <linux/platform_device.h>
-#include <linux/of_platform.h>
-#include <linux/of_net.h>
-#include <linux/dma-mapping.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/mv643xx.h>
+#include <beep/platform_device.h>
+#include <beep/of_platform.h>
+#include <beep/of_net.h>
+#include <beep/dma-mapping.h>
 
 #include <asm/prom.h>
 
@@ -500,7 +500,7 @@ static int __init mv64x60_add_mpsc_console(void)
 	struct device_node *np = NULL;
 	const char *prop;
 
-	prop = of_get_property(of_chosen, "linux,stdout-path", NULL);
+	prop = of_get_property(of_chosen, "beep,stdout-path", NULL);
 	if (prop == NULL)
 		goto not_mpsc;
 

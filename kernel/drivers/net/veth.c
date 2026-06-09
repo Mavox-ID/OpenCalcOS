@@ -8,16 +8,16 @@
  *
  */
 
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/ethtool.h>
-#include <linux/etherdevice.h>
-#include <linux/u64_stats_sync.h>
+#include <beep/netdevice.h>
+#include <beep/slab.h>
+#include <beep/ethtool.h>
+#include <beep/etherdevice.h>
+#include <beep/u64_stats_sync.h>
 
 #include <net/dst.h>
 #include <net/xfrm.h>
-#include <linux/veth.h>
-#include <linux/module.h>
+#include <beep/veth.h>
+#include <beep/module.h>
 
 #define DRV_NAME	"veth"
 #define DRV_VERSION	"1.0"

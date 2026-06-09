@@ -1,5 +1,5 @@
-GXX := "$(shell (which arm-elf-g++ arm-none-eabi-g++ arm-linux-gnueabi-g++ | head -1) 2>/dev/null)"
-OBJCOPY := "$(shell (which arm-elf-objcopy arm-none-eabi-objcopy arm-linux-gnueabi-objcopy | head -1) 2>/dev/null)"
+GXX := "$(shell (which arm-elf-g++ arm-none-eabi-g++ arm-beep-gnueabi-g++ | head -1) 2>/dev/null)"
+OBJCOPY := "$(shell (which arm-elf-objcopy arm-none-eabi-objcopy arm-beep-gnueabi-objcopy | head -1) 2>/dev/null)"
 CHOST := $(shell (echo $(shell basename $(GXX)) | sed 's/-g++$$//'))
 
 GXXFLAGS := -g -Os -Wall -Wextra -march=armv5te -fPIE -std=c++11 -fno-rtti -fno-exceptions -Wl,-Tldscript -Wl,--gc-sections -nostdlib -nostartfiles -ffreestanding -I zlib/ -I ../../include

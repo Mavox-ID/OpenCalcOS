@@ -11,44 +11,44 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
 
-#include <linux/stringify.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/dma-mapping.h>
-#include <linux/bitops.h>
+#include <beep/stringify.h>
+#include <beep/kernel.h>
+#include <beep/timer.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/dma-mapping.h>
+#include <beep/bitops.h>
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/delay.h>
+#include <beep/delay.h>
 #include <asm/byteorder.h>
 #include <asm/page.h>
-#include <linux/time.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
+#include <beep/time.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/if.h>
+#include <beep/if_vlan.h>
 #include <net/ip.h>
 #include <net/tcp.h>
 #include <net/checksum.h>
-#include <linux/workqueue.h>
-#include <linux/crc32.h>
-#include <linux/prefetch.h>
-#include <linux/cache.h>
-#include <linux/firmware.h>
-#include <linux/log2.h>
-#include <linux/aer.h>
+#include <beep/workqueue.h>
+#include <beep/crc32.h>
+#include <beep/prefetch.h>
+#include <beep/cache.h>
+#include <beep/firmware.h>
+#include <beep/log2.h>
+#include <beep/aer.h>
 
 #if defined(CONFIG_CNIC) || defined(CONFIG_CNIC_MODULE)
 #define BCM_CNIC 1

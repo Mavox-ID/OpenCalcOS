@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ufs/super.c
+ *  beep/fs/ufs/super.c
  *
  * Copyright (C) 1998
  * Daniel Pirkl <daniel.pirkl@email.cz>
@@ -8,7 +8,7 @@
 
 /* Derived from
  *
- *  linux/fs/ext2/super.c
+ *  beep/fs/ext2/super.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -17,7 +17,7 @@
  *
  *  from
  *
- *  linux/fs/minix/inode.c
+ *  beep/fs/minix/inode.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -28,7 +28,7 @@
 /*
  * Inspired by
  *
- *  linux/fs/ufs/super.c
+ *  beep/fs/ufs/super.c
  *
  * Copyright (C) 1996
  * Adrian Rodriguez (adrian@franklins-tower.rutgers.edu)
@@ -66,28 +66,28 @@
  */
 
 
-#include <linux/exportfs.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
+#include <beep/exportfs.h>
+#include <beep/module.h>
+#include <beep/bitops.h>
 
 #include <stdarg.h>
 
 #include <asm/uaccess.h>
 
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/blkdev.h>
-#include <linux/init.h>
-#include <linux/parser.h>
-#include <linux/buffer_head.h>
-#include <linux/vfs.h>
-#include <linux/log2.h>
-#include <linux/mount.h>
-#include <linux/seq_file.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/time.h>
+#include <beep/stat.h>
+#include <beep/string.h>
+#include <beep/blkdev.h>
+#include <beep/init.h>
+#include <beep/parser.h>
+#include <beep/buffer_head.h>
+#include <beep/vfs.h>
+#include <beep/log2.h>
+#include <beep/mount.h>
+#include <beep/seq_file.h>
 
 #include "ufs_fs.h"
 #include "ufs.h"

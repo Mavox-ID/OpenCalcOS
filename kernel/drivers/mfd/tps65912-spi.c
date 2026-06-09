@@ -13,14 +13,14 @@
  *  This driver is based on wm8350 implementation.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/gpio.h>
-#include <linux/spi/spi.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/tps65912.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/gpio.h>
+#include <beep/spi/spi.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/tps65912.h>
 
 static int tps65912_spi_write(struct tps65912 *tps65912, u8 addr,
 							int bytes, void *src)

@@ -8,12 +8,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
+#include <beep/clk.h>
+#include <beep/debugfs.h>
+#include <beep/export.h>
+#include <beep/fs.h>
+#include <beep/platform_device.h>
+#include <beep/irq.h>
 
 #include <asm/gpio.h>
 #include <asm/io.h>
@@ -327,7 +327,7 @@ gpio_irq_setup(struct pio_device *pio, int irq, int gpio_irq)
 
 #ifdef CONFIG_DEBUG_FS
 
-#include <linux/seq_file.h>
+#include <beep/seq_file.h>
 
 /*
  * This shows more info than the generic gpio dump code:

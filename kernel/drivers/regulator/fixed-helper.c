@@ -1,8 +1,8 @@
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/fixed.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/fixed.h>
 
 struct fixed_regulator_data {
 	struct fixed_voltage_config cfg;

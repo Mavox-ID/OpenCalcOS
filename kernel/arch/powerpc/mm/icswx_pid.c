@@ -10,14 +10,14 @@
  *
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/idr.h>
-#include <linux/module.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/spinlock.h>
+#include <beep/idr.h>
+#include <beep/module.h>
 #include "icswx.h"
 
 #define COP_PID_MIN (COP_PID_NONE + 1)

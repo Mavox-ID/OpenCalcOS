@@ -11,12 +11,12 @@
  * as published by the Free Software Foundation; either version
  * 2 of the License, or (at your option) any later version.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/export.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/ptrace.h>
+#include <beep/smp.h>
+#include <beep/stddef.h>
+#include <beep/export.h>
 
 #include <asm/bugs.h>
 #include <asm/cpu.h>
@@ -604,7 +604,7 @@ static inline void cpu_probe_legacy(struct cpuinfo_mips *c, unsigned int cpu)
 	case PRID_IMP_R4650:
 		/*
 		 * This processor doesn't have an MMU, so it's not
-		 * "real easy" to run Linux on it. It is left purely
+		 * "real easy" to run Beep on it. It is left purely
 		 * for documentation.  Commented out because it shares
 		 * it's c0_prid id number with the TX3900.
 		 */

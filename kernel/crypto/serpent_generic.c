@@ -16,12 +16,12 @@
  * (at your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/errno.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/errno.h>
 #include <asm/byteorder.h>
-#include <linux/crypto.h>
-#include <linux/types.h>
+#include <beep/crypto.h>
+#include <beep/types.h>
 #include <crypto/serpent.h>
 
 /* Key is padded to the maximum of 256 bits before round key generation.

@@ -10,8 +10,8 @@
 #ifndef __ASM_ARM_CPU_H
 #define __ASM_ARM_CPU_H
 
-#include <linux/percpu.h>
-#include <linux/cpu.h>
+#include <beep/percpu.h>
+#include <beep/cpu.h>
 
 struct cpuinfo_arm {
 	struct cpu	cpu;

@@ -4,7 +4,7 @@
  *  Name: crystalhd_misc . c
  *
  *  Description:
- *		BCM70012 Linux driver misc routines.
+ *		BCM70012 Beep driver misc routines.
  *
  *  HISTORY:
  *
@@ -26,7 +26,7 @@
 
 #include "crystalhd.h"
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 
 uint32_t g_linklog_level;
 
@@ -373,7 +373,7 @@ enum BC_STATUS crystalhd_pci_cfg_wr(struct crystalhd_adp *adp, uint32_t off,
  * Return:
  *  Pointer to allocated memory..
  *
- * Wrapper to Linux kernel interface.
+ * Wrapper to Beep kernel interface.
  *
  */
 void *bc_kern_dma_alloc(struct crystalhd_adp *adp, uint32_t sz,

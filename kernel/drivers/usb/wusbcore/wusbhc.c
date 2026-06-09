@@ -29,8 +29,8 @@
  * the HC specific stuff has to be already initialized (like sysfs
  * thingies).
  */
-#include <linux/device.h>
-#include <linux/module.h>
+#include <beep/device.h>
+#include <beep/module.h>
 #include "wusbhc.h"
 
 /**

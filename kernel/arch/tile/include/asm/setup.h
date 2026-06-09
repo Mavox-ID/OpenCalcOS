@@ -15,8 +15,8 @@
 #define _ASM_TILE_SETUP_H
 
 
-#include <linux/pfn.h>
-#include <linux/init.h>
+#include <beep/pfn.h>
+#include <beep/init.h>
 #include <uapi/asm/setup.h>
 
 /*

@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2006-2008 Intel Corporation
- * Copyright (c) 2007 Dave Airlie <airlied@linux.ie>
+ * Copyright (c) 2007 Dave Airlie <airlied@beep.ie>
  * Copyright (c) 2008 Red Hat Inc.
  *
  * DRM core CRTC related functions
@@ -26,12 +26,12 @@
  * Authors:
  *      Keith Packard
  *	Eric Anholt <eric@anholt.net>
- *      Dave Airlie <airlied@linux.ie>
+ *      Dave Airlie <airlied@beep.ie>
  *      Jesse Barnes <jesse.barnes@intel.com>
  */
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 #include <drm/drmP.h>
 #include <drm/drm_crtc.h>
 #include <drm/drm_edid.h>

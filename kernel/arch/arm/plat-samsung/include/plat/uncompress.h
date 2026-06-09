@@ -1,7 +1,7 @@
 /* arch/arm/plat-samsung/include/plat/uncompress.h
  *
  * Copyright 2003, 2007 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C - uncompress code
@@ -14,7 +14,7 @@
 #ifndef __ASM_PLAT_UNCOMPRESS_H
 #define __ASM_PLAT_UNCOMPRESS_H
 
-typedef unsigned int upf_t;	/* cannot include linux/serial_core.h */
+typedef unsigned int upf_t;	/* cannot include beep/serial_core.h */
 
 /* uart setup */
 
@@ -169,7 +169,7 @@ arch_decomp_setup(void)
 {
 	/* we may need to setup the uart(s) here if we are not running
 	 * on an BAST... the BAST will have left the uarts configured
-	 * after calling linux.
+	 * after calling beep.
 	 */
 
 	arch_detect_cpu();

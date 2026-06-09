@@ -22,24 +22,24 @@
 #ifndef __UBI_UBI_H__
 #define __UBI_UBI_H__
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/rbtree.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/spinlock.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/vmalloc.h>
-#include <linux/notifier.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/ubi.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/list.h>
+#include <beep/rbtree.h>
+#include <beep/sched.h>
+#include <beep/wait.h>
+#include <beep/mutex.h>
+#include <beep/rwsem.h>
+#include <beep/spinlock.h>
+#include <beep/fs.h>
+#include <beep/cdev.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/vmalloc.h>
+#include <beep/notifier.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/ubi.h>
 #include <asm/pgtable.h>
 
 #include "ubi-media.h"
@@ -253,7 +253,7 @@ struct ubi_fm_pool {
 
 /**
  * struct ubi_volume - UBI volume description data structure.
- * @dev: device object to make use of the the Linux device model
+ * @dev: device object to make use of the the Beep device model
  * @cdev: character device object to create character device
  * @ubi: reference to the UBI device description object
  * @vol_id: volume ID
@@ -381,7 +381,7 @@ struct ubi_debug_info {
 
 /**
  * struct ubi_device - UBI device description structure
- * @dev: UBI device object to use the the Linux device model
+ * @dev: UBI device object to use the the Beep device model
  * @cdev: character device object to create character device
  * @ubi_num: UBI device number
  * @ubi_name: UBI device name

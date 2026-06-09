@@ -4,8 +4,8 @@
  * Copyright (C) 199x  the Anonymous
  * Copyright (C) 2001, 2002, 2003  Maciej W. Rozycki
  */
-#include <linux/interrupt.h>
-#include <linux/linkage.h>
+#include <beep/interrupt.h>
+#include <beep/linkage.h>
 
 #include <asm/addrspace.h>
 

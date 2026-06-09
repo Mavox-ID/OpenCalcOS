@@ -1,12 +1,12 @@
 /*
  * Zalon 53c7xx device driver.
- * By Richard Hirst (rhirst@linuxcare.com)
+ * By Richard Hirst (rhirst@beepcare.com)
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/types.h>
 #include <asm/hardware.h>
 #include <asm/io.h>
 

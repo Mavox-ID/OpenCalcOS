@@ -8,7 +8,7 @@
 #ifndef _ASM_MIPS_JUMP_LABEL_H
 #define _ASM_MIPS_JUMP_LABEL_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #ifdef __KERNEL__
 

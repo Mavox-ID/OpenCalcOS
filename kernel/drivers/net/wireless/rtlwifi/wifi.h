@@ -32,13 +32,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/sched.h>
-#include <linux/firmware.h>
-#include <linux/etherdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/usb.h>
+#include <beep/sched.h>
+#include <beep/firmware.h>
+#include <beep/etherdevice.h>
+#include <beep/vmalloc.h>
+#include <beep/usb.h>
 #include <net/mac80211.h>
-#include <linux/completion.h>
+#include <beep/completion.h>
 #include "debug.h"
 
 #define RF_CHANGE_BY_INIT			0

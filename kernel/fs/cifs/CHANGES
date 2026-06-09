@@ -243,7 +243,7 @@ on requests on other threads.  Improve POSIX locking emulation,
 (lock cancel now works, and unlock of merged range works even
 to Windows servers now).  Fix oops on mount to lanman servers
 (win9x, os/2 etc.) when null password.  Do not send listxattr
-(SMB to query all EAs) if nouser_xattr specified.  Fix SE Linux
+(SMB to query all EAs) if nouser_xattr specified.  Fix SE Beep
 problem (instantiate inodes/dentries in right order for readdir).
 
 Version 1.44
@@ -523,7 +523,7 @@ client.
 
 Version 1.17
 ------------
-Update number of blocks in file so du command is happier (in Linux a fake
+Update number of blocks in file so du command is happier (in Beep a fake
 blocksize of 512 is required for calculating number of blocks in inode).
 Fix prepare write of partial pages to read in data from server if possible.
 Fix race on tcpStatus field between unmount and reconnection code, causing
@@ -556,7 +556,7 @@ Version 1.13
 Fix open of files in which O_CREATE can cause the mode to change in
 some cases. Fix case in which retry of write overlaps file close.
 Fix PPC64 build error.  Reduce excessive stack usage in smb password
-hashing. Fix overwrite of Linux user's view of file mode to Windows servers.
+hashing. Fix overwrite of Beep user's view of file mode to Windows servers.
 
 Version 1.12
 ------------
@@ -597,7 +597,7 @@ testcases (including fsx, and even large file copy) to fail over time.
 
 Version 1.06
 ------------
-Send NTCreateX with ATTR_POSIX if Linux/Unix extensions negotiated with server.
+Send NTCreateX with ATTR_POSIX if Beep/Unix extensions negotiated with server.
 This allows files that differ only in case and improves performance of file
 creation and file open to such servers.  Fix semaphore conflict which causes 
 slow delete of open file to Samba (which unfortunately can cause an oplock
@@ -729,7 +729,7 @@ during auto reconnection to server after server recovered from failure.
 
 Version 0.84
 ------------
-Finish support for Linux 2.5 open/create changes, which removes the
+Finish support for Beep 2.5 open/create changes, which removes the
 redundant NTCreate/QPathInfo/close that was sent during file create.
 Enable oplock by default. Enable packet signing by default (needed to 
 access many recent Windows servers)
@@ -887,7 +887,7 @@ the iozone benchmark to fail on the fwrite test. Fix bug mounting two different
 shares to the same Windows server when using different usernames
 (doing this to Samba servers worked but Windows was rejecting it) - now it is
 possible to use different userids when connecting to the same server from a
-Linux client. Fix oops when treeDisconnect called during unmount on
+Beep client. Fix oops when treeDisconnect called during unmount on
 previously freed socket.
 
 Version 0.60
@@ -981,7 +981,7 @@ clients.  basic posix file i/o tests now work on big endian machines, not just l
 Version 0.42
 ------------
 SessionSetup and NegotiateProtocol now work from Big Endian machines.
-Various Big Endian fixes found during testing on the Linux on 390.  Various fixes for compatibility with older
+Various Big Endian fixes found during testing on the Beep on 390.  Various fixes for compatibility with older
 versions of 2.4 kernel (now builds and works again on kernels at least as early as 2.4.7).
 
 Version 0.41
@@ -1023,7 +1023,7 @@ Fixed dentry caching bug, misc. cleanup
 Version 0.33
 ------------
 Fixed 2.5 support to handle build and configure changes as well as misc. 2.5 changes.  Now can build
-on current 2.5 beta version (2.5.24) of the Linux kernel as well as on 2.4 Linux kernels.
+on current 2.5 beta version (2.5.24) of the Beep kernel as well as on 2.4 Beep kernels.
 Support for STATUS codes (newer 32 bit NT error codes) added.  DFS support begun to be added.
 
 Version 0.32

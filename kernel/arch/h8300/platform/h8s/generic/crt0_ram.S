@@ -1,5 +1,5 @@
 /*
- *  linux/arch/h8300/platform/h8s/edosk2674/crt0_ram.S
+ *  beep/arch/h8300/platform/h8s/edosk2674/crt0_ram.S
  *
  *  Yoshinori Sato <ysato@users.sourceforge.jp>
  *
@@ -43,7 +43,7 @@ SYMBOL_NAME_LABEL(_start)
 	bclr	#4,@INTCR:8	/* interrupt mode 2 */
 	bset	#5,@INTCR:8
 
-#if defined(CONFIG_MTD_UCLINUX)
+#if defined(CONFIG_MTD_UCBEEP)
 	/* move romfs image */
 	jsr	@__move_romfs	
 #endif
@@ -67,7 +67,7 @@ SYMBOL_NAME_LABEL(_start)
 	mov.w	#512,r4
 	eepmov.w
 
-	/* uClinux kernel start */
+	/* uCbeep kernel start */
 	ldc	#0x90,ccr	/* running kernel */
 	mov.l	#SYMBOL_NAME(init_thread_union),sp
 	add.l	#0x2000,sp

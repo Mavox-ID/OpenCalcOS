@@ -13,7 +13,7 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/suspend.h>
+#include <beep/suspend.h>
 #include <plat/pm.h>
 
 #define PFX "s5p pm: "

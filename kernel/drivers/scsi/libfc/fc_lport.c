@@ -87,17 +87,17 @@
  * (i.e. _enter_* function).
  */
 
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/timer.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 #include <asm/unaligned.h>
 
 #include <scsi/fc/fc_gs.h>
 
 #include <scsi/libfc.h>
 #include <scsi/fc_encode.h>
-#include <linux/scatterlist.h>
+#include <beep/scatterlist.h>
 
 #include "fc_libfc.h"
 

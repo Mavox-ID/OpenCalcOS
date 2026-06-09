@@ -6,8 +6,8 @@
  * Set up the interrupt priorities
  */
 
-#include <linux/module.h>
-#include <linux/irq.h>
+#include <beep/module.h>
+#include <beep/irq.h>
 #include <asm/blackfin.h>
 
 #include <asm/irq_handler.h>

@@ -11,12 +11,12 @@
  * @author Patrick Glass <patrickglass@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/gpio.h>
+#include <beep/spinlock.h>
+#include <beep/io.h>
 
 #define MSP71XX_CFG_OFFSET(gpio)	(4 * (gpio))
 #define CONF_MASK			0x0F

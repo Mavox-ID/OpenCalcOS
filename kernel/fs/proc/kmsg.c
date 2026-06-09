@@ -1,18 +1,18 @@
 /*
- *  linux/fs/proc/kmsg.c
+ *  beep/fs/proc/kmsg.c
  *
  *  Copyright (C) 1992  by Linus Torvalds
  *
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/poll.h>
-#include <linux/proc_fs.h>
-#include <linux/fs.h>
-#include <linux/syslog.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/time.h>
+#include <beep/kernel.h>
+#include <beep/poll.h>
+#include <beep/proc_fs.h>
+#include <beep/fs.h>
+#include <beep/syslog.h>
 
 #include <asm/uaccess.h>
 #include <asm/io.h>

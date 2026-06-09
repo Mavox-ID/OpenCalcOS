@@ -6,17 +6,17 @@
  * (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/crypto.h>
-#include <linux/spinlock.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/pci_ids.h>
+#include <beep/crypto.h>
+#include <beep/spinlock.h>
 #include <crypto/algapi.h>
 #include <crypto/aes.h>
 
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <beep/io.h>
+#include <beep/delay.h>
 
 #include "geode-aes.h"
 

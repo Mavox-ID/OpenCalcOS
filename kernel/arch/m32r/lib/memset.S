@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m32r/lib/memset.S
+ *  beep/arch/m32r/lib/memset.S
  *
  *  Copyright (C) 2001,2002  Hiroyuki Kondo, and Hirokazu Takata
  *  Copyright (C) 2004  Hirokazu Takata

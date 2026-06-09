@@ -11,14 +11,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/mutex.h>
-#include <linux/mfd/lp8788.h>
-#include <linux/mfd/lp8788-isink.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/leds.h>
+#include <beep/mutex.h>
+#include <beep/mfd/lp8788.h>
+#include <beep/mfd/lp8788-isink.h>
 
 #define MAX_BRIGHTNESS			LP8788_ISINK_MAX_PWM
 #define DEFAULT_LED_NAME		"keyboard-backlight"

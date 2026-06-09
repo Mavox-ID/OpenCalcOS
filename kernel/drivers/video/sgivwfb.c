@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/sgivwfb.c -- SGI DBE frame buffer device
+ *  beep/drivers/video/sgivwfb.c -- SGI DBE frame buffer device
  *
  *	Copyright (C) 1999 Silicon Graphics, Inc.
  *      Jeffrey Newquist, newquist@engr.sgi.som
@@ -9,15 +9,15 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/platform_device.h>
 
 #include <asm/io.h>
 #include <asm/mtrr.h>

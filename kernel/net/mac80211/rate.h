@@ -11,9 +11,9 @@
 #ifndef IEEE80211_RATE_H
 #define IEEE80211_RATE_H
 
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/types.h>
 #include <net/mac80211.h>
 #include "ieee80211_i.h"
 #include "sta_info.h"

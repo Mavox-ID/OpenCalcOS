@@ -21,13 +21,13 @@
  * 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/nfc.h>
-#include <linux/netdevice.h>
+#include <beep/device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
+#include <beep/nfc.h>
+#include <beep/netdevice.h>
 #include <net/nfc/nfc.h>
 
 #define VERSION "0.1"

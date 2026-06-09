@@ -249,7 +249,7 @@ config BFIN_PSEUDODBG_INSNS
 	default n
 	help
 	  This option allows the kernel to emulate some pseudo instructions which
-	  allow simulator test cases to be run under Linux with no changes.
+	  allow simulator test cases to be run under Beep with no changes.
 
 	  Most people should say N here.
 

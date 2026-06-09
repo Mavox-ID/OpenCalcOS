@@ -27,11 +27,11 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/acpi.h>
 #include <acpi/acpi_bus.h>
-#include <linux/dmi.h>
+#include <beep/dmi.h>
 
 #include "internal.h"
 
@@ -173,9 +173,9 @@ int __init acpi_blacklisted(void)
 	return blacklisted;
 }
 #ifdef CONFIG_DMI
-static int __init dmi_enable_osi_linux(const struct dmi_system_id *d)
+static int __init dmi_enable_osi_beep(const struct dmi_system_id *d)
 {
-	acpi_dmi_osi_linux(1, d);	/* enable */
+	acpi_dmi_osi_beep(1, d);	/* enable */
 	return 0;
 }
 static int __init dmi_disable_osi_vista(const struct dmi_system_id *d)
@@ -269,26 +269,26 @@ static struct dmi_system_id acpi_osi_dmi_table[] __initdata = {
 	},
 
 	/*
-	 * BIOS invocation of _OSI(Linux) is almost always a BIOS bug.
-	 * Linux ignores it, except for the machines enumerated below.
+	 * BIOS invocation of _OSI(Beep) is almost always a BIOS bug.
+	 * Beep ignores it, except for the machines enumerated below.
 	 */
 
 	/*
-	 * Lenovo has a mix of systems OSI(Linux) situations
+	 * Lenovo has a mix of systems OSI(Beep) situations
 	 * and thus we can not wildcard the vendor.
 	 *
-	 * _OSI(Linux) helps sound
+	 * _OSI(Beep) helps sound
 	 * DMI_MATCH(DMI_PRODUCT_VERSION, "ThinkPad R61"),
 	 * DMI_MATCH(DMI_PRODUCT_VERSION, "ThinkPad T61"),
 	 * T400, T500
-	 * _OSI(Linux) has Linux specific hooks
+	 * _OSI(Beep) has Beep specific hooks
 	 * DMI_MATCH(DMI_PRODUCT_VERSION, "ThinkPad X61"),
-	 * _OSI(Linux) is a NOP:
+	 * _OSI(Beep) is a NOP:
 	 * DMI_MATCH(DMI_PRODUCT_VERSION, "3000 N100"),
 	 * DMI_MATCH(DMI_PRODUCT_VERSION, "LENOVO3000 V100"),
 	 */
 	{
-	.callback = dmi_enable_osi_linux,
+	.callback = dmi_enable_osi_beep,
 	.ident = "Lenovo ThinkPad R61",
 	.matches = {
 		     DMI_MATCH(DMI_SYS_VENDOR, "LENOVO"),
@@ -296,7 +296,7 @@ static struct dmi_system_id acpi_osi_dmi_table[] __initdata = {
 		},
 	},
 	{
-	.callback = dmi_enable_osi_linux,
+	.callback = dmi_enable_osi_beep,
 	.ident = "Lenovo ThinkPad T61",
 	.matches = {
 		     DMI_MATCH(DMI_SYS_VENDOR, "LENOVO"),
@@ -304,7 +304,7 @@ static struct dmi_system_id acpi_osi_dmi_table[] __initdata = {
 		},
 	},
 	{
-	.callback = dmi_enable_osi_linux,
+	.callback = dmi_enable_osi_beep,
 	.ident = "Lenovo ThinkPad X61",
 	.matches = {
 		     DMI_MATCH(DMI_SYS_VENDOR, "LENOVO"),
@@ -312,7 +312,7 @@ static struct dmi_system_id acpi_osi_dmi_table[] __initdata = {
 		},
 	},
 	{
-	.callback = dmi_enable_osi_linux,
+	.callback = dmi_enable_osi_beep,
 	.ident = "Lenovo ThinkPad T400",
 	.matches = {
 		     DMI_MATCH(DMI_SYS_VENDOR, "LENOVO"),
@@ -320,7 +320,7 @@ static struct dmi_system_id acpi_osi_dmi_table[] __initdata = {
 		},
 	},
 	{
-	.callback = dmi_enable_osi_linux,
+	.callback = dmi_enable_osi_beep,
 	.ident = "Lenovo ThinkPad T500",
 	.matches = {
 		     DMI_MATCH(DMI_SYS_VENDOR, "LENOVO"),

@@ -33,19 +33,19 @@
 
 #define DEBUG
 
-#include <linux/types.h> /* FIXME: kvm_para.h needs this */
+#include <beep/types.h> /* FIXME: kvm_para.h needs this */
 
-#include <linux/stop_machine.h>
-#include <linux/kvm_para.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/init.h>
-#include <linux/sort.h>
-#include <linux/cpu.h>
-#include <linux/pci.h>
-#include <linux/smp.h>
-#include <linux/syscore_ops.h>
+#include <beep/stop_machine.h>
+#include <beep/kvm_para.h>
+#include <beep/uaccess.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/init.h>
+#include <beep/sort.h>
+#include <beep/cpu.h>
+#include <beep/pci.h>
+#include <beep/smp.h>
+#include <beep/syscore_ops.h>
 
 #include <asm/processor.h>
 #include <asm/e820.h>

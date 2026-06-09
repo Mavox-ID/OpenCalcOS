@@ -9,21 +9,21 @@
  * Now that /dev/vcs exists, most of this can disappear again.
  */
 
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <beep/module.h>
+#include <beep/tty.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/types.h>
 
 #include <asm/uaccess.h>
 
-#include <linux/kbd_kern.h>
-#include <linux/vt_kern.h>
-#include <linux/consolemap.h>
-#include <linux/selection.h>
-#include <linux/tiocl.h>
-#include <linux/console.h>
+#include <beep/kbd_kern.h>
+#include <beep/vt_kern.h>
+#include <beep/consolemap.h>
+#include <beep/selection.h>
+#include <beep/tiocl.h>
+#include <beep/console.h>
 
 /* Don't take this from <ctype.h>: 011-015 on the screen aren't spaces */
 #define isspace(c)	((c) == ' ')

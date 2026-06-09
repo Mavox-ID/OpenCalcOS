@@ -19,9 +19,9 @@
 #ifndef _SNMP_H
 #define _SNMP_H
 
-#include <linux/cache.h>
-#include <linux/snmp.h>
-#include <linux/smp.h>
+#include <beep/cache.h>
+#include <beep/snmp.h>
+#include <beep/smp.h>
 
 /*
  * Mibs are stored in array of unsigned long.
@@ -49,7 +49,7 @@ struct snmp_mib {
 /*
  * We use unsigned longs for most mibs but u64 for ipstats.
  */
-#include <linux/u64_stats_sync.h>
+#include <beep/u64_stats_sync.h>
 
 /* IPstats */
 #define IPSTATS_MIB_MAX	__IPSTATS_MIB_MAX
@@ -104,16 +104,16 @@ struct udp_mib {
 	unsigned long	mibs[UDP_MIB_MAX];
 };
 
-/* Linux */
-#define LINUX_MIB_MAX	__LINUX_MIB_MAX
-struct linux_mib {
-	unsigned long	mibs[LINUX_MIB_MAX];
+/* Beep */
+#define BEEP_MIB_MAX	__BEEP_MIB_MAX
+struct beep_mib {
+	unsigned long	mibs[BEEP_MIB_MAX];
 };
 
-/* Linux Xfrm */
-#define LINUX_MIB_XFRMMAX	__LINUX_MIB_XFRMMAX
-struct linux_xfrm_mib {
-	unsigned long	mibs[LINUX_MIB_XFRMMAX];
+/* Beep Xfrm */
+#define BEEP_MIB_XFRMMAX	__BEEP_MIB_XFRMMAX
+struct beep_xfrm_mib {
+	unsigned long	mibs[BEEP_MIB_XFRMMAX];
 };
 
 #define SNMP_ARRAY_SZ 1

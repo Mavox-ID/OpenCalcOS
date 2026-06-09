@@ -53,14 +53,14 @@
  * and only accepts the connection if the higher numbered node is heartbeating.
  */
 
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
-#include <linux/kref.h>
-#include <linux/net.h>
-#include <linux/export.h>
-#include <linux/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/jiffies.h>
+#include <beep/slab.h>
+#include <beep/idr.h>
+#include <beep/kref.h>
+#include <beep/net.h>
+#include <beep/export.h>
+#include <beep/uaccess.h>
 #include <net/tcp.h>
 
 

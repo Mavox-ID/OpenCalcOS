@@ -6,17 +6,17 @@
  * the Free Software Foundation; version 2 of the License.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/gpio.h>
-#include <linux/irq.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/list.h>
+#include <beep/interrupt.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
+#include <beep/gpio.h>
+#include <beep/irq.h>
 
 /* GPIO port for VBUS detecting */
 static int vbus_gpio_port = -1;		/* GPIO port number (-1:Not used) */
@@ -1602,7 +1602,7 @@ nomem:
  *
  * Return codes:
  *	0:		Success
- *	Other 0:	linux error number on failure
+ *	Other 0:	beep error number on failure
  */
 static int prepare_dma(struct pch_udc_ep *ep, struct pch_udc_request *req,
 			  gfp_t gfp)
@@ -1832,7 +1832,7 @@ static void pch_udc_free_request(struct usb_ep *usbep,
  *
  * Return codes:
  *	0:			Success
- *	linux error number:	Failure
+ *	beep error number:	Failure
  */
 static int pch_udc_pcd_queue(struct usb_ep *usbep, struct usb_request *usbreq,
 								 gfp_t gfp)
@@ -1934,7 +1934,7 @@ probe_end:
  *
  * Return codes:
  *	0:			Success
- *	linux error number:	Failure
+ *	beep error number:	Failure
  */
 static int pch_udc_pcd_dequeue(struct usb_ep *usbep,
 				struct usb_request *usbreq)
@@ -1973,7 +1973,7 @@ static int pch_udc_pcd_dequeue(struct usb_ep *usbep,
  *
  * Return codes:
  *	0:			Success
- *	linux error number:	Failure
+ *	beep error number:	Failure
  */
 static int pch_udc_pcd_set_halt(struct usb_ep *usbep, int halt)
 {
@@ -2018,7 +2018,7 @@ static int pch_udc_pcd_set_halt(struct usb_ep *usbep, int halt)
  *
  * Return codes:
  *	0:			Success
- *	linux error number:	Failure
+ *	beep error number:	Failure
  */
 static int pch_udc_pcd_set_wedge(struct usb_ep *usbep)
 {
@@ -3293,5 +3293,5 @@ static struct pci_driver pch_udc_driver = {
 module_pci_driver(pch_udc_driver);
 
 MODULE_DESCRIPTION("Intel EG20T USB Device Controller");
-MODULE_AUTHOR("LAPIS Semiconductor, <tomoya-linux@dsn.lapis-semi.com>");
+MODULE_AUTHOR("LAPIS Semiconductor, <tomoya-beep@dsn.lapis-semi.com>");
 MODULE_LICENSE("GPL");

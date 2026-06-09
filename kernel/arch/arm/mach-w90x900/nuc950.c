@@ -1,7 +1,7 @@
 /*
- * linux/arch/arm/mach-w90x900/nuc950.c
+ * beep/arch/arm/mach-w90x900/nuc950.c
  *
- * Based on linux/arch/arm/plat-s3c24xx/s3c244x.c by Ben Dooks
+ * Based on beep/arch/arm/plat-s3c24xx/s3c244x.c by Ben Dooks
  *
  * Copyright (c) 2008 Nuvoton technology corporation.
  *
@@ -15,7 +15,7 @@
  *
  */
 
-#include <linux/platform_device.h>
+#include <beep/platform_device.h>
 #include <asm/mach/map.h>
 #include <mach/hardware.h>
 

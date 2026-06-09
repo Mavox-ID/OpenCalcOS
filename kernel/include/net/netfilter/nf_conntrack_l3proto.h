@@ -11,9 +11,9 @@
 
 #ifndef _NF_CONNTRACK_L3PROTO_H
 #define _NF_CONNTRACK_L3PROTO_H
-#include <linux/netlink.h>
+#include <beep/netlink.h>
 #include <net/netlink.h>
-#include <linux/seq_file.h>
+#include <beep/seq_file.h>
 #include <net/netfilter/nf_conntrack.h>
 
 struct nf_conntrack_l3proto {

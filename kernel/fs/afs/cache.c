@@ -9,7 +9,7 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/sched.h>
+#include <beep/sched.h>
 #include "internal.h"
 
 static uint16_t afs_cell_cache_get_key(const void *cookie_netfs_data,

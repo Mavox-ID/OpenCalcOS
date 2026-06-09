@@ -1,5 +1,5 @@
 /*
- *  linux/fs/ufs/truncate.c
+ *  beep/fs/ufs/truncate.c
  *
  * Copyright (C) 1998
  * Daniel Pirkl <daniel.pirkl@email.cz>
@@ -7,7 +7,7 @@
  *
  *  from
  *
- *  linux/fs/ext2/truncate.c
+ *  beep/fs/ext2/truncate.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -16,7 +16,7 @@
  *
  *  from
  *
- *  linux/fs/minix/truncate.c
+ *  beep/fs/minix/truncate.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -34,15 +34,15 @@
  * Evgeniy Dushistov <dushistov@mail.ru>, 2006-2007
  */
 
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/fcntl.h>
-#include <linux/time.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/buffer_head.h>
-#include <linux/blkdev.h>
-#include <linux/sched.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/fcntl.h>
+#include <beep/time.h>
+#include <beep/stat.h>
+#include <beep/string.h>
+#include <beep/buffer_head.h>
+#include <beep/blkdev.h>
+#include <beep/sched.h>
 
 #include "ufs_fs.h"
 #include "ufs.h"

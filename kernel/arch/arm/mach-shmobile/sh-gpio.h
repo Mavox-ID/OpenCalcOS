@@ -10,9 +10,9 @@
 #ifndef __ASM_ARCH_GPIO_H
 #define __ASM_ARCH_GPIO_H
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/io.h>
 
 /*
  * FIXME !!

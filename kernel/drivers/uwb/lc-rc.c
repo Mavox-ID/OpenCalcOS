@@ -27,16 +27,16 @@
  * List of RCs comes from the 'struct class uwb_rc_class'.
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/random.h>
-#include <linux/kdev_t.h>
-#include <linux/etherdevice.h>
-#include <linux/usb.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/random.h>
+#include <beep/kdev_t.h>
+#include <beep/etherdevice.h>
+#include <beep/usb.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 
 #include "uwb-internal.h"
 

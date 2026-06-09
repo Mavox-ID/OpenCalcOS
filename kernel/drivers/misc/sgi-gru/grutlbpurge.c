@@ -25,16 +25,16 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/hugetlb.h>
-#include <linux/delay.h>
-#include <linux/timex.h>
-#include <linux/srcu.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/hugetlb.h>
+#include <beep/delay.h>
+#include <beep/timex.h>
+#include <beep/srcu.h>
 #include <asm/processor.h>
 #include "gru.h"
 #include "grutables.h"

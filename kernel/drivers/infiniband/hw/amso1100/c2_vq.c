@@ -30,8 +30,8 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 
 #include "c2_vq.h"
 #include "c2_provider.h"

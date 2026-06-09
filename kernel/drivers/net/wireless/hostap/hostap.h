@@ -1,8 +1,8 @@
 #ifndef HOSTAP_H
 #define HOSTAP_H
 
-#include <linux/ethtool.h>
-#include <linux/kernel.h>
+#include <beep/ethtool.h>
+#include <beep/kernel.h>
 
 #include "hostap_wlan.h"
 #include "hostap_ap.h"

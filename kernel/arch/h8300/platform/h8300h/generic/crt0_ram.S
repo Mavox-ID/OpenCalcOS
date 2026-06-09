@@ -1,5 +1,5 @@
 /*
- *  linux/arch/h8300/platform/h8300h/generic/crt0_ram.S
+ *  beep/arch/h8300/platform/h8300h/generic/crt0_ram.S
  *
  *  Yoshinori Sato <ysato@users.sourceforge.jp>
  *
@@ -63,7 +63,7 @@ SYMBOL_NAME_LABEL(_start)
 	mov.w	#512,r4
 	eepmov.w
 
-	/* uClinux kernel start */
+	/* uCbeep kernel start */
 	ldc	#0x90,ccr	/* running kernel */
 	mov.l	#SYMBOL_NAME(init_thread_union),sp
 	add.l	#0x2000,sp

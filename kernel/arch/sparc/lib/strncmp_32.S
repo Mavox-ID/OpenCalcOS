@@ -3,7 +3,7 @@
  *            generic strncmp routine.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 	.text
 ENTRY(strncmp)

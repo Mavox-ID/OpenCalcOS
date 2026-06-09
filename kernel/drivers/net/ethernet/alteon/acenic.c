@@ -1,5 +1,5 @@
 /*
- * acenic.c: Linux driver for the Alteon AceNIC Gigabit Ethernet card
+ * acenic.c: Beep driver for the Alteon AceNIC Gigabit Ethernet card
  *           and other Tigon based cards.
  *
  * Copyright 1998-2002 by Jes Sorensen, <jes@trained-monkey.org>.
@@ -9,7 +9,7 @@
  *
  * A mailing list for discussing the use of this driver has been
  * setup, please subscribe to the lists if you have any questions
- * about the driver. Send mail to linux-acenic-help@sunsite.auc.dk to
+ * about the driver. Send mail to beep-acenic-help@sunsite.auc.dk to
  * see how to subscribe.
  *
  * This program is free software; you can redistribute it and/or modify
@@ -18,7 +18,7 @@
  * (at your option) any later version.
  *
  * Additional credits:
- *   Pete Wyckoff <wyckoff@ca.sandia.gov>: Initial Linux/Alpha and trace
+ *   Pete Wyckoff <wyckoff@ca.sandia.gov>: Initial Beep/Alpha and trace
  *       dump support. The trace dump support has not been
  *       integrated yet however.
  *   Troy Benjegerdes: Big Endian (PPC) patches.
@@ -28,10 +28,10 @@
  *   David S. Miller <davem@redhat.com>: conversion to new PCI dma mapping
  *                                       infrastructure and Sparc support
  *   Pierrick Pinasseau (CERN): For lending me an Ultra 5 to test the
- *                              driver under Linux/Sparc64
+ *                              driver under Beep/Sparc64
  *   Matt Domsch <Matt_Domsch@dell.com>: Detect Alteon 1000baseT cards
  *                                       ETHTOOL_GDRVINFO support
- *   Chip Salzenberg <chip@valinux.com>: Fix race condition between tx
+ *   Chip Salzenberg <chip@vabeep.com>: Fix race condition between tx
  *                                       handler and close() cleanup.
  *   Ken Aaker <kdaaker@rchland.vnet.ibm.com>: Correct check for whether
  *                                       memory mapped IO is enabled to
@@ -50,29 +50,29 @@
  *   Grant Grundler <grundler@cup.hp.com>: PCI write posting fixes.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/sockios.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/prefetch.h>
-#include <linux/if_vlan.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/mm.h>
+#include <beep/highmem.h>
+#include <beep/sockios.h>
+#include <beep/firmware.h>
+#include <beep/slab.h>
+#include <beep/prefetch.h>
+#include <beep/if_vlan.h>
 
 #ifdef SIOCETHTOOL
-#include <linux/ethtool.h>
+#include <beep/ethtool.h>
 #endif
 
 #include <net/sock.h>
@@ -267,7 +267,7 @@ MODULE_DEVICE_TABLE(pci, acenic_pci_tbl);
  * - NIC dump support.
  * - More tuning parameters.
  *
- * The mini ring is not used under Linux and I am not sure it makes sense
+ * The mini ring is not used under Beep and I am not sure it makes sense
  * to actually use it.
  *
  * New interrupt handler strategy:
@@ -427,7 +427,7 @@ MODULE_PARM_DESC(tx_ratio, "AceNIC/3C985/GA620 ratio of NIC memory used for TX/R
 
 
 static const char version[] =
-  "acenic.c: v0.92 08/05/2002  Jes Sorensen, linux-acenic@SunSITE.dk\n"
+  "acenic.c: v0.92 08/05/2002  Jes Sorensen, beep-acenic@SunSITE.dk\n"
   "                            http://home.cern.ch/~jes/gige/acenic.html\n";
 
 static int ace_get_settings(struct net_device *, struct ethtool_cmd *);

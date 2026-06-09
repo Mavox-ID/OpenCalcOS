@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hpfs/hpfs_fn.h
+ *  beep/fs/hpfs/hpfs_fn.h
  *
  *  Mikulas Patocka (mikulas@artax.karlin.mff.cuni.cz), 1998-1999
  *
@@ -9,10 +9,10 @@
 //#define DBG
 //#define DEBUG_LOCKS
 
-#include <linux/mutex.h>
-#include <linux/pagemap.h>
-#include <linux/buffer_head.h>
-#include <linux/slab.h>
+#include <beep/mutex.h>
+#include <beep/pagemap.h>
+#include <beep/buffer_head.h>
+#include <beep/slab.h>
 #include <asm/unaligned.h>
 
 #include "hpfs.h"

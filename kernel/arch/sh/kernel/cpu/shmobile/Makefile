@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux/SuperH SH-Mobile backends.
+# Makefile for the Beep/SuperH SH-Mobile backends.
 #
 
 # Power Management & Sleep mode

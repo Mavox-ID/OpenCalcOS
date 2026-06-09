@@ -17,7 +17,7 @@
  *
  */
 
-#include <linux/ratelimit.h>
+#include <beep/ratelimit.h>
 
 char const *audit_point_name[] = {
 	"pre page fault",

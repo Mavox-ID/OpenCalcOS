@@ -13,18 +13,18 @@
  * - Better memory allocation techniques?
  * - Alternative access techniques?
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/device.h>
+#include <beep/fs.h>
+#include <beep/cdev.h>
+#include <beep/slab.h>
+#include <beep/poll.h>
 
-#include <linux/iio/iio.h>
+#include <beep/iio/iio.h>
 #include "iio_core.h"
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
+#include <beep/iio/sysfs.h>
+#include <beep/iio/buffer.h>
 
 static const char * const iio_endian_prefix[] = {
 	[IIO_BE] = "be",

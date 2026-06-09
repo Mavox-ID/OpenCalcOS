@@ -21,21 +21,21 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/sh_dma.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/rspi.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/list.h>
+#include <beep/workqueue.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/clk.h>
+#include <beep/dmaengine.h>
+#include <beep/dma-mapping.h>
+#include <beep/sh_dma.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/rspi.h>
 
 #define RSPI_SPCR		0x00
 #define RSPI_SSLP		0x01

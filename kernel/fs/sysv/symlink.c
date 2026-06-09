@@ -1,12 +1,12 @@
 /*
- *  linux/fs/sysv/symlink.c
+ *  beep/fs/sysv/symlink.c
  *
  *  Handling of System V filesystem fast symlinks extensions.
  *  Aug 2001, Christoph Hellwig (hch@infradead.org)
  */
 
 #include "sysv.h"
-#include <linux/namei.h>
+#include <beep/namei.h>
 
 static void *sysv_follow_link(struct dentry *dentry, struct nameidata *nd)
 {

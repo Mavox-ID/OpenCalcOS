@@ -29,11 +29,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/hardirq.h>
-#include <linux/types.h>
-#include <linux/crypto.h>
-#include <linux/err.h>
+#include <beep/module.h>
+#include <beep/hardirq.h>
+#include <beep/types.h>
+#include <beep/crypto.h>
+#include <beep/err.h>
 #include <crypto/algapi.h>
 #include <crypto/serpent.h>
 #include <crypto/cryptd.h>

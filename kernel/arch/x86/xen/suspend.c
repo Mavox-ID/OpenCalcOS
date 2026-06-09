@@ -1,5 +1,5 @@
-#include <linux/types.h>
-#include <linux/clockchips.h>
+#include <beep/types.h>
+#include <beep/clockchips.h>
 
 #include <xen/interface/xen.h>
 #include <xen/grant_table.h>

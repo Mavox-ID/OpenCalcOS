@@ -12,10 +12,10 @@
  * option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/of_platform.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/of_platform.h>
+#include <beep/io.h>
 #include <asm/prom.h>
 #include <asm/time.h>
 #include <asm/ipic.h>

@@ -1,11 +1,11 @@
 /**
- * ldm - Part of the Linux-NTFS project.
+ * ldm - Part of the Beep-NTFS project.
  *
  * Copyright (C) 2001,2002 Richard Russon <ldm@flatcap.org>
  * Copyright (c) 2001-2007 Anton Altaparmakov
  * Copyright (C) 2001,2002 Jakob Kemi <jakob.kemi@telia.com>
  *
- * Documentation is available at http://www.linux-ntfs.org/doku.php?id=downloads 
+ * Documentation is available at http://www.beep-ntfs.org/doku.php?id=downloads 
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the Free
@@ -18,7 +18,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program (in the main directory of the Linux-NTFS source
+ * along with this program (in the main directory of the Beep-NTFS source
  * in the file COPYING); if not, write to the Free Software Foundation,
  * Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
@@ -26,10 +26,10 @@
 #ifndef _FS_PT_LDM_H_
 #define _FS_PT_LDM_H_
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/genhd.h>
-#include <linux/fs.h>
+#include <beep/types.h>
+#include <beep/list.h>
+#include <beep/genhd.h>
+#include <beep/fs.h>
 #include <asm/unaligned.h>
 #include <asm/byteorder.h>
 

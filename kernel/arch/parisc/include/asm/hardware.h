@@ -1,7 +1,7 @@
 #ifndef _PARISC_HARDWARE_H
 #define _PARISC_HARDWARE_H
 
-#include <linux/mod_devicetable.h>
+#include <beep/mod_devicetable.h>
 
 #define HWTYPE_ANY_ID		PA_HWTYPE_ANY_ID
 #define HVERSION_ANY_ID		PA_HVERSION_ANY_ID

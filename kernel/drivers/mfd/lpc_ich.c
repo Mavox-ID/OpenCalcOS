@@ -54,14 +54,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/acpi.h>
-#include <linux/pci.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/lpc_ich.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/acpi.h>
+#include <beep/pci.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/lpc_ich.h>
 
 #define ACPIBASE		0x40
 #define ACPIBASE_GPE_OFF	0x28

@@ -4,7 +4,7 @@
  *
  * This code is based on drivers/scsi/mpt3sas/mpt3sas_ctl.c
  * Copyright (C) 2012  LSI Corporation
- *  (mailto:DL-MPTFusionLinux@lsi.com)
+ *  (mailto:DL-MPTFusionBeep@lsi.com)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -42,20 +42,20 @@
  * USA.
  */
 
-#include <linux/version.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/compat.h>
-#include <linux/poll.h>
+#include <beep/version.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/compat.h>
+#include <beep/poll.h>
 
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
 
 #include "mpt3sas_base.h"
 #include "mpt3sas_ctl.h"

@@ -17,7 +17,7 @@
  * wlanfae <wlanfae@realtek.com>
 ******************************************************************************/
 
-#include <linux/string.h>
+#include <beep/string.h>
 #include "rtl_core.h"
 
 #define RATE_COUNT 12

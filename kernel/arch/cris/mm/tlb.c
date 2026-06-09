@@ -1,5 +1,5 @@
 /*
- *  linux/arch/cris/mm/tlb.c
+ *  beep/arch/cris/mm/tlb.c
  *
  *  Copyright (C) 2000, 2001  Axis Communications AB
  *  
@@ -7,8 +7,8 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
 #include <asm/tlb.h>
 
 #define D(x)

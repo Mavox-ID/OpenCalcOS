@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -14,24 +14,24 @@
  */
 
 #include <asm/uaccess.h>
-#include <linux/bitops.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/errno.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/proc_fs.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <beep/bitops.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/jiffies.h>
+#include <beep/mm.h>
+#include <beep/string.h>
+#include <beep/socket.h>
+#include <beep/sockios.h>
+#include <beep/errno.h>
+#include <beep/in.h>
+#include <beep/inet.h>
+#include <beep/inetdevice.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/proc_fs.h>
+#include <beep/skbuff.h>
+#include <beep/init.h>
+#include <beep/slab.h>
 
 #include <net/arp.h>
 #include <net/ip.h>

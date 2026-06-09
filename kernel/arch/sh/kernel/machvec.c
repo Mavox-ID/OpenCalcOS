@@ -10,8 +10,8 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/string.h>
+#include <beep/init.h>
+#include <beep/string.h>
 #include <asm/machvec.h>
 #include <asm/sections.h>
 #include <asm/addrspace.h>

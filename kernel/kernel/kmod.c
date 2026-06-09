@@ -18,26 +18,26 @@
 	call_usermodehelper wait flag, and remove exec_usermodehelper.
 	Rusty Russell <rusty@rustcorp.com.au>  Jan 2003
 */
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/syscalls.h>
-#include <linux/unistd.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/completion.h>
-#include <linux/cred.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/workqueue.h>
-#include <linux/security.h>
-#include <linux/mount.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/resource.h>
-#include <linux/notifier.h>
-#include <linux/suspend.h>
-#include <linux/rwsem.h>
-#include <linux/ptrace.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/syscalls.h>
+#include <beep/unistd.h>
+#include <beep/kmod.h>
+#include <beep/slab.h>
+#include <beep/completion.h>
+#include <beep/cred.h>
+#include <beep/file.h>
+#include <beep/fdtable.h>
+#include <beep/workqueue.h>
+#include <beep/security.h>
+#include <beep/mount.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/resource.h>
+#include <beep/notifier.h>
+#include <beep/suspend.h>
+#include <beep/rwsem.h>
+#include <beep/ptrace.h>
 #include <asm/uaccess.h>
 
 #include <trace/events/module.h>
@@ -78,7 +78,7 @@ static int call_modprobe(char *module_name, int wait)
 {
 	static char *envp[] = {
 		"HOME=/",
-		"TERM=linux",
+		"TERM=beep",
 		"PATH=/sbin:/usr/sbin:/bin:/usr/bin",
 		NULL
 	};

@@ -20,11 +20,11 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/kernel.h>
-#include <linux/acpi.h>
-#include <linux/pci.h>
-#include <linux/pnp.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/acpi.h>
+#include <beep/pci.h>
+#include <beep/pnp.h>
+#include <beep/slab.h>
 #include "../base.h"
 #include "pnpacpi.h"
 
@@ -122,7 +122,7 @@ static void pnpacpi_add_irqresource(struct pnp_dev *dev, struct resource *r)
 /*
  * Device CSRs that do not appear in PCI config space should be described
  * via ACPI.  This would normally be done with Address Space Descriptors
- * marked as "consumer-only," but old versions of Windows and Linux ignore
+ * marked as "consumer-only," but old versions of Windows and Beep ignore
  * the producer/consumer flag, so HP invented a vendor-defined resource to
  * describe the location and size of CSR space.
  */

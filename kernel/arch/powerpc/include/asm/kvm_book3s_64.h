@@ -12,7 +12,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  *
- * Copyright SUSE Linux Products GmbH 2010
+ * Copyright SUSE Beep Products GmbH 2010
  *
  * Authors: Alexander Graf <agraf@suse.de>
  */
@@ -159,10 +159,10 @@ static inline int hpte_cache_flags_ok(unsigned long ptel, unsigned long io_type)
 }
 
 /*
- * Lock and read a linux PTE.  If it's present and writable, atomically
+ * Lock and read a beep PTE.  If it's present and writable, atomically
  * set dirty and referenced bits and return the PTE, otherwise return 0.
  */
-static inline pte_t kvmppc_read_update_linux_pte(pte_t *p, int writing)
+static inline pte_t kvmppc_read_update_beep_pte(pte_t *p, int writing)
 {
 	pte_t pte, tmp;
 
@@ -189,7 +189,7 @@ static inline pte_t kvmppc_read_update_linux_pte(pte_t *p, int writing)
 	return pte;
 }
 
-/* Return HPTE cache control bits corresponding to Linux pte bits */
+/* Return HPTE cache control bits corresponding to Beep pte bits */
 static inline unsigned long hpte_cache_bits(unsigned long pte_val)
 {
 #if _PAGE_NO_CACHE == HPTE_R_I && _PAGE_WRITETHRU == HPTE_R_W

@@ -5,11 +5,11 @@
  *
  *  Copyright (C) 2006 Red Hat, Inc., Ingo Molnar <mingo@redhat.com>
  */
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/kallsyms.h>
-#include <linux/stacktrace.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/kallsyms.h>
+#include <beep/stacktrace.h>
 
 void print_stack_trace(struct stack_trace *trace, int spaces)
 {

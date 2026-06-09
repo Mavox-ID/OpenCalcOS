@@ -17,10 +17,10 @@
 #ifndef BNX2X_CMN_H
 #define BNX2X_CMN_H
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
 
 
 #include "bnx2x.h"

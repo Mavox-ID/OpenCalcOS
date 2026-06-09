@@ -1,5 +1,5 @@
 /*
- *  linux/net/sunrpc/gss_mech_switch.c
+ *  beep/net/sunrpc/gss_mech_switch.c
  *
  *  Copyright (c) 2001 The Regents of the University of Michigan.
  *  All rights reserved.
@@ -33,17 +33,17 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/sunrpc/msg_prot.h>
-#include <linux/sunrpc/gss_asn1.h>
-#include <linux/sunrpc/auth_gss.h>
-#include <linux/sunrpc/svcauth_gss.h>
-#include <linux/sunrpc/gss_err.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/gss_api.h>
-#include <linux/sunrpc/clnt.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/sunrpc/msg_prot.h>
+#include <beep/sunrpc/gss_asn1.h>
+#include <beep/sunrpc/auth_gss.h>
+#include <beep/sunrpc/svcauth_gss.h>
+#include <beep/sunrpc/gss_err.h>
+#include <beep/sunrpc/sched.h>
+#include <beep/sunrpc/gss_api.h>
+#include <beep/sunrpc/clnt.h>
 
 #ifdef RPC_DEBUG
 # define RPCDBG_FACILITY        RPCDBG_AUTH

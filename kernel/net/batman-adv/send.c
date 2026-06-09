@@ -28,7 +28,7 @@
 #include "gateway_common.h"
 #include "originator.h"
 
-#include <linux/if_ether.h>
+#include <beep/if_ether.h>
 
 static void batadv_send_outstanding_bcast_packet(struct work_struct *work);
 

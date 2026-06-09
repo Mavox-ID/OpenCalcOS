@@ -14,17 +14,17 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/i2c/tsc2007.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/i2c-gpio.h>
-#include <linux/spi/spi.h>
-#include <linux/can/platform/mcp251x.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
+#include <beep/i2c/tsc2007.h>
+#include <beep/gpio.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
+#include <beep/i2c-gpio.h>
+#include <beep/spi/spi.h>
+#include <beep/can/platform/mcp251x.h>
 
 #include <asm/setup.h>
 #include <asm/mach-types.h>

@@ -1,5 +1,5 @@
 /*
- * linux/drivers/pcmcia/pxa2xx_mainstone.c
+ * beep/drivers/pcmcia/pxa2xx_mainstone.c
  *
  * Mainstone PCMCIA specific routines.
  *
@@ -12,12 +12,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
 
 #include <pcmcia/ss.h>
 

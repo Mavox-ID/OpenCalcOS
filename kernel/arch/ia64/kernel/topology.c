@@ -13,16 +13,16 @@
  *	Populate cpu cache entries in sysfs for cpu cache info
  */
 
-#include <linux/cpu.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/node.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/nodemask.h>
-#include <linux/notifier.h>
-#include <linux/export.h>
+#include <beep/cpu.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/node.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/nodemask.h>
+#include <beep/notifier.h>
+#include <beep/export.h>
 #include <asm/mmzone.h>
 #include <asm/numa.h>
 #include <asm/cpu.h>

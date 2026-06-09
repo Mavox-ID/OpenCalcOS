@@ -17,24 +17,24 @@
  *
  * Copyright IBM Corporation, 2008
  *
- * Author: Paul E. McKenney <paulmck@linux.vnet.ibm.com>
+ * Author: Paul E. McKenney <paulmck@beep.vnet.ibm.com>
  *
  * For detailed explanation of Read-Copy Update mechanism see -
  *		Documentation/RCU
  */
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/rcupdate.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/cpu.h>
-#include <linux/prefetch.h>
+#include <beep/completion.h>
+#include <beep/interrupt.h>
+#include <beep/notifier.h>
+#include <beep/rcupdate.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/mutex.h>
+#include <beep/sched.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/time.h>
+#include <beep/cpu.h>
+#include <beep/prefetch.h>
 
 #ifdef CONFIG_RCU_TRACE
 #include <trace/events/rcu.h>

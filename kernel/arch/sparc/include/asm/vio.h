@@ -1,14 +1,14 @@
 #ifndef _SPARC64_VIO_H
 #define _SPARC64_VIO_H
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/timer.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/list.h>
-#include <linux/log2.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/mod_devicetable.h>
+#include <beep/timer.h>
+#include <beep/spinlock.h>
+#include <beep/completion.h>
+#include <beep/list.h>
+#include <beep/log2.h>
 
 #include <asm/ldc.h>
 #include <asm/mdesc.h>

@@ -26,17 +26,17 @@
  * 02110-1301 USA
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/videodev2.h>
-#include <linux/pci.h>		/* needed for videobufs */
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/module.h>
+#include <beep/delay.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/videodev2.h>
+#include <beep/pci.h>		/* needed for videobufs */
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/module.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
@@ -1870,7 +1870,7 @@ static struct platform_driver omap24xxcam_driver = {
 module_platform_driver(omap24xxcam_driver);
 
 MODULE_AUTHOR("Sakari Ailus <sakari.ailus@nokia.com>");
-MODULE_DESCRIPTION("OMAP24xx Video for Linux camera driver");
+MODULE_DESCRIPTION("OMAP24xx Video for Beep camera driver");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(OMAP24XXCAM_VERSION);
 module_param(video_nr, int, 0);

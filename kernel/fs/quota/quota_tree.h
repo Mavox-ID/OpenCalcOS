@@ -2,11 +2,11 @@
  *	Definitions of structures for vfsv0 quota format
  */
 
-#ifndef _LINUX_QUOTA_TREE_H
-#define _LINUX_QUOTA_TREE_H
+#ifndef _BEEP_QUOTA_TREE_H
+#define _BEEP_QUOTA_TREE_H
 
-#include <linux/types.h>
-#include <linux/quota.h>
+#include <beep/types.h>
+#include <beep/quota.h>
 
 /*
  *  Structure of header of block with quota structures. It is padded to 16 bytes so
@@ -22,4 +22,4 @@ struct qt_disk_dqdbheader {
 
 #define QT_TREEOFF	1		/* Offset of tree in file in blocks */
 
-#endif /* _LINUX_QUOTAIO_TREE_H */
+#endif /* _BEEP_QUOTAIO_TREE_H */

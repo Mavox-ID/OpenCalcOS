@@ -8,24 +8,24 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/file.h>
-#include <linux/cdev.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/wait.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/fs.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/device.h>
+#include <beep/file.h>
+#include <beep/cdev.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/delay.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
+#include <beep/wait.h>
+#include <beep/poll.h>
+#include <beep/slab.h>
 #include "hpilo.h"
 
 static struct class *ilo_class;

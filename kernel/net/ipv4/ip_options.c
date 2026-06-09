@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -11,17 +11,17 @@
 
 #define pr_fmt(fmt) "IPv4: " fmt
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <beep/capability.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/types.h>
 #include <asm/uaccess.h>
 #include <asm/unaligned.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/icmp.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
+#include <beep/skbuff.h>
+#include <beep/ip.h>
+#include <beep/icmp.h>
+#include <beep/netdevice.h>
+#include <beep/rtnetlink.h>
 #include <net/sock.h>
 #include <net/ip.h>
 #include <net/icmp.h>

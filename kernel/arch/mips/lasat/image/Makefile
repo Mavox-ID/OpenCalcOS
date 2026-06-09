@@ -1,5 +1,5 @@
 #
-# MAKEFILE FOR THE MIPS LINUX BOOTLOADER AND ROM DEBUGGER
+# MAKEFILE FOR THE MIPS BEEP BOOTLOADER AND ROM DEBUGGER
 #
 # i-data Networks
 #
@@ -12,7 +12,7 @@ endif
 
 MKLASATIMG = mklasatimg
 MKLASATIMG_ARCH = mq2,mqpro,sp100,sp200
-KERNEL_IMAGE = vmlinux
+KERNEL_IMAGE = vmbeep
 KERNEL_START = $(shell $(NM) $(KERNEL_IMAGE) | grep " _text" | cut -f1 -d\ )
 KERNEL_ENTRY = $(shell $(NM) $(KERNEL_IMAGE) | grep kernel_entry | cut -f1 -d\ )
 
@@ -24,7 +24,7 @@ HEAD_DEFINES := -D_kernel_start=0x$(KERNEL_START) \
 		-D TIMESTAMP=$(shell date +%s)
 
 $(obj)/head.o: $(obj)/head.S $(KERNEL_IMAGE)
-	$(CC) -fno-pic $(HEAD_DEFINES) $(LINUXINCLUDE) -c -o $@ $<
+	$(CC) -fno-pic $(HEAD_DEFINES) $(BEEPINCLUDE) -c -o $@ $<
 
 OBJECTS = head.o kImage.o
 

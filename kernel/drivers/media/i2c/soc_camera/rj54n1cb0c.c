@@ -8,12 +8,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/v4l2-mediabus.h>
-#include <linux/videodev2.h>
-#include <linux/module.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/v4l2-mediabus.h>
+#include <beep/videodev2.h>
+#include <beep/module.h>
 
 #include <media/rj54n1cb0c.h>
 #include <media/soc_camera.h>

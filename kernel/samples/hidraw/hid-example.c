@@ -9,10 +9,10 @@
  * applications using hidraw.
  */
 
-/* Linux */
-#include <linux/types.h>
-#include <linux/input.h>
-#include <linux/hidraw.h>
+/* Beep */
+#include <beep/types.h>
+#include <beep/input.h>
+#include <beep/hidraw.h>
 
 /*
  * Ugly hack to work around failing compilation on systems that don't

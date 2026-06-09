@@ -15,15 +15,15 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/random.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/hw_random.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/random.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/hw_random.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/pm_runtime.h>
 
 #include <asm/io.h>
 

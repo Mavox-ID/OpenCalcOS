@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux 802.x protocol layers.
+# Makefile for the Beep 802.x protocol layers.
 #
 
 # Check the p8022 selections against net/core/Makefile.

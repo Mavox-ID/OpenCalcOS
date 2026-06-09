@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s3c64xx/setup-ide.c
+/* beep/arch/arm/mach-s3c64xx/setup-ide.c
  *
  * Copyright (c) 2010 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com/
@@ -10,14 +10,14 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/gpio.h>
+#include <beep/io.h>
 
 #include <mach/map.h>
 #include <mach/regs-clock.h>
 #include <plat/gpio-cfg.h>
-#include <linux/platform_data/ata-samsung_cf.h>
+#include <beep/platform_data/ata-samsung_cf.h>
 
 void s3c64xx_ide_setup_gpio(void)
 {

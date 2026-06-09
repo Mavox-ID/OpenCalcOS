@@ -40,7 +40,7 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include <net/sctp/sctp.h>
 
 /*

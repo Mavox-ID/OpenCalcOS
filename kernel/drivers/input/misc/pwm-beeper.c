@@ -13,12 +13,12 @@
  *
  */
 
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/slab.h>
+#include <beep/input.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/pwm.h>
+#include <beep/slab.h>
 
 struct pwm_beeper {
 	struct input_dev *input;

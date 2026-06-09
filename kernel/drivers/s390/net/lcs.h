@@ -1,9 +1,9 @@
 /*lcs.h*/
 
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/workqueue.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/workqueue.h>
 #include <asm/ccwdev.h>
 
 #define LCS_DBF_TEXT(level, name, text) \

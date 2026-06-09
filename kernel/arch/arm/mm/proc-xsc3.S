@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mm/proc-xsc3.S
+ * beep/arch/arm/mm/proc-xsc3.S
  *
  * Original Author: Matthew Gilbert
  * Current Maintainer: Lennert Buytenhek <buytenh@wantstofly.org>
@@ -24,8 +24,8 @@
  * Based on original XScale code by Nicolas Pitre.
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/assembler.h>
 #include <asm/hwcap.h>
 #include <asm/pgtable.h>

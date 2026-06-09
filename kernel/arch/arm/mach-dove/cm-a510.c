@@ -11,13 +11,13 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
-#include <linux/mv643xx_eth.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/ata_platform.h>
+#include <beep/mv643xx_eth.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

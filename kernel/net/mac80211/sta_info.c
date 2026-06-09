@@ -7,16 +7,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/timer.h>
-#include <linux/rtnetlink.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/etherdevice.h>
+#include <beep/netdevice.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/skbuff.h>
+#include <beep/if_arp.h>
+#include <beep/timer.h>
+#include <beep/rtnetlink.h>
 
 #include <net/mac80211.h>
 #include "ieee80211_i.h"

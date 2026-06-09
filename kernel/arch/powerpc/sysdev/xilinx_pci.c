@@ -14,9 +14,9 @@
  * kind, whether express or implied.
  */
 
-#include <linux/ioport.h>
-#include <linux/of.h>
-#include <linux/pci.h>
+#include <beep/ioport.h>
+#include <beep/of.h>
+#include <beep/pci.h>
 #include <mm/mmu_decl.h>
 #include <asm/io.h>
 #include <asm/xilinx_pci.h>
@@ -125,7 +125,7 @@ void __init xilinx_pci_init(void)
 	if (!ppc_md.pci_exclude_device)
 		ppc_md.pci_exclude_device = xilinx_pci_exclude_device;
 
-	/* Register the host bridge with the linux kernel! */
+	/* Register the host bridge with the beep kernel! */
 	pci_process_bridge_OF_ranges(hose, pci_node, 1);
 
 	pr_info("xilinx-pci: Registered PCI host bridge\n");

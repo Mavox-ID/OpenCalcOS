@@ -1,7 +1,7 @@
 #ifndef _ASM_SCORE_ELF_H
 #define _ASM_SCORE_ELF_H
 
-#include <linux/ptrace.h>
+#include <beep/ptrace.h>
 
 #define EM_SCORE7	135
 
@@ -54,7 +54,7 @@ typedef elf_fpreg_t	elf_fpregset_t;
 
 #define SET_PERSONALITY(ex)					\
 do {								\
-	set_personality(PER_LINUX | (current->personality & (~PER_MASK))); \
+	set_personality(PER_BEEP | (current->personality & (~PER_MASK))); \
 } while (0)
 
 struct task_struct;

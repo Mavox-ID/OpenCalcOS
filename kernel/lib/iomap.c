@@ -3,10 +3,10 @@
  *
  * (C) Copyright 2004 Linus Torvalds
  */
-#include <linux/pci.h>
-#include <linux/io.h>
+#include <beep/pci.h>
+#include <beep/io.h>
 
-#include <linux/export.h>
+#include <beep/export.h>
 
 /*
  * Read/write from/to an (offsettable) iomem cookie. It might be a PIO

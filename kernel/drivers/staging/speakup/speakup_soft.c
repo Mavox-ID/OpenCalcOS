@@ -21,10 +21,10 @@
  * this code is specificly written as a driver for the speakup screenreview
  * package and is not a general device driver.  */
 
-#include <linux/unistd.h>
-#include <linux/miscdevice.h> /* for misc_register, and SYNTH_MINOR */
-#include <linux/poll.h> /* for poll_wait() */
-#include <linux/sched.h> /* schedule(), signal_pending(), TASK_INTERRUPTIBLE */
+#include <beep/unistd.h>
+#include <beep/miscdevice.h> /* for misc_register, and SYNTH_MINOR */
+#include <beep/poll.h> /* for poll_wait() */
+#include <beep/sched.h> /* schedule(), signal_pending(), TASK_INTERRUPTIBLE */
 
 #include "spk_priv.h"
 #include "speakup.h"

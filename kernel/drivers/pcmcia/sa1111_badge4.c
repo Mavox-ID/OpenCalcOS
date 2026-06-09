@@ -1,5 +1,5 @@
 /*
- * linux/drivers/pcmcia/sa1100_badge4.c
+ * beep/drivers/pcmcia/sa1100_badge4.c
  *
  * BadgePAD 4 PCMCIA specific routines
  *
@@ -12,11 +12,11 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/init.h>
 
 #include <mach/hardware.h>
 #include <asm/mach-types.h>

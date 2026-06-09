@@ -22,20 +22,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/dmi.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/wait.h>
-#include <linux/poll.h>
-#include <linux/freezer.h>
-#include <linux/uaccess.h>
-#include <linux/leds.h>
-#include <linux/atomic.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/dmi.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/wait.h>
+#include <beep/poll.h>
+#include <beep/freezer.h>
+#include <beep/uaccess.h>
+#include <beep/leds.h>
+#include <beep/atomic.h>
 #include <acpi/acpi_drivers.h>
 #include "../../misc/lis3lv02d/lis3lv02d.h"
 

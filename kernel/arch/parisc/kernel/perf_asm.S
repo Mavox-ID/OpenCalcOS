@@ -1,7 +1,7 @@
 
 /*    low-level asm for "intrigue" (PA8500-8700 CPU perf counters)
  * 
- *    Copyright (C) 2001 Randolph Chung <tausq at parisc-linux.org>
+ *    Copyright (C) 2001 Randolph Chung <tausq at parisc-beep.org>
  *    Copyright (C) 2001 Hewlett-Packard (Grant Grundler)
  * 
  *    This program is free software; you can redistribute it and/or modify
@@ -21,8 +21,8 @@
 
 #include <asm/assembly.h>
 
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
 
 #ifdef CONFIG_64BIT
 	.level		2.0w

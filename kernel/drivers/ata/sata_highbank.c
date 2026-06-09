@@ -16,23 +16,23 @@
  * You should have received a copy of the GNU General Public License along with
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/libata.h>
-#include <linux/ahci_platform.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/gfp.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/spinlock.h>
+#include <beep/device.h>
+#include <beep/of_device.h>
+#include <beep/of_address.h>
+#include <beep/platform_device.h>
+#include <beep/libata.h>
+#include <beep/ahci_platform.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/export.h>
 #include "ahci.h"
 
 #define CPHY_MAP(dev, addr) ((((dev) & 0x1f) << 7) | (((addr) >> 9) & 0x7f))

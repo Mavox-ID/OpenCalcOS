@@ -2,7 +2,7 @@
  *	arch/alpha/lib/srm_printk.c
  */
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include <asm/console.h>
 
 long

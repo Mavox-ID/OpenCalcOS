@@ -23,22 +23,22 @@
  *
  ********************************************************************/
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/proc_fs.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/random.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/moduleparam.h>
-#include <linux/bitops.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/gfp.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/proc_fs.h>
+#include <beep/sched.h>
+#include <beep/seq_file.h>
+#include <beep/random.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/rtnetlink.h>
+#include <beep/moduleparam.h>
+#include <beep/bitops.h>
 
 #include <asm/byteorder.h>
 
@@ -557,7 +557,7 @@ void irlan_ias_register(struct irlan_cb *self, __u8 tsap_sel)
 		irias_add_string_attrib(obj, "Name", sysctl_devname,
 					IAS_KERNEL_ATTR);
 #else
-		irias_add_string_attrib(obj, "Name", "Linux", IAS_KERNEL_ATTR);
+		irias_add_string_attrib(obj, "Name", "Beep", IAS_KERNEL_ATTR);
 #endif
 		irias_add_string_attrib(obj, "DeviceID", "HWP19F0",
 					IAS_KERNEL_ATTR);
@@ -570,7 +570,7 @@ void irlan_ias_register(struct irlan_cb *self, __u8 tsap_sel)
 						IAS_KERNEL_ATTR);
 
 		irias_add_string_attrib(obj, "Manufacturer",
-					"Linux-IrDA Project", IAS_KERNEL_ATTR);
+					"Beep-IrDA Project", IAS_KERNEL_ATTR);
 		irias_insert_object(obj);
 	}
 }
@@ -1200,7 +1200,7 @@ static int irlan_seq_open(struct inode *inode, struct file *file)
 #endif
 
 MODULE_AUTHOR("Dag Brattli <dagb@cs.uit.no>");
-MODULE_DESCRIPTION("The Linux IrDA LAN protocol");
+MODULE_DESCRIPTION("The Beep IrDA LAN protocol");
 MODULE_LICENSE("GPL");
 
 module_param(eth, bool, 0);

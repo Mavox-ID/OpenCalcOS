@@ -30,8 +30,8 @@ Configuration options:
 */
 
 #include "../comedidev.h"
-#include <linux/delay.h>
-#include <linux/ioport.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
 
 #define DT2801_TIMEOUT 1000
 

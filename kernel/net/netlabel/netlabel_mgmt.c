@@ -28,13 +28,13 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/socket.h>
+#include <beep/string.h>
+#include <beep/skbuff.h>
+#include <beep/in.h>
+#include <beep/in6.h>
+#include <beep/slab.h>
 #include <net/sock.h>
 #include <net/netlink.h>
 #include <net/genetlink.h>
@@ -42,7 +42,7 @@
 #include <net/ipv6.h>
 #include <net/netlabel.h>
 #include <net/cipso_ipv4.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include "netlabel_domainhash.h"
 #include "netlabel_user.h"

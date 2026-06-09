@@ -14,15 +14,15 @@
 #define pr_fmt(fmt)		KBUILD_MODNAME ": " fmt
 #define psmouse_fmt(fmt)	fmt
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/init.h>
-#include <linux/libps2.h>
-#include <linux/mutex.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/input.h>
+#include <beep/serio.h>
+#include <beep/init.h>
+#include <beep/libps2.h>
+#include <beep/mutex.h>
 
 #include "psmouse.h"
 #include "synaptics.h"
@@ -822,17 +822,14 @@ static int psmouse_extensions(struct psmouse *psmouse,
  * Try Finger Sensing Pad. We do it here because its probe upsets
  * Trackpoint devices (causing TP_READ_ID command to time out).
  */
-	if (max_proto > PSMOUSE_IMEX) {
-		if (psmouse_do_detect(fsp_detect,
-				      psmouse, set_properties) == 0) {
-			if (!set_properties || fsp_init(psmouse) == 0)
-				return PSMOUSE_FSP;
-/*
- * Init failed, try basic relative protocols
- */
-			max_proto = PSMOUSE_IMEX;
-		}
-	}
+	//	if (max_proto > PSMOUSE_IMEX) {
+//		if (psmouse_do_detect(fsp_detect,
+//				      psmouse, set_properties) == 0) {
+//			if (!set_properties || fsp_init(psmouse) == 0)
+//				return PSMOUSE_FSP;
+//			max_proto = PSMOUSE_IMEX;
+//		}
+//	}
 
 /*
  * Reset to defaults in case the device got confused by extended
@@ -943,6 +940,8 @@ static const struct psmouse_protocol psmouse_protocols[] = {
 		.init		= alps_init,
 	},
 #endif
+
+/*
 #ifdef CONFIG_MOUSE_PS2_LIFEBOOK
 	{
 		.type		= PSMOUSE_LIFEBOOK,
@@ -951,6 +950,8 @@ static const struct psmouse_protocol psmouse_protocols[] = {
 		.init		= lifebook_init,
 	},
 #endif
+*/
+
 #ifdef CONFIG_MOUSE_PS2_TRACKPOINT
 	{
 		.type		= PSMOUSE_TRACKPOINT,

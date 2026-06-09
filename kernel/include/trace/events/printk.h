@@ -4,7 +4,7 @@
 #if !defined(_TRACE_PRINTK_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_PRINTK_H
 
-#include <linux/tracepoint.h>
+#include <beep/tracepoint.h>
 
 TRACE_EVENT_CONDITION(console,
 	TP_PROTO(const char *log_buf, unsigned start, unsigned end,

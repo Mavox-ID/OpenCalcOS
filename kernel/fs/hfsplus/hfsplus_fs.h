@@ -1,5 +1,5 @@
 /*
- *  linux/include/linux/hfsplus_fs.h
+ *  beep/include/beep/hfsplus_fs.h
  *
  * Copyright (C) 1999
  * Brad Boyer (flar@pants.nu)
@@ -7,13 +7,13 @@
  *
  */
 
-#ifndef _LINUX_HFSPLUS_FS_H
-#define _LINUX_HFSPLUS_FS_H
+#ifndef _BEEP_HFSPLUS_FS_H
+#define _BEEP_HFSPLUS_FS_H
 
-#include <linux/fs.h>
-#include <linux/mutex.h>
-#include <linux/buffer_head.h>
-#include <linux/blkdev.h>
+#include <beep/fs.h>
+#include <beep/mutex.h>
+#include <beep/buffer_head.h>
+#include <beep/blkdev.h>
 #include "hfsplus_raw.h"
 
 #define DBG_BNODE_REFS	0x00000001
@@ -309,7 +309,7 @@ static inline unsigned short hfsplus_min_io_size(struct super_block *sb)
 #define hfs_part_find hfsplus_part_find
 
 /*
- * definitions for ext2 flag ioctls (linux really needs a generic
+ * definitions for ext2 flag ioctls (beep really needs a generic
  * interface for this).
  */
 

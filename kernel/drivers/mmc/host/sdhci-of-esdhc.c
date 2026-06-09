@@ -13,11 +13,11 @@
  * your option) any later version.
  */
 
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/mmc/host.h>
+#include <beep/io.h>
+#include <beep/of.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/mmc/host.h>
 #include "sdhci-pltfm.h"
 #include "sdhci-esdhc.h"
 

@@ -41,7 +41,7 @@ enum xenbus_state
 
 /*
  * Local variables:
- *  c-file-style: "linux"
+ *  c-file-style: "beep"
  *  indent-tabs-mode: t
  *  c-indent-level: 8
  *  c-basic-offset: 8

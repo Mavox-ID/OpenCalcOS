@@ -32,10 +32,10 @@
  * details.
  */
 
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/export.h>
+#include <beep/timer.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/export.h>
 #include <asm/unaligned.h>
 
 #include <scsi/fc/fc_gs.h>

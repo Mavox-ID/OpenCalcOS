@@ -9,14 +9,14 @@
  * manipulate wakelocks on Android.
  */
 
-#include <linux/capability.h>
-#include <linux/ctype.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/hrtimer.h>
-#include <linux/list.h>
-#include <linux/rbtree.h>
-#include <linux/slab.h>
+#include <beep/capability.h>
+#include <beep/ctype.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/hrtimer.h>
+#include <beep/list.h>
+#include <beep/rbtree.h>
+#include <beep/slab.h>
 
 static DEFINE_MUTEX(wakelocks_lock);
 

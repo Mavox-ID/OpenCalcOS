@@ -3,19 +3,19 @@
  *
  * Copyright 2007-2009 Analog Devices Inc.
  *
- * Enter bugs at http://blackfin.uclinux.org/
+ * Enter bugs at http://blackfin.ucbeep.org/
  *
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/miscdevice.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/types.h>
 #include <mtd/mtd-abi.h>
 
 #include <asm/blackfin.h>

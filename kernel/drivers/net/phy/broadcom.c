@@ -14,9 +14,9 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/brcmphy.h>
+#include <beep/module.h>
+#include <beep/phy.h>
+#include <beep/brcmphy.h>
 
 
 #define BRCM_PHY_MODEL(phydev) \

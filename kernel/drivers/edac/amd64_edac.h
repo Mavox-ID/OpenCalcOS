@@ -62,14 +62,14 @@
  * Therefore, comments that refer to a Document section might be off.
  */
 
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/slab.h>
-#include <linux/mmzone.h>
-#include <linux/edac.h>
+#include <beep/module.h>
+#include <beep/ctype.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/pci_ids.h>
+#include <beep/slab.h>
+#include <beep/mmzone.h>
+#include <beep/edac.h>
 #include <asm/msr.h>
 #include "edac_core.h"
 #include "mce_amd.h"

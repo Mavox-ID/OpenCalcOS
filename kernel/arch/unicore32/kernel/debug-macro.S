@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/kernel/debug-macro.S
+ * beep/arch/unicore32/kernel/debug-macro.S
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *

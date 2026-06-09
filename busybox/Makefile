@@ -156,7 +156,7 @@ export srctree objtree VPATH TOPDIR
 # during compilation. Only gcc and related bin-utils executables
 # are prefixed with $(CROSS_COMPILE).
 # CROSS_COMPILE can be set on the command line
-# make CROSS_COMPILE=ia64-linux-
+# make CROSS_COMPILE=ia64-beep-
 # Alternatively CROSS_COMPILE can be set in the environment.
 # Default value for CROSS_COMPILE is not to prefix executables
 # Note: Some architectures assign CROSS_COMPILE in their arch/*/Makefile
@@ -305,7 +305,7 @@ KALLSYMS	= scripts/kallsyms
 PERL		= perl
 CHECK		= sparse
 
-CHECKFLAGS     := -D__linux__ -Dlinux -D__STDC__ -Dunix -D__unix__ -Wbitwise $(CF)
+CHECKFLAGS     := -D__beep__ -Dbeep -D__STDC__ -Dunix -D__unix__ -Wbitwise $(CF)
 MODFLAGS	= -DMODULE
 CFLAGS_MODULE   = $(MODFLAGS)
 AFLAGS_MODULE   = $(MODFLAGS)
@@ -314,7 +314,7 @@ CFLAGS_KERNEL	=
 AFLAGS_KERNEL	=
 
 
-# Use LINUXINCLUDE when you must reference the include/ directory.
+# Use BEEPINCLUDE when you must reference the include/ directory.
 # Needed to be compatible with the O= option
 CFLAGS		:= $(CFLAGS)
 # Added only to final link stage of busybox binary
@@ -333,7 +333,7 @@ export	VERSION PATCHLEVEL SUBLEVEL KERNELRELEASE KERNELVERSION \
 	CPP AR NM STRIP OBJCOPY OBJDUMP MAKE AWK GENKSYMS PERL UTS_MACHINE \
 	HOSTCXX HOSTCXXFLAGS LDFLAGS_MODULE CHECK CHECKFLAGS
 
-export CPPFLAGS NOSTDINC_FLAGS LINUXINCLUDE OBJCOPYFLAGS LDFLAGS
+export CPPFLAGS NOSTDINC_FLAGS BEEPINCLUDE OBJCOPYFLAGS LDFLAGS
 export CFLAGS CFLAGS_KERNEL CFLAGS_MODULE
 export AFLAGS AFLAGS_KERNEL AFLAGS_MODULE
 export FLTFLAGS
@@ -487,11 +487,11 @@ libs-y		:= \
 		printutils/ \
 		procps/ \
 		runit/ \
-		selinux/ \
+		sebeep/ \
 		shell/ \
 		sysklogd/ \
-		util-linux/ \
-		util-linux/volume_id/ \
+		util-beep/ \
+		util-beep/volume_id/ \
 
 endif # KBUILD_EXTMOD
 
@@ -844,7 +844,7 @@ export CPPFLAGS_busybox.lds += -P -C -U$(ARCH)
 #bbox# 	$(Q)if [ ! -d include ]; then mkdir -p include; fi;
 #bbox# 	@ln -fsn asm-$(ARCH) $@
 
-# 	Split autoconf.h into include/linux/config/*
+# 	Split autoconf.h into include/beep/config/*
 quiet_cmd_gen_bbconfigopts = GEN     include/bbconfigopts.h
       cmd_gen_bbconfigopts = $(srctree)/scripts/mkconfigs include/bbconfigopts.h include/bbconfigopts_bz2.h
 quiet_cmd_gen_common_bufsiz = GEN     include/common_bufsiz.h

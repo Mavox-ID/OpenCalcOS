@@ -39,18 +39,18 @@
  * Author: Tom Tucker <tom@opengridcomputing.com>
  */
 
-#include <linux/sunrpc/svc_xprt.h>
-#include <linux/sunrpc/debug.h>
-#include <linux/sunrpc/rpc_rdma.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <beep/sunrpc/svc_xprt.h>
+#include <beep/sunrpc/debug.h>
+#include <beep/sunrpc/rpc_rdma.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
 #include <rdma/ib_verbs.h>
 #include <rdma/rdma_cm.h>
-#include <linux/sunrpc/svc_rdma.h>
-#include <linux/export.h>
+#include <beep/sunrpc/svc_rdma.h>
+#include <beep/export.h>
 #include "xprt_rdma.h"
 
 #define RPCDBG_FACILITY	RPCDBG_SVCXPRT

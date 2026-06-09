@@ -81,11 +81,11 @@
  *   buffer, as they know the size. Listeners to notifications don't,
  *   so we allocate their buffers dynamically.
  */
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/timer.h>
+#include <beep/slab.h>
+#include <beep/err.h>
+#include <beep/export.h>
 
 #include "uwb-internal.h"
 

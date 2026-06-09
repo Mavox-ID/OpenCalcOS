@@ -8,17 +8,17 @@
  * by the Free Software Foundation.
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/isa.h>
-#include <linux/ioport.h>
-#include <linux/dmi.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/isa.h>
+#include <beep/ioport.h>
+#include <beep/dmi.h>
 
 MODULE_AUTHOR("Pau Oliva Fora <pau@eslack.org>");
 MODULE_DESCRIPTION("HTC Shift touchscreen driver");

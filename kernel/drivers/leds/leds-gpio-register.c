@@ -6,10 +6,10 @@
  * the terms of the GNU General Public License version 2 as published by the
  * Free Software Foundation.
  */
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/leds.h>
+#include <beep/err.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/leds.h>
 
 /**
  * gpio_led_register_device - register a gpio-led device

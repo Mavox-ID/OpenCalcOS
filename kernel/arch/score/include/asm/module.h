@@ -1,7 +1,7 @@
 #ifndef _ASM_SCORE_MODULE_H
 #define _ASM_SCORE_MODULE_H
 
-#include <linux/list.h>
+#include <beep/list.h>
 #include <asm/uaccess.h>
 #include <asm-generic/module.h>
 

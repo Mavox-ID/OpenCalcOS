@@ -10,7 +10,7 @@
  * Copyright (c) 2001 Matthew Wilcox for Hewlett Packard
  * Copyright (c) 2001 Helge Deller <deller@gmx.de>
  * Copyright (c) 2001,2002 Ryan Bradetich 
- * Copyright (c) 2004-2005 Thibaut VARENE <varenet@parisc-linux.org>
+ * Copyright (c) 2004-2005 Thibaut VARENE <varenet@parisc-beep.org>
  * 
  * The file handles registering devices and drivers, then matching them.
  * It's the closest we get to a dating agency.
@@ -27,13 +27,13 @@
  *    before parents in some cases.
  */
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/export.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/export.h>
 #include <asm/hardware.h>
 #include <asm/io.h>
 #include <asm/pdc.h>

@@ -8,9 +8,9 @@
  *	History
  *	03-01-2007	Added forwarding for x.25	Andrew Hendry
  */
-#include <linux/if_arp.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <beep/if_arp.h>
+#include <beep/init.h>
+#include <beep/slab.h>
 #include <net/x25.h>
 
 LIST_HEAD(x25_forward_list);

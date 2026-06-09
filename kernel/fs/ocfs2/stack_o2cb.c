@@ -17,13 +17,13 @@
  * General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/crc32.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/crc32.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
 /* Needed for AOP_TRUNCATED_PAGE in mlog_errno() */
-#include <linux/fs.h>
+#include <beep/fs.h>
 
 #include "cluster/masklog.h"
 #include "cluster/nodemanager.h"

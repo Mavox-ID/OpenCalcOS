@@ -12,7 +12,7 @@
 #define _ASM_USER_H
 
 #include <asm/page.h>
-#include <linux/ptrace.h>
+#include <beep/ptrace.h>
 
 #ifndef __ASSEMBLY__
 /*

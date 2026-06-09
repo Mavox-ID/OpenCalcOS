@@ -1,8 +1,8 @@
 #ifndef __ALPHA_UACCESS_H
 #define __ALPHA_UACCESS_H
 
-#include <linux/errno.h>
-#include <linux/sched.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
 
 
 /*

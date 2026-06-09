@@ -17,19 +17,19 @@
  *
  * Routines specific to the LASAT boards
  */
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/lasat/lasat.h>
 
-#include <linux/module.h>
-#include <linux/sysctl.h>
-#include <linux/stddef.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/net.h>
-#include <linux/inet.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/sysctl.h>
+#include <beep/stddef.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/ctype.h>
+#include <beep/string.h>
+#include <beep/net.h>
+#include <beep/inet.h>
+#include <beep/uaccess.h>
 
 #include <asm/time.h>
 

@@ -22,17 +22,17 @@
  * This driver is based on max17040_battery.c
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/pm.h>
-#include <linux/mod_devicetable.h>
-#include <linux/power_supply.h>
-#include <linux/power/max17042_battery.h>
-#include <linux/of.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/pm.h>
+#include <beep/mod_devicetable.h>
+#include <beep/power_supply.h>
+#include <beep/power/max17042_battery.h>
+#include <beep/of.h>
 
 /* Status register bits */
 #define STATUS_POR_BIT         (1 << 1)

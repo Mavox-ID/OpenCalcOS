@@ -20,11 +20,11 @@
 /*
  * Frame allocation.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/crc32.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/skbuff.h>
+#include <beep/crc32.h>
+#include <beep/gfp.h>
 
 #include <scsi/fc_frame.h>
 

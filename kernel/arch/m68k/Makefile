@@ -19,7 +19,7 @@ KBUILD_DEFCONFIG := multi_defconfig
 ifneq ($(SUBARCH),$(ARCH))
 	ifeq ($(CROSS_COMPILE),)
 		CROSS_COMPILE := $(call cc-cross-prefix, \
-			m68k-linux-gnu- m68k-linux- m68k-unknown-linux-gnu-)
+			m68k-beep-gnu- m68k-beep- m68k-unknown-beep-gnu-)
 	endif
 endif
 
@@ -63,17 +63,17 @@ ifdef CONFIG_MMU
 # without -fno-strength-reduce the 53c7xx.c driver fails ;-(
 KBUILD_CFLAGS += -fno-strength-reduce -ffixed-a2
 else
-# we can use a m68k-linux-gcc toolchain with these in place
-KBUILD_CFLAGS += -DUTS_SYSNAME=\"uClinux\"
-KBUILD_CFLAGS += -D__uClinux__
-KBUILD_AFLAGS += -D__uClinux__
+# we can use a m68k-beep-gcc toolchain with these in place
+KBUILD_CFLAGS += -DUTS_SYSNAME=\"uCbeep\"
+KBUILD_CFLAGS += -D__uCbeep__
+KBUILD_AFLAGS += -D__uCbeep__
 endif
 
 LDFLAGS := -m m68kelf
 KBUILD_LDFLAGS_MODULE += -T $(srctree)/arch/m68k/kernel/module.lds
 
 ifdef CONFIG_SUN3
-LDFLAGS_vmlinux = -N
+LDFLAGS_vmbeep = -N
 endif
 
 CHECKFLAGS += -D__mc68000__
@@ -120,41 +120,41 @@ core-$(CONFIG_COLDFIRE)		+= arch/m68k/platform/coldfire/
 
 all:	zCalc
 
-lilo:	vmlinux
-	if [ -f $(INSTALL_PATH)/vmlinux ]; then mv -f $(INSTALL_PATH)/vmlinux $(INSTALL_PATH)/vmlinux.old; fi
+lilo:	vmbeep
+	if [ -f $(INSTALL_PATH)/vmbeep ]; then mv -f $(INSTALL_PATH)/vmbeep $(INSTALL_PATH)/vmbeep.old; fi
 	if [ -f $(INSTALL_PATH)/System.map ]; then mv -f $(INSTALL_PATH)/System.map $(INSTALL_PATH)/System.old; fi
-	cat vmlinux > $(INSTALL_PATH)/vmlinux
+	cat vmbeep > $(INSTALL_PATH)/vmbeep
 	cp System.map $(INSTALL_PATH)/System.map
 	if [ -x /sbin/lilo ]; then /sbin/lilo; else /etc/lilo/install; fi
 
-zCalc compressed: vmlinux.gz
+zCalc compressed: vmbeep.gz
 
-vmlinux.gz: vmlinux
+vmbeep.gz: vmbeep
 
 ifndef CONFIG_KGDB
-	cp vmlinux vmlinux.tmp
-	$(STRIP) vmlinux.tmp
-	gzip -9c vmlinux.tmp >vmlinux.gz
-	rm vmlinux.tmp
+	cp vmbeep vmbeep.tmp
+	$(STRIP) vmbeep.tmp
+	gzip -9c vmbeep.tmp >vmbeep.gz
+	rm vmbeep.tmp
 else
-	gzip -9c vmlinux >vmlinux.gz
+	gzip -9c vmbeep >vmbeep.gz
 endif
 
-bzImage: vmlinux.bz2
+bzImage: vmbeep.bz2
 
-vmlinux.bz2: vmlinux
+vmbeep.bz2: vmbeep
 
 ifndef CONFIG_KGDB
-	cp vmlinux vmlinux.tmp
-	$(STRIP) vmlinux.tmp
-	bzip2 -1c vmlinux.tmp >vmlinux.bz2
-	rm vmlinux.tmp
+	cp vmbeep vmbeep.tmp
+	$(STRIP) vmbeep.tmp
+	bzip2 -1c vmbeep.tmp >vmbeep.bz2
+	rm vmbeep.tmp
 else
-	bzip2 -1c vmlinux >vmlinux.bz2
+	bzip2 -1c vmbeep >vmbeep.bz2
 endif
 
 archclean:
-	rm -f vmlinux.gz vmlinux.bz2
+	rm -f vmbeep.gz vmbeep.bz2
 
 install:
-	sh $(srctree)/arch/m68k/install.sh $(KERNELRELEASE) vmlinux.gz System.map "$(INSTALL_PATH)"
+	sh $(srctree)/arch/m68k/install.sh $(KERNELRELEASE) vmbeep.gz System.map "$(INSTALL_PATH)"

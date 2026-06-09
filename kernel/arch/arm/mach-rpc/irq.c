@@ -1,6 +1,6 @@
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/io.h>
 
 #include <asm/mach/irq.h>
 #include <asm/hardware/iomd.h>

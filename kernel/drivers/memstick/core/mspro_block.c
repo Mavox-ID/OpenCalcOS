@@ -12,15 +12,15 @@
  *
  */
 
-#include <linux/blkdev.h>
-#include <linux/idr.h>
-#include <linux/hdreg.h>
-#include <linux/kthread.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/memstick.h>
-#include <linux/module.h>
+#include <beep/blkdev.h>
+#include <beep/idr.h>
+#include <beep/hdreg.h>
+#include <beep/kthread.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
+#include <beep/memstick.h>
+#include <beep/module.h>
 
 #define DRIVER_NAME "mspro_block"
 

@@ -25,12 +25,12 @@
  * 01/19/06:	changed jsm_input routine to use the dynamically allocated
  *		tty_buffer changes. Contributors: Scott Kilau and Ananda V.
  ***********************************************************************/
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_reg.h>
-#include <linux/delay.h>	/* For udelay */
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/serial_reg.h>
+#include <beep/delay.h>	/* For udelay */
+#include <beep/pci.h>
+#include <beep/slab.h>
 
 #include "jsm.h"
 
@@ -625,7 +625,7 @@ void jsm_input(struct jsm_channel *ch)
 		if (I_PARMRK(tp) || I_BRKINT(tp) || I_INPCK(tp)) {
 			for (i = 0; i < s; i++) {
 				/*
-				 * Give the Linux ld the flags in the
+				 * Give the Beep ld the flags in the
 				 * format it likes.
 				 */
 				if (*(ch->ch_equeue +tail +i) & UART_LSR_BI)

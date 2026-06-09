@@ -10,10 +10,10 @@
  * option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/rio.h>
-#include <linux/rio_ids.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/rio.h>
+#include <beep/rio_ids.h>
 
 #include "rio.h"
 
@@ -207,7 +207,7 @@ struct bus_type rio_bus_type = {
 /**
  *  rio_bus_init - Register the RapidIO bus with the device model
  *
- *  Registers the RIO bus device and RIO bus type with the Linux
+ *  Registers the RIO bus device and RIO bus type with the Beep
  *  device model.
  */
 static int __init rio_bus_init(void)

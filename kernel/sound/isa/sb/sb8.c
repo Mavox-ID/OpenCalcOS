@@ -19,11 +19,11 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/isa.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/isa.h>
+#include <beep/ioport.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/sb.h>
 #include <sound/opl3.h>

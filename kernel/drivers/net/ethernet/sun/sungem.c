@@ -14,32 +14,32 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/crc32.h>
-#include <linux/random.h>
-#include <linux/workqueue.h>
-#include <linux/if_vlan.h>
-#include <linux/bitops.h>
-#include <linux/mm.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/in.h>
+#include <beep/sched.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/mii.h>
+#include <beep/ethtool.h>
+#include <beep/crc32.h>
+#include <beep/random.h>
+#include <beep/workqueue.h>
+#include <beep/if_vlan.h>
+#include <beep/bitops.h>
+#include <beep/mm.h>
+#include <beep/gfp.h>
 
 #include <asm/io.h>
 #include <asm/byteorder.h>
@@ -58,7 +58,7 @@
 #include <asm/pmac_feature.h>
 #endif
 
-#include <linux/sungem_phy.h>
+#include <beep/sungem_phy.h>
 #include "sungem.h"
 
 /* Stripping FCS is causing problems, disabled for now */

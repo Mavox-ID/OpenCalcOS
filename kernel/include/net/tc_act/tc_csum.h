@@ -1,7 +1,7 @@
 #ifndef __NET_TC_CSUM_H
 #define __NET_TC_CSUM_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <net/act_api.h>
 
 struct tcf_csum {

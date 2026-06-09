@@ -31,7 +31,7 @@
 #ifndef IRDA_QOS_H
 #define IRDA_QOS_H
 
-#include <linux/skbuff.h>
+#include <beep/skbuff.h>
 
 #include <net/irda/parameters.h>
 

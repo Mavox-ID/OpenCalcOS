@@ -17,14 +17,14 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/ptrace.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/ptrace.h>
+#include <beep/reboot.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/io.h>
 #include <asm/syscalls.h>
 #include <asm/uaccess.h>
 #include <asm/pgtable.h>

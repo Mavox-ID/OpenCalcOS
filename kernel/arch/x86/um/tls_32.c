@@ -3,8 +3,8 @@
  * Licensed under the GPL
  */
 
-#include <linux/percpu.h>
-#include <linux/sched.h>
+#include <beep/percpu.h>
+#include <beep/sched.h>
 #include <asm/uaccess.h>
 #include <os.h>
 #include <skas.h>

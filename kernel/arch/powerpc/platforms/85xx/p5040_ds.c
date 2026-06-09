@@ -9,14 +9,14 @@
  * option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
 
 #include <asm/machdep.h>
 #include <asm/udbg.h>
 #include <asm/mpic.h>
 
-#include <linux/of_fdt.h>
+#include <beep/of_fdt.h>
 
 #include <sysdev/fsl_soc.h>
 #include <sysdev/fsl_pci.h>

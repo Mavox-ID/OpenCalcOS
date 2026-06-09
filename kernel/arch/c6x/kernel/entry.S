@@ -10,8 +10,8 @@
 ;  published by the Free Software Foundation.
 ;
 
-#include <linux/sys.h>
-#include <linux/linkage.h>
+#include <beep/sys.h>
+#include <beep/linkage.h>
 #include <asm/thread_info.h>
 #include <asm/asm-offsets.h>
 #include <asm/unistd.h>

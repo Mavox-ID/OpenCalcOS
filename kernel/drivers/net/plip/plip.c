@@ -1,5 +1,5 @@
 /* $Id: plip.c,v 1.3.6.2 1997/04/16 15:07:56 phil Exp $ */
-/* PLIP: A parallel port "network" driver for Linux. */
+/* PLIP: A parallel port "network" driver for Beep. */
 /* This driver is for parallel port with 5-bit cable (LapLink (R) cable). */
 /*
  * Authors:	Donald Becker <becker@scyld.com>
@@ -41,13 +41,13 @@
  * inspired by Russ Nelson's parallel port packet driver.
  *
  * NOTE:
- *     Tanabe Hiroyasu had changed the protocol, and it was in Linux v1.0.
+ *     Tanabe Hiroyasu had changed the protocol, and it was in Beep v1.0.
  *     Because of the necessity to communicate to DOS machines with the
  *     Crynwr packet driver, Peter Bauer changed the protocol again
  *     back to original protocol.
  *
  *     This version follows original PLIP protocol.
- *     So, this PLIP can't communicate the PLIP of Linux v1.0.
+ *     So, this PLIP can't communicate the PLIP of Beep v1.0.
  */
 
 /*
@@ -88,28 +88,28 @@ static const char version[] = "NET3 PLIP version 2.4-parport gniibe@mri.co.jp\n"
     extra grounds are 18,19,20,21,22,23,24
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/if_ether.h>
-#include <linux/in.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_plip.h>
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/parport.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/interrupt.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/if_ether.h>
+#include <beep/in.h>
+#include <beep/errno.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/inetdevice.h>
+#include <beep/skbuff.h>
+#include <beep/if_plip.h>
+#include <beep/workqueue.h>
+#include <beep/spinlock.h>
+#include <beep/completion.h>
+#include <beep/parport.h>
+#include <beep/bitops.h>
 
 #include <net/neighbour.h>
 
@@ -535,7 +535,7 @@ plip_receive(unsigned short nibble_timeout, struct net_device *dev,
  *	PLIP fortunately has no bus architecture (its Point-to-point).
  *
  *	We can't fix the daddr thing as that quirk (more bug) is embedded
- *	in far too many old systems not all even running Linux.
+ *	in far too many old systems not all even running Beep.
  */
 
 static __be16 plip_type_trans(struct sk_buff *skb, struct net_device *dev)

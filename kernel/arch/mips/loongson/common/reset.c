@@ -9,8 +9,8 @@
  * Copyright (C) 2009 Lemote, Inc.
  * Author: Zhangjin Wu, wuzhangjin@gmail.com
  */
-#include <linux/init.h>
-#include <linux/pm.h>
+#include <beep/init.h>
+#include <beep/pm.h>
 
 #include <asm/reboot.h>
 

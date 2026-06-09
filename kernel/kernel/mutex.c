@@ -17,12 +17,12 @@
  *
  * Also see Documentation/mutex-design.txt.
  */
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/debug_locks.h>
+#include <beep/mutex.h>
+#include <beep/sched.h>
+#include <beep/export.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/debug_locks.h>
 
 /*
  * In the DEBUG case we are using the "NULL fastpath" for mutexes,

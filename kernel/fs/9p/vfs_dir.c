@@ -1,5 +1,5 @@
 /*
- * linux/fs/9p/vfs_dir.c
+ * beep/fs/9p/vfs_dir.c
  *
  * This file contains vfs directory ops for the 9P2000 protocol.
  *
@@ -23,16 +23,16 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/sched.h>
-#include <linux/inet.h>
-#include <linux/idr.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/stat.h>
+#include <beep/string.h>
+#include <beep/sched.h>
+#include <beep/inet.h>
+#include <beep/idr.h>
+#include <beep/slab.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 

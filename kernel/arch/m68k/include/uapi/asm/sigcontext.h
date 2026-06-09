@@ -8,13 +8,13 @@ struct sigcontext {
 	unsigned long  sc_d1;
 	unsigned long  sc_a0;
 	unsigned long  sc_a1;
-#ifdef __uClinux__
+#ifdef __uCbeep__
 	unsigned long  sc_a5;
 #endif
 	unsigned short sc_sr;
 	unsigned long  sc_pc;
 	unsigned short sc_formatvec;
-#ifndef __uClinux__
+#ifndef __uCbeep__
 	unsigned long  sc_fpregs[2*3];  /* room for two fp registers */
 	unsigned long  sc_fpcntl[3];
 	unsigned char  sc_fpstate[216];

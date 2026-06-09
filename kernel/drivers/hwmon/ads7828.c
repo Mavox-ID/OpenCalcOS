@@ -6,7 +6,7 @@
  *
  * Written by Steve Hardy <shardy@redhat.com>
  *
- * ADS7830 support, by Guillaume Roguez <guillaume.roguez@savoirfairelinux.com>
+ * ADS7830 support, by Guillaume Roguez <guillaume.roguez@savoirfairebeep.com>
  *
  * For further information, see the Documentation/hwmon/ads7828 file.
  *
@@ -25,16 +25,16 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_data/ads7828.h>
-#include <linux/slab.h>
+#include <beep/err.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/jiffies.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/platform_data/ads7828.h>
+#include <beep/slab.h>
 
 /* The ADS7828 registers */
 #define ADS7828_NCH		8	/* 8 channels supported */

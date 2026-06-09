@@ -389,7 +389,7 @@ pte_t *populate_extra_pte(unsigned long vaddr);
 #endif
 
 #ifndef __ASSEMBLY__
-#include <linux/mm_types.h>
+#include <beep/mm_types.h>
 
 static inline int pte_none(pte_t pte)
 {
@@ -445,7 +445,7 @@ static inline unsigned long pmd_page_vaddr(pmd_t pmd)
 
 /*
  * Currently stuck as a macro due to indirect forward reference to
- * linux/mmzone.h's __section_mem_map_addr() definition:
+ * beep/mmzone.h's __section_mem_map_addr() definition:
  */
 #define pmd_page(pmd)	pfn_to_page((pmd_val(pmd) & PTE_PFN_MASK) >> PAGE_SHIFT)
 
@@ -465,7 +465,7 @@ static inline unsigned long pmd_index(unsigned long address)
  * and a page entry and page directory to the page they refer to.
  *
  * (Currently stuck as a macro because of indirect forward reference
- * to linux/mm.h:page_to_nid())
+ * to beep/mm.h:page_to_nid())
  */
 #define mk_pte(page, pgprot)   pfn_pte(page_to_pfn(page), (pgprot))
 
@@ -521,7 +521,7 @@ static inline unsigned long pud_page_vaddr(pud_t pud)
 
 /*
  * Currently stuck as a macro due to indirect forward reference to
- * linux/mmzone.h's __section_mem_map_addr() definition:
+ * beep/mmzone.h's __section_mem_map_addr() definition:
  */
 #define pud_page(pud)		pfn_to_page(pud_val(pud) >> PAGE_SHIFT)
 
@@ -561,7 +561,7 @@ static inline unsigned long pgd_page_vaddr(pgd_t pgd)
 
 /*
  * Currently stuck as a macro due to indirect forward reference to
- * linux/mmzone.h's __section_mem_map_addr() definition:
+ * beep/mmzone.h's __section_mem_map_addr() definition:
  */
 #define pgd_page(pgd)		pfn_to_page(pgd_val(pgd) >> PAGE_SHIFT)
 

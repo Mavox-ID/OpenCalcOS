@@ -33,8 +33,8 @@
 #ifndef RDMA_USER_CM_H
 #define RDMA_USER_CM_H
 
-#include <linux/types.h>
-#include <linux/in6.h>
+#include <beep/types.h>
+#include <beep/in6.h>
 #include <rdma/ib_user_verbs.h>
 #include <rdma/ib_user_sa.h>
 

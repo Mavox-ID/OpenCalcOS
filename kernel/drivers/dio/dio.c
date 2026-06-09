@@ -24,13 +24,13 @@
  * This file is based on the way the Amiga port handles Zorro II cards, 
  * although we aren't so complicated...
  */
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/dio.h>
-#include <linux/slab.h>                         /* kmalloc() */
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/dio.h>
+#include <beep/slab.h>                         /* kmalloc() */
 #include <asm/uaccess.h>
 #include <asm/io.h>                             /* readb() */
 
@@ -89,7 +89,7 @@ static struct dioname names[] =
 #undef DIOFBNAME
 
 static const char *unknowndioname 
-        = "unknown DIO board -- please email <linux-m68k@lists.linux-m68k.org>!";
+        = "unknown DIO board -- please email <beep-m68k@lists.beep-m68k.org>!";
 
 static const char *dio_getname(int id)
 {

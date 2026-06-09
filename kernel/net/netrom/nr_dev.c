@@ -6,29 +6,29 @@
  *
  * Copyright Jonathan Naylor G4KLX (g4klx@g4klx.demon.co.uk)
  */
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/sysctl.h>
-#include <linux/string.h>
-#include <linux/socket.h>
-#include <linux/errno.h>
-#include <linux/fcntl.h>
-#include <linux/in.h>
-#include <linux/if_ether.h>	/* For the statistics structure. */
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/proc_fs.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/fs.h>
+#include <beep/types.h>
+#include <beep/sysctl.h>
+#include <beep/string.h>
+#include <beep/socket.h>
+#include <beep/errno.h>
+#include <beep/fcntl.h>
+#include <beep/in.h>
+#include <beep/if_ether.h>	/* For the statistics structure. */
+#include <beep/slab.h>
 
 #include <asm/uaccess.h>
 #include <asm/io.h>
 
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
+#include <beep/inet.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/if_arp.h>
+#include <beep/skbuff.h>
 
 #include <net/ip.h>
 #include <net/arp.h>

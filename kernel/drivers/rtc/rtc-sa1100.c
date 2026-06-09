@@ -21,19 +21,19 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/rtc.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
+#include <beep/clk.h>
+#include <beep/rtc.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/of.h>
+#include <beep/pm.h>
+#include <beep/bitops.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 #include <mach/irqs.h>

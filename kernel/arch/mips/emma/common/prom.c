@@ -19,10 +19,10 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/bootmem.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/bootmem.h>
 
 #include <asm/addrspace.h>
 #include <asm/bootinfo.h>

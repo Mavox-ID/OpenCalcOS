@@ -9,15 +9,15 @@
 
 #define DEBUG
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/debugfs.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/debugfs.h>
 
 #include <asm/sections.h>
 #include <asm/io.h>

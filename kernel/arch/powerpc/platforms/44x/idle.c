@@ -21,8 +21,8 @@
  *
  */
 
-#include <linux/of.h>
-#include <linux/kernel.h>
+#include <beep/of.h>
+#include <beep/kernel.h>
 #include <asm/machdep.h>
 
 static int mode_spin;

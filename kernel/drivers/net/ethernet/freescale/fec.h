@@ -14,9 +14,9 @@
 /****************************************************************************/
 
 #ifdef CONFIG_FEC_PTP
-#include <linux/clocksource.h>
-#include <linux/net_tstamp.h>
-#include <linux/ptp_clock_kernel.h>
+#include <beep/clocksource.h>
+#include <beep/net_tstamp.h>
+#include <beep/ptp_clock_kernel.h>
 #endif
 
 #if defined(CONFIG_M523x) || defined(CONFIG_M527x) || defined(CONFIG_M528x) || \

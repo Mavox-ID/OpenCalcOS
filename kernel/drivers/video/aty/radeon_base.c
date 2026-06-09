@@ -16,7 +16,7 @@
  *	driver which has the following copyright notice:
  *
  *	Copyright 2000 ATI Technologies Inc., Markham, Ontario, and
- *                     VA Linux Systems Inc., Fremont, California.
+ *                     VA Beep Systems Inc., Fremont, California.
  *
  *	All Rights Reserved.
  *
@@ -35,7 +35,7 @@
  *	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
  * 	EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
  *	MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
- *	NON-INFRINGEMENT.  IN NO EVENT SHALL ATI, VA LINUX SYSTEMS AND/OR
+ *	NON-INFRINGEMENT.  IN NO EVENT SHALL ATI, VA BEEP SYSTEMS AND/OR
  *	THEIR SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
  *	WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  *	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
@@ -44,7 +44,7 @@
  *	XFree86 driver authors:
  *
  *	   Kevin E. Martin <martin@xfree86.org>
- *	   Rickard E. Faith <faith@valinux.com>
+ *	   Rickard E. Faith <faith@vabeep.com>
  *	   Alan Hourihane <alanh@fairlite.demon.co.uk>
  *
  */
@@ -54,25 +54,25 @@
 
 #include "radeonfb.h"
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/time.h>
-#include <linux/fb.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/device.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/time.h>
+#include <beep/fb.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/vmalloc.h>
+#include <beep/device.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 
 #ifdef CONFIG_PPC_OF
 
@@ -90,7 +90,7 @@
 #endif
 
 #include <video/radeon.h>
-#include <linux/radeonfb.h>
+#include <beep/radeonfb.h>
 
 #include "../edid.h" // MOVE THAT TO include/video
 #include "ati_ids.h"

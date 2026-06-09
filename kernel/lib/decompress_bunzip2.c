@@ -40,17 +40,17 @@
  */
 
 /*
-	Made it fit for running in Linux Kernel by Alain Knaff (alain@knaff.lu)
+	Made it fit for running in Beep Kernel by Alain Knaff (alain@knaff.lu)
 */
 
 
 #ifdef STATIC
 #define PREBOOT
 #else
-#include <linux/decompress/bunzip2.h>
+#include <beep/decompress/bunzip2.h>
 #endif /* STATIC */
 
-#include <linux/decompress/mm.h>
+#include <beep/decompress/mm.h>
 
 #ifndef INT_MAX
 #define INT_MAX 0x7fffffff

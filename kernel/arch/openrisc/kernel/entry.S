@@ -1,7 +1,7 @@
 /*
  * OpenRISC entry.S
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -16,7 +16,7 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 #include <asm/processor.h>
 #include <asm/unistd.h>

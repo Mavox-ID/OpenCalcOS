@@ -7,15 +7,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/dma/ipu-dma.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/spinlock.h>
+#include <beep/delay.h>
+#include <beep/clk.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/dma/ipu-dma.h>
 
 #include "ipu_intern.h"
 

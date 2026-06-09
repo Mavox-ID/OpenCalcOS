@@ -1,5 +1,5 @@
 /*
- * Video Capture Driver (Video for Linux 1/2)
+ * Video Capture Driver (Video for Beep 1/2)
  * for the Matrox Marvel G200,G400 and Rainbow Runner-G series
  *
  * This module is an interface to the KS0127 video decoder chip.
@@ -33,14 +33,14 @@
  * V1.1 Gerard v.d. Horst  Added some debugoutput, reset the video-standard
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/i2c.h>
-#include <linux/videodev2.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/i2c.h>
+#include <beep/videodev2.h>
+#include <beep/slab.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-chip-ident.h>
 #include "ks0127.h"

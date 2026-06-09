@@ -3,7 +3,7 @@
  * low level stuff for ASUSCOM NETWORK INC. ISDNLink cards
  *
  * Author       Karsten Keil
- * Copyright    by Karsten Keil      <keil@isdn4linux.de>
+ * Copyright    by Karsten Keil      <keil@isdn4beep.de>
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
@@ -12,8 +12,8 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/isapnp.h>
+#include <beep/init.h>
+#include <beep/isapnp.h>
 #include "hisax.h"
 #include "isac.h"
 #include "ipac.h"

@@ -25,7 +25,7 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include <int.h>
 
 char pnx8550_irq_tab[][5] __initdata = {

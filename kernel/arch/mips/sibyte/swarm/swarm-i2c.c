@@ -9,9 +9,9 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
 
 
 static struct i2c_board_info swarm_i2c_info1[] __initdata = {

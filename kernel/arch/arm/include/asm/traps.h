@@ -1,7 +1,7 @@
 #ifndef _ASMARM_TRAP_H
 #define _ASMARM_TRAP_H
 
-#include <linux/list.h>
+#include <beep/list.h>
 
 struct pt_regs;
 struct task_struct;

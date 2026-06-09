@@ -1,16 +1,16 @@
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/gpio.h>
-#include <linux/of_gpio.h>
-#include <linux/idr.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/spinlock.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/gpio.h>
+#include <beep/of_gpio.h>
+#include <beep/idr.h>
+#include <beep/slab.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/gpio.h>
@@ -1109,7 +1109,7 @@ int gpiochip_add(struct gpio_chip *chip)
 
 			/* REVISIT:  most hardware initializes GPIOs as
 			 * inputs (often with pullups enabled) so power
-			 * usage is minimized.  Linux code should set the
+			 * usage is minimized.  Beep code should set the
 			 * gpio direction first thing; but until it does,
 			 * and in case chip->get_direction is not set,
 			 * we may expose the wrong direction in sysfs.

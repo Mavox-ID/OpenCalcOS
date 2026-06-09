@@ -10,18 +10,18 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/security.h>
-#include <linux/signal.h>
-#include <linux/regset.h>
-#include <linux/elf.h>
-#include <linux/tracehook.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/errno.h>
+#include <beep/ptrace.h>
+#include <beep/user.h>
+#include <beep/security.h>
+#include <beep/signal.h>
+#include <beep/regset.h>
+#include <beep/elf.h>
+#include <beep/tracehook.h>
 
 #include <asm/uaccess.h>
 #include <asm/page.h>
@@ -149,7 +149,7 @@ static int fpmregs_active(struct task_struct *target,
 }
 
 /*
- * Define the register sets available on the FRV under Linux
+ * Define the register sets available on the FRV under Beep
  */
 enum frv_regset {
 	REGSET_GENERAL,

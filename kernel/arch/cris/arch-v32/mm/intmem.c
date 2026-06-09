@@ -4,8 +4,8 @@
  * Copyright (c) 2004 Axis Communications AB.
  */
 
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <beep/list.h>
+#include <beep/slab.h>
 #include <asm/io.h>
 #include <memmap.h>
 

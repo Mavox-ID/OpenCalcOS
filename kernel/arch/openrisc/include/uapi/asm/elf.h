@@ -1,7 +1,7 @@
 /*
- * OpenRISC Linux
+ * OpenRISC Beep
  *
- * Linux architectural port borrowing liberally from similar works of
+ * Beep architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -46,7 +46,7 @@
 typedef unsigned long elf_greg_t;
 
 /*
- * Note that NGREG is defined to ELF_NGREG in include/linux/elfcore.h, and is
+ * Note that NGREG is defined to ELF_NGREG in include/beep/elfcore.h, and is
  * thus exposed to user-space.
  */
 #define ELF_NGREG (sizeof(struct user_regs_struct) / sizeof(elf_greg_t))
@@ -55,7 +55,7 @@ typedef elf_greg_t elf_gregset_t[ELF_NGREG];
 /* A placeholder; OR32 does not have fp support yes, so no fp regs for now.  */
 typedef unsigned long elf_fpregset_t;
 
-/* This should be moved to include/linux/elf.h */
+/* This should be moved to include/beep/elf.h */
 #define EM_OR32         0x8472
 #define EM_OPENRISC     92     /* OpenRISC 32-bit embedded processor */
 

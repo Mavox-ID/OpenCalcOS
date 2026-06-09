@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/cyber2000fb.c
+ *  beep/drivers/video/cyber2000fb.c
  *
  *  Copyright (C) 1998-2002 Russell King
  *
@@ -36,19 +36,19 @@
  * (which, incidentally, is about the same saving as a 2.5in hard disk
  * entering standby mode.)
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/i2c.h>
+#include <beep/i2c-algo-bit.h>
 
 #include <asm/pgtable.h>
 

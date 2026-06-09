@@ -1,8 +1,8 @@
 /* $Id: applicom.h,v 1.2 1999/08/28 15:09:49 dwmw2 Exp $ */
 
 
-#ifndef __LINUX_APPLICOM_H__
-#define __LINUX_APPLICOM_H__
+#ifndef __BEEP_APPLICOM_H__
+#define __BEEP_APPLICOM_H__
 
 
 #define DATA_TO_PC_READY      0x00
@@ -82,4 +82,4 @@ struct st_ram_io
 };
 
 
-#endif /* __LINUX_APPLICOM_H__ */
+#endif /* __BEEP_APPLICOM_H__ */

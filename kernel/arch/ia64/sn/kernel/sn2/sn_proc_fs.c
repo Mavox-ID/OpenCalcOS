@@ -7,8 +7,8 @@
  */
 
 #ifdef CONFIG_PROC_FS
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 #include <asm/uaccess.h>
 #include <asm/sn/sn_sal.h>
 

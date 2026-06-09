@@ -1,7 +1,7 @@
 #ifndef _NET_IPCOMP_H
 #define _NET_IPCOMP_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define IPCOMP_SCRATCH_SIZE     65400
 

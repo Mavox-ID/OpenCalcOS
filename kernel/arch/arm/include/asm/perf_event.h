@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/include/asm/perf_event.h
+ *  beep/arch/arm/include/asm/perf_event.h
  *
  *  Copyright (C) 2009 picoChip Designs Ltd, Jamie Iles
  *

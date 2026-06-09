@@ -1,17 +1,17 @@
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/interrupt.h>
 
 #include "qlcnic.h"
 
-#include <linux/swab.h>
-#include <linux/dma-mapping.h>
+#include <beep/swab.h>
+#include <beep/dma-mapping.h>
 #include <net/ip.h>
-#include <linux/ipv6.h>
-#include <linux/inetdevice.h>
-#include <linux/sysfs.h>
-#include <linux/aer.h>
-#include <linux/log2.h>
+#include <beep/ipv6.h>
+#include <beep/inetdevice.h>
+#include <beep/sysfs.h>
+#include <beep/aer.h>
+#include <beep/log2.h>
 
 int qlcnicvf_config_bridged_mode(struct qlcnic_adapter *adapter, u32 enable)
 {

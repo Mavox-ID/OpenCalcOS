@@ -17,7 +17,7 @@
 #ifndef _DLOAD_INTERNAL_
 #define _DLOAD_INTERNAL_
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /*
  * Internal state definitions for the dynamic loader

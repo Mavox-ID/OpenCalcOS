@@ -1,7 +1,7 @@
 #ifndef _UAPIASM_SCHID_H
 #define _UAPIASM_SCHID_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 struct subchannel_id {
 	__u32 cssid : 8;

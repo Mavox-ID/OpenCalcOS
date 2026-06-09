@@ -24,12 +24,12 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/cper.h>
-#include <linux/acpi.h>
-#include <linux/aer.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/time.h>
+#include <beep/cper.h>
+#include <beep/acpi.h>
+#include <beep/aer.h>
 
 /*
  * CPER record ID need to be unique even after reboot, because record

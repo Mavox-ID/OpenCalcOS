@@ -3,7 +3,7 @@
  * specific defines for CCD's HFC 2BDS0 PCI chips
  *
  * Author       Werner Cornelius
- * Copyright    by Werner Cornelius  <werner@isdn4linux.de>
+ * Copyright    by Werner Cornelius  <werner@isdn4beep.de>
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.

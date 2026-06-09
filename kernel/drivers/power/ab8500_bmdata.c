@@ -1,9 +1,9 @@
-#include <linux/export.h>
-#include <linux/power_supply.h>
-#include <linux/of.h>
-#include <linux/mfd/abx500.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/mfd/abx500/ab8500-bm.h>
+#include <beep/export.h>
+#include <beep/power_supply.h>
+#include <beep/of.h>
+#include <beep/mfd/abx500.h>
+#include <beep/mfd/abx500/ab8500.h>
+#include <beep/mfd/abx500/ab8500-bm.h>
 
 /*
  * These are the defined batteries that uses a NTC and ID resistor placed

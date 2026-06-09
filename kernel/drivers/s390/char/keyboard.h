@@ -5,9 +5,9 @@
  *    Author(s): Martin Schwidefsky (schwidefsky@de.ibm.com),
  */
 
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/keyboard.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/keyboard.h>
 
 #define NR_FN_HANDLER	20
 

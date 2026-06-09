@@ -16,12 +16,12 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/fs.h>
-#include <linux/reboot.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/of.h>
+#include <beep/fs.h>
+#include <beep/reboot.h>
 
 #include <asm/machdep.h>
 #include <asm/rtas.h>

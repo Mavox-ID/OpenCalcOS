@@ -15,12 +15,12 @@
 #ifndef _ASM_TILE_IRQ_H
 #define _ASM_TILE_IRQ_H
 
-#include <linux/hardirq.h>
+#include <beep/hardirq.h>
 
 /* The hypervisor interface provides 32 IRQs. */
 #define NR_IRQS 32
 
-/* IRQ numbers used for linux IPIs. */
+/* IRQ numbers used for beep IPIs. */
 #define IRQ_RESCHEDULE 0
 
 #define irq_canonicalize(irq)   (irq)

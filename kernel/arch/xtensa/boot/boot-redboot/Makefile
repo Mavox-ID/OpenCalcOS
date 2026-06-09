@@ -19,9 +19,9 @@ LIBS	:= arch/xtensa/boot/lib/lib.a arch/xtensa/lib/lib.a
 
 LIBGCC := $(shell $(CC) $(KBUILD_CFLAGS) -print-libgcc-file-name)
 
-$(obj)/zCalc.o: vmlinux.bin.gz $(OBJS)
+$(obj)/zCalc.o: vmbeep.bin.gz $(OBJS)
 	$(Q)$(OBJCOPY) $(OBJCOPY_ARGS) -R .comment \
-		--add-section image=vmlinux.bin.gz \
+		--add-section image=vmbeep.bin.gz \
 		--set-section-flags image=contents,alloc,load,load,data \
 		$(OBJS) $@
 

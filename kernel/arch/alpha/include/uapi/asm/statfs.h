@@ -1,7 +1,7 @@
 #ifndef _ALPHA_STATFS_H
 #define _ALPHA_STATFS_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* Alpha is the only 64-bit platform with 32-bit statfs. And doesn't
    even seem to implement statfs64 */

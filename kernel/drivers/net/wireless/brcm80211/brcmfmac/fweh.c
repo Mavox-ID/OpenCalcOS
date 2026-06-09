@@ -13,7 +13,7 @@
  * OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
  * CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#include <linux/netdevice.h>
+#include <beep/netdevice.h>
 
 #include "brcmu_wifi.h"
 #include "brcmu_utils.h"

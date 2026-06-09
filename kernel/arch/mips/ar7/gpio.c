@@ -18,8 +18,8 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/module.h>
-#include <linux/gpio.h>
+#include <beep/module.h>
+#include <beep/gpio.h>
 
 #include <asm/mach-ar7/gpio.h>
 

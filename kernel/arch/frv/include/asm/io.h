@@ -17,12 +17,12 @@
 
 #ifdef __KERNEL__
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/virtconvert.h>
 #include <asm/string.h>
 #include <asm/mb-regs.h>
 #include <asm-generic/pci_iomap.h>
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 /*
  * swap functions are sometimes needed to interface little-endian hardware

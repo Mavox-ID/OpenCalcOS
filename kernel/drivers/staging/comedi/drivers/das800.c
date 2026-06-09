@@ -3,7 +3,7 @@
     Driver for Keitley das800 series boards and compatibles
     Copyright (C) 2000 Frank Mori Hess <fmhess@users.sourceforge.net>
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 2000 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -62,11 +62,11 @@ cmd triggers supported:
 
 */
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 #include "../comedidev.h"
 
-#include <linux/ioport.h>
-#include <linux/delay.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
 
 #include "8253.h"
 #include "comedi_fc.h"

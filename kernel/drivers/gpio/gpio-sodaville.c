@@ -9,18 +9,18 @@
  *
  */
 
-#include <linux/errno.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/of_irq.h>
-#include <linux/basic_mmio_gpio.h>
+#include <beep/errno.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/platform_device.h>
+#include <beep/of_irq.h>
+#include <beep/basic_mmio_gpio.h>
 
 #define DRV_NAME		"sdv_gpio"
 #define SDV_NUM_PUB_GPIOS	12

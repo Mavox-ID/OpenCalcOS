@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m32r/mm/page.S
+ *  beep/arch/m32r/mm/page.S
  *
  *  Clear/Copy page with CPU
  *

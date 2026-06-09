@@ -69,7 +69,7 @@ static inline void i8042_write_command(int val)
 
 #ifdef CONFIG_X86
 
-#include <linux/dmi.h>
+#include <beep/dmi.h>
 
 static const struct dmi_system_id __initconst i8042_dmi_noloop_table[] = {
 	{
@@ -687,7 +687,7 @@ static const struct dmi_system_id __initconst i8042_dmi_dritek_table[] = {
 #endif /* CONFIG_X86 */
 
 #ifdef CONFIG_PNP
-#include <linux/pnp.h>
+#include <beep/pnp.h>
 
 static bool i8042_pnp_kbd_registered;
 static unsigned int i8042_pnp_kbd_devices;

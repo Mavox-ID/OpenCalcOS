@@ -1,8 +1,8 @@
 /*
  * tick internal variable and functions used by low/high res code
  */
-#include <linux/hrtimer.h>
-#include <linux/tick.h>
+#include <beep/hrtimer.h>
+#include <beep/tick.h>
 
 #ifdef CONFIG_GENERIC_CLOCKEVENTS_BUILD
 

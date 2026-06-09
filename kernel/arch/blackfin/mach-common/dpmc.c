@@ -4,15 +4,15 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/cpufreq.h>
+#include <beep/cdev.h>
+#include <beep/device.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/types.h>
+#include <beep/cpufreq.h>
 
 #include <asm/delay.h>
 #include <asm/dpmc.h>
@@ -159,6 +159,6 @@ struct platform_driver bfin_dpmc_device_driver = {
 };
 module_platform_driver(bfin_dpmc_device_driver);
 
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucbeep.org>");
 MODULE_DESCRIPTION("cpu power management driver for Blackfin");
 MODULE_LICENSE("GPL");

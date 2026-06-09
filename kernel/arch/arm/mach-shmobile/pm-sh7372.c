@@ -8,19 +8,19 @@
  * for more details.
  */
 
-#include <linux/pm.h>
-#include <linux/suspend.h>
-#include <linux/cpuidle.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/pm_clock.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/bitrev.h>
-#include <linux/console.h>
+#include <beep/pm.h>
+#include <beep/suspend.h>
+#include <beep/cpuidle.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/pm_clock.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/bitrev.h>
+#include <beep/console.h>
 #include <asm/cpuidle.h>
 #include <asm/io.h>
 #include <asm/tlbflush.h>

@@ -10,7 +10,7 @@
 #ifndef SYNC_SERIAL_H
 #define SYNC_SERIAL_H
 
-#include <linux/ioctl.h>
+#include <beep/ioctl.h>
 
 #define SSP_SPEED      _IOR('S', 0, unsigned int)
 #define SSP_MODE       _IOR('S', 1, unsigned int)

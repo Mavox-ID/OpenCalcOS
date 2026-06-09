@@ -22,8 +22,8 @@
 #ifndef TDA10048_H
 #define TDA10048_H
 
-#include <linux/dvb/frontend.h>
-#include <linux/firmware.h>
+#include <beep/dvb/frontend.h>
+#include <beep/firmware.h>
 
 struct tda10048_config {
 

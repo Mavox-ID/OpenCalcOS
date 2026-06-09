@@ -25,7 +25,7 @@
 #ifndef _RTL_CAM_H
 #define _RTL_CAM_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 struct net_device;
 
 void CamResetAllEntry(struct net_device *dev);

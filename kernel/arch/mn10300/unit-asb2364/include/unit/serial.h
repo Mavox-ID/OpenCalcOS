@@ -15,7 +15,7 @@
 #include <asm/cpu-regs.h>
 #include <proc/irq.h>
 #include <unit/fpga-regs.h>
-#include <linux/serial_reg.h>
+#include <beep/serial_reg.h>
 
 #define SERIAL_PORT0_BASE_ADDRESS	0xA8200000
 

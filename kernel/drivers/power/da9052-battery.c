@@ -11,19 +11,19 @@
  * option) any later version.
  */
 
-#include <linux/delay.h>
-#include <linux/freezer.h>
-#include <linux/fs.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/uaccess.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
+#include <beep/delay.h>
+#include <beep/freezer.h>
+#include <beep/fs.h>
+#include <beep/jiffies.h>
+#include <beep/module.h>
+#include <beep/timer.h>
+#include <beep/uaccess.h>
+#include <beep/platform_device.h>
+#include <beep/power_supply.h>
 
-#include <linux/mfd/da9052/da9052.h>
-#include <linux/mfd/da9052/pdata.h>
-#include <linux/mfd/da9052/reg.h>
+#include <beep/mfd/da9052/da9052.h>
+#include <beep/mfd/da9052/pdata.h>
+#include <beep/mfd/da9052/reg.h>
 
 /* STATIC CONFIGURATION */
 #define DA9052_BAT_CUTOFF_VOLT		2800

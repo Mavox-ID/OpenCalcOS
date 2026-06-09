@@ -1,7 +1,7 @@
 /* U1memcpy.S: UltraSPARC-I/II/IIi/IIe optimized memcpy.
  *
  * Copyright (C) 1997, 2004 David S. Miller (davem@redhat.com)
- * Copyright (C) 1996, 1997, 1998, 1999 Jakub Jelinek (jj@ultra.linux.cz)
+ * Copyright (C) 1996, 1997, 1998, 1999 Jakub Jelinek (jj@ultra.beep.cz)
  */
 
 #ifdef __KERNEL__

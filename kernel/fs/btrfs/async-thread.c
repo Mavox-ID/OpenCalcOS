@@ -16,11 +16,11 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/kthread.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/freezer.h>
+#include <beep/kthread.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/freezer.h>
 #include "async-thread.h"
 
 #define WORK_QUEUED_BIT 0

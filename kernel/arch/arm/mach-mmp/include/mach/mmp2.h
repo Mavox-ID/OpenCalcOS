@@ -1,7 +1,7 @@
 #ifndef __ASM_MACH_MMP2_H
 #define __ASM_MACH_MMP2_H
 
-#include <linux/platform_data/pxa_sdhci.h>
+#include <beep/platform_data/pxa_sdhci.h>
 
 struct sys_timer;
 
@@ -10,10 +10,10 @@ extern void __init mmp2_init_icu(void);
 extern void __init mmp2_init_irq(void);
 extern void mmp2_clear_pmic_int(void);
 
-#include <linux/i2c.h>
-#include <linux/i2c/pxa-i2c.h>
+#include <beep/i2c.h>
+#include <beep/i2c/pxa-i2c.h>
 #include <mach/devices.h>
-#include <linux/platform_data/dma-mmp_tdma.h>
+#include <beep/platform_data/dma-mmp_tdma.h>
 
 extern struct pxa_device_desc mmp2_device_uart1;
 extern struct pxa_device_desc mmp2_device_uart2;

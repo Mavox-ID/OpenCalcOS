@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mm/proc-xscale.S
+ *  beep/arch/arm/mm/proc-xscale.S
  *
  *  Author:	Nicolas Pitre
  *  Created:	November 2000
@@ -20,8 +20,8 @@
  *	Nicolas Pitre <nico@fluxnic.net>
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 #include <asm/assembler.h>
 #include <asm/hwcap.h>
 #include <asm/pgtable.h>

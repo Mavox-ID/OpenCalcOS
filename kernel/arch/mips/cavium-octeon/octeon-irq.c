@@ -6,14 +6,14 @@
  * Copyright (C) 2004-2012 Cavium, Inc.
  */
 
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/bitops.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/smp.h>
-#include <linux/of.h>
+#include <beep/interrupt.h>
+#include <beep/irqdomain.h>
+#include <beep/bitops.h>
+#include <beep/percpu.h>
+#include <beep/slab.h>
+#include <beep/irq.h>
+#include <beep/smp.h>
+#include <beep/of.h>
 
 #include <asm/octeon/octeon.h>
 #include <asm/octeon/cvmx-ciu2-defs.h>

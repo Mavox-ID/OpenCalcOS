@@ -15,11 +15,11 @@
  *  with this program; if not, write to the Free Software Foundation, Inc.,
  *  59 Temple Place - Suite 330, Boston MA 02111-1307, USA.
  *
- * Routines corresponding to Linux kernel FP context
+ * Routines corresponding to Beep kernel FP context
  * manipulation primitives for the Algorithmics MIPS
  * FPU Emulator
  */
-#include <linux/sched.h>
+#include <beep/sched.h>
 #include <asm/processor.h>
 #include <asm/signal.h>
 #include <asm/uaccess.h>

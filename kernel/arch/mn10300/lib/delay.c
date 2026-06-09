@@ -8,9 +8,9 @@
  * as published by the Free Software Foundation; either version
  * 2 of the Licence, or (at your option) any later version.
  */
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
 #include <asm/div64.h>
 
 /*

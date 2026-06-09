@@ -8,8 +8,8 @@
  * see Documentation/dvb/README.dvb-usb for more information
  */
 
-#include <linux/vmalloc.h>
-#include <linux/i2c.h>
+#include <beep/vmalloc.h>
+#include <beep/i2c.h>
 
 #include "mxl111sf.h"
 #include "mxl111sf-reg.h"

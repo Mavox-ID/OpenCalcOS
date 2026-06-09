@@ -1,16 +1,16 @@
 /*
- * tree.c: Basic device tree traversal/scanning for the Linux
+ * tree.c: Basic device tree traversal/scanning for the Beep
  *         prom library.
  *
  * Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/ctype.h>
-#include <linux/module.h>
+#include <beep/string.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/ctype.h>
+#include <beep/module.h>
 
 #include <asm/openprom.h>
 #include <asm/oplib.h>
@@ -232,7 +232,7 @@ phandle prom_finddevice(char *name)
 	char *s = name, *d;
 	phandle node = prom_root_node, node2;
 	unsigned int which_io, phys_addr;
-	struct linux_prom_registers reg[PROMREG_MAX];
+	struct beep_prom_registers reg[PROMREG_MAX];
 
 	while (*s++) {
 		if (!*s) return node; /* path '.../' is legal */

@@ -12,7 +12,7 @@
  *
  * Derived from book3s_rmhandlers.S and other files, which are:
  *
- * Copyright SUSE Linux Products GmbH 2009
+ * Copyright SUSE Beep Products GmbH 2009
  *
  * Authors: Alexander Graf <agraf@suse.de>
  */
@@ -1116,7 +1116,7 @@ END_FTR_SECTION_IFSET(CPU_FTR_ARCH_201)
 23:
 	/*
 	 * For external and machine check interrupts, we need
-	 * to call the Linux handler to process the interrupt.
+	 * to call the Beep handler to process the interrupt.
 	 * We do that by jumping to absolute address 0x500 for
 	 * external interrupts, or the machine_check_fwnmi label
 	 * for machine checks (since firmware might have patched

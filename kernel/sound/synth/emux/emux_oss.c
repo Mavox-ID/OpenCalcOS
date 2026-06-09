@@ -25,7 +25,7 @@
 
 #ifdef CONFIG_SND_SEQUENCER_OSS
 
-#include <linux/export.h>
+#include <beep/export.h>
 #include <asm/uaccess.h>
 #include <sound/core.h>
 #include "emux_voice.h"
@@ -432,7 +432,7 @@ emuspec_control(struct snd_emux *emu, struct snd_emux_port *port, int cmd,
  * GUS specific h/w controls
  */
 
-#include <linux/ultrasound.h>
+#include <beep/ultrasound.h>
 
 static void
 gusspec_control(struct snd_emux *emu, struct snd_emux_port *port, int cmd,

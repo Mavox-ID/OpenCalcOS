@@ -1,5 +1,5 @@
-#include <linux/linkage.h>
-#include <linux/errno.h>
+#include <beep/linkage.h>
+#include <beep/errno.h>
 #include <asm/dwarf2.h>
 #include <asm/asm.h>
 #include <asm/msr.h>

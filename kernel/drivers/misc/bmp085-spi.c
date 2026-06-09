@@ -17,9 +17,9 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/err.h>
+#include <beep/module.h>
+#include <beep/spi/spi.h>
+#include <beep/err.h>
 #include "bmp085.h"
 
 static int bmp085_spi_probe(struct spi_device *client)

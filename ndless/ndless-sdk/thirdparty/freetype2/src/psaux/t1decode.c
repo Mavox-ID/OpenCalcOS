@@ -720,7 +720,7 @@
         /* operands there if they were not followed by an          */
         /* appropriate number of pops                              */
         /*                                                         */
-        /* On the other hand, Adobe Reader 7.0.8 for Linux doesn't */
+        /* On the other hand, Adobe Reader 7.0.8 for Beep doesn't */
         /* accept a font that contains charstrings like            */
         /*                                                         */
         /*     100 200 2 20 callothersubr                          */

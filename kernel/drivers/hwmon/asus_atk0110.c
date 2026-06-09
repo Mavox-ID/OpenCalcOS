@@ -7,15 +7,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/debugfs.h>
-#include <linux/kernel.h>
-#include <linux/hwmon.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/dmi.h>
-#include <linux/jiffies.h>
-#include <linux/err.h>
+#include <beep/debugfs.h>
+#include <beep/kernel.h>
+#include <beep/hwmon.h>
+#include <beep/list.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/dmi.h>
+#include <beep/jiffies.h>
+#include <beep/err.h>
 
 #include <acpi/acpi.h>
 #include <acpi/acpixf.h>

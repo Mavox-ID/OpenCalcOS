@@ -9,17 +9,17 @@
  * 2 of the Licence, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/fsnotify.h>
-#include <linux/quotaops.h>
-#include <linux/xattr.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/security.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/fsnotify.h>
+#include <beep/quotaops.h>
+#include <beep/xattr.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
+#include <beep/security.h>
+#include <beep/slab.h>
 #include "internal.h"
 
 #define CACHEFILES_KEYBUF_SIZE 512

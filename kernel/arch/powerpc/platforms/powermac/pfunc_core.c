@@ -5,13 +5,13 @@
  * FIXME: LOCKING !!!
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
 
 #include <asm/prom.h>
 #include <asm/pmac_pfunc.h>

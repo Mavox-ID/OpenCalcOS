@@ -6,13 +6,13 @@
  * (C) Copyright 1995 1996 Linus Torvalds
  */
 
-#include <linux/bootmem.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mmiotrace.h>
+#include <beep/bootmem.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/mmiotrace.h>
 
 #include <asm/cacheflush.h>
 #include <asm/e820.h>

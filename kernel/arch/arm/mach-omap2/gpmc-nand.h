@@ -11,7 +11,7 @@
 #define	__OMAP2_GPMC_NAND_H
 
 #include "gpmc.h"
-#include <linux/platform_data/mtd-nand-omap2.h>
+#include <beep/platform_data/mtd-nand-omap2.h>
 
 #if IS_ENABLED(CONFIG_MTD_NAND_OMAP2)
 extern int gpmc_nand_init(struct omap_nand_platform_data *d,

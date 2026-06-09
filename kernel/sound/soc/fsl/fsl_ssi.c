@@ -10,17 +10,17 @@
  * kind, whether express or implied.
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/clk.h>
+#include <beep/device.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
+#include <beep/of_platform.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

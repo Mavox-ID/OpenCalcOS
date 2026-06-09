@@ -3,7 +3,7 @@
  *
  *  Copyright (C) 2001, 2002 Andy Grover <andrew.grover@intel.com>
  *  Copyright (C) 2001, 2002 Paul Diefenbaugh <paul.s.diefenbaugh@intel.com>
- *  Copyright (C) 2004       Dominik Brodowski <linux@brodo.de>
+ *  Copyright (C) 2004       Dominik Brodowski <beep@brodo.de>
  *  Copyright (C) 2004  Anil S Keshavamurthy <anil.s.keshavamurthy@intel.com>
  *  			- Added processor hotplug support
  *
@@ -32,19 +32,19 @@
  *	4. Need C1 timing -- must modify kernel (IRQ handler) to get this.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/pm.h>
-#include <linux/cpufreq.h>
-#include <linux/cpu.h>
-#include <linux/dmi.h>
-#include <linux/moduleparam.h>
-#include <linux/cpuidle.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/pm.h>
+#include <beep/cpufreq.h>
+#include <beep/cpu.h>
+#include <beep/dmi.h>
+#include <beep/moduleparam.h>
+#include <beep/cpuidle.h>
+#include <beep/slab.h>
+#include <beep/acpi.h>
 
 #include <asm/io.h>
 #include <asm/cpu.h>

@@ -12,7 +12,7 @@
  * any later version.
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 enum {
 	SAVU_SIZE_CONTROL = 0x03,

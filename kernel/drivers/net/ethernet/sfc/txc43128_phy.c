@@ -12,8 +12,8 @@
  * see www.transwitch.com, part is TXC-43128
  */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 #include "efx.h"
 #include "mdio_10g.h"
 #include "phy.h"

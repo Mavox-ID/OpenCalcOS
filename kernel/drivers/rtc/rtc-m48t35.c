@@ -14,12 +14,12 @@
  * option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/bcd.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/rtc.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/bcd.h>
+#include <beep/io.h>
 
 #define DRV_VERSION		"1.0"
 

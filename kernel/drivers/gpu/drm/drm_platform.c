@@ -25,7 +25,7 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/export.h>
+#include <beep/export.h>
 #include <drm/drmP.h>
 
 /**

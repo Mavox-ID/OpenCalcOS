@@ -32,14 +32,14 @@
  * Fix stop command
  */
 
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/firmware.h>
-#include <linux/delay.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/module.h>
+#include <beep/moduleparam.h>
+#include <beep/slab.h>
+#include <beep/firmware.h>
+#include <beep/delay.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/sdio_func.h>
+#include <beep/mmc/sdio_ids.h>
+#include <beep/module.h>
 
 #include "smscoreapi.h"
 #include "sms-cards.h"

@@ -1,5 +1,5 @@
 /*
- * linux/net/sunrpc/sysctl.c
+ * beep/net/sunrpc/sysctl.c
  *
  * Sysctl interface to sunrpc module.
  *
@@ -7,18 +7,18 @@
  * impossible at the moment.
  */
 
-#include <linux/types.h>
-#include <linux/linkage.h>
-#include <linux/ctype.h>
-#include <linux/fs.h>
-#include <linux/sysctl.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/linkage.h>
+#include <beep/ctype.h>
+#include <beep/fs.h>
+#include <beep/sysctl.h>
+#include <beep/module.h>
 
 #include <asm/uaccess.h>
-#include <linux/sunrpc/types.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/svc_xprt.h>
+#include <beep/sunrpc/types.h>
+#include <beep/sunrpc/sched.h>
+#include <beep/sunrpc/stats.h>
+#include <beep/sunrpc/svc_xprt.h>
 
 #include "netns.h"
 

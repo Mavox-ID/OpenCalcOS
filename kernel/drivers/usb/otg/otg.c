@@ -9,13 +9,13 @@
  * (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/err.h>
+#include <beep/device.h>
+#include <beep/slab.h>
 
-#include <linux/usb/otg.h>
+#include <beep/usb/otg.h>
 
 static LIST_HEAD(phy_list);
 static DEFINE_SPINLOCK(phy_lock);

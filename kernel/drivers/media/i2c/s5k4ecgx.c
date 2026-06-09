@@ -14,16 +14,16 @@
  * (at your option) any later version.
  */
 
-#include <linux/clk.h>
-#include <linux/crc32.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <beep/clk.h>
+#include <beep/crc32.h>
+#include <beep/ctype.h>
+#include <beep/delay.h>
+#include <beep/firmware.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/module.h>
+#include <beep/regulator/consumer.h>
+#include <beep/slab.h>
 #include <asm/unaligned.h>
 
 #include <media/media-entity.h>

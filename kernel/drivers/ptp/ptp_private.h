@@ -20,13 +20,13 @@
 #ifndef _PTP_PRIVATE_H_
 #define _PTP_PRIVATE_H_
 
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/posix-clock.h>
-#include <linux/ptp_clock.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/time.h>
+#include <beep/cdev.h>
+#include <beep/device.h>
+#include <beep/mutex.h>
+#include <beep/posix-clock.h>
+#include <beep/ptp_clock.h>
+#include <beep/ptp_clock_kernel.h>
+#include <beep/time.h>
 
 #define PTP_MAX_TIMESTAMPS 128
 #define PTP_BUF_TIMESTAMPS 30

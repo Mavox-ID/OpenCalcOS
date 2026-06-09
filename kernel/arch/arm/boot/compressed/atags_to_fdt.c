@@ -143,9 +143,9 @@ int atags_to_fdt(void *atag_list, void *fdt, int total_space)
 			uint32_t initrd_start, initrd_size;
 			initrd_start = atag->u.initrd.start;
 			initrd_size = atag->u.initrd.size;
-			setprop_cell(fdt, "/chosen", "linux,initrd-start",
+			setprop_cell(fdt, "/chosen", "beep,initrd-start",
 					initrd_start);
-			setprop_cell(fdt, "/chosen", "linux,initrd-end",
+			setprop_cell(fdt, "/chosen", "beep,initrd-end",
 					initrd_start + initrd_size);
 		}
 	}

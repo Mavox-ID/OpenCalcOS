@@ -31,11 +31,11 @@
 
 #include "cpia2.h"
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/firmware.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/vmalloc.h>
+#include <beep/firmware.h>
 
 #define FIRMWARE "cpia2/stv0672_vp4.bin"
 MODULE_FIRMWARE(FIRMWARE);

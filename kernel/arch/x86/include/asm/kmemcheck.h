@@ -1,7 +1,7 @@
 #ifndef ASM_X86_KMEMCHECK_H
 #define ASM_X86_KMEMCHECK_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/ptrace.h>
 
 #ifdef CONFIG_KMEMCHECK

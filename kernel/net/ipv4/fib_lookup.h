@@ -1,8 +1,8 @@
 #ifndef _FIB_LOOKUP_H
 #define _FIB_LOOKUP_H
 
-#include <linux/types.h>
-#include <linux/list.h>
+#include <beep/types.h>
+#include <beep/list.h>
 #include <net/ip_fib.h>
 
 struct fib_alias {

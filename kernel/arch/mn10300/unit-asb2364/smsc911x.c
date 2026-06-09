@@ -9,12 +9,12 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/smsc911x.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/ioport.h>
+#include <beep/smsc911x.h>
 #include <unit/smsc911x.h>
 
 static struct smsc911x_platform_config smsc911x_config = {

@@ -18,13 +18,13 @@
  * Author: Will Deacon <will.deacon@arm.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/elf.h>
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/moduleloader.h>
-#include <linux/vmalloc.h>
+#include <beep/bitops.h>
+#include <beep/elf.h>
+#include <beep/gfp.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/moduleloader.h>
+#include <beep/vmalloc.h>
 
 void *module_alloc(unsigned long size)
 {

@@ -1,5 +1,5 @@
 /*
- * Linux driver for digital TV devices equipped with B2C2 FlexcopII(b)/III
+ * Beep driver for digital TV devices equipped with B2C2 FlexcopII(b)/III
  * flexcop-misc.c - miscellaneous functions
  * see flexcop.c for copyright information
  */
@@ -24,7 +24,7 @@ void flexcop_determine_revision(struct flexcop_device *fc)
 		break;
 	default:
 		err("unknown FlexCop Revision: %x. Please report this to "
-				"linux-dvb@linuxtv.org.",
+				"beep-dvb@beeptv.org.",
 				v.misc_204.Rev_N_sig_revision_hi);
 		break;
 	}

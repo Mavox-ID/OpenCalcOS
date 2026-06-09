@@ -12,16 +12,16 @@
  * (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/dwc3-exynos.h>
-#include <linux/dma-mapping.h>
-#include <linux/clk.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/nop-usb-xceiv.h>
-#include <linux/of.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/platform_data/dwc3-exynos.h>
+#include <beep/dma-mapping.h>
+#include <beep/clk.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/nop-usb-xceiv.h>
+#include <beep/of.h>
 
 #include "core.h"
 

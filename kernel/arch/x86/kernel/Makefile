@@ -1,10 +1,10 @@
 #
-# Makefile for the linux kernel.
+# Makefile for the beep kernel.
 #
 
-extra-y                := head_$(BITS).o head$(BITS).o head.o vmlinux.lds
+extra-y                := head_$(BITS).o head$(BITS).o head.o vmbeep.lds
 
-CPPFLAGS_vmlinux.lds += -U$(UTS_MACHINE)
+CPPFLAGS_vmbeep.lds += -U$(UTS_MACHINE)
 
 ifdef CONFIG_FUNCTION_TRACER
 # Do not profile debug and lowlevel utilities

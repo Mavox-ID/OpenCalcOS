@@ -1,6 +1,6 @@
 /******************************************************************************
- * Copyright (c) 2008 Isaku Yamahata <yamahata at valinux co jp>
- *                    VA Linux Systems Japan K.K.
+ * Copyright (c) 2008 Isaku Yamahata <yamahata at vabeep co jp>
+ *                    VA Beep Systems Japan K.K.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,9 +18,9 @@
  *
  */
 
-#include <linux/bug.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
+#include <beep/bug.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
 #include <asm/paravirt.h>
 
 #define DECLARE(name)						\

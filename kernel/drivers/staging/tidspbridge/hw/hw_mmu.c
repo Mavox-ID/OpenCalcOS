@@ -16,12 +16,12 @@
  * WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
  */
 
-#include <linux/io.h>
+#include <beep/io.h>
 #include "MMURegAcM.h"
 #include <hw_defs.h>
 #include <hw_mmu.h>
-#include <linux/types.h>
-#include <linux/err.h>
+#include <beep/types.h>
+#include <beep/err.h>
 
 #define MMU_BASE_VAL_MASK	0xFC00
 #define MMU_PAGE_MAX	     3

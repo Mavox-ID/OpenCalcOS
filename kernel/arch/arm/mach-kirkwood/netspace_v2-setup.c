@@ -21,20 +21,20 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
-#include <linux/mv643xx_eth.h>
-#include <linux/input.h>
-#include <linux/gpio.h>
-#include <linux/gpio_keys.h>
-#include <linux/leds.h>
-#include <linux/gpio-fan.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/ata_platform.h>
+#include <beep/mv643xx_eth.h>
+#include <beep/input.h>
+#include <beep/gpio.h>
+#include <beep/gpio_keys.h>
+#include <beep/leds.h>
+#include <beep/gpio-fan.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <mach/kirkwood.h>
-#include <linux/platform_data/leds-kirkwood-ns2.h>
+#include <beep/platform_data/leds-kirkwood-ns2.h>
 #include "common.h"
 #include "mpp.h"
 #include "lacie_v2-common.h"

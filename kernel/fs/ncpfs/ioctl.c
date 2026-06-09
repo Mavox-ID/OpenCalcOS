@@ -7,18 +7,18 @@
  *
  */
 
-#include <linux/capability.h>
-#include <linux/compat.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/ioctl.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/mount.h>
-#include <linux/slab.h>
-#include <linux/highuid.h>
-#include <linux/vmalloc.h>
-#include <linux/sched.h>
+#include <beep/capability.h>
+#include <beep/compat.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/ioctl.h>
+#include <beep/time.h>
+#include <beep/mm.h>
+#include <beep/mount.h>
+#include <beep/slab.h>
+#include <beep/highuid.h>
+#include <beep/vmalloc.h>
+#include <beep/sched.h>
 
 #include <asm/uaccess.h>
 

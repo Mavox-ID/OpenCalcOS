@@ -17,7 +17,7 @@
  *
  * Copyright (C) by Hannu Savolainen 1993-1997
  *
- * OSS/Free for Linux is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
+ * OSS/Free for Beep is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
  * Version 2 (June 1991). See the "COPYING" file distributed with this software
  * for more info.
  *
@@ -41,14 +41,14 @@
  *		Tested. Believed fully functional.
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/stddef.h>
-#include <linux/slab.h>
-#include <linux/isapnp.h>
-#include <linux/pnp.h>
-#include <linux/spinlock.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/stddef.h>
+#include <beep/slab.h>
+#include <beep/isapnp.h>
+#include <beep/pnp.h>
+#include <beep/spinlock.h>
 
 #define DEB(x)
 #define DEB1(x)

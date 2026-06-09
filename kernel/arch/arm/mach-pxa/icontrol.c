@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-pxa/icontrol.c
+ * beep/arch/arm/mach-pxa/icontrol.c
  *
  * Support for the iControl and SafeTcam platforms from TMT Services
  * using the Embedian MXM-8x10 Computer on Module
@@ -13,9 +13,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -23,9 +23,9 @@
 #include <mach/pxa320.h>
 #include <mach/mxm8x10.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/can/platform/mcp251x.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/pxa2xx_spi.h>
+#include <beep/can/platform/mcp251x.h>
 
 #include "generic.h"
 

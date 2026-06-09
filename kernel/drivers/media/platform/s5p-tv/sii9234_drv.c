@@ -10,18 +10,18 @@
  * option) any later version.
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/freezer.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/machine.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/freezer.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/kthread.h>
+#include <beep/module.h>
+#include <beep/pm_runtime.h>
+#include <beep/regulator/machine.h>
+#include <beep/slab.h>
 
 #include <mach/gpio.h>
 #include <plat/gpio-cfg.h>

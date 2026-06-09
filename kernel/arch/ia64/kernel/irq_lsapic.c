@@ -5,14 +5,14 @@
  * internal Streamlined Advanced Programmable Interrupt Controller
  * (LSAPIC), such as the ITC and IPI interrupts.
     *
- * Copyright (C) 1999 VA Linux Systems
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 VA Beep Systems
+ * Copyright (C) 1999 Walt Drummond <drummond@vabeep.com>
  * Copyright (C) 2000 Hewlett-Packard Co
  * Copyright (C) 2000 David Mosberger-Tang <davidm@hpl.hp.com>
  */
 
-#include <linux/sched.h>
-#include <linux/irq.h>
+#include <beep/sched.h>
+#include <beep/irq.h>
 
 static unsigned int
 lsapic_noop_startup (struct irq_data *data)

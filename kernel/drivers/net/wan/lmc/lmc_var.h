@@ -15,7 +15,7 @@
   * of the GNU General Public License version 2, incorporated herein by reference.
   */
 
-#include <linux/timer.h>
+#include <beep/timer.h>
 
 /*
  * basic definitions used in lmc include files
@@ -46,7 +46,7 @@ typedef struct lmc___ctl lmc_ctl_t;
 #define LMC_CSR_WRITE(sc, reg, val) \
 	outl((val), (sc)->lmc_csrs.reg)
 
-//#ifdef _LINUX_DELAY_H
+//#ifdef _BEEP_DELAY_H
 //	#define SLOW_DOWN_IO udelay(2);
 //	#undef __SLOW_DOWN_IO
 //	#define __SLOW_DOWN_IO udelay(2);

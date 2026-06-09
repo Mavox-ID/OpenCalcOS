@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-pxa/income.c
+ * beep/arch/arm/mach-pxa/income.c
  *
  * Support for Income s.r.o. SH-Dmaster PXA270 SBC
  *
@@ -12,26 +12,26 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/pwm_backlight.h>
-#include <linux/i2c/pxa-i2c.h>
+#include <beep/bitops.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/pwm_backlight.h>
+#include <beep/i2c/pxa-i2c.h>
 
 #include <asm/irq.h>
 #include <asm/mach-types.h>
 
 #include <mach/hardware.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <beep/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/usb-ohci-pxa27x.h>
 #include <mach/pxa27x.h>
 #include <mach/pxa27x-udc.h>
-#include <linux/platform_data/video-pxafb.h>
+#include <beep/platform_data/video-pxafb.h>
 
 #include "devices.h"
 #include "generic.h"

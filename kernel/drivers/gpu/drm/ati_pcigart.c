@@ -2,13 +2,13 @@
  * \file ati_pcigart.c
  * ATI PCI GART support
  *
- * \author Gareth Hughes <gareth@valinux.com>
+ * \author Gareth Hughes <gareth@vabeep.com>
  */
 
 /*
- * Created: Wed Dec 13 21:52:19 2000 by gareth@valinux.com
+ * Created: Wed Dec 13 21:52:19 2000 by gareth@vabeep.com
  *
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA Beep Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -31,7 +31,7 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/export.h>
+#include <beep/export.h>
 #include <drm/drmP.h>
 
 # define ATI_PCIGART_PAGE_SIZE		4096	/**< PCI GART page size */

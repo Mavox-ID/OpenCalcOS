@@ -1,7 +1,7 @@
 #ifndef __PERF_EVLIST_H
 #define __PERF_EVLIST_H 1
 
-#include <linux/list.h>
+#include <beep/list.h>
 #include <stdio.h>
 #include "../perf.h"
 #include "event.h"

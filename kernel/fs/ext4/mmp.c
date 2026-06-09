@@ -1,8 +1,8 @@
-#include <linux/fs.h>
-#include <linux/random.h>
-#include <linux/buffer_head.h>
-#include <linux/utsname.h>
-#include <linux/kthread.h>
+#include <beep/fs.h>
+#include <beep/random.h>
+#include <beep/buffer_head.h>
+#include <beep/utsname.h>
+#include <beep/kthread.h>
 
 #include "ext4.h"
 

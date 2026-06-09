@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-at91rm9200/board-ecbat91.c
+ * beep/arch/arm/mach-at91rm9200/board-ecbat91.c
  * Copyright (C) 2007 emQbit.com.
  *
  * We started from board-dk.c, which is Copyright (C) 2005 SAN People.
@@ -19,14 +19,14 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/types.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
+#include <beep/types.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
 
 #include <mach/hardware.h>
 #include <asm/setup.h>

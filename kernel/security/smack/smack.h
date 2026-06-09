@@ -13,14 +13,14 @@
 #ifndef _SECURITY_SMACK_H
 #define _SECURITY_SMACK_H
 
-#include <linux/capability.h>
-#include <linux/spinlock.h>
-#include <linux/security.h>
-#include <linux/in.h>
+#include <beep/capability.h>
+#include <beep/spinlock.h>
+#include <beep/security.h>
+#include <beep/in.h>
 #include <net/netlabel.h>
-#include <linux/list.h>
-#include <linux/rculist.h>
-#include <linux/lsm_audit.h>
+#include <beep/list.h>
+#include <beep/rculist.h>
+#include <beep/lsm_audit.h>
 
 /*
  * Smack labels were limited to 23 characters for a long time.

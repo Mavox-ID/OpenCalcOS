@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-pxa/pcm027.c
+ *  beep/arch/arm/mach-pxa/pcm027.c
  *  Support for the Phytec phyCORE-PXA270 CPU card (aka PCM-027).
  *
  *  Refer
@@ -9,7 +9,7 @@
  *  Author:	Juergen Kilb
  *  Created:	April 05, 2005
  *  Copyright:	Phytec Messtechnik GmbH
- *  e-Mail:	armlinux@phytec.de
+ *  e-Mail:	armbeep@phytec.de
  *
  *  based on Intel Mainstone Board
  *
@@ -20,13 +20,13 @@
  *  published by the Free Software Foundation.
  */
 
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/physmap.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/max7301.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/leds.h>
+#include <beep/irq.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/physmap.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/max7301.h>
+#include <beep/spi/pxa2xx_spi.h>
+#include <beep/leds.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

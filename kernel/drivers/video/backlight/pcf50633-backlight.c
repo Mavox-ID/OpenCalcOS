@@ -13,16 +13,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
 
-#include <linux/backlight.h>
-#include <linux/fb.h>
+#include <beep/backlight.h>
+#include <beep/fb.h>
 
-#include <linux/mfd/pcf50633/core.h>
-#include <linux/mfd/pcf50633/backlight.h>
+#include <beep/mfd/pcf50633/core.h>
+#include <beep/mfd/pcf50633/backlight.h>
 
 struct pcf50633_bl {
 	struct pcf50633 *pcf;

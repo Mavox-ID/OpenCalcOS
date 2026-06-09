@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mmc/core/mmc.c
+ *  beep/drivers/mmc/core/mmc.c
  *
  *  Copyright (C) 2003-2004 Russell King, All Rights Reserved.
  *  Copyright (C) 2005-2007 Pierre Ossman, All Rights Reserved.
@@ -10,13 +10,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/stat.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/mmc.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/mmc.h>
 
 #include "core.h"
 #include "bus.h"

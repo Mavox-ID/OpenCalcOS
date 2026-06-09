@@ -23,11 +23,11 @@
  * (rev. engineering needed) */
 #define CHAN_DEBUG	0
 
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/average.h>
-#include <linux/leds.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
+#include <beep/types.h>
+#include <beep/average.h>
+#include <beep/leds.h>
 #include <net/mac80211.h>
 
 /* RX/TX descriptor hw structs

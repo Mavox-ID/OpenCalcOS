@@ -11,24 +11,24 @@
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  */
 
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/major.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/capability.h>
-#include <linux/circ_buf.h>
-#include <linux/console.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/serial.h>
-#include <linux/sysrq.h>
-#include <linux/uaccess.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/major.h>
+#include <beep/fcntl.h>
+#include <beep/mm.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/capability.h>
+#include <beep/circ_buf.h>
+#include <beep/console.h>
+#include <beep/irq.h>
+#include <beep/module.h>
+#include <beep/serial.h>
+#include <beep/sysrq.h>
+#include <beep/uaccess.h>
 
 #include <asm/hpsim.h>
 

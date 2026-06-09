@@ -27,11 +27,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/list.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/list.h>
+#include <beep/init.h>
 #include "ibmphp.h"
 
 static int flags = 0;		/* for testing */

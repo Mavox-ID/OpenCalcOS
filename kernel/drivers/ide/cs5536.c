@@ -30,11 +30,11 @@
  * the Machine Specific Registers to configure the device.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/ide.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/ide.h>
 #include <asm/msr.h>
 
 #define DRV_NAME	"cs5536"

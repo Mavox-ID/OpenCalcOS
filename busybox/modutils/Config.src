@@ -3,7 +3,7 @@
 # see docs/Kconfig-language.txt.
 #
 
-menu "Linux Module Utilities"
+menu "Beep Module Utilities"
 
 config MODPROBE_SMALL
 	bool "Simplified modutils"
@@ -53,11 +53,11 @@ config FEATURE_MODPROBE_SMALL_CHECK_ALREADY_LOADED
 	Check if the module is already loaded.
 
 config FEATURE_2_4_MODULES
-	bool "Support version 2.2/2.4 Linux kernels"
+	bool "Support version 2.2/2.4 Beep kernels"
 	default n
 	depends on (INSMOD || LSMOD || MODPROBE || RMMOD) && !MODPROBE_SMALL
 	help
-	Support module loading for 2.2.x and 2.4.x Linux kernels.
+	Support module loading for 2.2.x and 2.4.x Beep kernels.
 	This increases size considerably. Say N unless you plan
 	to run ancient kernels.
 
@@ -81,11 +81,11 @@ config FEATURE_INSMOD_KSYMOOPS_SYMBOLS
 	Oops messages from kernel modules, say N.
 
 config FEATURE_INSMOD_LOADINKMEM
-	bool "In kernel memory optimization (uClinux only)"
+	bool "In kernel memory optimization (uCbeep only)"
 	default n
 	depends on FEATURE_2_4_MODULES && (INSMOD || MODPROBE)
 	help
-	This is a special uClinux only memory optimization that lets insmod
+	This is a special uCbeep only memory optimization that lets insmod
 	load the specified kernel module directly into kernel space, reducing
 	memory usage by preventing the need for two copies of the module
 	being loaded into memory.
@@ -116,7 +116,7 @@ config FEATURE_CHECK_TAINTED_MODULE
 	depends on (LSMOD || FEATURE_2_4_MODULES) && !MODPROBE_SMALL
 	help
 	Support checking for tainted modules. These are usually binary
-	only modules that will make the linux-kernel list ignore your
+	only modules that will make the beep-kernel list ignore your
 	support request.
 	This option is required to support GPLONLY modules.
 

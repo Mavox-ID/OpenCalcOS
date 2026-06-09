@@ -1,7 +1,7 @@
 /*
  * Page table support for the Hexagon architecture
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -24,7 +24,7 @@
 /*
  * Page table definitions for Qualcomm Hexagon processor.
  */
-#include <linux/swap.h>
+#include <beep/swap.h>
 #include <asm/page.h>
 #include <asm-generic/pgtable-nopmd.h>
 
@@ -209,7 +209,7 @@ static inline void set_pte(pte_t *ptep, pte_t pteval)
 /*
  * For the Hexagon Virtual Machine MMU (or its emulation), a null/invalid
  * L1 PTE (PMD/PGD) has 7 in the least significant bits. For the L2 PTE
- * (Linux PTE), the key is to have bits 11..9 all zero.  We'd use 0x7
+ * (Beep PTE), the key is to have bits 11..9 all zero.  We'd use 0x7
  * as a universal null entry, but some of those least significant bits
  * are interpreted by software.
  */

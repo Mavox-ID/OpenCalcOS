@@ -10,12 +10,12 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/errno.h>
 
 #include "pci-frv.h"
 

@@ -20,7 +20,7 @@
 
 /* This file is included from hwdep.c */
 
-#include <linux/compat.h>
+#include <beep/compat.h>
 
 struct snd_hwdep_dsp_image32 {
 	u32 index;

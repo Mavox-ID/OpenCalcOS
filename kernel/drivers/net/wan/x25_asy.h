@@ -1,5 +1,5 @@
-#ifndef _LINUX_X25_ASY_H
-#define _LINUX_X25_ASY_H
+#ifndef _BEEP_X25_ASY_H
+#define _BEEP_X25_ASY_H
 
 /* X.25 asy configuration. */
 #define SL_NRUNIT	256		/* MAX number of X.25 channels;
@@ -43,4 +43,4 @@ struct x25_asy {
 
 extern int x25_asy_init(struct net_device *dev);
 
-#endif	/* _LINUX_X25_ASY.H */
+#endif	/* _BEEP_X25_ASY.H */

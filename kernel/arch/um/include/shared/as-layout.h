@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  */
 
@@ -9,7 +9,7 @@
 #include <generated/asm-offsets.h>
 
 /*
- * Stolen from linux/const.h, which can't be directly included since
+ * Stolen from beep/const.h, which can't be directly included since
  * this is used in userspace code, which has no access to the kernel
  * headers.  Changed to be suitable for adding casts to the start,
  * rather than "UL" to the end.
@@ -58,7 +58,7 @@ extern unsigned long brk_start;
 
 extern unsigned long host_task_size;
 
-extern int linux_main(int argc, char **argv);
+extern int beep_main(int argc, char **argv);
 
 struct siginfo;
 extern void (*sig_info[])(int, struct siginfo *si, struct uml_pt_regs *);

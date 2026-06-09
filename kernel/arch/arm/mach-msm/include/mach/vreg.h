@@ -1,4 +1,4 @@
-/* linux/include/asm-arm/arch-msm/vreg.h
+/* beep/include/asm-arm/arch-msm/vreg.h
  *
  * Copyright (C) 2008 Google, Inc.
  * Author: Brian Swetland <swetland@google.com>

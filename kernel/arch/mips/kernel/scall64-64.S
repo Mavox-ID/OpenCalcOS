@@ -7,7 +7,7 @@
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  * Copyright (C) 2001 MIPS Technologies, Inc.
  */
-#include <linux/errno.h>
+#include <beep/errno.h>
 #include <asm/asm.h>
 #include <asm/asmmacro.h>
 #include <asm/irqflags.h>
@@ -39,8 +39,8 @@ NESTED(handle_sys64, PT_SIZE, sp)
 	.set	at
 #endif
 
-	dsubu	t0, v0, __NR_64_Linux	# check syscall number
-	sltiu	t0, t0,	__NR_64_Linux_syscalls + 1
+	dsubu	t0, v0, __NR_64_Beep	# check syscall number
+	sltiu	t0, t0,	__NR_64_Beep_syscalls + 1
 #if !defined(CONFIG_MIPS32_O32) && !defined(CONFIG_MIPS32_N32)
 	ld	t1, PT_EPC(sp)		# skip syscall on return
 	daddiu	t1, 4			# skip to next instruction
@@ -49,7 +49,7 @@ NESTED(handle_sys64, PT_SIZE, sp)
 	beqz	t0, illegal_syscall
 
 	dsll	t0, v0, 3		# offset into table
-	ld	t2, (sys_call_table - (__NR_64_Linux * 8))(t0)
+	ld	t2, (sys_call_table - (__NR_64_Beep * 8))(t0)
 					# syscall routine
 
 	sd	a3, PT_R26(sp)		# save a3 for syscall restarting

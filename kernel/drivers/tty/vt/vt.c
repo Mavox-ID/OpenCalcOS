@@ -31,7 +31,7 @@
  * APM screenblank bug fixed Takashi Manabe <manabe@roy.dsl.tutics.tut.jp>
  *
  * Merge with the abstract console driver by Geert Uytterhoeven
- * <geert@linux-m68k.org>, Jan 1997.
+ * <geert@beep-m68k.org>, Jan 1997.
  *
  *   Original m68k console driver modifications by
  *
@@ -45,7 +45,7 @@
  *
  *   The interface to the hardware is specified using a special structure
  *   (struct consw) which contains function pointers to console operations
- *   (see <linux/console.h> for more information).
+ *   (see <beep/console.h> for more information).
  *
  * Support for changeable cursor shape
  * by Pavel Machek <pavel@atrey.karlin.mff.cuni.cz>, August 1997
@@ -70,38 +70,38 @@
  * by Adam Tla/lka <atlka@pg.gda.pl>, Aug 2006
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/kd.h>
-#include <linux/slab.h>
-#include <linux/major.h>
-#include <linux/mm.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/vt_kern.h>
-#include <linux/selection.h>
-#include <linux/tiocl.h>
-#include <linux/kbd_kern.h>
-#include <linux/consolemap.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/pm.h>
-#include <linux/font.h>
-#include <linux/bitops.h>
-#include <linux/notifier.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/kdb.h>
-#include <linux/ctype.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/kd.h>
+#include <beep/slab.h>
+#include <beep/major.h>
+#include <beep/mm.h>
+#include <beep/console.h>
+#include <beep/init.h>
+#include <beep/mutex.h>
+#include <beep/vt_kern.h>
+#include <beep/selection.h>
+#include <beep/tiocl.h>
+#include <beep/kbd_kern.h>
+#include <beep/consolemap.h>
+#include <beep/timer.h>
+#include <beep/interrupt.h>
+#include <beep/workqueue.h>
+#include <beep/pm.h>
+#include <beep/font.h>
+#include <beep/bitops.h>
+#include <beep/notifier.h>
+#include <beep/device.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
+#include <beep/kdb.h>
+#include <beep/ctype.h>
 
 #define MAX_NR_CON_DRIVER 16
 
@@ -1304,7 +1304,7 @@ static void csi_m(struct vc_data *vc)
 				break;
 			case 38: /* ANSI X3.64-1979 (SCO-ish?)
 				  * Enables underscore, white foreground
-				  * with white underscore (Linux - use
+				  * with white underscore (Beep - use
 				  * default foreground).
 				  */
 				vc->vc_color = (vc->vc_def_color & 0x0f) | (vc->vc_color & 0xf0);
@@ -1369,7 +1369,7 @@ void mouse_report(struct tty_struct *tty, int butt, int mrx, int mry)
 	respond_string(buf, tty);
 }
 
-/* invoked via ioctl(TIOCLINUX) and through set_selection */
+/* invoked via ioctl(TIOCBEEP) and through set_selection */
 int mouse_reporting(void)
 {
 	return vc_cons[fg_console].d->vc_report_mouse;
@@ -2538,7 +2538,7 @@ static struct console vt_console_driver = {
 #endif
 
 /*
- *	Handling of Linux-specific VC ioctls
+ *	Handling of Beep-specific VC ioctls
  */
 
 /*
@@ -2552,7 +2552,7 @@ static struct console vt_console_driver = {
  * set_selection has locking, and definitely needs it
  */
 
-int tioclinux(struct tty_struct *tty, unsigned long arg)
+int tiocbeep(struct tty_struct *tty, unsigned long arg)
 {
 	char type, data;
 	char __user *p = (char __user *)arg;

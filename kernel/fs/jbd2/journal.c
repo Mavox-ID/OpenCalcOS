@@ -1,11 +1,11 @@
 /*
- * linux/fs/jbd2/journal.c
+ * beep/fs/jbd2/journal.c
  *
  * Written by Stephen C. Tweedie <sct@redhat.com>, 1998
  *
  * Copyright 1998 Red Hat corp --- All Rights Reserved
  *
- * This file is part of the Linux kernel and is made available under
+ * This file is part of the Beep kernel and is made available under
  * the terms of the GNU General Public License, version 2, or at your
  * option, any later version, incorporated herein by reference.
  *
@@ -22,28 +22,28 @@
  * journaling (ext2 can use a reserved inode for storing the log).
  */
 
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/jbd2.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/freezer.h>
-#include <linux/pagemap.h>
-#include <linux/kthread.h>
-#include <linux/poison.h>
-#include <linux/proc_fs.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/math64.h>
-#include <linux/hash.h>
-#include <linux/log2.h>
-#include <linux/vmalloc.h>
-#include <linux/backing-dev.h>
-#include <linux/bitops.h>
-#include <linux/ratelimit.h>
+#include <beep/module.h>
+#include <beep/time.h>
+#include <beep/fs.h>
+#include <beep/jbd2.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/freezer.h>
+#include <beep/pagemap.h>
+#include <beep/kthread.h>
+#include <beep/poison.h>
+#include <beep/proc_fs.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
+#include <beep/math64.h>
+#include <beep/hash.h>
+#include <beep/log2.h>
+#include <beep/vmalloc.h>
+#include <beep/backing-dev.h>
+#include <beep/bitops.h>
+#include <beep/ratelimit.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/jbd2.h>

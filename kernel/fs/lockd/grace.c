@@ -2,8 +2,8 @@
  * Common code for control of lockd and nfsv4 grace periods.
  */
 
-#include <linux/module.h>
-#include <linux/lockd/bind.h>
+#include <beep/module.h>
+#include <beep/lockd/bind.h>
 #include <net/net_namespace.h>
 
 #include "netns.h"

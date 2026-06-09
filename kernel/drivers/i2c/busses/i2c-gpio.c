@@ -7,16 +7,16 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/i2c-gpio.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/of_gpio.h>
-#include <linux/of_i2c.h>
+#include <beep/i2c.h>
+#include <beep/i2c-algo-bit.h>
+#include <beep/i2c-gpio.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/of_gpio.h>
+#include <beep/of_i2c.h>
 
 struct i2c_gpio_private_data {
 	struct i2c_adapter adap;

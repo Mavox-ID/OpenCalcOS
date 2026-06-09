@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s5p64x0/pm.c
+/* beep/arch/arm/mach-s5p64x0/pm.c
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -12,9 +12,9 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/suspend.h>
-#include <linux/syscore_ops.h>
-#include <linux/io.h>
+#include <beep/suspend.h>
+#include <beep/syscore_ops.h>
+#include <beep/io.h>
 
 #include <plat/cpu.h>
 #include <plat/pm.h>

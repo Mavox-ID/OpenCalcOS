@@ -1,5 +1,5 @@
 /*
- * Audio support data for ISDN4Linux.
+ * Audio support data for ISDN4Beep.
  *
  * Copyright Andreas Eversberg (jolly@eversberg.eu)
  *
@@ -8,9 +8,9 @@
  *
  */
 
-#include <linux/gfp.h>
-#include <linux/mISDNif.h>
-#include <linux/mISDNdsp.h>
+#include <beep/gfp.h>
+#include <beep/mISDNif.h>
+#include <beep/mISDNdsp.h>
 #include "core.h"
 #include "dsp.h"
 

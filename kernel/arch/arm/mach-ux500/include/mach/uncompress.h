@@ -20,8 +20,8 @@
 
 #include <asm/setup.h>
 #include <asm/mach-types.h>
-#include <linux/io.h>
-#include <linux/amba/serial.h>
+#include <beep/io.h>
+#include <beep/amba/serial.h>
 #include <mach/hardware.h>
 
 void __iomem *ux500_uart_base;

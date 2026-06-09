@@ -11,9 +11,9 @@
  * any later version.
  */
 
-#include <linux/hid.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/hid.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include "hid-roccat-common.h"
 
 static inline uint16_t roccat_common2_feature_report(uint8_t report_id)

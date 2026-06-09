@@ -8,14 +8,14 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/jiffies.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/slot-gpio.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
 struct mmc_gpio {
 	int ro_gpio;

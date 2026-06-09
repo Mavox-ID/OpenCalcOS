@@ -21,8 +21,8 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/usb.h>
+#include <beep/module.h>
+#include <beep/usb.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

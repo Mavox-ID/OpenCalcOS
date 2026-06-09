@@ -1,7 +1,7 @@
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
+#include <beep/input.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
 #include <asm/io.h>
 #include <asm/delay.h>
 #include <asm/adc.h>

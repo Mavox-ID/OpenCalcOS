@@ -1,5 +1,5 @@
 /*
- * Roccat driver for Linux
+ * Roccat driver for Beep
  *
  * Copyright (c) 2010 Stefan Achatz <erazor_de@users.sourceforge.net>
  */
@@ -23,11 +23,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/cdev.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/hid-roccat.h>
-#include <linux/module.h>
+#include <beep/cdev.h>
+#include <beep/poll.h>
+#include <beep/sched.h>
+#include <beep/hid-roccat.h>
+#include <beep/module.h>
 
 #define ROCCAT_FIRST_MINOR 0
 #define ROCCAT_MAX_DEVICES 8

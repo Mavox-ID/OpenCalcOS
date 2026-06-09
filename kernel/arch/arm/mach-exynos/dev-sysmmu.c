@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-exynos/dev-sysmmu.c
+/* beep/arch/arm/mach-exynos/dev-sysmmu.c
  *
  * Copyright (c) 2010-2012 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -10,8 +10,8 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
+#include <beep/platform_device.h>
+#include <beep/dma-mapping.h>
 
 #include <plat/cpu.h>
 

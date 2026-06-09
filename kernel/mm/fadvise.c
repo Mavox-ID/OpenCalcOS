@@ -7,16 +7,16 @@
  *		Initial version.
  */
 
-#include <linux/kernel.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/backing-dev.h>
-#include <linux/pagevec.h>
-#include <linux/fadvise.h>
-#include <linux/writeback.h>
-#include <linux/syscalls.h>
+#include <beep/kernel.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/pagemap.h>
+#include <beep/backing-dev.h>
+#include <beep/pagevec.h>
+#include <beep/fadvise.h>
+#include <beep/writeback.h>
+#include <beep/syscalls.h>
 
 #include <asm/unistd.h>
 

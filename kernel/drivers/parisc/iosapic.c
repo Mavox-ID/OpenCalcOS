@@ -128,13 +128,13 @@
 
 
 /* FIXME: determine which include files are really needed */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
 
 #include <asm/byteorder.h>	/* get in-line asm for swab */
 #include <asm/pdc.h>

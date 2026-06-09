@@ -8,13 +8,13 @@
  * (at your option) any later version.
  */
 
-#ifndef __LINUX_NET_DSA_H
-#define __LINUX_NET_DSA_H
+#ifndef __BEEP_NET_DSA_H
+#define __BEEP_NET_DSA_H
 
-#include <linux/if_ether.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
+#include <beep/if_ether.h>
+#include <beep/list.h>
+#include <beep/timer.h>
+#include <beep/workqueue.h>
 
 #define DSA_MAX_SWITCHES	4
 #define DSA_MAX_PORTS		12
@@ -46,7 +46,7 @@ struct dsa_chip_data {
 
 struct dsa_platform_data {
 	/*
-	 * Reference to a Linux network interface that connects
+	 * Reference to a Beep network interface that connects
 	 * to the root switch chip of the tree.
 	 */
 	struct device	*netdev;

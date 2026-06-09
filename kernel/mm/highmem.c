@@ -16,17 +16,17 @@
  * Copyright (C) 1999 Ingo Molnar <mingo@redhat.com>
  */
 
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/swap.h>
-#include <linux/bio.h>
-#include <linux/pagemap.h>
-#include <linux/mempool.h>
-#include <linux/blkdev.h>
-#include <linux/init.h>
-#include <linux/hash.h>
-#include <linux/highmem.h>
-#include <linux/kgdb.h>
+#include <beep/mm.h>
+#include <beep/export.h>
+#include <beep/swap.h>
+#include <beep/bio.h>
+#include <beep/pagemap.h>
+#include <beep/mempool.h>
+#include <beep/blkdev.h>
+#include <beep/init.h>
+#include <beep/hash.h>
+#include <beep/highmem.h>
+#include <beep/kgdb.h>
 #include <asm/tlbflush.h>
 
 

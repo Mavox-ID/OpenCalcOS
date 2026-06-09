@@ -27,14 +27,14 @@
  /* treated slightly differently for reconnection purposes since we never     */
  /* want to reuse a stale file handle and only the caller knows the file info */
 
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/vfs.h>
-#include <linux/slab.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/task_io_accounting_ops.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/vfs.h>
+#include <beep/slab.h>
+#include <beep/posix_acl_xattr.h>
+#include <beep/pagemap.h>
+#include <beep/swap.h>
+#include <beep/task_io_accounting_ops.h>
 #include <asm/uaccess.h>
 #include "cifspdu.h"
 #include "cifsglob.h"
@@ -3200,7 +3200,7 @@ static void cifs_convert_ace(posix_acl_xattr_entry *ace,
 	return;
 }
 
-/* Convert ACL from CIFS POSIX wire format to local Linux POSIX ACL xattr */
+/* Convert ACL from CIFS POSIX wire format to local Beep POSIX ACL xattr */
 static int cifs_copy_posix_acl(char *trgt, char *src, const int buflen,
 			       const int acl_type, const int size_of_data_area)
 {
@@ -3273,7 +3273,7 @@ static __u16 convert_ace_to_cifs_ace(struct cifs_posix_ace *cifs_ace,
 	return rc;
 }
 
-/* Convert ACL from local Linux POSIX xattr to CIFS POSIX ACL wire format */
+/* Convert ACL from local Beep POSIX xattr to CIFS POSIX ACL wire format */
 static __u16 ACL_to_cifs_posix(char *parm_data, const char *pACL,
 			       const int buflen, const int acl_type)
 {
@@ -6304,10 +6304,10 @@ SetEARetry:
  *	to allow network clients (such as Windows) to display updated
  *	lists of files in directory listings automatically when
  *	files are added by one user when another user has the
- *	same directory open on their desktop.  The Linux cifs kernel
+ *	same directory open on their desktop.  The Beep cifs kernel
  *	client hooked into the kernel side of this interface for
  *	the same reason, but ironically when the VFS moved from
- *	"dnotify" to "inotify" it became harder to plug in Linux
+ *	"dnotify" to "inotify" it became harder to plug in Beep
  *	network file system clients (the most obvious use case
  *	for notify interfaces is when multiple users can update
  *	the contents of the same directory - exactly what network

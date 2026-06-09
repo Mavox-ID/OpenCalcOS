@@ -7,8 +7,8 @@
 #ifndef REGS_H
 #define REGS_H
 
-#include <linux/types.h>
-#include <linux/io.h>
+#include <beep/types.h>
+#include <beep/io.h>
 
 /*
  * Architecture-specific register access methods

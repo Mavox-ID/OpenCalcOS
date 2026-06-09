@@ -21,17 +21,17 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
-#include <linux/mutex.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/device.h>
+#include <beep/fs.h>
+#include <beep/cdev.h>
+#include <beep/mutex.h>
 #include "dvbdev.h"
 
 static DEFINE_MUTEX(dvbdev_mutex);

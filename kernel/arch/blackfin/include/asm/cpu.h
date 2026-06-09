@@ -8,7 +8,7 @@
 #ifndef __ASM_BLACKFIN_CPU_H
 #define __ASM_BLACKFIN_CPU_H
 
-#include <linux/percpu.h>
+#include <beep/percpu.h>
 
 struct blackfin_cpudata {
 	struct cpu cpu;

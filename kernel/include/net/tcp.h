@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -20,17 +20,17 @@
 
 #define FASTRETRANS_DEBUG 1
 
-#include <linux/list.h>
-#include <linux/tcp.h>
-#include <linux/bug.h>
-#include <linux/slab.h>
-#include <linux/cache.h>
-#include <linux/percpu.h>
-#include <linux/skbuff.h>
-#include <linux/dmaengine.h>
-#include <linux/crypto.h>
-#include <linux/cryptohash.h>
-#include <linux/kref.h>
+#include <beep/list.h>
+#include <beep/tcp.h>
+#include <beep/bug.h>
+#include <beep/slab.h>
+#include <beep/cache.h>
+#include <beep/percpu.h>
+#include <beep/skbuff.h>
+#include <beep/dmaengine.h>
+#include <beep/crypto.h>
+#include <beep/cryptohash.h>
+#include <beep/kref.h>
 
 #include <net/inet_connection_sock.h>
 #include <net/inet_timewait_sock.h>
@@ -44,8 +44,8 @@
 #include <net/inet_ecn.h>
 #include <net/dst.h>
 
-#include <linux/seq_file.h>
-#include <linux/memcontrol.h>
+#include <beep/seq_file.h>
+#include <beep/memcontrol.h>
 
 extern struct inet_hashinfo tcp_hashinfo;
 
@@ -1055,7 +1055,7 @@ static inline bool tcp_prequeue(struct sock *sk, struct sk_buff *skb)
 		while ((skb1 = __skb_dequeue(&tp->ucopy.prequeue)) != NULL) {
 			sk_backlog_rcv(sk, skb1);
 			NET_INC_STATS_BH(sock_net(sk),
-					 LINUX_MIB_TCPPREQUEUEDROPPED);
+					 BEEP_MIB_TCPPREQUEUEDROPPED);
 		}
 
 		tp->ucopy.memory = 0;
@@ -1214,7 +1214,7 @@ static inline bool tcp_paws_reject(const struct tcp_options_received *rx_opt,
 	   out-of-sync and half-open connections will not be reset.
 	   Actually, the problem would be not existing if all
 	   the implementations followed draft about maintaining clock
-	   via reboots. Linux-2.2 DOES NOT!
+	   via reboots. Beep-2.2 DOES NOT!
 
 	   However, we can relax time bounds for RST segments to MSL.
 	 */

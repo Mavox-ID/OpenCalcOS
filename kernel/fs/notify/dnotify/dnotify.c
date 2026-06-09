@@ -1,5 +1,5 @@
 /*
- * Directory notifications for Linux.
+ * Directory notifications for Beep.
  *
  * Copyright (C) 2000,2001,2002 Stephen Rothwell
  *
@@ -16,15 +16,15 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
  * General Public License for more details.
  */
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/dnotify.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/fdtable.h>
-#include <linux/fsnotify_backend.h>
+#include <beep/fs.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/dnotify.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/fdtable.h>
+#include <beep/fsnotify_backend.h>
 
 int dir_notify_enable __read_mostly = 1;
 

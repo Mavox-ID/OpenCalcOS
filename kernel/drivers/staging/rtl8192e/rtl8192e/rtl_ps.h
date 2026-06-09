@@ -25,7 +25,7 @@
 #ifndef _RTL_PS_H
 #define _RTL_PS_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 struct net_device;
 

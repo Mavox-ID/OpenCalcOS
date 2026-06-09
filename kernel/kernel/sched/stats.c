@@ -1,8 +1,8 @@
 
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
+#include <beep/seq_file.h>
+#include <beep/proc_fs.h>
 
 #include "sched.h"
 

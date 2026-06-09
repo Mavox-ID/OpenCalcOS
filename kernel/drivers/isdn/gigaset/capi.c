@@ -12,13 +12,13 @@
  */
 
 #include "gigaset.h"
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/ratelimit.h>
-#include <linux/isdn/capilli.h>
-#include <linux/isdn/capicmd.h>
-#include <linux/isdn/capiutil.h>
-#include <linux/export.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/ratelimit.h>
+#include <beep/isdn/capilli.h>
+#include <beep/isdn/capicmd.h>
+#include <beep/isdn/capiutil.h>
+#include <beep/export.h>
 
 /* missing from kernelcapi.h */
 #define CapiNcpiNotSupportedByProtocol	0x0001

@@ -2,7 +2,7 @@
  *
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
- *      http://armlinux.simtec.co.uk/
+ *      http://armbeep.simtec.co.uk/
  *      Ben Dooks <ben@simtec.co.uk>
  *
  * USB2.0 Highspeed/OtG Synopsis DWC2 device block registers

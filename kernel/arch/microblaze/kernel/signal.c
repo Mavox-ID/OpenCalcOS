@@ -18,26 +18,26 @@
  * archive for more details.
  */
 
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/personality.h>
-#include <linux/percpu.h>
-#include <linux/linkage.h>
-#include <linux/tracehook.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/errno.h>
+#include <beep/wait.h>
+#include <beep/ptrace.h>
+#include <beep/unistd.h>
+#include <beep/stddef.h>
+#include <beep/personality.h>
+#include <beep/percpu.h>
+#include <beep/linkage.h>
+#include <beep/tracehook.h>
 #include <asm/entry.h>
 #include <asm/ucontext.h>
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 #include <asm/pgtable.h>
 #include <asm/pgalloc.h>
-#include <linux/syscalls.h>
+#include <beep/syscalls.h>
 #include <asm/cacheflush.h>
 #include <asm/syscalls.h>
 

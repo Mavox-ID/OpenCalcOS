@@ -25,16 +25,16 @@
  * Send feedback to <scottm@somanetworks.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/atomic.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/pci_hotplug.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/atomic.h>
+#include <beep/delay.h>
+#include <beep/kthread.h>
 #include "cpci_hotplug.h"
 
 #define DRIVER_AUTHOR	"Scott Murray <scottm@somanetworks.com>"

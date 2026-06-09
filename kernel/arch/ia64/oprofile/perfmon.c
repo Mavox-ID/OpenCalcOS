@@ -7,9 +7,9 @@
  * @author John Levon <levon@movementarian.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/oprofile.h>
-#include <linux/sched.h>
+#include <beep/kernel.h>
+#include <beep/oprofile.h>
+#include <beep/sched.h>
 #include <asm/perfmon.h>
 #include <asm/ptrace.h>
 #include <asm/errno.h>

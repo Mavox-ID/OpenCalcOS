@@ -17,16 +17,16 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/pinctrl/consumer.h>
+#include <beep/clk.h>
+#include <beep/debugfs.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/pinctrl/consumer.h>
 
 #include "imx-audmux.h"
 
@@ -42,7 +42,7 @@ static void __iomem *audmux_base;
 static struct dentry *audmux_debugfs_root;
 
 /* There is an annoying discontinuity in the SSI numbering with regard
- * to the Linux number of the devices */
+ * to the Beep number of the devices */
 static const char *audmux_port_string(int port)
 {
 	switch (port) {

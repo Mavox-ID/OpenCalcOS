@@ -21,7 +21,7 @@
 #ifndef _HDMI_TI_4xxx_H_
 #define _HDMI_TI_4xxx_H_
 
-#include <linux/string.h>
+#include <beep/string.h>
 #include <video/omapdss.h>
 #include "ti_hdmi.h"
 

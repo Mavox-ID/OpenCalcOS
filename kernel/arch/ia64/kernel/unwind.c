@@ -5,7 +5,7 @@
  * 	- Change pt_regs_off() to make it less dependent on pt_regs structure.
  */
 /*
- * This file implements call frame unwind support for the Linux
+ * This file implements call frame unwind support for the Beep
  * kernel.  Parsing and processing the unwind information is
  * time-consuming, so this implementation translates the unwind
  * descriptors into unwind scripts.  These scripts are very simple
@@ -26,12 +26,12 @@
  *	o if both the unw.lock spinlock and a script's read-write lock must be
  *	  acquired, then the read-write lock must be acquired first.
  */
-#include <linux/module.h>
-#include <linux/bootmem.h>
-#include <linux/elf.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/bootmem.h>
+#include <beep/elf.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 
 #include <asm/unwind.h>
 
@@ -2207,7 +2207,7 @@ create_gate_table (void)
 	end = (struct unw_table_entry *) ((char *) start + punw->p_memsz);
 	size  = 0;
 
-	unw_add_unwind_table("linux-gate.so", segbase, 0, start, end);
+	unw_add_unwind_table("beep-gate.so", segbase, 0, start, end);
 
 	for (entry = start; entry < end; ++entry)
 		size += 3*8 + 8 + 8*UNW_LENGTH(*(u64 *) (segbase + entry->info_offset));

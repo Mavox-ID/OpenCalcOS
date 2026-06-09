@@ -22,15 +22,15 @@
  *  version 2 as published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/page-flags.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/list.h>
-#include <linux/scatterlist.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/page-flags.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmapool.h>
+#include <beep/list.h>
+#include <beep/scatterlist.h>
 
 #include <asm/cacheflush.h>
 

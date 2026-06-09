@@ -11,10 +11,10 @@
  */
 
 #include <crypto/internal/rng.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/random.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/random.h>
 
 static int krng_get_random(struct crypto_rng *tfm, u8 *rdata, unsigned int dlen)
 {

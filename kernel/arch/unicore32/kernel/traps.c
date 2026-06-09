@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/kernel/traps.c
+ * beep/arch/unicore32/kernel/traps.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -12,18 +12,18 @@
  *  'traps.c' handles hardware exceptions after we have saved some state.
  *  Mostly a debugging aid, but will probably kill the offending process.
  */
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/spinlock.h>
-#include <linux/personality.h>
-#include <linux/kallsyms.h>
-#include <linux/kdebug.h>
-#include <linux/uaccess.h>
-#include <linux/delay.h>
-#include <linux/hardirq.h>
-#include <linux/init.h>
-#include <linux/atomic.h>
-#include <linux/unistd.h>
+#include <beep/module.h>
+#include <beep/signal.h>
+#include <beep/spinlock.h>
+#include <beep/personality.h>
+#include <beep/kallsyms.h>
+#include <beep/kdebug.h>
+#include <beep/uaccess.h>
+#include <beep/delay.h>
+#include <beep/hardirq.h>
+#include <beep/init.h>
+#include <beep/atomic.h>
+#include <beep/unistd.h>
 
 #include <asm/cacheflush.h>
 #include <asm/traps.h>

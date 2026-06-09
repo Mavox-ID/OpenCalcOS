@@ -11,17 +11,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/backlight.h>
-#include <linux/acpi.h>
-#include <linux/pnp.h>
-#include <linux/apple_bl.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/vga_switcheroo.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/backlight.h>
+#include <beep/acpi.h>
+#include <beep/pnp.h>
+#include <beep/apple_bl.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/vga_switcheroo.h>
 #include <acpi/video.h>
 #include <asm/io.h>
 

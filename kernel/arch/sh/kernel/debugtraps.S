@@ -9,8 +9,8 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/sys.h>
-#include <linux/linkage.h>
+#include <beep/sys.h>
+#include <beep/linkage.h>
 
 #if !defined(CONFIG_KGDB)
 #define singlestep_trap_handler		debug_trap_handler

@@ -12,10 +12,10 @@
  * Project home: http://compcache.googlecode.com/
  */
 
-#include <linux/device.h>
-#include <linux/genhd.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
+#include <beep/device.h>
+#include <beep/genhd.h>
+#include <beep/mm.h>
+#include <beep/kernel.h>
 
 #include "zram_drv.h"
 

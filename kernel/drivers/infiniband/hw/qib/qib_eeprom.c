@@ -32,9 +32,9 @@
  * SOFTWARE.
  */
 
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/vmalloc.h>
 
 #include "qib.h"
 

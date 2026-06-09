@@ -17,11 +17,11 @@
  * This driver is based on RTC CMOS driver.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/sfi.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/init.h>
+#include <beep/sfi.h>
+#include <beep/platform_device.h>
 
 #include <asm/mrst.h>
 #include <asm/mrst-vrtc.h>

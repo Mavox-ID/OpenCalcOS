@@ -6,11 +6,11 @@
  * Copyright (C) 2010 John Crispin <blogic@openwrt.org>
  */
 
-#include <linux/export.h>
-#include <linux/clk.h>
-#include <linux/bootmem.h>
-#include <linux/of_platform.h>
-#include <linux/of_fdt.h>
+#include <beep/export.h>
+#include <beep/clk.h>
+#include <beep/bootmem.h>
+#include <beep/of_platform.h>
+#include <beep/of_fdt.h>
 
 #include <asm/bootinfo.h>
 #include <asm/time.h>

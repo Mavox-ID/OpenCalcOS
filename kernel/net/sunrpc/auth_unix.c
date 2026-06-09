@@ -1,18 +1,18 @@
 /*
- * linux/net/sunrpc/auth_unix.c
+ * beep/net/sunrpc/auth_unix.c
  *
  * UNIX-style authentication; no AUTH_SHORT support
  *
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/auth.h>
-#include <linux/user_namespace.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/module.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/sunrpc/auth.h>
+#include <beep/user_namespace.h>
 
 #define NFS_NGROUPS	16
 

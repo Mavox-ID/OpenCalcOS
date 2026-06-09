@@ -4,9 +4,9 @@
 #ifdef CONFIG_SMP
 #ifndef __ASSEMBLY__
 
-#include <linux/cpumask.h>
-#include <linux/spinlock.h>
-#include <linux/threads.h>
+#include <beep/cpumask.h>
+#include <beep/spinlock.h>
+#include <beep/threads.h>
 #include <asm/m32r.h>
 
 #define PHYSID_ARRAY_SIZE       1

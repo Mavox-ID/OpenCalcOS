@@ -14,10 +14,10 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/io.h>
+#include <beep/spinlock.h>
 #include <mach/msm_iomap.h>
 
 #include "proc_comm.h"

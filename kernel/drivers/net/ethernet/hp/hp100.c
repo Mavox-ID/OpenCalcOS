@@ -96,25 +96,25 @@
 
 #undef HP100_MULTICAST_FILTER	/* Need to be debugged... */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/eisa.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/spinlock.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/jiffies.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/eisa.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/spinlock.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/types.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
+#include <beep/jiffies.h>
 
 #include <asm/io.h>
 
@@ -1280,7 +1280,7 @@ static int hp100_build_rx_pdl(hp100_ring_t * ringptr,
 		/*
 		 * Reserve 2 bytes at the head of the buffer to land the IP header
 		 * on a long word boundary (According to the Network Driver section
-		 * in the Linux KHG, this should help to increase performance.)
+		 * in the Beep KHG, this should help to increase performance.)
 		 */
 		skb_reserve(ringptr->skb, 2);
 

@@ -22,7 +22,7 @@
  *
  */
 
-#include <linux/serial_reg.h>
+#include <beep/serial_reg.h>
 
 #define UART_SHIFT 2
 

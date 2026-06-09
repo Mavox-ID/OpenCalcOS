@@ -25,17 +25,17 @@
 #ifndef _BTTVP_H_
 #define _BTTVP_H_
 
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/pci.h>
-#include <linux/input.h>
-#include <linux/mutex.h>
-#include <linux/scatterlist.h>
+#include <beep/types.h>
+#include <beep/wait.h>
+#include <beep/i2c.h>
+#include <beep/i2c-algo-bit.h>
+#include <beep/pci.h>
+#include <beep/input.h>
+#include <beep/mutex.h>
+#include <beep/scatterlist.h>
 #include <asm/io.h>
 #include <media/v4l2-common.h>
-#include <linux/device.h>
+#include <beep/device.h>
 #include <media/videobuf-dma-sg.h>
 #include <media/tveeprom.h>
 #include <media/rc-core.h>
@@ -109,7 +109,7 @@ extern const struct bttv_tvnorm bttv_tvnorms[];
 
 struct bttv_format {
 	char *name;
-	int  fourcc;          /* video4linux 2      */
+	int  fourcc;          /* video4beep 2      */
 	int  btformat;        /* BT848_COLOR_FMT_*  */
 	int  btswap;          /* BT848_COLOR_CTL_*  */
 	int  depth;           /* bit/pixel          */
@@ -394,7 +394,7 @@ struct bttv {
 	struct v4l2_subdev 	  *sd_msp34xx;
 	struct v4l2_subdev 	  *sd_tvaudio;
 
-	/* video4linux (1) */
+	/* video4beep (1) */
 	struct video_device *video_dev;
 	struct video_device *radio_dev;
 	struct video_device *vbi_dev;

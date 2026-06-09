@@ -1,6 +1,6 @@
-#include <linux/seq_file.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/seq_file.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 #include <asm/machvec.h>
 #include <asm/processor.h>
 

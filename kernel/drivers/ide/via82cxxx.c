@@ -1,5 +1,5 @@
 /*
- * VIA IDE driver for Linux. Supported southbridges:
+ * VIA IDE driver for Beep. Supported southbridges:
  *
  *   vt82c576, vt82c586, vt82c586a, vt82c586b, vt82c596a, vt82c596b,
  *   vt82c686, vt82c686a, vt82c686b, vt8231, vt8233, vt8233c, vt8233a,
@@ -24,13 +24,13 @@
  * the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/ide.h>
-#include <linux/dmi.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/ide.h>
+#include <beep/dmi.h>
 
 #ifdef CONFIG_PPC_CHRP
 #include <asm/processor.h>

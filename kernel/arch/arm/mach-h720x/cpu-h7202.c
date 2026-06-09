@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-h720x/cpu-h7202.c
+ * beep/arch/arm/mach-h720x/cpu-h7202.c
  *
  * Copyright (C) 2003 Thomas Gleixner <tglx@linutronix.de>
  *               2003 Robert Schwebel <r.schwebel@pengutronix.de>
@@ -13,17 +13,17 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
 #include <asm/types.h>
 #include <mach/hardware.h>
 #include <asm/irq.h>
 #include <mach/irqs.h>
 #include <asm/mach/irq.h>
 #include <asm/mach/time.h>
-#include <linux/device.h>
-#include <linux/serial_8250.h>
+#include <beep/device.h>
+#include <beep/serial_8250.h>
 #include "common.h"
 
 static struct resource h7202ps2_resources[] = {

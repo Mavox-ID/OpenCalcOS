@@ -1,9 +1,9 @@
 #ifndef __SPARC_IO_H
 #define __SPARC_IO_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/ioport.h>  /* struct resource */
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/ioport.h>  /* struct resource */
 
 #include <asm/page.h>      /* IO address mapping routines need this */
 #include <asm-generic/pci_iomap.h>
@@ -102,7 +102,7 @@ static inline void __writel(u32 l, volatile void __iomem *addr)
  *
  * Arrangement on a Sun is somewhat complicated.
  *
- * First of all, we want to use standard Linux drivers
+ * First of all, we want to use standard Beep drivers
  * for keyboard, PC serial, etc. These drivers think
  * they access I/O space and use inb/outb.
  * On the other hand, EBus bridge accepts PCI *memory*

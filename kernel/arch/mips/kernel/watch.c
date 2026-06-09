@@ -6,7 +6,7 @@
  * Copyright (C) 2008 David Daney
  */
 
-#include <linux/sched.h>
+#include <beep/sched.h>
 
 #include <asm/processor.h>
 #include <asm/watch.h>

@@ -19,7 +19,7 @@ ENTRY(__kernel_vsyscall);
  */
 VERSION
 {
-	LINUX_2.5 {
+	BEEP_2.5 {
 	global:
 		__kernel_vsyscall;
 		__kernel_sigreturn;

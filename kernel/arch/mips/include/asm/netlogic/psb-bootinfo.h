@@ -92,7 +92,7 @@ enum {
 #define NLM_MAX_ARGS	64
 #define NLM_MAX_ENVS	32
 
-/* This is what netlboot passes and linux boot_mem_map is subtly different */
+/* This is what netlboot passes and beep boot_mem_map is subtly different */
 #define NLM_BOOT_MEM_MAP_MAX	32
 struct nlm_boot_mem_map {
 	int nr_map;

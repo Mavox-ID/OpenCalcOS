@@ -23,10 +23,10 @@
  * 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  *
  */
-#include <linux/rculist.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/async_tx.h>
+#include <beep/rculist.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/async_tx.h>
 
 #ifdef CONFIG_DMA_ENGINE
 static int __init async_tx_init(void)

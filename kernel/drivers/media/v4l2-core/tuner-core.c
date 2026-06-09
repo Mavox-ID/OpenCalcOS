@@ -14,18 +14,18 @@
  * handle both radio and analog TV tuning.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/i2c.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/videodev2.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/poll.h>
+#include <beep/i2c.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/videodev2.h>
 #include <media/tuner.h>
 #include <media/tuner-types.h>
 #include <media/v4l2-device.h>

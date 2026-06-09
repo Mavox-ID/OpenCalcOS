@@ -16,10 +16,10 @@
  * (at your option) any later version.
  */
 
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/i2c.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-subdev.h>
 #include <media/v4l2-mediabus.h>

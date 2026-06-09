@@ -10,8 +10,8 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/init.h>
-#include <linux/smp.h>
+#include <beep/init.h>
+#include <beep/smp.h>
 #include <asm/page.h>
 #include <asm/smp_scu.h>
 #include <asm/hardware/gic.h>

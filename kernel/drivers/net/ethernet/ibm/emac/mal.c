@@ -25,8 +25,8 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 
 #include "core.h"
 #include <asm/dcr-regs.h>

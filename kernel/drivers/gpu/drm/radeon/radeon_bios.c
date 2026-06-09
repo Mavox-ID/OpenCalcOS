@@ -30,9 +30,9 @@
 #include "radeon.h"
 #include "atom.h"
 
-#include <linux/vga_switcheroo.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
+#include <beep/vga_switcheroo.h>
+#include <beep/slab.h>
+#include <beep/acpi.h>
 /*
  * BIOS.
  */

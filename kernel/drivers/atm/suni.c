@@ -9,22 +9,22 @@
  
 /* Written 1995-2000 by Werner Almesberger, EPFL LRC/ICA */
 
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/atmdev.h>
-#include <linux/sonet.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/capability.h>
-#include <linux/atm_suni.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/errno.h>
+#include <beep/atmdev.h>
+#include <beep/sonet.h>
+#include <beep/delay.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/capability.h>
+#include <beep/atm_suni.h>
+#include <beep/slab.h>
 #include <asm/param.h>
 #include <asm/uaccess.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 #include "suni.h"
 

@@ -7,7 +7,7 @@ TODO
 	smaller peices.
 
 * See if Alexander Viro's option parser made it into the kernel tree. 
-	Use that if we can. (include/linux/parser.h)
+	Use that if we can. (include/beep/parser.h)
 
 * See if we really need separate types for on-disk and in-memory 
 	representations of the superblock and inode.

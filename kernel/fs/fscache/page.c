@@ -10,11 +10,11 @@
  */
 
 #define FSCACHE_DEBUG_LEVEL PAGE
-#include <linux/module.h>
-#include <linux/fscache-cache.h>
-#include <linux/buffer_head.h>
-#include <linux/pagevec.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/fscache-cache.h>
+#include <beep/buffer_head.h>
+#include <beep/pagevec.h>
+#include <beep/slab.h>
 #include "internal.h"
 
 /*

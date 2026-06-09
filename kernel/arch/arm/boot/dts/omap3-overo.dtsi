@@ -19,7 +19,7 @@
 		overo {
 			label = "overo:blue:COM";
 			gpios = <&twl_gpio 19 0>;
-			linux,default-trigger = "mmc0";
+			beep,default-trigger = "mmc0";
 		};
 	};
 };

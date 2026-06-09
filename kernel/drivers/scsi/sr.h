@@ -17,8 +17,8 @@
 #ifndef _SR_H
 #define _SR_H
 
-#include <linux/genhd.h>
-#include <linux/kref.h>
+#include <beep/genhd.h>
+#include <beep/kref.h>
 
 #define MAX_RETRIES	3
 #define SR_TIMEOUT	(30 * HZ)

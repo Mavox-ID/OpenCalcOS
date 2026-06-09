@@ -1,6 +1,6 @@
 /*
  * command structure borrowed from udev
- * (git://git.kernel.org/pub/scm/linux/hotplug/udev.git)
+ * (git://git.kernel.org/pub/scm/beep/hotplug/udev.git)
  *
  * Copyright (C) 2011 matt mooney <mfm@muteddisk.com>
  *               2005-2007 Takahiro Hirofuchi

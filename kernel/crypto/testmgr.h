@@ -2,7 +2,7 @@
  * Algorithm testing framework and tests.
  *
  * Copyright (c) 2002 James Morris <jmorris@intercode.com.au>
- * Copyright (c) 2002 Jean-Francois Dive <jef@linuxbe.org>
+ * Copyright (c) 2002 Jean-Francois Dive <jef@beepbe.org>
  * Copyright (c) 2007 Nokia Siemens Networks
  * Copyright (c) 2008 Herbert Xu <herbert@gondor.apana.org.au>
  *
@@ -24,8 +24,8 @@
 #ifndef _CRYPTO_TESTMGR_H
 #define _CRYPTO_TESTMGR_H
 
-#include <linux/netlink.h>
-#include <linux/zlib.h>
+#include <beep/netlink.h>
+#include <beep/zlib.h>
 
 #include <crypto/compress.h>
 

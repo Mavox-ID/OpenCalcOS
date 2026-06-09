@@ -1,9 +1,9 @@
 #ifndef __ASM_AVR32_DMA_MAPPING_H
 #define __ASM_AVR32_DMA_MAPPING_H
 
-#include <linux/mm.h>
-#include <linux/device.h>
-#include <linux/scatterlist.h>
+#include <beep/mm.h>
+#include <beep/device.h>
+#include <beep/scatterlist.h>
 #include <asm/processor.h>
 #include <asm/cacheflush.h>
 #include <asm/io.h>

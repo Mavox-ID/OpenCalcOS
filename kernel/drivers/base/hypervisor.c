@@ -8,9 +8,9 @@
  * This file is released under the GPLv2
  */
 
-#include <linux/kobject.h>
-#include <linux/device.h>
-#include <linux/export.h>
+#include <beep/kobject.h>
+#include <beep/device.h>
+#include <beep/export.h>
 #include "base.h"
 
 struct kobject *hypervisor_kobj;

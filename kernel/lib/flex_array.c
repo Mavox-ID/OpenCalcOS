@@ -17,14 +17,14 @@
  *
  * Copyright IBM Corporation, 2009
  *
- * Author: Dave Hansen <dave@linux.vnet.ibm.com>
+ * Author: Dave Hansen <dave@beep.vnet.ibm.com>
  */
 
-#include <linux/flex_array.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/export.h>
-#include <linux/reciprocal_div.h>
+#include <beep/flex_array.h>
+#include <beep/slab.h>
+#include <beep/stddef.h>
+#include <beep/export.h>
+#include <beep/reciprocal_div.h>
 
 struct flex_array_part {
 	char elements[FLEX_ARRAY_PART_SIZE];

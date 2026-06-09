@@ -2,7 +2,7 @@
 #define __ASM_CACHEFLUSH_H
 
 /* Keep includes the same across arches.  */
-#include <linux/mm.h>
+#include <beep/mm.h>
 
 /*
  * The cache doesn't need to be flushed when TLB entries change when

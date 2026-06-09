@@ -10,20 +10,20 @@
 /*                                                                            */
 /******************************************************************************/
 
-#include <linux/kernel.h>	/* We're doing kernel work */
-#include <linux/module.h>	/* Specifically, a module */
-#include <linux/fs.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/rcupdate.h>
-#include <linux/etherdevice.h>
+#include <beep/kernel.h>	/* We're doing kernel work */
+#include <beep/module.h>	/* Specifically, a module */
+#include <beep/fs.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/netdevice.h>
+#include <beep/rtnetlink.h>
+#include <beep/rcupdate.h>
+#include <beep/etherdevice.h>
 
-#include <linux/uaccess.h>	/* for get_user and put_user */
-#include <linux/sched.h>
-#include <linux/ethtool.h>
-#include <linux/proc_fs.h>
+#include <beep/uaccess.h>	/* for get_user and put_user */
+#include <beep/sched.h>
+#include <beep/ethtool.h>
+#include <beep/proc_fs.h>
 
 #include "bp_ioctl.h"
 #include "bp_mod.h"
@@ -5457,7 +5457,7 @@ static void if_scan_init(void)
 
 }
 
-static long device_ioctl(struct file *file,	/* see include/linux/fs.h */
+static long device_ioctl(struct file *file,	/* see include/beep/fs.h */
 			 unsigned int ioctl_num,	/* number and param for ioctl */
 			 unsigned long ioctl_param)
 {

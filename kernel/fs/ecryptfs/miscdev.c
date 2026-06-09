@@ -1,5 +1,5 @@
 /**
- * eCryptfs: Linux filesystem encryption layer
+ * eCryptfs: Beep filesystem encryption layer
  *
  * Copyright (C) 2008 International Business Machines Corp.
  *   Author(s): Michael A. Halcrow <mhalcrow@us.ibm.com>
@@ -19,14 +19,14 @@
  * 02111-1307, USA.
  */
 
-#include <linux/fs.h>
-#include <linux/hash.h>
-#include <linux/random.h>
-#include <linux/miscdevice.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/module.h>
+#include <beep/fs.h>
+#include <beep/hash.h>
+#include <beep/random.h>
+#include <beep/miscdevice.h>
+#include <beep/poll.h>
+#include <beep/slab.h>
+#include <beep/wait.h>
+#include <beep/module.h>
 #include "ecryptfs_kernel.h"
 
 static atomic_t ecryptfs_num_miscdev_opens;

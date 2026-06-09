@@ -19,19 +19,19 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb.h>
-#include <linux/usb/otg.h>
-#include <linux/i2c.h>
-#include <linux/workqueue.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
+#include <beep/usb.h>
+#include <beep/usb/otg.h>
+#include <beep/i2c.h>
+#include <beep/workqueue.h>
 
 #include <asm/irq.h>
 #include <asm/mach-types.h>
@@ -98,7 +98,7 @@ struct isp1301 {
 
 #if	defined(CONFIG_TPS65010) || defined(CONFIG_TPS65010_MODULE)
 
-#include <linux/i2c/tps65010.h>
+#include <beep/i2c/tps65010.h>
 
 #else
 

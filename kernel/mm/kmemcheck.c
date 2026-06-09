@@ -1,8 +1,8 @@
-#include <linux/gfp.h>
-#include <linux/mm_types.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/kmemcheck.h>
+#include <beep/gfp.h>
+#include <beep/mm_types.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/kmemcheck.h>
 
 void kmemcheck_alloc_shadow(struct page *page, int order, gfp_t flags, int node)
 {

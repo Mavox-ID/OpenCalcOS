@@ -18,8 +18,8 @@
  */
 
 #include "main.h"
-#include <linux/debugfs.h>
-#include <linux/slab.h>
+#include <beep/debugfs.h>
+#include <beep/slab.h>
 #include "icmp_socket.h"
 #include "send.h"
 #include "hash.h"

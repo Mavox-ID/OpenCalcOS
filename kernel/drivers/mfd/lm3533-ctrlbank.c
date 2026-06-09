@@ -11,10 +11,10 @@
  * option) any later version.
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
+#include <beep/device.h>
+#include <beep/module.h>
 
-#include <linux/mfd/lm3533.h>
+#include <beep/mfd/lm3533.h>
 
 
 #define LM3533_MAX_CURRENT_MIN		5000

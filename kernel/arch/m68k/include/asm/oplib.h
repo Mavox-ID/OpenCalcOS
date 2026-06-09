@@ -1,6 +1,6 @@
 /*
  * oplib.h:  Describes the interface and available routines in the
- *           Linux Prom library.
+ *           Beep Prom library.
  *
  * Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
  */
@@ -11,7 +11,7 @@
 #include <asm/openprom.h>
 
 /* The master romvec pointer... */
-extern struct linux_romvec *romvec;
+extern struct beep_romvec *romvec;
 
 /* Enumeration to describe the prom major version we have detected. */
 enum prom_major_version {
@@ -34,14 +34,14 @@ extern int prom_root_node;
  * and usage utility functions.  Only prom-lib should use these,
  * users use the interface defined by the library only!
  */
-extern struct linux_nodeops *prom_nodeops;
+extern struct beep_nodeops *prom_nodeops;
 
 /* The functions... */
 
 /* You must call prom_init() before using any of the library services,
  * preferably as early as possible.  Pass it the romvec pointer.
  */
-extern void prom_init(struct linux_romvec *rom_ptr);
+extern void prom_init(struct beep_romvec *rom_ptr);
 
 /* Boot argument acquisition, returns the boot command line string. */
 extern char *prom_getbootargs(void);
@@ -89,7 +89,7 @@ extern void prom_seek(int device_handle, unsigned int seek_hival,
  * These lists are returned pre-sorted, this should make your life easier
  * since the prom itself is way too lazy to do such nice things.
  */
-extern struct linux_mem_v0 *prom_meminfo(void);
+extern struct beep_mem_v0 *prom_meminfo(void);
 
 /* Miscellaneous routines, don't really fit in any category per se. */
 
@@ -177,7 +177,7 @@ extern enum prom_output_device prom_query_output_device(void);
 /* Start the CPU with the given device tree node, context table, and context
  * at the passed program counter.
  */
-extern int prom_startcpu(int cpunode, struct linux_prom_registers *context_table,
+extern int prom_startcpu(int cpunode, struct beep_prom_registers *context_table,
 			 int context, char *program_counter);
 
 /* Stop the CPU with the passed device tree node. */
@@ -273,19 +273,19 @@ extern int prom_inst2pkg(int);
 /* Dorking with Bus ranges... */
 
 /* Adjust reg values with the passed ranges. */
-extern void prom_adjust_regs(struct linux_prom_registers *regp, int nregs,
-			     struct linux_prom_ranges *rangep, int nranges);
+extern void prom_adjust_regs(struct beep_prom_registers *regp, int nregs,
+			     struct beep_prom_ranges *rangep, int nranges);
 
 /* Adjust child ranges with the passed parent ranges. */
-extern void prom_adjust_ranges(struct linux_prom_ranges *cranges, int ncranges,
-			       struct linux_prom_ranges *pranges, int npranges);
+extern void prom_adjust_ranges(struct beep_prom_ranges *cranges, int ncranges,
+			       struct beep_prom_ranges *pranges, int npranges);
 
 /* Apply promlib probed OBIO ranges to registers. */
-extern void prom_apply_obio_ranges(struct linux_prom_registers *obioregs, int nregs);
+extern void prom_apply_obio_ranges(struct beep_prom_registers *obioregs, int nregs);
 
 /* Apply ranges of any prom node (and optionally parent node as well) to registers. */
 extern void prom_apply_generic_ranges(int node, int parent,
-				      struct linux_prom_registers *sbusregs, int nregs);
+				      struct beep_prom_registers *sbusregs, int nregs);
 
 
 #endif /* !(__SPARC_OPLIB_H) */

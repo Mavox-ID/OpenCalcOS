@@ -1,5 +1,5 @@
 /*
- *  Linux MegaRAID driver for SAS based RAID controllers
+ *  Beep MegaRAID driver for SAS based RAID controllers
  *
  *  Copyright (c) 2009-2012  LSI Corporation.
  *
@@ -21,30 +21,30 @@
  *
  *  Authors: LSI Corporation
  *           Sumant Patro
- *           Adam Radford <linuxraid@lsi.com>
+ *           Adam Radford <beepraid@lsi.com>
  *
- *  Send feedback to: <megaraidlinux@lsi.com>
+ *  Send feedback to: <megaraidbeep@lsi.com>
  *
  *  Mail to: LSI Corporation, 1621 Barber Lane, Milpitas, CA 95035
- *     ATTN: Linuxraid
+ *     ATTN: Beepraid
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/list.h>
-#include <linux/moduleparam.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/uio.h>
-#include <linux/uaccess.h>
-#include <linux/fs.h>
-#include <linux/compat.h>
-#include <linux/blkdev.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/list.h>
+#include <beep/moduleparam.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/uio.h>
+#include <beep/uaccess.h>
+#include <beep/fs.h>
+#include <beep/compat.h>
+#include <beep/blkdev.h>
+#include <beep/mutex.h>
+#include <beep/poll.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

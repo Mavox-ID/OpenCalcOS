@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-at91/sam9_smc.
+ * beep/arch/arm/mach-at91/sam9_smc.
  *
  * Copyright (C) 2008 Andrew Victor
  *

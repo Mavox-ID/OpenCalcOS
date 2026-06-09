@@ -10,10 +10,10 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/crypto.h>
-#include <linux/err.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/crypto.h>
+#include <beep/err.h>
 #include <crypto/algapi.h>
 #include <crypto/ctr.h>
 #include <crypto/lrw.h>

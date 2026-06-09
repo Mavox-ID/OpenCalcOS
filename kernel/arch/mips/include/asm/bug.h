@@ -1,7 +1,7 @@
 #ifndef __ASM_BUG_H
 #define __ASM_BUG_H
 
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 #include <asm/sgidefs.h>
 
 #ifdef CONFIG_BUG

@@ -11,11 +11,11 @@
 * more details.
 */
 
-#include <linux/clk.h>
-#include <linux/jiffies.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
+#include <beep/clk.h>
+#include <beep/jiffies.h>
+#include <beep/of.h>
+#include <beep/platform_device.h>
+#include <beep/pm.h>
 
 struct spear_ehci {
 	struct ehci_hcd ehci;

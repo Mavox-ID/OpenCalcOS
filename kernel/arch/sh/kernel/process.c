@@ -1,9 +1,9 @@
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/export.h>
-#include <linux/stackprotector.h>
+#include <beep/mm.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/export.h>
+#include <beep/stackprotector.h>
 #include <asm/fpu.h>
 
 struct kmem_cache *task_xstate_cachep = NULL;

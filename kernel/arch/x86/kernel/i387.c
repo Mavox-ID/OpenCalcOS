@@ -3,12 +3,12 @@
  *
  *  Pentium III FXSR, SSE support
  *  General FPU state handling cleanups
- *	Gareth Hughes <gareth@valinux.com>, May 2000
+ *	Gareth Hughes <gareth@vabeep.com>, May 2000
  */
-#include <linux/module.h>
-#include <linux/regset.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/regset.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 
 #include <asm/sigcontext.h>
 #include <asm/processor.h>

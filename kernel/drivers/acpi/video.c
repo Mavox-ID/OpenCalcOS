@@ -3,7 +3,7 @@
  *
  *  Copyright (C) 2004 Luming Yu <luming.yu@intel.com>
  *  Copyright (C) 2004 Bruno Ducrot <ducrot@poupinou.org>
- *  Copyright (C) 2006 Thomas Tuttle <linux-kernel@ttuttle.net>
+ *  Copyright (C) 2006 Thomas Tuttle <beep-kernel@ttuttle.net>
  *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  *
@@ -24,24 +24,24 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/input.h>
-#include <linux/backlight.h>
-#include <linux/thermal.h>
-#include <linux/sort.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/input.h>
+#include <beep/backlight.h>
+#include <beep/thermal.h>
+#include <beep/sort.h>
+#include <beep/pci.h>
+#include <beep/pci_ids.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
-#include <linux/dmi.h>
+#include <beep/dmi.h>
 #include <acpi/acpi_bus.h>
 #include <acpi/acpi_drivers.h>
-#include <linux/suspend.h>
+#include <beep/suspend.h>
 #include <acpi/video.h>
 
 #define PREFIX "ACPI: "

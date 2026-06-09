@@ -14,10 +14,10 @@
 #ifndef __U_ETHER_H
 #define __U_ETHER_H
 
-#include <linux/err.h>
-#include <linux/if_ether.h>
-#include <linux/usb/composite.h>
-#include <linux/usb/cdc.h>
+#include <beep/err.h>
+#include <beep/if_ether.h>
+#include <beep/usb/composite.h>
+#include <beep/usb/cdc.h>
 
 #include "gadget_chips.h"
 

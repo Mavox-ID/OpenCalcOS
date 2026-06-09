@@ -1,25 +1,25 @@
-/* linux/arch/sparc/kernel/sys_sparc.c
+/* beep/arch/sparc/kernel/sys_sparc.c
  *
  * This file contains various random system calls that
- * have a non-standard calling sequence on the Linux/sparc
+ * have a non-standard calling sequence on the Beep/sparc
  * platform.
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/stat.h>
-#include <linux/syscalls.h>
-#include <linux/mman.h>
-#include <linux/utsname.h>
-#include <linux/smp.h>
-#include <linux/ipc.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/sem.h>
+#include <beep/msg.h>
+#include <beep/shm.h>
+#include <beep/stat.h>
+#include <beep/syscalls.h>
+#include <beep/mman.h>
+#include <beep/utsname.h>
+#include <beep/smp.h>
+#include <beep/ipc.h>
 
 #include <asm/uaccess.h>
 #include <asm/unistd.h>
@@ -91,7 +91,7 @@ int sparc_mmap_check(unsigned long addr, unsigned long len)
 	return 0;
 }
 
-/* Linux version of mmap */
+/* Beep version of mmap */
 
 asmlinkage unsigned long sys_mmap2(unsigned long addr, unsigned long len,
 	unsigned long prot, unsigned long flags, unsigned long fd,

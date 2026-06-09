@@ -756,7 +756,7 @@ static void emit_relocs(int as_text, int use_real_mode)
 
 static void usage(void)
 {
-	die("relocs [--abs-syms|--abs-relocs|--text|--realmode] vmlinux\n");
+	die("relocs [--abs-syms|--abs-relocs|--text|--realmode] vmbeep\n");
 }
 
 int main(int argc, char **argv)

@@ -1,7 +1,7 @@
 /*
  * Sony Programmable I/O Control Device driver for VAIO
  *
- * Copyright (C) 2007 Mattia Dongili <malattia@linux.it>
+ * Copyright (C) 2007 Mattia Dongili <malattia@beep.it>
  *
  * Copyright (C) 2001-2005 Stelian Pop <stelian@popies.net>
  *
@@ -15,7 +15,7 @@
  *
  * Copyright (C) 2000 Takaya Kinjo <t-kinjo@tc4.so-net.ne.jp>
  *
- * Copyright (C) 2000 Andrew Tridgell <tridge@valinux.com>
+ * Copyright (C) 2000 Andrew Tridgell <tridge@vabeep.com>
  *
  * Earlier work by Werner Almesberger, Paul `Rusty' Russell and Paul Mackerras.
  *
@@ -35,27 +35,27 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/input.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/miscdevice.h>
-#include <linux/poll.h>
-#include <linux/delay.h>
-#include <linux/wait.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/err.h>
-#include <linux/kfifo.h>
-#include <linux/platform_device.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/input.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/miscdevice.h>
+#include <beep/poll.h>
+#include <beep/delay.h>
+#include <beep/wait.h>
+#include <beep/acpi.h>
+#include <beep/dmi.h>
+#include <beep/err.h>
+#include <beep/kfifo.h>
+#include <beep/platform_device.h>
+#include <beep/gfp.h>
 
 #include <asm/uaccess.h>
 #include <asm/io.h>
 
-#include <linux/sonypi.h>
+#include <beep/sonypi.h>
 
 #define SONYPI_DRIVER_VERSION	 "1.26"
 
@@ -1313,7 +1313,7 @@ static int sonypi_probe(struct platform_device *dev)
 
 	printk(KERN_WARNING "sonypi: please try the sony-laptop module instead "
 			"and report failures, see also "
-			"http://www.linux.it/~malattia/wiki/index.php/Sony_drivers\n");
+			"http://www.beep.it/~malattia/wiki/index.php/Sony_drivers\n");
 
 	spin_lock_init(&sonypi_device.fifo_lock);
 	error = kfifo_alloc(&sonypi_device.fifo, SONYPI_BUF_SIZE, GFP_KERNEL);

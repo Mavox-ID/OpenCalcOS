@@ -15,8 +15,8 @@
 #ifndef _ASM_TILE_HARDIRQ_H
 #define _ASM_TILE_HARDIRQ_H
 
-#include <linux/threads.h>
-#include <linux/cache.h>
+#include <beep/threads.h>
+#include <beep/cache.h>
 
 #include <asm/irq.h>
 
@@ -40,7 +40,7 @@ DECLARE_PER_CPU(irq_cpustat_t, irq_stat);
 #define __ARCH_IRQ_STAT
 #define __IRQ_STAT(cpu, member) (per_cpu(irq_stat, cpu).member)
 
-#include <linux/irq_cpustat.h>	/* Standard mappings for irq_cpustat_t above */
+#include <beep/irq_cpustat.h>	/* Standard mappings for irq_cpustat_t above */
 
 #define HARDIRQ_BITS	8
 

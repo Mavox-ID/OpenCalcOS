@@ -26,10 +26,10 @@
  * common entry point in __mac_fw_upload(), which uses the i1480
  * function pointers to push the firmware to the device.
  */
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/uwb.h>
+#include <beep/delay.h>
+#include <beep/firmware.h>
+#include <beep/slab.h>
+#include <beep/uwb.h>
 #include "i1480-dfu.h"
 
 /*

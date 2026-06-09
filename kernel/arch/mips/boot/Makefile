@@ -23,20 +23,20 @@ strip-flags   := $(addprefix --remove-section=,$(drop-sections))
 
 hostprogs-y := elf2ecoff
 
-targets := vmlinux.ecoff
+targets := vmbeep.ecoff
 quiet_cmd_ecoff = ECOFF   $@
-      cmd_ecoff = $(obj)/elf2ecoff $(VMLINUX) $@ $(e2eflag)
-$(obj)/vmlinux.ecoff: $(obj)/elf2ecoff $(VMLINUX) FORCE
+      cmd_ecoff = $(obj)/elf2ecoff $(VMBEEP) $@ $(e2eflag)
+$(obj)/vmbeep.ecoff: $(obj)/elf2ecoff $(VMBEEP) FORCE
 	$(call if_changed,ecoff)
 
-targets += vmlinux.bin
+targets += vmbeep.bin
 quiet_cmd_bin = OBJCOPY $@
-      cmd_bin = $(OBJCOPY) -O binary $(strip-flags) $(VMLINUX) $@
-$(obj)/vmlinux.bin: $(VMLINUX) FORCE
+      cmd_bin = $(OBJCOPY) -O binary $(strip-flags) $(VMBEEP) $@
+$(obj)/vmbeep.bin: $(VMBEEP) FORCE
 	$(call if_changed,bin)
 
-targets += vmlinux.srec
+targets += vmbeep.srec
 quiet_cmd_srec = OBJCOPY $@
-      cmd_srec = $(OBJCOPY) -S -O srec $(strip-flags) $(VMLINUX) $@
-$(obj)/vmlinux.srec: $(VMLINUX) FORCE
+      cmd_srec = $(OBJCOPY) -S -O srec $(strip-flags) $(VMBEEP) $@
+$(obj)/vmbeep.srec: $(VMBEEP) FORCE
 	$(call if_changed,srec)

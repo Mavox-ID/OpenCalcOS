@@ -9,11 +9,11 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/ip.h>
+#include <beep/module.h>
+#include <beep/ip.h>
 #include <net/route.h>
-#include <linux/inetdevice.h>
-#include <linux/skbuff.h>
+#include <beep/inetdevice.h>
+#include <beep/skbuff.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_helper.h>

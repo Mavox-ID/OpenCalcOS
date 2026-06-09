@@ -6,10 +6,10 @@
  *  For licencing details see kernel-base/COPYING
  */
 
-#include <linux/perf_event.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/ptrace.h>
+#include <beep/perf_event.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/ptrace.h>
 
 #include <asm/apic.h>
 
@@ -19,8 +19,8 @@ static u32 ibs_caps;
 
 #if defined(CONFIG_PERF_EVENTS) && defined(CONFIG_CPU_SUP_AMD)
 
-#include <linux/kprobes.h>
-#include <linux/hardirq.h>
+#include <beep/kprobes.h>
+#include <beep/hardirq.h>
 
 #include <asm/nmi.h>
 

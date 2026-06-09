@@ -12,18 +12,18 @@
  * kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/mii.h>
-#include <linux/platform_device.h>
-#include <linux/mdio-bitbang.h>
-#include <linux/of_mdio.h>
-#include <linux/of_platform.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/mii.h>
+#include <beep/platform_device.h>
+#include <beep/mdio-bitbang.h>
+#include <beep/of_mdio.h>
+#include <beep/of_platform.h>
 
 #include "fs_enet.h"
 

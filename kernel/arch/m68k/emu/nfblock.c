@@ -6,17 +6,17 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/genhd.h>
-#include <linux/blkdev.h>
-#include <linux/hdreg.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/genhd.h>
+#include <beep/blkdev.h>
+#include <beep/hdreg.h>
+#include <beep/slab.h>
 
 #include <asm/natfeat.h>
 

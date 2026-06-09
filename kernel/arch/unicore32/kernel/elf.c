@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/kernel/elf.c
+ * beep/arch/unicore32/kernel/elf.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -9,11 +9,11 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/personality.h>
-#include <linux/binfmts.h>
-#include <linux/elf.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/personality.h>
+#include <beep/binfmts.h>
+#include <beep/elf.h>
 
 int elf_check_arch(const struct elf32_hdr *x)
 {
@@ -31,7 +31,7 @@ EXPORT_SYMBOL(elf_check_arch);
 
 void elf_set_personality(const struct elf32_hdr *x)
 {
-	unsigned int personality = PER_LINUX;
+	unsigned int personality = PER_BEEP;
 
 	set_personality(personality);
 }

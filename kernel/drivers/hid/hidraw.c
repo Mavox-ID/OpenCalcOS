@@ -21,21 +21,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/cdev.h>
-#include <linux/poll.h>
-#include <linux/device.h>
-#include <linux/major.h>
-#include <linux/slab.h>
-#include <linux/hid.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
+#include <beep/fs.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/cdev.h>
+#include <beep/poll.h>
+#include <beep/device.h>
+#include <beep/major.h>
+#include <beep/slab.h>
+#include <beep/hid.h>
+#include <beep/mutex.h>
+#include <beep/sched.h>
 
-#include <linux/hidraw.h>
+#include <beep/hidraw.h>
 
 static int hidraw_major;
 static struct cdev hidraw_cdev;

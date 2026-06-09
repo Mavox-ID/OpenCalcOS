@@ -27,7 +27,7 @@
 #ifndef SCSI_TRANSPORT_FC_H
 #define SCSI_TRANSPORT_FC_H
 
-#include <linux/sched.h>
+#include <beep/sched.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_netlink.h>
 

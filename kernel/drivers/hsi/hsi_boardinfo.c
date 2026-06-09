@@ -19,9 +19,9 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
  * 02110-1301 USA
  */
-#include <linux/hsi/hsi.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <beep/hsi/hsi.h>
+#include <beep/list.h>
+#include <beep/slab.h>
 #include "hsi_core.h"
 
 /*

@@ -78,7 +78,7 @@
 
 #include "au88x0.h"
 #include "au88x0_a3d.h"
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 /*  MIXER (CAsp4Mix.s and CAsp4Mixer.s) */
 

@@ -29,21 +29,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/input-polldev.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/dmi.h>
-#include <linux/mutex.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/io.h>
-#include <linux/leds.h>
-#include <linux/hwmon.h>
-#include <linux/workqueue.h>
-#include <linux/err.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/input-polldev.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/timer.h>
+#include <beep/dmi.h>
+#include <beep/mutex.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/io.h>
+#include <beep/leds.h>
+#include <beep/hwmon.h>
+#include <beep/workqueue.h>
+#include <beep/err.h>
 
 /* data port used by Apple SMC */
 #define APPLESMC_DATA_PORT	0x300

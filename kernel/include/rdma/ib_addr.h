@@ -34,12 +34,12 @@
 #if !defined(IB_ADDR_H)
 #define IB_ADDR_H
 
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/if_arp.h>
-#include <linux/netdevice.h>
-#include <linux/socket.h>
-#include <linux/if_vlan.h>
+#include <beep/in.h>
+#include <beep/in6.h>
+#include <beep/if_arp.h>
+#include <beep/netdevice.h>
+#include <beep/socket.h>
+#include <beep/if_vlan.h>
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_pack.h>
 

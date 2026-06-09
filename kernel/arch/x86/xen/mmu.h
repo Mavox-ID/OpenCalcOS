@@ -1,6 +1,6 @@
 #ifndef _XEN_MMU_H
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/page.h>
 
 enum pt_level {

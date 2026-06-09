@@ -1,7 +1,7 @@
 /*
  * Mostly IRQ support for Hexagon
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -18,10 +18,10 @@
  * 02110-1301, USA.
  */
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include <asm/registers.h>
-#include <linux/irq.h>
-#include <linux/hardirq.h>
+#include <beep/irq.h>
+#include <beep/hardirq.h>
 
 /*
  * show_regs - print pt_regs structure

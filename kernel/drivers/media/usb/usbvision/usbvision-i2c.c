@@ -24,15 +24,15 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/uaccess.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
-#include <linux/usb.h>
-#include <linux/i2c.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/uaccess.h>
+#include <beep/ioport.h>
+#include <beep/errno.h>
+#include <beep/usb.h>
+#include <beep/i2c.h>
 #include "usbvision.h"
 
 #define DBG_I2C		(1 << 0)

@@ -15,11 +15,11 @@
  * the PRM hardware module.  What a mess...
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/io.h>
 
 #include "iomap.h"
 #include "common.h"
@@ -229,7 +229,7 @@ void omap4_cminst_clkdm_enable_hwsup(u8 part, s16 inst, u16 cdoffs)
  *
  * Put a clockdomain referred to by (@part, @inst, @cdoffs) into
  * software-supervised idle mode, i.e., controlled manually by the
- * Linux OMAP clockdomain code.  No return value.
+ * Beep OMAP clockdomain code.  No return value.
  */
 void omap4_cminst_clkdm_disable_hwsup(u8 part, s16 inst, u16 cdoffs)
 {

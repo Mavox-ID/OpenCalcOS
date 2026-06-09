@@ -8,15 +8,15 @@
  *
  */
 
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <beep/workqueue.h>
+#include <beep/spinlock.h>
+#include <beep/kthread.h>
+#include <beep/debugfs.h>
+#include <beep/uaccess.h>
+#include <beep/module.h>
+#include <beep/ctype.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
 
 #include <asm/setup.h>
 

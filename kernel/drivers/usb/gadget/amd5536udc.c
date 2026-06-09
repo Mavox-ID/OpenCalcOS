@@ -32,33 +32,33 @@
 #define UDC_DRIVER_VERSION_STRING	"01.00.0206"
 
 /* system */
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/ioctl.h>
-#include <linux/fs.h>
-#include <linux/dmapool.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/prefetch.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/timer.h>
+#include <beep/list.h>
+#include <beep/interrupt.h>
+#include <beep/ioctl.h>
+#include <beep/fs.h>
+#include <beep/dmapool.h>
+#include <beep/moduleparam.h>
+#include <beep/device.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/prefetch.h>
 
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
 
 /* gadget stack */
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <beep/usb/ch9.h>
+#include <beep/usb/gadget.h>
 
 /* udc specific */
 #include "amd5536udc.h"
@@ -2993,7 +2993,7 @@ __acquires(dev->lock)
 	return ret_val;
 }
 
-/* Interrupt Service Routine, see Linux Kernel Doc for parameters */
+/* Interrupt Service Routine, see Beep Kernel Doc for parameters */
 static irqreturn_t udc_irq(int irq, void *pdev)
 {
 	struct udc *dev = pdev;

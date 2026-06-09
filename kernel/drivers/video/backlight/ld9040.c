@@ -20,18 +20,18 @@
  * 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 
-#include <linux/wait.h>
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/spi/spi.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/lcd.h>
-#include <linux/backlight.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
+#include <beep/wait.h>
+#include <beep/fb.h>
+#include <beep/delay.h>
+#include <beep/gpio.h>
+#include <beep/spi/spi.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/lcd.h>
+#include <beep/backlight.h>
+#include <beep/module.h>
+#include <beep/regulator/consumer.h>
 
 #include "ld9040_gamma.h"
 

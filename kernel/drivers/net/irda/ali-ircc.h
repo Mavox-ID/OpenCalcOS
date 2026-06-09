@@ -22,15 +22,15 @@
 #ifndef ALI_IRCC_H
 #define ALI_IRCC_H
 
-#include <linux/time.h>
+#include <beep/time.h>
 
-#include <linux/spinlock.h>
-#include <linux/pm.h>
-#include <linux/types.h>
+#include <beep/spinlock.h>
+#include <beep/pm.h>
+#include <beep/types.h>
 #include <asm/io.h>
 
 /* SIR Register */
-/* Usr definition of linux/serial_reg.h */
+/* Usr definition of beep/serial_reg.h */
 
 /* FIR Register */
 #define BANK0		0x20

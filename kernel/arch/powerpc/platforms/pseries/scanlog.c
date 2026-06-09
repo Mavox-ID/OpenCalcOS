@@ -20,13 +20,13 @@
  * If given, the driver will reset the scanlog so the platform can free it.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/proc_fs.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
 #include <asm/rtas.h>
 #include <asm/prom.h>

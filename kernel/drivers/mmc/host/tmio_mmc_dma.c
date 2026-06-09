@@ -1,5 +1,5 @@
 /*
- * linux/drivers/mmc/tmio_mmc_dma.c
+ * beep/drivers/mmc/tmio_mmc_dma.c
  *
  * Copyright (C) 2010-2011 Guennadi Liakhovetski
  *
@@ -10,14 +10,14 @@
  * DMA function for TMIO MMC implementations
  */
 
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/tmio.h>
-#include <linux/pagemap.h>
-#include <linux/scatterlist.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmaengine.h>
+#include <beep/mfd/tmio.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/tmio.h>
+#include <beep/pagemap.h>
+#include <beep/scatterlist.h>
 
 #include "tmio_mmc.h"
 

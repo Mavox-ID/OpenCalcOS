@@ -12,19 +12,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/of.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/miscdevice.h>
+#include <beep/platform_device.h>
+#include <beep/watchdog.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/spinlock.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/of.h>
 #include <mach/bridge-regs.h>
 
 /*

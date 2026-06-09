@@ -4,7 +4,7 @@
  * We don't trust the firmware so we do it the classic way by poking and
  * stabbing at the keyboard controller ...
  */
-#include <linux/jiffies.h>
+#include <beep/jiffies.h>
 #include <asm/jazz.h>
 
 #define KBD_STAT_IBF		0x02	/* Keyboard input buffer full */

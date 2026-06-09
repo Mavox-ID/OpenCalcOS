@@ -570,7 +570,7 @@ config BFIN_KERNEL_CLOCK_MEMINIT_SPEC
 	help
 	  Please consult the Blackfin Hardware Reference Manuals as well
 	  as the memory device datasheet.
-	  http://docs.blackfin.uclinux.org/doku.php?id=bfin:sdram
+	  http://docs.blackfin.ucbeep.org/doku.php?id=bfin:sdram
 endchoice
 
 menu "Memory Init Control"
@@ -710,7 +710,7 @@ config BFIN_SCRATCH_REG_RETN
 	help
 	  Use the RETN register in the Blackfin exception handler
 	  as a stack scratch register.  This means you cannot
-	  safely use NMI on the Blackfin while running Linux, but
+	  safely use NMI on the Blackfin while running Beep, but
 	  you can debug the system with a JTAG ICE and use the
 	  CYCLES performance registers.
 

@@ -22,19 +22,19 @@
  * file called LICENSE.
  *
  * Contact Information:
- *  Intel Linux Wireless <ilw@linux.intel.com>
+ *  Intel Beep Wireless <ilw@beep.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  *****************************************************************************/
 #ifndef __iwl_trans_int_pcie_h__
 #define __iwl_trans_int_pcie_h__
 
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/skbuff.h>
-#include <linux/wait.h>
-#include <linux/pci.h>
-#include <linux/timer.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/skbuff.h>
+#include <beep/wait.h>
+#include <beep/pci.h>
+#include <beep/timer.h>
 
 #include "iwl-fh.h"
 #include "iwl-csr.h"

@@ -8,26 +8,26 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/interrupt.h>
-#include <linux/profile.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/io.h>
-#include <linux/bug.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/param.h>
+#include <beep/interrupt.h>
+#include <beep/profile.h>
+#include <beep/irq.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/clocksource.h>
+#include <beep/clockchips.h>
+#include <beep/io.h>
+#include <beep/bug.h>
 #include <asm/cpuinfo.h>
 #include <asm/setup.h>
 #include <asm/prom.h>
 #include <asm/irq.h>
-#include <linux/cnt32_to_63.h>
+#include <beep/cnt32_to_63.h>
 
 #ifdef CONFIG_SELFMOD_TIMER
 #include <asm/selfmod.h>

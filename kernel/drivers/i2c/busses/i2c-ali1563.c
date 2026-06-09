@@ -16,12 +16,12 @@
  *	This file is released under the GPLv2
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/acpi.h>
 
 #define ALI1563_MAX_TIMEOUT	500
 #define	ALI1563_SMBBA		0x80

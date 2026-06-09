@@ -1,6 +1,6 @@
 
-#include <linux/module.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/io.h>
 
 #include "hardware.h"
 

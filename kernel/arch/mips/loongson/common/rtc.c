@@ -9,10 +9,10 @@
  *  (at your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/mc146818rtc.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/mc146818rtc.h>
 
 struct resource loongson_rtc_resources[] = {
 	{

@@ -15,12 +15,12 @@
  * Inc., 59 Temple Place - Suite 330, Boston MA 02111-1307, USA.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/usb.h>
-#include <linux/i2c.h>
-#include <linux/videodev2.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/usb.h>
+#include <beep/i2c.h>
+#include <beep/videodev2.h>
+#include <beep/slab.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-subdev.h>

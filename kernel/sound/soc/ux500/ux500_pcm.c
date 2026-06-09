@@ -14,11 +14,11 @@
 
 #include <asm/page.h>
 
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/slab.h>
-#include <linux/platform_data/dma-ste-dma40.h>
+#include <beep/module.h>
+#include <beep/dma-mapping.h>
+#include <beep/dmaengine.h>
+#include <beep/slab.h>
+#include <beep/platform_data/dma-ste-dma40.h>
 
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

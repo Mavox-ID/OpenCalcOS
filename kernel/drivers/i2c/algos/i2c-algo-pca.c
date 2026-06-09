@@ -19,15 +19,15 @@
  *  MA 02110-1301 USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-pca.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/delay.h>
+#include <beep/jiffies.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/i2c.h>
+#include <beep/i2c-algo-pca.h>
 
 #define DEB1(fmt, args...) do { if (i2c_debug >= 1)			\
 				 printk(KERN_DEBUG fmt, ## args); } while (0)

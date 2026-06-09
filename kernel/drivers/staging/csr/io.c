@@ -30,7 +30,7 @@
  *
  * ---------------------------------------------------------------------------
  */
-#include <linux/proc_fs.h>
+#include <beep/proc_fs.h>
 
 #include "csr_wifi_hip_unifi.h"
 #include "csr_wifi_hip_unifiversion.h"
@@ -238,7 +238,7 @@ uf_unregister_netdev(unifi_priv_t *priv)
  *
  *      This function is called from the Probe (or equivalent) method of
  *      the SDIO driver when a UniFi card is detected.
- *      We allocate the Linux net_device struct, initialise the HIP core
+ *      We allocate the Beep net_device struct, initialise the HIP core
  *      lib, create the char device nodes and start the userspace helper
  *      to initialise the device.
  *
@@ -638,7 +638,7 @@ unregister_unifi_sdio(int bus_id)
         }
     }
 
-#ifdef CSR_NATIVE_LINUX
+#ifdef CSR_NATIVE_BEEP
     /*
      * If the unifi thread was started, signal it to stop.  This
      * should cause any userspace processes with open unifi device to
@@ -647,14 +647,14 @@ unregister_unifi_sdio(int bus_id)
     uf_stop_thread(priv, &priv->bh_thread);
 
     /* Unregister the interrupt handler */
-    if (csr_sdio_linux_remove_irq(priv->sdio)) {
+    if (csr_sdio_beep_remove_irq(priv->sdio)) {
         unifi_notice(priv,
-                "csr_sdio_linux_remove_irq failed to talk to card.\n");
+                "csr_sdio_beep_remove_irq failed to talk to card.\n");
     }
 
     /* Ensure no MLME functions are waiting on a the mlme_event semaphore. */
     uf_abort_mlme(priv);
-#endif /* CSR_NATIVE_LINUX */
+#endif /* CSR_NATIVE_BEEP */
 
     ul_log_config_ind(priv, &reason, sizeof(u8));
 
@@ -882,7 +882,7 @@ uf_read_proc(char *page, char **start, off_t offset, int count,
 #endif /* CSR_SUPPORT_WEXT */
     UNIFI_SNPRINTF_RET(p, remain, written);
 #endif /* CSR_SME_USERSPACE */
-#ifdef CSR_NATIVE_LINUX
+#ifdef CSR_NATIVE_BEEP
     written = scnprintf(p, remain, "SME: native\n");
     UNIFI_SNPRINTF_RET(p, remain, written);
 #endif

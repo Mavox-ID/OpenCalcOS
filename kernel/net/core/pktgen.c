@@ -15,7 +15,7 @@
  *
  *
  * A tool for loading the network with preconfigurated packets.
- * The tool is implemented as a linux module.  Parameters are output
+ * The tool is implemented as a beep module.  Parameters are output
  * device, delay (to hard_xmit), number of packets, and whether
  * to use multiple SKBs or just the same one.
  * pktgen uses the installed interface's output routine.
@@ -88,7 +88,7 @@
  *
  * Included flow support. 030802 ANK.
  *
- * Fixed unaligned access on IA-64 Grant Grundler <grundler@parisc-linux.org>
+ * Fixed unaligned access on IA-64 Grant Grundler <grundler@parisc-beep.org>
  *
  * Remove if fix from added Harald Welte <laforge@netfilter.org> 040419
  * ia64 compilation fix from  Aron Griffis <aron@hp.com> 040604
@@ -118,45 +118,45 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/sys.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/unistd.h>
-#include <linux/string.h>
-#include <linux/ptrace.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/capability.h>
-#include <linux/hrtimer.h>
-#include <linux/freezer.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/inet.h>
-#include <linux/inetdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_arp.h>
-#include <linux/if_vlan.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/udp.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/wait.h>
-#include <linux/etherdevice.h>
-#include <linux/kthread.h>
-#include <linux/prefetch.h>
+#include <beep/sys.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/mutex.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/unistd.h>
+#include <beep/string.h>
+#include <beep/ptrace.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/capability.h>
+#include <beep/hrtimer.h>
+#include <beep/freezer.h>
+#include <beep/delay.h>
+#include <beep/timer.h>
+#include <beep/list.h>
+#include <beep/init.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/inet.h>
+#include <beep/inetdevice.h>
+#include <beep/rtnetlink.h>
+#include <beep/if_arp.h>
+#include <beep/if_vlan.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/ipv6.h>
+#include <beep/udp.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/wait.h>
+#include <beep/etherdevice.h>
+#include <beep/kthread.h>
+#include <beep/prefetch.h>
 #include <net/net_namespace.h>
 #include <net/checksum.h>
 #include <net/ipv6.h>
@@ -165,11 +165,11 @@
 #include <net/xfrm.h>
 #endif
 #include <asm/byteorder.h>
-#include <linux/rcupdate.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/timex.h>
-#include <linux/uaccess.h>
+#include <beep/rcupdate.h>
+#include <beep/bitops.h>
+#include <beep/io.h>
+#include <beep/timex.h>
+#include <beep/uaccess.h>
 #include <asm/dma.h>
 #include <asm/div64.h>		/* do_div */
 

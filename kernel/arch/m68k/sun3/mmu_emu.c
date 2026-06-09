@@ -6,14 +6,14 @@
 ** Started 1/16/98 @ 2:22 am
 */
 
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/delay.h>
-#include <linux/bootmem.h>
-#include <linux/bitops.h>
-#include <linux/module.h>
+#include <beep/mman.h>
+#include <beep/mm.h>
+#include <beep/kernel.h>
+#include <beep/ptrace.h>
+#include <beep/delay.h>
+#include <beep/bootmem.h>
+#include <beep/bitops.h>
+#include <beep/module.h>
 
 #include <asm/setup.h>
 #include <asm/traps.h>

@@ -23,28 +23,28 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/etherdevice.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/workqueue.h>
-#include <linux/clk.h>
-#include <linux/phy.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/types.h>
+#include <beep/init.h>
+#include <beep/dma-mapping.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/udp.h>
+#include <beep/etherdevice.h>
+#include <beep/bitops.h>
+#include <beep/delay.h>
+#include <beep/ethtool.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/workqueue.h>
+#include <beep/clk.h>
+#include <beep/phy.h>
+#include <beep/io.h>
+#include <beep/interrupt.h>
+#include <beep/types.h>
 #include <asm/pgtable.h>
 #include <asm/cacheflush.h>
-#include <linux/pxa168_eth.h>
+#include <beep/pxa168_eth.h>
 
 #define DRIVER_NAME	"pxa168-eth"
 #define DRIVER_VERSION	"0.3"

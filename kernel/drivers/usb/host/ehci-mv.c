@@ -9,13 +9,13 @@
  * option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/usb/otg.h>
-#include <linux/platform_data/mv_usb.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/usb/otg.h>
+#include <beep/platform_data/mv_usb.h>
 
 #define CAPLENGTH_MASK         (0xff)
 

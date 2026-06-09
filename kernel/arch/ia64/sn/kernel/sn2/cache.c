@@ -6,7 +6,7 @@
  * Copyright (C) 2001-2003, 2006 Silicon Graphics, Inc. All rights reserved.
  *
  */
-#include <linux/module.h>
+#include <beep/module.h>
 #include <asm/pgalloc.h>
 #include <asm/sn/arch.h>
 

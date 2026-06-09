@@ -13,16 +13,16 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/fs.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/watchdog.h>
-#include <linux/uaccess.h>
+#include <beep/fs.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/miscdevice.h>
+#include <beep/mutex.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/watchdog.h>
+#include <beep/uaccess.h>
 
 #define TS72XX_WDT_FEED_VAL		0x05
 #define TS72XX_WDT_DEFAULT_TIMEOUT	8

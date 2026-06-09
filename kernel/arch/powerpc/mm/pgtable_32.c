@@ -1,9 +1,9 @@
 /*
- * This file contains the routines setting up the linux page tables.
+ * This file contains the routines setting up the beep page tables.
  *  -- paulus
  *
  *  Derived from arch/ppc/mm/init.c:
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -19,15 +19,15 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/highmem.h>
-#include <linux/memblock.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/vmalloc.h>
+#include <beep/init.h>
+#include <beep/highmem.h>
+#include <beep/memblock.h>
+#include <beep/slab.h>
 
 #include <asm/pgtable.h>
 #include <asm/pgalloc.h>
@@ -348,7 +348,7 @@ void __init mapin_ram(void)
 #endif
 }
 
-/* Scan the real Linux page tables and return a PTE pointer for
+/* Scan the real Beep page tables and return a PTE pointer for
  * a virtual address in a context.
  * Returns true (1) if PTE was found, zero otherwise.  The pointer to
  * the PTE pointer is unmodified if PTE is not found.

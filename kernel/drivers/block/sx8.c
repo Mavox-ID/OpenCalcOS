@@ -10,24 +10,24 @@
  *  for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/blkdev.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/compiler.h>
-#include <linux/workqueue.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/time.h>
-#include <linux/hdreg.h>
-#include <linux/dma-mapping.h>
-#include <linux/completion.h>
-#include <linux/scatterlist.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/blkdev.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/compiler.h>
+#include <beep/workqueue.h>
+#include <beep/bitops.h>
+#include <beep/delay.h>
+#include <beep/time.h>
+#include <beep/hdreg.h>
+#include <beep/dma-mapping.h>
+#include <beep/completion.h>
+#include <beep/scatterlist.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>
 

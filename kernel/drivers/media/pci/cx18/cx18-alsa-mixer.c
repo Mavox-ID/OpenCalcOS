@@ -20,11 +20,11 @@
  *  02111-1307  USA
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/videodev2.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/device.h>
+#include <beep/spinlock.h>
+#include <beep/videodev2.h>
 
 #include <media/v4l2-device.h>
 

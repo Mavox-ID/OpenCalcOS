@@ -18,13 +18,13 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/bootmem.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/of.h>
+#include <beep/bootmem.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 
 #include <asm/io.h>
 #include <asm/pci-bridge.h>
@@ -2162,7 +2162,7 @@ static void __init ppc4xx_probe_pciex_bridge(struct device_node *np)
 		return;
 	}
 
-	/* Setup the linux hose data structure */
+	/* Setup the beep hose data structure */
 	ppc4xx_pciex_port_setup_hose(port);
 }
 

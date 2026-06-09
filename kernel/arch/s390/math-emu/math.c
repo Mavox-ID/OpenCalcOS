@@ -7,9 +7,9 @@
  *          that does not have the IEEE fpu (all processors before G5).
  */
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
 #include <asm/uaccess.h>
 #include <asm/lowcore.h>
 

@@ -19,9 +19,9 @@
 #ifndef _H_JFS_LOCK
 #define _H_JFS_LOCK
 
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
+#include <beep/spinlock.h>
+#include <beep/mutex.h>
+#include <beep/sched.h>
 
 /*
  *	jfs_lock.h

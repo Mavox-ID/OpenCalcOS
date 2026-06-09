@@ -1,6 +1,6 @@
 /*********************************************************************
  *
- *	vlsi_ir.c:	VLSI82C147 PCI IrDA controller driver for Linux
+ *	vlsi_ir.c:	VLSI82C147 PCI IrDA controller driver for Beep
  *
  *	Copyright (c) 2001-2003 Martin Diehl
  *
@@ -21,7 +21,7 @@
  *
  ********************************************************************/
 
-#include <linux/module.h>
+#include <beep/module.h>
  
 #define DRIVER_NAME 		"vlsi_ir"
 #define DRIVER_VERSION		"v0.5"
@@ -34,18 +34,18 @@ MODULE_LICENSE("GPL");
 
 /********************************************************/
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/time.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/delay.h>
+#include <beep/time.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/mutex.h>
 #include <asm/uaccess.h>
 #include <asm/byteorder.h>
 
@@ -1729,7 +1729,7 @@ static void vlsi_irda_remove(struct pci_dev *pdev)
 #ifdef CONFIG_PM
 
 /* The Controller doesn't provide PCI PM capabilities as defined by PCI specs.
- * Some of the Linux PCI-PM code however depends on this, for example in
+ * Some of the Beep PCI-PM code however depends on this, for example in
  * pci_set_power_state(). So we have to take care to perform the required
  * operations on our own (particularly reflecting the pdev->current_state)
  * otherwise we might get cheated by pci-pm.

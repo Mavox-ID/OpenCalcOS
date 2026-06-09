@@ -1,6 +1,6 @@
 relocs
-vmlinux.bin.all
-vmlinux.relocs
-vmlinux.lds
+vmbeep.bin.all
+vmbeep.relocs
+vmbeep.lds
 mkpiggy
 piggy.S

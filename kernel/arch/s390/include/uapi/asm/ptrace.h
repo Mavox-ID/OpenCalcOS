@@ -181,8 +181,8 @@
 #define PTRACE_OLDSETOPTIONS         21
 
 #ifndef __ASSEMBLY__
-#include <linux/stddef.h>
-#include <linux/types.h>
+#include <beep/stddef.h>
+#include <beep/types.h>
 
 typedef union
 {

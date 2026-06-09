@@ -108,7 +108,7 @@
 		user_led {
 			label = "user_led";
 			gpios = <&pioB 21 0>;
-			linux,default-trigger = "heartbeat";
+			beep,default-trigger = "heartbeat";
 		};
 	};
 
@@ -120,7 +120,7 @@
 		user_pb {
 			label = "user_pb";
 			gpios = <&pioB 10 1>;
-			linux,code = <28>;
+			beep,code = <28>;
 			gpio-key,wakeup;
 		};
 	};

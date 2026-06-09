@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux/MIPS-specific parts of the memory manager.
+# Makefile for the Beep/MIPS-specific parts of the memory manager.
 #
 
 obj-y				+= cache.o dma-default.o extable.o fault.o \

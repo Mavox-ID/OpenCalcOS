@@ -7,7 +7,7 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/errno.h>
+#include <beep/errno.h>
 
 #include <asm/page.h>
 #include <asm/thread_info.h>

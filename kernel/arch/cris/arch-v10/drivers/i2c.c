@@ -12,13 +12,13 @@
 
 /****************** INCLUDE FILES SECTION ***********************************/
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/string.h>
+#include <beep/init.h>
 
 #include <asm/etraxi2c.h>
 

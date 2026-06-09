@@ -1,5 +1,5 @@
 /*
- * linux/drivers/leds/leds-locomo.c
+ * beep/drivers/leds/leds-locomo.c
  *
  * Copyright (C) 2005 John Lenz <lenz@cs.wisc.edu>
  *
@@ -8,11 +8,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/leds.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/leds.h>
 
 #include <mach/hardware.h>
 #include <asm/hardware/locomo.h>

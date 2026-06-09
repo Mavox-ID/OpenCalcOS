@@ -20,10 +20,10 @@
  * 02110-1301 USA
  */
 
-#ifndef __LINUX_HSI_CORE_H__
-#define __LINUX_HSI_CORE_H__
+#ifndef __BEEP_HSI_CORE_H__
+#define __BEEP_HSI_CORE_H__
 
-#include <linux/hsi/hsi.h>
+#include <beep/hsi/hsi.h>
 
 struct hsi_cl_info {
 	struct list_head	list;
@@ -32,4 +32,4 @@ struct hsi_cl_info {
 
 extern struct list_head hsi_board_list;
 
-#endif /* __LINUX_HSI_CORE_H__ */
+#endif /* __BEEP_HSI_CORE_H__ */

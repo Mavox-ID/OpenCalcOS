@@ -23,9 +23,9 @@
  * wlanfae <wlanfae@realtek.com>
  *****************************************************************************
  */
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/delay.h>
+#include <beep/netdevice.h>
+#include <beep/ethtool.h>
+#include <beep/delay.h>
 
 #include "rtl_core.h"
 

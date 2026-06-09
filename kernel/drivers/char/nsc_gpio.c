@@ -1,4 +1,4 @@
-/* linux/drivers/char/nsc_gpio.c
+/* beep/drivers/char/nsc_gpio.c
 
    National Semiconductor common GPIO device-file/VFS methods.
    Allows a user space process to control the GPIO pins.
@@ -7,13 +7,13 @@
    Copyright (c) 2005      Jim Cromie <jim.cromie@gmail.com>
 */
 
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/nsc_gpio.h>
-#include <linux/platform_device.h>
+#include <beep/fs.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/nsc_gpio.h>
+#include <beep/platform_device.h>
 #include <asm/uaccess.h>
 #include <asm/io.h>
 

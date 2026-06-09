@@ -2,15 +2,15 @@
  * \file drm_irq.c
  * IRQ support
  *
- * \author Rickard E. (Rik) Faith <faith@valinux.com>
- * \author Gareth Hughes <gareth@valinux.com>
+ * \author Rickard E. (Rik) Faith <faith@vabeep.com>
+ * \author Gareth Hughes <gareth@vabeep.com>
  */
 
 /*
- * Created: Fri Mar 19 14:30:16 1999 by faith@valinux.com
+ * Created: Fri Mar 19 14:30:16 1999 by faith@vabeep.com
  *
  * Copyright 1999, 2000 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA Beep Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -27,7 +27,7 @@
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
- * VA LINUX SYSTEMS AND/OR ITS SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+ * VA BEEP SYSTEMS AND/OR ITS SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
  * OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
@@ -36,11 +36,11 @@
 #include <drm/drmP.h>
 #include "drm_trace.h"
 
-#include <linux/interrupt.h>	/* For task queue support */
-#include <linux/slab.h>
+#include <beep/interrupt.h>	/* For task queue support */
+#include <beep/slab.h>
 
-#include <linux/vgaarb.h>
-#include <linux/export.h>
+#include <beep/vgaarb.h>
+#include <beep/export.h>
 
 /* Access macro for slots in vblank timestamp ringbuffer. */
 #define vblanktimestamp(dev, crtc, count) ( \

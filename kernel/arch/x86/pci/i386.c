@@ -3,7 +3,7 @@
  *
  * Copyright 1993, 1994 Drew Eckhardt
  *      Visionary Computing
- *      (Unix and Linux consulting and custom programming)
+ *      (Unix and Beep consulting and custom programming)
  *      Drew@Colorado.EDU
  *      +1 (303) 786-7975
  *
@@ -24,14 +24,14 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
-#include <linux/bootmem.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/errno.h>
+#include <beep/bootmem.h>
 
 #include <asm/pat.h>
 #include <asm/e820.h>

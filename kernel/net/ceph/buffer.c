@@ -1,11 +1,11 @@
 
-#include <linux/ceph/ceph_debug.h>
+#include <beep/ceph/ceph_debug.h>
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 
-#include <linux/ceph/buffer.h>
-#include <linux/ceph/decode.h>
+#include <beep/ceph/buffer.h>
+#include <beep/ceph/decode.h>
 
 struct ceph_buffer *ceph_buffer_new(size_t len, gfp_t gfp)
 {

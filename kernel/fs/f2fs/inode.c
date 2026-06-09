@@ -8,10 +8,10 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/fs.h>
-#include <linux/f2fs_fs.h>
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
+#include <beep/fs.h>
+#include <beep/f2fs_fs.h>
+#include <beep/buffer_head.h>
+#include <beep/writeback.h>
 
 #include "f2fs.h"
 #include "node.h"

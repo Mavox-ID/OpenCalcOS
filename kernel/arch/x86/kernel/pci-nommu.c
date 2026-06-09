@@ -1,12 +1,12 @@
 /* Fallback functions when the main IOMMU code is not compiled in. This
    code is roughly equivalent to i386. */
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/gfp.h>
-#include <linux/pci.h>
-#include <linux/mm.h>
+#include <beep/dma-mapping.h>
+#include <beep/scatterlist.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/gfp.h>
+#include <beep/pci.h>
+#include <beep/mm.h>
 
 #include <asm/processor.h>
 #include <asm/iommu.h>

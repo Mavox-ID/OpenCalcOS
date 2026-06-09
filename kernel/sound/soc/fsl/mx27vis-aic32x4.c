@@ -21,12 +21,12 @@
  * MA 02110-1301, USA.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/gpio.h>
-#include <linux/platform_data/asoc-mx27vis.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/device.h>
+#include <beep/i2c.h>
+#include <beep/gpio.h>
+#include <beep/platform_data/asoc-mx27vis.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>

@@ -9,7 +9,7 @@
 #ifndef __ASM_VDSO_H
 #define __ASM_VDSO_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 
 #ifdef CONFIG_32BIT

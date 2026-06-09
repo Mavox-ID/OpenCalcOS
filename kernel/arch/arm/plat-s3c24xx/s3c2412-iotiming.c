@@ -1,7 +1,7 @@
-/* linux/arch/arm/plat-s3c24xx/s3c2412-iotiming.c
+/* beep/arch/arm/plat-s3c24xx/s3c2412-iotiming.c
  *
  * Copyright (c) 2006-2008 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C2412/S3C2443 (PL093 based) IO timing support
@@ -11,19 +11,19 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/cpufreq.h>
-#include <linux/seq_file.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/cpufreq.h>
+#include <beep/seq_file.h>
+#include <beep/device.h>
+#include <beep/delay.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/slab.h>
 
-#include <linux/amba/pl093.h>
+#include <beep/amba/pl093.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

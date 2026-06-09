@@ -2,9 +2,9 @@
 #include <net/tcp_memcontrol.h>
 #include <net/sock.h>
 #include <net/ip.h>
-#include <linux/nsproxy.h>
-#include <linux/memcontrol.h>
-#include <linux/module.h>
+#include <beep/nsproxy.h>
+#include <beep/memcontrol.h>
+#include <beep/module.h>
 
 static inline struct tcp_memcontrol *tcp_from_cgproto(struct cg_proto *cg_proto)
 {

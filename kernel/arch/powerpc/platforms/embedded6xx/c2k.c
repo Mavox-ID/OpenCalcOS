@@ -13,13 +13,13 @@
  * by the Free Software Foundation.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/seq_file.h>
-#include <linux/time.h>
-#include <linux/of.h>
+#include <beep/stddef.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/seq_file.h>
+#include <beep/time.h>
+#include <beep/of.h>
 
 #include <asm/machdep.h>
 #include <asm/prom.h>

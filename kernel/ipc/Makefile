@@ -1,5 +1,5 @@
 #
-# Makefile for the linux ipc.
+# Makefile for the beep ipc.
 #
 
 obj-$(CONFIG_SYSVIPC_COMPAT) += compat.o

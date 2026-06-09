@@ -6,18 +6,18 @@
  * of the GNU General Public License v.2.
  */
 
-#include <linux/miscdevice.h>
-#include <linux/init.h>
-#include <linux/wait.h>
-#include <linux/module.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/signal.h>
-#include <linux/spinlock.h>
-#include <linux/dlm.h>
-#include <linux/dlm_device.h>
-#include <linux/slab.h>
+#include <beep/miscdevice.h>
+#include <beep/init.h>
+#include <beep/wait.h>
+#include <beep/module.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/poll.h>
+#include <beep/signal.h>
+#include <beep/spinlock.h>
+#include <beep/dlm.h>
+#include <beep/dlm_device.h>
+#include <beep/slab.h>
 
 #include "dlm_internal.h"
 #include "lockspace.h"

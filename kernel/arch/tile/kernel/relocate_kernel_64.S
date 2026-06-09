@@ -15,7 +15,7 @@
  *
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <arch/chip.h>
 #include <asm/page.h>
 #include <hv/hypervisor.h>

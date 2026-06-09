@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux/SuperH SH-2A backends.
+# Makefile for the Beep/SuperH SH-2A backends.
 #
 
 obj-y	:= common.o probe.o opcode_helper.o

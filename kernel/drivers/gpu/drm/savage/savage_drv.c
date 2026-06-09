@@ -1,4 +1,4 @@
-/* savage_drv.c -- Savage driver for Linux
+/* savage_drv.c -- Savage driver for Beep
  *
  * Copyright 2004  Felix Kuehling
  * All Rights Reserved.
@@ -23,7 +23,7 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include <drm/drmP.h>
 #include <drm/savage_drm.h>

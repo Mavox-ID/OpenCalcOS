@@ -159,7 +159,7 @@ end:
 
 #elif defined(CONFIG_SUN3)
 #include <asm/sun3mmu.h>
-#include <linux/sched.h>
+#include <beep/sched.h>
 
 extern unsigned long get_free_context(struct mm_struct *mm);
 extern void clear_context(unsigned long context);

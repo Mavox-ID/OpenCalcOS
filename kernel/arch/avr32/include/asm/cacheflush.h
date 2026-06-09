@@ -9,7 +9,7 @@
 #define __ASM_AVR32_CACHEFLUSH_H
 
 /* Keep includes the same across arches.  */
-#include <linux/mm.h>
+#include <beep/mm.h>
 
 #define CACHE_OP_ICACHE_INVALIDATE	0x01
 #define CACHE_OP_DCACHE_INVALIDATE	0x0b

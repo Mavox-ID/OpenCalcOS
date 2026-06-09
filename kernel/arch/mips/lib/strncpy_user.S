@@ -5,7 +5,7 @@
  *
  * Copyright (c) 1996, 1999 by Ralf Baechle
  */
-#include <linux/errno.h>
+#include <beep/errno.h>
 #include <asm/asm.h>
 #include <asm/asm-offsets.h>
 #include <asm/regdef.h>

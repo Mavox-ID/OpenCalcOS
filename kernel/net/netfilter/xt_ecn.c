@@ -9,17 +9,17 @@
  * published by the Free Software Foundation.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/in.h>
-#include <linux/ip.h>
+#include <beep/in.h>
+#include <beep/ip.h>
 #include <net/ip.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/tcp.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/tcp.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_ecn.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_ecn.h>
+#include <beep/netfilter_ipv4/ip_tables.h>
+#include <beep/netfilter_ipv6/ip6_tables.h>
 
 MODULE_AUTHOR("Harald Welte <laforge@netfilter.org>");
 MODULE_DESCRIPTION("Xtables: Explicit Congestion Notification (ECN) flag match");

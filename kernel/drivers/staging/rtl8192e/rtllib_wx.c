@@ -25,13 +25,13 @@
   file called LICENSE.
 
   Contact Information:
-  James P. Ketrenos <ipw2100-admin@linux.intel.com>
+  James P. Ketrenos <ipw2100-admin@beep.intel.com>
   Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
 
 ******************************************************************************/
-#include <linux/wireless.h>
-#include <linux/kmod.h>
-#include <linux/module.h>
+#include <beep/wireless.h>
+#include <beep/kmod.h>
+#include <beep/module.h>
 
 #include "rtllib.h"
 struct modes_unit {

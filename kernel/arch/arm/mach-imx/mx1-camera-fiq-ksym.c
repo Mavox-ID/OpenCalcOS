@@ -8,10 +8,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
 
-#include <linux/platform_data/camera-mx1.h>
+#include <beep/platform_data/camera-mx1.h>
 
 /* IMX camera FIQ handler */
 EXPORT_SYMBOL(mx1_camera_sof_fiq_start);

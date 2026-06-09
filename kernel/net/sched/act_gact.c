@@ -10,17 +10,17 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/skbuff.h>
+#include <beep/rtnetlink.h>
+#include <beep/module.h>
+#include <beep/init.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
-#include <linux/tc_act/tc_gact.h>
+#include <beep/tc_act/tc_gact.h>
 #include <net/tc_act/tc_gact.h>
 
 #define GACT_TAB_MASK	15

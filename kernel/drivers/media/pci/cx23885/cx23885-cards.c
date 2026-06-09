@@ -1,7 +1,7 @@
 /*
  *  Driver for the Conexant CX23885 PCIe bridge
  *
- *  Copyright (c) 2006 Steven Toth <stoth@linuxtv.org>
+ *  Copyright (c) 2006 Steven Toth <stoth@beeptv.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -19,12 +19,12 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
 #include <media/cx25840.h>
-#include <linux/firmware.h>
+#include <beep/firmware.h>
 #include <misc/altera.h>
 
 #include "cx23885.h"
@@ -1683,7 +1683,7 @@ void cx23885_card_setup(struct cx23885_dev *dev)
 		ret = request_firmware(&fw, filename, &dev->pci->dev);
 		if (ret != 0)
 			printk(KERN_ERR "did not find the firmware file. (%s) "
-			"Please see linux/Documentation/dvb/ for more details "
+			"Please see beep/Documentation/dvb/ for more details "
 			"on firmware-problems.", filename);
 		else
 			altera_init(&netup_config, fw);

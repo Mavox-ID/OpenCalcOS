@@ -5,8 +5,8 @@
  * Copyright (C) 2009-2010 Frederic Weisbecker <fweisbec@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/kprobes.h>
+#include <beep/module.h>
+#include <beep/kprobes.h>
 #include "trace.h"
 
 static char __percpu *perf_trace_buf[PERF_NR_CONTEXTS];

@@ -1,9 +1,9 @@
-#include <linux/pci.h>
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
+#include <beep/pci.h>
+#include <beep/acpi.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/dmi.h>
+#include <beep/slab.h>
 #include <asm/numa.h>
 #include <asm/pci_x86.h>
 

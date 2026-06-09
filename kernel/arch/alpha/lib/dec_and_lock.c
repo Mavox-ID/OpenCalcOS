@@ -5,8 +5,8 @@
  * 
  */
 
-#include <linux/spinlock.h>
-#include <linux/atomic.h>
+#include <beep/spinlock.h>
+#include <beep/atomic.h>
 
   asm (".text					\n\
 	.global _atomic_dec_and_lock		\n\

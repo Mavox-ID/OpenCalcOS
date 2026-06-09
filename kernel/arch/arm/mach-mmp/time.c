@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-mmp/time.c
+ * beep/arch/arm/mach-mmp/time.c
  *
  *   Support for clocksource and clockevents
  *
@@ -18,16 +18,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/clockchips.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/clockchips.h>
 
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
 
 #include <asm/sched_clock.h>
 #include <mach/addr-map.h>

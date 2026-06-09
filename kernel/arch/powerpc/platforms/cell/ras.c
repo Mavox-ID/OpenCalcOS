@@ -9,13 +9,13 @@
 
 #undef DEBUG
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/reboot.h>
-#include <linux/kexec.h>
-#include <linux/crash_dump.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/smp.h>
+#include <beep/reboot.h>
+#include <beep/kexec.h>
+#include <beep/crash_dump.h>
 
 #include <asm/kexec.h>
 #include <asm/reg.h>

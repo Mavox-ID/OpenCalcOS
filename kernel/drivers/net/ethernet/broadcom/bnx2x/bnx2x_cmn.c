@@ -17,13 +17,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
+#include <beep/etherdevice.h>
+#include <beep/if_vlan.h>
+#include <beep/interrupt.h>
+#include <beep/ip.h>
 #include <net/ipv6.h>
 #include <net/ip6_checksum.h>
-#include <linux/prefetch.h>
+#include <beep/prefetch.h>
 #include "bnx2x_cmn.h"
 #include "bnx2x_init.h"
 #include "bnx2x_sp.h"
@@ -3076,7 +3076,7 @@ static inline u8 bnx2x_set_pbd_csum(struct bnx2x *bp, struct sk_buff *skb,
 {
 	u8 hlen = (skb_network_header(skb) - skb->data) >> 1;
 
-	/* for now NS flag is not used in Linux */
+	/* for now NS flag is not used in Beep */
 	pbd->global_data =
 		(hlen | ((skb->protocol == cpu_to_be16(ETH_P_8021Q)) <<
 			 ETH_TX_PARSE_BD_E1X_LLC_SNAP_EN_SHIFT));

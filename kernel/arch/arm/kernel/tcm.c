@@ -6,13 +6,13 @@
  * Author: Linus Walleij <linus.walleij@stericsson.com>
  * Author: Rickard Andersson <rickard.andersson@stericsson.com>
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/stddef.h>
-#include <linux/ioport.h>
-#include <linux/genalloc.h>
-#include <linux/string.h> /* memcpy */
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/stddef.h>
+#include <beep/ioport.h>
+#include <beep/genalloc.h>
+#include <beep/string.h> /* memcpy */
 #include <asm/cputype.h>
 #include <asm/mach/map.h>
 #include <asm/memory.h>

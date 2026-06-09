@@ -8,7 +8,7 @@
  *
  *  Based on the max1619 driver.
  *  Copyright (C) 2003-2004 Oleksij Rempel <bug-track@fisher-privat.net>
- *                          Jean Delvare <khali@linux-fr.org>
+ *                          Jean Delvare <khali@beep-fr.org>
  *
  * The MAX6642 is a sensor chip made by Maxim.
  * It reports up to two temperatures (its own plus up to
@@ -32,16 +32,16 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/jiffies.h>
+#include <beep/i2c.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/err.h>
+#include <beep/mutex.h>
+#include <beep/sysfs.h>
 
 static const unsigned short normal_i2c[] = {
 	0x48, 0x49, 0x4a, 0x4b, 0x4c, 0x4d, 0x4e, 0x4f, I2C_CLIENT_END };

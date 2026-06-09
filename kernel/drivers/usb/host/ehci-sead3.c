@@ -19,7 +19,7 @@
  * Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/platform_device.h>
+#include <beep/platform_device.h>
 
 static int ehci_sead3_setup(struct usb_hcd *hcd)
 {

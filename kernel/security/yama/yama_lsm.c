@@ -1,5 +1,5 @@
 /*
- * Yama Linux Security Module
+ * Yama Beep Security Module
  *
  * Author: Kees Cook <keescook@chromium.org>
  *
@@ -12,12 +12,12 @@
  *
  */
 
-#include <linux/security.h>
-#include <linux/sysctl.h>
-#include <linux/ptrace.h>
-#include <linux/prctl.h>
-#include <linux/ratelimit.h>
-#include <linux/workqueue.h>
+#include <beep/security.h>
+#include <beep/sysctl.h>
+#include <beep/ptrace.h>
+#include <beep/prctl.h>
+#include <beep/ratelimit.h>
+#include <beep/workqueue.h>
 
 #define YAMA_SCOPE_DISABLED	0
 #define YAMA_SCOPE_RELATIONAL	1

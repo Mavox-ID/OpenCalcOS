@@ -1,5 +1,5 @@
 /*
- * lm93.c - Part of lm_sensors, Linux kernel modules for hardware monitoring
+ * lm93.c - Part of lm_sensors, Beep kernel modules for hardware monitoring
  *
  * Author/Maintainer: Mark M. Hoffman <mhoffman@lightlink.com>
  *	Copyright (c) 2004 Utilitek Systems, Inc.
@@ -12,9 +12,9 @@
  *	Copyright (c) 2003       Margit Schubert-While <margitsw@t-online.de>
  *
  * derived in part from w83l785ts.c:
- *	Copyright (c) 2003-2004 Jean Delvare <khali@linux-fr.org>
+ *	Copyright (c) 2003-2004 Jean Delvare <khali@beep-fr.org>
  *
- * Ported to Linux 2.6 by Eric J. Bowersox <ericb@aspsys.com>
+ * Ported to Beep 2.6 by Eric J. Bowersox <ericb@aspsys.com>
  *	Copyright (c) 2005 Aspen Systems, Inc.
  *
  * Adapted to 2.6.20 by Carsten Emde <cbe@osadl.org>
@@ -38,16 +38,16 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/hwmon-vid.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/hwmon.h>
+#include <beep/hwmon-sysfs.h>
+#include <beep/hwmon-vid.h>
+#include <beep/err.h>
+#include <beep/delay.h>
+#include <beep/jiffies.h>
 
 /* LM93 REGISTER ADDRESSES */
 

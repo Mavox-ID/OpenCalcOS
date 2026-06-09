@@ -99,7 +99,7 @@
 #ifndef	_PC300_H
 #define	_PC300_H
 
-#include <linux/hdlc.h>
+#include <beep/hdlc.h>
 #include "hd64572.h"
 #include "pc300-falc-lh.h"
 

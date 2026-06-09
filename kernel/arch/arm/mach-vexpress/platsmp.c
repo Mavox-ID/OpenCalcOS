@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-vexpress/platsmp.c
+ *  beep/arch/arm/mach-vexpress/platsmp.c
  *
  *  Copyright (C) 2002 ARM Ltd.
  *  All Rights Reserved
@@ -8,12 +8,12 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/smp.h>
-#include <linux/io.h>
-#include <linux/of_fdt.h>
-#include <linux/vexpress.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/smp.h>
+#include <beep/io.h>
+#include <beep/of_fdt.h>
+#include <beep/vexpress.h>
 
 #include <asm/smp_scu.h>
 #include <asm/hardware/gic.h>

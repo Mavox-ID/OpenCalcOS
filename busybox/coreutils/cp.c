@@ -3,7 +3,7 @@
  * Mini cp implementation for busybox
  *
  * Copyright (C) 2000 by Matt Kraai <kraai@alumni.carnegiemellon.edu>
- * SELinux support by Yuichi Nakamura <ynakam@hitachisoft.jp>
+ * SEBeep support by Yuichi Nakamura <ynakam@hitachisoft.jp>
  *
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
@@ -81,7 +81,7 @@
 // -x, --one-file-system
 //	stay on this file system
 // -Z, --context=CONTEXT
-//	(SELinux) set SELinux security context of copy to CONTEXT
+//	(SEBeep) set SEBeep security context of copy to CONTEXT
 
 //usage:#define cp_trivial_usage
 //usage:       "[-arPLHpfinlsTu] SOURCE DEST\n"
@@ -89,7 +89,7 @@
 //usage:#define cp_full_usage "\n\n"
 //usage:       "Copy SOURCEs to DEST\n"
 //usage:     "\n	-a	Same as -dpR"
-//usage:	IF_SELINUX(
+//usage:	IF_SEBEEP(
 //usage:     "\n	-c	Preserve security context"
 //usage:	)
 //usage:     "\n	-R,-r	Recurse"
@@ -194,9 +194,9 @@ int cp_main(int argc, char **argv)
 	if (flags & FILEUTILS_DEREF_SOFTLINK) /* -L */
 		flags |= FILEUTILS_DEREFERENCE;
 
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 	if (flags & FILEUTILS_PRESERVE_SECURITY_CONTEXT) {
-		selinux_or_die();
+		sebeep_or_die();
 	}
 #endif
 

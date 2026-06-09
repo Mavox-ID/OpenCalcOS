@@ -1,6 +1,6 @@
 /**
  * compress.c - NTFS kernel compressed attributes handling.
- *		Part of the Linux-NTFS project.
+ *		Part of the Beep-NTFS project.
  *
  * Copyright (c) 2001-2004 Anton Altaparmakov
  * Copyright (c) 2002 Richard Russon
@@ -16,16 +16,16 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program (in the main directory of the Linux-NTFS
+ * along with this program (in the main directory of the Beep-NTFS
  * distribution in the file COPYING); if not, write to the Free Software
  * Foundation,Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/blkdev.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
+#include <beep/fs.h>
+#include <beep/buffer_head.h>
+#include <beep/blkdev.h>
+#include <beep/vmalloc.h>
+#include <beep/slab.h>
 
 #include "attrib.h"
 #include "inode.h"

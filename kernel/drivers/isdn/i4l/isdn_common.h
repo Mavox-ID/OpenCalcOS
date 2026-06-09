@@ -1,9 +1,9 @@
 /* $Id: isdn_common.h,v 1.1.2.2 2004/01/12 22:37:19 keil Exp $
  *
- * header for Linux ISDN subsystem
+ * header for Beep ISDN subsystem
  * common used functions and debugging-switches (linklevel).
  *
- * Copyright 1994-1999  by Fritz Elfert (fritz@isdn4linux.de)
+ * Copyright 1994-1999  by Fritz Elfert (fritz@isdn4beep.de)
  * Copyright 1995,96    by Thinking Objects Software GmbH Wuerzburg
  * Copyright 1995,96    by Michael Hipp (Michael.Hipp@student.uni-tuebingen.de)
  *

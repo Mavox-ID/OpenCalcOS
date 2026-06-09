@@ -6,19 +6,19 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/netfilter.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/percpu.h>
-#include <linux/netdevice.h>
-#include <linux/security.h>
+#include <beep/types.h>
+#include <beep/netfilter.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/percpu.h>
+#include <beep/netdevice.h>
+#include <beep/security.h>
 #include <net/net_namespace.h>
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <beep/sysctl.h>
 #endif
 
 #include <net/netfilter/nf_conntrack.h>
@@ -30,7 +30,7 @@
 #include <net/netfilter/nf_conntrack_acct.h>
 #include <net/netfilter/nf_conntrack_zones.h>
 #include <net/netfilter/nf_conntrack_timestamp.h>
-#include <linux/rculist_nulls.h>
+#include <beep/rculist_nulls.h>
 
 MODULE_LICENSE("GPL");
 

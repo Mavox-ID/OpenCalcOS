@@ -2,7 +2,7 @@
     comedi/drivers/mpc624.c
     Hardware driver for a Micro/sys inc. MPC-624 PC/104 board
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 2000 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -58,8 +58,8 @@ Configuration Options:
 
 #include "../comedidev.h"
 
-#include <linux/ioport.h>
-#include <linux/delay.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
 
 /* Consecutive I/O port addresses */
 #define MPC624_SIZE             16

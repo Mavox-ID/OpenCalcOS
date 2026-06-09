@@ -1,7 +1,7 @@
 /* arch/arm/plat-samsung/include/plat/cpu-freq-core.h
  *
  * Copyright (c) 2006-2009 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C CPU frequency scaling support - core support

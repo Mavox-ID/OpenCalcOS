@@ -19,17 +19,17 @@
  * MA 02110-1301, USA.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/init.h>
 
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/i2c.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/leds.h>
+#include <beep/platform_device.h>
+#include <beep/input.h>
+#include <beep/i2c.h>
 #include <video/platform_lcd.h>
-#include <linux/backlight.h>
+#include <beep/backlight.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

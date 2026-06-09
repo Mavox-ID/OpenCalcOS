@@ -13,7 +13,7 @@
  * (at your option) any later version.
  */
 
-#include <linux/usb/net2280.h>
+#include <beep/usb/net2280.h>
 
 /*-------------------------------------------------------------------------*/
 

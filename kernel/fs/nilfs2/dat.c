@@ -20,10 +20,10 @@
  * Written by Koji Sato <koji@osrg.net>.
  */
 
-#include <linux/types.h>
-#include <linux/buffer_head.h>
-#include <linux/string.h>
-#include <linux/errno.h>
+#include <beep/types.h>
+#include <beep/buffer_head.h>
+#include <beep/string.h>
+#include <beep/errno.h>
 #include "nilfs.h"
 #include "mdt.h"
 #include "alloc.h"

@@ -1,5 +1,5 @@
 /*
- *      NS pc87413-wdt Watchdog Timer driver for Linux 2.6.x.x
+ *      NS pc87413-wdt Watchdog Timer driver for Beep 2.6.x.x
  *
  *      This code is based on wdt.c with original copyright.
  *
@@ -20,20 +20,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/notifier.h>
-#include <linux/fs.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/moduleparam.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/miscdevice.h>
+#include <beep/watchdog.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/notifier.h>
+#include <beep/fs.h>
+#include <beep/reboot.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/moduleparam.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
 
 
 /* #define DEBUG 1 */

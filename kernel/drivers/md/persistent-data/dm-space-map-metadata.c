@@ -8,9 +8,9 @@
 #include "dm-space-map-common.h"
 #include "dm-space-map-metadata.h"
 
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/device-mapper.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/device-mapper.h>
 
 #define DM_MSG_PREFIX "space map metadata"
 

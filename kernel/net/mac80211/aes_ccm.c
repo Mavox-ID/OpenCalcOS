@@ -7,10 +7,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/crypto.h>
-#include <linux/err.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/crypto.h>
+#include <beep/err.h>
 #include <crypto/aes.h>
 
 #include <net/mac80211.h>

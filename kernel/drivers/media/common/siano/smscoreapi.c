@@ -21,17 +21,17 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 
-#include <linux/firmware.h>
-#include <linux/wait.h>
+#include <beep/firmware.h>
+#include <beep/wait.h>
 #include <asm/byteorder.h>
 
 #include "smscoreapi.h"

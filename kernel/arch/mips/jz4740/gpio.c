@@ -13,18 +13,18 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
 
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/bitops.h>
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/seq_file.h>
 
 #include <asm/mach-jz4740/base.h>
 

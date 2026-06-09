@@ -1,7 +1,7 @@
 #ifndef _PARISC_MACHDEP_H
 #define _PARISC_MACHDEP_H
 
-#include <linux/notifier.h>
+#include <beep/notifier.h>
 
 #define	MACH_RESTART	1
 #define	MACH_HALT	2

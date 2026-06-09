@@ -2,7 +2,7 @@
  * sh7760fb.h -- platform data for SH7760/SH7763 LCDC framebuffer driver.
  *
  * (c) 2006-2008 MSC Vertriebsges.m.b.H.,
- * 			Manuel Lauss <mano@roarinelk.homelinux.net>
+ * 			Manuel Lauss <mano@roarinelk.homebeep.net>
  * (c) 2008 Nobuhiro Iwamatsu <iwamatsu.nobuhiro@renesas.com>
  */
 

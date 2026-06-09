@@ -16,10 +16,10 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/pinctrl/machine.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/pinctrl/machine.h>
 
 #include <asm/pgtable.h>
 #include <asm/mach/map.h>

@@ -18,8 +18,8 @@
 /*
  * User space memory access functions
  */
-#include <linux/sched.h>
-#include <linux/mm.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
 #include <asm-generic/uaccess-unaligned.h>
 #include <asm/processor.h>
 #include <asm/page.h>

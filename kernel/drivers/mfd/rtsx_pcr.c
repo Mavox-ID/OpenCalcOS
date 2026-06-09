@@ -20,17 +20,17 @@
  *   No. 450, Shenhu Road, Suzhou Industry Park, Suzhou, China
  */
 
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/highmem.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/idr.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/rtsx_pci.h>
+#include <beep/pci.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/dma-mapping.h>
+#include <beep/highmem.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/idr.h>
+#include <beep/platform_device.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/rtsx_pci.h>
 #include <asm/unaligned.h>
 
 #include "rtsx_pcr.h"

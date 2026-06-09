@@ -20,7 +20,7 @@
 #endif
 #endif
 
-#define __NR_restart_syscall      0 /* Linux Specific				   */
+#define __NR_restart_syscall      0 /* Beep Specific				   */
 #define __NR_exit                 1 /* Common                                      */
 #define __NR_fork                 2 /* Common                                      */
 #define __NR_read                 3 /* Common                                      */
@@ -41,8 +41,8 @@
 #define __NR_perfctr             18 /* Performance counter operations              */
 #define __NR_lseek               19 /* Common                                      */
 #define __NR_getpid              20 /* Common                                      */
-#define __NR_capget		 21 /* Linux Specific				   */
-#define __NR_capset		 22 /* Linux Specific				   */
+#define __NR_capget		 21 /* Beep Specific				   */
+#define __NR_capset		 22 /* Beep Specific				   */
 #define __NR_setuid              23 /* Implemented via setreuid in SunOS           */
 #define __NR_getuid              24 /* Common                                      */
 #define __NR_vmsplice	         25 /* ENOSYS under SunOS			   */
@@ -52,26 +52,26 @@
 #define __NR_pause               29 /* Is sigblock(0)->sigpause() in SunOS         */
 #define __NR_utime               30 /* Implemented via utimes() under SunOS        */
 #ifdef __32bit_syscall_numbers__
-#define __NR_lchown32            31 /* Linux sparc32 specific                      */
-#define __NR_fchown32            32 /* Linux sparc32 specific                      */
+#define __NR_lchown32            31 /* Beep sparc32 specific                      */
+#define __NR_fchown32            32 /* Beep sparc32 specific                      */
 #endif
 #define __NR_access              33 /* Common                                      */
 #define __NR_nice                34 /* Implemented via get/setpriority() in SunOS  */
 #ifdef __32bit_syscall_numbers__
-#define __NR_chown32             35 /* Linux sparc32 specific                      */
+#define __NR_chown32             35 /* Beep sparc32 specific                      */
 #endif
 #define __NR_sync                36 /* Common                                      */
 #define __NR_kill                37 /* Common                                      */
 #define __NR_stat                38 /* Common                                      */
-#define __NR_sendfile		 39 /* Linux Specific				   */
+#define __NR_sendfile		 39 /* Beep Specific				   */
 #define __NR_lstat               40 /* Common                                      */
 #define __NR_dup                 41 /* Common                                      */
 #define __NR_pipe                42 /* Common                                      */
 #define __NR_times               43 /* Implemented via getrusage() in SunOS        */
 #ifdef __32bit_syscall_numbers__
-#define __NR_getuid32            44 /* Linux sparc32 specific                      */
+#define __NR_getuid32            44 /* Beep sparc32 specific                      */
 #endif
-#define __NR_umount2             45 /* Linux Specific                              */
+#define __NR_umount2             45 /* Beep Specific                              */
 #define __NR_setgid              46 /* Implemented via setregid() in SunOS         */
 #define __NR_getgid              47 /* Common                                      */
 #define __NR_signal              48 /* Implemented via sigvec() in SunOS           */
@@ -79,14 +79,14 @@
 #define __NR_getegid             50 /* SunOS calls getgid()                        */
 #define __NR_acct                51 /* Common                                      */
 #ifdef __32bit_syscall_numbers__
-#define __NR_getgid32            53 /* Linux sparc32 specific                      */
+#define __NR_getgid32            53 /* Beep sparc32 specific                      */
 #else
-#define __NR_memory_ordering	 52 /* Linux Specific				   */
+#define __NR_memory_ordering	 52 /* Beep Specific				   */
 #endif
 #define __NR_ioctl               54 /* Common                                      */
 #define __NR_reboot              55 /* Common                                      */
 #ifdef __32bit_syscall_numbers__
-#define __NR_mmap2		 56 /* Linux sparc32 Specific			   */
+#define __NR_mmap2		 56 /* Beep sparc32 Specific			   */
 #endif
 #define __NR_symlink             57 /* Common                                      */
 #define __NR_readlink            58 /* Common                                      */
@@ -94,55 +94,55 @@
 #define __NR_umask               60 /* Common                                      */
 #define __NR_chroot              61 /* Common                                      */
 #define __NR_fstat               62 /* Common                                      */
-#define __NR_fstat64		 63 /* Linux Specific			           */
+#define __NR_fstat64		 63 /* Beep Specific			           */
 #define __NR_getpagesize         64 /* Common                                      */
 #define __NR_msync               65 /* Common in newer 1.3.x revs...               */
 #define __NR_vfork               66 /* Common                                      */
-#define __NR_pread64             67 /* Linux Specific                              */
-#define __NR_pwrite64            68 /* Linux Specific                              */
+#define __NR_pread64             67 /* Beep Specific                              */
+#define __NR_pwrite64            68 /* Beep Specific                              */
 #ifdef __32bit_syscall_numbers__
-#define __NR_geteuid32           69 /* Linux sparc32, sbrk under SunOS             */
-#define __NR_getegid32           70 /* Linux sparc32, sstk under SunOS             */
+#define __NR_geteuid32           69 /* Beep sparc32, sbrk under SunOS             */
+#define __NR_getegid32           70 /* Beep sparc32, sstk under SunOS             */
 #endif
 #define __NR_mmap                71 /* Common                                      */
 #ifdef __32bit_syscall_numbers__
-#define __NR_setreuid32          72 /* Linux sparc32, vadvise under SunOS          */
+#define __NR_setreuid32          72 /* Beep sparc32, vadvise under SunOS          */
 #endif
 #define __NR_munmap              73 /* Common                                      */
 #define __NR_mprotect            74 /* Common                                      */
 #define __NR_madvise             75 /* Common                                      */
 #define __NR_vhangup             76 /* Common                                      */
 #ifdef __32bit_syscall_numbers__
-#define __NR_truncate64		 77 /* Linux sparc32 Specific			   */
+#define __NR_truncate64		 77 /* Beep sparc32 Specific			   */
 #endif
 #define __NR_mincore             78 /* Common                                      */
 #define __NR_getgroups           79 /* Common                                      */
 #define __NR_setgroups           80 /* Common                                      */
 #define __NR_getpgrp             81 /* Common                                      */
 #ifdef __32bit_syscall_numbers__
-#define __NR_setgroups32         82 /* Linux sparc32, setpgrp under SunOS          */
+#define __NR_setgroups32         82 /* Beep sparc32, setpgrp under SunOS          */
 #endif
 #define __NR_setitimer           83 /* Common                                      */
 #ifdef __32bit_syscall_numbers__
-#define __NR_ftruncate64	 84 /* Linux sparc32 Specific			   */
+#define __NR_ftruncate64	 84 /* Beep sparc32 Specific			   */
 #endif
 #define __NR_swapon              85 /* Common                                      */
 #define __NR_getitimer           86 /* Common                                      */
 #ifdef __32bit_syscall_numbers__
-#define __NR_setuid32            87 /* Linux sparc32, gethostname under SunOS      */
+#define __NR_setuid32            87 /* Beep sparc32, gethostname under SunOS      */
 #endif
 #define __NR_sethostname         88 /* Common                                      */
 #ifdef __32bit_syscall_numbers__
-#define __NR_setgid32            89 /* Linux sparc32, getdtablesize under SunOS    */
+#define __NR_setgid32            89 /* Beep sparc32, getdtablesize under SunOS    */
 #endif
 #define __NR_dup2                90 /* Common                                      */
 #ifdef __32bit_syscall_numbers__
-#define __NR_setfsuid32          91 /* Linux sparc32, getdopt under SunOS          */
+#define __NR_setfsuid32          91 /* Beep sparc32, getdopt under SunOS          */
 #endif
 #define __NR_fcntl               92 /* Common                                      */
 #define __NR_select              93 /* Common                                      */
 #ifdef __32bit_syscall_numbers__
-#define __NR_setfsgid32          94 /* Linux sparc32, setdopt under SunOS          */
+#define __NR_setfsgid32          94 /* Beep sparc32, setdopt under SunOS          */
 #endif
 #define __NR_fsync               95 /* Common                                      */
 #define __NR_setpriority         96 /* Common                                      */
@@ -150,34 +150,34 @@
 #define __NR_connect             98 /* Common                                      */
 #define __NR_accept              99 /* Common                                      */
 #define __NR_getpriority        100 /* Common                                      */
-#define __NR_rt_sigreturn       101 /* Linux Specific                              */
-#define __NR_rt_sigaction       102 /* Linux Specific                              */
-#define __NR_rt_sigprocmask     103 /* Linux Specific                              */
-#define __NR_rt_sigpending      104 /* Linux Specific                              */
-#define __NR_rt_sigtimedwait    105 /* Linux Specific                              */
-#define __NR_rt_sigqueueinfo    106 /* Linux Specific                              */
-#define __NR_rt_sigsuspend      107 /* Linux Specific                              */
+#define __NR_rt_sigreturn       101 /* Beep Specific                              */
+#define __NR_rt_sigaction       102 /* Beep Specific                              */
+#define __NR_rt_sigprocmask     103 /* Beep Specific                              */
+#define __NR_rt_sigpending      104 /* Beep Specific                              */
+#define __NR_rt_sigtimedwait    105 /* Beep Specific                              */
+#define __NR_rt_sigqueueinfo    106 /* Beep Specific                              */
+#define __NR_rt_sigsuspend      107 /* Beep Specific                              */
 #ifdef __32bit_syscall_numbers__
-#define __NR_setresuid32        108 /* Linux Specific, sigvec under SunOS	   */
-#define __NR_getresuid32        109 /* Linux Specific, sigblock under SunOS	   */
-#define __NR_setresgid32        110 /* Linux Specific, sigsetmask under SunOS	   */
-#define __NR_getresgid32        111 /* Linux Specific, sigpause under SunOS	   */
-#define __NR_setregid32         112 /* Linux sparc32, sigstack under SunOS         */
+#define __NR_setresuid32        108 /* Beep Specific, sigvec under SunOS	   */
+#define __NR_getresuid32        109 /* Beep Specific, sigblock under SunOS	   */
+#define __NR_setresgid32        110 /* Beep Specific, sigsetmask under SunOS	   */
+#define __NR_getresgid32        111 /* Beep Specific, sigpause under SunOS	   */
+#define __NR_setregid32         112 /* Beep sparc32, sigstack under SunOS         */
 #else
-#define __NR_setresuid          108 /* Linux Specific, sigvec under SunOS	   */
-#define __NR_getresuid          109 /* Linux Specific, sigblock under SunOS	   */
-#define __NR_setresgid          110 /* Linux Specific, sigsetmask under SunOS	   */
-#define __NR_getresgid          111 /* Linux Specific, sigpause under SunOS	   */
+#define __NR_setresuid          108 /* Beep Specific, sigvec under SunOS	   */
+#define __NR_getresuid          109 /* Beep Specific, sigblock under SunOS	   */
+#define __NR_setresgid          110 /* Beep Specific, sigsetmask under SunOS	   */
+#define __NR_getresgid          111 /* Beep Specific, sigpause under SunOS	   */
 #endif
 #define __NR_recvmsg            113 /* Common                                      */
 #define __NR_sendmsg            114 /* Common                                      */
 #ifdef __32bit_syscall_numbers__
-#define __NR_getgroups32        115 /* Linux sparc32, vtrace under SunOS           */
+#define __NR_getgroups32        115 /* Beep sparc32, vtrace under SunOS           */
 #endif
 #define __NR_gettimeofday       116 /* Common                                      */
 #define __NR_getrusage          117 /* Common                                      */
 #define __NR_getsockopt         118 /* Common                                      */
-#define __NR_getcwd		119 /* Linux Specific				   */
+#define __NR_getcwd		119 /* Beep Specific				   */
 #define __NR_readv              120 /* Common                                      */
 #define __NR_writev             121 /* Common                                      */
 #define __NR_settimeofday       122 /* Common                                      */
@@ -190,45 +190,45 @@
 #define __NR_truncate           129 /* Common                                      */
 #define __NR_ftruncate          130 /* Common                                      */
 #define __NR_flock              131 /* Common                                      */
-#define __NR_lstat64		132 /* Linux Specific			           */
+#define __NR_lstat64		132 /* Beep Specific			           */
 #define __NR_sendto             133 /* Common                                      */
 #define __NR_shutdown           134 /* Common                                      */
 #define __NR_socketpair         135 /* Common                                      */
 #define __NR_mkdir              136 /* Common                                      */
 #define __NR_rmdir              137 /* Common                                      */
 #define __NR_utimes             138 /* SunOS Specific                              */
-#define __NR_stat64		139 /* Linux Specific			           */
+#define __NR_stat64		139 /* Beep Specific			           */
 #define __NR_sendfile64         140 /* adjtime under SunOS                         */
 #define __NR_getpeername        141 /* Common                                      */
 #define __NR_futex              142 /* gethostid under SunOS                       */
 #define __NR_gettid             143 /* ENOSYS under SunOS                          */
 #define __NR_getrlimit		144 /* Common                                      */
 #define __NR_setrlimit          145 /* Common                                      */
-#define __NR_pivot_root		146 /* Linux Specific, killpg under SunOS          */
+#define __NR_pivot_root		146 /* Beep Specific, killpg under SunOS          */
 #define __NR_prctl		147 /* ENOSYS under SunOS                          */
 #define __NR_pciconfig_read	148 /* ENOSYS under SunOS                          */
 #define __NR_pciconfig_write	149 /* ENOSYS under SunOS                          */
 #define __NR_getsockname        150 /* Common                                      */
-#define __NR_inotify_init       151 /* Linux specific                              */
-#define __NR_inotify_add_watch  152 /* Linux specific                              */
+#define __NR_inotify_init       151 /* Beep specific                              */
+#define __NR_inotify_add_watch  152 /* Beep specific                              */
 #define __NR_poll               153 /* Common                                      */
-#define __NR_getdents64		154 /* Linux specific				   */
+#define __NR_getdents64		154 /* Beep specific				   */
 #ifdef __32bit_syscall_numbers__
-#define __NR_fcntl64		155 /* Linux sparc32 Specific                      */
+#define __NR_fcntl64		155 /* Beep sparc32 Specific                      */
 #endif
-#define __NR_inotify_rm_watch   156 /* Linux specific				   */
+#define __NR_inotify_rm_watch   156 /* Beep specific				   */
 #define __NR_statfs             157 /* Common                                      */
 #define __NR_fstatfs            158 /* Common                                      */
 #define __NR_umount             159 /* Common                                      */
-#define __NR_sched_set_affinity 160 /* Linux specific, async_daemon under SunOS    */
-#define __NR_sched_get_affinity 161 /* Linux specific, getfh under SunOS           */
+#define __NR_sched_set_affinity 160 /* Beep specific, async_daemon under SunOS    */
+#define __NR_sched_get_affinity 161 /* Beep specific, getfh under SunOS           */
 #define __NR_getdomainname      162 /* SunOS Specific                              */
 #define __NR_setdomainname      163 /* Common                                      */
 #ifndef __32bit_syscall_numbers__
 #define __NR_utrap_install	164 /* SYSV ABI/v9 required			   */
 #endif
 #define __NR_quotactl           165 /* Common                                      */
-#define __NR_set_tid_address    166 /* Linux specific, exportfs under SunOS        */
+#define __NR_set_tid_address    166 /* Beep specific, exportfs under SunOS        */
 #define __NR_mount              167 /* Common                                      */
 #define __NR_ustat              168 /* Common                                      */
 #define __NR_setxattr           169 /* SunOS: semsys                               */
@@ -246,62 +246,62 @@
 #define __NR_removexattr        181 /* SunOS: aiowait                              */
 #define __NR_lremovexattr       182 /* SunOS: aiocancel                            */
 #define __NR_sigpending         183 /* Common                                      */
-#define __NR_query_module	184 /* Linux Specific				   */
+#define __NR_query_module	184 /* Beep Specific				   */
 #define __NR_setpgid            185 /* Common                                      */
 #define __NR_fremovexattr       186 /* SunOS: pathconf                             */
 #define __NR_tkill              187 /* SunOS: fpathconf                            */
-#define __NR_exit_group		188 /* Linux specific, sysconf undef SunOS         */
-#define __NR_uname              189 /* Linux Specific                              */
-#define __NR_init_module        190 /* Linux Specific                              */
-#define __NR_personality        191 /* Linux Specific                              */
-#define __NR_remap_file_pages   192 /* Linux Specific                              */
-#define __NR_epoll_create       193 /* Linux Specific                              */
-#define __NR_epoll_ctl          194 /* Linux Specific                              */
-#define __NR_epoll_wait         195 /* Linux Specific                              */
-#define __NR_ioprio_set         196 /* Linux Specific                              */
-#define __NR_getppid            197 /* Linux Specific                              */
-#define __NR_sigaction          198 /* Linux Specific                              */
-#define __NR_sgetmask           199 /* Linux Specific                              */
-#define __NR_ssetmask           200 /* Linux Specific                              */
-#define __NR_sigsuspend         201 /* Linux Specific                              */
-#define __NR_oldlstat           202 /* Linux Specific                              */
-#define __NR_uselib             203 /* Linux Specific                              */
-#define __NR_readdir            204 /* Linux Specific                              */
-#define __NR_readahead          205 /* Linux Specific                              */
-#define __NR_socketcall         206 /* Linux Specific                              */
-#define __NR_syslog             207 /* Linux Specific                              */
-#define __NR_lookup_dcookie     208 /* Linux Specific                              */
-#define __NR_fadvise64          209 /* Linux Specific                              */
-#define __NR_fadvise64_64       210 /* Linux Specific                              */
-#define __NR_tgkill             211 /* Linux Specific                              */
-#define __NR_waitpid            212 /* Linux Specific                              */
-#define __NR_swapoff            213 /* Linux Specific                              */
-#define __NR_sysinfo            214 /* Linux Specific                              */
-#define __NR_ipc                215 /* Linux Specific                              */
-#define __NR_sigreturn          216 /* Linux Specific                              */
-#define __NR_clone              217 /* Linux Specific                              */
-#define __NR_ioprio_get         218 /* Linux Specific                              */
-#define __NR_adjtimex           219 /* Linux Specific                              */
-#define __NR_sigprocmask        220 /* Linux Specific                              */
-#define __NR_create_module      221 /* Linux Specific                              */
-#define __NR_delete_module      222 /* Linux Specific                              */
-#define __NR_get_kernel_syms    223 /* Linux Specific                              */
-#define __NR_getpgid            224 /* Linux Specific                              */
-#define __NR_bdflush            225 /* Linux Specific                              */
-#define __NR_sysfs              226 /* Linux Specific                              */
-#define __NR_afs_syscall        227 /* Linux Specific                              */
-#define __NR_setfsuid           228 /* Linux Specific                              */
-#define __NR_setfsgid           229 /* Linux Specific                              */
-#define __NR__newselect         230 /* Linux Specific                              */
+#define __NR_exit_group		188 /* Beep specific, sysconf undef SunOS         */
+#define __NR_uname              189 /* Beep Specific                              */
+#define __NR_init_module        190 /* Beep Specific                              */
+#define __NR_personality        191 /* Beep Specific                              */
+#define __NR_remap_file_pages   192 /* Beep Specific                              */
+#define __NR_epoll_create       193 /* Beep Specific                              */
+#define __NR_epoll_ctl          194 /* Beep Specific                              */
+#define __NR_epoll_wait         195 /* Beep Specific                              */
+#define __NR_ioprio_set         196 /* Beep Specific                              */
+#define __NR_getppid            197 /* Beep Specific                              */
+#define __NR_sigaction          198 /* Beep Specific                              */
+#define __NR_sgetmask           199 /* Beep Specific                              */
+#define __NR_ssetmask           200 /* Beep Specific                              */
+#define __NR_sigsuspend         201 /* Beep Specific                              */
+#define __NR_oldlstat           202 /* Beep Specific                              */
+#define __NR_uselib             203 /* Beep Specific                              */
+#define __NR_readdir            204 /* Beep Specific                              */
+#define __NR_readahead          205 /* Beep Specific                              */
+#define __NR_socketcall         206 /* Beep Specific                              */
+#define __NR_syslog             207 /* Beep Specific                              */
+#define __NR_lookup_dcookie     208 /* Beep Specific                              */
+#define __NR_fadvise64          209 /* Beep Specific                              */
+#define __NR_fadvise64_64       210 /* Beep Specific                              */
+#define __NR_tgkill             211 /* Beep Specific                              */
+#define __NR_waitpid            212 /* Beep Specific                              */
+#define __NR_swapoff            213 /* Beep Specific                              */
+#define __NR_sysinfo            214 /* Beep Specific                              */
+#define __NR_ipc                215 /* Beep Specific                              */
+#define __NR_sigreturn          216 /* Beep Specific                              */
+#define __NR_clone              217 /* Beep Specific                              */
+#define __NR_ioprio_get         218 /* Beep Specific                              */
+#define __NR_adjtimex           219 /* Beep Specific                              */
+#define __NR_sigprocmask        220 /* Beep Specific                              */
+#define __NR_create_module      221 /* Beep Specific                              */
+#define __NR_delete_module      222 /* Beep Specific                              */
+#define __NR_get_kernel_syms    223 /* Beep Specific                              */
+#define __NR_getpgid            224 /* Beep Specific                              */
+#define __NR_bdflush            225 /* Beep Specific                              */
+#define __NR_sysfs              226 /* Beep Specific                              */
+#define __NR_afs_syscall        227 /* Beep Specific                              */
+#define __NR_setfsuid           228 /* Beep Specific                              */
+#define __NR_setfsgid           229 /* Beep Specific                              */
+#define __NR__newselect         230 /* Beep Specific                              */
 #ifdef __32bit_syscall_numbers__
-#define __NR_time               231 /* Linux Specific                              */
+#define __NR_time               231 /* Beep Specific                              */
 #else
 #endif
-#define __NR_splice             232 /* Linux Specific                              */
-#define __NR_stime              233 /* Linux Specific                              */
-#define __NR_statfs64           234 /* Linux Specific                              */
-#define __NR_fstatfs64          235 /* Linux Specific                              */
-#define __NR__llseek            236 /* Linux Specific                              */
+#define __NR_splice             232 /* Beep Specific                              */
+#define __NR_stime              233 /* Beep Specific                              */
+#define __NR_statfs64           234 /* Beep Specific                              */
+#define __NR_fstatfs64          235 /* Beep Specific                              */
+#define __NR__llseek            236 /* Beep Specific                              */
 #define __NR_mlock              237
 #define __NR_munlock            238
 #define __NR_mlockall           239

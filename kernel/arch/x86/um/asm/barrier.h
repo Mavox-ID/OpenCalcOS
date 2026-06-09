@@ -7,8 +7,8 @@
 #include <asm/cmpxchg.h>
 #include <asm/nops.h>
 
-#include <linux/kernel.h>
-#include <linux/irqflags.h>
+#include <beep/kernel.h>
+#include <beep/irqflags.h>
 
 /*
  * Force strict CPU ordering.

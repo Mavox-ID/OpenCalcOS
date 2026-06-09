@@ -23,14 +23,14 @@
  *  59 Temple Place - Suite 330, Boston MA 02111-1307, USA.
  *
  */
-#include <linux/compiler.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/random.h>
-#include <linux/module.h>
+#include <beep/compiler.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
+#include <beep/random.h>
+#include <beep/module.h>
 
 #include <asm/io.h>
 #include <int.h>

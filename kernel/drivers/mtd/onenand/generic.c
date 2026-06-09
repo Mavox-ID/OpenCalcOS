@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mtd/onenand/generic.c
+ *  beep/drivers/mtd/onenand/generic.c
  *
  *  Copyright (c) 2005 Samsung Electronics
  *  Kyungmin Park <kyungmin.park@samsung.com>
@@ -12,13 +12,13 @@
  *   This is a device driver for the OneNAND flash for generic boards.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/onenand.h>
-#include <linux/mtd/partitions.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/onenand.h>
+#include <beep/mtd/partitions.h>
 #include <asm/io.h>
 
 /*

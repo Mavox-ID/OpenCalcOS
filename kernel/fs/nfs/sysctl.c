@@ -1,15 +1,15 @@
 /*
- * linux/fs/nfs/sysctl.c
+ * beep/fs/nfs/sysctl.c
  *
  * Sysctl interface to NFS parameters
  */
-#include <linux/types.h>
-#include <linux/linkage.h>
-#include <linux/ctype.h>
-#include <linux/fs.h>
-#include <linux/sysctl.h>
-#include <linux/module.h>
-#include <linux/nfs_fs.h>
+#include <beep/types.h>
+#include <beep/linkage.h>
+#include <beep/ctype.h>
+#include <beep/fs.h>
+#include <beep/sysctl.h>
+#include <beep/module.h>
+#include <beep/nfs_fs.h>
 
 static struct ctl_table_header *nfs_callback_sysctl_table;
 

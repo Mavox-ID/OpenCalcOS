@@ -7,16 +7,16 @@
  * $Id:
  *====================================================
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/firmware.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/firmware.h>
 #include "ft1000_usb.h"
 
-#include <linux/kthread.h>
+#include <beep/kthread.h>
 
 MODULE_DESCRIPTION("FT1000 EXPRESS CARD DRIVER");
 MODULE_LICENSE("Dual MPL/GPL");

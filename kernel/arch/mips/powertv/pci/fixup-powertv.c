@@ -1,6 +1,6 @@
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/pci.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/pci.h>
 #include <asm/mach-powertv/interrupts.h>
 #include "powertv-pci.h"
 

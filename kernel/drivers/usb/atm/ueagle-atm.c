@@ -55,19 +55,19 @@
  * The rest of the code was was rewritten from scratch.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/crc32.h>
-#include <linux/usb.h>
-#include <linux/firmware.h>
-#include <linux/ctype.h>
-#include <linux/sched.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/freezer.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/crc32.h>
+#include <beep/usb.h>
+#include <beep/firmware.h>
+#include <beep/ctype.h>
+#include <beep/sched.h>
+#include <beep/kthread.h>
+#include <beep/mutex.h>
+#include <beep/freezer.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
 
 #include <asm/unaligned.h>
 

@@ -4,10 +4,10 @@
  * 2003-05-13 Brad Fisher (brad@info-link.net)
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_comment.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_comment.h>
 
 MODULE_AUTHOR("Brad Fisher <brad@info-link.net>");
 MODULE_DESCRIPTION("Xtables: No-op match which can be tagged with a comment");

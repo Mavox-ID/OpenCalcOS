@@ -11,12 +11,12 @@
  *
  */
 
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/slab.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/usb/serial.h>
+#include <beep/slab.h>
 #include "usb-wwan.h"
 
 #define DRIVER_AUTHOR "Qualcomm Inc"

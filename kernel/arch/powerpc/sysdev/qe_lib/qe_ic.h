@@ -81,7 +81,7 @@ struct qe_ic {
 	/* The remapper for this QEIC */
 	struct irq_domain *irqhost;
 
-	/* The "linux" controller struct */
+	/* The "beep" controller struct */
 	struct irq_chip hc_irq;
 
 	/* VIRQ numbers of QE high/low irqs */

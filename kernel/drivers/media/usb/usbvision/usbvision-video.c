@@ -45,26 +45,26 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/videodev2.h>
-#include <linux/i2c.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/timer.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/highmem.h>
+#include <beep/vmalloc.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/io.h>
+#include <beep/videodev2.h>
+#include <beep/i2c.h>
 
 #include <media/saa7115.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
 #include <media/tuner.h>
 
-#include <linux/workqueue.h>
+#include <beep/workqueue.h>
 
 #include "usbvision.h"
 #include "usbvision-cards.h"
@@ -74,7 +74,7 @@
 	"Dwaine Garden <DwaineGarden@rogers.com>"
 #define DRIVER_NAME "usbvision"
 #define DRIVER_ALIAS "USBVision"
-#define DRIVER_DESC "USBVision USB Video Device Driver for Linux"
+#define DRIVER_DESC "USBVision USB Video Device Driver for Beep"
 #define DRIVER_LICENSE "GPL"
 #define USBVISION_VERSION_STRING "0.9.11"
 
@@ -155,7 +155,7 @@ MODULE_ALIAS(DRIVER_ALIAS);
 
 /*****************************************************************************/
 /* SYSFS Code - Copied from the stv680.c usb module.			     */
-/* Device information is located at /sys/class/video4linux/video0            */
+/* Device information is located at /sys/class/video4beep/video0            */
 /* Device parameters information is located at /sys/module/usbvision         */
 /* Device USB Information is located at                                      */
 /*   /sys/bus/usb/drivers/USBVision Video Grabber                            */
@@ -337,7 +337,7 @@ static void usbvision_remove_sysfs(struct video_device *vdev)
 /*
  * usbvision_open()
  *
- * This is part of Video 4 Linux API. The driver can be opened by one
+ * This is part of Video 4 Beep API. The driver can be opened by one
  * client only (checks internal counter 'usbvision->user'). The procedure
  * then allocates buffers needed for video processing.
  *
@@ -413,7 +413,7 @@ static int usbvision_v4l2_open(struct file *file)
 /*
  * usbvision_v4l2_close()
  *
- * This is part of Video 4 Linux API. The procedure
+ * This is part of Video 4 Beep API. The procedure
  * stops streaming and deallocates all buffers that were earlier
  * allocated in usbvision_v4l2_open().
  *
@@ -457,7 +457,7 @@ static int usbvision_v4l2_close(struct file *file)
 /*
  * usbvision_ioctl()
  *
- * This is part of Video 4 Linux API. The procedure handles ioctl() calls.
+ * This is part of Video 4 Beep API. The procedure handles ioctl() calls.
  *
  */
 #ifdef CONFIG_VIDEO_ADV_DEBUG
@@ -1336,7 +1336,7 @@ static struct video_device *usbvision_vdev_init(struct usb_usbvision *usbvision,
 	return vdev;
 }
 
-/* unregister video4linux devices */
+/* unregister video4beep devices */
 static void usbvision_unregister_video(struct usb_usbvision *usbvision)
 {
 	/* Radio Device: */
@@ -1362,7 +1362,7 @@ static void usbvision_unregister_video(struct usb_usbvision *usbvision)
 	}
 }
 
-/* register video4linux devices */
+/* register video4beep devices */
 static int usbvision_register_video(struct usb_usbvision *usbvision)
 {
 	/* Video Device: */

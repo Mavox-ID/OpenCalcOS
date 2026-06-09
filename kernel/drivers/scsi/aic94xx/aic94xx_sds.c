@@ -25,9 +25,9 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
 
 #include "aic94xx.h"
 #include "aic94xx_reg.h"

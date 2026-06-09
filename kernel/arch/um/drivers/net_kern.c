@@ -1,23 +1,23 @@
 /*
- * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Copyright (C) 2001 Lennert Buytenhek (buytenh@gnu.org) and
  * James Leu (jleu@mindspring.net).
  * Copyright (C) 2001 by various other people who didn't put their name here.
  * Licensed under the GPL.
  */
 
-#include <linux/bootmem.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/inetdevice.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
-#include <linux/rtnetlink.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <beep/bootmem.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/inetdevice.h>
+#include <beep/init.h>
+#include <beep/list.h>
+#include <beep/netdevice.h>
+#include <beep/platform_device.h>
+#include <beep/rtnetlink.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
 #include <init.h>
 #include <irq_kern.h>
 #include <irq_user.h>

@@ -20,17 +20,17 @@
  * s390 port, used ppc64 as template. Mike Grundy <grundym@us.ibm.com>
  */
 
-#include <linux/kprobes.h>
-#include <linux/ptrace.h>
-#include <linux/preempt.h>
-#include <linux/stop_machine.h>
-#include <linux/kdebug.h>
-#include <linux/uaccess.h>
+#include <beep/kprobes.h>
+#include <beep/ptrace.h>
+#include <beep/preempt.h>
+#include <beep/stop_machine.h>
+#include <beep/kdebug.h>
+#include <beep/uaccess.h>
 #include <asm/cacheflush.h>
 #include <asm/sections.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/hardirq.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/hardirq.h>
 
 DEFINE_PER_CPU(struct kprobe *, current_kprobe);
 DEFINE_PER_CPU(struct kprobe_ctlblk, kprobe_ctlblk);

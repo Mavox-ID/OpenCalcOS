@@ -18,8 +18,8 @@
 #ifndef __HWSPINLOCK_HWSPINLOCK_H
 #define __HWSPINLOCK_HWSPINLOCK_H
 
-#include <linux/spinlock.h>
-#include <linux/device.h>
+#include <beep/spinlock.h>
+#include <beep/device.h>
 
 struct hwspinlock_device;
 

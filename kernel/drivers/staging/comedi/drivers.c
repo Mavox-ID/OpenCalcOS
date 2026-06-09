@@ -2,7 +2,7 @@
     module/drivers.c
     functions for manipulating drivers
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 1997-2000 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -21,24 +21,24 @@
 
 */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/usb.h>
-#include <linux/errno.h>
-#include <linux/kconfig.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/fcntl.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>	/* for SuSE brokenness */
-#include <linux/vmalloc.h>
-#include <linux/cdev.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/usb.h>
+#include <beep/errno.h>
+#include <beep/kconfig.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/fcntl.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/highmem.h>	/* for SuSE brokenness */
+#include <beep/vmalloc.h>
+#include <beep/cdev.h>
+#include <beep/dma-mapping.h>
+#include <beep/io.h>
 
 #include "comedidev.h"
 #include "comedi_internal.h"

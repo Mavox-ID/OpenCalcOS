@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/sstfb.h -- voodoo graphics frame buffer
+ * beep/drivers/video/sstfb.h -- voodoo graphics frame buffer
  *
  *     Copyright (c) 2000,2001 Ghozlane Toumi <gtoumi@messel.emse.fr>
  *

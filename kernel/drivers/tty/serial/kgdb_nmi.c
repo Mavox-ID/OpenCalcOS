@@ -12,23 +12,23 @@
  * by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/compiler.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/atomic.h>
-#include <linux/console.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/interrupt.h>
-#include <linux/hrtimer.h>
-#include <linux/tick.h>
-#include <linux/kfifo.h>
-#include <linux/kgdb.h>
-#include <linux/kdb.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/compiler.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/atomic.h>
+#include <beep/console.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
+#include <beep/interrupt.h>
+#include <beep/hrtimer.h>
+#include <beep/tick.h>
+#include <beep/kfifo.h>
+#include <beep/kgdb.h>
+#include <beep/kdb.h>
 
 static int kgdb_nmi_knock = 1;
 module_param_named(knock, kgdb_nmi_knock, int, 0600);
@@ -362,7 +362,7 @@ int kgdb_register_nmi_console(void)
 	}
 
 	ret = kdb_register("nmi_console", kgdb_nmi_enable_console, "[off]",
-			   "switch to Linux NMI console", 0);
+			   "switch to Beep NMI console", 0);
 	if (ret) {
 		pr_err("%s: can't register kdb command: %d\n", __func__, ret);
 		goto err_kdb_reg;

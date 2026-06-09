@@ -10,14 +10,14 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/elf.h>
-#include <linux/sched.h>
-#include <linux/err.h>
+#include <beep/mm.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/gfp.h>
+#include <beep/module.h>
+#include <beep/elf.h>
+#include <beep/sched.h>
+#include <beep/err.h>
 
 /*
  * Should the kernel map a VDSO page into processes and pass its
@@ -58,7 +58,7 @@ int __init vsyscall_init(void)
 }
 
 /* Setup a VMA at program startup for the vsyscall page */
-int arch_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+int arch_setup_additional_pages(struct beep_binprm *bprm, int uses_interp)
 {
 	struct mm_struct *mm = current->mm;
 	unsigned long addr;

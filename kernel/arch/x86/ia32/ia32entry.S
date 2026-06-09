@@ -15,11 +15,11 @@
 #include <asm/irqflags.h>
 #include <asm/asm.h>
 #include <asm/smap.h>
-#include <linux/linkage.h>
-#include <linux/err.h>
+#include <beep/linkage.h>
+#include <beep/err.h>
 
-/* Avoid __ASSEMBLER__'ifying <linux/audit.h> just for this.  */
-#include <linux/elf-em.h>
+/* Avoid __ASSEMBLER__'ifying <beep/audit.h> just for this.  */
+#include <beep/elf-em.h>
 #define AUDIT_ARCH_I386		(EM_386|__AUDIT_ARCH_LE)
 #define __AUDIT_ARCH_LE	   0x40000000
 

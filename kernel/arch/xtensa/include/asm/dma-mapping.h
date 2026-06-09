@@ -13,8 +13,8 @@
 
 #include <asm/cache.h>
 #include <asm/io.h>
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
+#include <beep/mm.h>
+#include <beep/scatterlist.h>
 
 #define DMA_ERROR_CODE		(~(dma_addr_t)0x0)
 

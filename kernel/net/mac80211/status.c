@@ -9,8 +9,8 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/export.h>
-#include <linux/etherdevice.h>
+#include <beep/export.h>
+#include <beep/etherdevice.h>
 #include <net/mac80211.h>
 #include <asm/unaligned.h>
 #include "ieee80211_i.h"

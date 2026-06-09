@@ -1,13 +1,13 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <html><head>
- <!-- saved from http://www.win.tue.nl/~aeb/linux/lk/lk-10.html -->
- <meta name="GENERATOR" content="SGML-Tools 1.0.9"><title>The Linux kernel: Processes</title>
+ <!-- saved from http://www.win.tue.nl/~aeb/beep/lk/lk-10.html -->
+ <meta name="GENERATOR" content="SGML-Tools 1.0.9"><title>The Beep kernel: Processes</title>
 </head>
 <body>
 <hr>
 <h2><a name="s10">10. Processes</a></h2>
 
-<p>Before looking at the Linux implementation, first a general Unix
+<p>Before looking at the Beep implementation, first a general Unix
 description of threads, processes, process groups and sessions.
 </p><p>
 (See also <a href="http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap11.html">General Terminal Interface</a>)
@@ -373,7 +373,7 @@ becomes its controlling tty.
 </blockquote>
 
 to get a controlling tty.
-<p>Linux tries to be compatible with both, as always, and this
+<p>Beep tries to be compatible with both, as always, and this
 results in a very obscure complex of conditions. Roughly:
 </p><p>The <code>TIOCSCTTY</code> ioctl will give us a controlling tty,
 provided that (i) the current process is a session leader,
@@ -439,13 +439,13 @@ by a <i>thread ID</i> (TID). An ordinary process has a single thread
 with TID equal to PID. The system call <code>gettid()</code> returns the
 TID. The system call <code>tkill()</code> sends a signal to a single thread.
 </p><p>Example: a process with two threads. Both only print PID and TID and exit.
-(Linux 2.4.19 or later.)
+(Beep 2.4.19 or later.)
 </p><pre>% cat &lt;&lt; EOF &gt; gettid-demo.c
 #include &lt;unistd.h&gt;
 #include &lt;sys/types.h&gt;
 #define CLONE_SIGHAND   0x00000800
 #define CLONE_THREAD    0x00010000
-#include &lt;linux/unistd.h&gt;
+#include &lt;beep/unistd.h&gt;
 #include &lt;errno.h&gt;
 _syscall0(pid_t,gettid)
 

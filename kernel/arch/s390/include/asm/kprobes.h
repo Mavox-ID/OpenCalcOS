@@ -27,9 +27,9 @@
  * 2005-Dec	Used as a template for s390 by Mike Grundy
  *		<grundym@us.ibm.com>
  */
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/percpu.h>
+#include <beep/types.h>
+#include <beep/ptrace.h>
+#include <beep/percpu.h>
 
 struct pt_regs;
 struct kprobe;

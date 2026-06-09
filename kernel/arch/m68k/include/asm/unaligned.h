@@ -3,9 +3,9 @@
 
 
 #ifdef CONFIG_CPU_HAS_NO_UNALIGNED
-#include <linux/unaligned/be_struct.h>
-#include <linux/unaligned/le_byteshift.h>
-#include <linux/unaligned/generic.h>
+#include <beep/unaligned/be_struct.h>
+#include <beep/unaligned/le_byteshift.h>
+#include <beep/unaligned/generic.h>
 
 #define get_unaligned	__get_unaligned_be
 #define put_unaligned	__put_unaligned_be
@@ -14,8 +14,8 @@
 /*
  * The m68k can do unaligned accesses itself.
  */
-#include <linux/unaligned/access_ok.h>
-#include <linux/unaligned/generic.h>
+#include <beep/unaligned/access_ok.h>
+#include <beep/unaligned/generic.h>
 
 #define get_unaligned	__get_unaligned_be
 #define put_unaligned	__put_unaligned_be

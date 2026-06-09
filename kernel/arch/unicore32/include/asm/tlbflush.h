@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/include/asm/tlbflush.h
+ * beep/arch/unicore32/include/asm/tlbflush.h
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -14,7 +14,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/sched.h>
+#include <beep/sched.h>
 
 extern void __cpu_flush_user_tlb_range(unsigned long, unsigned long,
 					struct vm_area_struct *);

@@ -18,10 +18,10 @@
 #ifndef __OMAP_OMAPDSS_H
 #define __OMAP_OMAPDSS_H
 
-#include <linux/list.h>
-#include <linux/kobject.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
+#include <beep/list.h>
+#include <beep/kobject.h>
+#include <beep/device.h>
+#include <beep/interrupt.h>
 
 #define DISPC_IRQ_FRAMEDONE		(1 << 0)
 #define DISPC_IRQ_VSYNC			(1 << 1)

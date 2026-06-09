@@ -33,7 +33,7 @@
 !     For SHmedia, the assumption is that any quadword can be read in its
 !     enirety if at least one byte is included in the copy.
 
-/* Imported into Linux kernel by Richard Curnow.  This is used to implement the
+/* Imported into Beep kernel by Richard Curnow.  This is used to implement the
    __copy_user function in the general case, so it has to be a distinct
    function from intra-kernel memcpy to allow for exception fix-ups in the
    event that the user pointer is bad somewhere in the copy (e.g. due to

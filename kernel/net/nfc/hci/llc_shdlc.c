@@ -20,11 +20,11 @@
 
 #define pr_fmt(fmt) "shdlc: %s: " fmt, __func__
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/wait.h>
+#include <beep/slab.h>
+#include <beep/skbuff.h>
 
 #include "llc.h"
 

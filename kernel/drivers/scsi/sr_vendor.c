@@ -1,4 +1,4 @@
-/* -*-linux-c-*-
+/* -*-beep-c-*-
 
  * vendor-specific code for SCSI CD-ROM's goes here.
  *
@@ -34,12 +34,12 @@
  *              HP 6020 writers now supported.
  */
 
-#include <linux/cdrom.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/bcd.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
+#include <beep/cdrom.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/bcd.h>
+#include <beep/blkdev.h>
+#include <beep/slab.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

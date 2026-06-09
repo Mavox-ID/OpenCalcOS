@@ -1,8 +1,8 @@
 #
-# Makefile for the Linux/SuperH kernel.
+# Makefile for the Beep/SuperH kernel.
 #
 
-extra-y	:= head_$(BITS).o vmlinux.lds
+extra-y	:= head_$(BITS).o vmbeep.lds
 
 ifdef CONFIG_FUNCTION_TRACER
 # Do not profile debug and lowlevel utilities

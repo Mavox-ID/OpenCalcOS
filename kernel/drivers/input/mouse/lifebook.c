@@ -12,11 +12,11 @@
  * the Free Software Foundation.
  */
 
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/libps2.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
+#include <beep/input.h>
+#include <beep/serio.h>
+#include <beep/libps2.h>
+#include <beep/dmi.h>
+#include <beep/slab.h>
 
 #include "psmouse.h"
 #include "lifebook.h"

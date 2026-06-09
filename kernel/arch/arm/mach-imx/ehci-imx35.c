@@ -13,9 +13,9 @@
  * for more details.
  */
 
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/platform_data/usb-ehci-mxc.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/platform_data/usb-ehci-mxc.h>
 
 #include "hardware.h"
 

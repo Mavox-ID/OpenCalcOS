@@ -17,14 +17,14 @@
 
 #undef DEBUG
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/vmalloc.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/string.h>
+#include <beep/vmalloc.h>
 
 #include <asm/pci-bridge.h>
-#include <linux/mutex.h>
+#include <beep/mutex.h>
 #include <asm/rtas.h>
 #include <asm/vio.h>
 

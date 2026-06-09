@@ -8,11 +8,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/gpio.h>
-#include <linux/errno.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/gpio.h>
+#include <beep/errno.h>
+#include <beep/io.h>
 #include <asm/txx9pio.h>
 
 static DEFINE_SPINLOCK(txx9_gpio_lock);

@@ -4,7 +4,7 @@
  *			  Alan Cox <alan@lxorguk.ukuu.org.uk>
  *			  (C) 2007,2009,2010 Bartlomiej Zolnierkiewicz
  *
- * Based in part on linux/drivers/ide/pci/pdc202xx_old.c
+ * Based in part on beep/drivers/ide/pci/pdc202xx_old.c
  *
  * First cut with LBA48/ATAPI
  *
@@ -12,14 +12,14 @@
  *	Channel interlock/reset on both required ?
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/blkdev.h>
+#include <beep/delay.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <beep/libata.h>
 
 #define DRV_NAME "pata_pdc202xx_old"
 #define DRV_VERSION "0.4.3"

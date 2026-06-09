@@ -28,8 +28,8 @@
  * address memory reservations must avoid this region.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 
 #include <asm/mach-powertv/ioremap.h>
 

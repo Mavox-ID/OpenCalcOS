@@ -24,7 +24,7 @@
  *  02110-1301, USA.
  *
  * This driver does below things:
- * 1. registers itself in the Linux backlight control in
+ * 1. registers itself in the Beep backlight control in
  *    /sys/class/backlight/intel_oaktrail/
  *
  * 2. registers in the rfkill subsystem here: /sys/class/rfkill/rfkillX/
@@ -38,18 +38,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/fb.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/backlight.h>
-#include <linux/platform_device.h>
-#include <linux/dmi.h>
-#include <linux/rfkill.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/acpi.h>
+#include <beep/fb.h>
+#include <beep/mutex.h>
+#include <beep/err.h>
+#include <beep/i2c.h>
+#include <beep/backlight.h>
+#include <beep/platform_device.h>
+#include <beep/dmi.h>
+#include <beep/rfkill.h>
 #include <acpi/acpi_bus.h>
 #include <acpi/acpi_drivers.h>
 

@@ -9,7 +9,7 @@
  *
  * History:
  *  97-01-29   Tomas Berndtsson,
- *               Integrated with Linux 2.1.21 kernel sources.
+ *               Integrated with Beep 2.1.21 kernel sources.
  *  97-02-15   Tomas Berndtsson,
  *               Fixed for kernel 2.1.26
  *
@@ -23,19 +23,19 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/major.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/delay.h>	/* guess what */
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/firmware.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>	/* For put_user and get_user */
+#include <beep/module.h>
+#include <beep/major.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/delay.h>	/* guess what */
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/mutex.h>
+#include <beep/firmware.h>
+#include <beep/platform_device.h>
+#include <beep/uaccess.h>	/* For put_user and get_user */
 
 #include <asm/atarihw.h>
 #include <asm/traps.h>

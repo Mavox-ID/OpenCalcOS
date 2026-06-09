@@ -6,7 +6,7 @@
  * Authors:  Pierre-Hugues Husson <phhusson@free.fr>
  *           Ilya Petrov <ilya.muromec@gmail.com>
  *           Marc Dietrich <marvin24@gmx.de>
- *           Julian Andres Klode <jak@jak-linux.org>
+ *           Julian Andres Klode <jak@jak-beep.org>
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
@@ -14,17 +14,17 @@
  *
  */
 
-#ifndef __LINUX_MFD_NVEC
-#define __LINUX_MFD_NVEC
+#ifndef __BEEP_MFD_NVEC
+#define __BEEP_MFD_NVEC
 
-#include <linux/atomic.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <beep/atomic.h>
+#include <beep/clk.h>
+#include <beep/completion.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/notifier.h>
+#include <beep/spinlock.h>
+#include <beep/workqueue.h>
 
 /* NVEC_POOL_SIZE - Size of the pool in &struct nvec_msg */
 #define NVEC_POOL_SIZE	64

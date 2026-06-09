@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-pxa/lpd270.c
+ * beep/arch/arm/mach-pxa/lpd270.c
  *
  * Support for the LogicPD PXA270 Card Engine.
  * Derived from the mainstone code, which carries these notices:
@@ -12,18 +12,18 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/syscore_ops.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/bitops.h>
-#include <linux/fb.h>
-#include <linux/ioport.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/pwm_backlight.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/syscore_ops.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/bitops.h>
+#include <beep/fb.h>
+#include <beep/ioport.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/pwm_backlight.h>
 
 #include <asm/types.h>
 #include <asm/setup.h>
@@ -41,10 +41,10 @@
 #include <mach/pxa27x.h>
 #include <mach/lpd270.h>
 #include <mach/audio.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/irda-pxaficp.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <beep/platform_data/video-pxafb.h>
+#include <beep/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/irda-pxaficp.h>
+#include <beep/platform_data/usb-ohci-pxa27x.h>
 #include <mach/smemc.h>
 
 #include "generic.h"

@@ -1,7 +1,7 @@
 #ifndef __MMU_H
 #define __MMU_H
 
-#include <linux/errno.h>
+#include <beep/errno.h>
 
 typedef struct {
 	atomic_t attach_count;

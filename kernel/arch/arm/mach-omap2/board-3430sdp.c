@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/board-3430sdp.c
+ * beep/arch/arm/mach-omap2/board-3430sdp.c
  *
  * Copyright (C) 2007 Texas Instruments
  *
@@ -12,26 +12,26 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/spi/spi.h>
-#include <linux/i2c/twl.h>
-#include <linux/regulator/machine.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/mmc/host.h>
-#include <linux/platform_data/spi-omap2-mcspi.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/input.h>
+#include <beep/input/matrix_keypad.h>
+#include <beep/spi/spi.h>
+#include <beep/i2c/twl.h>
+#include <beep/regulator/machine.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/mmc/host.h>
+#include <beep/platform_data/spi-omap2-mcspi.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 
 #include "common.h"
-#include <linux/omap-dma.h>
+#include <beep/omap-dma.h>
 #include <video/omapdss.h>
 #include <video/omap-panel-tfp410.h>
 

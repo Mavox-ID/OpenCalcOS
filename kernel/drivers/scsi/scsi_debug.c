@@ -25,23 +25,23 @@
  *        module options to "modprobe scsi_debug num_tgts=2" [20021221]
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/genhd.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/vmalloc.h>
-#include <linux/moduleparam.h>
-#include <linux/scatterlist.h>
-#include <linux/blkdev.h>
-#include <linux/crc-t10dif.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/timer.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/genhd.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/proc_fs.h>
+#include <beep/vmalloc.h>
+#include <beep/moduleparam.h>
+#include <beep/scatterlist.h>
+#include <beep/blkdev.h>
+#include <beep/crc-t10dif.h>
 
 #include <net/checksum.h>
 
@@ -460,7 +460,7 @@ static int fetch_to_dev_buffer(struct scsi_cmnd *scp, unsigned char *arr,
 }
 
 
-static const char * inq_vendor_id = "Linux   ";
+static const char * inq_vendor_id = "Beep   ";
 static const char * inq_product_id = "scsi_debug      ";
 static const char * inq_product_rev = "0004";
 
@@ -2664,7 +2664,7 @@ static void __init sdebug_build_parts(unsigned char *ramp,
 
 		pp->start_sect = start_sec;
 		pp->nr_sects = end_sec - start_sec + 1;
-		pp->sys_ind = 0x83;	/* plain Linux partition */
+		pp->sys_ind = 0x83;	/* plain Beep partition */
 	}
 }
 

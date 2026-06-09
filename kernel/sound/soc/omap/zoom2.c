@@ -19,20 +19,20 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>
 
 #include <asm/mach-types.h>
-#include <linux/platform_data/asoc-ti-mcbsp.h>
-#include <linux/platform_data/gpio-omap.h>
+#include <beep/platform_data/asoc-ti-mcbsp.h>
+#include <beep/platform_data/gpio-omap.h>
 
 /* Register descriptions for twl4030 codec part */
-#include <linux/mfd/twl4030-audio.h>
-#include <linux/module.h>
+#include <beep/mfd/twl4030-audio.h>
+#include <beep/module.h>
 
 #include "omap-mcbsp.h"
 #include "omap-pcm.h"

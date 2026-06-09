@@ -8,15 +8,15 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mbus.h>
-#include <linux/clk.h>
-#include <linux/platform_data/usb-ehci-orion.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/mbus.h>
+#include <beep/clk.h>
+#include <beep/platform_data/usb-ehci-orion.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/of_irq.h>
 
 #define rdl(off)	__raw_readl(hcd->regs + (off))
 #define wrl(off, val)	__raw_writel((val), hcd->regs + (off))

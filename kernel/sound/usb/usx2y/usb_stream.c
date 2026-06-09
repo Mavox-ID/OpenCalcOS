@@ -16,8 +16,8 @@
  * Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/usb.h>
-#include <linux/gfp.h>
+#include <beep/usb.h>
+#include <beep/gfp.h>
 
 #include "usb_stream.h"
 

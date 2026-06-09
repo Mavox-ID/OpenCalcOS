@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/lib/copy_template.S
+ * beep/arch/unicore32/lib/copy_template.S
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *

@@ -24,8 +24,8 @@
 
 #ifdef __KERNEL__
 
-#include <linux/pci.h>
-#include <linux/interrupt.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
 
 #define DT3155_NAME "dt3155"
 #define DT3155_VER_MAJ 1

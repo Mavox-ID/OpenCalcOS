@@ -1,5 +1,5 @@
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
+#include <beep/nfs_fs.h>
+#include <beep/nfs_mount.h>
 #include "internal.h"
 
 #ifdef CONFIG_NFS_V3_ACL

@@ -3,23 +3,23 @@
  *
  * Copyright 2004-2009 Analog Devices Inc.
  *
- * Enter bugs at http://blackfin.uclinux.org/
+ * Enter bugs at http://blackfin.ucbeep.org/
  *
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/bitops.h>
+#include <beep/interrupt.h>
+#include <beep/errno.h>
+#include <beep/netdevice.h>
+#include <beep/skbuff.h>
+#include <beep/platform_device.h>
 
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
+#include <beep/can/dev.h>
+#include <beep/can/error.h>
 
 #include <asm/bfin_can.h>
 #include <asm/portmux.h>

@@ -5,7 +5,7 @@
 #define _nblank(x) #x
 #define nblank(x) _nblank(x)[0]
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 /*------------------------------------------------------------------------------
  *              D E F I N E S
@@ -1797,7 +1797,7 @@ struct revision
 
 
 /*
- *	Ugly - non Linux like ioctl coding for back compat.
+ *	Ugly - non Beep like ioctl coding for back compat.
  */
 
 #define CTL_CODE(function, method) (                 \

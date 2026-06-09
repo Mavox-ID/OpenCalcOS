@@ -1,11 +1,11 @@
-#ifndef __LINUX_NET_SCM_H
-#define __LINUX_NET_SCM_H
+#ifndef __BEEP_NET_SCM_H
+#define __BEEP_NET_SCM_H
 
-#include <linux/limits.h>
-#include <linux/net.h>
-#include <linux/security.h>
-#include <linux/pid.h>
-#include <linux/nsproxy.h>
+#include <beep/limits.h>
+#include <beep/net.h>
+#include <beep/security.h>
+#include <beep/pid.h>
+#include <beep/nsproxy.h>
 
 /* Well, we should have at least one descriptor open
  * to accept passed FDs 8)
@@ -141,5 +141,5 @@ static __inline__ void scm_recv(struct socket *sock, struct msghdr *msg,
 }
 
 
-#endif /* __LINUX_NET_SCM_H */
+#endif /* __BEEP_NET_SCM_H */
 

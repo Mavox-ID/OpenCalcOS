@@ -6,12 +6,12 @@
 #ifndef _AX25_H
 #define _AX25_H 
 
-#include <linux/ax25.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
+#include <beep/ax25.h>
+#include <beep/spinlock.h>
+#include <beep/timer.h>
+#include <beep/list.h>
+#include <beep/slab.h>
+#include <beep/atomic.h>
 
 #define	AX25_T1CLAMPLO  		1
 #define	AX25_T1CLAMPHI 			(30 * HZ)
@@ -59,8 +59,8 @@
 #define	AX25_COND_OWN_RX_BUSY		0x08
 #define	AX25_COND_DAMA_MODE		0x10
 
-#ifndef _LINUX_NETDEVICE_H
-#include <linux/netdevice.h>
+#ifndef _BEEP_NETDEVICE_H
+#include <beep/netdevice.h>
 #endif
 
 /* Upper sub-layer (LAPB) definitions */

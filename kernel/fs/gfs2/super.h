@@ -10,8 +10,8 @@
 #ifndef __SUPER_DOT_H__
 #define __SUPER_DOT_H__
 
-#include <linux/fs.h>
-#include <linux/dcache.h>
+#include <beep/fs.h>
+#include <beep/dcache.h>
 #include "incore.h"
 
 extern void gfs2_lm_unmount(struct gfs2_sbd *sdp);

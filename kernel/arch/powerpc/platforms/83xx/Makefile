@@ -1,5 +1,5 @@
 #
-# Makefile for the PowerPC 83xx linux kernel.
+# Makefile for the PowerPC 83xx beep kernel.
 #
 obj-y				:= misc.o usb.o
 obj-$(CONFIG_SUSPEND)		+= suspend.o suspend-asm.o

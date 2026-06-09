@@ -1,5 +1,5 @@
 /*
- *  linux/fs/proc/base.c
+ *  beep/fs/proc/base.c
  *
  *  Copyright (C) 1991, 1992 Linus Torvalds
  *
@@ -21,7 +21,7 @@
  *  Ilias Biris <ilias.biris@indt.org.br>
  *  Mauricio Lin <mauricio.lin@indt.org.br>
  *
- *  Embedded Linux Lab - 10LE Instituto Nokia de Tecnologia - INdT
+ *  Embedded Beep Lab - 10LE Instituto Nokia de Tecnologia - INdT
  *
  *  A new process specific entry (smaps) included in /proc. It shows the
  *  size of rss for each memory area. The maps entry lacks information
@@ -32,7 +32,7 @@
  *
  *  Changelog:
  *  21-Feb-2005
- *  Embedded Linux Lab - 10LE Instituto Nokia de Tecnologia - INdT
+ *  Embedded Beep Lab - 10LE Instituto Nokia de Tecnologia - INdT
  *  Pud inclusion in the page table walking.
  *
  *  ChangeLog:
@@ -49,42 +49,42 @@
 
 #include <asm/uaccess.h>
 
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/init.h>
-#include <linux/capability.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/namei.h>
-#include <linux/mnt_namespace.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/rcupdate.h>
-#include <linux/kallsyms.h>
-#include <linux/stacktrace.h>
-#include <linux/resource.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/security.h>
-#include <linux/ptrace.h>
-#include <linux/tracehook.h>
-#include <linux/cgroup.h>
-#include <linux/cpuset.h>
-#include <linux/audit.h>
-#include <linux/poll.h>
-#include <linux/nsproxy.h>
-#include <linux/oom.h>
-#include <linux/elf.h>
-#include <linux/pid_namespace.h>
-#include <linux/user_namespace.h>
-#include <linux/fs_struct.h>
-#include <linux/slab.h>
-#include <linux/flex_array.h>
+#include <beep/errno.h>
+#include <beep/time.h>
+#include <beep/proc_fs.h>
+#include <beep/stat.h>
+#include <beep/task_io_accounting_ops.h>
+#include <beep/init.h>
+#include <beep/capability.h>
+#include <beep/file.h>
+#include <beep/fdtable.h>
+#include <beep/string.h>
+#include <beep/seq_file.h>
+#include <beep/namei.h>
+#include <beep/mnt_namespace.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/rcupdate.h>
+#include <beep/kallsyms.h>
+#include <beep/stacktrace.h>
+#include <beep/resource.h>
+#include <beep/module.h>
+#include <beep/mount.h>
+#include <beep/security.h>
+#include <beep/ptrace.h>
+#include <beep/tracehook.h>
+#include <beep/cgroup.h>
+#include <beep/cpuset.h>
+#include <beep/audit.h>
+#include <beep/poll.h>
+#include <beep/nsproxy.h>
+#include <beep/oom.h>
+#include <beep/elf.h>
+#include <beep/pid_namespace.h>
+#include <beep/user_namespace.h>
+#include <beep/fs_struct.h>
+#include <beep/slab.h>
+#include <beep/flex_array.h>
 #ifdef CONFIG_HARDWALL
 #include <asm/hardwall.h>
 #endif

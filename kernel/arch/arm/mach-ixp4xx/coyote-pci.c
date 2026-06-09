@@ -14,10 +14,10 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/irq.h>
 #include <asm/mach-types.h>
 #include <mach/hardware.h>
 #include <asm/irq.h>

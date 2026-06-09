@@ -1,5 +1,5 @@
 /*
- * linux/include/asm-parisc/timex.h
+ * beep/include/asm-parisc/timex.h
  *
  * PARISC architecture timex specifications
  */

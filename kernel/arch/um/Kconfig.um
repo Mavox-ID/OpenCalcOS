@@ -26,7 +26,7 @@ source "fs/Kconfig.binfmt"
 config HOSTFS
 	tristate "Host filesystem"
 	help
-          While the User-Mode Linux port uses its own root file system for
+          While the User-Mode Beep port uses its own root file system for
           booting and normal file access, this module lets the UML user
           access files stored on the host.  It does not require any
           network connection between the Host and UML.  An example use of
@@ -39,7 +39,7 @@ config HOSTFS
           wishes to access.
 
           For more information, see
-          <http://user-mode-linux.sourceforge.net/hostfs.html>.
+          <http://user-mode-beep.sourceforge.net/hostfs.html>.
 
           If you'd like to be able to work with files stored on the host,
           say Y or M here; otherwise say N.
@@ -54,7 +54,7 @@ config HPPFS
 	  by removing or changing anything in /proc which gives away the
 	  identity of a UML.
 
-	  See <http://user-mode-linux.sf.net/old/hppfs.html> for more information.
+	  See <http://user-mode-beep.sf.net/old/hppfs.html> for more information.
 
 	  You only need this if you are setting up a UML honeypot.  Otherwise,
 	  it is safe to say 'N' here.
@@ -63,9 +63,9 @@ config MCONSOLE
 	bool "Management console"
 	default y
 	help
-          The user mode linux management console is a low-level interface to
+          The user mode beep management console is a low-level interface to
           the kernel, somewhat like the i386 SysRq interface.  Since there is
-          a full-blown operating system running under every user mode linux
+          a full-blown operating system running under every user mode beep
           instance, there is much greater flexibility possible than with the
           SysRq mechanism.
 

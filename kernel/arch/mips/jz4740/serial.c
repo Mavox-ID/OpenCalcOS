@@ -13,9 +13,9 @@
  *
  */
 
-#include <linux/io.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
+#include <beep/io.h>
+#include <beep/serial_core.h>
+#include <beep/serial_reg.h>
 
 void jz4740_serial_out(struct uart_port *p, int offset, int value)
 {

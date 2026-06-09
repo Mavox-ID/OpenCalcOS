@@ -19,7 +19,7 @@
  *   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define HDSP_MATRIX_MIXER_SIZE 2048
 

@@ -1,8 +1,8 @@
-#include <linux/sched.h>
-#include <linux/stacktrace.h>
-#include <linux/thread_info.h>
-#include <linux/ftrace.h>
-#include <linux/export.h>
+#include <beep/sched.h>
+#include <beep/stacktrace.h>
+#include <beep/thread_info.h>
+#include <beep/ftrace.h>
+#include <beep/export.h>
 #include <asm/ptrace.h>
 #include <asm/stacktrace.h>
 

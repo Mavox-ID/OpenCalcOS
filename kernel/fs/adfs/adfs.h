@@ -1,5 +1,5 @@
-#include <linux/fs.h>
-#include <linux/adfs_fs.h>
+#include <beep/fs.h>
+#include <beep/adfs_fs.h>
 
 /* Internal data structures for ADFS */
 

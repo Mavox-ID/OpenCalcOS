@@ -9,7 +9,7 @@
 #ifndef _AD714X_H_
 #define _AD714X_H_
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #define STAGE_NUM              12
 

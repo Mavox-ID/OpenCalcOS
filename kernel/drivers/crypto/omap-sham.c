@@ -15,29 +15,29 @@
 
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/crypto.h>
-#include <linux/cryptohash.h>
+#include <beep/err.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/clk.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
+#include <beep/scatterlist.h>
+#include <beep/dma-mapping.h>
+#include <beep/delay.h>
+#include <beep/crypto.h>
+#include <beep/cryptohash.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/algapi.h>
 #include <crypto/sha.h>
 #include <crypto/hash.h>
 #include <crypto/internal/hash.h>
 
-#include <linux/omap-dma.h>
+#include <beep/omap-dma.h>
 #include <mach/irqs.h>
 
 #define SHA_REG_DIGEST(x)		(0x00 + ((x) * 0x04))

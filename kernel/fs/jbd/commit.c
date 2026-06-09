@@ -1,11 +1,11 @@
 /*
- * linux/fs/jbd/commit.c
+ * beep/fs/jbd/commit.c
  *
  * Written by Stephen C. Tweedie <sct@redhat.com>, 1998
  *
  * Copyright 1998 Red Hat corp --- All Rights Reserved
  *
- * This file is part of the Linux kernel and is made available under
+ * This file is part of the Beep kernel and is made available under
  * the terms of the GNU General Public License, version 2, or at your
  * option, any later version, incorporated herein by reference.
  *
@@ -13,14 +13,14 @@
  * part of the ext2fs journaling system.
  */
 
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/jbd.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
+#include <beep/time.h>
+#include <beep/fs.h>
+#include <beep/jbd.h>
+#include <beep/errno.h>
+#include <beep/mm.h>
+#include <beep/pagemap.h>
+#include <beep/bio.h>
+#include <beep/blkdev.h>
 #include <trace/events/jbd.h>
 
 /*

@@ -9,20 +9,20 @@
  *
  * Support for TX4938 in 2.6 - Manish Lachwani (mlachwani@mvista.com)
  */
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/mtd/physmap.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/mtd/physmap.h>
 
 #include <asm/reboot.h>
 #include <asm/io.h>
 #include <asm/txx9/generic.h>
 #include <asm/txx9/pci.h>
 #include <asm/txx9/rbtx4938.h>
-#include <linux/spi/spi.h>
+#include <beep/spi/spi.h>
 #include <asm/txx9/spi.h>
 #include <asm/txx9pio.h>
 

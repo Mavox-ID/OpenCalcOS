@@ -20,12 +20,12 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/firmware.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/firmware.h>
+#include <beep/vmalloc.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <asm/io.h>
 #include <sound/core.h>
 #include "mixart.h"

@@ -21,11 +21,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/jffs2.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/jffs2.h>
 #include "compr.h"
 
 /* _compress returns the compressed size, -1 if bigger */

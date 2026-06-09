@@ -1,5 +1,5 @@
 /*
- *  Parallel port to Keyboard port adapter driver for Linux
+ *  Parallel port to Keyboard port adapter driver for Beep
  *
  *  Copyright (c) 1999-2004 Vojtech Pavlik
  */
@@ -44,11 +44,11 @@
  * with 300 mA power reqirement of a typical AT keyboard.
  */
 
-#include <linux/module.h>
-#include <linux/parport.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/serio.h>
+#include <beep/module.h>
+#include <beep/parport.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/serio.h>
 
 MODULE_AUTHOR("Vojtech Pavlik <vojtech@ucw.cz>");
 MODULE_DESCRIPTION("Parallel port to Keyboard port adapter driver");

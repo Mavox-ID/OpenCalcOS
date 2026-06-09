@@ -1,6 +1,6 @@
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/memory.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/memory.h>
 
 #include "notifier-error-inject.h"
 

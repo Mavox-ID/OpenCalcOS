@@ -1,5 +1,5 @@
 /*
- *  linux/fs/9p/v9fs.c
+ *  beep/fs/9p/v9fs.c
  *
  *  This file contains functions assisting in mapping VFS to 9P2000
  *
@@ -25,13 +25,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/parser.h>
-#include <linux/idr.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/sched.h>
+#include <beep/parser.h>
+#include <beep/idr.h>
+#include <beep/slab.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 #include <net/9p/transport.h>

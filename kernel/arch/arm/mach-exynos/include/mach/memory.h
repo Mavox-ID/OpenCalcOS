@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-exynos4/include/mach/memory.h
+/* beep/arch/arm/mach-exynos4/include/mach/memory.h
  *
  * Copyright (c) 2010-2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com

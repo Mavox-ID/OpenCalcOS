@@ -16,19 +16,19 @@
  *  2001-02-28 AV: rewritten into something that resembles C. Original didn't.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/magic.h>
-#include <linux/binfmts.h>
-#include <linux/slab.h>
-#include <linux/ctype.h>
-#include <linux/file.h>
-#include <linux/pagemap.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
-#include <linux/syscalls.h>
-#include <linux/fs.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/magic.h>
+#include <beep/binfmts.h>
+#include <beep/slab.h>
+#include <beep/ctype.h>
+#include <beep/file.h>
+#include <beep/pagemap.h>
+#include <beep/namei.h>
+#include <beep/mount.h>
+#include <beep/syscalls.h>
+#include <beep/fs.h>
 
 #include <asm/uaccess.h>
 
@@ -66,7 +66,7 @@ static int entry_count;
  * if we do, return the node, else NULL
  * locking is done in load_misc_binary
  */
-static Node *check_file(struct linux_binprm *bprm)
+static Node *check_file(struct beep_binprm *bprm)
 {
 	char *p = strrchr(bprm->interp, '.');
 	struct list_head *l;
@@ -104,7 +104,7 @@ static Node *check_file(struct linux_binprm *bprm)
 /*
  * the loader itself
  */
-static int load_misc_binary(struct linux_binprm *bprm)
+static int load_misc_binary(struct beep_binprm *bprm)
 {
 	Node *fmt;
 	struct file * interp_file = NULL;
@@ -709,7 +709,7 @@ static struct dentry *bm_mount(struct file_system_type *fs_type,
 	return mount_single(fs_type, flags, data, bm_fill_super);
 }
 
-static struct linux_binfmt misc_format = {
+static struct beep_binfmt misc_format = {
 	.module = THIS_MODULE,
 	.load_binary = load_misc_binary,
 };

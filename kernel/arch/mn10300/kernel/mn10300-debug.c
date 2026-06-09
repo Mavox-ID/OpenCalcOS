@@ -8,7 +8,7 @@
  * as published by the Free Software Foundation; either version
  * 2 of the Licence, or (at your option) any later version.
  */
-#include <linux/sched.h>
+#include <beep/sched.h>
 #include <asm/serial-regs.h>
 
 #undef MN10300_CONSOLE_ON_SERIO

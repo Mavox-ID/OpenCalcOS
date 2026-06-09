@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-w90x900/mach-nuc950evb.c
+ * beep/arch/arm/mach-w90x900/mach-nuc950evb.c
  *
  * Based on mach-s3c2410/mach-smdk2410.c by Jonas Dietsche
  *
@@ -11,16 +11,16 @@
  * modify it under the terms of the GNU General Public License as
  * published by the Free Software Foundation;version 2 of the License.
  *   history:
- *     Wang Qiang (rurality.linux@gmail.com) add LCD support
+ *     Wang Qiang (rurality.beep@gmail.com) add LCD support
  *
  */
 
-#include <linux/platform_device.h>
+#include <beep/platform_device.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 #include <asm/mach-types.h>
 #include <mach/map.h>
-#include <linux/platform_data/video-nuc900fb.h>
+#include <beep/platform_data/video-nuc900fb.h>
 
 #include "nuc950.h"
 

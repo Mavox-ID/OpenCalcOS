@@ -12,31 +12,31 @@
 
 #define pr_fmt(fmt) DRIVER_NAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/tty.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
 #include <asm/blackfin.h>
 #include <asm/irq.h>
 #include <asm/dma.h>
-#include <linux/uaccess.h>
-#include <linux/gpio.h>
+#include <beep/uaccess.h>
+#include <beep/gpio.h>
 #include <asm/portmux.h>
 
-#include <linux/dma-mapping.h>
-#include <linux/proc_fs.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
+#include <beep/dma-mapping.h>
+#include <beep/proc_fs.h>
+#include <beep/platform_device.h>
+#include <beep/i2c.h>
 
 #include "bfin_adv7393fb.h"
 
@@ -817,7 +817,7 @@ static void __exit bfin_adv7393_fb_driver_cleanup(void)
 module_exit(bfin_adv7393_fb_driver_cleanup);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucbeep.org>");
 MODULE_DESCRIPTION("Frame buffer driver for ADV7393/2 Video Encoder");
 
 module_param(mode, int, 0);

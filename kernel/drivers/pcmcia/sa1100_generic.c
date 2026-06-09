@@ -30,10 +30,10 @@
     
 ======================================================================*/
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
 
 #include <pcmcia/ss.h>
 
@@ -130,7 +130,7 @@ static void __exit sa11x0_pcmcia_exit(void)
 }
 
 MODULE_AUTHOR("John Dorsey <john+@cs.cmu.edu>");
-MODULE_DESCRIPTION("Linux PCMCIA Card Services: SA-11x0 Socket Controller");
+MODULE_DESCRIPTION("Beep PCMCIA Card Services: SA-11x0 Socket Controller");
 MODULE_LICENSE("Dual MPL/GPL");
 
 fs_initcall(sa11x0_pcmcia_init);

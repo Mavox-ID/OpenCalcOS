@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mmc/core/sd_ops.h
+ *  beep/drivers/mmc/core/sd_ops.h
  *
  *  Copyright 2006-2007 Pierre Ossman
  *
@@ -9,15 +9,15 @@
  * your option) any later version.
  */
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/export.h>
-#include <linux/scatterlist.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/export.h>
+#include <beep/scatterlist.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/mmc.h>
+#include <beep/mmc/sd.h>
 
 #include "core.h"
 #include "sd_ops.h"

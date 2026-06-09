@@ -23,7 +23,7 @@
 #ifndef _UAPI_SPU_INFO_H
 #define _UAPI_SPU_INFO_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #ifndef __KERNEL__
 struct mfc_cq_sr {

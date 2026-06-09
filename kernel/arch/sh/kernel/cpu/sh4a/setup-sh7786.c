@@ -13,17 +13,17 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/serial_sci.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/sh_timer.h>
-#include <linux/sh_dma.h>
-#include <linux/sh_intc.h>
-#include <linux/usb/ohci_pdriver.h>
+#include <beep/platform_device.h>
+#include <beep/init.h>
+#include <beep/serial.h>
+#include <beep/serial_sci.h>
+#include <beep/io.h>
+#include <beep/mm.h>
+#include <beep/dma-mapping.h>
+#include <beep/sh_timer.h>
+#include <beep/sh_dma.h>
+#include <beep/sh_intc.h>
+#include <beep/usb/ohci_pdriver.h>
 #include <cpu/dma-register.h>
 #include <asm/mmzone.h>
 

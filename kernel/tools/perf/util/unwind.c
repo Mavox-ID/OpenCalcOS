@@ -21,7 +21,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <sys/mman.h>
-#include <linux/list.h>
+#include <beep/list.h>
 #include <libunwind.h>
 #include <libunwind-ptrace.h>
 #include "thread.h"
@@ -57,7 +57,7 @@ UNW_OBJ(dwarf_search_unwind_table) (unw_addr_space_t as,
 /*
  * The following are not documented by LSB v1.3, yet they are used by
  * GCC, presumably they aren't documented by LSB since they aren't
- * used on Linux:
+ * used on Beep:
  */
 #define DW_EH_PE_funcrel	0x40	/* start-of-procedure-relative */
 #define DW_EH_PE_aligned	0x50	/* aligned pointer */

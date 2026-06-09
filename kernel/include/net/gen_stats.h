@@ -1,10 +1,10 @@
 #ifndef __NET_GEN_STATS_H
 #define __NET_GEN_STATS_H
 
-#include <linux/gen_stats.h>
-#include <linux/socket.h>
-#include <linux/rtnetlink.h>
-#include <linux/pkt_sched.h>
+#include <beep/gen_stats.h>
+#include <beep/socket.h>
+#include <beep/rtnetlink.h>
+#include <beep/pkt_sched.h>
 
 struct gnet_dump {
 	spinlock_t *      lock;

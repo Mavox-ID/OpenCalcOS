@@ -15,36 +15,36 @@
 #define KMSG_COMPONENT "setup"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/tty.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/initrd.h>
-#include <linux/bootmem.h>
-#include <linux/root_dev.h>
-#include <linux/console.h>
-#include <linux/kernel_stat.h>
-#include <linux/device.h>
-#include <linux/notifier.h>
-#include <linux/pfn.h>
-#include <linux/ctype.h>
-#include <linux/reboot.h>
-#include <linux/topology.h>
-#include <linux/ftrace.h>
-#include <linux/kexec.h>
-#include <linux/crash_dump.h>
-#include <linux/memory.h>
-#include <linux/compat.h>
+#include <beep/errno.h>
+#include <beep/export.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/memblock.h>
+#include <beep/mm.h>
+#include <beep/stddef.h>
+#include <beep/unistd.h>
+#include <beep/ptrace.h>
+#include <beep/user.h>
+#include <beep/tty.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/initrd.h>
+#include <beep/bootmem.h>
+#include <beep/root_dev.h>
+#include <beep/console.h>
+#include <beep/kernel_stat.h>
+#include <beep/device.h>
+#include <beep/notifier.h>
+#include <beep/pfn.h>
+#include <beep/ctype.h>
+#include <beep/reboot.h>
+#include <beep/topology.h>
+#include <beep/ftrace.h>
+#include <beep/kexec.h>
+#include <beep/crash_dump.h>
+#include <beep/memory.h>
+#include <beep/compat.h>
 
 #include <asm/ipl.h>
 #include <asm/uaccess.h>
@@ -1025,10 +1025,10 @@ void __init setup_arch(char **cmdline_p)
          */
 #ifndef CONFIG_64BIT
 	if (MACHINE_IS_VM)
-		pr_info("Linux is running as a z/VM "
+		pr_info("Beep is running as a z/VM "
 			"guest operating system in 31-bit mode\n");
 	else if (MACHINE_IS_LPAR)
-		pr_info("Linux is running natively in 31-bit mode\n");
+		pr_info("Beep is running natively in 31-bit mode\n");
 	if (MACHINE_HAS_IEEE)
 		pr_info("The hardware system has IEEE compatible "
 			"floating point units\n");
@@ -1037,12 +1037,12 @@ void __init setup_arch(char **cmdline_p)
 			"floating point units\n");
 #else /* CONFIG_64BIT */
 	if (MACHINE_IS_VM)
-		pr_info("Linux is running as a z/VM "
+		pr_info("Beep is running as a z/VM "
 			"guest operating system in 64-bit mode\n");
 	else if (MACHINE_IS_KVM)
-		pr_info("Linux is running under KVM in 64-bit mode\n");
+		pr_info("Beep is running under KVM in 64-bit mode\n");
 	else if (MACHINE_IS_LPAR)
-		pr_info("Linux is running natively in 64-bit mode\n");
+		pr_info("Beep is running natively in 64-bit mode\n");
 #endif /* CONFIG_64BIT */
 
 	/* Have one command line that is parsed and saved in /proc/cmdline */

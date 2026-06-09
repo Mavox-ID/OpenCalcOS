@@ -1,5 +1,5 @@
 /*
- * linux/drivers/char/ppdev.c
+ * beep/drivers/char/ppdev.c
  *
  * This is the code behind /dev/parport* -- it allows a user-space
  * application to use the parport subsystem.
@@ -56,19 +56,19 @@
  * Added GETFLAGS/SETFLAGS ioctls, Fred Barnes, 04/2001
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/device.h>
-#include <linux/ioctl.h>
-#include <linux/parport.h>
-#include <linux/ctype.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/major.h>
-#include <linux/ppdev.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/device.h>
+#include <beep/ioctl.h>
+#include <beep/parport.h>
+#include <beep/ctype.h>
+#include <beep/poll.h>
+#include <beep/slab.h>
+#include <beep/major.h>
+#include <beep/ppdev.h>
+#include <beep/mutex.h>
+#include <beep/uaccess.h>
 
 #define PP_VERSION "ppdev: user-space parallel port driver"
 #define CHRDEV "ppdev"

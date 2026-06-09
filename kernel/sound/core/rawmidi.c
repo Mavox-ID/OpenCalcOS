@@ -20,15 +20,15 @@
  */
 
 #include <sound/core.h>
-#include <linux/major.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/delay.h>
+#include <beep/major.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/time.h>
+#include <beep/wait.h>
+#include <beep/mutex.h>
+#include <beep/module.h>
+#include <beep/delay.h>
 #include <sound/rawmidi.h>
 #include <sound/info.h>
 #include <sound/control.h>

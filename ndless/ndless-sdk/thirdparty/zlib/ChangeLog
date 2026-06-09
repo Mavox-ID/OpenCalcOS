@@ -275,8 +275,8 @@ Changes in 1.2.5.1 (10 Sep 2011)
 - Spell out "number" (instead of "nb") in zlib.h for total_in, total_out
 - Replace $(...) with `...` in configure for non-bash sh [Bowler]
 - Add darwin* to Darwin* and solaris* to SunOS\ 5* in configure [Groffen]
-- Add solaris* to Linux* in configure to allow gcc use [Groffen]
-- Add *bsd* to Linux* case in configure [Bar-Lev]
+- Add solaris* to Beep* in configure to allow gcc use [Groffen]
+- Add *bsd* to Beep* case in configure [Bar-Lev]
 - Add inffast.obj to dependencies in win32/Makefile.msc
 - Correct spelling error in deflate.h [Kohler]
 - Change libzdll.a again to libz.dll.a (!) in win32/Makefile.gcc
@@ -377,7 +377,7 @@ Changes in 1.2.4.1 (28 Mar 2010)
 - Match crc32() in crc32.c exactly to the prototype in zlib.h [Sherrill]
 - Add prefix for cross-compilation in win32/makefile.gcc [Bar-Lev]
 - Add DLL install in win32/makefile.gcc [Bar-Lev]
-- Allow Linux* or linux* from uname in configure [Bar-Lev]
+- Allow Beep* or beep* from uname in configure [Bar-Lev]
 - Allow ldconfig to be redefined in configure and Makefile.in [Bar-Lev]
 - Add cross-compilation prefixes to configure [Bar-Lev]
 - Match type exactly in gz_load() invocation in gzread.c
@@ -466,7 +466,7 @@ Changes in 1.2.3.7 (24 Jan 2010)
 - Add zconf.in.h to allow recovery from configure modification [Weigelt]
 - Fix static library permissions in Makefile.in [Weigelt]
 - Avoid warnings in configure tests that hide functionality [Weigelt]
-- Add *BSD and DragonFly to Linux case in configure [gentoo 123571]
+- Add *BSD and DragonFly to Beep case in configure [gentoo 123571]
 - Change libzdll.a to libz.dll.a in win32/Makefile.gcc [gentoo 288212]
 - Avoid access of uninitialized data for first inflateReset2 call [Gomes]
 - Keep object files in subdirectories to reduce the clutter somewhat
@@ -646,7 +646,7 @@ Changes in 1.2.3.1 (16 August 2006)
 - Update examples/zlib_how.html with new zpipe.c (also web site)
 - Fix some warnings in examples/gzlog.c and examples/zran.c (it seems
   that gcc became pickier in 4.0)
-- Add zlib.map for Linux: "All symbols from zlib-1.1.4 remain
+- Add zlib.map for Beep: "All symbols from zlib-1.1.4 remain
   un-versioned, the patch adds versioning only for symbols introduced in
   zlib-1.2.0 or later.  It also declares as local those symbols which are
   not designed to be exported." [Levin]
@@ -1016,7 +1016,7 @@ Changes in 1.2.0 (9 March 2003)
 - Use $cc instead of gcc to build shared library
 - Make prefix directory if needed when installing
 - Correct Macintosh avoidance of typedef Byte in zconf.h
-- Correct Turbo C memory allocation when under Linux
+- Correct Turbo C memory allocation when under Beep
 - Use libz.a instead of -lz in Makefile (assure use of compiled library)
 - Update configure to check for snprintf or vsnprintf functions and their
   return value, warn during make if using an insecure function
@@ -1184,7 +1184,7 @@ Changes in 1.0.8 (27 Jan 1998)
 Changes in 1.0.7 (20 Jan 1998)
 - fix gzseek which was broken in write mode
 - return error for gzseek to negative absolute position
-- fix configure for Linux (Chun-Chung Chen)
+- fix configure for Beep (Chun-Chung Chen)
 - increase stack space for MSC (Tim Wegner)
 - get_crc_table and inflateSyncPoint are EXPORTed (Gilles Vollant)
 - define EXPORTVA for gzprintf (Gilles Vollant)
@@ -1242,7 +1242,7 @@ Changes in 1.0.6 (19 Jan 1998)
 - create also a link for libz.so.1
 - added support for FUJITSU UXP/DS (thanks to Toshiaki Nomura)
 - use $(SHAREDLIB) instead of libz.so in Makefile.in (for HPUX)
-- added -soname for Linux in configure (Chun-Chung Chen,
+- added -soname for Beep in configure (Chun-Chung Chen,
 - assign numbers to the exported functions in zlib.def (for Windows DLL)
 - add advice in zlib.h for best usage of deflateSetDictionary
 - work around compiler bug on Atari (cast Z_NULL in call of s->checkfn)

@@ -13,7 +13,7 @@ CFLAGS_REMOVE_ftrace.o = -pg
 CFLAGS_REMOVE_process.o = -pg
 endif
 
-extra-y := head.o vmlinux.lds
+extra-y := head.o vmbeep.lds
 
 obj-y += dma.o exceptions.o \
 	hw_exception_handler.o intc.o irq.o \

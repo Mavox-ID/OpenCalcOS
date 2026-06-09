@@ -6,20 +6,20 @@
  * Copyright (C) Tom Long Nguyen (tom.l.nguyen@intel.com)
  */
 
-#include <linux/err.h>
-#include <linux/mm.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/proc_fs.h>
-#include <linux/msi.h>
-#include <linux/smp.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/err.h>
+#include <beep/mm.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/export.h>
+#include <beep/ioport.h>
+#include <beep/pci.h>
+#include <beep/proc_fs.h>
+#include <beep/msi.h>
+#include <beep/smp.h>
+#include <beep/errno.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 
 #include "pci.h"
 #include "msi.h"

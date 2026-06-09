@@ -1,11 +1,11 @@
 /*
- * linux/fs/jbd/transaction.c
+ * beep/fs/jbd/transaction.c
  *
  * Written by Stephen C. Tweedie <sct@redhat.com>, 1998
  *
  * Copyright 1998 Red Hat corp --- All Rights Reserved
  *
- * This file is part of the Linux kernel and is made available under
+ * This file is part of the Beep kernel and is made available under
  * the terms of the GNU General Public License, version 2, or at your
  * option, any later version, incorporated herein by reference.
  *
@@ -17,16 +17,16 @@
  * filesystem).
  */
 
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/jbd.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/hrtimer.h>
-#include <linux/backing-dev.h>
+#include <beep/time.h>
+#include <beep/fs.h>
+#include <beep/jbd.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/timer.h>
+#include <beep/mm.h>
+#include <beep/highmem.h>
+#include <beep/hrtimer.h>
+#include <beep/backing-dev.h>
 
 static void __journal_temp_unlink_buffer(struct journal_head *jh);
 

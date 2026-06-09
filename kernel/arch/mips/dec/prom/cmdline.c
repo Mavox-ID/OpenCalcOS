@@ -4,10 +4,10 @@
  * Copyright (C) 1998 Harald Koerfgen
  * Copyright (C) 2002, 2004  Maciej W. Rozycki
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/types.h>
 
 #include <asm/bootinfo.h>
 #include <asm/dec/prom.h>

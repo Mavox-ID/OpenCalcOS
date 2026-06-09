@@ -2,15 +2,15 @@
 #define _ASM_M32R_SPINLOCK_H
 
 /*
- *  linux/include/asm-m32r/spinlock.h
+ *  beep/include/asm-m32r/spinlock.h
  *
  *  M32R version:
  *    Copyright (C) 2001, 2002  Hitoshi Yamamoto
- *    Copyright (C) 2004  Hirokazu Takata <takata at linux-m32r.org>
+ *    Copyright (C) 2004  Hirokazu Takata <takata at beep-m32r.org>
  */
 
-#include <linux/compiler.h>
-#include <linux/atomic.h>
+#include <beep/compiler.h>
+#include <beep/atomic.h>
 #include <asm/dcache_clear.h>
 #include <asm/page.h>
 

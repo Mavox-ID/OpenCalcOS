@@ -1,6 +1,6 @@
 /*
  *	Extension Header handling for IPv6
- *	Linux INET6 implementation
+ *	Beep INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
@@ -21,16 +21,16 @@
  *				  handlers as inet6_protocol{}.
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/in6.h>
-#include <linux/icmpv6.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/socket.h>
+#include <beep/sockios.h>
+#include <beep/net.h>
+#include <beep/netdevice.h>
+#include <beep/in6.h>
+#include <beep/icmpv6.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 
 #include <net/dst.h>
 #include <net/sock.h>

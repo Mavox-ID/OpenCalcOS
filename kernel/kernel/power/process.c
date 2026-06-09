@@ -8,15 +8,15 @@
 
 #undef DEBUG
 
-#include <linux/interrupt.h>
-#include <linux/oom.h>
-#include <linux/suspend.h>
-#include <linux/module.h>
-#include <linux/syscalls.h>
-#include <linux/freezer.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/kmod.h>
+#include <beep/interrupt.h>
+#include <beep/oom.h>
+#include <beep/suspend.h>
+#include <beep/module.h>
+#include <beep/syscalls.h>
+#include <beep/freezer.h>
+#include <beep/delay.h>
+#include <beep/workqueue.h>
+#include <beep/kmod.h>
 
 /* 
  * Timeout for stopping processes

@@ -19,7 +19,7 @@
 /*  ----------------------------------- Host OS */
 #include <dspbridge/host_os.h>
 
-#include <linux/platform_data/dsp-omap.h>
+#include <beep/platform_data/dsp-omap.h>
 
 /*  ----------------------------------- DSP/BIOS Bridge */
 #include <dspbridge/dbdefs.h>

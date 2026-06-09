@@ -31,27 +31,27 @@
 #define SUPPORT_SYSRQ
 #endif
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/platform_device.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/rational.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/consumer.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/sysrq.h>
+#include <beep/platform_device.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/serial_core.h>
+#include <beep/serial.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/rational.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/pinctrl/consumer.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/platform_data/serial-imx.h>
+#include <beep/platform_data/serial-imx.h>
 
 /* Register definitions */
 #define URXD0 0x0  /* Receiver Register */

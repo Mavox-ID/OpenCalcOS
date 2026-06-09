@@ -7,7 +7,7 @@
  *
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <cpu/mmu_context.h>
 
 /*

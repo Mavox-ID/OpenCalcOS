@@ -23,7 +23,7 @@
  * 2005-12-08 Keith Owens <kaos@sgi.com>
  *		Use per cpu MCA/INIT stacks for all data.
  */
-#include <linux/threads.h>
+#include <beep/threads.h>
 
 #include <asm/asmmacro.h>
 #include <asm/pgtable.h>
@@ -923,7 +923,7 @@ ia64_new_stack:
 	add regs=regs, temp1		// struct pt_regs on MCA or INIT stack
 	;;
 	// Address of minstate area provided by PAL is physical, uncacheable.
-	// Convert to Linux virtual address in region 6 for C code.
+	// Convert to Beep virtual address in region 6 for C code.
 	ld8 ms=[temp2]			// pal_min_state, physical
 	;;
 	dep temp1=-1,ms,62,2		// set region 6

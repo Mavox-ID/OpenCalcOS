@@ -23,10 +23,10 @@
  * 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/kbuild.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
+#include <beep/kbuild.h>
+#include <beep/interrupt.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
 
 #include <asm-generic/cmpxchg-local.h>
 
@@ -144,7 +144,7 @@ void output_mm_defines(void)
 	COMMENT("Size of struct page");
 	DEFINE(STRUCT_PAGE_SIZE, sizeof(struct page));
 	BLANK();
-	COMMENT("Linux mm_struct offsets.");
+	COMMENT("Beep mm_struct offsets.");
 	OFFSET(MM_USERS, mm_struct, mm_users);
 	OFFSET(MM_PGD, mm_struct, pgd);
 	OFFSET(MM_CONTEXT, mm_struct, context);
@@ -167,7 +167,7 @@ void output_mm_defines(void)
 
 void output_sc_defines(void)
 {
-	COMMENT("Linux sigcontext offsets.");
+	COMMENT("Beep sigcontext offsets.");
 	OFFSET(SC_REGS, sigcontext, sc_regs);
 	OFFSET(SC_MDCEH, sigcontext, sc_mdceh);
 	OFFSET(SC_MDCEL, sigcontext, sc_mdcel);
@@ -180,7 +180,7 @@ void output_sc_defines(void)
 
 void output_signal_defined(void)
 {
-	COMMENT("Linux signal numbers.");
+	COMMENT("Beep signal numbers.");
 	DEFINE(_SIGHUP, SIGHUP);
 	DEFINE(_SIGINT, SIGINT);
 	DEFINE(_SIGQUIT, SIGQUIT);

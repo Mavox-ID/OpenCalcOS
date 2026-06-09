@@ -8,7 +8,7 @@
      card:   ACL-6126, ACL-6128
      driver: acl6126,  acl6128
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 1998 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -69,7 +69,7 @@ Interrupts are not supported.
 
 #include "../comedidev.h"
 
-#include <linux/ioport.h>
+#include <beep/ioport.h>
 
 #undef ACL6126_IRQ		/* no interrupt support (yet) */
 

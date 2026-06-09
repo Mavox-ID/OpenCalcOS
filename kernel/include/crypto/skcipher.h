@@ -13,9 +13,9 @@
 #ifndef _CRYPTO_SKCIPHER_H
 #define _CRYPTO_SKCIPHER_H
 
-#include <linux/crypto.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <beep/crypto.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
 
 /**
  *	struct skcipher_givcrypt_request - Crypto request with IV generation

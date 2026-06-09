@@ -20,7 +20,7 @@
 #ifndef _MISDN_FSM_H
 #define _MISDN_FSM_H
 
-#include <linux/timer.h>
+#include <beep/timer.h>
 
 /* Statemachine */
 

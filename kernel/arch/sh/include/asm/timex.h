@@ -1,5 +1,5 @@
 /*
- * linux/include/asm-sh/timex.h
+ * beep/include/asm-sh/timex.h
  *
  * sh architecture timex specifications
  */

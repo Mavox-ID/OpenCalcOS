@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-mmp/mmp2-dt.c
+ *  beep/arch/arm/mach-mmp/mmp2-dt.c
  *
  *  Copyright (C) 2012 Marvell Technology Group Ltd.
  *  Author: Haojian Zhuang <haojian.zhuang@marvell.com>
@@ -9,11 +9,11 @@
  *  publishhed by the Free Software Foundation.
  */
 
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/irqdomain.h>
+#include <beep/of_irq.h>
+#include <beep/of_platform.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/time.h>
 #include <mach/irqs.h>

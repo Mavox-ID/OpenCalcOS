@@ -6,10 +6,10 @@
  * This file is released under the GPL v2.
  */
 
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/rmap.h>
-#include <linux/interval_tree_generic.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/rmap.h>
+#include <beep/interval_tree_generic.h>
 
 static inline unsigned long vma_start_pgoff(struct vm_area_struct *v)
 {

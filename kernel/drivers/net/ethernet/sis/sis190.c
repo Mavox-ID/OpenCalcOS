@@ -21,19 +21,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/pci.h>
-#include <linux/mii.h>
-#include <linux/delay.h>
-#include <linux/crc32.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/netdevice.h>
+#include <beep/rtnetlink.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/pci.h>
+#include <beep/mii.h>
+#include <beep/delay.h>
+#include <beep/crc32.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
 #include <asm/irq.h>
 
 #define PHY_MAX_ADDR		32
@@ -233,7 +233,7 @@ enum _DescStatusBit {
 	RxSizeMask	= 0x0000ffff
 	/*
 	 * The asic could apparently do vlan, TSO, jumbo (sis191 only) and
-	 * provide two (unused with Linux) Tx queues. No publicly
+	 * provide two (unused with Beep) Tx queues. No publicly
 	 * available documentation alas.
 	 */
 };

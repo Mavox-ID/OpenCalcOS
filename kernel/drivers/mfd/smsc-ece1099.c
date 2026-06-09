@@ -11,19 +11,19 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/gpio.h>
-#include <linux/workqueue.h>
-#include <linux/irq.h>
-#include <linux/regmap.h>
-#include <linux/err.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/smsc.h>
-#include <linux/of_platform.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/gpio.h>
+#include <beep/workqueue.h>
+#include <beep/irq.h>
+#include <beep/regmap.h>
+#include <beep/err.h>
+#include <beep/mfd/core.h>
+#include <beep/mfd/smsc.h>
+#include <beep/of_platform.h>
 
 static struct regmap_config smsc_regmap_config = {
 		.reg_bits = 8,

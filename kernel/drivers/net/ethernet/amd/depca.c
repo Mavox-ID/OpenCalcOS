@@ -1,4 +1,4 @@
-/*  depca.c: A DIGITAL DEPCA & EtherWORKS ethernet driver for linux.
+/*  depca.c: A DIGITAL DEPCA & EtherWORKS ethernet driver for beep.
 
     Written 1994, 1995 by David C. Davies.
 
@@ -31,7 +31,7 @@
 
     This  driver will NOT work   for the DE203,  DE204  and DE205 series  of
     cards,  since they have  a  new custom ASIC in   place of the AMD  LANCE
-    chip.  See the 'ewrk3.c'   driver in the  Linux  source tree for running
+    chip.  See the 'ewrk3.c'   driver in the  Beep  source tree for running
     those cards.
 
     I have benchmarked the driver with a  DE100 at 595kB/s to (542kB/s from)
@@ -43,10 +43,10 @@
 
     The  driver was originally based  on   the 'lance.c' driver from  Donald
     Becker   which  is included with  the  standard  driver distribution for
-    linux.  V0.4  is  a complete  re-write  with only  the kernel  interface
+    beep.  V0.4  is  a complete  re-write  with only  the kernel  interface
     remaining from the original code.
 
-    1) Lance.c code in /linux/drivers/net/
+    1) Lance.c code in /beep/drivers/net/
     2) "Ethernet/IEEE 802.3 Family. 1992 World Network Data Book/Handbook",
        AMD, 1992 [(800) 222-9323].
     3) "Am79C90 CMOS Local Area Network Controller for Ethernet (C-LANCE)",
@@ -123,7 +123,7 @@
     utilise this ability, you have to do <8 things:
 
     0) have a copy of the loadable modules code installed on your system.
-    1) copy depca.c from the  /linux/drivers/net directory to your favourite
+    1) copy depca.c from the  /beep/drivers/net directory to your favourite
     temporary directory.
     2) if you wish, edit the  source code near  line 1530 to reflect the I/O
     address and IRQ you're using (see also 5).
@@ -179,7 +179,7 @@
       0.37    22-jul-94   Added MODULE support
       0.38    15-aug-94   Added DBR ROM switch in depca_close().
                           Multi DEPCA bug fix.
-      0.38axp 15-sep-94   Special version for Alpha AXP Linux V1.0.
+      0.38axp 15-sep-94   Special version for Alpha AXP Beep V1.0.
       0.381   12-dec-94   Added DE101 recognition, fix multicast bug.
       0.382    9-feb-95   Fix recognition bug reported by <bkm@star.rl.ac.uk>.
       0.383   22-feb-95   Fix for conflict with VESA SCSI reported by
@@ -222,34 +222,34 @@
     =========================================================================
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/crc32.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/time.h>
-#include <linux/types.h>
-#include <linux/unistd.h>
-#include <linux/ctype.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/bitops.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/crc32.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/time.h>
+#include <beep/types.h>
+#include <beep/unistd.h>
+#include <beep/ctype.h>
+#include <beep/moduleparam.h>
+#include <beep/platform_device.h>
+#include <beep/bitops.h>
 
 #include <asm/uaccess.h>
 #include <asm/io.h>
 #include <asm/dma.h>
 
 #ifdef CONFIG_EISA
-#include <linux/eisa.h>
+#include <beep/eisa.h>
 #endif
 
 #include "depca.h"

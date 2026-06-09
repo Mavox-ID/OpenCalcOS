@@ -1,12 +1,12 @@
-#include <linux/syscalls.h>
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/statfs.h>
-#include <linux/security.h>
-#include <linux/uaccess.h>
+#include <beep/syscalls.h>
+#include <beep/export.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/mount.h>
+#include <beep/namei.h>
+#include <beep/statfs.h>
+#include <beep/security.h>
+#include <beep/uaccess.h>
 #include "internal.h"
 
 static int flags_by_mnt(int mnt_flags)

@@ -12,25 +12,25 @@
  *   more details.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>      /* printk() */
-#include <linux/slab.h>        /* kmalloc() */
-#include <linux/errno.h>       /* error codes */
-#include <linux/types.h>       /* size_t */
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/netdevice.h>   /* struct device, and other headers */
-#include <linux/etherdevice.h> /* eth_type_trans */
-#include <linux/skbuff.h>
-#include <linux/ioctl.h>
-#include <linux/cdev.h>
-#include <linux/hugetlb.h>
-#include <linux/in6.h>
-#include <linux/timer.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/moduleparam.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>      /* printk() */
+#include <beep/slab.h>        /* kmalloc() */
+#include <beep/errno.h>       /* error codes */
+#include <beep/types.h>       /* size_t */
+#include <beep/interrupt.h>
+#include <beep/in.h>
+#include <beep/netdevice.h>   /* struct device, and other headers */
+#include <beep/etherdevice.h> /* eth_type_trans */
+#include <beep/skbuff.h>
+#include <beep/ioctl.h>
+#include <beep/cdev.h>
+#include <beep/hugetlb.h>
+#include <beep/in6.h>
+#include <beep/timer.h>
+#include <beep/io.h>
 #include <asm/checksum.h>
 #include <asm/homecache.h>
 
@@ -40,13 +40,13 @@
 #include <hv/netio_intf.h>
 
 /* For TSO */
-#include <linux/ip.h>
-#include <linux/tcp.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
 
 
 /*
  * First, "tile_net_init_module()" initializes all four "devices" which
- * can be used by linux.
+ * can be used by beep.
  *
  * Then, "ifconfig DEVICE up" calls "tile_net_open()", which analyzes
  * the network cpus, then uses "tile_net_open_aux()" to initialize
@@ -98,7 +98,7 @@
 /* HACK: Define this to verify incoming packets. */
 /* #define TILE_NET_VERIFY_INGRESS */
 
-/* Use 3000 to enable the Linux Traffic Control (QoS) layer, else 0. */
+/* Use 3000 to enable the Beep Traffic Control (QoS) layer, else 0. */
 #define TILE_NET_TX_QUEUE_LEN 0
 
 /* Define to dump packets (prints out the whole packet on tx and rx). */
@@ -358,14 +358,14 @@ static void tile_net_return_credit(struct tile_net_cpu *info)
 
 
 /*
- * Provide a linux buffer to LIPP.
+ * Provide a beep buffer to LIPP.
  */
-static void tile_net_provide_linux_buffer(struct tile_net_cpu *info,
+static void tile_net_provide_beep_buffer(struct tile_net_cpu *info,
 					  void *va, bool small)
 {
 	struct tile_netio_queue *queue = &info->queue;
 
-	/* Convert "va" and "small" to "linux_buffer_t". */
+	/* Convert "va" and "small" to "beep_buffer_t". */
 	unsigned int buffer = ((unsigned int)(__pa(va) >> 7) << 1) + small;
 
 	__netio_fastio_free_buffer(queue->__user_part.__fastio_index, buffer);
@@ -373,7 +373,7 @@ static void tile_net_provide_linux_buffer(struct tile_net_cpu *info,
 
 
 /*
- * Provide a linux buffer for LIPP.
+ * Provide a beep buffer for LIPP.
  *
  * Note that the ACTUAL allocation for each buffer is a "struct sk_buff",
  * plus a chunk of memory that includes not only the requested bytes, but
@@ -388,7 +388,7 @@ static void tile_net_provide_linux_buffer(struct tile_net_cpu *info,
  * could save an entire cache line, but in practice, we don't need it.
  *
  * Since CPAs are 38 bits, and we can only encode the high 31 bits in
- * a "linux_buffer_t", the low 7 bits must be zero, and thus, we must
+ * a "beep_buffer_t", the low 7 bits must be zero, and thus, we must
  * align the actual "va" mod 128.
  *
  * We assume that the underlying "head" will be aligned mod 64.  Note
@@ -491,14 +491,14 @@ static bool tile_net_provide_needed_buffer(struct tile_net_cpu *info,
 	__insn_mf();
 
 	/* Provide the new buffer. */
-	tile_net_provide_linux_buffer(info, va, small);
+	tile_net_provide_beep_buffer(info, va, small);
 
 	return true;
 }
 
 
 /*
- * Provide linux buffers for LIPP.
+ * Provide beep buffers for LIPP.
  */
 static void tile_net_provide_needed_buffers(struct tile_net_cpu *info)
 {
@@ -519,7 +519,7 @@ static void tile_net_provide_needed_buffers(struct tile_net_cpu *info)
 oops:
 
 	/* Add a description to the page allocation failure dump. */
-	pr_notice("Could not provide a linux buffer to LIPP.\n");
+	pr_notice("Could not provide a beep buffer to LIPP.\n");
 }
 
 
@@ -714,10 +714,10 @@ static void tile_net_discard_aux(struct tile_net_cpu *info, int index)
 
 	netio_pkt_t *pkt = (netio_pkt_t *)((unsigned long) &qsp[1] + index);
 
-	/* Extract the "linux_buffer_t". */
+	/* Extract the "beep_buffer_t". */
 	unsigned int buffer = pkt->__packet.word;
 
-	/* Convert "linux_buffer_t" to "va". */
+	/* Convert "beep_buffer_t" to "va". */
 	void *va = __va((phys_addr_t)(buffer >> 1) << 7);
 
 	/* Acquire the associated "skb". */
@@ -781,13 +781,13 @@ static bool tile_net_poll_aux(struct tile_net_cpu *info, int index)
 		(NETIO_PKT_CUSTOM_LENGTH(pkt) +
 		 NET_IP_ALIGN - NETIO_PACKET_PADDING);
 
-	/* Extract the "linux_buffer_t". */
+	/* Extract the "beep_buffer_t". */
 	unsigned int buffer = pkt->__packet.word;
 
 	/* Extract "small" (vs "large"). */
 	bool small = ((buffer & 1) != 0);
 
-	/* Convert "linux_buffer_t" to "va". */
+	/* Convert "beep_buffer_t" to "va". */
 	void *va = __va((phys_addr_t)(buffer >> 1) << 7);
 
 	/* Extract the packet data pointer. */
@@ -851,7 +851,7 @@ static bool tile_net_poll_aux(struct tile_net_cpu *info, int index)
 
 		/* ISSUE: Update "drop" statistics? */
 
-		tile_net_provide_linux_buffer(info, va, small);
+		tile_net_provide_beep_buffer(info, va, small);
 
 	} else {
 
@@ -861,7 +861,7 @@ static bool tile_net_poll_aux(struct tile_net_cpu *info, int index)
 
 		/* Paranoia. */
 		if (skb->data != buf)
-			panic("Corrupt linux buffer from LIPP! "
+			panic("Corrupt beep buffer from LIPP! "
 			      "VA=%p, skb=%p, skb->data=%p\n",
 			      va, skb, skb->data);
 
@@ -1440,7 +1440,7 @@ static void tile_net_open_retry(struct work_struct *w)
 
 	/*
 	 * Try to bring the NetIO interface up.  If it fails, reschedule
-	 * ourselves to try again later; otherwise, tell Linux we now have
+	 * ourselves to try again later; otherwise, tell Beep we now have
 	 * a working link.  ISSUE: What if the return value is negative?
 	 */
 	if (tile_net_open_inner(priv->dev) != 0)
@@ -1462,7 +1462,7 @@ static void tile_net_open_retry(struct work_struct *w)
  * handler is registered with the OS (if needed), the watchdog timer
  * is started, and the stack is notified that the interface is ready.
  *
- * If the actual link is not available yet, then we tell Linux that
+ * If the actual link is not available yet, then we tell Beep that
  * we have no carrier, and we keep checking until the link comes up.
  */
 static int tile_net_open(struct net_device *dev)
@@ -1533,7 +1533,7 @@ static int tile_net_open(struct net_device *dev)
 
 	/*
 	 * We were unable to bring up the NetIO interface, but we want to
-	 * try again in a little bit.  Tell Linux that we have no carrier
+	 * try again in a little bit.  Tell Beep that we have no carrier
 	 * so it doesn't try to use the interface before the link comes up
 	 * and then remember to try again later.
 	 */
@@ -1562,7 +1562,7 @@ static int tile_net_drain_lipp_buffers(struct tile_net_priv *priv)
 			break;
 
 		{
-			/* Convert "linux_buffer_t" to "va". */
+			/* Convert "beep_buffer_t" to "va". */
 			void *va = __va((phys_addr_t)(buffer >> 1) << 7);
 
 			/* Acquire the associated "skb". */
@@ -1956,7 +1956,7 @@ static int tile_net_tx(struct sk_buff *skb, struct net_device *dev)
 
 	/*
 	 * This is paranoia, since we think that if the link doesn't come
-	 * up, telling Linux we have no carrier will keep it from trying
+	 * up, telling Beep we have no carrier will keep it from trying
 	 * to transmit.  If it does, though, we can't execute this routine,
 	 * since data structures we depend on aren't set up yet.
 	 */
@@ -2478,7 +2478,7 @@ static int __init network_cpus_setup(char *str)
 		} else {
 			char buf[1024];
 			cpulist_scnprintf(buf, sizeof(buf), &network_cpus_map);
-			pr_info("Linux network CPUs: %s\n", buf);
+			pr_info("Beep network CPUs: %s\n", buf);
 			network_cpus_used = true;
 		}
 	}

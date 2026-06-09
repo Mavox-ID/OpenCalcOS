@@ -11,8 +11,8 @@
  * (at your option) any later version.
  *
  */
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/init.h>
 #include "rtl_crypto.h"
 
 #define ARC4_MIN_KEY_SIZE	1

@@ -1,4 +1,4 @@
-#include <linux/of.h>	/* linux/of.h gets to determine #include ordering */
+#include <beep/of.h>	/* beep/of.h gets to determine #include ordering */
 #ifndef _SPARC_PROM_H
 #define _SPARC_PROM_H
 #ifdef __KERNEL__
@@ -17,12 +17,12 @@
  * as published by the Free Software Foundation; either version
  * 2 of the License, or (at your option) any later version.
  */
-#include <linux/types.h>
-#include <linux/of_pdt.h>
-#include <linux/proc_fs.h>
-#include <linux/mutex.h>
-#include <linux/atomic.h>
-#include <linux/irqdomain.h>
+#include <beep/types.h>
+#include <beep/of_pdt.h>
+#include <beep/proc_fs.h>
+#include <beep/mutex.h>
+#include <beep/atomic.h>
+#include <beep/irqdomain.h>
 
 #define OF_ROOT_NODE_ADDR_CELLS_DEFAULT	2
 #define OF_ROOT_NODE_SIZE_CELLS_DEFAULT	1

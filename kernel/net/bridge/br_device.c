@@ -1,6 +1,6 @@
 /*
  *	Device handling code
- *	Linux ethernet bridge
+ *	Beep ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
@@ -11,13 +11,13 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/netpoll.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/list.h>
-#include <linux/netfilter_bridge.h>
+#include <beep/kernel.h>
+#include <beep/netdevice.h>
+#include <beep/netpoll.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/list.h>
+#include <beep/netfilter_bridge.h>
 
 #include <asm/uaccess.h>
 #include "br_private.h"

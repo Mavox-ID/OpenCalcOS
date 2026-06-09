@@ -4,24 +4,24 @@
  * Copyright 2012 IBM Corp.
  *
  * Author(s):
- *   Jan Glauber <jang@linux.vnet.ibm.com>
+ *   Jan Glauber <jang@beep.vnet.ibm.com>
  */
 
 #define COMPONENT "zPCI hpc"
 #define pr_fmt(fmt) COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/pci_hotplug.h>
+#include <beep/init.h>
 #include <asm/sclp.h>
 
 #define SLOT_NAME_SIZE	10
 static LIST_HEAD(s390_hotplug_slot_list);
 
-MODULE_AUTHOR("Jan Glauber <jang@linux.vnet.ibm.com");
+MODULE_AUTHOR("Jan Glauber <jang@beep.vnet.ibm.com");
 MODULE_DESCRIPTION("Hot Plug PCI Controller for System z");
 MODULE_LICENSE("GPL");
 

@@ -17,9 +17,9 @@
  * Implementation of USB gxio calls.
  */
 
-#include <linux/io.h>
-#include <linux/errno.h>
-#include <linux/module.h>
+#include <beep/io.h>
+#include <beep/errno.h>
+#include <beep/module.h>
 
 #include <gxio/iorpc_globals.h>
 #include <gxio/iorpc_usb_host.h>

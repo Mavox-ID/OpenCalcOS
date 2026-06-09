@@ -8,14 +8,14 @@
  * Driver is originally developed by Pavel Sokolov <psokolov@synopsys.com>
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/input.h>
+#include <beep/serio.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
 
 #define ARC_PS2_PORTS                   2
 

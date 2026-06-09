@@ -19,9 +19,9 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/spi/spi.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
+#include <beep/spi/spi.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
 #include <net/wpan-phy.h>
 #include <net/mac802154.h>
 

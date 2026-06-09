@@ -1,5 +1,5 @@
 /*
- *  linux/arch/powerpc/platforms/cell/cell_setup.c
+ *  beep/arch/powerpc/platforms/cell/cell_setup.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  *  Adapted from 'alpha' version by Gary Thomas
@@ -14,23 +14,23 @@
  */
 #undef DEBUG
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/export.h>
-#include <linux/unistd.h>
-#include <linux/user.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/seq_file.h>
-#include <linux/root_dev.h>
-#include <linux/console.h>
-#include <linux/mutex.h>
-#include <linux/memory_hotplug.h>
-#include <linux/of_platform.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/stddef.h>
+#include <beep/export.h>
+#include <beep/unistd.h>
+#include <beep/user.h>
+#include <beep/reboot.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/seq_file.h>
+#include <beep/root_dev.h>
+#include <beep/console.h>
+#include <beep/mutex.h>
+#include <beep/memory_hotplug.h>
+#include <beep/of_platform.h>
 
 #include <asm/mmu.h>
 #include <asm/processor.h>

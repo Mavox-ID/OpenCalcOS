@@ -8,29 +8,29 @@
  * Core platform support, IRQ handling and device definitions.
  * Author: Linus Walleij <linus.walleij@stericsson.com>
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/termios.h>
-#include <linux/dmaengine.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/mmci.h>
-#include <linux/amba/serial.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/fsmc.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_data/clk-u300.h>
-#include <linux/platform_data/pinctrl-coh901.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/bitops.h>
+#include <beep/device.h>
+#include <beep/mm.h>
+#include <beep/termios.h>
+#include <beep/dmaengine.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/mmci.h>
+#include <beep/amba/serial.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/fsmc.h>
+#include <beep/pinctrl/machine.h>
+#include <beep/pinctrl/pinconf-generic.h>
+#include <beep/dma-mapping.h>
+#include <beep/platform_data/clk-u300.h>
+#include <beep/platform_data/pinctrl-coh901.h>
 
 #include <asm/types.h>
 #include <asm/setup.h>

@@ -1,19 +1,19 @@
 /*
- *  linux/fs/filesystems.c
+ *  beep/fs/filesystems.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
  *  table of configured filesystems
  */
 
-#include <linux/syscalls.h>
-#include <linux/fs.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/kmod.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/syscalls.h>
+#include <beep/fs.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/kmod.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
 
 /*

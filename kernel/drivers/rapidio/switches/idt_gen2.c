@@ -10,11 +10,11 @@
  * option) any later version.
  */
 
-#include <linux/stat.h>
-#include <linux/rio.h>
-#include <linux/rio_drv.h>
-#include <linux/rio_ids.h>
-#include <linux/delay.h>
+#include <beep/stat.h>
+#include <beep/rio.h>
+#include <beep/rio_drv.h>
+#include <beep/rio_ids.h>
+#include <beep/delay.h>
 #include "../rio.h"
 
 #define LOCAL_RTE_CONF_DESTID_SEL	0x010070

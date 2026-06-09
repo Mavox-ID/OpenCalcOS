@@ -27,14 +27,14 @@
 #define pr_fmt(fmt) "IPv6: " fmt
 
 #include <crypto/hash.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 #include <net/ip.h>
 #include <net/ah.h>
-#include <linux/crypto.h>
-#include <linux/pfkeyv2.h>
-#include <linux/string.h>
-#include <linux/scatterlist.h>
+#include <beep/crypto.h>
+#include <beep/pfkeyv2.h>
+#include <beep/string.h>
+#include <beep/scatterlist.h>
 #include <net/ip6_route.h>
 #include <net/icmp.h>
 #include <net/ipv6.h>

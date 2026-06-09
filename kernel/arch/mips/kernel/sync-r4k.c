@@ -10,13 +10,13 @@
  * FIXME: broken for SMTC
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irqflags.h>
-#include <linux/cpumask.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/irqflags.h>
+#include <beep/cpumask.h>
 
 #include <asm/r4k-timer.h>
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/barrier.h>
 #include <asm/mipsregs.h>
 

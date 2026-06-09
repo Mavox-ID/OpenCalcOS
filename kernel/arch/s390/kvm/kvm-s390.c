@@ -13,16 +13,16 @@
  *               Christian Ehrhardt <ehrhardt@de.ibm.com>
  */
 
-#include <linux/compiler.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/hrtimer.h>
-#include <linux/init.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
+#include <beep/compiler.h>
+#include <beep/err.h>
+#include <beep/fs.h>
+#include <beep/hrtimer.h>
+#include <beep/init.h>
+#include <beep/kvm.h>
+#include <beep/kvm_host.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/timer.h>
 #include <asm/asm-offsets.h>
 #include <asm/lowcore.h>
 #include <asm/pgtable.h>

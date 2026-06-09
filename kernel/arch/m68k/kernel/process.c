@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/kernel/process.c
+ *  beep/arch/m68k/kernel/process.c
  *
  *  Copyright (C) 1995  Hamish Macdonald
  *
@@ -10,22 +10,22 @@
  * This file handles the architecture-dependent parts of process handling..
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/reboot.h>
-#include <linux/init_task.h>
-#include <linux/mqueue.h>
-#include <linux/rcupdate.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
+#include <beep/smp.h>
+#include <beep/stddef.h>
+#include <beep/unistd.h>
+#include <beep/ptrace.h>
+#include <beep/user.h>
+#include <beep/reboot.h>
+#include <beep/init_task.h>
+#include <beep/mqueue.h>
+#include <beep/rcupdate.h>
 
 #include <asm/uaccess.h>
 #include <asm/traps.h>

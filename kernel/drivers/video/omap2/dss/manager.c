@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/omap2/dss/manager.c
+ * beep/drivers/video/omap2/dss/manager.c
  *
  * Copyright (C) 2009 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -22,11 +22,11 @@
 
 #define DSS_SUBSYS_NAME "MANAGER"
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/jiffies.h>
 
 #include <video/omapdss.h>
 

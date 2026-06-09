@@ -36,7 +36,7 @@
  *  - ITO Takayuki for providing essential xpad information on his website
  *  - Vojtech Pavlik     - iforce driver / input subsystem
  *  - Greg Kroah-Hartman - usb-skeleton driver
- *  - XBOX Linux project - extra USB id's
+ *  - XBOX Beep project - extra USB id's
  *
  * TODO:
  *  - fine tune axes (especially trigger axes)
@@ -64,7 +64,7 @@
  * 2002-07-17 - 0.0.5 : simplified d-pad handling
  *
  * 2004-10-02 - 0.0.6 : DDR pad support
- *  - borrowed from the XBOX linux kernel
+ *  - borrowed from the XBOX beep kernel
  *  - USB id's for commonly used dance pads are present
  *  - dance pads will map D-PAD to buttons, not axes
  *  - pass the module paramater 'dpad_to_buttons' to force
@@ -73,12 +73,12 @@
  * Later changes can be tracked in SCM.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/module.h>
-#include <linux/usb/input.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/stat.h>
+#include <beep/module.h>
+#include <beep/usb/input.h>
 
 #define DRIVER_AUTHOR "Marko Friedemann <mfr@bmx-chemnitz.de>"
 #define DRIVER_DESC "X-Box pad driver"
@@ -703,7 +703,7 @@ static int xpad_init_ff(struct usb_xpad *xpad) { return 0; }
 #endif
 
 #if defined(CONFIG_JOYSTICK_XPAD_LEDS)
-#include <linux/leds.h>
+#include <beep/leds.h>
 
 struct xpad_led {
 	char name[16];

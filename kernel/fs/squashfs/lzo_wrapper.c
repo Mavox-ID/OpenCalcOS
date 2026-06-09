@@ -1,5 +1,5 @@
 /*
- * Squashfs - a compressed read only filesystem for Linux
+ * Squashfs - a compressed read only filesystem for Beep
  *
  * Copyright (c) 2010 LG Electronics
  * Chan Jeong <chan.jeong@lge.com>
@@ -21,11 +21,11 @@
  * lzo_wrapper.c
  */
 
-#include <linux/mutex.h>
-#include <linux/buffer_head.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/lzo.h>
+#include <beep/mutex.h>
+#include <beep/buffer_head.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/lzo.h>
 
 #include "squashfs_fs.h"
 #include "squashfs_fs_sb.h"

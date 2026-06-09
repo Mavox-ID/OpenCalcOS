@@ -12,12 +12,12 @@
  *   more details.
  */
 
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel_stat.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/seq_file.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/kernel_stat.h>
+#include <beep/uaccess.h>
 #include <hv/drv_pcie_rc_intf.h>
 #include <arch/spr_def.h>
 #include <asm/traps.h>
@@ -122,7 +122,7 @@ void tile_dev_intr(struct pt_regs *regs, int intnum)
 		unsigned long irq = __ffs(remaining_irqs);
 		remaining_irqs &= ~(1UL << irq);
 
-		/* Count device irqs; Linux IPIs are counted elsewhere. */
+		/* Count device irqs; Beep IPIs are counted elsewhere. */
 		if (irq != IRQ_RESCHEDULE)
 			__get_cpu_var(irq_stat).irq_dev_intr_count++;
 

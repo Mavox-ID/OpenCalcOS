@@ -12,7 +12,7 @@
  *     Laboratoire MASI - Institut Blaise Pascal
  *     Universite Pierre et Marie Curie (Paris VI)
  *     from
- *     linux/fs/minix/inode.c
+ *     beep/fs/minix/inode.c
  *     Copyright (C) 1991, 1992  Linus Torvalds
  *
  * This file is part of exofs.
@@ -20,7 +20,7 @@
  * exofs is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation.  Since it is based on ext2, and the only
- * valid version of GPL for the Linux kernel is version 2, the only valid
+ * valid version of GPL for the Beep kernel is version 2, the only valid
  * version of GPL for exofs is version 2.
  *
  * exofs is distributed in the hope that it will be useful,
@@ -36,7 +36,7 @@
 #ifndef __EXOFS_COM_H__
 #define __EXOFS_COM_H__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #include <scsi/osd_attributes.h>
 #include <scsi/osd_initiator.h>

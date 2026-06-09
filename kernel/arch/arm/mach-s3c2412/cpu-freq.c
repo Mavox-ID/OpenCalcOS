@@ -1,7 +1,7 @@
-/* linux/arch/arm/mach-s3c2412/cpu-freq.c
+/* beep/arch/arm/mach-s3c2412/cpu-freq.c
  *
  * Copyright 2008 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C2412 CPU Frequency scalling
@@ -11,16 +11,16 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/cpufreq.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/cpufreq.h>
+#include <beep/device.h>
+#include <beep/delay.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/io.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

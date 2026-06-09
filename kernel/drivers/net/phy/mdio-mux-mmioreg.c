@@ -10,14 +10,14 @@
  * kind, whether express or implied.
  */
 
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/of_address.h>
-#include <linux/of_mdio.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/phy.h>
-#include <linux/mdio-mux.h>
+#include <beep/platform_device.h>
+#include <beep/device.h>
+#include <beep/of_address.h>
+#include <beep/of_mdio.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/phy.h>
+#include <beep/mdio-mux.h>
 
 struct mdio_mux_mmioreg_state {
 	void *mux_handle;

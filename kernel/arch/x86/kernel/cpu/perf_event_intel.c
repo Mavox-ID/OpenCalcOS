@@ -7,11 +7,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/stddef.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/stddef.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 
 #include <asm/hardirq.h>
 #include <asm/apic.h>

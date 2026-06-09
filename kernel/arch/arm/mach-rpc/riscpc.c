@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-rpc/riscpc.c
+ *  beep/arch/arm/mach-rpc/riscpc.c
  *
  *  Copyright (C) 1998-2001 Russell King
  *
@@ -9,17 +9,17 @@
  *
  *  Architecture specific fixups.
  */
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/device.h>
-#include <linux/serial_8250.h>
-#include <linux/ata_platform.h>
-#include <linux/io.h>
-#include <linux/i2c.h>
+#include <beep/kernel.h>
+#include <beep/tty.h>
+#include <beep/delay.h>
+#include <beep/pm.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/device.h>
+#include <beep/serial_8250.h>
+#include <beep/ata_platform.h>
+#include <beep/io.h>
+#include <beep/i2c.h>
 
 #include <asm/elf.h>
 #include <asm/mach-types.h>

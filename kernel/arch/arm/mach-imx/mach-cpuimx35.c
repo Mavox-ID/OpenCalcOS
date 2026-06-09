@@ -17,20 +17,20 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/init.h>
 
-#include <linux/platform_device.h>
-#include <linux/mtd/physmap.h>
-#include <linux/memory.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/i2c/tsc2007.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/ulpi.h>
-#include <linux/i2c-gpio.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/physmap.h>
+#include <beep/memory.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/i2c/tsc2007.h>
+#include <beep/usb/otg.h>
+#include <beep/usb/ulpi.h>
+#include <beep/i2c-gpio.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

@@ -25,7 +25,7 @@
 #ifndef AF9013_H
 #define AF9013_H
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 
 /* AF9013/5 GPIOs (mostly guessed)
    demod#1-gpio#0 - set demod#2 i2c-addr for dual devices

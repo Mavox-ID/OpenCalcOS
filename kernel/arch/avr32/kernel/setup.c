@@ -6,19 +6,19 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/clk.h>
-#include <linux/init.h>
-#include <linux/initrd.h>
-#include <linux/sched.h>
-#include <linux/console.h>
-#include <linux/ioport.h>
-#include <linux/bootmem.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/pfn.h>
-#include <linux/root_dev.h>
-#include <linux/cpu.h>
-#include <linux/kernel.h>
+#include <beep/clk.h>
+#include <beep/init.h>
+#include <beep/initrd.h>
+#include <beep/sched.h>
+#include <beep/console.h>
+#include <beep/ioport.h>
+#include <beep/bootmem.h>
+#include <beep/fs.h>
+#include <beep/module.h>
+#include <beep/pfn.h>
+#include <beep/root_dev.h>
+#include <beep/cpu.h>
+#include <beep/kernel.h>
 
 #include <asm/sections.h>
 #include <asm/processor.h>

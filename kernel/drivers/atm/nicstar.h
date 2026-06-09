@@ -9,18 +9,18 @@
  * (C) INESC 1998
  */
 
-#ifndef _LINUX_NICSTAR_H_
-#define _LINUX_NICSTAR_H_
+#ifndef _BEEP_NICSTAR_H_
+#define _BEEP_NICSTAR_H_
 
 /* Includes */
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/idr.h>
-#include <linux/uio.h>
-#include <linux/skbuff.h>
-#include <linux/atmdev.h>
-#include <linux/atm_nicstar.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/idr.h>
+#include <beep/uio.h>
+#include <beep/skbuff.h>
+#include <beep/atmdev.h>
+#include <beep/atm_nicstar.h>
 
 /* Options */
 
@@ -755,4 +755,4 @@ typedef struct ns_dev {
       scd2vc allows us to find out unused fixed rate SCDs, because
       they must have a NULL pointer here. */
 
-#endif /* _LINUX_NICSTAR_H_ */
+#endif /* _BEEP_NICSTAR_H_ */

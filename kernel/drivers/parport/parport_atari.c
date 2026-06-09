@@ -9,10 +9,10 @@
  * and 1 input status line (BUSY) able to cause an interrupt.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/parport.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/parport.h>
+#include <beep/interrupt.h>
 #include <asm/setup.h>
 #include <asm/atarihw.h>
 #include <asm/irq.h>

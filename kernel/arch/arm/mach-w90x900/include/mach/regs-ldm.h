@@ -11,7 +11,7 @@
  *
  *  Description:
  *     Nuvoton Display, LCM Register list
- *  Author:  Wang Qiang (rurality.linux@gmail.com) 2009/12/11
+ *  Author:  Wang Qiang (rurality.beep@gmail.com) 2009/12/11
  *
  */
 

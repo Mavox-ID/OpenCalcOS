@@ -7,24 +7,24 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
 #if defined(CONFIG_USB_ISP1362_HCD) || defined(CONFIG_USB_ISP1362_HCD_MODULE)
-#include <linux/usb/isp1362.h>
+#include <beep/usb/isp1362.h>
 #endif
-#include <linux/ata_platform.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/usb/sl811.h>
+#include <beep/ata_platform.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/usb/sl811.h>
 #include <asm/dma.h>
 #include <asm/bfin5xx_spi.h>
 #include <asm/reboot.h>
 #include <asm/portmux.h>
-#include <linux/spi/ad7877.h>
+#include <beep/spi/ad7877.h>
 
 /*
  * Name the Board for the /proc/cpuinfo
@@ -68,7 +68,7 @@ static struct platform_device rtc_device = {
 #endif
 
 #if defined(CONFIG_BFIN_MAC) || defined(CONFIG_BFIN_MAC_MODULE)
-#include <linux/bfin_mac.h>
+#include <beep/bfin_mac.h>
 static const unsigned short bfin_mac_peripherals[] = P_MII0;
 
 static struct bfin_phydev_platform_data bfin_phydev_data[] = {

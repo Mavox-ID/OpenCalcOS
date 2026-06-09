@@ -35,7 +35,7 @@
 #ifndef _MUSB_HOST_H
 #define _MUSB_HOST_H
 
-#include <linux/scatterlist.h>
+#include <beep/scatterlist.h>
 
 static inline struct usb_hcd *musb_to_hcd(struct musb *musb)
 {

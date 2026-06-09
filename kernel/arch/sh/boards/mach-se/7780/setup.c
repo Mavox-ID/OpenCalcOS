@@ -1,5 +1,5 @@
 /*
- * linux/arch/sh/boards/se/7780/setup.c
+ * beep/arch/sh/boards/se/7780/setup.c
  *
  * Copyright (C) 2006,2007  Nobuhiro Iwamatsu
  *
@@ -9,8 +9,8 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
 #include <asm/machvec.h>
 #include <mach-se/mach/se7780.h>
 #include <asm/io.h>
@@ -74,7 +74,7 @@ device_initcall(se7780_devices_setup);
 
 static void __init se7780_setup(char **cmdline_p)
 {
-	/* "SH-Linux" on LED Display */
+	/* "SH-Beep" on LED Display */
 	__raw_writew( 'S' , PA_LED_DISP + (DISP_SEL0_ADDR << 1) );
 	__raw_writew( 'H' , PA_LED_DISP + (DISP_SEL1_ADDR << 1) );
 	__raw_writew( '-' , PA_LED_DISP + (DISP_SEL2_ADDR << 1) );

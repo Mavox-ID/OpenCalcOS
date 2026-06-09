@@ -17,10 +17,10 @@
 #define _ASM_POWERPC_SMP_H
 #ifdef __KERNEL__
 
-#include <linux/threads.h>
-#include <linux/cpumask.h>
-#include <linux/kernel.h>
-#include <linux/irqreturn.h>
+#include <beep/threads.h>
+#include <beep/cpumask.h>
+#include <beep/kernel.h>
+#include <beep/irqreturn.h>
 
 #ifndef __ASSEMBLY__
 

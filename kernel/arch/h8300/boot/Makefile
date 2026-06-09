@@ -1,22 +1,22 @@
 # arch/h8300/boot/Makefile
 
-targets := vmlinux.srec vmlinux.bin zCalc
+targets := vmbeep.srec vmbeep.bin zCalc
 subdir- := compressed
 
-OBJCOPYFLAGS_vmlinux.srec := -Osrec
-OBJCOPYFLAGS_vmlinux.bin  := -Obinary
+OBJCOPYFLAGS_vmbeep.srec := -Osrec
+OBJCOPYFLAGS_vmbeep.bin  := -Obinary
 OBJCOPYFLAGS_zImage := -O binary -R .note -R .comment -R .stab -R .stabstr -S
 
-$(obj)/vmlinux.srec $(obj)/vmlinux.bin:  vmlinux FORCE
+$(obj)/vmbeep.srec $(obj)/vmbeep.bin:  vmbeep FORCE
 	$(call if_changed,objcopy)
 	@echo '  Kernel: $@ is ready'
 
-$(obj)/zCalc: $(obj)/compressed/vmlinux FORCE
+$(obj)/zCalc: $(obj)/compressed/vmbeep FORCE
 	$(call if_changed,objcopy)
 	@echo 'Kernel: $@ is ready'
 
-$(obj)/compressed/vmlinux: FORCE
+$(obj)/compressed/vmbeep: FORCE
 	$(Q)$(MAKE) $(build)=$(obj)/compressed $@
 
-CLEAN_FILES += arch/$(ARCH)/vmlinux.bin arch/$(ARCH)/vmlinux.srec
+CLEAN_FILES += arch/$(ARCH)/vmbeep.bin arch/$(ARCH)/vmbeep.srec
 

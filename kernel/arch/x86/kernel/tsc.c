@@ -1,16 +1,16 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/acpi_pmtmr.h>
-#include <linux/cpufreq.h>
-#include <linux/delay.h>
-#include <linux/clocksource.h>
-#include <linux/percpu.h>
-#include <linux/timex.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/timer.h>
+#include <beep/acpi_pmtmr.h>
+#include <beep/cpufreq.h>
+#include <beep/delay.h>
+#include <beep/clocksource.h>
+#include <beep/percpu.h>
+#include <beep/timex.h>
 
 #include <asm/hpet.h>
 #include <asm/timer.h>

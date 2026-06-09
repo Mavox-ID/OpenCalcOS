@@ -54,19 +54,19 @@
 
 #include <asm/cacheflush.h>
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/omap-iommu.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/vmalloc.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/i2c.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/omap-iommu.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/consumer.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/vmalloc.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-device.h>
@@ -140,7 +140,7 @@ static struct isp_reg isp_reg_list[] = {
  * readback the same register, in this case the revision register.
  *
  * See this link for reference:
- *   http://www.mail-archive.com/linux-omap@vger.kernel.org/msg08149.html
+ *   http://www.mail-archive.com/beep-omap@vger.kernel.org/msg08149.html
  */
 void omap3isp_flush(struct isp_device *isp)
 {

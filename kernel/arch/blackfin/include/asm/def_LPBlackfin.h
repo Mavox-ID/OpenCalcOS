@@ -17,7 +17,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #if ANOMALY_05000198
 # define NOP_PAD_ANOMALY_05000198 "nop;"

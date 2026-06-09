@@ -7,7 +7,7 @@
 #ifndef _EFS_EFS_H_
 #define _EFS_EFS_H_
 
-#include <linux/fs.h>
+#include <beep/fs.h>
 #include <asm/uaccess.h>
 
 #define EFS_VERSION "1.0a"
@@ -74,7 +74,7 @@ struct efs_inode_info {
 	struct inode	vfs_inode;
 };
 
-#include <linux/efs_fs_sb.h>
+#include <beep/efs_fs_sb.h>
 
 #define EFS_DIRBSIZE_BITS	EFS_BLOCKSIZE_BITS
 #define EFS_DIRBSIZE		(1 << EFS_DIRBSIZE_BITS)

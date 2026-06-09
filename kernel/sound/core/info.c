@@ -19,18 +19,18 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/time.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/minors.h>
 #include <sound/info.h>
-#include <linux/utsname.h>
-#include <linux/proc_fs.h>
-#include <linux/mutex.h>
+#include <beep/utsname.h>
+#include <beep/proc_fs.h>
+#include <beep/mutex.h>
 #include <stdarg.h>
 
 /*
@@ -986,7 +986,7 @@ static struct snd_info_entry *snd_info_version_entry;
 static void snd_info_version_read(struct snd_info_entry *entry, struct snd_info_buffer *buffer)
 {
 	snd_iprintf(buffer,
-		    "Advanced Linux Sound Architecture Driver Version k%s.\n",
+		    "Advanced Beep Sound Architecture Driver Version k%s.\n",
 		    init_utsname()->release);
 }
 

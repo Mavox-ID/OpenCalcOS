@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/include/asm/pgtable.h
+ * beep/arch/unicore32/include/asm/pgtable.h
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -117,7 +117,7 @@ extern pgprot_t pgprot_kernel;
 
 /*
  * The table below defines the page protection levels that we insert into our
- * Linux page table version.  These get translated into the best that the
+ * Beep page table version.  These get translated into the best that the
  * architecture can perform.  Note that on UniCore hardware:
  *  1) We cannot do execute protection
  *  2) If we could do execute protection, then read is implied
@@ -250,7 +250,7 @@ static inline pte_t pte_modify(pte_t pte, pgprot_t newprot)
 extern pgd_t swapper_pg_dir[PTRS_PER_PGD];
 
 /*
- * Encode and decode a swap entry.  Swap entries are stored in the Linux
+ * Encode and decode a swap entry.  Swap entries are stored in the Beep
  * page tables as follows:
  *
  *   3 3 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1
@@ -284,7 +284,7 @@ extern pgd_t swapper_pg_dir[PTRS_PER_PGD];
 	BUILD_BUG_ON(MAX_SWAPFILES_SHIFT > __SWP_TYPE_BITS)
 
 /*
- * Encode and decode a file entry.  File entries are stored in the Linux
+ * Encode and decode a file entry.  File entries are stored in the Beep
  * page tables as follows:
  *
  *   3 3 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1
@@ -297,7 +297,7 @@ extern pgd_t swapper_pg_dir[PTRS_PER_PGD];
 
 #define PTE_FILE_MAX_BITS	28
 
-/* Needs to be defined here and not in linux/mm.h, as it is arch dependent */
+/* Needs to be defined here and not in beep/mm.h, as it is arch dependent */
 /* FIXME: this is not correct */
 #define kern_addr_valid(addr)	(1)
 

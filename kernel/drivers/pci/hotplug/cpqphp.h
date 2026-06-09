@@ -28,11 +28,11 @@
 #ifndef _CPQPHP_H
 #define _CPQPHP_H
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 #include <asm/io.h>		/* for read? and write? functions */
-#include <linux/delay.h>	/* for delays */
-#include <linux/mutex.h>
-#include <linux/sched.h>	/* for signal_pending() */
+#include <beep/delay.h>	/* for delays */
+#include <beep/mutex.h>
+#include <beep/sched.h>	/* for signal_pending() */
 
 #define MY_NAME	"cpqphp"
 

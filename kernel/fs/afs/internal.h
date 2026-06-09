@@ -9,17 +9,17 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/skbuff.h>
-#include <linux/rxrpc.h>
-#include <linux/key.h>
-#include <linux/workqueue.h>
-#include <linux/sched.h>
-#include <linux/fscache.h>
-#include <linux/backing-dev.h>
+#include <beep/compiler.h>
+#include <beep/kernel.h>
+#include <beep/fs.h>
+#include <beep/pagemap.h>
+#include <beep/skbuff.h>
+#include <beep/rxrpc.h>
+#include <beep/key.h>
+#include <beep/workqueue.h>
+#include <beep/sched.h>
+#include <beep/fscache.h>
+#include <beep/backing-dev.h>
 
 #include "afs.h"
 #include "afs_vl.h"

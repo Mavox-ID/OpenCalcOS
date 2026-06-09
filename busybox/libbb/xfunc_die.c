@@ -2,7 +2,7 @@
 /*
  * Utility routines.
  *
- * Copyright (C) 2008 by Denys Vlasenko <vda.linux@googlemail.com>
+ * Copyright (C) 2008 by Denys Vlasenko <vda.beep@googlemail.com>
  *
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */

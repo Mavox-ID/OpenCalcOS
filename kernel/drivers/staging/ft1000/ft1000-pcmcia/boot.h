@@ -20,7 +20,7 @@
 // Description:    boatloader
 //
 // History:
-// 1/11/05    Whc                Ported to Linux.
+// 1/11/05    Whc                Ported to Beep.
 //
 //---------------------------------------------------------------------------
 #ifndef _BOOTH_

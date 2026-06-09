@@ -15,15 +15,15 @@
  * option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/spinlock.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/io.h>
+#include <beep/usb.h>
+#include <beep/usb/hcd.h>
+#include <beep/gpio.h>
 #include <asm/qe.h>
 #include "fhci.h"
 

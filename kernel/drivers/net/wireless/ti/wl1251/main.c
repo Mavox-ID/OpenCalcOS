@@ -19,15 +19,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/firmware.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/crc32.h>
-#include <linux/etherdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/firmware.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/crc32.h>
+#include <beep/etherdevice.h>
+#include <beep/vmalloc.h>
+#include <beep/slab.h>
 
 #include "wl1251.h"
 #include "wl12xx_80211.h"

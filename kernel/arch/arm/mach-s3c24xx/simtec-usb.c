@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s3c2410/usb-simtec.c
+/* beep/arch/arm/mach-s3c2410/usb-simtec.c
  *
  * Copyright 2004-2005 Simtec Electronics
  *   Ben Dooks <ben@simtec.co.uk>
@@ -14,15 +14,15 @@
 
 #define DEBUG
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/gpio.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/gpio.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/io.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -34,7 +34,7 @@
 #include <mach/hardware.h>
 #include <asm/irq.h>
 
-#include <linux/platform_data/usb-ohci-s3c2410.h>
+#include <beep/platform_data/usb-ohci-s3c2410.h>
 #include <plat/devs.h>
 
 #include "simtec.h"

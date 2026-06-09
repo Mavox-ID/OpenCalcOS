@@ -23,10 +23,10 @@
 #ifndef _NILFS_SEGBUF_H
 #define _NILFS_SEGBUF_H
 
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/bio.h>
-#include <linux/completion.h>
+#include <beep/fs.h>
+#include <beep/buffer_head.h>
+#include <beep/bio.h>
+#include <beep/completion.h>
 
 /**
  * struct nilfs_segsum_info - On-memory segment summary

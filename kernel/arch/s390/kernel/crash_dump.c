@@ -2,17 +2,17 @@
  * S390 kdump implementation
  *
  * Copyright IBM Corp. 2011
- * Author(s): Michael Holzheu <holzheu@linux.vnet.ibm.com>
+ * Author(s): Michael Holzheu <holzheu@beep.vnet.ibm.com>
  */
 
-#include <linux/crash_dump.h>
+#include <beep/crash_dump.h>
 #include <asm/lowcore.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/bootmem.h>
-#include <linux/elf.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/gfp.h>
+#include <beep/slab.h>
+#include <beep/bootmem.h>
+#include <beep/elf.h>
 #include <asm/os_info.h>
 #include <asm/elf.h>
 #include <asm/ipl.h>
@@ -220,7 +220,7 @@ static void *nt_prpsinfo(void *ptr)
 
 	memset(&prpsinfo, 0, sizeof(prpsinfo));
 	prpsinfo.pr_sname = 'R';
-	strcpy(prpsinfo.pr_fname, "vmlinux");
+	strcpy(prpsinfo.pr_fname, "vmbeep");
 	return nt_init(ptr, NT_PRPSINFO, &prpsinfo, sizeof(prpsinfo),
 		       KEXEC_CORE_NOTE_NAME);
 }

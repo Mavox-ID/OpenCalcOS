@@ -66,7 +66,7 @@
 
 #define SYSCALL_NR	0x00ff
 
-/* Other PTRACE_ values defined in <linux/ptrace.h> using values 0-9,16,17,24 */
+/* Other PTRACE_ values defined in <beep/ptrace.h> using values 0-9,16,17,24 */
 
 #define PTRACE_GETREGS		12
 #define PTRACE_SETREGS		13

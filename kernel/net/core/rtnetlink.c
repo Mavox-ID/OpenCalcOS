@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -16,33 +16,33 @@
  *	Vitaly E. Lavrov		RTA_OK arithmetics was wrong.
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/capability.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/security.h>
-#include <linux/mutex.h>
-#include <linux/if_addr.h>
-#include <linux/if_bridge.h>
-#include <linux/pci.h>
-#include <linux/etherdevice.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/socket.h>
+#include <beep/kernel.h>
+#include <beep/timer.h>
+#include <beep/string.h>
+#include <beep/sockios.h>
+#include <beep/net.h>
+#include <beep/fcntl.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/capability.h>
+#include <beep/skbuff.h>
+#include <beep/init.h>
+#include <beep/security.h>
+#include <beep/mutex.h>
+#include <beep/if_addr.h>
+#include <beep/if_bridge.h>
+#include <beep/pci.h>
+#include <beep/etherdevice.h>
 
 #include <asm/uaccess.h>
 
-#include <linux/inet.h>
-#include <linux/netdevice.h>
+#include <beep/inet.h>
+#include <beep/netdevice.h>
 #include <net/ip.h>
 #include <net/protocol.h>
 #include <net/arp.h>
@@ -109,7 +109,7 @@ static inline int rtm_msgindex(int msgtype)
 	/*
 	 * msgindex < 0 implies someone tried to register a netlink
 	 * control code. msgindex >= RTM_NR_MSGTYPES may indicate that
-	 * the message type has not been added to linux/rtnetlink.h
+	 * the message type has not been added to beep/rtnetlink.h
 	 */
 	BUG_ON(msgindex < 0 || msgindex >= RTM_NR_MSGTYPES);
 

@@ -12,12 +12,12 @@
 
 #include <crypto/scatterwalk.h>
 #include <crypto/internal/hash.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/cryptouser.h>
+#include <beep/err.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/seq_file.h>
+#include <beep/cryptouser.h>
 #include <net/netlink.h>
 
 #include "internal.h"

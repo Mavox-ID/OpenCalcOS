@@ -8,7 +8,7 @@
 
 #ifndef _ASM_SN_IO_H
 #define _ASM_SN_IO_H
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 #include <asm/intrinsics.h>
 
 extern void * sn_io_addr(unsigned long port) __attribute_const__; /* Forward definition */

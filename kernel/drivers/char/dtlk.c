@@ -1,5 +1,5 @@
-/*                                              -*- linux-c -*-
- * dtlk.c - DoubleTalk PC driver for Linux
+/*                                              -*- beep-c -*-
+ * dtlk.c - DoubleTalk PC driver for Beep
  *
  * Original author: Chris Pallotta <chris@allmedia.com>
  * Current maintainer: Jim Van Zandt <jrv@vanzandt.mv.com>
@@ -47,23 +47,23 @@
 
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 #define KERNEL
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/errno.h>	/* for -EBUSY */
-#include <linux/ioport.h>	/* for request_region */
-#include <linux/delay.h>	/* for loops_per_jiffy */
-#include <linux/sched.h>
-#include <linux/mutex.h>
+#include <beep/types.h>
+#include <beep/fs.h>
+#include <beep/mm.h>
+#include <beep/errno.h>	/* for -EBUSY */
+#include <beep/ioport.h>	/* for request_region */
+#include <beep/delay.h>	/* for loops_per_jiffy */
+#include <beep/sched.h>
+#include <beep/mutex.h>
 #include <asm/io.h>		/* for inb_p, outb_p, inb, outb, etc. */
 #include <asm/uaccess.h>	/* for get_user, etc. */
-#include <linux/wait.h>		/* for wait_queue */
-#include <linux/init.h>		/* for __init, module_{init,exit} */
-#include <linux/poll.h>		/* for POLLIN, etc. */
-#include <linux/dtlk.h>		/* local header file for DoubleTalk values */
+#include <beep/wait.h>		/* for wait_queue */
+#include <beep/init.h>		/* for __init, module_{init,exit} */
+#include <beep/poll.h>		/* for POLLIN, etc. */
+#include <beep/dtlk.h>		/* local header file for DoubleTalk values */
 
 #ifdef TRACING
 #define TRACE_TEXT(str) printk(str);

@@ -8,7 +8,7 @@
  *      as published by the Free Software Foundation; either version
  *      2 of the License, or (at your option) any later version.
  */
-#include <linux/types.h>
+#include <beep/types.h>
 #include <asm/udbg.h>
 #include <asm/io.h>
 #include <asm/reg_a2.h>

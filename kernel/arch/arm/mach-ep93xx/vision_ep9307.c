@@ -13,25 +13,25 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
-#include <linux/fb.h>
-#include <linux/io.h>
-#include <linux/mtd/partitions.h>
-#include <linux/i2c.h>
-#include <linux/i2c-gpio.h>
-#include <linux/i2c/pca953x.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
-#include <linux/spi/mmc_spi.h>
-#include <linux/mmc/host.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/irq.h>
+#include <beep/gpio.h>
+#include <beep/fb.h>
+#include <beep/io.h>
+#include <beep/mtd/partitions.h>
+#include <beep/i2c.h>
+#include <beep/i2c-gpio.h>
+#include <beep/i2c/pca953x.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/flash.h>
+#include <beep/spi/mmc_spi.h>
+#include <beep/mmc/host.h>
 
 #include <mach/hardware.h>
-#include <linux/platform_data/video-ep93xx.h>
-#include <linux/platform_data/spi-ep93xx.h>
+#include <beep/platform_data/video-ep93xx.h>
+#include <beep/platform_data/spi-ep93xx.h>
 #include <mach/gpio-ep93xx.h>
 
 #include <asm/hardware/vic.h>

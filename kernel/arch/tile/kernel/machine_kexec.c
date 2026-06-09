@@ -11,22 +11,22 @@
  *   NON INFRINGEMENT.  See the GNU General Public License for
  *   more details.
  *
- * based on machine_kexec.c from other architectures in linux-2.6.18
+ * based on machine_kexec.c from other architectures in beep-2.6.18
  */
 
-#include <linux/mm.h>
-#include <linux/kexec.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
-#include <linux/errno.h>
-#include <linux/vmalloc.h>
-#include <linux/cpumask.h>
-#include <linux/kernel.h>
-#include <linux/elf.h>
-#include <linux/highmem.h>
-#include <linux/mmu_context.h>
-#include <linux/io.h>
-#include <linux/timex.h>
+#include <beep/mm.h>
+#include <beep/kexec.h>
+#include <beep/delay.h>
+#include <beep/reboot.h>
+#include <beep/errno.h>
+#include <beep/vmalloc.h>
+#include <beep/cpumask.h>
+#include <beep/kernel.h>
+#include <beep/elf.h>
+#include <beep/highmem.h>
+#include <beep/mmu_context.h>
+#include <beep/io.h>
+#include <beep/timex.h>
 #include <asm/pgtable.h>
 #include <asm/pgalloc.h>
 #include <asm/cacheflush.h>

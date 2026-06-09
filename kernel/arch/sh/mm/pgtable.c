@@ -1,5 +1,5 @@
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
 
 #define PGALLOC_GFP GFP_KERNEL | __GFP_REPEAT | __GFP_ZERO
 

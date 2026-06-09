@@ -10,16 +10,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/rtc/m48t59.h>
-#include <linux/bcd.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/rtc.h>
+#include <beep/rtc/m48t59.h>
+#include <beep/bcd.h>
+#include <beep/slab.h>
 
 #ifndef NO_IRQ
 #define NO_IRQ	(-1)

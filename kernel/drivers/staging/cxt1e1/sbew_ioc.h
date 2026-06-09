@@ -22,7 +22,7 @@
  *-----------------------------------------------------------------------------
  */
 
-#include <linux/ioctl.h>
+#include <beep/ioctl.h>
 
 #define SBE_LOCKFILE   "/tmp/.sbewan.LCK"
 

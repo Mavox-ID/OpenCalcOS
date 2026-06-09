@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/board-h2.c
+ * beep/arch/arm/mach-omap1/board-h2.c
  *
  * Board specific inits for OMAP-1610 H2
  *
@@ -18,31 +18,31 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/input.h>
-#include <linux/i2c/tps65010.h>
-#include <linux/smc91x.h>
-#include <linux/omapfb.h>
-#include <linux/platform_data/gpio-omap.h>
-#include <linux/leds.h>
+#include <beep/gpio.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/physmap.h>
+#include <beep/input.h>
+#include <beep/i2c/tps65010.h>
+#include <beep/smc91x.h>
+#include <beep/omapfb.h>
+#include <beep/platform_data/gpio-omap.h>
+#include <beep/leds.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 
 #include <mach/mux.h>
-#include <linux/omap-dma.h>
+#include <beep/omap-dma.h>
 #include <mach/tc.h>
 #include <mach/irda.h>
-#include <linux/platform_data/keypad-omap.h>
+#include <beep/platform_data/keypad-omap.h>
 #include <mach/flash.h>
 
 #include <mach/hardware.h>

@@ -31,7 +31,7 @@
  * SOFTWARE.
  */
 
-#include <linux/io.h>
+#include <beep/io.h>
 
 #include "ipath_verbs.h"
 #include "ipath_kernel.h"

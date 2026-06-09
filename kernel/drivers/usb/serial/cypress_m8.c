@@ -19,28 +19,28 @@
  */
 
 /* Thanks to Neil Whelchel for writing the first cypress m8 implementation
-   for linux. */
+   for beep. */
 /* Thanks to cypress for providing references for the hid reports. */
 /* Thanks to Jiang Zhang for providing links and for general help. */
 /* Code originates and was built up from ftdi_sio, belkin, pl2303 and others.*/
 
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/spinlock.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/serial.h>
-#include <linux/kfifo.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/tty.h>
+#include <beep/tty_driver.h>
+#include <beep/tty_flip.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/spinlock.h>
+#include <beep/usb.h>
+#include <beep/usb/serial.h>
+#include <beep/serial.h>
+#include <beep/kfifo.h>
+#include <beep/delay.h>
+#include <beep/uaccess.h>
 #include <asm/unaligned.h>
 
 #include "cypress_m8.h"

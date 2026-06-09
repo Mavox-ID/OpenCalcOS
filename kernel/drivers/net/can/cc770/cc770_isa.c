@@ -49,17 +49,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/platform/cc770.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/netdevice.h>
+#include <beep/delay.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/can.h>
+#include <beep/can/dev.h>
+#include <beep/can/platform/cc770.h>
 
 #include "cc770.h"
 

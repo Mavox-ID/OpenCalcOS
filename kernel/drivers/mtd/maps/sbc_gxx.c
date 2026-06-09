@@ -44,14 +44,14 @@ separate MTD devices.
 
 // Includes
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
 #include <asm/io.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/map.h>
+#include <beep/mtd/partitions.h>
 
 // Defines
 

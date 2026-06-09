@@ -29,15 +29,15 @@
 
 #undef DEBUG
 
-#include <linux/pagemap.h>
-#include <linux/namei.h>
-#include <linux/backing-dev.h>
-#include <linux/capability.h>
-#include <linux/sched.h>
-#include <linux/lockdep.h>
-#include <linux/slab.h>
+#include <beep/pagemap.h>
+#include <beep/namei.h>
+#include <beep/backing-dev.h>
+#include <beep/capability.h>
+#include <beep/sched.h>
+#include <beep/lockdep.h>
+#include <beep/slab.h>
 
-#include <linux/configfs.h>
+#include <beep/configfs.h>
 #include "configfs_internal.h"
 
 #ifdef CONFIG_LOCKDEP

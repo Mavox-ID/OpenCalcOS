@@ -2,9 +2,9 @@
  * numaq_32.c - Low-level PCI access for NUMA-Q machines
  */
 
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/nodemask.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/nodemask.h>
 #include <asm/apic.h>
 #include <asm/mpspec.h>
 #include <asm/pci_x86.h>

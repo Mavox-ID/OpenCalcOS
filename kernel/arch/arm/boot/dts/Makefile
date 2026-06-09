@@ -89,7 +89,7 @@ dtb-$(CONFIG_ARCH_MXC) += imx51-babbage.dtb \
 	imx6q-sabrelite.dtb \
 	imx6q-sabresd.dtb
 dtb-$(CONFIG_ARCH_MXS) += imx23-evk.dtb \
-	imx23-olinuxino.dtb \
+	imx23-obeepino.dtb \
 	imx23-stmp378x_devb.dtb \
 	imx28-apf28.dtb \
 	imx28-apf28dev.dtb \
@@ -132,7 +132,7 @@ dtb-$(CONFIG_ARCH_SPEAR3XX)+= spear300-evb.dtb \
 	spear320-hmi.dtb
 dtb-$(CONFIG_ARCH_SPEAR6XX)+= spear600-evb.dtb
 dtb-$(CONFIG_ARCH_SUNXI) += sun4i-a10-cubieboard.dtb \
-	sun5i-a13-olinuxino.dtb
+	sun5i-a13-obeepino.dtb
 dtb-$(CONFIG_ARCH_TEGRA) += tegra20-harmony.dtb \
 	tegra20-medcom-wide.dtb \
 	tegra20-paz00.dtb \

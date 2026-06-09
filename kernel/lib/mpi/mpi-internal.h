@@ -30,12 +30,12 @@
 #ifndef G10_MPI_INTERNAL_H
 #define G10_MPI_INTERNAL_H
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/mpi.h>
-#include <linux/errno.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/mpi.h>
+#include <beep/errno.h>
 
 #define log_debug printk
 #define log_bug printk

@@ -30,11 +30,11 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/in.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/ratelimit.h>
+#include <beep/kernel.h>
+#include <beep/in.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/ratelimit.h>
 
 #include "rds.h"
 #include "iw.h"

@@ -11,13 +11,13 @@
  *	by Helge Deller <deller@gmx.de>
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
 
 #include <asm/io.h>
 #include <asm/hardware.h>

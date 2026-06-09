@@ -23,8 +23,8 @@
  * 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/highmem.h>
-#include <linux/module.h>
+#include <beep/highmem.h>
+#include <beep/module.h>
 
 #include <asm/irq.h>
 #include <asm/mmu_context.h>

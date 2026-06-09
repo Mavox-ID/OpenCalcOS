@@ -16,9 +16,9 @@
  * Author: Will Deacon <will.deacon@arm.com>
  */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/const.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
+#include <beep/const.h>
 #include <asm/page.h>
 
 	__PAGE_ALIGNED_DATA

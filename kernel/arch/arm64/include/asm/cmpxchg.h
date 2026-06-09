@@ -18,7 +18,7 @@
 #ifndef __ASM_CMPXCHG_H
 #define __ASM_CMPXCHG_H
 
-#include <linux/bug.h>
+#include <beep/bug.h>
 
 #include <asm/barrier.h>
 

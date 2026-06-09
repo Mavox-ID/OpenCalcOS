@@ -1,4 +1,4 @@
-/* sis900.c: A SiS 900/7016 PCI Fast Ethernet driver for Linux.
+/* sis900.c: A SiS 900/7016 PCI Fast Ethernet driver for Beep.
    Copyright 1999 Silicon Integrated System Corporation
    Revision:	1.08.10 Apr. 2 2006
 
@@ -49,27 +49,27 @@
    Rev 1.05 Aug. 7 1999 Jim Huang (cmhuang@sis.com.tw) Initial release
 */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/init.h>
-#include <linux/mii.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/crc32.h>
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/errno.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/netdevice.h>
+#include <beep/init.h>
+#include <beep/mii.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/delay.h>
+#include <beep/ethtool.h>
+#include <beep/crc32.h>
+#include <beep/bitops.h>
+#include <beep/dma-mapping.h>
 
 #include <asm/processor.h>      /* Processor type for cache alignment. */
 #include <asm/io.h>
@@ -2195,7 +2195,7 @@ static int sis900_set_config(struct net_device *dev, struct ifmap *map)
 		 * like a definition or standard for the values of that field.
 		 * I think the meaning of those values is device specific. But
 		 * since I would like to change the media type via the ifconfig
-		 * command I use the definition from linux/netdevice.h
+		 * command I use the definition from beep/netdevice.h
 		 * (which seems to be different from the ifport(pcmcia) definition) */
 		switch(map->port){
 		case IF_PORT_UNKNOWN: /* use auto here */

@@ -7,7 +7,7 @@
  *   Stuart Menefy (stuart.menefy@st.com)
  *
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 /*
  * void *memcpy(void *dst, const void *src, size_t n);

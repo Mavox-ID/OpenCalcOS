@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-h720x/common.h
+ * beep/arch/arm/mach-h720x/common.h
  *
  * Copyright (C) 2003 Thomas Gleixner <tglx@linutronix.de>
  *               2003 Robert Schwebel <r.schwebel@pengutronix.de>

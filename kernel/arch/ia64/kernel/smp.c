@@ -1,7 +1,7 @@
 /*
  * SMP Support
  *
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 Walt Drummond <drummond@vabeep.com>
  * Copyright (C) 1999, 2001, 2003 David Mosberger-Tang <davidm@hpl.hp.com>
  *
  * Lots of stuff stolen from arch/alpha/kernel/smp.c
@@ -18,21 +18,21 @@
  * 10/13/00 Goutham Rao <goutham.rao@intel.com> Updated smp_call_function and
  *		smp_call_function_single to resend IPI on timeouts
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/smp.h>
-#include <linux/kernel_stat.h>
-#include <linux/mm.h>
-#include <linux/cache.h>
-#include <linux/delay.h>
-#include <linux/efi.h>
-#include <linux/bitops.h>
-#include <linux/kexec.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/smp.h>
+#include <beep/kernel_stat.h>
+#include <beep/mm.h>
+#include <beep/cache.h>
+#include <beep/delay.h>
+#include <beep/efi.h>
+#include <beep/bitops.h>
+#include <beep/kexec.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/current.h>
 #include <asm/delay.h>
 #include <asm/machvec.h>

@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/acorn/scsi/fas216.h
+ *  beep/drivers/acorn/scsi/fas216.h
  *
  *  Copyright (C) 1997-2000 Russell King
  *

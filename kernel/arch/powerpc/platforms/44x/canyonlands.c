@@ -21,14 +21,14 @@
  * MA 02111-1307 USA
  *
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
 #include <asm/pci-bridge.h>
 #include <asm/ppc4xx.h>
 #include <asm/udbg.h>
 #include <asm/uic.h>
-#include <linux/of_platform.h>
-#include <linux/delay.h>
+#include <beep/of_platform.h>
+#include <beep/delay.h>
 #include "44x.h"
 
 #define BCSR_USB_EN	0x11

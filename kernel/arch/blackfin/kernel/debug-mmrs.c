@@ -6,10 +6,10 @@
  * Licensed under the GPL-2 or later
  */
 
-#include <linux/debugfs.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/debugfs.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 
 #include <asm/blackfin.h>
 #include <asm/gpio.h>

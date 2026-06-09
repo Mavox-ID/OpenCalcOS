@@ -8,7 +8,7 @@
  * Public License is included in this distribution in the file called COPYING.
  *
  * Contact Information:
- * linux-drivers@emulex.com
+ * beep-drivers@emulex.com
  *
  * Emulex
  * 3333 Susan Street
@@ -18,8 +18,8 @@
 #ifndef BE_ROCE_H
 #define BE_ROCE_H
 
-#include <linux/pci.h>
-#include <linux/netdevice.h>
+#include <beep/pci.h>
+#include <beep/netdevice.h>
 
 struct ocrdma_dev;
 

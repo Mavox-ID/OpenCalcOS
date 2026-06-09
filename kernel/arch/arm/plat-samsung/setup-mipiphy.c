@@ -8,10 +8,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/spinlock.h>
 #include <mach/regs-clock.h>
 
 static int __s5p_mipi_phy_control(int id, bool on, u32 reset)

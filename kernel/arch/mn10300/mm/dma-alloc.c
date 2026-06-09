@@ -10,12 +10,12 @@
  * 2 of the Licence, or (at your option) any later version.
  */
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/gfp.h>
-#include <linux/export.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/string.h>
+#include <beep/pci.h>
+#include <beep/gfp.h>
+#include <beep/export.h>
 #include <asm/io.h>
 
 static unsigned long pci_sram_allocated = 0xbc000000;

@@ -1,7 +1,7 @@
 /*
  * usblp.c
  *
- * Copyright (c) 1999 Michael Gee	<michael@linuxspecific.com>
+ * Copyright (c) 1999 Michael Gee	<michael@beepspecific.com>
  * Copyright (c) 1999 Pavel Machek	<pavel@ucw.cz>
  * Copyright (c) 2000 Randy Dunlap	<rdunlap@xenotime.net>
  * Copyright (c) 2000 Vojtech Pavlik	<vojtech@suse.cz>
@@ -28,7 +28,7 @@
  *	v0.12 - add hpoj.sourceforge.net ioctls (David Paschal)
  *	v0.13 - alloc space for statusbuf (<status> not on stack);
  *		use usb_alloc_coherent() for read buf & write buf;
- *      none  - Maintained in Linux kernel after v0.13
+ *      none  - Maintained in Beep kernel after v0.13
  */
 
 /*
@@ -47,18 +47,18 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/lp.h>
-#include <linux/mutex.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/signal.h>
+#include <beep/poll.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/lp.h>
+#include <beep/mutex.h>
 #undef DEBUG
-#include <linux/usb.h>
-#include <linux/ratelimit.h>
+#include <beep/usb.h>
+#include <beep/ratelimit.h>
 
 /*
  * Version Information

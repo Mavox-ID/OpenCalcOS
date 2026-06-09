@@ -1,11 +1,11 @@
 /*
- * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,beep.intel}.com)
  * Licensed under the GPL
  */
 
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 #include <asm/pgalloc.h>
 #include <asm/pgtable.h>
 #include <as-layout.h>

@@ -7,16 +7,16 @@
  * it under the terms of the GNU General Public License version 2, as
  * published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/clk.h>
-#include <linux/jiffies.h>
-#include <linux/err.h>
-#include <linux/platform_data/clocksource-nomadik-mtu.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/io.h>
+#include <beep/clockchips.h>
+#include <beep/clocksource.h>
+#include <beep/clk.h>
+#include <beep/jiffies.h>
+#include <beep/err.h>
+#include <beep/platform_data/clocksource-nomadik-mtu.h>
 #include <asm/mach/time.h>
 #include <asm/sched_clock.h>
 

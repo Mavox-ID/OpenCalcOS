@@ -6,7 +6,7 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 #include <asm/bfin-global.h>
 #include <asm/reboot.h>
 #include <asm/bfrom.h>

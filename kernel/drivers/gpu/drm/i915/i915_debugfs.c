@@ -26,10 +26,10 @@
  *
  */
 
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 #include <drm/drmP.h>
 #include "intel_drv.h"
 #include "intel_ringbuffer.h"

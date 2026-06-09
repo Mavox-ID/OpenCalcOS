@@ -27,7 +27,7 @@
 
 #ifdef __KERNEL__
 
-#include <linux/string.h>
+#include <beep/string.h>
 
 #include <asm/fpsimd.h>
 #include <asm/hw_breakpoint.h>

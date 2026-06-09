@@ -1,6 +1,6 @@
 /*
  * srm_env.c - Access to SRM environment
- *             variables through linux' procfs
+ *             variables through beep' procfs
  *
  * (C) 2001,2002,2006 by Jan-Benedict Glaw <jbglaw@lug-owl.de>
  *
@@ -28,12 +28,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/kernel.h>
+#include <beep/gfp.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 #include <asm/console.h>
 #include <asm/uaccess.h>
 #include <asm/machvec.h>
@@ -207,7 +207,7 @@ srm_env_init(void)
 	if (!alpha_using_srm) {
 		printk(KERN_INFO "%s: This Alpha system doesn't "
 				"know about SRM (or you've booted "
-				"SRM->MILO->Linux, which gets "
+				"SRM->MILO->Beep, which gets "
 				"misdetected)...\n", __func__);
 		return -ENODEV;
 	}

@@ -11,7 +11,7 @@
 #ifndef _XTENSA_IRQFLAGS_H
 #define _XTENSA_IRQFLAGS_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 static inline unsigned long arch_local_save_flags(void)
 {

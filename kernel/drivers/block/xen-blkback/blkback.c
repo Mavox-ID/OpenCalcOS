@@ -12,7 +12,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the Beep kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -34,12 +34,12 @@
  * IN THE SOFTWARE.
  */
 
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/freezer.h>
-#include <linux/bitmap.h>
+#include <beep/spinlock.h>
+#include <beep/kthread.h>
+#include <beep/list.h>
+#include <beep/delay.h>
+#include <beep/freezer.h>
+#include <beep/bitmap.h>
 
 #include <xen/events.h>
 #include <xen/page.h>
@@ -56,7 +56,7 @@
  * ** TRY INCREASING 'xen_blkif_reqs' IF WRITE SPEEDS SEEM TOO LOW **
  *
  * This will increase the chances of being able to write whole tracks.
- * 64 should be enough to keep us competitive with Linux.
+ * 64 should be enough to keep us competitive with Beep.
  */
 static int xen_blkif_reqs = 64;
 module_param_named(reqs, xen_blkif_reqs, int, 0);

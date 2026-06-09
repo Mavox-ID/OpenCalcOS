@@ -23,18 +23,18 @@
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/miscdevice.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/mm.h>
+#include <beep/io.h>
+#include <beep/spinlock.h>
+#include <beep/device.h>
+#include <beep/miscdevice.h>
+#include <beep/interrupt.h>
+#include <beep/proc_fs.h>
+#include <beep/uaccess.h>
 #ifdef CONFIG_X86_64
 #include <asm/uv/uv_irq.h>
 #endif

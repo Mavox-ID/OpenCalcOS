@@ -19,23 +19,23 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/fb.h>
-#include <linux/dma-mapping.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
-#include <linux/pm_runtime.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
-#include <linux/console.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/lcm.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/fb.h>
+#include <beep/dma-mapping.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/uaccess.h>
+#include <beep/pm_runtime.h>
+#include <beep/interrupt.h>
+#include <beep/wait.h>
+#include <beep/clk.h>
+#include <beep/cpufreq.h>
+#include <beep/console.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/lcm.h>
 #include <video/da8xx-fb.h>
 #include <asm/div64.h>
 

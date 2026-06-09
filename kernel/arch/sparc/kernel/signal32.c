@@ -7,19 +7,19 @@
  *  Copyright (C) 1997,1998 Jakub Jelinek   (jj@sunsite.mff.cuni.cz)
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/binfmts.h>
-#include <linux/compat.h>
-#include <linux/bitops.h>
-#include <linux/tracehook.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/errno.h>
+#include <beep/wait.h>
+#include <beep/ptrace.h>
+#include <beep/unistd.h>
+#include <beep/mm.h>
+#include <beep/tty.h>
+#include <beep/binfmts.h>
+#include <beep/compat.h>
+#include <beep/bitops.h>
+#include <beep/tracehook.h>
 
 #include <asm/uaccess.h>
 #include <asm/ptrace.h>

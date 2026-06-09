@@ -11,8 +11,8 @@
 
 
 #ifndef __ASSEMBLY__
-#include <linux/smp.h>
-#include <linux/types.h>
+#include <beep/smp.h>
+#include <beep/types.h>
 #endif /* !__ASSEMBLY__ */
 
 #include <asm/addrspace.h>

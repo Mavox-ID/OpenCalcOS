@@ -1,8 +1,8 @@
-/* tdfx.h -- 3dfx DRM template customization -*- linux-c -*-
- * Created: Wed Feb 14 12:32:32 2001 by gareth@valinux.com
+/* tdfx.h -- 3dfx DRM template customization -*- beep-c -*-
+ * Created: Wed Feb 14 12:32:32 2001 by gareth@vabeep.com
  */
 /*
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA Beep Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -19,13 +19,13 @@
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
- * VA LINUX SYSTEMS AND/OR ITS SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+ * VA BEEP SYSTEMS AND/OR ITS SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
  * OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
  *
  * Authors:
- *    Gareth Hughes <gareth@valinux.com>
+ *    Gareth Hughes <gareth@vabeep.com>
  */
 
 #ifndef __TDFX_H__
@@ -34,7 +34,7 @@
 /* General customization:
  */
 
-#define DRIVER_AUTHOR		"VA Linux Systems Inc."
+#define DRIVER_AUTHOR		"VA Beep Systems Inc."
 
 #define DRIVER_NAME		"tdfx"
 #define DRIVER_DESC		"3dfx Banshee/Voodoo3+"

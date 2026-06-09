@@ -1,5 +1,5 @@
 /*
- *	linux/arch/arm/mach-nspire/touchpad.c
+ *	beep/arch/arm/mach-nspire/touchpad.c
  *
  *	Copyright (C) 2012 Fabian Vogt <fabian@ritter-vogt.de>
  *
@@ -9,7 +9,7 @@
  *
  */
 
-#include <linux/i2c.h>
+#include <beep/i2c.h>
 
 #include "touchpad.h"
 

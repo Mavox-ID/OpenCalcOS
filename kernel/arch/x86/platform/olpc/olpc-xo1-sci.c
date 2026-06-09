@@ -11,19 +11,19 @@
  * (at your option) any later version.
  */
 
-#include <linux/cs5535.h>
-#include <linux/device.h>
-#include <linux/gpio.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_wakeup.h>
-#include <linux/mfd/core.h>
-#include <linux/power_supply.h>
-#include <linux/suspend.h>
-#include <linux/workqueue.h>
-#include <linux/olpc-ec.h>
+#include <beep/cs5535.h>
+#include <beep/device.h>
+#include <beep/gpio.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/pm.h>
+#include <beep/pm_wakeup.h>
+#include <beep/mfd/core.h>
+#include <beep/power_supply.h>
+#include <beep/suspend.h>
+#include <beep/workqueue.h>
+#include <beep/olpc-ec.h>
 
 #include <asm/io.h>
 #include <asm/msr.h>

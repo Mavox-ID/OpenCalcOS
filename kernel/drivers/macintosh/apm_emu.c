@@ -16,11 +16,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/apm-emulation.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/apm-emulation.h>
+#include <beep/adb.h>
+#include <beep/pmu.h>
 
 #define APM_CRITICAL		10
 #define APM_LOW			30

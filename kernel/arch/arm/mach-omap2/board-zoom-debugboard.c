@@ -7,15 +7,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/serial_8250.h>
-#include <linux/smsc911x.h>
-#include <linux/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/gpio.h>
+#include <beep/serial_8250.h>
+#include <beep/smsc911x.h>
+#include <beep/interrupt.h>
 
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
+#include <beep/regulator/fixed.h>
+#include <beep/regulator/machine.h>
 
 #include "gpmc.h"
 #include "gpmc-smsc911x.h"

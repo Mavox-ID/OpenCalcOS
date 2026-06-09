@@ -10,9 +10,9 @@
  *  License.  See the file COPYING in the main directory of this archive for
  *  more details.
  */
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/fb.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/fb.h>
 #include <asm/types.h>
 
 #define DEBUG

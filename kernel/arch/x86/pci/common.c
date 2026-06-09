@@ -4,12 +4,12 @@
  *	(c) 1999--2000 Martin Mares <mj@ucw.cz>
  */
 
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
+#include <beep/sched.h>
+#include <beep/pci.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/dmi.h>
+#include <beep/slab.h>
 
 #include <asm-generic/pci-bridge.h>
 #include <asm/acpi.h>

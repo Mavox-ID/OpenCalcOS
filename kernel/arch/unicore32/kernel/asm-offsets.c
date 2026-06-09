@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/kernel/asm-offsets.c
+ * beep/arch/unicore32/kernel/asm-offsets.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -13,12 +13,12 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/kbuild.h>
-#include <linux/suspend.h>
-#include <linux/thread_info.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/dma-mapping.h>
+#include <beep/kbuild.h>
+#include <beep/suspend.h>
+#include <beep/thread_info.h>
 #include <asm/memory.h>
 #include <asm/suspend.h>
 

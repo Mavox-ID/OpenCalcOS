@@ -9,16 +9,16 @@
  * the GNU General Public License, incorporated herein by reference.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
+#include <beep/skbuff.h>
 
-#include <linux/isdnif.h>
+#include <beep/isdnif.h>
 #include "pcbit.h"
 
-MODULE_DESCRIPTION("ISDN4Linux: Driver for PCBIT-T card");
+MODULE_DESCRIPTION("ISDN4Beep: Driver for PCBIT-T card");
 MODULE_AUTHOR("Pedro Roque Marques");
 MODULE_LICENSE("GPL");
 

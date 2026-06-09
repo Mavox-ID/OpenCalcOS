@@ -47,10 +47,10 @@
  * be incorporated into the next SCTP release.
  */
 
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/slab.h>
-#include <linux/in.h>
+#include <beep/types.h>
+#include <beep/compiler.h>
+#include <beep/slab.h>
+#include <beep/in.h>
 #include <net/sctp/command.h>
 #include <net/sctp/sctp.h>
 

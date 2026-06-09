@@ -22,15 +22,15 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/net.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
+#include <beep/fs.h>
+#include <beep/list.h>
+#include <beep/wait.h>
+#include <beep/net.h>
+#include <beep/delay.h>
+#include <beep/uaccess.h>
 #include <asm/processor.h>
-#include <linux/mempool.h>
-#include <linux/highmem.h>
+#include <beep/mempool.h>
+#include <beep/highmem.h>
 #include "smb2pdu.h"
 #include "cifsglob.h"
 #include "cifsproto.h"
@@ -285,7 +285,7 @@ smb2_check_receive(struct mid_q_entry *mid, struct TCP_Server_Info *server,
 			       "%d", rc);
 	}
 
-	return map_smb2_to_linux_error(mid->resp_buf, log_error);
+	return map_smb2_to_beep_error(mid->resp_buf, log_error);
 }
 
 struct mid_q_entry *

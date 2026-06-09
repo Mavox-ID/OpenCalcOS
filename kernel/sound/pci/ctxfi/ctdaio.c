@@ -19,8 +19,8 @@
 #include "ctdaio.h"
 #include "cthardware.h"
 #include "ctimap.h"
-#include <linux/slab.h>
-#include <linux/kernel.h>
+#include <beep/slab.h>
+#include <beep/kernel.h>
 
 #define DAIO_OUT_MAX		SPDIFOO
 

@@ -1,7 +1,7 @@
 /*
  * fs/logfs/logfs.h
  *
- * As should be obvious for Linux kernel code, license is GPLv2
+ * As should be obvious for Beep kernel code, license is GPLv2
  *
  * Copyright (c) 2005-2008 Joern Engel <joern@logfs.org>
  *
@@ -13,13 +13,13 @@
 #undef __CHECK_ENDIAN__
 #define __CHECK_ENDIAN__
 
-#include <linux/btree.h>
-#include <linux/crc32.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/mempool.h>
-#include <linux/pagemap.h>
-#include <linux/mtd/mtd.h>
+#include <beep/btree.h>
+#include <beep/crc32.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/mempool.h>
+#include <beep/pagemap.h>
+#include <beep/mtd/mtd.h>
 #include "logfs_abi.h"
 
 #define LOGFS_DEBUG_SUPER	(0x0001)

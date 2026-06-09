@@ -9,9 +9,9 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/irq.h>
-#include <linux/msi.h>
+#include <beep/device.h>
+#include <beep/irq.h>
+#include <beep/msi.h>
 
 #include <asm/rtas.h>
 #include <asm/hw_irq.h>

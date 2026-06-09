@@ -1,6 +1,6 @@
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
-#include <linux/stop_machine.h>
+#include <beep/kernel.h>
+#include <beep/kprobes.h>
+#include <beep/stop_machine.h>
 
 #include <asm/cacheflush.h>
 #include <asm/smp_plat.h>

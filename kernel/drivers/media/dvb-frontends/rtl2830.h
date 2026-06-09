@@ -21,7 +21,7 @@
 #ifndef RTL2830_H
 #define RTL2830_H
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 
 struct rtl2830_config {
 	/*

@@ -16,7 +16,7 @@
 
     John Sims, for much testing and feedback on pcidas-4020 support.
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
     Copyright (C) 1997-8 David A. Schleef <ds@schleef.org>
 
     This program is free software; you can redistribute it and/or modify
@@ -88,8 +88,8 @@ TODO:
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include "../comedidev.h"
-#include <linux/delay.h>
-#include <linux/interrupt.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
 
 #include "8253.h"
 #include "8255.h"

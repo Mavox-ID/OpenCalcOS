@@ -14,11 +14,11 @@
  * Generates definitions from c-type structures used by assembly sources.
  */
 
-#include <linux/kbuild.h>
-#include <linux/thread_info.h>
-#include <linux/sched.h>
-#include <linux/hardirq.h>
-#include <linux/ptrace.h>
+#include <beep/kbuild.h>
+#include <beep/thread_info.h>
+#include <beep/sched.h>
+#include <beep/hardirq.h>
+#include <beep/ptrace.h>
 #include <hv/hypervisor.h>
 
 /* Check for compatible compiler early in the build. */

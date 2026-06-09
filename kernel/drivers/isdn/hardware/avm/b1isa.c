@@ -9,20 +9,20 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/capi.h>
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/skbuff.h>
+#include <beep/delay.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/capi.h>
+#include <beep/init.h>
+#include <beep/pci.h>
 #include <asm/io.h>
-#include <linux/isdn/capicmd.h>
-#include <linux/isdn/capiutil.h>
-#include <linux/isdn/capilli.h>
+#include <beep/isdn/capicmd.h>
+#include <beep/isdn/capiutil.h>
+#include <beep/isdn/capilli.h>
 #include "avmcard.h"
 
 /* ------------------------------------------------------------- */
@@ -31,7 +31,7 @@ static char *revision = "$Revision: 1.1.2.3 $";
 
 /* ------------------------------------------------------------- */
 
-MODULE_DESCRIPTION("CAPI4Linux: Driver for AVM B1 ISA card");
+MODULE_DESCRIPTION("CAPI4Beep: Driver for AVM B1 ISA card");
 MODULE_AUTHOR("Carsten Paeth");
 MODULE_LICENSE("GPL");
 

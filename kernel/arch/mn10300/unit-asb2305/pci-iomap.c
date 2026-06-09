@@ -8,8 +8,8 @@
  * as published by the Free Software Foundation; either version
  * 2 of the Licence, or (at your option) any later version.
  */
-#include <linux/pci.h>
-#include <linux/module.h>
+#include <beep/pci.h>
+#include <beep/module.h>
 
 /*
  * Create a virtual mapping cookie for a PCI BAR (memory or IO)

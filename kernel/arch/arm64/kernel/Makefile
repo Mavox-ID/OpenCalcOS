@@ -1,8 +1,8 @@
 #
-# Makefile for the linux kernel.
+# Makefile for the beep kernel.
 #
 
-CPPFLAGS_vmlinux.lds	:= -DTEXT_OFFSET=$(TEXT_OFFSET)
+CPPFLAGS_vmbeep.lds	:= -DTEXT_OFFSET=$(TEXT_OFFSET)
 AFLAGS_head.o		:= -DTEXT_OFFSET=$(TEXT_OFFSET)
 
 # Object file lists.
@@ -21,7 +21,7 @@ arm64-obj-$(CONFIG_HAVE_HW_BREAKPOINT)+= hw_breakpoint.o
 obj-y					+= $(arm64-obj-y) vdso/
 obj-m					+= $(arm64-obj-m)
 head-y					:= head.o
-extra-y					:= $(head-y) vmlinux.lds
+extra-y					:= $(head-y) vmbeep.lds
 
 # vDSO - this must be built first to generate the symbol offsets
 $(call objectify,$(arm64-obj-y)): $(obj)/vdso/vdso-offsets.h

@@ -16,7 +16,7 @@
  * Inc.,  51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 #include "xfs.h"
-#include <linux/proc_fs.h>
+#include <beep/proc_fs.h>
 
 DEFINE_PER_CPU(struct xfsstats, xfsstats);
 

@@ -12,12 +12,12 @@
  * License.
  *
  */
-#include <linux/irq.h>
-#include <linux/bootmem.h>
-#include <linux/msi.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/of_platform.h>
+#include <beep/irq.h>
+#include <beep/bootmem.h>
+#include <beep/msi.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/of_platform.h>
 #include <sysdev/fsl_soc.h>
 #include <asm/prom.h>
 #include <asm/hw_irq.h>

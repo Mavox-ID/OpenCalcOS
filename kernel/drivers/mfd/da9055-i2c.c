@@ -11,12 +11,12 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/i2c.h>
+#include <beep/err.h>
 
-#include <linux/mfd/da9055/core.h>
+#include <beep/mfd/da9055/core.h>
 
 static int da9055_i2c_probe(struct i2c_client *i2c,
 				      const struct i2c_device_id *id)

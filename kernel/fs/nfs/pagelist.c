@@ -1,5 +1,5 @@
 /*
- * linux/fs/nfs/pagelist.c
+ * beep/fs/nfs/pagelist.c
  *
  * A set of helper functions for managing NFS read and write requests.
  * The main purpose of these routines is to provide support for the
@@ -9,17 +9,17 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/sched.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/nfs.h>
-#include <linux/nfs3.h>
-#include <linux/nfs4.h>
-#include <linux/nfs_page.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/export.h>
+#include <beep/slab.h>
+#include <beep/file.h>
+#include <beep/sched.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/nfs.h>
+#include <beep/nfs3.h>
+#include <beep/nfs4.h>
+#include <beep/nfs_page.h>
+#include <beep/nfs_fs.h>
+#include <beep/nfs_mount.h>
+#include <beep/export.h>
 
 #include "internal.h"
 #include "pnfs.h"

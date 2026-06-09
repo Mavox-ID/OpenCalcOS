@@ -4,10 +4,10 @@
 #ifndef __ASM_ARCH_BOARD_H
 #define __ASM_ARCH_BOARD_H
 
-#include <linux/types.h>
-#include <linux/serial.h>
-#include <linux/platform_data/macb.h>
-#include <linux/platform_data/atmel.h>
+#include <beep/types.h>
+#include <beep/serial.h>
+#include <beep/platform_data/macb.h>
+#include <beep/platform_data/atmel.h>
 
 #define GPIO_PIN_NONE	(-1)
 

@@ -22,18 +22,18 @@
  * This driver is based on max8997.c
  */
 
-#include <linux/kernel.h>
-#include <linux/bug.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/mfd/max77686.h>
-#include <linux/mfd/max77686-private.h>
+#include <beep/kernel.h>
+#include <beep/bug.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/regulator/driver.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/of_regulator.h>
+#include <beep/mfd/max77686.h>
+#include <beep/mfd/max77686-private.h>
 
 #define MAX77686_LDO_MINUV	800000
 #define MAX77686_LDO_UVSTEP	50000

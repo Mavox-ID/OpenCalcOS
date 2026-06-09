@@ -10,11 +10,11 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/io.h>
 #include "pci-sh4.h"
 #include <asm/addrspace.h>
 #include <asm/sizes.h>

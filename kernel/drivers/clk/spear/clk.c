@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2012 ST Microelectronics
- * Viresh Kumar <viresh.linux@gmail.com>
+ * Viresh Kumar <viresh.beep@gmail.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
@@ -9,8 +9,8 @@
  * SPEAr clk - Common routines
  */
 
-#include <linux/clk-provider.h>
-#include <linux/types.h>
+#include <beep/clk-provider.h>
+#include <beep/types.h>
 #include "clk.h"
 
 long clk_round_rate_index(struct clk_hw *hw, unsigned long drate,

@@ -43,13 +43,13 @@
  *
  *  12 Feb 2002 - Matt Domsch <Matt_Domsch@dell.com>
  *   use list_for_each_safe when deleting vars.
- *   remove ifdef CONFIG_SMP around include <linux/smp.h>
- *   v0.04 release to linux-ia64@linuxia64.org
+ *   remove ifdef CONFIG_SMP around include <beep/smp.h>
+ *   v0.04 release to beep-ia64@beepia64.org
  *
  *  20 April 2001 - Matt Domsch <Matt_Domsch@dell.com>
  *   Moved vars from /proc/efi to /proc/efi/vars, and made
  *   efi.c own the /proc/efi directory.
- *   v0.03 release to linux-ia64@linuxia64.org
+ *   v0.03 release to beep-ia64@beepia64.org
  *
  *  26 March 2001 - Matt Domsch <Matt_Domsch@dell.com>
  *   At the request of Stephane, moved ownership of /proc/efi
@@ -59,30 +59,30 @@
  *   Feedback received from Stephane Eranian incorporated.
  *   efivar_write() checks copy_from_user() return value.
  *   efivar_read/write() returns proper errno.
- *   v0.02 release to linux-ia64@linuxia64.org
+ *   v0.02 release to beep-ia64@beepia64.org
  *
  *  26 February 2001 - Matt Domsch <Matt_Domsch@dell.com>
- *   v0.01 release to linux-ia64@linuxia64.org
+ *   v0.01 release to beep-ia64@beepia64.org
  */
 
-#include <linux/capability.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/smp.h>
-#include <linux/efi.h>
-#include <linux/sysfs.h>
-#include <linux/kobject.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/pstore.h>
+#include <beep/capability.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/smp.h>
+#include <beep/efi.h>
+#include <beep/sysfs.h>
+#include <beep/kobject.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/pstore.h>
 
-#include <linux/fs.h>
-#include <linux/ramfs.h>
-#include <linux/pagemap.h>
+#include <beep/fs.h>
+#include <beep/ramfs.h>
+#include <beep/pagemap.h>
 
 #include <asm/uaccess.h>
 
@@ -1140,7 +1140,7 @@ static ssize_t efi_pstore_read(u64 *id, enum pstore_type_id *type,
 			       int *count, struct timespec *timespec,
 			       char **buf, struct pstore_info *psi)
 {
-	efi_guid_t vendor = LINUX_EFI_CRASH_GUID;
+	efi_guid_t vendor = BEEP_EFI_CRASH_GUID;
 	struct efivars *efivars = psi->data;
 	char name[DUMP_NAME_LEN];
 	int i;
@@ -1203,7 +1203,7 @@ static int efi_pstore_write(enum pstore_type_id type,
 {
 	char name[DUMP_NAME_LEN];
 	efi_char16_t efi_name[DUMP_NAME_LEN];
-	efi_guid_t vendor = LINUX_EFI_CRASH_GUID;
+	efi_guid_t vendor = BEEP_EFI_CRASH_GUID;
 	struct efivars *efivars = psi->data;
 	int i, ret = 0;
 	u64 storage_space, remaining_space, max_variable_size;
@@ -1254,7 +1254,7 @@ static int efi_pstore_erase(enum pstore_type_id type, u64 id, int count,
 	efi_char16_t efi_name[DUMP_NAME_LEN];
 	char name_old[DUMP_NAME_LEN];
 	efi_char16_t efi_name_old[DUMP_NAME_LEN];
-	efi_guid_t vendor = LINUX_EFI_CRASH_GUID;
+	efi_guid_t vendor = BEEP_EFI_CRASH_GUID;
 	struct efivars *efivars = psi->data;
 	struct efivar_entry *entry, *found = NULL;
 	int i;

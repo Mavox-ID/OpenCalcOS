@@ -6,20 +6,20 @@
  * Copied and modified from arch/i386/kernel/time.c
  *
  */
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/kernel_stat.h>
-#include <linux/mc146818rtc.h>
-#include <linux/init.h>
-#include <linux/bcd.h>
-#include <linux/ioport.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/param.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/interrupt.h>
+#include <beep/time.h>
+#include <beep/timex.h>
+#include <beep/kernel_stat.h>
+#include <beep/mc146818rtc.h>
+#include <beep/init.h>
+#include <beep/bcd.h>
+#include <beep/ioport.h>
 
 #include <asm/io.h>
 #include <asm/nvram.h>

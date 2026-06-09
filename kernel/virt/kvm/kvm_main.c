@@ -1,5 +1,5 @@
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for Beep
  *
  * This module enables machines with Intel VT-x extensions to run virtual
  * machines without emulation or binary translation.
@@ -18,37 +18,37 @@
 
 #include "iodev.h"
 
-#include <linux/kvm_host.h>
-#include <linux/kvm.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/percpu.h>
-#include <linux/mm.h>
-#include <linux/miscdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/reboot.h>
-#include <linux/debugfs.h>
-#include <linux/highmem.h>
-#include <linux/file.h>
-#include <linux/syscore_ops.h>
-#include <linux/cpu.h>
-#include <linux/sched.h>
-#include <linux/cpumask.h>
-#include <linux/smp.h>
-#include <linux/anon_inodes.h>
-#include <linux/profile.h>
-#include <linux/kvm_para.h>
-#include <linux/pagemap.h>
-#include <linux/mman.h>
-#include <linux/swap.h>
-#include <linux/bitops.h>
-#include <linux/spinlock.h>
-#include <linux/compat.h>
-#include <linux/srcu.h>
-#include <linux/hugetlb.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
-#include <linux/bsearch.h>
+#include <beep/kvm_host.h>
+#include <beep/kvm.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/percpu.h>
+#include <beep/mm.h>
+#include <beep/miscdevice.h>
+#include <beep/vmalloc.h>
+#include <beep/reboot.h>
+#include <beep/debugfs.h>
+#include <beep/highmem.h>
+#include <beep/file.h>
+#include <beep/syscore_ops.h>
+#include <beep/cpu.h>
+#include <beep/sched.h>
+#include <beep/cpumask.h>
+#include <beep/smp.h>
+#include <beep/anon_inodes.h>
+#include <beep/profile.h>
+#include <beep/kvm_para.h>
+#include <beep/pagemap.h>
+#include <beep/mman.h>
+#include <beep/swap.h>
+#include <beep/bitops.h>
+#include <beep/spinlock.h>
+#include <beep/compat.h>
+#include <beep/srcu.h>
+#include <beep/hugetlb.h>
+#include <beep/slab.h>
+#include <beep/sort.h>
+#include <beep/bsearch.h>
 
 #include <asm/processor.h>
 #include <asm/io.h>
@@ -274,7 +274,7 @@ static void kvm_mmu_notifier_invalidate_page(struct mmu_notifier *mn,
 	int need_tlb_flush, idx;
 
 	/*
-	 * When ->invalidate_page runs, the linux pte has been zapped
+	 * When ->invalidate_page runs, the beep pte has been zapped
 	 * already but the page is still allocated until
 	 * ->invalidate_page returns. So if we increase the sequence
 	 * here the kvm page fault will notice if the spte can't be

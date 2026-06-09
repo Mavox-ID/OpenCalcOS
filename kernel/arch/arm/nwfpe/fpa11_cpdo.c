@@ -34,7 +34,7 @@ unsigned int EmulateCPDO(const unsigned int opcode)
 	unsigned int nType, nDest, nRc;
 	struct roundingData roundData;
 
-	/* Get the destination size.  If not valid let Linux perform
+	/* Get the destination size.  If not valid let Beep perform
 	   an invalid instruction trap. */
 	nDest = getDestinationSize(opcode);
 	if (typeNone == nDest)

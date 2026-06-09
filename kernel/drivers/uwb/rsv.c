@@ -15,11 +15,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include <linux/kernel.h>
-#include <linux/uwb.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/uwb.h>
+#include <beep/slab.h>
+#include <beep/random.h>
+#include <beep/export.h>
 
 #include "uwb-internal.h"
 

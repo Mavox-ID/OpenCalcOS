@@ -7,9 +7,9 @@
  * Copyright (C) 1999, 2000 by Silicon Graphics
  * Copyright (C) 2002  Maciej W. Rozycki
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
 #include <asm/traps.h>
 #include <asm/uaccess.h>
 #include <asm/addrspace.h>

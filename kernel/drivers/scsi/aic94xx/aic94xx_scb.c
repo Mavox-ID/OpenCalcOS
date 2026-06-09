@@ -24,7 +24,7 @@
  *
  */
 
-#include <linux/gfp.h>
+#include <beep/gfp.h>
 #include <scsi/scsi_host.h>
 
 #include "aic94xx.h"

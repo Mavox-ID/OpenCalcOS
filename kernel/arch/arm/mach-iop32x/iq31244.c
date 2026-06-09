@@ -14,18 +14,18 @@
  * option) any later version.
  */
 
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/pm.h>
-#include <linux/string.h>
-#include <linux/serial_core.h>
-#include <linux/serial_8250.h>
-#include <linux/mtd/physmap.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/pm.h>
+#include <beep/string.h>
+#include <beep/serial_core.h>
+#include <beep/serial_8250.h>
+#include <beep/mtd/physmap.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
 #include <mach/hardware.h>
 #include <asm/cputype.h>
 #include <asm/irq.h>

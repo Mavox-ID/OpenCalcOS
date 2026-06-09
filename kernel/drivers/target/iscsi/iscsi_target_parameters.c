@@ -3,9 +3,9 @@
  *
  * \u00a9 Copyright 2007-2011 RisingTide Systems LLC.
  *
- * Licensed to the Linux Foundation under the General Public License (GPL) version 2.
+ * Licensed to the Beep Foundation under the General Public License (GPL) version 2.
  *
- * Author: Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Author: Nicholas A. Bellinger <nab@beep-iscsi.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,7 +18,7 @@
  * GNU General Public License for more details.
  ******************************************************************************/
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 
 #include "iscsi_target_core.h"
 #include "iscsi_target_util.h"

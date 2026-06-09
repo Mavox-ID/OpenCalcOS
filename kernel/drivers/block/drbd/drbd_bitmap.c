@@ -22,11 +22,11 @@
    the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/bitops.h>
-#include <linux/vmalloc.h>
-#include <linux/string.h>
-#include <linux/drbd.h>
-#include <linux/slab.h>
+#include <beep/bitops.h>
+#include <beep/vmalloc.h>
+#include <beep/string.h>
+#include <beep/drbd.h>
+#include <beep/slab.h>
 #include <asm/kmap_types.h>
 
 #include "drbd_int.h"

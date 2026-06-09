@@ -12,7 +12,7 @@
 #endif
 
 /* Definition taken from glibc 2.3.3
- * sysdeps/unix/sysv/linux/hppa/sysdep.h
+ * sysdeps/unix/sysv/beep/hppa/sysdep.h
  */
 
 #ifdef PIC

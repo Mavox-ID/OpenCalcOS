@@ -1,7 +1,7 @@
 /*
- * Video capture interface for Linux version 2
+ * Video capture interface for Beep version 2
  *
- *	A generic video device interface for the LINUX operating system
+ *	A generic video device interface for the BEEP operating system
  *	using a set of device structures/vectors for low level operations.
  *
  *	This program is free software; you can redistribute it and/or
@@ -16,15 +16,15 @@
  *		- Added procfs support
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/string.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/kmod.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
 
 #include <media/v4l2-common.h>
@@ -32,7 +32,7 @@
 #include <media/v4l2-ioctl.h>
 
 #define VIDEO_NUM_DEVICES	256
-#define VIDEO_NAME              "video4linux"
+#define VIDEO_NAME              "video4beep"
 
 /*
  *	sysfs stuff
@@ -733,7 +733,7 @@ static void determine_valid_ioctls(struct video_device *vdev)
 }
 
 /**
- *	__video_register_device - register video4linux devices
+ *	__video_register_device - register video4beep devices
  *	@vdev: video device structure we want to register
  *	@type: type of device to register
  *	@nr:   which device node number (0 == /dev/video0, 1 == /dev/video1, ...
@@ -958,7 +958,7 @@ cleanup:
 EXPORT_SYMBOL(__video_register_device);
 
 /**
- *	video_unregister_device - unregister a video4linux device
+ *	video_unregister_device - unregister a video4beep device
  *	@vdev: the device to unregister
  *
  *	This unregisters the passed device. Future open calls will
@@ -981,14 +981,14 @@ void video_unregister_device(struct video_device *vdev)
 EXPORT_SYMBOL(video_unregister_device);
 
 /*
- *	Initialise video for linux
+ *	Initialise video for beep
  */
 static int __init videodev_init(void)
 {
 	dev_t dev = MKDEV(VIDEO_MAJOR, 0);
 	int ret;
 
-	printk(KERN_INFO "Linux video capture interface: v2.00\n");
+	printk(KERN_INFO "Beep video capture interface: v2.00\n");
 	ret = register_chrdev_region(dev, VIDEO_NUM_DEVICES, VIDEO_NAME);
 	if (ret < 0) {
 		printk(KERN_WARNING "videodev: unable to get major %d\n",
@@ -1018,7 +1018,7 @@ subsys_initcall(videodev_init);
 module_exit(videodev_exit)
 
 MODULE_AUTHOR("Alan Cox, Mauro Carvalho Chehab <mchehab@infradead.org>");
-MODULE_DESCRIPTION("Device registrar for Video4Linux drivers v2");
+MODULE_DESCRIPTION("Device registrar for Video4Beep drivers v2");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS_CHARDEV_MAJOR(VIDEO_MAJOR);
 

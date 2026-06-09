@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-mmp/brownstone.c
+ *  beep/arch/arm/mach-mmp/brownstone.c
  *
  *  Support for the Marvell Brownstone Development Platform.
  *
@@ -10,14 +10,14 @@
  *  publishhed by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/max8649.h>
-#include <linux/regulator/fixed.h>
-#include <linux/mfd/max8925.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/max8649.h>
+#include <beep/regulator/fixed.h>
+#include <beep/mfd/max8925.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

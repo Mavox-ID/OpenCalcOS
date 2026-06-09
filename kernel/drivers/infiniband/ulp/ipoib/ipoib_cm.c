@@ -33,11 +33,11 @@
 #include <rdma/ib_cm.h>
 #include <net/dst.h>
 #include <net/icmp.h>
-#include <linux/icmpv6.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/moduleparam.h>
+#include <beep/icmpv6.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/moduleparam.h>
 
 #include "ipoib.h"
 

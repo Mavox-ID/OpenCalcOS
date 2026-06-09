@@ -18,10 +18,10 @@
 #ifndef CTATC_H
 #define CTATC_H
 
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/timer.h>
+#include <beep/types.h>
+#include <beep/mutex.h>
+#include <beep/pci.h>
+#include <beep/timer.h>
 #include <sound/core.h>
 
 #include "ctvmem.h"

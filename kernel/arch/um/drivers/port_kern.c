@@ -1,14 +1,14 @@
 /*
- * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{linux.intel,addtoit}.com)
+ * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{beep.intel,addtoit}.com)
  * Licensed under the GPL
  */
 
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <beep/completion.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
 #include <asm/atomic.h>
 #include <init.h>
 #include <irq_kern.h>

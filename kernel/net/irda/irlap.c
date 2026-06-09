@@ -2,7 +2,7 @@
  *
  * Filename:      irlap.c
  * Version:       1.0
- * Description:   IrLAP implementation for Linux
+ * Description:   IrLAP implementation for Beep
  * Status:        Stable
  * Author:        Dag Brattli <dagb@cs.uit.no>
  * Created at:    Mon Aug  4 20:40:53 1997
@@ -29,15 +29,15 @@
  *
  ********************************************************************/
 
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/random.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/skbuff.h>
+#include <beep/delay.h>
+#include <beep/proc_fs.h>
+#include <beep/init.h>
+#include <beep/random.h>
+#include <beep/module.h>
+#include <beep/seq_file.h>
 
 #include <net/irda/irda.h>
 #include <net/irda/irda_device.h>
@@ -612,7 +612,7 @@ void irlap_discovery_indication(struct irlap_cb *self, discovery_t *discovery)
 	 * So, we backoff to avoid collisions.
 	 * IrLAP spec 6.13.4 suggest 100ms...
 	 * Note : this little trick actually make a *BIG* difference. If I set
-	 * my Linux box with discovery enabled and one Ultra frame sent every
+	 * my Beep box with discovery enabled and one Ultra frame sent every
 	 * second, my Palm has no trouble connecting to it every time !
 	 * Jean II */
 	irda_device_set_media_busy(self->netdev, SMALL);

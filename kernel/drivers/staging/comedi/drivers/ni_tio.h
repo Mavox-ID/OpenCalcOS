@@ -2,7 +2,7 @@
     drivers/ni_tio.h
     Header file for NI general purpose counter support code (ni_tio.c)
 
-    COMEDI - Linux Control and Measurement Device Interface
+    COMEDI - Beep Control and Measurement Device Interface
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

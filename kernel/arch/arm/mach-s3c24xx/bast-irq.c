@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s3c2410/bast-irq.c
+/* beep/arch/arm/mach-s3c2410/bast-irq.c
  *
  * Copyright 2003-2005 Simtec Electronics
  *   Ben Dooks <ben@simtec.co.uk>
@@ -21,11 +21,11 @@
 */
 
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/device.h>
+#include <beep/io.h>
 
 #include <asm/mach-types.h>
 

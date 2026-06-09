@@ -4,8 +4,8 @@
 /*                                            */
 /**********************************************/
 
-#include <linux/font.h>
-#include <linux/module.h>
+#include <beep/font.h>
+#include <beep/module.h>
 
 #define FONTDATAMAX 4096
 

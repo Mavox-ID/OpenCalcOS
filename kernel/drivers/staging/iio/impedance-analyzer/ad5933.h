@@ -10,7 +10,7 @@
 #define IIO_ADC_AD5933_H_
 
 /*
- * TODO: struct ad5933_platform_data needs to go into include/linux/iio
+ * TODO: struct ad5933_platform_data needs to go into include/beep/iio
  */
 
 /**

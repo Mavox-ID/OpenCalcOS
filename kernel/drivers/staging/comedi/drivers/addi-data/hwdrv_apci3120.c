@@ -834,25 +834,25 @@ static int i_APCI3120_CyclicAnalogInput(int mode,
 		0, ui_TimerValue0, ui_ConvertTiming;
 	unsigned short us_TmpValue;
 
-	/* BEGIN JK 07.05.04: Comparison between WIN32 and Linux driver */
+	/* BEGIN JK 07.05.04: Comparison between WIN32 and Beep driver */
 	/* devpriv->b_AiCyclicAcquisition=APCI3120_ENABLE; */
-	/* END JK 07.05.04: Comparison between WIN32 and Linux driver */
+	/* END JK 07.05.04: Comparison between WIN32 and Beep driver */
 
 	/*******************/
 	/* Resets the FIFO */
 	/*******************/
 	inb(dev->iobase + APCI3120_RESET_FIFO);
 
-	/* BEGIN JK 07.05.04: Comparison between WIN32 and Linux driver */
+	/* BEGIN JK 07.05.04: Comparison between WIN32 and Beep driver */
 	/* inw(dev->iobase+APCI3120_RD_STATUS); */
-	/* END JK 07.05.04: Comparison between WIN32 and Linux driver */
+	/* END JK 07.05.04: Comparison between WIN32 and Beep driver */
 
 	/***************************/
 	/* Acquisition initialized */
 	/***************************/
-	/* BEGIN JK 07.05.04: Comparison between WIN32 and Linux driver */
+	/* BEGIN JK 07.05.04: Comparison between WIN32 and Beep driver */
 	devpriv->b_AiCyclicAcquisition = APCI3120_ENABLE;
-	/* END JK 07.05.04: Comparison between WIN32 and Linux driver */
+	/* END JK 07.05.04: Comparison between WIN32 and Beep driver */
 
 	/*  clear software  registers */
 	devpriv->b_TimerSelectMode = 0;
@@ -872,10 +872,10 @@ static int i_APCI3120_CyclicAnalogInput(int mode,
 	/* Clears the timer status register */
 	/************************************/
 
-	/* BEGIN JK 07.05.04: Comparison between WIN32 and Linux driver */
+	/* BEGIN JK 07.05.04: Comparison between WIN32 and Beep driver */
 	/* inw(dev->iobase+APCI3120_TIMER_STATUS_REGISTER); */
 	/* inb(dev->iobase + APCI3120_TIMER_STATUS_REGISTER); */
-	/* END JK 07.05.04: Comparison between WIN32 and Linux driver */
+	/* END JK 07.05.04: Comparison between WIN32 and Beep driver */
 
 	/**************************/
 	/* Disables All Timer     */
@@ -890,9 +890,9 @@ static int i_APCI3120_CyclicAnalogInput(int mode,
 	/*******************/
 	/* Resets the FIFO */
 	/*******************/
-	/* BEGIN JK 07.05.04: Comparison between WIN32 and Linux driver */
+	/* BEGIN JK 07.05.04: Comparison between WIN32 and Beep driver */
 	inb(devpriv->iobase + APCI3120_RESET_FIFO);
-	/* END JK 07.05.04: Comparison between WIN32 and Linux driver */
+	/* END JK 07.05.04: Comparison between WIN32 and Beep driver */
 
 	devpriv->ui_AiActualScan = 0;
 	devpriv->ui_AiActualScanPosition = 0;
@@ -1025,12 +1025,12 @@ static int i_APCI3120_CyclicAnalogInput(int mode,
 	/* Clears the SCAN bit */
 	/***********************/
 
-	/* BEGIN JK 07.05.04: Comparison between WIN32 and Linux driver */
+	/* BEGIN JK 07.05.04: Comparison between WIN32 and Beep driver */
 	/* devpriv->b_ModeSelectRegister=devpriv->b_ModeSelectRegister | APCI3120_DISABLE_SCAN; */
 
 	devpriv->b_ModeSelectRegister = devpriv->b_ModeSelectRegister &
 		APCI3120_DISABLE_SCAN;
-	/* END JK 07.05.04: Comparison between WIN32 and Linux driver */
+	/* END JK 07.05.04: Comparison between WIN32 and Beep driver */
 
 	outb(devpriv->b_ModeSelectRegister,
 		dev->iobase + APCI3120_WRITE_MODE_SELECT);
@@ -1117,9 +1117,9 @@ static int i_APCI3120_CyclicAnalogInput(int mode,
 	} else {
 		/* If DMA Enabled */
 
-		/* BEGIN JK 07.05.04: Comparison between WIN32 and Linux driver */
+		/* BEGIN JK 07.05.04: Comparison between WIN32 and Beep driver */
 		/* inw(dev->iobase+0); reset EOC bit */
-		/* END JK 07.05.04: Comparison between WIN32 and Linux driver */
+		/* END JK 07.05.04: Comparison between WIN32 and Beep driver */
 		devpriv->b_InterruptMode = APCI3120_DMA_MODE;
 
 		/************************************/
@@ -1191,11 +1191,11 @@ static int i_APCI3120_CyclicAnalogInput(int mode,
 			devpriv->i_IobaseAddon + 2);
 
 /*
- * TO VERIFIED BEGIN JK 07.05.04: Comparison between WIN32 and Linux
+ * TO VERIFIED BEGIN JK 07.05.04: Comparison between WIN32 and Beep
  * driver
  */
 		outw(0x1000, devpriv->i_IobaseAddon + 2);
-		/* END JK 07.05.04: Comparison between WIN32 and Linux driver */
+		/* END JK 07.05.04: Comparison between WIN32 and Beep driver */
 
 		/* 2 No change */
 		/* A2P FIFO MANAGEMENT */
@@ -1258,11 +1258,11 @@ static int i_APCI3120_CyclicAnalogInput(int mode,
 		/* A2P FIFO RESET */
 		/******************/
 /*
- * TO VERIFY BEGIN JK 07.05.04: Comparison between WIN32 and Linux
+ * TO VERIFY BEGIN JK 07.05.04: Comparison between WIN32 and Beep
  * driver
  */
 		outl(0x04000000UL, devpriv->i_IobaseAmcc + AMCC_OP_REG_MCSR);
-		/* END JK 07.05.04: Comparison between WIN32 and Linux driver */
+		/* END JK 07.05.04: Comparison between WIN32 and Beep driver */
 
 /*
  * 6
@@ -1270,9 +1270,9 @@ static int i_APCI3120_CyclicAnalogInput(int mode,
  * A2P_FIFO_WRITE_ENABLE (0x01|0x02)=0x03
  */
 
-		/* BEGIN JK 07.05.04: Comparison between WIN32 and Linux driver */
+		/* BEGIN JK 07.05.04: Comparison between WIN32 and Beep driver */
 		/* outw(3,devpriv->i_IobaseAddon + 4); */
-		/* END JK 07.05.04: Comparison between WIN32 and Linux driver */
+		/* END JK 07.05.04: Comparison between WIN32 and Beep driver */
 
 /*
  * 7
@@ -1286,20 +1286,20 @@ static int i_APCI3120_CyclicAnalogInput(int mode,
 				APCI3120_ENABLE_WRITE_TC_INT),
 			devpriv->i_IobaseAmcc + AMCC_OP_REG_INTCSR);
 
-		/* BEGIN JK 07.05.04: Comparison between WIN32 and Linux driver */
+		/* BEGIN JK 07.05.04: Comparison between WIN32 and Beep driver */
 		/******************************************/
 		/* ENABLE A2P FIFO WRITE AND ENABLE AMWEN */
 		/******************************************/
 		outw(3, devpriv->i_IobaseAddon + 4);
-		/* END JK 07.05.04: Comparison between WIN32 and Linux driver */
+		/* END JK 07.05.04: Comparison between WIN32 and Beep driver */
 
 		/******************/
 		/* A2P FIFO RESET */
 		/******************/
-		/* BEGIN JK 07.05.04: Comparison between WIN32 and Linux driver */
+		/* BEGIN JK 07.05.04: Comparison between WIN32 and Beep driver */
 		outl(0x04000000UL,
 			devpriv->i_IobaseAmcc + APCI3120_AMCC_OP_MCSR);
-		/* END JK 07.05.04: Comparison between WIN32 and Linux driver */
+		/* END JK 07.05.04: Comparison between WIN32 and Beep driver */
 	}
 
 	if ((devpriv->us_UseDma == APCI3120_DISABLE)

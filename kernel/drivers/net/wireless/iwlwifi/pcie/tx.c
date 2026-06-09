@@ -22,13 +22,13 @@
  * file called LICENSE.
  *
  * Contact Information:
- *  Intel Linux Wireless <ilw@linux.intel.com>
+ *  Intel Beep Wireless <ilw@beep.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  *****************************************************************************/
-#include <linux/etherdevice.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
+#include <beep/etherdevice.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
 
 #include "iwl-debug.h"
 #include "iwl-csr.h"

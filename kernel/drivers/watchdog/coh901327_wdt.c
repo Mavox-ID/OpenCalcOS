@@ -6,17 +6,17 @@
  * Watchdog driver for the ST-Ericsson AB COH 901 327 IP core
  * Author: Linus Walleij <linus.walleij@stericsson.com>
  */
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/watchdog.h>
-#include <linux/interrupt.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/watchdog.h>
+#include <beep/interrupt.h>
+#include <beep/pm.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/bitops.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/err.h>
 
 #define DRV_NAME "WDOG COH 901 327"
 

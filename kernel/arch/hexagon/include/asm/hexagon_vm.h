@@ -1,7 +1,7 @@
 /*
  * Declarations for to Hexagon Virtal Machine.
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -22,7 +22,7 @@
 #define ASM_HEXAGON_VM_H
 
 /*
- * In principle, a Linux kernel for the VM could
+ * In principle, a Beep kernel for the VM could
  * selectively define the virtual instructions
  * as inline assembler macros, but for a first pass,
  * we'll use subroutines for both the VM and the native

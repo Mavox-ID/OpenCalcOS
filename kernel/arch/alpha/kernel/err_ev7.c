@@ -1,13 +1,13 @@
 /*
- *	linux/arch/alpha/kernel/err_ev7.c
+ *	beep/arch/alpha/kernel/err_ev7.c
  *
  *	Copyright (C) 2000 Jeff Wiedemeier (Compaq Computer Corporation)
  *
  *	Error handling code supporting Alpha systems
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
+#include <beep/init.h>
+#include <beep/sched.h>
 
 #include <asm/io.h>
 #include <asm/hwrpb.h>

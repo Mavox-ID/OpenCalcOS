@@ -7,35 +7,35 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/blkdev.h>
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/types.h>
-#include <linux/platform_data/atmel.h>
+#include <beep/blkdev.h>
+#include <beep/clk.h>
+#include <beep/debugfs.h>
+#include <beep/device.h>
+#include <beep/dmaengine.h>
+#include <beep/dma-mapping.h>
+#include <beep/err.h>
+#include <beep/gpio.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/of_gpio.h>
+#include <beep/platform_device.h>
+#include <beep/scatterlist.h>
+#include <beep/seq_file.h>
+#include <beep/slab.h>
+#include <beep/stat.h>
+#include <beep/types.h>
+#include <beep/platform_data/atmel.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/sdio.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/sdio.h>
 
 #include <mach/atmel-mci.h>
-#include <linux/atmel-mci.h>
-#include <linux/atmel_pdc.h>
+#include <beep/atmel-mci.h>
+#include <beep/atmel_pdc.h>
 
 #include <asm/io.h>
 #include <asm/unaligned.h>

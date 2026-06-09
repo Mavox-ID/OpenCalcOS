@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-clps711x/core.c
+ *  beep/arch/arm/mach-clps711x/core.c
  *
  *  Core support for the CLPS711x-based machines.
  *
@@ -19,15 +19,15 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/sizes.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/clockchips.h>
-#include <linux/clk-provider.h>
+#include <beep/io.h>
+#include <beep/init.h>
+#include <beep/sizes.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/clk.h>
+#include <beep/clkdev.h>
+#include <beep/clockchips.h>
+#include <beep/clk-provider.h>
 
 #include <asm/exception.h>
 #include <asm/mach/irq.h>

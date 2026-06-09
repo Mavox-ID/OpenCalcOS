@@ -13,15 +13,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/spi_bitbang.h>
+#include <beep/io.h>
+#include <beep/of.h>
 
 #define DRV_NAME "spi_altera"
 

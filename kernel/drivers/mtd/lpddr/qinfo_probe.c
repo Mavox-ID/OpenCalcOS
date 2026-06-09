@@ -18,18 +18,18 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
  * 02110-1301, USA.
  */
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
 
-#include <linux/mtd/xip.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/pfow.h>
-#include <linux/mtd/qinfo.h>
+#include <beep/mtd/xip.h>
+#include <beep/mtd/map.h>
+#include <beep/mtd/pfow.h>
+#include <beep/mtd/qinfo.h>
 
 static int lpddr_chip_setup(struct map_info *map, struct lpddr_private *lpddr);
 struct mtd_info *lpddr_probe(struct map_info *map);

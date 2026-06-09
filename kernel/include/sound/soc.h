@@ -1,5 +1,5 @@
 /*
- * linux/sound/soc.h -- ALSA SoC Layer
+ * beep/sound/soc.h -- ALSA SoC Layer
  *
  * Author:		Liam Girdwood
  * Created:		Aug 11th 2005
@@ -10,17 +10,17 @@
  * published by the Free Software Foundation.
  */
 
-#ifndef __LINUX_SND_SOC_H
-#define __LINUX_SND_SOC_H
+#ifndef __BEEP_SND_SOC_H
+#define __BEEP_SND_SOC_H
 
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/notifier.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/regmap.h>
-#include <linux/log2.h>
+#include <beep/platform_device.h>
+#include <beep/types.h>
+#include <beep/notifier.h>
+#include <beep/workqueue.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/regmap.h>
+#include <beep/log2.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/compress_driver.h>

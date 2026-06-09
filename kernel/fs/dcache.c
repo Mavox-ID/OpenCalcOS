@@ -14,29 +14,29 @@
  * the dcache entry is deleted or garbage collected.
  */
 
-#include <linux/syscalls.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/fsnotify.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/hash.h>
-#include <linux/cache.h>
-#include <linux/export.h>
-#include <linux/mount.h>
-#include <linux/file.h>
+#include <beep/syscalls.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/fs.h>
+#include <beep/fsnotify.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/hash.h>
+#include <beep/cache.h>
+#include <beep/export.h>
+#include <beep/mount.h>
+#include <beep/file.h>
 #include <asm/uaccess.h>
-#include <linux/security.h>
-#include <linux/seqlock.h>
-#include <linux/swap.h>
-#include <linux/bootmem.h>
-#include <linux/fs_struct.h>
-#include <linux/hardirq.h>
-#include <linux/bit_spinlock.h>
-#include <linux/rculist_bl.h>
-#include <linux/prefetch.h>
-#include <linux/ratelimit.h>
+#include <beep/security.h>
+#include <beep/seqlock.h>
+#include <beep/swap.h>
+#include <beep/bootmem.h>
+#include <beep/fs_struct.h>
+#include <beep/hardirq.h>
+#include <beep/bit_spinlock.h>
+#include <beep/rculist_bl.h>
+#include <beep/prefetch.h>
+#include <beep/ratelimit.h>
 #include "internal.h"
 #include "mount.h"
 

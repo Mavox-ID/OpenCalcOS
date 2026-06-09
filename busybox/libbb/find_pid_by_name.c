@@ -9,7 +9,7 @@
 #include "libbb.h"
 
 /*
-In Linux we have three ways to determine "process name":
+In Beep we have three ways to determine "process name":
 1. /proc/PID/stat has "...(name)...", among other things. It's so-called "comm" field.
 2. /proc/PID/cmdline's first NUL-terminated string. It's argv[0] from exec syscall.
 3. /proc/PID/exe symlink. Points to the running executable file.
@@ -45,7 +45,7 @@ static int comm_match(procps_status_t *p, const char *procName)
 	if (strncmp(p->comm, procName, 15) != 0)
 		return 0; /* comm does not match */
 
-	/* In Linux, if comm is 15 chars, it is truncated.
+	/* In Beep, if comm is 15 chars, it is truncated.
 	 * (or maybe the name was exactly 15 chars, but there is
 	 * no way to know that) */
 	if (p->comm[14] == '\0')

@@ -1,5 +1,5 @@
-/* Linux driver for Philips webcam
-   USB and Video4Linux interface part.
+/* Beep driver for Philips webcam
+   USB and Video4Beep interface part.
    (C) 1999-2004 Nemosoft Unv.
    (C) 2004-2006 Luc Saillard (luc@saillard.org)
    (C) 2011 Hans de Goede <hdegoede@redhat.com>
@@ -26,13 +26,13 @@
 
 */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/vmalloc.h>
-#include <linux/jiffies.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/poll.h>
+#include <beep/vmalloc.h>
+#include <beep/jiffies.h>
 #include <asm/io.h>
 
 #include "pwc.h"

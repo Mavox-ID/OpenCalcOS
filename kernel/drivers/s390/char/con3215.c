@@ -9,19 +9,19 @@
  *	      Dan Morrison, IBM Corporation <dmorriso@cse.buffalo.edu>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kdev_t.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/vt_kern.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/reboot.h>
-#include <linux/serial.h> /* ASYNC_* flags */
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kdev_t.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/vt_kern.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/interrupt.h>
+#include <beep/err.h>
+#include <beep/reboot.h>
+#include <beep/serial.h> /* ASYNC_* flags */
+#include <beep/slab.h>
 #include <asm/ccwdev.h>
 #include <asm/cio.h>
 #include <asm/io.h>

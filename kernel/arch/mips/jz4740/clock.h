@@ -16,7 +16,7 @@
 #ifndef __MIPS_JZ4740_CLOCK_H__
 #define __MIPS_JZ4740_CLOCK_H__
 
-#include <linux/list.h>
+#include <beep/list.h>
 
 struct jz4740_clock_board_data {
 	unsigned long ext_rate;

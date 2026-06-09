@@ -5,9 +5,9 @@
 
 %{
 
-#include <linux/compiler.h>
-#include <linux/list.h>
-#include <linux/bitmap.h>
+#include <beep/compiler.h>
+#include <beep/list.h>
+#include <beep/bitmap.h>
 #include <string.h>
 #include "pmu.h"
 

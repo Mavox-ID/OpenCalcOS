@@ -32,13 +32,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/timer.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/time.h>
+#include <beep/timer.h>
 
 #include <asm/unaligned.h>
 

@@ -23,13 +23,13 @@
  * 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
+#include <beep/init.h>
+#include <beep/linkage.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/fs.h>
 
 #include <asm/mmu_context.h>
 

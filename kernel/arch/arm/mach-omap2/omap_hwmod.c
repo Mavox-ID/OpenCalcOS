@@ -37,7 +37,7 @@
  * This description can be automatically generated from the TI
  * hardware database.  OMAP hwmod provides a standard, consistent API
  * to reset, enable, idle, and disable these hardware blocks.  And
- * hwmod provides a way for other core code, such as the Linux device
+ * hwmod provides a way for other core code, such as the Beep device
  * code or the OMAP power management and address space mapping code,
  * to query the hardware database.
  *
@@ -48,7 +48,7 @@
  * in arch/arm/ *omap*.  The omap_device code includes functions to
  * build a struct platform_device using omap_hwmod data, and that is
  * currently how hwmod data is communicated to drivers and to the
- * Linux driver model.  Most drivers will call omap_hwmod functions only
+ * Beep driver model.  Most drivers will call omap_hwmod functions only
  * indirectly, via pm_runtime*() functions.
  *
  * From a layering perspective, here is where the OMAP hwmod code
@@ -58,7 +58,7 @@
  *            |      Device driver code       |
  *            |      (e.g., drivers/)         |
  *            +-------------------------------+
- *            |      Linux driver model       |
+ *            |      Beep driver model       |
  *            |     (platform_device /        |
  *            |  platform_driver data/code)   |
  *            +-------------------------------+
@@ -127,17 +127,17 @@
  */
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/bootmem.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/io.h>
+#include <beep/clk-provider.h>
+#include <beep/delay.h>
+#include <beep/err.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
+#include <beep/bootmem.h>
 
 #include "clock.h"
 #include "omap_hwmod.h"
@@ -3585,7 +3585,7 @@ int omap_hwmod_fill_dma_resources(struct omap_hwmod *oh, struct resource *res)
 /**
  * omap_hwmod_get_resource_byname - fetch IP block integration data by name
  * @oh: struct omap_hwmod * to operate on
- * @type: one of the IORESOURCE_* constants from include/linux/ioport.h
+ * @type: one of the IORESOURCE_* constants from include/beep/ioport.h
  * @name: pointer to the name of the data to fetch (optional)
  * @rsrc: pointer to a struct resource, allocated by the caller
  *

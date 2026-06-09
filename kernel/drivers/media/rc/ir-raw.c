@@ -12,12 +12,12 @@
  *  GNU General Public License for more details.
  */
 
-#include <linux/export.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/kmod.h>
-#include <linux/sched.h>
-#include <linux/freezer.h>
+#include <beep/export.h>
+#include <beep/kthread.h>
+#include <beep/mutex.h>
+#include <beep/kmod.h>
+#include <beep/sched.h>
+#include <beep/freezer.h>
 #include "rc-core-priv.h"
 
 /* Define the max number of pulse/space transitions to buffer */

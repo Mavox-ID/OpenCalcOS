@@ -14,13 +14,13 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  */
 
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/cgroup.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/freezer.h>
-#include <linux/seq_file.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/cgroup.h>
+#include <beep/fs.h>
+#include <beep/uaccess.h>
+#include <beep/freezer.h>
+#include <beep/seq_file.h>
 
 /*
  * A cgroup is freezing if any FREEZING flags are set.  FREEZING_SELF is

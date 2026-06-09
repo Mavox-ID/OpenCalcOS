@@ -1,5 +1,5 @@
 /*
- *  linux/arch/cris/traps.c
+ *  beep/arch/cris/traps.c
  *
  *  Here we handle the break vectors not used by the system call
  *  mechanism, as well as some general stack/register dumping
@@ -12,8 +12,8 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/module.h>
 
 #include <asm/pgtable.h>
 #include <asm/uaccess.h>

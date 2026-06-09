@@ -11,11 +11,11 @@
  *  under the terms of the GNU General Public License (Version 2) as
  *  published by the Free Software Foundation.
  */
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/export.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/export.h>
 
 #include <loongson.h>
 

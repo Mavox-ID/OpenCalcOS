@@ -6,22 +6,22 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation (or any later at your option).
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/atomic.h>
-#include <linux/netlink.h>
-#include <linux/rculist.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/skbuff.h>
+#include <beep/atomic.h>
+#include <beep/netlink.h>
+#include <beep/rculist.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/errno.h>
 #include <net/netlink.h>
 #include <net/sock.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_acct.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter/nfnetlink.h>
+#include <beep/netfilter/nfnetlink_acct.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Pablo Neira Ayuso <pablo@netfilter.org>");

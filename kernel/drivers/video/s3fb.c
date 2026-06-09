@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/s3fb.c -- Frame buffer device driver for S3 Trio/Virge
+ * beep/drivers/video/s3fb.c -- Frame buffer device driver for S3 Trio/Virge
  *
  * Copyright (c) 2006-2007 Ondrej Zajicek <santiago@crfreenet.org>
  *
@@ -11,22 +11,22 @@
  * which is based on the code of neofb.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/svga.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/console.h> /* Why should fb driver call console functions? because console_lock() */
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/tty.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/svga.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/console.h> /* Why should fb driver call console functions? because console_lock() */
 #include <video/vga.h>
 
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <beep/i2c.h>
+#include <beep/i2c-algo-bit.h>
 
 #ifdef CONFIG_MTRR
 #include <asm/mtrr.h>

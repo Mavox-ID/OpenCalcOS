@@ -23,7 +23,7 @@
  *
  * Arguments:
  *      priv            Pointer to device private context struct
- *      ul_client       Pointer to linux client
+ *      ul_client       Pointer to beep client
  *      sig_reply_id    ID of the expected reply (defined in sigs.h).
  *      timeout         timeout in ms
  *

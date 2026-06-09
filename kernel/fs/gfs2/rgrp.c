@@ -7,16 +7,16 @@
  * of the GNU General Public License version 2.
  */
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/fs.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/prefetch.h>
-#include <linux/blkdev.h>
-#include <linux/rbtree.h>
-#include <linux/random.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/completion.h>
+#include <beep/buffer_head.h>
+#include <beep/fs.h>
+#include <beep/gfs2_ondisk.h>
+#include <beep/prefetch.h>
+#include <beep/blkdev.h>
+#include <beep/rbtree.h>
+#include <beep/random.h>
 
 #include "gfs2.h"
 #include "incore.h"

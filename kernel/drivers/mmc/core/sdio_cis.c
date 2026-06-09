@@ -1,5 +1,5 @@
 /*
- * linux/drivers/mmc/core/sdio_cis.c
+ * beep/drivers/mmc/core/sdio_cis.c
  *
  * Author:	Nicolas Pitre
  * Created:	June 11, 2007
@@ -13,13 +13,13 @@
  * your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sdio_func.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/sdio.h>
+#include <beep/mmc/sdio_func.h>
 
 #include "sdio_cis.h"
 #include "sdio_ops.h"

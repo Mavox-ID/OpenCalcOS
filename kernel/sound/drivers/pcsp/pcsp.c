@@ -1,18 +1,18 @@
 /*
- * PC-Speaker driver for Linux
+ * PC-Speaker driver for Beep
  *
  * Copyright (C) 1997-2001  David Woodhouse
  * Copyright (C) 2001-2008  Stas Sergeev
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/pcm.h>
-#include <linux/input.h>
-#include <linux/delay.h>
+#include <beep/input.h>
+#include <beep/delay.h>
 #include <asm/bitops.h>
 #include "pcsp_input.h"
 #include "pcsp.h"

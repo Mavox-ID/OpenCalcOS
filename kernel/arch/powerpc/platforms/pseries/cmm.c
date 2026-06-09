@@ -2,7 +2,7 @@
  * Collaborative memory management interface.
  *
  * Copyright (C) 2008 IBM Corporation
- * Author(s): Brian King (brking@linux.vnet.ibm.com),
+ * Author(s): Brian King (brking@beep.vnet.ibm.com),
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,26 +20,26 @@
  *
  */
 
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/oom.h>
-#include <linux/reboot.h>
-#include <linux/sched.h>
-#include <linux/stringify.h>
-#include <linux/swap.h>
-#include <linux/device.h>
+#include <beep/ctype.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/gfp.h>
+#include <beep/init.h>
+#include <beep/kthread.h>
+#include <beep/module.h>
+#include <beep/oom.h>
+#include <beep/reboot.h>
+#include <beep/sched.h>
+#include <beep/stringify.h>
+#include <beep/swap.h>
+#include <beep/device.h>
 #include <asm/firmware.h>
 #include <asm/hvcall.h>
 #include <asm/mmu.h>
 #include <asm/pgalloc.h>
 #include <asm/uaccess.h>
-#include <linux/memory.h>
+#include <beep/memory.h>
 
 #include "plpar_wrappers.h"
 
@@ -67,7 +67,7 @@ static unsigned int cmm_disabled = CMM_DISABLE;
 static unsigned long min_mem_mb = CMM_MIN_MEM_MB;
 static struct device cmm_dev;
 
-MODULE_AUTHOR("Brian King <brking@linux.vnet.ibm.com>");
+MODULE_AUTHOR("Brian King <brking@beep.vnet.ibm.com>");
 MODULE_DESCRIPTION("IBM System p Collaborative Memory Manager");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(CMM_DRIVER_VERSION);

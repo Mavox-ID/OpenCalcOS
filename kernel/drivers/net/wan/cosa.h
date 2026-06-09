@@ -21,7 +21,7 @@
 #ifndef COSA_H__
 #define COSA_H__
 
-#include <linux/ioctl.h>
+#include <beep/ioctl.h>
 
 #ifdef __KERNEL__
 /* status register - output bits */

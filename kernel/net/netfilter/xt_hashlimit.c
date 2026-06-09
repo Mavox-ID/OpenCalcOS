@@ -8,32 +8,32 @@
  * Development of this code was funded by Astaro AG, http://www.astaro.com/
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/random.h>
-#include <linux/jhash.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/list.h>
-#include <linux/skbuff.h>
-#include <linux/mm.h>
-#include <linux/in.h>
-#include <linux/ip.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/random.h>
+#include <beep/jhash.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/list.h>
+#include <beep/skbuff.h>
+#include <beep/mm.h>
+#include <beep/in.h>
+#include <beep/ip.h>
 #if IS_ENABLED(CONFIG_IP6_NF_IPTABLES)
-#include <linux/ipv6.h>
+#include <beep/ipv6.h>
 #include <net/ipv6.h>
 #endif
 
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
-#include <linux/netfilter/xt_hashlimit.h>
-#include <linux/mutex.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter_ipv4/ip_tables.h>
+#include <beep/netfilter_ipv6/ip6_tables.h>
+#include <beep/netfilter/xt_hashlimit.h>
+#include <beep/mutex.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Harald Welte <laforge@netfilter.org>");
@@ -366,7 +366,7 @@ static void htable_put(struct xt_hashlimit_htable *hinfo)
 }
 
 /* The algorithm used is the Simple Token Bucket Filter (TBF)
- * see net/sched/sch_tbf.c in the linux source tree
+ * see net/sched/sch_tbf.c in the beep source tree
  */
 
 /* Rusty: This is my (non-mathematically-inclined) understanding of

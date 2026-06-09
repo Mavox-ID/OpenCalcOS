@@ -1,7 +1,7 @@
 /* arch/arm/plat-samsung/include/plat/regs-iis.h
  *
- * Copyright (c) 2003 Simtec Electronics <linux@simtec.co.uk>
- *		      http://www.simtec.co.uk/products/SWLINUX/
+ * Copyright (c) 2003 Simtec Electronics <beep@simtec.co.uk>
+ *		      http://www.simtec.co.uk/products/SWBEEP/
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as

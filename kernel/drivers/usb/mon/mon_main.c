@@ -6,13 +6,13 @@
  * Copyright (C) 2005 Pete Zaitcev (zaitcev@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/slab.h>
-#include <linux/notifier.h>
-#include <linux/mutex.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/usb/hcd.h>
+#include <beep/slab.h>
+#include <beep/notifier.h>
+#include <beep/mutex.h>
 
 #include "usb_mon.h"
 

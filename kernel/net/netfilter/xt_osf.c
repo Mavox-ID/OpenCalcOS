@@ -17,25 +17,25 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
 
-#include <linux/if.h>
-#include <linux/inetdevice.h>
-#include <linux/ip.h>
-#include <linux/list.h>
-#include <linux/rculist.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/tcp.h>
+#include <beep/if.h>
+#include <beep/inetdevice.h>
+#include <beep/ip.h>
+#include <beep/list.h>
+#include <beep/rculist.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
+#include <beep/tcp.h>
 
 #include <net/ip.h>
 #include <net/tcp.h>
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/x_tables.h>
+#include <beep/netfilter/nfnetlink.h>
+#include <beep/netfilter/x_tables.h>
 #include <net/netfilter/nf_log.h>
-#include <linux/netfilter/xt_osf.h>
+#include <beep/netfilter/xt_osf.h>
 
 struct xt_osf_finger {
 	struct rcu_head			rcu_head;

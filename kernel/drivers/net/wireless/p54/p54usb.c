@@ -1,6 +1,6 @@
 
 /*
- * Linux device driver for USB based Prism54
+ * Beep device driver for USB based Prism54
  *
  * Copyright (c) 2006, Michael Wu <flamingice@sourmilk.net>
  *
@@ -12,15 +12,15 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/usb.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/firmware.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/crc32.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/usb.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/firmware.h>
+#include <beep/etherdevice.h>
+#include <beep/delay.h>
+#include <beep/crc32.h>
+#include <beep/module.h>
 #include <net/mac80211.h>
 
 #include "p54.h"

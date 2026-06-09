@@ -6,20 +6,20 @@
  * discipline handling modules (like SLIP).
  */
 
-#include <linux/types.h>
-#include <linux/termios.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/tty.h>
-#include <linux/fcntl.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/mutex.h>
-#include <linux/compat.h>
+#include <beep/types.h>
+#include <beep/termios.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/major.h>
+#include <beep/tty.h>
+#include <beep/fcntl.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/bitops.h>
+#include <beep/mutex.h>
+#include <beep/compat.h>
 
 #include <asm/io.h>
 #include <asm/uaccess.h>
@@ -662,7 +662,7 @@ static int get_termio(struct tty_struct *tty, struct termio __user *termio)
  *	@opt: option flags for ioctl type
  *
  *	Implement the device calling points for the SYS5 termiox ioctl
- *	interface in Linux
+ *	interface in Beep
  */
 
 static int set_termiox(struct tty_struct *tty, void __user *arg, int opt)

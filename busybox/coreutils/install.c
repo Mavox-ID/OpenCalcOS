@@ -1,7 +1,7 @@
 /* vi: set sw=4 ts=4: */
 /*
  * Copyright (C) 2003 by Glenn McGrath
- * SELinux support: by Yuichi Nakamura <ynakam@hitachisoft.jp>
+ * SEBeep support: by Yuichi Nakamura <ynakam@hitachisoft.jp>
  *
  * Licensed under GPLv2 or later, see file LICENSE in this source tree.
  */
@@ -34,7 +34,7 @@
 //usage:     "\n	-g GRP	Set group ownership"
 //usage:     "\n	-m MODE	Set permissions"
 //usage:     "\n	-t DIR	Install to DIR"
-//usage:	IF_SELINUX(
+//usage:	IF_SEBEEP(
 //usage:     "\n	-Z	Set security context"
 //usage:	)
 
@@ -55,7 +55,7 @@ static const char install_longopts[] ALIGN1 =
 	"target-directory\0"	Required_argument "t"
 /* autofs build insists of using -b --suffix=.orig */
 /* TODO? (short option for --suffix is -S) */
-# if ENABLE_SELINUX
+# if ENABLE_SEBEEP
 	"context\0"             Required_argument "Z"
 	"preserve_context\0"    No_argument       "\xff"
 	"preserve-context\0"    No_argument       "\xff"
@@ -69,13 +69,13 @@ static const char install_longopts[] ALIGN1 =
 #endif
 
 
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 static void setdefaultfilecon(const char *path)
 {
 	struct stat s;
 	security_context_t scontext = NULL;
 
-	if (!is_selinux_enabled()) {
+	if (!is_sebeep_enabled()) {
 		return;
 	}
 	if (lstat(path, &s) != 0) {
@@ -118,9 +118,9 @@ int install_main(int argc, char **argv)
 	int opts;
 	int ret = EXIT_SUCCESS;
 	int isdir;
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 	security_context_t scontext;
-	bool use_default_selinux_context = 1;
+	bool use_default_sebeep_context = 1;
 #endif
 	enum {
 		OPT_c             = 1 << 0,
@@ -134,7 +134,7 @@ int install_main(int argc, char **argv)
 		OPT_MODE          = 1 << 8,
 		OPT_OWNER         = 1 << 9,
 		OPT_TARGET        = 1 << 10,
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 		OPT_SET_SECURITY_CONTEXT = 1 << 11,
 		OPT_PRESERVE_SECURITY_CONTEXT = 1 << 12,
 #endif
@@ -143,21 +143,21 @@ int install_main(int argc, char **argv)
 	/* -c exists for backwards compatibility, it's needed */
 	/* -b is ignored ("make a backup of each existing destination file") */
 	opts = GETOPT32(argv, "^"
-		"cvb" "Ddpsg:m:o:t:" IF_SELINUX("Z:")
+		"cvb" "Ddpsg:m:o:t:" IF_SEBEEP("Z:")
 		"\0"
 		"t--d:d--t:s--d:d--s"
-		IF_FEATURE_INSTALL_LONG_OPTIONS(IF_SELINUX(":Z--\xff:\xff--Z")),
+		IF_FEATURE_INSTALL_LONG_OPTIONS(IF_SEBEEP(":Z--\xff:\xff--Z")),
 		LONGOPTS
 		&gid_str, &mode_str, &uid_str, &last
-		IF_SELINUX(, &scontext)
+		IF_SEBEEP(, &scontext)
 	);
 	argc -= optind;
 	argv += optind;
 
-#if ENABLE_SELINUX
+#if ENABLE_SEBEEP
 	if (opts & (OPT_PRESERVE_SECURITY_CONTEXT|OPT_SET_SECURITY_CONTEXT)) {
-		selinux_or_die();
-		use_default_selinux_context = 0;
+		sebeep_or_die();
+		use_default_sebeep_context = 0;
 		if (opts & OPT_PRESERVE_SECURITY_CONTEXT) {
 			copy_flags |= FILEUTILS_PRESERVE_SECURITY_CONTEXT;
 		}
@@ -250,8 +250,8 @@ int install_main(int argc, char **argv)
 			bb_perror_msg("can't change %s of %s", "permissions", dest);
 			ret = EXIT_FAILURE;
 		}
-#if ENABLE_SELINUX
-		if (use_default_selinux_context)
+#if ENABLE_SEBEEP
+		if (use_default_sebeep_context)
 			setdefaultfilecon(dest);
 #endif
 		/* Set the user and group id */

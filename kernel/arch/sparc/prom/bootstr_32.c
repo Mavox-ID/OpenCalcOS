@@ -4,9 +4,9 @@
  * Copyright(C) 1995 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/string.h>
+#include <beep/string.h>
 #include <asm/oplib.h>
-#include <linux/init.h>
+#include <beep/init.h>
 
 #define BARG_LEN  256
 static char barg_buf[BARG_LEN] = { 0 };

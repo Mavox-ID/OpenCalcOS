@@ -12,13 +12,13 @@
  *   more details.
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/uaccess.h>
-#include <linux/ptrace.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/kprobes.h>
+#include <beep/module.h>
+#include <beep/reboot.h>
+#include <beep/uaccess.h>
+#include <beep/ptrace.h>
 #include <asm/stack.h>
 #include <asm/traps.h>
 #include <asm/setup.h>

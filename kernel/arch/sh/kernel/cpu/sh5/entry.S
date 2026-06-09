@@ -9,9 +9,9 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/sys.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/sys.h>
 #include <cpu/registers.h>
 #include <asm/processor.h>
 #include <asm/unistd.h>

@@ -39,16 +39,16 @@
  *		<arjan@infradead.org> and Jim Keniston <jkenisto@us.ibm.com>
  *		unified x86 kprobes code.
  */
-#include <linux/kprobes.h>
-#include <linux/ptrace.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/hardirq.h>
-#include <linux/preempt.h>
-#include <linux/module.h>
-#include <linux/kdebug.h>
-#include <linux/kallsyms.h>
-#include <linux/ftrace.h>
+#include <beep/kprobes.h>
+#include <beep/ptrace.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/hardirq.h>
+#include <beep/preempt.h>
+#include <beep/module.h>
+#include <beep/kdebug.h>
+#include <beep/kallsyms.h>
+#include <beep/ftrace.h>
 
 #include <asm/cacheflush.h>
 #include <asm/desc.h>

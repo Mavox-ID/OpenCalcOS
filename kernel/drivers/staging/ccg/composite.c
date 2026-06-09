@@ -11,14 +11,14 @@
 
 /* #define VERBOSE_DEBUG */
 
-#include <linux/kallsyms.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/utsname.h>
+#include <beep/kallsyms.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/device.h>
+#include <beep/utsname.h>
 
-#include <linux/usb/composite.h>
+#include <beep/usb/composite.h>
 #include <asm/unaligned.h>
 
 /*
@@ -232,7 +232,7 @@ int usb_add_function(struct usb_configuration *config,
 		value = 0;
 
 	/* We allow configurations that don't work at both speeds.
-	 * If we run into a lowspeed Linux system, treat it the same
+	 * If we run into a lowspeed Beep system, treat it the same
 	 * as full speed ... it's the function drivers that will need
 	 * to avoid bulk and ISO transfers.
 	 */

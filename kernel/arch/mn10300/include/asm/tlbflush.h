@@ -11,7 +11,7 @@
 #ifndef _ASM_TLBFLUSH_H
 #define _ASM_TLBFLUSH_H
 
-#include <linux/mm.h>
+#include <beep/mm.h>
 #include <asm/processor.h>
 
 struct tlb_state {

@@ -1,7 +1,7 @@
-#include <linux/init.h>
-#include <linux/if_ether.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/if_ether.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
 
 #include <asm/paccess.h>
 #include <asm/sgi/ip22.h>

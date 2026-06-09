@@ -12,7 +12,7 @@
  *	Based on source code of the following authors:
  *	  Matt Domsch <Matt_Domsch@dell.com>,
  *	  Rob Radez <rob@osinvestor.com>,
- *	  Rusty Lynch <rusty@linux.co.intel.com>
+ *	  Rusty Lynch <rusty@beep.co.intel.com>
  *	  Satyam Sharma <satyam@infradead.org>
  *	  Randy Dunlap <randy.dunlap@oracle.com>
  *
@@ -28,14 +28,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>	/* For EXPORT_SYMBOL/module stuff/... */
-#include <linux/types.h>	/* For standard types */
-#include <linux/errno.h>	/* For the -ENODEV/... values */
-#include <linux/kernel.h>	/* For printk/panic/... */
-#include <linux/watchdog.h>	/* For watchdog specific items */
-#include <linux/init.h>		/* For __init/__exit/... */
-#include <linux/idr.h>		/* For ida_* macros */
-#include <linux/err.h>		/* For IS_ERR macros */
+#include <beep/module.h>	/* For EXPORT_SYMBOL/module stuff/... */
+#include <beep/types.h>	/* For standard types */
+#include <beep/errno.h>	/* For the -ENODEV/... values */
+#include <beep/kernel.h>	/* For printk/panic/... */
+#include <beep/watchdog.h>	/* For watchdog specific items */
+#include <beep/init.h>		/* For __init/__exit/... */
+#include <beep/idr.h>		/* For ida_* macros */
+#include <beep/err.h>		/* For IS_ERR macros */
 
 #include "watchdog_core.h"	/* For watchdog_dev_register/... */
 

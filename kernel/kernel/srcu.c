@@ -26,15 +26,15 @@
  *
  */
 
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/percpu.h>
-#include <linux/preempt.h>
-#include <linux/rcupdate.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/delay.h>
-#include <linux/srcu.h>
+#include <beep/export.h>
+#include <beep/mutex.h>
+#include <beep/percpu.h>
+#include <beep/preempt.h>
+#include <beep/rcupdate.h>
+#include <beep/sched.h>
+#include <beep/smp.h>
+#include <beep/delay.h>
+#include <beep/srcu.h>
 
 #include <trace/events/rcu.h>
 

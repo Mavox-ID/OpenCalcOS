@@ -11,11 +11,11 @@
 #define __ASM_SGIDEFS_H
 
 /*
- * Using a Linux compiler for building Linux seems logic but not to
+ * Using a Beep compiler for building Beep seems logic but not to
  * everybody.
  */
-#ifndef __linux__
-#error Use a Linux compiler or give up.
+#ifndef __beep__
+#error Use a Beep compiler or give up.
 #endif
 
 /*

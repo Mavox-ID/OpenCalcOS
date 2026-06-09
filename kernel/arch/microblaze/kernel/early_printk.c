@@ -10,14 +10,14 @@
  * for more details.
  */
 
-#include <linux/console.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/tty.h>
-#include <linux/io.h>
+#include <beep/console.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/string.h>
+#include <beep/tty.h>
+#include <beep/io.h>
 #include <asm/processor.h>
-#include <linux/fcntl.h>
+#include <beep/fcntl.h>
 #include <asm/setup.h>
 #include <asm/prom.h>
 

@@ -130,7 +130,7 @@
 #define PI_PG	4
 #endif
 
-#include <linux/types.h>
+#include <beep/types.h>
 /* Here are things one can override from the insmod command.
    Most are autoprobed by paride unless set here.  Verbose is 0
    by default.
@@ -154,17 +154,17 @@ enum {D_PRT, D_PRO, D_UNI, D_MOD, D_SLV, D_DLY};
 
 /* end of parameters */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/mtio.h>
-#include <linux/pg.h>
-#include <linux/device.h>
-#include <linux/sched.h>	/* current, TASK_* */
-#include <linux/mutex.h>
-#include <linux/jiffies.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/mtio.h>
+#include <beep/pg.h>
+#include <beep/device.h>
+#include <beep/sched.h>	/* current, TASK_* */
+#include <beep/mutex.h>
+#include <beep/jiffies.h>
 
 #include <asm/uaccess.h>
 

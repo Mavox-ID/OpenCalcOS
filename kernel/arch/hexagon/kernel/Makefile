@@ -1,4 +1,4 @@
-extra-y := head.o vmlinux.lds
+extra-y := head.o vmbeep.lds
 
 obj-$(CONFIG_SMP) += smp.o topology.o
 

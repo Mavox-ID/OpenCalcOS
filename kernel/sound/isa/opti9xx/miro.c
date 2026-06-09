@@ -22,13 +22,13 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/isa.h>
-#include <linux/pnp.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/isa.h>
+#include <beep/pnp.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/module.h>
 #include <asm/io.h>
 #include <asm/dma.h>
 #include <sound/core.h>

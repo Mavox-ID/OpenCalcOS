@@ -27,7 +27,7 @@
  *  Credits:
  *	Jonathan A. Buzzard - Toshiba HCI info, and critical tips on reverse
  *		engineering the Windows drivers
- *	Yasushi Nagato - changes for linux kernel 2.4 -> 2.5
+ *	Yasushi Nagato - changes for beep kernel 2.4 -> 2.5
  *	Rob Miller - TV out and hotkeys help
  *
  *
@@ -40,20 +40,20 @@
 #define TOSHIBA_ACPI_VERSION	"0.19"
 #define PROC_INTERFACE_VERSION	1
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/backlight.h>
-#include <linux/rfkill.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/i8042.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/backlight.h>
+#include <beep/rfkill.h>
+#include <beep/input.h>
+#include <beep/input/sparse-keymap.h>
+#include <beep/leds.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
+#include <beep/i8042.h>
 
 #include <asm/uaccess.h>
 

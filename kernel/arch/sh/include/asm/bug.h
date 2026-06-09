@@ -1,7 +1,7 @@
 #ifndef __ASM_SH_BUG_H
 #define __ASM_SH_BUG_H
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 #define TRAPA_BUG_OPCODE	0xc33e	/* trapa #0x3e */
 #define BUGFLAG_UNWINDER	(1 << 1)

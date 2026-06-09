@@ -86,9 +86,9 @@ static inline int sigfindinword(unsigned long word)
 
 #endif /* !CONFIG_CPU_HAS_NO_BITFIELDS */
 
-#ifndef __uClinux__
+#ifndef __uCbeep__
 extern void ptrace_signal_deliver(void);
 #define ptrace_signal_deliver ptrace_signal_deliver
-#endif /* __uClinux__ */
+#endif /* __uCbeep__ */
 
 #endif /* _M68K_SIGNAL_H */

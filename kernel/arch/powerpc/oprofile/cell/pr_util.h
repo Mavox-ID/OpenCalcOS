@@ -14,8 +14,8 @@
 #ifndef PR_UTIL_H
 #define PR_UTIL_H
 
-#include <linux/cpumask.h>
-#include <linux/oprofile.h>
+#include <beep/cpumask.h>
+#include <beep/oprofile.h>
 #include <asm/cell-pmu.h>
 #include <asm/cell-regs.h>
 #include <asm/spu.h>

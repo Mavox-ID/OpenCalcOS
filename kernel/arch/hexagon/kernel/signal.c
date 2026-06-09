@@ -1,7 +1,7 @@
 /*
  * Signal support for Hexagon processor
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -18,9 +18,9 @@
  * 02110-1301, USA.
  */
 
-#include <linux/linkage.h>
-#include <linux/syscalls.h>
-#include <linux/tracehook.h>
+#include <beep/linkage.h>
+#include <beep/syscalls.h>
+#include <beep/tracehook.h>
 #include <asm/registers.h>
 #include <asm/thread_info.h>
 #include <asm/unistd.h>

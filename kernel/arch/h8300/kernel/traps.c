@@ -1,8 +1,8 @@
 /*
- * linux/arch/h8300/boot/traps.c -- general exception handling code
+ * beep/arch/h8300/boot/traps.c -- general exception handling code
  * H8/300 support Yoshinori Sato <ysato@users.sourceforge.jp>
  * 
- * Cloned from Linux/m68k.
+ * Cloned from Beep/m68k.
  *
  * No original Copyright holder listed,
  * Probable original (C) Roman Zippel (assigned DJD, 1999)
@@ -14,13 +14,13 @@
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/bug.h>
+#include <beep/types.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/bug.h>
 
 #include <asm/irq.h>
 #include <asm/traps.h>

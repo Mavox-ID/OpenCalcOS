@@ -7,18 +7,18 @@
  * published by the Free Software Foundationr
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/dma-mapping.h>
-#include <linux/dma-attrs.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
+#include <beep/pm_runtime.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
+#include <beep/dma-mapping.h>
+#include <beep/dma-attrs.h>
 
 #include <drm/drmP.h>
 #include <drm/exynos_drm.h>

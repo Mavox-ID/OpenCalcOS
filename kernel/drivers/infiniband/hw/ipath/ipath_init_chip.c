@@ -31,12 +31,12 @@
  * SOFTWARE.
  */
 
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/vmalloc.h>
+#include <beep/pci.h>
+#include <beep/netdevice.h>
+#include <beep/moduleparam.h>
+#include <beep/slab.h>
+#include <beep/stat.h>
+#include <beep/vmalloc.h>
 
 #include "ipath_kernel.h"
 #include "ipath_common.h"

@@ -5,11 +5,11 @@
  * Licensed under the GPL-2 or later
  */
 
-#include <linux/kernel.h>
-#include <linux/thread_info.h>
-#include <linux/mm.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/thread_info.h>
+#include <beep/mm.h>
+#include <beep/uaccess.h>
+#include <beep/module.h>
 #include <asm/trace.h>
 
 /*

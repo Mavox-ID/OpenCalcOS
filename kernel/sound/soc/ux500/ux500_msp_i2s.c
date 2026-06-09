@@ -13,13 +13,13 @@
  * by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/of.h>
 
 #include <mach/hardware.h>
 #include <mach/msp.h>

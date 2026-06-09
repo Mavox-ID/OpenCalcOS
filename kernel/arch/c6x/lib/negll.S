@@ -17,7 +17,7 @@
 
 ;;  int64_t __c6xabi_negll(int64_t val)
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 	.text
 ENTRY(__c6xabi_negll)

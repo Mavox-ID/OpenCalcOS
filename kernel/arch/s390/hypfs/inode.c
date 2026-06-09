@@ -1,5 +1,5 @@
 /*
- *    Hypervisor filesystem for Linux on s390.
+ *    Hypervisor filesystem for Beep on s390.
  *
  *    Copyright IBM Corp. 2006, 2008
  *    Author(s): Michael Holzheu <holzheu@de.ibm.com>
@@ -8,19 +8,19 @@
 #define KMSG_COMPONENT "hypfs"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/vfs.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/time.h>
-#include <linux/parser.h>
-#include <linux/sysfs.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/namei.h>
+#include <beep/vfs.h>
+#include <beep/slab.h>
+#include <beep/pagemap.h>
+#include <beep/time.h>
+#include <beep/parser.h>
+#include <beep/sysfs.h>
+#include <beep/module.h>
+#include <beep/seq_file.h>
+#include <beep/mount.h>
 #include <asm/ebcdic.h>
 #include "hypfs.h"
 

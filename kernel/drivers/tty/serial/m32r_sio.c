@@ -7,7 +7,7 @@
  *  Based on drivers/serial/8250.c.
  *
  *  Copyright (C) 2001  Russell King.
- *  Copyright (C) 2004  Hirokazu Takata <takata at linux-m32r.org>
+ *  Copyright (C) 2004  Hirokazu Takata <takata at beep-m32r.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -30,15 +30,15 @@
 #define SUPPORT_SYSRQ
 #endif
 
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/serial.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/tty.h>
+#include <beep/tty_flip.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/console.h>
+#include <beep/sysrq.h>
+#include <beep/serial.h>
+#include <beep/delay.h>
 
 #include <asm/m32r.h>
 #include <asm/io.h>
@@ -46,7 +46,7 @@
 
 #define BAUD_RATE	115200
 
-#include <linux/serial_core.h>
+#include <beep/serial_core.h>
 #include "m32r_sio.h"
 #include "m32r_sio_reg.h"
 

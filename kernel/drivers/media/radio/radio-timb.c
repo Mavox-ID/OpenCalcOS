@@ -16,14 +16,14 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/io.h>
+#include <beep/io.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-device.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/module.h>
 #include <media/timb_radio.h>
 
 #define DRIVER_NAME "timb-radio"

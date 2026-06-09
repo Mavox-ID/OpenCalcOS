@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-pxa/cm-x300.c
+ * beep/arch/arm/mach-pxa/cm-x300.c
  *
  * Support for the CompuLab CM-X300 modules
  *
@@ -14,32 +14,32 @@
  */
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
 
-#include <linux/gpio.h>
-#include <linux/dm9000.h>
-#include <linux/leds.h>
-#include <linux/rtc-v3020.h>
-#include <linux/pwm_backlight.h>
+#include <beep/gpio.h>
+#include <beep/dm9000.h>
+#include <beep/leds.h>
+#include <beep/rtc-v3020.h>
+#include <beep/pwm_backlight.h>
 
-#include <linux/i2c.h>
-#include <linux/i2c/pca953x.h>
-#include <linux/i2c/pxa-i2c.h>
+#include <beep/i2c.h>
+#include <beep/i2c/pca953x.h>
+#include <beep/i2c/pxa-i2c.h>
 
-#include <linux/mfd/da903x.h>
-#include <linux/regulator/machine.h>
-#include <linux/power_supply.h>
-#include <linux/apm-emulation.h>
+#include <beep/mfd/da903x.h>
+#include <beep/regulator/machine.h>
+#include <beep/power_supply.h>
+#include <beep/apm-emulation.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_gpio.h>
-#include <linux/spi/tdo24m.h>
+#include <beep/spi/spi.h>
+#include <beep/spi/spi_gpio.h>
+#include <beep/spi/tdo24m.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -48,12 +48,12 @@
 
 #include <mach/pxa300.h>
 #include <mach/pxa27x-udc.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
-#include <linux/platform_data/mtd-nand-pxa3xx.h>
+#include <beep/platform_data/video-pxafb.h>
+#include <beep/platform_data/mmc-pxamci.h>
+#include <beep/platform_data/usb-ohci-pxa27x.h>
+#include <beep/platform_data/mtd-nand-pxa3xx.h>
 #include <mach/audio.h>
-#include <linux/platform_data/usb-pxa3xx-ulpi.h>
+#include <beep/platform_data/usb-pxa3xx-ulpi.h>
 
 #include <asm/mach/map.h>
 

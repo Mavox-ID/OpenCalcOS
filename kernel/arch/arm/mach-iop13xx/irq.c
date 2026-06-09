@@ -16,10 +16,10 @@
  * Place - Suite 330, Boston, MA 02111-1307 USA.
  *
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/sysctl.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/sysctl.h>
 #include <asm/uaccess.h>
 #include <asm/mach/irq.h>
 #include <asm/irq.h>

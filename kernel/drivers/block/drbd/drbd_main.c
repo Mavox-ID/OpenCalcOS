@@ -26,31 +26,31 @@
 
  */
 
-#include <linux/module.h>
-#include <linux/drbd.h>
+#include <beep/module.h>
+#include <beep/drbd.h>
 #include <asm/uaccess.h>
 #include <asm/types.h>
 #include <net/sock.h>
-#include <linux/ctype.h>
-#include <linux/mutex.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/memcontrol.h>
-#include <linux/mm_inline.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/reboot.h>
-#include <linux/notifier.h>
-#include <linux/kthread.h>
+#include <beep/ctype.h>
+#include <beep/mutex.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/proc_fs.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/memcontrol.h>
+#include <beep/mm_inline.h>
+#include <beep/slab.h>
+#include <beep/random.h>
+#include <beep/reboot.h>
+#include <beep/notifier.h>
+#include <beep/kthread.h>
 
 #define __KERNEL_SYSCALLS__
-#include <linux/unistd.h>
-#include <linux/vmalloc.h>
+#include <beep/unistd.h>
+#include <beep/vmalloc.h>
 
-#include <linux/drbd_limits.h>
+#include <beep/drbd_limits.h>
 #include "drbd_int.h"
 #include "drbd_req.h" /* only for _req_mod in tl_release and tl_clear */
 
@@ -78,7 +78,7 @@ MODULE_PARM_DESC(minor_count, "Approximate number of drbd devices ("
 		 __stringify(DRBD_MINOR_COUNT_MIN) "-" __stringify(DRBD_MINOR_COUNT_MAX) ")");
 MODULE_ALIAS_BLOCKDEV_MAJOR(DRBD_MAJOR);
 
-#include <linux/moduleparam.h>
+#include <beep/moduleparam.h>
 /* allow_open_on_secondary */
 MODULE_PARM_DESC(allow_oos, "DONT USE!");
 /* thanks to these macros, if compiled into the kernel (not-module),

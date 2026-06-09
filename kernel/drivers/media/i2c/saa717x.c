@@ -30,13 +30,13 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
 
-#include <linux/videodev2.h>
-#include <linux/i2c.h>
+#include <beep/videodev2.h>
+#include <beep/i2c.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
 
@@ -164,7 +164,7 @@ static u32 saa717x_read(struct v4l2_subdev *sd, u32 reg)
 
 static u32 reg_init_initialize[] =
 {
-	/* from linux driver */
+	/* from beep driver */
 	0x101, 0x008, /* Increment delay */
 
 	0x103, 0x000, /* Analog input control 2 */

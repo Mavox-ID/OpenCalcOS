@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hfsplus/dir.c
+ *  beep/fs/hfsplus/dir.c
  *
  * Copyright (C) 2001
  * Brad Boyer (flar@allandria.com)
@@ -8,10 +8,10 @@
  * Handling of directories
  */
 
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/random.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/slab.h>
+#include <beep/random.h>
 
 #include "hfsplus_fs.h"
 #include "hfsplus_raw.h"

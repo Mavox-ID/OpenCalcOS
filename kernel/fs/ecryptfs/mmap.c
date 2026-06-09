@@ -1,5 +1,5 @@
 /**
- * eCryptfs: Linux filesystem encryption layer
+ * eCryptfs: Beep filesystem encryption layer
  * This is where eCryptfs coordinates the symmetric encryption and
  * decryption of the file data as it passes between the lower
  * encrypted file and the upper decrypted file.
@@ -25,14 +25,14 @@
  * 02111-1307, USA.
  */
 
-#include <linux/pagemap.h>
-#include <linux/writeback.h>
-#include <linux/page-flags.h>
-#include <linux/mount.h>
-#include <linux/file.h>
-#include <linux/crypto.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <beep/pagemap.h>
+#include <beep/writeback.h>
+#include <beep/page-flags.h>
+#include <beep/mount.h>
+#include <beep/file.h>
+#include <beep/crypto.h>
+#include <beep/scatterlist.h>
+#include <beep/slab.h>
 #include <asm/unaligned.h>
 #include "ecryptfs_kernel.h"
 

@@ -1,5 +1,5 @@
 /*
- *  linux/mm/nommu.c
+ *  beep/mm/nommu.c
  *
  *  Replacement code for mm functions to support CPU's that don't
  *  have any form of memory management unit (thus no virtual memory).
@@ -8,27 +8,27 @@
  *
  *  Copyright (c) 2004-2008 David Howells <dhowells@redhat.com>
  *  Copyright (c) 2000-2003 David McCullough <davidm@snapgear.com>
- *  Copyright (c) 2000-2001 D Jeff Dionne <jeff@uClinux.org>
+ *  Copyright (c) 2000-2001 D Jeff Dionne <jeff@uCbeep.org>
  *  Copyright (c) 2002      Greg Ungerer <gerg@snapgear.com>
- *  Copyright (c) 2007-2010 Paul Mundt <lethal@linux-sh.org>
+ *  Copyright (c) 2007-2010 Paul Mundt <lethal@beep-sh.org>
  */
 
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/swap.h>
-#include <linux/file.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/mount.h>
-#include <linux/personality.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/audit.h>
+#include <beep/export.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/swap.h>
+#include <beep/file.h>
+#include <beep/highmem.h>
+#include <beep/pagemap.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/blkdev.h>
+#include <beep/backing-dev.h>
+#include <beep/mount.h>
+#include <beep/personality.h>
+#include <beep/security.h>
+#include <beep/syscalls.h>
+#include <beep/audit.h>
 
 #include <asm/uaccess.h>
 #include <asm/tlb.h>
@@ -68,7 +68,7 @@ atomic_long_t mmap_pages_allocated;
 
 /*
  * The global memory commitment made in the system can be a metric
- * that can be used to drive ballooning decisions when Linux is hosted
+ * that can be used to drive ballooning decisions when Beep is hosted
  * as a guest. On Hyper-V, the host implements a policy engine for dynamically
  * balancing memory across competing virtual machines that are hosted.
  * Several metrics drive this policy engine including the guest reported
@@ -1242,7 +1242,7 @@ enomem:
 }
 
 /*
- * handle mapping creation for uClinux
+ * handle mapping creation for uCbeep
  */
 unsigned long do_mmap_pgoff(struct file *file,
 			    unsigned long addr,

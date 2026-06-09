@@ -1,5 +1,5 @@
 /*
- *  linux/fs/sysv/namei.c
+ *  beep/fs/sysv/namei.c
  *
  *  minix/namei.c
  *  Copyright (C) 1991, 1992  Linus Torvalds
@@ -12,7 +12,7 @@
  *  Copyright (C) 1997, 1998  Krzysztof G. Baranowski
  */
 
-#include <linux/pagemap.h>
+#include <beep/pagemap.h>
 #include "sysv.h"
 
 static int add_nondir(struct dentry *dentry, struct inode *inode)

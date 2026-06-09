@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux NFC subsystem.
+# Makefile for the Beep NFC subsystem.
 #
 
 obj-$(CONFIG_NFC) += nfc.o

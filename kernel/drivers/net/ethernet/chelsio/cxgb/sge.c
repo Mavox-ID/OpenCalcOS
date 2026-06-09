@@ -39,22 +39,22 @@
 
 #include "common.h"
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/ktime.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/tcp.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/if_arp.h>
-#include <linux/slab.h>
-#include <linux/prefetch.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/pci.h>
+#include <beep/ktime.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/if_vlan.h>
+#include <beep/skbuff.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/tcp.h>
+#include <beep/ip.h>
+#include <beep/in.h>
+#include <beep/if_arp.h>
+#include <beep/slab.h>
+#include <beep/prefetch.h>
 
 #include "cpl5_cmd.h"
 #include "sge.h"

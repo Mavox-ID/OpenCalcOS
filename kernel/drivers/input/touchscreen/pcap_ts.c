@@ -10,17 +10,17 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/pm.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/mfd/ezx-pcap.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/pm.h>
+#include <beep/timer.h>
+#include <beep/interrupt.h>
+#include <beep/platform_device.h>
+#include <beep/input.h>
+#include <beep/mfd/ezx-pcap.h>
 
 struct pcap_ts {
 	struct pcap_chip *pcap;

@@ -1,5 +1,5 @@
 /*
- * linux/arch/m68k/sun3/dvma.c
+ * beep/arch/m68k/sun3/dvma.c
  *
  * Written by Sam Creasey
  *
@@ -7,10 +7,10 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/bootmem.h>
-#include <linux/list.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/bootmem.h>
+#include <beep/list.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>
 #include <asm/sun3mmu.h>

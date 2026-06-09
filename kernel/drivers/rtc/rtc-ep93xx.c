@@ -9,11 +9,11 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/rtc.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/gfp.h>
 
 #define EP93XX_RTC_DATA			0x000
 #define EP93XX_RTC_MATCH		0x004

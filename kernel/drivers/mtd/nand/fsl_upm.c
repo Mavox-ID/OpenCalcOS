@@ -11,17 +11,17 @@
  * (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/nand_ecc.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/mtd.h>
-#include <linux/of_platform.h>
-#include <linux/of_gpio.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/nand_ecc.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/mtd.h>
+#include <beep/of_platform.h>
+#include <beep/of_gpio.h>
+#include <beep/io.h>
+#include <beep/slab.h>
 #include <asm/fsl_lbc.h>
 
 #define FSL_UPM_WAIT_RUN_PATTERN  0x1

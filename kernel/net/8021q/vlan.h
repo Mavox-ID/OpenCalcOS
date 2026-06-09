@@ -1,9 +1,9 @@
 #ifndef __BEN_VLAN_802_1Q_INC__
 #define __BEN_VLAN_802_1Q_INC__
 
-#include <linux/if_vlan.h>
-#include <linux/u64_stats_sync.h>
-#include <linux/list.h>
+#include <beep/if_vlan.h>
+#include <beep/u64_stats_sync.h>
+#include <beep/list.h>
 
 
 /**

@@ -8,8 +8,8 @@
 #define _UAPI_ASM_POWERPC_SWAB_H
 
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <beep/types.h>
+#include <beep/compiler.h>
 
 #ifdef __GNUC__
 

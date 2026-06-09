@@ -9,9 +9,9 @@
    Mainboard specific bugs should be handled by DMI entries.
    CPU specific bugs in setup.c */
 
-#include <linux/pci.h>
-#include <linux/acpi.h>
-#include <linux/pci_ids.h>
+#include <beep/pci.h>
+#include <beep/acpi.h>
+#include <beep/pci_ids.h>
 #include <asm/pci-direct.h>
 #include <asm/dma.h>
 #include <asm/io_apic.h>

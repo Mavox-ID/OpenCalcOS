@@ -1,7 +1,7 @@
 #ifndef _ALPHA_DMA_MAPPING_H
 #define _ALPHA_DMA_MAPPING_H
 
-#include <linux/dma-attrs.h>
+#include <beep/dma-attrs.h>
 
 extern struct dma_map_ops *dma_ops;
 

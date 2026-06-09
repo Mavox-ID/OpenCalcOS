@@ -14,18 +14,18 @@
  *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  *  GNU General Public License for more details.
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/serial_8250.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/init.h>
+#include <beep/ctype.h>
+#include <beep/string.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/gpio_keys.h>
+#include <beep/input.h>
+#include <beep/serial_8250.h>
 
 #include <asm/bootinfo.h>
 

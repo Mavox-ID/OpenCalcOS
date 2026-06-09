@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux IrDA IrLAN protocol layer.
+# Makefile for the Beep IrDA IrLAN protocol layer.
 #
 
 obj-$(CONFIG_IRLAN) += irlan.o

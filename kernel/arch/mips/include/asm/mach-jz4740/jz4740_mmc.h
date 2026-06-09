@@ -1,5 +1,5 @@
-#ifndef __LINUX_MMC_JZ4740_MMC
-#define __LINUX_MMC_JZ4740_MMC
+#ifndef __BEEP_MMC_JZ4740_MMC
+#define __BEEP_MMC_JZ4740_MMC
 
 struct jz4740_mmc_platform_data {
 	int gpio_power;

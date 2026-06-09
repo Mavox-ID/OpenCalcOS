@@ -9,10 +9,10 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#ifndef __LINUX_JEDEC_DDR_H
-#define __LINUX_JEDEC_DDR_H
+#ifndef __BEEP_JEDEC_DDR_H
+#define __BEEP_JEDEC_DDR_H
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 /* DDR Densities */
 #define DDR_DENSITY_64Mb	1
@@ -172,4 +172,4 @@ extern const struct lpddr2_timings
 	lpddr2_jedec_timings[NUM_DDR_TIMING_TABLE_ENTRIES];
 extern const struct lpddr2_min_tck lpddr2_jedec_min_tck;
 
-#endif /* __LINUX_JEDEC_DDR_H */
+#endif /* __BEEP_JEDEC_DDR_H */

@@ -1,13 +1,13 @@
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/utsname.h>
+#include <beep/fs.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/utsname.h>
 
 static int version_proc_show(struct seq_file *m, void *v)
 {
-	seq_printf(m, linux_proc_banner,
+	seq_printf(m, beep_proc_banner,
 		utsname()->sysname,
 		utsname()->release,
 		utsname()->version);

@@ -30,10 +30,10 @@
 /*
  * Veritas filesystem driver - shared subroutines.
  */
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/kernel.h>
-#include <linux/pagemap.h>
+#include <beep/fs.h>
+#include <beep/buffer_head.h>
+#include <beep/kernel.h>
+#include <beep/pagemap.h>
 
 #include "vxfs_extern.h"
 

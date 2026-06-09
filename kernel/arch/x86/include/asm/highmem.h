@@ -20,8 +20,8 @@
 
 #ifdef __KERNEL__
 
-#include <linux/interrupt.h>
-#include <linux/threads.h>
+#include <beep/interrupt.h>
+#include <beep/threads.h>
 #include <asm/kmap_types.h>
 #include <asm/tlbflush.h>
 #include <asm/paravirt.h>

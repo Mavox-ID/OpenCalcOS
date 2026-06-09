@@ -5,7 +5,7 @@
  *                                                                         *
  *  Copyright (C) 2006 Kruchinin Daniil (asgard) [asgard@etersoft.ru]      *
  *                                                                         *
- *  COMEDI - Linux Control and Measurement Device Interface                *
+ *  COMEDI - Beep Control and Measurement Device Interface                *
  *  Copyright (C) 1998,2000 David A. Schleef <ds@schleef.org>              *
  *                                                                         *
  *  This program is free software; you can redistribute it and/or modify   *
@@ -45,8 +45,8 @@ Devices: [Fastwel] UNIOxx-5 (unioxx5),
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include "../comedidev.h"
-#include <linux/ioport.h>
-#include <linux/slab.h>
+#include <beep/ioport.h>
+#include <beep/slab.h>
 
 #define DRIVER_NAME "unioxx5"
 #define UNIOXX5_SIZE 0x10

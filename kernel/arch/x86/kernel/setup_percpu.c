@@ -1,15 +1,15 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/percpu.h>
-#include <linux/kexec.h>
-#include <linux/crash_dump.h>
-#include <linux/smp.h>
-#include <linux/topology.h>
-#include <linux/pfn.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/percpu.h>
+#include <beep/kexec.h>
+#include <beep/crash_dump.h>
+#include <beep/smp.h>
+#include <beep/topology.h>
+#include <beep/pfn.h>
 #include <asm/sections.h>
 #include <asm/processor.h>
 #include <asm/setup.h>

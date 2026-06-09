@@ -13,8 +13,8 @@
  */
 
 #include "gigaset.h"
-#include <linux/crc-ccitt.h>
-#include <linux/bitrev.h>
+#include <beep/crc-ccitt.h>
+#include <beep/bitrev.h>
 
 /* access methods for isowbuf_t */
 /* ============================ */

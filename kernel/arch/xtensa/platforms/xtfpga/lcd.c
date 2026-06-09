@@ -17,12 +17,12 @@
  * change the hardware to not need to wait.
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/io.h>
 
 #include <platform/hardware.h>
 #include <platform/lcd.h>
-#include <linux/delay.h>
+#include <beep/delay.h>
 
 #define LCD_PAUSE_ITERATIONS	4000
 #define LCD_CLEAR		0x1
@@ -46,7 +46,7 @@ static int __init lcd_init(void)
 	udelay(50);
 	*LCD_INSTR_ADDR = LCD_CLEAR;
 	mdelay(10);
-	lcd_disp_at_pos("XTENSA LINUX", 0);
+	lcd_disp_at_pos("XTENSA BEEP", 0);
 	return 0;
 }
 

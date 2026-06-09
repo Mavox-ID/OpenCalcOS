@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/kernel/dma-ebsa285.c
+ *  beep/arch/arm/kernel/dma-ebsa285.c
  *
  *  Copyright (C) 1998 Phil Blundell
  *
@@ -10,9 +10,9 @@
  *   17-Mar-1999 RMK	Allow any EBSA285-like architecture to have
  *			ISA DMA controllers.
  */
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/spinlock.h>
 
 #include <asm/dma.h>
 #include <asm/scatterlist.h>

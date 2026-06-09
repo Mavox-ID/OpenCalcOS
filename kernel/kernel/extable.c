@@ -15,11 +15,11 @@
     along with this program; if not, write to the Free Software
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
-#include <linux/ftrace.h>
-#include <linux/memory.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/init.h>
+#include <beep/ftrace.h>
+#include <beep/memory.h>
+#include <beep/module.h>
+#include <beep/mutex.h>
+#include <beep/init.h>
 
 #include <asm/sections.h>
 #include <asm/uaccess.h>

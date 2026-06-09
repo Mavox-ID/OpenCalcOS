@@ -9,8 +9,8 @@
  * we do for performance..
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
+#include <beep/types.h>
+#include <beep/string.h>
 #include <asm/uaccess.h>
 
 

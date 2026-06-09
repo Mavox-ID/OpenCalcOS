@@ -24,16 +24,16 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/threads.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/bootmem.h>
-#include <linux/pci_regs.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/threads.h>
+#include <beep/pci.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/bootmem.h>
+#include <beep/pci_regs.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/slab.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

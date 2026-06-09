@@ -26,8 +26,8 @@
 #ifndef __ARCH_ARM_MACH_OMAP1_COMMON_H
 #define __ARCH_ARM_MACH_OMAP1_COMMON_H
 
-#include <linux/mtd/mtd.h>
-#include <linux/i2c-omap.h>
+#include <beep/mtd/mtd.h>
+#include <beep/i2c-omap.h>
 
 #include <plat/i2c.h>
 

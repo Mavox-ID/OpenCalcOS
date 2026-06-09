@@ -143,13 +143,13 @@
 		d3 {
 			label = "d3";
 			gpios = <&pioB 7 0>;
-			linux,default-trigger = "heartbeat";
+			beep,default-trigger = "heartbeat";
 		};
 
 		d2 {
 			label = "d2";
 			gpios = <&pioC 29 1>;
-			linux,default-trigger = "nand-disk";
+			beep,default-trigger = "nand-disk";
 		};
 	};
 
@@ -161,14 +161,14 @@
 		left_click {
 			label = "left_click";
 			gpios = <&pioC 5 1>;
-			linux,code = <272>;
+			beep,code = <272>;
 			gpio-key,wakeup;
 		};
 
 		right_click {
 			label = "right_click";
 			gpios = <&pioC 4 1>;
-			linux,code = <273>;
+			beep,code = <273>;
 			gpio-key,wakeup;
 		};
 	};

@@ -20,10 +20,10 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/math64.h>
-#include <linux/export.h>
+#include <beep/slab.h>
+#include <beep/time.h>
+#include <beep/math64.h>
+#include <beep/export.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/tlv.h>

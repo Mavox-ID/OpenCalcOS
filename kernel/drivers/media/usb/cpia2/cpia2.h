@@ -31,9 +31,9 @@
 #ifndef __CPIA2_H__
 #define __CPIA2_H__
 
-#include <linux/videodev2.h>
-#include <linux/usb.h>
-#include <linux/poll.h>
+#include <beep/videodev2.h>
+#include <beep/usb.h>
+#include <beep/poll.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>

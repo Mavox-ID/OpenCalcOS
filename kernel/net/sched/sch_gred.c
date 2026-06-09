@@ -18,11 +18,11 @@
  *  For all the glorious comments look at include/net/red.h
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/skbuff.h>
 #include <net/pkt_sched.h>
 #include <net/red.h>
 

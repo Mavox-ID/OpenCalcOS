@@ -10,7 +10,7 @@
  */
 
 /*
- * Logitech Bus Mouse Driver for Linux
+ * Logitech Bus Mouse Driver for Beep
  */
 
 /*
@@ -33,12 +33,12 @@
  * Vojtech Pavlik, Simunkova 1594, Prague 8, 182 00 Czech Republic
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

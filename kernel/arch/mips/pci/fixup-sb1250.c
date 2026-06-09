@@ -8,8 +8,8 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <beep/init.h>
+#include <beep/pci.h>
 
 /*
  * Set the BCM1250, etc. PCI host bridge's TRDY timeout

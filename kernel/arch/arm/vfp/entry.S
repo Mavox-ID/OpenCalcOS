@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/vfp/entry.S
+ *  beep/arch/arm/vfp/entry.S
  *
  *  Copyright (C) 2004 ARM Limited.
  *  Written by Deep Blue Solutions Limited.

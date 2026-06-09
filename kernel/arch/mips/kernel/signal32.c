@@ -7,25 +7,25 @@
  * Copyright (C) 1994 - 2000, 2006  Ralf Baechle
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  */
-#include <linux/cache.h>
-#include <linux/compat.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/syscalls.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/suspend.h>
-#include <linux/compiler.h>
-#include <linux/uaccess.h>
+#include <beep/cache.h>
+#include <beep/compat.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/syscalls.h>
+#include <beep/errno.h>
+#include <beep/wait.h>
+#include <beep/ptrace.h>
+#include <beep/suspend.h>
+#include <beep/compiler.h>
+#include <beep/uaccess.h>
 
 #include <asm/abi.h>
 #include <asm/asm.h>
 #include <asm/compat-signal.h>
-#include <linux/bitops.h>
+#include <beep/bitops.h>
 #include <asm/cacheflush.h>
 #include <asm/sim.h>
 #include <asm/ucontext.h>

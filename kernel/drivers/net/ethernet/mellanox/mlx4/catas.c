@@ -31,8 +31,8 @@
  * SOFTWARE.
  */
 
-#include <linux/workqueue.h>
-#include <linux/module.h>
+#include <beep/workqueue.h>
+#include <beep/module.h>
 
 #include "mlx4.h"
 

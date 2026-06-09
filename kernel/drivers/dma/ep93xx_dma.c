@@ -18,15 +18,15 @@
  * (at your option) any later version.
  */
 
-#include <linux/clk.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/dmaengine.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/clk.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/dmaengine.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
-#include <linux/platform_data/dma-ep93xx.h>
+#include <beep/platform_data/dma-ep93xx.h>
 
 #include "dmaengine.h"
 

@@ -55,9 +55,9 @@
  * damaged.
  */
 
-#include <linux/crc32.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <beep/crc32.h>
+#include <beep/err.h>
+#include <beep/slab.h>
 #include <asm/div64.h>
 #include "ubi.h"
 

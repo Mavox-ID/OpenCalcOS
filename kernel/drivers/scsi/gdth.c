@@ -1,5 +1,5 @@
 /************************************************************************
- * Linux driver for                                                     *  
+ * Beep driver for                                                     *  
  * ICP vortex GmbH:    GDT ISA/EISA/PCI Disk Array Controllers          *
  * Intel Corporation:  Storage RAID Controllers                         *
  *                                                                      *
@@ -27,7 +27,7 @@
  * along with this kernel; if not, write to the Free Software           *
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.            *
  *                                                                      *
- * Linux kernel 2.6.x supported						*
+ * Beep kernel 2.6.x supported						*
  *                                                                      *
  ************************************************************************/
 
@@ -103,37 +103,37 @@
 /* statistics */
 #define GDTH_STATISTICS
 
-#include <linux/module.h>
+#include <beep/module.h>
 
-#include <linux/version.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/proc_fs.h>
-#include <linux/time.h>
-#include <linux/timer.h>
-#include <linux/dma-mapping.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <beep/version.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/string.h>
+#include <beep/ctype.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/interrupt.h>
+#include <beep/in.h>
+#include <beep/proc_fs.h>
+#include <beep/time.h>
+#include <beep/timer.h>
+#include <beep/dma-mapping.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
 
 #ifdef GDTH_RTC
-#include <linux/mc146818rtc.h>
+#include <beep/mc146818rtc.h>
 #endif
-#include <linux/reboot.h>
+#include <beep/reboot.h>
 
 #include <asm/dma.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>
-#include <linux/spinlock.h>
-#include <linux/blkdev.h>
-#include <linux/scatterlist.h>
+#include <beep/spinlock.h>
+#include <beep/blkdev.h>
+#include <beep/scatterlist.h>
 
 #include "scsi.h"
 #include <scsi/scsi_host.h>
@@ -1624,13 +1624,13 @@ static int gdth_search_drives(gdth_ha_str *ha)
     /* initialize cache service */
     ha->cache_feat = 0;
     if (!force_dma32) {
-        ok = gdth_internal_cmd(ha, CACHESERVICE, GDT_X_INIT_HOST, LINUX_OS,
+        ok = gdth_internal_cmd(ha, CACHESERVICE, GDT_X_INIT_HOST, BEEP_OS,
                                                                          0, 0);
         if (ok)
             ha->cache_feat = GDT_64BIT;
     }
     if (force_dma32 || (!ok && ha->status == (u16)S_NOFUNC))
-        ok = gdth_internal_cmd(ha, CACHESERVICE, GDT_INIT, LINUX_OS, 0, 0);
+        ok = gdth_internal_cmd(ha, CACHESERVICE, GDT_INIT, BEEP_OS, 0, 0);
     if (!ok) {
         printk("GDT-HA %d: Initialization error cache service (code %d)\n",
                ha->hanum, ha->status);
@@ -4373,10 +4373,10 @@ static int ioc_rescan(void __user *arg, char *cmnd)
         cmd->Service = CACHESERVICE;
         if (ha->cache_feat & GDT_64BIT) {
             cmd->OpCode = GDT_X_INIT_HOST;
-            cmd->u.cache64.DeviceNo = LINUX_OS;
+            cmd->u.cache64.DeviceNo = BEEP_OS;
         } else {
             cmd->OpCode = GDT_INIT;
-            cmd->u.cache.DeviceNo = LINUX_OS;
+            cmd->u.cache.DeviceNo = BEEP_OS;
         }
 
         status = __gdth_execute(ha->sdev, cmd, cmnd, 30, &info);
@@ -4508,9 +4508,9 @@ static int gdth_ioctl(struct file *filep, unsigned int cmd, unsigned long arg)
       { 
         gdth_ioctl_osvers osv; 
 
-        osv.version = (u8)(LINUX_VERSION_CODE >> 16);
-        osv.subversion = (u8)(LINUX_VERSION_CODE >> 8);
-        osv.revision = (u16)(LINUX_VERSION_CODE & 0xff);
+        osv.version = (u8)(BEEP_VERSION_CODE >> 16);
+        osv.subversion = (u8)(BEEP_VERSION_CODE >> 8);
+        osv.revision = (u16)(BEEP_VERSION_CODE & 0xff);
         if (copy_to_user(argp, &osv, sizeof(gdth_ioctl_osvers)))
                 return -EFAULT;
         break;

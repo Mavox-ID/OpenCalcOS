@@ -1,12 +1,12 @@
 /*
- * linux/arch/m32r/kernel/irq.c
+ * beep/arch/m32r/kernel/irq.c
  *
  *  Copyright (c) 2003, 2004  Hitoshi Yamamoto
- *  Copyright (c) 2004  Hirokazu Takata <takata at linux-m32r.org>
+ *  Copyright (c) 2004  Hirokazu Takata <takata at beep-m32r.org>
  */
 
 /*
- *	linux/arch/i386/kernel/irq.c
+ *	beep/arch/i386/kernel/irq.c
  *
  *	Copyright (C) 1992, 1998 Linus Torvalds, Ingo Molnar
  *
@@ -16,9 +16,9 @@
  * m32r-specific irq controller code.
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
+#include <beep/kernel_stat.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
 #include <asm/uaccess.h>
 
 /*

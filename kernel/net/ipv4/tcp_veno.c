@@ -9,10 +9,10 @@
  * 	See http://www.ie.cuhk.edu.hk/fileadmin/staff_upload/soung/Journal/J3.pdf
  */
 
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/inet_diag.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/inet_diag.h>
 
 #include <net/tcp.h>
 

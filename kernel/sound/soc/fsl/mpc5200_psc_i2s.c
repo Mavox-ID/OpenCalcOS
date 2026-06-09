@@ -6,9 +6,9 @@
  * Copyright (C) 2009 Jon Smirl, Digispeaker
  */
 
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <beep/module.h>
+#include <beep/of_device.h>
+#include <beep/of_platform.h>
 
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

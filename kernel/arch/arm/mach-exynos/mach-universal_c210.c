@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-exynos4/mach-universal_c210.c
+/* beep/arch/arm/mach-exynos4/mach-universal_c210.c
  *
  * Copyright (c) 2010 Samsung Electronics Co., Ltd.
  *
@@ -7,25 +7,25 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
-#include <linux/input.h>
-#include <linux/i2c.h>
-#include <linux/gpio_keys.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/mfd/max8998.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/max8952.h>
-#include <linux/mmc/host.h>
-#include <linux/i2c-gpio.h>
-#include <linux/i2c/mcs.h>
-#include <linux/i2c/atmel_mxt_ts.h>
-#include <linux/platform_data/i2c-s3c2410.h>
-#include <linux/platform_data/mipi-csis.h>
-#include <linux/platform_data/s3c-hsotg.h>
+#include <beep/platform_device.h>
+#include <beep/serial_core.h>
+#include <beep/input.h>
+#include <beep/i2c.h>
+#include <beep/gpio_keys.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/fb.h>
+#include <beep/mfd/max8998.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/fixed.h>
+#include <beep/regulator/max8952.h>
+#include <beep/mmc/host.h>
+#include <beep/i2c-gpio.h>
+#include <beep/i2c/mcs.h>
+#include <beep/i2c/atmel_mxt_ts.h>
+#include <beep/platform_data/i2c-s3c2410.h>
+#include <beep/platform_data/mipi-csis.h>
+#include <beep/platform_data/s3c-hsotg.h>
 #include <drm/exynos_drm.h>
 
 #include <asm/mach/arch.h>

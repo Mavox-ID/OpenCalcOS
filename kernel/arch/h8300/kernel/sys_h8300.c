@@ -1,24 +1,24 @@
 /*
- * linux/arch/h8300/kernel/sys_h8300.c
+ * beep/arch/h8300/kernel/sys_h8300.c
  *
  * This file contains various random system calls that
  * have a non-standard calling sequence on the H8/300
  * platform.
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/stat.h>
-#include <linux/syscalls.h>
-#include <linux/mman.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/ipc.h>
+#include <beep/errno.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/smp.h>
+#include <beep/sem.h>
+#include <beep/msg.h>
+#include <beep/shm.h>
+#include <beep/stat.h>
+#include <beep/syscalls.h>
+#include <beep/mman.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/ipc.h>
 
 #include <asm/setup.h>
 #include <asm/uaccess.h>

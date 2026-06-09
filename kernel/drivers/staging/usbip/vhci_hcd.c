@@ -17,13 +17,13 @@
  * USA.
  */
 
-#include <linux/init.h>
-#include <linux/file.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/file.h>
+#include <beep/kernel.h>
+#include <beep/kthread.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
 #include "usbip_common.h"
 #include "vhci.h"

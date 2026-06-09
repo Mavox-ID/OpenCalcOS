@@ -17,8 +17,8 @@
 #include <asm/nommu_context.h>
 #else
 
-#include <linux/stringify.h>
-#include <linux/sched.h>
+#include <beep/stringify.h>
+#include <beep/sched.h>
 
 #include <variant/core.h>
 
@@ -28,7 +28,7 @@
 #include <asm-generic/mm_hooks.h>
 
 #if (XCHAL_HAVE_TLBS != 1)
-# error "Linux must have an MMU!"
+# error "Beep must have an MMU!"
 #endif
 
 extern unsigned long asid_cache;

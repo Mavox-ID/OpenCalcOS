@@ -32,10 +32,10 @@
 
 */
 
-#include <linux/videodev2.h>
-#include <linux/i2c.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
+#include <beep/videodev2.h>
+#include <beep/i2c.h>
+#include <beep/workqueue.h>
+#include <beep/mutex.h>
 #include "pvrusb2-hdw.h"
 #include "pvrusb2-io.h"
 #include <media/v4l2-device.h>

@@ -10,7 +10,7 @@
  */
 #if defined(CONFIG_BLACKFIN)
 
-#include <linux/io.h>
+#include <beep/io.h>
 #define USE_32BIT		0
 #define MAX_ROOT_PORTS		2
 #define USE_PLATFORM_DELAY	0

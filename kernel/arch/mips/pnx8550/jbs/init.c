@@ -24,14 +24,14 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/bootmem.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/bootmem.h>
 #include <asm/addrspace.h>
 #include <asm/bootinfo.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
+#include <beep/string.h>
+#include <beep/kernel.h>
 
 int prom_argc;
 char **prom_argv, **prom_envp;

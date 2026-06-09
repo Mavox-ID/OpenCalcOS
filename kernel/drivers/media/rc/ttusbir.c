@@ -18,11 +18,11 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/input.h>
-#include <linux/slab.h>
-#include <linux/leds.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/usb/input.h>
+#include <beep/slab.h>
+#include <beep/leds.h>
 #include <media/rc-core.h>
 
 #define DRIVER_NAME	"ttusbir"

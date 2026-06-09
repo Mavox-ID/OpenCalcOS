@@ -138,7 +138,7 @@
 #ifndef _GXIO_TRIO_H_
 #define _GXIO_TRIO_H_
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 #include <gxio/common.h>
 #include <gxio/dma_queue.h>
@@ -154,7 +154,7 @@
 /* A context object used to manage TRIO hardware resources. */
 typedef struct {
 
-	/* File descriptor for calling up to Linux (and thus the HV). */
+	/* File descriptor for calling up to Beep (and thus the HV). */
 	int fd;
 
 	/* The VA at which the MAC MMIO registers are mapped. */

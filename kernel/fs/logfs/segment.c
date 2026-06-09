@@ -1,7 +1,7 @@
 /*
  * fs/logfs/segment.c	- Handling the Object Store
  *
- * As should be obvious for Linux kernel code, license is GPLv2
+ * As should be obvious for Beep kernel code, license is GPLv2
  *
  * Copyright (c) 2005-2008 Joern Engel <joern@logfs.org>
  *
@@ -10,7 +10,7 @@
  * three kinds of objects: inodes, dentries and blocks, both data and indirect.
  */
 #include "logfs.h"
-#include <linux/slab.h>
+#include <beep/slab.h>
 
 static int logfs_mark_segment_bad(struct super_block *sb, u32 segno)
 {

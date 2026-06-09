@@ -32,7 +32,7 @@
 #include <drm/drmP.h>
 #include <drm/vmwgfx_drm.h>
 #include <drm/drm_hashtab.h>
-#include <linux/suspend.h>
+#include <beep/suspend.h>
 #include <drm/ttm/ttm_bo_driver.h>
 #include <drm/ttm/ttm_object.h>
 #include <drm/ttm/ttm_lock.h>

@@ -22,18 +22,18 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/delay.h>
-#include <linux/spi/spi.h>
-#include <linux/crc32.h>
-#include <linux/etherdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/wl12xx.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
+#include <beep/module.h>
+#include <beep/firmware.h>
+#include <beep/delay.h>
+#include <beep/spi/spi.h>
+#include <beep/crc32.h>
+#include <beep/etherdevice.h>
+#include <beep/vmalloc.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/wl12xx.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
 
 #include "wlcore.h"
 #include "debug.h"

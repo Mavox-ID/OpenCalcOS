@@ -29,12 +29,12 @@
 	Supported chipsets: RT2800U.
  */
 
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/usb.h>
+#include <beep/delay.h>
+#include <beep/etherdevice.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/usb.h>
 
 #include "rt2x00.h"
 #include "rt2x00usb.h"
@@ -1187,7 +1187,7 @@ static struct usb_device_id rt2800usb_device_table[] = {
 #ifdef CONFIG_RT2800USB_UNKNOWN
 	/*
 	 * Unclear what kind of devices these are (they aren't supported by the
-	 * vendor linux driver).
+	 * vendor beep driver).
 	 */
 	/* Abocom */
 	{ USB_DEVICE(0x07b8, 0x3073) },

@@ -3,12 +3,12 @@
  * Copyright (C) 2007 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/string.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
 
 #include <asm/ldc.h>
 #include <asm/vio.h>

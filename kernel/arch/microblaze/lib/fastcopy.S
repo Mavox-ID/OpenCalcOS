@@ -33,7 +33,7 @@
 #error Microblaze LE not support ASM optimized lib func. Disable OPT_LIB_ASM.
 #endif
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 	.text
 	.globl	memcpy
 	.type  memcpy, @function

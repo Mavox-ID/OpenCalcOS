@@ -37,12 +37,12 @@
  * that document.
  */
 
-#include <linux/kernel.h> /* For printk. */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/string.h>
-#include <linux/jiffies.h>
-#include <linux/ipmi_msgdefs.h>		/* for completion codes */
+#include <beep/kernel.h> /* For printk. */
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/string.h>
+#include <beep/jiffies.h>
+#include <beep/ipmi_msgdefs.h>		/* for completion codes */
 #include "ipmi_si_sm.h"
 
 /* kcs_debug is a bit-field

@@ -14,19 +14,19 @@
  * Multichannel mode not supported.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/delay.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+#include <beep/pm_runtime.h>
 
-#include <linux/platform_data/asoc-ti-mcbsp.h>
+#include <beep/platform_data/asoc-ti-mcbsp.h>
 
 #include "mcbsp.h"
 

@@ -1,5 +1,5 @@
 /*
- * Intel I/OAT DMA Linux driver
+ * Intel I/OAT DMA Beep driver
  * Copyright(c) 2004 - 2009 Intel Corporation.
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -25,17 +25,17 @@
  * copy operations.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/dmaengine.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/workqueue.h>
-#include <linux/prefetch.h>
-#include <linux/i7300_idle.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/dmaengine.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/workqueue.h>
+#include <beep/prefetch.h>
+#include <beep/i7300_idle.h>
 #include "dma.h"
 #include "registers.h"
 #include "hw.h"

@@ -19,13 +19,13 @@
  * The full GNU General Public License is included in this distribution in the
  * file called COPYING.
  */
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/raid/pq.h>
-#include <linux/async_tx.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/dma-mapping.h>
+#include <beep/raid/pq.h>
+#include <beep/async_tx.h>
+#include <beep/gfp.h>
 
 /**
  * pq_scribble_page - space to hold throwaway P or Q buffer for

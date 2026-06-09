@@ -12,19 +12,19 @@
  *  For licencing details see kernel-base/COPYING
  */
 
-#include <linux/perf_event.h>
-#include <linux/capability.h>
-#include <linux/notifier.h>
-#include <linux/hardirq.h>
-#include <linux/kprobes.h>
-#include <linux/module.h>
-#include <linux/kdebug.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/bitops.h>
-#include <linux/device.h>
+#include <beep/perf_event.h>
+#include <beep/capability.h>
+#include <beep/notifier.h>
+#include <beep/hardirq.h>
+#include <beep/kprobes.h>
+#include <beep/module.h>
+#include <beep/kdebug.h>
+#include <beep/sched.h>
+#include <beep/uaccess.h>
+#include <beep/slab.h>
+#include <beep/cpu.h>
+#include <beep/bitops.h>
+#include <beep/device.h>
 
 #include <asm/apic.h>
 #include <asm/stacktrace.h>

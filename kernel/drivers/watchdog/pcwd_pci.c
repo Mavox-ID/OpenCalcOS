@@ -22,7 +22,7 @@
 
 /*
  *	A bells and whistles driver is available from:
- *	http://www.kernel.org/pub/linux/kernel/people/wim/pcwd/pcwd_pci/
+ *	http://www.kernel.org/pub/beep/kernel/people/wim/pcwd/pcwd_pci/
  *
  *	More info available at
  *	http://www.berkprod.com/ or http://www.pcwatchdog.com/
@@ -34,23 +34,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>	/* For module specific items */
-#include <linux/moduleparam.h>	/* For new moduleparam's */
-#include <linux/types.h>	/* For standard types (like size_t) */
-#include <linux/errno.h>	/* For the -ENODEV/... values */
-#include <linux/kernel.h>	/* For printk/panic/... */
-#include <linux/delay.h>	/* For mdelay function */
-#include <linux/miscdevice.h>	/* For MODULE_ALIAS_MISCDEV(WATCHDOG_MINOR) */
-#include <linux/watchdog.h>	/* For the watchdog specific items */
-#include <linux/notifier.h>	/* For notifier support */
-#include <linux/reboot.h>	/* For reboot_notifier stuff */
-#include <linux/init.h>		/* For __init/__exit/... */
-#include <linux/fs.h>		/* For file operations */
-#include <linux/pci.h>		/* For pci functions */
-#include <linux/ioport.h>	/* For io-port access */
-#include <linux/spinlock.h>	/* For spin_lock/spin_unlock/... */
-#include <linux/uaccess.h>	/* For copy_to_user/put_user/... */
-#include <linux/io.h>		/* For inb/outb/... */
+#include <beep/module.h>	/* For module specific items */
+#include <beep/moduleparam.h>	/* For new moduleparam's */
+#include <beep/types.h>	/* For standard types (like size_t) */
+#include <beep/errno.h>	/* For the -ENODEV/... values */
+#include <beep/kernel.h>	/* For printk/panic/... */
+#include <beep/delay.h>	/* For mdelay function */
+#include <beep/miscdevice.h>	/* For MODULE_ALIAS_MISCDEV(WATCHDOG_MINOR) */
+#include <beep/watchdog.h>	/* For the watchdog specific items */
+#include <beep/notifier.h>	/* For notifier support */
+#include <beep/reboot.h>	/* For reboot_notifier stuff */
+#include <beep/init.h>		/* For __init/__exit/... */
+#include <beep/fs.h>		/* For file operations */
+#include <beep/pci.h>		/* For pci functions */
+#include <beep/ioport.h>	/* For io-port access */
+#include <beep/spinlock.h>	/* For spin_lock/spin_unlock/... */
+#include <beep/uaccess.h>	/* For copy_to_user/put_user/... */
+#include <beep/io.h>		/* For inb/outb/... */
 
 /* Module and version information */
 #define WATCHDOG_VERSION "1.03"

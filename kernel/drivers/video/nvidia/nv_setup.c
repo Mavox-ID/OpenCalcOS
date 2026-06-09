@@ -48,9 +48,9 @@
  */
 
 #include <video/vga.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
 #include "nv_type.h"
 #include "nv_local.h"
 #include "nv_proto.h"

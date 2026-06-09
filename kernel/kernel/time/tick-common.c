@@ -1,5 +1,5 @@
 /*
- * linux/kernel/time/tick-common.c
+ * beep/kernel/time/tick-common.c
  *
  * This file contains the base functions to manage periodic tick
  * related events.
@@ -11,13 +11,13 @@
  * This code is licenced under the GPL version 2. For details see
  * kernel-base/COPYING.
  */
-#include <linux/cpu.h>
-#include <linux/err.h>
-#include <linux/hrtimer.h>
-#include <linux/interrupt.h>
-#include <linux/percpu.h>
-#include <linux/profile.h>
-#include <linux/sched.h>
+#include <beep/cpu.h>
+#include <beep/err.h>
+#include <beep/hrtimer.h>
+#include <beep/interrupt.h>
+#include <beep/percpu.h>
+#include <beep/profile.h>
+#include <beep/sched.h>
 
 #include <asm/irq_regs.h>
 

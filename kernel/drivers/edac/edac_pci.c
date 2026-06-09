@@ -9,18 +9,18 @@
  * or implied.
  *
  */
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/sysctl.h>
-#include <linux/highmem.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/ctype.h>
-#include <linux/workqueue.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/smp.h>
+#include <beep/init.h>
+#include <beep/sysctl.h>
+#include <beep/highmem.h>
+#include <beep/timer.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/list.h>
+#include <beep/ctype.h>
+#include <beep/workqueue.h>
 #include <asm/uaccess.h>
 #include <asm/page.h>
 

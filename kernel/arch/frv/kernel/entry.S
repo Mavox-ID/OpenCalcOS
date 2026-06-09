@@ -27,7 +27,7 @@
  *
  */
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 #include <asm/thread_info.h>
 #include <asm/setup.h>
 #include <asm/segment.h>

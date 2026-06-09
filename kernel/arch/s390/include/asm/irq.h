@@ -1,10 +1,10 @@
 #ifndef _ASM_IRQ_H
 #define _ASM_IRQ_H
 
-#include <linux/hardirq.h>
-#include <linux/percpu.h>
-#include <linux/cache.h>
-#include <linux/types.h>
+#include <beep/hardirq.h>
+#include <beep/percpu.h>
+#include <beep/cache.h>
+#include <beep/types.h>
 
 enum interruption_main_class {
 	EXTERNAL_INTERRUPT,

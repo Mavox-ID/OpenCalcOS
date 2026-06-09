@@ -23,9 +23,9 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/time.h>
+#include <beep/io.h>
+#include <beep/kernel.h>
+#include <beep/time.h>
 #include <asm/machdep.h>
 #include <asm/hw_irq.h>
 #include <asm/cell-regs.h>

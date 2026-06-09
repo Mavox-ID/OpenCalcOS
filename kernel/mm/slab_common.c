@@ -1,24 +1,24 @@
 /*
  * Slab allocator functions that are independent of the allocator strategy
  *
- * (C) 2012 Christoph Lameter <cl@linux.com>
+ * (C) 2012 Christoph Lameter <cl@beep.com>
  */
-#include <linux/slab.h>
+#include <beep/slab.h>
 
-#include <linux/mm.h>
-#include <linux/poison.h>
-#include <linux/interrupt.h>
-#include <linux/memory.h>
-#include <linux/compiler.h>
-#include <linux/module.h>
-#include <linux/cpu.h>
-#include <linux/uaccess.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
+#include <beep/mm.h>
+#include <beep/poison.h>
+#include <beep/interrupt.h>
+#include <beep/memory.h>
+#include <beep/compiler.h>
+#include <beep/module.h>
+#include <beep/cpu.h>
+#include <beep/uaccess.h>
+#include <beep/seq_file.h>
+#include <beep/proc_fs.h>
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>
 #include <asm/page.h>
-#include <linux/memcontrol.h>
+#include <beep/memcontrol.h>
 
 #include "slab.h"
 

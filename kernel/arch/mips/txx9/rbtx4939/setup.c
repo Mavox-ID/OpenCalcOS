@@ -1,6 +1,6 @@
 /*
  * Toshiba RBTX4939 setup routines.
- * Based on linux/arch/mips/txx9/rbtx4938/setup.c,
+ * Based on beep/arch/mips/txx9/rbtx4938/setup.c,
  *	    and RBTX49xx patch from CELF patch archive.
  *
  * Copyright (C) 2000-2001,2005-2007 Toshiba Corporation
@@ -9,18 +9,18 @@
  * licensed "as is" without any warranty of any kind, whether express
  * or implied.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/interrupt.h>
-#include <linux/smc91x.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/map.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/platform_device.h>
+#include <beep/leds.h>
+#include <beep/interrupt.h>
+#include <beep/smc91x.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/mtd/map.h>
 #include <asm/reboot.h>
 #include <asm/txx9/generic.h>
 #include <asm/txx9/pci.h>

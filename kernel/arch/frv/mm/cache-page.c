@@ -1,4 +1,4 @@
-/* cache-page.c: whole-page cache wrangling functions for MMU linux
+/* cache-page.c: whole-page cache wrangling functions for MMU beep
  *
  * Copyright (C) 2004 Red Hat, Inc. All Rights Reserved.
  * Written by David Howells (dhowells@redhat.com)
@@ -8,10 +8,10 @@
  * as published by the Free Software Foundation; either version
  * 2 of the License, or (at your option) any later version.
  */
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/highmem.h>
+#include <beep/module.h>
 #include <asm/pgalloc.h>
 
 /*****************************************************************************/

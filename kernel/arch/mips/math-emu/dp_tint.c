@@ -24,7 +24,7 @@
  */
 
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include "ieee754dp.h"
 
 int ieee754dp_tint(ieee754dp x)

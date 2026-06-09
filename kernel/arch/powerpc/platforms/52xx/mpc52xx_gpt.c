@@ -52,22 +52,22 @@
  * the output mode.  This driver does not change the output mode setting.
  */
 
-#include <linux/device.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_gpio.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/watchdog.h>
-#include <linux/miscdevice.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
+#include <beep/device.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/of_gpio.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/fs.h>
+#include <beep/watchdog.h>
+#include <beep/miscdevice.h>
+#include <beep/uaccess.h>
+#include <beep/module.h>
 #include <asm/div64.h>
 #include <asm/mpc52xx.h>
 

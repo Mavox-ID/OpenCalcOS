@@ -6,8 +6,8 @@
  *		 Gerald Schaefer (gerald.schaefer@de.ibm.com)
  */
 
-#include <linux/errno.h>
-#include <linux/mm.h>
+#include <beep/errno.h>
+#include <beep/mm.h>
 #include <asm/uaccess.h>
 #include <asm/futex.h>
 #include "uaccess.h"

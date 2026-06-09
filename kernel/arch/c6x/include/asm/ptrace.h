@@ -18,7 +18,7 @@
 #else
 #endif
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 #define user_mode(regs)	((((regs)->tsr) & 0x40) != 0)
 

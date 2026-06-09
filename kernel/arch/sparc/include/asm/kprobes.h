@@ -1,8 +1,8 @@
 #ifndef _SPARC64_KPROBES_H
 #define _SPARC64_KPROBES_H
 
-#include <linux/types.h>
-#include <linux/percpu.h>
+#include <beep/types.h>
+#include <beep/percpu.h>
 
 typedef u32 kprobe_opcode_t;
 

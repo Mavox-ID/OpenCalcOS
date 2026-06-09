@@ -24,19 +24,19 @@
  * archive for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/signal.h>
-#include <linux/elf.h>
-#include <linux/audit.h>
-#include <linux/seccomp.h>
-#include <linux/tracehook.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/sched.h>
+#include <beep/ptrace.h>
+#include <beep/signal.h>
+#include <beep/elf.h>
+#include <beep/audit.h>
+#include <beep/seccomp.h>
+#include <beep/tracehook.h>
 
-#include <linux/errno.h>
+#include <beep/errno.h>
 #include <asm/processor.h>
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 #include <asm/asm-offsets.h>
 #include <asm/cacheflush.h>
 #include <asm/syscall.h>

@@ -68,37 +68,37 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/list.h>
-#include <linux/dma-mapping.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/compiler.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/vmalloc.h>
+#include <beep/ioport.h>
+#include <beep/pci.h>
+#include <beep/mm.h>
+#include <beep/highmem.h>
+#include <beep/list.h>
+#include <beep/dma-mapping.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/crc32.h>
-#include <linux/random.h>
-#include <linux/mii.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/mutex.h>
-#include <linux/firmware.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
+#include <beep/ethtool.h>
+#include <beep/crc32.h>
+#include <beep/random.h>
+#include <beep/mii.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/mutex.h>
+#include <beep/firmware.h>
 
 #include <net/checksum.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>
 #include <asm/uaccess.h>
@@ -216,7 +216,7 @@ MODULE_PARM_DESC(linkdown_timeout,
 /*
  * value in 'ticks' (units used by jiffies). Set when we init the
  * module because 'HZ' in actually a function call on some flavors of
- * Linux.  This will default to DEFAULT_LINKDOWN_TIMEOUT * HZ.
+ * Beep.  This will default to DEFAULT_LINKDOWN_TIMEOUT * HZ.
  */
 static int link_transition_timeout;
 

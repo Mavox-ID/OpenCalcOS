@@ -6,7 +6,7 @@
  * more details.
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <drm/drm_usb.h>
 #include <drm/drm_crtc_helper.h>
 #include "udl_drv.h"

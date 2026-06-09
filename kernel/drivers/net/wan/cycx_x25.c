@@ -80,21 +80,21 @@
 
 #define CYCLOMX_X25_DEBUG 1
 
-#include <linux/ctype.h>	/* isdigit() */
-#include <linux/errno.h>	/* return codes */
-#include <linux/if_arp.h>       /* ARPHRD_HWX25 */
-#include <linux/kernel.h>	/* printk(), and other useful stuff */
-#include <linux/module.h>
-#include <linux/string.h>	/* inline memset(), etc. */
-#include <linux/sched.h>
-#include <linux/slab.h>		/* kmalloc(), kfree() */
-#include <linux/stddef.h>	/* offsetof(), etc. */
-#include <linux/wanrouter.h>	/* WAN router definitions */
+#include <beep/ctype.h>	/* isdigit() */
+#include <beep/errno.h>	/* return codes */
+#include <beep/if_arp.h>       /* ARPHRD_HWX25 */
+#include <beep/kernel.h>	/* printk(), and other useful stuff */
+#include <beep/module.h>
+#include <beep/string.h>	/* inline memset(), etc. */
+#include <beep/sched.h>
+#include <beep/slab.h>		/* kmalloc(), kfree() */
+#include <beep/stddef.h>	/* offsetof(), etc. */
+#include <beep/wanrouter.h>	/* WAN router definitions */
 
 #include <asm/byteorder.h>	/* htons(), etc. */
 
-#include <linux/cyclomx.h>	/* Cyclom 2X common user API definitions */
-#include <linux/cycx_x25.h>	/* X.25 firmware API definitions */
+#include <beep/cyclomx.h>	/* Cyclom 2X common user API definitions */
+#include <beep/cycx_x25.h>	/* X.25 firmware API definitions */
 
 #include <net/x25device.h>
 
@@ -492,9 +492,9 @@ static void cycx_x25_chan_setup(struct net_device *dev)
 	dev->addr_len		= 0;		/* hardware address length */
 }
 
-/* Initialize Linux network interface.
+/* Initialize Beep network interface.
  *
- * This routine is called only once for each interface, during Linux network
+ * This routine is called only once for each interface, during Beep network
  * interface registration.  Returning anything but zero will fail interface
  * registration. */
 static int cycx_netdevice_init(struct net_device *dev)

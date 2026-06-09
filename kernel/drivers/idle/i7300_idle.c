@@ -16,17 +16,17 @@
 
 /* #define DEBUG */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/gfp.h>
-#include <linux/sched.h>
-#include <linux/notifier.h>
-#include <linux/cpumask.h>
-#include <linux/ktime.h>
-#include <linux/delay.h>
-#include <linux/debugfs.h>
-#include <linux/stop_machine.h>
-#include <linux/i7300_idle.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/gfp.h>
+#include <beep/sched.h>
+#include <beep/notifier.h>
+#include <beep/cpumask.h>
+#include <beep/ktime.h>
+#include <beep/delay.h>
+#include <beep/debugfs.h>
+#include <beep/stop_machine.h>
+#include <beep/i7300_idle.h>
 
 #include <asm/idle.h>
 

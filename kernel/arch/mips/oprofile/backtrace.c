@@ -1,11 +1,11 @@
-#include <linux/oprofile.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/uaccess.h>
+#include <beep/oprofile.h>
+#include <beep/sched.h>
+#include <beep/mm.h>
+#include <beep/uaccess.h>
 #include <asm/ptrace.h>
 #include <asm/stacktrace.h>
-#include <linux/stacktrace.h>
-#include <linux/kernel.h>
+#include <beep/stacktrace.h>
+#include <beep/kernel.h>
 #include <asm/sections.h>
 #include <asm/inst.h>
 

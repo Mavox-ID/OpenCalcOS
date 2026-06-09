@@ -1,6 +1,6 @@
 /*
- *  linux/drivers/pinctrl/pinmux-falcon.c
- *  based on linux/drivers/pinctrl/pinmux-pxa910.c
+ *  beep/drivers/pinctrl/pinmux-falcon.c
+ *  based on beep/drivers/pinctrl/pinmux-pxa910.c
  *
  *  This program is free software; you can redistribute it and/or modify it
  *  under the terms of the GNU General Public License version 2 as published
@@ -10,17 +10,17 @@
  *  Copyright (C) 2012 John Crispin <blogic@openwrt.org>
  */
 
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/of_gpio.h>
-#include <linux/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/err.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/of_address.h>
+#include <beep/of_gpio.h>
+#include <beep/platform_device.h>
 
 #include "pinctrl-lantiq.h"
 

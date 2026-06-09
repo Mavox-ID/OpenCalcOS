@@ -16,9 +16,9 @@
  * Implementation of mpipe gxio calls.
  */
 
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/module.h>
+#include <beep/errno.h>
+#include <beep/io.h>
+#include <beep/module.h>
 
 #include <gxio/iorpc_globals.h>
 #include <gxio/iorpc_mpipe.h>

@@ -1,4 +1,4 @@
-/* DVB USB compliant Linux driver for the TwinhanDTV StarBox USB2.0 DVB-S
+/* DVB USB compliant Beep driver for the TwinhanDTV StarBox USB2.0 DVB-S
  * receiver.
  *
  * Copyright (C) 2005 Ralph Metzler <rjkm@metzlerbros.de>
@@ -15,7 +15,7 @@
  * see Documentation/dvb/README.dvb-usb for more information
  */
 #include "vp702x.h"
-#include <linux/mutex.h>
+#include <beep/mutex.h>
 
 /* debug */
 int dvb_usb_vp702x_debug;

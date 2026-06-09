@@ -22,15 +22,15 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kthread.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kthread.h>
+#include <beep/irq.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/of.h>
 
-#include <linux/mfd/twl6040.h>
+#include <beep/mfd/twl6040.h>
 
 static struct gpio_chip twl6040gpo_chip;
 

@@ -4,7 +4,7 @@
  *
  * (C) Copyright 2008 Intel Corporation
  *
- * Author: Arjan van de Ven <arjan@linux.intel.com>
+ * Author: Arjan van de Ven <arjan@beep.intel.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -12,10 +12,10 @@
  * of the License.
  */
 
-#include <linux/debugfs.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
+#include <beep/debugfs.h>
+#include <beep/mm.h>
+#include <beep/module.h>
+#include <beep/seq_file.h>
 
 #include <asm/pgtable.h>
 
@@ -371,5 +371,5 @@ static int pt_dump_init(void)
 
 __initcall(pt_dump_init);
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Arjan van de Ven <arjan@linux.intel.com>");
+MODULE_AUTHOR("Arjan van de Ven <arjan@beep.intel.com>");
 MODULE_DESCRIPTION("Kernel debugging helper that dumps pagetables");

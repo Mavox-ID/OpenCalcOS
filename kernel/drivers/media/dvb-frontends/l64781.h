@@ -23,7 +23,7 @@
 #ifndef L64781_H
 #define L64781_H
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 
 struct l64781_config
 {

@@ -1,5 +1,5 @@
 /*
- * linux/arch/sh/boards/se/7751/irq.c
+ * beep/arch/sh/boards/se/7751/irq.c
  *
  * Copyright (C) 2000  Kazumoto Kojima
  *
@@ -9,8 +9,8 @@
  * Ian da Silva and Jeremy Siegel, 2001.
  */
 
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <beep/init.h>
+#include <beep/irq.h>
 #include <asm/irq.h>
 #include <mach-se/mach/se7751.h>
 

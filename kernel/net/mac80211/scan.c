@@ -12,13 +12,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/if_arp.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/pm_qos.h>
+#include <beep/if_arp.h>
+#include <beep/etherdevice.h>
+#include <beep/rtnetlink.h>
+#include <beep/pm_qos.h>
 #include <net/sch_generic.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <beep/slab.h>
+#include <beep/export.h>
 #include <net/mac80211.h>
 
 #include "ieee80211_i.h"

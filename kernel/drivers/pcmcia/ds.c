@@ -13,18 +13,18 @@
  * (C) 2003 - 2010	Dominik Brodowski
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/crc32.h>
-#include <linux/firmware.h>
-#include <linux/kref.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/list.h>
+#include <beep/delay.h>
+#include <beep/workqueue.h>
+#include <beep/crc32.h>
+#include <beep/firmware.h>
+#include <beep/kref.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>

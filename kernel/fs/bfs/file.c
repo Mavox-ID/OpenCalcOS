@@ -9,8 +9,8 @@
  *
  */
 
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
+#include <beep/fs.h>
+#include <beep/buffer_head.h>
 #include "bfs.h"
 
 #undef DEBUG

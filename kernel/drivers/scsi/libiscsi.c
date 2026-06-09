@@ -21,12 +21,12 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
-#include <linux/types.h>
-#include <linux/kfifo.h>
-#include <linux/delay.h>
-#include <linux/log2.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/kfifo.h>
+#include <beep/delay.h>
+#include <beep/log2.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <asm/unaligned.h>
 #include <net/tcp.h>
 #include <scsi/scsi_cmnd.h>

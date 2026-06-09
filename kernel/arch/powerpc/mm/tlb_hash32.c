@@ -6,7 +6,7 @@
  *  -- paulus
  *
  *  Derived from arch/ppc/mm/init.c:
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -22,12 +22,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/export.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
+#include <beep/init.h>
+#include <beep/highmem.h>
+#include <beep/pagemap.h>
+#include <beep/export.h>
 
 #include <asm/tlbflush.h>
 #include <asm/tlb.h>
@@ -83,7 +83,7 @@ void tlb_flush(struct mmu_gather *tlb)
  *  - flush_tlb_kernel_range(start, end) flushes kernel pages
  *
  * since the hardware hash table functions as an extension of the
- * tlb as far as the linux tables are concerned, flush it too.
+ * tlb as far as the beep tables are concerned, flush it too.
  *    -- Cort
  */
 

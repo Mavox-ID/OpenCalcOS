@@ -12,8 +12,8 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/sched.h>
-#include <linux/signal.h>
+#include <beep/sched.h>
+#include <beep/signal.h>
 #include <asm/processor.h>
 
 void save_fpu(struct task_struct *tsk)

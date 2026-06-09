@@ -16,7 +16,7 @@
  *  along with this driver; if not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/delay.h>
+#include <beep/delay.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/pcm.h>

@@ -1,5 +1,5 @@
 /*
- * QNX6 file system, Linux implementation.
+ * QNX6 file system, Beep implementation.
  *
  * Version : 1.0.0
  *
@@ -10,19 +10,19 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/highuid.h>
-#include <linux/pagemap.h>
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
-#include <linux/statfs.h>
-#include <linux/parser.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
-#include <linux/crc32.h>
-#include <linux/mpage.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/highuid.h>
+#include <beep/pagemap.h>
+#include <beep/buffer_head.h>
+#include <beep/writeback.h>
+#include <beep/statfs.h>
+#include <beep/parser.h>
+#include <beep/seq_file.h>
+#include <beep/mount.h>
+#include <beep/crc32.h>
+#include <beep/mpage.h>
 #include "qnx6.h"
 
 static const struct super_operations qnx6_sops;

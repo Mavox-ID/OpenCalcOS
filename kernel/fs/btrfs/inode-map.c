@@ -16,9 +16,9 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/pagemap.h>
+#include <beep/delay.h>
+#include <beep/kthread.h>
+#include <beep/pagemap.h>
 
 #include "ctree.h"
 #include "disk-io.h"

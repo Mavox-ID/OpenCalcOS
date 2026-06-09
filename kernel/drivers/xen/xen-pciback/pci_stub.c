@@ -4,16 +4,16 @@
  * Ryan Wilson <hap9@epoch.ncsc.mil>
  * Chris Bookholt <hap10@epoch.ncsc.mil>
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/rwsem.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/kref.h>
-#include <linux/pci.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/atomic.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/rwsem.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
+#include <beep/kref.h>
+#include <beep/pci.h>
+#include <beep/wait.h>
+#include <beep/sched.h>
+#include <beep/atomic.h>
 #include <xen/events.h>
 #include <asm/xen/pci.h>
 #include <asm/xen/hypervisor.h>

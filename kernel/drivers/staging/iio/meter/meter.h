@@ -1,4 +1,4 @@
-#include <linux/iio/sysfs.h>
+#include <beep/iio/sysfs.h>
 
 /* metering ic types of attribute */
 

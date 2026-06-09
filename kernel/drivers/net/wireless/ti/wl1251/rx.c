@@ -20,8 +20,8 @@
  *
  */
 
-#include <linux/skbuff.h>
-#include <linux/gfp.h>
+#include <beep/skbuff.h>
+#include <beep/gfp.h>
 #include <net/mac80211.h>
 
 #include "wl1251.h"

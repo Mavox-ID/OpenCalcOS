@@ -12,18 +12,18 @@
  * more details.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/proc_fs.h>
-#include <linux/if_arp.h>
-#include <linux/delay.h>
-#include <linux/random.h>
-#include <linux/workqueue.h>
-#include <linux/kmod.h>
-#include <linux/rtnetlink.h>
-#include <linux/wireless.h>
-#include <linux/etherdevice.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/proc_fs.h>
+#include <beep/if_arp.h>
+#include <beep/delay.h>
+#include <beep/random.h>
+#include <beep/workqueue.h>
+#include <beep/kmod.h>
+#include <beep/rtnetlink.h>
+#include <beep/wireless.h>
+#include <beep/etherdevice.h>
 #include <net/net_namespace.h>
 #include <net/iw_handler.h>
 #include <net/lib80211.h>

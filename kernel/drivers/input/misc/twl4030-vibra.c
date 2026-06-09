@@ -23,15 +23,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/workqueue.h>
-#include <linux/i2c/twl.h>
-#include <linux/mfd/twl4030-audio.h>
-#include <linux/input.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/jiffies.h>
+#include <beep/platform_device.h>
+#include <beep/of.h>
+#include <beep/workqueue.h>
+#include <beep/i2c/twl.h>
+#include <beep/mfd/twl4030-audio.h>
+#include <beep/input.h>
+#include <beep/slab.h>
 
 /* MODULE ID2 */
 #define LEDEN		0x00

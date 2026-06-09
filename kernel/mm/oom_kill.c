@@ -1,5 +1,5 @@
 /*
- *  linux/mm/oom_kill.c
+ *  beep/mm/oom_kill.c
  * 
  *  Copyright (C)  1998,2000  Rik van Riel
  *	Thanks go out to Claus Fischer for some serious inspiration and
@@ -17,24 +17,24 @@
  *  kernel subsystems and hints as to where to find out what things do.
  */
 
-#include <linux/oom.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/gfp.h>
-#include <linux/sched.h>
-#include <linux/swap.h>
-#include <linux/timex.h>
-#include <linux/jiffies.h>
-#include <linux/cpuset.h>
-#include <linux/export.h>
-#include <linux/notifier.h>
-#include <linux/memcontrol.h>
-#include <linux/mempolicy.h>
-#include <linux/security.h>
-#include <linux/ptrace.h>
-#include <linux/freezer.h>
-#include <linux/ftrace.h>
-#include <linux/ratelimit.h>
+#include <beep/oom.h>
+#include <beep/mm.h>
+#include <beep/err.h>
+#include <beep/gfp.h>
+#include <beep/sched.h>
+#include <beep/swap.h>
+#include <beep/timex.h>
+#include <beep/jiffies.h>
+#include <beep/cpuset.h>
+#include <beep/export.h>
+#include <beep/notifier.h>
+#include <beep/memcontrol.h>
+#include <beep/mempolicy.h>
+#include <beep/security.h>
+#include <beep/ptrace.h>
+#include <beep/freezer.h>
+#include <beep/ftrace.h>
+#include <beep/ratelimit.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/oom.h>

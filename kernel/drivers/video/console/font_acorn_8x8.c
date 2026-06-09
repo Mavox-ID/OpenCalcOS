@@ -1,6 +1,6 @@
 /* Acorn-like font definition, with PC graphics characters */
 
-#include <linux/font.h>
+#include <beep/font.h>
 
 static const unsigned char acorndata_8x8[] = {
 /* 00 */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, /* ^@ */

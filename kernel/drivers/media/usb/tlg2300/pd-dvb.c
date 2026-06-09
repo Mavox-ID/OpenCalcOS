@@ -1,14 +1,14 @@
 #include "pd-common.h"
-#include <linux/kernel.h>
-#include <linux/usb.h>
-#include <linux/time.h>
-#include <linux/dvb/dmx.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
+#include <beep/kernel.h>
+#include <beep/usb.h>
+#include <beep/time.h>
+#include <beep/dvb/dmx.h>
+#include <beep/delay.h>
+#include <beep/gfp.h>
 
 #include "vendorcmds.h"
-#include <linux/sched.h>
-#include <linux/atomic.h>
+#include <beep/sched.h>
+#include <beep/atomic.h>
 
 static void dvb_urb_cleanup(struct pd_dvb_adapter *pd_dvb);
 

@@ -1,5 +1,5 @@
 /*
- * Generic HDLC support routines for Linux
+ * Generic HDLC support routines for Beep
  *
  * Copyright (C) 1999 - 2008 Krzysztof Halasa <khc@pm.waw.pl>
  *
@@ -24,19 +24,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/errno.h>
-#include <linux/hdlc.h>
-#include <linux/if_arp.h>
-#include <linux/inetdevice.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/pkt_sched.h>
-#include <linux/poll.h>
-#include <linux/rtnetlink.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <beep/errno.h>
+#include <beep/hdlc.h>
+#include <beep/if_arp.h>
+#include <beep/inetdevice.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/notifier.h>
+#include <beep/pkt_sched.h>
+#include <beep/poll.h>
+#include <beep/rtnetlink.h>
+#include <beep/skbuff.h>
+#include <beep/slab.h>
 #include <net/net_namespace.h>
 
 

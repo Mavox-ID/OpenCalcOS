@@ -29,14 +29,14 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/acpi.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/types.h>
+#include <beep/device.h>
+#include <beep/list.h>
+#include <beep/acpi.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <acpi/acpi_bus.h>
 #include <acpi/acpi_drivers.h>
 

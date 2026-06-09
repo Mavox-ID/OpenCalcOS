@@ -15,18 +15,18 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pci-acpi.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/pm.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/pcieport_if.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/pci-acpi.h>
+#include <beep/sched.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/pm.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/pcieport_if.h>
+#include <beep/slab.h>
 
 #include "aerdrv.h"
 #include "../../pci.h"

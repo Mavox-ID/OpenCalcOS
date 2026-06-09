@@ -8,10 +8,10 @@
  * (at your option) any later version.
  */
 
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/phy.h>
+#include <beep/list.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/phy.h>
 #include "dsa_priv.h"
 
 /* slave mii_bus handling ***************************************************/

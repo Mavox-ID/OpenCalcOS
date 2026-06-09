@@ -2,7 +2,7 @@
  * ip_vs_proto_ah_esp.c:	AH/ESP IPSec load balancing support for IPVS
  *
  * Authors:	Julian Anastasov <ja@ssi.bg>, February 2002
- *		Wensong Zhang <wensong@linuxvirtualserver.org>
+ *		Wensong Zhang <wensong@beepvirtualserver.org>
  *
  *		This program is free software; you can redistribute it and/or
  *		modify it under the terms of the GNU General Public License
@@ -13,12 +13,12 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
+#include <beep/in.h>
+#include <beep/ip.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/netfilter.h>
+#include <beep/netfilter_ipv4.h>
 
 #include <net/ip_vs.h>
 

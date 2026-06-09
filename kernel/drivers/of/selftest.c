@@ -4,15 +4,15 @@
 
 #define pr_fmt(fmt) "### %s(): " fmt, __func__
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/device.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/errno.h>
+#include <beep/module.h>
+#include <beep/of.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
+#include <beep/device.h>
 
 static bool selftest_passed = true;
 #define selftest(result, fmt, ...) { \

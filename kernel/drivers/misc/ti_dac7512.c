@@ -1,5 +1,5 @@
 /*
- *  dac7512.c - Linux kernel module for
+ *  dac7512.c - Beep kernel module for
  * 	Texas Instruments DAC7512
  *
  *  Copyright (c) 2009 Daniel Mack <daniel@caiaq.de>
@@ -19,9 +19,9 @@
  *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/spi/spi.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/spi/spi.h>
 
 #define DAC7512_DRV_NAME	"dac7512"
 #define DRIVER_VERSION		"1.0"

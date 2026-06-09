@@ -8,10 +8,10 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/clockchips.h>
-#include <linux/io.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/clockchips.h>
+#include <beep/io.h>
 #include <asm/mach/map.h>
 #include <asm/mach/time.h>
 #include <asm/mach/irq.h>

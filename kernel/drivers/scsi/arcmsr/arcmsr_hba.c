@@ -1,6 +1,6 @@
 /*
 *******************************************************************************
-**        O.S   : Linux
+**        O.S   : Beep
 **   FILE NAME  : arcmsr_hba.c
 **        BY    : Nick Cheng
 **   Description: SCSI RAID Device Driver for
@@ -45,20 +45,20 @@
 **     Firmware Specification, see Documentation/scsi/arcmsr_spec.txt
 *******************************************************************************
 */
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/spinlock.h>
-#include <linux/pci_ids.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/aer.h>
+#include <beep/module.h>
+#include <beep/reboot.h>
+#include <beep/spinlock.h>
+#include <beep/pci_ids.h>
+#include <beep/interrupt.h>
+#include <beep/moduleparam.h>
+#include <beep/errno.h>
+#include <beep/types.h>
+#include <beep/delay.h>
+#include <beep/dma-mapping.h>
+#include <beep/timer.h>
+#include <beep/slab.h>
+#include <beep/pci.h>
+#include <beep/aer.h>
 #include <asm/dma.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>

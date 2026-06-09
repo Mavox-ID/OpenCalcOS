@@ -15,9 +15,9 @@
 
 /***************************************************************************/
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/rtc.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/rtc.h>
 #include <asm/machdep.h>
 #include <asm/MC68328.h>
 #if defined(CONFIG_PILOT) || defined(CONFIG_INIT_LCD)
@@ -44,7 +44,7 @@ void m68328_reset (void)
 
 void config_BSP(char *command, int len)
 {
-  printk(KERN_INFO "\n68328 support D. Jeff Dionne <jeff@uclinux.org>\n");
+  printk(KERN_INFO "\n68328 support D. Jeff Dionne <jeff@ucbeep.org>\n");
   printk(KERN_INFO "68328 support Kenneth Albanowski <kjahds@kjshds.com>\n");
   printk(KERN_INFO "68328/Pilot support Bernhard Kuhn <kuhn@lpr.e-technik.tu-muenchen.de>\n");
 

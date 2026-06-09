@@ -1,5 +1,5 @@
 /*
- * linux/fs/hfsplus/part_tbl.c
+ * beep/fs/hfsplus/part_tbl.c
  *
  * Copyright (C) 1996-1997  Paul H. Hargrove
  * This file may be distributed under the terms of
@@ -14,7 +14,7 @@
  *
  */
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 #include "hfsplus_fs.h"
 
 /* offsets to various blocks */

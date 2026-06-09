@@ -8,28 +8,28 @@
 #warning "Sparse checking disabled for this file"
 #endif
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/ctype.h>
-#include <linux/fd.h>
-#include <linux/tty.h>
-#include <linux/suspend.h>
-#include <linux/root_dev.h>
-#include <linux/security.h>
-#include <linux/delay.h>
-#include <linux/genhd.h>
-#include <linux/mount.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/initrd.h>
-#include <linux/async.h>
-#include <linux/fs_struct.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/ctype.h>
+#include <beep/fd.h>
+#include <beep/tty.h>
+#include <beep/suspend.h>
+#include <beep/root_dev.h>
+#include <beep/security.h>
+#include <beep/delay.h>
+#include <beep/genhd.h>
+#include <beep/mount.h>
+#include <beep/device.h>
+#include <beep/init.h>
+#include <beep/fs.h>
+#include <beep/initrd.h>
+#include <beep/async.h>
+#include <beep/fs_struct.h>
+#include <beep/slab.h>
 
-#include <linux/nfs_fs.h>
-#include <linux/nfs_fs_sb.h>
-#include <linux/nfs_mount.h>
+#include <beep/nfs_fs.h>
+#include <beep/nfs_fs_sb.h>
+#include <beep/nfs_mount.h>
 
 #include "do_mounts.h"
 

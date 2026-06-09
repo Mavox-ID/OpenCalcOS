@@ -1,5 +1,5 @@
-#ifndef _LINUX_FDREG_H
-#define _LINUX_FDREG_H
+#ifndef _BEEP_FDREG_H
+#define _BEEP_FDREG_H
 
 /*
 ** WD1772 stuff

@@ -24,13 +24,13 @@
  *	Masahide NAKAMURA @USAGI
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/stringify.h>
-#include <linux/time.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/spinlock.h>
+#include <beep/stringify.h>
+#include <beep/time.h>
 #include <net/ipv6.h>
 #include <net/xfrm.h>
 

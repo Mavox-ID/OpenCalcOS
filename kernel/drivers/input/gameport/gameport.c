@@ -13,16 +13,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/stddef.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/gameport.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/sched.h>	/* HZ */
-#include <linux/mutex.h>
+#include <beep/stddef.h>
+#include <beep/module.h>
+#include <beep/ioport.h>
+#include <beep/init.h>
+#include <beep/gameport.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/workqueue.h>
+#include <beep/sched.h>	/* HZ */
+#include <beep/mutex.h>
 
 /*#include <asm/io.h>*/
 
@@ -47,7 +47,7 @@ static void gameport_disconnect_port(struct gameport *gameport);
 
 #if defined(__i386__)
 
-#include <linux/i8253.h>
+#include <beep/i8253.h>
 
 #define DELTA(x,y)      ((y)-(x)+((y)<(x)?1193182/HZ:0))
 #define GET_TIME(x)     do { x = get_time_pit(); } while (0)

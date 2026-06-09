@@ -10,7 +10,7 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include <asm/page.h>
 #include <asm/sizes.h>
 #include <asm/mach/map.h>

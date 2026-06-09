@@ -1,7 +1,7 @@
 /*
  * vDSO implementation for Hexagon
  *
- * Copyright (c) 2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011, The Beep Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -18,10 +18,10 @@
  * 02110-1301, USA.
  */
 
-#include <linux/err.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/binfmts.h>
+#include <beep/err.h>
+#include <beep/mm.h>
+#include <beep/vmalloc.h>
+#include <beep/binfmts.h>
 
 #include <asm/vdso.h>
 
@@ -59,7 +59,7 @@ arch_initcall(vdso_init);
 /*
  * Called from binfmt_elf.  Create a VMA for the vDSO page.
  */
-int arch_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+int arch_setup_additional_pages(struct beep_binprm *bprm, int uses_interp)
 {
 	int ret;
 	unsigned long vdso_base;

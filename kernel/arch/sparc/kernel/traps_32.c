@@ -9,12 +9,12 @@
  * I hate traps on the sparc, grrr...
  */
 
-#include <linux/sched.h>  /* for jiffies */
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/smp.h>
-#include <linux/kdebug.h>
-#include <linux/export.h>
+#include <beep/sched.h>  /* for jiffies */
+#include <beep/kernel.h>
+#include <beep/signal.h>
+#include <beep/smp.h>
+#include <beep/kdebug.h>
+#include <beep/export.h>
 
 #include <asm/delay.h>
 #include <asm/ptrace.h>
@@ -93,7 +93,7 @@ void do_hw_interrupt(struct pt_regs *regs, unsigned long type)
 	siginfo_t info;
 
 	if(type < 0x80) {
-		/* Sun OS's puke from bad traps, Linux survives! */
+		/* Sun OS's puke from bad traps, Beep survives! */
 		printk("Unimplemented Sparc TRAP, type = %02lx\n", type);
 		die_if_kernel("Whee... Hello Mr. Penguin", regs);
 	}	

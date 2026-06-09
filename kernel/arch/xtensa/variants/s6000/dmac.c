@@ -9,11 +9,11 @@
  * option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/spinlock.h>
 #include <asm/cacheflush.h>
 #include <variant/dmac.h>
 

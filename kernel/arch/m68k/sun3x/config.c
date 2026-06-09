@@ -6,11 +6,11 @@
  * based on code from Oliver Jowett <oliver@jowett.manawatu.gen.nz>
  */
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/seq_file.h>
-#include <linux/console.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/seq_file.h>
+#include <beep/console.h>
+#include <beep/init.h>
 
 #include <asm/machdep.h>
 #include <asm/irq.h>

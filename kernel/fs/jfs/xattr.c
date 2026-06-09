@@ -17,13 +17,13 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/capability.h>
-#include <linux/fs.h>
-#include <linux/xattr.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/slab.h>
-#include <linux/quotaops.h>
-#include <linux/security.h>
+#include <beep/capability.h>
+#include <beep/fs.h>
+#include <beep/xattr.h>
+#include <beep/posix_acl_xattr.h>
+#include <beep/slab.h>
+#include <beep/quotaops.h>
+#include <beep/security.h>
 #include "jfs_incore.h"
 #include "jfs_superblock.h"
 #include "jfs_dmap.h"

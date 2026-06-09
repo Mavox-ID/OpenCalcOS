@@ -21,8 +21,8 @@
 #ifndef _SN9C102_CONFIG_H_
 #define _SN9C102_CONFIG_H_
 
-#include <linux/types.h>
-#include <linux/jiffies.h>
+#include <beep/types.h>
+#include <beep/jiffies.h>
 
 #define SN9C102_DEBUG
 #define SN9C102_DEBUG_LEVEL       2

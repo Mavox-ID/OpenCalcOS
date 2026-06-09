@@ -6,11 +6,11 @@
  *    Author: Arnd Bergmann <arnd@arndb.de>
  */
 
-#include <linux/compat.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/mqueue.h>
-#include <linux/syscalls.h>
+#include <beep/compat.h>
+#include <beep/fs.h>
+#include <beep/kernel.h>
+#include <beep/mqueue.h>
+#include <beep/syscalls.h>
 
 #include <asm/uaccess.h>
 

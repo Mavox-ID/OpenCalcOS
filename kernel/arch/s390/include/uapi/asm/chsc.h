@@ -8,8 +8,8 @@
 #ifndef _ASM_CHSC_H
 #define _ASM_CHSC_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <beep/types.h>
+#include <beep/ioctl.h>
 #include <asm/chpid.h>
 #include <asm/schid.h>
 

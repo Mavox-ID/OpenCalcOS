@@ -21,9 +21,9 @@
 #ifndef __ASM_MEMORY_H
 #define __ASM_MEMORY_H
 
-#include <linux/compiler.h>
-#include <linux/const.h>
-#include <linux/types.h>
+#include <beep/compiler.h>
+#include <beep/const.h>
+#include <beep/types.h>
 #include <asm/sizes.h>
 
 /*

@@ -46,8 +46,8 @@
 *	First release to the public
 */
 
-#ifndef _LINUX_3780I_H
-#define _LINUX_3780I_H
+#ifndef _BEEP_3780I_H
+#define _BEEP_3780I_H
 
 #include <asm/io.h>
 

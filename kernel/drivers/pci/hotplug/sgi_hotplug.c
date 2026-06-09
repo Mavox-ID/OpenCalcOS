@@ -9,15 +9,15 @@
  * Work to add BIOS PROM support was completed by Mike Habeck.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/proc_fs.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/pci.h>
+#include <beep/pci_hotplug.h>
+#include <beep/proc_fs.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/mutex.h>
 
 #include <asm/sn/addrs.h>
 #include <asm/sn/geo.h>
@@ -29,7 +29,7 @@
 #include <asm/sn/sn_feature_sets.h>
 #include <asm/sn/sn_sal.h>
 #include <asm/sn/types.h>
-#include <linux/acpi.h>
+#include <beep/acpi.h>
 #include <asm/sn/acpi.h>
 
 #include "../pci.h"
@@ -340,7 +340,7 @@ static int enable_slot(struct hotplug_slot *bss_hotplug_slot)
 	char *ssdt = NULL;
 	void pcibios_fixup_device_resources(struct pci_dev *);
 
-	/* Serialize the Linux PCI infrastructure */
+	/* Serialize the Beep PCI infrastructure */
 	mutex_lock(&sn_hotplug_mutex);
 
 	/*
@@ -378,7 +378,7 @@ static int enable_slot(struct hotplug_slot *bss_hotplug_slot)
 
 	/*
 	 * Map SN resources for all functions on the card
-	 * to the Linux PCI interface and tell the drivers
+	 * to the Beep PCI interface and tell the drivers
 	 * about them.
 	 */
 	for (func = 0; func < num_funcs;  func++) {
@@ -545,7 +545,7 @@ static int disable_slot(struct hotplug_slot *bss_hotplug_slot)
 
 	}
 
-	/* Free the SN resources assigned to the Linux device.*/
+	/* Free the SN resources assigned to the Beep device.*/
 	for (func = 0; func < 8;  func++) {
 		dev = pci_get_slot(slot->pci_bus,
 				   PCI_DEVFN(slot->device_num + 1,

@@ -11,9 +11,9 @@
 
 #undef DEBUG
 
-#include <linux/crash_dump.h>
-#include <linux/bootmem.h>
-#include <linux/memblock.h>
+#include <beep/crash_dump.h>
+#include <beep/bootmem.h>
+#include <beep/memblock.h>
 #include <asm/code-patching.h>
 #include <asm/kdump.h>
 #include <asm/prom.h>
@@ -137,7 +137,7 @@ void crash_free_reserved_phys_range(unsigned long begin, unsigned long end)
 	const u32 *basep, *sizep;
 	unsigned int rtas_start = 0, rtas_end = 0;
 
-	basep = of_get_property(rtas.dev, "linux,rtas-base", NULL);
+	basep = of_get_property(rtas.dev, "beep,rtas-base", NULL);
 	sizep = of_get_property(rtas.dev, "rtas-size", NULL);
 
 	if (basep && sizep) {

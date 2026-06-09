@@ -15,18 +15,18 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-
  *
  */
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/iocontext.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/mempool.h>
-#include <linux/workqueue.h>
-#include <linux/cgroup.h>
+#include <beep/mm.h>
+#include <beep/swap.h>
+#include <beep/bio.h>
+#include <beep/blkdev.h>
+#include <beep/iocontext.h>
+#include <beep/slab.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/mempool.h>
+#include <beep/workqueue.h>
+#include <beep/cgroup.h>
 #include <scsi/sg.h>		/* for struct sg_iovec */
 
 #include <trace/events/block.h>

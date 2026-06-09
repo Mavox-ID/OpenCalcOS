@@ -12,21 +12,21 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/mfd/core.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regulator/machine.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/i2c.h>
+#include <beep/err.h>
+#include <beep/delay.h>
+#include <beep/mfd/core.h>
+#include <beep/pm_runtime.h>
+#include <beep/regmap.h>
+#include <beep/regulator/consumer.h>
+#include <beep/regulator/machine.h>
 
-#include <linux/mfd/wm8994/core.h>
-#include <linux/mfd/wm8994/pdata.h>
-#include <linux/mfd/wm8994/registers.h>
+#include <beep/mfd/wm8994/core.h>
+#include <beep/mfd/wm8994/pdata.h>
+#include <beep/mfd/wm8994/registers.h>
 
 #include "wm8994.h"
 

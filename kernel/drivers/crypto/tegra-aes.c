@@ -27,19 +27,19 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/mutex.h>
-#include <linux/interrupt.h>
-#include <linux/completion.h>
-#include <linux/workqueue.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/scatterlist.h>
+#include <beep/dma-mapping.h>
+#include <beep/io.h>
+#include <beep/mutex.h>
+#include <beep/interrupt.h>
+#include <beep/completion.h>
+#include <beep/workqueue.h>
 
 #include <crypto/scatterwalk.h>
 #include <crypto/aes.h>

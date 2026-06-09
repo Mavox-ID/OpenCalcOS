@@ -1,5 +1,5 @@
-/* -*- linux-c -*-
- * linux/arch/blackfin/kernel/ipipe.c
+/* -*- beep-c -*-
+ * beep/arch/blackfin/kernel/ipipe.c
  *
  * Copyright (C) 2005-2007 Philippe Gerum.
  *
@@ -21,17 +21,17 @@
  * Architecture-dependent I-pipe support for the Blackfin.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/percpu.h>
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/kthread.h>
-#include <linux/unistd.h>
-#include <linux/io.h>
-#include <linux/atomic.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/percpu.h>
+#include <beep/bitops.h>
+#include <beep/errno.h>
+#include <beep/kthread.h>
+#include <beep/unistd.h>
+#include <beep/io.h>
+#include <beep/atomic.h>
 #include <asm/irq_handler.h>
 
 DEFINE_PER_CPU(struct pt_regs, __ipipe_tick_regs);
@@ -203,10 +203,10 @@ asmlinkage int __ipipe_syscall_root(struct pt_regs *regs)
 
 	/*
 	 * This routine either returns:
-	 * 0 -- if the syscall is to be passed to Linux;
-	 * >0 -- if the syscall should not be passed to Linux, and no
+	 * 0 -- if the syscall is to be passed to Beep;
+	 * >0 -- if the syscall should not be passed to Beep, and no
 	 * tail work should be performed;
-	 * <0 -- if the syscall should not be passed to Linux but the
+	 * <0 -- if the syscall should not be passed to Beep but the
 	 * tail work has to be performed (for handling signals etc).
 	 */
 
@@ -220,7 +220,7 @@ asmlinkage int __ipipe_syscall_root(struct pt_regs *regs)
 
 	/*
 	 * This is the end of the syscall path, so we may
-	 * safely assume a valid Linux task stack here.
+	 * safely assume a valid Beep task stack here.
 	 */
 	if (current->ipipe_flags & PF_EVTRET) {
 		current->ipipe_flags &= ~PF_EVTRET;
@@ -316,7 +316,7 @@ void __ipipe_disable_root_irqs_hw(void)
 	 * arch/blackfin/lib/ins.S), which are heavily used by the
 	 * network stack. It masks all interrupts but those handled by
 	 * non-root domains, so that we keep decent network transfer
-	 * rates for Linux without inducing pathological jitter for
+	 * rates for Beep without inducing pathological jitter for
 	 * the real-time domain.
 	 */
 	bfin_sti(__ipipe_irq_lvmask);

@@ -11,15 +11,15 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/time.h>
-#include <linux/rtc.h>
-#include <linux/interrupt.h>
-#include <linux/ioctl.h>
-#include <linux/slab.h>
-#include <linux/platform_data/atmel.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
+#include <beep/time.h>
+#include <beep/rtc.h>
+#include <beep/interrupt.h>
+#include <beep/ioctl.h>
+#include <beep/slab.h>
+#include <beep/platform_data/atmel.h>
 
 #include <mach/at91_rtt.h>
 #include <mach/cpu.h>

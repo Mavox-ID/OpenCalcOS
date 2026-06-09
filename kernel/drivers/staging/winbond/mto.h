@@ -8,7 +8,7 @@
 #ifndef __MTO_H__
 #define __MTO_H__
 
-#include <linux/types.h>
+#include <beep/types.h>
 
 struct wbsoft_priv;
 

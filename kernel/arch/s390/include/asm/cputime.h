@@ -7,9 +7,9 @@
 #ifndef _S390_CPUTIME_H
 #define _S390_CPUTIME_H
 
-#include <linux/types.h>
-#include <linux/percpu.h>
-#include <linux/spinlock.h>
+#include <beep/types.h>
+#include <beep/percpu.h>
+#include <beep/spinlock.h>
 #include <asm/div64.h>
 
 

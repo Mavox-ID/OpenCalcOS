@@ -18,8 +18,8 @@
  * problems.
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <beep/linkage.h>
+#include <beep/init.h>
 
 /*
  * At this stage the secondary CPUs don't have acces yet to the MMU, so

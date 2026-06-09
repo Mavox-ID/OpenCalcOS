@@ -8,17 +8,17 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/clk-provider.h>
-#include <linux/clk/mvebu.h>
-#include <linux/ata_platform.h>
-#include <linux/gpio.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/pci.h>
+#include <beep/clk-provider.h>
+#include <beep/clk/mvebu.h>
+#include <beep/ata_platform.h>
+#include <beep/gpio.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
 #include <asm/page.h>
 #include <asm/setup.h>
 #include <asm/timex.h>
@@ -30,10 +30,10 @@
 #include <mach/pm.h>
 #include <mach/bridge-regs.h>
 #include <asm/mach/arch.h>
-#include <linux/irq.h>
+#include <beep/irq.h>
 #include <plat/time.h>
-#include <linux/platform_data/usb-ehci-orion.h>
-#include <linux/platform_data/dma-mv_xor.h>
+#include <beep/platform_data/usb-ehci-orion.h>
+#include <beep/platform_data/dma-mv_xor.h>
 #include <plat/irq.h>
 #include <plat/common.h>
 #include <plat/addr-map.h>

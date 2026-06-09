@@ -14,17 +14,17 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/err.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/rtc.h>
+#include <beep/bcd.h>
+#include <beep/err.h>
 
-#include <linux/mfd/pcf50633/core.h>
+#include <beep/mfd/pcf50633/core.h>
 
 #define PCF50633_REG_RTCSC	0x59 /* Second */
 #define PCF50633_REG_RTCMN	0x5a /* Minute */

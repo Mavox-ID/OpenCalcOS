@@ -1,13 +1,13 @@
 #ifndef _ASM_S390_DMA_MAPPING_H
 #define _ASM_S390_DMA_MAPPING_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-attrs.h>
-#include <linux/dma-debug.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/scatterlist.h>
+#include <beep/dma-attrs.h>
+#include <beep/dma-debug.h>
+#include <beep/io.h>
 
 #define DMA_ERROR_CODE		(~(dma_addr_t) 0x0)
 

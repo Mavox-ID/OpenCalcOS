@@ -9,9 +9,9 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/sysctl.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
+#include <beep/sysctl.h>
+#include <beep/proc_fs.h>
+#include <beep/init.h>
 #include <asm/uaccess.h>
 
 static const char frv_cache_wback[] = "wback";

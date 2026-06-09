@@ -28,28 +28,28 @@
  * and many others.
  */
 
-#include <linux/blkdev.h>
-#include <linux/bug.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/stringify.h>
-#include <linux/workqueue.h>
+#include <beep/blkdev.h>
+#include <beep/bug.h>
+#include <beep/completion.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/firewire.h>
+#include <beep/firewire-constants.h>
+#include <beep/init.h>
+#include <beep/jiffies.h>
+#include <beep/kernel.h>
+#include <beep/kref.h>
+#include <beep/list.h>
+#include <beep/mod_devicetable.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/scatterlist.h>
+#include <beep/slab.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/stringify.h>
+#include <beep/workqueue.h>
 
 #include <asm/byteorder.h>
 
@@ -1100,7 +1100,7 @@ static void sbp2_init_workarounds(struct sbp2_target *tgt, u32 model,
 
 	if (w)
 		dev_notice(tgt_dev(tgt),
-			   "Please notify linux1394-devel@lists.sf.net "
+			   "Please notify beep1394-devel@lists.sf.net "
 			   "if you need the workarounds parameter\n");
 
 	if (w & SBP2_WORKAROUND_OVERRIDE)

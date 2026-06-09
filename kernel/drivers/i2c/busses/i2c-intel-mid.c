@@ -19,18 +19,18 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/pm_runtime.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/stat.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/init.h>
+#include <beep/pci.h>
+#include <beep/interrupt.h>
+#include <beep/pm_runtime.h>
+#include <beep/io.h>
 
 #define DRIVER_NAME	"i2c-intel-mid"
 #define VERSION		"Version 0.5ac2"

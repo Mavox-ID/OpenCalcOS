@@ -3,17 +3,17 @@
  *
  * Pentium III FXSR, SSE support
  * General FPU state handling cleanups
- *	Gareth Hughes <gareth@valinux.com>, May 2000
+ *	Gareth Hughes <gareth@vabeep.com>, May 2000
  * x86-64 work by Andi Kleen 2002
  */
 
 #ifndef _FPU_INTERNAL_H
 #define _FPU_INTERNAL_H
 
-#include <linux/kernel_stat.h>
-#include <linux/regset.h>
-#include <linux/compat.h>
-#include <linux/slab.h>
+#include <beep/kernel_stat.h>
+#include <beep/regset.h>
+#include <beep/compat.h>
+#include <beep/slab.h>
 #include <asm/asm.h>
 #include <asm/cpufeature.h>
 #include <asm/processor.h>

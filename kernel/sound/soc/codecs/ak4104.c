@@ -9,14 +9,14 @@
  *  option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/slab.h>
 #include <sound/core.h>
 #include <sound/soc.h>
 #include <sound/initval.h>
-#include <linux/spi/spi.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
+#include <beep/spi/spi.h>
+#include <beep/of_device.h>
+#include <beep/of_gpio.h>
 #include <sound/asoundef.h>
 
 /* AK4104 registers addresses */

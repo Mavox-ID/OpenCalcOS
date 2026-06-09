@@ -9,7 +9,7 @@
  * Please use the copyright conditions above.
  *
  * This version (Jan-23-2003) of inflate_fast was coded and tested under
- * GNU/Linux on a pentium 3, using the gcc-3.2 compiler distribution.  On that
+ * GNU/Beep on a pentium 3, using the gcc-3.2 compiler distribution.  On that
  * machine, I found that gzip style archives decompressed about 20% faster than
  * the gcc-3.2 -O3 -fomit-frame-pointer compiled version.  Your results will
  * depend on how large of a buffer is used for z_stream.next_in & next_out

@@ -15,13 +15,13 @@
  * controller (a.k.a. "IRouter") network in an SGI SN system.
  */
 
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/device.h>
-#include <linux/poll.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <beep/interrupt.h>
+#include <beep/sched.h>
+#include <beep/device.h>
+#include <beep/poll.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/mutex.h>
 #include <asm/sn/io.h>
 #include <asm/sn/sn_sal.h>
 #include <asm/sn/module.h>

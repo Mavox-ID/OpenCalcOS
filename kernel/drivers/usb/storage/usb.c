@@ -8,7 +8,7 @@
  *   (c) 2003-2009 Alan Stern (stern@rowland.harvard.edu)
  *
  * Initial work by:
- *   (c) 1999 Michael Gee (michael@linuxspecific.com)
+ *   (c) 1999 Michael Gee (michael@beepspecific.com)
  *
  * usb_device_id support by Adam J. Richter (adam@yggdrasil.com):
  *   (c) 2000 Yggdrasil Computing, Inc.
@@ -27,7 +27,7 @@
  * Also, for certain devices, the interrupt endpoint is used to convey
  * status of a command.
  *
- * Please see http://www.one-eyed-alien.net/~mdharm/linux-usb for more
+ * Please see http://www.one-eyed-alien.net/~mdharm/beep-usb for more
  * information about this driver.
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -49,15 +49,15 @@
 #define DEBUG
 #endif
 
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/freezer.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/utsname.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/freezer.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/kthread.h>
+#include <beep/mutex.h>
+#include <beep/utsname.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -75,7 +75,7 @@
 
 /* Some informational data */
 MODULE_AUTHOR("Matthew Dharm <mdharm-usb@one-eyed-alien.net>");
-MODULE_DESCRIPTION("USB Mass Storage driver for Linux");
+MODULE_DESCRIPTION("USB Mass Storage driver for Beep");
 MODULE_LICENSE("GPL");
 
 static unsigned int delay_use = 1;
@@ -610,7 +610,7 @@ static int get_device_info(struct us_data *us, const struct usb_device_id *id,
 					" has %s in unusual_devs.h (kernel"
 					" %s)\n"
 					"   Please send a copy of this message to "
-					"<linux-usb@vger.kernel.org> and "
+					"<beep-usb@vger.kernel.org> and "
 					"<usb-storage@lists.one-eyed-alien.net>\n",
 					le16_to_cpu(ddesc->idVendor),
 					le16_to_cpu(ddesc->idProduct),

@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/plat-omap/dmtimer.c
+ * beep/arch/arm/plat-omap/dmtimer.c
  *
  * OMAP Dual-Mode Timers
  *
@@ -35,16 +35,16 @@
  * 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/dmtimer-omap.h>
+#include <beep/clk.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/device.h>
+#include <beep/err.h>
+#include <beep/pm_runtime.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/platform_device.h>
+#include <beep/platform_data/dmtimer-omap.h>
 
 #include <plat/dmtimer.h>
 

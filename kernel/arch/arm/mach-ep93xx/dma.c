@@ -18,14 +18,14 @@
  * your option) any later version.
  */
 
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
+#include <beep/dmaengine.h>
+#include <beep/dma-mapping.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/platform_device.h>
 
-#include <linux/platform_data/dma-ep93xx.h>
+#include <beep/platform_data/dma-ep93xx.h>
 #include <mach/hardware.h>
 
 #include "soc.h"

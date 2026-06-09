@@ -7,17 +7,17 @@
  * under the terms of the GNU General Public License version 2 as published by
  * the Free Software Foundation.
  */
-#include <linux/clk.h>
-#include <linux/bitmap.h>
-#include <linux/dw_dmac.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/io.h>
+#include <beep/clk.h>
+#include <beep/bitmap.h>
+#include <beep/dw_dmac.h>
+#include <beep/dmaengine.h>
+#include <beep/dma-mapping.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/types.h>
+#include <beep/io.h>
 
 #include <sound/core.h>
 #include <sound/initval.h>

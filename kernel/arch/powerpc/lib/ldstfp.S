@@ -15,7 +15,7 @@
 #include <asm/ppc-opcode.h>
 #include <asm/reg.h>
 #include <asm/asm-offsets.h>
-#include <linux/errno.h>
+#include <beep/errno.h>
 
 #ifdef CONFIG_PPC_FPU
 

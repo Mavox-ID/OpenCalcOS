@@ -10,12 +10,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/pm.h>
-#include <linux/suspend.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <beep/pm.h>
+#include <beep/suspend.h>
+#include <beep/module.h>
+#include <beep/list.h>
+#include <beep/err.h>
+#include <beep/slab.h>
 #include <asm/system_misc.h>
 
 #include "soc.h"

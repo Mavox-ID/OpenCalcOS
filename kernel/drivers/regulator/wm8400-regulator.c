@@ -12,12 +12,12 @@
  *
  */
 
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regulator/driver.h>
-#include <linux/mfd/wm8400-private.h>
+#include <beep/bug.h>
+#include <beep/err.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/regulator/driver.h>
+#include <beep/mfd/wm8400-private.h>
 
 static int wm8400_ldo_list_voltage(struct regulator_dev *dev,
 				   unsigned selector)

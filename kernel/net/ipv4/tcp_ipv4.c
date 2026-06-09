@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -9,9 +9,9 @@
  *
  *
  *		code split from:
- *		linux/ipv4/tcp.c
- *		linux/ipv4/tcp_input.c
- *		linux/ipv4/tcp_output.c
+ *		beep/ipv4/tcp.c
+ *		beep/ipv4/tcp_input.c
+ *		beep/ipv4/tcp_output.c
  *
  *		See tcp.c for author information
  *
@@ -52,16 +52,16 @@
 
 #define pr_fmt(fmt) "TCP: " fmt
 
-#include <linux/bottom_half.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/cache.h>
-#include <linux/jhash.h>
-#include <linux/init.h>
-#include <linux/times.h>
-#include <linux/slab.h>
+#include <beep/bottom_half.h>
+#include <beep/types.h>
+#include <beep/fcntl.h>
+#include <beep/module.h>
+#include <beep/random.h>
+#include <beep/cache.h>
+#include <beep/jhash.h>
+#include <beep/init.h>
+#include <beep/times.h>
+#include <beep/slab.h>
 
 #include <net/net_namespace.h>
 #include <net/icmp.h>
@@ -76,14 +76,14 @@
 #include <net/secure_seq.h>
 #include <net/tcp_memcontrol.h>
 
-#include <linux/inet.h>
-#include <linux/ipv6.h>
-#include <linux/stddef.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/inet.h>
+#include <beep/ipv6.h>
+#include <beep/stddef.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 
-#include <linux/crypto.h>
-#include <linux/scatterlist.h>
+#include <beep/crypto.h>
+#include <beep/scatterlist.h>
 
 int sysctl_tcp_tw_reuse __read_mostly;
 int sysctl_tcp_low_latency __read_mostly;
@@ -275,7 +275,7 @@ static void tcp_v4_mtu_reduced(struct sock *sk)
 	u32 mtu = tcp_sk(sk)->mtu_info;
 
 	/* We are not interested in TCP_LISTEN and open_requests (SYN-ACKs
-	 * send out by Linux are always <576bytes so they should go through
+	 * send out by Beep are always <576bytes so they should go through
 	 * unfragmented).
 	 */
 	if (sk->sk_state == TCP_LISTEN)
@@ -371,13 +371,13 @@ void tcp_v4_err(struct sk_buff *icmp_skb, u32 info)
 	 */
 	if (sock_owned_by_user(sk)) {
 		if (!(type == ICMP_DEST_UNREACH && code == ICMP_FRAG_NEEDED))
-			NET_INC_STATS_BH(net, LINUX_MIB_LOCKDROPPEDICMPS);
+			NET_INC_STATS_BH(net, BEEP_MIB_LOCKDROPPEDICMPS);
 	}
 	if (sk->sk_state == TCP_CLOSE)
 		goto out;
 
 	if (unlikely(iph->ttl < inet_sk(sk)->min_ttl)) {
-		NET_INC_STATS_BH(net, LINUX_MIB_TCPMINTTLDROP);
+		NET_INC_STATS_BH(net, BEEP_MIB_TCPMINTTLDROP);
 		goto out;
 	}
 
@@ -389,7 +389,7 @@ void tcp_v4_err(struct sk_buff *icmp_skb, u32 info)
 	    !between(seq, tp->snd_una, tp->snd_nxt) &&
 	    (req == NULL || seq != tcp_rsk(req)->snt_isn)) {
 		/* For a Fast Open socket, allow seq to be snt_isn. */
-		NET_INC_STATS_BH(net, LINUX_MIB_OUTOFWINDOWICMPS);
+		NET_INC_STATS_BH(net, BEEP_MIB_OUTOFWINDOWICMPS);
 		goto out;
 	}
 
@@ -485,7 +485,7 @@ void tcp_v4_err(struct sk_buff *icmp_skb, u32 info)
 		WARN_ON(req->sk);
 
 		if (seq != tcp_rsk(req)->snt_isn) {
-			NET_INC_STATS_BH(net, LINUX_MIB_OUTOFWINDOWICMPS);
+			NET_INC_STATS_BH(net, BEEP_MIB_OUTOFWINDOWICMPS);
 			goto out;
 		}
 
@@ -525,7 +525,7 @@ void tcp_v4_err(struct sk_buff *icmp_skb, u32 info)
 	 * Note, that in modern internet, where routing is unreliable
 	 * and in each dark corner broken firewalls sit, sending random
 	 * errors ordered by their masters even this two messages finally lose
-	 * their original sense (even Linux sends invalid PORT_UNREACHs)
+	 * their original sense (even Beep sends invalid PORT_UNREACHs)
 	 *
 	 * Now we are in compliance with RFCs.
 	 *							--ANK (980905)
@@ -899,10 +899,10 @@ bool tcp_syn_flood_action(struct sock *sk,
 	if (sysctl_tcp_syncookies) {
 		msg = "Sending cookies";
 		want_cookie = true;
-		NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_TCPREQQFULLDOCOOKIES);
+		NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_TCPREQQFULLDOCOOKIES);
 	} else
 #endif
-		NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_TCPREQQFULLDROP);
+		NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_TCPREQQFULLDROP);
 
 	lopt = inet_csk(sk)->icsk_accept_queue.listen_opt;
 	if (!lopt->synflood_warned) {
@@ -1238,12 +1238,12 @@ static bool tcp_v4_inbound_md5_hash(struct sock *sk, const struct sk_buff *skb)
 		return false;
 
 	if (hash_expected && !hash_location) {
-		NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_TCPMD5NOTFOUND);
+		NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_TCPMD5NOTFOUND);
 		return true;
 	}
 
 	if (!hash_expected && hash_location) {
-		NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_TCPMD5UNEXPECTED);
+		NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_TCPMD5UNEXPECTED);
 		return true;
 	}
 
@@ -1303,7 +1303,7 @@ static bool tcp_fastopen_check(struct sock *sk, struct sk_buff *skb,
 	}
 	fastopenq = inet_csk(sk)->icsk_accept_queue.fastopenq;
 	/* A FO option is present; bump the counter. */
-	NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_TCPFASTOPENPASSIVE);
+	NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_TCPFASTOPENPASSIVE);
 
 	/* Make sure the listener has enabled fastopen, and we don't
 	 * exceed the max # of pending TFO requests allowed before trying
@@ -1326,8 +1326,8 @@ static bool tcp_fastopen_check(struct sock *sk, struct sk_buff *skb,
 		if ((req1 == NULL) || time_after(req1->expires, jiffies)) {
 			spin_unlock(&fastopenq->lock);
 			NET_INC_STATS_BH(sock_net(sk),
-			    LINUX_MIB_TCPFASTOPENLISTENOVERFLOW);
-			/* Avoid bumping LINUX_MIB_TCPFASTOPENPASSIVEFAIL*/
+			    BEEP_MIB_TCPFASTOPENLISTENOVERFLOW);
+			/* Avoid bumping BEEP_MIB_TCPFASTOPENPASSIVEFAIL*/
 			foc->len = -1;
 			return false;
 		}
@@ -1355,7 +1355,7 @@ static bool tcp_fastopen_check(struct sock *sk, struct sk_buff *skb,
 	} else if (foc->len == 0) { /* Client requesting a cookie */
 		tcp_fastopen_cookie_gen(ip_hdr(skb)->saddr, valid_foc);
 		NET_INC_STATS_BH(sock_net(sk),
-		    LINUX_MIB_TCPFASTOPENCOOKIEREQD);
+		    BEEP_MIB_TCPFASTOPENCOOKIEREQD);
 	} else {
 		/* Client sent a cookie with wrong size. Treat it
 		 * the same as invalid and return a valid one.
@@ -1384,7 +1384,7 @@ static int tcp_v4_conn_req_fastopen(struct sock *sk,
 	child = inet_csk(sk)->icsk_af_ops->syn_recv_sock(sk, skb, req, NULL);
 	if (child == NULL) {
 		NET_INC_STATS_BH(sock_net(sk),
-				 LINUX_MIB_TCPFASTOPENPASSIVEFAIL);
+				 BEEP_MIB_TCPFASTOPENPASSIVEFAIL);
 		kfree_skb(skb_synack);
 		return -1;
 	}
@@ -1587,7 +1587,7 @@ int tcp_v4_conn_request(struct sock *sk, struct sk_buff *skb)
 		    (dst = inet_csk_route_req(sk, &fl4, req)) != NULL &&
 		    fl4.daddr == saddr) {
 			if (!tcp_peer_is_proven(req, dst, true)) {
-				NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_PAWSPASSIVEREJECTED);
+				NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_PAWSPASSIVEREJECTED);
 				goto drop_and_release;
 			}
 		}
@@ -1654,7 +1654,7 @@ int tcp_v4_conn_request(struct sock *sk, struct sk_buff *skb)
 		inet_csk_reqsk_queue_hash_add(sk, req, TCP_TIMEOUT_INIT);
 		if (fastopen_cookie_present(&foc) && foc.len != 0)
 			NET_INC_STATS_BH(sock_net(sk),
-			    LINUX_MIB_TCPFASTOPENPASSIVEFAIL);
+			    BEEP_MIB_TCPFASTOPENPASSIVEFAIL);
 	} else if (tcp_v4_conn_req_fastopen(sk, skb, skb_synack, req,
 	    (struct request_values *)&tmp_ext))
 		goto drop_and_free;
@@ -1759,11 +1759,11 @@ struct sock *tcp_v4_syn_recv_sock(struct sock *sk, struct sk_buff *skb,
 	return newsk;
 
 exit_overflow:
-	NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_LISTENOVERFLOWS);
+	NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_LISTENOVERFLOWS);
 exit_nonewsk:
 	dst_release(dst);
 exit:
-	NET_INC_STATS_BH(sock_net(sk), LINUX_MIB_LISTENDROPS);
+	NET_INC_STATS_BH(sock_net(sk), BEEP_MIB_LISTENDROPS);
 	return NULL;
 put_and_exit:
 	inet_csk_prepare_forced_close(newsk);
@@ -1998,7 +1998,7 @@ process:
 		goto do_time_wait;
 
 	if (unlikely(iph->ttl < inet_sk(sk)->min_ttl)) {
-		NET_INC_STATS_BH(net, LINUX_MIB_TCPMINTTLDROP);
+		NET_INC_STATS_BH(net, BEEP_MIB_TCPMINTTLDROP);
 		goto discard_and_relse;
 	}
 
@@ -2029,7 +2029,7 @@ process:
 	} else if (unlikely(sk_add_backlog(sk, skb,
 					   sk->sk_rcvbuf + sk->sk_sndbuf))) {
 		bh_unlock_sock(sk);
-		NET_INC_STATS_BH(net, LINUX_MIB_TCPBACKLOGDROP);
+		NET_INC_STATS_BH(net, BEEP_MIB_TCPBACKLOGDROP);
 		goto discard_and_relse;
 	}
 	bh_unlock_sock(sk);

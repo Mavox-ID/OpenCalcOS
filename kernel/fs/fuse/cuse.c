@@ -1,7 +1,7 @@
 /*
  * CUSE: Character device in Userspace
  *
- * Copyright (C) 2008-2009  SUSE Linux Products GmbH
+ * Copyright (C) 2008-2009  SUSE Beep Products GmbH
  * Copyright (C) 2008-2009  Tejun Heo <tj@kernel.org>
  *
  * This file is released under the GPLv2.
@@ -33,20 +33,20 @@
  * closed.
  */
 
-#include <linux/fuse.h>
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/kdev_t.h>
-#include <linux/kthread.h>
-#include <linux/list.h>
-#include <linux/magic.h>
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/module.h>
+#include <beep/fuse.h>
+#include <beep/cdev.h>
+#include <beep/device.h>
+#include <beep/file.h>
+#include <beep/fs.h>
+#include <beep/kdev_t.h>
+#include <beep/kthread.h>
+#include <beep/list.h>
+#include <beep/magic.h>
+#include <beep/miscdevice.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
+#include <beep/stat.h>
+#include <beep/module.h>
 
 #include "fuse_i.h"
 

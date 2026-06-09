@@ -13,18 +13,18 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/ctype.h>
-#include <linux/io.h>
-#include <linux/clk.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/err.h>
+#include <beep/errno.h>
+#include <beep/input.h>
+#include <beep/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/ctype.h>
+#include <beep/io.h>
+#include <beep/clk.h>
 
 #include <mach/tnetv107x.h>
 

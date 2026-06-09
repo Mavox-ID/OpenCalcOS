@@ -1,6 +1,6 @@
 /*******************************************************************************
 
-  Intel 10 Gigabit PCI Express Linux driver
+  Intel 10 Gigabit PCI Express Beep driver
   Copyright(c) 1999 - 2012 Intel Corporation.
 
   This program is free software; you can redistribute it and/or modify it
@@ -28,17 +28,17 @@
 #ifndef _IXGBE_H_
 #define _IXGBE_H_
 
-#include <linux/bitops.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/cpumask.h>
-#include <linux/aer.h>
-#include <linux/if_vlan.h>
+#include <beep/bitops.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/netdevice.h>
+#include <beep/cpumask.h>
+#include <beep/aer.h>
+#include <beep/if_vlan.h>
 
-#include <linux/clocksource.h>
-#include <linux/net_tstamp.h>
-#include <linux/ptp_clock_kernel.h>
+#include <beep/clocksource.h>
+#include <beep/net_tstamp.h>
+#include <beep/ptp_clock_kernel.h>
 
 #include "ixgbe_type.h"
 #include "ixgbe_common.h"
@@ -48,7 +48,7 @@
 #include "ixgbe_fcoe.h"
 #endif /* CONFIG_FCOE or CONFIG_FCOE_MODULE */
 #ifdef CONFIG_IXGBE_DCA
-#include <linux/dca.h>
+#include <beep/dca.h>
 #endif
 
 /* common prefix used by pr_<> macros */

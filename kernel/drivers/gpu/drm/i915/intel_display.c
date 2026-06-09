@@ -24,13 +24,13 @@
  *	Eric Anholt <eric@anholt.net>
  */
 
-#include <linux/dmi.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/vgaarb.h>
+#include <beep/dmi.h>
+#include <beep/module.h>
+#include <beep/input.h>
+#include <beep/i2c.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/vgaarb.h>
 #include <drm/drm_edid.h>
 #include <drm/drmP.h>
 #include "intel_drv.h"
@@ -39,7 +39,7 @@
 #include "i915_trace.h"
 #include <drm/drm_dp_helper.h>
 #include <drm/drm_crtc_helper.h>
-#include <linux/dma_remapping.h>
+#include <beep/dma_remapping.h>
 
 bool intel_pipe_has_type(struct drm_crtc *crtc, int type);
 static void intel_increase_pllclock(struct drm_crtc *crtc);
@@ -9403,7 +9403,7 @@ int intel_modeset_vga_set_state(struct drm_device *dev, bool state)
 }
 
 #ifdef CONFIG_DEBUG_FS
-#include <linux/seq_file.h>
+#include <beep/seq_file.h>
 
 struct intel_display_error_state {
 	struct intel_cursor_error_state {

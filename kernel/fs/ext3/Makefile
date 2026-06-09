@@ -1,5 +1,5 @@
 #
-# Makefile for the linux ext3-filesystem routines.
+# Makefile for the beep ext3-filesystem routines.
 #
 
 obj-$(CONFIG_EXT3_FS) += ext3.o

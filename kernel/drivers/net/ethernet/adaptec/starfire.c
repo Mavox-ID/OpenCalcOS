@@ -1,4 +1,4 @@
-/* starfire.c: Linux device driver for the Adaptec Starfire network adapter. */
+/* starfire.c: Beep device driver for the Adaptec Starfire network adapter. */
 /*
 	Written 1998-2000 by Donald Becker.
 
@@ -30,20 +30,20 @@
 #define DRV_VERSION	"2.1"
 #define DRV_RELDATE	"July  6, 2008"
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/crc32.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/if_vlan.h>
-#include <linux/mm.h>
-#include <linux/firmware.h>
+#include <beep/interrupt.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/crc32.h>
+#include <beep/ethtool.h>
+#include <beep/mii.h>
+#include <beep/if_vlan.h>
+#include <beep/mm.h>
+#include <beep/firmware.h>
 #include <asm/processor.h>		/* Processor type for cache alignment. */
 #include <asm/uaccess.h>
 #include <asm/io.h>

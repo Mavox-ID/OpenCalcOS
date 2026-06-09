@@ -26,9 +26,9 @@
 
 */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/delay.h>
 #include <asm/io.h>
 
 #include "bttvp.h"

@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2001-2002	Andre Hedrick <andre@linux-ide.org>
+ *  Copyright (C) 2001-2002	Andre Hedrick <andre@beep-ide.org>
  *  Portions (C) Copyright 2002  Red Hat Inc
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -19,12 +19,12 @@
  * are deemed to be part of the source code.
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/ide.h>
-#include <linux/init.h>
+#include <beep/types.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/pci.h>
+#include <beep/ide.h>
+#include <beep/init.h>
 
 #define DRV_NAME "ide_pci_generic"
 

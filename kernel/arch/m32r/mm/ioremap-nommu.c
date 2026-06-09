@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m32r/mm/ioremap-nommu.c
+ *  beep/arch/m32r/mm/ioremap-nommu.c
  *
  *  Copyright (c) 2001, 2002  Hiroyuki Kondo
  *
@@ -15,11 +15,11 @@
  *
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <asm/addrspace.h>
 #include <asm/byteorder.h>
 
-#include <linux/vmalloc.h>
+#include <beep/vmalloc.h>
 #include <asm/io.h>
 #include <asm/pgalloc.h>
 #include <asm/cacheflush.h>

@@ -18,12 +18,12 @@
  *
  */
 
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/videodev2.h>
+#include <beep/errno.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/firmware.h>
+#include <beep/videodev2.h>
 #include <media/v4l2-common.h>
 #include <media/tuner.h>
 #include "pvrusb2.h"

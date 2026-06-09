@@ -8,18 +8,18 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/platform_device.h>
-#include <linux/list.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/atmel-ssc.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/platform_device.h>
+#include <beep/list.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/io.h>
+#include <beep/spinlock.h>
+#include <beep/atmel-ssc.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 
-#include <linux/of.h>
-#include <linux/pinctrl/consumer.h>
+#include <beep/of.h>
+#include <beep/pinctrl/consumer.h>
 
 /* Serialize access to ssc_list and user count */
 static DEFINE_SPINLOCK(user_lock);

@@ -3,13 +3,13 @@
  *
  * Copyright (C) 2011, Thomas Gleixner
  */
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/syscore_ops.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/slab.h>
+#include <beep/export.h>
+#include <beep/interrupt.h>
+#include <beep/kernel_stat.h>
+#include <beep/syscore_ops.h>
 
 #include "internals.h"
 

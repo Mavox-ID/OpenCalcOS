@@ -45,11 +45,11 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/input.h>
+#include <beep/device.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/usb.h>
+#include <beep/usb/input.h>
 #include <media/rc-core.h>
 
 /* Driver Information */

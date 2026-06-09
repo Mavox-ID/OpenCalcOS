@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/hgafb.c -- Hercules graphics adaptor frame buffer device
+ * beep/drivers/video/hgafb.c -- Hercules graphics adaptor frame buffer device
  * 
  *      Created 25 Nov 1999 by Ferenc Bakonyi (fero@drama.obuda.kando.hu)
  *      Based on skeletonfb.c by Geert Uytterhoeven and
@@ -30,17 +30,17 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/spinlock.h>
+#include <beep/string.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
+#include <beep/fb.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
+#include <beep/platform_device.h>
 #include <asm/io.h>
 #include <asm/vga.h>
 
@@ -242,7 +242,7 @@ static void hga_show_logo(struct fb_info *info)
 {
 /*
 	void __iomem *dest = hga_vram;
-	char *logo = linux_logo_bw;
+	char *logo = beep_logo_bw;
 	int x, y;
 	
 	for (y = 134; y < 134 + 80 ; y++) * this needs some cleanup *

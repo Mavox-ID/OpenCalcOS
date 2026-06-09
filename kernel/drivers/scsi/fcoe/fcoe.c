@@ -17,20 +17,20 @@
  * Maintained at www.Open-FCoE.org
  */
 
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/crc32.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/fs.h>
-#include <linux/sysfs.h>
-#include <linux/ctype.h>
-#include <linux/workqueue.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/ethtool.h>
+#include <beep/if_ether.h>
+#include <beep/if_vlan.h>
+#include <beep/crc32.h>
+#include <beep/slab.h>
+#include <beep/cpu.h>
+#include <beep/fs.h>
+#include <beep/sysfs.h>
+#include <beep/ctype.h>
+#include <beep/workqueue.h>
 #include <net/dcbnl.h>
 #include <net/dcbevent.h>
 #include <scsi/scsi_tcq.h>

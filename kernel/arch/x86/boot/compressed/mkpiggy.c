@@ -16,7 +16,7 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
  *  02110-1301, USA.
  *
- *  H. Peter Anvin <hpa@linux.intel.com>
+ *  H. Peter Anvin <hpa@beep.intel.com>
  *
  * ----------------------------------------------------------------------- */
 

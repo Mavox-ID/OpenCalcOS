@@ -26,25 +26,25 @@
  * mapping lock dependencies runtime.
  */
 #define DISABLE_BRANCH_PROFILING
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/kallsyms.h>
-#include <linux/interrupt.h>
-#include <linux/stacktrace.h>
-#include <linux/debug_locks.h>
-#include <linux/irqflags.h>
-#include <linux/utsname.h>
-#include <linux/hash.h>
-#include <linux/ftrace.h>
-#include <linux/stringify.h>
-#include <linux/bitops.h>
-#include <linux/gfp.h>
-#include <linux/kmemcheck.h>
+#include <beep/mutex.h>
+#include <beep/sched.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/spinlock.h>
+#include <beep/kallsyms.h>
+#include <beep/interrupt.h>
+#include <beep/stacktrace.h>
+#include <beep/debug_locks.h>
+#include <beep/irqflags.h>
+#include <beep/utsname.h>
+#include <beep/hash.h>
+#include <beep/ftrace.h>
+#include <beep/stringify.h>
+#include <beep/bitops.h>
+#include <beep/gfp.h>
+#include <beep/kmemcheck.h>
 
 #include <asm/sections.h>
 

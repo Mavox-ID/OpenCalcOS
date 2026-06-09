@@ -1,5 +1,5 @@
 /*
- * linux/arch/unicore32/kernel/puv3-nb0916.c
+ * beep/arch/unicore32/kernel/puv3-nb0916.c
  *
  * Code specific to PKUnity SoC and UniCore ISA
  *
@@ -11,18 +11,18 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/physmap.h>
-#include <linux/io.h>
-#include <linux/reboot.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/pwm_backlight.h>
-#include <linux/gpio.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
+#include <beep/init.h>
+#include <beep/device.h>
+#include <beep/platform_device.h>
+#include <beep/mtd/physmap.h>
+#include <beep/io.h>
+#include <beep/reboot.h>
+#include <beep/interrupt.h>
+#include <beep/i2c.h>
+#include <beep/pwm_backlight.h>
+#include <beep/gpio.h>
+#include <beep/gpio_keys.h>
+#include <beep/input.h>
 
 #include <mach/hardware.h>
 

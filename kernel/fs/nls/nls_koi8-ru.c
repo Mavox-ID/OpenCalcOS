@@ -1,15 +1,15 @@
 /*
- * linux/fs/nls/nls_koi8-ru.c
+ * beep/fs/nls/nls_koi8-ru.c
  *
  * Charset koi8-ru translation based on charset koi8-u.
  * The Unicode to charset table has only exact mappings.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/nls.h>
-#include <linux/errno.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/string.h>
+#include <beep/nls.h>
+#include <beep/errno.h>
 
 static struct nls_table *p_nls;
 

@@ -8,12 +8,12 @@
  *		 Heiko Carstens <heiko.carstens@de.ibm.com>,
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/hardirq.h>
-#include <linux/time.h>
-#include <linux/module.h>
+#include <beep/kernel_stat.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/hardirq.h>
+#include <beep/time.h>
+#include <beep/module.h>
 #include <asm/lowcore.h>
 #include <asm/smp.h>
 #include <asm/etr.h>

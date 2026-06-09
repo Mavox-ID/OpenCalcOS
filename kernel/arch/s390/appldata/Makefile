@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux - z/VM Monitor Stream.
+# Makefile for the Beep - z/VM Monitor Stream.
 #
 
 obj-$(CONFIG_APPLDATA_BASE) += appldata_base.o

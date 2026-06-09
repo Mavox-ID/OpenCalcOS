@@ -32,7 +32,7 @@
  */
 
 #include "opl4_local.h"
-#include <linux/delay.h>
+#include <beep/delay.h>
 #include <asm/io.h>
 #include <sound/asoundef.h>
 

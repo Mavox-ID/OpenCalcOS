@@ -42,21 +42,21 @@
  *     
  ********************************************************************/
 
-#include <linux/module.h>
-#include <linux/gfp.h>
+#include <beep/module.h>
+#include <beep/gfp.h>
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/rtnetlink.h>
-#include <linux/dma-mapping.h>
-#include <linux/pnp.h>
-#include <linux/platform_device.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/ioport.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/rtnetlink.h>
+#include <beep/dma-mapping.h>
+#include <beep/pnp.h>
+#include <beep/platform_device.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>

@@ -1,7 +1,7 @@
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/ide.h>
-#include <linux/seq_file.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/ide.h>
+#include <beep/seq_file.h>
 
 #include "ide-floppy.h"
 

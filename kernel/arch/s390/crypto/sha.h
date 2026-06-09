@@ -15,7 +15,7 @@
 #ifndef _CRYPTO_ARCH_S390_SHA_H
 #define _CRYPTO_ARCH_S390_SHA_H
 
-#include <linux/crypto.h>
+#include <beep/crypto.h>
 #include <crypto/sha.h>
 
 /* must be big enough for the largest SHA variant */

@@ -9,15 +9,15 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/security.h>
-#include <linux/seq_file.h>
-#include <linux/err.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/sched.h>
+#include <beep/slab.h>
+#include <beep/security.h>
+#include <beep/seq_file.h>
+#include <beep/err.h>
 #include <keys/keyring-type.h>
-#include <linux/uaccess.h>
+#include <beep/uaccess.h>
 #include "internal.h"
 
 #define rcu_dereference_locked_keyring(keyring)				\

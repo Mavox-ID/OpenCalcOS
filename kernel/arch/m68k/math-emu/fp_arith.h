@@ -1,11 +1,11 @@
 /*
 
-   fp_arith.h: floating-point math routines for the Linux-m68k
+   fp_arith.h: floating-point math routines for the Beep-m68k
    floating point emulator.
 
    Copyright (c) 1998 David Huggins-Daines.
 
-   Somewhat based on the AlphaLinux floating point emulator, by David
+   Somewhat based on the AlphaBeep floating point emulator, by David
    Mosberger-Tang.
 
    You may copy, modify, and redistribute this file under the terms of

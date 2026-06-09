@@ -32,10 +32,10 @@
 */
 
 #include <asm/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/i2c.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/i2c.h>
 
 #include "ttpci-eeprom.h"
 

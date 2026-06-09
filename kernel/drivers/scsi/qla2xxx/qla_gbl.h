@@ -7,7 +7,7 @@
 #ifndef __QLA_GBL_H
 #define	__QLA_GBL_H
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 /*
  * Global Function Prototypes in qla_init.c source file.

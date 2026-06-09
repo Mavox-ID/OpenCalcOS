@@ -609,7 +609,7 @@ static int perl_generate_script(struct pevent *pevent, const char *outfile)
 		"\n# Packed byte string args of process_event():\n"
 		"#\n"
 		"# $event:\tunion perf_event\tutil/event.h\n"
-		"# $attr:\tstruct perf_event_attr\tlinux/perf_event.h\n"
+		"# $attr:\tstruct perf_event_attr\tbeep/perf_event.h\n"
 		"# $sample:\tstruct perf_sample\tutil/event.h\n"
 		"# $raw_data:\tperf_sample->raw_data\tutil/event.h\n"
 		"\n"

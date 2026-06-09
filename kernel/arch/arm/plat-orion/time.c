@@ -11,11 +11,11 @@
  * used as clock_event_device.
  */
 
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <beep/kernel.h>
+#include <beep/timer.h>
+#include <beep/clockchips.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
 #include <asm/sched_clock.h>
 
 /*

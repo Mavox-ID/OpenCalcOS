@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/io.c
+ * beep/arch/arm/mach-omap1/io.c
  *
  * OMAP1 I/O mapping code
  *
@@ -8,17 +8,17 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/io.h>
 
 #include <asm/tlb.h>
 #include <asm/mach/map.h>
 
 #include <mach/mux.h>
 #include <mach/tc.h>
-#include <linux/omap-dma.h>
+#include <beep/omap-dma.h>
 
 #include "iomap.h"
 #include "common.h"

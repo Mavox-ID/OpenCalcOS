@@ -6,10 +6,10 @@
  */
 
 #ifdef __KERNEL__
-#include <linux/errno.h>
-#include <linux/compiler.h>
-#include <linux/string.h>
-#include <linux/thread_info.h>
+#include <beep/errno.h>
+#include <beep/compiler.h>
+#include <beep/string.h>
+#include <beep/thread_info.h>
 #include <asm/asi.h>
 #include <asm/spitfire.h>
 #include <asm-generic/uaccess-unaligned.h>

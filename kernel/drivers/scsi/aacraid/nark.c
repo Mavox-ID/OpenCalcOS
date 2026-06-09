@@ -2,7 +2,7 @@
  *	Adaptec AAC series RAID controller driver
  *
  * based on the old aacraid driver that is..
- * Adaptec aacraid device driver for Linux.
+ * Adaptec aacraid device driver for Beep.
  *
  * Copyright (c) 2000-2010 Adaptec, Inc.
  *               2010 PMC-Sierra, Inc. (aacraid@pmc-sierra.com)
@@ -28,8 +28,8 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/blkdev.h>
+#include <beep/pci.h>
+#include <beep/blkdev.h>
 
 #include <scsi/scsi_host.h>
 

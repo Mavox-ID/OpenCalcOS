@@ -6,10 +6,10 @@
  *    Author(s): Gerald Schaefer (gerald.schaefer@de.ibm.com)
  */
 
-#include <linux/errno.h>
-#include <linux/hardirq.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
+#include <beep/errno.h>
+#include <beep/hardirq.h>
+#include <beep/mm.h>
+#include <beep/hugetlb.h>
 #include <asm/uaccess.h>
 #include <asm/futex.h>
 #include "uaccess.h"

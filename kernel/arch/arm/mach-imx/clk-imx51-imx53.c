@@ -6,13 +6,13 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/clkdev.h>
-#include <linux/of.h>
-#include <linux/err.h>
+#include <beep/mm.h>
+#include <beep/delay.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/clkdev.h>
+#include <beep/of.h>
+#include <beep/err.h>
 
 #include "crm-regs-imx5.h"
 #include "clk.h"

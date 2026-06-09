@@ -1,5 +1,5 @@
 /*
- * DECnet       An implementation of the DECnet protocol suite for the LINUX
+ * DECnet       An implementation of the DECnet protocol suite for the BEEP
  *              operating system.  DECnet is implemented using the  BSD Socket
  *              interface as the means of communication with the user level.
  *
@@ -24,23 +24,23 @@
  *                             devices. All mtu based now.
  */
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/if_addr.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/skbuff.h>
-#include <linux/sysctl.h>
-#include <linux/notifier.h>
-#include <linux/slab.h>
+#include <beep/capability.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/net.h>
+#include <beep/netdevice.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/timer.h>
+#include <beep/string.h>
+#include <beep/if_addr.h>
+#include <beep/if_arp.h>
+#include <beep/if_ether.h>
+#include <beep/skbuff.h>
+#include <beep/sysctl.h>
+#include <beep/notifier.h>
+#include <beep/slab.h>
 #include <asm/uaccess.h>
 #include <net/net_namespace.h>
 #include <net/neighbour.h>
@@ -800,7 +800,7 @@ out:
  * Find a default address to bind to.
  *
  * This is one of those areas where the initial VMS concepts don't really
- * map onto the Linux concepts, and since we introduced multiple addresses
+ * map onto the Beep concepts, and since we introduced multiple addresses
  * per interface we have to cope with slightly odd ways of finding out what
  * "our address" really is. Mostly it's not a problem; for this we just guess
  * a sensible default. Eventually the routing code will take care of all the

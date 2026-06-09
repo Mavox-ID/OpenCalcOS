@@ -11,15 +11,15 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/spinlock.h>
+#include <beep/rtc.h>
+#include <beep/slab.h>
+#include <beep/io.h>
+#include <beep/of.h>
 
 /*
  * Clock and Power control register offsets

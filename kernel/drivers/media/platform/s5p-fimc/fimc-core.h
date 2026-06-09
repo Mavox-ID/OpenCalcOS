@@ -11,13 +11,13 @@
 
 /*#define DEBUG*/
 
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
-#include <linux/io.h>
-#include <linux/sizes.h>
+#include <beep/platform_device.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/types.h>
+#include <beep/videodev2.h>
+#include <beep/io.h>
+#include <beep/sizes.h>
 
 #include <media/media-entity.h>
 #include <media/videobuf2-core.h>

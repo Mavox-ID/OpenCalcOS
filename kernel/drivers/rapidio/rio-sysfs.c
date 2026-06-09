@@ -10,11 +10,11 @@
  * option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/rio.h>
-#include <linux/rio_drv.h>
-#include <linux/stat.h>
-#include <linux/capability.h>
+#include <beep/kernel.h>
+#include <beep/rio.h>
+#include <beep/rio_drv.h>
+#include <beep/stat.h>
+#include <beep/capability.h>
 
 #include "rio.h"
 

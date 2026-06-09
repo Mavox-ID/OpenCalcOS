@@ -26,7 +26,7 @@ BEGIN {
 	print " * DO NOT EDIT -- file generated from data in db.txt"
 	print " */"
 	print ""
-	print "#include <linux/nl80211.h>"
+	print "#include <beep/nl80211.h>"
 	print "#include <net/cfg80211.h>"
 	print "#include \"regdb.h\""
 	print ""

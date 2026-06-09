@@ -12,21 +12,21 @@
  * the Free Software Foundation.
  */
 
-#include <linux/platform_device.h>
-#include <linux/uio_driver.h>
-#include <linux/spinlock.h>
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/platform_data/uio_dmem_genirq.h>
-#include <linux/stringify.h>
-#include <linux/pm_runtime.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <beep/platform_device.h>
+#include <beep/uio_driver.h>
+#include <beep/spinlock.h>
+#include <beep/bitops.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/platform_data/uio_dmem_genirq.h>
+#include <beep/stringify.h>
+#include <beep/pm_runtime.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
 
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
+#include <beep/of.h>
+#include <beep/of_platform.h>
+#include <beep/of_address.h>
 
 #define DRIVER_NAME "uio_dmem_genirq"
 #define DMEM_MAP_ERROR (~0)

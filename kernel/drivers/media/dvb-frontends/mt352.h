@@ -33,7 +33,7 @@
 #ifndef MT352_H
 #define MT352_H
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 
 struct mt352_config
 {

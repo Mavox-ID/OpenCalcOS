@@ -3,7 +3,7 @@
  * Copyright 2005-06 Tower Technologies
  *
  * Author: Alessandro Zummo <a.zummo@towertech.it>
- * Maintainers: http://www.nslu2-linux.org/
+ * Maintainers: http://www.nslu2-beep.org/
  *
  * based on the other drivers in this same directory.
  *
@@ -14,12 +14,12 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <beep/i2c.h>
+#include <beep/bcd.h>
+#include <beep/rtc.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/of.h>
 
 #define DRV_VERSION "0.4.3"
 

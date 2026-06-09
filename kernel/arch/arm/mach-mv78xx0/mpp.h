@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-mv78xx0/mpp.h -- Multi Purpose Pins
+ * beep/arch/arm/mach-mv78xx0/mpp.h -- Multi Purpose Pins
  *
  *
  * sebastien requiem <sebastien@requiem.fr>

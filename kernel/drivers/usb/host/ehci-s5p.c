@@ -12,11 +12,11 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/of_gpio.h>
-#include <linux/platform_data/usb-ehci-s5p.h>
+#include <beep/clk.h>
+#include <beep/of.h>
+#include <beep/platform_device.h>
+#include <beep/of_gpio.h>
+#include <beep/platform_data/usb-ehci-s5p.h>
 #include <plat/usb-phy.h>
 
 #define EHCI_INSNREG00(base)			(base + 0x90)

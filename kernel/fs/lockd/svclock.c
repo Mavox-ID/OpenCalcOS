@@ -1,5 +1,5 @@
 /*
- * linux/fs/lockd/svclock.c
+ * beep/fs/lockd/svclock.c
  *
  * Handling of server-side locks, mostly of the blocked variety.
  * This is the ugliest part of lockd because we tread on very thin ice.
@@ -20,16 +20,16 @@
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/svc_xprt.h>
-#include <linux/lockd/nlm.h>
-#include <linux/lockd/lockd.h>
-#include <linux/kthread.h>
+#include <beep/types.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/sunrpc/clnt.h>
+#include <beep/sunrpc/svc_xprt.h>
+#include <beep/lockd/nlm.h>
+#include <beep/lockd/lockd.h>
+#include <beep/kthread.h>
 
 #define NLMDBG_FACILITY		NLMDBG_SVCLOCK
 

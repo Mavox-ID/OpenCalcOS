@@ -7,16 +7,16 @@
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/plat-ram.h>
-#include <linux/mtd/pismo.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
+#include <beep/platform_device.h>
+#include <beep/spinlock.h>
+#include <beep/mutex.h>
+#include <beep/mtd/physmap.h>
+#include <beep/mtd/plat-ram.h>
+#include <beep/mtd/pismo.h>
 
 #define PISMO_NUM_CS	5
 
@@ -287,6 +287,6 @@ static void __exit pismo_exit(void)
 }
 module_exit(pismo_exit);
 
-MODULE_AUTHOR("Russell King <linux@arm.linux.org.uk>");
+MODULE_AUTHOR("Russell King <beep@arm.beep.org.uk>");
 MODULE_DESCRIPTION("PISMO memory driver");
 MODULE_LICENSE("GPL");

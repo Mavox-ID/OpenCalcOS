@@ -1,6 +1,6 @@
 /*******************************************************************************
  * Agere Systems Inc.
- * Wireless device driver for Linux (wlags49).
+ * Wireless device driver for Beep (wlags49).
  *
  * Copyright (c) 1998-2003 Agere Systems Inc.
  * All rights reserved.
@@ -64,29 +64,29 @@
  ******************************************************************************/
 #include <wl_version.h>
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-// #include <linux/sched.h>
-// #include <linux/ptrace.h>
-// #include <linux/slab.h>
-// #include <linux/ctype.h>
-// #include <linux/string.h>
-//#include <linux/timer.h>
-// #include <linux/interrupt.h>
-// #include <linux/in.h>
-// #include <linux/delay.h>
-// #include <linux/skbuff.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+// #include <beep/sched.h>
+// #include <beep/ptrace.h>
+// #include <beep/slab.h>
+// #include <beep/ctype.h>
+// #include <beep/string.h>
+//#include <beep/timer.h>
+// #include <beep/interrupt.h>
+// #include <beep/in.h>
+// #include <beep/delay.h>
+// #include <beep/skbuff.h>
 // #include <asm/io.h>
 // // #include <asm/bitops.h>
 
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/etherdevice.h>
-// #include <linux/skbuff.h>
-// #include <linux/if_arp.h>
-// #include <linux/ioport.h>
+#include <beep/netdevice.h>
+#include <beep/ethtool.h>
+#include <beep/etherdevice.h>
+// #include <beep/skbuff.h>
+// #include <beep/if_arp.h>
+// #include <beep/ioport.h>
 
 #include <debug.h>
 

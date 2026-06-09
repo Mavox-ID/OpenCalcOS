@@ -9,9 +9,9 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/platform_data/ehci-sh.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/platform_data/ehci-sh.h>
 
 struct ehci_sh_priv {
 	struct clk *iclk, *fclk;

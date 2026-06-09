@@ -16,17 +16,17 @@
  *  the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/srcu.h>
-#include <linux/rculist.h>
-#include <linux/wait.h>
+#include <beep/list.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
+#include <beep/srcu.h>
+#include <beep/rculist.h>
+#include <beep/wait.h>
 
-#include <linux/fsnotify_backend.h>
+#include <beep/fsnotify_backend.h>
 #include "fsnotify.h"
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 
 /*
  * Final freeing of a group

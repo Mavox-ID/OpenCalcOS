@@ -1,5 +1,5 @@
 /* $Id: $
- *  linux/drivers/scsi/wd7000.c
+ *  beep/drivers/scsi/wd7000.c
  *
  *  Copyright (C) 1992  Thomas Wuensche
  *	closely related to the aha1542 driver from Tommy Thorn
@@ -57,7 +57,7 @@
  * it, as I have time...
  *
  *   I get mail occasionally from people who either are using or are
- * considering using a WD7000 with Linux.  There is a variety of
+ * considering using a WD7000 with Beep.  There is a variety of
  * nomenclature describing WD7000's.  To the best of my knowledge, the
  * following is a brief summary (from an old WD doc - I don't work for
  * them or anything like that):
@@ -65,8 +65,8 @@
  * WD7000-FASST2: This is a WD7000 board with the real-mode SST ROM BIOS
  *        installed.  Last I heard, the BIOS was actually done by Columbia
  *        Data Products.  The BIOS is only used by this driver (and thus
- *        by Linux) to identify the board; none of it can be executed under
- *        Linux.
+ *        by Beep) to identify the board; none of it can be executed under
+ *        Beep.
  *
  * WD7000-ASC: This is the original adapter board, with or without BIOS.
  *        The board uses a WD33C93 or WD33C93A SBIC, which in turn is
@@ -117,7 +117,7 @@
  *
  *  PS: If card BIOS ROM is disabled, function wd7000_detect now will recognize
  *      adapter, unlike the old one. Anyway, BIOS ROM from WD7000 adapter is
- *      useless for Linux. B^)
+ *      useless for Beep. B^)
  *
  *
  *  09/06/1996.
@@ -165,19 +165,19 @@
  * Removed now obsolete wd7000.h
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/ioport.h>
-#include <linux/proc_fs.h>
-#include <linux/blkdev.h>
-#include <linux/init.h>
-#include <linux/stat.h>
-#include <linux/io.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/string.h>
+#include <beep/spinlock.h>
+#include <beep/ioport.h>
+#include <beep/proc_fs.h>
+#include <beep/blkdev.h>
+#include <beep/init.h>
+#include <beep/stat.h>
+#include <beep/io.h>
 
 #include <asm/dma.h>
 

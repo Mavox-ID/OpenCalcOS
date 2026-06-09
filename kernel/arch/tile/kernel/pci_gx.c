@@ -12,20 +12,20 @@
  *   more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/mmzone.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/capability.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/irq.h>
-#include <linux/msi.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/ctype.h>
+#include <beep/kernel.h>
+#include <beep/mmzone.h>
+#include <beep/pci.h>
+#include <beep/delay.h>
+#include <beep/string.h>
+#include <beep/init.h>
+#include <beep/capability.h>
+#include <beep/sched.h>
+#include <beep/errno.h>
+#include <beep/irq.h>
+#include <beep/msi.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
+#include <beep/ctype.h>
 
 #include <asm/processor.h>
 #include <asm/sections.h>
@@ -231,7 +231,7 @@ static struct irq_chip tilegx_legacy_irq_chip = {
  * This is a wrapper function of the kernel level-trigger interrupt
  * handler handle_level_irq() for PCI legacy interrupts. The TRIO
  * is configured such that only INTx Assert interrupts are proxied
- * to Linux which just calls handle_level_irq() after clearing the
+ * to Beep which just calls handle_level_irq() after clearing the
  * MAC INTx Assert status bit associated with this interrupt.
  */
 static void
@@ -741,7 +741,7 @@ int __init pcibios_init(void)
 				  tx_fifo_ctl.word);
 
 		/*
-		 * Change the device ID so that Linux bus crawl doesn't confuse
+		 * Change the device ID so that Beep bus crawl doesn't confuse
 		 * the internal bridge with any Tilera endpoints.
 		 */
 
@@ -860,7 +860,7 @@ int __init pcibios_init(void)
 	pci_fixup_irqs(pci_common_swizzle, tile_map_irq);
 
 	/*
-	 * This comes from the generic Linux PCI driver.
+	 * This comes from the generic Beep PCI driver.
 	 *
 	 * It allocates all of the resources (I/O memory, etc)
 	 * associated with the devices read in above.
@@ -951,7 +951,7 @@ int __init pcibios_init(void)
 
 		/*
 		 * Configure a Mem-Map region for each memory controller so
-		 * that Linux can map all of its PA space to the PCI bus.
+		 * that Beep can map all of its PA space to the PCI bus.
 		 * Use the IOMMU to handle hash-for-home memory.
 		 */
 		for_each_online_node(j) {
@@ -1014,7 +1014,7 @@ alloc_mem_map_failed:
 }
 subsys_initcall(pcibios_init);
 
-/* Note: to be deleted after Linux 3.6 merge. */
+/* Note: to be deleted after Beep 3.6 merge. */
 void pcibios_fixup_bus(struct pci_bus *bus)
 {
 }

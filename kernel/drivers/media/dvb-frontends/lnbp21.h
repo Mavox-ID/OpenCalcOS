@@ -21,7 +21,7 @@
  * Or, point your browser to http://www.gnu.org/copyleft/gpl.html
  *
  *
- * the project's page is at http://www.linuxtv.org
+ * the project's page is at http://www.beeptv.org
  */
 
 #ifndef _LNBP21_H
@@ -53,7 +53,7 @@
 	1=static curr limiting */
 #define LNBP21_PCL	0x80
 
-#include <linux/dvb/frontend.h>
+#include <beep/dvb/frontend.h>
 
 #if defined(CONFIG_DVB_LNBP21) || (defined(CONFIG_DVB_LNBP21_MODULE) \
 							&& defined(MODULE))

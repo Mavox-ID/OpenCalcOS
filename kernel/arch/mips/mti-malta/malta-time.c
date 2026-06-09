@@ -18,16 +18,16 @@
  * Setting up the clock on the MIPS boards.
  */
 
-#include <linux/types.h>
-#include <linux/i8253.h>
-#include <linux/init.h>
-#include <linux/kernel_stat.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/mc146818rtc.h>
+#include <beep/types.h>
+#include <beep/i8253.h>
+#include <beep/init.h>
+#include <beep/kernel_stat.h>
+#include <beep/sched.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
+#include <beep/time.h>
+#include <beep/timex.h>
+#include <beep/mc146818rtc.h>
 
 #include <asm/mipsregs.h>
 #include <asm/mipsmtregs.h>

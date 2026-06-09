@@ -16,14 +16,14 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/backlight.h>
-#include <linux/err.h>
-#include <linux/fb.h>
-#include <linux/mfd/tps65217.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/backlight.h>
+#include <beep/err.h>
+#include <beep/fb.h>
+#include <beep/mfd/tps65217.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
 
 struct tps65217_bl {
 	struct tps65217 *tps;

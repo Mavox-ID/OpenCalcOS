@@ -1,18 +1,18 @@
 #ifndef _NET_XFRM_H
 #define _NET_XFRM_H
 
-#include <linux/compiler.h>
-#include <linux/xfrm.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/skbuff.h>
-#include <linux/socket.h>
-#include <linux/pfkeyv2.h>
-#include <linux/ipsec.h>
-#include <linux/in6.h>
-#include <linux/mutex.h>
-#include <linux/audit.h>
-#include <linux/slab.h>
+#include <beep/compiler.h>
+#include <beep/xfrm.h>
+#include <beep/spinlock.h>
+#include <beep/list.h>
+#include <beep/skbuff.h>
+#include <beep/socket.h>
+#include <beep/pfkeyv2.h>
+#include <beep/ipsec.h>
+#include <beep/in6.h>
+#include <beep/mutex.h>
+#include <beep/audit.h>
+#include <beep/slab.h>
 
 #include <net/sock.h>
 #include <net/dst.h>
@@ -22,7 +22,7 @@
 #include <net/ip6_fib.h>
 #include <net/flow.h>
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 
 #ifdef CONFIG_XFRM_STATISTICS
 #include <net/snmp.h>

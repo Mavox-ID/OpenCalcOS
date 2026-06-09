@@ -12,22 +12,22 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/usb/otg.h>
-#include <linux/spi/spi.h>
-#include <linux/i2c/twl.h>
-#include <linux/mfd/twl6040.h>
-#include <linux/gpio_keys.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/fixed.h>
-#include <linux/leds.h>
-#include <linux/leds_pwm.h>
-#include <linux/platform_data/omap4-keypad.h>
-#include <linux/usb/musb.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/gpio.h>
+#include <beep/usb/otg.h>
+#include <beep/spi/spi.h>
+#include <beep/i2c/twl.h>
+#include <beep/mfd/twl6040.h>
+#include <beep/gpio_keys.h>
+#include <beep/regulator/machine.h>
+#include <beep/regulator/fixed.h>
+#include <beep/leds.h>
+#include <beep/leds_pwm.h>
+#include <beep/platform_data/omap4-keypad.h>
+#include <beep/usb/musb.h>
 
 #include <asm/hardware/gic.h>
 #include <asm/mach-types.h>
@@ -36,8 +36,8 @@
 
 #include "common.h"
 #include "omap4-keypad.h"
-#include <linux/wl12xx.h>
-#include <linux/platform_data/omap-abe-twl6040.h>
+#include <beep/wl12xx.h>
+#include <beep/platform_data/omap-abe-twl6040.h>
 
 #include "soc.h"
 #include "mux.h"

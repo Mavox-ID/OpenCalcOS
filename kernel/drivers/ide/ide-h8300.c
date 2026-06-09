@@ -2,8 +2,8 @@
  * H8/300 generic IDE interface
  */
 
-#include <linux/init.h>
-#include <linux/ide.h>
+#include <beep/init.h>
+#include <beep/ide.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

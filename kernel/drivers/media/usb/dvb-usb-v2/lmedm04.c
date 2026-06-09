@@ -1,4 +1,4 @@
-/* DVB USB compliant linux driver for
+/* DVB USB compliant beep driver for
  *
  * DM04/QQBOX DVB-S USB BOX	LME2510C + SHARP:BS2F7HZ7395
  *				LME2510C + LG TDQY-P001F
@@ -67,8 +67,8 @@
  * M88RS2000 suffers from loss of lock.
  */
 #define DVB_USB_LOG_PREFIX "LME2510(C)"
-#include <linux/usb.h>
-#include <linux/usb/input.h>
+#include <beep/usb.h>
+#include <beep/usb/input.h>
 #include <media/rc-core.h>
 
 #include "dvb_usb.h"

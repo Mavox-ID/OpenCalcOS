@@ -1,5 +1,5 @@
 #
-# Old ISDN4Linux config
+# Old ISDN4Beep config
 #
 
 if ISDN_I4L
@@ -63,7 +63,7 @@ config ISDN_AUDIO
 	  EIA Class 8 Voice commands. Using a getty with voice-support
 	  (mgetty+sendfax by <gert@greenie.muc.de> with an extension, available
 	  with the ISDN utility package for example), you will be able to use
-	  your Linux box as an ISDN-answering machine. Of course, this must be
+	  your Beep box as an ISDN-answering machine. Of course, this must be
 	  supported by the lowlevel driver also. Currently, the HiSax driver
 	  is the only voice-supporting driver. See
 	  <file:Documentation/isdn/README.audio> for more information.
@@ -74,7 +74,7 @@ config ISDN_TTY_FAX
 	help
 	  If you say Y here, the modem-emulator will support a subset of the
 	  Fax Class 1 and 2 commands. Using a getty with fax-support
-	  (mgetty+sendfax, hylafax), you will be able to use your Linux box as
+	  (mgetty+sendfax, hylafax), you will be able to use your Beep box as
 	  an ISDN-fax-machine. This must be supported by the lowlevel driver
 	  also. See <file:Documentation/isdn/README.fax> for more information.
 
@@ -119,7 +119,7 @@ config ISDN_DIVERSION
 
 endmenu
 
-comment "ISDN4Linux hardware drivers"
+comment "ISDN4Beep hardware drivers"
 
 source "drivers/isdn/hisax/Kconfig"
 

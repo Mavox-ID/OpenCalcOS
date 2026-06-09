@@ -14,10 +14,10 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/etherdevice.h>
+#include <beep/pci.h>
+#include <beep/io.h>
+#include <beep/list.h>
+#include <beep/etherdevice.h>
 
 #include "wil6210.h"
 #include "wmi.h"

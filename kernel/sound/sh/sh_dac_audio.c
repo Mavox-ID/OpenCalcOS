@@ -22,12 +22,12 @@
  *
  */
 
-#include <linux/hrtimer.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <beep/hrtimer.h>
+#include <beep/interrupt.h>
+#include <beep/io.h>
+#include <beep/platform_device.h>
+#include <beep/slab.h>
+#include <beep/module.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/pcm.h>

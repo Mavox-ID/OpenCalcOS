@@ -2,20 +2,20 @@
  * Driver for the ADB controller in the Mac I/O (Hydra) chip.
  */
 #include <stdarg.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
 #include <asm/prom.h>
-#include <linux/adb.h>
+#include <beep/adb.h>
 #include <asm/io.h>
 #include <asm/pgtable.h>
 #include <asm/hydra.h>
 #include <asm/irq.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
+#include <beep/init.h>
+#include <beep/ioport.h>
 
 struct preg {
 	unsigned char r;

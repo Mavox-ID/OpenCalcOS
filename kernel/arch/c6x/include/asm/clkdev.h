@@ -1,7 +1,7 @@
 #ifndef _ASM_CLKDEV_H
 #define _ASM_CLKDEV_H
 
-#include <linux/slab.h>
+#include <beep/slab.h>
 
 struct clk;
 

@@ -1,5 +1,5 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the BEEP
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -15,24 +15,24 @@
  *		Mike McLagan	:	Routing by source
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/icmp.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/mm.h>
+#include <beep/skbuff.h>
+#include <beep/ip.h>
+#include <beep/icmp.h>
+#include <beep/inetdevice.h>
+#include <beep/netdevice.h>
+#include <beep/slab.h>
 #include <net/sock.h>
 #include <net/ip.h>
 #include <net/icmp.h>
 #include <net/tcp_states.h>
-#include <linux/udp.h>
-#include <linux/igmp.h>
-#include <linux/netfilter.h>
-#include <linux/route.h>
-#include <linux/mroute.h>
+#include <beep/udp.h>
+#include <beep/igmp.h>
+#include <beep/netfilter.h>
+#include <beep/route.h>
+#include <beep/mroute.h>
 #include <net/inet_ecn.h>
 #include <net/route.h>
 #include <net/xfrm.h>
@@ -42,7 +42,7 @@
 #endif
 #include <net/ip_fib.h>
 
-#include <linux/errqueue.h>
+#include <beep/errqueue.h>
 #include <asm/uaccess.h>
 
 #define IP_CMSG_PKTINFO		1

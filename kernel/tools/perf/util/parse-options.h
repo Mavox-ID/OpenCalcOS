@@ -1,7 +1,7 @@
 #ifndef __PERF_PARSE_OPTIONS_H
 #define __PERF_PARSE_OPTIONS_H
 
-#include <linux/kernel.h>
+#include <beep/kernel.h>
 #include <stdbool.h>
 
 enum parse_opt_type {

@@ -1,8 +1,8 @@
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/console.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/console.h>
 #include <asm/hvsi.h>
 
 #include "hvc_console.h"

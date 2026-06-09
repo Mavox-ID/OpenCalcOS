@@ -10,7 +10,7 @@
 #ifndef _ASMARM_PGALLOC_H
 #define _ASMARM_PGALLOC_H
 
-#include <linux/pagemap.h>
+#include <beep/pagemap.h>
 
 #include <asm/domain.h>
 #include <asm/pgtable-hwdef.h>
@@ -71,9 +71,9 @@ static inline void clean_pte_table(pte_t *pte)
  * into one table thus:
  *
  *  +------------+
- *  | Linux pt 0 |
+ *  | Beep pt 0 |
  *  +------------+
- *  | Linux pt 1 |
+ *  | Beep pt 1 |
  *  +------------+
  *  |  h/w pt 0  |
  *  +------------+

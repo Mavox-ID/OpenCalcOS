@@ -17,12 +17,12 @@
  * MA 02110-1301, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/genalloc.h>
-#include "linux/platform_data/imx-iram.h"
+#include <beep/kernel.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/spinlock.h>
+#include <beep/genalloc.h>
+#include "beep/platform_data/imx-iram.h"
 
 static unsigned long iram_phys_base;
 static void __iomem *iram_virt_base;

@@ -13,9 +13,9 @@
  *
  */
 
-#include <linux/usb.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
+#include <beep/usb.h>
+#include <beep/kernel.h>
+#include <beep/mm.h>
 
 #include "uvcvideo.h"
 

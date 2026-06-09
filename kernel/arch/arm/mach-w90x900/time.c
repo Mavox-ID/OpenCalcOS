@@ -1,7 +1,7 @@
 /*
- * linux/arch/arm/mach-w90x900/time.c
+ * beep/arch/arm/mach-w90x900/time.c
  *
- * Based on linux/arch/arm/plat-s3c24xx/time.c by Ben Dooks
+ * Based on beep/arch/arm/plat-s3c24xx/time.c by Ben Dooks
  *
  * Copyright (c) 2009 Nuvoton technology corporation
  * All rights reserved.
@@ -15,16 +15,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/leds.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/interrupt.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/io.h>
+#include <beep/leds.h>
+#include <beep/clocksource.h>
+#include <beep/clockchips.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/irq.h>

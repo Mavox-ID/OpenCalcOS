@@ -19,8 +19,8 @@
  *
  */
 
-#include <linux/time.h>
-#include <linux/init.h>
+#include <beep/time.h>
+#include <beep/init.h>
 #include <sound/core.h>
 #include <sound/emu10k1.h>
 

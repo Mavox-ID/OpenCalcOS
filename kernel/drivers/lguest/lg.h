@@ -2,15 +2,15 @@
 #define _LGUEST_H
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/stringify.h>
-#include <linux/lguest.h>
-#include <linux/lguest_launcher.h>
-#include <linux/wait.h>
-#include <linux/hrtimer.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/stringify.h>
+#include <beep/lguest.h>
+#include <beep/lguest_launcher.h>
+#include <beep/wait.h>
+#include <beep/hrtimer.h>
+#include <beep/err.h>
+#include <beep/slab.h>
 
 #include <asm/lguest.h>
 
@@ -240,7 +240,7 @@ void write_timestamp(struct lg_cpu *cpu);
  *
  * It also means that this can be called more than once: only the first one is
  * remembered.  The only trick is that we still need to kill the Guest even if
- * we can't allocate memory to store the reason.  Linux has a neat way of
+ * we can't allocate memory to store the reason.  Beep has a neat way of
  * packing error codes into invalid pointers, so we use that here.
  *
  * Like any macro which uses an "if", it is safely wrapped in a run-once "do {

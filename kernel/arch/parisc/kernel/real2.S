@@ -13,7 +13,7 @@
 #include <asm/assembly.h>
 #include <asm/asm-offsets.h>
 
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 
 	.section	.bss
@@ -289,7 +289,7 @@ ENDPROC(real64_call_asm)
 #endif
 
 	.text
-	/* http://lists.parisc-linux.org/hypermail/parisc-linux/10916.html
+	/* http://lists.parisc-beep.org/hypermail/parisc-beep/10916.html
 	**	GCC 3.3 and later has a new function in libgcc.a for
 	**	comparing function pointers.
 	*/

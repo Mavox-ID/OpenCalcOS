@@ -1,9 +1,9 @@
-/* linux/arch/arm/plat-s3c64xx/include/mach/regs-gpio-memport.h
+/* beep/arch/arm/plat-s3c64xx/include/mach/regs-gpio-memport.h
  *
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
  *      Ben Dooks <ben@simtec.co.uk>
- *      http://armlinux.simtec.co.uk/
+ *      http://armbeep.simtec.co.uk/
  *
  * S3C64XX - GPIO memory port register definitions
  */

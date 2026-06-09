@@ -14,9 +14,9 @@
  * the GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
-#include <linux/random.h>
+#include <beep/kernel.h>
+#include <beep/kprobes.h>
+#include <beep/random.h>
 
 #define div_factor 3
 

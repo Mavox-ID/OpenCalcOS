@@ -3,7 +3,7 @@
  * All rights reserved
  * www.brocade.com
  *
- * Linux driver for Brocade Fibre Channel Host Bus Adapter.
+ * Beep driver for Brocade Fibre Channel Host Bus Adapter.
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License (GPL) Version 2 as
@@ -20,24 +20,24 @@
  */
 
 /*
- *  bfa_drv.h Linux driver data structures.
+ *  bfa_drv.h Beep driver data structures.
  */
 
 #ifndef __BFAD_DRV_H__
 #define __BFAD_DRV_H__
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/cdev.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
-#include <linux/bitops.h>
-#include <linux/aer.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/dma-mapping.h>
+#include <beep/idr.h>
+#include <beep/interrupt.h>
+#include <beep/cdev.h>
+#include <beep/fs.h>
+#include <beep/delay.h>
+#include <beep/vmalloc.h>
+#include <beep/workqueue.h>
+#include <beep/bitops.h>
+#include <beep/aer.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_tcq.h>

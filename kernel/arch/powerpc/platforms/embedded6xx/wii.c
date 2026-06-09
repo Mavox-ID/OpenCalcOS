@@ -2,7 +2,7 @@
  * arch/powerpc/platforms/embedded6xx/wii.c
  *
  * Nintendo Wii board-specific support
- * Copyright (C) 2008-2009 The GameCube Linux Team
+ * Copyright (C) 2008-2009 The GameCube Beep Team
  * Copyright (C) 2008,2009 Albert Herranz
  *
  * This program is free software; you can redistribute it and/or
@@ -14,12 +14,12 @@
 #define DRV_MODULE_NAME "wii"
 #define pr_fmt(fmt) DRV_MODULE_NAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/seq_file.h>
-#include <linux/of_platform.h>
-#include <linux/memblock.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/seq_file.h>
+#include <beep/of_platform.h>
+#include <beep/memblock.h>
 #include <mm/mmu_decl.h>
 
 #include <asm/io.h>
@@ -69,7 +69,7 @@ void __init wii_memory_fixups(void)
 	/*
 	 * This is part of a workaround to allow the use of two
 	 * discontinuous RAM ranges on the Wii, even if this is
-	 * currently unsupported on 32-bit PowerPC Linux.
+	 * currently unsupported on 32-bit PowerPC Beep.
 	 *
 	 * We coalesce the two memory ranges of the Wii into a
 	 * single range, then create a reservation for the "hole"

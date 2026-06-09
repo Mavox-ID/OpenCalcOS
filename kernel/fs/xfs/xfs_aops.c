@@ -31,10 +31,10 @@
 #include "xfs_vnodeops.h"
 #include "xfs_trace.h"
 #include "xfs_bmap.h"
-#include <linux/gfp.h>
-#include <linux/mpage.h>
-#include <linux/pagevec.h>
-#include <linux/writeback.h>
+#include <beep/gfp.h>
+#include <beep/mpage.h>
+#include <beep/pagevec.h>
+#include <beep/writeback.h>
 
 void
 xfs_count_page_state(

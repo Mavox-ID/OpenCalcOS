@@ -1,8 +1,8 @@
-/* linux/arch/arm/mach-s3c2410/include/mach/tick.h
+/* beep/arch/arm/mach-s3c2410/include/mach/tick.h
  *
  * Copyright 2008 Simtec Electronics
  *      Ben Dooks <ben@simtec.co.uk>
- *      http://armlinux.simtec.co.uk/
+ *      http://armbeep.simtec.co.uk/
  *
  * S3C2410 - timer tick support
  */

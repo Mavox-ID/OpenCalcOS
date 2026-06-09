@@ -23,17 +23,17 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/mm.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/cfag12864b.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/errno.h>
+#include <beep/fb.h>
+#include <beep/mm.h>
+#include <beep/platform_device.h>
+#include <beep/string.h>
+#include <beep/uaccess.h>
+#include <beep/cfag12864b.h>
 
 #define CFAG12864BFB_NAME "cfag12864bfb"
 

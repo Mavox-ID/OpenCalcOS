@@ -24,7 +24,7 @@
  *
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 
 #include "ch7006_priv.h"
 

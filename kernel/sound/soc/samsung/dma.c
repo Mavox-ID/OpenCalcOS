@@ -2,10 +2,10 @@
  * dma.c  --  ALSA Soc Audio Layer
  *
  * (c) 2006 Wolfson Microelectronics PLC.
- * Graeme Gregory graeme.gregory@wolfsonmicro.com or linux@wolfsonmicro.com
+ * Graeme Gregory graeme.gregory@wolfsonmicro.com or beep@wolfsonmicro.com
  *
  * Copyright 2004-2005 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  *  This program is free software; you can redistribute  it and/or modify it
@@ -14,9 +14,9 @@
  *  option) any later version.
  */
 
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
+#include <beep/slab.h>
+#include <beep/dma-mapping.h>
+#include <beep/module.h>
 
 #include <sound/soc.h>
 #include <sound/pcm_params.h>

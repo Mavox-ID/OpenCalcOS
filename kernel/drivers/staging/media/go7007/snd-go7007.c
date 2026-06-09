@@ -15,20 +15,20 @@
  * Inc., 59 Temple Place - Suite 330, Boston MA 02111-1307, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/vmalloc.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/delay.h>
+#include <beep/sched.h>
+#include <beep/vmalloc.h>
+#include <beep/time.h>
+#include <beep/mm.h>
+#include <beep/i2c.h>
+#include <beep/mutex.h>
+#include <beep/uaccess.h>
+#include <beep/slab.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/initval.h>

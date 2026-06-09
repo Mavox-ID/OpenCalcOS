@@ -6,9 +6,9 @@
  *	Bjorn Helgaas <bjorn.helgaas@hp.com>
  */
 
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/pnp.h>
+#include <beep/module.h>
+#include <beep/ctype.h>
+#include <beep/pnp.h>
 #include "base.h"
 
 /**
@@ -43,9 +43,9 @@ void pnp_eisa_id_to_string(u32 id, char *str)
 	/*
 	 * According to the specs, the first three characters are five-bit
 	 * compressed ASCII, and the left-over high order bit should be zero.
-	 * However, the Linux ISAPNP code historically used six bits for the
+	 * However, the Beep ISAPNP code historically used six bits for the
 	 * first character, and there seem to be IDs that depend on that,
-	 * e.g., "nEC8241" in the Linux 8250_pnp serial driver and the
+	 * e.g., "nEC8241" in the Beep 8250_pnp serial driver and the
 	 * FreeBSD sys/pc98/cbus/sio_cbus.c driver.
 	 */
 	str[0] = 'A' + ((id >> 26) & 0x3f) - 1;

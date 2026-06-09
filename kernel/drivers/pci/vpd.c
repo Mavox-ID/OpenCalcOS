@@ -5,8 +5,8 @@
  * Copyright (C) 2010 Broadcom Corporation.
  */
 
-#include <linux/pci.h>
-#include <linux/export.h>
+#include <beep/pci.h>
+#include <beep/export.h>
 
 int pci_vpd_find_tag(const u8 *buf, unsigned int off, unsigned int len, u8 rdt)
 {

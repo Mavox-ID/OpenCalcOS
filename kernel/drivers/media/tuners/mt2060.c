@@ -21,11 +21,11 @@
 
 /* In that file, frequencies are expressed in kiloHertz to avoid 32 bits overflows */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/dvb/frontend.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/dvb/frontend.h>
+#include <beep/i2c.h>
+#include <beep/slab.h>
 
 #include "dvb_frontend.h"
 

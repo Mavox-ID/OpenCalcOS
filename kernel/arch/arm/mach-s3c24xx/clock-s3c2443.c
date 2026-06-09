@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s3c2443/clock.c
+/* beep/arch/arm/mach-s3c2443/clock.c
  *
  * Copyright (c) 2007, 2010 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
@@ -20,18 +20,18 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#include <linux/init.h>
+#include <beep/init.h>
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/clk.h>
-#include <linux/mutex.h>
-#include <linux/serial_core.h>
-#include <linux/io.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/list.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/device.h>
+#include <beep/clk.h>
+#include <beep/mutex.h>
+#include <beep/serial_core.h>
+#include <beep/io.h>
 
 #include <asm/mach/map.h>
 

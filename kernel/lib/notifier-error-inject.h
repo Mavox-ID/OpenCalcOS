@@ -1,6 +1,6 @@
-#include <linux/atomic.h>
-#include <linux/debugfs.h>
-#include <linux/notifier.h>
+#include <beep/atomic.h>
+#include <beep/debugfs.h>
+#include <beep/notifier.h>
 
 struct notifier_err_inject_action {
 	unsigned long val;

@@ -29,14 +29,14 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/platform_device.h>
-#include <linux/ctype.h>
+#include <beep/kernel.h>
+#include <beep/errno.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/usb.h>
+#include <beep/platform_device.h>
+#include <beep/ctype.h>
 
 #define ASUS_OLED_VERSION		"0.04-dev"
 #define ASUS_OLED_NAME			"asus-oled"

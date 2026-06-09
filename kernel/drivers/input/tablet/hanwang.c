@@ -22,12 +22,12 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/usb/input.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/usb/input.h>
 
 #define DRIVER_AUTHOR   "Xing Wei <weixing@hanwang.com.cn>"
 #define DRIVER_DESC     "USB Hanwang tablet driver"

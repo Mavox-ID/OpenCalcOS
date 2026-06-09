@@ -10,18 +10,18 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/leds.h>
-#include <linux/of_platform.h>
-#include <linux/of_gpio.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/module.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/err.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/gpio.h>
+#include <beep/leds.h>
+#include <beep/of_platform.h>
+#include <beep/of_gpio.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
+#include <beep/module.h>
+#include <beep/pinctrl/consumer.h>
+#include <beep/err.h>
 
 struct gpio_led_data {
 	struct led_classdev cdev;
@@ -192,7 +192,7 @@ static struct gpio_leds_priv *gpio_leds_create_of(struct platform_device *pdev)
 		led.active_low = flags & OF_GPIO_ACTIVE_LOW;
 		led.name = of_get_property(child, "label", NULL) ? : child->name;
 		led.default_trigger =
-			of_get_property(child, "linux,default-trigger", NULL);
+			of_get_property(child, "beep,default-trigger", NULL);
 		state = of_get_property(child, "default-state", NULL);
 		if (state) {
 			if (!strcmp(state, "keep"))

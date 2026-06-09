@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s3c2416/s3c2416.c
+/* beep/arch/arm/mach-s3c2416/s3c2416.c
  *
  * Copyright (c) 2009 Yauhen Kharuzhy <jekhor@gmail.com>,
  *	as part of OpenInkpot project
@@ -22,19 +22,19 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
-#include <linux/device.h>
-#include <linux/syscore_ops.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/list.h>
+#include <beep/timer.h>
+#include <beep/init.h>
+#include <beep/gpio.h>
+#include <beep/platform_device.h>
+#include <beep/serial_core.h>
+#include <beep/device.h>
+#include <beep/syscore_ops.h>
+#include <beep/clk.h>
+#include <beep/io.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

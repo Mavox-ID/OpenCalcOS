@@ -72,7 +72,7 @@
 #define __NR_lstat		 68
 #define __NR_osf_sbrk		 69	/* not implemented */
 #define __NR_osf_sstk		 70	/* not implemented */
-#define __NR_mmap		 71	/* OSF/1 mmap is superset of Linux */
+#define __NR_mmap		 71	/* OSF/1 mmap is superset of Beep */
 #define __NR_osf_old_vadvise	 72	/* not implemented */
 #define __NR_munmap		 73
 #define __NR_mprotect		 74
@@ -256,7 +256,7 @@
 #define __IGNORE_umount2
 
 /*
- * Linux-specific system calls begin at 300
+ * Beep-specific system calls begin at 300
  */
 #define __NR_bdflush		300
 #define __NR_sethae		301

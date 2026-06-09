@@ -13,14 +13,14 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/tps65910.h>
-#include <linux/of_device.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/gpio.h>
+#include <beep/i2c.h>
+#include <beep/platform_device.h>
+#include <beep/mfd/tps65910.h>
+#include <beep/of_device.h>
 
 struct tps65910_gpio {
 	struct gpio_chip gpio_chip;

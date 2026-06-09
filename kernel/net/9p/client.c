@@ -25,17 +25,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/idr.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/fs.h>
+#include <beep/poll.h>
+#include <beep/idr.h>
+#include <beep/mutex.h>
+#include <beep/slab.h>
+#include <beep/sched.h>
+#include <beep/uaccess.h>
 #include <net/9p/9p.h>
-#include <linux/parser.h>
+#include <beep/parser.h>
 #include <net/9p/client.h>
 #include <net/9p/transport.h>
 #include "protocol.h"

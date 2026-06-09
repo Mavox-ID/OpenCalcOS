@@ -3,7 +3,7 @@
  */
 
 /*
- * Driver for Amiga joysticks for Linux/m68k
+ * Driver for Amiga joysticks for Beep/m68k
  */
 
 /*
@@ -26,14 +26,14 @@
  * Vojtech Pavlik, Simunkova 1594, Prague 8, 182 00 Czech Republic
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
+#include <beep/types.h>
+#include <beep/errno.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/input.h>
+#include <beep/interrupt.h>
+#include <beep/mutex.h>
 
 #include <asm/amigahw.h>
 #include <asm/amigaints.h>

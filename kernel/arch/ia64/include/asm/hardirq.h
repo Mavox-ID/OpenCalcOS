@@ -14,8 +14,8 @@
 
 #define local_softirq_pending()		(local_cpu_data->softirq_pending)
 
-#include <linux/threads.h>
-#include <linux/irq.h>
+#include <beep/threads.h>
+#include <beep/irq.h>
 
 #include <asm/processor.h>
 

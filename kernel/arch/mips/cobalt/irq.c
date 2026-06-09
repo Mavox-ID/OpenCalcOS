@@ -7,11 +7,11 @@
  *
  * Copyright (C) 1995, 1996, 1997, 2003 by Ralf Baechle
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
 
 #include <asm/i8259.h>
 #include <asm/irq_cpu.h>

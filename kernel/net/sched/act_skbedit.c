@@ -17,15 +17,15 @@
  * Author: Alexander Duyck <alexander.h.duyck@intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/skbuff.h>
+#include <beep/rtnetlink.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 
-#include <linux/tc_act/tc_skbedit.h>
+#include <beep/tc_act/tc_skbedit.h>
 #include <net/tc_act/tc_skbedit.h>
 
 #define SKBEDIT_TAB_MASK     15

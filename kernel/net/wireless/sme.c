@@ -5,12 +5,12 @@
  * Copyright (C) 2009   Intel Corporation. All rights reserved.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/wireless.h>
-#include <linux/export.h>
+#include <beep/etherdevice.h>
+#include <beep/if_arp.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
+#include <beep/wireless.h>
+#include <beep/export.h>
 #include <net/iw_handler.h>
 #include <net/cfg80211.h>
 #include <net/rtnetlink.h>

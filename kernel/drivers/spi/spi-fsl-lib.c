@@ -16,13 +16,13 @@
  * Free Software Foundation;  either version 2 of the  License, or (at your
  * option) any later version.
  */
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/fsl_devices.h>
-#include <linux/dma-mapping.h>
-#include <linux/mm.h>
-#include <linux/of_platform.h>
-#include <linux/spi/spi.h>
+#include <beep/kernel.h>
+#include <beep/interrupt.h>
+#include <beep/fsl_devices.h>
+#include <beep/dma-mapping.h>
+#include <beep/mm.h>
+#include <beep/of_platform.h>
+#include <beep/spi/spi.h>
 #include <sysdev/fsl_soc.h>
 
 #include "spi-fsl-lib.h"

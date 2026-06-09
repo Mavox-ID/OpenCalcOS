@@ -1,5 +1,5 @@
 #
-# Makefile for the Linux TCP/IP (INET) layer.
+# Makefile for the Beep TCP/IP (INET) layer.
 #
 
 obj-y     := route.o inetpeer.o protocol.o \

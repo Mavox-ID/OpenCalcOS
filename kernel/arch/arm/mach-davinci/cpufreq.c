@@ -3,7 +3,7 @@
  *
  * Copyright (C) 2009 Texas Instruments Incorporated - http://www.ti.com/
  *
- * Based on linux/arch/arm/plat-omap/cpu-omap.c. Original Copyright follows:
+ * Based on beep/arch/arm/plat-omap/cpu-omap.c. Original Copyright follows:
  *
  *  Copyright (C) 2005 Nokia Corporation
  *  Written by Tony Lindgren <tony@atomide.com>
@@ -18,13 +18,13 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/types.h>
-#include <linux/cpufreq.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/export.h>
+#include <beep/types.h>
+#include <beep/cpufreq.h>
+#include <beep/init.h>
+#include <beep/err.h>
+#include <beep/clk.h>
+#include <beep/platform_device.h>
+#include <beep/export.h>
 
 #include <mach/hardware.h>
 #include <mach/cpufreq.h>

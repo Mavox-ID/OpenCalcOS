@@ -9,7 +9,7 @@
  * accesses to the 8250.
  */
 
-#include <linux/serial_reg.h>
+#include <beep/serial_reg.h>
 
 		.macro	senduart,rd,rx
 		str	\rd, [\rx, #UART_TX << UART_SHIFT]

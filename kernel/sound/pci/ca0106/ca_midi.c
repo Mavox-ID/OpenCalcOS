@@ -26,7 +26,7 @@
  *
  */
 
-#include <linux/spinlock.h>
+#include <beep/spinlock.h>
 #include <sound/core.h>
 #include <sound/rawmidi.h>
 

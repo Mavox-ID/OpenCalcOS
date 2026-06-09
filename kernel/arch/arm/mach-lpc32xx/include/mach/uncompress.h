@@ -19,7 +19,7 @@
 #ifndef __ASM_ARM_ARCH_UNCOMPRESS_H
 #define __ASM_ARM_ARCH_UNCOMPRESS_H
 
-#include <linux/io.h>
+#include <beep/io.h>
 
 #include <mach/hardware.h>
 #include <mach/platform.h>

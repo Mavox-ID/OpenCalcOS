@@ -12,10 +12,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/err.h>
-#include <linux/rbtree.h>
-#include <linux/key-type.h>
-#include <linux/digsig.h>
+#include <beep/err.h>
+#include <beep/rbtree.h>
+#include <beep/key-type.h>
+#include <beep/digsig.h>
 
 #include "integrity.h"
 

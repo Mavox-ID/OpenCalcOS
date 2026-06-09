@@ -1,14 +1,14 @@
 /*
- * Ported from IRIX to Linux by Kanoj Sarcar, 06/08/00.
+ * Ported from IRIX to Beep by Kanoj Sarcar, 06/08/00.
  * Copyright 2000 - 2001 Silicon Graphics, Inc.
  * Copyright 2000 - 2001 Kanoj Sarcar (kanoj@sgi.com)
  */
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/mmzone.h>
-#include <linux/kernel.h>
-#include <linux/nodemask.h>
-#include <linux/string.h>
+#include <beep/init.h>
+#include <beep/mm.h>
+#include <beep/mmzone.h>
+#include <beep/kernel.h>
+#include <beep/nodemask.h>
+#include <beep/string.h>
 
 #include <asm/page.h>
 #include <asm/sections.h>

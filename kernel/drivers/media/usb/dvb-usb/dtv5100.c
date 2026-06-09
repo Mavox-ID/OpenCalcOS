@@ -1,5 +1,5 @@
 /*
- * DVB USB Linux driver for AME DTV-5100 USB2.0 DVB-T
+ * DVB USB Beep driver for AME DTV-5100 USB2.0 DVB-T
  *
  * Copyright (C) 2008  Antoine Jacquet <royale@zerezo.com>
  * http://royale.zerezo.com/dtv5100/

@@ -9,7 +9,7 @@
 #ifndef __MACH_PRIMA2_COMMON_H__
 #define __MACH_PRIMA2_COMMON_H__
 
-#include <linux/init.h>
+#include <beep/init.h>
 #include <asm/mach/time.h>
 
 extern struct sys_timer sirfsoc_timer;

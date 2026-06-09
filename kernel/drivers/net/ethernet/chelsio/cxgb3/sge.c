@@ -29,15 +29,15 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/prefetch.h>
+#include <beep/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/etherdevice.h>
+#include <beep/if_vlan.h>
+#include <beep/ip.h>
+#include <beep/tcp.h>
+#include <beep/dma-mapping.h>
+#include <beep/slab.h>
+#include <beep/prefetch.h>
 #include <net/arp.h>
 #include "common.h"
 #include "regs.h"

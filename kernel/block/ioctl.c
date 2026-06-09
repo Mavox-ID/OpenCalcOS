@@ -1,12 +1,12 @@
-#include <linux/capability.h>
-#include <linux/blkdev.h>
-#include <linux/export.h>
-#include <linux/gfp.h>
-#include <linux/blkpg.h>
-#include <linux/hdreg.h>
-#include <linux/backing-dev.h>
-#include <linux/fs.h>
-#include <linux/blktrace_api.h>
+#include <beep/capability.h>
+#include <beep/blkdev.h>
+#include <beep/export.h>
+#include <beep/gfp.h>
+#include <beep/blkpg.h>
+#include <beep/hdreg.h>
+#include <beep/backing-dev.h>
+#include <beep/fs.h>
+#include <beep/blktrace_api.h>
 #include <asm/uaccess.h>
 
 static int blkpg_ioctl(struct block_device *bdev, struct blkpg_ioctl_arg __user *arg)

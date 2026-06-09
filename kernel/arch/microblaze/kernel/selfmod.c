@@ -7,7 +7,7 @@
  * for more details.
  */
 
-#include <linux/interrupt.h>
+#include <beep/interrupt.h>
 #include <asm/selfmod.h>
 
 #undef DEBUG

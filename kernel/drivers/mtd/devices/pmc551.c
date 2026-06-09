@@ -80,21 +80,21 @@
  *	* Comb the init routine.  It's still a bit cludgy on a few things.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
 #include <asm/uaccess.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/ioctl.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/ptrace.h>
+#include <beep/slab.h>
+#include <beep/string.h>
+#include <beep/timer.h>
+#include <beep/major.h>
+#include <beep/fs.h>
+#include <beep/ioctl.h>
 #include <asm/io.h>
-#include <linux/pci.h>
-#include <linux/mtd/mtd.h>
+#include <beep/pci.h>
+#include <beep/mtd/mtd.h>
 
 #define PMC551_VERSION \
 	"Ramix PMC551 PCI Mezzanine Ram Driver. (C) 1999,2000 Nortel Networks.\n"
@@ -347,7 +347,7 @@ static int pmc551_write(struct mtd_info *mtd, loff_t to, size_t len,
  *
  * This function basically kick starts the DRAM oboard the card and gets it
  * ready to be used.  Before this is done the device reads VERY erratic, so
- * much that it can crash the Linux 2.2.x series kernels when a user cat's
+ * much that it can crash the Beep 2.2.x series kernels when a user cat's
  * /proc/pci .. though that is mainly a kernel bug in handling the PCI DEVSEL
  * register.  FIXME: stop spinning on registers .. must implement a timeout
  * mechanism

@@ -7,14 +7,14 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
+#include <beep/slab.h>
+#include <beep/module.h>
+#include <beep/skbuff.h>
+#include <beep/spinlock.h>
+#include <beep/interrupt.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_limit.h>
+#include <beep/netfilter/x_tables.h>
+#include <beep/netfilter/xt_limit.h>
 
 struct xt_limit_priv {
 	unsigned long prev;
@@ -28,7 +28,7 @@ MODULE_ALIAS("ipt_limit");
 MODULE_ALIAS("ip6t_limit");
 
 /* The algorithm used is the Simple Token Bucket Filter (TBF)
- * see net/sched/sch_tbf.c in the linux source tree
+ * see net/sched/sch_tbf.c in the beep source tree
  */
 
 static DEFINE_SPINLOCK(limit_lock);

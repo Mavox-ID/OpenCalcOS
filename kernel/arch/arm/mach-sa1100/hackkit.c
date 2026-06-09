@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-sa1100/hackkit.c
+ * beep/arch/arm/mach-sa1100/hackkit.c
  *
  * Copyright (C) 2002 Stefan Eletzhofer <stefan.eletzhofer@eletztrick.de>
  *
@@ -11,21 +11,21 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/tty.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/cpufreq.h>
-#include <linux/platform_data/sa11x0-serial.h>
-#include <linux/serial_core.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/tty.h>
-#include <linux/gpio.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/tty.h>
+#include <beep/module.h>
+#include <beep/errno.h>
+#include <beep/cpufreq.h>
+#include <beep/platform_data/sa11x0-serial.h>
+#include <beep/serial_core.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/partitions.h>
+#include <beep/tty.h>
+#include <beep/gpio.h>
+#include <beep/leds.h>
+#include <beep/platform_device.h>
 
 #include <asm/mach-types.h>
 #include <asm/setup.h>

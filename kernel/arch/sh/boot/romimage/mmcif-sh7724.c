@@ -8,8 +8,8 @@
  * for more details.
  */
 
-#include <linux/mmc/sh_mmcif.h>
-#include <linux/mmc/boot.h>
+#include <beep/mmc/sh_mmcif.h>
+#include <beep/mmc/boot.h>
 #include <mach/romimage.h>
 
 #define MMCIF_BASE      (void __iomem *)0xa4ca0000

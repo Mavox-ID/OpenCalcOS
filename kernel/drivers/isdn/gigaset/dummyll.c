@@ -11,7 +11,7 @@
  * =====================================================================
  */
 
-#include <linux/export.h>
+#include <beep/export.h>
 #include "gigaset.h"
 
 void gigaset_skb_sent(struct bc_state *bcs, struct sk_buff *skb)

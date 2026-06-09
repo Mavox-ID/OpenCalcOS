@@ -4,18 +4,18 @@
  * Copyright (C) 1999, 2000 Jakub Jelinek (jakub@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/iommu-helper.h>
-#include <linux/bitmap.h>
+#include <beep/kernel.h>
+#include <beep/export.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/device.h>
+#include <beep/dma-mapping.h>
+#include <beep/errno.h>
+#include <beep/iommu-helper.h>
+#include <beep/bitmap.h>
 
 #ifdef CONFIG_PCI
-#include <linux/pci.h>
+#include <beep/pci.h>
 #endif
 
 #include <asm/iommu.h>

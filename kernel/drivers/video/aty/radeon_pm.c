@@ -16,8 +16,8 @@
 
 #include "radeonfb.h"
 
-#include <linux/console.h>
-#include <linux/agp_backend.h>
+#include <beep/console.h>
+#include <beep/agp_backend.h>
 
 #ifdef CONFIG_PPC_PMAC
 #include <asm/machdep.h>

@@ -36,12 +36,12 @@
 
 #undef DEBUG
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/console.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/init.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/console.h>
+#include <beep/module.h>
 
 #include <asm/hvconsole.h>
 #include <asm/vio.h>
@@ -411,7 +411,7 @@ void __init hvc_vio_init_early(void)
 	/* find the boot console from /chosen/stdout */
 	if (!of_chosen)
 		return;
-	name = of_get_property(of_chosen, "linux,stdout-path", NULL);
+	name = of_get_property(of_chosen, "beep,stdout-path", NULL);
 	if (name == NULL)
 		return;
 	stdout_node = of_find_node_by_path(name);

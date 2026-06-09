@@ -3,18 +3,18 @@
  * Copyright (C) 2006, 2007, 2008 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/percpu.h>
-#include <linux/irq.h>
-#include <linux/msi.h>
-#include <linux/export.h>
-#include <linux/log2.h>
-#include <linux/of_device.h>
+#include <beep/kernel.h>
+#include <beep/types.h>
+#include <beep/pci.h>
+#include <beep/init.h>
+#include <beep/slab.h>
+#include <beep/interrupt.h>
+#include <beep/percpu.h>
+#include <beep/irq.h>
+#include <beep/msi.h>
+#include <beep/export.h>
+#include <beep/log2.h>
+#include <beep/of_device.h>
 
 #include <asm/iommu.h>
 #include <asm/irq.h>
@@ -920,7 +920,7 @@ static int pci_sun4v_pbm_init(struct pci_pbm_info *pbm,
 
 static int pci_sun4v_probe(struct platform_device *op)
 {
-	const struct linux_prom64_registers *regs;
+	const struct beep_prom64_registers *regs;
 	static int hvapi_negotiated = 0;
 	struct pci_pbm_info *pbm;
 	struct device_node *dp;

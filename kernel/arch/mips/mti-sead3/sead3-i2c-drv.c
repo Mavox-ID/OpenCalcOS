@@ -5,12 +5,12 @@
  *
  * Copyright (C) 2012 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/slab.h>
+#include <beep/delay.h>
+#include <beep/i2c.h>
+#include <beep/platform_device.h>
 
 #define PIC32_I2CxCON		0x0000
 #define  PIC32_I2CCON_ON	(1<<15)

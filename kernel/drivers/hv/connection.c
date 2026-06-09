@@ -22,14 +22,14 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/hyperv.h>
+#include <beep/kernel.h>
+#include <beep/sched.h>
+#include <beep/wait.h>
+#include <beep/delay.h>
+#include <beep/mm.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/hyperv.h>
 #include <asm/hyperv.h>
 #include "hyperv_vmbus.h"
 

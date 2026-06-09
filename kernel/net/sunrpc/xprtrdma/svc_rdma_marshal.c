@@ -39,11 +39,11 @@
  * Author: Tom Tucker <tom@opengridcomputing.com>
  */
 
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/debug.h>
+#include <beep/sunrpc/xdr.h>
+#include <beep/sunrpc/debug.h>
 #include <asm/unaligned.h>
-#include <linux/sunrpc/rpc_rdma.h>
-#include <linux/sunrpc/svc_rdma.h>
+#include <beep/sunrpc/rpc_rdma.h>
+#include <beep/sunrpc/svc_rdma.h>
 
 #define RPCDBG_FACILITY	RPCDBG_SVCXPRT
 

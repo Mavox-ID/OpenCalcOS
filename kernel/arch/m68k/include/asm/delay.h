@@ -5,7 +5,7 @@
 
 /*
  * Copyright (C) 1994 Hamish Macdonald
- * Copyright (C) 2004 Greg Ungerer <gerg@uclinux.com>
+ * Copyright (C) 2004 Greg Ungerer <gerg@ucbeep.com>
  *
  * Delay routines, using a pre-computed "loops_per_jiffy" value.
  */

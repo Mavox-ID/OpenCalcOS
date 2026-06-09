@@ -1,7 +1,7 @@
-/* linux/arch/arm/mach-s3c2440/mach-osiris-dvs.c
+/* beep/arch/arm/mach-s3c2440/mach-osiris-dvs.c
  *
  * Copyright (c) 2009 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armbeep.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * Simtec Osiris Dynamic Voltage Scaling support.
@@ -11,13 +11,13 @@
  * published by the Free Software Foundation.
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/cpufreq.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/cpufreq.h>
+#include <beep/gpio.h>
 
-#include <linux/i2c/tps65010.h>
+#include <beep/i2c/tps65010.h>
 
 #include <plat/cpu-freq.h>
 

@@ -9,23 +9,23 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/ptrace.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/timex.h>
-#include <linux/random.h>
-#include <linux/init.h>
-#include <linux/kernel_stat.h>
-#include <linux/irq.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
+#include <beep/ptrace.h>
+#include <beep/errno.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/ioport.h>
+#include <beep/interrupt.h>
+#include <beep/timex.h>
+#include <beep/random.h>
+#include <beep/init.h>
+#include <beep/kernel_stat.h>
+#include <beep/irq.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
+#include <beep/module.h>
+#include <beep/bitops.h>
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/io.h>
 #include <asm/smp.h>
 #include <asm/uaccess.h>

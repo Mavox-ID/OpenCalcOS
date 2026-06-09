@@ -15,7 +15,7 @@
 #ifndef UX500_MSP_I2S_H
 #define UX500_MSP_I2S_H
 
-#include <linux/platform_device.h>
+#include <beep/platform_device.h>
 
 #include <mach/msp.h>
 

@@ -4,17 +4,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/errno.h>	/* error codes */
-#include <linux/kernel.h>	/* printk */
-#include <linux/skbuff.h>
-#include <linux/wait.h>
-#include <linux/sched.h>	/* jiffies and HZ */
-#include <linux/atm.h>		/* ATM stuff */
-#include <linux/atmsap.h>
-#include <linux/atmsvc.h>
-#include <linux/atmdev.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
+#include <beep/errno.h>	/* error codes */
+#include <beep/kernel.h>	/* printk */
+#include <beep/skbuff.h>
+#include <beep/wait.h>
+#include <beep/sched.h>	/* jiffies and HZ */
+#include <beep/atm.h>		/* ATM stuff */
+#include <beep/atmsap.h>
+#include <beep/atmsvc.h>
+#include <beep/atmdev.h>
+#include <beep/bitops.h>
+#include <beep/slab.h>
 
 #include "resources.h"
 #include "signaling.h"

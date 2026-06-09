@@ -20,16 +20,16 @@
  * cores, mv78460 has four cores).
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/bitops.h>
+#include <beep/err.h>
+#include <beep/init.h>
+#include <beep/io.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/clk.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
+#include <beep/pinctrl/pinctrl.h>
+#include <beep/bitops.h>
 
 #include "pinctrl-mvebu.h"
 

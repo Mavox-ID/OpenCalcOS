@@ -9,8 +9,8 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
+#include <beep/platform_device.h>
+#include <beep/module.h>
 #include <sound/simple_card.h>
 
 #define asoc_simple_get_card_info(p) \

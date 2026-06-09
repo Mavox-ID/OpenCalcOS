@@ -1,19 +1,19 @@
 /*
- *  linux/arch/cris/arch-v10/kernel/time.c
+ *  beep/arch/cris/arch-v10/kernel/time.c
  *
  *  Copyright (C) 1991, 1992, 1995  Linus Torvalds
  *  Copyright (C) 1999-2002 Axis Communications AB
  *
  */
 
-#include <linux/timex.h>
-#include <linux/time.h>
-#include <linux/jiffies.h>
-#include <linux/interrupt.h>
-#include <linux/swap.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/mm.h>
+#include <beep/timex.h>
+#include <beep/time.h>
+#include <beep/jiffies.h>
+#include <beep/interrupt.h>
+#include <beep/swap.h>
+#include <beep/sched.h>
+#include <beep/init.h>
+#include <beep/mm.h>
 #include <arch/svinto.h>
 #include <asm/types.h>
 #include <asm/signal.h>
@@ -203,7 +203,7 @@ time_init(void)
 	 * Base frequency is 25000 hz, divider 250 -> 100 HZ
 	 * In normal mode, we use timer0, so timer1 is free. In cascade
 	 * mode (which we sometimes use for debugging) both timers are used.
-	 * Remember that linux/timex.h contains #defines that rely on the
+	 * Remember that beep/timex.h contains #defines that rely on the
 	 * timer settings below (hz and divide factor) !!!
 	 */
 	

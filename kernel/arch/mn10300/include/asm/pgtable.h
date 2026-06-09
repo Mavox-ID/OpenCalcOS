@@ -9,7 +9,7 @@
  * 2 of the Licence, or (at your option) any later version.
  *
  *
- * The Linux memory management assumes a three-level page table setup. On
+ * The Beep memory management assumes a three-level page table setup. On
  * the i386, we use that, but "fold" the mid level into the top-level page
  * table, so that we physically have the same two-level page table as the
  * i386 mmu expects.
@@ -26,13 +26,13 @@
 #ifndef __ASSEMBLY__
 #include <asm/processor.h>
 #include <asm/cache.h>
-#include <linux/threads.h>
+#include <beep/threads.h>
 
 #include <asm/bitops.h>
 
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/spinlock.h>
 
 /*
  * ZERO_PAGE is a global shared page that is always zero: used
@@ -50,7 +50,7 @@ extern void paging_init(void);
 #endif /* !__ASSEMBLY__ */
 
 /*
- * The Linux mn10300 paging architecture only implements both the traditional
+ * The Beep mn10300 paging architecture only implements both the traditional
  * 2-level page tables
  */
 #define PGDIR_SHIFT	22

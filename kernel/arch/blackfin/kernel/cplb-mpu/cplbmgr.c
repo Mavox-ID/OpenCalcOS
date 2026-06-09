@@ -6,8 +6,8 @@
  * Licensed under the GPL-2 or later.
  */
 
-#include <linux/module.h>
-#include <linux/mm.h>
+#include <beep/module.h>
+#include <beep/mm.h>
 
 #include <asm/blackfin.h>
 #include <asm/cacheflush.h>

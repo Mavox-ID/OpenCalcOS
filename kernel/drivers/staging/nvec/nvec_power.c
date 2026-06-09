@@ -12,13 +12,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
+#include <beep/module.h>
+#include <beep/platform_device.h>
+#include <beep/err.h>
+#include <beep/power_supply.h>
+#include <beep/slab.h>
+#include <beep/workqueue.h>
+#include <beep/delay.h>
 
 #include "nvec.h"
 

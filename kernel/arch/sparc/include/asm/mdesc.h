@@ -1,8 +1,8 @@
 #ifndef _SPARC64_MDESC_H
 #define _SPARC64_MDESC_H
 
-#include <linux/types.h>
-#include <linux/cpumask.h>
+#include <beep/types.h>
+#include <beep/cpumask.h>
 #include <asm/prom.h>
 
 struct mdesc_handle;

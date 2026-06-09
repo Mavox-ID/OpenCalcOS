@@ -18,14 +18,14 @@
 /* #define DEBUG */
 /* #define VERBOSE_DEBUG */
 
-#include <linux/blkdev.h>
-#include <linux/pagemap.h>
-#include <linux/export.h>
-#include <linux/hid.h>
+#include <beep/blkdev.h>
+#include <beep/pagemap.h>
+#include <beep/export.h>
+#include <beep/hid.h>
 #include <asm/unaligned.h>
 
-#include <linux/usb/composite.h>
-#include <linux/usb/functionfs.h>
+#include <beep/usb/composite.h>
+#include <beep/usb/functionfs.h>
 
 
 #define FUNCTIONFS_MAGIC	0xa647361 /* Chosen by a honest dice roll ;) */

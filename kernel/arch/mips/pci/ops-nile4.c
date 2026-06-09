@@ -1,6 +1,6 @@
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/pci.h>
 #include <asm/bootinfo.h>
 
 #include <asm/lasat/lasat.h>

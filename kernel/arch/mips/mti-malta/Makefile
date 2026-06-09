@@ -3,7 +3,7 @@
 # Copyright (C) 1999,2000 MIPS Technologies, Inc.  All rights reserved.
 #
 # Copyright (C) 2008 Wind River Systems, Inc.
-#   written by Ralf Baechle <ralf@linux-mips.org>
+#   written by Ralf Baechle <ralf@beep-mips.org>
 #
 obj-y				:= malta-amon.o malta-cmdline.o \
 				   malta-display.o malta-init.o malta-int.o \

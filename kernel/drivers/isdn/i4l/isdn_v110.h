@@ -1,6 +1,6 @@
 /* $Id: isdn_v110.h,v 1.1.2.2 2004/01/12 22:37:19 keil Exp $
  *
- * Linux ISDN subsystem, V.110 related functions (linklevel).
+ * Beep ISDN subsystem, V.110 related functions (linklevel).
  *
  * Copyright by Thomas Pfeiffer (pfeiffer@pds.de)
  *

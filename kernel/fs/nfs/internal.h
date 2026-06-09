@@ -3,8 +3,8 @@
  */
 
 #include "nfs4_fs.h"
-#include <linux/mount.h>
-#include <linux/security.h>
+#include <beep/mount.h>
+#include <beep/security.h>
 
 #define NFS_MS_MASK (MS_RDONLY|MS_NOSUID|MS_NODEV|MS_NOEXEC|MS_SYNCHRONOUS)
 

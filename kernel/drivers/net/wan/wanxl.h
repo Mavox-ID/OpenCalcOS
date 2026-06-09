@@ -1,5 +1,5 @@
 /*
- * wanXL serial card driver for Linux
+ * wanXL serial card driver for Beep
  * definitions common to host driver and card firmware
  *
  * Copyright (C) 2003 Krzysztof Halasa <khc@pm.waw.pl>

@@ -42,36 +42,36 @@
 
 /*****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/net.h>
-#include <linux/in.h>
-#include <linux/if.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/bitops.h>
-#include <linux/random.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/net.h>
+#include <beep/in.h>
+#include <beep/if.h>
+#include <beep/slab.h>
+#include <beep/errno.h>
+#include <beep/bitops.h>
+#include <beep/random.h>
 #include <asm/io.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/firmware.h>
-#include <linux/platform_device.h>
+#include <beep/interrupt.h>
+#include <beep/ioport.h>
+#include <beep/firmware.h>
+#include <beep/platform_device.h>
 
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <beep/netdevice.h>
+#include <beep/if_arp.h>
+#include <beep/etherdevice.h>
+#include <beep/skbuff.h>
 #include <net/ax25.h>
 
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <beep/kernel.h>
+#include <beep/proc_fs.h>
+#include <beep/seq_file.h>
 #include <net/net_namespace.h>
 
 #include <asm/uaccess.h>
-#include <linux/init.h>
+#include <beep/init.h>
 
-#include <linux/yam.h>
+#include <beep/yam.h>
 
 /* --------------------------------------------------------------------- */
 

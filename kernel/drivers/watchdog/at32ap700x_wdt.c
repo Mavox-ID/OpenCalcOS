@@ -21,18 +21,18 @@
  * the pin tristated with pullup.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/miscdevice.h>
-#include <linux/fs.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/moduleparam.h>
+#include <beep/miscdevice.h>
+#include <beep/fs.h>
+#include <beep/platform_device.h>
+#include <beep/watchdog.h>
+#include <beep/uaccess.h>
+#include <beep/io.h>
+#include <beep/spinlock.h>
+#include <beep/slab.h>
 
 #define TIMEOUT_MIN		1
 #define TIMEOUT_MAX		2

@@ -11,7 +11,7 @@ config PC300
 	  Driver for the Cyclades-PC300 synchronous communication boards.
 
 	  These boards provide synchronous serial interfaces to your
-	  Linux box (interfaces currently available are RS-232/V.35, X.21 and
+	  Beep box (interfaces currently available are RS-232/V.35, X.21 and
 	  T1/E1). If you wish to support Multilink PPP, please select the
 	  option later and read the file README.mlppp provided by PC300
 	  package.

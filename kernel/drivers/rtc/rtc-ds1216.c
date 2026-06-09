@@ -5,11 +5,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
-#include <linux/bcd.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/rtc.h>
+#include <beep/platform_device.h>
+#include <beep/bcd.h>
+#include <beep/slab.h>
 
 #define DRV_VERSION "0.2"
 

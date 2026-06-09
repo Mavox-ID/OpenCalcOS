@@ -30,9 +30,9 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <beep/module.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
 #include <video/omapdss.h>
 
 #include <video/omap-panel-generic-dpi.h>

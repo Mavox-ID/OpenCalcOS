@@ -15,8 +15,8 @@
  * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
  */
 
-#include <linux/export.h>
-#include <linux/io.h>
+#include <beep/export.h>
+#include <beep/io.h>
 
 /**
  * __iowrite32_copy - copy data to MMIO space, in 32-bit units

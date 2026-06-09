@@ -10,17 +10,17 @@
 #define KMSG_COMPONENT "cio"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/device.h>
-#include <linux/workqueue.h>
-#include <linux/timer.h>
-#include <linux/kernel_stat.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/spinlock.h>
+#include <beep/errno.h>
+#include <beep/err.h>
+#include <beep/slab.h>
+#include <beep/list.h>
+#include <beep/device.h>
+#include <beep/workqueue.h>
+#include <beep/timer.h>
+#include <beep/kernel_stat.h>
 
 #include <asm/ccwdev.h>
 #include <asm/cio.h>
@@ -45,7 +45,7 @@ static const unsigned long recovery_delay[] = { 3, 30, 300 };
 
 /******************* bus type handling ***********************/
 
-/* The Linux driver model distinguishes between a bus type and
+/* The Beep driver model distinguishes between a bus type and
  * the bus itself. Of course we only have one channel
  * subsystem driver and one channel system per machine, but
  * we still use the abstraction. T.R. says it's a good idea. */

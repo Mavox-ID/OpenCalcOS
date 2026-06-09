@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/mmc/core/sdio_io.c
+ *  beep/drivers/mmc/core/sdio_io.c
  *
  *  Copyright 2007-2008 Pierre Ossman
  *
@@ -9,11 +9,11 @@
  * your option) any later version.
  */
 
-#include <linux/export.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sdio_func.h>
+#include <beep/export.h>
+#include <beep/mmc/host.h>
+#include <beep/mmc/card.h>
+#include <beep/mmc/sdio.h>
+#include <beep/mmc/sdio_func.h>
 
 #include "sdio_ops.h"
 

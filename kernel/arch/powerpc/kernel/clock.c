@@ -3,10 +3,10 @@
  * These need to be overridden in platform code.
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/export.h>
+#include <beep/clk.h>
+#include <beep/err.h>
+#include <beep/errno.h>
+#include <beep/export.h>
 #include <asm/clk_interface.h>
 
 struct clk_interface clk_functions;

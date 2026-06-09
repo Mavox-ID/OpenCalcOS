@@ -436,7 +436,7 @@
 			width = <0>;
 			height = <0>;
 			linebytes = <0>;
-			/* linux,opened; - added by uboot */
+			/* beep,opened; - added by uboot */
 		};
 	};
 

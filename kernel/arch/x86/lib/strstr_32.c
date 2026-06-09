@@ -1,4 +1,4 @@
-#include <linux/string.h>
+#include <beep/string.h>
 
 char *strstr(const char *cs, const char *ct)
 {

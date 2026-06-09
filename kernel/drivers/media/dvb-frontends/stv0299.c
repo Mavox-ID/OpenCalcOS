@@ -15,7 +15,7 @@
     LG TDQF-S001F
 
     Copyright (C) 2002 Felix Domke <tmbinc@elitedvb.net>
-		     & Andreas Oberritter <obi@linuxtv.org>
+		     & Andreas Oberritter <obi@beeptv.org>
 
 
     Support for Samsung TBMU24112IMB used on Technisat SkyStar2 rev. 2.6B
@@ -42,12 +42,12 @@
 
 */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
+#include <beep/init.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/string.h>
+#include <beep/slab.h>
+#include <beep/jiffies.h>
 #include <asm/div64.h>
 
 #include "dvb_frontend.h"

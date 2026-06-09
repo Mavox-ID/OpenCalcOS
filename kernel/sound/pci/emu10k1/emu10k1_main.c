@@ -31,21 +31,21 @@
  *
  */
 
-#include <linux/sched.h>
-#include <linux/kthread.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mutex.h>
+#include <beep/sched.h>
+#include <beep/kthread.h>
+#include <beep/delay.h>
+#include <beep/init.h>
+#include <beep/module.h>
+#include <beep/interrupt.h>
+#include <beep/pci.h>
+#include <beep/slab.h>
+#include <beep/vmalloc.h>
+#include <beep/mutex.h>
 
 
 #include <sound/core.h>
 #include <sound/emu10k1.h>
-#include <linux/firmware.h>
+#include <beep/firmware.h>
 #include "p16v.h"
 #include "tina2.h"
 #include "p17v.h"

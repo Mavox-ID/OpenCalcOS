@@ -6,7 +6,7 @@
  * John Heffner <jheffner@psc.edu>
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <net/tcp.h>
 
 

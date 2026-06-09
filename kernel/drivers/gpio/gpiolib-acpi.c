@@ -2,19 +2,19 @@
  * ACPI helpers for GPIO API
  *
  * Copyright (C) 2012, Intel Corporation
- * Authors: Mathias Nyman <mathias.nyman@linux.intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Authors: Mathias Nyman <mathias.nyman@beep.intel.com>
+ *          Mika Westerberg <mika.westerberg@beep.intel.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
 
-#include <linux/errno.h>
-#include <linux/gpio.h>
-#include <linux/export.h>
-#include <linux/acpi_gpio.h>
-#include <linux/acpi.h>
+#include <beep/errno.h>
+#include <beep/gpio.h>
+#include <beep/export.h>
+#include <beep/acpi_gpio.h>
+#include <beep/acpi.h>
 
 static int acpi_gpiochip_find(struct gpio_chip *gc, void *data)
 {
@@ -29,7 +29,7 @@ static int acpi_gpiochip_find(struct gpio_chip *gc, void *data)
  * @path:	ACPI GPIO controller full path name, (e.g. "\\_SB.GPO1")
  * @pin:	ACPI GPIO pin number (0-based, controller-relative)
  *
- * Returns GPIO number to use with Linux generic GPIO API, or errno error value
+ * Returns GPIO number to use with Beep generic GPIO API, or errno error value
  */
 
 int acpi_get_gpio(char *path, int pin)

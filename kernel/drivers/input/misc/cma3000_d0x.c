@@ -17,13 +17,13 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/input/cma3000.h>
-#include <linux/module.h>
+#include <beep/types.h>
+#include <beep/interrupt.h>
+#include <beep/delay.h>
+#include <beep/slab.h>
+#include <beep/input.h>
+#include <beep/input/cma3000.h>
+#include <beep/module.h>
 
 #include "cma3000_d0x.h"
 

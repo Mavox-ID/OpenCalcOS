@@ -3,7 +3,7 @@
  * Implement backend for the WiMAX stack rfkill support
  *
  *
- * Copyright (C) 2007-2008 Intel Corporation <linux-wimax@intel.com>
+ * Copyright (C) 2007-2008 Intel Corporation <beep-wimax@intel.com>
  * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
  *
  * This program is free software; you can redistribute it and/or
@@ -33,8 +33,8 @@
  *   switch (coming from sysfs, the wimax stack or user space).
  */
 #include "i2400m.h"
-#include <linux/wimax/i2400m.h>
-#include <linux/slab.h>
+#include <beep/wimax/i2400m.h>
+#include <beep/slab.h>
 
 
 

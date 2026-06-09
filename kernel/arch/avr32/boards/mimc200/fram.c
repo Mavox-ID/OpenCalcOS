@@ -10,10 +10,10 @@
 
 #define FRAM_VERSION	"1.0"
 
-#include <linux/miscdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/mm.h>
-#include <linux/io.h>
+#include <beep/miscdevice.h>
+#include <beep/proc_fs.h>
+#include <beep/mm.h>
+#include <beep/io.h>
 
 #define FRAM_BASE	0xac000000
 #define FRAM_SIZE	0x20000

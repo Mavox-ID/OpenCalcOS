@@ -27,12 +27,12 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <beep/delay.h>
+#include <beep/input.h>
+#include <beep/input/mt.h>
+#include <beep/gpio.h>
+#include <beep/interrupt.h>
+#include <beep/slab.h>
 
 #include "cyttsp_core.h"
 

@@ -78,7 +78,7 @@
  */
 
 /* for task_struct */
-#include <linux/sched.h>
+#include <beep/sched.h>
 
 /* bits that are frequently given and infrequently matched in the low word */
 /* NOTE: If you add a flag, you need to also update masklog.c! */
@@ -211,8 +211,8 @@ extern struct mlog_bits mlog_and_bits, mlog_not_bits;
 	}								\
 } while (0)
 
-#include <linux/kobject.h>
-#include <linux/sysfs.h>
+#include <beep/kobject.h>
+#include <beep/sysfs.h>
 int mlog_sys_init(struct kset *o2cb_subsys);
 void mlog_sys_shutdown(void);
 

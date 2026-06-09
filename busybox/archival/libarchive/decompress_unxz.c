@@ -6,7 +6,7 @@
  * See README file in unxz/ directory for more information.
  *
  * This file is:
- * Copyright (C) 2010 Denys Vlasenko <vda.linux@googlemail.com>
+ * Copyright (C) 2010 Denys Vlasenko <vda.beep@googlemail.com>
  * Licensed under GPLv2, see file LICENSE in this source tree.
  */
 #include "libbb.h"

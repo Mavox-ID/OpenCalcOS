@@ -18,7 +18,7 @@
  * I threw it in.
  *
  * I've only tested this on my system, which only has one disk.  I posted
- * it to comp.sys.linux.hardware, so maybe some other people will try it
+ * it to comp.sys.beep.hardware, so maybe some other people will try it
  * out.
  *
  * Derek Noonburg  (derekn@ece.cmu.edu)
@@ -35,16 +35,16 @@
  * mode 4 for a while now with no trouble.)  -Derek
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/ioport.h>
-#include <linux/blkdev.h>
-#include <linux/ide.h>
-#include <linux/init.h>
+#include <beep/module.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/delay.h>
+#include <beep/timer.h>
+#include <beep/mm.h>
+#include <beep/ioport.h>
+#include <beep/blkdev.h>
+#include <beep/ide.h>
+#include <beep/init.h>
 
 #include <asm/io.h>
 

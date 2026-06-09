@@ -21,12 +21,12 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/edac.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/io.h>
+#include <beep/uaccess.h>
+#include <beep/edac.h>
 #include <hv/hypervisor.h>
 #include <hv/drv_mshim_intf.h>
 

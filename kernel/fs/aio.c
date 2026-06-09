@@ -1,5 +1,5 @@
 /*
- *	An async IO implementation for Linux
+ *	An async IO implementation for Beep
  *	Written by Benjamin LaHaise <bcrl@kvack.org>
  *
  *	Implements an efficient asynchronous io interface.
@@ -8,33 +8,33 @@
  *
  *	See ../COPYING for licensing terms.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/aio_abi.h>
-#include <linux/export.h>
-#include <linux/syscalls.h>
-#include <linux/backing-dev.h>
-#include <linux/uio.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/time.h>
+#include <beep/aio_abi.h>
+#include <beep/export.h>
+#include <beep/syscalls.h>
+#include <beep/backing-dev.h>
+#include <beep/uio.h>
 
 #define DEBUG 0
 
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/mmu_context.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/aio.h>
-#include <linux/highmem.h>
-#include <linux/workqueue.h>
-#include <linux/security.h>
-#include <linux/eventfd.h>
-#include <linux/blkdev.h>
-#include <linux/compat.h>
+#include <beep/sched.h>
+#include <beep/fs.h>
+#include <beep/file.h>
+#include <beep/mm.h>
+#include <beep/mman.h>
+#include <beep/mmu_context.h>
+#include <beep/slab.h>
+#include <beep/timer.h>
+#include <beep/aio.h>
+#include <beep/highmem.h>
+#include <beep/workqueue.h>
+#include <beep/security.h>
+#include <beep/eventfd.h>
+#include <beep/blkdev.h>
+#include <beep/compat.h>
 
 #include <asm/kmap_types.h>
 #include <asm/uaccess.h>

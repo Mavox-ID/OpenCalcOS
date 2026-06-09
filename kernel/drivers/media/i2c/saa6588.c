@@ -19,16 +19,16 @@
 */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/i2c.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/wait.h>
+#include <beep/module.h>
+#include <beep/kernel.h>
+#include <beep/i2c.h>
+#include <beep/types.h>
+#include <beep/videodev2.h>
+#include <beep/init.h>
+#include <beep/errno.h>
+#include <beep/slab.h>
+#include <beep/poll.h>
+#include <beep/wait.h>
 #include <asm/uaccess.h>
 
 #include <media/saa6588.h>
@@ -306,7 +306,7 @@ static void saa6588_i2c_poll(struct saa6588 *s)
 	/* And if are not in mmbs mode, then 'Block E' is also mapped
 	   to 'Invalid Block'. As far as I can tell MMBS is discontinued,
 	   and if there is ever a need to support E blocks, then please
-	   contact the linux-media mailinglist. */
+	   contact the beep-media mailinglist. */
 	else if (!mmbs && blocknum == 5)
 		blocknum = V4L2_RDS_BLOCK_INVALID;
 	tmp = blocknum;

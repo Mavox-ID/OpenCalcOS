@@ -9,13 +9,13 @@
  *
  *
  * inline privop and paravirt_alt support
- * Copyright (c) 2007 Isaku Yamahata <yamahata at valinux co jp>
- *                    VA Linux Systems Japan K.K.
+ * Copyright (c) 2007 Isaku Yamahata <yamahata at vabeep co jp>
+ *                    VA Beep Systems Japan K.K.
  *
  */
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>		/* arch-ia64.h requires uint64_t */
+#include <beep/types.h>		/* arch-ia64.h requires uint64_t */
 #endif
 #include <asm/xen/interface.h>
 

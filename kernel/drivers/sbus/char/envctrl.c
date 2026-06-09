@@ -18,17 +18,17 @@
  *              Daniele Bellucci <bellucda@tiscali.it>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kthread.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/miscdevice.h>
-#include <linux/kmod.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/kthread.h>
+#include <beep/delay.h>
+#include <beep/ioport.h>
+#include <beep/miscdevice.h>
+#include <beep/kmod.h>
+#include <beep/reboot.h>
+#include <beep/slab.h>
+#include <beep/of.h>
+#include <beep/of_device.h>
 
 #include <asm/uaccess.h>
 #include <asm/envctrl.h>

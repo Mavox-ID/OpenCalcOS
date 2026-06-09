@@ -1,6 +1,6 @@
 /*
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
  *  Rewritten by Cort Dougan (cort@fsmlabs.com) for PReP
  *    Copyright (C) 1996 Cort Dougan <cort@fsmlabs.com>
  *  Adapted for Power Macintosh by Paul Mackerras.
@@ -19,9 +19,9 @@
  *
  */
 
-#include <linux/errno.h>
-#include <linux/sys.h>
-#include <linux/threads.h>
+#include <beep/errno.h>
+#include <beep/sys.h>
+#include <beep/threads.h>
 #include <asm/reg.h>
 #include <asm/page.h>
 #include <asm/mmu.h>

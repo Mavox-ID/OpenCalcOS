@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/mach-nomadik/board-8815nhk.c
+ *  beep/arch/arm/mach-nomadik/board-8815nhk.c
  *
  *  Copyright (C) STMicroelectronics
  *
@@ -9,24 +9,24 @@
  *
  *  NHK15 board specifc driver definition
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/mmci.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/fsmc.h>
-#include <linux/mtd/onenand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/platform_data/pinctrl-nomadik.h>
-#include <linux/platform_data/clocksource-nomadik-mtu.h>
+#include <beep/types.h>
+#include <beep/kernel.h>
+#include <beep/init.h>
+#include <beep/platform_device.h>
+#include <beep/amba/bus.h>
+#include <beep/amba/mmci.h>
+#include <beep/interrupt.h>
+#include <beep/gpio.h>
+#include <beep/mtd/mtd.h>
+#include <beep/mtd/nand.h>
+#include <beep/mtd/fsmc.h>
+#include <beep/mtd/onenand.h>
+#include <beep/mtd/partitions.h>
+#include <beep/i2c.h>
+#include <beep/io.h>
+#include <beep/pinctrl/machine.h>
+#include <beep/platform_data/pinctrl-nomadik.h>
+#include <beep/platform_data/clocksource-nomadik-mtu.h>
 #include <asm/hardware/vic.h>
 #include <asm/sizes.h>
 #include <asm/mach-types.h>

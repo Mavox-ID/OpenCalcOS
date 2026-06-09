@@ -11,15 +11,15 @@
  * the Free Software Foundation.
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/i8042.h>
-#include <linux/init.h>
-#include <linux/libps2.h>
+#include <beep/delay.h>
+#include <beep/module.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/input.h>
+#include <beep/serio.h>
+#include <beep/i8042.h>
+#include <beep/init.h>
+#include <beep/libps2.h>
 
 #define DRIVER_DESC	"PS/2 driver library"
 

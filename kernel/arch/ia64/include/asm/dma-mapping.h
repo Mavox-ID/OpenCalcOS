@@ -6,9 +6,9 @@
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  */
 #include <asm/machvec.h>
-#include <linux/scatterlist.h>
+#include <beep/scatterlist.h>
 #include <asm/swiotlb.h>
-#include <linux/dma-debug.h>
+#include <beep/dma-debug.h>
 
 #define ARCH_HAS_DMA_GET_REQUIRED_MASK
 

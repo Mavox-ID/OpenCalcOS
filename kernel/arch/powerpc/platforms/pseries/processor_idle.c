@@ -5,13 +5,13 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/cpuidle.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/moduleparam.h>
+#include <beep/cpuidle.h>
+#include <beep/cpu.h>
+#include <beep/notifier.h>
 
 #include <asm/paca.h>
 #include <asm/reg.h>
@@ -363,6 +363,6 @@ static void __exit pseries_processor_idle_exit(void)
 module_init(pseries_processor_idle_init);
 module_exit(pseries_processor_idle_exit);
 
-MODULE_AUTHOR("Deepthi Dharwar <deepthi@linux.vnet.ibm.com>");
+MODULE_AUTHOR("Deepthi Dharwar <deepthi@beep.vnet.ibm.com>");
 MODULE_DESCRIPTION("Cpuidle driver for POWER");
 MODULE_LICENSE("GPL");

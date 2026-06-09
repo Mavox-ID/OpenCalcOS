@@ -7,18 +7,18 @@
  *
  */
 /* NOTE: Will not work on level 15 */
-#include <linux/ptrace.h>
-#include <linux/errno.h>
-#include <linux/kernel_stat.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/spinlock.h>
-#include <linux/cache.h>
-#include <linux/irq.h>
-#include <linux/bitmap.h>
+#include <beep/ptrace.h>
+#include <beep/errno.h>
+#include <beep/kernel_stat.h>
+#include <beep/signal.h>
+#include <beep/sched.h>
+#include <beep/interrupt.h>
+#include <beep/init.h>
+#include <beep/bitops.h>
+#include <beep/spinlock.h>
+#include <beep/cache.h>
+#include <beep/irq.h>
+#include <beep/bitmap.h>
 #include <asm/irq.h>
 
 /* Bitmap of IRQ masked */

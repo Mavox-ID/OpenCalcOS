@@ -17,9 +17,9 @@
 #ifndef _ASM_TILE_SPINLOCK_32_H
 #define _ASM_TILE_SPINLOCK_32_H
 
-#include <linux/atomic.h>
+#include <beep/atomic.h>
 #include <asm/page.h>
-#include <linux/compiler.h>
+#include <beep/compiler.h>
 
 /*
  * We only use even ticket numbers so the '1' inserted by a tns is

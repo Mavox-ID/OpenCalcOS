@@ -14,16 +14,16 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqreturn.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/sunxi_timer.h>
-#include <linux/clk/sunxi.h>
+#include <beep/clk.h>
+#include <beep/clockchips.h>
+#include <beep/interrupt.h>
+#include <beep/irq.h>
+#include <beep/irqreturn.h>
+#include <beep/of.h>
+#include <beep/of_address.h>
+#include <beep/of_irq.h>
+#include <beep/sunxi_timer.h>
+#include <beep/clk/sunxi.h>
 
 #define TIMER_CTL_REG		0x00
 #define TIMER_CTL_ENABLE		(1 << 0)

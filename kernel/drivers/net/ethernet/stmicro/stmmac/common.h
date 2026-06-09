@@ -25,14 +25,14 @@
 #ifndef __COMMON_H__
 #define __COMMON_H__
 
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <beep/etherdevice.h>
+#include <beep/netdevice.h>
+#include <beep/phy.h>
+#include <beep/module.h>
+#include <beep/init.h>
 #if defined(CONFIG_VLAN_8021Q) || defined(CONFIG_VLAN_8021Q_MODULE)
 #define STMMAC_VLAN_TAG_USED
-#include <linux/if_vlan.h>
+#include <beep/if_vlan.h>
 #endif
 
 #include "descs.h"

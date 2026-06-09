@@ -2,7 +2,7 @@
  *	include/asm-parisc/pdc_chassis.h
  *
  *	Copyright (C) 2002 Laurent Canet <canetl@esiee.fr>
- *	Copyright (C) 2002 Thibaut Varene <varenet@parisc-linux.org>
+ *	Copyright (C) 2002 Thibaut Varene <varenet@parisc-beep.org>
  *
  *
  *      This program is free software; you can redistribute it and/or modify

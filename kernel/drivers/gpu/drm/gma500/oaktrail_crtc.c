@@ -15,8 +15,8 @@
  * 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <linux/i2c.h>
-#include <linux/pm_runtime.h>
+#include <beep/i2c.h>
+#include <beep/pm_runtime.h>
 
 #include <drm/drmP.h>
 #include "framebuffer.h"

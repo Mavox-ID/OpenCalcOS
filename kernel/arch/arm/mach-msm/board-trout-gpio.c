@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-msm/gpio.c
+ * beep/arch/arm/mach-msm/gpio.c
  *
  * Copyright (C) 2005 HP Labs
  * Copyright (C) 2008 Google, Inc.
@@ -11,12 +11,12 @@
  * (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
+#include <beep/kernel.h>
+#include <beep/module.h>
+#include <beep/io.h>
+#include <beep/irq.h>
+#include <beep/interrupt.h>
+#include <beep/gpio.h>
 
 #include "board-trout.h"
 

@@ -26,7 +26,7 @@
  * (http://www.freecom.de/)
  */
 
-#include <linux/module.h>
+#include <beep/module.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 

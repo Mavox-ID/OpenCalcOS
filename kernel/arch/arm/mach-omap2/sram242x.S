@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/sram242x.S
+ * beep/arch/arm/mach-omap2/sram242x.S
  *
  * Omap2 specific functions that need to be run in internal SRAM
  *
@@ -28,7 +28,7 @@
  * since it will cause the ARM MMU to attempt to walk the page tables.
  * These crashes may be intermittent.
  */
-#include <linux/linkage.h>
+#include <beep/linkage.h>
 
 #include <asm/assembler.h>
 
