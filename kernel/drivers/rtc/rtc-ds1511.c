@@ -1,19 +1,20 @@
 /*
- * An rtc driver for the Dallas DS1511
- *
- * Copyright (C) 2006 Atsushi Nemoto <anemo@mba.ocn.ne.jp>
- * Copyright (C) 2007 Andrew Sharp <andy.sharp@lsi.com>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * Real time clock driver for the Dallas 1511 chip, which also
- * contains a watchdog timer.  There is a tiny amount of code that
- * platform code could use to mess with the watchdog device a little
- * bit, but not a full watchdog driver.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/bcd.h>
 #include <beep/init.h>
 #include <beep/kernel.h>

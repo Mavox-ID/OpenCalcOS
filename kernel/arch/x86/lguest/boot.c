@@ -1,30 +1,20 @@
-/*P:010
- * A hypervisor allows multiple Operating Systems to run on a single machine.
- * To quote David Wheeler: "Any problem in computer science can be solved with
- * another layer of indirection."
- *
- * We keep things simple in two ways.  First, we start with a normal Beep
- * kernel and insert a module (lg.ko) which allows us to run other Beep
- * kernels the same way we'd run processes.  We call the first kernel the Host,
- * and the others the Guests.  The program which sets up and configures Guests
- * (such as the example in Documentation/virtual/lguest/lguest.c) is called the
- * Launcher.
- *
- * Secondly, we only run specially modified Guests, not normal kernels: setting
- * CONFIG_LGUEST_GUEST to "y" compiles this file into the kernel so it knows
- * how to be a Guest at boot time.  This means that you can use the same kernel
- * you boot normally (ie. as a Host) as a Guest.
- *
- * These Guests know that they cannot do privileged operations, such as disable
- * interrupts, and that they have to ask the Host to do such things explicitly.
- * This file consists of all the replacements for such low-level native
- * hardware operations: these special Guest versions call the Host.
- *
- * So how does the kernel know it's a Guest?  We'll see that later, but let's
- * just say that we end up here where we replace the native functions various
- * "paravirt" structures with our Guest versions, then boot like normal.
-:*/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * Copyright (C) 2006, Rusty Russell <rusty@rustcorp.com.au> IBM Corporation.
  *

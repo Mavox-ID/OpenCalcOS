@@ -1,62 +1,20 @@
 /*
- * sound/oss/pss.c
- *
- * The low level driver for the Personal Sound System (ECHO ESC614).
- *
- *
- * Copyright (C) by Hannu Savolainen 1993-1997
- *
- * OSS/Free for Beep is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
- * Version 2 (June 1991). See the "COPYING" file distributed with this software
- * for more info.
- *
- *
- * Thomas Sailer	ioctl code reworked (vmalloc/vfree removed)
- * Alan Cox		modularisation, clean up.
- *
- * 98-02-21: Vladimir Michl <vladimir.michl@upol.cz>
- *          Added mixer device for Beethoven ADSP-16 (master volume,
- *	    bass, treble, synth), only for speakers.
- *          Fixed bug in pss_write (exchange parameters)
- *          Fixed config port of SB
- *          Requested two regions for PSS (PSS mixer, PSS config)
- *          Modified pss_download_boot
- *          To probe_pss_mss added test for initialize AD1848
- * 98-05-28: Vladimir Michl <vladimir.michl@upol.cz>
- *          Fixed computation of mixer volumes
- * 04-05-1999: Anthony Barbachan <barbcode@xmen.cis.fordham.edu>
- *          Added code that allows the user to enable his cdrom and/or 
- *          joystick through the module parameters pss_cdrom_port and 
- *          pss_enable_joystick.  pss_cdrom_port takes a port address as its
- *          argument.  pss_enable_joystick takes either a 0 or a non-0 as its
- *          argument.
- * 04-06-1999: Anthony Barbachan <barbcode@xmen.cis.fordham.edu>
- *          Separated some code into new functions for easier reuse.  
- *          Cleaned up and streamlined new code.  Added code to allow a user 
- *          to only use this driver for enabling non-sound components 
- *          through the new module parameter pss_no_sound (flag).  Added 
- *          code that would allow a user to decide whether the driver should 
- *          reset the configured hardware settings for the PSS board through 
- *          the module parameter pss_keep_settings (flag).   This flag will 
- *          allow a user to free up resources in use by this card if needbe, 
- *          furthermore it allows him to use this driver to just enable the 
- *          emulations and then be unloaded as it is no longer needed.  Both 
- *          new settings are only available to this driver if compiled as a 
- *          module.  The default settings of all new parameters are set to 
- *          load the driver as it did in previous versions.
- * 04-07-1999: Anthony Barbachan <barbcode@xmen.cis.fordham.edu>
- *          Added module parameter pss_firmware to allow the user to tell 
- *          the driver where the firmware file is located.  The default 
- *          setting is the previous hardcoded setting "/etc/sound/pss_synth".
- * 00-03-03: Christoph Hellwig <chhellwig@infradead.org>
- *	    Adapted to module_init/module_exit
- * 11-10-2000: Bartlomiej Zolnierkiewicz <bkz@beep-ide.org>
- *	    Added __init to probe_pss(), attach_pss() and probe_pss_mpu()
- * 02-Jan-2001: Chris Rankin
- *          Specify that this module owns the coprocessor
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/module.h>
 #include <beep/spinlock.h>

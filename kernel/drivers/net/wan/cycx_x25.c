@@ -1,81 +1,20 @@
 /*
-* cycx_x25.c	Cyclom 2X WAN Link Driver.  X.25 module.
-*
-* Author:	Arnaldo Carvalho de Melo <acme@conectiva.com.br>
-*
-* Copyright:	(c) 1998-2003 Arnaldo Carvalho de Melo
-*
-* Based on sdla_x25.c by Gene Kozin <genek@compuserve.com>
-*
-*		This program is free software; you can redistribute it and/or
-*		modify it under the terms of the GNU General Public License
-*		as published by the Free Software Foundation; either version
-*		2 of the License, or (at your option) any later version.
-* ============================================================================
-* 2001/01/12	acme		use dev_kfree_skb_irq on interrupt context
-* 2000/04/02	acme		dprintk, cycx_debug
-* 				fixed the bug introduced in get_dev_by_lcn and
-* 				get_dev_by_dte_addr by the anonymous hacker
-* 				that converted this driver to softnet
-* 2000/01/08	acme		cleanup
-* 1999/10/27	acme		use ARPHRD_HWX25 so that the X.25 stack know
-*				that we have a X.25 stack implemented in
-*				firmware onboard
-* 1999/10/18	acme		support for X.25 sockets in if_send,
-*				beware: socket(AF_X25...) IS WORK IN PROGRESS,
-*				TCP/IP over X.25 via wanrouter not affected,
-*				working.
-* 1999/10/09	acme		chan_disc renamed to chan_disconnect,
-* 				began adding support for X.25 sockets:
-* 				conf->protocol in new_if
-* 1999/10/05	acme		fixed return E... to return -E...
-* 1999/08/10	acme		serialized access to the card thru a spinlock
-*				in x25_exec
-* 1999/08/09	acme		removed per channel spinlocks
-*				removed references to enable_tx_int
-* 1999/05/28	acme		fixed nibble_to_byte, ackvc now properly treated
-*				if_send simplified
-* 1999/05/25	acme		fixed t1, t2, t21 & t23 configuration
-*				use spinlocks instead of cli/sti in some points
-* 1999/05/24	acme		finished the x25_get_stat function
-* 1999/05/23	acme		dev->type = ARPHRD_X25 (tcpdump only works,
-*				AFAIT, with ARPHRD_ETHER). This seems to be
-*				needed to use socket(AF_X25)...
-*				Now the config file must specify a peer media
-*				address for svc channels over a crossover cable.
-*				Removed hold_timeout from x25_channel_t,
-*				not used.
-*				A little enhancement in the DEBUG processing
-* 1999/05/22	acme		go to DISCONNECTED in disconnect_confirm_intr,
-*				instead of chan_disc.
-* 1999/05/16	marcelo		fixed timer initialization in SVCs
-* 1999/01/05	acme		x25_configure now get (most of) all
-*				parameters...
-* 1999/01/05	acme		pktlen now (correctly) uses log2 (value
-*				configured)
-* 1999/01/03	acme		judicious use of data types (u8, u16, u32, etc)
-* 1999/01/03	acme		cyx_isr: reset dpmbase to acknowledge
-*				indication (interrupt from cyclom 2x)
-* 1999/01/02	acme		cyx_isr: first hackings...
-* 1999/01/0203  acme 		when initializing an array don't give less
-*				elements than declared...
-* 				example: char send_cmd[6] = "?\xFF\x10";
-*          			you'll gonna lose a couple hours, 'cause your
-*				brain won't admit that there's an error in the
-*				above declaration...  the side effect is that
-*				memset is put into the unresolved symbols
-*				instead of using the inline memset functions...
-* 1999/01/02    acme 		began chan_connect, chan_send, x25_send
-* 1998/12/31	acme		x25_configure
-*				this code can be compiled as non module
-* 1998/12/27	acme		code cleanup
-*				IPX code wiped out! let's decrease code
-*				complexity for now, remember: I'm learning! :)
-*                               bps_to_speed_code OK
-* 1998/12/26	acme		Minimal debug code cleanup
-* 1998/08/08	acme		Initial version.
-*/
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #define CYCLOMX_X25_DEBUG 1

@@ -1,74 +1,20 @@
 /*
- * ad525x_dpot: Driver for the Analog Devices digital potentiometers
- * Copyright (c) 2009-2010 Analog Devices, Inc.
- * Author: Michael Hennerich <hennerich@blackfin.ucbeep.org>
- *
- * DEVID		#Wipers		#Positions 	Resistor Options (kOhm)
- * AD5258		1		64		1, 10, 50, 100
- * AD5259		1		256		5, 10, 50, 100
- * AD5251		2		64		1, 10, 50, 100
- * AD5252		2		256		1, 10, 50, 100
- * AD5255		3		512		25, 250
- * AD5253		4		64		1, 10, 50, 100
- * AD5254		4		256		1, 10, 50, 100
- * AD5160		1		256		5, 10, 50, 100
- * AD5161		1		256		5, 10, 50, 100
- * AD5162		2		256		2.5, 10, 50, 100
- * AD5165		1		256		100
- * AD5200		1		256		10, 50
- * AD5201		1		33		10, 50
- * AD5203		4		64		10, 100
- * AD5204		4		256		10, 50, 100
- * AD5206		6		256		10, 50, 100
- * AD5207		2		256		10, 50, 100
- * AD5231		1		1024		10, 50, 100
- * AD5232		2		256		10, 50, 100
- * AD5233		4		64		10, 50, 100
- * AD5235		2		1024		25, 250
- * AD5260		1		256		20, 50, 200
- * AD5262		2		256		20, 50, 200
- * AD5263		4		256		20, 50, 200
- * AD5290		1		256		10, 50, 100
- * AD5291		1		256		20, 50, 100  (20-TP)
- * AD5292		1		1024		20, 50, 100  (20-TP)
- * AD5293		1		1024		20, 50, 100
- * AD7376		1		128		10, 50, 100, 1M
- * AD8400		1		256		1, 10, 50, 100
- * AD8402		2		256		1, 10, 50, 100
- * AD8403		4		256		1, 10, 50, 100
- * ADN2850		3		512		25, 250
- * AD5241		1		256		10, 100, 1M
- * AD5246		1		128		5, 10, 50, 100
- * AD5247		1		128		5, 10, 50, 100
- * AD5245		1		256		5, 10, 50, 100
- * AD5243		2		256		2.5, 10, 50, 100
- * AD5248		2		256		2.5, 10, 50, 100
- * AD5242		2		256		20, 50, 200
- * AD5280		1		256		20, 50, 200
- * AD5282		2		256		20, 50, 200
- * ADN2860		3		512		25, 250
- * AD5273		1		64		1, 10, 50, 100 (OTP)
- * AD5171		1		64		5, 10, 50, 100 (OTP)
- * AD5170		1		256		2.5, 10, 50, 100 (OTP)
- * AD5172		2		256		2.5, 10, 50, 100 (OTP)
- * AD5173		2		256		2.5, 10, 50, 100 (OTP)
- * AD5270		1		1024		20, 50, 100 (50-TP)
- * AD5271		1		256		20, 50, 100 (50-TP)
- * AD5272		1		1024		20, 50, 100 (50-TP)
- * AD5274		1		256		20, 50, 100 (50-TP)
- *
- * See Documentation/misc-devices/ad525x_dpot.txt for more info.
- *
- * derived from ad5258.c
- * Copyright (c) 2009 Cyber Switching, Inc.
- * Author: Chris Verges <chrisv@cyberswitching.com>
- *
- * derived from ad5252.c
- * Copyright (c) 2006-2011 Michael Hennerich <hennerich@blackfin.ucbeep.org>
- *
- * Licensed under the GPL-2 or later.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/device.h>
 #include <beep/kernel.h>

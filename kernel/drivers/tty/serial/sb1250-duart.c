@@ -1,24 +1,20 @@
 /*
- *	Support for the asynchronous serial interface (DUART) included
- *	in the BCM1250 and derived System-On-a-Chip (SOC) devices.
- *
- *	Copyright (c) 2007  Maciej W. Rozycki
- *
- *	Derived from drivers/char/sb1250_duart.c for which the following
- *	copyright applies:
- *
- *	Copyright (c) 2000, 2001, 2002, 2003, 2004  Broadcom Corporation
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- *
- *	References:
- *
- *	"BCM1250/BCM1125/BCM1125H User Manual", Broadcom Corporation
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #if defined(CONFIG_SERIAL_SB1250_DUART_CONSOLE) && defined(CONFIG_MAGIC_SYSRQ)
 #define SUPPORT_SYSRQ
 #endif

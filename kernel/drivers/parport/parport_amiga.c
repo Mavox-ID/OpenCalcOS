@@ -1,18 +1,20 @@
-/* Low-level parallel port routines for the Amiga built-in port
- *
- * Author: Joerg Dorchain <joerg@dorchain.net>
- *
- * This is a complete rewrite of the code, but based heaviy upon the old
- * lp_intern. code.
- *
- * The built-in Amiga parallel port provides one port at a fixed address
- * with 8 bidirectional data lines (D0 - D7) and 3 bidirectional status
- * lines (BUSY, POUT, SEL), 1 output control line /STROBE (raised automatically
- * in hardware when the data register is accessed), and 1 input control line
- * /ACK, able to cause an interrupt, but both not directly settable by
- * software.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/parport.h>

@@ -1,14 +1,20 @@
 /*
- * Detect hard and soft lockups on a system
- *
- * started by Don Zickus, Copyright (C) 2010 Red Hat, Inc.
- *
- * Note: Most of this code is borrowed heavily from the original softlockup
- * detector, so thanks to Ingo for the initial implementation.
- * Some chunks also taken from the old x86-specific nmi watchdog code, thanks
- * to those contributors as well.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) "NMI watchdog: " fmt
 
 #include <beep/mm.h>

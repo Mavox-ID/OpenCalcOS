@@ -1,19 +1,20 @@
-/* DVB USB compliant Beep driver for the
- *  - GENPIX 8pks/qpsk/DCII USB2.0 DVB-S module
- *
- * Copyright (C) 2006 Alan Nisota (alannisota@gmail.com)
- * Copyright (C) 2006,2007 Alan Nisota (alannisota@gmail.com)
- *
- * Thanks to GENPIX for the sample code used to implement this module.
- *
- * This module is based off the vp7045 and vp702x modules
- *
- *	This program is free software; you can redistribute it and/or modify it
- *	under the terms of the GNU General Public License as published by the Free
- *	Software Foundation, version 2.
- *
- * see Documentation/dvb/README.dvb-usb for more information
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _DVB_USB_GP8PSK_H_
 #define _DVB_USB_GP8PSK_H_
 

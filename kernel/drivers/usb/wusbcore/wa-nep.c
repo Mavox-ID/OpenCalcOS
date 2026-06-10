@@ -1,54 +1,20 @@
 /*
- * WUSB Wire Adapter: Control/Data Streaming Interface (WUSB[8])
- * Notification EndPoint support
- *
- * Copyright (C) 2006 Intel Corporation
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License version
- * 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- * 02110-1301, USA.
- *
- *
- * This part takes care of getting the notification from the hw
- * only and dispatching through wusbwad into
- * wa_notif_dispatch. Handling is done there.
- *
- * WA notifications are limited in size; most of them are three or
- * four bytes long, and the longest is the HWA Device Notification,
- * which would not exceed 38 bytes (DNs are limited in payload to 32
- * bytes plus 3 bytes header (WUSB1.0[7.6p2]), plus 3 bytes HWA
- * header (WUSB1.0[8.5.4.2]).
- *
- * It is not clear if more than one Device Notification can be packed
- * in a HWA Notification, I assume no because of the wording in
- * WUSB1.0[8.5.4.2]. In any case, the bigger any notification could
- * get is 256 bytes (as the bLength field is a byte).
- *
- * So what we do is we have this buffer and read into it; when a
- * notification arrives we schedule work to a specific, single thread
- * workqueue (so notifications are serialized) and copy the
- * notification data. After scheduling the work, we rearm the read from
- * the notification endpoint.
- *
- * Entry points here are:
- *
- * wa_nep_[create|destroy]()   To initialize/release this subsystem
- *
- * wa_nep_cb()                 Callback for the notification
- *                                endpoint; when data is ready, this
- *                                does the dispatching.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/workqueue.h>
 #include <beep/ctype.h>
 #include <beep/slab.h>

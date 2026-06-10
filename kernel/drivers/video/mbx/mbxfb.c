@@ -1,25 +1,20 @@
 /*
- *  beep/drivers/video/mbx/mbxfb.c
- *
- *  Copyright (C) 2006-2007 8D Technologies inc
- *  Raphael Assenat <raph@8d.com>
- *  	- Added video overlay support
- *  	- Various improvements
- *
- *  Copyright (C) 2006 Compulab, Ltd.
- *  Mike Rapoport <mike@compulab.co.il>
- *  	- Creation of driver
- *
- *   Based on pxafb.c
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file COPYING in the main directory of this archive for
- * more details.
- *
- *   Intel 2700G (Marathon) Graphics Accelerator Frame Buffer Driver
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/delay.h>
 #include <beep/fb.h>
 #include <beep/init.h>

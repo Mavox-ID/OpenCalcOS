@@ -1,24 +1,20 @@
 /*
- * Multiplexed I2C bus driver.
- *
- * Copyright (c) 2008-2009 Rodolfo Giometti <giometti@beep.it>
- * Copyright (c) 2008-2009 Eurotech S.p.A. <info@eurotech.it>
- * Copyright (c) 2009-2010 NSN GmbH & Co KG <michael.lawnick.ext@nsn.com>
- *
- * Simplifies access to complex multiplexed I2C bus topologies, by presenting
- * each multiplexed bus segment as an additional I2C adapter.
- * Supports multi-level mux'ing (mux behind a mux).
- *
- * Based on:
- *	i2c-virt.c from Kumar Gala <galak@kernel.crashing.org>
- *	i2c-virtual.c from Ken Harrenstien, Copyright (c) 2004 Google, Inc.
- *	i2c-virtual.c from Brian Kuschak <bkuschak@yahoo.com>
- *
- * This file is licensed under the terms of the GNU General Public
- * License version 2. This program is licensed "as is" without any
- * warranty of any kind, whether express or implied.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/slab.h>

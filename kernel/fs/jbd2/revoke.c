@@ -1,85 +1,20 @@
 /*
- * beep/fs/jbd2/revoke.c
- *
- * Written by Stephen C. Tweedie <sct@redhat.com>, 2000
- *
- * Copyright 2000 Red Hat corp --- All Rights Reserved
- *
- * This file is part of the Beep kernel and is made available under
- * the terms of the GNU General Public License, version 2, or at your
- * option, any later version, incorporated herein by reference.
- *
- * Journal revoke routines for the generic filesystem journaling code;
- * part of the ext2fs journaling system.
- *
- * Revoke is the mechanism used to prevent old log records for deleted
- * metadata from being replayed on top of newer data using the same
- * blocks.  The revoke mechanism is used in two separate places:
- *
- * + Commit: during commit we write the entire list of the current
- *   transaction's revoked blocks to the journal
- *
- * + Recovery: during recovery we record the transaction ID of all
- *   revoked blocks.  If there are multiple revoke records in the log
- *   for a single block, only the last one counts, and if there is a log
- *   entry for a block beyond the last revoke, then that log entry still
- *   gets replayed.
- *
- * We can get interactions between revokes and new log data within a
- * single transaction:
- *
- * Block is revoked and then journaled:
- *   The desired end result is the journaling of the new block, so we
- *   cancel the revoke before the transaction commits.
- *
- * Block is journaled and then revoked:
- *   The revoke must take precedence over the write of the block, so we
- *   need either to cancel the journal entry or to write the revoke
- *   later in the log than the log block.  In this case, we choose the
- *   latter: journaling a block cancels any revoke record for that block
- *   in the current transaction, so any revoke for that block in the
- *   transaction must have happened after the block was journaled and so
- *   the revoke must take precedence.
- *
- * Block is revoked and then written as data:
- *   The data write is allowed to succeed, but the revoke is _not_
- *   cancelled.  We still need to prevent old log records from
- *   overwriting the new data.  We don't even need to clear the revoke
- *   bit here.
- *
- * We cache revoke status of a buffer in the current transaction in b_states
- * bits.  As the name says, revokevalid flag indicates that the cached revoke
- * status of a buffer is valid and we can rely on the cached status.
- *
- * Revoke information on buffers is a tri-state value:
- *
- * RevokeValid clear:	no cached revoke status, need to look it up
- * RevokeValid set, Revoked clear:
- *			buffer has not been revoked, and cancel_revoke
- *			need do nothing.
- * RevokeValid set, Revoked set:
- *			buffer has been revoked.
- *
- * Locking rules:
- * We keep two hash tables of revoke records. One hashtable belongs to the
- * running transaction (is pointed to by journal->j_revoke), the other one
- * belongs to the committing transaction. Accesses to the second hash table
- * happen only from the kjournald and no other thread touches this table.  Also
- * journal_switch_revoke_table() which switches which hashtable belongs to the
- * running and which to the committing transaction is called only from
- * kjournald. Therefore we need no locks when accessing the hashtable belonging
- * to the committing transaction.
- *
- * All users operating on the hash table belonging to the running transaction
- * have a handle to the transaction. Therefore they are safe from kjournald
- * switching hash tables under them. For operations on the lists of entries in
- * the hash table j_revoke_lock is used.
- *
- * Finally, also replay code uses the hash tables but at this moment no one else
- * can touch them (filesystem isn't mounted yet) and hence no locking is
- * needed.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __KERNEL__
 #include "jfs_user.h"
 #else

@@ -1,23 +1,20 @@
 /*
- * PPP async serial channel driver for Beep.
- *
- * Copyright 1999 Paul Mackerras.
- *
- *  This program is free software; you can redistribute it and/or
- *  modify it under the terms of the GNU General Public License
- *  as published by the Free Software Foundation; either version
- *  2 of the License, or (at your option) any later version.
- *
- * This driver provides the encapsulation and framing for sending
- * and receiving PPP frames over async serial lines.  It relies on
- * the generic PPP layer to give it frames to send and to process
- * received frames.  It implements the PPP line discipline.
- *
- * Part of the code in this driver was inspired by the old async-only
- * PPP driver, written by Michael Callahan and Al Longyear, and
- * subsequently hacked by Paul Mackerras.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/skbuff.h>

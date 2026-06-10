@@ -1,33 +1,20 @@
-/* Typhoon Radio Card driver for radio support
- * (c) 1999 Dr. Henrik Seidel <Henrik.Seidel@gmx.de>
- *
- * Notes on the hardware
- *
- * This card has two output sockets, one for speakers and one for line.
- * The speaker output has volume control, but only in four discrete
- * steps. The line output has neither volume control nor mute.
- *
- * The card has auto-stereo according to its manual, although it all
- * sounds mono to me (even with the Win/DOS drivers). Maybe it's my
- * antenna - I really don't know for sure.
- *
- * Frequency control is done digitally.
- *
- * Volume control is done digitally, but there are only four different
- * possible values. So you should better always turn the volume up and
- * use line control. I got the best results by connecting line output
- * to the sound card microphone input. For such a configuration the
- * volume control has no effect, since volume control only influences
- * the speaker output.
- *
- * There is no explicit mute/unmute. So I set the radio frequency to a
- * value where I do expect just noise and turn the speaker volume down.
- * The frequency change is necessary since the card never seems to be
- * completely silent.
- *
- * Converted to V4L2 API by Mauro Carvalho Chehab <mchehab@infradead.org>
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>	/* Modules                        */
 #include <beep/init.h>		/* Initdata                       */
 #include <beep/ioport.h>	/* request_region		  */

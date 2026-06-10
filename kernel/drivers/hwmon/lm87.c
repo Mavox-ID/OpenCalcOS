@@ -1,61 +1,20 @@
 /*
- * lm87.c
- *
- * Copyright (C) 2000       Frodo Looijaard <frodol@dds.nl>
- *                          Philip Edelbrock <phil@netroedge.com>
- *                          Stephen Rousset <stephen.rousset@rocketlogix.com>
- *                          Dan Eaton <dan.eaton@rocketlogix.com>
- * Copyright (C) 2004-2008  Jean Delvare <khali@beep-fr.org>
- *
- * Original port to Beep 2.6 by Jeff Oliver.
- *
- * The LM87 is a sensor chip made by National Semiconductor. It monitors up
- * to 8 voltages (including its own power source), up to three temperatures
- * (its own plus up to two external ones) and up to two fans. The default
- * configuration is 6 voltages, two temperatures and two fans (see below).
- * Voltages are scaled internally with ratios such that the nominal value of
- * each voltage correspond to a register value of 192 (which means a
- * resolution of about 0.5% of the nominal value). Temperature values are
- * reported with a 1 deg resolution and a 3-4 deg accuracy. Complete
- * datasheet can be obtained from National's website at:
- *   http://www.national.com/pf/LM/LM87.html
- *
- * Some functions share pins, so not all functions are available at the same
- * time. Which are depends on the hardware setup. This driver normally
- * assumes that firmware configured the chip correctly. Where this is not
- * the case, platform code must set the I2C client's platform_data to point
- * to a u8 value to be written to the channel register.
- * For reference, here is the list of exclusive functions:
- *  - in0+in5 (default) or temp3
- *  - fan1 (default) or in6
- *  - fan2 (default) or in7
- *  - VID lines (default) or IRQ lines (not handled by this driver)
- *
- * The LM87 additionally features an analog output, supposedly usable to
- * control the speed of a fan. All new chips use pulse width modulation
- * instead. The LM87 is the only hardware monitoring chipset I know of
- * which uses amplitude modulation. Be careful when using this feature.
- *
- * This driver also supports the ADM1024, a sensor chip made by Analog
- * Devices. That chip is fully compatible with the LM87. Complete
- * datasheet can be obtained from Analog's website at:
- *   http://www.analog.com/en/prod/0,2877,ADM1024,00.html
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/slab.h>

@@ -1,25 +1,20 @@
 /*
- *  beep/arch/arm/mach-ebsa110/isamem.c
- *
- *  Copyright (C) 2001 Russell King
- *
- * Perform "ISA" memory and IO accesses.  The EBSA110 has some "peculiarities"
- * in the way it handles accesses to odd IO ports on 16-bit devices.  These
- * devices have their D0-D15 lines connected to the processors D0-D15 lines.
- * Since they expect all byte IO operations to be performed on D0-D7, and the
- * StrongARM expects to transfer the byte to these odd addresses on D8-D15,
- * we must use a trick to get the required behaviour.
- *
- * The trick employed here is to use long word stores to odd address -1.  The
- * glue logic picks this up as a "trick" access, and asserts the LSB of the
- * peripherals address bus, thereby accessing the odd IO port.  Meanwhile, the
- * StrongARM transfers its data on D0-D7 as expected.
- *
- * Things get more interesting on the pass-1 EBSA110 - the PCMCIA controller
- * wiring was screwed in such a way that it had limited memory space access.
- * Luckily, the work-around for this is not too horrible.  See
- * __isamem_convert_addr for the details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/types.h>

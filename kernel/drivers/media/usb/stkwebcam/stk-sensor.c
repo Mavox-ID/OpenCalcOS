@@ -1,30 +1,20 @@
-/* stk-sensor.c: Driver for ov96xx sensor (used in some Syntek webcams)
- *
- * Copyright 2007-2008 Jaime Velasco Juan <jsagarribay@gmail.com>
- *
- * Some parts derived from ov7670.c:
- * Copyright 2006 One Laptop Per Child Association, Inc.  Written
- * by Jonathan Corbet with substantial inspiration from Mark
- * McClelland's ovcamchip code.
- *
- * Copyright 2006-7 Jonathan Corbet <corbet@lwn.net>
- *
- * This file may be distributed under the terms of the GNU General
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* Controlling the sensor via the STK1125 vendor specific control interface:
  * The camera uses an OmniVision sensor and the stk1125 provides an
  * SCCB(i2c)-USB bridge which let us program the sensor.

@@ -1,15 +1,20 @@
 /*
- * include/beep/nfsd/nfsfh.h
- *
- * This file describes the layout of the file handles as passed
- * over the wire.
- *
- * Earlier versions of knfsd used to sign file handles using keyed MD5
- * or SHA. I've removed this code, because it doesn't give you more
- * security than blocking external access to port 2049 on your firewall.
- *
- * Copyright (C) 1995, 1996, 1997 Olaf Kirch <okir@monad.swb.de>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _BEEP_NFSD_FH_H
 #define _BEEP_NFSD_FH_H
 

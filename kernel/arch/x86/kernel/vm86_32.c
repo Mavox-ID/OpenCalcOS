@@ -1,33 +1,20 @@
 /*
- *  Copyright (C) 1994  Linus Torvalds
- *
- *  29 dec 2001 - Fixed oopses caused by unchecked access to the vm86
- *                stack - Manfred Spraul <manfred@colorfullife.com>
- *
- *  22 mar 2002 - Manfred detected the stackfaults, but didn't handle
- *                them correctly. Now the emulation will be in a
- *                consistent state after stackfaults - Kasper Dupont
- *                <kasperd@daimi.au.dk>
- *
- *  22 mar 2002 - Added missing clear_IF in set_vflags_* Kasper Dupont
- *                <kasperd@daimi.au.dk>
- *
- *  ?? ??? 2002 - Fixed premature returns from handle_vm86_fault
- *                caused by Kasper Dupont's changes - Stas Sergeev
- *
- *   4 apr 2002 - Fixed CHECK_IF_IN_TRAP broken by Stas' changes.
- *                Kasper Dupont <kasperd@daimi.au.dk>
- *
- *   9 apr 2002 - Changed syntax of macros in handle_vm86_fault.
- *                Kasper Dupont <kasperd@daimi.au.dk>
- *
- *   9 apr 2002 - Changed stack access macros to jump to a label
- *                instead of returning to userspace. This simplifies
- *                do_int, and is needed by handle_vm6_fault. Kasper
- *                Dupont <kasperd@daimi.au.dk>
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/capability.h>

@@ -1,35 +1,20 @@
 /*
- * Copyright (C) 2008 Per Dalen <per.dalen@cnw.se>
- *
- * Parts of this software are based on (derived) the following:
- *
- * - Kvaser beep driver, version 4.72 BETA
- *   Copyright (C) 2002-2007 KVASER AB
- *
- * - Lincan driver, version 0.3.3, OCERA project
- *   Copyright (C) 2004 Pavel Pisa
- *   Copyright (C) 2001 Arnaud Westenberg
- *
- * - Socketcan SJA1000 drivers
- *   Copyright (C) 2007 Wolfgang Grandegger <wg@grandegger.com>
- *   Copyright (c) 2002-2007 Volkswagen Group Electronic Research
- *   Copyright (c) 2003 Matthias Brukner, Trajet Gmbh, Rebenring 33,
- *   38106 Braunschweig, GERMANY
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the version 2 of the GNU General Public License
- * as published by the Free Software Foundation
- *
- * This program is distributed in the hope that it will be useful, but
- * WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software Foundation,
- * Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/interrupt.h>

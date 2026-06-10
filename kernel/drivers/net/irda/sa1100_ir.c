@@ -1,23 +1,20 @@
 /*
- *  beep/drivers/net/irda/sa1100_ir.c
- *
- *  Copyright (C) 2000-2001 Russell King
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- *  Infra-red driver for the StrongARM SA1100 embedded microprocessor
- *
- *  Note that we don't have to worry about the SA1111's DMA bugs in here,
- *  so we use the straight forward dma_map_* functions with a null pointer.
- *
- *  This driver takes one kernel command line parameter, sa1100ir=, with
- *  the following options:
- *	max_rate:baudrate	- set the maximum baud rate
- *	power_level:level	- set the transmitter power level
- *	tx_lpm:0|1		- set transmit low power mode
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/moduleparam.h>
 #include <beep/types.h>

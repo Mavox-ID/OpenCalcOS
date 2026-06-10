@@ -1,24 +1,20 @@
 /*
- * beep/arch/arm/mach-pxa/mxm8x10.c
- *
- * Support for the Embedian MXM-8x10 Computer on Module
- *
- * Copyright (C) 2006 Marvell International Ltd.
- * Copyright (C) 2009 Embedian Inc.
- * Copyright (C) 2009 TMT Services & Supplies (Pty) Ltd.
- *
- * 2007-09-04: eric miao <eric.y.miao@gmail.com>
- *             rewrite to align with latest kernel
- *
- * 2010-01-09: Edwin Peer <epeer@tmtservices.co.za>
- * 	       Hennie van der Merwe <hvdmerwe@tmtservices.co.za>
- *             rework for upstream merge
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/serial_8250.h>
 #include <beep/dm9000.h>
 #include <beep/gpio.h>

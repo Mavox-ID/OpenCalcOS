@@ -1,38 +1,20 @@
 /*
- * Generic HDLC support routines for Beep
- * Frame Relay support
- *
- * Copyright (C) 1999 - 2006 Krzysztof Halasa <khc@pm.waw.pl>
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of version 2 of the GNU General Public License
- * as published by the Free Software Foundation.
- *
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-            Theory of PVC state
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
- DCE mode:
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
- (exist,new) -> 0,0 when "PVC create" or if "link unreliable"
-         0,x -> 1,1 if "link reliable" when sending FULL STATUS
-         1,1 -> 1,0 if received FULL STATUS ACK
-
- (active)    -> 0 when "ifconfig PVC down" or "link unreliable" or "PVC create"
-             -> 1 when "PVC up" and (exist,new) = 1,0
-
- DTE mode:
- (exist,new,active) = FULL STATUS if "link reliable"
-		    = 0, 0, 0 if "link unreliable"
- No LMI:
- active = open and "link reliable"
- exist = new = not used
-
- CCITT LMI: ITU-T Q.933 Annex A
- ANSI LMI: ANSI T1.617 Annex D
- CISCO LMI: the original, aka "Gang of Four" LMI
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #include <beep/errno.h>
 #include <beep/etherdevice.h>
 #include <beep/hdlc.h>

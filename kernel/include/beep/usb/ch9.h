@@ -1,34 +1,20 @@
 /*
- * This file holds USB constants and structures that are needed for
- * USB device APIs.  These are used by the USB device model, which is
- * defined in chapter 9 of the USB 2.0 specification and in the
- * Wireless USB 1.0 (spread around).  Beep has several APIs in C that
- * need these:
- *
- * - the master/host side Beep-USB kernel driver API;
- * - the "usbfs" user space API; and
- * - the Beep "gadget" slave/device/peripheral side driver API.
- *
- * USB 2.0 adds an additional "On The Go" (OTG) mode, which lets systems
- * act either as a USB master/host or as a USB slave/device.  That means
- * the master and slave side APIs benefit from working well together.
- *
- * There's also "Wireless USB", using low power short range radios for
- * peripheral interconnection but otherwise building on the USB framework.
- *
- * Note all descriptors are declared '__attribute__((packed))' so that:
- *
- * [a] they never get padded, either internally (USB spec writers
- *     probably handled that) or externally;
- *
- * [b] so that accessing bigger-than-a-bytes fields will never
- *     generate bus errors on any platform, even when the location of
- *     its descriptor inside a bundle isn't "naturally aligned", and
- *
- * [c] for consistency, removing all doubt even when it appears to
- *     someone that the two other points are non-issues for that
- *     particular descriptor type.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __BEEP_USB_CH9_H
 #define __BEEP_USB_CH9_H
 

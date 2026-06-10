@@ -1,45 +1,20 @@
 /*
- * beep/drivers/video/amifb.c -- Amiga builtin chipset frame buffer device
- *
- *    Copyright (C) 1995-2003 Geert Uytterhoeven
- *
- *          with work by Roman Zippel
- *
- *
- * This file is based on the Atari frame buffer device (atafb.c):
- *
- *    Copyright (C) 1994 Martin Schaller
- *                       Roman Hodek
- *
- *          with work by Andreas Schwab
- *                       Guenther Kelleter
- *
- * and on the original Amiga console driver (amicon.c):
- *
- *    Copyright (C) 1993 Hamish Macdonald
- *                       Greg Harp
- *    Copyright (C) 1994 David Carter [carter@compsci.bristol.ac.uk]
- *
- *          with work by William Rucklidge (wjr@cs.cornell.edu)
- *                       Geert Uytterhoeven
- *                       Jes Sorensen (jds@kom.auc.dk)
- *
- *
- * History:
- *
- *   - 24 Jul 96: Copper generates now vblank interrupt and
- *                VESA Power Saving Protocol is fully implemented
- *   - 14 Jul 96: Rework and hopefully last ECS bugs fixed
- *   -  7 Mar 96: Hardware sprite support by Roman Zippel
- *   - 18 Feb 96: OCS and ECS support by Roman Zippel
- *                Hardware functions completely rewritten
- *   -  2 Dec 95: AGA version by Geert Uytterhoeven
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License. See the file COPYING in the main directory of this archive
- * for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/errno.h>

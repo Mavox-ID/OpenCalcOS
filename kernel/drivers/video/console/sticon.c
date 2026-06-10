@@ -1,40 +1,20 @@
 /*
- *  beep/drivers/video/console/sticon.c - console driver using HP's STI firmware
- *
- *	Copyright (C) 2000 Philipp Rumpf <prumpf@tux.org>
- *	Copyright (C) 2002 Helge Deller <deller@gmx.de>
- *
- *  Based on beep/drivers/video/vgacon.c and beep/drivers/video/fbcon.c,
- *  which were
- *
- *	Created 28 Sep 1997 by Geert Uytterhoeven
- *	Rewritten by Martin Mares <mj@ucw.cz>, July 1998
- *	Copyright (C) 1991, 1992  Linus Torvalds
- *			    1995  Jay Estabrook
- *	Copyright (C) 1995 Geert Uytterhoeven
- *	Copyright (C) 1993 Bjoern Brauel
- *			   Roman Hodek
- *	Copyright (C) 1993 Hamish Macdonald
- *			   Greg Harp
- *	Copyright (C) 1994 David Carter [carter@compsci.bristol.ac.uk]
- *
- *	      with work by William Rucklidge (wjr@cs.cornell.edu)
- *			   Geert Uytterhoeven
- *			   Jes Sorensen (jds@kom.auc.dk)
- *			   Martin Apel
- *	      with work by Guenther Kelleter
- *			   Martin Schaller
- *			   Andreas Schwab
- *			   Emmanuel Marty (core@ggi-project.org)
- *			   Jakub Jelinek (jj@ultra.beep.cz)
- *			   Martin Mares <mj@ucw.cz>
- *
- *  This file is subject to the terms and conditions of the GNU General Public
- *  License.  See the file COPYING in the main directory of this archive for
- *  more details.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/kernel.h>
 #include <beep/console.h>

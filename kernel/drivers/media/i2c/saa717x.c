@@ -1,35 +1,20 @@
 /*
- * saa717x - Philips SAA717xHL video decoder driver
- *
- * Based on the saa7115 driver
- *
- * Changes by Ohta Kyuma <alpha292@bremen.or.jp>
- *    - Apply to SAA717x,NEC uPD64031,uPD64083. (1/31/2004)
- *
- * Changes by T.Adachi (tadachi@tadachi-net.com)
- *    - support audio, video scaler etc, and checked the initialize sequence.
- *
- * Cleaned up by Hans Verkuil <hverkuil@xs4all.nl>
- *
- * Note: this is a reversed engineered driver based on captures from
- * the I2C bus under Windows. This chip is very similar to the saa7134,
- * though. Unfortunately, this driver is currently only working for NTSC.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/slab.h>

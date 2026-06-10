@@ -1,21 +1,20 @@
 /*
- * comedi/drivers/pcl812.c
- *
- * Author: Michal Dobes <dobes@tesnet.cz>
- *
- * hardware driver for Advantech cards
- *  card:   PCL-812, PCL-812PG, PCL-813, PCL-813B
- *  driver: pcl812,  pcl812pg,  pcl813,  pcl813b
- * and for ADlink cards
- *  card:   ACL-8112DG, ACL-8112HG, ACL-8112PG, ACL-8113, ACL-8216
- *  driver: acl8112dg,  acl8112hg,  acl8112pg,  acl8113,  acl8216
- * and for ICP DAS cards
- *  card:   ISO-813, A-821PGH, A-821PGL, A-821PGL-NDA, A-822PGH, A-822PGL,
- *  driver: iso813,  a821pgh,  a-821pgl, a-821pglnda,  a822pgh,  a822pgl,
- *  card:   A-823PGH, A-823PGL, A-826PG
- * driver:  a823pgh,  a823pgl,  a826pg
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * Driver: pcl812
  * Description: Advantech PCL-812/PG, PCL-813/B,

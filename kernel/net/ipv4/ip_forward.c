@@ -1,24 +1,20 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the BEEP
- *		operating system.  INET is implemented using the  BSD Socket
- *		interface as the means of communication with the user level.
- *
- *		The IP forwarding functionality.
- *
- * Authors:	see ip.c
- *
- * Fixes:
- *		Many		:	Split from ip.c , see ip_input.c for
- *					history.
- *		Dave Gregorich	:	NULL ip_rt_put fix for multicast
- *					routing.
- *		Jos Vos		:	Add call_out_firewall before sending,
- *					use output device for accounting.
- *		Jos Vos		:	Call forward firewall after routing
- *					(always use output device).
- *		Mike McLagan	:	Routing by source
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/mm.h>
 #include <beep/skbuff.h>

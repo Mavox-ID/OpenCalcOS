@@ -1,24 +1,20 @@
 /*
- *  HID driver for multitouch panels
- *
- *  Copyright (c) 2010-2012 Stephane Chatty <chatty@enac.fr>
- *  Copyright (c) 2010-2012 Benjamin Tissoires <benjamin.tissoires@gmail.com>
- *  Copyright (c) 2010-2012 Ecole Nationale de l'Aviation Civile, France
- *
- *  This code is partly based on hid-egalax.c:
- *
- *  Copyright (c) 2010 Stephane Chatty <chatty@enac.fr>
- *  Copyright (c) 2010 Henrik Rydberg <rydberg@euromail.se>
- *  Copyright (c) 2010 Canonical, Ltd.
- *
- *  This code is partly based on hid-3m-pct.c:
- *
- *  Copyright (c) 2009-2010 Stephane Chatty <chatty@enac.fr>
- *  Copyright (c) 2010      Henrik Rydberg <rydberg@euromail.se>
- *  Copyright (c) 2010      Canonical, Ltd.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the Free

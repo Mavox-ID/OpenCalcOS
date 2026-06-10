@@ -1,24 +1,20 @@
 /*
- * beep/drivers/video/platinumfb-hw.c -- Frame buffer device for the
- * Platinum on-board video in PowerMac 7200s (and some clones based
- * on the same motherboard.)
- *
- *  Created 09 Feb 1998 by Jon Howell <jonh@cs.dartmouth.edu>
- *
- * Copyright (C) 1998 Jon Howell
- *
- *  based on drivers/macintosh/platinum.c: Console support
- * 	for PowerMac "platinum" display adaptor.
- *  Copyright (C) 1996 Paul Mackerras and Mark Abene.
- *
- *  based on skeletonfb.c:
- *  Created 28 Dec 1997 by Geert Uytterhoeven
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file COPYING in the main directory of this archive
- * for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * Structure of the registers for the DACula colormap device.
  */

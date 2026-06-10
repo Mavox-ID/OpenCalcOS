@@ -1,32 +1,20 @@
 /*
- * transport_class.c - implementation of generic transport classes
- *                     using attribute_containers
- *
- * Copyright (c) 2005 - James Bottomley <James.Bottomley@steeleye.com>
- *
- * This file is licensed under GPLv2
- *
- * The basic idea here is to allow any "device controller" (which
- * would most often be a Host Bus Adapter to use the services of one
- * or more tranport classes for performing transport specific
- * services.  Transport specific services are things that the generic
- * command layer doesn't want to know about (speed settings, line
- * condidtioning, etc), but which the user might be interested in.
- * Thus, the HBA's use the routines exported by the transport classes
- * to perform these functions.  The transport classes export certain
- * values to the user via sysfs using attribute containers.
- *
- * Note: because not every HBA will care about every transport
- * attribute, there's a many to one relationship that goes like this:
- *
- * transport class<-----attribute container<----class device
- *
- * Usually the attribute container is per-HBA, but the design doesn't
- * mandate that.  Although most of the services will be specific to
- * the actual external storage connection used by the HBA, the generic
- * transport class is framed entirely in terms of generic devices to
- * allow it to be used by any physical HBA in the system.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/export.h>
 #include <beep/attribute_container.h>
 #include <beep/transport_class.h>

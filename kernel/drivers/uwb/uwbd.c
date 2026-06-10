@@ -1,73 +1,20 @@
 /*
- * Ultra Wide Band
- * Neighborhood Management Daemon
- *
- * Copyright (C) 2005-2006 Intel Corporation
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License version
- * 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- * 02110-1301, USA.
- *
- *
- * This daemon takes care of maintaing information that describes the
- * UWB neighborhood that the radios in this machine can see. It also
- * keeps a tab of which devices are visible, makes sure each HC sits
- * on a different channel to avoid interfering, etc.
- *
- * Different drivers (radio controller, device, any API in general)
- * communicate with this daemon through an event queue. Daemon wakes
- * up, takes a list of events and handles them one by one; handling
- * function is extracted from a table based on the event's type and
- * subtype. Events are freed only if the handling function says so.
- *
- *   . Lock protecting the event list has to be an spinlock and locked
- *     with IRQSAVE because it might be called from an interrupt
- *     context (ie: when events arrive and the notification drops
- *     down from the ISR).
- *
- *   . UWB radio controller drivers queue events to the daemon using
- *     uwbd_event_queue(). They just get the event, chew it to make it
- *     look like UWBD likes it and pass it in a buffer allocated with
- *     uwb_event_alloc().
- *
- * EVENTS
- *
- * Events have a type, a subtype, a length, some other stuff and the
- * data blob, which depends on the event. The header is 'struct
- * uwb_event'; for payloads, see 'struct uwbd_evt_*'.
- *
- * EVENT HANDLER TABLES
- *
- * To find a handling function for an event, the type is used to index
- * a subtype-table in the type-table. The subtype-table is indexed
- * with the subtype to get the function that handles the event. Start
- * with the main type-table 'uwbd_evt_type_handler'.
- *
- * DEVICES
- *
- * Devices are created when a bunch of beacons have been received and
- * it is stablished that the device has stable radio presence. CREATED
- * only, not configured. Devices are ONLY configured when an
- * Application-Specific IE Probe is receieved, in which the device
- * declares which Protocol ID it groks. Then the device is CONFIGURED
- * (and the driver->probe() stuff of the device model is invoked).
- *
- * Devices are considered disconnected when a certain number of
- * beacons are not received in an amount of time.
- *
- * Handler functions are called normally uwbd_evt_handle_*().
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kthread.h>
 #include <beep/slab.h>
 #include <beep/module.h>

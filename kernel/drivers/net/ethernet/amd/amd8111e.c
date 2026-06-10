@@ -1,74 +1,20 @@
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-/* Advanced  Micro Devices Inc. AMD8111E Beep Network Driver
- * Copyright (C) 2004 Advanced Micro Devices
- *
- *
- * Copyright 2001,2002 Jeff Garzik <jgarzik@mandrakesoft.com> [ 8139cp.c,tg3.c ]
- * Copyright (C) 2001, 2002 David S. Miller (davem@redhat.com)[ tg3.c]
- * Copyright 1996-1999 Thomas Bogendoerfer [ pcnet32.c ]
- * Derived from the lance driver written 1993,1994,1995 by Donald Becker.
- * Copyright 1993 United States Government as represented by the
- *	Director, National Security Agency.[ pcnet32.c ]
- * Carsten Langgaard, carstenl@mips.com [ pcnet32.c ]
- * Copyright (C) 2000 MIPS Technologies, Inc.  All rights reserved.
- *
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307
- * USA
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-Module Name:
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-	amd8111e.c
-
-Abstract:
-
- 	 AMD8111 based 10/100 Ethernet Controller Driver.
-
-Environment:
-
-	Kernel Mode
-
-Revision History:
- 	3.0.0
-	   Initial Revision.
-	3.0.1
-	 1. Dynamic interrupt coalescing.
-	 2. Removed prev_stats.
-	 3. MII support.
-	 4. Dynamic IPG support
-	3.0.2  05/29/2003
-	 1. Bug fix: Fixed failure to send jumbo packets larger than 4k.
-	 2. Bug fix: Fixed VLAN support failure.
-	 3. Bug fix: Fixed receive interrupt coalescing bug.
-	 4. Dynamic IPG support is disabled by default.
-	3.0.3 06/05/2003
-	 1. Bug fix: Fixed failure to close the interface if SMP is enabled.
-	3.0.4 12/09/2003
-	 1. Added set_mac_address routine for bonding driver support.
-	 2. Tested the driver for bonding support
-	 3. Bug fix: Fixed mismach in actual receive buffer lenth and lenth
-	    indicated to the h/w.
-	 4. Modified amd8111e_rx() routine to receive all the received packets
-	    in the first interrupt.
-	 5. Bug fix: Corrected  rx_errors  reported in get_stats() function.
-	3.0.5 03/22/2004
-	 1. Added NAPI support
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
-
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/types.h>

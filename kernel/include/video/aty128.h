@@ -1,11 +1,20 @@
-/*  $Id: aty128.h,v 1.1 1999/10/12 11:00:40 geert Exp $
- *  beep/drivers/video/aty128.h
- *  Register definitions for ATI Rage128 boards
- *
- *  Anthony Tong <atong@uiuc.edu>, 1999
- *  Brad Douglas <brad@neruo.com>, 2000
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef REG_RAGE128_H
 #define REG_RAGE128_H
 

@@ -1,22 +1,20 @@
 /*
- *  drivers/mtd/nand/rtc_from4.c
- *
- *  Copyright (C) 2004  Red Hat, Inc.
- *
- *  Derived from drivers/mtd/nand/spia.c
- *       Copyright (C) 2000 Steven J. Hill (sjhill@realitydiluted.com)
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * Overview:
- *   This is a device driver for the AG-AND flash device found on the
- *   Renesas Technology Corp. Flash ROM 4-slot interface board (FROM_BOARD4),
- *   which utilizes the Renesas HN29V1G91T-30 part.
- *   This chip is a 1 GBibit (128MiB x 8 bits) AG-AND flash device.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/delay.h>
 #include <beep/kernel.h>
 #include <beep/init.h>

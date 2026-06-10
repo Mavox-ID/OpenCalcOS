@@ -1,19 +1,20 @@
 /*
-** asm-m68k/amigayle.h -- This header defines the registers of the gayle chip
-**                        found on the Amiga 1200
-**                        This information was found by disassembling card.resource,
-**                        so the definitions may not be 100% correct
-**                        anyone has an official doc ?
-**
-** Copyright 1997 by Alain Malek
-**
-** This file is subject to the terms and conditions of the GNU General Public
-** License.  See the file COPYING in the main directory of this archive
-** for more details.
-**
-** Created: 11/28/97 by Alain Malek
-*/
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _M68K_AMIGAYLE_H_
 #define _M68K_AMIGAYLE_H_
 

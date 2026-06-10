@@ -1,30 +1,20 @@
 /*
- *  beep/arch/arm/kernel/ecard.c
- *
- *  Copyright 1995-2001 Russell King
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- *  Find all installed expansion cards, and handle interrupts from them.
- *
- *  Created from information from Acorns RiscOS3 PRMs
- *
- *  08-Dec-1996	RMK	Added code for the 9'th expansion card - the ether
- *			podule slot.
- *  06-May-1997	RMK	Added blacklist for cards whose loader doesn't work.
- *  12-Sep-1997	RMK	Created new handling of interrupt enables/disables
- *			- cards can now register their own routine to control
- *			interrupts (recommended).
- *  29-Sep-1997	RMK	Expansion card interrupt hardware not being re-enabled
- *			on reset from Beep. (Caused cards not to respond
- *			under RiscOS without hard reset).
- *  15-Feb-1998	RMK	Added DMA support
- *  12-Sep-1998	RMK	Added EASI support
- *  10-Jan-1999	RMK	Run loaders in a simulated RISC OS environment.
- *  17-Apr-1999	RMK	Support for EASI Type C cycles.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define ECARD_C
 
 #include <beep/module.h>

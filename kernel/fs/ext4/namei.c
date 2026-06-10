@@ -1,29 +1,20 @@
 /*
- *  beep/fs/ext4/namei.c
- *
- * Copyright (C) 1992, 1993, 1994, 1995
- * Remy Card (card@masi.ibp.fr)
- * Laboratoire MASI - Institut Blaise Pascal
- * Universite Pierre et Marie Curie (Paris VI)
- *
- *  from
- *
- *  beep/fs/minix/namei.c
- *
- *  Copyright (C) 1991, 1992  Linus Torvalds
- *
- *  Big-endian to little-endian byte-swapping/bitmaps by
- *        David S. Miller (davem@caip.rutgers.edu), 1995
- *  Directory entry file type support and forward compatibility hooks
- *	for B-tree directories by Theodore Ts'o (tytso@mit.edu), 1998
- *  Hash Tree Directory indexing (c)
- *	Daniel Phillips, 2001
- *  Hash Tree Directory indexing porting
- *	Christopher Li, 2002
- *  Hash Tree Directory indexing cleanup
- *	Theodore Ts'o, 2002
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/fs.h>
 #include <beep/pagemap.h>
 #include <beep/jbd2.h>

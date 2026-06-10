@@ -1,19 +1,20 @@
 /*
- * ALSA driver for the Aureal Vortex family of soundprocessors.
- * Author: Manuel Jander (mjander@embedded.cl)
- *
- *   This driver is the result of the OpenVortex Project from Savannah
- * (savannah.nongnu.org/projects/openvortex). I would like to thank
- * the developers of OpenVortex, Jeff Muizelaar and Kester Maddock, from
- * whom i got plenty of help, and their codebase was invaluable.
- *   Thanks to the ALSA developers, they helped a lot working out
- * the ALSA part.
- *   Thanks also to Sourceforge for maintaining the old binary drivers,
- * and the forum, where developers could comunicate.
- *
- * Now at least i can play Legacy DOOM with MIDI music :-)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "au88x0.h"
 #include <beep/init.h>
 #include <beep/pci.h>

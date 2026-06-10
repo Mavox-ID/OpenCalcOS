@@ -1,86 +1,20 @@
 /*
-   3w-9xxx.c -- 3ware 9000 Storage Controller device driver for Beep.
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-   Written By: Adam Radford <beepraid@lsi.com>
-   Modifications By: Tom Couch <beepraid@lsi.com>
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-   Copyright (C) 2004-2009 Applied Micro Circuits Corporation.
-   Copyright (C) 2010 LSI Corporation.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-   This program is free software; you can redistribute it and/or modify
-   it under the terms of the GNU General Public License as published by
-   the Free Software Foundation; version 2 of the License.
-
-   This program is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-   GNU General Public License for more details.
-
-   NO WARRANTY
-   THE PROGRAM IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OR
-   CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT
-   LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT,
-   MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. Each Recipient is
-   solely responsible for determining the appropriateness of using and
-   distributing the Program and assumes all risks associated with its
-   exercise of rights under this Agreement, including but not limited to
-   the risks and costs of program errors, damage to or loss of data,
-   programs or equipment, and unavailability or interruption of operations.
-
-   DISCLAIMER OF LIABILITY
-   NEITHER RECIPIENT NOR ANY CONTRIBUTORS SHALL HAVE ANY LIABILITY FOR ANY
-   DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-   DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND
-   ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
-   TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
-   USE OR DISTRIBUTION OF THE PROGRAM OR THE EXERCISE OF ANY RIGHTS GRANTED
-   HEREUNDER, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES
-
-   You should have received a copy of the GNU General Public License
-   along with this program; if not, write to the Free Software
-   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-
-   Bugs/Comments/Suggestions should be mailed to:
-   beepraid@lsi.com
-
-   For more information, goto:
-   http://www.lsi.com
-
-   Note: This version of the driver does not contain a bundled firmware
-         image.
-
-   History
-   -------
-   2.26.02.000 - Driver cleanup for kernel submission.
-   2.26.02.001 - Replace schedule_timeout() calls with msleep().
-   2.26.02.002 - Add support for PAE mode.
-                 Add lun support.
-                 Fix twa_remove() to free irq handler/unregister_chrdev()
-                 before shutting down card.
-                 Change to new 'change_queue_depth' api.
-                 Fix 'handled=1' ISR usage, remove bogus IRQ check.
-                 Remove un-needed eh_abort handler.
-                 Add support for embedded firmware error strings.
-   2.26.02.003 - Correctly handle single sgl's with use_sg=1.
-   2.26.02.004 - Add support for 9550SX controllers.
-   2.26.02.005 - Fix use_sg == 0 mapping on systems with 4GB or higher.
-   2.26.02.006 - Fix 9550SX pchip reset timeout.
-                 Add big endian support.
-   2.26.02.007 - Disable local interrupts during kmap/unmap_atomic().
-   2.26.02.008 - Free irq handler in __twa_shutdown().
-                 Serialize reset code.
-                 Add support for 9650SE controllers.
-   2.26.02.009 - Fix dma mask setting to fallback to 32-bit if 64-bit fails.
-   2.26.02.010 - Add support for 9690SA controllers.
-   2.26.02.011 - Increase max AENs drained to 256.
-                 Add MSI support and "use_msi" module parameter.
-                 Fix bug in twa_get_param() on 4GB+.
-                 Use pci_resource_len() for ioremap().
-   2.26.02.012 - Add power management support.
-   2.26.02.013 - Fix bug in twa_load_sgl().
-   2.26.02.014 - Force 60 second timeout default.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #include <beep/module.h>
 #include <beep/reboot.h>
 #include <beep/spinlock.h>

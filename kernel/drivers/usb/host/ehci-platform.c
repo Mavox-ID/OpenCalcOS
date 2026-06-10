@@ -1,23 +1,20 @@
 /*
- * Generic platform ehci driver
- *
- * Copyright 2007 Steven Brown <sbrown@cortland.com>
- * Copyright 2010-2012 Hauke Mehrtens <hauke@hauke-m.de>
- *
- * Derived from the ohci-ssb driver
- * Copyright 2007 Michael Buesch <m@bues.ch>
- *
- * Derived from the EHCI-PCI driver
- * Copyright (c) 2000-2004 by David Brownell
- *
- * Derived from the ohci-pci driver
- * Copyright 1999 Roman Weissgaerber
- * Copyright 2000-2002 David Brownell
- * Copyright 1999 Linus Torvalds
- * Copyright 1999 Gregory P. Smith
- *
- * Licensed under the GNU/GPL. See COPYING for details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/hrtimer.h>
 #include <beep/io.h>

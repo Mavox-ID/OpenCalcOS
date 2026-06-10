@@ -1,15 +1,20 @@
-/* am7990 (lance) definitions
- *
- * This is an extension to the Beep operating system, and is covered by
- * same GNU General Public License that covers that work.
- *
- * Michael Hipp
- * email: mhipp@student.uni-tuebingen.de
- *
- * sources: (mail me or ask archie if you need them)
- *    crynwr-packet-driver
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * 	Control and Status Register 0 (CSR0) bit definitions
  * (R=Readable) (W=Writeable) (S=Set on write) (C-Clear on write)

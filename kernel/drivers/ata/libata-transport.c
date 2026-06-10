@@ -1,29 +1,20 @@
 /*
- *  Copyright 2008 ioogle, Inc.  All rights reserved.
- *	Released under GPL v2.
- *
- * Libata transport class.
- *
- * The ATA transport class contains common code to deal with ATA HBAs,
- * an approximated representation of ATA topologies in the driver model,
- * and various sysfs attributes to expose these topologies and management
- * interfaces to user-space.
- *
- * There are 3 objects defined in in this class:
- * - ata_port
- * - ata_link
- * - ata_device
- * Each port has a link object. Each link can have up to two devices for PATA
- * and generally one for SATA.
- * If there is SATA port multiplier [PMP], 15 additional ata_link object are
- * created.
- *
- * These objects are created when the ata host is initialized and when a PMP is
- * found. They are removed only when the HBA is removed, cleaned before the
- * error handler runs.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/blkdev.h>
 #include <beep/spinlock.h>

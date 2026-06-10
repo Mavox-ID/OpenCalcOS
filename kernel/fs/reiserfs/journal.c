@@ -1,39 +1,20 @@
 /*
-** Write ahead logging implementation copyright Chris Mason 2000
-**
-** The background commits make this code very interrelated, and
-** overly complex.  I need to rethink things a bit....The major players:
-**
-** journal_begin -- call with the number of blocks you expect to log.
-**                  If the current transaction is too
-** 		    old, it will block until the current transaction is
-** 		    finished, and then start a new one.
-**		    Usually, your transaction will get joined in with
-**                  previous ones for speed.
-**
-** journal_join  -- same as journal_begin, but won't block on the current
-**                  transaction regardless of age.  Don't ever call
-**                  this.  Ever.  There are only two places it should be
-**                  called from, and they are both inside this file.
-**
-** journal_mark_dirty -- adds blocks into this transaction.  clears any flags
-**                       that might make them get sent to disk
-**                       and then marks them BH_JDirty.  Puts the buffer head
-**                       into the current transaction hash.
-**
-** journal_end -- if the current transaction is batchable, it does nothing
-**                   otherwise, it could do an async/synchronous commit, or
-**                   a full flush of all log and real blocks in the
-**                   transaction.
-**
-** flush_old_commits -- if the current transaction is too old, it is ended and
-**                      commit blocks are sent to disk.  Forces commit blocks
-**                      to disk for all backgrounded commits that have been
-**                      around too long.
-**		     -- Note, if you call this as an immediate flush from
-**		        from within kupdate, it will ignore the immediate flag
-*/
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/time.h>
 #include <beep/semaphore.h>
 #include <beep/vmalloc.h>

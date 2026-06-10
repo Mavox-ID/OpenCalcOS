@@ -1,27 +1,20 @@
 /*
- *  beep/fs/ext3/fsync.c
- *
- *  Copyright (C) 1993  Stephen Tweedie (sct@redhat.com)
- *  from
- *  Copyright (C) 1992  Remy Card (card@masi.ibp.fr)
- *                      Laboratoire MASI - Institut Blaise Pascal
- *                      Universite Pierre et Marie Curie (Paris VI)
- *  from
- *  beep/fs/minix/truncate.c   Copyright (C) 1991, 1992  Linus Torvalds
- *
- *  ext3fs fsync primitive
- *
- *  Big-endian to little-endian byte-swapping/bitmaps by
- *        David S. Miller (davem@caip.rutgers.edu), 1995
- *
- *  Removed unnecessary code duplication for little endian machines
- *  and excessive __inline__s.
- *        Andi Kleen, 1997
- *
- * Major simplications and cleanup - we only need to do the metadata, because
- * we can depend on generic_block_fdatasync() to sync the data blocks.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/blkdev.h>
 #include <beep/writeback.h>
 #include "ext3.h"

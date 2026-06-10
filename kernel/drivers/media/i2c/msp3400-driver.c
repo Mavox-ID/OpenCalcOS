@@ -1,52 +1,20 @@
 /*
- * Programming the mspx4xx sound processor family
- *
- * (c) 1997-2001 Gerd Knorr <kraxel@bytesex.org>
- *
- * what works and what doesn't:
- *
- *  AM-Mono
- *      Support for Hauppauge cards added (decoding handled by tuner) added by
- *      Frederic Crozat <fcrozat@mail.dotcom.fr>
- *
- *  FM-Mono
- *      should work. The stereo modes are backward compatible to FM-mono,
- *      therefore FM-Mono should be allways available.
- *
- *  FM-Stereo (B/G, used in germany)
- *      should work, with autodetect
- *
- *  FM-Stereo (satellite)
- *      should work, no autodetect (i.e. default is mono, but you can
- *      switch to stereo -- untested)
- *
- *  NICAM (B/G, L , used in UK, Scandinavia, Spain and France)
- *      should work, with autodetect. Support for NICAM was added by
- *      Pekka Pietikainen <pp@netppl.fi>
- *
- * TODO:
- *   - better SAT support
- *
- * 980623  Thomas Sailer (sailer@ife.ee.ethz.ch)
- *         using soundcore instead of OSS
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- * 02110-1301, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/slab.h>

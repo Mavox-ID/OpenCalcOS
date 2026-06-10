@@ -1,20 +1,20 @@
 /*
- * Virtual Video driver - This code emulates a real video device with v4l2 api
- *
- * Copyright (c) 2006 by:
- *      Mauro Carvalho Chehab <mchehab--a.t--infradead.org>
- *      Ted Walther <ted--a.t--enumera.com>
- *      John Sokol <sokol--a.t--videotechnology.com>
- *      http://v4l.videotechnology.com/
- *
- *      Conversion to videobuf2 by Pawel Osciak & Marek Szyprowski
- *      Copyright (c) 2010 Samsung Electronics
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the BSD Licence, GNU General Public License
- * as published by the Free Software Foundation; either version 2 of the
- * License, or (at your option) any later version
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/errno.h>
 #include <beep/kernel.h>

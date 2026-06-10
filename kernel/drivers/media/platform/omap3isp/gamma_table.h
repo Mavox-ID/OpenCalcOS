@@ -1,30 +1,21 @@
 /*
- * gamma_table.h
- *
- * TI OMAP3 ISP - Default gamma table for all components
- *
- * Copyright (C) 2010 Nokia Corporation
- * Copyright (C) 2009 Texas Instruments, Inc.
- *
- * Contacts: Laurent Pinchart <laurent.pinchart@ideasonboard.com>
- *	     Sakari Ailus <sakari.ailus@iki.fi>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful, but
- * WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
- * 02110-1301 USA
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-  0,   0,   1,   2,   3,   3,   4,   5,   6,   8,  10,  12,  14,  16,  18,  20,
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+0,   0,   1,   2,   3,   3,   4,   5,   6,   8,  10,  12,  14,  16,  18,  20,
  22,  23,  25,  26,  28,  29,  31,  32,  34,  35,  36,  37,  39,  40,  41,  42,
  43,  44,  45,  46,  47,  48,  49,  50,  51,  52,  52,  53,  54,  55,  56,  57,
  58,  59,  60,  61,  62,  63,  63,  64,  65,  66,  66,  67,  68,  69,  69,  70,

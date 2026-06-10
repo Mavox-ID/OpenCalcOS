@@ -1,40 +1,20 @@
 /*
- *  toshiba_acpi.c - Toshiba Laptop ACPI Extras
- *
- *
- *  Copyright (C) 2002-2004 John Belmonte
- *  Copyright (C) 2008 Philip Langdale
- *  Copyright (C) 2010 Pierre Ducroquet
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *
- *
- *  The devolpment page for this driver is located at
- *  http://memebeam.org/toys/ToshibaAcpiDriver.
- *
- *  Credits:
- *	Jonathan A. Buzzard - Toshiba HCI info, and critical tips on reverse
- *		engineering the Windows drivers
- *	Yasushi Nagato - changes for beep kernel 2.4 -> 2.5
- *	Rob Miller - TV out and hotkeys help
- *
- *
- *  TODO
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #define TOSHIBA_ACPI_VERSION	"0.19"

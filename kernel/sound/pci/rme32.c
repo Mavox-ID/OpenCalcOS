@@ -1,74 +1,20 @@
 /*
- *   ALSA driver for RME Digi32, Digi32/8 and Digi32 PRO audio interfaces
- *
- *      Copyright (c) 2002-2004 Martin Langer <martin-langer@gmx.de>,
- *                              Pilo Chambert <pilo.c@wanadoo.fr>
- *
- *      Thanks to :        Anders Torger <torger@ludd.luth.se>,
- *                         Henk Hesselink <henk@anda.nl>
- *                         for writing the digi96-driver 
- *                         and RME for all informations.
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 2 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, write to the Free Software
- *   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- * 
- * 
- * ****************************************************************************
- * 
- * Note #1 "Sek'd models" ................................... martin 2002-12-07
- * 
- * Identical soundcards by Sek'd were labeled:
- * RME Digi 32     = Sek'd Prodif 32
- * RME Digi 32 Pro = Sek'd Prodif 96
- * RME Digi 32/8   = Sek'd Prodif Gold
- * 
- * ****************************************************************************
- * 
- * Note #2 "full duplex mode" ............................... martin 2002-12-07
- * 
- * Full duplex doesn't work. All cards (32, 32/8, 32Pro) are working identical
- * in this mode. Rec data and play data are using the same buffer therefore. At
- * first you have got the playing bits in the buffer and then (after playing
- * them) they were overwitten by the captured sound of the CS8412/14. Both 
- * modes (play/record) are running harmonically hand in hand in the same buffer
- * and you have only one start bit plus one interrupt bit to control this 
- * paired action.
- * This is opposite to the latter rme96 where playing and capturing is totally
- * separated and so their full duplex mode is supported by alsa (using two 
- * start bits and two interrupts for two different buffers). 
- * But due to the wrong sequence of playing and capturing ALSA shows no solved
- * full duplex support for the rme32 at the moment. That's bad, but I'm not
- * able to solve it. Are you motivated enough to solve this problem now? Your
- * patch would be welcome!
- * 
- * ****************************************************************************
- *
- * "The story after the long seeking" -- tiwai
- *
- * Ok, the situation regarding the full duplex is now improved a bit.
- * In the fullduplex mode (given by the module parameter), the hardware buffer
- * is split to halves for read and write directions at the DMA pointer.
- * That is, the half above the current DMA pointer is used for write, and
- * the half below is used for read.  To mangle this strange behavior, an
- * software intermediate buffer is introduced.  This is, of course, not good
- * from the viewpoint of the data transfer efficiency.  However, this allows
- * you to use arbitrary buffer sizes, instead of the fixed I/O buffer size.
- *
- * ****************************************************************************
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/delay.h>
 #include <beep/gfp.h>
 #include <beep/init.h>

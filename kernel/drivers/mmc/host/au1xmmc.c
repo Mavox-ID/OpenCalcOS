@@ -1,26 +1,20 @@
 /*
- * beep/drivers/mmc/host/au1xmmc.c - AU1XX0 MMC driver
- *
- *  Copyright (c) 2005, Advanced Micro Devices, Inc.
- *
- *  Developed with help from the 2.4.30 MMC AU1XXX controller including
- *  the following copyright notices:
- *     Copyright (c) 2003-2004 Embedded Edge, LLC.
- *     Portions Copyright (C) 2002 Embedix, Inc
- *     Copyright 2002 Hewlett-Packard Company
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
- *  2.6 version of this driver inspired by:
- *     (drivers/mmc/wbsd.c) Copyright (C) 2004-2005 Pierre Ossman,
- *     All Rights Reserved.
- *     (drivers/mmc/pxa.c) Copyright (C) 2003 Russell King,
- *     All Rights Reserved.
- *
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- */
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* Why don't we use the SD controllers' carddetect feature?
  *
  * From the AU1100 MMC application guide:

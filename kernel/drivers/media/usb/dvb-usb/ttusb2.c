@@ -1,27 +1,20 @@
-/* DVB USB compliant beep driver for Technotrend DVB USB boxes and clones
- * (e.g. Pinnacle 400e DVB-S USB2.0).
- *
- * The Pinnacle 400e uses the same protocol as the Technotrend USB1.1 boxes.
- *
- * TDA8263 + TDA10086
- *
- * I2C addresses:
- * 0x08 - LNBP21PD   - LNB power supply
- * 0x0e - TDA10086   - Demodulator
- * 0x50 - FX2 eeprom
- * 0x60 - TDA8263    - Tuner
- * 0x78 ???
- *
- * Copyright (c) 2002 Holger Waechtler <holger@convergence.de>
- * Copyright (c) 2003 Felix Domke <tmbinc@elitedvb.net>
- * Copyright (C) 2005-6 Patrick Boettcher <pb@beeptv.org>
- *
- *	This program is free software; you can redistribute it and/or modify it
- *	under the terms of the GNU General Public License as published by the Free
- *	Software Foundation, version 2.
- *
- * see Documentation/dvb/README.dvb-usb for more information
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define DVB_USB_LOG_PREFIX "ttusb2"
 #include "dvb-usb.h"
 

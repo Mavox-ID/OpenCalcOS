@@ -1,34 +1,20 @@
 /*
- * omap_vout.c
- *
- * Copyright (C) 2005-2010 Texas Instruments.
- *
- * This file is licensed under the terms of the GNU General Public License
- * version 2. This program is licensed "as is" without any warranty of any
- * kind, whether express or implied.
- *
- * Leveraged code from the OMAP2 camera driver
- * Video-for-Beep (Version 2) camera capture driver for
- * the OMAP24xx camera controller.
- *
- * Author: Andy Lowe (source@mvista.com)
- *
- * Copyright (C) 2004 MontaVista Software, Inc.
- * Copyright (C) 2010 Texas Instruments.
- *
- * History:
- * 20-APR-2006 Khasim		Modified VRFB based Rotation,
- *				The image data is always read from 0 degree
- *				view and written
- *				to the virtual space of desired rotation angle
- * 4-DEC-2006  Jian		Changed to support better memory management
- *
- * 17-Nov-2008 Hardik		Changed driver to use video_ioctl2
- *
- * 23-Feb-2010 Vaibhav H	Modified to use new DSS2 interface
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/module.h>
 #include <beep/vmalloc.h>

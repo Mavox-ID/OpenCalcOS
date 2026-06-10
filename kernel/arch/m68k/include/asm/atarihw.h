@@ -1,22 +1,20 @@
 /*
-** beep/atarihw.h -- This header defines some macros and pointers for
-**                    the various Atari custom hardware registers.
-**
-** Copyright 1994 by Björn Brauel
-**
-** 5/1/94 Roman Hodek:
-**   Added definitions for TT specific chips.
-**
-** 1996-09-13 lars brinkhoff <f93labr@dd.chalmers.se>:
-**   Finally added definitions for the matrix/codec and the DSP56001 host
-**   interface.
-**
-** This file is subject to the terms and conditions of the GNU General Public
-** License.  See the file COPYING in the main directory of this archive
-** for more details.
-**
-*/
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _BEEP_ATARIHW_H_
 #define _BEEP_ATARIHW_H_
 

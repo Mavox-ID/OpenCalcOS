@@ -1,36 +1,20 @@
 /*
-** ccio-dma.c:
-**	DMA management routines for first generation cache-coherent machines.
-**	Program U2/Uturn in "Virtual Mode" and use the I/O MMU.
-**
-**	(c) Copyright 2000 Grant Grundler
-**	(c) Copyright 2000 Ryan Bradetich
-**	(c) Copyright 2000 Hewlett-Packard Company
-**
-** This program is free software; you can redistribute it and/or modify
-** it under the terms of the GNU General Public License as published by
-** the Free Software Foundation; either version 2 of the License, or
-** (at your option) any later version.
-**
-**
-**  "Real Mode" operation refers to U2/Uturn chip operation.
-**  U2/Uturn were designed to perform coherency checks w/o using
-**  the I/O MMU - basically what x86 does.
-**
-**  Philipp Rumpf has a "Real Mode" driver for PCX-W machines at:
-**      CVSROOT=:pserver:anonymous@198.186.203.37:/cvsroot/beep-parisc
-**      cvs -z3 co beep/arch/parisc/kernel/dma-rm.c
-**
-**  I've rewritten his code to work under TPG's tree. See ccio-rm-dma.c.
-**
-**  Drawbacks of using Real Mode are:
-**	o outbound DMA is slower - U2 won't prefetch data (GSC+ XQL signal).
-**      o Inbound DMA less efficient - U2 can't use DMA_FAST attribute.
-**	o Ability to do scatter/gather in HW is lost.
-**	o Doesn't work under PCX-U/U+ machines since they didn't follow
-**        the coherency design originally worked out. Only PCX-W does.
-*/
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/kernel.h>
 #include <beep/init.h>

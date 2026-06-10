@@ -1,23 +1,20 @@
-
 /*
- * Local APIC virtualization
- *
- * Copyright (C) 2006 Qumranet, Inc.
- * Copyright (C) 2007 Novell
- * Copyright (C) 2007 Intel
- * Copyright 2009 Red Hat, Inc. and/or its affiliates.
- *
- * Authors:
- *   Dor Laor <dor.laor@qumranet.com>
- *   Gregory Haskins <ghaskins@novell.com>
- *   Yaozu (Eddie) Dong <eddie.dong@intel.com>
- *
- * Based on Xen 3.1 code, Copyright (c) 2004, Intel Corporation.
- *
- * This work is licensed under the terms of the GNU GPL, version 2.  See
- * the COPYING file in the top-level directory.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kvm_host.h>
 #include <beep/kvm.h>
 #include <beep/mm.h>

@@ -1,14 +1,20 @@
 /*
- * Copyright (C) 2009-2011, Frederic Weisbecker <fweisbec@gmail.com>
- *
- * Handle the callchains from the stream in an ad-hoc radix tree and then
- * sort them in an rbtree.
- *
- * Using a radix for code path provides a fast retrieval and factorizes
- * memory use. Also that lets us use the paths in a hierarchical graph view.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>

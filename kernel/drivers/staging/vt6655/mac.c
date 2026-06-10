@@ -1,73 +1,20 @@
 /*
- * Copyright (c) 1996, 2003 VIA Networking Technologies, Inc.
- * All rights reserved.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License along
- * with this program; if not, write to the Free Software Foundation, Inc.,
- * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
- *
- *
- * File: mac.c
- *
- * Purpose:  MAC routines
- *
- * Author: Tevin Chen
- *
- * Date: May 21, 1996
- *
- * Functions:
- *      MACvReadAllRegs - Read All MAC Registers to buffer
- *      MACbIsRegBitsOn - Test if All test Bits On
- *      MACbIsRegBitsOff - Test if All test Bits Off
- *      MACbIsIntDisable - Test if MAC interrupt disable
- *      MACbyReadMultiAddr - Read Multicast Address Mask Pattern
- *      MACvWriteMultiAddr - Write Multicast Address Mask Pattern
- *      MACvSetMultiAddrByHash - Set Multicast Address Mask by Hash value
- *      MACvResetMultiAddrByHash - Clear Multicast Address Mask by Hash value
- *      MACvSetRxThreshold - Set Rx Threshold value
- *      MACvGetRxThreshold - Get Rx Threshold value
- *      MACvSetTxThreshold - Set Tx Threshold value
- *      MACvGetTxThreshold - Get Tx Threshold value
- *      MACvSetDmaLength - Set Dma Length value
- *      MACvGetDmaLength - Get Dma Length value
- *      MACvSetShortRetryLimit - Set 802.11 Short Retry limit
- *      MACvGetShortRetryLimit - Get 802.11 Short Retry limit
- *      MACvSetLongRetryLimit - Set 802.11 Long Retry limit
- *      MACvGetLongRetryLimit - Get 802.11 Long Retry limit
- *      MACvSetLoopbackMode - Set MAC Loopback Mode
- *      MACbIsInLoopbackMode - Test if MAC in Loopback mode
- *      MACvSetPacketFilter - Set MAC Address Filter
- *      MACvSaveContext - Save Context of MAC Registers
- *      MACvRestoreContext - Restore Context of MAC Registers
- *      MACbCompareContext - Compare if values of MAC Registers same as Context
- *      MACbSoftwareReset - Software Reset MAC
- *      MACbSafeRxOff - Turn Off MAC Rx
- *      MACbSafeTxOff - Turn Off MAC Tx
- *      MACbSafeStop - Stop MAC function
- *      MACbShutdown - Shut down MAC
- *      MACvInitialize - Initialize MAC
- *      MACvSetCurrRxDescAddr - Set Rx Descriptors Address
- *      MACvSetCurrTx0DescAddr - Set Tx0 Descriptors Address
- *      MACvSetCurrTx1DescAddr - Set Tx1 Descriptors Address
- *      MACvTimer0MicroSDelay - Micro Second Delay Loop by MAC
- *
- * Revision History:
- *      08-22-2003 Kyle Hsu     :  Porting MAC functions from sim53
- *      09-03-2003 Bryan YC Fan :  Add MACvClearBusSusInd()& MACvEnableBusSusEn()
- *      09-18-2003 Jerry Chen   :  Add MACvSetKeyEntry & MACvDisableKeyEntry
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "tmacro.h"
 #include "tether.h"
 #include "mac.h"

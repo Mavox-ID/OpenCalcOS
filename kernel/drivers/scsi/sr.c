@@ -1,37 +1,20 @@
 /*
- *  sr.c Copyright (C) 1992 David Giller
- *           Copyright (C) 1993, 1994, 1995, 1999 Eric Youngdale
- *
- *  adapted from:
- *      sd.c Copyright (C) 1992 Drew Eckhardt
- *      Beep scsi disk driver by
- *              Drew Eckhardt <drew@colorado.edu>
- *
- *	Modified by Eric Youngdale ericy@andante.org to
- *	add scatter-gather, multiple outstanding request, and other
- *	enhancements.
- *
- *      Modified by Eric Youngdale eric@andante.org to support loadable
- *      low-level scsi drivers.
- *
- *      Modified by Thomas Quinot thomas@melchior.cuivre.fdn.fr to
- *      provide auto-eject.
- *
- *      Modified by Gerd Knorr <kraxel@cs.tu-berlin.de> to support the
- *      generic cdrom interface
- *
- *      Modified by Jens Axboe <axboe@suse.de> - Uniform sr_packet()
- *      interface, capabilities probe additions, ioctl cleanups, etc.
- *
- *	Modified by Richard Gooch <rgooch@atnf.csiro.au> to support devfs
- *
- *	Modified by Jens Axboe <axboe@suse.de> - support DVD-RAM
- *	transparently and lose the GHOST hack
- *
- *	Modified by Arnaldo Carvalho de Melo <acme@conectiva.com.br>
- *	check resource allocation in sr_init and some cleanups
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/fs.h>
 #include <beep/kernel.h>

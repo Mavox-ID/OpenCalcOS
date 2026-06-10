@@ -1,32 +1,20 @@
 /*
- * omap_hwmod macros, structures
- *
- * Copyright (C) 2009-2011 Nokia Corporation
- * Copyright (C) 2011-2012 Texas Instruments, Inc.
- * Paul Walmsley
- *
- * Created in collaboration with (alphabetical order): Benoît Cousson,
- * Kevin Hilman, Tony Lindgren, Rajendra Nayak, Vikram Pandita, Sakari
- * Poussa, Anand Sawant, Santosh Shilimkar, Richard Woodruff
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * These headers and macros are used to define OMAP on-chip module
- * data and their integration with other OMAP modules and Beep.
- * Copious documentation and references can also be found in the
- * omap_hwmod code, in arch/arm/mach-omap2/omap_hwmod.c (as of this
- * writing).
- *
- * To do:
- * - add interconnect error log structures
- * - add pinmuxing
- * - init_conn_id_bit (CONNID_BIT_VECTOR)
- * - implement default hwmod SMS/SDRC flags?
- * - move Beep-specific data ("non-ROM data") out
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __ARCH_ARM_PLAT_OMAP_INCLUDE_MACH_OMAP_HWMOD_H
 #define __ARCH_ARM_PLAT_OMAP_INCLUDE_MACH_OMAP_HWMOD_H
 

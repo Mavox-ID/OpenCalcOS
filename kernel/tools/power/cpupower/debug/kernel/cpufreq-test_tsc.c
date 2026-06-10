@@ -1,26 +1,20 @@
 /*
- * test module to check whether the TSC-based delay routine continues
- * to work properly after cpufreq transitions. Needs ACPI to work
- * properly.
- *
- * Based partly on the Power Management Timer (PMTMR) code to be found
- * in arch/i386/kernel/timers/timer_pm.c on recent 2.6. kernels, especially
- * code written by John Stultz. The read_pmtmr function was copied verbatim
- * from that file.
- *
- * (C) 2004 Dominik Brodowski
- *
- * To use:
- * 1.) pass clock=tsc to the kernel on your bootloader
- * 2.) modprobe this module (it'll fail)
- * 3.) change CPU frequency
- * 4.) modprobe this module again
- * 5.) if the third value, "diff_pmtmr", changes between 2. and 4., the
- *     TSC-based delay routine on the Beep kernel does not correctly
- *     handle the cpufreq transition. Please report this to
- *     cpufreq@vger.kernel.org
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/init.h>

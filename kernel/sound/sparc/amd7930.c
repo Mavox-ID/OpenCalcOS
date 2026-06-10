@@ -1,34 +1,20 @@
 /*
- * Driver for AMD7930 sound chips found on Sparcs.
- * Copyright (C) 2002, 2008 David S. Miller <davem@davemloft.net>
- *
- * Based entirely upon drivers/sbus/audio/amd7930.c which is:
- * Copyright (C) 1996,1997 Thomas K. Dyas (tdyas@eden.rutgers.edu)
- *
- * --- Notes from Thomas's original driver ---
- * This is the lowlevel driver for the AMD7930 audio chip found on all
- * sun4c machines and some sun4m machines.
- *
- * The amd7930 is actually an ISDN chip which has a very simple
- * integrated audio encoder/decoder. When Sun decided on what chip to
- * use for audio, they had the brilliant idea of using the amd7930 and
- * only connecting the audio encoder/decoder pins.
- *
- * Thanks to the AMD engineer who was able to get us the AMD79C30
- * databook which has all the programming information and gain tables.
- *
- * Advanced Micro Devices' Am79C30A is an ISDN/audio chip used in the
- * SparcStation 1+.  The chip provides microphone and speaker interfaces
- * which provide mono-channel audio at 8K samples per second via either
- * 8-bit A-law or 8-bit mu-law encoding.  Also, the chip features an
- * ISDN BRI Line Interface Unit (LIU), I.430 S/T physical interface,
- * which performs basic D channel LAPD processing and provides raw
- * B channel data.  The digital audio channel, the two ISDN B channels,
- * and two 64 Kbps channels to the microprocessor are all interconnected
- * via a multiplexer.
- * --- End of notes from Thoamas's original driver ---
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/slab.h>

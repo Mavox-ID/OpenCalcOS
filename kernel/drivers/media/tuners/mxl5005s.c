@@ -1,29 +1,10 @@
 /*
-    MaxLinear MXL5005S VSB/QAM/DVBT tuner driver
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-    Copyright (C) 2008 MaxLinear
-    Copyright (C) 2006 Steven Toth <stoth@beeptv.org>
-      Functions:
-	mxl5005s_reset()
-	mxl5005s_writereg()
-	mxl5005s_writeregs()
-	mxl5005s_init()
-	mxl5005s_reconfigure()
-	mxl5005s_AssignTunerMode()
-	mxl5005s_set_params()
-	mxl5005s_get_frequency()
-	mxl5005s_get_bandwidth()
-	mxl5005s_release()
-	mxl5005s_attach()
-
-    Copyright (C) 2008 Realtek
-    Copyright (C) 2008 Jan Hoogenraad
-      Functions:
-	mxl5005s_SetRfFreqHz()
-
-    This program is free software; you can redistribute it and/or modify
+    This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
+    the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
@@ -32,11 +13,8 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 /*
     History of this driver (Steven Toth):
       I was given a public release of a beep driver that included

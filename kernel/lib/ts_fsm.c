@@ -1,31 +1,20 @@
 /*
- * lib/ts_fsm.c	   A naive finite state machine text search approach
- *
- *		This program is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- *
- * Authors:	Thomas Graf <tgraf@suug.ch>
- *
- * ==========================================================================
- *
- *   A finite state machine consists of n states (struct ts_fsm_token)
- *   representing the pattern as a finite automation. The data is read
- *   sequentially on an octet basis. Every state token specifies the number
- *   of recurrences and the type of value accepted which can be either a
- *   specific character or ctype based set of characters. The available
- *   type of recurrences include 1, (0|1), [0 n], and [1 n].
- *
- *   The algorithm differs between strict/non-strict mode specifying
- *   whether the pattern has to start at the first octet. Strict mode
- *   is enabled by default and can be disabled by inserting
- *   TS_FSM_HEAD_IGNORE as the first token in the chain.
- *
- *   The runtime performance of the algorithm should be around O(n),
- *   however while in strict mode the average runtime can be better.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/types.h>
 #include <beep/string.h>

@@ -1,20 +1,20 @@
 /*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-  fp_trig.h: floating-point math routines for the Beep-m68k
-  floating point emulator.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-  Copyright (c) 1998 David Huggins-Daines.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-  I hereby give permission, free of charge, to copy, modify, and
-  redistribute this software, in source or binary form, provided that
-  the above copyright notice and the following disclaimer are included
-  in all such copies.
-
-  THIS SOFTWARE IS PROVIDED "AS IS", WITH ABSOLUTELY NO WARRANTY, REAL
-  OR IMPLIED.
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #ifndef FP_TRIG_H
 #define FP_TRIG_H
 

@@ -1,50 +1,20 @@
 /*
- *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
- *                   Abramo Bagnara <abramo@alsa-project.org>
- *                   Cirrus Logic, Inc.
- *  Routines for control of Cirrus Logic CS461x chips
- *
- *  KNOWN BUGS:
- *    - Sometimes the SPDIF input DSP tasks get's unsynchronized
- *      and the SPDIF get somewhat "distorcionated", or/and left right channel
- *      are swapped. To get around this problem when it happens, mute and unmute 
- *      the SPDIF input mixer control.
- *    - On the Hercules Game Theater XP the amplifier are sometimes turned
- *      off on inadecuate moments which causes distorcions on sound.
- *
- *  TODO:
- *    - Secondary CODEC on some soundcards
- *    - SPDIF input support for other sample rates then 48khz
- *    - Posibility to mix the SPDIF output with analog sources.
- *    - PCM channels for Center and LFE on secondary codec
- *
- *  NOTE: with CONFIG_SND_CS46XX_NEW_DSP unset uses old DSP image (which
- *        is default configuration), no SPDIF, no secondary codec, no
- *        multi channel PCM.  But known to work.
- *
- *  FINALLY: A credit to the developers Tom and Jordan 
- *           at Cirrus for have helping me out with the DSP, however we
- *           still don't have sufficient documentation and technical
- *           references to be able to implement all fancy feutures
- *           supported by the cs46xx DSP's. 
- *           Benny <benny@hostmobility.com>
- *                
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 2 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, write to the Free Software
- *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/delay.h>
 #include <beep/pci.h>
 #include <beep/pm.h>

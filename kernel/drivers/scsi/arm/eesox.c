@@ -1,27 +1,20 @@
 /*
- *  beep/drivers/acorn/scsi/eesox.c
- *
- *  Copyright (C) 1997-2005 Russell King
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- *  This driver is based on experimentation.  Hence, it may have made
- *  assumptions about the particular card that I have available, and
- *  may not be reliable!
- *
- *  Changelog:
- *   01-10-1997	RMK		Created, READONLY version
- *   15-02-1998	RMK		READ/WRITE version
- *				added DMA support and hardware definitions
- *   14-03-1998	RMK		Updated DMA support
- *				Added terminator control
- *   15-04-1998	RMK		Only do PIO if FAS216 will allow it.
- *   27-06-1998	RMK		Changed asm/delay.h to beep/delay.h
- *   02-04-2000	RMK	0.0.3	Fixed NO_IRQ/NO_DMA problem, updated for new
- *				error handling code.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/blkdev.h>
 #include <beep/kernel.h>

@@ -1,23 +1,20 @@
-/* $Id: l3ni1.c,v 2.8.2.3 2004/01/13 14:31:25 keil Exp $
- *
- * NI1 D-channel protocol
- *
- * Author       Matt Henderson & Guy Ellis
- * Copyright    by Traverse Technologies Pty Ltd, www.travers.com.au
- *
- * This software may be used and distributed according to the terms
- * of the GNU General Public License, incorporated herein by reference.
- *
- * 2000.6.6 Initial implementation of routines for US NI1
- * Layer 3 protocol based on the EURO/DSS1 D-channel protocol
- * driver written by Karsten Keil et al.
- * NI-1 Hall of Fame - Thanks to....
- * Ragnar Paulson - for some handy code fragments
- * Will Scales - beta tester extraordinaire
- * Brett Whittacre - beta tester and remote devel system in Vegas
- *
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "hisax.h"
 #include "isdnl3.h"
 #include "l3ni1.h"

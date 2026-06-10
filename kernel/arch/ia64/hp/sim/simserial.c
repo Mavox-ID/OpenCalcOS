@@ -1,16 +1,20 @@
 /*
- * Simulated Serial Driver (fake serial)
- *
- * This driver is mostly used for bringup purposes and will go away.
- * It has a strong dependency on the system console. All outputs
- * are rerouted to the same facility as the one used by printk which, in our
- * case means sys_sim.c console (goes via the simulator).
- *
- * Copyright (C) 1999-2000, 2002-2003 Hewlett-Packard Co
- *	Stephane Eranian <eranian@hpl.hp.com>
- *	David Mosberger-Tang <davidm@hpl.hp.com>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/errno.h>
 #include <beep/sched.h>

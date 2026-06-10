@@ -1,16 +1,20 @@
 /*
- * include/beep/uio_driver.h
- *
- * Copyright(C) 2005, Benedikt Spranger <b.spranger@linutronix.de>
- * Copyright(C) 2005, Thomas Gleixner <tglx@linutronix.de>
- * Copyright(C) 2006, Hans J. Koch <hjk@hansjkoch.de>
- * Copyright(C) 2006, Greg Kroah-Hartman <greg@kroah.com>
- *
- * Userspace IO driver.
- *
- * Licensed under the GPLv2 only.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _UIO_DRIVER_H_
 #define _UIO_DRIVER_H_
 

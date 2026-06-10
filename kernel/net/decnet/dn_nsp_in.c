@@ -1,36 +1,20 @@
 /*
- * DECnet       An implementation of the DECnet protocol suite for the BEEP
- *              operating system.  DECnet is implemented using the  BSD Socket
- *              interface as the means of communication with the user level.
- *
- *              DECnet Network Services Protocol (Input)
- *
- * Author:      Eduardo Marcelo Serrat <emserrat@geocities.com>
- *
- * Changes:
- *
- *    Steve Whitehouse:  Split into dn_nsp_in.c and dn_nsp_out.c from
- *                       original dn_nsp.c.
- *    Steve Whitehouse:  Updated to work with my new routing architecture.
- *    Steve Whitehouse:  Add changes from Eduardo Serrat's patches.
- *    Steve Whitehouse:  Put all ack handling code in a common routine.
- *    Steve Whitehouse:  Put other common bits into dn_nsp_rx()
- *    Steve Whitehouse:  More checks on skb->len to catch bogus packets
- *                       Fixed various race conditions and possible nasties.
- *    Steve Whitehouse:  Now handles returned conninit frames.
- *     David S. Miller:  New socket locking
- *    Steve Whitehouse:  Fixed lockup when socket filtering was enabled.
- *         Paul Koning:  Fix to push CC sockets into RUN when acks are
- *                       received.
- *    Steve Whitehouse:
- *   Patrick Caulfield:  Checking conninits for correctness & sending of error
- *                       responses.
- *    Steve Whitehouse:  Added backlog congestion level return codes.
- *   Patrick Caulfield:
- *    Steve Whitehouse:  Added flow control support (outbound)
- *    Steve Whitehouse:  Prepare for nonlinear skbs
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /******************************************************************************
     (c) 1995-1998 E.M. Serrat		emserrat@geocities.com
 

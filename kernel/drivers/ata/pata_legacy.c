@@ -1,63 +1,20 @@
 /*
- *   pata-legacy.c - Legacy port PATA/SATA controller driver.
- *   Copyright 2005/2006 Red Hat, all rights reserved.
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2, or (at your option)
- *  any later version.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; see the file COPYING.  If not, write to
- *  the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
- *
- *   An ATA driver for the legacy ATA ports.
- *
- *   Data Sources:
- *	Opti 82C465/82C611 support: Data sheets at opti-inc.com
- *	HT6560 series:
- *	Promise 20230/20620:
- *		http://www.ryston.cz/petr/vlb/pdc20230b.html
- *		http://www.ryston.cz/petr/vlb/pdc20230c.html
- *		http://www.ryston.cz/petr/vlb/pdc20630.html
- *	QDI65x0:
- *		http://www.ryston.cz/petr/vlb/qd6500.html
- *		http://www.ryston.cz/petr/vlb/qd6580.html
- *
- *	QDI65x0 probe code based on drivers/ide/legacy/qd65xx.c
- *	Rewritten from the work of Colten Edwards <pje120@cs.usask.ca> by
- *	Samuel Thibault <samuel.thibault@ens-lyon.org>
- *
- *  Unsupported but docs exist:
- *	Appian/Adaptec AIC25VL01/Cirrus Logic PD7220
- *
- *  This driver handles legacy (that is "ISA/VLB side") IDE ports found
- *  on PC class systems. There are three hybrid devices that are exceptions
- *  The Cyrix 5510/5520 where a pre SFF ATA device is on the bridge and
- *  the MPIIX where the tuning is PCI side but the IDE is "ISA side".
- *
- *  Specific support is included for the ht6560a/ht6560b/opti82c611a/
- *  opti82c465mv/promise 20230c/20630/qdi65x0/winbond83759A
- *
- *  Support for the Winbond 83759A when operating in advanced mode.
- *  Multichip mode is not currently supported.
- *
- *  Use the autospeed and pio_mask options with:
- *	Appian ADI/2 aka CLPD7220 or AIC25VL01.
- *  Use the jumpers, autospeed and set pio_mask to the mode on the jumpers with
- *	Goldstar GM82C711, PIC-1288A-125, UMC 82C871F, Winbond W83759,
- *	Winbond W83759A, Promise PDC20230-B
- *
- *  For now use autospeed and pio_mask as above with the W83759A. This may
- *  change.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/async.h>
 #include <beep/kernel.h>
 #include <beep/module.h>

@@ -1,40 +1,20 @@
 /*
- * lib/ts_bm.c		Boyer-Moore text search implementation
- *
- *		This program is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- *
- * Authors:	Pablo Neira Ayuso <pablo@eurodev.net>
- *
- * ==========================================================================
- * 
- *   Implements Boyer-Moore string matching algorithm:
- *
- *   [1] A Fast String Searching Algorithm, R.S. Boyer and Moore.
- *       Communications of the Association for Computing Machinery, 
- *       20(10), 1977, pp. 762-772.
- *       http://www.cs.utexas.edu/users/moore/publications/fstrpos.pdf
- *
- *   [2] Handbook of Exact String Matching Algorithms, Thierry Lecroq, 2004
- *       http://www-igm.univ-mlv.fr/~lecroq/string/string.pdf
- *
- *   Note: Since Boyer-Moore (BM) performs searches for matchings from right 
- *   to left, it's still possible that a matching could be spread over 
- *   multiple blocks, in that case this algorithm won't find any coincidence.
- *   
- *   If you're willing to ensure that such thing won't ever happen, use the
- *   Knuth-Pratt-Morris (KMP) implementation instead. In conclusion, choose 
- *   the proper string search algorithm depending on your setting. 
- *
- *   Say you're using the textsearch infrastructure for filtering, NIDS or 
- *   any similar security focused purpose, then go KMP. Otherwise, if you 
- *   really care about performance, say you're classifying packets to apply
- *   Quality of Service (QoS) policies, and you don't mind about possible
- *   matchings spread over multiple fragments, then go BM.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/types.h>

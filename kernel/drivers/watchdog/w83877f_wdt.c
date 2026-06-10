@@ -1,47 +1,20 @@
 /*
- *	W83877F Computer Watchdog Timer driver
- *
- *      Based on acquirewdt.c by Alan Cox,
- *           and sbc60xxwdt.c by Jakob Oestergaard <jakob@unthought.net>
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- *
- *	The authors do NOT admit liability nor provide warranty for
- *	any of this software. This material is provided "AS-IS" in
- *      the hope that it may be useful for others.
- *
- *	(c) Copyright 2001    Scott Jennings <beepdrivers@oro.net>
- *
- *           4/19 - 2001      [Initial revision]
- *           9/27 - 2001      Added spinlocking
- *           4/12 - 2002      [rob@osinvestor.com] Eliminate extra comments
- *                            Eliminate fop_read
- *                            Eliminate extra spin_unlock
- *                            Added KERN_* tags to printks
- *                            add CONFIG_WATCHDOG_NOWAYOUT support
- *                            fix possible wdt_is_open race
- *                            changed watchdog_info to correctly reflect what
- *			      the driver offers
- *                            added WDIOC_GETSTATUS, WDIOC_GETBOOTSTATUS,
- *			      WDIOC_SETTIMEOUT,
- *                            WDIOC_GETTIMEOUT, and WDIOC_SETOPTIONS ioctls
- *           09/8 - 2003      [wim@iguana.be] cleanup of trailing spaces
- *                            added extra printk's for startup problems
- *                            use module_param
- *                            made timeout (the emulated heartbeat) a
- *			      module_param
- *                            made the keepalive ping an internal subroutine
- *
- *  This WDT driver is different from most other Beep WDT
- *  drivers in that the driver will ping the watchdog by itself,
- *  because this particular WDT has a very short timeout (1.6
- *  seconds) and it would be insane to count on any userspace
- *  daemon always getting scheduled within that time frame.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

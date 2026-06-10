@@ -1,28 +1,20 @@
 /*
- * sonic.c
- *
- * (C) 2005 Finn Thain
- *
- * Converted to DMA API, added zero-copy buffer handling, and
- * (from the mac68k project) introduced dhd's support for 16-bit cards.
- *
- * (C) 1996,1998 by Thomas Bogendoerfer (tsbogend@alpha.franken.de)
- *
- * This driver is based on work from Andreas Busse, but most of
- * the code is rewritten.
- *
- * (C) 1995 by Andreas Busse (andy@waldorf-gmbh.de)
- *
- *    Core code included by system sonic drivers
- *
- * And... partially rewritten again by David Huggins-Daines in order
- * to cope with screwed up Macintosh NICs that may or may not use
- * 16-bit DMA.
- *
- * (C) 1999 David Huggins-Daines <dhd@debian.org>
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * Sources: Olivetti M700-10 Risc Personal Computer hardware handbook,
  * National Semiconductors data sheet for the DP83932B Sonic Ethernet

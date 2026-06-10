@@ -1,37 +1,20 @@
 /*
- *  Floating proportions with flexible aging period
- *
- *   Copyright (C) 2011, SUSE, Jan Kara <jack@suse.cz>
- *
- * The goal of this code is: Given different types of event, measure proportion
- * of each type of event over time. The proportions are measured with
- * exponentially decaying history to give smooth transitions. A formula
- * expressing proportion of event of type 'j' is:
- *
- *   p_{j} = (\Sum_{i>=0} x_{i,j}/2^{i+1})/(\Sum_{i>=0} x_i/2^{i+1})
- *
- * Where x_{i,j} is j's number of events in i-th last time period and x_i is
- * total number of events in i-th last time period.
- *
- * Note that p_{j}'s are normalised, i.e.
- *
- *   \Sum_{j} p_{j} = 1,
- *
- * This formula can be straightforwardly computed by maintaing denominator
- * (let's call it 'd') and for each event type its numerator (let's call it
- * 'n_j'). When an event of type 'j' happens, we simply need to do:
- *   n_j++; d++;
- *
- * When a new period is declared, we could do:
- *   d /= 2
- *   for each j
- *     n_j /= 2
- *
- * To avoid iteration over all event types, we instead shift numerator of event
- * j lazily when someone asks for a proportion of event j or when event j
- * occurs. This can bit trivially implemented by remembering last period in
- * which something happened with proportion of type j.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/flex_proportions.h>
 
 int fprop_global_init(struct fprop_global *p)

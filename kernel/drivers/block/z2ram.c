@@ -1,30 +1,20 @@
 /*
-** z2ram - Amiga pseudo-driver to access 16bit-RAM in ZorroII space
-**         as a block device, to be used as a RAM disk or swap space
-** 
-** Copyright (C) 1994 by Ingo Wilken (Ingo.Wilken@informatik.uni-oldenburg.de)
-**
-** ++Geert: support for zorro_unused_z2ram, better range checking
-** ++roman: translate accesses via an array
-** ++Milan: support for ChipRAM usage
-** ++yambo: converted to 2.0 kernel
-** ++yambo: modularized and support added for 3 minor devices including:
-**          MAJOR  MINOR  DESCRIPTION
-**          -----  -----  ----------------------------------------------
-**          37     0       Use Zorro II and Chip ram
-**          37     1       Use only Zorro II ram
-**          37     2       Use only Chip ram
-**          37     4-7     Use memory list entry 1-4 (first is 0)
-** ++jskov: support for 1-4th memory list entry.
-**
-** Permission to use, copy, modify, and distribute this software and its
-** documentation for any purpose and without fee is hereby granted, provided
-** that the above copyright notice appear in all copies and that both that
-** copyright notice and this permission notice appear in supporting
-** documentation.  This software is provided "as is" without express or
-** implied warranty.
-*/
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define DEVICE_NAME "Z2RAM"
 
 #include <beep/major.h>

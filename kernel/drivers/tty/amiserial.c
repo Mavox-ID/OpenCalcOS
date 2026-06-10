@@ -1,26 +1,20 @@
 /*
- * Serial driver for the amiga builtin port.
- *
- * This code was created by taking serial.c version 4.30 from kernel
- * release 2.3.22, replacing all hardware related stuff with the
- * corresponding amiga hardware actions, and removing all irrelevant
- * code. As a consequence, it uses many of the constants and names
- * associated with the registers and bits of 16550 compatible UARTS -
- * but only to keep track of status, etc in the state variables. It
- * was done this was to make it easier to keep the code in line with
- * (non hardware specific) changes to serial.c.
- *
- * The port is registered with the tty driver as minor device 64, and
- * therefore other ports should should only use 65 upwards.
- *
- * Richard Lucock 28/12/99
- *
- *  Copyright (C) 1991, 1992  Linus Torvalds
- *  Copyright (C) 1992, 1993, 1994, 1995, 1996, 1997, 
- * 		1998, 1999  Theodore Ts'o
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * Serial driver configuration section.  Here are the various options:
  *

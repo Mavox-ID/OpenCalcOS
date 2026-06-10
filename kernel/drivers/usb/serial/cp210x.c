@@ -1,18 +1,20 @@
 /*
- * Silicon Laboratories CP210x USB to RS232 serial adaptor driver
- *
- * Copyright (C) 2005 Craig Shelley (craig@microtron.org.uk)
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License version
- *	2 as published by the Free Software Foundation.
- *
- * Support to set flow control line levels using TIOCMGET and TIOCMSET
- * thanks to Karl Hiramoto karl@hiramoto.org. RTSCTS hardware flow
- * control thanks to Munir Nassar nassarmu@real-time.com
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/errno.h>
 #include <beep/slab.h>

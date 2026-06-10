@@ -1,36 +1,20 @@
 /*
- * Definitions for Belkin USB Serial Adapter Driver
- *
- *  Copyright (C) 2000
- *      William Greathouse (wgreathouse@smva.com)
- *
- *  This program is largely derived from work by the beep-usb group
- *  and associated source files.  Please see the usb/serial files for
- *  individual credits and copyrights.
- *
- *	This program is free software; you can redistribute it and/or modify
- *	it under the terms of the GNU General Public License as published by
- *	the Free Software Foundation; either version 2 of the License, or
- *	(at your option) any later version.
- *
- * See Documentation/usb/usb-serial.txt for more information on using this
- * driver
- *
- * 12-Mar-2001 gkh
- *	Added GoHubs GO-COM232 device id.
- *
- * 06-Nov-2000 gkh
- *	Added old Belkin and Peracom device ids, which this driver supports
- *
- * 12-Oct-2000 William Greathouse
- *    First cut at supporting Belkin USB Serial Adapter F5U103
- *    I did not have a copy of the original work to support this
- *    adapter, so pardon any stupid mistakes.  All of the information
- *    I am using to write this driver was acquired by using a modified
- *    UsbSnoop on Windows2000.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __BEEP_USB_SERIAL_BSA_H
 #define __BEEP_USB_SERIAL_BSA_H
 

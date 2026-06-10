@@ -1,45 +1,20 @@
 /*
- * Copyright © 2012 NetCommWireless
- * Iwo Mergler <Iwo.Mergler@netcommwireless.com.au>
- *
- * Test for multi-bit error recovery on a NAND page This mostly tests the
- * ECC controller / driver.
- *
- * There are two test modes:
- *
- *	0 - artificially inserting bit errors until the ECC fails
- *	    This is the default method and fairly quick. It should
- *	    be independent of the quality of the FLASH.
- *
- *	1 - re-writing the same pattern repeatedly until the ECC fails.
- *	    This method relies on the physics of NAND FLASH to eventually
- *	    generate '0' bits if '1' has been written sufficient times.
- *	    Depending on the NAND, the first bit errors will appear after
- *	    1000 or more writes and then will usually snowball, reaching the
- *	    limits of the ECC quickly.
- *
- *	    The test stops after 10000 cycles, should your FLASH be
- *	    exceptionally good and not generate bit errors before that. Try
- *	    a different page in that case.
- *
- * Please note that neither of these tests will significantly 'use up' any
- * FLASH endurance. Only a maximum of two erase operations will be performed.
- *
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License version 2 as published by
- * the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
- * FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
- * more details.
- *
- * You should have received a copy of the GNU General Public License along with
- * this program; see the file COPYING. If not, write to the Free Software
- * Foundation, 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
 #include <beep/init.h>

@@ -1,18 +1,20 @@
 /*
- * Touchscreen driver for the tps6507x chip.
- *
- * Copyright (c) 2009 RidgeRun (todd.fischer@ridgerun.com)
- *
- * Credits:
- *
- *    Using code from tsc2007, MtekVision Co., Ltd.
- *
- * For licencing details see kernel-base/COPYING
- *
- * TPS65070, TPS65073, TPS650731, and TPS650732 support
- * 10 bit touch screen interface.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/workqueue.h>
 #include <beep/slab.h>

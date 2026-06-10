@@ -1,33 +1,20 @@
 /*
-  USB Driver for GSM modems
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-  Copyright (C) 2005  Matthias Urlichs <smurf@smurf.noris.de>
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-  This driver is free software; you can redistribute it and/or modify
-  it under the terms of Version 2 of the GNU General Public License as
-  published by the Free Software Foundation.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-  Portions copied from the Keyspan driver by Hugh Blemings <hugh@blemings.org>
-
-  History: see the git log.
-
-  Work sponsored by: Sigos GmbH, Germany <info@sigos.de>
-
-  This driver exists because the "normal" serial driver doesn't work too well
-  with GSM modems. Issues:
-  - data loss -- one single Receive URB is not nearly enough
-  - nonstandard flow (Option devices) control
-  - controlling the baud rate doesn't make sense
-
-  This driver is named "option" because the most common device it's
-  used for is a PC-Card (with an internal OHCI-USB interface, behind
-  which the GSM interface sits), made by Option Inc.
-
-  Some of the "one port" devices actually exhibit multiple USB instances
-  on the USB bus. This is not a bug, these ports are used for different
-  device features.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #define DRIVER_AUTHOR "Matthias Urlichs <smurf@smurf.noris.de>"
 #define DRIVER_DESC "USB Driver for GSM modems"
 

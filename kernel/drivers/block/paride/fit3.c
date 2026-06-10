@@ -1,22 +1,20 @@
-/* 
-        fit3.c        (c) 1998  Grant R. Guenther <grant@torque.net>
-                          Under the terms of the GNU General Public License.
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-	fit3.c is a low-level protocol driver for newer models 
-        of the Fidelity International Technology parallel port adapter.  
-	This adapter is used in their TransDisk 3000 portable 
-	hard-drives, as well as CD-ROM, PD-CD and other devices.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-	The TD-2000 and certain older devices use a different protocol.
-	Try the fit2 protocol module with them.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-        NB:  The FIT adapters do not appear to support the control 
-	registers.  So, we map ALT_STATUS to STATUS and NO-OP writes 
-	to the device control register - this means that IDE reset 
-	will not work on these devices.
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #define FIT3_VERSION      "1.0"
 
 #include <beep/module.h>

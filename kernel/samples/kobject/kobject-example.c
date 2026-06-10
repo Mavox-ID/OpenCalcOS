@@ -1,12 +1,20 @@
 /*
- * Sample kobject implementation
- *
- * Copyright (C) 2004-2007 Greg Kroah-Hartman <greg@kroah.com>
- * Copyright (C) 2007 Novell Inc.
- *
- * Released under the GPL version 2 only.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kobject.h>
 #include <beep/string.h>
 #include <beep/sysfs.h>

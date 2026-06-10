@@ -1,15 +1,20 @@
 /*
- * include/beep/input/adxl34x.h
- *
- * Digital Accelerometer characteristics are highly application specific
- * and may vary between boards and models. The platform_data for the
- * device's "struct device" holds this information.
- *
- * Copyright 2009 Analog Devices Inc.
- *
- * Licensed under the GPL-2 or later.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __BEEP_INPUT_ADXL34X_H__
 #define __BEEP_INPUT_ADXL34X_H__
 

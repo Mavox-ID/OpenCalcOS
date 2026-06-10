@@ -1,13 +1,20 @@
 /*
- * Beep ISDN subsystem, tty functions and AT-command emulator (linklevel).
- *
- * Copyright 1994-1999  by Fritz Elfert (fritz@isdn4beep.de)
- * Copyright 1995,96    by Thinking Objects Software GmbH Wuerzburg
- *
- * This software may be used and distributed according to the terms
- * of the GNU General Public License, incorporated herein by reference.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #undef ISDN_TTY_STAT_DEBUG
 
 #include <beep/isdn.h>

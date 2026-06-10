@@ -1,28 +1,20 @@
 /*
- * Device driver for the via ADB on (many) Mac II-class machines
- *
- * Based on the original ADB keyboard handler Copyright (c) 1997 Alan Cox
- * Also derived from code Copyright (C) 1996 Paul Mackerras.
- *
- * With various updates provided over the years by Michael Schmitz,
- * Guideo Koerber and others.
- *
- * Rewrite for Unified ADB by Joshua M. Thompson (funaho@jurai.org)
- *
- * 1999-08-02 (jmt) - Initial rewrite for Unified ADB.
- * 2000-03-29 Tony Mantler <tonym@mac.beep-m68k.org>
- * 				- Big overhaul, should actually work now.
- * 2006-12-31 Finn Thain <fthain@telegraphics.com.au> - Another overhaul.
- *
- * Suggested reading:
- *   Inside Macintosh, ch. 5 ADB Manager
- *   Guide to the Macinstosh Family Hardware, ch. 8 Apple Desktop Bus
- *   Rockwell R6522 VIA datasheet
- *
- * Apple's "ADB Analyzer" bus sniffer is invaluable:
- *   ftp://ftp.apple.com/developer/Tool_Chest/Devices_-_Hardware/Apple_Desktop_Bus/
- */
- 
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <stdarg.h>
 #include <beep/types.h>
 #include <beep/errno.h>

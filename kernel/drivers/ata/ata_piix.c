@@ -1,88 +1,20 @@
 /*
- *    ata_piix.c - Intel PATA/SATA controllers
- *
- *    Maintained by:  Jeff Garzik <jgarzik@pobox.com>
- *    		    Please ALWAYS copy beep-ide@vger.kernel.org
- *		    on emails.
- *
- *
- *	Copyright 2003-2005 Red Hat Inc
- *	Copyright 2003-2005 Jeff Garzik
- *
- *
- *	Copyright header from piix.c:
- *
- *  Copyright (C) 1998-1999 Andrzej Krzysztofowicz, Author and Maintainer
- *  Copyright (C) 1998-2000 Andre Hedrick <andre@beep-ide.org>
- *  Copyright (C) 2003 Red Hat Inc
- *
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2, or (at your option)
- *  any later version.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; see the file COPYING.  If not, write to
- *  the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
- *
- *
- *  libata documentation is available via 'make {ps|pdf}docs',
- *  as Documentation/DocBook/libata.*
- *
- *  Hardware documentation available at http://developer.intel.com/
- *
- * Documentation
- *	Publicly available from Intel web site. Errata documentation
- * is also publicly available. As an aide to anyone hacking on this
- * driver the list of errata that are relevant is below, going back to
- * PIIX4. Older device documentation is now a bit tricky to find.
- *
- * The chipsets all follow very much the same design. The original Triton
- * series chipsets do _not_ support independent device timings, but this
- * is fixed in Triton II. With the odd mobile exception the chips then
- * change little except in gaining more modes until SATA arrives. This
- * driver supports only the chips with independent timing (that is those
- * with SITRE and the 0x44 timing register). See pata_oldpiix and pata_mpiix
- * for the early chip drivers.
- *
- * Errata of note:
- *
- * Unfixable
- *	PIIX4    errata #9	- Only on ultra obscure hw
- *	ICH3	 errata #13     - Not observed to affect real hw
- *				  by Intel
- *
- * Things we must deal with
- *	PIIX4	errata #10	- BM IDE hang with non UDMA
- *				  (must stop/start dma to recover)
- *	440MX   errata #15	- As PIIX4 errata #10
- *	PIIX4	errata #15	- Must not read control registers
- * 				  during a PIO transfer
- *	440MX   errata #13	- As PIIX4 errata #15
- *	ICH2	errata #21	- DMA mode 0 doesn't work right
- *	ICH0/1  errata #55	- As ICH2 errata #21
- *	ICH2	spec c #9	- Extra operations needed to handle
- *				  drive hotswap [NOT YET SUPPORTED]
- *	ICH2    spec c #20	- IDE PRD must not cross a 64K boundary
- *				  and must be dword aligned
- *	ICH2    spec c #24	- UDMA mode 4,5 t85/86 should be 6ns not 3.3
- *	ICH7	errata #16	- MWDMA1 timings are incorrect
- *
- * Should have been BIOS fixed:
- *	450NX:	errata #19	- DMA hangs on old 450NX
- *	450NX:  errata #20	- DMA hangs on old 450NX
- *	450NX:  errata #25	- Corruption with DMA on old 450NX
- *	ICH3    errata #15      - IDE deadlock under high load
- *				  (BIOS must set dev 31 fn 0 bit 23)
- *	ICH3	errata #18	- Don't use native mode
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/pci.h>

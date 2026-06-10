@@ -1,20 +1,20 @@
 /*
- *	FILE    	SA-1100.h
- *
- *	Version 	1.2
- *	Author  	Copyright (c) Marc A. Viredaz, 1998
- *	        	DEC Western Research Laboratory, Palo Alto, CA
- *	Date    	January 1998 (April 1997)
- *	System  	StrongARM SA-1100
- *	Language	C or ARM Assembly
- *	Purpose 	Definition of constants related to the StrongARM
- *	        	SA-1100 microprocessor (Advanced RISC Machine (ARM)
- *	        	architecture version 4). This file is based on the
- *	        	StrongARM SA-1100 data sheet version 2.2.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* Be sure that virtual mapping is defined right */
 #ifndef __ASM_ARCH_HARDWARE_H
 #error You must include hardware.h not SA-1100.h

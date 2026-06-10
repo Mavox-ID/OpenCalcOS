@@ -1,33 +1,20 @@
 /*
- * Driver for Silicon Labs C8051F300 microcontroller.
- *
- * It is used for LNB power control in TeVii S470,
- * TBS 6920 PCIe DVB-S2 cards.
- *
- * Microcontroller connected to cx23885 GPIO pins:
- * GPIO0 - data		- P0.3 F300
- * GPIO1 - reset	- P0.2 F300
- * GPIO2 - clk		- P0.1 F300
- * GPIO3 - busy		- P0.0 F300
- *
- * Copyright (C) 2009 Igor M. Liplianin <liplianin@me.by>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "cx23885.h"
 #include "cx23885-f300.h"
 

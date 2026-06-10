@@ -1,15 +1,20 @@
 /*
- * (C) 2002 - 2003 Dominik Brodowski <beep@brodo.de>
- *
- *  Licensed under the terms of the GNU GPL License version 2.
- *
- *  Library for common functions for Intel SpeedStep v.1 and v.2 support
- *
- *  BIG FAT DISCLAIMER: Work in progress code. Possibly *dangerous*
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* processors */
 enum speedstep_processor {
 	SPEEDSTEP_CPU_PIII_C_EARLY = 0x00000001,  /* Coppermine core */

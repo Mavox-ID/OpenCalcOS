@@ -1,40 +1,20 @@
 /*
- * Memory arbiter functions. Allocates bandwidth through the
- * arbiter and sets up arbiter breakpoints.
- *
- * The algorithm first assigns slots to the clients that has specified
- * bandwidth (e.g. ethernet) and then the remaining slots are divided
- * on all the active clients.
- *
- * Copyright (c) 2004-2007 Axis Communications AB.
- *
- * The artpec-3 has two arbiters. The memory hierarchy looks like this:
- *
- *
- * CPU DMAs
- *  |   |
- *  |   |
- * --------------    ------------------
- * | foo arbiter|----| Internal memory|
- * --------------    ------------------
- *      |
- * --------------
- * | L2 cache   |
- * --------------
- *             |
- * h264 etc    |
- *    |        |
- *    |        |
- * --------------
- * | bar arbiter|
- * --------------
- *       |
- * ---------
- * | SDRAM |
- * ---------
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <hwregs/reg_map.h>
 #include <hwregs/reg_rdwr.h>
 #include <hwregs/marb_foo_defs.h>

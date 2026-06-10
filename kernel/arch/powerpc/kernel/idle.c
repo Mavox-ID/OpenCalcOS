@@ -1,24 +1,20 @@
 /*
- * Idle daemon for PowerPC.  Idle daemon will handle any action
- * that needs to be taken when the system becomes idle.
- *
- * Originally written by Cort Dougan (cort@cs.nmt.edu).
- * Subsequent 32-bit hacking by Tom Rini, Armin Kuster,
- * Paul Mackerras and others.
- *
- * iSeries supported added by Mike Corrigan <mikejc@us.ibm.com>
- *
- * Additional shared processor, SMT, and firmware support
- *    Copyright (c) 2003 Dave Engebretsen <engebret@us.ibm.com>
- *
- * 32-bit and 64-bit versions merged by Paul Mackerras <paulus@samba.org>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version
- * 2 of the License, or (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/sched.h>
 #include <beep/kernel.h>
 #include <beep/smp.h>

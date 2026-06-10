@@ -1,33 +1,20 @@
 /*
- * A driver for the Griffin Technology, Inc. "PowerMate" USB controller dial.
- *
- * v1.1, (c)2002 William R Sowerbutts <will@sowerbutts.com>
- *
- * This device is a anodised aluminium knob which connects over USB. It can measure
- * clockwise and anticlockwise rotation. The dial also acts as a pushbutton with
- * a spring for automatic release. The base contains a pair of LEDs which illuminate
- * the translucent base. It rotates without limit and reports its relative rotation
- * back to the host when polled by the USB controller.
- *
- * Testing with the knob I have has shown that it measures approximately 94 "clicks"
- * for one full rotation. Testing with my High Speed Rotation Actuator (ok, it was
- * a variable speed cordless electric drill) has shown that the device can measure
- * speeds of up to 7 clicks either clockwise or anticlockwise between pollings from
- * the host. If it counts more than 7 clicks before it is polled, it will wrap back
- * to zero and start counting again. This was at quite high speed, however, almost
- * certainly faster than the human hand could turn it. Griffin say that it loses a
- * pulse or two on a direction change; the granularity is so fine that I never
- * noticed this in practice.
- *
- * The device's microcontroller can be programmed to set the LED to either a constant
- * intensity, or to a rhythmic pulsing. Several patterns and speeds are available.
- *
- * Griffin were very happy to provide documentation and free hardware for development.
- *
- * Some userspace tools are available on the web: http://sowerbutts.com/powermate/
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/slab.h>
 #include <beep/module.h>

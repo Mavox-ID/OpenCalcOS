@@ -1,54 +1,20 @@
 /*
- * Copyright (c) 1996, 2003 VIA Networking Technologies, Inc.
- * All rights reserved.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License along
- * with this program; if not, write to the Free Software Foundation, Inc.,
- * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
- *
- *
- * File: baseband.c
- *
- * Purpose: Implement functions to access baseband
- *
- * Author: Kyle Hsu
- *
- * Date: Aug.22, 2002
- *
- * Functions:
- *      BBuGetFrameTime        - Calculate data frame transmitting time
- *      BBvCaculateParameter   - Caculate PhyLength, PhyService and Phy Signal parameter for baseband Tx
- *      BBbReadEmbedded         - Embedded read baseband register via MAC
- *      BBbWriteEmbedded        - Embedded write baseband register via MAC
- *      BBbIsRegBitsOn         - Test if baseband register bits on
- *      BBbIsRegBitsOff        - Test if baseband register bits off
- *      BBbVT3253Init          - VIA VT3253 baseband chip init code
- *      BBvReadAllRegs         - Read All Baseband Registers
- *      BBvLoopbackOn          - Turn on BaseBand Loopback mode
- *      BBvLoopbackOff         - Turn off BaseBand Loopback mode
- *
- * Revision History:
- *      06-10-2003 Bryan YC Fan:  Re-write codes to support VT3253 spec.
- *      08-07-2003 Bryan YC Fan:  Add MAXIM2827/2825 and RFMD2959 support.
- *      08-26-2003 Kyle Hsu    :  Modify BBuGetFrameTime() and BBvCalculateParameter().
- *                                cancel the setting of MAC_REG_SOFTPWRCTL on BBbVT3253Init().
- *                                Add the comments.
- *      09-01-2003 Bryan YC Fan:  RF & BB tables updated.
- *                                Modified BBvLoopbackOn & BBvLoopbackOff().
- *
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "tmacro.h"
 #include "tether.h"
 #include "mac.h"

@@ -1,98 +1,20 @@
-/************************************************************
- * EFI GUID Partition Table handling
- *
- * http://www.uefi.org/specs/
- * http://www.intel.com/technology/efi/
- *
- * efi.[ch] by Matt Domsch <Matt_Domsch@dell.com>
- *   Copyright 2000,2001,2002,2004 Dell Inc.
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *
- *
- * TODO:
- *
- * Changelog:
- * Mon Nov 09 2004 Matt Domsch <Matt_Domsch@dell.com>
- * - test for valid PMBR and valid PGPT before ever reading
- *   AGPT, allow override with 'gpt' kernel command line option.
- * - check for first/last_usable_lba outside of size of disk
- *
- * Tue  Mar 26 2002 Matt Domsch <Matt_Domsch@dell.com>
- * - Ported to 2.5.7-pre1 and 2.5.7-dj2
- * - Applied patch to avoid fault in alternate header handling
- * - cleaned up find_valid_gpt
- * - On-disk structure and copy in memory is *always* LE now - 
- *   swab fields as needed
- * - remove print_gpt_header()
- * - only use first max_p partition entries, to keep the kernel minor number
- *   and partition numbers tied.
- *
- * Mon  Feb 04 2002 Matt Domsch <Matt_Domsch@dell.com>
- * - Removed __PRIPTR_PREFIX - not being used
- *
- * Mon  Jan 14 2002 Matt Domsch <Matt_Domsch@dell.com>
- * - Ported to 2.5.2-pre11 + library crc32 patch Linus applied
- *
- * Thu Dec 6 2001 Matt Domsch <Matt_Domsch@dell.com>
- * - Added compare_gpts().
- * - moved le_efi_guid_to_cpus() back into this file.  GPT is the only
- *   thing that keeps EFI GUIDs on disk.
- * - Changed gpt structure names and members to be simpler and more Beep-like.
- * 
- * Wed Oct 17 2001 Matt Domsch <Matt_Domsch@dell.com>
- * - Removed CONFIG_DEVFS_VOLUMES_UUID code entirely per Martin Wilck
- *
- * Wed Oct 10 2001 Matt Domsch <Matt_Domsch@dell.com>
- * - Changed function comments to DocBook style per Andreas Dilger suggestion.
- *
- * Mon Oct 08 2001 Matt Domsch <Matt_Domsch@dell.com>
- * - Change read_lba() to use the page cache per Al Viro's work.
- * - print u64s properly on all architectures
- * - fixed debug_printk(), now Dprintk()
- *
- * Mon Oct 01 2001 Matt Domsch <Matt_Domsch@dell.com>
- * - Style cleanups
- * - made most functions static
- * - Endianness addition
- * - remove test for second alternate header, as it's not per spec,
- *   and is unnecessary.  There's now a method to read/write the last
- *   sector of an odd-sized disk from user space.  No tools have ever
- *   been released which used this code, so it's effectively dead.
- * - Per Asit Mallick of Intel, added a test for a valid PMBR.
- * - Added kernel command line option 'gpt' to override valid PMBR test.
- *
- * Wed Jun  6 2001 Martin Wilck <Martin.Wilck@Fujitsu-Siemens.com>
- * - added devfs volume UUID support (/dev/volumes/uuids) for
- *   mounting file systems by the partition GUID. 
- *
- * Tue Dec  5 2000 Matt Domsch <Matt_Domsch@dell.com>
- * - Moved crc32() to beep/lib, added efi_crc32().
- *
- * Thu Nov 30 2000 Matt Domsch <Matt_Domsch@dell.com>
- * - Replaced Intel's CRC32 function with an equivalent
- *   non-license-restricted version.
- *
- * Wed Oct 25 2000 Matt Domsch <Matt_Domsch@dell.com>
- * - Fixed the last_lba() call to return the proper last block
- *
- * Thu Oct 12 2000 Matt Domsch <Matt_Domsch@dell.com>
- * - Thanks to Andries Brouwer for his debugging assistance.
- * - Code works, detects all the partitions.
- *
- ************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/crc32.h>
 #include <beep/ctype.h>
 #include <beep/math64.h>

@@ -1,28 +1,20 @@
-/* sercos3: UIO driver for the Automata Sercos III PCI card
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-   Copyright (C) 2008 Linutronix GmbH
-     Author: John Ogness <john.ogness@linutronix.de>
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-   This is a straight-forward UIO driver, where interrupts are disabled
-   by the interrupt handler and re-enabled via a write to the UIO device
-   by the userspace-part.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-   The only part that may seem odd is the use of a logical OR when
-   storing and restoring enabled interrupts. This is done because the
-   userspace-part could directly modify the Interrupt Enable Register
-   at any time. To reduce possible conflicts, the kernel driver uses
-   a logical OR to make more controlled changes (rather than blindly
-   overwriting previous values).
-
-   Race conditions exist if the userspace-part directly modifies the
-   Interrupt Enable Register while in operation. The consequences are
-   that certain interrupts would fail to be enabled or disabled. For
-   this reason, the userspace-part should only directly modify the
-   Interrupt Enable Register at the beginning (to get things going).
-   The userspace-part can safely disable interrupts at any time using
-   a write to the UIO device.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #include <beep/device.h>
 #include <beep/module.h>
 #include <beep/pci.h>

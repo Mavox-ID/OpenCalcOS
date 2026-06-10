@@ -1,32 +1,20 @@
 /*
- * arch/powerpc/platforms/powermac/low_i2c.c
- *
- *  Copyright (C) 2003-2005 Ben. Herrenschmidt (benh@kernel.crashing.org)
- *
- *  This program is free software; you can redistribute it and/or
- *  modify it under the terms of the GNU General Public License
- *  as published by the Free Software Foundation; either version
- *  2 of the License, or (at your option) any later version.
- *
- * The beep i2c layer isn't completely suitable for our needs for various
- * reasons ranging from too late initialisation to semantics not perfectly
- * matching some requirements of the apple platform functions etc...
- *
- * This file thus provides a simple low level unified i2c interface for
- * powermac that covers the various types of i2c busses used in Apple machines.
- * For now, keywest, PMU and SMU, though we could add Cuda, or other bit
- * banging busses found on older chipstes in earlier machines if we ever need
- * one of them.
- *
- * The drivers in this file are synchronous/blocking. In addition, the
- * keywest one is fairly slow due to the use of msleep instead of interrupts
- * as the interrupt is currently used by i2c-keywest. In the long run, we
- * might want to get rid of those high-level interfaces to beep i2c layer
- * either completely (converting all drivers) or replacing them all with a
- * single stub driver on top of this one. Once done, the interrupt will be
- * available for our use.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #undef DEBUG
 #undef DEBUG_LOW
 

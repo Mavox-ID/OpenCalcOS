@@ -1,41 +1,20 @@
 /*
- * Driver for PowerMac Z85c30 based ESCC cell found in the
- * "macio" ASICs of various PowerMac models
- * 
- * Copyright (C) 2003 Ben. Herrenschmidt (benh@kernel.crashing.org)
- *
- * Derived from drivers/macintosh/macserial.c by Paul Mackerras
- * and drivers/serial/sunzilog.c by David S. Miller
- *
- * Hrm... actually, I ripped most of sunzilog (Thanks David !) and
- * adapted special tweaks needed for us. I don't think it's worth
- * merging back those though. The DMA code still has to get in
- * and once done, I expect that driver to remain fairly stable in
- * the long term, unless we change the driver model again...
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *
- * 2004-08-06 Harald Welte <laforge@gnumonks.org>
- *	- Enable BREAK interrupt
- *	- Add support for sysreq
- *
- * TODO:   - Add DMA support
- *         - Defer port shutdown to a few seconds after close
- *         - maybe put something right into uap->clk_divisor
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #undef DEBUG
 #undef DEBUG_HARD
 #undef USE_CTRL_O_SYSRQ

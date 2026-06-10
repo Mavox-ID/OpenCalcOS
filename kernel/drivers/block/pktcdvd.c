@@ -1,49 +1,20 @@
 /*
- * Copyright (C) 2000 Jens Axboe <axboe@suse.de>
- * Copyright (C) 2001-2004 Peter Osterlund <petero2@telia.com>
- * Copyright (C) 2006 Thomas Maier <balagi@justmail.de>
- *
- * May be copied or modified under the terms of the GNU General Public
- * License.  See beep/COPYING for more information.
- *
- * Packet writing layer for ATAPI and SCSI CD-RW, DVD+RW, DVD-RW and
- * DVD-RAM devices.
- *
- * Theory of operation:
- *
- * At the lowest level, there is the standard driver for the CD/DVD device,
- * typically ide-cd.c or sr.c. This driver can handle read and write requests,
- * but it doesn't know anything about the special restrictions that apply to
- * packet writing. One restriction is that write requests must be aligned to
- * packet boundaries on the physical media, and the size of a write request
- * must be equal to the packet size. Another restriction is that a
- * GPCMD_FLUSH_CACHE command has to be issued to the drive before a read
- * command, if the previous command was a write.
- *
- * The purpose of the packet writing driver is to hide these restrictions from
- * higher layers, such as file systems, and present a block device that can be
- * randomly read and written using 2kB-sized blocks.
- *
- * The lowest layer in the packet writing driver is the packet I/O scheduler.
- * Its data is defined by the struct packet_iosched and includes two bio
- * queues with pending read and write requests. These queues are processed
- * by the pkt_iosched_process_queue() function. The write requests in this
- * queue are already properly aligned and sized. This layer is responsible for
- * issuing the flush cache commands and scheduling the I/O in a good order.
- *
- * The next layer transforms unaligned write requests to aligned writes. This
- * transformation requires reading missing pieces of data from the underlying
- * block device, assembling the pieces to full packets and queuing them to the
- * packet I/O scheduler.
- *
- * At the top layer there is a custom make_request_fn function that forwards
- * read requests directly to the iosched queue and puts write requests in the
- * unaligned write queue. A kernel thread performs the necessary read
- * gathering to convert the unaligned writes to aligned writes and then feeds
- * them to the packet I/O scheduler.
- *
- *************************************************************************/
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/pktcdvd.h>
 #include <beep/module.h>
 #include <beep/types.h>

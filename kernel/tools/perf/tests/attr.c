@@ -1,24 +1,20 @@
-
 /*
- * The struct perf_event_attr test support.
- *
- * This test is embedded inside into perf directly and is governed
- * by the PERF_TEST_ATTR environment variable and hook inside
- * sys_perf_event_open function.
- *
- * The general idea is to store 'struct perf_event_attr' details for
- * each event created within single perf command. Each event details
- * are stored into separate text file. Once perf command is finished
- * these files can be checked for values we expect for command.
- *
- * Besides 'struct perf_event_attr' values we also store 'fd' and
- * 'group_fd' values to allow checking for groups created.
- *
- * This all is triggered by setting PERF_TEST_ATTR environment variable.
- * It must contain name of existing directory with access and write
- * permissions. All the event text files are stored there.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <stdlib.h>
 #include <stdio.h>
 #include <inttypes.h>

@@ -1,43 +1,20 @@
 /*
- * beep/fs/nfs/direct.c
- *
- * Copyright (C) 2003 by Chuck Lever <cel@netapp.com>
- *
- * High-performance uncached I/O for the Beep NFS client
- *
- * There are important applications whose performance or correctness
- * depends on uncached access to file data.  Database clusters
- * (multiple copies of the same instance running on separate hosts)
- * implement their own cache coherency protocol that subsumes file
- * system cache protocols.  Applications that process datasets
- * considerably larger than the client's memory do not always benefit
- * from a local cache.  A streaming video server, for instance, has no
- * need to cache the contents of a file.
- *
- * When an application requests uncached I/O, all read and write requests
- * are made directly to the server; data stored or fetched via these
- * requests is not cached in the Beep page cache.  The client does not
- * correct unaligned requests from applications.  All requested bytes are
- * held on permanent storage before a direct write system call returns to
- * an application.
- *
- * Solaris implements an uncached I/O facility called directio() that
- * is used for backups and sequential I/O to very large files.  Solaris
- * also supports uncaching whole NFS partitions with "-o forcedirectio,"
- * an undocumented mount option.
- *
- * Designed by Jeff Kimmel, Chuck Lever, and Trond Myklebust, with
- * help from Andrew Morton.
- *
- * 18 Dec 2001	Initial implementation for 2.4  --cel
- * 08 Jul 2002	Version for 2.4.19, with bug fixes --trondmy
- * 08 Jun 2003	Port to 2.5 APIs  --cel
- * 31 Mar 2004	Handle direct I/O without VFS support  --cel
- * 15 Sep 2004	Parallel async reads  --cel
- * 04 May 2005	support O_DIRECT with aio  --cel
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/errno.h>
 #include <beep/sched.h>
 #include <beep/kernel.h>

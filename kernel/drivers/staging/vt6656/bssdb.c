@@ -1,44 +1,20 @@
 /*
- * Copyright (c) 1996, 2003 VIA Networking Technologies, Inc.
- * All rights reserved.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License along
- * with this program; if not, write to the Free Software Foundation, Inc.,
- * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
- *
- * File: bssdb.c
- *
- * Purpose: Handles the Basic Service Set & Node Database functions
- *
- * Functions:
- *      BSSpSearchBSSList - Search known BSS list for Desire SSID or BSSID
- *      BSSvClearBSSList - Clear BSS List
- *      BSSbInsertToBSSList - Insert a BSS set into known BSS list
- *      BSSbUpdateToBSSList - Update BSS set in known BSS list
- *      BSSbIsSTAInNodeDB - Search Node DB table to find the index of matched DstAddr
- *      BSSvCreateOneNode - Allocate an Node for Node DB
- *      BSSvUpdateAPNode - Update AP Node content in Index 0 of KnownNodeDB
- *      BSSvSecondCallBack - One second timer callback function to update Node DB info & AP link status
- *      BSSvUpdateNodeTxCounter - Update Tx attemps, Tx failure counter in Node DB for auto-fall back rate control
- *
- * Revision History:
- *
- * Author: Lyndon Chen
- *
- * Date: July 17, 2002
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "ttype.h"
 #include "tmacro.h"
 #include "tether.h"

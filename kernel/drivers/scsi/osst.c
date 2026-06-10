@@ -1,28 +1,20 @@
 /*
-  SCSI Tape Driver for Beep version 1.1 and newer. See the accompanying
-  file Documentation/scsi/st.txt for more information.
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-  History:
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-  OnStream SCSI Tape support (osst) cloned from st.c by
-  Willem Riede (osst@riede.org) Feb 2000
-  Fixes ... Kurt Garloff <garloff@suse.de> Mar 2000
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-  Rewritten from Dwayne Forsyth's SCSI tape driver by Kai Makisara.
-  Contribution and ideas from several people including (in alphabetical
-  order) Klaus Ehrenfried, Wolfgang Denk, Steve Hirsch, Andreas Koppenh"ofer,
-  Michael Leodolter, Eyal Lebedinsky, J"org Weule, and Eric Youngdale.
-
-  Copyright 1992 - 2002 Kai Makisara / 2000 - 2006 Willem Riede
-	 email osst@riede.org
-
-  $Header: /cvsroot/osst/Driver/osst.c,v 1.73 2005/01/01 21:13:34 wriede Exp $
-
-  Microscopic alterations - Rik Ling, 2000/12/21
-  Last st.c sync: Tue Oct 15 22:01:04 2002 by makisara
-  Some small formal changes - aeb, 950809
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 static const char * cvsid = "$Id: osst.c,v 1.73 2005/01/01 21:13:34 wriede Exp $";
 static const char * osst_version = "0.99.4";
 

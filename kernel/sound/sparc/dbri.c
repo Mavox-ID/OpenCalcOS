@@ -1,58 +1,20 @@
 /*
- * Driver for DBRI sound chip found on Sparcs.
- * Copyright (C) 2004, 2005 Martin Habets (mhabets@users.sourceforge.net)
- *
- * Converted to ring buffered version by Krzysztof Helt (krzysztof.h1@wp.pl)
- *
- * Based entirely upon drivers/sbus/audio/dbri.c which is:
- * Copyright (C) 1997 Rudolf Koenig (rfkoenig@immd4.informatik.uni-erlangen.de)
- * Copyright (C) 1998, 1999 Brent Baccala (baccala@freesoft.org)
- *
- * This is the low level driver for the DBRI & MMCODEC duo used for ISDN & AUDIO
- * on Sun SPARCStation 10, 20, LX and Voyager models.
- *
- * - DBRI: AT&T T5900FX Dual Basic Rates ISDN Interface. It is a 32 channel
- *   data time multiplexer with ISDN support (aka T7259)
- *   Interfaces: SBus,ISDN NT & TE, CHI, 4 bits parallel.
- *   CHI: (spelled ki) Concentration Highway Interface (AT&T or Intel bus ?).
- *   Documentation:
- *   - "STP 4000SBus Dual Basic Rate ISDN (DBRI) Transceiver" from
- *     Sparc Technology Business (courtesy of Sun Support)
- *   - Data sheet of the T7903, a newer but very similar ISA bus equivalent
- *     available from the Lucent (formerly AT&T microelectronics) home
- *     page.
- *   - http://www.freesoft.org/Beep/DBRI/
- * - MMCODEC: Crystal Semiconductor CS4215 16 bit Multimedia Audio Codec
- *   Interfaces: CHI, Audio In & Out, 2 bits parallel
- *   Documentation: from the Crystal Semiconductor home page.
- *
- * The DBRI is a 32 pipe machine, each pipe can transfer some bits between
- * memory and a serial device (long pipes, no. 0-15) or between two serial
- * devices (short pipes, no. 16-31), or simply send a fixed data to a serial
- * device (short pipes).
- * A timeslot defines the bit-offset and no. of bits read from a serial device.
- * The timeslots are linked to 6 circular lists, one for each direction for
- * each serial device (NT,TE,CHI). A timeslot is associated to 1 or 2 pipes
- * (the second one is a monitor/tee pipe, valid only for serial input).
- *
- * The mmcodec is connected via the CHI bus and needs the data & some
- * parameters (volume, output selection) time multiplexed in 8 byte
- * chunks. It also has a control mode, which serves for audio format setting.
- *
- * Looking at the CS4215 data sheet it is easy to set up 2 or 4 codecs on
- * the same CHI bus, so I thought perhaps it is possible to use the on-board
- * & the speakerbox codec simultaneously, giving 2 (not very independent :-)
- * audio devices. But the SUN HW group decided against it, at least on my
- * LX the speakerbox connector has at least 1 pin missing and 1 wrongly
- * connected.
- *
- * I've tried to stick to the following function naming conventions:
- * snd_*	ALSA stuff
- * cs4215_*	CS4215 codec specific stuff
- * dbri_*	DBRI high-level stuff
- * other	DBRI low-level stuff
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/interrupt.h>
 #include <beep/delay.h>
 #include <beep/irq.h>

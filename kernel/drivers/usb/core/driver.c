@@ -1,27 +1,20 @@
 /*
- * drivers/usb/driver.c - most of the driver model stuff for usb
- *
- * (C) Copyright 2005 Greg Kroah-Hartman <gregkh@suse.de>
- *
- * based on drivers/usb/usb.c which had the following copyrights:
- *	(C) Copyright Linus Torvalds 1999
- *	(C) Copyright Johannes Erdfelt 1999-2001
- *	(C) Copyright Andreas Gal 1999
- *	(C) Copyright Gregory P. Smith 1999
- *	(C) Copyright Deti Fliegl 1999 (new USB architecture)
- *	(C) Copyright Randy Dunlap 2000
- *	(C) Copyright David Brownell 2000-2004
- *	(C) Copyright Yggdrasil Computing, Inc. 2000
- *		(usb_device_id matching changes by Adam J. Richter)
- *	(C) Copyright Greg Kroah-Hartman 2002-2003
- *
- * NOTE! This is not actually a driver at all, rather this is
- * just a collection of helper routines that implement the
- * matching, probing, releasing, suspending and resuming for
- * real drivers.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/device.h>
 #include <beep/slab.h>
 #include <beep/export.h>

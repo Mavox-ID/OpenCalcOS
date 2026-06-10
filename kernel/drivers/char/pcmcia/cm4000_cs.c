@@ -1,28 +1,20 @@
- /*
-  * A driver for the PCMCIA Smartcard Reader "Omnikey CardMan Mobile 4000"
-  *
-  * cm4000_cs.c support.beep@omnikey.com
-  *
-  * Tue Oct 23 11:32:43 GMT 2001 herp - cleaned up header files
-  * Sun Jan 20 10:11:15 MET 2002 herp - added modversion header files
-  * Thu Nov 14 16:34:11 GMT 2002 mh   - added PPS functionality
-  * Tue Nov 19 16:36:27 GMT 2002 mh   - added SUSPEND/RESUME functionailty
-  * Wed Jul 28 12:55:01 CEST 2004 mh  - kernel 2.6 adjustments
-  *
-  * current version: 2.4.0gm4
-  *
-  * (C) 2000,2001,2002,2003,2004 Omnikey AG
-  *
-  * (C) 2005-2006 Harald Welte <laforge@gnumonks.org>
-  * 	- Adhere to Kernel CodingStyle
-  * 	- Port to 2.6.13 "new" style PCMCIA
-  * 	- Check for copy_{from,to}_user return values
-  * 	- Use nonseekable_open()
-  * 	- add class interface for udev device creation
-  *
-  * All rights reserved. Licensed under dual BSD/GPL license.
-  */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/slab.h>

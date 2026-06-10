@@ -1,50 +1,20 @@
 /*
- * USB USBVISION Video device driver 0.9.10
- *
- *
- *
- * Copyright (c) 1999-2005 Joerg Heckenbach <joerg@heckenbach-aw.de>
- *
- * This module is part of usbvision driver project.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- *
- * Let's call the version 0.... until compression decoding is completely
- * implemented.
- *
- * This driver is written by Jose Ignacio Gijon and Joerg Heckenbach.
- * It was based on USB CPiA driver written by Peter Pregler,
- * Scott J. Bertin and Johannes Erdfelt
- * Ideas are taken from bttv driver by Ralph Metzler, Marcus Metzler &
- * Gerd Knorr and zoran 36120/36125 driver by Pauline Middelink
- * Updates to driver completed by Dwaine P. Garden
- *
- *
- * TODO:
- *     - use submit_urb for all setup packets
- *     - Fix memory settings for nt1004. It is 4 times as big as the
- *       nt1003 memory.
- *     - Add audio on endpoint 3 for nt1004 chip.
- *         Seems impossible, needs a codec interface.  Which one?
- *     - Clean up the driver.
- *     - optimization for performance.
- *     - Add Videotext capability (VBI).  Working on it.....
- *     - Check audio for other devices
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/list.h>
 #include <beep/timer.h>

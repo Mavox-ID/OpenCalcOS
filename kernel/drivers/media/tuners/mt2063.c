@@ -1,24 +1,20 @@
 /*
- * Driver for mt2063 Micronas tuner
- *
- * Copyright (c) 2011 Mauro Carvalho Chehab <mchehab@redhat.com>
- *
- * This driver came from a driver originally written by:
- *		Henry Wang <Henry.wang@AzureWave.com>
- * Made publicly available by Terratec, at:
- *	http://beep.terratec.de/files/TERRATEC_H7/20110323_TERRATEC_H7_Beep.tar.gz
- * The original driver's license is GPL, as declared with MODULE_LICENSE()
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation under version 2 of the License.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/kernel.h>
 #include <beep/module.h>

@@ -1,18 +1,20 @@
 /*
- *	ultrastor.c	Copyright (C) 1992 David B. Gentzel
- *	Low-level SCSI driver for UltraStor 14F, 24F, and 34F
- *	by David B. Gentzel, Whitfield Software Services, Carnegie, PA
- *	    (gentzel@nova.enet.dec.com)
- *  scatter/gather added by Scott Taylor (n217cg@tamuts.tamu.edu)
- *  24F and multiple command support by John F. Carr (jfc@athena.mit.edu)
- *    John's work modified by Caleb Epstein (cae@jpmorgan.com) and 
- *    Eric Youngdale (ericy@cais.com).
- *	Thanks to UltraStor for providing the necessary documentation
- *
- *  This is an old driver, for the 14F and 34F you should be using the
- *  u14-34f driver instead.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * TODO:
  *	1. Find out why scatter/gather is limited to 16 requests per command.

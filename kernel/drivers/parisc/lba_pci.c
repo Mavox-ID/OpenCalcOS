@@ -1,35 +1,20 @@
 /*
-**
-**  PCI Lower Bus Adapter (LBA) manager
-**
-**	(c) Copyright 1999,2000 Grant Grundler
-**	(c) Copyright 1999,2000 Hewlett-Packard Company
-**
-**	This program is free software; you can redistribute it and/or modify
-**	it under the terms of the GNU General Public License as published by
-**      the Free Software Foundation; either version 2 of the License, or
-**      (at your option) any later version.
-**
-**
-** This module primarily provides access to PCI bus (config/IOport
-** spaces) on platforms with an SBA/LBA chipset. A/B/C/J/L/N-class
-** with 4 digit model numbers - eg C3000 (and A400...sigh).
-**
-** LBA driver isn't as simple as the Dino driver because:
-**   (a) this chip has substantial bug fixes between revisions
-**       (Only one Dino bug has a software workaround :^(  )
-**   (b) has more options which we don't (yet) support (DMA hints, OLARD)
-**   (c) IRQ support lives in the I/O SAPIC driver (not with PCI driver)
-**   (d) play nicely with both PAT and "Legacy" PA-RISC firmware (PDC).
-**       (dino only deals with "Legacy" PDC)
-**
-** LBA driver passes the I/O SAPIC HPA to the I/O SAPIC driver.
-** (I/O SAPIC is integratd in the LBA chip).
-**
-** FIXME: Add support to SBA and LBA drivers for DMA hint sets
-** FIXME: Add support for PCI card hot-plug (OLARD).
-*/
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/delay.h>
 #include <beep/types.h>
 #include <beep/kernel.h>

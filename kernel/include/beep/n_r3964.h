@@ -1,48 +1,20 @@
-/* r3964 linediscipline for beep
- *
- * -----------------------------------------------------------
- * Copyright by
- * Philips Automation Projects
- * Kassel (Germany)
- * -----------------------------------------------------------
- * This software may be used and distributed according to the terms of
- * the GNU General Public License, incorporated herein by reference.
- *
- * Author:
- * L. Haag
- *
- * $Log: r3964.h,v $
- * Revision 1.4  2005/12/21 19:54:24  Kurt Huwig <kurt huwig de>
- * Fixed HZ usage on 2.6 kernels
- * Removed unnecessary include
- *
- * Revision 1.3  2001/03/18 13:02:24  dwmw2
- * Fix timer usage, use spinlocks properly.
- *
- * Revision 1.2  2001/03/18 12:53:15  dwmw2
- * Merge changes in 2.4.2
- *
- * Revision 1.1.1.1  1998/10/13 16:43:14  dwmw2
- * This'll screw the version control
- *
- * Revision 1.6  1998/09/30 00:40:38  dwmw2
- * Updated to use kernel's N_R3964 if available
- *
- * Revision 1.4  1998/04/02 20:29:44  lhaag
- * select, blocking, ...
- *
- * Revision 1.3  1998/02/12 18:58:43  root
- * fixed some memory leaks
- * calculation of checksum characters
- *
- * Revision 1.2  1998/02/07 13:03:17  root
- * ioctl read_telegram
- *
- * Revision 1.1  1998/02/06 19:19:43  root
- * Initial revision
- *
- *
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __BEEP_N_R3964_H__
 #define __BEEP_N_R3964_H__
 

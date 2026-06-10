@@ -1,47 +1,20 @@
-/*********************************************************************
- *                
- * Filename:      nsc-ircc.c
- * Version:       1.0
- * Description:   Driver for the NSC PC'108 and PC'338 IrDA chipsets
- * Status:        Stable.
- * Author:        Dag Brattli <dagb@cs.uit.no>
- * Created at:    Sat Nov  7 21:43:15 1998
- * Modified at:   Wed Mar  1 11:29:34 2000
- * Modified by:   Dag Brattli <dagb@cs.uit.no>
- * 
- *     Copyright (c) 1998-2000 Dag Brattli <dagb@cs.uit.no>
- *     Copyright (c) 1998 Lichen Wang, <lwang@actisys.com>
- *     Copyright (c) 1998 Actisys Corp., www.actisys.com
- *     Copyright (c) 2000-2004 Jean Tourrilhes <jt@hpl.hp.com>
- *     All Rights Reserved
- *      
- *     This program is free software; you can redistribute it and/or 
- *     modify it under the terms of the GNU General Public License as 
- *     published by the Free Software Foundation; either version 2 of 
- *     the License, or (at your option) any later version.
- *  
- *     Neither Dag Brattli nor University of Tromsø admit liability nor
- *     provide warranty for any of this software. This material is 
- *     provided "AS-IS" and at no charge.
- *
- *     Notice that all functions that needs to access the chip in _any_
- *     way, must save BSR register on entry, and restore it on exit. 
- *     It is _very_ important to follow this policy!
- *
- *         __u8 bank;
- *     
- *         bank = inb(iobase+BSR);
- *  
- *         do_your_stuff_here();
- *
- *         outb(bank, iobase+BSR);
- *
- *    If you find bugs in this file, its very likely that the same bug
- *    will also be in w83977af_ir.c since the implementations are quite
- *    similar.
- *     
- ********************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/gfp.h>
 

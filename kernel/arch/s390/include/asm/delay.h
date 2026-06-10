@@ -1,14 +1,20 @@
 /*
- *  S390 version
- *    Copyright IBM Corp. 1999
- *    Author(s): Martin Schwidefsky (schwidefsky@de.ibm.com)
- *
- *  Derived from "include/asm-i386/delay.h"
- *    Copyright (C) 1993 Linus Torvalds
- *
- *  Delay routines calling functions in arch/s390/lib/delay.c
- */
- 
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _S390_DELAY_H
 #define _S390_DELAY_H
 

@@ -1,28 +1,20 @@
-/*********************************************************************
- *                
- * Filename:      irmod.h
- * Version:       0.3
- * Description:   IrDA module and utilities functions
- * Status:        Experimental.
- * Author:        Dag Brattli <dagb@cs.uit.no>
- * Created at:    Mon Dec 15 13:58:52 1997
- * Modified at:   Fri Jan 28 13:15:24 2000
- * Modified by:   Dag Brattli <dagb@cs.uit.no>
- *
- *     Copyright (c) 1998-2000 Dag Brattli, All Rights Reserved.
- *     Copyright (c) 2000-2002 Jean Tourrilhes <jt@hpl.hp.com>
- *      
- *     This program is free software; you can redistribute it and/or 
- *     modify it under the terms of the GNU General Public License as 
- *     published by the Free Software Foundation; either version 2 of 
- *     the License, or (at your option) any later version.
- *  
- *     Neither Dag Brattli nor University of Tromsø admit liability nor
- *     provide warranty for any of this software. This material is 
- *     provided "AS-IS" and at no charg.
- *     
- ********************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef IRMOD_H
 #define IRMOD_H
 

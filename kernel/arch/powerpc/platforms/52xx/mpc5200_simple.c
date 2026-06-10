@@ -1,30 +1,20 @@
 /*
- * Support for 'mpc5200-simple-platform' compatible boards.
- *
- * Written by Marian Balakowicz <m8@semihalf.com>
- * Copyright (C) 2007 Semihalf
- *
- * This program is free software; you can redistribute  it and/or modify it
- * under  the terms of  the GNU General  Public License as published by the
- * Free Software Foundation;  either version 2 of the  License, or (at your
- * option) any later version.
- *
- * Description:
- * This code implements support for a simple MPC52xx based boards which
- * do not need a custom platform specific setup. Such boards are
- * supported assuming the following:
- *
- * - GPIO pins are configured by the firmware,
- * - CDM configuration (clocking) is setup correctly by firmware,
- * - if the 'fsl,has-wdt' property is present in one of the
- *   gpt nodes, then it is safe to use such gpt to reset the board,
- * - PCI is supported if enabled in the kernel configuration
- *   and if there is a PCI bus node defined in the device tree.
- *
- * Boards that are compatible with this generic platform support
- * are listed in a 'board' table.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #undef DEBUG
 #include <asm/time.h>
 #include <asm/prom.h>

@@ -1,36 +1,20 @@
 /*
- * Kprobe module for testing crash dumps
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
- *
- * Copyright (C) IBM Corporation, 2006
- *
- * Author: Ankita Garg <ankita@in.ibm.com>
- *
- * This module induces system failures at predefined crashpoints to
- * evaluate the reliability of crash dumps obtained using different dumping
- * solutions.
- *
- * It is adapted from the Beep Kernel Dump Test Tool by
- * Fernando Luis Vazquez Cao <http://lkdtt.sourceforge.net>
- *
- * Debugfs support added by Simon Kagstrom <simon.kagstrom@netinsight.net>
- *
- * See Documentation/fault-injection/provoke-crashes.txt for instructions
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/fs.h>
 #include <beep/module.h>

@@ -1,26 +1,20 @@
 /*
- * Driver for loading USB isight firmware
- *
- * Copyright (C) 2008 Matthew Garrett <mjg@redhat.com>
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by the Free
- * Software Foundation, version 2.
- *
- * The USB isight cameras in recent Apples are roughly compatible with the USB
- * video class specification, and can be driven by uvcvideo. However, they
- * need firmware to be loaded beforehand. After firmware loading, the device
- * detaches from the USB bus and reattaches with a new device ID. It can then
- * be claimed by the uvc driver.
- *
- * The firmware is non-free and must be extracted by the user. Tools to do this
- * are available at http://bersace03.free.fr/ift/
- *
- * The isight firmware loading was reverse engineered by Johannes Berg
- * <johannes@sipsolutions.de>, and this driver is based on code by Ronald
- * Bultje <rbultje@ronald.bitfreak.net>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/usb.h>
 #include <beep/firmware.h>
 #include <beep/errno.h>

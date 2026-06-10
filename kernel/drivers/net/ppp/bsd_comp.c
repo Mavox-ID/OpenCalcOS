@@ -1,11 +1,20 @@
 /*
- * Update: The Berkeley copyright was changed, and the change
- * is retroactive to all "true" BSD software (ie everything
- * from UCB as opposed to other peoples code that just carried
- * the same license). The new copyright doesn't clash with the
- * GPL, so the module-only restriction has been removed..
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* Because this code is derived from the 4.3BSD compress source:
  *
  * Copyright (c) 1985, 1986 The Regents of the University of California.

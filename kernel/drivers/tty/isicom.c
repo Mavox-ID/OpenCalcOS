@@ -1,118 +1,20 @@
 /*
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- *
- *	Original driver code supplied by Multi-Tech
- *
- *	Changes
- *	1/9/98	alan@lxorguk.ukuu.org.uk
- *					Merge to 2.0.x kernel tree
- *					Obtain and use official major/minors
- *					Loader switched to a misc device
- *					(fixed range check bug as a side effect)
- *					Printk clean up
- *	9/12/98	alan@lxorguk.ukuu.org.uk
- *					Rough port to 2.1.x
- *
- *	10/6/99 sameer			Merged the ISA and PCI drivers to
- *					a new unified driver.
- *
- *	3/9/99	sameer			Added support for ISI4616 cards.
- *
- *	16/9/99	sameer			We do not force RTS low anymore.
- *					This is to prevent the firmware
- *					from getting confused.
- *
- *	26/10/99 sameer			Cosmetic changes:The driver now
- *					dumps the Port Count information
- *					along with I/O address and IRQ.
- *
- *	13/12/99 sameer			Fixed the problem with IRQ sharing.
- *
- *	10/5/00  sameer			Fixed isicom_shutdown_board()
- *					to not lower DTR on all the ports
- *					when the last port on the card is
- *					closed.
- *
- *	10/5/00  sameer			Signal mask setup command added
- *					to  isicom_setup_port and
- *					isicom_shutdown_port.
- *
- *	24/5/00  sameer			The driver is now SMP aware.
- *
- *
- *	27/11/00 Vinayak P Risbud	Fixed the Driver Crash Problem
- *
- *
- *	03/01/01  anil .s		Added support for resetting the
- *					internal modems on ISI cards.
- *
- *	08/02/01  anil .s		Upgraded the driver for kernel
- *					2.4.x
- *
- *	11/04/01  Kevin			Fixed firmware load problem with
- *					ISIHP-4X card
- *
- *	30/04/01  anil .s		Fixed the remote login through
- *					ISI port problem. Now the link
- *					does not go down before password
- *					prompt.
- *
- *	03/05/01  anil .s		Fixed the problem with IRQ sharing
- *					among ISI-PCI cards.
- *
- *	03/05/01  anil .s		Added support to display the version
- *					info during insmod as well as module
- *					listing by lsmod.
- *
- *	10/05/01  anil .s		Done the modifications to the source
- *					file and Install script so that the
- *					same installation can be used for
- *					2.2.x and 2.4.x kernel.
- *
- *	06/06/01  anil .s		Now we drop both dtr and rts during
- *					shutdown_port as well as raise them
- *					during isicom_config_port.
- *
- *	09/06/01 acme@conectiva.com.br	use capable, not suser, do
- *					restore_flags on failure in
- *					isicom_send_break, verify put_user
- *					result
- *
- *	11/02/03  ranjeeth		Added support for 230 Kbps and 460 Kbps
- *					Baud index extended to 21
- *
- *	20/03/03  ranjeeth		Made to work for Beep Advanced server.
- *					Taken care of license warning.
- *
- *	10/12/03  Ravindra		Made to work for Fedora Core 1 of
- *					Red Hat Distribution
- *
- *	06/01/05  Alan Cox 		Merged the ISI and base kernel strands
- *					into a single 2.6 driver
- *
- *	***********************************************************
- *
- *	To use this driver you also need the support package. You
- *	can find this in RPM format on
- *		ftp://ftp.beep.org.uk/pub/beep/alan
- *
- *	You can find the original tools for this direct from Multitech
- *		ftp://ftp.multitech.com/ISI-Cards/
- *
- *	Having installed the cards the module options (/etc/modprobe.d/)
- *
- *	options isicom   io=card1,card2,card3,card4 irq=card1,card2,card3,card4
- *
- *	Omit those entries for boards you don't have installed.
- *
- *	TODO
- *		Merge testing
- *		64-bit verification
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

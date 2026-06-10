@@ -1,31 +1,20 @@
 /*
- * opp2xxx.h - macros for old-style OMAP2xxx "OPP" definitions
- *
- * Copyright (C) 2005-2009 Texas Instruments, Inc.
- * Copyright (C) 2004-2009 Nokia Corporation
- *
- * Richard Woodruff <r-woodruff2@ti.com>
- *
- * The OMAP2 processor can be run at several discrete 'PRCM configurations'.
- * These configurations are characterized by voltage and speed for clocks.
- * The device is only validated for certain combinations. One way to express
- * these combinations is via the 'ratio's' which the clocks operate with
- * respect to each other. These ratio sets are for a given voltage/DPLL
- * setting. All configurations can be described by a DPLL setting and a ratio
- * There are 3 ratio sets for the 2430 and X ratio sets for 2420.
- *
- * 2430 differs from 2420 in that there are no more phase synchronizers used.
- * They both have a slightly different clock domain setup. 2420(iva1,dsp) vs
- * 2430 (iva2.1, NOdsp, mdm)
- *
- * XXX Missing voltage data.
- *
- * THe format described in this file is deprecated.  Once a reasonable
- * OPP API exists, the data in this file should be converted to use it.
- *
- * This is technically part of the OMAP2xxx clock code.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __ARCH_ARM_MACH_OMAP2_OPP2XXX_H
 #define __ARCH_ARM_MACH_OMAP2_OPP2XXX_H
 

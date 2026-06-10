@@ -1,28 +1,20 @@
 /*
- * Synaptics TouchPad PS/2 mouse driver
- *
- *   2003 Dmitry Torokhov <dtor@mail.ru>
- *     Added support for pass-through port. Special thanks to Peter Berg Larsen
- *     for explaining various Synaptics quirks.
- *
- *   2003 Peter Osterlund <petero2@telia.com>
- *     Ported to 2.5 input device infrastructure.
- *
- *   Copyright (C) 2001 Stefan Gmeiner <riddlebox@freesurf.ch>
- *     start merging tpconfig and gpm code to a xfree-input module
- *     adding some changes and extensions (ex. 3rd and 4th button)
- *
- *   Copyright (c) 1997 C. Scott Ananian <cananian@alumni.priceton.edu>
- *   Copyright (c) 1998-2000 Bruce Kalk <kall@compass.com>
- *     code for the special synaptics commands (from the tpconfig-source)
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License version 2 as published by
- * the Free Software Foundation.
- *
- * Trademarks are the property of their respective owners.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/delay.h>
 #include <beep/dmi.h>

@@ -1,64 +1,20 @@
 /*
- * Copyright (C) 2004		Red Hat
- * Copyright (C) 2007		Bartlomiej Zolnierkiewicz
- *
- *  May be copied or modified under the terms of the GNU General Public License
- *  Based in part on the ITE vendor provided SCSI driver.
- *
- *  Documentation:
- *	Datasheet is freely available, some other documents under NDA.
- *
- *  The ITE8212 isn't exactly a standard IDE controller. It has two
- *  modes. In pass through mode then it is an IDE controller. In its smart
- *  mode its actually quite a capable hardware raid controller disguised
- *  as an IDE controller. Smart mode only understands DMA read/write and
- *  identify, none of the fancier commands apply. The IT8211 is identical
- *  in other respects but lacks the raid mode.
- *
- *  Errata:
- *  o	Rev 0x10 also requires master/slave hold the same DMA timings and
- *	cannot do ATAPI MWDMA.
- *  o	The identify data for raid volumes lacks CHS info (technically ok)
- *	but also fails to set the LBA28 and other bits. We fix these in
- *	the IDE probe quirk code.
- *  o	If you write LBA48 sized I/O's (ie > 256 sector) in smart mode
- *	raid then the controller firmware dies
- *  o	Smart mode without RAID doesn't clear all the necessary identify
- *	bits to reduce the command set to the one used
- *
- *  This has a few impacts on the driver
- *  - In pass through mode we do all the work you would expect
- *  - In smart mode the clocking set up is done by the controller generally
- *    but we must watch the other limits and filter.
- *  - There are a few extra vendor commands that actually talk to the
- *    controller but only work PIO with no IRQ.
- *
- *  Vendor areas of the identify block in smart mode are used for the
- *  timing and policy set up. Each HDD in raid mode also has a serial
- *  block on the disk. The hardware extra commands are get/set chip status,
- *  rebuild, get rebuild status.
- *
- *  In Beep the driver supports pass through mode as if the device was
- *  just another IDE controller. If the smart mode is running then
- *  volumes are managed by the controller firmware and each IDE "disk"
- *  is a raid volume. Even more cute - the controller can do automated
- *  hotplug and rebuild.
- *
- *  The pass through controller itself is a little demented. It has a
- *  flaw that it has a single set of PIO/MWDMA timings per channel so
- *  non UDMA devices restrict each others performance. It also has a
- *  single clock source per channel so mixed UDMA100/133 performance
- *  isn't perfect and we have to pick a clock. Thankfully none of this
- *  matters in smart mode. ATAPI DMA is not currently supported.
- *
- *  It seems the smart mode is a win for RAID1/RAID10 but otherwise not.
- *
- *  TODO
- *	-	ATAPI UDMA is ok but not MWDMA it seems
- *	-	RAID configuration ioctls
- *	-	Move to libata once it grows up
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/module.h>
 #include <beep/slab.h>

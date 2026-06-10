@@ -1,57 +1,20 @@
 /*
- * Copyright (c) 1996, 2003 VIA Networking Technologies, Inc.
- * All rights reserved.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License along
- * with this program; if not, write to the Free Software Foundation, Inc.,
- * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
- *
- * File: 80211mgr.c
- *
- * Purpose: Handles the 802.11 management support functions
- *
- * Author: Lyndon Chen
- *
- * Date: May 8, 2002
- *
- * Functions:
- *      vMgrEncodeBeacon - Encode the Beacon frame
- *      vMgrDecodeBeacon - Decode the Beacon frame
- *      vMgrEncodeIBSSATIM - Encode the IBSS ATIM frame
- *      vMgrDecodeIBSSATIM - Decode the IBSS ATIM frame
- *      vMgrEncodeDisassociation - Encode the Disassociation frame
- *      vMgrDecodeDisassociation - Decode the Disassociation frame
- *      vMgrEncodeAssocRequest - Encode the Association request frame
- *      vMgrDecodeAssocRequest - Decode the Association request frame
- *      vMgrEncodeAssocResponse - Encode the Association response frame
- *      vMgrDecodeAssocResponse - Decode the Association response frame
- *      vMgrEncodeReAssocRequest - Encode the ReAssociation request frame
- *      vMgrDecodeReAssocRequest - Decode the ReAssociation request frame
- *      vMgrEncodeProbeRequest - Encode the Probe request frame
- *      vMgrDecodeProbeRequest - Decode the Probe request frame
- *      vMgrEncodeProbeResponse - Encode the Probe response frame
- *      vMgrDecodeProbeResponse - Decode the Probe response frame
- *      vMgrEncodeAuthen - Encode the Authentication frame
- *      vMgrDecodeAuthen - Decode the Authentication frame
- *      vMgrEncodeDeauthen - Encode the DeAuthentication frame
- *      vMgrDecodeDeauthen - Decode the DeAuthentication frame
- *      vMgrEncodeReassocResponse - Encode the Reassociation response frame
- *      vMgrDecodeReassocResponse - Decode the Reassociation response frame
- *
- * Revision History:
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "device.h"
 #include "tmacro.h"
 #include "tether.h"

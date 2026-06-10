@@ -1,31 +1,20 @@
 /*
- *  sym53c416.c
- *  Low-level SCSI driver for sym53c416 chip.
- *  Copyright (C) 1998 Lieven Willems (lw_beep@hotmail.com)
- * 
- *  Changes : 
- * 
- *  Marcelo Tosatti <marcelo@conectiva.com.br> : Added io_request_lock locking
- *  Alan Cox <alan@lxorguk.ukuu.org.uk> : Cleaned up code formatting
- *				 Fixed an irq locking bug
- *				 Added ISAPnP support
- *  Bjoern A. Zeeb <bzeeb@zabbadoz.net> : Initial irq locking updates
- *					  Added another card with ISAPnP support
- * 
- *  LILO command line usage: sym53c416=<PORTBASE>[,<IRQ>]
- *
- *  This program is free software; you can redistribute it and/or modify it
- *  under the terms of the GNU General Public License as published by the
- *  Free Software Foundation; either version 2, or (at your option) any
- *  later version.
- *
- *  This program is distributed in the hope that it will be useful, but
- *  WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- *  General Public License for more details.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/types.h>

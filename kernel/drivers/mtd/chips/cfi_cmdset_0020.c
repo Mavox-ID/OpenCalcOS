@@ -1,23 +1,20 @@
 /*
- * Common Flash Interface support:
- *   ST Advanced Architecture Command Set (ID 0x0020)
- *
- * (C) 2000 Red Hat. GPL'd
- *
- * 10/10/2000	Nicolas Pitre <nico@fluxnic.net>
- * 	- completely revamped method functions so they are aware and
- * 	  independent of the flash geometry (buswidth, interleave, etc.)
- * 	- scalability vs code size is completely set at compile-time
- * 	  (see include/beep/mtd/cfi.h for selection)
- *	- optimized write buffer method
- * 06/21/2002	Joern Engel <joern@wh.fh-wedel.de> and others
- *	- modified Intel Command Set 0x0001 to support ST Advanced Architecture
- *	  (command set 0x0020)
- *	- added a writev function
- * 07/13/2005	Joern Engel <joern@wh.fh-wedel.de>
- * 	- Plugged memory leak in cfi_staa_writev().
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/types.h>
 #include <beep/kernel.h>

@@ -1,15 +1,20 @@
 /*
- * For Philips TEA5767 FM Chip used on some TV Cards like Prolink Pixelview
- * I2C address is allways 0xC0.
- *
- *
- * Copyright (c) 2005 Mauro Carvalho Chehab (mchehab@infradead.org)
- * This code is placed under the terms of the GNU General Public License
- *
- * tea5767 autodetection thanks to Torsten Seeboth and Atsushi Nakagawa
- * from their contributions on DScaler.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/i2c.h>
 #include <beep/slab.h>
 #include <beep/delay.h>

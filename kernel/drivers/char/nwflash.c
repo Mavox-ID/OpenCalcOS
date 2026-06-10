@@ -1,19 +1,20 @@
 /*
- * Flash memory interface rev.5 driver for the Intel
- * Flash chips used on the NetWinder.
- *
- * 20/08/2000	RMK	use __ioremap to map flash into virtual memory
- *			make a few more places use "volatile"
- * 22/05/2001	RMK	- Lock read against write
- *			- merge printk level changes (with mods) from Alan Cox.
- *			- use *ppos as the file position, not file->f_pos.
- *			- fix check for out of range pos and r/w size
- *
- * Please note that we are tampering with the only flash chip in the
- * machine, which contains the bootup code.  We therefore have the
- * power to convert these machines into doorstops...
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/types.h>
 #include <beep/fs.h>

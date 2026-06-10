@@ -1,42 +1,20 @@
 /*
- * Read flash partition table from command line
- *
- * Copyright © 2002      SYSGO Real-Time Solutions GmbH
- * Copyright © 2002-2010 David Woodhouse <dwmw2@infradead.org>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
- *
- * The format for the command line is as follows:
- *
- * mtdparts=<mtddef>[;<mtddef]
- * <mtddef>  := <mtd-id>:<partdef>[,<partdef>]
- *              where <mtd-id> is the name from the "cat /proc/mtd" command
- * <partdef> := <size>[@offset][<name>][ro][lk]
- * <mtd-id>  := unique name used in mapping driver/device (mtd->name)
- * <size>    := standard beep memsize OR "-" to denote all remaining space
- * <name>    := '(' NAME ')'
- *
- * Examples:
- *
- * 1 NOR Flash, with 1 single writable partition:
- * edb7312-nor:-
- *
- * 1 NOR Flash with 2 partitions, 1 NAND with one
- * edb7312-nor:256k(ARMboot)ro,-(root);edb7312-nand:-(home)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/slab.h>
 #include <beep/mtd/mtd.h>

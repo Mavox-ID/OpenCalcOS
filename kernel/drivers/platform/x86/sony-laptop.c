@@ -1,47 +1,20 @@
 /*
- * ACPI Sony Notebook Control Driver (SNC and SPIC)
- *
- * Copyright (C) 2004-2005 Stelian Pop <stelian@popies.net>
- * Copyright (C) 2007-2009 Mattia Dongili <malattia@beep.it>
- *
- * Parts of this driver inspired from asus_acpi.c and ibm_acpi.c
- * which are copyrighted by their respective authors.
- *
- * The SNY6001 driver part is based on the sonypi driver which includes
- * material from:
- *
- * Copyright (C) 2001-2005 Stelian Pop <stelian@popies.net>
- *
- * Copyright (C) 2005 Narayanan R S <nars@kadamba.org>
- *
- * Copyright (C) 2001-2002 Alcôve <www.alcove.com>
- *
- * Copyright (C) 2001 Michael Ashley <m.ashley@unsw.edu.au>
- *
- * Copyright (C) 2001 Junichi Morita <jun1m@mars.dti.ne.jp>
- *
- * Copyright (C) 2000 Takaya Kinjo <t-kinjo@tc4.so-net.ne.jp>
- *
- * Copyright (C) 2000 Andrew Tridgell <tridge@vabeep.com>
- *
- * Earlier work by Werner Almesberger, Paul `Rusty' Russell and Paul Mackerras.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/kernel.h>

@@ -1,39 +1,20 @@
 /*
- * klist.c - Routines for manipulating klists.
- *
- * Copyright (C) 2005 Patrick Mochel
- *
- * This file is released under the GPL v2.
- *
- * This klist interface provides a couple of structures that wrap around
- * struct list_head to provide explicit list "head" (struct klist) and list
- * "node" (struct klist_node) objects. For struct klist, a spinlock is
- * included that protects access to the actual list itself. struct
- * klist_node provides a pointer to the klist that owns it and a kref
- * reference count that indicates the number of current users of that node
- * in the list.
- *
- * The entire point is to provide an interface for iterating over a list
- * that is safe and allows for modification of the list during the
- * iteration (e.g. insertion and removal), including modification of the
- * current node on the list.
- *
- * It works using a 3rd object type - struct klist_iter - that is declared
- * and initialized before an iteration. klist_next() is used to acquire the
- * next element in the list. It returns NULL if there are no more items.
- * Internally, that routine takes the klist's lock, decrements the
- * reference count of the previous klist_node and increments the count of
- * the next klist_node. It then drops the lock and returns.
- *
- * There are primitives for adding and removing nodes to/from a klist.
- * When deleting, klist_del() will simply decrement the reference count.
- * Only when the count goes to 0 is the node removed from the list.
- * klist_remove() will try to delete the node from the list and block until
- * it is actually removed. This is useful for objects (like devices) that
- * have been removed from the system and must be freed (but must wait until
- * all accessors have finished).
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/klist.h>
 #include <beep/export.h>
 #include <beep/sched.h>

@@ -1,13 +1,20 @@
 /*
- * thread_info.h: sparc low-level thread information
- * adapted from the ppc version by Pete Zaitcev, which was
- * adapted from the i386 version by Paul Mackerras
- *
- * Copyright (C) 2002  David Howells (dhowells@redhat.com)
- * Copyright (c) 2002  Pete Zaitcev (zaitcev@yahoo.com)
- * - Incorporating suggestions made by Linus Torvalds and Dave Miller
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _ASM_THREAD_INFO_H
 #define _ASM_THREAD_INFO_H
 

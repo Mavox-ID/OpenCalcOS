@@ -1,55 +1,20 @@
 /*
- *	Block OSM structures/API
- *
- * 	Copyright (C) 1999-2002	Red Hat Software
- *
- *	Written by Alan Cox, Building Number Three Ltd
- *
- *	This program is free software; you can redistribute it and/or modify it
- *	under the terms of the GNU General Public License as published by the
- *	Free Software Foundation; either version 2 of the License, or (at your
- *	option) any later version.
- *
- *	This program is distributed in the hope that it will be useful, but
- *	WITHOUT ANY WARRANTY; without even the implied warranty of
- *	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- *	General Public License for more details.
- *
- *	For the purpose of avoiding doubt the preferred form of the work
- *	for making modifications shall be a standards compliant form such
- *	gzipped tar and not one requiring a proprietary or patent encumbered
- *	tool to unpack.
- *
- *	Fixes/additions:
- *		Steve Ralston:
- *			Multiple device handling error fixes,
- *			Added a queue depth.
- *		Alan Cox:
- *			FC920 has an rmw bug. Dont or in the end marker.
- *			Removed queue walk, fixed for 64bitness.
- *			Rewrote much of the code over time
- *			Added indirect block lists
- *			Handle 64K limits on many controllers
- *			Don't use indirects on the Promise (breaks)
- *			Heavily chop down the queue depths
- *		Deepak Saxena:
- *			Independent queues per IOP
- *			Support for dynamic device creation/deletion
- *			Code cleanup
- *	    		Support for larger I/Os through merge* functions
- *			(taken from DAC960 driver)
- *		Boji T Kannanthanam:
- *			Set the I2O Block devices to be detected in increasing
- *			order of TIDs during boot.
- *			Search and set the I2O block device that we boot off
- *			from as the first device to be claimed (as /dev/i2o/hda)
- *			Properly attach/detach I2O gendisk structure from the
- *			system gendisk list. The I2O block devices now appear in
- *			/proc/partitions.
- *		Markus Lidel <Markus.Lidel@shadowconnect.com>:
- *			Minor bugfixes for 2.6.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef I2O_BLOCK_OSM_H
 #define I2O_BLOCK_OSM_H
 

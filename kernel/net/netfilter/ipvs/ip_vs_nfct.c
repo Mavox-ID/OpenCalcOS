@@ -1,52 +1,20 @@
 /*
- * ip_vs_nfct.c:	Netfilter connection tracking support for IPVS
- *
- * Portions Copyright (C) 2001-2002
- * Antefacto Ltd, 181 Parnell St, Dublin 1, Ireland.
- *
- * Portions Copyright (C) 2003-2010
- * Julian Anastasov
- *
- *
- * This code is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *
- *
- * Authors:
- * Ben North <ben@redfrontdoor.org>
- * Julian Anastasov <ja@ssi.bg>		Reorganize and sync with latest kernels
- * Hannes Eder <heder@google.com>	Extend NFCT support for FTP, ipvs match
- *
- *
- * Current status:
- *
- * - provide conntrack confirmation for new and related connections, by
- * this way we can see their proper conntrack state in all hooks
- * - support for all forwarding methods, not only NAT
- * - FTP support (NAT), ability to support other NAT apps with expectations
- * - to correctly create expectations for related NAT connections the proper
- * NF conntrack support must be already installed, eg. ip_vs_ftp requires
- * nf_conntrack_ftp ... iptables_nat for the same ports (but no iptables
- * NAT rules are needed)
- * - alter reply for NAT when forwarding packet in original direction:
- * conntrack from client in NEW or RELATED (Passive FTP DATA) state or
- * when RELATED conntrack is created from real server (Active FTP DATA)
- * - if iptables_nat is not loaded the Passive FTP will not work (the
- * PASV response can not be NAT-ed) but Active FTP should work
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 

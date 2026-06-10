@@ -1,41 +1,20 @@
 /*
- *  ALSA sequencer device management
- *  Copyright (c) 1999 by Takashi Iwai <tiwai@suse.de>
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 2 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, write to the Free Software
- *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
- *
- *
- *----------------------------------------------------------------
- *
- * This device handler separates the card driver module from sequencer
- * stuff (sequencer core, synth drivers, etc), so that user can avoid
- * to spend unnecessary resources e.g. if he needs only listening to
- * MP3s.
- *
- * The card (or lowlevel) driver creates a sequencer device entry
- * via snd_seq_device_new().  This is an entry pointer to communicate
- * with the sequencer device "driver", which is involved with the
- * actual part to communicate with the sequencer core.
- * Each sequencer device entry has an id string and the corresponding
- * driver with the same id is loaded when required.  For example,
- * lowlevel codes to access emu8000 chip on sbawe card are included in
- * emu8000-synth module.  To activate this module, the hardware
- * resources like i/o port are passed via snd_seq_device argument.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/module.h>
 #include <sound/core.h>

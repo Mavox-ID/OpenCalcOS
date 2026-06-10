@@ -1,21 +1,20 @@
 /*
- * omap_hwmod common data structures
- *
- * Copyright (C) 2010 Texas Instruments, Inc.
- * Thara Gopinath <thara@ti.com>
- * Benoît Cousson
- *
- * Copyright (C) 2010 Nokia Corporation
- * Paul Walmsley
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * This data/structures are to be used while defining OMAP on-chip module
- * data and their integration with other OMAP modules and Beep.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "omap_hwmod.h"
 
 #include "omap_hwmod_common_data.h"

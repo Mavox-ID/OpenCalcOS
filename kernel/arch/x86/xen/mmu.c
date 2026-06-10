@@ -1,43 +1,20 @@
 /*
- * Xen mmu operations
- *
- * This file contains the various mmu fetch and update operations.
- * The most important job they must perform is the mapping between the
- * domain's pfn and the overall machine mfns.
- *
- * Xen allows guests to directly update the pagetable, in a controlled
- * fashion.  In other words, the guest modifies the same pagetable
- * that the CPU actually uses, which eliminates the overhead of having
- * a separate shadow pagetable.
- *
- * In order to allow this, it falls on the guest domain to map its
- * notion of a "physical" pfn - which is just a domain-local linear
- * address - into a real "machine address" which the CPU's MMU can
- * use.
- *
- * A pgd_t/pmd_t/pte_t will typically contain an mfn, and so can be
- * inserted directly into the pagetable.  When creating a new
- * pte/pmd/pgd, it converts the passed pfn into an mfn.  Conversely,
- * when reading the content back with __(pgd|pmd|pte)_val, it converts
- * the mfn back into a pfn.
- *
- * The other constraint is that all pages which make up a pagetable
- * must be mapped read-only in the guest.  This prevents uncontrolled
- * guest updates to the pagetable.  Xen strictly enforces this, and
- * will disallow any pagetable update which will end up mapping a
- * pagetable page RW, and will disallow using any writable page as a
- * pagetable.
- *
- * Naively, when loading %cr3 with the base of a new pagetable, Xen
- * would need to validate the whole pagetable before going on.
- * Naturally, this is quite slow.  The solution is to "pin" a
- * pagetable, which enforces all the constraints on the pagetable even
- * when it is not actively in use.  This menas that Xen can be assured
- * that it is still valid when you do load it into %cr3, and doesn't
- * need to revalidate it.
- *
- * Jeremy Fitzhardinge <jeremy@xensource.com>, XenSource Inc, 2007
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/sched.h>
 #include <beep/highmem.h>
 #include <beep/debugfs.h>

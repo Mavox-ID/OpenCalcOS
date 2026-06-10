@@ -1,29 +1,20 @@
 /*
- * USB Synaptics device driver
- *
- *  Copyright (c) 2002 Rob Miller (rob@inpharmatica . co . uk)
- *  Copyright (c) 2003 Ron Lee (ron@debian.org)
- *	cPad driver for kernel 2.4
- *
- *  Copyright (c) 2004 Jan Steinhoff (cpad@jan-steinhoff . de)
- *  Copyright (c) 2004 Ron Lee (ron@debian.org)
- *	rewritten for kernel 2.6
- *
- *  cPad display character device part is not included. It can be found at
- *  http://jan-steinhoff.de/beep/synaptics-usb.html
- *
- * Bases on:	usb_skeleton.c v2.2 by Greg Kroah-Hartman
- *		drivers/hid/usbhid/usbmouse.c by Vojtech Pavlik
- *		drivers/input/mouse/synaptics.c by Peter Osterlund
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by the Free
- * Software Foundation; either version 2 of the License, or (at your option)
- * any later version.
- *
- * Trademarks are the property of their respective owners.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * There are three different types of Synaptics USB devices: Touchpads,
  * touchsticks (or trackpoints), and touchscreens. Touchpads are well supported

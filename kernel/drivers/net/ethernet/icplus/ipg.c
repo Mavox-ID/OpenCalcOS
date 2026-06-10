@@ -1,26 +1,20 @@
 /*
- * ipg.c: Device Driver for the IP1000 Gigabit Ethernet Adapter
- *
- * Copyright (C) 2003, 2007  IC Plus Corp
- *
- * Original Author:
- *
- *   Craig Rich
- *   Sundance Technology, Inc.
- *   www.sundanceti.com
- *   craig_rich@sundanceti.com
- *
- * Current Maintainer:
- *
- *   Sorbica Shieh.
- *   http://www.icplus.com.tw
- *   sorbica@icplus.com.tw
- *
- *   Jesse Huang
- *   http://www.icplus.com.tw
- *   jesse@icplus.com.tw
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/crc32.h>

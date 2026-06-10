@@ -1,14 +1,20 @@
 /*
- * Hitachi Audio Controller (AC97) support for SH7760/SH7780
- *
- * Copyright (c) 2007 Manuel Lauss <mano@roarinelk.homebeep.net>
- *  licensed under the terms outlined in the file COPYING at the root
- *  of the beep kernel sources.
- *
- * dont forget to set IPSEL/OMSEL register bits (in your board code) to
- * enable HAC output pins!
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* BIG FAT FIXME: although the SH7760 has 2 independent AC97 units, only
  * the FIRST can be used since ASoC does not pass any information to the
  * ac97_read/write() functions regarding WHICH unit to use.  You'll have

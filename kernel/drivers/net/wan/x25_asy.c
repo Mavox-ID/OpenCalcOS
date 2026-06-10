@@ -1,19 +1,20 @@
 /*
- *	Things to sort out:
- *
- *	o	tbusy handling
- *	o	allow users to set the parameters
- *	o	sync/async switching ?
- *
- *	Note: This does _not_ implement CCITT X.25 asynchronous framing
- *	recommendations. Its primarily for testing purposes. If you wanted
- *	to do CCITT then in theory all you need is to nick the HDLC async
- *	checksum routines from ppp.c
- *      Changes:
- *
- *	2000-10-29	Henner Eisen	lapb_data_indication() return status.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

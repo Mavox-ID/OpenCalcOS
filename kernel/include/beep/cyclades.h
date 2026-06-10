@@ -1,68 +1,20 @@
-/* $Revision: 3.0 $$Date: 1998/11/02 14:20:59 $
- * beep/include/beep/cyclades.h
- *
- * This file was initially written by
- * Randolph Bentson <bentson@grieg.seaslug.org> and is maintained by
- * Ivan Passos <ivan@cyclades.com>.
- *
- * This file contains the general definitions for the cyclades.c driver
- *$Log: cyclades.h,v $
- *Revision 3.1  2002/01/29 11:36:16  henrique
- *added throttle field on struct cyclades_port to indicate whether the
- *port is throttled or not
- *
- *Revision 3.1  2000/04/19 18:52:52  ivan
- *converted address fields to unsigned long and added fields for physical
- *addresses on cyclades_card structure;
- *
- *Revision 3.0  1998/11/02 14:20:59  ivan
- *added nports field on cyclades_card structure;
- *
- *Revision 2.5  1998/08/03 16:57:01  ivan
- *added cyclades_idle_stats structure;
- * 
- *Revision 2.4  1998/06/01 12:09:53  ivan
- *removed closing_wait2 from cyclades_port structure;
- *
- *Revision 2.3  1998/03/16 18:01:12  ivan
- *changes in the cyclades_port structure to get it closer to the 
- *standard serial port structure;
- *added constants for new ioctls;
- *
- *Revision 2.2  1998/02/17 16:50:00  ivan
- *changes in the cyclades_port structure (addition of shutdown_wait and 
- *chip_rev variables);
- *added constants for new ioctls and for CD1400 rev. numbers.
- *
- *Revision 2.1	1997/10/24 16:03:00  ivan
- *added rflow (which allows enabling the CD1400 special flow control 
- *feature) and rtsdtr_inv (which allows DTR/RTS pin inversion) to 
- *cyclades_port structure;
- *added Alpha support
- *
- *Revision 2.0  1997/06/30 10:30:00  ivan
- *added some new doorbell command constants related to IOCTLW and
- *UART error signaling
- *
- *Revision 1.8  1997/06/03 15:30:00  ivan
- *added constant ZFIRM_HLT
- *added constant CyPCI_Ze_win ( = 2 * Cy_PCI_Zwin)
- *
- *Revision 1.7  1997/03/26 10:30:00  daniel
- *new entries at the end of cyclades_port struct to reallocate
- *variables illegally allocated within card memory.
- *
- *Revision 1.6  1996/09/09 18:35:30  bentson
- *fold in changes for Cyclom-Z -- including structures for
- *communicating with board as well modest changes to original
- *structures to support new features.
- *
- *Revision 1.5  1995/11/13 21:13:31  bentson
- *changes suggested by Michael Chastain <mec@duracef.shout.net>
- *to support use of this file in non-kernel applications
- *
- *
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _BEEP_CYCLADES_H
 #define _BEEP_CYCLADES_H
 

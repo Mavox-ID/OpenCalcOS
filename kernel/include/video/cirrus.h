@@ -1,24 +1,20 @@
 /*
- * drivers/video/clgenfb.h - Cirrus Logic chipset constants
- *
- * Copyright 1999 Jeff Garzik <jgarzik@pobox.com>
- *
- * Original clgenfb author:  Frank Neumann
- *
- * Based on retz3fb.c and clgen.c:
- *      Copyright (C) 1997 Jes Sorensen
- *      Copyright (C) 1996 Frank Neumann
- *
- ***************************************************************
- *
- * Format this code with GNU indent '-kr -i8 -pcs' options.
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file COPYING in the main directory of this archive
- * for more details.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __CLGENFB_H__
 #define __CLGENFB_H__
 

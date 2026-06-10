@@ -1,32 +1,20 @@
 /*
- *    QuickCam Driver For Video4Beep.
- *
- *	Video4Beep conversion work by Alan Cox.
- *	Parport compatibility by Phil Blundell.
- *	Busy loop avoidance by Mark Cooke.
- *
- *    Module parameters:
- *
- *	maxpoll=<1 - 5000>
- *
- *	  When polling the QuickCam for a response, busy-wait for a
- *	  maximum of this many loops. The default of 250 gives little
- *	  impact on interactive response.
- *
- *	  NOTE: If this parameter is set too high, the processor
- *		will busy wait until this loop times out, and then
- *		slowly poll for a further 5 seconds before failing
- *		the transaction. You have been warned.
- *
- *	yieldlines=<1 - 250>
- *
- *	  When acquiring a frame from the camera, the data gathering
- *	  loop will yield back to the scheduler after completing
- *	  this many lines. The default of 4 provides a trade-off
- *	  between increased frame acquisition time and impact on
- *	  interactive response.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* qcam-lib.c -- Library for programming with the Connectix QuickCam.
  * See the included documentation for usage instructions and details
  * of the protocol involved. */

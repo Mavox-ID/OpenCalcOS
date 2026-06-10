@@ -1,14 +1,20 @@
 /*
- * Xen PCI - handle PCI (INTx) and MSI infrastructure calls for PV, HVM and
- * initial domain support. We also handle the DSDT _PRT callbacks for GSI's
- * used in HVM and initial domain mode (PV does not parse ACPI, so it has no
- * concept of GSIs). Under PV we hook under the pnbbios API for IRQs and
- * 0xcf8 PCI configuration read/write.
- *
- *   Author: Ryan Wilson <hap9@epoch.ncsc.mil>
- *           Konrad Rzeszutek Wilk <konrad.wilk@oracle.com>
- *           Stefano Stabellini <stefano.stabellini@eu.citrix.com>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/pci.h>

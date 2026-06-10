@@ -1,30 +1,20 @@
-/*======================================================================
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-    A PCMCIA ethernet driver for SMC91c92-based cards.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-    This driver supports Megahertz PCMCIA ethernet cards; and
-    Megahertz, Motorola, Ositech, and Psion Dacom ethernet/modem
-    multifunction cards.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-    Copyright (C) 1999 David A. Hinds -- dahinds@users.sourceforge.net
-
-    smc91c92_cs.c 1.122 2002/10/25 06:26:39
-
-    This driver contains code written by Donald Becker
-    (becker@scyld.com), Rowan Hughes (x-csrdh@jcu.edu.au),
-    David Hinds (dahinds@users.sourceforge.net), and Erik Stahlman
-    (erik@vt.edu).  Donald wrote the SMC 91c92 code using parts of
-    Erik's SMC 91c94 driver.  Rowan wrote a similar driver, and I've
-    incorporated some parts of his driver here.  I (Dave) wrote most
-    of the PCMCIA glue code, and the Ositech support code.  Kelly
-    Stephens (kstephen@holli.com) added support for the Motorola
-    Mariner, with help from Allen Brost.
-
-    This software may be used and distributed according to the terms of
-    the GNU General Public License, incorporated herein by reference.
-
-======================================================================*/
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

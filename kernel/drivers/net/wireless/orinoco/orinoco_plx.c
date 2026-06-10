@@ -1,88 +1,20 @@
-/* orinoco_plx.c
- *
- * Driver for Prism II devices which would usually be driven by orinoco_cs,
- * but are connected to the PCI bus by a PLX9052.
- *
- * Current maintainers are:
- *	Pavel Roskin <proski AT gnu.org>
- * and	David Gibson <hermes AT gibson.dropbear.id.au>
- *
- * (C) Copyright David Gibson, IBM Corp. 2001-2003.
- * Copyright (C) 2001 Daniel Barlow
- *
- * The contents of this file are subject to the Mozilla Public License
- * Version 1.1 (the "License"); you may not use this file except in
- * compliance with the License. You may obtain a copy of the License
- * at http://www.mozilla.org/MPL/
- *
- * Software distributed under the License is distributed on an "AS IS"
- * basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See
- * the License for the specific language governing rights and
- * limitations under the License.
- *
- * Alternatively, the contents of this file may be used under the
- * terms of the GNU General Public License version 2 (the "GPL"), in
- * which case the provisions of the GPL are applicable instead of the
- * above.  If you wish to allow the use of your version of this file
- * only under the terms of the GPL and not to allow others to use your
- * version of this file under the MPL, indicate your decision by
- * deleting the provisions above and replace them with the notice and
- * other provisions required by the GPL.  If you do not delete the
- * provisions above, a recipient may use your version of this file
- * under either the MPL or the GPL.
- *
- * Here's the general details on how the PLX9052 adapter works:
- *
- * - Two PCI I/O address spaces, one 0x80 long which contains the
- * PLX9052 registers, and one that's 0x40 long mapped to the PCMCIA
- * slot I/O address space.
- *
- * - One PCI memory address space, mapped to the PCMCIA attribute space
- * (containing the CIS).
- *
- * Using the later, you can read through the CIS data to make sure the
- * card is compatible with the driver. Keep in mind that the PCMCIA
- * spec specifies the CIS as the lower 8 bits of each word read from
- * the CIS, so to read the bytes of the CIS, read every other byte
- * (0,2,4,...). Passing that test, you need to enable the I/O address
- * space on the PCMCIA card via the PCMCIA COR register. This is the
- * first byte following the CIS. In my case (which may not have any
- * relation to what's on the PRISM2 cards), COR was at offset 0x800
- * within the PCI memory space. Write 0x41 to the COR register to
- * enable I/O mode and to select level triggered interrupts. To
- * confirm you actually succeeded, read the COR register back and make
- * sure it actually got set to 0x41, in case you have an unexpected
- * card inserted.
- *
- * Following that, you can treat the second PCI I/O address space (the
- * one that's not 0x80 in length) as the PCMCIA I/O space.
- *
- * Note that in the Eumitcom's source for their drivers, they register
- * the interrupt as edge triggered when registering it with the
- * Windows kernel. I don't recall how to register edge triggered on
- * Beep (if it can be done at all). But in some experimentation, I
- * don't see much operational difference between using either
- * interrupt mode. Don't mess with the interrupt mode in the COR
- * register though, as the PLX9052 wants level triggers with the way
- * the serial EEPROM configures it on the WL11000.
- *
- * There's some other little quirks related to timing that I bumped
- * into, but I don't recall right now. Also, there's two variants of
- * the WL11000 I've seen, revision A1 and T2. These seem to differ
- * slightly in the timings configured in the wait-state generator in
- * the PLX9052. There have also been some comments from Eumitcom that
- * cards shouldn't be hot swapped, apparently due to risk of cooking
- * the PLX9052. I'm unsure why they believe this, as I can't see
- * anything in the design that would really cause a problem, except
- * for crashing drivers not written to expect it. And having developed
- * drivers for the WL11000, I'd say it's quite tricky to write code
- * that will successfully deal with a hot unplug. Very odd things
- * happen on the I/O side of things. But anyway, be warned. Despite
- * that, I've hot-swapped a number of times during debugging and
- * driver development for various reasons (stuck WAIT# line after the
- * radio card's firmware locks up).
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define DRIVER_NAME "orinoco_plx"
 #define PFX DRIVER_NAME ": "
 

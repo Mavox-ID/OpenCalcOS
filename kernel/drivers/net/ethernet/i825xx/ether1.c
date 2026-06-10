@@ -1,36 +1,20 @@
 /*
- *  beep/drivers/acorn/net/ether1.c
- *
- *  Copyright (C) 1996-2000 Russell King
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- *  Acorn ether1 driver (82586 chip) for Acorn machines
- *
- * We basically keep two queues in the cards memory - one for transmit
- * and one for receive.  Each has a head and a tail.  The head is where
- * we/the chip adds packets to be transmitted/received, and the tail
- * is where the transmitter has got to/where the receiver will stop.
- * Both of these queues are circular, and since the chip is running
- * all the time, we have to be careful when we modify the pointers etc
- * so that the buffer memory contents is valid all the time.
- *
- * Change log:
- * 1.00	RMK			Released
- * 1.01	RMK	19/03/1996	Transfers the last odd byte onto/off of the card now.
- * 1.02	RMK	25/05/1997	Added code to restart RU if it goes not ready
- * 1.03	RMK	14/09/1997	Cleaned up the handling of a reset during the TX interrupt.
- *				Should prevent lockup.
- * 1.04 RMK	17/09/1997	Added more info when initialsation of chip goes wrong.
- *				TDR now only reports failure when chip reports non-zero
- *				TDR time-distance.
- * 1.05	RMK	31/12/1997	Removed calls to dev_tint for 2.1
- * 1.06	RMK	10/02/2000	Updated for 2.3.43
- * 1.07	RMK	13/05/2000	Updated for 2.3.99-pre8
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/types.h>

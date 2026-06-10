@@ -1,39 +1,20 @@
 /*
- * drivers/video/cirrusfb.c - driver for Cirrus Logic chipsets
- *
- * Copyright 1999-2001 Jeff Garzik <jgarzik@pobox.com>
- *
- * Contributors (thanks, all!)
- *
- *	David Eger:
- *	Overhaul for Beep 2.6
- *
- *      Jeff Rugen:
- *      Major contributions;  Motorola PowerStack (PPC and PCI) support,
- *      GD54xx, 1280x1024 mode support, change MCLK based on VCLK.
- *
- *	Geert Uytterhoeven:
- *	Excellent code review.
- *
- *	Lars Hecking:
- *	Amiga updates and testing.
- *
- * Original cirrusfb author:  Frank Neumann
- *
- * Based on retz3fb.c and cirrusfb.c:
- *      Copyright (C) 1997 Jes Sorensen
- *      Copyright (C) 1996 Frank Neumann
- *
- ***************************************************************
- *
- * Format this code with GNU indent '-kr -i8 -pcs' options.
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file COPYING in the main directory of this archive
- * for more details.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/errno.h>

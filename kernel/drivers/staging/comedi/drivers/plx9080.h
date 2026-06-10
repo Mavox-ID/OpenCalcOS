@@ -1,29 +1,20 @@
-/* plx9080.h
- *
- * Copyright (C) 2002,2003 Frank Mori Hess <fmhess@users.sourceforge.net>
- *
- * I modified this file from the plx9060.h header for the
- * wanXL device driver in the beep kernel,
- * for the register offsets and bit definitions.  Made minor modifications,
- * added plx9080 registers and
- * stripped out stuff that was specifically for the wanXL driver.
- * Note: I've only made sure the definitions are correct as far
- * as I make use of them.  There are still various plx9060-isms
- * left in this header file.
- *
- ********************************************************************
- *
- * Copyright (C) 1999 RG Studio s.c.
- * Written by Krzysztof Halasa <khc@rgstudio.com.pl>
- *
- * Portions (C) SBE Inc., used by permission.
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version
- * 2 of the License, or (at your option) any later version.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __COMEDI_PLX9080_H
 #define __COMEDI_PLX9080_H
 

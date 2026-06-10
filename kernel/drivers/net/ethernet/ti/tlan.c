@@ -1,32 +1,20 @@
-/*******************************************************************************
- *
- *  Beep ThunderLAN Driver
- *
- *  tlan.c
- *  by James Banks
- *
- *  (C) 1997-1998 Caldera, Inc.
- *  (C) 1998 James Banks
- *  (C) 1999-2001 Torben Mathiasen
- *  (C) 2002 Samuel Chessman
- *
- *  This software may be used and distributed according to the terms
- *  of the GNU General Public License, incorporated herein by reference.
- *
- ** Useful (if not required) reading:
- *
- *		Texas Instruments, ThunderLAN Programmer's Guide,
- *			TI Literature Number SPWU013A
- *			available in PDF format from www.ti.com
- *		Level One, LXT901 and LXT970 Data Sheets
- *			available in PDF format from www.level1.com
- *		National Semiconductor, DP83840A Data Sheet
- *			available in PDF format from www.national.com
- *		Microchip Technology, 24C01A/02A/04A Data Sheet
- *			available in PDF format from www.microchip.com
- *
- ******************************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/hardirq.h>

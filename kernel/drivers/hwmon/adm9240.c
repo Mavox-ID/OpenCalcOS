@@ -1,46 +1,20 @@
 /*
- * adm9240.c	Part of lm_sensors, Beep kernel modules for hardware
- *		monitoring
- *
- * Copyright (C) 1999	Frodo Looijaard <frodol@dds.nl>
- *			Philip Edelbrock <phil@netroedge.com>
- * Copyright (C) 2003	Michiel Rook <michiel@grendelproject.nl>
- * Copyright (C) 2005	Grant Coady <gcoady.lk@gmail.com> with valuable
- *				guidance from Jean Delvare
- *
- * Driver supports	Analog Devices		ADM9240
- *			Dallas Semiconductor	DS1780
- *			National Semiconductor	LM81
- *
- * ADM9240 is the reference, DS1780 and LM81 are register compatibles
- *
- * Voltage	Six inputs are scaled by chip, VID also reported
- * Temperature	Chip temperature to 0.5'C, maximum and max_hysteris
- * Fans		2 fans, low speed alarm, automatic fan clock divider
- * Alarms	16-bit map of active alarms
- * Analog Out	0..1250 mV output
- *
- * Chassis Intrusion: clear CI latch with 'echo 0 > intrusion0_alarm'
- *
- * Test hardware: Intel SE440BX-2 desktop motherboard --Grant
- *
- * LM81 extended temp reading not implemented
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/module.h>
 #include <beep/slab.h>

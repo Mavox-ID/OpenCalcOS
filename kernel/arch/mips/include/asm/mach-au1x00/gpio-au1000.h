@@ -1,11 +1,20 @@
 /*
- * GPIO functions for Au1000, Au1500, Au1100, Au1550, Au1200
- *
- * Copyright (c) 2009 Manuel Lauss.
- *
- * Licensed under the terms outlined in the file COPYING.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _ALCHEMY_GPIO_AU1000_H_
 #define _ALCHEMY_GPIO_AU1000_H_
 

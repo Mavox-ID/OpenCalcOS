@@ -1,45 +1,20 @@
 /*
- *  Copyright (c) 2001-2008 LSI Corporation.
- *
- *
- *           Name:  mpi_raid.h
- *          Title:  MPI RAID message and structures
- *  Creation Date:  February 27, 2001
- *
- *    mpi_raid.h Version:  01.05.05
- *
- *  Version History
- *  ---------------
- *
- *  Date      Version   Description
- *  --------  --------  ------------------------------------------------------
- *  02-27-01  01.01.01  Original release for this file.
- *  03-27-01  01.01.02  Added structure offset comments.
- *  08-08-01  01.02.01  Original release for v1.2 work.
- *  09-28-01  01.02.02  Major rework for MPI v1.2 Integrated RAID changes.
- *  10-04-01  01.02.03  Added ActionData defines for
- *                      MPI_RAID_ACTION_DELETE_VOLUME action.
- *  11-01-01  01.02.04  Added define for MPI_RAID_ACTION_ADATA_DO_NOT_SYNC.
- *  03-14-02  01.02.05  Added define for MPI_RAID_ACTION_ADATA_LOW_LEVEL_INIT.
- *  05-07-02  01.02.06  Added define for MPI_RAID_ACTION_ACTIVATE_VOLUME,
- *                      MPI_RAID_ACTION_INACTIVATE_VOLUME, and
- *                      MPI_RAID_ACTION_ADATA_INACTIVATE_ALL.
- *  07-12-02  01.02.07  Added structures for Mailbox request and reply.
- *  11-15-02  01.02.08  Added missing MsgContext field to MSG_MAILBOX_REQUEST.
- *  04-01-03  01.02.09  New action data option flag for
- *                      MPI_RAID_ACTION_DELETE_VOLUME.
- *  05-11-04  01.03.01  Original release for MPI v1.3.
- *  08-19-04  01.05.01  Original release for MPI v1.5.
- *  01-15-05  01.05.02  Added defines for the two new RAID Actions for
- *                      _SET_RESYNC_RATE and _SET_DATA_SCRUB_RATE.
- *  02-28-07  01.05.03  Added new RAID Action, Device FW Update Mode, and
- *                      associated defines.
- *  08-07-07  01.05.04  Added Disable Full Rebuild bit to the ActionDataWord
- *                      for the RAID Action MPI_RAID_ACTION_DISABLE_VOLUME.
- *  01-15-08  01.05.05  Added define for MPI_RAID_ACTION_SET_VOLUME_NAME.
- *  --------------------------------------------------------------------------
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef MPI_RAID_H
 #define MPI_RAID_H
 

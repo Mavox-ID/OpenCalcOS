@@ -1,24 +1,20 @@
 /*
- * drivers/net/ethernet/ibm/emac/tah.h
- *
- * Driver for PowerPC 4xx on-chip ethernet controller, TAH support.
- *
- * Copyright 2007 Benjamin Herrenschmidt, IBM Corp.
- *                <benh@kernel.crashing.org>
- *
- * Based on the arch/ppc version of the driver:
- *
- * Copyright 2004 MontaVista Software, Inc.
- * Matt Porter <mporter@kernel.crashing.org>
- *
- * Copyright (c) 2005 Eugene Surovegin <ebs@ebshome.net>
- *
- * This program is free software; you can redistribute  it and/or modify it
- * under  the terms of  the GNU General  Public License as published by the
- * Free Software Foundation;  either version 2 of the  License, or (at your
- * option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __IBM_NEWEMAC_TAH_H
 #define __IBM_NEWEMAC_TAH_H
 

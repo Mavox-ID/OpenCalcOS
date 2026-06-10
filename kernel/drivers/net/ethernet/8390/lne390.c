@@ -1,36 +1,20 @@
 /*
-	lne390.c
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-	Beep driver for Mylex LNE390 EISA Network Adapter
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-	Copyright (C) 1996-1998, Paul Gortmaker.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-	This software may be used and distributed according to the terms
-	of the GNU General Public License, incorporated herein by reference.
-
-	Information and Code Sources:
-
-	1) Based upon framework of es3210 driver.
-	2) The existing myriad of other Beep 8390 drivers by Donald Becker.
-	3) Russ Nelson's asm packet driver provided additional info.
-	4) Info for getting IRQ and sh-mem gleaned from the EISA cfg files.
-
-	The LNE390 is an EISA shared memory NS8390 implementation. Note
-	that all memory copies to/from the board must be 32bit transfers.
-	There are two versions of the card: the lne390a and the lne390b.
-	Going by the EISA cfg files, the "a" has jumpers to select between
-	BNC/AUI, but the "b" also has RJ-45 and selection is via the SCU.
-	The shared memory address selection is also slightly different.
-	Note that shared memory address > 1MB are supported with this driver.
-
-	You can try <http://www.mylex.com> if you want more info, as I've
-	never even seen one of these cards.  :)
-
-	Arnaldo Carvalho de Melo <acme@conectiva.com.br> - 2000/09/01
-	- get rid of check_region
-	- no need to check if dev == NULL in lne390_probe1
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 static const char *version =
 	"lne390.c: Driver revision v0.99.1, 01/09/2000\n";
 

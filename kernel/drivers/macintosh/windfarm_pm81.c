@@ -1,98 +1,20 @@
 /*
- * Windfarm PowerMac thermal control. iMac G5
- *
- * (c) Copyright 2005 Benjamin Herrenschmidt, IBM Corp.
- *                    <benh@kernel.crashing.org>
- *
- * Released under the term of the GNU GPL v2.
- *
- * The algorithm used is the PID control algorithm, used the same
- * way the published Darwin code does, using the same values that
- * are present in the Darwin 8.2 snapshot property lists (note however
- * that none of the code has been re-used, it's a complete re-implementation
- *
- * The various control loops found in Darwin config file are:
- *
- * PowerMac8,1 and PowerMac8,2
- * ===========================
- *
- * System Fans control loop. Different based on models. In addition to the
- * usual PID algorithm, the control loop gets 2 additional pairs of linear
- * scaling factors (scale/offsets) expressed as 4.12 fixed point values
- * signed offset, unsigned scale)
- *
- * The targets are modified such as:
- *  - the linked control (second control) gets the target value as-is
- *    (typically the drive fan)
- *  - the main control (first control) gets the target value scaled with
- *    the first pair of factors, and is then modified as below
- *  - the value of the target of the CPU Fan control loop is retrieved,
- *    scaled with the second pair of factors, and the max of that and
- *    the scaled target is applied to the main control.
- *
- * # model_id: 2
- *   controls       : system-fan, drive-bay-fan
- *   sensors        : hd-temp
- *   PID params     : G_d = 0x15400000
- *                    G_p = 0x00200000
- *                    G_r = 0x000002fd
- *                    History = 2 entries
- *                    Input target = 0x3a0000
- *                    Interval = 5s
- *   linear-factors : offset = 0xff38 scale  = 0x0ccd
- *                    offset = 0x0208 scale  = 0x07ae
- *
- * # model_id: 3
- *   controls       : system-fan, drive-bay-fan
- *   sensors        : hd-temp
- *   PID params     : G_d = 0x08e00000
- *                    G_p = 0x00566666
- *                    G_r = 0x0000072b
- *                    History = 2 entries
- *                    Input target = 0x350000
- *                    Interval = 5s
- *   linear-factors : offset = 0xff38 scale  = 0x0ccd
- *                    offset = 0x0000 scale  = 0x0000
- *
- * # model_id: 5
- *   controls       : system-fan
- *   sensors        : hd-temp
- *   PID params     : G_d = 0x15400000
- *                    G_p = 0x00233333
- *                    G_r = 0x000002fd
- *                    History = 2 entries
- *                    Input target = 0x3a0000
- *                    Interval = 5s
- *   linear-factors : offset = 0x0000 scale  = 0x1000
- *                    offset = 0x0091 scale  = 0x0bae
- *
- * CPU Fan control loop. The loop is identical for all models. it
- * has an additional pair of scaling factor. This is used to scale the
- * systems fan control loop target result (the one before it gets scaled
- * by the System Fans control loop itself). Then, the max value of the
- * calculated target value and system fan value is sent to the fans
- *
- *   controls       : cpu-fan
- *   sensors        : cpu-temp cpu-power
- *   PID params     : From SMU sdb partition
- *   linear-factors : offset = 0xfb50 scale  = 0x1000
- *
- * CPU Slew control loop. Not implemented. The cpufreq driver in beep is
- * completely separate for now, though we could find a way to link it, either
- * as a client reacting to overtemp notifications, or directling monitoring
- * the CPU temperature
- *
- * WARNING ! The CPU control loop requires the CPU tmax for the current
- * operating point. However, we currently are completely separated from
- * the cpufreq driver and thus do not know what the current operating
- * point is. Fortunately, we also do not have any hardware supporting anything
- * but operating point 0 at the moment, thus we just peek that value directly
- * from the SDB partition. If we ever end up with actually slewing the system
- * clock and thus changing operating points, we'll have to find a way to
- * communicate with the CPU freq driver;
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/errno.h>
 #include <beep/kernel.h>

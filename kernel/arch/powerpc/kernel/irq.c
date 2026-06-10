@@ -1,33 +1,20 @@
 /*
- *  Derived from arch/i386/kernel/irq.c
- *    Copyright (C) 1992 Linus Torvalds
- *  Adapted from arch/i386 by Gary Thomas
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
- *  Updated and modified by Cort Dougan <cort@fsmlabs.com>
- *    Copyright (C) 1996-2001 Cort Dougan
- *  Adapted for Power Macintosh by Paul Mackerras
- *    Copyright (C) 1996 Paul Mackerras (paulus@cs.anu.edu.au)
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version
- * 2 of the License, or (at your option) any later version.
- *
- * This file contains the code used by various IRQ handling routines:
- * asking for different IRQ's should be done through these routines
- * instead of just grabbing them. Thus setups with different IRQ numbers
- * shouldn't result in any weird surprises, and installing new handlers
- * should be easier.
- *
- * The MPC8xx has an interrupt mask in the SIU.  If a bit is set, the
- * interrupt is _enabled_.  As expected, IRQ0 is bit 0 in the 32-bit
- * mask register (of which only 16 are defined), hence the weird shifting
- * and complement of the cached_irq_mask.  I want to be able to stuff
- * this right into the SIU SMASK register.
- * Many of the prep/chrp functions are conditional compiled on CONFIG_8xx
- * to reduce code space and undefined function references.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #undef DEBUG
 
 #include <beep/export.h>

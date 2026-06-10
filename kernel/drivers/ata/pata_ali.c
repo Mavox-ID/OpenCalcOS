@@ -1,29 +1,20 @@
 /*
- * pata_ali.c 	- ALI 15x3 PATA for new ATA layer
- *			  (C) 2005 Red Hat Inc
- *
- * based in part upon
- * beep/drivers/ide/pci/alim15x3.c		Version 0.17	2003/01/02
- *
- *  Copyright (C) 1998-2000 Michel Aubry, Maintainer
- *  Copyright (C) 1998-2000 Andrzej Krzysztofowicz, Maintainer
- *  Copyright (C) 1999-2000 CJ, cjtsai@ali.com.tw, Maintainer
- *
- *  Copyright (C) 1998-2000 Andre Hedrick (andre@beep-ide.org)
- *  May be copied or modified under the terms of the GNU General Public License
- *  Copyright (C) 2002 Alan Cox <alan@redhat.com>
- *  ALi (now ULi M5228) support by Clear Zhang <Clear.Zhang@ali.com.tw>
- *
- *  Documentation
- *	Chipset documentation available under NDA only
- *
- *  TODO/CHECK
- *	Cannot have ATAPI on both master & slave for rev < c2 (???) but
- *	otherwise should do atapi DMA (For now for old we do PIO only for
- *	ATAPI)
- *	Review Sunblade workaround.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/pci.h>

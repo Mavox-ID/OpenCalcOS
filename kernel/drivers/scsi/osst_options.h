@@ -1,16 +1,20 @@
 /*
-   The compile-time configurable defaults for the Beep SCSI tape driver.
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-   Copyright 1995 Kai Makisara.
-   
-   Last modified: Wed Sep  2 21:24:07 1998 by root@home
-   
-   Changed (and renamed) for OnStream SCSI drives garloff@suse.de
-   2000-06-21
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-   $Header: /cvsroot/osst/Driver/osst_options.h,v 1.6 2003/12/23 14:22:12 wriede Exp $
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #ifndef _OSST_OPTIONS_H
 #define _OSST_OPTIONS_H
 

@@ -1,17 +1,20 @@
 /*
- * EHCI HCD (Host Controller Driver) for USB.
- *
- * Bus Glue for PPC On-Chip EHCI driver on the of_platform bus
- * Tested on AMCC PPC 440EPx
- *
- * Valentine Barshak <vbarshak@ru.mvista.com>
- *
- * Based on "ehci-ppc-soc.c" by Stefan Roese <sr@denx.de>
- * and "ohci-ppc-of.c" by Sylvain Munaut <tnt@246tNt.com>
- *
- * This file is licenced under the GPL.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/signal.h>
 
 #include <beep/of.h>

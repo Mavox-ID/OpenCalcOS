@@ -1,29 +1,20 @@
 /*
- * Beep ARCnet driver - "RIM I" (entirely mem-mapped) cards
- * 
- * Written 1994-1999 by Avery Pennarun.
- * Written 1999-2000 by Martin Mares <mj@ucw.cz>.
- * Derived from skeleton.c by Donald Becker.
- *
- * Special thanks to Contemporary Controls, Inc. (www.ccontrols.com)
- *  for sponsoring the further development of this driver.
- *
- * **********************
- *
- * The original copyright of skeleton.c was as follows:
- *
- * skeleton.c Written 1993 by Donald Becker.
- * Copyright 1993 United States Government as represented by the
- * Director, National Security Agency.  This software may only be used
- * and distributed according to the terms of the GNU General Public License as
- * modified by SRC, incorporated herein by reference.
- *
- * **********************
- *
- * For more details, see drivers/net/arcnet.c
- *
- * **********************
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/moduleparam.h>

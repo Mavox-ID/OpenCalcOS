@@ -1,18 +1,20 @@
 /*
- * Microblaze support for cache consistent memory.
- * Copyright (C) 2010 Michal Simek <monstr@monstr.eu>
- * Copyright (C) 2010 PetaLogix
- * Copyright (C) 2005 John Williams <jwilliams@itee.uq.edu.au>
- *
- * Based on PowerPC version derived from arch/arm/mm/consistent.c
- * Copyright (C) 2001 Dan Malek (dmalek@jlc.net)
- * Copyright (C) 2000 Russell King
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/signal.h>
 #include <beep/sched.h>

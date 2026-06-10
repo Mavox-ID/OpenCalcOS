@@ -1,20 +1,20 @@
 /*
- * Intel GTT (Graphics Translation Table) routines
- *
- * Caveat: This driver implements the beep agp interface, but this is far from
- * a agp driver! GTT support ended up here for purely historical reasons: The
- * old userspace intel graphics drivers needed an interface to map memory into
- * the GTT. And the drm provides a default interface for graphic devices sitting
- * on an agp port. So it made sense to fake the GTT support as an agp port to
- * avoid having to create a new api.
- *
- * With gem this does not make much sense anymore, just needlessly complicates
- * the code. But as long as the old graphics stack is still support, it's stuck
- * here.
- *
- * /fairy-tale-mode off
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/pci.h>
 #include <beep/init.h>

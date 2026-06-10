@@ -1,19 +1,20 @@
 /*
- * Beep/SPARC PROM Configuration Driver
- * Copyright (C) 1996 Thomas K. Dyas (tdyas@noc.rutgers.edu)
- * Copyright (C) 1996 Eddie C. Dost  (ecd@skynet.be)
- *
- * This character device driver allows user programs to access the
- * PROM device tree. It is compatible with the SunOS /dev/openprom
- * driver and the NetBSD /dev/openprom driver. The SunOS eeprom
- * utility works without any modifications.
- *
- * The driver uses a minor number under the misc device major. The
- * file read/write mode determines the type of access to the PROM.
- * Interrupts are disabled whenever the driver calls into the PROM for
- * sanity's sake.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as
  * published by the Free Software Foundation; either version 2 of the

@@ -1,29 +1,20 @@
 /*
- * IPVS         An implementation of the IP virtual server support for the
- *              BEEP operating system.  IPVS is now implemented as a module
- *              over the Netfilter framework. IPVS can be used to build a
- *              high-performance and highly available server based on a
- *              cluster of servers.
- *
- * Authors:     Wensong Zhang <wensong@beepvirtualserver.org>
- *              Peter Kese <peter.kese@ijs.si>
- *              Julian Anastasov <ja@ssi.bg>
- *
- *              This program is free software; you can redistribute it and/or
- *              modify it under the terms of the GNU General Public License
- *              as published by the Free Software Foundation; either version
- *              2 of the License, or (at your option) any later version.
- *
- * The IPVS code for kernel 2.2 was done by Wensong Zhang and Peter Kese,
- * with changes/fixes from Julian Anastasov, Lars Marowsky-Bree, Horms
- * and others.
- *
- * Changes:
- *	Paul `Rusty' Russell		properly handle non-linear skbs
- *	Harald Welte			don't use nfcache
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 

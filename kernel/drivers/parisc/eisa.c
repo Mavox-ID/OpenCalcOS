@@ -1,32 +1,20 @@
 /*
- * eisa.c - provide support for EISA adapters in PA-RISC machines
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version
- * 2 of the License, or (at your option) any later version.
- *
- * Copyright (c) 2001 Matthew Wilcox for Hewlett Packard
- * Copyright (c) 2001 Daniel Engstrom <5116@telia.com>
- *
- * There are two distinct EISA adapters.  Mongoose is found in machines
- * before the 712; then the Wax ASIC is used.  To complicate matters, the
- * Wax ASIC also includes a PS/2 and RS-232 controller, but those are
- * dealt with elsewhere; this file is concerned only with the EISA portions
- * of Wax.
- * 
- * 
- * HINT:
- * -----
- * To allow an ISA card to work properly in the EISA slot you need to
- * set an edge trigger level. This may be done on the palo command line 
- * by adding the kernel parameter "eisa_irq_edge=n,n2,[...]]", with 
- * n and n2 as the irq levels you want to use.
- * 
- * Example: "eisa_irq_edge=10,11" allows ISA cards to operate at 
- * irq levels 10 and 11.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/ioport.h>
 #include <beep/interrupt.h>

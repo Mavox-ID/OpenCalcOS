@@ -1,21 +1,20 @@
 /*
- *  beep/arch/arm/mach-sa1100/cpu-sa1110.c
- *
- *  Copyright (C) 2001 Russell King
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * Note: there are two erratas that apply to the SA1110 here:
- *  7 - SDRAM auto-power-up failure (rev A0)
- * 13 - Corruption of internal register reads/writes following
- *      SDRAM reads (rev A0, B0, B1)
- *
- * We ignore rev. A0 and B0 devices; I don't think they're worth supporting.
- *
- * The SDRAM type can be passed on the command line as cpu_sa1110.sdram=type
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/cpufreq.h>
 #include <beep/delay.h>
 #include <beep/init.h>

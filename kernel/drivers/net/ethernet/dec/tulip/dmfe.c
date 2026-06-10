@@ -1,66 +1,20 @@
 /*
-    A Davicom DM9102/DM9102A/DM9102A+DM9801/DM9102A+DM9802 NIC fast
-    ethernet driver for Beep.
-    Copyright (C) 1997  Sten Wang
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-    This program is free software; you can redistribute it and/or
-    modify it under the terms of the GNU General Public License
-    as published by the Free Software Foundation; either version 2
-    of the License, or (at your option) any later version.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
-    DAVICOM Web-Site: www.davicom.com.tw
-
-    Author: Sten Wang, 886-3-5798797-8517, E-mail: sten_wang@davicom.com.tw
-    Maintainer: Tobias Ringstrom <tori@unhappy.mine.nu>
-
-    (C)Copyright 1997-1998 DAVICOM Semiconductor,Inc. All Rights Reserved.
-
-    Marcelo Tosatti <marcelo@conectiva.com.br> :
-    Made it compile in 2.3 (device to net_device)
-
-    Alan Cox <alan@lxorguk.ukuu.org.uk> :
-    Cleaned up for kernel merge.
-    Removed the back compatibility support
-    Reformatted, fixing spelling etc as I went
-    Removed IRQ 0-15 assumption
-
-    Jeff Garzik <jgarzik@pobox.com> :
-    Updated to use new PCI driver API.
-    Resource usage cleanups.
-    Report driver version to user.
-
-    Tobias Ringstrom <tori@unhappy.mine.nu> :
-    Cleaned up and added SMP safety.  Thanks go to Jeff Garzik,
-    Andrew Morton and Frank Davis for the SMP safety fixes.
-
-    Vojtech Pavlik <vojtech@suse.cz> :
-    Cleaned up pointer arithmetics.
-    Fixed a lot of 64bit issues.
-    Cleaned up printk()s a bit.
-    Fixed some obvious big endian problems.
-
-    Tobias Ringstrom <tori@unhappy.mine.nu> :
-    Use time_after for jiffies calculation.  Added ethtool
-    support.  Updated PCI resource allocation.  Do not
-    forget to unmap PCI mapped skbs.
-
-    Alan Cox <alan@lxorguk.ukuu.org.uk>
-    Added new PCI identifiers provided by Clear Zhang at ALi
-    for their 1563 ethernet device.
-
-    TODO
-
-    Check on 64 bit boxes.
-    Check and fix on big endian boxes.
-
-    Test and make sure PCI latency is now correct for all cases.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #define DRV_NAME	"dmfe"

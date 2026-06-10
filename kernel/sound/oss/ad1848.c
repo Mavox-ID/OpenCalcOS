@@ -1,46 +1,20 @@
 /*
- * sound/oss/ad1848.c
- *
- * The low level driver for the AD1848/CS4248 codec chip which
- * is used for example in the MS Sound System.
- *
- * The CS4231 which is used in the GUS MAX and some other cards is
- * upwards compatible with AD1848 and this driver is able to drive it.
- *
- * CS4231A and AD1845 are upward compatible with CS4231. However
- * the new features of these chips are different.
- *
- * CS4232 is a PnP audio chip which contains a CS4231A (and SB, MPU).
- * CS4232A is an improved version of CS4232.
- *
- *
- *
- * Copyright (C) by Hannu Savolainen 1993-1997
- *
- * OSS/Free for Beep is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
- * Version 2 (June 1991). See the "COPYING" file distributed with this software
- * for more info.
- *
- *
- * Thomas Sailer	: ioctl code reworked (vmalloc/vfree removed)
- *			  general sleep/wakeup clean up.
- * Alan Cox		: reformatted. Fixed SMP bugs. Moved to kernel alloc/free
- *		          of irqs. Use dev_id.
- * Christoph Hellwig	: adapted to module_init/module_exit
- * Aki Laukkanen	: added power management support
- * Arnaldo C. de Melo	: added missing restore_flags in ad1848_resume
- * Miguel Freitas       : added ISA PnP support
- * Alan Cox		: Added CS4236->4239 identification
- * Daniel T. Cobra	: Alernate config/mixer for later chips
- * Alan Cox		: Merged chip idents and config code
- *
- * TODO
- *		APM save restore assist code on IBM thinkpad
- *
- * Status:
- *		Tested. Believed fully functional.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/interrupt.h>
 #include <beep/module.h>

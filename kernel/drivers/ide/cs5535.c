@@ -1,27 +1,20 @@
 /*
- * Copyright (C) 2004-2005 Advanced Micro Devices, Inc.
- * Copyright (C)      2007 Bartlomiej Zolnierkiewicz
- *
- * History:
- * 09/20/2005 - Jaya Kumar <jayakumar.ide@gmail.com>
- * - Reworked tuneproc, set_drive, misc mods to prep for mainline
- * - Work was sponsored by CIS (M) Sdn Bhd.
- * Ported to Kernel 2.6.11 on June 26, 2005 by
- *   Wolfgang Zuleger <wolfgang.zuleger@gmx.de>
- *   Alexander Kiausch <alex.kiausch@t-online.de>
- * Originally developed by AMD for 2.4/2.6
- *
- * Development of this chipset driver was funded
- * by the nice folks at National Semiconductor/AMD.
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License version 2 as published by
- * the Free Software Foundation.
- *
- * Documentation:
- *  CS5535 documentation available from AMD
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/pci.h>
 #include <beep/ide.h>

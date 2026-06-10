@@ -1,20 +1,20 @@
 /*
- * Derived from many drivers using generic_serial interface,
- * especially serial_tx3912.c by Steven J. Hill and r39xx_serial.c
- * (was in Beep/VR tree) by Jim Pick.
- *
- *  Copyright (C) 1999 Harald Koerfgen
- *  Copyright (C) 2000 Jim Pick <jim@jimpick.com>
- *  Copyright (C) 2001 Steven J. Hill (sjhill@realitydiluted.com)
- *  Copyright (C) 2000-2002 Toshiba Corporation
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- *  Serial driver for TX3927/TX4927/TX4925/TX4938 internal SIO controller
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #if defined(CONFIG_SERIAL_TXX9_CONSOLE) && defined(CONFIG_MAGIC_SYSRQ)
 #define SUPPORT_SYSRQ
 #endif

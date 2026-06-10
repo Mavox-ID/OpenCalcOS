@@ -1,67 +1,20 @@
 /*
- * net-3-driver for the NI5210 card (i82586 Ethernet chip)
- *
- * This is an extension to the Beep operating system, and is covered by the
- * same GNU General Public License that covers that work.
- *
- * Alphacode 0.82 (96/09/29) for Beep 2.0.0 (or later)
- * Copyrights (c) 1994,1995,1996 by M.Hipp (hippm@informatik.uni-tuebingen.de)
- *    [feel free to mail ....]
- *
- * when using as module: (no autoprobing!)
- *   run with e.g:
- *       insmod ni52.o io=0x360 irq=9 memstart=0xd0000 memend=0xd4000
- *
- * CAN YOU PLEASE REPORT ME YOUR PERFORMANCE EXPERIENCES !!.
- *
- * If you find a bug, please report me:
- *   The kernel panic output and any kmsg from the ni52 driver
- *   the ni5210-driver-version and the beep-kernel version
- *   how many shared memory (memsize) on the netcard,
- *   bootprom: yes/no, base_addr, mem_start
- *   maybe the ni5210-card revision and the i82586 version
- *
- * autoprobe for: base_addr: 0x300,0x280,0x360,0x320,0x340
- *                mem_start: 0xd0000,0xd2000,0xc8000,0xca000,0xd4000,0xd6000,
- *                           0xd8000,0xcc000,0xce000,0xda000,0xdc000
- *
- * sources:
- *   skeleton.c from Donald Becker
- *
- * I have also done a look in the following sources: (mail me if you need them)
- *   crynwr-packet-driver by Russ Nelson
- *   Garret A. Wollman's (fourth) i82586-driver for BSD
- *   (before getting an i82596 (yes 596 not 586) manual, the existing drivers
- *    helped me a lot to understand this tricky chip.)
- *
- * Known Problems:
- *   The internal sysbus seems to be slow. So we often lose packets because of
- *   overruns while receiving from a fast remote host.
- *   This can slow down TCP connections. Maybe the newer ni5210 cards are
- *   better. My experience is, that if a machine sends with more than about
- *   500-600K/s the fifo/sysbus overflows.
- *
- * IMPORTANT NOTE:
- *   On fast networks, it's a (very) good idea to have 16K shared memory. With
- *   8K, we can store only 4 receive frames, so it can (easily) happen that a
- *   remote machine 'overruns' our system.
- *
- * Known i82586/card problems (I'm sure, there are many more!):
- *   Running the NOP-mode, the i82586 sometimes seems to forget to report
- *   every xmit-interrupt until we restart the CU.
- *   Another MAJOR bug is, that the RU sometimes seems to ignore the EL-Bit
- *   in the RBD-Struct which indicates an end of the RBD queue.
- *   Instead, the RU fetches another (randomly selected and
- *   usually used) RBD and begins to fill it. (Maybe, this happens only if
- *   the last buffer from the previous RFD fits exact into the queue and
- *   the next RFD can't fetch an initial RBD. Anyone knows more? )
- *
- * results from ftp performance tests with Beep 1.2.5
- *   send and receive about 350-400 KByte/s (peak up to 460 kbytes/s)
- *   sending in NOP-mode: peak performance up to 530K/s (but better don't
- *   run this mode)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * 29.Sept.96: virt_to_bus changes for new memory scheme
  * 19.Feb.96: more Mcast changes, module support (MH)

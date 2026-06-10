@@ -1,39 +1,20 @@
 /*
- * m8xx_pcmcia.c - Beep PCMCIA socket driver for the mpc8xx series.
- *
- * (C) 1999-2000 Magnus Damm <damm@opensource.se>
- * (C) 2001-2002 Montavista Software, Inc.
- *     <mlocke@mvista.com>
- *
- * Support for two slots by Cyclades Corporation
- *     <oliver.kurth@cyclades.de>
- * Further fixes, v2.6 kernel port
- *     <marcelo.tosatti@cyclades.com>
- * 
- * Some fixes, additions (C) 2005-2007 Montavista Software, Inc.
- *     <vbordug@ru.mvista.com>
- *
- * "The ExCA standard specifies that socket controllers should provide
- * two IO and five memory windows per socket, which can be independently
- * configured and positioned in the host address space and mapped to
- * arbitrary segments of card address space. " - David A Hinds. 1999
- *
- * This controller does _not_ meet the ExCA standard.
- *
- * m8xx pcmcia controller brief info:
- * + 8 windows (attrib, mem, i/o)
- * + up to two slots (SLOT_A and SLOT_B)
- * + inputpins, outputpins, event and mask registers.
- * - no offset register. sigh.
- *
- * Because of the lacking offset register we must map the whole card.
- * We assign each memory window PCMCIA_MEM_WIN_SIZE address space.
- * Make sure there is (PCMCIA_MEM_WIN_SIZE * PCMCIA_MEM_WIN_NO
- * * PCMCIA_SOCKETS_NO) bytes at PCMCIA_MEM_WIN_BASE.
- * The i/o windows are dynamically allocated at PCMCIA_IO_WIN_BASE.
- * They are maximum 64KByte each...
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/types.h>

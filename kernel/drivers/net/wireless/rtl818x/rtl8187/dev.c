@@ -1,25 +1,20 @@
 /*
- * Beep device driver for RTL8187
- *
- * Copyright 2007 Michael Wu <flamingice@sourmilk.net>
- * Copyright 2007 Andrea Merello <andreamrl@tiscali.it>
- *
- * Based on the r8187 driver, which is:
- * Copyright 2005 Andrea Merello <andreamrl@tiscali.it>, et al.
- *
- * The driver was extended to the RTL8187B in 2008 by:
- *	Herton Ronaldo Krzesinski <herton@mandriva.com.br>
- *	Hin-Tak Leung <htl10@users.sourceforge.net>
- *	Larry Finger <Larry.Finger@lwfinger.net>
- *
- * Magic delays and register offsets below are taken from the original
- * r8187 driver sources.  Thanks to Realtek for their support!
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/usb.h>
 #include <beep/slab.h>

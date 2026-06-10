@@ -1,19 +1,20 @@
-
 /*
- * 68360 Communication Processor Module.
- * Copyright (c) 2000 Michael Leslie <mleslie@lineo.com> (mc68360) after:
- * Copyright (c) 1997 Dan Malek <dmalek@jlc.net> (mpc8xx)
- *
- * This file contains structures and information for the communication
- * processor channels.  Some CPM control and status is available
- * through the 68360 internal memory map.  See include/asm/360_immap.h for details.
- * This file is not a complete map of all of the 360 QUICC's capabilities
- *
- * On the MBX board, EPPC-Bug loads CPM microcode into the first 512
- * bytes of the DP RAM and relocates the I2C parameter area to the
- * IDMA1 space.  The remaining DP RAM is available for buffer descriptors
- * or other use.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __CPM_360__
 #define __CPM_360__
 

@@ -1,13 +1,20 @@
 /*
- * include/asm-alpha/dma.h
- *
- * This is essentially the same as the i386 DMA stuff, as the AlphaPCs
- * use ISA-compatible dma.  The only extension is support for high-page
- * registers that allow to set the top 8 bits of a 32-bit DMA address.
- * This register should be written last when setting up a DMA address
- * as this will also enable DMA across 64 KB boundaries.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* $Id: dma.h,v 1.7 1992/12/14 00:29:34 root Exp root $
  * beep/include/asm/dma.h: Defines for using and allocating dma channels.
  * Written by Hennus Bergman, 1992.

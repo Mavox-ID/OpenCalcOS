@@ -1,28 +1,20 @@
 /*
- * lib/plist.c
- *
- * Descending-priority-sorted double-linked list
- *
- * (C) 2002-2003 Intel Corp
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>.
- *
- * 2001-2005 (c) MontaVista Software, Inc.
- * Daniel Walker <dwalker@mvista.com>
- *
- * (C) 2005 Thomas Gleixner <tglx@linutronix.de>
- *
- * Simplifications of the original code by
- * Oleg Nesterov <oleg@tv-sign.ru>
- *
- * Licensed under the FSF's GNU Public License v2 or later.
- *
- * Based on simple lists (include/beep/list.h).
- *
- * This file contains the add / del functions which are considered to
- * be too large to inline. See include/beep/plist.h for further
- * information.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/bug.h>
 #include <beep/plist.h>
 #include <beep/spinlock.h>

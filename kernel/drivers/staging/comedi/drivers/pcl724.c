@@ -1,24 +1,19 @@
 /*
-    comedi/drivers/pcl724.c
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-    Michal Dobes <dobes@tesnet.cz>
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-    hardware driver for Advantech cards:
-     card:   PCL-724, PCL-722, PCL-731
-     driver: pcl724,  pcl722,  pcl731
-    and ADLink cards:
-     card:   ACL-7122, ACL-7124, PET-48DIO
-     driver: acl7122,  acl7124,  pet48dio
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-    Options for PCL-724, PCL-731, ACL-7124 and PET-48DIO:
-     [0] - IO Base
-
-    Options for PCL-722 and ACL-7122:
-     [0] - IO Base
-     [1] - IRQ (0=disable IRQ) IRQ isn't supported at this time!
-     [2] -number of DIO:
-	      0, 144: 144 DIO configuration
-	      1,  96:  96 DIO configuration
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 /*
 Driver: pcl724

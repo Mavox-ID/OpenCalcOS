@@ -1,20 +1,20 @@
 /*
- * Copyright IBM Corp. 2001, 2009
- * Author(s):
- *	Original CTC driver(s):
- *		Fritz Elfert (felfert@millenux.com)
- *		Dieter Wellerdiek (wel@de.ibm.com)
- *		Martin Schwidefsky (schwidefsky@de.ibm.com)
- *		Denis Joseph Barrow (barrow_dj@yahoo.com)
- *		Jochen Roehrig (roehrig@de.ibm.com)
- *		Cornelia Huck <cornelia.huck@de.ibm.com>
- *	MPC additions:
- *		Belinda Thompson (belindat@us.ibm.com)
- *		Andy Richter (richtera@us.ibm.com)
- *	Revived by:
- *		Peter Tiedemann (ptiedem@de.ibm.com)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #undef DEBUG
 #undef DEBUGDATA
 #undef DEBUGCCW

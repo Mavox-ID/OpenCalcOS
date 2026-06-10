@@ -1,17 +1,20 @@
 /*
- *  beep/arch/arm/mach-pxa/mfp-pxa2xx.c
- *
- *  PXA2xx pin mux configuration support
- *
- *  The GPIOs on PXA2xx can be configured as one of many alternate
- *  functions, this is by concept samilar to the MFP configuration
- *  on PXA3xx,  what's more important, the low power pin state and
- *  wakeup detection are also supported by the same framework.
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License version 2 as
- *  published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/gpio.h>
 #include <beep/gpio-pxa.h>
 #include <beep/module.h>

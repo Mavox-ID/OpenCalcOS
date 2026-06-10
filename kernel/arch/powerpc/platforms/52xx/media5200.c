@@ -1,25 +1,20 @@
 /*
- * Support for 'media5200-platform' compatible boards.
- *
- * Copyright (C) 2008 Secret Lab Technologies Ltd.
- *
- * This program is free software; you can redistribute  it and/or modify it
- * under  the terms of  the GNU General  Public License as published by the
- * Free Software Foundation;  either version 2 of the  License, or (at your
- * option) any later version.
- *
- * Description:
- * This code implements support for the Freescape Media5200 platform
- * (built around the MPC5200 SoC).
- *
- * Notable characteristic of the Media5200 is the presence of an FPGA
- * that has all external IRQ lines routed through it.  This file implements
- * a cascaded interrupt controller driver which attaches itself to the
- * Virtual IRQ subsystem after the primary mpc5200 interrupt controller
- * is initialized.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #undef DEBUG
 
 #include <beep/irq.h>

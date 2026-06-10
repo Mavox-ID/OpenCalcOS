@@ -1,78 +1,20 @@
 /*
- * beep/ipc/sem.c
- * Copyright (C) 1992 Krishna Balasubramanian
- * Copyright (C) 1995 Eric Schenk, Bruno Haible
- *
- * /proc/sysvipc/sem support (c) 1999 Dragos Acostachioaie <dragos@iname.com>
- *
- * SMP-threaded, sysctl's added
- * (c) 1999 Manfred Spraul <manfred@colorfullife.com>
- * Enforced range limit on SEM_UNDO
- * (c) 2001 Red Hat Inc
- * Lockless wakeup
- * (c) 2003 Manfred Spraul <manfred@colorfullife.com>
- * Further wakeup optimizations, documentation
- * (c) 2010 Manfred Spraul <manfred@colorfullife.com>
- *
- * support for audit of ipc object properties and permission changes
- * Dustin Kirkland <dustin.kirkland@us.ibm.com>
- *
- * namespaces support
- * OpenVZ, SWsoft Inc.
- * Pavel Emelianov <xemul@openvz.org>
- *
- * Implementation notes: (May 2010)
- * This file implements System V semaphores.
- *
- * User space visible behavior:
- * - FIFO ordering for semop() operations (just FIFO, not starvation
- *   protection)
- * - multiple semaphore operations that alter the same semaphore in
- *   one semop() are handled.
- * - sem_ctime (time of last semctl()) is updated in the IPC_SET, SETVAL and
- *   SETALL calls.
- * - two Beep specific semctl() commands: SEM_STAT, SEM_INFO.
- * - undo adjustments at process exit are limited to 0..SEMVMX.
- * - namespace are supported.
- * - SEMMSL, SEMMNS, SEMOPM and SEMMNI can be configured at runtine by writing
- *   to /proc/sys/kernel/sem.
- * - statistics about the usage are reported in /proc/sysvipc/sem.
- *
- * Internals:
- * - scalability:
- *   - all global variables are read-mostly.
- *   - semop() calls and semctl(RMID) are synchronized by RCU.
- *   - most operations do write operations (actually: spin_lock calls) to
- *     the per-semaphore array structure.
- *   Thus: Perfect SMP scaling between independent semaphore arrays.
- *         If multiple semaphores in one array are used, then cache line
- *         trashing on the semaphore array spinlock will limit the scaling.
- * - semncnt and semzcnt are calculated on demand in count_semncnt() and
- *   count_semzcnt()
- * - the task that performs a successful semop() scans the list of all
- *   sleeping tasks and completes any pending operations that can be fulfilled.
- *   Semaphores are actively given to waiting tasks (necessary for FIFO).
- *   (see update_queue())
- * - To improve the scalability, the actual wake-up calls are performed after
- *   dropping all locks. (see wake_up_sem_queue_prepare(),
- *   wake_up_sem_queue_do())
- * - All work is done by the waker, the woken up task does not have to do
- *   anything - not even acquiring a lock or dropping a refcount.
- * - A woken up task may not even touch the semaphore array anymore, it may
- *   have been destroyed already by a semctl(RMID).
- * - The synchronizations between wake-ups due to a timeout/signal and a
- *   wake-up due to a completed semaphore operation is achieved by using an
- *   intermediate state (IN_WAKEUP).
- * - UNDO values are stored in an array (one per process and per
- *   semaphore array, lazily allocated). For backwards compatibility, multiple
- *   modes for the UNDO variables are supported (per process, per thread)
- *   (see copy_semundo, CLONE_SYSVSEM)
- * - There are two lists of the pending operations: a per-array list
- *   and per-semaphore list (stored in the array). This allows to achieve FIFO
- *   ordering without always scanning all pending operations.
- *   The worst-case behavior is nevertheless O(N^2) for N wakeups.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/slab.h>
 #include <beep/spinlock.h>
 #include <beep/init.h>

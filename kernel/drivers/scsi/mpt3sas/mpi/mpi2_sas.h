@@ -1,38 +1,20 @@
 /*
- * Copyright (c) 2000-2012 LSI Corporation.
- *
- *
- *          Name:  mpi2_sas.h
- *         Title:  MPI Serial Attached SCSI structures and definitions
- * Creation Date:  February 9, 2007
- *
- * mpi2_sas.h Version:  02.00.07
- *
- * NOTE: Names (typedefs, defines, etc.) beginning with an MPI25 or Mpi25
- *       prefix are for use only on MPI v2.5 products, and must not be used
- *       with MPI v2.0 products. Unless otherwise noted, names beginning with
- *       MPI2 or Mpi2 are for use with both MPI v2.0 and MPI v2.5 products.
- *
- * Version History
- * ---------------
- *
- * Date      Version   Description
- * --------  --------  ------------------------------------------------------
- * 04-30-07  02.00.00  Corresponds to Fusion-MPT MPI Specification Rev A.
- * 06-26-07  02.00.01  Added Clear All Persistent Operation to SAS IO Unit
- *                     Control Request.
- * 10-02-08  02.00.02  Added Set IOC Parameter Operation to SAS IO Unit Control
- *                     Request.
- * 10-28-09  02.00.03  Changed the type of SGL in MPI2_SATA_PASSTHROUGH_REQUEST
- *                     to MPI2_SGE_IO_UNION since it supports chained SGLs.
- * 05-12-10  02.00.04  Modified some comments.
- * 08-11-10  02.00.05  Added NCQ operations to SAS IO Unit Control.
- * 11-18-11  02.00.06  Incorporating additions for MPI v2.5.
- * 07-10-12  02.00.07  Added MPI2_SATA_PT_SGE_UNION for use in the SATA
- *                     Passthrough Request message.
- * --------------------------------------------------------------------------
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef MPI2_SAS_H
 #define MPI2_SAS_H
 

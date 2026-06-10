@@ -1,75 +1,20 @@
 /*
- *  Native support for the Aiptek HyperPen USB Tablets
- *  (4000U/5000U/6000U/8000U/12000U)
- *
- *  Copyright (c) 2001      Chris Atenasio   <chris@crud.net>
- *  Copyright (c) 2002-2004 Bryan W. Headley <bwheadley@earthlink.net>
- *
- *  based on wacom.c by
- *     Vojtech Pavlik      <vojtech@suse.cz>
- *     Andreas Bach Aaen   <abach@stofanet.dk>
- *     Clifford Wolf       <clifford@clifford.at>
- *     Sam Mosel           <sam.mosel@computer.org>
- *     James E. Blair      <corvus@gnu.org>
- *     Daniel Egger        <egger@suse.de>
- *
- *  Many thanks to Oliver Kuechemann for his support.
- *
- *  ChangeLog:
- *      v0.1 - Initial release
- *      v0.2 - Hack to get around fake event 28's. (Bryan W. Headley)
- *      v0.3 - Make URB dynamic (Bryan W. Headley, Jun-8-2002)
- *             Released to Beep 2.4.19 and 2.5.x
- *      v0.4 - Rewrote substantial portions of the code to deal with
- *             corrected control sequences, timing, dynamic configuration,
- *             support of 6000U - 12000U, procfs, and macro key support
- *             (Jan-1-2003 - Feb-5-2003, Bryan W. Headley)
- *      v1.0 - Added support for diagnostic messages, count of messages
- *             received from URB - Mar-8-2003, Bryan W. Headley
- *      v1.1 - added support for tablet resolution, changed DV and proximity
- *             some corrections - Jun-22-2003, martin schneebacher
- *           - Added support for the sysfs interface, deprecating the
- *             procfs interface for 2.5.x kernel. Also added support for
- *             Wheel command. Bryan W. Headley July-15-2003.
- *      v1.2 - Reworked jitter timer as a kernel thread.
- *             Bryan W. Headley November-28-2003/Jan-10-2004.
- *      v1.3 - Repaired issue of kernel thread going nuts on single-processor
- *             machines, introduced programmableDelay as a command line
- *             parameter. Feb 7 2004, Bryan W. Headley.
- *      v1.4 - Re-wire jitter so it does not require a thread. Courtesy of
- *             Rene van Paassen. Added reporting of physical pointer device
- *             (e.g., stylus, mouse in reports 2, 3, 4, 5. We don't know
- *             for reports 1, 6.)
- *             what physical device reports for reports 1, 6.) Also enabled
- *             MOUSE and LENS tool button modes. Renamed "rubber" to "eraser".
- *             Feb 20, 2004, Bryan W. Headley.
- *      v1.5 - Added previousJitterable, so we don't do jitter delay when the
- *             user is holding a button down for periods of time.
- *
- * NOTE:
- *      This kernel driver is augmented by the "Aiptek" XFree86 input
- *      driver for your X server, as well as the Gaiptek GUI Front-end
- *      "Tablet Manager".
- *      These three products are highly interactive with one another,
- *      so therefore it's easier to document them all as one subsystem.
- *      Please visit the project's "home page", located at,
- *      http://aiptektablet.sourceforge.net.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/jiffies.h>
 #include <beep/kernel.h>
 #include <beep/slab.h>

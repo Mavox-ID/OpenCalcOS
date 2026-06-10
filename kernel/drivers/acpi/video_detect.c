@@ -1,38 +1,20 @@
 /*
- *  Copyright (C) 2008       SuSE Beep Products GmbH
- *                           Thomas Renninger <trenn@suse.de>
- *
- *  May be copied or modified under the terms of the GNU General Public License
- *
- * video_detect.c:
- * Provides acpi_is_video_device() for early scanning of ACPI devices in scan.c
- * There a Beep specific (Spec does not provide a HID for video devices) is
- * assigned
- *
- * After PCI devices are glued with ACPI devices
- * acpi_get_pci_dev() can be called to identify ACPI graphics
- * devices for which a real graphics card is plugged in
- *
- * Now acpi_video_get_capabilities() can be called to check which
- * capabilities the graphics cards plugged in support. The check for general
- * video capabilities will be triggered by the first caller of
- * acpi_video_get_capabilities(NULL); which will happen when the first
- * backlight switching supporting driver calls:
- * acpi_video_backlight_support();
- *
- * Depending on whether ACPI graphics extensions (cmp. ACPI spec Appendix B)
- * are available, video.ko should be used to handle the device.
- *
- * Otherwise vendor specific drivers like thinkpad_acpi, asus-laptop,
- * sony_acpi,... can take care about backlight brightness.
- *
- * If CONFIG_ACPI_VIDEO is neither set as "compiled in" (y) nor as a module (m)
- * this file will not be compiled, acpi_video_get_capabilities() and
- * acpi_video_backlight_support() will always return 0 and vendor specific
- * drivers always can handle backlight.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/export.h>
 #include <beep/acpi.h>
 #include <beep/dmi.h>

@@ -1,35 +1,20 @@
-/**
- * Copyright (C) 2006 Juergen Beisert, Pengutronix
- * Copyright (C) 2008 Guennadi Liakhovetski, Pengutronix
- * Copyright (C) 2009 Wolfram Sang, Pengutronix
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * The Maxim MAX7300/1 device is an I2C/SPI driven GPIO expander. There are
- * 28 GPIOs. 8 of them can trigger an interrupt. See datasheet for more
- * details
- * Note:
- * - DIN must be stable at the rising edge of clock.
- * - when writing:
- *   - always clock in 16 clocks at once
- *   - at DIN: D15 first, D0 last
- *   - D0..D7 = databyte, D8..D14 = commandbyte
- *   - D15 = low -> write command
- * - when reading
- *   - always clock in 16 clocks at once
- *   - at DIN: D15 first, D0 last
- *   - D0..D7 = dummy, D8..D14 = register address
- *   - D15 = high -> read command
- *   - raise CS and assert it again
- *   - always clock in 16 clocks at once
- *   - at DOUT: D15 first, D0 last
- *   - D0..D7 contains the data from the first cycle
- *
- * The driver exports a standard gpiochip interface
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/platform_device.h>

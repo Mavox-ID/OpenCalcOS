@@ -1,26 +1,20 @@
 /*
- * Real Time Clock interface for StrongARM SA1x00 and XScale PXA2xx
- *
- * Copyright (c) 2000 Nils Faerber
- *
- * Based on rtc.c by Paul Gortmaker
- *
- * Original Driver by Nils Faerber <nils@kernelconcepts.de>
- *
- * Modifications from:
- *   CIH <cih@coventive.com>
- *   Nicolas Pitre <nico@fluxnic.net>
- *   Andrew Christian <andrew.christian@hp.com>
- *
- * Converted to the RTC subsystem and Driver Model
- *   by Richard Purdie <rpurdie@rpsys.net>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version
- * 2 of the License, or (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/platform_device.h>
 #include <beep/module.h>
 #include <beep/clk.h>

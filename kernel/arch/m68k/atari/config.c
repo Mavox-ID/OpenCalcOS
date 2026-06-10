@@ -1,25 +1,20 @@
 /*
- *  beep/arch/m68k/atari/config.c
- *
- *  Copyright (C) 1994 Bjoern Brauel
- *
- *  5/2/94 Roman Hodek:
- *    Added setting of time_adj to get a better clock.
- *
- *  5/14/94 Roman Hodek:
- *    gettod() for TT
- *
- *  5/15/94 Roman Hodek:
- *    hard_reset_now() for Atari (and others?)
- *
- *  94/12/30 Andreas Schwab:
- *    atari_sched_init fixed to get precise clock.
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file COPYING in the main directory of this archive
- * for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * Miscellaneous atari stuff
  */

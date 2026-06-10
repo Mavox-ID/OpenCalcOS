@@ -1,18 +1,20 @@
 /*
- * Driver for MAXI MAX11801 - A Resistive touch screen controller with
- * i2c interface
- *
- * Copyright (C) 2011 Freescale Semiconductor, Inc.
- * Author: Zhang Jiejing <jiejing.zhang@freescale.com>
- *
- * Based on mcs5000_ts.c
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * This driver aims to support the series of MAXI touch chips max11801
  * through max11803. The main difference between these 4 chips can be

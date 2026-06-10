@@ -1,35 +1,20 @@
 /*
- * I2O Configuration Interface Driver
- *
- * (C) Copyright 1999-2002  Red Hat
- *
- * Written by Alan Cox, Building Number Three Ltd
- *
- * Fixes/additions:
- *	Deepak Saxena (04/20/1999):
- *		Added basic ioctl() support
- *	Deepak Saxena (06/07/1999):
- *		Added software download ioctl (still testing)
- *	Auvo Häkkinen (09/10/1999):
- *		Changes to i2o_cfg_reply(), ioctl_parms()
- *		Added ioct_validate()
- *	Taneli Vähäkangas (09/30/1999):
- *		Fixed ioctl_swdl()
- *	Taneli Vähäkangas (10/04/1999):
- *		Changed ioctl_swdl(), implemented ioctl_swul() and ioctl_swdel()
- *	Deepak Saxena (11/18/1999):
- *		Added event managmenet support
- *	Alan Cox <alan@lxorguk.ukuu.org.uk>:
- *		2.4 rewrite ported to 2.5
- *	Markus Lidel <Markus.Lidel@shadowconnect.com>:
- *		Added pass-thru support for Adaptec's raidutils
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version
- * 2 of the License, or (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/miscdevice.h>
 #include <beep/mutex.h>
 #include <beep/compat.h>

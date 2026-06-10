@@ -1,68 +1,20 @@
 /*
- * File Name:
- *   skfddi.c
- *
- * Copyright Information:
- *   Copyright SysKonnect 1998,1999.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * The information in this file is provided "AS IS" without warranty.
- *
- * Abstract:
- *   A Beep device driver supporting the SysKonnect FDDI PCI controller
- *   familie.
- *
- * Maintainers:
- *   CG    Christoph Goos (cgoos@syskonnect.de)
- *
- * Contributors:
- *   DM    David S. Miller
- *
- * Address all question to:
- *   beep@syskonnect.de
- *
- * The technical manual for the adapters is available from SysKonnect's
- * web pages: www.syskonnect.com
- * Goto "Support" and search Knowledge Base for "manual".
- *
- * Driver Architecture:
- *   The driver architecture is based on the DEC FDDI driver by
- *   Lawrence V. Stefani and several ethernet drivers.
- *   I also used an existing Windows NT miniport driver.
- *   All hardware dependent functions are handled by the SysKonnect
- *   Hardware Module.
- *   The only headerfiles that are directly related to this source
- *   are skfddi.c, h/types.h, h/osdef1st.h, h/targetos.h.
- *   The others belong to the SysKonnect FDDI Hardware Module and
- *   should better not be changed.
- *
- * Modification History:
- *              Date            Name    Description
- *              02-Mar-98       CG	Created.
- *
- *		10-Mar-99	CG	Support for 2.2.x added.
- *		25-Mar-99	CG	Corrected IRQ routing for SMP (APIC)
- *		26-Oct-99	CG	Fixed compilation error on 2.2.13
- *		12-Nov-99	CG	Source code release
- *		22-Nov-99	CG	Included in kernel source.
- *		07-May-00	DM	64 bit fixes, new dma interface
- *		31-Jul-03	DB	Audit copy_*_user in skfp_ioctl
- *					  Daniele Bellucci <bellucda@tiscali.it>
- *		03-Dec-03	SH	Convert to PCI device model
- *
- * Compilation options (-Dxxx):
- *              DRIVERDEBUG     print lots of messages to log file
- *              DUMPPACKETS     print received/transmitted packets to logfile
- * 
- * Tested cpu architectures:
- *	- i386
- *	- sparc64
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* Version information string - should be updated prior to */
 /* each new release!!! */
 #define VERSION		"2.07"

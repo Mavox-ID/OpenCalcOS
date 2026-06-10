@@ -1,45 +1,20 @@
 /*
- * Copyright 2007-2008 Extreme Engineering Solutions, Inc.
- *
- * Author: Nate Case <ncase@xes-inc.com>
- *
- * This file is subject to the terms and conditions of version 2 of
- * the GNU General Public License.  See the file COPYING in the main
- * directory of this archive for more details.
- *
- * LED driver for various PCA955x I2C LED drivers
- *
- * Supported devices:
- *
- *	Device		Description		7-bit slave address
- *	------		-----------		-------------------
- *	PCA9550		2-bit driver		0x60 .. 0x61
- *	PCA9551		8-bit driver		0x60 .. 0x67
- *	PCA9552		16-bit driver		0x60 .. 0x67
- *	PCA9553/01	4-bit driver		0x62
- *	PCA9553/02	4-bit driver		0x63
- *
- * Philips PCA955x LED driver chips follow a register map as shown below:
- *
- *	Control Register		Description
- *	----------------		-----------
- *	0x0				Input register 0
- *					..
- *	NUM_INPUT_REGS - 1		Last Input register X
- *
- *	NUM_INPUT_REGS			Frequency prescaler 0
- *	NUM_INPUT_REGS + 1		PWM register 0
- *	NUM_INPUT_REGS + 2		Frequency prescaler 1
- *	NUM_INPUT_REGS + 3		PWM register 1
- *
- *	NUM_INPUT_REGS + 4		LED selector 0
- *	NUM_INPUT_REGS + 4
- *	    + NUM_LED_REGS - 1		Last LED selector
- *
- *  where NUM_INPUT_REGS and NUM_LED_REGS vary depending on how many
- *  bits the chip supports.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/delay.h>
 #include <beep/string.h>

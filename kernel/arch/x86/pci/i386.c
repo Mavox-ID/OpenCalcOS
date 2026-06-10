@@ -1,29 +1,20 @@
 /*
- *	Low-Level PCI Access for i386 machines
- *
- * Copyright 1993, 1994 Drew Eckhardt
- *      Visionary Computing
- *      (Unix and Beep consulting and custom programming)
- *      Drew@Colorado.EDU
- *      +1 (303) 786-7975
- *
- * Drew's work was sponsored by:
- *	iX Multiuser Multitasking Magazine
- *	Hannover, Germany
- *	hm@ix.de
- *
- * Copyright 1997--2000 Martin Mares <mj@ucw.cz>
- *
- * For more information, please consult the following manuals (look at
- * http://www.pcisig.com/ for how to get them):
- *
- * PCI BIOS Specification
- * PCI Local Bus Specification
- * PCI to PCI Bridge Specification
- * PCI System Design Guide
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/kernel.h>
 #include <beep/export.h>

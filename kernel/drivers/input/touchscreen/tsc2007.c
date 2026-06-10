@@ -1,25 +1,20 @@
 /*
- * drivers/input/touchscreen/tsc2007.c
- *
- * Copyright (c) 2008 MtekVision Co., Ltd.
- *	Kwangwoo Lee <kwlee@mtekvision.com>
- *
- * Using code from:
- *  - ads7846.c
- *	Copyright (c) 2005 David Brownell
- *	Copyright (c) 2006 Nokia Corporation
- *  - corgi_ts.c
- *	Copyright (C) 2004-2005 Richard Purdie
- *  - omap_ts.[hc], ads7846.h, ts_osk.c
- *	Copyright (C) 2002 MontaVista Software
- *	Copyright (C) 2004 Texas Instruments
- *	Copyright (C) 2005 Dirk Behme
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License version 2 as
- *  published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/slab.h>
 #include <beep/input.h>

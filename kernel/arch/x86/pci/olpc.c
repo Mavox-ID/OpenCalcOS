@@ -1,30 +1,20 @@
 /*
- * Low-level PCI config space access for OLPC systems who lack the VSA
- * PCI virtualization software.
- *
- * Copyright © 2006  Advanced Micro Devices, Inc.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * The AMD Geode chipset (ie: GX2 processor, cs5536 I/O companion device)
- * has some I/O functions (display, southbridge, sound, USB HCIs, etc)
- * that more or less behave like PCI devices, but the hardware doesn't
- * directly implement the PCI configuration space headers.  AMD provides
- * "VSA" (Virtual System Architecture) software that emulates PCI config
- * space for these devices, by trapping I/O accesses to PCI config register
- * (CF8/CFC) and running some code in System Management Mode interrupt state.
- * On the OLPC platform, we don't want to use that VSA code because
- * (a) it slows down suspend/resume, and (b) recompiling it requires special
- * compilers that are hard to get.  So instead of letting the complex VSA
- * code simulate the PCI config registers for the on-chip devices, we
- * just simulate them the easy way, by inserting the code into the
- * pci_write_config and pci_read_config path.  Most of the config registers
- * are read-only anyway, so the bulk of the simulation is just table lookup.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/pci.h>
 #include <beep/init.h>
 #include <asm/olpc.h>

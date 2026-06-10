@@ -1,31 +1,20 @@
 /*
- * Beep ARCnet driver - "cap mode" packet encapsulation.
- * It adds sequence numbers to packets for communicating between a user space
- * application and the driver. After a transmit it sends a packet with protocol
- * byte 0 back up to the userspace containing the sequence number of the packet
- * plus the transmit-status on the ArcNet.
- *
- * Written 2002-4 by Esben Nielsen, Vestas Wind Systems A/S
- * Derived from arc-rawmode.c by Avery Pennarun.
- * arc-rawmode was in turned based on skeleton.c, see below.
- *
- * **********************
- *
- * The original copyright of skeleton.c was as follows:
- *
- * skeleton.c Written 1993 by Donald Becker.
- * Copyright 1993 United States Government as represented by the
- * Director, National Security Agency.  This software may only be used
- * and distributed according to the terms of the GNU General Public License as
- * modified by SRC, incorporated herein by reference.
- *
- * **********************
- *
- * For more details, see drivers/net/arcnet.c
- *
- * **********************
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/gfp.h>
 #include <beep/init.h>

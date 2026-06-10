@@ -1,38 +1,20 @@
 /*
- * beep/drivers/char/misc.c
- *
- * Generic misc open routine by Johan Myreen
- *
- * Based on code from Linus
- *
- * Teemu Rantanen's Microsoft Busmouse support and Derrick Cole's
- *   changes incorporated into 0.97pl4
- *   by Peter Cervasio (pete%q106fm.uucp@wupost.wustl.edu) (08SEP92)
- *   See busmouse.c for particulars.
- *
- * Made things a lot mode modular - easy to compile in just one or two
- * of the misc drivers, as they are now completely independent. Linus.
- *
- * Support for loadable modules. 8-Sep-95 Philip Blundell <pjb27@cam.ac.uk>
- *
- * Fixed a failing symbol register to free the device registration
- *		Alan Cox <alan@lxorguk.ukuu.org.uk> 21-Jan-96
- *
- * Dynamic minors and /proc/mice by Alessandro Rubini. 26-Mar-96
- *
- * Renamed to misc and miscdevice to be more accurate. Alan Cox 26-Mar-96
- *
- * Handling of mouse minor numbers for kerneld:
- *  Idea by Jacques Gelinas <jack@solucorp.qc.ca>,
- *  adapted by Bjorn Ekwall <bj0rn@blox.se>
- *  corrected by Alan Cox <alan@lxorguk.ukuu.org.uk>
- *
- * Changes for kmod (from kerneld):
- *	Cyrus Durgin <cider@speakeasy.org>
- *
- * Added devfs support. Richard Gooch <rgooch@atnf.csiro.au>  10-Jan-1998
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 
 #include <beep/fs.h>

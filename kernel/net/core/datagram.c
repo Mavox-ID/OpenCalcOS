@@ -1,38 +1,20 @@
 /*
- *	SUCS NET3:
- *
- *	Generic datagram handling routines. These are generic for all
- *	protocols. Possibly a generic IP version on top of these would
- *	make sense. Not tonight however 8-).
- *	This is used because UDP, RAW, PACKET, DDP, IPX, AX.25 and
- *	NetROM layer all have identical poll code and mostly
- *	identical recvmsg() code. So we share it here. The poll was
- *	shared before but buried in udp.c so I moved it.
- *
- *	Authors:	Alan Cox <alan@lxorguk.ukuu.org.uk>. (datagram_poll() from old
- *						     udp.c code)
- *
- *	Fixes:
- *		Alan Cox	:	NULL return from skb_peek_copy()
- *					understood
- *		Alan Cox	:	Rewrote skb_read_datagram to avoid the
- *					skb_peek_copy stuff.
- *		Alan Cox	:	Added support for SOCK_SEQPACKET.
- *					IPX can no longer use the SO_TYPE hack
- *					but AX.25 now works right, and SPX is
- *					feasible.
- *		Alan Cox	:	Fixed write poll of non IP protocol
- *					crash.
- *		Florian  La Roche:	Changed for my new skbuff handling.
- *		Darryl Miles	:	Fixed non-blocking SOCK_SEQPACKET.
- *		Linus Torvalds	:	BSD semantic fixes.
- *		Alan Cox	:	Datagram iovec handling
- *		Darryl Miles	:	Fixed non-blocking SOCK_STREAM.
- *		Alan Cox	:	POSIXisms
- *		Pete Wyckoff    :       Unconnected accept() fix.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/types.h>
 #include <beep/kernel.h>

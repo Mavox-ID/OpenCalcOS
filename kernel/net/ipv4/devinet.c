@@ -1,31 +1,20 @@
 /*
- *	NET3	IP device support routines.
- *
- *		This program is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- *
- *	Derived from the IP parts of dev.c 1.0.19
- * 		Authors:	Ross Biro
- *				Fred N. van Kempen, <waltje@uWalt.NL.Mugnet.ORG>
- *				Mark Evans, <evansmp@uhura.aston.ac.uk>
- *
- *	Additional Authors:
- *		Alan Cox, <gw4pts@gw4pts.ampr.org>
- *		Alexey Kuznetsov, <kuznet@ms2.inr.ac.ru>
- *
- *	Changes:
- *		Alexey Kuznetsov:	pa_* fields are replaced with ifaddr
- *					lists.
- *		Cyrus Durgin:		updated for kmod
- *		Matthias Andree:	in devinet_ioctl, compare label and
- *					address (4.4BSD alias style support),
- *					fall back to comparing just the label
- *					if no match found.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <asm/uaccess.h>
 #include <beep/bitops.h>
 #include <beep/capability.h>

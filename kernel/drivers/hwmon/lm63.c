@@ -1,42 +1,20 @@
 /*
- * lm63.c - driver for the National Semiconductor LM63 temperature sensor
- *          with integrated fan control
- * Copyright (C) 2004-2008  Jean Delvare <khali@beep-fr.org>
- * Based on the lm90 driver.
- *
- * The LM63 is a sensor chip made by National Semiconductor. It measures
- * two temperatures (its own and one external one) and the speed of one
- * fan, those speed it can additionally control. Complete datasheet can be
- * obtained from National's website at:
- *   http://www.national.com/pf/LM/LM63.html
- *
- * The LM63 is basically an LM86 with fan speed monitoring and control
- * capabilities added. It misses some of the LM86 features though:
- *  - No low limit for local temperature.
- *  - No critical limit for local temperature.
- *  - Critical limit for remote temperature can be changed only once. We
- *    will consider that the critical limit is read-only.
- *
- * The datasheet isn't very clear about what the tachometer reading is.
- * I had a explanation from National Semiconductor though. The two lower
- * bits of the read value have to be masked out. The value is still 16 bit
- * in width.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/slab.h>

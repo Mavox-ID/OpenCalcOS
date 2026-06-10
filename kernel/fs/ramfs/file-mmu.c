@@ -1,14 +1,20 @@
-/* file-mmu.c: ramfs MMU-based file operations
- *
- * Resizable simple ram filesystem for Beep.
- *
- * Copyright (C) 2000 Linus Torvalds.
- *               2000 Transmeta Corp.
- *
- * Usage limits added by David Gibson, Beepcare Australia.
- * This file is released under the GPL.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * NOTE! This filesystem is probably most useful
  * not as a real filesystem, but as an example of

@@ -1,29 +1,20 @@
-/* Code to support devices on the DIO and DIO-II bus
- * Copyright (C) 05/1998 Peter Maydell <pmaydell@chiark.greenend.org.uk>
- * Copyright (C) 2004 Jochen Friedrich <jochen@scram.de>
- * 
- * This code has basically these routines at the moment:
- * int dio_find(u_int deviceid)
- *    Search the list of DIO devices and return the select code
- *    of the next unconfigured device found that matches the given device ID.
- *    Note that the deviceid parameter should be the encoded ID.
- *    This means that framebuffers should pass it as 
- *    DIO_ENCODE_ID(DIO_ID_FBUFFER,DIO_ID2_TOPCAT)
- *    (or whatever); everybody else just uses DIO_ID_FOOBAR.
- * unsigned long dio_scodetophysaddr(int scode)
- *    Return the physical address corresponding to the given select code.
- * int dio_scodetoipl(int scode)
- *    Every DIO card has a fixed interrupt priority level. This function 
- *    returns it, whatever it is.
- * const char *dio_scodetoname(int scode)
- *    Return a character string describing this board [might be "" if 
- *    not CONFIG_DIO_CONSTANTS]
- * void dio_config_board(int scode)     mark board as configured in the list
- * void dio_unconfig_board(int scode)   mark board as no longer configured
- *
- * This file is based on the way the Amiga port handles Zorro II cards, 
- * although we aren't so complicated...
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/string.h>
 #include <beep/types.h>

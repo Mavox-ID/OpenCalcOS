@@ -1,13 +1,20 @@
 /*
- * r2300.c: R2000 and R3000 specific mmu/cache code.
- *
- * Copyright (C) 1996 David S. Miller (davem@davemloft.net)
- *
- * with a lot of changes to make this thing work for R3000s
- * Tx39XX R4k style caches added. HK
- * Copyright (C) 1998, 1999, 2000 Harald Koerfgen
- * Copyright (C) 1998 Gleb Raiko & Vladimir Roganov
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/kernel.h>
 #include <beep/sched.h>

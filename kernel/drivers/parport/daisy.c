@@ -1,24 +1,20 @@
 /*
- * IEEE 1284.3 Parallel port daisy chain and multiplexor code
- * 
- * Copyright (C) 1999, 2000  Tim Waugh <tim@cyberelk.demon.co.uk>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version
- * 2 of the License, or (at your option) any later version.
- *
- * ??-12-1998: Initial implementation.
- * 31-01-1999: Make port-cloning transparent.
- * 13-02-1999: Move DeviceID technique from parport_probe.
- * 13-03-1999: Get DeviceID from non-IEEE 1284.3 devices too.
- * 22-02-2000: Count devices that are actually detected.
- *
- * Any part of this program may be used in documents licensed under
- * the GNU Free Documentation License, Version 1.1 or any later version
- * published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/parport.h>
 #include <beep/delay.h>

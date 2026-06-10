@@ -1,88 +1,20 @@
 /*
-** hp100.c
-** HP CASCADE Architecture Driver for 100VG-AnyLan Network Adapters
-**
-** $Id: hp100.c,v 1.58 2001/09/24 18:03:01 perex Exp perex $
-**
-** Based on the HP100 driver written by Jaroslav Kysela <perex@jcu.cz>
-** Extended for new busmaster capable chipsets by
-** Siegfried "Frieder" Loeffler (dg1sek) <floeff@mathematik.uni-stuttgart.de>
-**
-** Maintained by: Jaroslav Kysela <perex@perex.cz>
-**
-** This driver has only been tested with
-** -- HP J2585B 10/100 Mbit/s PCI Busmaster
-** -- HP J2585A 10/100 Mbit/s PCI
-** -- HP J2970A 10 Mbit/s PCI Combo 10base-T/BNC
-** -- HP J2973A 10 Mbit/s PCI 10base-T
-** -- HP J2573  10/100 ISA
-** -- Compex ReadyLink ENET100-VG4  10/100 Mbit/s PCI / EISA
-** -- Compex FreedomLine 100/VG  10/100 Mbit/s ISA / EISA / PCI
-**
-** but it should also work with the other CASCADE based adapters.
-**
-** TODO:
-**       -  J2573 seems to hang sometimes when in shared memory mode.
-**       -  Mode for Priority TX
-**       -  Check PCI registers, performance might be improved?
-**       -  To reduce interrupt load in busmaster, one could switch off
-**          the interrupts that are used to refill the queues whenever the
-**          queues are filled up to more than a certain threshold.
-**       -  some updates for EISA version of card
-**
-**
-**   This code is free software; you can redistribute it and/or modify
-**   it under the terms of the GNU General Public License as published by
-**   the Free Software Foundation; either version 2 of the License, or
-**   (at your option) any later version.
-**
-**   This code is distributed in the hope that it will be useful,
-**   but WITHOUT ANY WARRANTY; without even the implied warranty of
-**   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-**   GNU General Public License for more details.
-**
-**   You should have received a copy of the GNU General Public License
-**   along with this program; if not, write to the Free Software
-**   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-**
-** 1.57c -> 1.58
-**   - used indent to change coding-style
-**   - added KTI DP-200 EISA ID
-**   - ioremap is also used for low (<1MB) memory (multi-architecture support)
-**
-** 1.57b -> 1.57c - Arnaldo Carvalho de Melo <acme@conectiva.com.br>
-**   - release resources on failure in init_module
-**
-** 1.57 -> 1.57b - Jean II
-**   - fix spinlocks, SMP is now working !
-**
-** 1.56 -> 1.57
-**   - updates for new PCI interface for 2.1 kernels
-**
-** 1.55 -> 1.56
-**   - removed printk in misc. interrupt and update statistics to allow
-**     monitoring of card status
-**   - timing changes in xmit routines, relogin to 100VG hub added when
-**     driver does reset
-**   - included fix for Compex FreedomLine PCI adapter
-**
-** 1.54 -> 1.55
-**   - fixed bad initialization in init_module
-**   - added Compex FreedomLine adapter
-**   - some fixes in card initialization
-**
-** 1.53 -> 1.54
-**   - added hardware multicast filter support (doesn't work)
-**   - little changes in hp100_sense_lan routine
-**     - added support for Coax and AUI (J2970)
-**   - fix for multiple cards and hp100_mode parameter (insmod)
-**   - fix for shared IRQ
-**
-** 1.52 -> 1.53
-**   - fixed bug in multicast support
-**
-*/
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define HP100_DEFAULT_PRIORITY_TX 0
 
 #undef HP100_DEBUG

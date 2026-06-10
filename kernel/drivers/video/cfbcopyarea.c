@@ -1,27 +1,20 @@
 /*
- *  Generic function for frame buffer with packed pixels of any depth.
- *
- *      Copyright (C)  1999-2005 James Simmons <jsimmons@www.infradead.org>
- *
- *  This file is subject to the terms and conditions of the GNU General Public
- *  License.  See the file COPYING in the main directory of this archive for
- *  more details.
- *
- * NOTES:
- *
- *  This is for cfb packed pixels. Iplan and such are incorporated in the
- *  drivers that need them.
- *
- *  FIXME
- *
- *  Also need to add code to deal with cards endians that are different than
- *  the native cpu endians. I also need to deal with MSB position in the word.
- *
- *  The two functions or copying forward and backward could be split up like
- *  the ones for filling, i.e. in aligned and unaligned versions. This would
- *  help moving some redundant computations and branches out of the loop, too.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/string.h>

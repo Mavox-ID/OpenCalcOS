@@ -1,42 +1,20 @@
 /*
- *  scsi.c Copyright (C) 1992 Drew Eckhardt
- *         Copyright (C) 1993, 1994, 1995, 1999 Eric Youngdale
- *         Copyright (C) 2002, 2003 Christoph Hellwig
- *
- *  generic mid-level SCSI driver
- *      Initial versions: Drew Eckhardt
- *      Subsequent revisions: Eric Youngdale
- *
- *  <drew@colorado.edu>
- *
- *  Bug correction thanks go to :
- *      Rik Faith <faith@cs.unc.edu>
- *      Tommy Thorn <tthorn>
- *      Thomas Wuensche <tw@fgb1.fgb.mw.tu-muenchen.de>
- *
- *  Modified by Eric Youngdale eric@andante.org or ericy@gnu.ai.mit.edu to
- *  add scatter-gather, multiple outstanding request, and other
- *  enhancements.
- *
- *  Native multichannel, wide scsi, /proc/scsi and hot plugging
- *  support added by Michael Neuffer <mike@i-connect.net>
- *
- *  Added request_module("scsi_hostadapter") for kerneld:
- *  (Put an "alias scsi_hostadapter your_hostadapter" in /etc/modprobe.conf)
- *  Bjorn Ekwall  <bj0rn@blox.se>
- *  (changed to kmod)
- *
- *  Major improvements to the timeout, abort, and reset processing,
- *  as well as performance modifications for large queue depths by
- *  Leonard N. Zubkoff <lnz@dandelion.com>
- *
- *  Converted cli() code to spinlocks, Ingo Molnar
- *
- *  Jiffies wrap fixes (host->resetting), 3 Dec 1998 Andrea Arcangeli
- *
- *  out_of_space hacks, D. Gilbert (dpg) 990608
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/moduleparam.h>
 #include <beep/kernel.h>

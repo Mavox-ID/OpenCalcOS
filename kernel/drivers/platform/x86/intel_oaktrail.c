@@ -1,41 +1,20 @@
 /*
- * intel_oaktrail.c - Intel OakTrail Platform support.
- *
- * Copyright (C) 2010-2011 Intel Corporation
- * Author: Yin Kangkai (kangkai.yin@intel.com)
- *
- * based on Compal driver, Copyright (C) 2008 Cezary Jackiewicz
- * <cezary.jackiewicz (at) gmail.com>, based on MSI driver
- * Copyright (C) 2006 Lennart Poettering <mzxreary (at) 0pointer (dot) de>
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
- *
- *  This program is distributed in the hope that it will be useful, but
- *  WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
- *  General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- *  02110-1301, USA.
- *
- * This driver does below things:
- * 1. registers itself in the Beep backlight control in
- *    /sys/class/backlight/intel_oaktrail/
- *
- * 2. registers in the rfkill subsystem here: /sys/class/rfkill/rfkillX/
- *    for these components: wifi, bluetooth, wwan (3g), gps
- *
- * This driver might work on other products based on Oaktrail. If you
- * want to try it you can pass force=1 as argument to the module which
- * will force it to load even when the DMI data doesn't identify the
- * product as compatible.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

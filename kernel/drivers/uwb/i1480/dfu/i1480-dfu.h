@@ -1,66 +1,20 @@
 /*
- * i1480 Device Firmware Upload
- *
- * Copyright (C) 2005-2006 Intel Corporation
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License version
- * 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- * 02110-1301, USA.
- *
- *
- * This driver is the firmware uploader for the Intel Wireless UWB
- * Link 1480 device (both in the USB and PCI incarnations).
- *
- * The process is quite simple: we stop the device, write the firmware
- * to its memory and then restart it. Wait for the device to let us
- * know it is done booting firmware. Ready.
- *
- * We might have to upload before or after a phy firmware (which might
- * be done in two methods, using a normal firmware image or through
- * the MPI port).
- *
- * Because USB and PCI use common methods, we just make ops out of the
- * common operations (read, write, wait_init_done and cmd) and
- * implement them in usb.c and pci.c.
- *
- * The flow is (some parts omitted):
- *
- * i1480_{usb,pci}_probe()	  On enumerate/discovery
- *   i1480_fw_upload()
- *     i1480_pre_fw_upload()
- *       __mac_fw_upload()
- *         fw_hdrs_load()
- *         mac_fw_hdrs_push()
- *           i1480->write()       [i1480_{usb,pci}_write()]
- *           i1480_fw_cmp()
- *             i1480->read()      [i1480_{usb,pci}_read()]
- *     i1480_mac_fw_upload()
- *       __mac_fw_upload()
- *       i1480->setup(()
- *       i1480->wait_init_done()
- *       i1480_cmd_reset()
- *         i1480->cmd()           [i1480_{usb,pci}_cmd()]
- *         ...
- *     i1480_phy_fw_upload()
- *       request_firmware()
- *       i1480_mpi_write()
- *         i1480->cmd()           [i1480_{usb,pci}_cmd()]
- *
- * Once the probe function enumerates the device and uploads the
- * firmware, we just exit with -ENODEV, as we don't really want to
- * attach to the device.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __i1480_DFU_H__
 #define __i1480_DFU_H__
 

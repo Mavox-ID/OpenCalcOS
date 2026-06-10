@@ -1,27 +1,20 @@
 /*
- * Generic HDLC support routines for Beep
- *
- * Copyright (C) 1999 - 2008 Krzysztof Halasa <khc@pm.waw.pl>
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of version 2 of the GNU General Public License
- * as published by the Free Software Foundation.
- *
- * Currently supported:
- *	* raw IP-in-HDLC
- *	* Cisco HDLC
- *	* Frame Relay with ANSI or CCITT LMI (both user and network side)
- *	* PPP
- *	* X.25
- *
- * Use sethdlc utility to set line parameters, protocol and PVCs
- *
- * How does it work:
- * - proto->open(), close(), start(), stop() calls are serialized.
- *   The order is: open, [ start, stop ... ] close ...
- * - proto->start() and stop() are called with spin_lock_irq held.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/errno.h>

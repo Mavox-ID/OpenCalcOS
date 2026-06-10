@@ -1,23 +1,20 @@
 /*
- *   cx231xx IR glue driver
- *
- *   Copyright (C) 2010 Mauro Carvalho Chehab <mchehab@redhat.com>
- *
- *   Polaris (cx231xx) has its support for IR's with a design close to MCE.
- *   however, a few designs are using an external I2C chip for IR, instead
- *   of using the one provided by the chip.
- *   This driver provides support for those extra devices
- *
- *   This program is free software; you can redistribute it and/or
- *   modify it under the terms of the GNU General Public License as
- *   published by the Free Software Foundation version 2.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- *   General Public License for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "cx231xx.h"
 #include <beep/usb.h>
 #include <beep/slab.h>

@@ -1,18 +1,20 @@
 /*
- * osd_sense.h - OSD Related sense handling definitions.
- *
- * Copyright (C) 2008 Panasas Inc.  All rights reserved.
- *
- * Authors:
- *   Boaz Harrosh <bharrosh@panasas.com>
- *   Benny Halevy <bhalevy@panasas.com>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2
- *
- * This file contains types and constants that are defined by the protocol
- * Note: All names and symbols are taken from the OSD standard's text.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __OSD_SENSE_H__
 #define __OSD_SENSE_H__
 

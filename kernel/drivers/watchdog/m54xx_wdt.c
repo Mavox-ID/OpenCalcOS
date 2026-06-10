@@ -1,21 +1,20 @@
 /*
- * drivers/watchdog/m54xx_wdt.c
- *
- * Watchdog driver for ColdFire MCF547x & MCF548x processors
- * Copyright 2010 (c) Philippe De Muyter <phdm@macqel.be>
- *
- * Adapted from the IXP4xx watchdog driver, which carries these notices:
- *
- *  Author: Deepak Saxena <dsaxena@plexity.net>
- *
- *  Copyright 2004 (c) MontaVista, Software, Inc.
- *  Based on sa1100 driver, Copyright (C) 2000 Oleg Drokin <green@crimea.edu>
- *
- * This file is licensed under  the terms of the GNU General Public
- * License version 2. This program is licensed "as is" without any
- * warranty of any kind, whether express or implied.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

@@ -1,37 +1,20 @@
 /*
- * ALSA SoC TLV320AIC3X codec driver
- *
- * Author:      Vladimir Barinov, <vbarinov@embeddedalley.com>
- * Copyright:   (C) 2007 MontaVista Software, Inc., <source@mvista.com>
- *
- * Based on sound/soc/codecs/wm8753.c by Liam Girdwood
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * Notes:
- *  The AIC3X is a driver for a low power stereo audio
- *  codecs aic31, aic32, aic33, aic3007.
- *
- *  It supports full aic33 codec functionality.
- *  The compatibility with aic32, aic31 and aic3007 is as follows:
- *    aic32/aic3007    |        aic31
- *  ---------------------------------------
- *   MONO_LOUT -> N/A  |  MONO_LOUT -> N/A
- *                     |  IN1L -> LINE1L
- *                     |  IN1R -> LINE1R
- *                     |  IN2L -> LINE2L
- *                     |  IN2R -> LINE2R
- *                     |  MIC3L/R -> N/A
- *   truncated internal functionality in
- *   accordance with documentation
- *  ---------------------------------------
- *
- *  Hence the machine layer should disable unsupported inputs/outputs by
- *  snd_soc_dapm_disable_pin(codec, "MONO_LOUT"), etc.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/moduleparam.h>
 #include <beep/init.h>

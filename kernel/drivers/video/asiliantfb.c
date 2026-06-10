@@ -1,34 +1,20 @@
 /*
- * drivers/video/asiliantfb.c
- *  frame buffer driver for Asiliant 69000 chip
- *  Copyright (C) 2001-2003 Saito.K & Jeanne
- *
- *  from driver/video/chipsfb.c and,
- *
- *  drivers/video/asiliantfb.c -- frame buffer device for
- *  Asiliant 69030 chip (formerly Intel, formerly Chips & Technologies)
- *  Author: apc@agelectronics.co.uk
- *  Copyright (C) 2000 AG Electronics
- *  Note: the data sheets don't seem to be available from Asiliant.
- *  They are available by searching developer.intel.com, but are not otherwise
- *  linked to.
- *
- *  This driver should be portable with minimal effort to the 69000 display
- *  chip, and to the twin-display mode of the 69030.
- *  Contains code from Thomas Hhenleitner <th@visuelle-maschinen.de> (thanks)
- *
- *  Derived from the CT65550 driver chipsfb.c:
- *  Copyright (C) 1998 Paul Mackerras
- *  ...which was derived from the Powermac "chips" driver:
- *  Copyright (C) 1997 Fabio Riccardi.
- *  And from the frame buffer device for Open Firmware-initialized devices:
- *  Copyright (C) 1997 Geert Uytterhoeven.
- *
- *  This file is subject to the terms and conditions of the GNU General Public
- *  License. See the file COPYING in the main directory of this archive for
- *  more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/errno.h>

@@ -1,26 +1,20 @@
-/* pmc93x6_eeprom.c - PMC's 93LC46 EEPROM Device
- *
- *    The 93LC46 is a low-power, serial Electrically Erasable and
- *    Programmable Read Only Memory organized as 128 8-bit bytes.
- *
- *    Accesses to the 93LC46 are done in a bit serial stream, organized
- *    in a 3 wire format.  Writes are internally timed by the device
- *    (the In data bit is pulled low until the write is complete and
- *    then is pulled high) and take about 6 milliseconds.
- *
- * Copyright (C) 2003-2005  SBE, Inc.
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 2 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/types.h>

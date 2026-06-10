@@ -1,14 +1,20 @@
 /*
- * ceph_fs.h - Ceph constants and data types to share between kernel and
- * user space.
- *
- * Most types in this file are defined as little-endian, and are
- * primarily intended to describe data structures that pass over the
- * wire or that are stored on disk.
- *
- * LGPL2
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef CEPH_FS_H
 #define CEPH_FS_H
 

@@ -1,32 +1,20 @@
 /*
- * beep/drivers/mmc/host/tmio_mmc_pio.c
- *
- * Copyright (C) 2011 Guennadi Liakhovetski
- * Copyright (C) 2007 Ian Molton
- * Copyright (C) 2004 Ian Molton
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * Driver for the MMC / SD / SDIO IP found in:
- *
- * TC6393XB, TC6391XB, TC6387XB, T7L66XB, ASIC3, SH-Mobile SoCs
- *
- * This driver draws mainly on scattered spec sheets, Reverse engineering
- * of the toshiba e800  SD driver and some parts of the 2.4 ASIC3 driver (4 bit
- * support). (Further 4 bit support from a later datasheet).
- *
- * TODO:
- *   Investigate using a workqueue for PIO transfers
- *   Eliminate FIXMEs
- *   SDIO support
- *   Better Power management
- *   Handle MMC errors better
- *   double buffer support
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/delay.h>
 #include <beep/device.h>
 #include <beep/highmem.h>

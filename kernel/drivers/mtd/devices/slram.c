@@ -1,34 +1,20 @@
-/*======================================================================
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-  This driver provides a method to access memory not used by the kernel
-  itself (i.e. if the kernel commandline mem=xxx is used). To actually
-  use slram at least mtdblock or mtdchar is required (for block or
-  character device access).
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-  Usage:
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-  if compiled as loadable module:
-    modprobe slram map=<name>,<start>,<end/offset>
-  if statically linked into the kernel use the following kernel cmd.line
-    slram=<name>,<start>,<end/offset>
-
-  <name>: name of the device that will be listed in /proc/mtd
-  <start>: start of the memory region, decimal or hex (0xabcdef)
-  <end/offset>: end of the memory region. It's possible to use +0x1234
-                to specify the offset instead of the absolute address
-
-  NOTE:
-  With slram it's only possible to map a contiguous memory region. Therefore
-  if there's a device mapped somewhere in the region specified slram will
-  fail to load (see kernel log if modprobe fails).
-
-  -
-
-  Jochen Schaeuble <psionic@psionic.de>
-
-======================================================================*/
-
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <asm/uaccess.h>
 #include <beep/types.h>

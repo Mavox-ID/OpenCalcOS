@@ -1,28 +1,20 @@
-/* ######################################################################
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-   Octagon 5066 MTD Driver.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-   The Octagon 5066 is a SBC based on AMD's 586-WB running at 133 MHZ. It
-   comes with a builtin AMD 29F016 flash chip and a socketed EEPROM that
-   is replacable by flash. Both units are mapped through a multiplexer
-   into a 32k memory window at 0xe8000. The control register for the
-   multiplexing unit is located at IO 0x208 with a bit map of
-     0-5 Page Selection in 32k increments
-     6-7 Device selection:
-        00 SSD off
-        01 SSD 0 (Socket)
-        10 SSD 1 (Flash chip)
-        11 undefined
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-   On each SSD, the first 128k is reserved for use by the bios
-   (actually it IS the bios..) This only matters if you are booting off the
-   flash, you must not put a file system starting there.
-
-   The driver tries to do a detection algorithm to guess what sort of devices
-   are plugged into the sockets.
-
-   ##################################################################### */
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/ioport.h>
 #include <beep/init.h>

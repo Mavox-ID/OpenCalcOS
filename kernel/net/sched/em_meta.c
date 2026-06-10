@@ -1,63 +1,20 @@
 /*
- * net/sched/em_meta.c	Metadata ematch
- *
- *		This program is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- *
- * Authors:	Thomas Graf <tgraf@suug.ch>
- *
- * ==========================================================================
- *
- * 	The metadata ematch compares two meta objects where each object
- * 	represents either a meta value stored in the kernel or a static
- * 	value provided by userspace. The objects are not provided by
- * 	userspace itself but rather a definition providing the information
- * 	to build them. Every object is of a certain type which must be
- * 	equal to the object it is being compared to.
- *
- * 	The definition of a objects conists of the type (meta type), a
- * 	identifier (meta id) and additional type specific information.
- * 	The meta id is either TCF_META_TYPE_VALUE for values provided by
- * 	userspace or a index to the meta operations table consisting of
- * 	function pointers to type specific meta data collectors returning
- * 	the value of the requested meta value.
- *
- * 	         lvalue                                   rvalue
- * 	      +-----------+                           +-----------+
- * 	      | type: INT |                           | type: INT |
- * 	 def  | id: DEV   |                           | id: VALUE |
- * 	      | data:     |                           | data: 3   |
- * 	      +-----------+                           +-----------+
- * 	            |                                       |
- * 	            ---> meta_ops[INT][DEV](...)            |
- *	                      |                             |
- * 	            -----------                             |
- * 	            V                                       V
- * 	      +-----------+                           +-----------+
- * 	      | type: INT |                           | type: INT |
- * 	 obj  | id: DEV |                             | id: VALUE |
- * 	      | data: 2   |<--data got filled out     | data: 3   |
- * 	      +-----------+                           +-----------+
- * 	            |                                         |
- * 	            --------------> 2  equals 3 <--------------
- *
- * 	This is a simplified schema, the complexity varies depending
- * 	on the meta type. Obviously, the length of the data must also
- * 	be provided for non-numeric types.
- *
- * 	Additionally, type dependent modifiers such as shift operators
- * 	or mask may be applied to extend the functionaliy. As of now,
- * 	the variable length type supports shifting the byte string to
- * 	the right, eating up any number of octets and thus supporting
- * 	wildcard interface name comparisons such as "ppp%" matching
- * 	ppp0..9.
- *
- * 	NOTE: Certain meta values depend on other subsystems and are
- * 	      only available if that subsystem is enabled in the kernel.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/slab.h>
 #include <beep/module.h>
 #include <beep/types.h>

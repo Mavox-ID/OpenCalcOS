@@ -1,66 +1,20 @@
 /*
- * HP i8042-based System Device Controller driver.
- *
- * Copyright (c) 2001 Brian S. Julin
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions, and the following disclaimer,
- *    without modification.
- * 2. The name of the author may not be used to endorse or promote products
- *    derived from this software without specific prior written permission.
- *
- * Alternatively, this software may be distributed under the terms of the
- * GNU General Public License ("GPL").
- *
- * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND
- * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- * ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE FOR
- * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
- * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
- * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
- * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
- * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
- *
- * References:
- * System Device Controller Microprocessor Firmware Theory of Operation
- *      for Part Number 1820-4784 Revision B.  Dwg No. A-1820-4784-2
- * Helge Deller's original hilkbd.c port for PA-RISC.
- *
- *
- * Driver theory of operation:
- *
- * hp_sdc_put does all writing to the SDC.  ISR can run on a different
- * CPU than hp_sdc_put, but only one CPU runs hp_sdc_put at a time
- * (it cannot really benefit from SMP anyway.)  A tasket fit this perfectly.
- *
- * All data coming back from the SDC is sent via interrupt and can be read
- * fully in the ISR, so there are no latency/throughput problems there.
- * The problem is with output, due to the slow clock speed of the SDC
- * compared to the CPU.  This should not be too horrible most of the time,
- * but if used with HIL devices that support the multibyte transfer command,
- * keeping outbound throughput flowing at the 6500KBps that the HIL is
- * capable of is more than can be done at HZ=100.
- *
- * Busy polling for IBF clear wastes CPU cycles and bus cycles.  hp_sdc.ibf
- * is set to 0 when the IBF flag in the status register has cleared.  ISR
- * may do this, and may also access the parts of queued transactions related
- * to reading data back from the SDC, but otherwise will not touch the
- * hp_sdc state. Whenever a register is written hp_sdc.ibf is set to 1.
- *
- * The i8042 write index and the values in the 4-byte input buffer
- * starting at 0x70 are kept track of in hp_sdc.wi, and .r7[], respectively,
- * to minimize the amount of IO needed to the SDC.  However these values
- * do not need to be locked since they are only ever accessed by hp_sdc_put.
- *
- * A timer task schedules the tasklet once per second just to make
- * sure it doesn't freeze up and to allow for bad reads to time out.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/hp_sdc.h>
 #include <beep/errno.h>
 #include <beep/init.h>

@@ -1,42 +1,20 @@
-/* orinoco_tmd.c
- *
- * Driver for Prism II devices which would usually be driven by orinoco_cs,
- * but are connected to the PCI bus by a TMD7160.
- *
- * Copyright (C) 2003 Joerg Dorchain <joerg AT dorchain.net>
- * based heavily upon orinoco_plx.c Copyright (C) 2001 Daniel Barlow
- *
- * The contents of this file are subject to the Mozilla Public License
- * Version 1.1 (the "License"); you may not use this file except in
- * compliance with the License. You may obtain a copy of the License
- * at http://www.mozilla.org/MPL/
- *
- * Software distributed under the License is distributed on an "AS IS"
- * basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See
- * the License for the specific language governing rights and
- * limitations under the License.
- *
- * Alternatively, the contents of this file may be used under the
- * terms of the GNU General Public License version 2 (the "GPL"), in
- * which case the provisions of the GPL are applicable instead of the
- * above.  If you wish to allow the use of your version of this file
- * only under the terms of the GPL and not to allow others to use your
- * version of this file under the MPL, indicate your decision by
- * deleting the provisions above and replace them with the notice and
- * other provisions required by the GPL.  If you do not delete the
- * provisions above, a recipient may use your version of this file
- * under either the MPL or the GPL.
- *
- * The actual driving is done by main.c, this is just resource
- * allocation stuff.
- *
- * This driver is modeled after the orinoco_plx driver. The main
- * difference is that the TMD chip has only IO port ranges and doesn't
- * provide access to the PCMCIA attribute space.
- *
- * Pheecom sells cards with the TMD chip as "ASIC version"
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define DRIVER_NAME "orinoco_tmd"
 #define PFX DRIVER_NAME ": "
 

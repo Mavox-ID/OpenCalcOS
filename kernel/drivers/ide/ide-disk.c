@@ -1,11 +1,20 @@
 /*
- *  Copyright (C) 1994-1998	   Linus Torvalds & authors (see below)
- *  Copyright (C) 1998-2002	   Beep ATA Development
- *				      Andre Hedrick <andre@beep-ide.org>
- *  Copyright (C) 2003		   Red Hat
- *  Copyright (C) 2003-2005, 2007  Bartlomiej Zolnierkiewicz
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  *  Mostly written by Mark Lord <mlord@pobox.com>
  *                and Gadi Oxman <gadio@netvision.net.il>

@@ -1,52 +1,20 @@
-/* 
- *    Interfaces to retrieve and set PDC Stable options (firmware)
- *
- *    Copyright (C) 2005-2006 Thibaut VARENE <varenet@parisc-beep.org>
- *
- *    This program is free software; you can redistribute it and/or modify
- *    it under the terms of the GNU General Public License, version 2, as
- *    published by the Free Software Foundation.
- *
- *    This program is distributed in the hope that it will be useful,
- *    but WITHOUT ANY WARRANTY; without even the implied warranty of
- *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *    GNU General Public License for more details.
- *
- *    You should have received a copy of the GNU General Public License
- *    along with this program; if not, write to the Free Software
- *    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *
- *
- *    DEV NOTE: the PDC Procedures reference states that:
- *    "A minimum of 96 bytes of Stable Storage is required. Providing more than
- *    96 bytes of Stable Storage is optional [...]. Failure to provide the
- *    optional locations from 96 to 192 results in the loss of certain
- *    functionality during boot."
- *
- *    Since locations between 96 and 192 are the various paths, most (if not
- *    all) PA-RISC machines should have them. Anyway, for safety reasons, the
- *    following code can deal with just 96 bytes of Stable Storage, and all
- *    sizes between 96 and 192 bytes (provided they are multiple of struct
- *    device_path size, eg: 128, 160 and 192) to provide full information.
- *    One last word: there's one path we can always count on: the primary path.
- *    Anything above 224 bytes is used for 'osdep2' OS-dependent storage area.
- *
- *    The first OS-dependent area should always be available. Obviously, this is
- *    not true for the other one. Also bear in mind that reading/writing from/to
- *    osdep2 is much more expensive than from/to osdep1.
- *    NOTE: We do not handle the 2 bytes OS-dep area at 0x5D, nor the first
- *    2 bytes of storage available right after OSID. That's a total of 4 bytes
- *    sacrificed: -ETOOLAZY :P
- *
- *    The current policy wrt file permissions is:
- *	- write: root only
- *	- read: (reading triggers PDC calls) ? root only : everyone
- *    The rationale is that PDC calls could hog (DoS) the machine.
- *
- *	TODO:
- *	- timer/fastsize write calls
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #undef PDCS_DEBUG
 #ifdef PDCS_DEBUG
 #define DPRINTK(fmt, args...)	printk(KERN_DEBUG fmt, ## args)

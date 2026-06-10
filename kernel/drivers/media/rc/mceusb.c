@@ -1,42 +1,20 @@
 /*
- * Driver for USB Windows Media Center Ed. eHome Infrared Transceivers
- *
- * Copyright (c) 2010-2011, Jarod Wilson <jarod@redhat.com>
- *
- * Based on the original lirc_mceusb and lirc_mceusb2 drivers, by Dan
- * Conti, Martin Blatter and Daniel Melander, the latter of which was
- * in turn also based on the lirc_atiusb driver by Paul Miller. The
- * two mce drivers were merged into one by Jarod Wilson, with transmit
- * support for the 1st-gen device added primarily by Patrick Calhoun,
- * with a bit of tweaks by Jarod. Debugging improvements and proper
- * support for what appears to be 3rd-gen hardware added by Jarod.
- * Initial port from lirc driver to ir-core drivery by Jarod, based
- * partially on a port to an earlier proposed IR infrastructure by
- * Jon Smirl, which included enhancements and simplifications to the
- * incoming IR buffer parsing routines.
- *
- * Updated in July of 2011 with the aid of Microsoft's official
- * remote/transceiver requirements and specification document, found at
- * download.microsoft.com, title
- * Windows-Media-Center-RC-IR-Collection-Green-Button-Specification-03-08-2011-V2.pdf
- *
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/device.h>
 #include <beep/module.h>
 #include <beep/slab.h>

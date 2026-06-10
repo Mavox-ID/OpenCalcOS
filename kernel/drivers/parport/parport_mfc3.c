@@ -1,57 +1,20 @@
-/* Low-level parallel port routines for the Multiface 3 card
- *
- * Author: Joerg Dorchain <joerg@dorchain.net>
- *
- * (C) The elitist m68k Users(TM)
- *
- * based on the existing parport_amiga and lp_mfc
- *
- *
- * From the MFC3 documentation:
- * 
- * Miscellaneous PIA Details
- * -------------------------
- * 
- * 	The two open-drain interrupt outputs /IRQA and /IRQB are routed to
- * /INT2 of the Z2 bus.
- * 
- * 	The CPU data bus of the PIA (D0-D7) is connected to D8-D15 on the Z2
- * bus. This means that any PIA registers are accessed at even addresses.
- * 
- * Centronics Pin Connections for the PIA
- * --------------------------------------
- * 
- * 	The following table shows the connections between the PIA and the
- * Centronics interface connector. These connections implement a single, but
- * very complete, Centronics type interface. The Pin column gives the pin
- * numbers of the PIA. The Centronics pin numbers can be found in the section
- * "Parallel Connectors".
- * 
- * 
- *    Pin | PIA | Dir | Centronics Names
- * -------+-----+-----+---------------------------------------------------------
- *     19 | CB2 | --> | /STROBE (aka /DRDY)
- *  10-17 | PBx | <-> | DATA0 - DATA7
- *     18 | CB1 | <-- | /ACK
- *     40 | CA1 | <-- | BUSY
- *      3 | PA1 | <-- | PAPER-OUT (aka POUT)
- *      4 | PA2 | <-- | SELECTED (aka SEL)
- *      9 | PA7 | --> | /INIT (aka /RESET or /INPUT-PRIME)
- *      6 | PA4 | <-- | /ERROR (aka /FAULT)
- *      7 | PA5 | --> | DIR (aka /SELECT-IN)
- *      8 | PA6 | --> | /AUTO-FEED-XT
- *     39 | CA2 | --> | open
- *      5 | PA3 | <-- | /ACK (same as CB1!)
- *      2 | PA0 | <-- | BUSY (same as CA1!)
- * -------+-----+-----+---------------------------------------------------------
- * 
- * Should be enough to understand some of the driver.
- *
- * Per convention for normal use the port registers are visible.
- * If you need the data direction registers, restore the value in the
- * control register.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "multiface.h"
 #include <beep/module.h>
 #include <beep/init.h>

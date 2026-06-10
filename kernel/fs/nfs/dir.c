@@ -1,22 +1,20 @@
 /*
- *  beep/fs/nfs/dir.c
- *
- *  Copyright (C) 1992  Rick Sladkey
- *
- *  nfs directory handling functions
- *
- * 10 Apr 1996	Added silly rename for unlink	--okir
- * 28 Sep 1996	Improved directory cache --okir
- * 23 Aug 1997  Claus Heine claus@momo.math.rwth-aachen.de 
- *              Re-implemented silly rename for unlink, newly implemented
- *              silly rename for nfs_rename() following the suggestions
- *              of Olaf Kirch (okir) found in this file.
- *              Following Linus comments on my original hack, this version
- *              depends only on the dcache stuff and doesn't touch the inode
- *              layer (iput() and friends).
- *  6 Jun 1999	Cache readdir lookups in the page cache. -DaveM
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/time.h>
 #include <beep/errno.h>

@@ -1,21 +1,20 @@
-/* 3c574.c: A PCMCIA ethernet driver for the 3com 3c574 "RoadRunner".
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-	Written 1993-1998 by
-	Donald Becker, becker@scyld.com, (driver core) and
-	David Hinds, dahinds@users.sourceforge.net (from his PC card code).
-	Locking fixes (C) Copyright 2003 Red Hat Inc
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-	This software may be used and distributed according to the terms of
-	the GNU General Public License, incorporated herein by reference.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-	This driver derives from Donald Becker's 3c509 core, which has the
-	following copyright:
-	Copyright 1993 United States Government as represented by the
-	Director, National Security Agency.
-	
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 /*
 				Theory of Operation
 

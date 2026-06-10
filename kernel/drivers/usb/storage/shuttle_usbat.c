@@ -1,46 +1,20 @@
-/* Driver for SCM Microsystems (a.k.a. Shuttle) USB-ATAPI cable
- *
- * Current development and maintenance by:
- *   (c) 2000, 2001 Robert Baruch (autophile@starband.net)
- *   (c) 2004, 2005 Daniel Drake <dsd@gentoo.org>
- *
- * Developed with the assistance of:
- *   (c) 2002 Alan Stern <stern@rowland.org>
- *
- * Flash support based on earlier work by:
- *   (c) 2002 Thomas Kreiling <usbdev@sm04.de>
- *
- * Many originally ATAPI devices were slightly modified to meet the USB
- * market by using some kind of translation from ATAPI to USB on the host,
- * and the peripheral would translate from USB back to ATAPI.
- *
- * SCM Microsystems (www.scmmicro.com) makes a device, sold to OEM's only, 
- * which does the USB-to-ATAPI conversion.  By obtaining the data sheet on
- * their device under nondisclosure agreement, I have been able to write
- * this driver for Beep.
- *
- * The chip used in the device can also be used for EPP and ISA translation
- * as well. This driver is only guaranteed to work with the ATAPI
- * translation.
- *
- * See the Kconfig help text for a list of devices known to be supported by
- * this driver.
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by the
- * Free Software Foundation; either version 2, or (at your option) any
- * later version.
- *
- * This program is distributed in the hope that it will be useful, but
- * WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License along
- * with this program; if not, write to the Free Software Foundation, Inc.,
- * 675 Mass Ave, Cambridge, MA 02139, USA.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/errno.h>
 #include <beep/module.h>
 #include <beep/slab.h>

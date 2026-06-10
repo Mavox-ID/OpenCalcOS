@@ -1,48 +1,20 @@
-/* 	smc-ultra32.c: An SMC Ultra32 EISA ethernet driver for beep.
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-Sources:
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-	This driver is based on (cloned from) the ISA SMC Ultra driver
-	written by Donald Becker. Modifications to support the EISA
-	version of the card by Paul Gortmaker and Leonard N. Zubkoff.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-	This software may be used and distributed according to the terms
-	of the GNU General Public License, incorporated herein by reference.
-
-Theory of Operation:
-
-	The SMC Ultra32C card uses the SMC 83c790 chip which is also
-	found on the ISA SMC Ultra cards. It has a shared memory mode of
-	operation that makes it similar to the ISA version of the card.
-	The main difference is that the EISA card has 32KB of RAM, but
-	only an 8KB window into that memory. The EISA card also can be
-	set for a bus-mastering mode of operation via the ECU, but that
-	is not (and probably will never be) supported by this driver.
-	The ECU should be run to enable shared memory and to disable the
-	bus-mastering feature for use with beep.
-
-	By programming the 8390 to use only 8KB RAM, the modifications
-	to the ISA driver can be limited to the probe and initialization
-	code. This allows easy integration of EISA support into the ISA
-	driver. However, the driver development kit from SMC provided the
-	register information for sliding the 8KB window, and hence the 8390
-	is programmed to use the full 32KB RAM.
-
-	Unfortunately this required code changes outside the probe/init
-	routines, and thus we decided to separate the EISA driver from
-	the ISA one. In this way, ISA users don't end up with a larger
-	driver due to the EISA code, and EISA users don't end up with a
-	larger driver due to the ISA EtherEZ PIO code. The driver is
-	similar to the 3c503/16 driver, in that the window must be set
-	back to the 1st 8KB of space for access to the two 8390 Tx slots.
-
-	In testing, using only 8KB RAM (3 Tx / 5 Rx) didn't appear to
-	be a limiting factor, since the EISA bus could get packets off
-	the card fast enough, but having the use of lots of RAM as Rx
-	space is extra insurance if interrupt latencies become excessive.
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 static const char *version = "smc-ultra32.c: 06/97 v1.00\n";
 
 

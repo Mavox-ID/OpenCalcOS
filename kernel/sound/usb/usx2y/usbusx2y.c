@@ -1,135 +1,20 @@
 /*
- * usbusy2y.c - ALSA USB US-428 Driver
- *
-2005-04-14 Karsten Wiese
-	Version 0.8.7.2:
-	Call snd_card_free() instead of snd_card_free_in_thread() to prevent oops with dead keyboard symptom.
-	Tested ok with kernel 2.6.12-rc2.
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-2004-12-14 Karsten Wiese
-	Version 0.8.7.1:
-	snd_pcm_open for rawusb pcm-devices now returns -EBUSY if called without rawusb's hwdep device being open.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-2004-12-02 Karsten Wiese
-	Version 0.8.7:
-	Use macro usb_maxpacket() for portability.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-2004-10-26 Karsten Wiese
-	Version 0.8.6:
-	wake_up() process waiting in usX2Y_urbs_start() on error.
-
-2004-10-21 Karsten Wiese
-	Version 0.8.5:
-	nrpacks is runtime or compiletime configurable now with tested values from 1 to 4.
-
-2004-10-03 Karsten Wiese
-	Version 0.8.2:
-	Avoid any possible racing while in prepare callback.
-
-2004-09-30 Karsten Wiese
-	Version 0.8.0:
-	Simplified things and made ohci work again.
-
-2004-09-20 Karsten Wiese
-	Version 0.7.3:
-	Use usb_kill_urb() instead of deprecated (kernel 2.6.9) usb_unlink_urb().
-
-2004-07-13 Karsten Wiese
-	Version 0.7.1:
-	Don't sleep in START/STOP callbacks anymore.
-	us428 channels C/D not handled just for this version, sorry.
-
-2004-06-21 Karsten Wiese
-	Version 0.6.4:
-	Temporarely suspend midi input
-	to sanely call usb_set_interface() when setting format.
-
-2004-06-12 Karsten Wiese
-	Version 0.6.3:
-	Made it thus the following rule is enforced:
-	"All pcm substreams of one usX2Y have to operate at the same rate & format."
-
-2004-04-06 Karsten Wiese
-	Version 0.6.0:
-	Runs on 2.6.5 kernel without any "--with-debug=" things.
-	us224 reported running.
-
-2004-01-14 Karsten Wiese
-	Version 0.5.1:
-	Runs with 2.6.1 kernel.
-
-2003-12-30 Karsten Wiese
-	Version 0.4.1:
-	Fix 24Bit 4Channel capturing for the us428.
-
-2003-11-27 Karsten Wiese, Martin Langer
-	Version 0.4:
-	us122 support.
-	us224 could be tested by uncommenting the sections containing USB_ID_US224
-
-2003-11-03 Karsten Wiese
-	Version 0.3:
-	24Bit support. 
-	"arecord -D hw:1 -c 2 -r 48000 -M -f S24_3LE|aplay -D hw:1 -c 2 -r 48000 -M -f S24_3LE" works.
-
-2003-08-22 Karsten Wiese
-	Version 0.0.8:
-	Removed EZUSB Firmware. First Stage Firmwaredownload is now done by tascam-firmware downloader.
-	See:
-	http://usb-midi-fw.sourceforge.net/tascam-firmware.tar.gz
-
-2003-06-18 Karsten Wiese
-	Version 0.0.5:
-	changed to compile with kernel 2.4.21 and alsa 0.9.4
-
-2002-10-16 Karsten Wiese
-	Version 0.0.4:
-	compiles again with alsa-current.
-	USB_ISO_ASAP not used anymore (most of the time), instead
-	urb->start_frame is calculated here now, some calls inside usb-driver don't need to happen anymore.
-
-	To get the best out of this:
-	Disable APM-support in the kernel as APM-BIOS calls (once each second) hard disable interrupt for many precious milliseconds.
-	This helped me much on my slowish PII 400 & PIII 500.
-	ACPI yet untested but might cause the same bad behaviour.
-	Use a kernel with lowlatency and preemptiv patches applied.
-	To autoload snd-usb-midi append a line 
-		post-install snd-usb-us428 modprobe snd-usb-midi
-	to /etc/modules.conf.
-
-	known problems:
-	sliders, knobs, lights not yet handled except MASTER Volume slider.
-       	"pcm -c 2" doesn't work. "pcm -c 2 -m direct_interleaved" does.
-	KDE3: "Enable full duplex operation" deadlocks.
-
-	
-2002-08-31 Karsten Wiese
-	Version 0.0.3: audio also simplex;
-	simplifying: iso urbs only 1 packet, melted structs.
-	ASYNC_UNLINK not used anymore: no more crashes so far.....
-	for alsa 0.9 rc3.
-
-2002-08-09 Karsten Wiese
-	Version 0.0.2: midi works with snd-usb-midi, audio (only fullduplex now) with i.e. bristol.
-	The firmware has been sniffed from win2k us-428 driver 3.09.
-
- *   Copyright (c) 2002 - 2004 Karsten Wiese
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 2 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, write to the Free Software
- *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #include <beep/init.h>
 #include <beep/module.h>
 #include <beep/moduleparam.h>

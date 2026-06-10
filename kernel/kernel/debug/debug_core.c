@@ -1,32 +1,20 @@
 /*
- * Kernel Debug Core
- *
- * Maintainer: Jason Wessel <jason.wessel@windriver.com>
- *
- * Copyright (C) 2000-2001 VERITAS Software Corporation.
- * Copyright (C) 2002-2004 Timesys Corporation
- * Copyright (C) 2003-2004 Amit S. Kale <amitkale@linsyssoft.com>
- * Copyright (C) 2004 Pavel Machek <pavel@ucw.cz>
- * Copyright (C) 2004-2006 Tom Rini <trini@kernel.crashing.org>
- * Copyright (C) 2004-2006 LinSysSoft Technologies Pvt. Ltd.
- * Copyright (C) 2005-2009 Wind River Systems, Inc.
- * Copyright (C) 2007 MontaVista Software, Inc.
- * Copyright (C) 2008 Red Hat, Inc., Ingo Molnar <mingo@redhat.com>
- *
- * Contributors at various stages not listed above:
- *  Jason Wessel ( jason.wessel@windriver.com )
- *  George Anzinger <george@mvista.com>
- *  Anurekh Saxena (anurekh.saxena@timesys.com)
- *  Lake Stevens Instrument Division (Glenn Engel)
- *  Jim Kingdon, Cygnus Support.
- *
- * Original KGDB stub: David Grothe <dave@gcom.com>,
- * Tigran Aivazian <tigran@sco.com>
- *
- * This file is licensed under the terms of the GNU General Public License
- * version 2. This program is licensed "as is" without any warranty of any
- * kind, whether express or implied.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/pid_namespace.h>
 #include <beep/clocksource.h>
 #include <beep/interrupt.h>

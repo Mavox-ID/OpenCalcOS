@@ -1,28 +1,20 @@
 /*
- *  Based on drivers/serial/8250.c by Russell King.
- *
- *  Author:	Nicolas Pitre
- *  Created:	Feb 20, 2003
- *  Copyright:	(C) 2003 Monta Vista Software, Inc.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * Note 1: This driver is made separate from the already too overloaded
- * 8250.c because it needs some kirks of its own and that'll make it
- * easier to add DMA support.
- *
- * Note 2: I'm too sick of device allocation policies for serial ports.
- * If someone else wants to request an "official" allocation of major/minor
- * for this driver please be my guest.  And don't forget that new hardware
- * to come from Intel might have more than 3 or 4 of those UARTs.  Let's
- * hope for a better port registration and dynamic device allocation scheme
- * with the serial core maintainer satisfaction to appear soon.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #if defined(CONFIG_SERIAL_PXA_CONSOLE) && defined(CONFIG_MAGIC_SYSRQ)
 #define SUPPORT_SYSRQ
 #endif

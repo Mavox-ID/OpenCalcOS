@@ -1,23 +1,20 @@
-/* envctrl.c: Temperature and Fan monitoring on Machines providing it.
- *
- * Copyright (C) 1998  Eddie C. Dost  (ecd@skynet.be)
- * Copyright (C) 2000  Vinh Truong    (vinh.truong@eng.sun.com)
- * VT - The implementation is to support Sun Microelectronics (SME) platform
- *      environment monitoring.  SME platforms use pcf8584 as the i2c bus 
- *      controller to access pcf8591 (8-bit A/D and D/A converter) and 
- *      pcf8571 (256 x 8-bit static low-voltage RAM with I2C-bus interface).
- *      At board level, it follows SME Firmware I2C Specification. Reference:
- * 	http://www-eu2.semiconductors.com/pip/PCF8584P
- * 	http://www-eu2.semiconductors.com/pip/PCF8574AP
- * 	http://www-eu2.semiconductors.com/pip/PCF8591P
- *
- * EB - Added support for CP1500 Global Address and PS/Voltage monitoring.
- * 		Eric Brower <ebrower@usa.net>
- *
- * DB - Audit every copy_to_user in envctrl_read.
- *              Daniele Bellucci <bellucda@tiscali.it>
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/kthread.h>

@@ -1,32 +1,20 @@
 /*
- * apb_timer.c: Driver for Langwell APB timers
- *
- * (C) Copyright 2009 Intel Corporation
- * Author: Jacob Pan (jacob.jun.pan@intel.com)
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; version 2
- * of the License.
- *
- * Note:
- * Langwell is the south complex of Intel Moorestown MID platform. There are
- * eight external timers in total that can be used by the operating system.
- * The timer information, such as frequency and addresses, is provided to the
- * OS via SFI tables.
- * Timer interrupts are routed via FW/HW emulated IOAPIC independently via
- * individual redirection table entries (RTE).
- * Unlike HPET, there is no master counter, therefore one of the timers are
- * used as clocksource. The overall allocation looks like:
- *  - timer 0 - NR_CPUs for per cpu timer
- *  - one timer for clocksource
- *  - one timer for watchdog driver.
- * It is also worth notice that APB timer does not support true one-shot mode,
- * free-running mode will be used here to emulate one-shot mode.
- * APB timer can also be used as broadcast timer along with per cpu local APIC
- * timer, but by default APB timer has higher rating than local APIC timers.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/delay.h>
 #include <beep/dw_apb_timer.h>
 #include <beep/errno.h>

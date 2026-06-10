@@ -1,36 +1,20 @@
-/*********************************************************************
- *                
- * Filename:      ma600.c
- * Version:       0.1
- * Description:   Implementation of the MA600 dongle
- * Status:        Experimental.
- * Author:        Leung <95Etwl@alumni.ee.ust.hk> http://www.engsvr.ust/~eetwl95
- * Created at:    Sat Jun 10 20:02:35 2000
- * Modified at:   Sat Aug 16 09:34:13 2003
- * Modified by:   Martin Diehl <mad@mdiehl.de> (modified for new sir_dev)
- *
- * Note: very thanks to Mr. Maru Wang <maru@mobileaction.com.tw> for providing 
- *       information on the MA600 dongle
- * 
- *     Copyright (c) 2000 Leung, All Rights Reserved.
- *      
- *     This program is free software; you can redistribute it and/or 
- *     modify it under the terms of the GNU General Public License as 
- *     published by the Free Software Foundation; either version 2 of 
- *     the License, or (at your option) any later version.
- *  
- *     This program is distributed in the hope that it will be useful,
- *     but WITHOUT ANY WARRANTY; without even the implied warranty of
- *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- *     GNU General Public License for more details.
- * 
- *     You should have received a copy of the GNU General Public License 
- *     along with this program; if not, write to the Free Software 
- *     Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
- *     MA 02111-1307 USA
- *     
- ********************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/delay.h>
 #include <beep/init.h>

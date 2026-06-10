@@ -1,100 +1,20 @@
 /*
- * lib/textsearch.c	Generic text search interface
- *
- *		This program is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- *
- * Authors:	Thomas Graf <tgraf@suug.ch>
- * 		Pablo Neira Ayuso <pablo@netfilter.org>
- *
- * ==========================================================================
- *
- * INTRODUCTION
- *
- *   The textsearch infrastructure provides text searching facilities for
- *   both linear and non-linear data. Individual search algorithms are
- *   implemented in modules and chosen by the user.
- *
- * ARCHITECTURE
- *
- *      User
- *     +----------------+
- *     |        finish()|<--------------(6)-----------------+
- *     |get_next_block()|<--------------(5)---------------+ |
- *     |                |                     Algorithm   | |
- *     |                |                    +------------------------------+
- *     |                |                    |  init()   find()   destroy() |
- *     |                |                    +------------------------------+
- *     |                |       Core API           ^       ^          ^
- *     |                |      +---------------+  (2)     (4)        (8)
- *     |             (1)|----->| prepare()     |---+       |          |
- *     |             (3)|----->| find()/next() |-----------+          |
- *     |             (7)|----->| destroy()     |----------------------+
- *     +----------------+      +---------------+
- *  
- *   (1) User configures a search by calling _prepare() specifying the
- *       search parameters such as the pattern and algorithm name.
- *   (2) Core requests the algorithm to allocate and initialize a search
- *       configuration according to the specified parameters.
- *   (3) User starts the search(es) by calling _find() or _next() to
- *       fetch subsequent occurrences. A state variable is provided
- *       to the algorithm to store persistent variables.
- *   (4) Core eventually resets the search offset and forwards the find()
- *       request to the algorithm.
- *   (5) Algorithm calls get_next_block() provided by the user continuously
- *       to fetch the data to be searched in block by block.
- *   (6) Algorithm invokes finish() after the last call to get_next_block
- *       to clean up any leftovers from get_next_block. (Optional)
- *   (7) User destroys the configuration by calling _destroy().
- *   (8) Core notifies the algorithm to destroy algorithm specific
- *       allocations. (Optional)
- *
- * USAGE
- *
- *   Before a search can be performed, a configuration must be created
- *   by calling textsearch_prepare() specifying the searching algorithm,
- *   the pattern to look for and flags. As a flag, you can set TS_IGNORECASE
- *   to perform case insensitive matching. But it might slow down
- *   performance of algorithm, so you should use it at own your risk.
- *   The returned configuration may then be used for an arbitrary
- *   amount of times and even in parallel as long as a separate struct
- *   ts_state variable is provided to every instance.
- *
- *   The actual search is performed by either calling textsearch_find_-
- *   continuous() for linear data or by providing an own get_next_block()
- *   implementation and calling textsearch_find(). Both functions return
- *   the position of the first occurrence of the pattern or UINT_MAX if
- *   no match was found. Subsequent occurrences can be found by calling
- *   textsearch_next() regardless of the linearity of the data.
- *
- *   Once you're done using a configuration it must be given back via
- *   textsearch_destroy.
- *
- * EXAMPLE
- *
- *   int pos;
- *   struct ts_config *conf;
- *   struct ts_state state;
- *   const char *pattern = "chicken";
- *   const char *example = "We dance the funky chicken";
- *
- *   conf = textsearch_prepare("kmp", pattern, strlen(pattern),
- *                             GFP_KERNEL, TS_AUTOLOAD);
- *   if (IS_ERR(conf)) {
- *       err = PTR_ERR(conf);
- *       goto errout;
- *   }
- *
- *   pos = textsearch_find_continuous(conf, &state, example, strlen(example));
- *   if (pos != UINT_MAX)
- *       panic("Oh my god, dancing chickens at %d\n", pos);
- *
- *   textsearch_destroy(conf);
- * ==========================================================================
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/types.h>
 #include <beep/string.h>

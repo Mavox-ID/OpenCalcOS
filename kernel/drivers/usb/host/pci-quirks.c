@@ -1,13 +1,20 @@
 /*
- * This file contains code to reset and initialize USB host controllers.
- * Some of it includes work-arounds for PCI hardware and BIOS quirks.
- * It may need to run early during booting -- before USB would normally
- * initialize -- to ensure that Beep doesn't use any legacy modes.
- *
- *  Copyright (c) 1999 Martin Mares <mj@ucw.cz>
- *  (and others)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/kconfig.h>
 #include <beep/kernel.h>

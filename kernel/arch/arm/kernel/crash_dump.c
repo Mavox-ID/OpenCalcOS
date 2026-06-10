@@ -1,18 +1,20 @@
 /*
- * arch/arm/kernel/crash_dump.c
- *
- * Copyright (C) 2010 Nokia Corporation.
- * Author: Mika Westerberg
- *
- * This code is taken from arch/x86/kernel/crash_dump_64.c
- *   Created by: Hariprasad Nellitheertha (hari@in.ibm.com)
- *   Copyright (C) IBM Corporation, 2004. All rights reserved
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/errno.h>
 #include <beep/crash_dump.h>
 #include <beep/uaccess.h>

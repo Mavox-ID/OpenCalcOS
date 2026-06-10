@@ -1,27 +1,20 @@
 /*
- *  Block device elevator/IO-scheduler.
- *
- *  Copyright (C) 2000 Andrea Arcangeli <andrea@suse.de> SuSE
- *
- * 30042000 Jens Axboe <axboe@kernel.dk> :
- *
- * Split the elevator a bit so that it is possible to choose a different
- * one or even write a new "plug in". There are three pieces:
- * - elevator_fn, inserts a new request in the queue list
- * - elevator_merge_fn, decides whether a new buffer can be merged with
- *   an existing request
- * - elevator_dequeue_fn, called when a request is taken off the active list
- *
- * 20082000 Dave Jones <davej@suse.de> :
- * Removed tests for max-bomb-segments, which was breaking elvtune
- *  when run without -bN
- *
- * Jens:
- * - Rework again to work with bio instead of buffer_heads
- * - loose bi_dev comparisons, partition handling is right now
- * - completely modularize elevator setup and teardown
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/fs.h>
 #include <beep/blkdev.h>

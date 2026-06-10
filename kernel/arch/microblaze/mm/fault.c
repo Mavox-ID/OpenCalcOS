@@ -1,22 +1,20 @@
 /*
- *  arch/microblaze/mm/fault.c
- *
- *    Copyright (C) 2007 Xilinx, Inc.  All rights reserved.
- *
- *  Derived from "arch/ppc/mm/fault.c"
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@beepppc.org)
- *
- *  Derived from "arch/i386/mm/fault.c"
- *    Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
- *
- *  Modified by Cort Dougan and Paul Mackerras.
- *
- * This file is subject to the terms and conditions of the GNU General
- * Public License.  See the file COPYING in the main directory of this
- * archive for more details.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/signal.h>
 #include <beep/sched.h>

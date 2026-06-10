@@ -1,23 +1,20 @@
 /*
- * beep/net/sunrpc/xprtsock.c
- *
- * Client-side transport implementation for sockets.
- *
- * TCP callback races fixes (C) 1998 Red Hat
- * TCP send fixes (C) 1998 Red Hat
- * TCP NFS related read + write fixes
- *  (C) 1999 Dave Airlie, University of Limerick, Ireland <airlied@beep.ie>
- *
- * Rewrite of larges part of the code in order to stabilize TCP stuff.
- * Fix behaviour when socket buffer is full.
- *  (C) 1999 Trond Myklebust <trond.myklebust@fys.uio.no>
- *
- * IP socket transport implementation, (C) 2005 Chuck Lever <cel@netapp.com>
- *
- * IPv6 support contributed by Gilles Quillard, Bull Open Source, 2005.
- *   <gilles.quillard@bull.net>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/string.h>
 #include <beep/slab.h>

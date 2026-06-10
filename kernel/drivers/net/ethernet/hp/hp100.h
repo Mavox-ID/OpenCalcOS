@@ -1,19 +1,20 @@
 /*
- * hp100.h: Hewlett Packard HP10/100VG ANY LAN ethernet driver for Beep.
- *
- * $Id: hp100.h,v 1.51 1997/04/08 14:26:42 floeff Exp floeff $
- *
- * Authors:  Jaroslav Kysela, <perex@pf.jcu.cz>
- *           Siegfried Loeffler <floeff@tunix.mathematik.uni-stuttgart.de>
- *
- * This driver is based on the 'hpfepkt' crynwr packet driver.
- *
- * This source/code is public free; you can distribute it and/or modify
- * it under terms of the GNU General Public License (published by the
- * Free Software Foundation) either version two of this License, or any
- * later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /****************************************************************************
  *  Hardware Constants
  ****************************************************************************/

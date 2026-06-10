@@ -1,46 +1,20 @@
 /*
- * DECnet       An implementation of the DECnet protocol suite for the BEEP
- *              operating system.  DECnet is implemented using the  BSD Socket
- *              interface as the means of communication with the user level.
- *
- *              DECnet Routing Functions (Endnode and Router)
- *
- * Authors:     Steve Whitehouse <SteveW@ACM.org>
- *              Eduardo Marcelo Serrat <emserrat@geocities.com>
- *
- * Changes:
- *              Steve Whitehouse : Fixes to allow "intra-ethernet" and
- *                                 "return-to-sender" bits on outgoing
- *                                 packets.
- *		Steve Whitehouse : Timeouts for cached routes.
- *              Steve Whitehouse : Use dst cache for input routes too.
- *              Steve Whitehouse : Fixed error values in dn_send_skb.
- *              Steve Whitehouse : Rework routing functions to better fit
- *                                 DECnet routing design
- *              Alexey Kuznetsov : New SMP locking
- *              Steve Whitehouse : More SMP locking changes & dn_cache_dump()
- *              Steve Whitehouse : Prerouting NF hook, now really is prerouting.
- *				   Fixed possible skb leak in rtnetlink funcs.
- *              Steve Whitehouse : Dave Miller's dynamic hash table sizing and
- *                                 Alexey Kuznetsov's finer grained locking
- *                                 from ipv4/route.c.
- *              Steve Whitehouse : Routing is now starting to look like a
- *                                 sensible set of code now, mainly due to
- *                                 my copying the IPv4 routing code. The
- *                                 hooks here are modified and will continue
- *                                 to evolve for a while.
- *              Steve Whitehouse : Real SMP at last :-) Also new netfilter
- *                                 stuff. Look out raw sockets your days
- *                                 are numbered!
- *              Steve Whitehouse : Added return-to-sender functions. Added
- *                                 backlog congestion level return codes.
- *		Steve Whitehouse : Fixed bug where routes were set up with
- *                                 no ref count on net devices.
- *              Steve Whitehouse : RCU for the route cache
- *              Steve Whitehouse : Preparations for the flow cache
- *              Steve Whitehouse : Prepare for nonlinear skbs
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /******************************************************************************
     (c) 1995-1998 E.M. Serrat		emserrat@geocities.com
 

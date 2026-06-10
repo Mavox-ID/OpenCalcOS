@@ -1,30 +1,20 @@
 /*
- * Intel e7xxx Memory Controller kernel module
- * (C) 2003 Beep Networx (http://lnxi.com)
- * This file may be distributed under the terms of the
- * GNU General Public License.
- *
- * See "enum e7xxx_chips" below for supported chipsets
- *
- * Written by Thayne Harbaugh
- * Based on work by Dan Hollis <goemon at anime dot net> and others.
- *	http://www.anime.net/~goemon/beep-ecc/
- *
- * Datasheet:
- *	http://www.intel.com/content/www/us/en/chipsets/e7501-chipset-memory-controller-hub-datasheet.html
- *
- * Contributors:
- *	Eric Biederman (Beep Networx)
- *	Tom Zimmerman (Beep Networx)
- *	Jim Garlick (Lawrence Livermore National Labs)
- *	Dave Peterson (Lawrence Livermore National Labs)
- *	That One Guy (Some other place)
- *	Wang Zhenyu (intel.com)
- *
- * $Id: edac_e7xxx.c,v 1.5.2.9 2005/10/05 00:43:44 dsp_llnl Exp $
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/pci.h>

@@ -1,81 +1,20 @@
 /*
- * General overview:
- * full generic netlink message:
- * |nlmsghdr|genlmsghdr|<payload>
- *
- * payload:
- * |optional fixed size family header|<sequence of netlink attributes>
- *
- * sequence of netlink attributes:
- * I chose to have all "top level" attributes NLA_NESTED,
- * corresponding to some real struct.
- * So we have a sequence of |tla, len|<nested nla sequence>
- *
- * nested nla sequence:
- * may be empty, or contain a sequence of netlink attributes
- * representing the struct fields.
- *
- * The tag number of any field (regardless of containing struct)
- * will be available as T_ ## field_name,
- * so you cannot have the same field name in two differnt structs.
- *
- * The tag numbers themselves are per struct, though,
- * so should always begin at 1 (not 0, that is the special "NLA_UNSPEC" type,
- * which we won't use here).
- * The tag numbers are used as index in the respective nla_policy array.
- *
- * GENL_struct(tag_name, tag_number, struct name, struct fields) - struct and policy
- *	genl_magic_struct.h
- *		generates the struct declaration,
- *		generates an entry in the tla enum,
- *	genl_magic_func.h
- *		generates an entry in the static tla policy
- *		with .type = NLA_NESTED
- *		generates the static <struct_name>_nl_policy definition,
- *		and static conversion functions
- *
- *	genl_magic_func.h
- *
- * GENL_mc_group(group)
- *	genl_magic_struct.h
- *		does nothing
- *	genl_magic_func.h
- *		defines and registers the mcast group,
- *		and provides a send helper
- *
- * GENL_notification(op_name, op_num, mcast_group, tla list)
- *	These are notifications to userspace.
- *
- *	genl_magic_struct.h
- *		generates an entry in the genl_ops enum,
- *	genl_magic_func.h
- *		does nothing
- *
- *	mcast group: the name of the mcast group this notification should be
- *	expected on
- *	tla list: the list of expected top level attributes,
- *	for documentation and sanity checking.
- *
- * GENL_op(op_name, op_num, flags and handler, tla list) - "genl operations"
- *	These are requests from userspace.
- *
- *	_op and _notification share the same "number space",
- *	op_nr will be assigned to "genlmsghdr->cmd"
- *
- *	genl_magic_struct.h
- *		generates an entry in the genl_ops enum,
- *	genl_magic_func.h
- *		generates an entry in the static genl_ops array,
- *		and static register/unregister functions to
- *		genl_register_family_with_ops().
- *
- *	flags and handler:
- *		GENL_op_init( .doit = x, .dumpit = y, .flags = something)
- *		GENL_doit(x) => .dumpit = NULL, .flags = GENL_ADMIN_PERM
- *	tla list: the list of expected top level attributes,
- *	for documentation and sanity checking.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * STRUCTS
  */

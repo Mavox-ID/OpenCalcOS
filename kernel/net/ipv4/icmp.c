@@ -1,67 +1,20 @@
 /*
- *	NET3:	Implementation of the ICMP protocol layer.
- *
- *		Alan Cox, <alan@lxorguk.ukuu.org.uk>
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- *
- *	Some of the function names and the icmp unreach table for this
- *	module were derived from [icmp.c 1.0.11 06/02/93] by
- *	Ross Biro, Fred N. van Kempen, Mark Evans, Alan Cox, Gerhard Koerting.
- *	Other than that this module is a complete rewrite.
- *
- *	Fixes:
- *	Clemens Fruhwirth	:	introduce global icmp rate limiting
- *					with icmp type masking ability instead
- *					of broken per type icmp timeouts.
- *		Mike Shaver	:	RFC1122 checks.
- *		Alan Cox	:	Multicast ping reply as self.
- *		Alan Cox	:	Fix atomicity lockup in ip_build_xmit
- *					call.
- *		Alan Cox	:	Added 216,128 byte paths to the MTU
- *					code.
- *		Martin Mares	:	RFC1812 checks.
- *		Martin Mares	:	Can be configured to follow redirects
- *					if acting as a router _without_ a
- *					routing protocol (RFC 1812).
- *		Martin Mares	:	Echo requests may be configured to
- *					be ignored (RFC 1812).
- *		Martin Mares	:	Limitation of ICMP error message
- *					transmit rate (RFC 1812).
- *		Martin Mares	:	TOS and Precedence set correctly
- *					(RFC 1812).
- *		Martin Mares	:	Now copying as much data from the
- *					original packet as we can without
- *					exceeding 576 bytes (RFC 1812).
- *	Willy Konynenberg	:	Transparent proxying support.
- *		Keith Owens	:	RFC1191 correction for 4.2BSD based
- *					path MTU bug.
- *		Thomas Quinot	:	ICMP Dest Unreach codes up to 15 are
- *					valid (RFC 1812).
- *		Andi Kleen	:	Check all packet lengths properly
- *					and moved all kfree_skb() up to
- *					icmp_rcv.
- *		Andi Kleen	:	Move the rate limit bookkeeping
- *					into the dest entry and use a token
- *					bucket filter (thanks to ANK). Make
- *					the rates sysctl configurable.
- *		Yu Tianli	:	Fixed two ugly bugs in icmp_send
- *					- IP option length was accounted wrongly
- *					- ICMP header length was not accounted
- *					  at all.
- *              Tristan Greaves :       Added sysctl option to ignore bogus
- *              			broadcast responses from broken routers.
- *
- * To Fix:
- *
- *	- Should use skb_pull() instead of all the manual checking.
- *	  This would also greatly simply some upper layer error handlers. --AK
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

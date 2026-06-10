@@ -1,21 +1,20 @@
 /*
- *  beep/drivers/acorn/scsi/cumana_2.c
- *
- *  Copyright (C) 1997-2005 Russell King
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- *  Changelog:
- *   30-08-1997	RMK	0.0.0	Created, READONLY version.
- *   22-01-1998	RMK	0.0.1	Updated to 2.1.80.
- *   15-04-1998	RMK	0.0.1	Only do PIO if FAS216 will allow it.
- *   02-05-1998	RMK	0.0.2	Updated & added DMA support.
- *   27-06-1998	RMK		Changed asm/delay.h to beep/delay.h
- *   18-08-1998	RMK	0.0.3	Fixed synchronous transfer depth.
- *   02-04-2000	RMK	0.0.4	Updated for new error handling code.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/blkdev.h>
 #include <beep/kernel.h>

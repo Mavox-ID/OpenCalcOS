@@ -1,15 +1,20 @@
 /*
-        Power management interface routines.
-	Written by Mariusz Matuszek.
-	This code is currently just a placeholder for later work and
-	does not do anything useful.
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-	This is part of rtl8180 OpenSource driver.
-	Copyright (C) Andrea Merello 2004  <andreamrl@tiscali.it>
-	Released under the terms of GPL (General Public Licence)
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #ifdef CONFIG_RTL8180_PM
 
 #ifndef R8180_PM_H

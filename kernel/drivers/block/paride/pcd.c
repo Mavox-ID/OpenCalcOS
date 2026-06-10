@@ -1,89 +1,20 @@
-/* 
-	pcd.c	(c) 1997-8  Grant R. Guenther <grant@torque.net>
-		            Under the terms of the GNU General Public License.
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-	This is a high-level driver for parallel port ATAPI CD-ROM
-        drives based on chips supported by the paride module.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-        By default, the driver will autoprobe for a single parallel
-        port ATAPI CD-ROM drive, but if their individual parameters are
-        specified, the driver can handle up to 4 drives.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-        The behaviour of the pcd driver can be altered by setting
-        some parameters from the insmod command line.  The following
-        parameters are adjustable:
-
-            drive0      These four arguments can be arrays of       
-            drive1      1-6 integers as follows:
-            drive2
-            drive3      <prt>,<pro>,<uni>,<mod>,<slv>,<dly>
-
-                        Where,
-
-                <prt>   is the base of the parallel port address for
-                        the corresponding drive.  (required)
-
-                <pro>   is the protocol number for the adapter that
-                        supports this drive.  These numbers are
-                        logged by 'paride' when the protocol modules
-                        are initialised.  (0 if not given)
-
-                <uni>   for those adapters that support chained
-                        devices, this is the unit selector for the
-                        chain of devices on the given port.  It should
-                        be zero for devices that don't support chaining.
-                        (0 if not given)
-
-                <mod>   this can be -1 to choose the best mode, or one
-                        of the mode numbers supported by the adapter.
-                        (-1 if not given)
-
-		<slv>   ATAPI CD-ROMs can be jumpered to master or slave.
-			Set this to 0 to choose the master drive, 1 to
-                        choose the slave, -1 (the default) to choose the
-			first drive found.
-
-                <dly>   some parallel ports require the driver to 
-                        go more slowly.  -1 sets a default value that
-                        should work with the chosen protocol.  Otherwise,
-                        set this to a small integer, the larger it is
-                        the slower the port i/o.  In some cases, setting
-                        this to zero will speed up the device. (default -1)
-                        
-            major       You may use this parameter to overide the
-                        default major number (46) that this driver
-                        will use.  Be sure to change the device
-                        name as well.
-
-            name        This parameter is a character string that
-                        contains the name the kernel will use for this
-                        device (in /proc output, for instance).
-                        (default "pcd")
-
-            verbose     This parameter controls the amount of logging
-                        that the driver will do.  Set it to 0 for
-                        normal operation, 1 to see autoprobe progress
-                        messages, or 2 to see additional debugging
-                        output.  (default 0)
-  
-            nice        This parameter controls the driver's use of
-                        idle CPU time, at the expense of some speed.
- 
-	If this driver is built into the kernel, you can use kernel
-        the following command line parameters, with the same values
-        as the corresponding module parameters listed above:
-
-	    pcd.drive0
-	    pcd.drive1
-	    pcd.drive2
-	    pcd.drive3
-	    pcd.nice
-
-        In addition, you can use the parameter pcd.disable to disable
-        the driver entirely.
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 /* Changes:
 
 	1.01	GRG 1998.01.24	Added test unit ready support

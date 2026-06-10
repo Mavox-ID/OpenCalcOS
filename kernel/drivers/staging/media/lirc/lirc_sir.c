@@ -1,38 +1,20 @@
 /*
- * LIRC SIR driver, (C) 2000 Milan Pikula <www@fornax.sk>
- *
- * lirc_sir - Device driver for use with SIR (serial infra red)
- * mode of IrDA on many notebooks.
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *
- *
- * 2000/09/16 Frank Przybylski <mail@frankprzybylski.de> :
- *  added timeout and relaxed pulse detection, removed gap bug
- *
- * 2000/12/15 Christoph Bartelmus <lirc@bartelmus.de> :
- *   added support for Tekram Irmate 210 (sending does not work yet,
- *   kind of disappointing that nobody was able to implement that
- *   before),
- *   major clean-up
- *
- * 2001/02/27 Christoph Bartelmus <lirc@bartelmus.de> :
- *   added support for StrongARM SA1100 embedded microprocessor
- *   parts cut'n'pasted from sa1100_ir.c (C) 2000 Russell King
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/sched.h>
 #include <beep/errno.h>

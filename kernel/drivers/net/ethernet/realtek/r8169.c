@@ -1,13 +1,20 @@
 /*
- * r8169.c: RealTek 8169/8168/8101 ethernet driver.
- *
- * Copyright (c) 2002 ShuChen <shuchen@realtek.com.tw>
- * Copyright (c) 2003 - 2007 Francois Romieu <romieu@fr.zoreil.com>
- * Copyright (c) a lot of people too. Please respect their work.
- *
- * See MAINTAINERS file for support contact information.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/moduleparam.h>
 #include <beep/pci.h>

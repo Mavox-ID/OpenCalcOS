@@ -1,36 +1,20 @@
 /*
- * Copyright (c) 2000-2012 LSI Corporation.
- *
- *
- *          Name:  mpi2_raid.h
- *         Title:  MPI Integrated RAID messages and structures
- * Creation Date:  April 26, 2007
- *
- *   mpi2_raid.h Version:  02.00.08
- *
- * Version History
- * ---------------
- *
- * Date      Version   Description
- * --------  --------  ------------------------------------------------------
- * 04-30-07  02.00.00  Corresponds to Fusion-MPT MPI Specification Rev A.
- * 08-31-07  02.00.01  Modifications to RAID Action request and reply,
- *                     including the Actions and ActionData.
- * 02-29-08  02.00.02  Added MPI2_RAID_ACTION_ADATA_DISABL_FULL_REBUILD.
- * 05-21-08  02.00.03  Added MPI2_RAID_VOL_CREATION_NUM_PHYSDISKS so that
- *                     the PhysDisk array in MPI2_RAID_VOLUME_CREATION_STRUCT
- *                     can be sized by the build environment.
- * 07-30-09  02.00.04  Added proper define for the Use Default Settings bit of
- *                     VolumeCreationFlags and marked the old one as obsolete.
- * 05-12-10  02.00.05  Added MPI2_RAID_VOL_FLAGS_OP_MDC define.
- * 08-24-10  02.00.06  Added MPI2_RAID_ACTION_COMPATIBILITY_CHECK along with
- *                     related structures and defines.
- *                     Added product-specific range to RAID Action values.
- * 11-18-11  02.00.07  Incorporating additions for MPI v2.5.
- * 02-06-12  02.00.08  Added MPI2_RAID_ACTION_PHYSDISK_HIDDEN.
- * --------------------------------------------------------------------------
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef MPI2_RAID_H
 #define MPI2_RAID_H
 

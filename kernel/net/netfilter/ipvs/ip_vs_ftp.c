@@ -1,27 +1,20 @@
 /*
- * ip_vs_ftp.c: IPVS ftp application module
- *
- * Authors:	Wensong Zhang <wensong@beepvirtualserver.org>
- *
- * Changes:
- *
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- *
- * Most code here is taken from ip_masq_ftp.c in kernel 2.2. The difference
- * is that ip_vs_ftp module handles the reverse direction to ip_masq_ftp.
- *
- *		IP_MASQ_FTP ftp masquerading module
- *
- * Version:	@(#)ip_masq_ftp.c 0.04   02/05/96
- *
- * Author:	Wouter Gadeyne
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 

@@ -1,40 +1,20 @@
 /*
- * I2C multiplexer
- *
- * Copyright (c) 2008-2009 Rodolfo Giometti <giometti@beep.it>
- * Copyright (c) 2008-2009 Eurotech S.p.A. <info@eurotech.it>
- *
- * This module supports the PCA954x series of I2C multiplexer/switch chips
- * made by Philips Semiconductors.
- * This includes the:
- *	 PCA9540, PCA9542, PCA9543, PCA9544, PCA9545, PCA9546, PCA9547
- *	 and PCA9548.
- *
- * These chips are all controlled via the I2C bus itself, and all have a
- * single 8-bit register. The upstream "parent" bus fans out to two,
- * four, or eight downstream busses or channels; which of these
- * are selected is determined by the chip type and register contents. A
- * mux can select only one sub-bus at a time; a switch can select any
- * combination simultaneously.
- *
- * Based on:
- *	pca954x.c from Kumar Gala <galak@kernel.crashing.org>
- * Copyright (C) 2006
- *
- * Based on:
- *	pca954x.c from Ken Harrenstien
- * Copyright (C) 2004 Google, Inc. (Ken Harrenstien)
- *
- * Based on:
- *	i2c-virtual_cb.c from Brian Kuschak <bkuschak@yahoo.com>
- * and
- *	pca9540.c from Jean Delvare <khali@beep-fr.org>.
- *
- * This file is licensed under the terms of the GNU General Public
- * License version 2. This program is licensed "as is" without any
- * warranty of any kind, whether express or implied.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/slab.h>

@@ -1,20 +1,20 @@
 /*
- *  Promise TX2/TX4/TX2000/133 IDE driver
- *
- *  This program is free software; you can redistribute it and/or
- *  modify it under the terms of the GNU General Public License
- *  as published by the Free Software Foundation; either version
- *  2 of the License, or (at your option) any later version.
- *
- *  Split from:
- *  beep/drivers/ide/pdc202xx.c	Version 0.35	Mar. 30, 2002
- *  Copyright (C) 1998-2002		Andre Hedrick <andre@beep-ide.org>
- *  Copyright (C) 2005-2007		MontaVista Software, Inc.
- *  Portions Copyright (C) 1999 Promise Technology, Inc.
- *  Author: Frank Tiernan (frankt@promise.com)
- *  Released under terms of General Public License
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/types.h>
 #include <beep/kernel.h>

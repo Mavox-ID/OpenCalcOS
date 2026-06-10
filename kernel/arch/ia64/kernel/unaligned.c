@@ -1,18 +1,20 @@
 /*
- * Architecture-specific unaligned trap handling.
- *
- * Copyright (C) 1999-2002, 2004 Hewlett-Packard Co
- *	Stephane Eranian <eranian@hpl.hp.com>
- *	David Mosberger-Tang <davidm@hpl.hp.com>
- *
- * 2002/12/09   Fix rotating register handling (off-by-1 error, missing fr-rotation).  Fix
- *		get_rse_reg() to not leak kernel bits to user-level (reading an out-of-frame
- *		stacked register returns an undefined value; it does NOT trigger a
- *		"rsvd register fault").
- * 2001/10/11	Fix unaligned access to rotating registers in s/w pipelined loops.
- * 2001/08/13	Correct size of extended floats (float_fsz) from 16 to 10 bytes.
- * 2001/01/17	Add support emulation of unaligned kernel accesses.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/jiffies.h>
 #include <beep/kernel.h>
 #include <beep/sched.h>

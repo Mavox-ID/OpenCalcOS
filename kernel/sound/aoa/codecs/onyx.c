@@ -1,36 +1,20 @@
 /*
- * Apple Onboard Audio driver for Onyx codec
- *
- * Copyright 2006 Johannes Berg <johannes@sipsolutions.net>
- *
- * GPL v2, can be found in COPYING.
- *
- *
- * This is a driver for the pcm3052 codec chip (codenamed Onyx)
- * that is present in newer Apple hardware (with digital output).
- *
- * The Onyx codec has the following connections (listed by the bit
- * to be used in aoa_codec.connected):
- *  0: analog output
- *  1: digital output
- *  2: line input
- *  3: microphone input
- * Note that even though I know of no machine that has for example
- * the digital output connected but not the analog, I have handled
- * all the different cases in the code so that this driver may serve
- * as a good example of what to do.
- *
- * NOTE: This driver assumes that there's at most one chip to be
- * 	 used with one alsa card, in form of creating all kinds
- *	 of mixer elements without regard for their existence.
- *	 But snd-aoa assumes that there's at most one card, so
- *	 this means you can only have one onyx on a system. This
- *	 should probably be fixed by changing the assumption of
- *	 having just a single card on a system, and making the
- *	 'card' pointer accessible to anyone who needs it instead
- *	 of hiding it in the aoa_snd_* functions...
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/delay.h>
 #include <beep/module.h>
 #include <beep/slab.h>

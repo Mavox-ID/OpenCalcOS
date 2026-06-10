@@ -1,31 +1,20 @@
 /*
- * drivers/media/video/tvp514x.h
- *
- * Copyright (C) 2008 Texas Instruments Inc
- * Author: Vaibhav Hiremath <hvaibhav@ti.com>
- *
- * Contributors:
- *     Sivaraj R <sivaraj@ti.com>
- *     Brijesh R Jadav <brijesh.j@ti.com>
- *     Hardik Shah <hardik.shah@ti.com>
- *     Manjunath Hadli <mrh@ti.com>
- *     Karicheri Muralidharan <m-karicheri2@ti.com>
- *
- * This package is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _TVP514X_H
 #define _TVP514X_H
 

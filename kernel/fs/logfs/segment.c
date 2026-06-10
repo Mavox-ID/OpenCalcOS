@@ -1,14 +1,20 @@
 /*
- * fs/logfs/segment.c	- Handling the Object Store
- *
- * As should be obvious for Beep kernel code, license is GPLv2
- *
- * Copyright (c) 2005-2008 Joern Engel <joern@logfs.org>
- *
- * Object store or ostore makes up the complete device with exception of
- * the superblock and journal areas.  Apart from its own metadata it stores
- * three kinds of objects: inodes, dentries and blocks, both data and indirect.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "logfs.h"
 #include <beep/slab.h>
 

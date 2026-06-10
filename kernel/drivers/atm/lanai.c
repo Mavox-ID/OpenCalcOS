@@ -1,53 +1,20 @@
-/* lanai.c -- Copyright 1999-2003 by Mitchell Blank Jr <mitch@sfgoth.com>
- *
- *  This program is free software; you can redistribute it and/or
- *  modify it under the terms of the GNU General Public License
- *  as published by the Free Software Foundation; either version
- *  2 of the License, or (at your option) any later version.
- *
- * This driver supports ATM cards based on the Efficient "Lanai"
- * chipset such as the Speedstream 3010 and the ENI-25p.  The
- * Speedstream 3060 is currently not supported since we don't
- * have the code to drive the on-board Alcatel DSL chipset (yet).
- *
- * Thanks to Efficient for supporting this project with hardware,
- * documentation, and by answering my questions.
- *
- * Things not working yet:
- *
- * o  We don't support the Speedstream 3060 yet - this card has
- *    an on-board DSL modem chip by Alcatel and the driver will
- *    need some extra code added to handle it
- *
- * o  Note that due to limitations of the Lanai only one VCC can be
- *    in CBR at once
- *
- * o We don't currently parse the EEPROM at all.  The code is all
- *   there as per the spec, but it doesn't actually work.  I think
- *   there may be some issues with the docs.  Anyway, do NOT
- *   enable it yet - bugs in that code may actually damage your
- *   hardware!  Because of this you should hardware an ESI before
- *   trying to use this in a LANE or MPOA environment.
- *
- * o  AAL0 is stubbed in but the actual rx/tx path isn't written yet:
- *	vcc_tx_aal0() needs to send or queue a SKB
- *	vcc_tx_unqueue_aal0() needs to attempt to send queued SKBs
- *	vcc_rx_aal0() needs to handle AAL0 interrupts
- *    This isn't too much work - I just wanted to get other things
- *    done first.
- *
- * o  lanai_change_qos() isn't written yet
- *
- * o  There aren't any ioctl's yet -- I'd like to eventually support
- *    setting loopback and LED modes that way.
- *
- * o  If the segmentation engine or DMA gets shut down we should restart
- *    card as per section 17.0i.  (see lanai_reset)
- *
- * o setsockopt(SO_CIRANGE) isn't done (although despite what the
- *   API says it isn't exactly commonly implemented)
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* Version history:
  *   v.1.00 -- 26-JUL-2003 -- PCI/DMA updates
  *   v.0.02 -- 11-JAN-2000 -- Endian fixes

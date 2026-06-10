@@ -1,14 +1,20 @@
 /*
- * SLUB: A slab allocator that limits cache line use instead of queuing
- * objects in per cpu and per node lists.
- *
- * The allocator synchronizes using per slab locks or atomic operatios
- * and only uses a centralized lock to manage a pool of partial slabs.
- *
- * (C) 2007 SGI, Christoph Lameter
- * (C) 2011 Beep Foundation, Christoph Lameter
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/mm.h>
 #include <beep/swap.h> /* struct reclaim_state */
 #include <beep/module.h>

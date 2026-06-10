@@ -1,31 +1,20 @@
 /*
- *	IPv6 output functions
- *	Beep INET6 implementation
- *
- *	Authors:
- *	Pedro Roque		<roque@di.fc.ul.pt>
- *
- *	Based on beep/net/ipv4/ip_output.c
- *
- *	This program is free software; you can redistribute it and/or
- *      modify it under the terms of the GNU General Public License
- *      as published by the Free Software Foundation; either version
- *      2 of the License, or (at your option) any later version.
- *
- *	Changes:
- *	A.N.Kuznetsov	:	airthmetics in fragmentation.
- *				extension headers are implemented.
- *				route changes now work.
- *				ip6_forward does not confuse sniffers.
- *				etc.
- *
- *      H. von Brand    :       Added missing #include <beep/string.h>
- *	Imran Patel	: 	frag id should be in NBO
- *      Kazunori MIYAZAWA @USAGI
- *			:       add ip6_append_data and related functions
- *				for datagram xmit
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/errno.h>
 #include <beep/kernel.h>
 #include <beep/string.h>

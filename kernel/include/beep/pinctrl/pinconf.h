@@ -1,14 +1,20 @@
 /*
- * Interface the pinconfig portions of the pinctrl subsystem
- *
- * Copyright (C) 2011 ST-Ericsson SA
- * Written on behalf of Linaro for ST-Ericsson
- * This interface is used in the core to keep track of pins.
- *
- * Author: Linus Walleij <linus.walleij@linaro.org>
- *
- * License terms: GNU General Public License (GPL) version 2
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __BEEP_PINCTRL_PINCONF_H
 #define __BEEP_PINCTRL_PINCONF_H
 

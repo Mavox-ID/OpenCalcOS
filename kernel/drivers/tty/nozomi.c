@@ -1,43 +1,20 @@
 /*
- * nozomi.c  -- HSDPA driver Broadband Wireless Data Card - Globe Trotter
- *
- * Written by: Ulf Jakobsson,
- *             Jan Åkerfeldt,
- *             Stefan Thomasson,
- *
- * Maintained by: Paul Hardwick (p.hardwick@option.com)
- *
- * Patches:
- *          Locking code changes for Vodafone by Sphere Systems Ltd,
- *                              Andrew Bird (ajb@spheresystems.co.uk )
- *                              & Phil Sanderson
- *
- * Source has been ported from an implementation made by Filip Aben @ Option
- *
- * --------------------------------------------------------------------------
- *
- * Copyright (c) 2005,2006 Option Wireless Sweden AB
- * Copyright (c) 2006 Sphere Systems Ltd
- * Copyright (c) 2006 Option Wireless n/v
- * All rights Reserved.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
- *
- * --------------------------------------------------------------------------
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* Enable this to have a lot of debug printouts */
 #define DEBUG
 

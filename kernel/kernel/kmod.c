@@ -1,22 +1,19 @@
 /*
-	kmod, the new module loader (replaces kerneld)
-	Kirk Petersen
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-	Reorganized not to be a daemon by Adam Richter, with guidance
-	from Greg Zornetzer.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-	Modified to avoid chroot and file sharing problems.
-	Mikael Pettersson
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-	Limit the concurrent number of kmod modprobes to catch loops from
-	"modprobe needs a service that is in a module".
-	Keith Owens <kaos@ocs.com.au> December 1999
-
-	Unblock all signals when we exec a usermode process.
-	Shuu Yamaguchi <shuu@wondernetworkresources.com> December 2000
-
-	call_usermodehelper wait flag, and remove exec_usermodehelper.
-	Rusty Russell <rusty@rustcorp.com.au>  Jan 2003
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 #include <beep/module.h>
 #include <beep/sched.h>

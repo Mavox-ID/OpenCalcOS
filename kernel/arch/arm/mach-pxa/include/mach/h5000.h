@@ -1,20 +1,20 @@
 /*
- * Hardware definitions for HP iPAQ h5xxx Handheld Computers
- *
- * Copyright(20)02 Hewlett-Packard Company.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * COMPAQ COMPUTER CORPORATION MAKES NO WARRANTIES, EXPRESSED OR IMPLIED,
- * AS TO THE USEFULNESS OR CORRECTNESS OF THIS CODE OR ITS
- * FITNESS FOR ANY PARTICULAR PURPOSE.
- *
- * Author: Jamey Hicks
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __ASM_ARCH_H5000_H
 #define __ASM_ARCH_H5000_H
 

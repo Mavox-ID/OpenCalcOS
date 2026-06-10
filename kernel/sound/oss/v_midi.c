@@ -1,24 +1,20 @@
 /*
- * sound/oss/v_midi.c
- *
- * The low level driver for the Sound Blaster DS chips.
- *
- *
- * Copyright (C) by Hannu Savolainen 1993-1996
- *
- * USS/Lite for Beep is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
- * Version 2 (June 1991). See the "COPYING" file distributed with this software
- * for more info.
- * ??
- *
- * Changes
- *	Alan Cox		Modularisation, changed memory allocations
- *	Christoph Hellwig	Adapted to module_init/module_exit
- *
- * Status
- *	Untested
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/module.h>
 #include <beep/slab.h>

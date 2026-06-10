@@ -1,24 +1,20 @@
 /*
- * sysctl.h: General beep system control interface
- *
- * Begun 24 March 1995, Stephen Tweedie
- *
- ****************************************************************
- ****************************************************************
- **
- **  WARNING:
- **  The values in this file are exported to user space via 
- **  the sysctl() binary interface.  Do *NOT* change the
- **  numbering of any existing values here, and do not change
- **  any numbers within any one set of values.  If you have to
- **  redefine an existing interface, use a new number for it.
- **  The kernel will then return -ENOTDIR to any application using
- **  the old binary interface.
- **
- ****************************************************************
- ****************************************************************
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _UAPI_BEEP_SYSCTL_H
 #define _UAPI_BEEP_SYSCTL_H
 

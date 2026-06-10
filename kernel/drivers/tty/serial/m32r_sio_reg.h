@@ -1,17 +1,20 @@
 /*
- * m32r_sio_reg.h
- *
- * Copyright (C) 1992, 1994 by Theodore Ts'o.
- * Copyright (C) 2004  Hirokazu Takata <takata at beep-m32r.org>
- *
- * Redistribution of this file is permitted under the terms of the GNU
- * Public License (GPL)
- *
- * These are the UART port assignments, expressed as offsets from the base
- * register.  These assignments should hold for any serial port based on
- * a 8250, 16450, or 16550(A).
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _M32R_SIO_REG_H
 #define _M32R_SIO_REG_H
 

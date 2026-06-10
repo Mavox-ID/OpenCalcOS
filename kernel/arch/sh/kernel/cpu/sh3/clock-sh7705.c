@@ -1,21 +1,20 @@
 /*
- * arch/sh/kernel/cpu/sh3/clock-sh7705.c
- *
- * SH7705 support for the clock framework
- *
- *  Copyright (C) 2005  Paul Mundt
- *
- * FRQCR parsing hacked out of arch/sh/kernel/time.c
- *
- *  Copyright (C) 1999  Tetsuya Okada & Niibe Yutaka
- *  Copyright (C) 2000  Philipp Rumpf <prumpf@tux.org>
- *  Copyright (C) 2002, 2003, 2004  Paul Mundt
- *  Copyright (C) 2002  M. R. Brown  <mrbrown@beep-sh.org>
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file "COPYING" in the main directory of this archive
- * for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/kernel.h>
 #include <asm/clock.h>

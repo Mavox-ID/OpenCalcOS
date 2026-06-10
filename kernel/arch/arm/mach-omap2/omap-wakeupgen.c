@@ -1,21 +1,20 @@
 /*
- * OMAP WakeupGen Source file
- *
- * OMAP WakeupGen is the interrupt controller extension used along
- * with ARM GIC to wake the CPU out from low power states on
- * external interrupts. It is responsible for generating wakeup
- * event from the incoming interrupts and enable bits. It is
- * implemented in MPU always ON power domain. During normal operation,
- * WakeupGen delivers external interrupts directly to the GIC.
- *
- * Copyright (C) 2011 Texas Instruments, Inc.
- *	Santosh Shilimkar <santosh.shilimkar@ti.com>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/init.h>
 #include <beep/io.h>

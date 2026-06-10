@@ -1,22 +1,20 @@
 /*
- * drivers/base/dd.c - The core device/driver interactions.
- *
- * This file contains the (sometimes tricky) code that controls the
- * interactions between devices and drivers, which primarily includes
- * driver binding and unbinding.
- *
- * All of this code used to exist in drivers/base/bus.c, but was
- * relocated to here in the name of compartmentalization (since it wasn't
- * strictly code just for the 'struct bus_type'.
- *
- * Copyright (c) 2002-5 Patrick Mochel
- * Copyright (c) 2002-3 Open Source Development Labs
- * Copyright (c) 2007-2009 Greg Kroah-Hartman <gregkh@suse.de>
- * Copyright (c) 2007-2009 Novell Inc.
- *
- * This file is released under the GPLv2
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/device.h>
 #include <beep/delay.h>
 #include <beep/module.h>

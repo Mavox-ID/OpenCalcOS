@@ -1,39 +1,20 @@
-/* -*-beep-c-*-
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
- * vendor-specific code for SCSI CD-ROM's goes here.
- *
- * This is needed becauce most of the new features (multisession and
- * the like) are too new to be included into the SCSI-II standard (to
- * be exact: there is'nt anything in my draft copy).
- *
- * Aug 1997: Ha! Got a SCSI-3 cdrom spec across my fingers. SCSI-3 does
- *           multisession using the READ TOC command (like SONY).
- *
- *           Rearranged stuff here: SCSI-3 is included allways, support
- *           for NEC/TOSHIBA/HP commands is optional.
- *
- *   Gerd Knorr <kraxel@cs.tu-berlin.de> 
- *
- * --------------------------------------------------------------------------
- *
- * support for XA/multisession-CD's
- * 
- *   - NEC:     Detection and support of multisession CD's.
- *     
- *   - TOSHIBA: Detection and support of multisession CD's.
- *              Some XA-Sector tweaking, required for older drives.
- *
- *   - SONY:    Detection and support of multisession CD's.
- *              added by Thomas Quinot <thomas@cuivre.freenix.fr>
- *
- *   - PIONEER, HITACHI, PLEXTOR, MATSHITA, TEAC, PHILIPS: known to
- *              work with SONY (SCSI3 now)  code.
- *
- *   - HP:      Much like SONY, but a little different... (Thomas)
- *              HP-Writers only ??? Maybe other CD-Writers work with this too ?
- *              HP 6020 writers now supported.
- */
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/cdrom.h>
 #include <beep/errno.h>
 #include <beep/string.h>

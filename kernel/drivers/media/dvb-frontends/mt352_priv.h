@@ -1,35 +1,20 @@
 /*
- *  Driver for Zarlink DVB-T MT352 demodulator
- *
- *  Written by Holger Waechtler <holger@qanu.de>
- *	 and Daniel Mack <daniel@qanu.de>
- *
- *  AVerMedia AVerTV DVB-T 771 support by
- *       Wolfram Joost <dbox2@frokaschwei.de>
- *
- *  Support for Samsung TDTC9251DH01C(M) tuner
- *  Copyright (C) 2004 Antonio Mancuso <antonio.mancuso@digitaltelevision.it>
- *                     Amauri  Celani  <acelani@essegi.net>
- *
- *  DVICO FusionHDTV DVB-T1 and DVICO FusionHDTV DVB-T Lite support by
- *       Christopher Pascoe <c.pascoe@itee.uq.edu.au>
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.=
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _MT352_PRIV_
 #define _MT352_PRIV_
 

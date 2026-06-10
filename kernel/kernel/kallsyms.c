@@ -1,16 +1,20 @@
 /*
- * kallsyms.c: in-kernel printing of symbolic oopses and stack traces.
- *
- * Rewritten and vastly simplified by Rusty Russell for in-kernel
- * module loader:
- *   Copyright 2002 Rusty Russell <rusty@rustcorp.com.au> IBM Corporation
- *
- * ChangeLog:
- *
- * (25/Aug/2004) Paulo Marques <pmarques@grupopie.com>
- *      Changed the compression method from stem compression to "table lookup"
- *      compression (see scripts/kallsyms.c for a more complete description)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kallsyms.h>
 #include <beep/module.h>
 #include <beep/init.h>

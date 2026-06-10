@@ -1,17 +1,10 @@
 /*
-    comedi/drivers/ni_labpc_cs.c
-    Driver for National Instruments daqcard-1200 boards
-    Copyright (C) 2001, 2002, 2003 Frank Mori Hess <fmhess@users.sourceforge.net>
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-    PCMCIA crap is adapted from dummy_cs.c 1.31 2001/08/24 12:13:13
-    from the pcmcia package.
-    The initial developer of the pcmcia dummy_cs.c code is David A. Hinds
-    <dahinds@users.sourceforge.net>.  Portions created by David A. Hinds
-    are Copyright (C) 1999 David A. Hinds.
-
-    This program is free software; you can redistribute it and/or modify
+    This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
+    the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
@@ -20,10 +13,7 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-
-************************************************************************
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 /*
 Driver: ni_labpc_cs

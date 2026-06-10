@@ -1,50 +1,20 @@
 /*
- * USB RedRat3 IR Transceiver rc-core driver
- *
- * Copyright (c) 2011 by Jarod Wilson <jarod@redhat.com>
- *  based heavily on the work of Stephen Cox, with additional
- *  help from RedRat Ltd.
- *
- * This driver began life based an an old version of the first-generation
- * lirc_mceusb driver from the lirc 0.7.2 distribution. It was then
- * significantly rewritten by Stephen Cox with the aid of RedRat Ltd's
- * Chris Dodge.
- *
- * The driver was then ported to rc-core and significantly rewritten again,
- * by Jarod, using the in-kernel mceusb driver as a guide, after an initial
- * port effort was started by Stephen.
- *
- * TODO LIST:
- * - fix lirc not showing repeats properly
- * --
- *
- * The RedRat3 is a USB transceiver with both send & receive,
- * with 2 separate sensors available for receive to enable
- * both good long range reception for general use, and good
- * short range reception when required for learning a signal.
- *
- * http://www.redrat.co.uk/
- *
- * It uses its own little protocol to communicate, the required
- * parts of which are embedded within this driver.
- * --
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/device.h>
 #include <beep/module.h>
 #include <beep/slab.h>

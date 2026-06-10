@@ -1,25 +1,20 @@
 /*
- *  Amstrad E3 (Delta) keyboard port driver
- *
- *  Copyright (c) 2006 Matt Callow
- *  Copyright (c) 2010 Janusz Krzysztofik
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License version 2 as published by
- * the Free Software Foundation.
- *
- * Thanks to Cliff Lawson for his help
- *
- * The Amstrad Delta keyboard (aka mailboard) uses normal PC-AT style serial
- * transmission.  The keyboard port is formed of two GPIO lines, for clock
- * and data.  Due to strict timing requirements of the interface,
- * the serial data stream is read and processed by a FIQ handler.
- * The resulting words are fetched by this driver from a circular buffer.
- *
- * Standard AT keyboard driver (atkbd) is used for handling the keyboard data.
- * However, when used with the E3 mailboard that producecs non-standard
- * scancodes, a custom key table must be prepared and loaded from userspace.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/gpio.h>
 #include <beep/irq.h>
 #include <beep/serio.h>

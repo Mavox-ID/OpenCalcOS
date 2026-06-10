@@ -1,71 +1,20 @@
 /*
- * Copyright (C) 2008-2009 Texas Instruments Inc
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
- *
- * Driver name : VPFE Capture driver
- *    VPFE Capture driver allows applications to capture and stream video
- *    frames on DaVinci SoCs (DM6446, DM355 etc) from a YUV source such as
- *    TVP5146 or  Raw Bayer RGB image data from an image sensor
- *    such as Microns' MT9T001, MT9T031 etc.
- *
- *    These SoCs have, in common, a Video Processing Subsystem (VPSS) that
- *    consists of a Video Processing Front End (VPFE) for capturing
- *    video/raw image data and Video Processing Back End (VPBE) for displaying
- *    YUV data through an in-built analog encoder or Digital LCD port. This
- *    driver is for capture through VPFE. A typical EVM using these SoCs have
- *    following high level configuration.
- *
- *
- *    decoder(TVP5146/		YUV/
- * 	     MT9T001)   -->  Raw Bayer RGB ---> MUX -> VPFE (CCDC/ISIF)
- *    				data input              |      |
- *							V      |
- *						      SDRAM    |
- *							       V
- *							   Image Processor
- *							       |
- *							       V
- *							     SDRAM
- *    The data flow happens from a decoder connected to the VPFE over a
- *    YUV embedded (BT.656/BT.1120) or separate sync or raw bayer rgb interface
- *    and to the input of VPFE through an optional MUX (if more inputs are
- *    to be interfaced on the EVM). The input data is first passed through
- *    CCDC (CCD Controller, a.k.a Image Sensor Interface, ISIF). The CCDC
- *    does very little or no processing on YUV data and does pre-process Raw
- *    Bayer RGB data through modules such as Defect Pixel Correction (DFC)
- *    Color Space Conversion (CSC), data gain/offset etc. After this, data
- *    can be written to SDRAM or can be connected to the image processing
- *    block such as IPIPE (on DM355 only).
- *
- *    Features supported
- *  		- MMAP IO
- *		- Capture using TVP5146 over BT.656
- *		- support for interfacing decoders using sub device model
- *		- Work with DM355 or DM6446 CCDC to do Raw Bayer RGB/YUV
- *		  data capture to SDRAM.
- *    TODO list
- *		- Support multiple REQBUF after open
- *		- Support for de-allocating buffers through REQBUF
- *		- Support for Raw Bayer RGB capture
- *		- Support for chaining Image Processor
- *		- Support for static allocation of buffers
- *		- Support for USERPTR IO
- *		- Support for STREAMON before QBUF
- *		- Support for control ioctls
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/slab.h>
 #include <beep/init.h>

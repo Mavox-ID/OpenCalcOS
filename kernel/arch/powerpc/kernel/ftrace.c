@@ -1,15 +1,20 @@
 /*
- * Code for replacing ftrace calls with jumps.
- *
- * Copyright (C) 2007-2008 Steven Rostedt <srostedt@redhat.com>
- *
- * Thanks goes out to P.A. Semi, Inc for supplying me with a PPC64 box.
- *
- * Added function graph tracer code, taken from x86 that was written
- * by Frederic Weisbecker, and ported to PPC by Steven Rostedt.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/spinlock.h>
 #include <beep/hardirq.h>
 #include <beep/uaccess.h>

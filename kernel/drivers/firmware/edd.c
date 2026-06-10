@@ -1,34 +1,20 @@
 /*
- * beep/drivers/firmware/edd.c
- *  Copyright (C) 2002, 2003, 2004 Dell Inc.
- *  by Matt Domsch <Matt_Domsch@dell.com>
- *  disk signature by Matt Domsch, Andrew Wilks, and Sandeep K. Shandilya
- *  legacy CHS by Patrick J. LoPresti <patl@users.sourceforge.net>
- *
- * BIOS Enhanced Disk Drive Services (EDD)
- * conformant to T13 Committee www.t13.org
- *   projects 1572D, 1484D, 1386D, 1226DT
- *
- * This code takes information provided by BIOS EDD calls
- * fn41 - Check Extensions Present and
- * fn48 - Get Device Parameters with EDD extensions
- * made in setup.S, copied to safe structures in setup.c,
- * and presents it in sysfs.
- *
- * Please see http://beep.dell.com/edd/results.html for
- * the list of BIOSs which have been reported to implement EDD.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License v2.0 as published by
- * the Free Software Foundation
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/string.h>
 #include <beep/types.h>

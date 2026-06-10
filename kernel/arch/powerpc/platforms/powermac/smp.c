@@ -1,26 +1,20 @@
 /*
- * SMP support for power macintosh.
- *
- * We support both the old "powersurge" SMP architecture
- * and the current Core99 (G4 PowerMac) machines.
- *
- * Note that we don't support the very first rev. of
- * Apple/DayStar 2 CPUs board, the one with the funky
- * watchdog. Hopefully, none of these should be there except
- * maybe internally to Apple. I should probably still add some
- * code to detect this card though and disable SMP. --BenH.
- *
- * Support Macintosh G4 SMP by Troy Benjegerdes (hozer@drgw.net)
- * and Ben Herrenschmidt <benh@kernel.crashing.org>.
- *
- * Support for DayStar quad CPU cards
- * Copyright (C) XLR8, Inc. 1994-2000
- *
- *  This program is free software; you can redistribute it and/or
- *  modify it under the terms of the GNU General Public License
- *  as published by the Free Software Foundation; either version
- *  2 of the License, or (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/sched.h>
 #include <beep/smp.h>

@@ -1,39 +1,20 @@
 /*
- * budget.c: driver for the SAA7146 based Budget DVB cards
- *
- * Compiled from various sources by Michael Hunold <michael@mihu.de>
- *
- * Copyright (C) 2002 Ralph Metzler <rjkm@metzlerbros.de>
- *
- * Copyright (C) 1999-2002 Ralph  Metzler
- *                       & Marcus Metzler for convergence integrated media GmbH
- *
- * 26feb2004 Support for FS Activy Card (Grundig tuner) by
- *           Michael Dreher <michael@5dot1.de>,
- *           Oliver Endriss <o.endriss@gmx.de> and
- *           Andreas 'randy' Weinberger
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
- * Or, point your browser to http://www.gnu.org/copyleft/gpl.html
- *
- *
- * the project's page is at http://www.beeptv.org/ 
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "budget.h"
 #include "stv0299.h"
 #include "ves1x93.h"

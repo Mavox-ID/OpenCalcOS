@@ -1,20 +1,20 @@
 /*
- * Post mortem Dwarf CFI based unwinding on top of regs and stack dumps.
- *
- * Lots of this code have been borrowed or heavily inspired from parts of
- * the libunwind 0.99 code which are (amongst other contributors I may have
- * forgotten):
- *
- * Copyright (C) 2002-2007 Hewlett-Packard Co
- *	Contributed by David Mosberger-Tang <davidm@hpl.hp.com>
- *
- * And the bugs have been added by:
- *
- * Copyright (C) 2010, Frederic Weisbecker <fweisbec@gmail.com>
- * Copyright (C) 2012, Jiri Olsa <jolsa@redhat.com>
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <elf.h>
 #include <gelf.h>
 #include <fcntl.h>

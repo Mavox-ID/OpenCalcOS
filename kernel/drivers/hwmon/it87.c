@@ -1,46 +1,20 @@
 /*
- *  it87.c - Part of lm_sensors, Beep kernel modules for hardware
- *           monitoring.
- *
- *  The IT8705F is an LPC-based Super I/O part that contains UARTs, a
- *  parallel port, an IR port, a MIDI port, a floppy controller, etc., in
- *  addition to an Environment Controller (Enhanced Hardware Monitor and
- *  Fan Controller)
- *
- *  This driver supports only the Environment Controller in the IT8705F and
- *  similar parts.  The other devices are supported by different drivers.
- *
- *  Supports: IT8705F  Super I/O chip w/LPC interface
- *            IT8712F  Super I/O chip w/LPC interface
- *            IT8716F  Super I/O chip w/LPC interface
- *            IT8718F  Super I/O chip w/LPC interface
- *            IT8720F  Super I/O chip w/LPC interface
- *            IT8721F  Super I/O chip w/LPC interface
- *            IT8726F  Super I/O chip w/LPC interface
- *            IT8728F  Super I/O chip w/LPC interface
- *            IT8758E  Super I/O chip w/LPC interface
- *            IT8782F  Super I/O chip w/LPC interface
- *            IT8783E/F Super I/O chip w/LPC interface
- *            Sis950   A clone of the IT8705F
- *
- *  Copyright (C) 2001 Chris Gauthron
- *  Copyright (C) 2005-2010 Jean Delvare <khali@beep-fr.org>
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

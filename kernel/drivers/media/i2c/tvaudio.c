@@ -1,27 +1,20 @@
 /*
- * Driver for simple i2c audio chips.
- *
- * Copyright (c) 2000 Gerd Knorr
- * based on code by:
- *   Eric Sandeen (eric_sandeen@bigfoot.com)
- *   Steve VanDeBogart (vandebo@uclink.berkeley.edu)
- *   Greg Alexander (galexand@acm.org)
- *
- * For the TDA9875 part:
- * Copyright (c) 2000 Guillaume Delvit based on Gerd Knorr source
- * and Eric Sandeen
- *
- * Copyright(c) 2005-2008 Mauro Carvalho Chehab
- *	- Some cleanups, code fixes, etc
- *	- Convert it to V4L2 API
- *
- * This code is placed under the terms of the GNU General Public License
- *
- * OPTIONS:
- *   debug - set to 1 if you'd like to see debug messages
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/sched.h>

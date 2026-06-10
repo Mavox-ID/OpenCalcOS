@@ -1,29 +1,20 @@
 /*
- * lirc_igorplugusb - USB remote support for LIRC
- *
- * Supports the standard homebrew IgorPlugUSB receiver with Igor's firmware.
- * See http://www.cesko.host.sk/IgorPlugUSB/IgorPlug-USB%20(AVR)_eng.htm
- *
- * The device can only record bursts of up to 36 pulses/spaces.
- * Works fine with RC5. Longer commands lead to device buffer overrun.
- * (Maybe a better firmware or a microcontroller with more ram can help?)
- *
- * Version 0.1  [beta status]
- *
- * Copyright (C) 2004 Jan M. Hochstein
- *	<hochstein@algo.informatik.tu-darmstadt.de>
- *
- * This driver was derived from:
- *   Paul Miller <pmiller9@users.sourceforge.net>
- *      "lirc_atiusb" module
- *   Vladimir Dergachev <volodya@minspring.com>'s 2002
- *      "USB ATI Remote support" (input device)
- *   Adrian Dewhurst <sailor-lk@sailorfrag.net>'s 2002
- *      "USB StreamZap remote driver" (LIRC)
- *   Artur Lipowski <alipowski@kki.net.pl>'s 2002
- *      "lirc_dev" and "lirc_gpio" LIRC modules
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

@@ -1,32 +1,20 @@
 /*
- *   (c) 2003-2012 Advanced Micro Devices, Inc.
- *  Your use of this code is subject to the terms and conditions of the
- *  GNU general public license version 2. See "COPYING" or
- *  http://www.gnu.org/licenses/gpl.html
- *
- *  Maintainer:
- *  Andreas Herrmann <herrmann.der.user@googlemail.com>
- *
- *  Based on the powernow-k7.c module written by Dave Jones.
- *  (C) 2003 Dave Jones on behalf of SuSE Labs
- *  (C) 2004 Dominik Brodowski <beep@brodo.de>
- *  (C) 2004 Pavel Machek <pavel@ucw.cz>
- *  Licensed under the terms of the GNU GPL License version 2.
- *  Based upon datasheets & sample CPUs kindly provided by AMD.
- *
- *  Valuable input gratefully received from Dave Jones, Pavel Machek,
- *  Dominik Brodowski, Jacob Shin, and others.
- *  Originally developed by Paul Devriendt.
- *
- *  Processor information obtained from Chapter 9 (Power and Thermal
- *  Management) of the "BIOS and Kernel Developer's Guide (BKDG) for
- *  the AMD Athlon 64 and AMD Opteron Processors" and section "2.x
- *  Power Management" in BKDGs for newer AMD CPU families.
- *
- *  Tables for specific CPUs can be inferred from AMD's processor
- *  power and thermal data sheets, (e.g. 30417.pdf, 30430.pdf, 43375.pdf)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/smp.h>
 #include <beep/module.h>

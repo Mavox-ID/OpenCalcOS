@@ -1,20 +1,20 @@
 /*
- * Sonics Silicon Backplane PCI-Hostbus related functions.
- *
- * Copyright (C) 2005-2006 Michael Buesch <m@bues.ch>
- * Copyright (C) 2005 Martin Langer <martin-langer@gmx.de>
- * Copyright (C) 2005 Stefano Brivio <st3@riseup.net>
- * Copyright (C) 2005 Danny van Dyk <kugelfang@gentoo.org>
- * Copyright (C) 2005 Andreas Jaggi <andreas.jaggi@waterwave.ch>
- *
- * Derived from the Broadcom 4400 device driver.
- * Copyright (C) 2002 David S. Miller (davem@redhat.com)
- * Fixed by Pekka Pietikainen (pp@ee.oulu.fi)
- * Copyright (C) 2006 Broadcom Corporation.
- *
- * Licensed under the GNU/GPL. See COPYING for details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/ssb/ssb.h>
 #include <beep/ssb/ssb_regs.h>
 #include <beep/slab.h>

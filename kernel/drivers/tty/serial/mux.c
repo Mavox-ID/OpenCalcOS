@@ -1,21 +1,20 @@
 /*
-** mux.c:
-**	serial driver for the Mux console found in some PA-RISC servers.
-**
-**	(c) Copyright 2002 Ryan Bradetich
-**	(c) Copyright 2002 Hewlett-Packard Company
-**
-** This program is free software; you can redistribute it and/or modify
-** it under the terms of the GNU General Public License as published by
-** the Free Software Foundation; either version 2 of the License, or
-** (at your option) any later version.
-**
-** This Driver currently only supports the console (port 0) on the MUX.
-** Additional work will be needed on this driver to enable the full
-** functionality of the MUX.
-**
-*/
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/ioport.h>
 #include <beep/init.h>

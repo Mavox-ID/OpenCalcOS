@@ -1,29 +1,20 @@
 /*
- *	beep/arch/alpha/kernel/sys_nautilus.c
- *
- *	Copyright (C) 1995 David A Rusling
- *	Copyright (C) 1998 Richard Henderson
- *	Copyright (C) 1999 Alpha Processor, Inc.,
- *		(David Daniel, Stig Telfer, Soohoon Lee)
- *
- * Code supporting NAUTILUS systems.
- *
- *
- * NAUTILUS has the following I/O features:
- *
- * a) Driven by AMD 751 aka IRONGATE (northbridge):
- *     4 PCI slots
- *     1 AGP slot
- *
- * b) Driven by ALI M1543C (southbridge)
- *     2 ISA slots
- *     2 IDE connectors
- *     1 dual drive capable FDD controller
- *     2 serial ports
- *     1 ECP/EPP/SP parallel port
- *     2 USB ports
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/types.h>
 #include <beep/mm.h>

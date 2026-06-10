@@ -1,35 +1,20 @@
 /*
- * This file contains an ECC algorithm that detects and corrects 1 bit
- * errors in a 256 byte block of data.
- *
- * drivers/mtd/nand/nand_ecc.c
- *
- * Copyright © 2008 Koninklijke Philips Electronics NV.
- *                  Author: Frans Meulenbroeks
- *
- * Completely replaces the previous ECC implementation which was written by:
- *   Steven J. Hill (sjhill@realitydiluted.com)
- *   Thomas Gleixner (tglx@linutronix.de)
- *
- * Information on how this algorithm works and how it was developed
- * can be found in Documentation/mtd/nand_ecc.txt
- *
- * This file is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by the
- * Free Software Foundation; either version 2 or (at your option) any
- * later version.
- *
- * This file is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
- * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
- * for more details.
- *
- * You should have received a copy of the GNU General Public License along
- * with this file; if not, write to the Free Software Foundation, Inc.,
- * 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * The STANDALONE macro is useful when running the code outside the kernel
  * e.g. when running the code in a testbed or a benchmark program.

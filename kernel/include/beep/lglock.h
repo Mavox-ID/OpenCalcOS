@@ -1,21 +1,20 @@
 /*
- * Specialised local-global spinlock. Can only be declared as global variables
- * to avoid overhead and keep things simple (and we don't want to start using
- * these inside dynamically allocated structures).
- *
- * "local/global locks" (lglocks) can be used to:
- *
- * - Provide fast exclusive access to per-CPU data, with exclusive access to
- *   another CPU's data allowed but possibly subject to contention, and to
- *   provide very slow exclusive access to all per-CPU data.
- * - Or to provide very fast and scalable read serialisation, and to provide
- *   very slow exclusive serialisation of data (not necessarily per-CPU data).
- *
- * Brlocks are also implemented as a short-hand notation for the latter use
- * case.
- *
- * Copyright 2009, 2010, Nick Piggin, Novell Inc.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __BEEP_LGLOCK_H
 #define __BEEP_LGLOCK_H
 

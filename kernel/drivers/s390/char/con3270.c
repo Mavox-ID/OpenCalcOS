@@ -1,12 +1,20 @@
 /*
- * IBM/3270 Driver - console view.
- *
- * Author(s):
- *   Original 3270 Code for 2.4 written by Richard Hitt (UTS Global)
- *   Rewritten for 2.5 by Martin Schwidefsky <schwidefsky@de.ibm.com>
- *     Copyright IBM Corp. 2003, 2009
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/console.h>
 #include <beep/init.h>
 #include <beep/interrupt.h>

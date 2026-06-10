@@ -1,27 +1,20 @@
 /*
- * Architecture-specific setup.
- *
- * Copyright (C) 1998-2001, 2003-2004 Hewlett-Packard Co
- *	David Mosberger-Tang <davidm@hpl.hp.com>
- *	Stephane Eranian <eranian@hpl.hp.com>
- * Copyright (C) 2000, 2004 Intel Corp
- * 	Rohit Seth <rohit.seth@intel.com>
- * 	Suresh Siddha <suresh.b.siddha@intel.com>
- * 	Gordon Jin <gordon.jin@intel.com>
- * Copyright (C) 1999 VA Beep Systems
- * Copyright (C) 1999 Walt Drummond <drummond@vabeep.com>
- *
- * 12/26/04 S.Siddha, G.Jin, R.Seth
- *			Add multi-threading and multi-core detection
- * 11/12/01 D.Mosberger Convert get_cpuinfo() to seq_file based show_cpuinfo().
- * 04/04/00 D.Mosberger renamed cpu_initialized to cpu_online_map
- * 03/31/00 R.Seth	cpu_initialized and current->processor fixes
- * 02/04/00 D.Mosberger	some more get_cpuinfo fixes...
- * 02/01/00 R.Seth	fixed get_cpuinfo for SMP
- * 01/07/99 S.Eranian	added the support for command line argument
- * 06/24/99 W.Drummond	added boot_cpu_data.
- * 05/28/05 Z. Menyhart	Dynamic stride size for "flush_icache_range()"
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 

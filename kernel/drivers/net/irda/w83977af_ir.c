@@ -1,44 +1,20 @@
-/*********************************************************************
- *                
- * Filename:      w83977af_ir.c
- * Version:       1.0
- * Description:   FIR driver for the Winbond W83977AF Super I/O chip
- * Status:        Experimental.
- * Author:        Paul VanderSpek
- * Created at:    Wed Nov  4 11:46:16 1998
- * Modified at:   Fri Jan 28 12:10:59 2000
- * Modified by:   Dag Brattli <dagb@cs.uit.no>
- * 
- *     Copyright (c) 1998-2000 Dag Brattli <dagb@cs.uit.no>
- *     Copyright (c) 1998-1999 Rebel.com
- *      
- *     This program is free software; you can redistribute it and/or 
- *     modify it under the terms of the GNU General Public License as 
- *     published by the Free Software Foundation; either version 2 of 
- *     the License, or (at your option) any later version.
- *  
- *     Neither Paul VanderSpek nor Rebel.com admit liability nor provide
- *     warranty for any of this software. This material is provided "AS-IS"
- *     and at no charge.
- *     
- *     If you find bugs in this file, its very likely that the same bug
- *     will also be in pc87108.c since the implementations are quite
- *     similar.
- *
- *     Notice that all functions that needs to access the chip in _any_
- *     way, must save BSR register on entry, and restore it on exit. 
- *     It is _very_ important to follow this policy!
- *
- *         __u8 bank;
- *     
- *         bank = inb( iobase+BSR);
- *  
- *         do_your_stuff_here();
- *
- *         outb( bank, iobase+BSR);
- *
- ********************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/types.h>

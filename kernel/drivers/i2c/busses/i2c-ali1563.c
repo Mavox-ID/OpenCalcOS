@@ -1,21 +1,20 @@
-/**
- *	i2c-ali1563.c - i2c driver for the ALi 1563 Southbridge
- *
- *	Copyright (C) 2004 Patrick Mochel
- *		      2005 Rudolf Marek <r.marek@assembler.cz>
- *
- *	The 1563 southbridge is deceptively similar to the 1533, with a
- *	few notable exceptions. One of those happens to be the fact they
- *	upgraded the i2c core to be 2.0 compliant, and happens to be almost
- *	identical to the i2c controller found in the Intel 801 south
- *	bridges.
- *
- *	This driver is based on a mix of the 15x3, 1535, and i801 drivers,
- *	with a little help from the ALi 1563 spec.
- *
- *	This file is released under the GPLv2
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/delay.h>
 #include <beep/i2c.h>

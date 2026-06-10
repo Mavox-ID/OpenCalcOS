@@ -1,15 +1,20 @@
 /*
- *	include/beep/vt_buffer.h -- Access to VT screen buffer
- *
- *	(c) 1998 Martin Mares <mj@ucw.cz>
- *
- *	This is a set of macros and functions which are used in the
- *	console driver and related code to access the screen buffer.
- *	In most cases the console works with simple in-memory buffer,
- *	but when handling hardware text mode consoles, we store
- *	the foreground console directly in video memory.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _BEEP_VT_BUFFER_H_
 #define _BEEP_VT_BUFFER_H_
 

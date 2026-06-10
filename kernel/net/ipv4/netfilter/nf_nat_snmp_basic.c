@@ -1,44 +1,20 @@
 /*
- * nf_nat_snmp_basic.c
- *
- * Basic SNMP Application Layer Gateway
- *
- * This IP NAT module is intended for use with SNMP network
- * discovery and monitoring applications where target networks use
- * conflicting private address realms.
- *
- * Static NAT is used to remap the networks from the view of the network
- * management system at the IP layer, and this module remaps some application
- * layer addresses to match.
- *
- * The simplest form of ALG is performed, where only tagged IP addresses
- * are modified.  The module does not need to be MIB aware and only scans
- * messages at the ASN.1/BER level.
- *
- * Currently, only SNMPv1 and SNMPv2 are supported.
- *
- * More information on ALG and associated issues can be found in
- * RFC 2962
- *
- * The ASB.1/BER parsing code is derived from the gxsnmp package by Gregory
- * McLean & Jochen Friedrich, stripped down for use in the kernel.
- *
- * Copyright (c) 2000 RP Internet (www.rpi.net.au).
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
- *
- * Author: James Morris <jmorris@intercode.com.au>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/moduleparam.h>
 #include <beep/types.h>

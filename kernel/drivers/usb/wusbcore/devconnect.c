@@ -1,91 +1,20 @@
 /*
- * WUSB Wire Adapter: Control/Data Streaming Interface (WUSB[8])
- * Device Connect handling
- *
- * Copyright (C) 2006 Intel Corporation
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License version
- * 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- * 02110-1301, USA.
- *
- *
- * FIXME: docs
- * FIXME: this file needs to be broken up, it's grown too big
- *
- *
- * WUSB1.0[7.1, 7.5.1, ]
- *
- * WUSB device connection is kind of messy. Some background:
- *
- *     When a device wants to connect it scans the UWB radio channels
- *     looking for a WUSB Channel; a WUSB channel is defined by MMCs
- *     (Micro Managed Commands or something like that) [see
- *     Design-overview for more on this] .
- *
- * So, device scans the radio, finds MMCs and thus a host and checks
- * when the next DNTS is. It sends a Device Notification Connect
- * (DN_Connect); the host picks it up (through nep.c and notif.c, ends
- * up in wusb_devconnect_ack(), which creates a wusb_dev structure in
- * wusbhc->port[port_number].wusb_dev), assigns an unauth address
- * to the device (this means from 0x80 to 0xfe) and sends, in the MMC
- * a Connect Ack Information Element (ConnAck IE).
- *
- * So now the device now has a WUSB address. From now on, we use
- * that to talk to it in the RPipes.
- *
- * ASSUMPTIONS:
- *
- *  - We use the the as device address the port number where it is
- *    connected (port 0 doesn't exist). For unauth, it is 128 + that.
- *
- * ROADMAP:
- *
- *   This file contains the logic for doing that--entry points:
- *
- *   wusb_devconnect_ack()      Ack a device until _acked() called.
- *                              Called by notif.c:wusb_handle_dn_connect()
- *                              when a DN_Connect is received.
- *
- *     wusb_devconnect_acked()  Ack done, release resources.
- *
- *   wusb_handle_dn_alive()     Called by notif.c:wusb_handle_dn()
- *                              for processing a DN_Alive pong from a device.
- *
- *   wusb_handle_dn_disconnect()Called by notif.c:wusb_handle_dn() to
- *                              process a disconenct request from a
- *                              device.
- *
- *   __wusb_dev_disable()       Called by rh.c:wusbhc_rh_clear_port_feat() when
- *                              disabling a port.
- *
- *   wusb_devconnect_create()   Called when creating the host by
- *                              lc.c:wusbhc_create().
- *
- *   wusb_devconnect_destroy()  Cleanup called removing the host. Called
- *                              by lc.c:wusbhc_destroy().
- *
- *   Each Wireless USB host maintains a list of DN_Connect requests
- *   (actually we maintain a list of pending Connect Acks, the
- *   wusbhc->ca_list).
- *
- * LIFE CYCLE OF port->wusb_dev
- *
- *   Before the @wusbhc structure put()s the reference it owns for
- *   port->wusb_dev [and clean the wusb_dev pointer], it needs to
- *   lock @wusbhc->mutex.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/jiffies.h>
 #include <beep/ctype.h>
 #include <beep/slab.h>

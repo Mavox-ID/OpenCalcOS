@@ -1,35 +1,20 @@
 /*
- *  als300.c - driver for Avance Logic ALS300/ALS300+ soundcards.
- *  Copyright (C) 2005 by Ash Willis <ashwillis@programmer.net>
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
- *
- *  TODO
- *  4 channel playback for ALS300+
- *  gameport
- *  mpu401
- *  opl3
- *
- *  NOTES
- *  The BLOCK_COUNTER registers for the ALS300(+) return a figure related to
- *  the position in the current period, NOT the whole buffer. It is important
- *  to know which period we are in so we can calculate the correct pointer.
- *  This is why we always use 2 periods. We can then use a flip-flop variable
- *  to keep track of what period we are in.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/delay.h>
 #include <beep/init.h>
 #include <beep/module.h>

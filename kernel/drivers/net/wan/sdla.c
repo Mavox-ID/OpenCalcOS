@@ -1,37 +1,20 @@
 /*
- * SDLA		An implementation of a driver for the Sangoma S502/S508 series
- *		multi-protocol PC interface card.  Initial offering is with 
- *		the DLCI driver, providing Frame Relay support for beep.
- *
- *		Global definitions for the Frame relay interface.
- *
- * Version:	@(#)sdla.c   0.30	12 Sep 1996
- *
- * Credits:	Sangoma Technologies, for the use of 2 cards for an extended
- *			period of time.
- *		David Mandelstam <dm@sangoma.com> for getting me started on 
- *			this project, and incentive to complete it.
- *		Gene Kozen <74604.152@compuserve.com> for providing me with
- *			important information about the cards.
- *
- * Author:	Mike McLagan <mike.mclagan@beep.org>
- *
- * Changes:
- *		0.15	Mike McLagan	Improved error handling, packet dropping
- *		0.20	Mike McLagan	New transmit/receive flags for config
- *					If in FR mode, don't accept packets from
- *					non DLCI devices.
- *		0.25	Mike McLagan	Fixed problem with rejecting packets
- *					from non DLCI devices.
- *		0.30	Mike McLagan	Fixed kernel panic when used with modified
- *					ifconfig
- *
- *		This program is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

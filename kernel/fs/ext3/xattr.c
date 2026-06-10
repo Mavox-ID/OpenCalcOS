@@ -1,18 +1,20 @@
 /*
- * beep/fs/ext3/xattr.c
- *
- * Copyright (C) 2001-2003 Andreas Gruenbacher, <agruen@suse.de>
- *
- * Fix by Harrison Xing <harrison@mountainviewdata.com>.
- * Ext3 code with a lot of help from Eric Jarman <ejarman@acm.org>.
- * Extended attributes for symlinks and special files added per
- *  suggestion of Luka Renko <luka.renko@hermes.si>.
- * xattr consolidation Copyright (c) 2004 James Morris <jmorris@redhat.com>,
- *  Red Hat Inc.
- * ea-in-inode support by Alex Tomas <alex@clusterfs.com> aka bzzz
- *  and Andreas Gruenbacher <agruen@suse.de>.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * Extended attributes are stored directly in inodes (on file systems with
  * inodes bigger than 128 bytes) and on additional disk blocks. The i_file_acl

@@ -1,19 +1,20 @@
 /*
- * beep/fs/hfsplus/part_tbl.c
- *
- * Copyright (C) 1996-1997  Paul H. Hargrove
- * This file may be distributed under the terms of
- * the GNU General Public License.
- *
- * Original code to handle the new style Mac partition table based on
- * a patch contributed by Holger Schemel (aeglos@valinor.owl.de).
- *
- * In function preconditions the term "valid" applied to a pointer to
- * a structure means that the pointer is non-NULL and the structure it
- * points to has all fields initialized to consistent values.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/slab.h>
 #include "hfsplus_fs.h"
 

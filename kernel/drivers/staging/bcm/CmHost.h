@@ -1,19 +1,20 @@
-/***************************************************************************
- * (c) Beceem Communications Inc.
- * All Rights Reserved
- *
- * file  : CmHost.h
- * author: Rajeev Tirumala
- * date  : September 8 , 2006
- * brief : Definitions for Connection Management Requests structure
- *          which we will use to setup our connection structures.Its high
- *          time we had a header file for CmHost.cpp to isolate the way
- *          f/w sends DSx messages and the way we interpret them in code.
- *          Revision History
- *
- *   Date       Author   Version   Description
- *   08-Sep-06    Rajeev       0.1      Created
- ***************************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _CM_HOST_H
 #define _CM_HOST_H
 

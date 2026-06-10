@@ -1,19 +1,20 @@
 /*
- * SL82C105/Winbond 553 IDE driver
- *
- * Maintainer unknown.
- *
- * Drive tuning added from Rebel.com's kernel sources
- *  -- Russell King (15/11/98) beep@arm.beep.org.uk
- * 
- * Merge in Russell's HW workarounds, fix various problems
- * with the timing registers setup.
- *  -- Benjamin Herrenschmidt (01/11/03) benh@kernel.crashing.org
- *
- * Copyright (C) 2006-2007,2009 MontaVista Software, Inc. <source@mvista.com>
- * Copyright (C)      2007 Bartlomiej Zolnierkiewicz
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/module.h>
 #include <beep/kernel.h>

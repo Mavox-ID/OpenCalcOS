@@ -1,32 +1,20 @@
 /*
- *  beep/arch/alpha/kernel/time.c
- *
- *  Copyright (C) 1991, 1992, 1995, 1999, 2000  Linus Torvalds
- *
- * This file contains the PC-specific time handling details:
- * reading the RTC at bootup, etc..
- * 1994-07-02    Alan Modra
- *	fixed set_rtc_mmss, fixed time.year for >= 2000, new mktime
- * 1995-03-26    Markus Kuhn
- *      fixed 500 ms bug at call to set_rtc_mmss, fixed DS12887
- *      precision CMOS clock update
- * 1997-09-10	Updated NTP code according to technical memorandum Jan '96
- *		"A Kernel Model for Precision Timekeeping" by Dave Mills
- * 1997-01-09    Adrian Sun
- *      use interval timer if CONFIG_RTC=y
- * 1997-10-29    John Bowman (bowman@math.ualberta.ca)
- *      fixed tick loss calculation in timer_interrupt
- *      (round system clock to nearest tick instead of truncating)
- *      fixed algorithm in time_init for getting time from CMOS clock
- * 1999-04-16	Thorsten Kranzkowski (dl8bcu@gmx.net)
- *	fixed algorithm in do_gettimeofday() for calculating the precise time
- *	from processor cycle counter (now taking lost_ticks into account)
- * 2000-08-13	Jan-Benedict Glaw <jbglaw@lug-owl.de>
- * 	Fixed time_init to be aware of epoches != 1900. This prevents
- * 	booting up in 2048 for me;) Code is stolen from rtc.c.
- * 2003-06-03	R. Scott Bailey <scott.bailey@eds.com>
- *	Tighten sanity in time_init from 1% (10,000 PPM) to 250 PPM
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/errno.h>
 #include <beep/module.h>
 #include <beep/sched.h>

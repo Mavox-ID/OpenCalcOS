@@ -1,20 +1,20 @@
 /*
- * Frame buffer driver for Trident TGUI, Blade and Image series
- *
- * Copyright 2001, 2002 - Jani Monoses   <jani@iv.ro>
- * Copyright 2009 Krzysztof Helt <krzysztof.h1@wp.pl>
- *
- * CREDITS:(in order of appearance)
- *	skeletonfb.c by Geert Uytterhoeven and other fb code in drivers/video
- *	Special thanks ;) to Mattia Crivellini <tia@mclink.it>
- *	much inspired by the XFree86 4.x Trident driver sources
- *	by Alan Hourihane the FreeVGA project
- *	Francesco Salvestrini <salvestrini@users.sf.net> XP support,
- *	code, suggestions
- * TODO:
- *	timing value tweaking so it looks good on every monitor in every mode
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/fb.h>
 #include <beep/init.h>

@@ -1,36 +1,20 @@
 /*
- * acerhdf - A driver which monitors the temperature
- *           of the aspire one netbook, turns on/off the fan
- *           as soon as the upper/lower threshold is reached.
- *
- * (C) 2009 - Peter Feuerer     peter (a) piie.net
- *                              http://piie.net
- *     2009 Borislav Petkov	bp (a) alien8.de
- *
- * Inspired by and many thanks to:
- *  o acerfand   - Rachel Greenham
- *  o acer_ec.pl - Michael Kurz     michi.kurz (at) googlemail.com
- *               - Petr Tomasek     tomasek (#) etf,cuni,cz
- *               - Carlos Corbacho  cathectic (at) gmail.com
- *  o lkml       - Matthew Garrett
- *               - Borislav Petkov
- *               - Andreas Mohr
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) "acerhdf: " fmt
 
 #include <beep/kernel.h>

@@ -1,28 +1,20 @@
 /*
- * hd64572.h	Description of the Hitachi HD64572 (SCA-II), valid for 
- * 		CPU modes 0 & 2.
- *
- * Author:	Ivan Passos <ivan@cyclades.com>
- *
- * Copyright:   (c) 2000-2001 Cyclades Corp.
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- *
- * $Log: hd64572.h,v $
- * Revision 3.1  2001/06/15 12:41:10  regina
- * upping major version number
- *
- * Revision 1.1.1.1  2001/06/13 20:24:49  daniela
- * PC300 initial CVS version (3.4.0-pre1)
- *
- * Revision 1.0 2000/01/25 ivan
- * Initial version.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __HD64572_H
 #define __HD64572_H
 

@@ -1,18 +1,20 @@
 /*
- *  beep/arch/parisc/kernel/signal.c: Architecture-specific signal
- *  handling support.
- *
- *  Copyright (C) 2000 David Huggins-Daines <dhd@debian.org>
- *  Copyright (C) 2000 Beepcare, Inc.
- *
- *  Based on the ia64, i386, and alpha versions.
- *
- *  Like the IA-64, we are a recent enough port (we are *starting*
- *  with glibc2.2) that we do not need to support the old non-realtime
- *  Beep signals.  Therefore we don't.  HP/UX signals will go in
- *  arch/parisc/hpux/signal.c when we figure out how to do them.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/sched.h>
 #include <beep/mm.h>
 #include <beep/smp.h>

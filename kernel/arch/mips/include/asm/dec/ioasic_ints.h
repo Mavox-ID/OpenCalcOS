@@ -1,21 +1,20 @@
 /*
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file "COPYING" in the main directory of this archive
- * for more details.
- *
- * Definitions for the interrupt related bits in the I/O ASIC
- * interrupt status register (and the interrupt mask register, of course)
- *
- * Created with Information from:
- *
- * "DEC 3000 300/400/500/600/700/800/900 AXP Models System Programmer's Manual"
- *
- * and the Mach Sources
- *
- * Copyright (C) 199x  the Anonymous
- * Copyright (C) 2002  Maciej W. Rozycki
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __ASM_DEC_IOASIC_INTS_H
 #define __ASM_DEC_IOASIC_INTS_H
 

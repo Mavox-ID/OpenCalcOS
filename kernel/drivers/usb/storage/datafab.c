@@ -1,38 +1,20 @@
-/* Driver for Datafab USB Compact Flash reader
- *
- * datafab driver v0.1:
- *
- * First release
- *
- * Current development and maintenance by:
- *   (c) 2000 Jimmie Mayfield (mayfield+datafab@sackheads.org)
- *
- *   Many thanks to Robert Baruch for the SanDisk SmartMedia reader driver
- *   which I used as a template for this driver.
- *
- *   Some bugfixes and scatter-gather code by Gregory P. Smith 
- *   (greg-usb@electricrain.com)
- *
- *   Fix for media change by Joerg Schneider (js@joergschneider.com)
- *
- * Other contributors:
- *   (c) 2002 Alan Stern <stern@rowland.org>
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by the
- * Free Software Foundation; either version 2, or (at your option) any
- * later version.
- *
- * This program is distributed in the hope that it will be useful, but
- * WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License along
- * with this program; if not, write to the Free Software Foundation, Inc.,
- * 675 Mass Ave, Cambridge, MA 02139, USA.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * This driver attempts to support USB CompactFlash reader/writer devices
  * based on Datafab USB-to-ATA chips.  It was specifically developed for the 

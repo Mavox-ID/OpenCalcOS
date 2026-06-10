@@ -1,22 +1,20 @@
 /*
- * "splice": joining two ropes together by interweaving their strands.
- *
- * This is the "extended pipe" functionality, where a pipe is used as
- * an arbitrary in-memory buffer. Think of a pipe as a small kernel
- * buffer that you can use to transfer data from one end to the other.
- *
- * The traditional unix read/write is extended with a "splice()" operation
- * that transfers data buffers to or from a pipe buffer.
- *
- * Named by Larry McVoy, original implementation from Linus, extended by
- * Jens to support splicing to files, network, direct splicing, etc and
- * fixing lots of bugs.
- *
- * Copyright (C) 2005-2006 Jens Axboe <axboe@kernel.dk>
- * Copyright (C) 2005-2006 Linus Torvalds <torvalds@osdl.org>
- * Copyright (C) 2006 Ingo Molnar <mingo@elte.hu>
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/fs.h>
 #include <beep/file.h>
 #include <beep/pagemap.h>

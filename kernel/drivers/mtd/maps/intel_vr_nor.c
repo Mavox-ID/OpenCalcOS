@@ -1,32 +1,20 @@
 /*
- * drivers/mtd/maps/intel_vr_nor.c
- *
- * An MTD map driver for a NOR flash bank on the Expansion Bus of the Intel
- * Vermilion Range chipset.
- *
- * The Vermilion Range Expansion Bus supports four chip selects, each of which
- * has 64MiB of address space.  The 2nd BAR of the Expansion Bus PCI Device
- * is a 256MiB memory region containing the address spaces for all four of the
- * chip selects, with start addresses hardcoded on 64MiB boundaries.
- *
- * This map driver only supports NOR flash on chip select 0.  The buswidth
- * (either 8 bits or 16 bits) is determined by reading the Expansion Bus Timing
- * and Control Register for Chip Select 0 (EXP_TIMING_CS0).  This driver does
- * not modify the value in the EXP_TIMING_CS0 register except to enable writing
- * and disable boot acceleration.  The timing parameters in the register are
- * assumed to have been properly initialized by the BIOS.  The reset default
- * timing parameters are maximally conservative (slow), so access to the flash
- * will be slower than it should be if the BIOS has not initialized the timing
- * parameters.
- *
- * Author: Andy Lowe <alowe@mvista.com>
- *
- * 2006 (c) MontaVista Software, Inc. This file is licensed under
- * the terms of the GNU General Public License version 2. This program
- * is licensed "as is" without any warranty of any kind, whether express
- * or implied.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/slab.h>

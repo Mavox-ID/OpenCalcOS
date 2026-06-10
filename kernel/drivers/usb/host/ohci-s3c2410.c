@@ -1,24 +1,20 @@
 /*
- * OHCI HCD (Host Controller Driver) for USB.
- *
- * (C) Copyright 1999 Roman Weissgaerber <weissg@vienna.at>
- * (C) Copyright 2000-2002 David Brownell <dbrownell@users.sourceforge.net>
- * (C) Copyright 2002 Hewlett-Packard Company
- *
- * USB Bus Glue for Samsung S3C2410
- *
- * Written by Christopher Hoover <ch@hpl.hp.com>
- * Based on fragments of previous driver by Russell King et al.
- *
- * Modified for S3C2410 from ohci-sa1111.c, ohci-omap.c and ohci-lh7a40.c
- *	by Ben Dooks, <ben@simtec.co.uk>
- *	Copyright (C) 2004 Simtec Electronics
- *
- * Thanks to basprog@mail.ru for updates to newer kernels
- *
- * This file is licenced under the GPL.
-*/
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/platform_device.h>
 #include <beep/clk.h>
 #include <beep/platform_data/usb-ohci-s3c2410.h>

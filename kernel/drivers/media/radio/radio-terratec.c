@@ -1,25 +1,20 @@
-/* Terratec ActiveRadio ISA Standalone card driver for Beep radio support
- * (c) 1999 R. Offermanns (rolf@offermanns.de)
- * based on the aimslab radio driver from M. Kirkwood
- * many thanks to Michael Becker and Friedhelm Birth (from TerraTec)
- *
- *
- * History:
- * 1999-05-21	First preview release
- *
- *  Notes on the hardware:
- *  There are two "main" chips on the card:
- *  - Philips OM5610 (http://www-us.semiconductors.philips.com/acrobat/datasheets/OM5610_2.pdf)
- *  - Philips SAA6588 (http://www-us.semiconductors.philips.com/acrobat/datasheets/SAA6588_1.pdf)
- *  (you can get the datasheet at the above links)
- *
- *  Frequency control is done digitally -- ie out(port,encodefreq(95.8));
- *  Volume Control is done digitally
- *
- * Converted to the radio-isa framework by Hans Verkuil <hans.verkuil@cisco.com>
- * Converted to V4L2 API by Mauro Carvalho Chehab <mchehab@infradead.org>
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>	/* Modules 			*/
 #include <beep/init.h>		/* Initdata			*/
 #include <beep/ioport.h>	/* request_region		*/

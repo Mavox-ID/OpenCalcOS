@@ -1,19 +1,20 @@
 /*
- *  beep/arch/arm/mach-footbridge/irq.c
- *
- *  Copyright (C) 1996-2000 Russell King
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- *  Changelog:
- *   22-Aug-1998 RMK	Restructured IRQ routines
- *   03-Sep-1998 PJB	Merged CATS support
- *   20-Jan-1998 RMK	Started merge of EBSA286, CATS and NetWinder
- *   26-Jan-1999 PJB	Don't use IACK on CATS
- *   16-Mar-1999 RMK	Added autodetect of ISA PICs
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/ioport.h>
 #include <beep/interrupt.h>
 #include <beep/list.h>

@@ -1,31 +1,20 @@
 /*
- * drivers/sbus/char/jsflash.c
- *
- *  Copyright (C) 1991, 1992  Linus Torvalds	(drivers/char/mem.c)
- *  Copyright (C) 1997  Eddie C. Dost		(drivers/sbus/char/flash.c)
- *  Copyright (C) 1997-2000 Pavel Machek <pavel@ucw.cz>   (drivers/block/nbd.c)
- *  Copyright (C) 1999-2000 Pete Zaitcev
- *
- * This driver is used to program OS into a Flash SIMM on
- * Krups and Espresso platforms.
- *
- * TODO: do not allow erase/programming if file systems are mounted.
- * TODO: Erase/program both banks of a 8MB SIMM.
- *
- * It is anticipated that programming an OS Flash will be a routine
- * procedure. In the same time it is exceedingly dangerous because
- * a user can program its OBP flash with OS image and effectively
- * kill the machine.
- *
- * This driver uses an interface different from Eddie's flash.c
- * as a silly safeguard.
- *
- * XXX The flash.c manipulates page caching characteristics in a certain
- * dubious way; also it assumes that remap_pfn_range() can remap
- * PCI bus locations, which may be false. ioremap() must be used
- * instead. We should discuss this.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/mutex.h>
 #include <beep/types.h>

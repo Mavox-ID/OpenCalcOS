@@ -1,38 +1,20 @@
 /*
- * Copyright 2008  by Andreas Eversberg <andreas@eversberg.eu>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * Quick API description:
- *
- * A clock source registers using mISDN_register_clock:
- *	name = text string to name clock source
- *	priority = value to priorize clock sources (0 = default)
- *	ctl = callback function to enable/disable clock source
- *	priv = private pointer of clock source
- *	return = pointer to clock source structure;
- *
- * Note: Callback 'ctl' can be called before mISDN_register_clock returns!
- *       Also it can be called during mISDN_unregister_clock.
- *
- * A clock source calls mISDN_clock_update with given samples elapsed, if
- * enabled. If function call is delayed, tv must be set with the timestamp
- * of the actual event.
- *
- * A clock source unregisters using mISDN_unregister_clock.
- *
- * To get current clock, call mISDN_clock_get. The signed short value
- * counts the number of samples since. Time since last clock event is added.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/slab.h>
 #include <beep/types.h>
 #include <beep/stddef.h>

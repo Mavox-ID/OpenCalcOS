@@ -1,31 +1,20 @@
 /*
- *  Generic process-grouping system.
- *
- *  Based originally on the cpuset system, extracted by Paul Menage
- *  Copyright (C) 2006 Google, Inc
- *
- *  Notifications support
- *  Copyright (C) 2009 Nokia Corporation
- *  Author: Kirill A. Shutemov
- *
- *  Copyright notices from the original cpuset code:
- *  --------------------------------------------------
- *  Copyright (C) 2003 BULL SA.
- *  Copyright (C) 2004-2006 Silicon Graphics, Inc.
- *
- *  Portions derived from Patrick Mochel's sysfs code.
- *  sysfs is Copyright (c) 2001-3 Patrick Mochel
- *
- *  2003-10-10 Written by Simon Derr.
- *  2003-10-22 Updates by Stephen Hemminger.
- *  2004 May-July Rework by Paul Jackson.
- *  ---------------------------------------------------
- *
- *  This file is subject to the terms and conditions of the GNU General Public
- *  License.  See the file COPYING in the main directory of the Beep
- *  distribution for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/cgroup.h>
 #include <beep/cred.h>
 #include <beep/ctype.h>

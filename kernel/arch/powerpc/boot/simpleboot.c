@@ -1,20 +1,20 @@
 /*
- * The simple platform -- for booting when firmware doesn't supply a device
- *                        tree or any platform configuration information.
- *                        All data is extracted from an embedded device tree
- *                        blob.
- *
- * Authors: Scott Wood <scottwood@freescale.com>
- *          Grant Likely <grant.likely@secretlab.ca>
- *
- * Copyright (c) 2007 Freescale Semiconductor, Inc.
- * Copyright (c) 2008 Secret Lab Technologies Ltd.
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License version 2 as published
- * by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "ops.h"
 #include "types.h"
 #include "io.h"

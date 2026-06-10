@@ -1,21 +1,20 @@
-/* Intel EtherExpress 16 device driver for Beep
- *
- * Written by John Sullivan, 1995
- *  based on original code by Donald Becker, with changes by
- *  Alan Cox and Pauline Middelink.
- *
- * Support for 8-bit mode by Zoltan Szilagyi <zoltans@cs.arizona.edu>
- *
- * Many modifications, and currently maintained, by
- *  Philip Blundell <philb@gnu.org>
- * Added the Compaq LTE  Alan Cox <alan@lxorguk.ukuu.org.uk>
- * Added MCA support Adam Fritzler (now deleted)
- *
- * Note - this driver is experimental still - it has problems on faster
- * machines. Someone needs to sit down and go through it line by line with
- * a databook...
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* The EtherExpress 16 is a fairly simple card, based on a shared-memory
  * design using the i82586 Ethernet coprocessor.  It bears no relationship,
  * as far as I know, to the similarly-named "EtherExpress Pro" range.

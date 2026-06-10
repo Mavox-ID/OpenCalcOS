@@ -1,28 +1,20 @@
 /*
- *  Copyright (c) 2000-2008 LSI Corporation.
- *
- *
- *           Name:  mpi_type.h
- *          Title:  MPI Basic type definitions
- *  Creation Date:  June 6, 2000
- *
- *    mpi_type.h Version:  01.05.02
- *
- *  Version History
- *  ---------------
- *
- *  Date      Version   Description
- *  --------  --------  ------------------------------------------------------
- *  05-08-00  00.10.01  Original release for 0.10 spec dated 4/26/2000.
- *  06-06-00  01.00.01  Update version number for 1.0 release.
- *  11-02-00  01.01.01  Original release for post 1.0 work
- *  02-20-01  01.01.02  Added define and ifdef for MPI_POINTER.
- *  08-08-01  01.02.01  Original release for v1.2 work.
- *  05-11-04  01.03.01  Original release for MPI v1.3.
- *  08-19-04  01.05.01  Original release for MPI v1.5.
- *  --------------------------------------------------------------------------
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef MPI_TYPE_H
 #define MPI_TYPE_H
 

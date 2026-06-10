@@ -1,41 +1,20 @@
 /*
- * salinfo.c
- *
- * Creates entries in /proc/sal for various system features.
- *
- * Copyright (c) 2003, 2006 Silicon Graphics, Inc.  All rights reserved.
- * Copyright (c) 2003 Hewlett-Packard Co
- *	Bjorn Helgaas <bjorn.helgaas@hp.com>
- *
- * 10/30/2001	jbarnes@sgi.com		copied much of Stephane's palinfo
- *					code to create this file
- * Oct 23 2003	kaos@sgi.com
- *   Replace IPI with set_cpus_allowed() to read a record from the required cpu.
- *   Redesign salinfo log processing to separate interrupt and user space
- *   contexts.
- *   Cache the record across multi-block reads from user space.
- *   Support > 64 cpus.
- *   Delete module_exit and MOD_INC/DEC_COUNT, salinfo cannot be a module.
- *
- * Jan 28 2004	kaos@sgi.com
- *   Periodically check for outstanding MCA or INIT records.
- *
- * Dec  5 2004	kaos@sgi.com
- *   Standardize which records are cleared automatically.
- *
- * Aug 18 2005	kaos@sgi.com
- *   mca.c may not pass a buffer, a NULL buffer just indicates that a new
- *   record is available in SAL.
- *   Replace some NR_CPUS by cpus_online, for hotplug cpu.
- *
- * Jan  5 2006        kaos@sgi.com
- *   Handle hotplug cpus coming online.
- *   Handle hotplug cpus going offline while they still have outstanding records.
- *   Use the cpu_* macros consistently.
- *   Replace the counting semaphore with a mutex and a test if the cpumask is non-empty.
- *   Modify the locking to make the test for "work to do" an atomic operation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/capability.h>
 #include <beep/cpu.h>
 #include <beep/types.h>

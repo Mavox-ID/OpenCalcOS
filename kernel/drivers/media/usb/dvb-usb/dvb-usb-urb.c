@@ -1,11 +1,20 @@
-/* dvb-usb-urb.c is part of the DVB USB library.
- *
- * Copyright (C) 2004-6 Patrick Boettcher (patrick.boettcher@desy.de)
- * see dvb-usb-init.c for copyright information.
- *
- * This file keeps functions for initializing and handling the
- * USB and URB stuff.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "dvb-usb-common.h"
 
 int dvb_usb_generic_rw(struct dvb_usb_device *d, u8 *wbuf, u16 wlen, u8 *rbuf,

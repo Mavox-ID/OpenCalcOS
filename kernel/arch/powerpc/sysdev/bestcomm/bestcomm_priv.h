@@ -1,21 +1,20 @@
 /*
- * Private header for the MPC52xx processor BestComm driver
- *
- * By private, we mean that driver should not use it directly. It's meant
- * to be used by the BestComm engine driver itself and by the intermediate
- * layer between the core and the drivers.
- *
- * Copyright (C) 2006      Sylvain Munaut <tnt@246tNt.com>
- * Copyright (C) 2005      Varma Electronics Oy,
- *                         ( by Andrey Volkov <avolkov@varma-el.com> )
- * Copyright (C) 2003-2004 MontaVista, Software, Inc.
- *                         ( by Dale Farnsworth <dfarnsworth@mvista.com> )
- *
- * This file is licensed under the terms of the GNU General Public License
- * version 2. This program is licensed "as is" without any warranty of any
- * kind, whether express or implied.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __BESTCOMM_PRIV_H__
 #define __BESTCOMM_PRIV_H__
 

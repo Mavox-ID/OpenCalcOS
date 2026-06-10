@@ -1,21 +1,20 @@
 /*
- * beep/arch/arm/mach-omap2/board-apollon.c
- *
- * Copyright (C) 2005,2006 Samsung Electronics
- * Author: Kyungmin Park <kyungmin.park@samsung.com>
- *
- * Modified from mach-omap/omap2/board-h4.c
- *
- * Code for apollon OMAP2 board. Should work on many OMAP2 systems where
- * the bootloader passes the board-specific data to the kernel.
- * Do not put any board specific code to this file; create a new machine
- * type if you need custom low-level initializations.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/init.h>
 #include <beep/platform_device.h>

@@ -1,25 +1,20 @@
 /*
- * Based on MPC8560 ADS and arch/ppc stx_gp3 ports
- *
- * Maintained by Kumar Gala (see MAINTAINERS for contact information)
- *
- * Copyright 2008 Freescale Semiconductor Inc.
- *
- * Dan Malek <dan@embeddededge.com>
- * Copyright 2004 Embedded Edge, LLC
- *
- * Copied from mpc8560_ads.c
- * Copyright 2002, 2003 Motorola Inc.
- *
- * Ported to 2.6, Matt Porter <mporter@kernel.crashing.org>
- * Copyright 2004-2005 MontaVista Software, Inc.
- *
- * This program is free software; you can redistribute  it and/or modify it
- * under  the terms of  the GNU General  Public License as published by the
- * Free Software Foundation;  either version 2 of the  License, or (at your
- * option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/stddef.h>
 #include <beep/kernel.h>
 #include <beep/pci.h>

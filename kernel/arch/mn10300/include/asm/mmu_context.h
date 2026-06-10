@@ -1,24 +1,20 @@
-/* MN10300 MMU context management
- *
- * Copyright (C) 2007 Red Hat, Inc. All Rights Reserved.
- * Modified by David Howells (dhowells@redhat.com)
- * - Derived from include/asm-m32r/mmu_context.h
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public Licence
- * as published by the Free Software Foundation; either version
- * 2 of the Licence, or (at your option) any later version.
- *
- *
- * This implements an algorithm to provide TLB PID mappings to provide
- * selective access to the TLB for processes, thus reducing the number of TLB
- * flushes required.
- *
- * Note, however, that the M32R algorithm is technically broken as it does not
- * handle version wrap-around, and could, theoretically, have a problem with a
- * very long lived program that sleeps long enough for the version number to
- * wrap all the way around so that its TLB mappings appear valid once again.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _ASM_MMU_CONTEXT_H
 #define _ASM_MMU_CONTEXT_H
 

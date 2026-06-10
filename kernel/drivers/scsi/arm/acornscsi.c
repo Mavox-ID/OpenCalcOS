@@ -1,33 +1,20 @@
 /*
- *  beep/drivers/acorn/scsi/acornscsi.c
- *
- *  Acorn SCSI 3 driver
- *  By R.M.King.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * Abandoned using the Select and Transfer command since there were
- * some nasty races between our software and the target devices that
- * were not easy to solve, and the device errata had a lot of entries
- * for this command, some of them quite nasty...
- *
- * Changelog:
- *  26-Sep-1997	RMK	Re-jigged to use the queue module.
- *			Re-coded state machine to be based on driver
- *			state not scsi state.  Should be easier to debug.
- *			Added acornscsi_release to clean up properly.
- *			Updated proc/scsi reporting.
- *  05-Oct-1997	RMK	Implemented writing to SCSI devices.
- *  06-Oct-1997	RMK	Corrected small (non-serious) bug with the connect/
- *			reconnect race condition causing a warning message.
- *  12-Oct-1997	RMK	Added catch for re-entering interrupt routine.
- *  15-Oct-1997	RMK	Improved handling of commands.
- *  27-Jun-1998	RMK	Changed asm/delay.h to beep/delay.h.
- *  13-Dec-1998	RMK	Better abort code and command handling.  Extra state
- *			transitions added to allow dodgy devices to work.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define DEBUG_NO_WRITE	1
 #define DEBUG_QUEUES	2
 #define DEBUG_DMA	4

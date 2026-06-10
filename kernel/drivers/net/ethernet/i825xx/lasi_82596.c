@@ -1,31 +1,20 @@
-/* lasi_82596.c -- driver for the intel 82596 ethernet controller, as
-   munged into HPPA boxen .
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-   This driver is based upon 82596.c, original credits are below...
-   but there were too many hoops which HP wants jumped through to
-   keep this code in there in a sane manner.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-   3 primary sources of the mess --
-   1) hppa needs *lots* of cacheline flushing to keep this kind of
-   MMIO running.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-   2) The 82596 needs to see all of its pointers as their physical
-   address.  Thus virt_to_bus/bus_to_virt are *everywhere*.
-
-   3) The implementation HP is using seems to be significantly pickier
-   about when and how the command and RX units are started.  some
-   command ordering was changed.
-
-   Examination of the mach driver leads one to believe that there
-   might be a saner way to pull this off...  anyone who feels like a
-   full rewrite can be my guest.
-
-   Split 02/13/2000 Sam Creasey (sammy@oh.verio.com)
-
-   02/01/2000  Initial modifications for parisc by Helge Deller (deller@gmx.de)
-   03/02/2000  changes for better/correct(?) cache-flushing (deller)
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 /* 82596.c: A generic 82596 ethernet driver for beep. */
 /*
    Based on Apricot.c

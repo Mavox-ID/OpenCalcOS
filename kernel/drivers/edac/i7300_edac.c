@@ -1,23 +1,20 @@
 /*
- * Intel 7300 class Memory Controllers kernel module (Clarksboro)
- *
- * This file may be distributed under the terms of the
- * GNU General Public License version 2 only.
- *
- * Copyright (c) 2010 by:
- *	 Mauro Carvalho Chehab <mchehab@redhat.com>
- *
- * Red Hat Inc. http://www.redhat.com
- *
- * Intel 7300 Chipset Memory Controller Hub (MCH) - Datasheet
- *	http://www.intel.com/Assets/PDF/datasheet/318082.pdf
- *
- * TODO: The chipset allow checking for PCI Express errors also. Currently,
- *	 the driver covers only memory error errors
- *
- * This driver uses "csrows" EDAC attribute to represent DIMM slot#
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/pci.h>

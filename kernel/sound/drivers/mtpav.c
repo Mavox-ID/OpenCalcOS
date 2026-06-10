@@ -1,55 +1,20 @@
 /*
- *      MOTU Midi Timepiece ALSA Main routines
- *      Copyright by Michael T. Mayers (c) Jan 09, 2000
- *      mail: michael@tweakoz.com
- *      Thanks to John Galbraith
- *
- *      This program is free software; you can redistribute it and/or modify
- *      it under the terms of the GNU General Public License as published by
- *      the Free Software Foundation; either version 2 of the License, or
- *      (at your option) any later version.
- *
- *      This program is distributed in the hope that it will be useful,
- *      but WITHOUT ANY WARRANTY; without even the implied warranty of
- *      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *      GNU General Public License for more details.
- *
- *      You should have received a copy of the GNU General Public License
- *      along with this program; if not, write to the Free Software
- *      Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
- *
- *
- *      This driver is for the 'Mark Of The Unicorn' (MOTU)
- *      MidiTimePiece AV multiport MIDI interface 
- *
- *      IOPORTS
- *      -------
- *      8 MIDI Ins and 8 MIDI outs
- *      Video Sync In (BNC), Word Sync Out (BNC), 
- *      ADAT Sync Out (DB9)
- *      SMPTE in/out (1/4")
- *      2 programmable pedal/footswitch inputs and 4 programmable MIDI controller knobs.
- *      Macintosh RS422 serial port
- *      RS422 "network" port for ganging multiple MTP's
- *      PC Parallel Port ( which this driver currently uses )
- *
- *      MISC FEATURES
- *      -------------
- *      Hardware MIDI routing, merging, and filtering   
- *      MIDI Synchronization to Video, ADAT, SMPTE and other Clock sources
- *      128 'scene' memories, recallable from MIDI program change
- *
- *
- * ChangeLog
- * Jun 11 2001	Takashi Iwai <tiwai@suse.de>
- *      - Recoded & debugged
- *      - Added timer interrupt for midi outputs
- *      - hwports is between 1 and 8, which specifies the number of hardware ports.
- *        The three global ports, computer, adat and broadcast ports, are created
- *        always after h/w and remote ports.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/interrupt.h>
 #include <beep/module.h>

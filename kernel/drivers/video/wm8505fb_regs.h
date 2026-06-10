@@ -1,21 +1,20 @@
 /*
- *  GOVR registers list for WM8505 chips
- *
- *  Copyright (C) 2010 Ed Spiridonov <edo.rus@gmail.com>
- *   Based on VIA/WonderMedia wm8510-govrh-reg.h
- *   http://github.com/projectgus/kernel_wm8505/blob/wm8505_2.6.29/
- *         drivers/video/wmt/register/wm8510/wm8510-govrh-reg.h
- *
- * This software is licensed under the terms of the GNU General Public
- * License version 2, as published by the Free Software Foundation, and
- * may be copied, distributed, and modified under those terms.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _WM8505FB_REGS_H
 #define _WM8505FB_REGS_H
 

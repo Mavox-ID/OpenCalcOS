@@ -1,39 +1,20 @@
 /*
- *	docproc is a simple preprocessor for the template files
- *      used as placeholders for the kernel internal documentation.
- *	docproc is used for documentation-frontend and
- *      dependency-generator.
- *	The two usages have in common that they require
- *	some knowledge of the .tmpl syntax, therefore they
- *	are kept together.
- *
- *	documentation-frontend
- *		Scans the template file and call kernel-doc for
- *		all occurrences of ![EIF]file
- *		Beforehand each referenced file is scanned for
- *		any symbols that are exported via these macros:
- *			EXPORT_SYMBOL(), EXPORT_SYMBOL_GPL(), &
- *			EXPORT_SYMBOL_GPL_FUTURE()
- *		This is used to create proper -function and
- *		-nofunction arguments in calls to kernel-doc.
- *		Usage: docproc doc file.tmpl
- *
- *	dependency-generator:
- *		Scans the template file and list all files
- *		referenced in a format recognized by make.
- *		Usage:	docproc depend file.tmpl
- *		Writes dependency information to stdout
- *		in the following format:
- *		file.tmpl src.c	src2.c
- *		The filenames are obtained from the following constructs:
- *		!Efilename
- *		!Ifilename
- *		!Dfilename
- *		!Ffilename
- *		!Pfilename
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>

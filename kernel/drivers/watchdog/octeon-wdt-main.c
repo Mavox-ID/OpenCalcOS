@@ -1,57 +1,20 @@
 /*
- * Octeon Watchdog driver
- *
- * Copyright (C) 2007, 2008, 2009, 2010 Cavium Networks
- *
- * Some parts derived from wdt.c
- *
- *	(c) Copyright 1996-1997 Alan Cox <alan@lxorguk.ukuu.org.uk>,
- *						All Rights Reserved.
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- *
- *	Neither Alan Cox nor CymruNet Ltd. admit liability nor provide
- *	warranty for any of this software. This material is provided
- *	"AS-IS" and at no charge.
- *
- *	(c) Copyright 1995    Alan Cox <alan@lxorguk.ukuu.org.uk>
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file "COPYING" in the main directory of this archive
- * for more details.
- *
- *
- * The OCTEON watchdog has a maximum timeout of 2^32 * io_clock.
- * For most systems this is less than 10 seconds, so to allow for
- * software to request longer watchdog heartbeats, we maintain software
- * counters to count multiples of the base rate.  If the system locks
- * up in such a manner that we can not run the software counters, the
- * only result is a watchdog reset sooner than was requested.  But
- * that is OK, because in this case userspace would likely not be able
- * to do anything anyhow.
- *
- * The hardware watchdog interval we call the period.  The OCTEON
- * watchdog goes through several stages, after the first period an
- * irq is asserted, then if it is not reset, after the next period NMI
- * is asserted, then after an additional period a chip wide soft reset.
- * So for the software counters, we reset watchdog after each period
- * and decrement the counter.  But for the last two periods we need to
- * let the watchdog progress to the NMI stage so we disable the irq
- * and let it proceed.  Once in the NMI, we print the register state
- * to the serial port and then wait for the reset.
- *
- * A watchdog is maintained for each CPU in the system, that way if
- * one CPU suffers a lockup, we also get a register dump and reset.
- * The userspace ping resets the watchdog on all CPUs.
- *
- * Before userspace opens the watchdog device, we still run the
- * watchdogs to catch any lockups that may be kernel related.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/miscdevice.h>

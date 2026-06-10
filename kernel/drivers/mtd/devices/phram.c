@@ -1,20 +1,20 @@
-/**
- * Copyright (c) ????		Jochen Schäuble <psionic@psionic.de>
- * Copyright (c) 2003-2004	Joern Engel <joern@wh.fh-wedel.de>
- *
- * Usage:
- *
- * one commend line parameter per device, each in the form:
- *   phram=<name>,<start>,<len>
- * <name> may be up to 63 characters.
- * <start> and <len> can be octal, decimal or hexadecimal.  If followed
- * by "ki", "Mi" or "Gi", the numbers will be interpreted as kilo, mega or
- * gigabytes.
- *
- * Example:
- *	phram=swap,64Mi,128Mi phram=test,900Mi,1Mi
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <asm/io.h>

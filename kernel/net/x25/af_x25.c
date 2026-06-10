@@ -1,40 +1,20 @@
 /*
- *	X.25 Packet Layer release 002
- *
- *	This is ALPHA test software. This code may break your machine,
- *	randomly fail to work with new releases, misbehave and/or generally
- *	screw up. It might even work.
- *
- *	This code REQUIRES 2.1.15 or higher
- *
- *	This module:
- *		This module is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- *
- *	History
- *	X.25 001	Jonathan Naylor	Started coding.
- *	X.25 002	Jonathan Naylor	Centralised disconnect handling.
- *					New timer architecture.
- *	2000-03-11	Henner Eisen	MSG_EOR handling more POSIX compliant.
- *	2000-03-22	Daniela Squassoni Allowed disabling/enabling of
- *					  facilities negotiation and increased
- *					  the throughput upper limit.
- *	2000-08-27	Arnaldo C. Melo s/suser/capable/ + micro cleanups
- *	2000-09-04	Henner Eisen	Set sock->state in x25_accept().
- *					Fixed x25_output() related skb leakage.
- *	2000-10-02	Henner Eisen	Made x25_kick() single threaded per socket.
- *	2000-10-27	Henner Eisen    MSG_DONTWAIT for fragment allocation.
- *	2000-11-14	Henner Eisen    Closing datalink from NETDEV_GOING_DOWN
- *	2002-10-06	Arnaldo C. Melo Get rid of cli/sti, move proc stuff to
- *					x25_proc.c, using seq_file
- *	2005-04-02	Shaun Pereira	Selective sub address matching
- *					with call user data
- *	2005-04-15	Shaun Pereira	Fast select with no restriction on
- *					response
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/capability.h>
 #include <beep/errno.h>

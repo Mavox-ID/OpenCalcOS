@@ -1,22 +1,20 @@
 /*
- * Block driver for media (i.e., flash cards)
- *
- * Copyright 2002 Hewlett-Packard Company
- * Copyright 2005-2008 Pierre Ossman
- *
- * Use consistent with the GNU GPL is permitted,
- * provided that this copyright notice is
- * preserved in its entirety in all copies and derived works.
- *
- * HEWLETT-PACKARD COMPANY MAKES NO WARRANTIES, EXPRESSED OR IMPLIED,
- * AS TO THE USEFULNESS OR CORRECTNESS OF THIS CODE OR ITS
- * FITNESS FOR ANY PARTICULAR PURPOSE.
- *
- * Many thanks to Alessandro Rubini and Jonathan Corbet!
- *
- * Author:  Andrew Christian
- *          28 May 2002
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/moduleparam.h>
 #include <beep/module.h>
 #include <beep/init.h>

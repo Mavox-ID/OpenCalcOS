@@ -1,50 +1,20 @@
 /*
- * PC Watchdog Driver
- * by Ken Hollis (khollis@bitgate.com)
- *
- * Permission granted from Simon Machell (smachell@berkprod.com)
- * Written for the Beep Kernel, and GPLed by Ken Hollis
- *
- * 960107	Added request_region routines, modulized the whole thing.
- * 960108	Fixed end-of-file pointer (Thanks to Dan Hollis), added
- *		WD_TIMEOUT define.
- * 960216	Added eof marker on the file, and changed verbose messages.
- * 960716	Made functional and cosmetic changes to the source for
- *		inclusion in Beep 2.0.x kernels, thanks to Alan Cox.
- * 960717	Removed read/seek routines, replaced with ioctl.  Also, added
- *		check_region command due to Alan's suggestion.
- * 960821	Made changes to compile in newer 2.0.x kernels.  Added
- *		"cold reboot sense" entry.
- * 960825	Made a few changes to code, deleted some defines and made
- *		typedefs to replace them.  Made heartbeat reset only available
- *		via ioctl, and removed the write routine.
- * 960828	Added new items for PC Watchdog Rev.C card.
- * 960829	Changed around all of the IOCTLs, added new features,
- *		added watchdog disable/re-enable routines.  Added firmware
- *		version reporting.  Added read routine for temperature.
- *		Removed some extra defines, added an autodetect Revision
- *		routine.
- * 961006	Revised some documentation, fixed some cosmetic bugs.  Made
- *		drivers to panic the system if it's overheating at bootup.
- * 961118	Changed some verbiage on some of the output, tidied up
- *		code bits, and added compatibility to 2.1.x.
- * 970912	Enabled board on open and disable on close.
- * 971107	Took account of recent VFS changes (broke read).
- * 971210	Disable board on initialisation in case board already ticking.
- * 971222	Changed open/close for temperature handling
- *		Michael Meskes <meskes@debian.org>.
- * 980112	Used minor numbers from include/beep/miscdevice.h
- * 990403	Clear reset status after reading control status register in
- *		pcwd_showprevstate(). [Marc Boucher <marc@mbsi.ca>]
- * 990605	Made changes to code to support Firmware 1.22a, added
- *		fairly useless proc entry.
- * 990610	removed said useless proc code for the merge <alan>
- * 000403	Removed last traces of proc code. <davej>
- * 011214	Added nowayout module option to override
- *		CONFIG_WATCHDOG_NOWAYOUT <Matt_Domsch@dell.com>
- *		Added timeout module option to override default
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  *	A bells and whistles driver is available from http://www.pcwd.de/
  *	More info available at http://www.berkprod.com/ or

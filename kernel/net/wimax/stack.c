@@ -1,55 +1,20 @@
 /*
- * Beep WiMAX
- * Initialization, addition and removal of wimax devices
- *
- *
- * Copyright (C) 2005-2006 Intel Corporation <beep-wimax@intel.com>
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License version
- * 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- * 02110-1301, USA.
- *
- *
- * This implements:
- *
- *   - basic life cycle of 'struct wimax_dev' [wimax_dev_*()]; on
- *     addition/registration initialize all subfields and allocate
- *     generic netlink resources for user space communication. On
- *     removal/unregistration, undo all that.
- *
- *   - device state machine [wimax_state_change()] and support to send
- *     reports to user space when the state changes
- *     [wimax_gnl_re_state_change*()].
- *
- * See include/net/wimax.h for rationales and design.
- *
- * ROADMAP
- *
- * [__]wimax_state_change()     Called by drivers to update device's state
- *   wimax_gnl_re_state_change_alloc()
- *   wimax_gnl_re_state_change_send()
- *
- * wimax_dev_init()	        Init a device
- * wimax_dev_add()              Register
- *   wimax_rfkill_add()
- *   wimax_gnl_add()            Register all the generic netlink resources.
- *   wimax_id_table_add()
- * wimax_dev_rm()               Unregister
- *   wimax_id_table_rm()
- *   wimax_gnl_rm()
- *   wimax_rfkill_rm()
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/device.h>
 #include <beep/gfp.h>
 #include <net/genetlink.h>

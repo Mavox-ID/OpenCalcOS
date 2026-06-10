@@ -1,32 +1,20 @@
 /*
- * hugepage-shm:
- *
- * Example of using huge page memory in a user application using Sys V shared
- * memory system calls.  In this example the app is requesting 256MB of
- * memory that is backed by huge pages.  The application uses the flag
- * SHM_HUGETLB in the shmget system call to inform the kernel that it is
- * requesting huge pages.
- *
- * For the ia64 architecture, the Beep kernel reserves Region number 4 for
- * huge pages.  That means that if one requires a fixed address, a huge page
- * aligned address starting with 0x800000... will be required.  If a fixed
- * address is not required, the kernel will select an address in the proper
- * range.
- * Other architectures, such as ppc64, i386 or x86_64 are not so constrained.
- *
- * Note: The default shared memory limit is quite low on many kernels,
- * you may need to increase it via:
- *
- * echo 268435456 > /proc/sys/kernel/shmmax
- *
- * This will increase the maximum size per shared memory segment to 256MB.
- * The other limit that you will hit eventually is shmall which is the
- * total amount of shared memory in pages. To set it to 16GB on a system
- * with a 4kB pagesize do:
- *
- * echo 4194304 > /proc/sys/kernel/shmall
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <stdlib.h>
 #include <stdio.h>
 #include <sys/types.h>

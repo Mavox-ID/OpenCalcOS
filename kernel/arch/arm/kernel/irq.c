@@ -1,26 +1,20 @@
 /*
- *  beep/arch/arm/kernel/irq.c
- *
- *  Copyright (C) 1992 Linus Torvalds
- *  Modifications for ARM processor Copyright (C) 1995-2000 Russell King.
- *
- *  Support for Dynamic Tick Timer Copyright (C) 2004-2005 Nokia Corporation.
- *  Dynamic Tick Timer written by Tony Lindgren <tony@atomide.com> and
- *  Tuukka Tikkanen <tuukka.tikkanen@elektrobit.com>.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- *  This file contains the code used by various IRQ handling routines:
- *  asking for different IRQ's should be done through these routines
- *  instead of just grabbing them. Thus setups with different IRQ numbers
- *  shouldn't result in any weird surprises, and installing new handlers
- *  should be easier.
- *
- *  IRQ's are in fact implemented a bit like signal handlers for the kernel.
- *  Naturally it's not a 1:1 relation, but there are similarities.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel_stat.h>
 #include <beep/signal.h>
 #include <beep/ioport.h>

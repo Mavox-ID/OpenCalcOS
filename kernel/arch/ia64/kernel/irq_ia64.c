@@ -1,19 +1,20 @@
 /*
- * beep/arch/ia64/kernel/irq_ia64.c
- *
- * Copyright (C) 1998-2001 Hewlett-Packard Co
- *	Stephane Eranian <eranian@hpl.hp.com>
- *	David Mosberger-Tang <davidm@hpl.hp.com>
- *
- *  6/10/99: Updated to bring in sync with x86 version to facilitate
- *	     support for SMP and different interrupt controllers.
- *
- * 09/15/00 Goutham Rao <goutham.rao@intel.com> Implemented pci_irq_to_vector
- *                      PCI to vector allocation routine.
- * 04/14/2004 Ashok Raj <ashok.raj@intel.com>
- *						Added CPU Hotplug handling for IPF.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 
 #include <beep/jiffies.h>

@@ -1,17 +1,20 @@
 /*
- * OHCI HCD (Host Controller Driver) for USB.
- *
- *  Copyright (C) 2004 SAN People (Pty) Ltd.
- *  Copyright (C) 2005 Thibaut VARENE <varenet@parisc-beep.org>
- *
- * AT91 Bus Glue
- *
- * Based on fragments of 2.4 driver by Rick Bronson.
- * Based on ohci-omap.c
- *
- * This file is licenced under the GPL.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/clk.h>
 #include <beep/platform_device.h>
 #include <beep/of_platform.h>

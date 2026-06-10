@@ -1,16 +1,20 @@
 /*
- * Driver for the U300 pin controller
- *
- * Based on the original U300 padmux functions
- * Copyright (C) 2009-2011 ST-Ericsson AB
- * Author: Martin Persson <martin.persson@stericsson.com>
- * Author: Linus Walleij <linus.walleij@linaro.org>
- *
- * The DB3350 design and control registers are oriented around pads rather than
- * pins, so we enumerate the pads we can mux rather than actual pins. The pads
- * are connected to different pins in different packaging types, so it would
- * be confusing.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/module.h>
 #include <beep/platform_device.h>

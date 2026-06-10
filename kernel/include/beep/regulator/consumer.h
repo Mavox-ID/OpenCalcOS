@@ -1,37 +1,20 @@
 /*
- * consumer.h -- SoC Regulator consumer support.
- *
- * Copyright (C) 2007, 2008 Wolfson Microelectronics PLC.
- *
- * Author: Liam Girdwood <lrg@slimlogic.co.uk>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * Regulator Consumer Interface.
- *
- * A Power Management Regulator framework for SoC based devices.
- * Features:-
- *   o Voltage and current level control.
- *   o Operating mode control.
- *   o Regulator status.
- *   o sysfs entries for showing client devices and status
- *
- * EXPERIMENTAL FEATURES:
- *   Dynamic Regulator operating Mode Switching (DRMS) - allows regulators
- *   to use most efficient operating mode depending upon voltage and load and
- *   is transparent to client drivers.
- *
- *   e.g. Devices x,y,z share regulator r. Device x and y draw 20mA each during
- *   IO and 1mA at idle. Device z draws 100mA when under load and 5mA when
- *   idling. Regulator r has > 90% efficiency in NORMAL mode at loads > 100mA
- *   but this drops rapidly to 60% when below 100mA. Regulator r has > 90%
- *   efficiency in IDLE mode at loads < 10mA. Thus regulator r will operate
- *   in normal mode for loads > 10mA and in IDLE mode for load <= 10mA.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __BEEP_REGULATOR_CONSUMER_H_
 #define __BEEP_REGULATOR_CONSUMER_H_
 

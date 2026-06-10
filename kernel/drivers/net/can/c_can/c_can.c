@@ -1,30 +1,20 @@
 /*
- * CAN bus driver for Bosch C_CAN controller
- *
- * Copyright (C) 2010 ST Microelectronics
- * Bhupesh Sharma <bhupesh.sharma@st.com>
- *
- * Borrowed heavily from the C_CAN driver originally written by:
- * Copyright (C) 2007
- * - Sascha Hauer, Marc Kleine-Budde, Pengutronix <s.hauer@pengutronix.de>
- * - Simon Kallweit, intefo AG <simon.kallweit@intefo.ch>
- *
- * TX and RX NAPI implementation has been borrowed from at91 CAN driver
- * written by:
- * Copyright
- * (C) 2007 by Hans J. Koch <hjk@hansjkoch.de>
- * (C) 2008, 2009 by Marc Kleine-Budde <kernel@pengutronix.de>
- *
- * Bosch C_CAN controller is compliant to CAN protocol version 2.0 part A and B.
- * Bosch C_CAN user manual can be obtained from:
- * http://www.semiconductors.bosch.de/media/en/pdf/ipmodules_1/c_can/
- * users_manual_c_can.pdf
- *
- * This file is licensed under the terms of the GNU General Public
- * License version 2. This program is licensed "as is" without any
- * warranty of any kind, whether express or implied.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/interrupt.h>

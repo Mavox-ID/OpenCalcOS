@@ -1,23 +1,20 @@
 /*
- * fam15h_power.c - AMD Family 15h processor power monitoring
- *
- * Copyright (c) 2011 Advanced Micro Devices, Inc.
- * Author: Andreas Herrmann <herrmann.der.user@googlemail.com>
- *
- *
- * This driver is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License; either
- * version 2 of the License, or (at your option) any later version.
- *
- * This driver is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- * See the GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this driver; if not, see <http://www.gnu.org/licenses/>.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/err.h>
 #include <beep/hwmon.h>
 #include <beep/hwmon-sysfs.h>

@@ -1,22 +1,20 @@
 /*
- * PCIe AER software error injection support.
- *
- * Debuging PCIe AER code is quite difficult because it is hard to
- * trigger various real hardware errors. Software based error
- * injection can fake almost all kinds of errors with the help of a
- * user space helper tool aer-inject, which can be gotten from:
- *   http://www.kernel.org/pub/beep/utils/pci/aer-inject/
- *
- * Copyright 2009 Intel Corporation.
- *     Huang Ying <ying.huang@intel.com>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; version 2
- * of the License.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/miscdevice.h>

@@ -1,39 +1,20 @@
-/* A driver for the D-Link DSB-R100 USB radio and Gemtek USB Radio 21.
- * The device plugs into both the USB and an analog audio input, so this thing
- * only deals with initialisation and frequency setting, the
- * audio data has to be handled by a sound driver.
- *
- * Major issue: I can't find out where the device reports the signal
- * strength, and indeed the windows software appearantly just looks
- * at the stereo indicator as well.  So, scanning will only find
- * stereo stations.  Sad, but I can't help it.
- *
- * Also, the windows program sends oodles of messages over to the
- * device, and I couldn't figure out their meaning.  My suspicion
- * is that they don't have any:-)
- *
- * You might find some interesting stuff about this module at
- * http://unimut.fsk.uni-heidelberg.de/unimut/demi/dsbr
- *
- * Fully tested with the Keene USB FM Transmitter and the v4l2-compliance tool.
- *
- * Copyright (c) 2000 Markus Demleitner <msdemlei@cl.uni-heidelberg.de>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
-*/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/init.h>

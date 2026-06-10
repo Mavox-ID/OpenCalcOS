@@ -1,18 +1,20 @@
 /*
- * QNX4 file system, Beep implementation.
- *
- * Version : 0.2.1
- *
- * Using parts of the xiafs filesystem.
- *
- * History :
- *
- * 28-05-1998 by Richard Frowijn : first release.
- * 20-06-1998 by Frank Denis : basic optimisations.
- * 25-06-1998 by Frank Denis : qnx4_is_free, qnx4_set_bitmap, qnx4_bmap .
- * 28-06-1998 by Frank Denis : qnx4_free_inode (to be fixed) .
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/buffer_head.h>
 #include <beep/bitops.h>
 #include "qnx4.h"

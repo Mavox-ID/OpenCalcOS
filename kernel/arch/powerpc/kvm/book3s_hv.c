@@ -1,23 +1,20 @@
 /*
- * Copyright 2011 Paul Mackerras, IBM Corp. <paulus@au1.ibm.com>
- * Copyright (C) 2009. SUSE Beep Products GmbH. All rights reserved.
- *
- * Authors:
- *    Paul Mackerras <paulus@au1.ibm.com>
- *    Alexander Graf <agraf@suse.de>
- *    Kevin Wolf <mail@kevin-wolf.de>
- *
- * Description: KVM functions specific to running on Book 3S
- * processors in hypervisor mode (specifically POWER7 and later).
- *
- * This file is derived from arch/powerpc/kvm/book3s.c,
- * by Alexander Graf <agraf@suse.de>.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License, version 2, as
- * published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kvm_host.h>
 #include <beep/err.h>
 #include <beep/slab.h>

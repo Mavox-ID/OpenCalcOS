@@ -1,18 +1,20 @@
 /*
- *	IrNET protocol module : Synchronous PPP over an IrDA socket.
- *
- *		Jean II - HPL `00 - <jt@hpl.hp.com>
- *
- * This file implement the PPP interface and /dev/irnet character device.
- * The PPP interface hook to the ppp_generic module, handle all our
- *	relationship to the PPP code in the kernel (and by extension to pppd),
- *	and exchange PPP frames with this module (send/receive).
- * The /dev/irnet device is used primarily for 2 functions :
- *	1) as a stub for pppd (the ppp daemon), so that we can appropriately
- *	generate PPP sessions (we pretend we are a tty).
- *	2) as a control channel (write commands, read events)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/sched.h>
 #include <beep/slab.h>
 #include "irnet_ppp.h"		/* Private header */

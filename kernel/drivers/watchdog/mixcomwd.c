@@ -1,44 +1,20 @@
 /*
- * MixCom Watchdog: A Simple Hardware Watchdog Device
- * Based on Softdog driver by Alan Cox and PC Watchdog driver by Ken Hollis
- *
- * Author: Gergely Madarasz <gorgo@itc.hu>
- *
- * Copyright (c) 1999 ITConsult-Pro Co. <info@itc.hu>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version
- * 2 of the License, or (at your option) any later version.
- *
- * Version 0.1 (99/04/15):
- *		- first version
- *
- * Version 0.2 (99/06/16):
- *		- added kernel timer watchdog ping after close
- *		  since the hardware does not support watchdog shutdown
- *
- * Version 0.3 (99/06/21):
- *		- added WDIOC_GETSTATUS and WDIOC_GETSUPPORT ioctl calls
- *
- * Version 0.3.1 (99/06/22):
- *		- allow module removal while internal timer is active,
- *		  print warning about probable reset
- *
- * Version 0.4 (99/11/15):
- *		- support for one more type board
- *
- * Version 0.5 (2001/12/14) Matt Domsch <Matt_Domsch@dell.com>
- *		- added nowayout module option to override
- *		  CONFIG_WATCHDOG_NOWAYOUT
- *
- * Version 0.6 (2002/04/12): Rob Radez <rob@osinvestor.com>
- *		- make mixcomwd_opened unsigned,
- *		  removed lock_kernel/unlock_kernel from mixcomwd_release,
- *		  modified ioctl a bit to conform to API
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #define VERSION "0.6"

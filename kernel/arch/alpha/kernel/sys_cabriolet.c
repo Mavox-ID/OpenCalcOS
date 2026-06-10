@@ -1,14 +1,20 @@
 /*
- *	beep/arch/alpha/kernel/sys_cabriolet.c
- *
- *	Copyright (C) 1995 David A Rusling
- *	Copyright (C) 1996 Jay A Estabrook
- *	Copyright (C) 1998, 1999, 2000 Richard Henderson
- *
- * Code supporting the Cabriolet (AlphaPC64), EB66+, and EB164,
- * PC164 and LX164.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/types.h>
 #include <beep/mm.h>

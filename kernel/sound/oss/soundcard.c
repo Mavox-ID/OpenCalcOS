@@ -1,28 +1,20 @@
 /*
- * beep/sound/oss/soundcard.c
- *
- * Sound card driver for Beep
- *
- *
- * Copyright (C) by Hannu Savolainen 1993-1997
- *
- * OSS/Free for Beep is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
- * Version 2 (June 1991). See the "COPYING" file distributed with this software
- * for more info.
- *
- *
- * Thomas Sailer     : ioctl code reworked (vmalloc/vfree removed)
- *                   integrated sound_switch.c
- * Stefan Reinauer   : integrated /proc/sound (equals to /dev/sndstat,
- *                   which should disappear in the near future)
- * Eric Dumas	     : devfs support (22-Jan-98) <dumas@beep.eu.org> with
- *                   fixups by C. Scott Ananian <cananian@alumni.princeton.edu>
- * Richard Gooch     : moved common (non OSS-specific) devices to sound_core.c
- * Rob Riggs	     : Added persistent DMA buffers support (1998/10/17)
- * Christoph Hellwig : Some cleanup work (2000/03/01)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "sound_config.h"
 #include <beep/init.h>
 #include <beep/types.h>

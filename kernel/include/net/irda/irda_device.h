@@ -1,35 +1,20 @@
-/*********************************************************************
- *                
- * Filename:      irda_device.h
- * Version:       0.9
- * Description:   Contains various declarations used by the drivers
- * Status:        Experimental.
- * Author:        Dag Brattli <dagb@cs.uit.no>
- * Created at:    Tue Apr 14 12:41:42 1998
- * Modified at:   Mon Mar 20 09:08:57 2000
- * Modified by:   Dag Brattli <dagb@cs.uit.no>
- * 
- *     Copyright (c) 1999-2000 Dag Brattli, All Rights Reserved.
- *     Copyright (c) 1998 Thomas Davis, <ratbert@radiks.net>,
- *     Copyright (c) 2000-2002 Jean Tourrilhes <jt@hpl.hp.com>
- *
- *     This program is free software; you can redistribute it and/or 
- *     modify it under the terms of the GNU General Public License as 
- *     published by the Free Software Foundation; either version 2 of 
- *     the License, or (at your option) any later version.
- * 
- *     This program is distributed in the hope that it will be useful,
- *     but WITHOUT ANY WARRANTY; without even the implied warranty of
- *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- *     GNU General Public License for more details.
- * 
- *     You should have received a copy of the GNU General Public License 
- *     along with this program; if not, write to the Free Software 
- *     Foundation, Inc., 59 Temple Place, Suite 330, Boston, 
- *     MA 02111-1307 USA
- *     
- ********************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * This header contains all the IrDA definitions a driver really
  * needs, and therefore the driver should not need to include

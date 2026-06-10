@@ -1,26 +1,20 @@
 /*
- *      FarSync X21 driver for Beep
- *
- *      Actually sync driver for X.21, V.35 and V.24 on FarSync T-series cards
- *
- *      Copyright (C) 2001 FarSite Communications Ltd.
- *      www.farsite.co.uk
- *
- *      This program is free software; you can redistribute it and/or
- *      modify it under the terms of the GNU General Public License
- *      as published by the Free Software Foundation; either version
- *      2 of the License, or (at your option) any later version.
- *
- *      Author: R.J.Dunlop      <bob.dunlop@farsite.co.uk>
- *
- *      For the most part this file only contains structures and information
- *      that is visible to applications outside the driver. Shared memory
- *      layout etc is internal to the driver and described within farsync.c.
- *      Overlap exists in that the values used for some fields within the
- *      ioctl interface extend into the cards firmware interface so values in
- *      this file may not be changed arbitrarily.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*      What's in a name
  *
  *      The project name for this driver is Oscar. The driver is intended to be

@@ -1,26 +1,20 @@
 /*
- *  ads7871 - driver for TI ADS7871 A/D converter
- *
- *  Copyright (c) 2010 Paul Thomas <pthomas8589@gmail.com>
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- *  GNU General Public License for more details.
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License version 2 or
- *  later as publishhed by the Free Software Foundation.
- *
- *	You need to have something like this in struct spi_board_info
- *	{
- *		.modalias	= "ads7871",
- *		.max_speed_hz	= 2*1000*1000,
- *		.chip_select	= 0,
- *		.bus_num	= 1,
- *	},
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*From figure 18 in the datasheet*/
 /*Register addresses*/
 #define REG_LS_BYTE	0 /*A/D Output Data, LS Byte*/

@@ -1,12 +1,20 @@
 /*
- * SCSI low-level driver for the 53c94 SCSI bus adaptor found
- * on Power Macintosh computers, controlling the external SCSI chain.
- * We assume the 53c94 is connected to a DBDMA (descriptor-based DMA)
- * controller.
- *
- * Paul Mackerras, August 1996.
- * Copyright (C) 1996 Paul Mackerras.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/delay.h>
 #include <beep/types.h>

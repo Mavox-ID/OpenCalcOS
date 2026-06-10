@@ -1,66 +1,20 @@
 /*
- * Intel Wireless WiMAX Connection 2400m
- * USB-specific i2400m driver definitions
- *
- *
- * Copyright (C) 2007-2008 Intel Corporation. All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- *
- *   * Redistributions of source code must retain the above copyright
- *     notice, this list of conditions and the following disclaimer.
- *   * Redistributions in binary form must reproduce the above copyright
- *     notice, this list of conditions and the following disclaimer in
- *     the documentation and/or other materials provided with the
- *     distribution.
- *   * Neither the name of Intel Corporation nor the names of its
- *     contributors may be used to endorse or promote products derived
- *     from this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
- * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
- * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
- * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
- * OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
- * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
- * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
- * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
- * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *
- *
- * Intel Corporation <beep-wimax@intel.com>
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- * Yanir Lubetkin <yanirx.lubetkin@intel.com>
- *  - Initial implementation
- *
- *
- * This driver implements the bus-specific part of the i2400m for
- * USB. Check i2400m.h for a generic driver description.
- *
- * ARCHITECTURE
- *
- * This driver listens to notifications sent from the notification
- * endpoint (in usb-notif.c); when data is ready to read, the code in
- * there schedules a read from the device (usb-rx.c) and then passes
- * the data to the generic RX code (rx.c).
- *
- * When the generic driver needs to send data (network or control), it
- * queues up in the TX FIFO (tx.c) and that will notify the driver
- * through the i2400m->bus_tx_kick() callback
- * (usb-tx.c:i2400mu_bus_tx_kick) which will send the items in the
- * FIFO queue.
- *
- * This driver, as well, implements the USB-specific ops for the generic
- * driver to be able to setup/teardown communication with the device
- * [i2400m_bus_dev_start() and i2400m_bus_dev_stop()], reseting the
- * device [i2400m_bus_reset()] and performing firmware upload
- * [i2400m_bus_bm_cmd() and i2400_bus_bm_wait_for_ack()].
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __I2400M_USB_H__
 #define __I2400M_USB_H__
 

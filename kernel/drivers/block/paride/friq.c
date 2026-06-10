@@ -1,25 +1,20 @@
-/* 
-	friq.c	(c) 1998    Grant R. Guenther <grant@torque.net>
-		            Under the terms of the GNU General Public License
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-	friq.c is a low-level protocol driver for the Freecom "IQ"
-	parallel port IDE adapter.   Early versions of this adapter
-	use the 'frpw' protocol.
-	
-	Freecom uses this adapter in a battery powered external 
-	CD-ROM drive.  It is also used in LS-120 drives by
-	Maxell and Panasonic, and other devices.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-	The battery powered drive requires software support to
-	control the power to the drive.  This module enables the
-	drive power when the high level driver (pcd) is loaded
-	and disables it when the module is unloaded.  Note, if
-	the friq module is built in to the kernel, the power
-	will never be switched off, so other means should be
-	used to conserve battery power.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 /* Changes:
 
 	1.01	GRG 1998.12.20	 Added support for soft power switch

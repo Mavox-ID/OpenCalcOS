@@ -1,48 +1,20 @@
-
 /*
- * DECnet       An implementation of the DECnet protocol suite for the BEEP
- *              operating system.  DECnet is implemented using the  BSD Socket
- *              interface as the means of communication with the user level.
- *
- *              DECnet Socket Layer Interface
- *
- * Authors:     Eduardo Marcelo Serrat <emserrat@geocities.com>
- *              Patrick Caulfield <patrick@pandh.demon.co.uk>
- *
- * Changes:
- *        Steve Whitehouse: Copied from Eduardo Serrat and Patrick Caulfield's
- *                          version of the code. Original copyright preserved
- *                          below.
- *        Steve Whitehouse: Some bug fixes, cleaning up some code to make it
- *                          compatible with my routing layer.
- *        Steve Whitehouse: Merging changes from Eduardo Serrat and Patrick
- *                          Caulfield.
- *        Steve Whitehouse: Further bug fixes, checking module code still works
- *                          with new routing layer.
- *        Steve Whitehouse: Additional set/get_sockopt() calls.
- *        Steve Whitehouse: Fixed TIOCINQ ioctl to be same as Eduardo's new
- *                          code.
- *        Steve Whitehouse: recvmsg() changed to try and behave in a POSIX like
- *                          way. Didn't manage it entirely, but its better.
- *        Steve Whitehouse: ditto for sendmsg().
- *        Steve Whitehouse: A selection of bug fixes to various things.
- *        Steve Whitehouse: Added TIOCOUTQ ioctl.
- *        Steve Whitehouse: Fixes to username2sockaddr & sockaddr2username.
- *        Steve Whitehouse: Fixes to connect() error returns.
- *       Patrick Caulfield: Fixes to delayed acceptance logic.
- *         David S. Miller: New socket locking
- *        Steve Whitehouse: Socket list hashing/locking
- *         Arnaldo C. Melo: use capable, not suser
- *        Steve Whitehouse: Removed unused code. Fix to use sk->allocation
- *                          when required.
- *       Patrick Caulfield: /proc/net/decnet now has object name/number
- *        Steve Whitehouse: Fixed local port allocation, hashed sk list
- *          Matthew Wilcox: Fixes for dn_ioctl()
- *        Steve Whitehouse: New connect/accept logic to allow timeouts and
- *                          prepare for sendpage etc.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /******************************************************************************
     (c) 1995-1998 E.M. Serrat		emserrat@geocities.com
 

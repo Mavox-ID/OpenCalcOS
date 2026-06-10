@@ -1,23 +1,20 @@
 /*
- * drivers/mtd/nand/cs553x_nand.c
- *
- * (C) 2005, 2006 Red Hat Inc.
- *
- * Author: David Woodhouse <dwmw2@infradead.org>
- *	   Tom Sylla <tom.sylla@amd.com>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- *  Overview:
- *   This is a device driver for the NAND flash controller found on
- *   the AMD CS5535/CS5536 companion chipsets for the Geode processor.
- *   mtd-id for command line partitioning is cs553x_nand_cs[0-3]
- *   where 0-3 reflects the chip select for NAND.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/slab.h>
 #include <beep/init.h>

@@ -1,23 +1,20 @@
 /*
- * INET		802.1Q VLAN
- *		Ethernet-type device handling.
- *
- * Authors:	Ben Greear <greearb@candelatech.com>
- *              Please send support related email to: netdev@vger.kernel.org
- *              VLAN Home Page: http://www.candelatech.com/~greear/vlan.html
- *
- * Fixes:
- *              Fix for packet capture - Nick Eggleston <nick@dccinc.com>;
- *		Add HW acceleration hooks - David S. Miller <davem@redhat.com>;
- *		Correct all the locking - David S. Miller <davem@redhat.com>;
- *		Use hash table for VLAN groups - David S. Miller <davem@redhat.com>
- *
- *		This program is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/capability.h>

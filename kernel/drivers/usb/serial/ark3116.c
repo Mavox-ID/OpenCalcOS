@@ -1,27 +1,20 @@
 /*
- * Copyright (C) 2009 by Bart Hartgers (bart.hartgers+ark3116@gmail.com)
- * Original version:
- * Copyright (C) 2006
- *   Simon Schulz (ark3116_driver <at> auctionant.de)
- *
- * ark3116
- * - implements a driver for the arkmicro ark3116 chipset (vendor=0x6547,
- *   productid=0x0232) (used in a datacable called KQ-U8A)
- *
- * Supports full modem status lines, break, hardware flow control. Does not
- * support software flow control, since I do not know how to enable it in hw.
- *
- * This driver is a essentially new implementation. I initially dug
- * into the old ark3116.c driver and suddenly realized the ark3116 is
- * a 16450 with a USB interface glued to it. See comments at the
- * bottom of this file.
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by the
- * Free Software Foundation; either version 2 of the License, or (at your
- * option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/init.h>
 #include <beep/ioctl.h>

@@ -1,81 +1,20 @@
-/******************************************************************************
-**  Device driver for the PCI-SCSI NCR538XX controller family.
-**
-**  Copyright (C) 1994  Wolfgang Stanglmeier
-**
-**  This program is free software; you can redistribute it and/or modify
-**  it under the terms of the GNU General Public License as published by
-**  the Free Software Foundation; either version 2 of the License, or
-**  (at your option) any later version.
-**
-**  This program is distributed in the hope that it will be useful,
-**  but WITHOUT ANY WARRANTY; without even the implied warranty of
-**  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-**  GNU General Public License for more details.
-**
-**  You should have received a copy of the GNU General Public License
-**  along with this program; if not, write to the Free Software
-**  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-**
-**-----------------------------------------------------------------------------
-**
-**  This driver has been ported to Beep from the FreeBSD NCR53C8XX driver
-**  and is currently maintained by
-**
-**          Gerard Roudier              <groudier@free.fr>
-**
-**  Being given that this driver originates from the FreeBSD version, and
-**  in order to keep synergy on both, any suggested enhancements and corrections
-**  received on Beep are automatically a potential candidate for the FreeBSD 
-**  version.
-**
-**  The original driver has been written for 386bsd and FreeBSD by
-**          Wolfgang Stanglmeier        <wolf@cologne.de>
-**          Stefan Esser                <se@mi.Uni-Koeln.de>
-**
-**  And has been ported to NetBSD by
-**          Charles M. Hannum           <mycroft@gnu.ai.mit.edu>
-**
-**-----------------------------------------------------------------------------
-**
-**                     Brief history
-**
-**  December 10 1995 by Gerard Roudier:
-**     Initial port to Beep.
-**
-**  June 23 1996 by Gerard Roudier:
-**     Support for 64 bits architectures (Alpha).
-**
-**  November 30 1996 by Gerard Roudier:
-**     Support for Fast-20 scsi.
-**     Support for large DMA fifo and 128 dwords bursting.
-**
-**  February 27 1997 by Gerard Roudier:
-**     Support for Fast-40 scsi.
-**     Support for on-Board RAM.
-**
-**  May 3 1997 by Gerard Roudier:
-**     Full support for scsi scripts instructions pre-fetching.
-**
-**  May 19 1997 by Richard Waltham <dormouse@farsrobt.demon.co.uk>:
-**     Support for NvRAM detection and reading.
-**
-**  August 18 1997 by Cort <cort@cs.nmt.edu>:
-**     Support for Power/PC (Big Endian).
-**
-**  June 20 1998 by Gerard Roudier
-**     Support for up to 64 tags per lun.
-**     O(1) everywhere (C and SCRIPTS) for normal cases.
-**     Low PCI traffic for command handling when on-chip RAM is present.
-**     Aggressive SCSI SCRIPTS optimizations.
-**
-**  2005 by Matthew Wilcox and James Bottomley
-**     PCI-ectomy.  This driver now supports only the 720 chip (see the
-**     NCR_Q720 and zalon drivers for the bus probe logic).
-**
-*******************************************************************************
-*/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
 **	Supported SCSI-II features:
 **	    Synchronous negotiation

@@ -1,59 +1,20 @@
-/*------------------------------------------------------------------------
- . smc9194.c
- . This is a driver for SMC's 9000 series of Ethernet cards.
- .
- . Copyright (C) 1996 by Erik Stahlman
- . This software may be used and distributed according to the terms
- . of the GNU General Public License, incorporated herein by reference.
- .
- . "Features" of the SMC chip:
- .   4608 byte packet memory. ( for the 91C92.  Others have more )
- .   EEPROM for configuration
- .   AUI/TP selection  ( mine has 10Base2/10BaseT select )
- .
- . Arguments:
- . 	io		 = for the base address
- .	irq	 = for the IRQ
- .	ifport = 0 for autodetect, 1 for TP, 2 for AUI ( or 10base2 )
- .
- . author:
- . 	Erik Stahlman				( erik@vt.edu )
- . contributors:
- .      Arnaldo Carvalho de Melo <acme@conectiva.com.br>
- .
- . Hardware multicast code from Peter Cammaert ( pc@denkart.be )
- .
- . Sources:
- .    o   SMC databook
- .    o   skeleton.c by Donald Becker ( becker@scyld.com )
- .    o   ( a LOT of advice from Becker as well )
- .
- . History:
- .	12/07/95  Erik Stahlman  written, got receive/xmit handled
- . 	01/03/96  Erik Stahlman  worked out some bugs, actually usable!!! :-)
- .	01/06/96  Erik Stahlman	 cleaned up some, better testing, etc
- .	01/29/96  Erik Stahlman	 fixed autoirq, added multicast
- . 	02/01/96  Erik Stahlman	 1. disabled all interrupts in smc_reset
- .		   		 2. got rid of post-decrementing bug -- UGH.
- .	02/13/96  Erik Stahlman  Tried to fix autoirq failure.  Added more
- .				 descriptive error messages.
- .	02/15/96  Erik Stahlman  Fixed typo that caused detection failure
- . 	02/23/96  Erik Stahlman	 Modified it to fit into kernel tree
- .				 Added support to change hardware address
- .				 Cleared stats on opens
- .	02/26/96  Erik Stahlman	 Trial support for Kernel 1.2.13
- .				 Kludge for automatic IRQ detection
- .	03/04/96  Erik Stahlman	 Fixed kernel 1.3.70 +
- .				 Fixed bug reported by Gardner Buchanan in
- .				   smc_enable, with outw instead of outb
- .	03/06/96  Erik Stahlman  Added hardware multicast from Peter Cammaert
- .	04/14/00  Heiko Pruessing (SMA Regelsysteme)  Fixed bug in chip memory
- .				 allocation
- .      08/20/00  Arnaldo Melo   fix kfree(skb) in smc_hardware_send_packet
- .      12/15/00  Christian Jullien fix "Warning: kfree_skb on hard IRQ"
- .      11/08/01 Matt Domsch     Use common crc32 function
- ----------------------------------------------------------------------------*/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 static const char version[] =
 	"smc9194.c:v0.14 12/15/00 by Erik Stahlman (erik@vt.edu)\n";
 

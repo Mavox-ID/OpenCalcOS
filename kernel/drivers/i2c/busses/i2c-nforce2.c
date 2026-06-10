@@ -1,16 +1,10 @@
 /*
-    SMBus driver for nVidia nForce2 MCP
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-    Added nForce3 Pro 150  Thomas Leibold <thomas@plx.com>,
-	Ported to 2.5 Patrick Dreker <patrick@dreker.de>,
-    Copyright (c) 2003  Hans-Frieder Vogt <hfvogt@arcor.de>,
-    Based on
-    SMBus 2.0 driver for AMD-8111 IO-Hub
-    Copyright (c) 2002 Vojtech Pavlik
-
-    This program is free software; you can redistribute it and/or modify
+    This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
+    the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
@@ -19,10 +13,8 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 /*
     SUPPORTED DEVICES		PCI ID
     nForce2 MCP			0064

@@ -1,36 +1,20 @@
 /*
- * wm8753.c  --  WM8753 ALSA Soc Audio driver
- *
- * Copyright 2003-11 Wolfson Microelectronics PLC.
- * Author: Liam Girdwood <lrg@slimlogic.co.uk>
- *
- *  This program is free software; you can redistribute  it and/or modify it
- *  under  the terms of  the GNU General  Public License as published by the
- *  Free Software Foundation;  either version 2 of the  License, or (at your
- *  option) any later version.
- *
- * Notes:
- *  The WM8753 is a low power, high quality stereo codec with integrated PCM
- *  codec designed for portable digital telephony applications.
- *
- * Dual DAI:-
- *
- * This driver support 2 DAI PCM's. This makes the default PCM available for
- * HiFi audio (e.g. MP3, ogg) playback/capture and the other PCM available for
- * voice.
- *
- * Please note that the voice PCM can be connected directly to a Bluetooth
- * codec or GSM modem and thus cannot be read or written to, although it is
- * available to be configured with snd_hw_params(), etc and kcontrols in the
- * normal alsa manner.
- *
- * Fast DAI switching:-
- *
- * The driver can now fast switch between the DAI configurations via a
- * an alsa kcontrol. This allows the PCM to remain open.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/moduleparam.h>
 #include <beep/kernel.h>

@@ -1,14 +1,20 @@
 /*
- * bitmap.c two-level bitmap (C) Peter T. Breuer (ptb@ot.uc3m.es) 2003
- *
- * bitmap_create  - sets up the bitmap structure
- * bitmap_destroy - destroys the bitmap structure
- *
- * additions, Copyright (C) 2003-2004, Paul Clements, SteelEye Technology, Inc.:
- * - added disk storage for bitmap
- * - changes to allow various bitmap chunk sizes
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * Still to do:
  *

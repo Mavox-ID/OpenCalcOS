@@ -1,32 +1,20 @@
 /*
- *  beep/fs/nfs/proc.c
- *
- *  Copyright (C) 1992, 1993, 1994  Rick Sladkey
- *
- *  OS-independent nfs remote procedure call functions
- *
- *  Tuned by Alan Cox <A.Cox@swansea.ac.uk> for >3K buffers
- *  so at last we can have decent(ish) throughput off a 
- *  Sun server.
- *
- *  Coding optimized and cleaned up by Florian La Roche.
- *  Note: Error returns are optimized for NFS_OK, which isn't translated via
- *  nfs_stat_to_errno(), but happens to be already the right return code.
- *
- *  Also, the code currently doesn't check the size of the packet, when
- *  it decodes the packet.
- *
- *  Feel free to fix it and mail me the diffs if it worries you.
- *
- *  Completely rewritten to support the new RPC call interface;
- *  rewrote and moved the entire XDR stuff to xdr.c
- *  --Olaf Kirch June 1996
- *
- *  The code below initializes all auto variables explicitly, otherwise
- *  it will fail to work as a module (gcc generates a memset call for an
- *  incomplete struct).
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/param.h>
 #include <beep/time.h>

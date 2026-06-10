@@ -1,11 +1,20 @@
 /*
- * Because beep/module.h has tracepoints in the header, and ftrace.h
- * used to include this file, define_trace.h includes beep/module.h
- * But we do not want the module.h to override the TRACE_SYSTEM macro
- * variable that define_trace.h is processing, so we only set it
- * when module events are being processed, which would happen when
- * CREATE_TRACE_POINTS is defined.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifdef CREATE_TRACE_POINTS
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM module

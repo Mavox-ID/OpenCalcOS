@@ -1,27 +1,20 @@
 /*
-	Written 1997-1998 by Donald Becker.
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-	This software may be used and distributed according to the terms
-	of the GNU General Public License, incorporated herein by reference.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-	This driver is for the 3Com ISA EtherLink XL "Corkscrew" 3c515 ethercard.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-	The author may be reached as becker@scyld.com, or C/O
-	Scyld Computing Corporation
-	410 Severn Ave., Suite 210
-	Annapolis MD 21403
-
-
-	2000/2/2- Added support for kernel-level ISAPnP
-		by Stephen Frost <sfrost@snowman.net> and Alessandro Zummo
-	Cleaned up for 2.3.x/softnet by Jeff Garzik and Alan Cox.
-
-	2001/11/17 - Added ethtool support (jgarzik)
-
-	2002/10/28 - Locking updates for 2.5 (alan@lxorguk.ukuu.org.uk)
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #define DRV_NAME		"3c515"
 #define DRV_VERSION		"0.99t-ac"
 #define DRV_RELDATE		"28-Oct-2002"

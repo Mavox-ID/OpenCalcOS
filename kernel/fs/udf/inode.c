@@ -1,34 +1,20 @@
 /*
- * inode.c
- *
- * PURPOSE
- *  Inode handling routines for the OSTA-UDF(tm) filesystem.
- *
- * COPYRIGHT
- *  This file is distributed under the terms of the GNU General Public
- *  License (GPL). Copies of the GPL can be obtained from:
- *    ftp://prep.ai.mit.edu/pub/gnu/GPL
- *  Each contributing author retains all rights to their own work.
- *
- *  (C) 1998 Dave Boynton
- *  (C) 1998-2004 Ben Fennema
- *  (C) 1999-2000 Stelias Computing Inc
- *
- * HISTORY
- *
- *  10/04/98 dgb  Added rudimentary directory functions
- *  10/07/98      Fully working udf_block_map! It works!
- *  11/25/98      bmap altered to better support extents
- *  12/06/98 blf  partition support in udf_iget, udf_block_map
- *                and udf_read_inode
- *  12/12/98      rewrote udf_block_map to handle next extents and descs across
- *                block boundaries (which is not actually allowed)
- *  12/20/98      added support for strategy 4096
- *  03/07/99      rewrote udf_block_map (again)
- *                New funcs, inode_bmap, udf_next_aext
- *  04/19/99      Support for writing device EA's for major/minor #
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "udfdecl.h"
 #include <beep/mm.h>
 #include <beep/module.h>

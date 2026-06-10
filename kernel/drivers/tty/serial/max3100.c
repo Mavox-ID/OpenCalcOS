@@ -1,40 +1,20 @@
 /*
- *
- *  Copyright (C) 2008 Christian Pellegrin <chripell@evolware.org>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- *
- * Notes: the MAX3100 doesn't provide an interrupt on CTS so we have
- * to use polling for flow control. TX empty IRQ is unusable, since
- * writing conf clears FIFO buffer and we cannot have this interrupt
- * always asking us for attention.
- *
- * Example platform data:
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
- static struct plat_max3100 max3100_plat_data = {
- .loopback = 0,
- .crystal = 0,
- .poll_time = 100,
- };
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
- static struct spi_board_info spi_board_info[] = {
- {
- .modalias	= "max3100",
- .platform_data	= &max3100_plat_data,
- .irq		= IRQ_EINT12,
- .max_speed_hz	= 5*1000*1000,
- .chip_select	= 0,
- },
- };
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
- * The initial minor number is 209 in the low-density serial port:
- * mknod /dev/ttyMAX0 c 204 209
- */
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define MAX3100_MAJOR 204
 #define MAX3100_MINOR 209
 /* 4 MAX3100s should be enough for everyone */

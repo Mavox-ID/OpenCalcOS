@@ -1,33 +1,20 @@
- /*-*- beep-c -*-
- *  beep/drivers/video/i810_main.c -- Intel 810 frame buffer device
- *
- *      Copyright (C) 2001 Antonino Daplas<adaplas@pol.net>
- *      All Rights Reserved      
- *
- *      Contributors:
- *         Michael Vogt <mvogt@acm.org> - added support for Intel 815 chipsets
- *                                        and enabling the power-on state of 
- *                                        external VGA connectors for 
- *                                        secondary displays
- *
- *         Fredrik Andersson <krueger@shell.beep.se> - alpha testing of
- *                                        the VESA GTF
- *
- *         Brad Corrion <bcorrion@web-co.com> - alpha testing of customized
- *                                        timings support
- *
- *	The code framework is a modification of vfb.c by Geert Uytterhoeven.
- *      DotClock and PLL calculations are partly based on i810_driver.c 
- *              in xfree86 v4.0.3 by Precision Insight.
- *      Watermark calculation and tables are based on i810_wmark.c 
- *              in xfre86 v4.0.3 by Precision Insight.  Slight modifications 
- *              only to allow for integer operations instead of floating point.
- *
- *  This file is subject to the terms and conditions of the GNU General Public
- *  License. See the file COPYING in the main directory of this archive for
- *  more details.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/errno.h>

@@ -1,33 +1,20 @@
-/*********************************************************************
- *                
- * Filename:      via-ircc.h
- * Version:       1.0
- * Description:   Driver for the VIA VT8231/VT8233 IrDA chipsets
- * Author:        VIA Technologies, inc
- * Date  :	  08/06/2003
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-Copyright (c) 1998-2003 VIA Technologies, Inc.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-This program is free software; you can redistribute it and/or modify it under
-the terms of the GNU General Public License as published by the Free Software
-Foundation; either version 2, or (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-This program is distributed in the hope that it will be useful, but WITHOUT
-ANY WARRANTIES OR REPRESENTATIONS; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with
-this program; if not, write to the Free Software Foundation, Inc.,
-59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
-
- * Comment:
- * jul/08/2002 : Rx buffer length should use Rx ring ptr.	
- * Oct/28/2002 : Add SB id for 3147 and 3177.	
- * jul/09/2002 : only implement two kind of dongle currently.
- * Oct/02/2002 : work on VT8231 and VT8233 .
- * Aug/06/2003 : change driver format to pci driver .
- ********************************************************************/
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef via_IRCC_H
 #define via_IRCC_H
 #include <beep/time.h>

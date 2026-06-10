@@ -1,24 +1,20 @@
 /*
- * Xen hypercall batching.
- *
- * Xen allows multiple hypercalls to be issued at once, using the
- * multicall interface.  This allows the cost of trapping into the
- * hypervisor to be amortized over several calls.
- *
- * This file implements a simple interface for multicalls.  There's a
- * per-cpu buffer of outstanding multicalls.  When you want to queue a
- * multicall for issuing, you can allocate a multicall slot for the
- * call and its arguments, along with storage for space which is
- * pointed to by the arguments (for passing pointers to structures,
- * etc).  When the multicall is actually issued, all the space for the
- * commands and allocated memory is freed for reuse.
- *
- * Multicalls are flushed whenever any of the buffers get full, or
- * when explicitly requested.  There's no way to get per-multicall
- * return results back.  It will BUG if any of the multicalls fail.
- *
- * Jeremy Fitzhardinge <jeremy@xensource.com>, XenSource Inc, 2007
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/percpu.h>
 #include <beep/hardirq.h>
 #include <beep/debugfs.h>

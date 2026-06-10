@@ -1,23 +1,20 @@
 /*
- *  include/beep/ktime.h
- *
- *  ktime_t - nanosecond-resolution time format.
- *
- *   Copyright(C) 2005, Thomas Gleixner <tglx@linutronix.de>
- *   Copyright(C) 2005, Red Hat, Inc., Ingo Molnar
- *
- *  data type definitions, declarations, prototypes and macros.
- *
- *  Started by: Thomas Gleixner and Ingo Molnar
- *
- *  Credits:
- *
- *  	Roman Zippel provided the ideas and primary code snippets of
- *  	the ktime_t union and further simplifications of the original
- *  	code.
- *
- *  For licencing details see kernel-base/COPYING
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _BEEP_KTIME_H
 #define _BEEP_KTIME_H
 

@@ -1,18 +1,20 @@
 /*
- *	aspm.h
- *
- *	PCI Express ASPM defines and function prototypes
- *
- *	Copyright (C) 2007 Intel Corp.
- *		Zhang Yanmin (yanmin.zhang@intel.com)
- *		Shaohua Li (shaohua.li@intel.com)
- *
- *	For more information, please consult the following manuals (look at
- *	http://www.pcisig.com/ for how to get them):
- *
- *	PCI Express Specification
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef BEEP_ASPM_H
 #define BEEP_ASPM_H
 

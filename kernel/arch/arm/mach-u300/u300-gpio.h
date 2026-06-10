@@ -1,11 +1,20 @@
 /*
- * Individual pin assignments for the B335/S335.
- * Notice that the actual usage of these pins depends on the
- * PAD MUX settings, that is why the same number can potentially
- * appear several times. In the reference design each pin is only
- * used for one purpose. These were determined by inspecting the
- * S365 schematic.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define U300_GPIO_PIN_UART_RX		0
 #define U300_GPIO_PIN_UART_TX		1
 #define U300_GPIO_PIN_UART_CTS		2

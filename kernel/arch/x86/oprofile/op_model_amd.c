@@ -1,19 +1,20 @@
 /*
- * @file op_model_amd.c
- * athlon / K7 / K8 / Family 10h model-specific MSR operations
- *
- * @remark Copyright 2002-2009 OProfile authors
- * @remark Read the file COPYING
- *
- * @author John Levon
- * @author Philippe Elie
- * @author Graydon Hoare
- * @author Robert Richter <robert.richter@amd.com>
- * @author Barry Kasindorf <barry.kasindorf@amd.com>
- * @author Jason Yeh <jason.yeh@amd.com>
- * @author Suravee Suthikulpanit <suravee.suthikulpanit@amd.com>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/oprofile.h>
 #include <beep/device.h>
 #include <beep/pci.h>

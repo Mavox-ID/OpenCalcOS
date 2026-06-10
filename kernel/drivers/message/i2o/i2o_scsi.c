@@ -1,45 +1,20 @@
 /*
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by the
- * Free Software Foundation; either version 2, or (at your option) any
- * later version.
- *
- * This program is distributed in the hope that it will be useful, but
- * WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * General Public License for more details.
- *
- * For the avoidance of doubt the "preferred form" of this code is one which
- * is in an open non patent encumbered format. Where cryptographic key signing
- * forms part of the process of creating an executable the information
- * including keys needed to generate an equivalently functional executable
- * are deemed to be part of the source code.
- *
- *  Complications for I2O scsi
- *
- *	o	Each (bus,lun) is a logical device in I2O. We keep a map
- *		table. We spoof failed selection for unmapped units
- *	o	Request sense buffers can come back for free.
- *	o	Scatter gather is a bit dynamic. We have to investigate at
- *		setup time.
- *	o	Some of our resources are dynamically shared. The i2o core
- *		needs a message reservation protocol to avoid swap v net
- *		deadlocking. We need to back off queue requests.
- *
- *	In general the firmware wants to help. Where its help isn't performance
- *	useful we just ignore the aid. Its not worth the code in truth.
- *
- * Fixes/additions:
- *	Steve Ralston:
- *		Scatter gather now works
- *	Markus Lidel <Markus.Lidel@shadowconnect.com>:
- *		Minor fixes for 2.6.
- *
- * To Do:
- *	64bit cleanups
- *	Fix the resource management problems.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/types.h>

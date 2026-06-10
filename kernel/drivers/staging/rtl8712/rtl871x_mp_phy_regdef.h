@@ -1,27 +1,20 @@
-/*****************************************************************************
- *	Copyright(c) 2008,  RealTEK Technology Inc. All Right Reserved.
- *
- * Module:	__INC_HAL8192SPHYREG_H
- *
- *
- * Note:	1. Define PMAC/BB register map
- *			2. Define RF register map
- *			3. PMAC/BB register bit mask.
- *			4. RF reg bit mask.
- *			5. Other BB/RF relative definition.
- *
- *
- * Export:	Constants, macro, functions(API), global variables(None).
- *
- * Abbrev:
- *
- * History:
- *	Data			Who		Remark
- *	08/07/2007	MHC		1. Porting from 9x series PHYCFG.h.
- *						2. Reorganize code architecture.
- *	09/25/2008	MH		1. Add RL6052 register definition
- *
- *****************************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __RTL871X_MP_PHY_REGDEF_H
 #define __RTL871X_MP_PHY_REGDEF_H
 

@@ -1,31 +1,20 @@
 /*
- * AppArmor security module
- *
- * This file contains AppArmor functions used to manipulate object security
- * contexts.
- *
- * Copyright (C) 1998-2008 Novell/SUSE
- * Copyright 2009-2010 Canonical Ltd.
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License as
- * published by the Free Software Foundation, version 2 of the
- * License.
- *
- *
- * AppArmor sets confinement on every task, via the the aa_task_cxt and
- * the aa_task_cxt.profile, both of which are required and are not allowed
- * to be NULL.  The aa_task_cxt is not reference counted and is unique
- * to each cred (which is reference count).  The profile pointed to by
- * the task_cxt is reference counted.
- *
- * TODO
- * If a task uses change_hat it currently does not return to the old
- * cred or task context but instead creates a new one.  Ideally the task
- * should return to the previous cred if it has not been modified.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "include/context.h"
 #include "include/policy.h"
 

@@ -1,31 +1,20 @@
 /*
- *   imon.c:	input and display driver for SoundGraph iMON IR/VFD/LCD
- *
- *   Copyright(C) 2010  Jarod Wilson <jarod@wilsonet.com>
- *   Portions based on the original lirc_imon driver,
- *	Copyright(C) 2004  Venky Raju(dev@venky.ws)
- *
- *   Huge thanks to R. Geoff Newbury for invaluable debugging on the
- *   0xffdc iMON devices, and for sending me one to hack on, without
- *   which the support for them wouldn't be nearly as good. Thanks
- *   also to the numerous 0xffdc device owners that tested auto-config
- *   support for me and provided debug dumps from their devices.
- *
- *   imon is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 2 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, write to the Free Software
- *   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
 #include <beep/errno.h>

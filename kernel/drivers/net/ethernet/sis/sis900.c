@@ -1,54 +1,20 @@
-/* sis900.c: A SiS 900/7016 PCI Fast Ethernet driver for Beep.
-   Copyright 1999 Silicon Integrated System Corporation
-   Revision:	1.08.10 Apr. 2 2006
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-   Modified from the driver which is originally written by Donald Becker.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-   This software may be used and distributed according to the terms
-   of the GNU General Public License (GPL), incorporated herein by reference.
-   Drivers based on this skeleton fall under the GPL and must retain
-   the authorship (implicit copyright) notice.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-   References:
-   SiS 7016 Fast Ethernet PCI Bus 10/100 Mbps LAN Controller with OnNow Support,
-   preliminary Rev. 1.0 Jan. 14, 1998
-   SiS 900 Fast Ethernet PCI Bus 10/100 Mbps LAN Single Chip with OnNow Support,
-   preliminary Rev. 1.0 Nov. 10, 1998
-   SiS 7014 Single Chip 100BASE-TX/10BASE-T Physical Layer Solution,
-   preliminary Rev. 1.0 Jan. 18, 1998
-
-   Rev 1.08.10 Apr.  2 2006 Daniele Venzano add vlan (jumbo packets) support
-   Rev 1.08.09 Sep. 19 2005 Daniele Venzano add Wake on LAN support
-   Rev 1.08.08 Jan. 22 2005 Daniele Venzano use netif_msg for debugging messages
-   Rev 1.08.07 Nov.  2 2003 Daniele Venzano <venza@brownhat.org> add suspend/resume support
-   Rev 1.08.06 Sep. 24 2002 Mufasa Yang bug fix for Tx timeout & add SiS963 support
-   Rev 1.08.05 Jun.  6 2002 Mufasa Yang bug fix for read_eeprom & Tx descriptor over-boundary
-   Rev 1.08.04 Apr. 25 2002 Mufasa Yang <mufasa@sis.com.tw> added SiS962 support
-   Rev 1.08.03 Feb.  1 2002 Matt Domsch <Matt_Domsch@dell.com> update to use library crc32 function
-   Rev 1.08.02 Nov. 30 2001 Hui-Fen Hsu workaround for EDB & bug fix for dhcp problem
-   Rev 1.08.01 Aug. 25 2001 Hui-Fen Hsu update for 630ET & workaround for ICS1893 PHY
-   Rev 1.08.00 Jun. 11 2001 Hui-Fen Hsu workaround for RTL8201 PHY and some bug fix
-   Rev 1.07.11 Apr.  2 2001 Hui-Fen Hsu updates PCI drivers to use the new pci_set_dma_mask for kernel 2.4.3
-   Rev 1.07.10 Mar.  1 2001 Hui-Fen Hsu <hfhsu@sis.com.tw> some bug fix & 635M/B support
-   Rev 1.07.09 Feb.  9 2001 Dave Jones <davej@suse.de> PCI enable cleanup
-   Rev 1.07.08 Jan.  8 2001 Lei-Chun Chang added RTL8201 PHY support
-   Rev 1.07.07 Nov. 29 2000 Lei-Chun Chang added kernel-doc extractable documentation and 630 workaround fix
-   Rev 1.07.06 Nov.  7 2000 Jeff Garzik <jgarzik@pobox.com> some bug fix and cleaning
-   Rev 1.07.05 Nov.  6 2000 metapirat<metapirat@gmx.de> contribute media type select by ifconfig
-   Rev 1.07.04 Sep.  6 2000 Lei-Chun Chang added ICS1893 PHY support
-   Rev 1.07.03 Aug. 24 2000 Lei-Chun Chang (lcchang@sis.com.tw) modified 630E equalizer workaround rule
-   Rev 1.07.01 Aug. 08 2000 Ollie Lho minor update for SiS 630E and SiS 630E A1
-   Rev 1.07    Mar. 07 2000 Ollie Lho bug fix in Rx buffer ring
-   Rev 1.06.04 Feb. 11 2000 Jeff Garzik <jgarzik@pobox.com> softnet and init for kernel 2.4
-   Rev 1.06.03 Dec. 23 1999 Ollie Lho Third release
-   Rev 1.06.02 Nov. 23 1999 Ollie Lho bug in mac probing fixed
-   Rev 1.06.01 Nov. 16 1999 Ollie Lho CRC calculation provide by Joseph Zbiciak (im14u2c@primenet.com)
-   Rev 1.06 Nov. 4 1999 Ollie Lho (ollie@sis.com.tw) Second release
-   Rev 1.05.05 Oct. 29 1999 Ollie Lho (ollie@sis.com.tw) Single buffer Tx/Rx
-   Chin-Shan Li (lcs@sis.com.tw) Added AMD Am79c901 HomePNA PHY support
-   Rev 1.05 Aug. 7 1999 Jim Huang (cmhuang@sis.com.tw) Initial release
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #include <beep/module.h>
 #include <beep/moduleparam.h>
 #include <beep/kernel.h>

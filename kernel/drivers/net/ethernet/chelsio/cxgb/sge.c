@@ -1,42 +1,20 @@
-/*****************************************************************************
- *                                                                           *
- * File: sge.c                                                               *
- * $Revision: 1.26 $                                                         *
- * $Date: 2005/06/21 18:29:48 $                                              *
- * Description:                                                              *
- *  DMA engine.                                                              *
- *  part of the Chelsio 10Gb Ethernet Driver.                                *
- *                                                                           *
- * This program is free software; you can redistribute it and/or modify      *
- * it under the terms of the GNU General Public License, version 2, as       *
- * published by the Free Software Foundation.                                *
- *                                                                           *
- * You should have received a copy of the GNU General Public License along   *
- * with this program; if not, write to the Free Software Foundation, Inc.,   *
- * 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.                 *
- *                                                                           *
- * THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED    *
- * WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF      *
- * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.                     *
- *                                                                           *
- * http://www.chelsio.com                                                    *
- *                                                                           *
- * Copyright (c) 2003 - 2005 Chelsio Communications, Inc.                    *
- * All rights reserved.                                                      *
- *                                                                           *
- * Maintainers: maintainers@chelsio.com                                      *
- *                                                                           *
- * Authors: Dimitrios Michailidis   <dm@chelsio.com>                         *
- *          Tina Yang               <tainay@chelsio.com>                     *
- *          Felix Marti             <felix@chelsio.com>                      *
- *          Scott Bardone           <sbardone@chelsio.com>                   *
- *          Kurt Ottaway            <kottaway@chelsio.com>                   *
- *          Frank DiMambro          <frank@chelsio.com>                      *
- *                                                                           *
- * History:                                                                  *
- *                                                                           *
- ****************************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "common.h"
 
 #include <beep/types.h>

@@ -1,20 +1,20 @@
 /*
- * Generic driver for the MPSC (UART mode) on Marvell parts (e.g., GT64240,
- * GT64260, MV64340, MV64360, GT96100, ... ).
- *
- * Author: Mark A. Greer <mgreer@mvista.com>
- *
- * Based on an old MPSC driver that was in the beepppc tree.  It appears to
- * have been created by Chris Zankel (formerly of MontaVista) but there
- * is no proper Copyright so I'm not sure.  Apparently, parts were also
- * taken from PPCBoot (now U-Boot).  Also based on drivers/serial/8250.c
- * by Russell King.
- *
- * 2004 (c) MontaVista, Software, Inc.  This file is licensed under
- * the terms of the GNU General Public License version 2.  This program
- * is licensed "as is" without any warranty of any kind, whether express
- * or implied.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * The MPSC interface is much like a typical network controller's interface.
  * That is, you set up separate rings of descriptors for transmitting and

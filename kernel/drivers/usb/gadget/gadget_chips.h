@@ -1,17 +1,20 @@
 /*
- * USB device controllers have lots of quirks.  Use these macros in
- * gadget drivers or other code that needs to deal with them, and which
- * autoconfigures instead of using early binding to the hardware.
- *
- * This SHOULD eventually work like the ARM mach_is_*() stuff, driven by
- * some config file that gets updated as new hardware is supported.
- * (And avoiding all runtime comparisons in typical one-choice configs!)
- *
- * NOTE:  some of these controller drivers may not be available yet.
- * Some are available on 2.4 kernels; several are available, but not
- * yet pushed in the 2.6 mainline tree.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __GADGET_CHIPS_H
 #define __GADGET_CHIPS_H
 

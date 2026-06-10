@@ -1,32 +1,20 @@
 /*
- *	Executive OSM
- *
- * 	Copyright (C) 1999-2002	Red Hat Software
- *
- *	Written by Alan Cox, Building Number Three Ltd
- *
- *	This program is free software; you can redistribute it and/or modify it
- *	under the terms of the GNU General Public License as published by the
- *	Free Software Foundation; either version 2 of the License, or (at your
- *	option) any later version.
- *
- *	A lot of the I2O message side code from this is taken from the Red
- *	Creek RCPCI45 adapter driver by Red Creek Communications
- *
- *	Fixes/additions:
- *		Philipp Rumpf
- *		Juha Sievänen <Juha.Sievanen@cs.Helsinki.FI>
- *		Auvo Häkkinen <Auvo.Hakkinen@cs.Helsinki.FI>
- *		Deepak Saxena <deepak@plexity.net>
- *		Boji T Kannanthanam <boji.t.kannanthanam@intel.com>
- *		Alan Cox <alan@lxorguk.ukuu.org.uk>:
- *			Ported to Beep 2.5.
- *		Markus Lidel <Markus.Lidel@shadowconnect.com>:
- *			Minor fixes for 2.6.
- *		Markus Lidel <Markus.Lidel@shadowconnect.com>:
- *			Support for sysfs included.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/i2o.h>
 #include <beep/delay.h>

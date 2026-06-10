@@ -1,21 +1,20 @@
-/* 
- *  Copyright (C) 1997	Wu Ching Chen
- *  2.1.x update (C) 1998  Krzysztof G. Baranowski
- *  2.5.x update (C) 2002  Red Hat
- *  2.6.x update (C) 2004  Red Hat
- *
- * Marcelo Tosatti <marcelo@conectiva.com.br> : SMP fixes
- *
- * Wu Ching Chen : NULL pointer fixes  2000/06/02
- *		   support atp876 chip
- *		   enable 32 bit fifo transfer
- *		   support cdrom & remove device run ultra speed
- *		   fix disconnect bug  2000/12/21
- *		   support atp880 chip lvd u160 2001/05/15
- *		   fix prd table bug 2001/09/12 (7.1)
- *
- * atp885 support add by ACARD Hao Ping Lian 2005/01/05
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/interrupt.h>

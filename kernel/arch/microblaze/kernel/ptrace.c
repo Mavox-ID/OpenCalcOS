@@ -1,29 +1,20 @@
 /*
- * `ptrace' system call
- *
- * Copyright (C) 2008-2009 Michal Simek <monstr@monstr.eu>
- * Copyright (C) 2007-2009 PetaLogix
- * Copyright (C) 2004-2007 John Williams <john.williams@petalogix.com>
- *
- * derived from arch/v850/kernel/ptrace.c
- *
- * Copyright (C) 2002,03 NEC Electronics Corporation
- * Copyright (C) 2002,03 Miles Bader <miles@gnu.org>
- *
- * Derived from arch/mips/kernel/ptrace.c:
- *
- * Copyright (C) 1992 Ross Biro
- * Copyright (C) Linus Torvalds
- * Copyright (C) 1994, 95, 96, 97, 98, 2000 Ralf Baechle
- * Copyright (C) 1996 David S. Miller
- * Kevin D. Kissell, kevink@mips.com and Carsten Langgaard, carstenl@mips.com
- * Copyright (C) 1999 MIPS Technologies, Inc.
- *
- * This file is subject to the terms and conditions of the GNU General
- * Public License. See the file COPYING in the main directory of this
- * archive for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/mm.h>
 #include <beep/sched.h>

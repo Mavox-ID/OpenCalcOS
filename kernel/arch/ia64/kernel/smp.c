@@ -1,23 +1,20 @@
 /*
- * SMP Support
- *
- * Copyright (C) 1999 Walt Drummond <drummond@vabeep.com>
- * Copyright (C) 1999, 2001, 2003 David Mosberger-Tang <davidm@hpl.hp.com>
- *
- * Lots of stuff stolen from arch/alpha/kernel/smp.c
- *
- * 01/05/16 Rohit Seth <rohit.seth@intel.com>  IA64-SMP functions. Reorganized
- * the existing code (on the lines of x86 port).
- * 00/09/11 David Mosberger <davidm@hpl.hp.com> Do loops_per_jiffy
- * calibration on each CPU.
- * 00/08/23 Asit Mallick <asit.k.mallick@intel.com> fixed logical processor id
- * 00/03/31 Rohit Seth <rohit.seth@intel.com>	Fixes for Bootstrap Processor
- * & cpu_online_map now gets done here (instead of setup.c)
- * 99/10/05 davidm	Update to bring it in sync with new command-line processing
- *  scheme.
- * 10/13/00 Goutham Rao <goutham.rao@intel.com> Updated smp_call_function and
- *		smp_call_function_single to resend IPI on timeouts
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/sched.h>

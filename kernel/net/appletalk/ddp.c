@@ -1,56 +1,20 @@
 /*
- *	DDP:	An implementation of the AppleTalk DDP protocol for
- *		Ethernet 'ELAP'.
- *
- *		Alan Cox  <alan@lxorguk.ukuu.org.uk>
- *
- *		With more than a little assistance from
- *
- *		Wesley Craig <netatalk@umich.edu>
- *
- *	Fixes:
- *		Neil Horman		:	Added missing device ioctls
- *		Michael Callahan	:	Made routing work
- *		Wesley Craig		:	Fix probing to listen to a
- *						passed node id.
- *		Alan Cox		:	Added send/recvmsg support
- *		Alan Cox		:	Moved at. to protinfo in
- *						socket.
- *		Alan Cox		:	Added firewall hooks.
- *		Alan Cox		:	Supports new ARPHRD_LOOPBACK
- *		Christer Weinigel	: 	Routing and /proc fixes.
- *		Bradford Johnson	:	LocalTalk.
- *		Tom Dyas		:	Module support.
- *		Alan Cox		:	Hooks for PPP (based on the
- *						LocalTalk hook).
- *		Alan Cox		:	Posix bits
- *		Alan Cox/Mike Freeman	:	Possible fix to NBP problems
- *		Bradford Johnson	:	IP-over-DDP (experimental)
- *		Jay Schulist		:	Moved IP-over-DDP to its own
- *						driver file. (ipddp.c & ipddp.h)
- *		Jay Schulist		:	Made work as module with
- *						AppleTalk drivers, cleaned it.
- *		Rob Newberry		:	Added proxy AARP and AARP
- *						procfs, moved probing to AARP
- *						module.
- *              Adrian Sun/
- *              Michael Zuelsdorff      :       fix for net.0 packets. don't
- *                                              allow illegal ether/tokentalk
- *                                              port assignment. we lose a
- *                                              valid localtalk port as a
- *                                              result.
- *		Arnaldo C. de Melo	:	Cleanup, in preparation for
- *						shared skb support 8)
- *		Arnaldo C. de Melo	:	Move proc stuff to atalk_proc.c,
- *						use seq_file
- *
- *		This program is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/capability.h>
 #include <beep/module.h>
 #include <beep/if_arp.h>

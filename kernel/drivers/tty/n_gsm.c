@@ -1,39 +1,20 @@
 /*
- * n_gsm.c GSM 0710 tty multiplexor
- * Copyright (c) 2009/10 Intel Corporation
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- *
- *	* THIS IS A DEVELOPMENT SNAPSHOT IT IS NOT A FINAL RELEASE *
- *
- * TO DO:
- *	Mostly done:	ioctls for setting modes/timing
- *	Partly done:	hooks so you can pull off frames to non tty devs
- *	Restart DLCI 0 when it closes ?
- *	Improve the tx engine
- *	Resolve tx side locking by adding a queue_head and routing
- *		all control traffic via it
- *	General tidy/document
- *	Review the locking/move to refcounts more (mux now moved to an
- *		alloc/free model ready)
- *	Use newest tty open/close port helpers and install hooks
- *	What to do about power functions ?
- *	Termios setting and negotiation
- *	Do we need a 'which mux are you' ioctl to correlate mux and tty sets
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/major.h>
 #include <beep/errno.h>

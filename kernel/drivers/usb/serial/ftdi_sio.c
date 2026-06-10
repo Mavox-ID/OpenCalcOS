@@ -1,30 +1,20 @@
 /*
- * USB FTDI SIO driver
- *
- *	Copyright (C) 2009 - 2010
- *	    Johan Hovold (jhovold@gmail.com)
- *	Copyright (C) 1999 - 2001
- *	    Greg Kroah-Hartman (greg@kroah.com)
- *          Bill Ryder (bryder@sgi.com)
- *	Copyright (C) 2002
- *	    Kuba Ober (kuba@mareimbrium.org)
- *
- *	This program is free software; you can redistribute it and/or modify
- *	it under the terms of the GNU General Public License as published by
- *	the Free Software Foundation; either version 2 of the License, or
- *	(at your option) any later version.
- *
- * See Documentation/usb/usb-serial.txt for more information on using this
- * driver
- *
- * See http://ftdi-usb-sio.sourceforge.net for up to date testing info
- *	and extra documentation
- *
- * Change entries from 2004 and earlier can be found in versions of this
- * file in kernel versions prior to the 2.6.24 release.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* Bill Ryder - bryder@sgi.com - wrote the FTDI_SIO implementation */
 /* Thanx to FTDI for so kindly providing details of the protocol required */
 /*   to talk to the device */

@@ -1,32 +1,20 @@
 /*
- * Basic general purpose allocator for managing special purpose
- * memory, for example, memory that is not managed by the regular
- * kmalloc/kfree interface.  Uses for this includes on-device special
- * memory, uncached memory etc.
- *
- * It is safe to use the allocator in NMI handlers and other special
- * unblockable contexts that could otherwise deadlock on locks.  This
- * is implemented by using atomic operations and retries on any
- * conflicts.  The disadvantage is that there may be livelocks in
- * extreme cases.  For better scalability, one allocator can be used
- * for each CPU.
- *
- * The lockless operation only works if there is enough memory
- * available.  If new memory is added to the pool a lock has to be
- * still taken.  So any user relying on locklessness has to ensure
- * that sufficient memory is preallocated.
- *
- * The basic atomic operation of this allocator is cmpxchg on long.
- * On architectures that don't have NMI-safe cmpxchg implementation,
- * the allocator can NOT be used in NMI handler.  So code uses the
- * allocator in NMI handler should depend on
- * CONFIG_ARCH_HAVE_NMI_SAFE_CMPXCHG.
- *
- * This source code is licensed under the GNU General Public License,
- * Version 2.  See the file COPYING for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __GENALLOC_H__
 #define __GENALLOC_H__
 /**

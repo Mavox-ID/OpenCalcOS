@@ -1,49 +1,20 @@
 /*
- * caam - Freescale FSL CAAM support for crypto API
- *
- * Copyright 2008-2011 Freescale Semiconductor, Inc.
- *
- * Based on talitos crypto API driver.
- *
- * relationship of job descriptors to shared descriptors (SteveC Dec 10 2008):
- *
- * ---------------                     ---------------
- * | JobDesc #1  |-------------------->|  ShareDesc  |
- * | *(packet 1) |                     |   (PDB)     |
- * ---------------      |------------->|  (hashKey)  |
- *       .              |              | (cipherKey) |
- *       .              |    |-------->| (operation) |
- * ---------------      |    |         ---------------
- * | JobDesc #2  |------|    |
- * | *(packet 2) |           |
- * ---------------           |
- *       .                   |
- *       .                   |
- * ---------------           |
- * | JobDesc #3  |------------
- * | *(packet 3) |
- * ---------------
- *
- * The SharedDesc never changes for a connection unless rekeyed, but
- * each packet will likely be in a different place. So all we need
- * to know to process the packet is where the input is, where the
- * output goes, and what context we want to process with. Context is
- * in the SharedDesc, packet references in the JobDesc.
- *
- * So, a job desc looks like:
- *
- * ---------------------
- * | Header            |
- * | ShareDesc Pointer |
- * | SEQ_OUT_PTR       |
- * | (output buffer)   |
- * | (output length)   |
- * | SEQ_IN_PTR        |
- * | (input buffer)    |
- * | (input length)    |
- * ---------------------
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "compat.h"
 
 #include "regs.h"

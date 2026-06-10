@@ -1,39 +1,19 @@
 /*
-* Host Controller Driver for the Elan Digital Systems U132 adapter
-*
-* Copyright(C) 2006 Elan Digital Systems Limited
-* http://www.elandigitalsystems.com
-*
-* Author and Maintainer - Tony Olech - Elan Digital Systems
-* tony.olech@elandigitalsystems.com
-*
-* This program is free software;you can redistribute it and/or
-* modify it under the terms of the GNU General Public License as
-* published by the Free Software Foundation, version 2.
-*
-*
-* This driver was written by Tony Olech(tony.olech@elandigitalsystems.com)
-* based on various USB host drivers in the 2.6.15 beep kernel
-* with constant reference to the 3rd Edition of Beep Device Drivers
-* published by O'Reilly
-*
-* The U132 adapter is a USB to CardBus adapter specifically designed
-* for PC cards that contain an OHCI host controller. Typical PC cards
-* are the Orange Mobile 3G Option GlobeTrotter Fusion card.
-*
-* The U132 adapter will *NOT *work with PC cards that do not contain
-* an OHCI controller. A simple way to test whether a PC card has an
-* OHCI controller as an interface is to insert the PC card directly
-* into a laptop(or desktop) with a CardBus slot and if "lspci" shows
-* a new USB controller and "lsusb -v" shows a new OHCI Host Controller
-* then there is a good chance that the U132 adapter will support the
-* PC card.(you also need the specific client driver for the PC card)
-*
-* Please inform the Author and Maintainer about any PC cards that
-* contain OHCI Host Controller and work when directly connected to
-* an embedded CardBus slot but do not work when they are connected
-* via an ELAN U132 adapter.
-*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 #include <beep/kernel.h>
 #include <beep/module.h>

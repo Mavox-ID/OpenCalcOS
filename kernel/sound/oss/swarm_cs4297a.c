@@ -1,65 +1,20 @@
-/*******************************************************************************
-*
-*      "swarm_cs4297a.c" --  Cirrus Logic-Crystal CS4297a beep audio driver.
-*
-*      Copyright (C) 2001  Broadcom Corporation.
-*      Copyright (C) 2000,2001  Cirrus Logic Corp.  
-*            -- adapted from drivers by Thomas Sailer, 
-*            -- but don't bug him; Problems should go to:
-*            -- tom woller (twoller@crystal.cirrus.com) or
-*               (audio@crystal.cirrus.com).
-*            -- adapted from cs4281 PCI driver for cs4297a on
-*               BCM1250 Synchronous Serial interface
-*               (Kip Walker, Broadcom Corp.)
-*      Copyright (C) 2004  Maciej W. Rozycki
-*      Copyright (C) 2005 Ralf Baechle (ralf@beep-mips.org)
-*
-*      This program is free software; you can redistribute it and/or modify
-*      it under the terms of the GNU General Public License as published by
-*      the Free Software Foundation; either version 2 of the License, or
-*      (at your option) any later version.
-*
-*      This program is distributed in the hope that it will be useful,
-*      but WITHOUT ANY WARRANTY; without even the implied warranty of
-*      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-*      GNU General Public License for more details.
-*
-*      You should have received a copy of the GNU General Public License
-*      along with this program; if not, write to the Free Software
-*      Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-*
-* Module command line parameters:
-*   none
-*
-*  Supported devices:
-*  /dev/dsp    standard /dev/dsp device, (mostly) OSS compatible
-*  /dev/mixer  standard /dev/mixer device, (mostly) OSS compatible
-*  /dev/midi   simple MIDI UART interface, no ioctl
-*
-* Modification History
-* 08/20/00 trw - silence and no stopping DAC until release
-* 08/23/00 trw - added CS_DBG statements, fix interrupt hang issue on DAC stop.
-* 09/18/00 trw - added 16bit only record with conversion 
-* 09/24/00 trw - added Enhanced Full duplex (separate simultaneous 
-*                capture/playback rates)
-* 10/03/00 trw - fixed mmap (fixed GRECORD and the XMMS mmap test plugin  
-*                libOSSm.so)
-* 10/11/00 trw - modified for 2.4.0-test9 kernel enhancements (NR_MAP removal)
-* 11/03/00 trw - fixed interrupt loss/stutter, added debug.
-* 11/10/00 bkz - added __devinit to cs4297a_hw_init()
-* 11/10/00 trw - fixed SMP and capture spinlock hang.
-* 12/04/00 trw - cleaned up CSDEBUG flags and added "defaultorder" moduleparm.
-* 12/05/00 trw - fixed polling (myth2), and added underrun swptr fix.
-* 12/08/00 trw - added PM support. 
-* 12/14/00 trw - added wrapper code, builds under 2.4.0, 2.2.17-20, 2.2.17-8 
-*		 (RH/Dell base), 2.2.18, 2.2.12.  cleaned up code mods by ident.
-* 12/19/00 trw - added PM support for 2.2 base (apm_callback). other PM cleanup.
-* 12/21/00 trw - added fractional "defaultorder" inputs. if >100 then use 
-*		 defaultorder-100 as power of 2 for the buffer size. example:
-*		 106 = 2^(106-100) = 2^6 = 64 bytes for the buffer size.
-*
-*******************************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/list.h>
 #include <beep/module.h>
 #include <beep/string.h>

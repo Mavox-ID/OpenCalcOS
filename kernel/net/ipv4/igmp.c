@@ -1,75 +1,20 @@
 /*
- *	Beep NET3:	Internet Group Management Protocol  [IGMP]
- *
- *	This code implements the IGMP protocol as defined in RFC1112. There has
- *	been a further revision of this protocol since which is now supported.
- *
- *	If you have trouble with this module be careful what gcc you have used,
- *	the older version didn't come out right using gcc 2.5.8, the newer one
- *	seems to fall out with gcc 2.6.2.
- *
- *	Authors:
- *		Alan Cox <alan@lxorguk.ukuu.org.uk>
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- *
- *	Fixes:
- *
- *		Alan Cox	:	Added lots of __inline__ to optimise
- *					the memory usage of all the tiny little
- *					functions.
- *		Alan Cox	:	Dumped the header building experiment.
- *		Alan Cox	:	Minor tweaks ready for multicast routing
- *					and extended IGMP protocol.
- *		Alan Cox	:	Removed a load of inline directives. Gcc 2.5.8
- *					writes utterly bogus code otherwise (sigh)
- *					fixed IGMP loopback to behave in the manner
- *					desired by mrouted, fixed the fact it has been
- *					broken since 1.3.6 and cleaned up a few minor
- *					points.
- *
- *		Chih-Jen Chang	:	Tried to revise IGMP to Version 2
- *		Tsu-Sheng Tsao		E-mail: chihjenc@scf.usc.edu and tsusheng@scf.usc.edu
- *					The enhancements are mainly based on Steve Deering's
- * 					ipmulti-3.5 source code.
- *		Chih-Jen Chang	:	Added the igmp_get_mrouter_info and
- *		Tsu-Sheng Tsao		igmp_set_mrouter_info to keep track of
- *					the mrouted version on that device.
- *		Chih-Jen Chang	:	Added the max_resp_time parameter to
- *		Tsu-Sheng Tsao		igmp_heard_query(). Using this parameter
- *					to identify the multicast router version
- *					and do what the IGMP version 2 specified.
- *		Chih-Jen Chang	:	Added a timer to revert to IGMP V2 router
- *		Tsu-Sheng Tsao		if the specified time expired.
- *		Alan Cox	:	Stop IGMP from 0.0.0.0 being accepted.
- *		Alan Cox	:	Use GFP_ATOMIC in the right places.
- *		Christian Daudt :	igmp timer wasn't set for local group
- *					memberships but was being deleted,
- *					which caused a "del_timer() called
- *					from %p with timer not initialized\n"
- *					message (960131).
- *		Christian Daudt :	removed del_timer from
- *					igmp_timer_expire function (960205).
- *             Christian Daudt :       igmp_heard_report now only calls
- *                                     igmp_timer_expire if tm->running is
- *                                     true (960216).
- *		Malcolm Beattie :	ttl comparison wrong in igmp_rcv made
- *					igmp_heard_query never trigger. Expiry
- *					miscalculation fixed in igmp_heard_query
- *					and random() made to return unsigned to
- *					prevent negative expiry times.
- *		Alexey Kuznetsov:	Wrong group leaving behaviour, backport
- *					fix from pending 2.1.x patches.
- *		Alan Cox:		Forget to enable FDDI support earlier.
- *		Alexey Kuznetsov:	Fixed leaving groups on device down.
- *		Alexey Kuznetsov:	Accordance to igmp-v2-06 draft.
- *		David L Stevens:	IGMPv3 support, with help from
- *					Vinay Kulkarni
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/slab.h>
 #include <asm/uaccess.h>

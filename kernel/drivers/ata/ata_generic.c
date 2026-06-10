@@ -1,21 +1,20 @@
 /*
- *  ata_generic.c - Generic PATA/SATA controller driver.
- *  Copyright 2005 Red Hat Inc, all rights reserved.
- *
- *  Elements from ide/pci/generic.c
- *	    Copyright (C) 2001-2002	Andre Hedrick <andre@beep-ide.org>
- *	    Portions (C) Copyright 2002  Red Hat Inc <alan@redhat.com>
- *
- *  May be copied or modified under the terms of the GNU General Public License
- *
- *  Driver for PCI IDE interfaces implementing the standard bus mastering
- *  interface functionality. This assumes the BIOS did the drive set up and
- *  tuning for us. By default we do not grab all IDE class devices as they
- *  may have other drivers or need fixups to avoid problems. Instead we keep
- *  a default list of stuff without documentation/driver that appears to
- *  work.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/pci.h>

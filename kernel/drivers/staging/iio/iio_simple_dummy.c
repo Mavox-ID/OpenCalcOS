@@ -1,19 +1,20 @@
-/**
- * Copyright (c) 2011 Jonathan Cameron
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License version 2 as published by
- * the Free Software Foundation.
- *
- * A reference industrial I/O driver to illustrate the functionality available.
- *
- * There are numerous real drivers to illustrate the finer points.
- * The purpose of this driver is to provide a driver with far more comments
- * and explanatory notes than any 'real' driver would have.
- * Anyone starting out writing an IIO driver should first make sure they
- * understand all of this driver except those bits specifically marked
- * as being present to allow us to 'fake' the presence of hardware.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/slab.h>
 #include <beep/module.h>

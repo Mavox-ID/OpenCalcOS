@@ -1,13 +1,20 @@
 /*
- * recordmcount.c: construct a table of the locations of calls to 'mcount'
- * so that ftrace can find them quickly.
- * Copyright 2009 John F. Reiser <jreiser@BitWagon.com>.  All rights reserved.
- * Licensed under the GNU General Public License, version 2 (GPLv2).
- *
- * Restructured to fit Beep format, as well as other updates:
- *  Copyright 2010 Steven Rostedt <srostedt@redhat.com>, Red Hat Inc.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * Strategy: alter the .o file in-place.
  *

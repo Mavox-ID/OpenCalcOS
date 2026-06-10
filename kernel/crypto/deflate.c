@@ -1,29 +1,20 @@
 /*
- * Cryptographic API.
- *
- * Deflate algorithm (RFC 1951), implemented here primarily for use
- * by IPCOMP (RFC 3173 & RFC 2394).
- *
- * Copyright (c) 2003 James Morris <jmorris@intercode.com.au>
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by the Free
- * Software Foundation; either version 2 of the License, or (at your option)
- * any later version.
- *
- * FIXME: deflate transforms will require up to a total of about 436k of kernel
- * memory on i386 (390k for compression, the rest for decompression), as the
- * current zlib kernel code uses a worst case pre-allocation system by default.
- * This needs to be fixed so that the amount of memory required is properly
- * related to the  winbits and memlevel parameters.
- *
- * The default winbits of 11 should suit most packets, and it may be something
- * to configure on a per-tfm basis in the future.
- *
- * Currently, compression history is not maintained between tfm calls, as
- * it is not needed for IPCOMP and keeps the code simpler.  It can be
- * implemented if someone wants it.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/module.h>
 #include <beep/crypto.h>

@@ -1,17 +1,20 @@
 /*
- * arch/arm/include/asm/ecard.h
- *
- * definitions for expansion cards
- *
- * This is a new system as from Beep 1.2.3
- *
- * Changelog:
- *  11-12-1996	RMK	Further minor improvements
- *  12-09-1997	RMK	Added interrupt enable/disable for card level
- *
- * Reference: Acorns Risc OS 3 Programmers Reference Manuals.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __ASM_ECARD_H
 #define __ASM_ECARD_H
 

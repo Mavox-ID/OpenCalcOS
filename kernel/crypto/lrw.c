@@ -1,16 +1,20 @@
-/* LRW: as defined by Cyril Guyot in
- *	http://grouper.ieee.org/groups/1619/email/pdf00017.pdf
- *
- * Copyright (c) 2006 Rik Snel <rsnel@cube.dyndns.org>
- *
- * Based on ecb.c
- * Copyright (c) 2006 Herbert Xu <herbert@gondor.apana.org.au>
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by the Free
- * Software Foundation; either version 2 of the License, or (at your option)
- * any later version.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* This implementation is checked against the test vectors in the above
  * document and by a test vector provided by Ken Buchanan at
  * http://www.mail-archive.com/stds-p1619@listserv.ieee.org/msg00173.html

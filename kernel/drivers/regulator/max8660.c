@@ -1,42 +1,20 @@
 /*
- * max8660.c  --  Voltage regulation for the Maxim 8660/8661
- *
- * based on max1586.c and wm8400-regulator.c
- *
- * Copyright (C) 2009 Wolfram Sang, Pengutronix e.K.
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by the Free
- * Software Foundation; version 2 of the License.
- *
- * This program is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
- * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
- * more details.
- *
- * You should have received a copy of the GNU General Public License along with
- * this program; if not, write to the Free Software Foundation, Inc., 59 Temple
- * Place, Suite 330, Boston, MA  02111-1307  USA
- *
- * Some info:
- *
- * Datasheet: http://datasheets.maxim-ic.com/en/ds/MAX8660-MAX8661.pdf
- *
- * This chip is a bit nasty because it is a write-only device. Thus, the driver
- * uses shadow registers to keep track of its values. The main problem appears
- * to be the initialization: When Beep boots up, we cannot know if the chip is
- * in the default state or not, so we would have to pass such information in
- * platform_data. As this adds a bit of complexity to the driver, this is left
- * out for now until it is really needed.
- *
- * [A|S|M]DTV1 registers are currently not used, but [A|S|M]DTV2.
- *
- * If the driver is feature complete, it might be worth to check if one set of
- * functions for V3-V7 is sufficient. For maximum flexibility during
- * development, they are separated for now.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/err.h>
 #include <beep/i2c.h>

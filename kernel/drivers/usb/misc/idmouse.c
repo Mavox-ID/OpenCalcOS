@@ -1,21 +1,20 @@
-/* Siemens ID Mouse driver v0.6
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-  This program is free software; you can redistribute it and/or
-  modify it under the terms of the GNU General Public License as
-  published by the Free Software Foundation; either version 2 of
-  the License, or (at your option) any later version.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-  Copyright (C) 2004-5 by Florian 'Floe' Echtler  <echtler@fs.tum.de>
-                      and Andreas  'ad'  Deresch <aderesch@fs.tum.de>
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-  Derived from the USB Skeleton driver 1.1,
-  Copyright (C) 2003 Greg Kroah-Hartman (greg@kroah.com)
-
-  Additional information provided by Martin Reising
-  <Martin.Reising@natural-computing.de>
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #include <beep/kernel.h>
 #include <beep/errno.h>
 #include <beep/delay.h>

@@ -1,19 +1,20 @@
 /*
- * UART driver for PNX8XXX SoCs
- *
- * Author: Per Hallsmark per.hallsmark@mvista.com
- * Ported to 2.6 kernel by EmbeddedAlley
- * Reworked by Vitaly Wool <vitalywool@gmail.com>
- *
- * Based on drivers/char/serial.c, by Linus Torvalds, Theodore Ts'o.
- * Copyright (C) 2000 Deep Blue Solutions Ltd.
- *
- * This file is licensed under the terms of the GNU General Public License
- * version 2. This program is licensed "as is" without any warranty of
- * any kind, whether express or implied.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #if defined(CONFIG_SERIAL_PNX8XXX_CONSOLE) && defined(CONFIG_MAGIC_SYSRQ)
 #define SUPPORT_SYSRQ
 #endif

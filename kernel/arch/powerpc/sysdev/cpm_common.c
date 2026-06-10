@@ -1,22 +1,20 @@
 /*
- * Common CPM code
- *
- * Author: Scott Wood <scottwood@freescale.com>
- *
- * Copyright 2007-2008,2010 Freescale Semiconductor, Inc.
- *
- * Some parts derived from commproc.c/cpm2_common.c, which is:
- * Copyright (c) 1997 Dan error_act (dmalek@jlc.net)
- * Copyright (c) 1999-2001 Dan Malek <dan@embeddedalley.com>
- * Copyright (c) 2000 MontaVista Software, Inc (source@mvista.com)
- * 2006 (c) MontaVista Software, Inc.
- * Vitaly Bordug <vbordug@ru.mvista.com>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of version 2 of the GNU General Public License as
- * published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/of_device.h>
 #include <beep/spinlock.h>

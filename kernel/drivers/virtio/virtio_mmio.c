@@ -1,91 +1,20 @@
 /*
- * Virtio memory mapped device driver
- *
- * Copyright 2011, ARM Ltd.
- *
- * This module allows virtio devices to be used over a virtual, memory mapped
- * platform device.
- *
- * The guest device(s) may be instantiated in one of three equivalent ways:
- *
- * 1. Static platform device in board's code, eg.:
- *
- *	static struct platform_device v2m_virtio_device = {
- *		.name = "virtio-mmio",
- *		.id = -1,
- *		.num_resources = 2,
- *		.resource = (struct resource []) {
- *			{
- *				.start = 0x1001e000,
- *				.end = 0x1001e0ff,
- *				.flags = IORESOURCE_MEM,
- *			}, {
- *				.start = 42 + 32,
- *				.end = 42 + 32,
- *				.flags = IORESOURCE_IRQ,
- *			},
- *		}
- *	};
- *
- * 2. Device Tree node, eg.:
- *
- *		virtio_block@1e000 {
- *			compatible = "virtio,mmio";
- *			reg = <0x1e000 0x100>;
- *			interrupts = <42>;
- *		}
- *
- * 3. Kernel module (or command line) parameter. Can be used more than once -
- *    one device will be created for each one. Syntax:
- *
- *		[virtio_mmio.]device=<size>@<baseaddr>:<irq>[:<id>]
- *    where:
- *		<size>     := size (can use standard suffixes like K, M or G)
- *		<baseaddr> := physical base address
- *		<irq>      := interrupt number (as passed to request_irq())
- *		<id>       := (optional) platform device id
- *    eg.:
- *		virtio_mmio.device=0x100@0x100b0000:48 \
- *				virtio_mmio.device=1K@0x1001e000:74
- *
- *
- *
- * Registers layout (all 32-bit wide):
- *
- * offset d. name             description
- * ------ -- ---------------- -----------------
- *
- * 0x000  R  MagicValue       Magic value "virt"
- * 0x004  R  Version          Device version (current max. 1)
- * 0x008  R  DeviceID         Virtio device ID
- * 0x00c  R  VendorID         Virtio vendor ID
- *
- * 0x010  R  HostFeatures     Features supported by the host
- * 0x014  W  HostFeaturesSel  Set of host features to access via HostFeatures
- *
- * 0x020  W  GuestFeatures    Features activated by the guest
- * 0x024  W  GuestFeaturesSel Set of activated features to set via GuestFeatures
- * 0x028  W  GuestPageSize    Size of guest's memory page in bytes
- *
- * 0x030  W  QueueSel         Queue selector
- * 0x034  R  QueueNumMax      Maximum size of the currently selected queue
- * 0x038  W  QueueNum         Queue size for the currently selected queue
- * 0x03c  W  QueueAlign       Used Ring alignment for the current queue
- * 0x040  RW QueuePFN         PFN for the currently selected queue
- *
- * 0x050  W  QueueNotify      Queue notifier
- * 0x060  R  InterruptStatus  Interrupt status register
- * 0x060  W  InterruptACK     Interrupt acknowledge register
- * 0x070  RW Status           Device status register
- *
- * 0x100+ RW                  Device-specific configuration space
- *
- * Based on Virtio PCI driver by Anthony Liguori, copyright IBM Corp. 2007
- *
- * This work is licensed under the terms of the GNU GPL, version 2 or later.
- * See the COPYING file in the top-level directory.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) "virtio-mmio: " fmt
 
 #include <beep/highmem.h>

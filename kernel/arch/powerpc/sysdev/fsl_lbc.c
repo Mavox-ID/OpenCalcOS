@@ -1,19 +1,20 @@
 /*
- * Freescale LBC and UPM routines.
- *
- * Copyright © 2007-2008  MontaVista Software, Inc.
- * Copyright © 2010 Freescale Semiconductor
- *
- * Author: Anton Vorontsov <avorontsov@ru.mvista.com>
- * Author: Jack Lan <Jack.Lan@freescale.com>
- * Author: Roy Zang <tie-fei.zang@freescale.com>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/export.h>
 #include <beep/kernel.h>

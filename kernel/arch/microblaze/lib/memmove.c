@@ -1,29 +1,20 @@
 /*
- * Copyright (C) 2008-2009 Michal Simek <monstr@monstr.eu>
- * Copyright (C) 2008-2009 PetaLogix
- * Copyright (C) 2007 John Williams
- *
- * Reasonably optimised generic C-code for memcpy on Microblaze
- * This is generic C code to do efficient, alignment-aware memmove.
- *
- * It is based on demo code originally Copyright 2001 by Intel Corp, taken from
- * http://www.embedded.com/showArticle.jhtml?articleID=19205567
- *
- * Attempts were made, unsuccessfully, to contact the original
- * author of this code (Michael Morrow, Intel).  Below is the original
- * copyright notice.
- *
- * This software has been developed by Intel Corporation.
- * Intel specifically disclaims all warranties, express or
- * implied, and all liability, including consequential and
- * other indirect damages, for the use of this program, including
- * liability for infringement of any proprietary rights,
- * and including the warranties of merchantability and fitness
- * for a particular purpose. Intel does not assume any
- * responsibility for and errors which may appear in this program
- * not any responsibility to update it.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/stddef.h>
 #include <beep/compiler.h>

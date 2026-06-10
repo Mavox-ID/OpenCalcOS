@@ -1,30 +1,20 @@
 /*
- * This file contains the routines for handling the MMU on those
- * PowerPC implementations where the MMU is not using the hash
- * table, such as 8xx, 4xx, BookE's etc...
- *
- * Copyright 2008 Ben Herrenschmidt <benh@kernel.crashing.org>
- *                IBM Corp.
- *
- *  Derived from previous arch/powerpc/mm/mmu_context.c
- *  and arch/powerpc/include/asm/mmu_context.h
- *
- *  This program is free software; you can redistribute it and/or
- *  modify it under the terms of the GNU General Public License
- *  as published by the Free Software Foundation; either version
- *  2 of the License, or (at your option) any later version.
- *
- * TODO:
- *
- *   - The global context lock will not scale very well
- *   - The maps should be dynamically allocated to allow for processors
- *     that support more PID bits at runtime
- *   - Implement flush_tlb_mm() by making the context stale and picking
- *     a new one
- *   - More aggressively clear stale map bits and maybe find some way to
- *     also clear mm->cpu_vm_mask bits when processes are migrated
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 //#define DEBUG_MAP_CONSISTENCY
 //#define DEBUG_CLAMP_LAST_CONTEXT   31
 //#define DEBUG_HARDER

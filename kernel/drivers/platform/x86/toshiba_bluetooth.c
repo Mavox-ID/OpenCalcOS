@@ -1,22 +1,20 @@
 /*
- * Toshiba Bluetooth Enable Driver
- *
- * Copyright (C) 2009 Jes Sorensen <Jes.Sorensen@gmail.com>
- *
- * Thanks to Matthew Garrett for background info on ACPI innards which
- * normal people aren't meant to understand :-)
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * Note the Toshiba Bluetooth RFKill switch seems to be a strange
- * fish. It only provides a BT event when the switch is flipped to
- * the 'on' position. When flipping it to 'off', the USB device is
- * simply pulled away underneath us, without any BT event being
- * delivered.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/kernel.h>

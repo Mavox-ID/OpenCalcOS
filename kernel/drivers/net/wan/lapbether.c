@@ -1,25 +1,20 @@
 /*
- *	"LAPB via ethernet" driver release 001
- *
- *	This code REQUIRES 2.1.15 or higher/ NET3.038
- *
- *	This module:
- *		This module is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- *
- *	This is a "pseudo" network driver to allow LAPB over Ethernet.
- *
- *	This driver can use any ethernet destination address, and can be 
- *	limited to accept frames from one dedicated ethernet card only.
- *
- *	History
- *	LAPBETH 001	Jonathan Naylor		Cloned from bpqether.c
- *	2000-10-29	Henner Eisen	lapb_data_indication() return status.
- *	2000-11-14	Henner Eisen	dev_hold/put, NETDEV_GOING_DOWN support
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/errno.h>

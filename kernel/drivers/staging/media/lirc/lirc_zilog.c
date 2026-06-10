@@ -1,44 +1,20 @@
 /*
- * i2c IR lirc driver for devices with zilog IR processors
- *
- * Copyright (c) 2000 Gerd Knorr <kraxel@goldbach.in-berlin.de>
- * modified for PixelView (BT878P+W/FM) by
- *      Michal Kochanowicz <mkochano@pld.org.pl>
- *      Christoph Bartelmus <lirc@bartelmus.de>
- * modified for KNC ONE TV Station/Anubis Typhoon TView Tuner by
- *      Ulrich Mueller <ulrich.mueller42@web.de>
- * modified for Asus TV-Box and Creative/VisionTek BreakOut-Box by
- *      Stefan Jahn <stefan@lkcc.org>
- * modified for inclusion into kernel sources by
- *      Jerome Brock <jbrock@users.sourceforge.net>
- * modified for Leadtek Winfast PVR2000 by
- *      Thomas Reitmayr (treitmayr@yahoo.com)
- * modified for Hauppauge PVR-150 IR TX device by
- *      Mark Weaver <mark@npsl.co.uk>
- * changed name from lirc_pvr150 to lirc_zilog, works on more than pvr-150
- *	Jarod Wilson <jarod@redhat.com>
- *
- * parts are cut&pasted from the lirc_i2c.c driver
- *
- * Numerous changes updating lirc_zilog.c in kernel 2.6.38 and later are
- * Copyright (C) 2011 Andy Walls <awalls@md.metrocast.net>
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kmod.h>
 #include <beep/kernel.h>

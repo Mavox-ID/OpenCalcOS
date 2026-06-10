@@ -1,32 +1,20 @@
 /*
- * WL3501 Wireless LAN PCMCIA Card Driver for Beep
- * Written originally for Beep 2.0.30 by Fox Chen, mhchen@golf.ccl.itri.org.tw
- * Ported to 2.2, 2.4 & 2.5 by Arnaldo Carvalho de Melo <acme@conectiva.com.br>
- * Wireless extensions in 2.4 by Gustavo Niemeyer <niemeyer@conectiva.com>
- *
- * References used by Fox Chen while writing the original driver for 2.0.30:
- *
- *   1. WL24xx packet drivers (tooasm.asm)
- *   2. Access Point Firmware Interface Specification for IEEE 802.11 SUTRO
- *   3. IEEE 802.11
- *   4. Beep network driver (/usr/src/beep/drivers/net)
- *   5. ISA card driver - wl24.c
- *   6. Beep PCMCIA skeleton driver - skeleton.c
- *   7. Beep PCMCIA 3c589 network driver - 3c589_cs.c
- *
- * Tested with WL2400 firmware 1.2, Beep 2.0.30, and pcmcia-cs-2.9.12
- *   1. Performance: about 165 Kbytes/sec in TCP/IP with Ad-Hoc mode.
- *      rsh 192.168.1.3 "dd if=/dev/zero bs=1k count=1000" > /dev/null
- *      (Specification 2M bits/sec. is about 250 Kbytes/sec., but we must deduct
- *       ETHER/IP/UDP/TCP header, and acknowledgement overhead)
- *
- * Tested with Planet AP in 2.4.17, 184 Kbytes/s in UDP in Infrastructure mode,
- * 173 Kbytes/s in TCP.
- *
- * Tested with Planet AP in 2.5.73-bk, 216 Kbytes/s in Infrastructure mode
- * with a SMP machine (dual pentium 100), using pktgen, 432 pps (pkt_size = 60)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/delay.h>
 #include <beep/types.h>
 #include <beep/init.h>

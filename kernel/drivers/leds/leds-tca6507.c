@@ -1,82 +1,20 @@
 /*
- * leds-tca6507
- *
- * The TCA6507 is a programmable LED controller that can drive 7
- * separate lines either by holding them low, or by pulsing them
- * with modulated width.
- * The modulation can be varied in a simple pattern to produce a blink or
- * double-blink.
- *
- * This driver can configure each line either as a 'GPIO' which is out-only
- * (no pull-up) or as an LED with variable brightness and hardware-assisted
- * blinking.
- *
- * Apart from OFF and ON there are three programmable brightness levels which
- * can be programmed from 0 to 15 and indicate how many 500usec intervals in
- * each 8msec that the led is 'on'.  The levels are named MASTER, BANK0 and
- * BANK1.
- *
- * There are two different blink rates that can be programmed, each with
- * separate time for rise, on, fall, off and second-off.  Thus if 3 or more
- * different non-trivial rates are required, software must be used for the extra
- * rates. The two different blink rates must align with the two levels BANK0 and
- * BANK1.
- * This driver does not support double-blink so 'second-off' always matches
- * 'off'.
- *
- * Only 16 different times can be programmed in a roughly logarithmic scale from
- * 64ms to 16320ms.  To be precise the possible times are:
- *    0, 64, 128, 192, 256, 384, 512, 768,
- *    1024, 1536, 2048, 3072, 4096, 5760, 8128, 16320
- *
- * Times that cannot be closely matched with these must be
- * handled in software.  This driver allows 12.5% error in matching.
- *
- * This driver does not allow rise/fall rates to be set explicitly.  When trying
- * to match a given 'on' or 'off' period, an appropriate pair of 'change' and
- * 'hold' times are chosen to get a close match.  If the target delay is even,
- * the 'change' number will be the smaller; if odd, the 'hold' number will be
- * the smaller.
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
- * Choosing pairs of delays with 12.5% errors allows us to match delays in the
- * ranges: 56-72, 112-144, 168-216, 224-27504, 28560-36720.
- * 26% of the achievable sums can be matched by multiple pairings. For example
- * 1536 == 1536+0, 1024+512, or 768+768.  This driver will always choose the
- * pairing with the least maximum - 768+768 in this case.  Other pairings are
- * not available.
- *
- * Access to the 3 levels and 2 blinks are on a first-come, first-served basis.
- * Access can be shared by multiple leds if they have the same level and
- * either same blink rates, or some don't blink.
- * When a led changes, it relinquishes access and tries again, so it might
- * lose access to hardware blink.
- * If a blink engine cannot be allocated, software blink is used.
- * If the desired brightness cannot be allocated, the closest available non-zero
- * brightness is used.  As 'full' is always available, the worst case would be
- * to have two different blink rates at '1', with Max at '2', then other leds
- * will have to choose between '2' and '16'.  Hopefully this is not likely.
- *
- * Each bank (BANK0 and BANK1) has two usage counts - LEDs using the brightness
- * and LEDs using the blink.  It can only be reprogrammed when the appropriate
- * counter is zero.  The MASTER level has a single usage count.
- *
- * Each Led has programmable 'on' and 'off' time as milliseconds.  With each
- * there is a flag saying if it was explicitly requested or defaulted.
- * Similarly the banks know if each time was explicit or a default.  Defaults
- * are permitted to be changed freely - they are not recognised when matching.
- *
- *
- * An led-tca6507 device must be provided with platform data.  This data
- * lists for each output: the name, default trigger, and whether the signal
- * is being used as a GPiO rather than an led.  'struct led_plaform_data'
- * is used for this.  If 'name' is NULL, the output isn't used.  If 'flags'
- * is TCA6507_MAKE_CPIO, the output is a GPO.
- * The "struct led_platform_data" can be embedded in a
- * "struct tca6507_platform_data" which adds a 'gpio_base' for the GPiOs,
- * and a 'setup' callback which is called once the GPiOs are available.
- *
- */
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/slab.h>
 #include <beep/leds.h>

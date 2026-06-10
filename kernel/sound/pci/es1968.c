@@ -1,99 +1,20 @@
 /*
- *  Driver for ESS Maestro 1/2/2E Sound Card (started 21.8.99)
- *  Copyright (c) by Matze Braun <MatzeBraun@gmx.de>.
- *                   Takashi Iwai <tiwai@suse.de>
- *                  
- *  Most of the driver code comes from Zach Brown(zab@redhat.com)
- *	Alan Cox OSS Driver
- *  Rewritted from card-es1938.c source.
- *
- *  TODO:
- *   Perhaps Synth
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 2 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, write to the Free Software
- *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
- *
- *
- *  Notes from Zach Brown about the driver code
- *
- *  Hardware Description
- *
- *	A working Maestro setup contains the Maestro chip wired to a 
- *	codec or 2.  In the Maestro we have the APUs, the ASSP, and the
- *	Wavecache.  The APUs can be though of as virtual audio routing
- *	channels.  They can take data from a number of sources and perform
- *	basic encodings of the data.  The wavecache is a storehouse for
- *	PCM data.  Typically it deals with PCI and interracts with the
- *	APUs.  The ASSP is a wacky DSP like device that ESS is loth
- *	to release docs on.  Thankfully it isn't required on the Maestro
- *	until you start doing insane things like FM emulation and surround
- *	encoding.  The codecs are almost always AC-97 compliant codecs, 
- *	but it appears that early Maestros may have had PT101 (an ESS
- *	part?) wired to them.  The only real difference in the Maestro
- *	families is external goop like docking capability, memory for
- *	the ASSP, and initialization differences.
- *
- *  Driver Operation
- *
- *	We only drive the APU/Wavecache as typical DACs and drive the
- *	mixers in the codecs.  There are 64 APUs.  We assign 6 to each
- *	/dev/dsp? device.  2 channels for output, and 4 channels for
- *	input.
- *
- *	Each APU can do a number of things, but we only really use
- *	3 basic functions.  For playback we use them to convert PCM
- *	data fetched over PCI by the wavecahche into analog data that
- *	is handed to the codec.  One APU for mono, and a pair for stereo.
- *	When in stereo, the combination of smarts in the APU and Wavecache
- *	decide which wavecache gets the left or right channel.
- *
- *	For record we still use the old overly mono system.  For each in
- *	coming channel the data comes in from the codec, through a 'input'
- *	APU, through another rate converter APU, and then into memory via
- *	the wavecache and PCI.  If its stereo, we mash it back into LRLR in
- *	software.  The pass between the 2 APUs is supposedly what requires us
- *	to have a 512 byte buffer sitting around in wavecache/memory.
- *
- *	The wavecache makes our life even more fun.  First off, it can
- *	only address the first 28 bits of PCI address space, making it
- *	useless on quite a few architectures.  Secondly, its insane.
- *	It claims to fetch from 4 regions of PCI space, each 4 meg in length.
- *	But that doesn't really work.  You can only use 1 region.  So all our
- *	allocations have to be in 4meg of each other.  Booo.  Hiss.
- *	So we have a module parameter, dsps_order, that is the order of
- *	the number of dsps to provide.  All their buffer space is allocated
- *	on open time.  The sonicvibes OSS routines we inherited really want
- *	power of 2 buffers, so we have all those next to each other, then
- *	512 byte regions for the recording wavecaches.  This ends up
- *	wasting quite a bit of memory.  The only fixes I can see would be 
- *	getting a kernel allocator that could work in zones, or figuring out
- *	just how to coerce the WP into doing what we want.
- *
- *	The indirection of the various registers means we have to spinlock
- *	nearly all register accesses.  We have the main register indirection
- *	like the wave cache, maestro registers, etc.  Then we have beasts
- *	like the APU interface that is indirect registers gotten at through
- *	the main maestro indirection.  Ouch.  We spinlock around the actual
- *	ports on a per card basis.  This means spinlock activity at each IO
- *	operation, but the only IO operation clusters are in non critical 
- *	paths and it makes the code far easier to follow.  Interrupts are
- *	blocked while holding the locks because the int handler has to
- *	get at some of them :(.  The mixer interface doesn't, however.
- *	We also have an OSS state lock that is thrown around in a few
- *	places.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <asm/io.h>
 #include <beep/delay.h>
 #include <beep/interrupt.h>

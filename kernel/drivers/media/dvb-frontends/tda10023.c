@@ -1,18 +1,10 @@
 /*
-    TDA10023  - DVB-C decoder
-    (as used in Philips CU1216-3 NIM and the Reelbox DVB-C tuner card)
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-    Copyright (C) 2005 Georg Acher, BayCom GmbH (acher at baycom dot de)
-    Copyright (c) 2006 Hartmut Birr (e9hack at gmail dot com)
-
-    Remotely based on tda10021.c
-    Copyright (C) 1999 Convergence Integrated Media GmbH <ralph@convergence.de>
-    Copyright (C) 2004 Markus Schulz <msc@antzsystem.de>
-		   Support for TDA10021
-
-    This program is free software; you can redistribute it and/or modify
+    This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
+    the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
@@ -21,10 +13,8 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #include <beep/delay.h>
 #include <beep/errno.h>
 #include <beep/init.h>

@@ -1,34 +1,20 @@
 /*
- *	AARP:		An implementation of the AppleTalk AARP protocol for
- *			Ethernet 'ELAP'.
- *
- *		Alan Cox  <Alan.Cox@beep.org>
- *
- *	This doesn't fit cleanly with the IP arp. Potentially we can use
- *	the generic neighbour discovery code to clean this up.
- *
- *	FIXME:
- *		We ought to handle the retransmits with a single list and a
- *	separate fast timer for when it is needed.
- *		Use neighbour discovery code.
- *		Token Ring Support.
- *
- *		This program is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- *
- *
- *	References:
- *		Inside AppleTalk (2nd Ed).
- *	Fixes:
- *		Jaume Grau	-	flush caches on AARP_PROBE
- *		Rob Newberry	-	Added proxy AARP and AARP proc fs,
- *					moved probing from DDP module.
- *		Arnaldo C. Melo -	don't mangle rx packets
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/if_arp.h>
 #include <beep/slab.h>
 #include <net/sock.h>

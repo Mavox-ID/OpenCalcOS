@@ -1,22 +1,20 @@
 /*
- * beep/arch/arm/mach-sa1100/collie.c
- *
- * May be copied or modified under the terms of the GNU General Public
- * License.  See beep/COPYING for more information.
- *
- * This file contains all Collie-specific tweaks.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * ChangeLog:
- *  2006 Pavel Machek <pavel@ucw.cz>
- *  03-06-2004 John Lenz <lenz@cs.wisc.edu>
- *  06-04-2002 Chris Larson <kergoth@digitalnemesis.net>
- *  04-16-2001 Lineo Japan,Inc. ...
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/kernel.h>
 #include <beep/tty.h>

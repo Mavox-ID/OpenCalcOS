@@ -1,33 +1,20 @@
 /*
- * beep/drivers/video/sstfb.c -- voodoo graphics frame buffer
- *
- *     Copyright (c) 2000-2002 Ghozlane Toumi <gtoumi@laposte.net>
- *
- *     Created 15 Jan 2000 by Ghozlane Toumi
- *
- * Contributions (and many thanks) :
- *
- * 03/2001 James Simmons   <jsimmons@infradead.org>
- * 04/2001 Paul Mundt      <lethal@chaoticdreams.org>
- * 05/2001 Urs Ganse       <ursg@uni.de>
- *	(initial work on voodoo2 port, interlace)
- * 09/2002 Helge Deller    <deller@gmx.de>
- *	(enable driver on big-endian machines (hppa), ioctl fixes)
- * 12/2002 Helge Deller    <deller@gmx.de>
- *	(port driver to new frambuffer infrastructure)
- * 01/2003 Helge Deller    <deller@gmx.de>
- *	(initial work on fb hardware acceleration for voodoo2)
- * 08/2006 Alan Cox 	   <alan@redhat.com>
- *	Remove never finished and bogus 24/32bit support
- *	Clean up macro abuse
- *	Minor tidying for format.
- * 12/2006 Helge Deller    <deller@gmx.de>
- *	add /sys/class/graphics/fbX/vgapass sysfs-interface
- *	add module option "mode_option" to set initial screen mode
- *	use fbdev default videomode database
- *	remove debug functions from ioctl
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * The voodoo1 has the following memory mapped address space:
  * 0x000000 - 0x3fffff : registers              (4MB)

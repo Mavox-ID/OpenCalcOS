@@ -1,33 +1,20 @@
-/* dummy.c: a dummy net driver
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-	The purpose of this driver is to provide a device to point a
-	route through, but not to actually transmit packets.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-	Why?  If you have a machine whose only connection is an occasional
-	PPP/SLIP/PLIP link, you can only connect to your own hostname
-	when the link is up.  Otherwise you have to use localhost.
-	This isn't very consistent.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-	One solution is to set up a dummy link using PPP/SLIP/PLIP,
-	but this seems (to me) too much overhead for too little gain.
-	This driver provides a small alternative. Thus you can do
-
-	[when not running slip]
-		ifconfig dummy slip.addr.ess.here up
-	[to go to slip]
-		ifconfig dummy down
-		dip whatever
-
-	This was written by looking at Donald Becker's skeleton driver
-	and the loopback driver.  I then threw away anything that didn't
-	apply!	Thanks to Alan Cox for the key clue on what to do with
-	misguided packets.
-
-			Nick Holloway, 27th May 1994
-	[I tweaked this explanation a little but that's all]
-			Alan Cox, 30th May 1994
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/netdevice.h>

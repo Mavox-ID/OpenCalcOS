@@ -1,32 +1,20 @@
 /*
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file "COPYING" in the main directory of this archive
- * for more details.
- *
- * Driver for SGI's IOC3 based Ethernet cards as found in the PCI card.
- *
- * Copyright (C) 1999, 2000, 01, 03, 06 Ralf Baechle
- * Copyright (C) 1995, 1999, 2000, 2001 by Silicon Graphics, Inc.
- *
- * References:
- *  o IOC3 ASIC specification 4.51, 1996-04-18
- *  o IEEE 802.3 specification, 2000 edition
- *  o DP38840A Specification, National Semiconductor, March 1997
- *
- * To do:
- *
- *  o Handle allocation failures in ioc3_alloc_skb() more gracefully.
- *  o Handle allocation failures in ioc3_init_rings().
- *  o Use prefetching for large packets.  What is a good lower limit for
- *    prefetching?
- *  o We're probably allocating a bit too much memory.
- *  o Use hardware checksums.
- *  o Convert to using a IOC3 meta driver.
- *  o Which PHYs might possibly be attached to the IOC3 in real live,
- *    which workarounds are required for them?  Do we ever have Lucent's?
- *  o For the 2.5 branch kill the mii-tool ioctls.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define IOC3_NAME	"ioc3-eth"
 #define IOC3_VERSION	"2.6.3-4"
 

@@ -1,21 +1,20 @@
 /*
- * beep/drivers/scsi/scsi_proc.c
- *
- * The functions in this file provide an interface between
- * the PROC file system and the SCSI device drivers
- * It is mainly used for debugging, statistics and to pass 
- * information directly to the lowlevel driver.
- *
- * (c) 1995 Michael Neuffer neuffer@goofy.zdv.uni-mainz.de 
- * Version: 0.99.8   last change: 95/09/13
- * 
- * generic command parser provided by: 
- * Andreas Heilwagen <crashcar@informatik.uni-koblenz.de>
- *
- * generic_proc_info() support of xxxx_info() by:
- * Michael A. Griffith <grif@acm.org>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/string.h>

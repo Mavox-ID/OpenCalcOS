@@ -1,64 +1,20 @@
 /*
- *  drivers/mtd/nand_bbt.c
- *
- *  Overview:
- *   Bad block table support for the NAND driver
- *
- *  Copyright © 2004 Thomas Gleixner (tglx@linutronix.de)
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * Description:
- *
- * When nand_scan_bbt is called, then it tries to find the bad block table
- * depending on the options in the BBT descriptor(s). If no flash based BBT
- * (NAND_BBT_USE_FLASH) is specified then the device is scanned for factory
- * marked good / bad blocks. This information is used to create a memory BBT.
- * Once a new bad block is discovered then the "factory" information is updated
- * on the device.
- * If a flash based BBT is specified then the function first tries to find the
- * BBT on flash. If a BBT is found then the contents are read and the memory
- * based BBT is created. If a mirrored BBT is selected then the mirror is
- * searched too and the versions are compared. If the mirror has a greater
- * version number, then the mirror BBT is used to build the memory based BBT.
- * If the tables are not versioned, then we "or" the bad block information.
- * If one of the BBTs is out of date or does not exist it is (re)created.
- * If no BBT exists at all then the device is scanned for factory marked
- * good / bad blocks and the bad block tables are created.
- *
- * For manufacturer created BBTs like the one found on M-SYS DOC devices
- * the BBT is searched and read but never created
- *
- * The auto generated bad block table is located in the last good blocks
- * of the device. The table is mirrored, so it can be updated eventually.
- * The table is marked in the OOB area with an ident pattern and a version
- * number which indicates which of both tables is more up to date. If the NAND
- * controller needs the complete OOB area for the ECC information then the
- * option NAND_BBT_NO_OOB should be used (along with NAND_BBT_USE_FLASH, of
- * course): it moves the ident pattern and the version byte into the data area
- * and the OOB area will remain untouched.
- *
- * The table uses 2 bits per block
- * 11b:		block is good
- * 00b:		block is factory marked bad
- * 01b, 10b:	block is marked bad due to wear
- *
- * The memory bad block table uses the following scheme:
- * 00b:		block is good
- * 01b:		block is marked bad due to wear
- * 10b:		block is reserved (to protect the bbt area)
- * 11b:		block is factory marked bad
- *
- * Multichip devices like DOC store the bad block info per floor.
- *
- * Following assumptions are made:
- * - bbts start at a page boundary, if autolocated on a block boundary
- * - the space necessary for a bbt in FLASH does not exceed a block boundary
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/slab.h>
 #include <beep/types.h>
 #include <beep/mtd/mtd.h>

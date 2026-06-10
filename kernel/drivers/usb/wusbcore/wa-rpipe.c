@@ -1,62 +1,20 @@
 /*
- * WUSB Wire Adapter
- * rpipe management
- *
- * Copyright (C) 2005-2006 Intel Corporation
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License version
- * 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- * 02110-1301, USA.
- *
- *
- * FIXME: docs
- *
- * RPIPE
- *
- *   Targeted at different downstream endpoints
- *
- *   Descriptor: use to config the remote pipe.
- *
- *   The number of blocks could be dynamic (wBlocks in descriptor is
- *   0)--need to schedule them then.
- *
- * Each bit in wa->rpipe_bm represents if an rpipe is being used or
- * not. Rpipes are represented with a 'struct wa_rpipe' that is
- * attached to the hcpriv member of a 'struct usb_host_endpoint'.
- *
- * When you need to xfer data to an endpoint, you get an rpipe for it
- * with wa_ep_rpipe_get(), which gives you a reference to the rpipe
- * and keeps a single one (the first one) with the endpoint. When you
- * are done transferring, you drop that reference. At the end the
- * rpipe is always allocated and bound to the endpoint. There it might
- * be recycled when not used.
- *
- * Addresses:
- *
- *  We use a 1:1 mapping mechanism between port address (0 based
- *  index, actually) and the address. The USB stack knows about this.
- *
- *  USB Stack port number    4 (1 based)
- *  WUSB code port index     3 (0 based)
- *  USB Address             5 (2 based -- 0 is for default, 1 for root hub)
- *
- *  Now, because we don't use the concept as default address exactly
- *  like the (wired) USB code does, we need to kind of skip it. So we
- *  never take addresses from the urb->pipe, but from the
- *  urb->dev->devnum, to make sure that we always have the right
- *  destination address.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/atomic.h>
 #include <beep/bitmap.h>

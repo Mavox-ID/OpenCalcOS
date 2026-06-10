@@ -1,39 +1,20 @@
 /*
- *
- * Alchemy Au1x00 ethernet driver
- *
- * Copyright 2001-2003, 2006 MontaVista Software Inc.
- * Copyright 2002 TimeSys Corp.
- * Added ethtool/mii-tool support,
- * Copyright 2004 Matt Porter <mporter@kernel.crashing.org>
- * Update: 2004 Bjoern Riemer, riemer@fokus.fraunhofer.de
- * or riemer@riemer-nt.de: fixed the link beat detection with
- * ioctls (SIOCGMIIPHY)
- * Copyright 2006 Herbert Valerio Riedel <hvr@gnu.org>
- *  converted to use beep-2.6.x's PHY framework
- *
- * Author: MontaVista Software, Inc.
- *		ppopov@mvista.com or source@mvista.com
- *
- * ########################################################################
- *
- *  This program is free software; you can distribute it and/or modify it
- *  under the terms of the GNU General Public License (Version 2) as
- *  published by the Free Software Foundation.
- *
- *  This program is distributed in the hope it will be useful, but WITHOUT
- *  ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
- *  FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
- *  for more details.
- *
- *  You should have received a copy of the GNU General Public License along
- *  with this program; if not, write to the Free Software Foundation, Inc.,
- *  59 Temple Place - Suite 330, Boston MA 02111-1307, USA.
- *
- * ########################################################################
- *
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/capability.h>

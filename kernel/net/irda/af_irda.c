@@ -1,47 +1,20 @@
-/*********************************************************************
- *
- * Filename:      af_irda.c
- * Version:       0.9
- * Description:   IrDA sockets implementation
- * Status:        Stable
- * Author:        Dag Brattli <dagb@cs.uit.no>
- * Created at:    Sun May 31 10:12:43 1998
- * Modified at:   Sat Dec 25 21:10:23 1999
- * Modified by:   Dag Brattli <dag@brattli.net>
- * Sources:       af_netroom.c, af_ax25.c, af_rose.c, af_x25.c etc.
- *
- *     Copyright (c) 1999 Dag Brattli <dagb@cs.uit.no>
- *     Copyright (c) 1999-2003 Jean Tourrilhes <jt@hpl.hp.com>
- *     All Rights Reserved.
- *
- *     This program is free software; you can redistribute it and/or
- *     modify it under the terms of the GNU General Public License as
- *     published by the Free Software Foundation; either version 2 of
- *     the License, or (at your option) any later version.
- *
- *     This program is distributed in the hope that it will be useful,
- *     but WITHOUT ANY WARRANTY; without even the implied warranty of
- *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- *     GNU General Public License for more details.
- *
- *     You should have received a copy of the GNU General Public License
- *     along with this program; if not, write to the Free Software
- *     Foundation, Inc., 59 Temple Place, Suite 330, Boston,
- *     MA 02111-1307 USA
- *
- *     Beep-IrDA now supports four different types of IrDA sockets:
- *
- *     o SOCK_STREAM:    TinyTP connections with SAR disabled. The
- *                       max SDU size is 0 for conn. of this type
- *     o SOCK_SEQPACKET: TinyTP connections with SAR enabled. TTP may
- *                       fragment the messages, but will preserve
- *                       the message boundaries
- *     o SOCK_DGRAM:     IRDAPROTO_UNITDATA: TinyTP connections with Unitdata
- *                       (unreliable) transfers
- *                       IRDAPROTO_ULTRA: Connectionless and unreliable data
- *
- ********************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/capability.h>
 #include <beep/module.h>
 #include <beep/types.h>

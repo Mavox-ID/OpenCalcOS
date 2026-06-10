@@ -1,41 +1,20 @@
 /*
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- *
- *	(c) Copyright 1998 Alan Cox <alan@lxorguk.ukuu.org.uk>
- *	(c) Copyright 2000, 2001 Red Hat Inc
- *
- *	Development of this driver was funded by Equiinet Ltd
- *			http://www.equiinet.com
- *
- *	ChangeLog:
- *
- *	Asynchronous mode dropped for 2.2. For 2.5 we will attempt the
- *	unification of all the Z85x30 asynchronous drivers for real.
- *
- *	DMA now uses get_free_page as kmalloc buffers may span a 64K 
- *	boundary.
- *
- *	Modified for SMP safety and SMP locking by Alan Cox
- *					<alan@lxorguk.ukuu.org.uk>
- *
- *	Performance
- *
- *	Z85230:
- *	Non DMA you want a 486DX50 or better to do 64Kbits. 9600 baud
- *	X.25 is not unrealistic on all machines. DMA mode can in theory
- *	handle T1/E1 quite nicely. In practice the limit seems to be about
- *	512Kbit->1Mbit depending on motherboard.
- *
- *	Z85C30:
- *	64K will take DMA, 9600 baud X.25 should be ok.
- *
- *	Z8530:
- *	Synchronous mode without DMA is unlikely to pass about 2400 baud.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

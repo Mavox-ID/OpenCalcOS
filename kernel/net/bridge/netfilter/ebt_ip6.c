@@ -1,18 +1,20 @@
 /*
- *  ebt_ip6
- *
- *	Authors:
- *	Manohar Castelino <manohar.r.castelino@intel.com>
- *	Kuo-Lang Tseng <kuo-lang.tseng@intel.com>
- *	Jan Engelhardt <jengelh@medozas.de>
- *
- * Summary:
- * This is just a modification of the IPv4 code written by
- * Bart De Schuymer <bdschuym@pandora.be>
- * with the changes required to support IPv6
- *
- *  Jan, 2008
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/ipv6.h>
 #include <net/ipv6.h>
 #include <beep/in.h>

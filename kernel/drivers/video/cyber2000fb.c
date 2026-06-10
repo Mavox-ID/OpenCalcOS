@@ -1,41 +1,20 @@
 /*
- *  beep/drivers/video/cyber2000fb.c
- *
- *  Copyright (C) 1998-2002 Russell King
- *
- *  MIPS and 50xx clock support
- *  Copyright (C) 2001 Bradley D. LaRonde <brad@ltc.com>
- *
- *  32 bit support, text color and panning fixes for modes != 8 bit
- *  Copyright (C) 2002 Denis Oliver Kropp <dok@directfb.org>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * Integraphics CyberPro 2000, 2010 and 5000 frame buffer device
- *
- * Based on cyberfb.c.
- *
- * Note that we now use the new fbcon fix, var and cmap scheme.  We do
- * still have to check which console is the currently displayed one
- * however, especially for the colourmap stuff.
- *
- * We also use the new hotplug PCI subsystem.  I'm not sure if there
- * are any such cards, but I'm erring on the side of caution.  We don't
- * want to go pop just because someone does have one.
- *
- * Note that this doesn't work fully in the case of multiple CyberPro
- * cards with grabbers.  We currently can only attach to the first
- * CyberPro card found.
- *
- * When we're in truecolour mode, we power down the LUT RAM as a power
- * saving feature.  Also, when we enter any of the powersaving modes
- * (except soft blanking) we power down the RAMDACs.  This saves about
- * 1W, which is roughly 8% of the power consumption of a NetWinder
- * (which, incidentally, is about the same saving as a 2.5in hard disk
- * entering standby mode.)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/errno.h>

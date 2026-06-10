@@ -1,37 +1,20 @@
 /*
- *	Routines having to do with the 'struct sk_buff' memory handlers.
- *
- *	Authors:	Alan Cox <alan@lxorguk.ukuu.org.uk>
- *			Florian La Roche <rzsfl@rz.uni-sb.de>
- *
- *	Fixes:
- *		Alan Cox	:	Fixed the worst of the load
- *					balancer bugs.
- *		Dave Platt	:	Interrupt stacking fix.
- *	Richard Kooijman	:	Timestamp fixes.
- *		Alan Cox	:	Changed buffer format.
- *		Alan Cox	:	destructor hook for AF_UNIX etc.
- *		Linus Torvalds	:	Better skb_clone.
- *		Alan Cox	:	Added skb_copy.
- *		Alan Cox	:	Added all the changed routines Linus
- *					only put in the headers
- *		Ray VanTassle	:	Fixed --skb->lock in free
- *		Alan Cox	:	skb_copy copy arp field
- *		Andi Kleen	:	slabified it.
- *		Robert Olsson	:	Removed skb_head_pool
- *
- *	NOTE:
- *		The __skb_ routines should be called with interrupts
- *	disabled, or you better be *real* sure that the operation is atomic
- *	with respect to whatever list is being frobbed (e.g. via lock_sock()
- *	or via disabling bottom half handlers, etc).
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  *	The functions in this file will not compile correctly with gcc 2.4.x
  */

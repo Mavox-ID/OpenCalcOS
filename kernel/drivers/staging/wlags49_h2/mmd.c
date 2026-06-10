@@ -1,76 +1,20 @@
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-/************************************************************************************************************
-*
-* FILE	  : mmd.c
-*
-* DATE    : $Date: 2004/07/23 11:57:45 $   $Revision: 1.4 $
-* Original: 2004/05/28 14:05:35    Revision: 1.32      Tag: hcf7_t20040602_01
-* Original: 2004/05/13 15:31:45    Revision: 1.30      Tag: hcf7_t7_20040513_01
-* Original: 2004/04/15 09:24:42    Revision: 1.25      Tag: hcf7_t7_20040415_01
-* Original: 2004/04/08 15:18:17    Revision: 1.24      Tag: t7_20040413_01
-* Original: 2004/04/01 15:32:55    Revision: 1.22      Tag: t7_20040401_01
-* Original: 2004/03/10 15:39:28    Revision: 1.18      Tag: t20040310_01
-* Original: 2004/03/03 14:10:12    Revision: 1.16      Tag: t20040304_01
-* Original: 2004/03/02 09:27:12    Revision: 1.14      Tag: t20040302_03
-* Original: 2004/02/24 13:00:29    Revision: 1.12      Tag: t20040224_01
-* Original: 2004/01/30 09:59:33    Revision: 1.11      Tag: t20040219_01
-*
-* AUTHOR  : Nico Valster
-*
-* DESC    : Common routines for HCF, MSF, UIL as well as USF sources
-*
-* Note: relative to Asserts, the following can be observed:
-*	Since the IFB is not known inside the routine, the macro HCFASSERT is replaced with MDDASSERT.
-*	Also the line number reported in the assert is raised by FILE_NAME_OFFSET (20000) to discriminate the
-*	MMD Asserts from HCF and DHF asserts.
-*
-***************************************************************************************************************
-*
-*
-* SOFTWARE LICENSE
-*
-* This software is provided subject to the following terms and conditions,
-* which you should read carefully before using the software.  Using this
-* software indicates your acceptance of these terms and conditions.  If you do
-* not agree with these terms and conditions, do not use the software.
-*
-* COPYRIGHT © 2001 - 2004	by Agere Systems Inc.	All Rights Reserved
-* All rights reserved.
-*
-* Redistribution and use in source or binary forms, with or without
-* modifications, are permitted provided that the following conditions are met:
-*
-* . Redistributions of source code must retain the above copyright notice, this
-*    list of conditions and the following Disclaimer as comments in the code as
-*    well as in the documentation and/or other materials provided with the
-*    distribution.
-*
-* . Redistributions in binary form must reproduce the above copyright notice,
-*    this list of conditions and the following Disclaimer in the documentation
-*    and/or other materials provided with the distribution.
-*
-* . Neither the name of Agere Systems Inc. nor the names of the contributors
-*    may be used to endorse or promote products derived from this software
-*    without specific prior written permission.
-*
-* Disclaimer
-*
-* THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
-* INCLUDING, BUT NOT LIMITED TO, INFRINGEMENT AND THE IMPLIED WARRANTIES OF
-* MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  ANY
-* USE, MODIFICATION OR DISTRIBUTION OF THIS SOFTWARE IS SOLELY AT THE USERS OWN
-* RISK. IN NO EVENT SHALL AGERE SYSTEMS INC. OR CONTRIBUTORS BE LIABLE FOR ANY
-* DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-* (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-* LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
-* ON ANY THEORY OF LIABILITY, INCLUDING, BUT NOT LIMITED TO, CONTRACT, STRICT
-* LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
-* OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
-* DAMAGE.
-*
-*
-**************************************************************************************************************/
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "hcf.h"				// Needed as long as we do not really sort out the mess
 #include "hcfdef.h"				// get CNV_LITTLE_TO_SHORT
 #include "mmd.h"				// MoreModularDriver common include file

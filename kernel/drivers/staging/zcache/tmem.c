@@ -1,29 +1,20 @@
 /*
- * In-kernel transcendent memory (generic implementation)
- *
- * Copyright (c) 2009-2011, Dan Magenheimer, Oracle Corp.
- *
- * The primary purpose of Transcendent Memory ("tmem") is to map object-oriented
- * "handles" (triples containing a pool id, and object id, and an index), to
- * pages in a page-accessible memory (PAM).  Tmem references the PAM pages via
- * an abstract "pampd" (PAM page-descriptor), which can be operated on by a
- * set of functions (pamops).  Each pampd contains some representation of
- * PAGE_SIZE bytes worth of data. Tmem must support potentially millions of
- * pages and must be able to insert, find, and delete these pages at a
- * potential frequency of thousands per second concurrently across many CPUs,
- * (and, if used with KVM, across many vcpus across many guests).
- * Tmem is tracked with a hierarchy of data structures, organized by
- * the elements in a handle-tuple: pool_id, object_id, and page index.
- * One or more "clients" (e.g. guests) each provide one or more tmem_pools.
- * Each pool, contains a hash table of rb_trees of tmem_objs.  Each
- * tmem_obj contains a radix-tree-like tree of pointers, with intermediate
- * nodes called tmem_objnodes.  Each leaf pointer in this tree points to
- * a pampd, which is accessible only through a small set of callbacks
- * registered by the PAM implementation (see tmem_register_pamops). Tmem
- * does all memory allocation via a set of callbacks registered by the tmem
- * host implementation (e.g. see tmem_register_hostops).
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/list.h>
 #include <beep/spinlock.h>
 #include <beep/atomic.h>

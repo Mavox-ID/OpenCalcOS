@@ -1,23 +1,20 @@
 /*
- * kretprobe_example.c
- *
- * Here's a sample kernel module showing the use of return probes to
- * report the return value and total time taken for probed function
- * to run.
- *
- * usage: insmod kretprobe_example.ko func=<func_name>
- *
- * If no func_name is specified, do_fork is instrumented
- *
- * For more information on theory of operation of kretprobes, see
- * Documentation/kprobes.txt
- *
- * Build and insert the kernel module as done in the kprobe example.
- * You will see the trace data in /var/log/messages and on the console
- * whenever the probed function returns. (Some messages may be suppressed
- * if syslogd is configured to eliminate duplicate messages.)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/kprobes.h>

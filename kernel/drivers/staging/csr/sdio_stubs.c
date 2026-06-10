@@ -1,18 +1,20 @@
 /*
- * Stubs for some of the bottom edge functions.
- *
- * These stubs are optional functions in the bottom edge (SDIO driver
- * interface) API that not all platforms or SDIO drivers may support.
- *
- * They're declared as weak symbols so they can be overridden by
- * simply providing a non-weak declaration.
- *
- * Copyright (C) 2007-2008 by Cambridge Silicon Radio Ltd.
- *
- * Refer to LICENSE.txt included with this source code for details on
- * the license terms.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "csr_wifi_hip_unifi.h"
 
 void __attribute__((weak)) CsrSdioFunctionIdle(CsrSdioFunction *function)

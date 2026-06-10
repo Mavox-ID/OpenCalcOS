@@ -1,14 +1,20 @@
-/* 
-        epat.c  (c) 1997-8  Grant R. Guenther <grant@torque.net>
-                            Under the terms of the GNU General Public License.
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-	This is the low level protocol driver for the EPAT parallel
-        to IDE adapter from Shuttle Technologies.  This adapter is
-        used in many popular parallel port disk products such as the
-        SyQuest EZ drives, the Avatar Shark and the Imation SuperDisk.
-	
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 /* Changes:
 
         1.01    GRG 1998.05.06 init_proto, release_proto

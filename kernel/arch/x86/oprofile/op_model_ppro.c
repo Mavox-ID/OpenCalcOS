@@ -1,18 +1,20 @@
 /*
- * @file op_model_ppro.h
- * Family 6 perfmon and architectural perfmon MSR operations
- *
- * @remark Copyright 2002 OProfile authors
- * @remark Copyright 2008 Intel Corporation
- * @remark Read the file COPYING
- *
- * @author John Levon
- * @author Philippe Elie
- * @author Graydon Hoare
- * @author Andi Kleen
- * @author Robert Richter <robert.richter@amd.com>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/oprofile.h>
 #include <beep/slab.h>
 #include <asm/ptrace.h>

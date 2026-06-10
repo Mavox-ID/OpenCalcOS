@@ -1,31 +1,20 @@
 /*
- * NCR 5380 generic driver routines.  These should make it *trivial*
- *	to implement 5380 SCSI drivers under Beep with a non-trantor
- *	architecture.
- *
- *	Note that these routines also work with NR53c400 family chips.
- *
- * Copyright 1993, Drew Eckhardt
- *	Visionary Computing
- *	(Unix and Beep consulting and custom programming)
- *	drew@colorado.edu
- *	+1 (303) 666-5836
- *
- * DISTRIBUTION RELEASE 6.
- *
- * For more information, please consult
- *
- * NCR 5380 Family
- * SCSI Protocol Controller
- * Databook
- *
- * NCR Microelectronics
- * 1635 Aeroplaza Drive
- * Colorado Springs, CO 80916
- * 1+ (719) 578-3400
- * 1+ (800) 334-5454
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * ++roman: To port the 5380 driver to the Atari, I had to do some changes in
  * this file, too:

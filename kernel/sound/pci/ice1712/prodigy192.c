@@ -1,59 +1,20 @@
 /*
- *   ALSA driver for ICEnsemble VT1724 (Envy24HT)
- *
- *   Lowlevel functions for AudioTrak Prodigy 192 cards
- *   Supported IEC958 input from optional MI/ODI/O add-on card.
- *
- *   Specifics (SW, HW):
- *   -------------------
- *   	* 49.5MHz crystal
- *   	* SPDIF-OUT on the card:
- *  	  - coax (through isolation transformer)/toslink supplied by
- *          74HC04 gates - 3 in parallel
- *   	  - output switched between on-board CD drive dig-out connector
- *          and ice1724 SPDTX pin, using 74HC02 NOR gates, controlled
- *          by GPIO20 (0 = CD dig-out, 1 = SPDTX)
- *   	* SPDTX goes straight to MI/ODI/O card's SPDIF-OUT coax
- *
- *   	* MI/ODI/O card: AK4114 based, used for iec958 input only
- *   		- toslink input -> RX0
- *   		- coax input -> RX1
- *   		- 4wire protocol:
- *   			AK4114		ICE1724
- *   			------------------------------
- * 			CDTO (pin 32) -- GPIO11 pin 86
- * 			CDTI (pin 33) -- GPIO10 pin 77
- * 			CCLK (pin 34) -- GPIO9 pin 76
- * 			CSN  (pin 35) -- GPIO8 pin 75
- *   		- output data Mode 7 (24bit, I2S, slave)
- *		- both MCKO1 and MCKO2 of ak4114 are fed to FPGA, which
- *		  outputs master clock to SPMCLKIN of ice1724.
- *		  Experimentally I found out that only a combination of
- *		  OCKS0=1, OCKS1=1 (128fs, 64fs output) and ice1724 -
- *		  VT1724_MT_I2S_MCLK_128X=0 (256fs input) yields correct
- *		  sampling rate. That means the the FPGA doubles the
- *		  MCK01 rate.
- *
- *	Copyright (c) 2003 Takashi Iwai <tiwai@suse.de>
- *      Copyright (c) 2003 Dimitromanolakis Apostolos <apostol@cs.utoronto.ca>
- *      Copyright (c) 2004 Kouichi ONO <co2b@ceres.dti.ne.jp>
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 2 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, write to the Free Software
- *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
- *
- */      
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/delay.h>
 #include <beep/interrupt.h>
 #include <beep/init.h>

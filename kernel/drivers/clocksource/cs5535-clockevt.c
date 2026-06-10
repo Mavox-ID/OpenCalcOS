@@ -1,17 +1,20 @@
 /*
- * Clock event driver for the CS5535/CS5536
- *
- * Copyright (C) 2006, Advanced Micro Devices, Inc.
- * Copyright (C) 2007  Andres Salomon <dilinger@debian.org>
- * Copyright (C) 2009  Andres Salomon <dilinger@collabora.co.uk>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of version 2 of the GNU General Public License
- * as published by the Free Software Foundation.
- *
- * The MFGPTs are documented in AMD Geode CS5536 Companion Device Data Book.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/irq.h>
 #include <beep/interrupt.h>

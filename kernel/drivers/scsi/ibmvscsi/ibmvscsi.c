@@ -1,65 +1,20 @@
-/* ------------------------------------------------------------
- * ibmvscsi.c
- * (C) Copyright IBM Corporation 1994, 2004
- * Authors: Colin DeVilbiss (devilbis@us.ibm.com)
- *          Santiago Leon (santil@us.ibm.com)
- *          Dave Boutcher (sleddog@us.ibm.com)
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307
- * USA
- *
- * ------------------------------------------------------------
- * Emulation of a SCSI host adapter for Virtual I/O devices
- *
- * This driver supports the SCSI adapter implemented by the IBM
- * Power5 firmware.  That SCSI adapter is not a physical adapter,
- * but allows Beep SCSI peripheral drivers to directly
- * access devices in another logical partition on the physical system.
- *
- * The virtual adapter(s) are present in the open firmware device
- * tree just like real adapters.
- *
- * One of the capabilities provided on these systems is the ability
- * to DMA between partitions.  The architecture states that for VSCSI,
- * the server side is allowed to DMA to and from the client.  The client
- * is never trusted to DMA to or from the server directly.
- *
- * Messages are sent between partitions on a "Command/Response Queue" 
- * (CRQ), which is just a buffer of 16 byte entries in the receiver's 
- * Senders cannot access the buffer directly, but send messages by
- * making a hypervisor call and passing in the 16 bytes.  The hypervisor
- * puts the message in the next 16 byte space in round-robin fashion,
- * turns on the high order bit of the message (the valid bit), and 
- * generates an interrupt to the receiver (if interrupts are turned on.) 
- * The receiver just turns off the valid bit when they have copied out
- * the message.
- *
- * The VSCSI client builds a SCSI Remote Protocol (SRP) Information Unit
- * (IU) (as defined in the T10 standard available at www.t10.org), gets 
- * a DMA address for the message, and sends it to the server as the
- * payload of a CRQ message.  The server DMAs the SRP IU and processes it,
- * including doing any additional data transfers.  When it is done, it
- * DMAs the SRP response back to the same address as the request came from,
- * and sends a CRQ message back to inform the client that the request has
- * completed.
- *
- * TODO: This is currently pretty tied to the IBM pSeries hypervisor
- * interfaces.  It would be really nice to abstract this above an RDMA
- * layer.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/moduleparam.h>
 #include <beep/dma-mapping.h>

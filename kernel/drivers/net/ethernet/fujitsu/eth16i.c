@@ -1,147 +1,20 @@
-/* eth16i.c An ICL EtherTeam 16i and 32 EISA ethernet driver for Beep
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-   Written 1994-1999 by Mika Kuoppala
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-   Copyright (C) 1994-1999 by Mika Kuoppala
-   Based on skeleton.c and heavily on at1700.c by Donald Becker
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-   This software may be used and distributed according to the terms
-   of the GNU General Public License, incorporated herein by reference.
-
-   The author may be reached as miku@iki.fi
-
-   This driver supports following cards :
-	- ICL EtherTeam 16i
-	- ICL EtherTeam 32 EISA
-	  (Uses true 32 bit transfers rather than 16i compatibility mode)
-
-   Example Module usage:
-        insmod eth16i.o io=0x2a0 mediatype=bnc
-
-	mediatype can be one of the following: bnc,tp,dix,auto,eprom
-
-	'auto' will try to autoprobe mediatype.
-	'eprom' will use whatever type defined in eprom.
-
-   I have benchmarked driver with PII/300Mhz as a ftp client
-   and 486/33Mhz as a ftp server. Top speed was 1128.37 kilobytes/sec.
-
-   Sources:
-     - skeleton.c  a sample network driver core for beep,
-       written by Donald Becker <becker@scyld.com>
-     - at1700.c a driver for Allied Telesis AT1700, written
-       by Donald Becker.
-     - e16iSRV.asm a Netware 3.X Server Driver for ICL EtherTeam16i
-       written by Markku Viima
-     - The Fujitsu MB86965 databook.
-
-   Author thanks following persons due to their valueble assistance:
-        Markku Viima (ICL)
-	Ari Valve (ICL)
-	Donald Becker
-	Kurt Huwig <kurt@huwig.de>
-
-   Revision history:
-
-   Version	Date		Description
-
-   0.01         15.12-94        Initial version (card detection)
-   0.02         23.01-95        Interrupt is now hooked correctly
-   0.03         01.02-95        Rewrote initialization part
-   0.04         07.02-95        Base skeleton done...
-                                Made a few changes to signature checking
-                                to make it a bit reliable.
-                                - fixed bug in tx_buf mapping
-                                - fixed bug in initialization (DLC_EN
-                                  wasn't enabled when initialization
-                                  was done.)
-   0.05         08.02-95        If there were more than one packet to send,
-                                transmit was jammed due to invalid
-                                register write...now fixed
-   0.06         19.02-95        Rewrote interrupt handling
-   0.07         13.04-95        Wrote EEPROM read routines
-                                Card configuration now set according to
-                                data read from EEPROM
-   0.08         23.06-95        Wrote part that tries to probe used interface
-                                port if AUTO is selected
-
-   0.09         01.09-95        Added module support
-
-   0.10         04.09-95        Fixed receive packet allocation to work
-                                with kernels > 1.3.x
-
-   0.20		20.09-95	Added support for EtherTeam32 EISA
-
-   0.21         17.10-95        Removed the unnecessary extern
-				init_etherdev() declaration. Some
-				other cleanups.
-
-   0.22		22.02-96	Receive buffer was not flushed
-				correctly when faulty packet was
-				received. Now fixed.
-
-   0.23		26.02-96	Made resetting the adapter
-			 	more reliable.
-
-   0.24		27.02-96	Rewrote faulty packet handling in eth16i_rx
-
-   0.25		22.05-96	kfree() was missing from cleanup_module.
-
-   0.26		11.06-96	Sometimes card was not found by
-				check_signature(). Now made more reliable.
-
-   0.27		23.06-96	Oops. 16 consecutive collisions halted
-				adapter. Now will try to retransmit
-				MAX_COL_16 times before finally giving up.
-
-   0.28	        28.10-97	Added dev_id parameter (NULL) for free_irq
-
-   0.29         29.10-97        Multiple card support for module users
-
-   0.30         30.10-97        Fixed irq allocation bug.
-                                (request_irq moved from probe to open)
-
-   0.30a        21.08-98        Card detection made more relaxed. Driver
-                                had problems with some TCP/IP-PROM boots
-				to find the card. Suggested by
-				Kurt Huwig <kurt@huwig.de>
-
-   0.31         28.08-98        Media interface port can now be selected
-                                with module parameters or kernel
-				boot parameters.
-
-   0.32         31.08-98        IRQ was never freed if open/close
-                                pair wasn't called. Now fixed.
-
-   0.33         10.09-98        When eth16i_open() was called after
-                                eth16i_close() chip never recovered.
-				Now more shallow reset is made on
-				close.
-
-   0.34         29.06-99	Fixed one bad #ifdef.
-				Changed ioaddr -> io for consistency
-
-   0.35         01.07-99        transmit,-receive bytes were never
-                                updated in stats.
-
-   Bugs:
-	In some cases the media interface autoprobing code doesn't find
-	the correct interface type. In this case you can
-	manually choose the interface type in DOS with E16IC.EXE which is
-	configuration software for EtherTeam16i and EtherTeam32 cards.
-	This is also true for IRQ setting. You cannot use module
-	parameter to configure IRQ of the card (yet).
-
-   To do:
-	- Real multicast support
-	- Rewrite the media interface autoprobing code. Its _horrible_ !
-	- Possibly merge all the MB86965 specific code to external
-	  module for use by eth16.c and Donald's at1700.c
-	- IRQ configuration with module parameter. I will do
-	  this when i will get enough info about setting
-	  irq without configuration utility.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 static char *version =
     "eth16i.c: v0.35 01-Jul-1999 Mika Kuoppala (miku@iki.fi)\n";
 

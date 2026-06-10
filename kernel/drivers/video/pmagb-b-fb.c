@@ -1,23 +1,20 @@
 /*
- *	beep/drivers/video/pmagb-b-fb.c
- *
- *	PMAGB-B TURBOchannel Smart Frame Buffer (SFB) card support,
- *	derived from:
- *	"HP300 Topcat framebuffer support (derived from macfb of all things)
- *	Phil Blundell <philb@gnu.org> 1998", the original code can be
- *	found in the file hpfb.c in the same directory.
- *
- *	DECstation related code Copyright (C) 1999, 2000, 2001 by
- *	Michael Engel <engel@unix-ag.org>,
- *	Karsten Merker <merker@beeptag.org> and
- *	Harald Koerfgen.
- *	Copyright (c) 2005, 2006  Maciej W. Rozycki
- *
- *	This file is subject to the terms and conditions of the GNU General
- *	Public License.  See the file COPYING in the main directory of this
- *	archive for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/compiler.h>
 #include <beep/delay.h>
 #include <beep/errno.h>

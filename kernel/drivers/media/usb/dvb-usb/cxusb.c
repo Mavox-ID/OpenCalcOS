@@ -1,28 +1,20 @@
-/* DVB USB compliant beep driver for Conexant USB reference design.
- *
- * The Conexant reference design I saw on their website was only for analogue
- * capturing (using the cx25842). The box I took to write this driver (reverse
- * engineered) is the one labeled Medion MD95700. In addition to the cx25842
- * for analogue capturing it also has a cx22702 DVB-T demodulator on the main
- * board. Besides it has a atiremote (X10) and a USB2.0 hub onboard.
- *
- * Maybe it is a little bit premature to call this driver cxusb, but I assume
- * the USB protocol is identical or at least inherited from the reference
- * design, so it can be reused for the "analogue-only" device (if it will
- * appear at all).
- *
- * TODO: Use the cx25840-driver for the analogue part
- *
- * Copyright (C) 2005 Patrick Boettcher (patrick.boettcher@desy.de)
- * Copyright (C) 2006 Michael Krufky (mkrufky@beeptv.org)
- * Copyright (C) 2006, 2007 Chris Pascoe (c.pascoe@itee.uq.edu.au)
- *
- *   This program is free software; you can redistribute it and/or modify it
- *   under the terms of the GNU General Public License as published by the Free
- *   Software Foundation, version 2.
- *
- * see Documentation/dvb/README.dvb-usb for more information
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <media/tuner.h>
 #include <beep/vmalloc.h>
 #include <beep/slab.h>

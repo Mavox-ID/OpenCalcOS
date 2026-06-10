@@ -1,38 +1,20 @@
 /*
- * pnpbios -- PnP BIOS driver
- *
- * This driver provides access to Plug-'n'-Play services provided by
- * the PnP BIOS firmware, described in the following documents:
- *   Plug and Play BIOS Specification, Version 1.0A, 5 May 1994
- *   Plug and Play BIOS Clarification Paper, 6 October 1994
- *     Compaq Computer Corporation, Phoenix Technologies Ltd., Intel Corp.
- * 
- * Originally (C) 1998 Christian Schmidt <schmidt@digadd.de>
- * Modifications (C) 1998 Tom Lees <tom@lpsg.demon.co.uk>
- * Minor reorganizations by David Hinds <dahinds@users.sourceforge.net>
- * Further modifications (C) 2001, 2002 by:
- *   Alan Cox <alan@redhat.com>
- *   Thomas Hood
- *   Brian Gerst <bgerst@didntduck.org>
- *
- * Ported to the PnP Layer and several additional improvements (C) 2002
- * by Adam Belay <ambx1@neo.rr.com>
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by the
- * Free Software Foundation; either version 2, or (at your option) any
- * later version.
- *
- * This program is distributed in the hope that it will be useful, but
- * WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* Change Log
  *
  * Adam Belay - <ambx1@neo.rr.com> - March 16, 2003

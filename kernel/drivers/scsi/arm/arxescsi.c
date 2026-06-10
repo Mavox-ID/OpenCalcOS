@@ -1,23 +1,20 @@
 /*
- * beep/drivers/scsi/arm/arxescsi.c
- *
- * Copyright (C) 1997-2000 Russell King, Stefan Hanske
- *
- * This driver is based on experimentation.  Hence, it may have made
- * assumptions about the particular card that I have available, and
- * may not be reliable!
- *
- * Changelog:
- *  30-08-1997	RMK	0.0.0	Created, READONLY version as cumana_2.c
- *  22-01-1998	RMK	0.0.1	Updated to 2.1.80
- *  15-04-1998	RMK	0.0.1	Only do PIO if FAS216 will allow it.
- *  11-06-1998 	SH	0.0.2   Changed to support ARXE 16-bit SCSI card
- *				enabled writing
- *  01-01-2000	SH	0.1.0   Added *real* pseudo dma writing
- *				(arxescsi_pseudo_dma_write)
- *  02-04-2000	RMK	0.1.1	Updated for new error handling code.
- *  22-10-2000  SH		Updated for new registering scheme.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/blkdev.h>
 #include <beep/kernel.h>

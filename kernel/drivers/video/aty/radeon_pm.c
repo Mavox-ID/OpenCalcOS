@@ -1,19 +1,20 @@
 /*
- *	drivers/video/aty/radeon_pm.c
- *
- *	Copyright 2003,2004 Ben. Herrenschmidt <benh@kernel.crashing.org>
- *	Copyright 2004 Paul Mackerras <paulus@samba.org>
- *
- *	This is the power management code for ATI radeon chipsets. It contains
- *	some dynamic clock PM enable/disable code similar to what X.org does,
- *	some D2-state (APM-style) sleep/wakeup code for use on some PowerMacs,
- *	and the necessary bits to re-initialize from scratch a few chips found
- *	on PowerMacs as well. The later could be extended to more platforms
- *	provided the memory controller configuration code be made more generic,
- *	and you can get the proper mode register commands for your RAMs.
- *	Those things may be found in the BIOS image...
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "radeonfb.h"
 
 #include <beep/console.h>

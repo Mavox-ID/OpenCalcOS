@@ -1,29 +1,20 @@
 /*
- * DECnet       An implementation of the DECnet protocol suite for the BEEP
- *              operating system.  DECnet is implemented using the  BSD Socket
- *              interface as the means of communication with the user level.
- *
- *              DECnet Neighbour Functions (Adjacency Database and
- *                                                        On-Ethernet Cache)
- *
- * Author:      Steve Whitehouse <SteveW@ACM.org>
- *
- *
- * Changes:
- *     Steve Whitehouse     : Fixed router listing routine
- *     Steve Whitehouse     : Added error_report functions
- *     Steve Whitehouse     : Added default router detection
- *     Steve Whitehouse     : Hop counts in outgoing messages
- *     Steve Whitehouse     : Fixed src/dst in outgoing messages so
- *                            forwarding now stands a good chance of
- *                            working.
- *     Steve Whitehouse     : Fixed neighbour states (for now anyway).
- *     Steve Whitehouse     : Made error_report functions dummies. This
- *                            is not the right place to return skbs.
- *     Steve Whitehouse     : Convert to seq_file
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/net.h>
 #include <beep/module.h>
 #include <beep/socket.h>

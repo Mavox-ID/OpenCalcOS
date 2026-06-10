@@ -1,27 +1,20 @@
-/*------------------------------------------------------------------------
- . smc9194.h
- . Copyright (C) 1996 by Erik Stahlman
- .
- . This software may be used and distributed according to the terms
- . of the GNU General Public License, incorporated herein by reference.
- .
- . This file contains register information and access macros for
- . the SMC91xxx chipset.
- .
- . Information contained in this file was obtained from the SMC91C94
- . manual from SMC.  To get a copy, if you really want one, you can find
- . information under www.smc.com in the components division.
- . ( this thanks to advice from Donald Becker ).
- .
- . Authors
- . 	Erik Stahlman				( erik@vt.edu )
- .
- . History
- . 01/06/96		 Erik Stahlman   moved definitions here from main .c file
- . 01/19/96		 Erik Stahlman	  polished this up some, and added better
- .										  error handling
- .
- ---------------------------------------------------------------------------*/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _SMC9194_H_
 #define _SMC9194_H_
 

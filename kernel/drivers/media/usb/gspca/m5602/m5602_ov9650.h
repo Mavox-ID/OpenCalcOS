@@ -1,21 +1,20 @@
 /*
- * Driver for the ov9650 sensor
- *
- * Copyright (C) 2008 Erik Andrén
- * Copyright (C) 2007 Ilyes Gouta. Based on the m5603x Beep Driver Project.
- * Copyright (C) 2005 m5603x Beep Driver Project <m5602@x3ng.com.br>
- *
- * Portions of code to USB interface and ALi driver software,
- * Copyright (c) 2006 Willem Duinker
- * v4l2 interface modeled after the V4L2 driver
- * for SN9C10x PC Camera Controllers
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License as
- * published by the Free Software Foundation, version 2.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef M5602_OV9650_H_
 #define M5602_OV9650_H_
 

@@ -1,42 +1,20 @@
 /*
-*  sym53c500_cs.c	Bob Tracy (rct@frus.com)
-*
-*  A rewrite of the pcmcia-cs add-on driver for newer (circa 1997)
-*  New Media Bus Toaster PCMCIA SCSI cards using the Symbios Logic
-*  53c500 controller: intended for use with 2.6 and later kernels.
-*  The pcmcia-cs add-on version of this driver is not supported
-*  beyond 2.4.  It consisted of three files with history/copyright
-*  information as follows:
-*
-*  SYM53C500.h
-*	Bob Tracy (rct@frus.com)
-*	Original by Tom Corner (tcorner@via.at).
-*	Adapted from NCR53c406a.h which is Copyrighted (C) 1994
-*	Normunds Saumanis (normunds@rx.tech.swh.lv)
-*
-*  SYM53C500.c
-*	Bob Tracy (rct@frus.com)
-*	Original driver by Tom Corner (tcorner@via.at) was adapted
-*	from NCR53c406a.c which is Copyrighted (C) 1994, 1995, 1996 
-*	Normunds Saumanis (normunds@fi.ibm.com)
-*
-*  sym53c500.c
-*	Bob Tracy (rct@frus.com)
-*	Original by Tom Corner (tcorner@via.at) was adapted from a
-*	driver for the Qlogic SCSI card written by
-*	David Hinds (dhinds@allegro.stanford.edu).
-* 
-*  This program is free software; you can redistribute it and/or modify it
-*  under the terms of the GNU General Public License as published by the
-*  Free Software Foundation; either version 2, or (at your option) any
-*  later version.
-*
-*  This program is distributed in the hope that it will be useful, but
-*  WITHOUT ANY WARRANTY; without even the implied warranty of
-*  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-*  General Public License for more details.
-*/
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define SYM53C500_DEBUG 0
 #define VERBOSE_SYM53C500_DEBUG 0
 

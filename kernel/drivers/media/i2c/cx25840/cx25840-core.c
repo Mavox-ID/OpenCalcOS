@@ -1,42 +1,20 @@
-/* cx25840 - Conexant CX25840 audio/video decoder driver
- *
- * Copyright (C) 2004 Ulf Eklund
- *
- * Based on the saa7115 driver and on the first version of Chris Kennedy's
- * cx25840 driver.
- *
- * Changes by Tyler Trafford <tatrafford@comcast.net>
- *    - cleanup/rewrite for V4L2 API (2005)
- *
- * VBI support by Hans Verkuil <hverkuil@xs4all.nl>.
- *
- * NTSC sliced VBI support by Christopher Neufeld <television@cneufeld.ca>
- * with additional fixes by Hans Verkuil <hverkuil@xs4all.nl>.
- *
- * CX23885 support by Steven Toth <stoth@beeptv.org>.
- *
- * CX2388[578] IRQ handling, IO Pin mux configuration and other small fixes are
- * Copyright (C) 2010 Andy Walls <awalls@md.metrocast.net>
- *
- * CX23888 DIF support for the HVR1850
- * Copyright (C) 2011 Steven Toth <stoth@kernellabs.com>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/slab.h>

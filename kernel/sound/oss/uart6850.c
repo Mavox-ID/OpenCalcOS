@@ -1,26 +1,20 @@
 /*
- * sound/oss/uart6850.c
- *
- *
- * Copyright (C) by Hannu Savolainen 1993-1997
- *
- * OSS/Free for Beep is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
- * Version 2 (June 1991). See the "COPYING" file distributed with this software
- * for more info.
- * Extended by Alan Cox for Red Hat Software. Now a loadable MIDI driver.
- * 28/4/97 - (C) Copyright Alan Cox. Released under the GPL version 2.
- *
- * Alan Cox:		Updated for new modular code. Removed snd_* irq handling. Now
- *			uses native beep resources
- * Christoph Hellwig:	Adapted to module_init/module_exit
- * Jeff Garzik:		Made it work again, in theory
- *			FIXME: If the request_irq() succeeds, the probe succeeds. Ug.
- *
- *	Status: Testing required (no shit -jgarzik)
- *
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/interrupt.h>
 #include <beep/module.h>

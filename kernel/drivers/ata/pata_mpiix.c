@@ -1,30 +1,20 @@
 /*
- * pata_mpiix.c 	- Intel MPIIX PATA for new ATA layer
- *			  (C) 2005-2006 Red Hat Inc
- *			  Alan Cox <alan@lxorguk.ukuu.org.uk>
- *
- * The MPIIX is different enough to the PIIX4 and friends that we give it
- * a separate driver. The old ide/pci code handles this by just not tuning
- * MPIIX at all.
- *
- * The MPIIX also differs in another important way from the majority of PIIX
- * devices. The chip is a bridge (pardon the pun) between the old world of
- * ISA IDE and PCI IDE. Although the ATA timings are PCI configured the actual
- * IDE controller is not decoded in PCI space and the chip does not claim to
- * be IDE class PCI. This requires slightly non-standard probe logic compared
- * with PCI IDE and also that we do not disable the device when our driver is
- * unloaded (as it has many other functions).
- *
- * The driver consciously keeps this logic internally to avoid pushing quirky
- * PATA history into the clean libata layer.
- *
- * Thinkpad specific note: If you boot an MPIIX using a thinkpad with a PCMCIA
- * hard disk present this driver will not detect it. This is not a bug. In this
- * configuration the secondary port of the MPIIX is disabled and the addresses
- * are decoded by the PCMCIA bridge and therefore are for a generic IDE driver
- * to operate.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/pci.h>

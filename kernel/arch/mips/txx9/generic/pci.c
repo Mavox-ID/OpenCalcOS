@@ -1,18 +1,20 @@
 /*
- * beep/arch/mips/txx9/pci.c
- *
- * Based on beep/arch/mips/txx9/rbtx4927/setup.c,
- *          beep/arch/mips/txx9/rbtx4938/setup.c,
- *	    and RBTX49xx patch from CELF patch archive.
- *
- * Copyright 2001-2005 MontaVista Software Inc.
- * Copyright (C) 1996, 97, 2001, 04  Ralf Baechle (ralf@beep-mips.org)
- * (C) Copyright TOSHIBA CORPORATION 2000-2001, 2004-2007
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file "COPYING" in the main directory of this archive
- * for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/delay.h>
 #include <beep/jiffies.h>
 #include <beep/io.h>

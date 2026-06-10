@@ -1,149 +1,20 @@
 /*
- * Intel Wireless WiMAX Connection 2400m
- * Handle incoming traffic and deliver it to the control or data planes
- *
- *
- * Copyright (C) 2007-2008 Intel Corporation. All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- *
- *   * Redistributions of source code must retain the above copyright
- *     notice, this list of conditions and the following disclaimer.
- *   * Redistributions in binary form must reproduce the above copyright
- *     notice, this list of conditions and the following disclaimer in
- *     the documentation and/or other materials provided with the
- *     distribution.
- *   * Neither the name of Intel Corporation nor the names of its
- *     contributors may be used to endorse or promote products derived
- *     from this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
- * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
- * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
- * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
- * OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
- * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
- * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
- * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
- * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *
- *
- * Intel Corporation <beep-wimax@intel.com>
- * Yanir Lubetkin <yanirx.lubetkin@intel.com>
- *  - Initial implementation
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- *  - Use skb_clone(), break up processing in chunks
- *  - Split transport/device specific
- *  - Make buffer size dynamic to exert less memory pressure
- *  - RX reorder support
- *
- * This handles the RX path.
- *
- * We receive an RX message from the bus-specific driver, which
- * contains one or more payloads that have potentially different
- * destinataries (data or control paths).
- *
- * So we just take that payload from the transport specific code in
- * the form of an skb, break it up in chunks (a cloned skb each in the
- * case of network packets) and pass it to netdev or to the
- * command/ack handler (and from there to the WiMAX stack).
- *
- * PROTOCOL FORMAT
- *
- * The format of the buffer is:
- *
- * HEADER                      (struct i2400m_msg_hdr)
- * PAYLOAD DESCRIPTOR 0        (struct i2400m_pld)
- * PAYLOAD DESCRIPTOR 1
- * ...
- * PAYLOAD DESCRIPTOR N
- * PAYLOAD 0                   (raw bytes)
- * PAYLOAD 1
- * ...
- * PAYLOAD N
- *
- * See tx.c for a deeper description on alignment requirements and
- * other fun facts of it.
- *
- * DATA PACKETS
- *
- * In firmwares <= v1.3, data packets have no header for RX, but they
- * do for TX (currently unused).
- *
- * In firmware >= 1.4, RX packets have an extended header (16
- * bytes). This header conveys information for management of host
- * reordering of packets (the device offloads storage of the packets
- * for reordering to the host). Read below for more information.
- *
- * The header is used as dummy space to emulate an ethernet header and
- * thus be able to act as an ethernet device without having to reallocate.
- *
- * DATA RX REORDERING
- *
- * Starting in firmware v1.4, the device can deliver packets for
- * delivery with special reordering information; this allows it to
- * more effectively do packet management when some frames were lost in
- * the radio traffic.
- *
- * Thus, for RX packets that come out of order, the device gives the
- * driver enough information to queue them properly and then at some
- * point, the signal to deliver the whole (or part) of the queued
- * packets to the networking stack. There are 16 such queues.
- *
- * This only happens when a packet comes in with the "need reorder"
- * flag set in the RX header. When such bit is set, the following
- * operations might be indicated:
- *
- *  - reset queue: send all queued packets to the OS
- *
- *  - queue: queue a packet
- *
- *  - update ws: update the queue's window start and deliver queued
- *    packets that meet the criteria
- *
- *  - queue & update ws: queue a packet, update the window start and
- *    deliver queued packets that meet the criteria
- *
- * (delivery criteria: the packet's [normalized] sequence number is
- * lower than the new [normalized] window start).
- *
- * See the i2400m_roq_*() functions for details.
- *
- * ROADMAP
- *
- * i2400m_rx
- *   i2400m_rx_msg_hdr_check
- *   i2400m_rx_pl_descr_check
- *   i2400m_rx_payload
- *     i2400m_net_rx
- *     i2400m_rx_edata
- *       i2400m_net_erx
- *       i2400m_roq_reset
- *         i2400m_net_erx
- *       i2400m_roq_queue
- *         __i2400m_roq_queue
- *       i2400m_roq_update_ws
- *         __i2400m_roq_update_ws
- *           i2400m_net_erx
- *       i2400m_roq_queue_update_ws
- *         __i2400m_roq_queue
- *         __i2400m_roq_update_ws
- *           i2400m_net_erx
- *     i2400m_rx_ctl
- *       i2400m_msg_size_check
- *       i2400m_report_hook_work    [in a workqueue]
- *         i2400m_report_hook
- *       wimax_msg_to_user
- *       i2400m_rx_ctl_ack
- *         wimax_msg_to_user_alloc
- *     i2400m_rx_trace
- *       i2400m_msg_size_check
- *       wimax_msg
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/slab.h>
 #include <beep/kernel.h>
 #include <beep/if_arp.h>

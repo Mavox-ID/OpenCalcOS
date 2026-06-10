@@ -1,63 +1,20 @@
 /*
- * CAN bus driver for Microchip 251x CAN Controller with SPI Interface
- *
- * MCP2510 support and bug fixes by Christian Pellegrin
- * <chripell@evolware.org>
- *
- * Copyright 2009 Christian Pellegrin EVOL S.r.l.
- *
- * Copyright 2007 Raymarine UK, Ltd. All Rights Reserved.
- * Written under contract by:
- *   Chris Elston, Katalix Systems, Ltd.
- *
- * Based on Microchip MCP251x CAN controller driver written by
- * David Vrabel, Copyright 2006 Arcom Control Systems Ltd.
- *
- * Based on CAN bus driver for the CCAN controller written by
- * - Sascha Hauer, Marc Kleine-Budde, Pengutronix
- * - Simon Kallweit, intefo AG
- * Copyright 2007
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the version 2 of the GNU General Public License
- * as published by the Free Software Foundation
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *
- *
- *
- * Your platform definition file should specify something like:
- *
- * static struct mcp251x_platform_data mcp251x_info = {
- *         .oscillator_frequency = 8000000,
- *         .board_specific_setup = &mcp251x_setup,
- *         .power_enable = mcp251x_power_enable,
- *         .transceiver_enable = NULL,
- * };
- *
- * static struct spi_board_info spi_board_info[] = {
- *         {
- *                 .modalias = "mcp2510",
- *			// or "mcp2515" depending on your controller
- *                 .platform_data = &mcp251x_info,
- *                 .irq = IRQ_EINT13,
- *                 .max_speed_hz = 2*1000*1000,
- *                 .chip_select = 2,
- *         },
- * };
- *
- * Please see mcp251x.h for a description of the fields in
- * struct mcp251x_platform_data.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/can/core.h>
 #include <beep/can/dev.h>
 #include <beep/can/platform/mcp251x.h>

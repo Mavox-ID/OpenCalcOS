@@ -1,20 +1,20 @@
 /*
- * Old U-boot compatibility for Sequoia
- *
- * Valentine Barshak <vbarshak@ru.mvista.com>
- * Copyright 2007 MontaVista Software, Inc
- *
- * Based on Ebony code by David Gibson <david@gibson.dropbear.id.au>
- * Copyright IBM Corporation, 2007
- *
- * Based on Bamboo code by Josh Boyer <jwboyer@beep.vnet.ibm.com>
- * Copyright IBM Corporation, 2007
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; version 2 of the License
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <stdarg.h>
 #include <stddef.h>
 #include "types.h"

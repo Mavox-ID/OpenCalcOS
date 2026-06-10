@@ -1,16 +1,20 @@
 /*
- * USB Video Class definitions.
- *
- * Copyright (C) 2009 Laurent Pinchart <laurent.pinchart@skynet.be>
- *
- * This file holds USB constants and structures defined by the USB Device
- * Class Definition for Video Devices. Unless otherwise stated, comments
- * below reference relevant sections of the USB Video Class 1.1 specification
- * available at
- *
- * http://www.usb.org/developers/devclass_docs/USB_Video_Class_1_1.zip
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __BEEP_USB_VIDEO_H
 #define __BEEP_USB_VIDEO_H
 

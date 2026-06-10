@@ -1,22 +1,20 @@
 /*
- * UHCI HCD (Host Controller Driver) for GRLIB GRUSBHC
- *
- * Copyright (c) 2011 Jan Andersson <jan@gaisler.com>
- *
- * This file is based on UHCI PCI HCD:
- * (C) Copyright 1999 Linus Torvalds
- * (C) Copyright 1999-2002 Johannes Erdfelt, johannes@erdfelt.com
- * (C) Copyright 1999 Randy Dunlap
- * (C) Copyright 1999 Georg Acher, acher@in.tum.de
- * (C) Copyright 1999 Deti Fliegl, deti@fliegl.de
- * (C) Copyright 1999 Thomas Sailer, sailer@ife.ee.ethz.ch
- * (C) Copyright 1999 Roman Weissgaerber, weissg@vienna.at
- * (C) Copyright 2000 Yggdrasil Computing, Inc. (port of new PCI interface
- *               support from usb-ohci.c by Adam Richter, adam@yggdrasil.com).
- * (C) Copyright 1999 Gregory P. Smith (from usb-ohci.c)
- * (C) Copyright 2004-2007 Alan Stern, stern@rowland.harvard.edu
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/of_irq.h>
 #include <beep/of_address.h>
 #include <beep/of_platform.h>

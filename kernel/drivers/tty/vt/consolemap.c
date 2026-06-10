@@ -1,16 +1,20 @@
 /*
- * consolemap.c
- *
- * Mapping from internal code (such as Latin-1 or Unicode or IBM PC code)
- * to font positions.
- *
- * aeb, 950210
- *
- * Support for multiple unimaps by Jakub Jelinek <jj@ultra.beep.cz>, July 1998
- *
- * Fix bug in inverse translation. Stanislav Voronyi <stas@cnti.uanet.kharkov.ua>, Dec 1998
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kd.h>
 #include <beep/errno.h>

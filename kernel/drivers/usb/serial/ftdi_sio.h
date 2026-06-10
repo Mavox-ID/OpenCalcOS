@@ -1,27 +1,20 @@
 /*
- * Driver definitions for the FTDI USB Single Port Serial Converter -
- * known as FTDI_SIO (Serial Input/Output application of the chipset)
- *
- * For USB vendor/product IDs (VID/PID), please see ftdi_sio_ids.h
- *
- *
- * The example I have is known as the USC-1000 which is available from
- * http://www.dse.co.nz - cat no XH4214 It looks similar to this:
- * http://www.dansdata.com/usbser.htm but I can't be sure There are other
- * USC-1000s which don't look like my device though so beware!
- *
- * The device is based on the FTDI FT8U100AX chip. It has a DB25 on one side,
- * USB on the other.
- *
- * Thanx to FTDI (http://www.ftdichip.com) for so kindly providing details
- * of the protocol required to talk to the device and ongoing assistence
- * during development.
- *
- * Bill Ryder - bryder@sgi.com formerly of Silicon Graphics, Inc.- wrote the
- * FTDI_SIO implementation.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* Commands */
 #define FTDI_SIO_RESET			0 /* Reset the port */
 #define FTDI_SIO_MODEM_CTRL		1 /* Set the modem control register */

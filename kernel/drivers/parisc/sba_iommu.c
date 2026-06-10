@@ -1,24 +1,20 @@
 /*
-**  System Bus Adapter (SBA) I/O MMU manager
-**
-**	(c) Copyright 2000-2004 Grant Grundler <grundler @ parisc-beep x org>
-**	(c) Copyright 2004 Naresh Kumar Inna <knaresh at india x hp x com>
-**	(c) Copyright 2000-2004 Hewlett-Packard Company
-**
-**	Portions (c) 1999 Dave S. Miller (from sparc64 I/O MMU code)
-**
-**	This program is free software; you can redistribute it and/or modify
-**	it under the terms of the GNU General Public License as published by
-**      the Free Software Foundation; either version 2 of the License, or
-**      (at your option) any later version.
-**
-**
-** This module initializes the IOC (I/O Controller) found on B1000/C3000/
-** J5000/J7000/N-class/L-class machines and their successors.
-**
-** FIXME: add DMA hint support programming in both sba and lba modules.
-*/
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/kernel.h>
 #include <beep/spinlock.h>

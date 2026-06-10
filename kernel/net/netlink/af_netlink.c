@@ -1,26 +1,20 @@
 /*
- * NETLINK      Kernel-user communication protocol.
- *
- * 		Authors:	Alan Cox <alan@lxorguk.ukuu.org.uk>
- * 				Alexey Kuznetsov <kuznet@ms2.inr.ac.ru>
- *
- *		This program is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- *
- * Tue Jun 26 14:36:48 MEST 2001 Herbert "herp" Rosmanith
- *                               added netlink_proto_exit
- * Tue Jan 22 18:32:44 BRST 2002 Arnaldo C. de Melo <acme@conectiva.com.br>
- * 				 use nlk_sk, as sk->protinfo is on a diet 8)
- * Fri Jul 22 19:51:12 MEST 2005 Harald Welte <laforge@gnumonks.org>
- * 				 - inc module use count of module that owns
- * 				   the kernel socket in case userspace opens
- * 				   socket of same protocol
- * 				 - remove all module support, since netlink is
- * 				   mandatory if CONFIG_NET=y these days
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 
 #include <beep/capability.h>

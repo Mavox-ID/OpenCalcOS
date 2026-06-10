@@ -1,30 +1,20 @@
 /*
- * scsi_scan.c
- *
- * Copyright (C) 2000 Eric Youngdale,
- * Copyright (C) 2002 Patrick Mansfield
- *
- * The general scanning/probing algorithm is as follows, exceptions are
- * made to it depending on device specific flags, compilation options, and
- * global variable (boot or module load time) settings.
- *
- * A specific LUN is scanned via an INQUIRY command; if the LUN has a
- * device attached, a scsi_device is allocated and setup for it.
- *
- * For every id of every channel on the given host:
- *
- * 	Scan LUN 0; if the target responds to LUN 0 (even if there is no
- * 	device or storage attached to LUN 0):
- *
- * 		If LUN 0 has a device attached, allocate and setup a
- * 		scsi_device for it.
- *
- * 		If target is SCSI-3 or up, issue a REPORT LUN, and scan
- * 		all of the LUNs returned by the REPORT LUN; else,
- * 		sequentially scan LUNs up until some maximum is reached,
- * 		or a LUN is seen that cannot have a device attached to it.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/moduleparam.h>
 #include <beep/init.h>

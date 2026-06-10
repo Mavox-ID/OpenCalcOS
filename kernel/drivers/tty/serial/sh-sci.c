@@ -1,22 +1,20 @@
 /*
- * SuperH on-chip serial module support.  (SCI with no FIFO / with FIFO)
- *
- *  Copyright (C) 2002 - 2011  Paul Mundt
- *  Modified to support SH7720 SCIF. Markus Brunner, Mark Jonas (Jul 2007).
- *
- * based off of the old drivers/char/sh-sci.c by:
- *
- *   Copyright (C) 1999, 2000  Niibe Yutaka
- *   Copyright (C) 2000  Sugioka Toshinobu
- *   Modified to support multiple serial ports. Stuart Menefy (May 2000).
- *   Modified to support SecureEdge. David McCullough (2002)
- *   Modified to support SH7300 SCIF. Takashi Kusuda (Jun 2003).
- *   Removed SH7300 support (Jul 2007).
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file "COPYING" in the main directory of this archive
- * for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #if defined(CONFIG_SERIAL_SH_SCI_CONSOLE) && defined(CONFIG_MAGIC_SYSRQ)
 #define SUPPORT_SYSRQ
 #endif

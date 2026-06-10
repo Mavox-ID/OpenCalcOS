@@ -1,28 +1,20 @@
-/* cs89x0.c: A Crystal Semiconductor (Now Cirrus Logic) CS89[02]0
- *           driver for beep.
- * Written 1996 by Russell Nelson, with reference to skeleton.c
- * written 1993-1994 by Donald Becker.
- *
- * This software may be used and distributed according to the terms
- * of the GNU General Public License, incorporated herein by reference.
- *
- * The author may be reached at nelson@crynwr.com, Crynwr
- * Software, 521 Pleasant Valley Rd., Potsdam, NY 13676
- *
- * Other contributors:
- * Mike Cruse        : mcruse@cti-ltd.com
- * Russ Nelson
- * Melody Lee        : ethernet@crystal.cirrus.com
- * Alan Cox
- * Andrew Morton
- * Oskar Schirmer    : oskar@scara.com
- * Deepak Saxena     : dsaxena@plexity.net
- * Dmitry Pervushin  : dpervushin@ru.mvista.com
- * Deepak Saxena     : dsaxena@plexity.net
- * Domenico Andreoli : cavokz@gmail.com
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * Set this to zero to disable DMA code
  *

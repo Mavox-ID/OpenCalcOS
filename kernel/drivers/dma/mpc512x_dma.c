@@ -1,33 +1,20 @@
 /*
- * Copyright (C) Freescale Semicondutor, Inc. 2007, 2008.
- * Copyright (C) Semihalf 2009
- * Copyright (C) Ilya Yanok, Emcraft Systems 2010
- *
- * Written by Piotr Ziecik <kosmo@semihalf.com>. Hardware description
- * (defines, structures and comments) was taken from MPC5121 DMA driver
- * written by Hongjun Chen <hong-jun.chen@freescale.com>.
- *
- * Approved as OSADL project by a majority of OSADL members and funded
- * by OSADL membership fees in 2009;  for details see www.osadl.org.
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by the Free
- * Software Foundation; either version 2 of the License, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
- * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
- * more details.
- *
- * You should have received a copy of the GNU General Public License along with
- * this program; if not, write to the Free Software Foundation, Inc., 59
- * Temple Place - Suite 330, Boston, MA  02111-1307, USA.
- *
- * The full GNU General Public License is included in this distribution in the
- * file called COPYING.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * This is initial version of MPC5121 DMA driver. Only memory to memory
  * transfers are supported (tested using dmatest module).

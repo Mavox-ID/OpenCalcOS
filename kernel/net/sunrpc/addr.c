@@ -1,21 +1,20 @@
 /*
- * Copyright 2009, Oracle.  All rights reserved.
- *
- * Convert socket addresses to presentation addresses and universal
- * addresses, and vice versa.
- *
- * Universal addresses are introduced by RFC 1833 and further refined by
- * recent RFCs describing NFSv4.  The universal address format is part
- * of the external (network) interface provided by rpcbind version 3
- * and 4, and by NFSv4.  Such an address is a string containing a
- * presentation format IP address followed by a port number in
- * "hibyte.lobyte" format.
- *
- * IPv6 addresses can also include a scope ID, typically denoted by
- * a '%' followed by a device name or a non-negative integer.  Refer to
- * RFC 4291, Section 2.2 for details on IPv6 presentation formats.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <net/ipv6.h>
 #include <beep/sunrpc/clnt.h>
 #include <beep/slab.h>

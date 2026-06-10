@@ -1,55 +1,20 @@
 /*
- * Wireless USB Host Controller
- * Common infrastructure for WHCI and HWA WUSB-HC drivers
- *
- *
- * Copyright (C) 2005-2006 Intel Corporation
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License version
- * 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- * 02110-1301, USA.
- *
- *
- * This driver implements parts common to all Wireless USB Host
- * Controllers (struct wusbhc, embedding a struct usb_hcd) and is used
- * by:
- *
- *   - hwahc: HWA, USB-dongle that implements a Wireless USB host
- *     controller, (Wireless USB 1.0 Host-Wire-Adapter specification).
- *
- *   - whci: WHCI, a PCI card with a wireless host controller
- *     (Wireless Host Controller Interface 1.0 specification).
- *
- * Check out the Design-overview.txt file in the source documentation
- * for other details on the implementation.
- *
- * Main blocks:
- *
- *  rh         Root Hub emulation (part of the HCD glue)
- *
- *  devconnect Handle all the issues related to device connection,
- *             authentication, disconnection, timeout, reseting,
- *             keepalives, etc.
- *
- *  mmc        MMC IE broadcasting handling
- *
- * A host controller driver just initializes its stuff and as part of
- * that, creates a 'struct wusbhc' instance that handles all the
- * common WUSB mechanisms. Links in the function ops that are specific
- * to it and then registers the host controller. Ready to run.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __WUSBHC_H__
 #define __WUSBHC_H__
 

@@ -1,74 +1,20 @@
 /*
- * File:	mca.c
- * Purpose:	Generic MCA handling layer
- *
- * Copyright (C) 2003 Hewlett-Packard Co
- *	David Mosberger-Tang <davidm@hpl.hp.com>
- *
- * Copyright (C) 2002 Dell Inc.
- * Copyright (C) Matt Domsch <Matt_Domsch@dell.com>
- *
- * Copyright (C) 2002 Intel
- * Copyright (C) Jenna Hall <jenna.s.hall@intel.com>
- *
- * Copyright (C) 2001 Intel
- * Copyright (C) Fred Lewis <frederick.v.lewis@intel.com>
- *
- * Copyright (C) 2000 Intel
- * Copyright (C) Chuck Fleckenstein <cfleck@co.intel.com>
- *
- * Copyright (C) 1999, 2004-2008 Silicon Graphics, Inc.
- * Copyright (C) Vijay Chander <vijay@engr.sgi.com>
- *
- * Copyright (C) 2006 FUJITSU LIMITED
- * Copyright (C) Hidetoshi Seto <seto.hidetoshi@jp.fujitsu.com>
- *
- * 2000-03-29 Chuck Fleckenstein <cfleck@co.intel.com>
- *	      Fixed PAL/SAL update issues, began MCA bug fixes, logging issues,
- *	      added min save state dump, added INIT handler.
- *
- * 2001-01-03 Fred Lewis <frederick.v.lewis@intel.com>
- *	      Added setup of CMCI and CPEI IRQs, logging of corrected platform
- *	      errors, completed code for logging of corrected & uncorrected
- *	      machine check errors, and updated for conformance with Nov. 2000
- *	      revision of the SAL 3.0 spec.
- *
- * 2002-01-04 Jenna Hall <jenna.s.hall@intel.com>
- *	      Aligned MCA stack to 16 bytes, added platform vs. CPU error flag,
- *	      set SAL default return values, changed error record structure to
- *	      linked list, added init call to sal_get_state_info_size().
- *
- * 2002-03-25 Matt Domsch <Matt_Domsch@dell.com>
- *	      GUID cleanups.
- *
- * 2003-04-15 David Mosberger-Tang <davidm@hpl.hp.com>
- *	      Added INIT backtrace support.
- *
- * 2003-12-08 Keith Owens <kaos@sgi.com>
- *	      smp_call_function() must not be called from interrupt context
- *	      (can deadlock on tasklist_lock).
- *	      Use keventd to call smp_call_function().
- *
- * 2004-02-01 Keith Owens <kaos@sgi.com>
- *	      Avoid deadlock when using printk() for MCA and INIT records.
- *	      Delete all record printing code, moved to salinfo_decode in user
- *	      space.  Mark variables and functions static where possible.
- *	      Delete dead variables and functions.  Reorder to remove the need
- *	      for forward declarations and to consolidate related code.
- *
- * 2005-08-12 Keith Owens <kaos@sgi.com>
- *	      Convert MCA/INIT handlers to use per event stacks and SAL/OS
- *	      state.
- *
- * 2005-10-07 Keith Owens <kaos@sgi.com>
- *	      Add notify_die() hooks.
- *
- * 2006-09-15 Hidetoshi Seto <seto.hidetoshi@jp.fujitsu.com>
- *	      Add printing support for MCA/INIT.
- *
- * 2007-04-27 Russ Anderson <rja@sgi.com>
- *	      Support multiple cpus going through OS_MCA in the same event.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/jiffies.h>
 #include <beep/types.h>
 #include <beep/init.h>

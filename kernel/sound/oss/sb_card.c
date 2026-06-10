@@ -1,27 +1,20 @@
 /*
- * sound/oss/sb_card.c
- *
- * Detection routine for the ISA Sound Blaster and compatible sound
- * cards.
- *
- * This file is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
- * Version 2 (June 1991). See the "COPYING" file distributed with this
- * software for more info.
- *
- * This is a complete rewrite of the detection routines. This was
- * prompted by the PnP API change during v2.5 and the ugly state the
- * code was in.
- *
- * Copyright (C) by Paul Laufer 2002. Based on code originally by
- * Hannu Savolainen which was modified by many others over the
- * years. Authors specifically mentioned in the previous version were:
- * Daniel Stone, Alessandro Zummo, Jeff Garzik, Arnaldo Carvalho de
- * Melo, Daniel Church, and myself.
- *
- * 02-05-2003 Original Release, Paul Laufer <paul@laufernet.com>
- * 02-07-2003 Bug made it into first release. Take two.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/moduleparam.h>
 #include <beep/slab.h>

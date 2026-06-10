@@ -1,32 +1,20 @@
 /*
- * This module exposes the interface to kernel space for specifying
- * QoS dependencies.  It provides infrastructure for registration of:
- *
- * Dependents on a QoS value : register requests
- * Watchers of QoS value : get notified when target QoS value changes
- *
- * This QoS design is best effort based.  Dependents register their QoS needs.
- * Watchers register to keep track of the current QoS needs of the system.
- *
- * There are 3 basic classes of QoS parameter: latency, timeout, throughput
- * each have defined units:
- * latency: usec
- * timeout: usec <-- currently not used.
- * throughput: kbs (kilo byte / sec)
- *
- * There are lists of pm_qos_objects each one wrapping requests, notifiers
- *
- * User mode requests on a QOS parameter register themselves to the
- * subsystem by opening the device node /dev/... and writing there request to
- * the node.  As long as the process holds a file handle open to the node the
- * client continues to be accounted for.  Upon file release the usermode
- * request is removed and a new qos target is computed.  This way when the
- * request that the application has is cleaned up when closes the file
- * pointer or exits the pm_qos_object will get an opportunity to clean up.
- *
- * Mark Gross <mgross@beep.intel.com>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*#define DEBUG*/
 
 #include <beep/pm_qos.h>

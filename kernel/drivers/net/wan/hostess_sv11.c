@@ -1,25 +1,20 @@
 /*
- *	Comtrol SV11 card driver
- *
- *	This is a slightly odd Z85230 synchronous driver. All you need to
- *	know basically is
- *
- *	Its a genuine Z85230
- *
- *	It supports DMA using two DMA channels in SYNC mode. The driver doesn't
- *	use these facilities
- *	
- *	The control port is at io+1, the data at io+3 and turning off the DMA
- *	is done by writing 0 to io+4
- *
- *	The hardware does the bus handling to avoid the need for delays between
- *	touching control registers.
- *
- *	Port B isn't wired (why - beats me)
- *
- *	Generic HDLC port Copyright (C) 2008 Krzysztof Halasa <khc@pm.waw.pl>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

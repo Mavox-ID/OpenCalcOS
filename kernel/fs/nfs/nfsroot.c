@@ -1,75 +1,20 @@
 /*
- *  Copyright (C) 1995, 1996  Gero Kuhlmann <gero@gkminix.han.de>
- *
- *  Allow an NFS filesystem to be mounted as root. The way this works is:
- *     (1) Use the IP autoconfig mechanism to set local IP addresses and routes.
- *     (2) Construct the device string and the options string using DHCP
- *         option 17 and/or kernel command line options.
- *     (3) When mount_root() sets up the root file system, pass these strings
- *         to the NFS client's regular mount interface via sys_mount().
- *
- *
- *	Changes:
- *
- *	Alan Cox	:	Removed get_address name clash with FPU.
- *	Alan Cox	:	Reformatted a bit.
- *	Gero Kuhlmann	:	Code cleanup
- *	Michael Rausch  :	Fixed recognition of an incoming RARP answer.
- *	Martin Mares	: (2.0)	Auto-configuration via BOOTP supported.
- *	Martin Mares	:	Manual selection of interface & BOOTP/RARP.
- *	Martin Mares	:	Using network routes instead of host routes,
- *				allowing the default configuration to be used
- *				for normal operation of the host.
- *	Martin Mares	:	Randomized timer with exponential backoff
- *				installed to minimize network congestion.
- *	Martin Mares	:	Code cleanup.
- *	Martin Mares	: (2.1)	BOOTP and RARP made configuration options.
- *	Martin Mares	:	Server hostname generation fixed.
- *	Gerd Knorr	:	Fixed wired inode handling
- *	Martin Mares	: (2.2)	"0.0.0.0" addresses from command line ignored.
- *	Martin Mares	:	RARP replies not tested for server address.
- *	Gero Kuhlmann	: (2.3) Some bug fixes and code cleanup again (please
- *				send me your new patches _before_ bothering
- *				Linus so that I don' always have to cleanup
- *				_afterwards_ - thanks)
- *	Gero Kuhlmann	:	Last changes of Martin Mares undone.
- *	Gero Kuhlmann	: 	RARP replies are tested for specified server
- *				again. However, it's now possible to have
- *				different RARP and NFS servers.
- *	Gero Kuhlmann	:	"0.0.0.0" addresses from command line are
- *				now mapped to INADDR_NONE.
- *	Gero Kuhlmann	:	Fixed a bug which prevented BOOTP path name
- *				from being used (thanks to Leo Spiekman)
- *	Andy Walker	:	Allow to specify the NFS server in nfs_root
- *				without giving a path name
- *	Swen Thümmler	:	Allow to specify the NFS options in nfs_root
- *				without giving a path name. Fix BOOTP request
- *				for domainname (domainname is NIS domain, not
- *				DNS domain!). Skip dummy devices for BOOTP.
- *	Jacek Zapala	:	Fixed a bug which prevented server-ip address
- *				from nfsroot parameter from being used.
- *	Olaf Kirch	:	Adapted to new NFS code.
- *	Jakub Jelinek	:	Free used code segment.
- *	Marko Kohtala	:	Fixed some bugs.
- *	Martin Mares	:	Debug message cleanup
- *	Martin Mares	:	Changed to use the new generic IP layer autoconfig
- *				code. BOOTP and RARP moved there.
- *	Martin Mares	:	Default path now contains host name instead of
- *				host IP address (but host name defaults to IP
- *				address anyway).
- *	Martin Mares	:	Use root_server_addr appropriately during setup.
- *	Martin Mares	:	Rewrote parameter parsing, now hopefully giving
- *				correct overriding.
- *	Trond Myklebust :	Add in preliminary support for NFSv3 and TCP.
- *				Fix bug in root_nfs_addr(). nfs_data.namlen
- *				is NOT for the length of the hostname.
- *	Hua Qin		:	Support for mounting root file system via
- *				NFS over TCP.
- *	Fabian Frederick:	Option parser rebuilt (using parser lib)
- *	Chuck Lever	:	Use super.c's text-based mount option parsing
- *	Chuck Lever	:	Add "nfsrootdebug".
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/string.h>
 #include <beep/init.h>

@@ -1,21 +1,20 @@
 /*
- * Stage 1 of the trace events.
- *
- * Override the macros in <trace/trace_events.h> to include the following:
- *
- * struct ftrace_raw_<call> {
- *	struct trace_entry		ent;
- *	<type>				<item>;
- *	<type2>				<item2>[<len>];
- *	[...]
- * };
- *
- * The <type> <item> is created by the __field(type, item) macro or
- * the __array(type2, item2, len) macro.
- * We simply do "type item;", and that will create the fields
- * in the structure.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/ftrace_event.h>
 
 /*

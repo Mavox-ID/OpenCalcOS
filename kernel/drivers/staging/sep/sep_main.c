@@ -1,41 +1,20 @@
 /*
- *
- *  sep_main.c - Security Processor Driver main group of functions
- *
- *  Copyright(c) 2009-2011 Intel Corporation. All rights reserved.
- *  Contributions(c) 2009-2011 Discretix. All rights reserved.
- *
- *  This program is free software; you can redistribute it and/or modify it
- *  under the terms of the GNU General Public License as published by the Free
- *  Software Foundation; version 2 of the License.
- *
- *  This program is distributed in the hope that it will be useful, but WITHOUT
- *  ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
- *  FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
- *  more details.
- *
- *  You should have received a copy of the GNU General Public License along with
- *  this program; if not, write to the Free Software Foundation, Inc., 59
- *  Temple Place - Suite 330, Boston, MA  02111-1307, USA.
- *
- *  CONTACTS:
- *
- *  Mark Allyn		mark.a.allyn@intel.com
- *  Jayant Mangalampalli jayant.mangalampalli@intel.com
- *
- *  CHANGES:
- *
- *  2009.06.26	Initial publish
- *  2010.09.14  Upgrade to Medfield
- *  2011.01.21  Move to sep_main.c to allow for sep_crypto.c
- *  2011.02.22  Enable kernel crypto operation
- *
- *  Please note that this driver is based on information in the Discretix
- *  CryptoCell 5.2 Driver Implementation Guide; the Discretix CryptoCell 5.2
- *  Integration Intel Medfield appendix; the Discretix CryptoCell 5.2
- *  Beep Driver Integration Guide; and the Discretix CryptoCell 5.2 System
- *  Overview and Integration Guide.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* #define DEBUG */
 /* #define SEP_PERF_DEBUG */
 

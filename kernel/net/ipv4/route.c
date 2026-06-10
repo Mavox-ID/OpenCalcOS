@@ -1,67 +1,20 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the BEEP
- *		operating system.  INET is implemented using the  BSD Socket
- *		interface as the means of communication with the user level.
- *
- *		ROUTE - implementation of the IP router.
- *
- * Authors:	Ross Biro
- *		Fred N. van Kempen, <waltje@uWalt.NL.Mugnet.ORG>
- *		Alan Cox, <gw4pts@gw4pts.ampr.org>
- *		Linus Torvalds, <Linus.Torvalds@helsinki.fi>
- *		Alexey Kuznetsov, <kuznet@ms2.inr.ac.ru>
- *
- * Fixes:
- *		Alan Cox	:	Verify area fixes.
- *		Alan Cox	:	cli() protects routing changes
- *		Rui Oliveira	:	ICMP routing table updates
- *		(rco@di.uminho.pt)	Routing table insertion and update
- *		Linus Torvalds	:	Rewrote bits to be sensible
- *		Alan Cox	:	Added BSD route gw semantics
- *		Alan Cox	:	Super /proc >4K
- *		Alan Cox	:	MTU in route table
- *		Alan Cox	: 	MSS actually. Also added the window
- *					clamper.
- *		Sam Lantinga	:	Fixed route matching in rt_del()
- *		Alan Cox	:	Routing cache support.
- *		Alan Cox	:	Removed compatibility cruft.
- *		Alan Cox	:	RTF_REJECT support.
- *		Alan Cox	:	TCP irtt support.
- *		Jonathan Naylor	:	Added Metric support.
- *	Miquel van Smoorenburg	:	BSD API fixes.
- *	Miquel van Smoorenburg	:	Metrics.
- *		Alan Cox	:	Use __u32 properly
- *		Alan Cox	:	Aligned routing errors more closely with BSD
- *					our system is still very different.
- *		Alan Cox	:	Faster /proc handling
- *	Alexey Kuznetsov	:	Massive rework to support tree based routing,
- *					routing caches and better behaviour.
- *
- *		Olaf Erb	:	irtt wasn't being copied right.
- *		Bjorn Ekwall	:	Kerneld route support.
- *		Alan Cox	:	Multicast fixed (I hope)
- * 		Pavel Krauz	:	Limited broadcast fixed
- *		Mike McLagan	:	Routing by source
- *	Alexey Kuznetsov	:	End of old history. Split to fib.c and
- *					route.c and rewritten from scratch.
- *		Andi Kleen	:	Load-limit warning messages.
- *	Vitaly E. Lavrov	:	Transparent proxy revived after year coma.
- *	Vitaly E. Lavrov	:	Race condition in ip_route_input_slow.
- *	Tobias Ringstrom	:	Uninitialized res.type in ip_route_output_slow.
- *	Vladimir V. Ivanov	:	IP rule info (flowid) is really useful.
- *		Marc Boucher	:	routing by fwmark
- *	Robert Olsson		:	Added rt_cache statistics
- *	Arnaldo C. Melo		:	Convert proc stuff to seq_file
- *	Eric Dumazet		:	hashed spinlocks and rt_check_expire() fixes.
- * 	Ilia Sotnikov		:	Ignore TOS on PMTUD and Redirect
- * 	Ilia Sotnikov		:	Removed TOS from hash calculations
- *
- *		This program is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) "IPv4: " fmt
 
 #include <beep/module.h>

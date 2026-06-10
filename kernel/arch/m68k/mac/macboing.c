@@ -1,14 +1,20 @@
 /*
- *	Mac bong noise generator. Note - we ought to put a boingy noise
- *	here 8)
- *
- *	----------------------------------------------------------------------
- *	16.11.98:
- *	rewrote some functions, added support for Enhanced ASC (Quadras)
- *	after the NetBSD asc.c console bell patch by Colin Wood/Frederick Bruck
- *	Juergen Mellinger (juergen.mellinger@t-online.de)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/sched.h>
 #include <beep/timer.h>
 

@@ -1,19 +1,20 @@
 /*
- * Libata driver for the highpoint 366 and 368 UDMA66 ATA controllers.
- *
- * This driver is heavily based upon:
- *
- * beep/drivers/ide/pci/hpt366.c		Version 0.36	April 25, 2003
- *
- * Copyright (C) 1999-2003		Andre Hedrick <andre@beep-ide.org>
- * Portions Copyright (C) 2001	        Sun Microsystems, Inc.
- * Portions Copyright (C) 2003		Red Hat Inc
- *
- *
- * TODO
- *	Look into engine reset on timeout errors. Should not be required.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/kernel.h>

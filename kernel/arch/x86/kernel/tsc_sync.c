@@ -1,19 +1,20 @@
 /*
- * check TSC synchronization.
- *
- * Copyright (C) 2006, Red Hat, Inc., Ingo Molnar
- *
- * We check whether all boot CPUs have their TSC's synchronized,
- * print a warning if not and turn off the TSC clock-source.
- *
- * The warp-check is point-to-point between two CPUs, the CPU
- * initiating the bootup is the 'source CPU', the freshly booting
- * CPU is the 'target CPU'.
- *
- * Only two CPUs may participate - they can enter in any order.
- * ( The serial nature of the boot logic and the CPU hotplug lock
- *   protects against more than 2 CPUs entering this code. )
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/spinlock.h>
 #include <beep/kernel.h>
 #include <beep/init.h>

@@ -1,14 +1,20 @@
 /*
- * beep/fs/nfs/pagelist.c
- *
- * A set of helper functions for managing NFS read and write requests.
- * The main purpose of these routines is to provide support for the
- * coalescing of several requests into a single RPC call.
- *
- * Copyright 2000, 2001 (c) Trond Myklebust <trond.myklebust@fys.uio.no>
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/slab.h>
 #include <beep/file.h>
 #include <beep/sched.h>

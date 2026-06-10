@@ -1,20 +1,20 @@
 /*
- * arch/powerpc/oprofile/op_model_7450.c
- *
- * Freescale 745x/744x oprofile support, based on fsl_booke support
- * Copyright (C) 2004 Anton Blanchard <anton@au.ibm.com>, IBM
- *
- * Copyright (c) 2004 Freescale Semiconductor, Inc
- *
- * Author: Andy Fleming
- * Maintainer: Kumar Gala <galak@kernel.crashing.org>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version
- * 2 of the License, or (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/oprofile.h>
 #include <beep/init.h>
 #include <beep/smp.h>

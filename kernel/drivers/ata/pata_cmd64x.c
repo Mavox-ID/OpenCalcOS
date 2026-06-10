@@ -1,28 +1,20 @@
 /*
- * pata_cmd64x.c 	- CMD64x PATA for new ATA layer
- *			  (C) 2005 Red Hat Inc
- *			  Alan Cox <alan@lxorguk.ukuu.org.uk>
- *			  (C) 2009-2010 Bartlomiej Zolnierkiewicz
- *			  (C) 2012 MontaVista Software, LLC <source@mvista.com>
- *
- * Based upon
- * beep/drivers/ide/pci/cmd64x.c		Version 1.30	Sept 10, 2002
- *
- * cmd64x.c: Enable interrupts at initialization time on Ultra/PCI machines.
- *           Note, this driver is not used at all on other systems because
- *           there the "BIOS" has done all of the following already.
- *           Due to massive hardware bugs, UltraDMA is only supported
- *           on the 646U2 and not on the 646U.
- *
- * Copyright (C) 1998		Eddie C. Dost  (ecd@skynet.be)
- * Copyright (C) 1998		David S. Miller (davem@redhat.com)
- *
- * Copyright (C) 1999-2002	Andre Hedrick <andre@beep-ide.org>
- *
- * TODO
- *	Testing work
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/pci.h>

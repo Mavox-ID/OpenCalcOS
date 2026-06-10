@@ -1,64 +1,20 @@
-
 /*
-   osdblk.c -- Export a single SCSI OSD object as a Beep block device
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-   Copyright 2009 Red Hat, Inc.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-   This program is free software; you can redistribute it and/or modify
-   it under the terms of the GNU General Public License as published by
-   the Free Software Foundation.
-
-   This program is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-   GNU General Public License for more details.
-
-   You should have received a copy of the GNU General Public License
-   along with this program; see the file COPYING.  If not, write to
-   the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
-
-
-   Instructions for use
-   --------------------
-
-   1) Map a Beep block device to an existing OSD object.
-
-      In this example, we will use partition id 1234, object id 5678,
-      OSD device /dev/osd1.
-
-      $ echo "1234 5678 /dev/osd1" > /sys/class/osdblk/add
-
-
-   2) List all active blkdev<->object mappings.
-
-      In this example, we have performed step #1 twice, creating two blkdevs,
-      mapped to two separate OSD objects.
-
-      $ cat /sys/class/osdblk/list
-      0 174 1234 5678 /dev/osd1
-      1 179 1994 897123 /dev/osd0
-
-      The columns, in order, are:
-      - blkdev unique id
-      - blkdev assigned major
-      - OSD object partition id
-      - OSD object id
-      - OSD device
-
-
-   3) Remove an active blkdev<->object mapping.
-
-      In this example, we remove the mapping with blkdev unique id 1.
-
-      $ echo 1 > /sys/class/osdblk/remove
-
-
-   NOTE:  The actual creation and deletion of OSD objects is outside the scope
-   of this driver.
-
- */
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/device.h>
 #include <beep/module.h>

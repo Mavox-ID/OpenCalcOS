@@ -1,24 +1,20 @@
 /*
- * An hwmon driver for the Analog Devices AD7414
- *
- * Copyright 2006 Stefan Roese <sr at denx.de>, DENX Software Engineering
- *
- * Copyright (c) 2008 PIKA Technologies
- *   Sean MacLennan <smaclennan@pikatech.com>
- *
- * Copyright (c) 2008 Spansion Inc.
- *   Frank Edelhaeuser <frank.edelhaeuser at spansion.com>
- *   (converted to "new style" I2C driver model, removed checkpatch.pl warnings)
- *
- * Based on ad7418.c
- * Copyright 2006 Tower Technologies, Alessandro Zummo <a.zummo at towertech.it>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/jiffies.h>
 #include <beep/i2c.h>

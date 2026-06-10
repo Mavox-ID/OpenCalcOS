@@ -1,17 +1,20 @@
 /*
- * Copyright (C) ST-Ericsson SA 2011
- *
- * License Terms: GNU General Public License v2
- * Author: Mattias Wallin <mattias.wallin@stericsson.com> for ST-Ericsson
- * Author: Sundar Iyer for ST-Ericsson
- * sched_clock implementation is based on:
- * plat-nomadik/timer.c Linus Walleij <linus.walleij@stericsson.com>
- *
- * DBx500-PRCMU Timer
- * The PRCMU has 5 timers which are available in a always-on
- * power domain.  We use the Timer 4 for our always-on clock
- * source on DB8500 and Timer 3 on DB5500.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/clockchips.h>
 #include <beep/clksrc-dbx500-prcmu.h>
 

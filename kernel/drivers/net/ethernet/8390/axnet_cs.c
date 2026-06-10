@@ -1,29 +1,20 @@
-/*======================================================================
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-    A PCMCIA ethernet driver for Asix AX88190-based cards
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-    The Asix AX88190 is a NS8390-derived chipset with a few nasty
-    idiosyncracies that make it very inconvenient to support with a
-    standard 8390 driver.  This driver is based on pcnet_cs, with the
-    tweaked 8390 code grafted on the end.  Much of what I did was to
-    clean up and update a similar driver supplied by Asix, which was
-    adapted by William Lee, william@asix.com.tw.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-    Copyright (C) 2001 David A. Hinds -- dahinds@users.sourceforge.net
-
-    axnet_cs.c 1.28 2002/06/29 06:27:37
-
-    The network driver code is based on Donald Becker's NE2000 code:
-
-    Written 1992,1993 by Donald Becker.
-    Copyright 1993 United States Government as represented by the
-    Director, National Security Agency.  This software may be used and
-    distributed according to the terms of the GNU General Public License,
-    incorporated herein by reference.
-    Donald Becker may be reached at becker@scyld.com
-
-======================================================================*/
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/kernel.h>

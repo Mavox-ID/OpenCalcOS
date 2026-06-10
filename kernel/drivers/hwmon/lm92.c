@@ -1,45 +1,20 @@
 /*
- * lm92 - Hardware monitoring driver
- * Copyright (C) 2005-2008  Jean Delvare <khali@beep-fr.org>
- *
- * Based on the lm90 driver, with some ideas taken from the lm_sensors
- * lm92 driver as well.
- *
- * The LM92 is a sensor chip made by National Semiconductor. It reports
- * its own temperature with a 0.0625 deg resolution and a 0.33 deg
- * accuracy. Complete datasheet can be obtained from National's website
- * at:
- *   http://www.national.com/pf/LM/LM92.html
- *
- * This driver also supports the MAX6635 sensor chip made by Maxim.
- * This chip is compatible with the LM92, but has a lesser accuracy
- * (1.0 deg). Complete datasheet can be obtained from Maxim's website
- * at:
- *   http://www.maxim-ic.com/quick_view2.cfm/qv_pk/3074
- *
- * Since the LM92 was the first chipset supported by this driver, most
- * comments will refer to this chipset, but are actually general and
- * concern all supported chipsets, unless mentioned otherwise.
- *
- * Support could easily be added for the National Semiconductor LM76
- * and Maxim MAX6633 and MAX6634 chips, which are mostly compatible
- * with the LM92.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/slab.h>

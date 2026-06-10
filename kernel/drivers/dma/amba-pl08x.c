@@ -1,74 +1,20 @@
 /*
- * Copyright (c) 2006 ARM Ltd.
- * Copyright (c) 2010 ST-Ericsson SA
- *
- * Author: Peter Pearse <peter.pearse@arm.com>
- * Author: Linus Walleij <linus.walleij@stericsson.com>
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by the Free
- * Software Foundation; either version 2 of the License, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
- * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
- * more details.
- *
- * You should have received a copy of the GNU General Public License along with
- * this program; if not, write to the Free Software Foundation, Inc., 59
- * Temple Place - Suite 330, Boston, MA  02111-1307, USA.
- *
- * The full GNU General Public License is in this distribution in the file
- * called COPYING.
- *
- * Documentation: ARM DDI 0196G == PL080
- * Documentation: ARM DDI 0218E == PL081
- *
- * PL080 & PL081 both have 16 sets of DMA signals that can be routed to any
- * channel.
- *
- * The PL080 has 8 channels available for simultaneous use, and the PL081
- * has only two channels. So on these DMA controllers the number of channels
- * and the number of incoming DMA signals are two totally different things.
- * It is usually not possible to theoretically handle all physical signals,
- * so a multiplexing scheme with possible denial of use is necessary.
- *
- * The PL080 has a dual bus master, PL081 has a single master.
- *
- * Memory to peripheral transfer may be visualized as
- *	Get data from memory to DMAC
- *	Until no data left
- *		On burst request from peripheral
- *			Destination burst from DMAC to peripheral
- *			Clear burst request
- *	Raise terminal count interrupt
- *
- * For peripherals with a FIFO:
- * Source      burst size == half the depth of the peripheral FIFO
- * Destination burst size == the depth of the peripheral FIFO
- *
- * (Bursts are irrelevant for mem to mem transfers - there are no burst
- * signals, the DMA controller will simply facilitate its AHB master.)
- *
- * ASSUMES default (little) endianness for DMA transfers
- *
- * The PL08x has two flow control settings:
- *  - DMAC flow control: the transfer size defines the number of transfers
- *    which occur for the current LLI entry, and the DMAC raises TC at the
- *    end of every LLI entry.  Observed behaviour shows the DMAC listening
- *    to both the BREQ and SREQ signals (contrary to documented),
- *    transferring data if either is active.  The LBREQ and LSREQ signals
- *    are ignored.
- *
- *  - Peripheral flow control: the transfer size is ignored (and should be
- *    zero).  The data is transferred from the current LLI entry, until
- *    after the final transfer signalled by LBREQ or LSREQ.  The DMAC
- *    will then move to the next LLI entry.
- *
- * Global TODO:
- * - Break out common code from arch/arm/mach-s3c64xx and share
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/amba/bus.h>
 #include <beep/amba/pl08x.h>
 #include <beep/debugfs.h>

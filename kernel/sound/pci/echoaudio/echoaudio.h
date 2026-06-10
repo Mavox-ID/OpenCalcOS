@@ -1,154 +1,20 @@
-/****************************************************************************
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-   Copyright Echo Digital Audio Corporation (c) 1998 - 2004
-   All rights reserved
-   www.echoaudio.com
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-   This file is part of Echo Digital Audio's generic driver library.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-   Echo Digital Audio's generic driver library is free software;
-   you can redistribute it and/or modify it under the terms of
-   the GNU General Public License as published by the Free Software
-   Foundation.
-
-   This program is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-   GNU General Public License for more details.
-
-   You should have received a copy of the GNU General Public License
-   along with this program; if not, write to the Free Software
-   Foundation, Inc., 59 Temple Place - Suite 330, Boston,
-   MA  02111-1307, USA.
-
- ****************************************************************************
-
- Translation from C++ and adaptation for use in ALSA-Driver
- were made by Giuliano Pochini <pochini@shiny.it>
-
- ****************************************************************************
-
-
-   Here's a block diagram of how most of the cards work:
-
-                  +-----------+
-           record |           |<-------------------- Inputs
-          <-------|           |        |
-     PCI          | Transport |        |
-     bus          |  engine   |       \|/
-          ------->|           |    +-------+
-            play  |           |--->|monitor|-------> Outputs
-                  +-----------+    | mixer |
-                                   +-------+
-
-   The lines going to and from the PCI bus represent "pipes".  A pipe performs
-   audio transport - moving audio data to and from buffers on the host via
-   bus mastering.
-
-   The inputs and outputs on the right represent input and output "busses."
-   A bus is a physical, real connection to the outside world.  An example
-   of a bus would be the 1/4" analog connectors on the back of Layla or
-   an RCA S/PDIF connector.
-
-   For most cards, there is a one-to-one correspondence between outputs
-   and busses; that is, each individual pipe is hard-wired to a single bus.
-
-   Cards that work this way are Darla20, Gina20, Layla20, Darla24, Gina24,
-   Layla24, Mona, and Indigo.
-
-
-   Mia has a feature called "virtual outputs."
-
-
-                  +-----------+
-           record |           |<----------------------------- Inputs
-          <-------|           |                  |
-     PCI          | Transport |                  |
-     bus          |  engine   |                 \|/
-          ------->|           |   +------+   +-------+
-            play  |           |-->|vmixer|-->|monitor|-------> Outputs
-                  +-----------+   +------+   | mixer |
-                                             +-------+
-
-
-   Obviously, the difference here is the box labeled "vmixer."  Vmixer is
-   short for "virtual output mixer."  For Mia, pipes are *not* hard-wired
-   to a single bus; the vmixer lets you mix any pipe to any bus in any
-   combination.
-
-   Note, however, that the left-hand side of the diagram is unchanged.
-   Transport works exactly the same way - the difference is in the mixer stage.
-
-
-   Pipes and busses are numbered starting at zero.
-
-
-
-   Pipe index
-   ==========
-
-   A number of calls in CEchoGals refer to a "pipe index".  A pipe index is
-   a unique number for a pipe that unambiguously refers to a playback or record
-   pipe.  Pipe indices are numbered starting with analog outputs, followed by
-   digital outputs, then analog inputs, then digital inputs.
-
-   Take Gina24 as an example:
-
-   Pipe index
-
-   0-7            Analog outputs (0 .. FirstDigitalBusOut-1)
-   8-15           Digital outputs (FirstDigitalBusOut .. NumBussesOut-1)
-   16-17          Analog inputs
-   18-25          Digital inputs
-
-
-   You get the pipe index by calling CEchoGals::OpenAudio; the other transport
-   functions take the pipe index as a parameter.  If you need a pipe index for
-   some other reason, use the handy Makepipe_index method.
-
-
-   Some calls take a CChannelMask parameter; CChannelMask is a handy way to
-   group pipe indices.
-
-
-
-   Digital mode switch
-   ===================
-
-   Some cards (right now, Gina24, Layla24, and Mona) have a Digital Mode Switch
-   or DMS.  Cards with a DMS can be set to one of three mutually exclusive
-   digital modes: S/PDIF RCA, S/PDIF optical, or ADAT optical.
-
-   This may create some confusion since ADAT optical is 8 channels wide and
-   S/PDIF is only two channels wide.  Gina24, Layla24, and Mona handle this
-   by acting as if they always have 8 digital outs and ins.  If you are in
-   either S/PDIF mode, the last 6 channels don't do anything - data sent
-   out these channels is thrown away and you will always record zeros.
-
-   Note that with Gina24, Layla24, and Mona, sample rates above 50 kHz are
-   only available if you have the card configured for S/PDIF optical or S/PDIF
-   RCA.
-
-
-
-   Double speed mode
-   =================
-
-   Some of the cards support 88.2 kHz and 96 kHz sampling (Darla24, Gina24,
-   Layla24, Mona, Mia, and Indigo).  For these cards, the driver sometimes has
-   to worry about "double speed mode"; double speed mode applies whenever the
-   sampling rate is above 50 kHz.
-
-   For instance, Mona and Layla24 support word clock sync.  However, they
-   actually support two different word clock modes - single speed (below
-   50 kHz) and double speed (above 50 kHz).  The hardware detects if a single
-   or double speed word clock signal is present; the generic code uses that
-   information to determine which mode to use.
-
-   The generic code takes care of all this for you.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
-
 #ifndef _ECHOAUDIO_H_
 #define _ECHOAUDIO_H_
 

@@ -1,42 +1,20 @@
 /*
- * OMAP MPUSS low power code
- *
- * Copyright (C) 2011 Texas Instruments, Inc.
- *	Santosh Shilimkar <santosh.shilimkar@ti.com>
- *
- * OMAP4430 MPUSS mainly consists of dual Cortex-A9 with per-CPU
- * Local timer and Watchdog, GIC, SCU, PL310 L2 cache controller,
- * CPU0 and CPU1 LPRM modules.
- * CPU0, CPU1 and MPUSS each have there own power domain and
- * hence multiple low power combinations of MPUSS are possible.
- *
- * The CPU0 and CPU1 can't support Closed switch Retention (CSWR)
- * because the mode is not supported by hw constraints of dormant
- * mode. While waking up from the dormant mode, a reset  signal
- * to the Cortex-A9 processor must be asserted by the external
- * power controller.
- *
- * With architectural inputs and hardware recommendations, only
- * below modes are supported from power gain vs latency point of view.
- *
- *	CPU0		CPU1		MPUSS
- *	----------------------------------------------
- *	ON		ON		ON
- *	ON(Inactive)	OFF		ON(Inactive)
- *	OFF		OFF		CSWR
- *	OFF		OFF		OSWR
- *	OFF		OFF		OFF(Device OFF *TBD)
- *	----------------------------------------------
- *
- * Note: CPU0 is the master core and it is the last CPU to go down
- * and first to wake-up when MPUSS low power states are excercised
- *
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/io.h>
 #include <beep/errno.h>

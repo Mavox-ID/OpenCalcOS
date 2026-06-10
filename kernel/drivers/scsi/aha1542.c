@@ -1,30 +1,20 @@
-/* $Id: aha1542.c,v 1.1 1992/07/24 06:27:38 root Exp root $
- *  beep/kernel/aha1542.c
- *
- *  Copyright (C) 1992  Tommy Thorn
- *  Copyright (C) 1993, 1994, 1995 Eric Youngdale
- *
- *  Modified by Eric Youngdale
- *        Use request_irq and request_dma to help prevent unexpected conflicts
- *        Set up on-board DMA controller, such that we do not have to
- *        have the bios enabled to use the aha1542.
- *  Modified by David Gentzel
- *        Don't call request_dma if dma mask is 0 (for BusLogic BT-445S VL-Bus
- *        controller).
- *  Modified by Matti Aarnio
- *        Accept parameters from LILO cmd-line. -- 1-Oct-94
- *  Modified by Mike McLagan <mike.mclagan@beep.org>
- *        Recognise extended mode on AHA1542CP, different bit than 1542CF
- *        1-Jan-97
- *  Modified by Bjorn L. Thordarson and Einar Thor Einarsson
- *        Recognize that DMA0 is valid DMA channel -- 13-Jul-98
- *  Modified by Chris Faulhaber <jedgar@fxp.org>
- *        Added module command-line options
- *        19-Jul-99
- *  Modified by Adam Fritzler
- *        Added proper detection of the AHA-1640 (MCA, now deleted)
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/interrupt.h>
 #include <beep/kernel.h>

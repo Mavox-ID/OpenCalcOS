@@ -1,26 +1,20 @@
 /*
- * Intel 82443BX/GX (440BX/GX chipset) Memory Controller EDAC kernel
- * module (C) 2006 Tim Small
- *
- * This file may be distributed under the terms of the GNU General
- * Public License.
- *
- * Written by Tim Small <tim@buttersideup.com>, based on work by Beep
- * Networx, Thayne Harbaugh, Dan Hollis <goemon at anime dot net> and
- * others.
- *
- * 440GX fix by Jason Uhlenkott <juhlenko@akamai.com>.
- *
- * Written with reference to 82443BX Host Bridge Datasheet:
- * http://download.intel.com/design/chipsets/datashts/29063301.pdf
- * references to this document given in [].
- *
- * This module doesn't support the 440LX, but it may be possible to
- * make it do so (the 440LX's register definitions are different, but
- * not completely so - I haven't studied them in enough detail to know
- * how easy this would be).
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 

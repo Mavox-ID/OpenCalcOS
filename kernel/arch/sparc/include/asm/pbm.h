@@ -1,22 +1,20 @@
 /*
- *
- * pbm.h: PCI bus module pseudo driver software state
- *        Adopted from sparc64 by V. Roganov and G. Raiko
- *
- * Original header:
- * pbm.h: U2P PCI bus module pseudo driver software state.
- *
- * Copyright (C) 1997 David S. Miller (davem@caip.rutgers.edu)
- *
- * To put things into perspective, consider sparc64 with a few PCI controllers.
- * Each type would have an own structure, with instances related one to one.
- * We have only pcic on sparc, but we want to be compatible with sparc64 pbm.h.
- * All three represent different abstractions.
- *   pci_bus  - Beep PCI subsystem view of a PCI bus (including bridged buses)
- *   pbm      - Arch-specific view of a PCI bus (sparc or sparc64)
- *   pcic     - Chip-specific information for PCIC.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __SPARC_PBM_H
 #define __SPARC_PBM_H
 

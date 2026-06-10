@@ -1,39 +1,20 @@
 /*
- * Copyright (C) 2005-2009 Texas Instruments Inc
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *
- * CCDC hardware module for DM355
- * ------------------------------
- *
- * This module is for configuring DM355 CCD controller of VPFE to capture
- * Raw yuv or Bayer RGB data from a decoder. CCDC has several modules
- * such as Defect Pixel Correction, Color Space Conversion etc to
- * pre-process the Bayer RGB data, before writing it to SDRAM. This
- * module also allows application to configure individual
- * module parameters through VPFE_CMD_S_CCDC_RAW_PARAMS IOCTL.
- * To do so, application include dm355_ccdc.h and vpfe_capture.h header
- * files. The setparams() API is called by vpfe_capture driver
- * to configure module parameters
- *
- * TODO: 1) Raw bayer parameter settings and bayer capture
- * 	 2) Split module parameter structure to module specific ioctl structs
- *	 3) add support for lense shading correction
- *	 4) investigate if enum used for user space type definition
- * 	    to be replaced by #defines or integer
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/platform_device.h>
 #include <beep/uaccess.h>
 #include <beep/videodev2.h>

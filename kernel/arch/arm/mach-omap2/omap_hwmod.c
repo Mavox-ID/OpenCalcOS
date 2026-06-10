@@ -1,130 +1,20 @@
 /*
- * omap_hwmod implementation for OMAP2/3/4
- *
- * Copyright (C) 2009-2011 Nokia Corporation
- * Copyright (C) 2011-2012 Texas Instruments, Inc.
- *
- * Paul Walmsley, Benoît Cousson, Kevin Hilman
- *
- * Created in collaboration with (alphabetical order): Thara Gopinath,
- * Tony Lindgren, Rajendra Nayak, Vikram Pandita, Sakari Poussa, Anand
- * Sawant, Santosh Shilimkar, Richard Woodruff
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * Introduction
- * ------------
- * One way to view an OMAP SoC is as a collection of largely unrelated
- * IP blocks connected by interconnects.  The IP blocks include
- * devices such as ARM processors, audio serial interfaces, UARTs,
- * etc.  Some of these devices, like the DSP, are created by TI;
- * others, like the SGX, largely originate from external vendors.  In
- * TI's documentation, on-chip devices are referred to as "OMAP
- * modules."  Some of these IP blocks are identical across several
- * OMAP versions.  Others are revised frequently.
- *
- * These OMAP modules are tied together by various interconnects.
- * Most of the address and data flow between modules is via OCP-based
- * interconnects such as the L3 and L4 buses; but there are other
- * interconnects that distribute the hardware clock tree, handle idle
- * and reset signaling, supply power, and connect the modules to
- * various pads or balls on the OMAP package.
- *
- * OMAP hwmod provides a consistent way to describe the on-chip
- * hardware blocks and their integration into the rest of the chip.
- * This description can be automatically generated from the TI
- * hardware database.  OMAP hwmod provides a standard, consistent API
- * to reset, enable, idle, and disable these hardware blocks.  And
- * hwmod provides a way for other core code, such as the Beep device
- * code or the OMAP power management and address space mapping code,
- * to query the hardware database.
- *
- * Using hwmod
- * -----------
- * Drivers won't call hwmod functions directly.  That is done by the
- * omap_device code, and in rare occasions, by custom integration code
- * in arch/arm/ *omap*.  The omap_device code includes functions to
- * build a struct platform_device using omap_hwmod data, and that is
- * currently how hwmod data is communicated to drivers and to the
- * Beep driver model.  Most drivers will call omap_hwmod functions only
- * indirectly, via pm_runtime*() functions.
- *
- * From a layering perspective, here is where the OMAP hwmod code
- * fits into the kernel software stack:
- *
- *            +-------------------------------+
- *            |      Device driver code       |
- *            |      (e.g., drivers/)         |
- *            +-------------------------------+
- *            |      Beep driver model       |
- *            |     (platform_device /        |
- *            |  platform_driver data/code)   |
- *            +-------------------------------+
- *            | OMAP core-driver integration  |
- *            |(arch/arm/mach-omap2/devices.c)|
- *            +-------------------------------+
- *            |      omap_device code         |
- *            | (../plat-omap/omap_device.c)  |
- *            +-------------------------------+
- *   ---->    |    omap_hwmod code/data       |    <-----
- *            | (../mach-omap2/omap_hwmod*)   |
- *            +-------------------------------+
- *            | OMAP clock/PRCM/register fns  |
- *            | (__raw_{read,write}l, clk*)   |
- *            +-------------------------------+
- *
- * Device drivers should not contain any OMAP-specific code or data in
- * them.  They should only contain code to operate the IP block that
- * the driver is responsible for.  This is because these IP blocks can
- * also appear in other SoCs, either from TI (such as DaVinci) or from
- * other manufacturers; and drivers should be reusable across other
- * platforms.
- *
- * The OMAP hwmod code also will attempt to reset and idle all on-chip
- * devices upon boot.  The goal here is for the kernel to be
- * completely self-reliant and independent from bootloaders.  This is
- * to ensure a repeatable configuration, both to ensure consistent
- * runtime behavior, and to make it easier for others to reproduce
- * bugs.
- *
- * OMAP module activity states
- * ---------------------------
- * The hwmod code considers modules to be in one of several activity
- * states.  IP blocks start out in an UNKNOWN state, then once they
- * are registered via the hwmod code, proceed to the REGISTERED state.
- * Once their clock names are resolved to clock pointers, the module
- * enters the CLKS_INITED state; and finally, once the module has been
- * reset and the integration registers programmed, the INITIALIZED state
- * is entered.  The hwmod code will then place the module into either
- * the IDLE state to save power, or in the case of a critical system
- * module, the ENABLED state.
- *
- * OMAP core integration code can then call omap_hwmod*() functions
- * directly to move the module between the IDLE, ENABLED, and DISABLED
- * states, as needed.  This is done during both the PM idle loop, and
- * in the OMAP core integration code's implementation of the PM runtime
- * functions.
- *
- * References
- * ----------
- * This is a partial list.
- * - OMAP2420 Multimedia Processor Silicon Revision 2.1.1, 2.2 (SWPU064)
- * - OMAP2430 Multimedia Device POP Silicon Revision 2.1 (SWPU090)
- * - OMAP34xx Multimedia Device Silicon Revision 3.1 (SWPU108)
- * - OMAP4430 Multimedia Device Silicon Revision 1.0 (SWPU140)
- * - Open Core Protocol Specification 2.2
- *
- * To do:
- * - handle IO mapping
- * - bus throughput & module latency measurement code
- *
- * XXX add tests at the beginning of each function to ensure the hwmod is
- * in the appropriate state
- * XXX error return values should be checked to ensure that they are
- * appropriate
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #undef DEBUG
 
 #include <beep/kernel.h>

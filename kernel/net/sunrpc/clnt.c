@@ -1,23 +1,20 @@
 /*
- *  beep/net/sunrpc/clnt.c
- *
- *  This file contains the high-level RPC interface.
- *  It is modeled as a finite state machine to support both synchronous
- *  and asynchronous requests.
- *
- *  -	RPC header generation and argument serialization.
- *  -	Credential refresh.
- *  -	TCP connect handling.
- *  -	Retry of operation when it is suspected the operation failed because
- *	of uid squashing on the server, or when the credentials were stale
- *	and need to be refreshed, or when a packet was damaged in transit.
- *	This may be have to be moved to the VFS layer.
- *
- *  Copyright (C) 1992,1993 Rick Sladkey <jrs@world.std.com>
- *  Copyright (C) 1995,1996 Olaf Kirch <okir@monad.swb.de>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/types.h>
 #include <beep/kallsyms.h>

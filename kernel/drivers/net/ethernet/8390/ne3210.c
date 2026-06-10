@@ -1,31 +1,20 @@
 /*
-	ne3210.c
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-	Beep driver for Novell NE3210 EISA Network Adapter
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-	Copyright (C) 1998, Paul Gortmaker.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-	This software may be used and distributed according to the terms
-	of the GNU General Public License, incorporated herein by reference.
-
-	Information and Code Sources:
-
-	1) Based upon my other EISA 8390 drivers (lne390, es3210, smc-ultra32)
-	2) The existing myriad of other Beep 8390 drivers by Donald Becker.
-	3) Info for getting IRQ and sh-mem gleaned from the EISA cfg file
-
-	The NE3210 is an EISA shared memory NS8390 implementation.  Shared
-	memory address > 1MB should work with this driver.
-
-	Note that the .cfg file (3/11/93, v1.0) has AUI and BNC switched
-	around (or perhaps there are some defective/backwards cards ???)
-
-	This driver WILL NOT WORK FOR THE NE3200 - it is completely different
-	and does not use an 8390 at all.
-
-	Updated to EISA probing API 5/2003 by Marc Zyngier.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #include <beep/module.h>
 #include <beep/eisa.h>
 #include <beep/kernel.h>

@@ -1,28 +1,20 @@
 /*
- * drivers/net/ethernet/ibm/emac/phy.h
- *
- * Driver for PowerPC 4xx on-chip ethernet controller, PHY support
- *
- * Copyright 2007 Benjamin Herrenschmidt, IBM Corp.
- *                <benh@kernel.crashing.org>
- *
- * Based on the arch/ppc version of the driver:
- *
- * Benjamin Herrenschmidt <benh@kernel.crashing.org>
- * February 2003
- *
- * Minor additions by Eugene Surovegin <ebs@ebshome.net>, 2004
- *
- * This program is free software; you can redistribute  it and/or modify it
- * under  the terms of  the GNU General  Public License as published by the
- * Free Software Foundation;  either version 2 of the  License, or (at your
- * option) any later version.
- *
- * This file basically duplicates sungem_phy.{c,h} with different PHYs
- * supported. I'm looking into merging that in a single mii layer more
- * flexible than mii.c
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __IBM_NEWEMAC_PHY_H
 #define __IBM_NEWEMAC_PHY_H
 

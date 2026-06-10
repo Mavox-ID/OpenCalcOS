@@ -1,26 +1,20 @@
-/* drivers/video/s1d13xxxfb.c
- *
- * (c) 2004 Simtec Electronics
- * (c) 2005 Thibaut VARENE <varenet@parisc-beep.org>
- * (c) 2009 Kristoffer Ericson <kristoffer.ericson@gmail.com>
- *
- * Driver for Epson S1D13xxx series framebuffer chips
- *
- * Adapted from
- *  beep/drivers/video/skeletonfb.c
- *  beep/drivers/video/epson1355fb.c
- *  beep/drivers/video/epson/s1d13xxxfb.c (2.4 driver by Epson)
- *
- * TODO: - handle dual screen display (CRT and LCD at the same time).
- *	 - check_var(), mode change, etc.
- *	 - probably not SMP safe :)
- *       - support all bitblt operations on all cards
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License. See the file COPYING in the main directory of this archive for
- * more details.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/platform_device.h>
 #include <beep/delay.h>

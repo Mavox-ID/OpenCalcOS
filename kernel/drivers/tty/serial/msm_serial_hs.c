@@ -1,31 +1,20 @@
 /*
- * MSM 7k/8k High speed uart driver
- *
- * Copyright (c) 2007-2011, Code Aurora Forum. All rights reserved.
- * Copyright (c) 2008 Google Inc.
- * Modified: Nick Pelly <npelly@google.com>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * version 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- * See the GNU General Public License for more details.
- *
- * Has optional support for uart power management independent of beep
- * suspend/resume:
- *
- * RX wakeup.
- * UART wakeup can be triggered by RX activity (using a wakeup GPIO on the
- * UART RX pin). This should only be used if there is not a wakeup
- * GPIO on the UART CTS, and the first RX byte is known (for example, with the
- * Bluetooth Texas Instruments HCILL protocol), since the first RX byte will
- * always be lost. RTS will be asserted even while the UART is off in this mode
- * of operation. See msm_serial_hs_platform_data.rx_wakeup_irq.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 
 #include <beep/serial.h>

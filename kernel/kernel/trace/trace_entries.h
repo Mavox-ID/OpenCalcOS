@@ -1,57 +1,20 @@
 /*
- * This file defines the trace event structures that go into the ring
- * buffer directly. They are created via macros so that changes for them
- * appear in the format file. Using macros will automate this process.
- *
- * The macro used to create a ftrace data structure is:
- *
- * FTRACE_ENTRY( name, struct_name, id, structure, print )
- *
- * @name: the name used the event name, as well as the name of
- *   the directory that holds the format file.
- *
- * @struct_name: the name of the structure that is created.
- *
- * @id: The event identifier that is used to detect what event
- *    this is from the ring buffer.
- *
- * @structure: the structure layout
- *
- *  - __field(	type,	item	)
- *	  This is equivalent to declaring
- *		type	item;
- *	  in the structure.
- *  - __array(	type,	item,	size	)
- *	  This is equivalent to declaring
- *		type	item[size];
- *	  in the structure.
- *
- *   * for structures within structures, the format of the internal
- *	structure is laid out. This allows the internal structure
- *	to be deciphered for the format file. Although these macros
- *	may become out of sync with the internal structure, they
- *	will create a compile error if it happens. Since the
- *	internel structures are just tracing helpers, this is not
- *	an issue.
- *
- *	When an internal structure is used, it should use:
- *
- *	__field_struct(	type,	item	)
- *
- *	instead of __field. This will prevent it from being shown in
- *	the output file. The fields in the structure should use.
- *
- *	__field_desc(	type,	container,	item		)
- *	__array_desc(	type,	container,	item,	len	)
- *
- *	type, item and len are the same as __field and __array, but
- *	container is added. This is the name of the item in
- *	__field_struct that this is describing.
- *
- *
- * @print: the print format shown to users in the format file.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * Function trace entry - function address and parent function address:
  */

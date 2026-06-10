@@ -1,113 +1,20 @@
 /*
-	usa49msg.h
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-	Copyright (C) 1998-2000 InnoSys Incorporated.  All Rights Reserved
-	This file is available under a BSD-style copyright
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-	Keyspan USB Async Message Formats for the USA49W
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-	Redistribution and use in source and binary forms, with or without
-	modification, are permitted provided that the following conditions are
-	met:
-
-	1. Redistributions of source code must retain this licence text
-   	without modification, this list of conditions, and the following
-   	disclaimer.  The following copyright notice must appear immediately at
-   	the beginning of all source files:
-
-        	Copyright (C) 1998-2000 InnoSys Incorporated.  All Rights Reserved
-
-        	This file is available under a BSD-style copyright
-
-	2. The name of InnoSys Incorporated may not be used to endorse or promote
-   	products derived from this software without specific prior written
-   	permission.
-
-	THIS SOFTWARE IS PROVIDED BY INNOSYS CORP. ``AS IS'' AND ANY EXPRESS OR
-	IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
-	OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN
-	NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
-	INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-	(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-	SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-	CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
-	LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
-	OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
-	SUCH DAMAGE.    
-
-	4th revision: USA49W version
-
-	Buffer formats for RX/TX data messages are not defined by
-	a structure, but are described here:
-
-	USB OUT (host -> USAxx, transmit) messages contain a 
-	REQUEST_ACK indicator (set to 0xff to request an ACK at the 
-	completion of transmit; 0x00 otherwise), followed by data:
-
-		RQSTACK DAT DAT DAT ...
-
-	with a total data length of 63.
-
-	USB IN (USAxx -> host, receive) messages begin with a status
-	byte in which the 0x80 bit is either:
-				   	
-		(a)	0x80 bit clear
-			indicates that the bytes following it are all data
-			bytes:
-
-				STAT DATA DATA DATA DATA DATA ...
-
-			for a total of up to 63 DATA bytes,
-
-	or:
-
-		(b)	0x80 bit set
-			indiates that the bytes following alternate data and
-			status bytes:
-
-				STAT DATA STAT DATA STAT DATA STAT DATA ...
-
-			for a total of up to 32 DATA bytes.
-
-	The valid bits in the STAT bytes are:
-
-		OVERRUN	0x02
-		PARITY	0x04
-		FRAMING	0x08
-		BREAK	0x10
-
-	Notes:
-	
-	(1) The OVERRUN bit can appear in either (a) or (b) format
-		messages, but the but the PARITY/FRAMING/BREAK bits
-		only appear in (b) format messages.
-	(2) For the host to determine the exact point at which the
-		overrun occurred (to identify the point in the data
-		stream at which the data was lost), it needs to count
-		128 characters, starting at the first character of the
-		message in which OVERRUN was reported; the lost character(s)
-		would have been received between the 128th and 129th
-		characters.
-	(3)	An RX data message in which the first byte has 0x80 clear
-		serves as a "break off" indicator.
-	(4)	a control message specifying disablePort will be answered
-		with a status message, but no further status will be sent
-		until a control messages with enablePort is sent
-
-	revision history:
-
-	1999feb10	add reportHskiaChanges to allow us to ignore them
-	1999feb10	add txAckThreshold for fast+loose throughput enhancement
-	1999mar30	beef up support for RX error reporting
-	1999apr14	add resetDataToggle to control message
-	2000jan04	merge with usa17msg.h
-	2000mar08	clone from usa26msg.h -> usa49msg.h
-	2000mar09	change to support 4 ports
-	2000may03	change external clocking to match USA-49W hardware
-	2000jun01	add extended BSD-style copyright text
-	2001jul05	change message format to improve OVERRUN case
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #ifndef	__USA49MSG__
 #define	__USA49MSG__
 

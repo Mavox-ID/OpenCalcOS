@@ -1,62 +1,20 @@
 /*
- * smc91x.c
- * This is a driver for SMSC's 91C9x/91C1xx single-chip Ethernet devices.
- *
- * Copyright (C) 1996 by Erik Stahlman
- * Copyright (C) 2001 Standard Microsystems Corporation
- *	Developed by Simple Network Magic Corporation
- * Copyright (C) 2003 Monta Vista Software, Inc.
- *	Unified SMC91x driver by Nicolas Pitre
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *
- * Arguments:
- * 	io	= for the base address
- *	irq	= for the IRQ
- *	nowait	= 0 for normal wait states, 1 eliminates additional wait states
- *
- * original author:
- * 	Erik Stahlman <erik@vt.edu>
- *
- * hardware multicast code:
- *    Peter Cammaert <pc@denkart.be>
- *
- * contributors:
- * 	Daris A Nevil <dnevil@snmc.com>
- *      Nicolas Pitre <nico@fluxnic.net>
- *	Russell King <rmk@arm.beep.org.uk>
- *
- * History:
- *   08/20/00  Arnaldo Melo       fix kfree(skb) in smc_hardware_send_packet
- *   12/15/00  Christian Jullien  fix "Warning: kfree_skb on hard IRQ"
- *   03/16/01  Daris A Nevil      modified smc9194.c for use with LAN91C111
- *   08/22/01  Scott Anderson     merge changes from smc9194 to smc91111
- *   08/21/01  Pramod B Bhardwaj  added support for RevB of LAN91C111
- *   12/20/01  Jeff Sutherland    initial port to Xscale PXA with DMA support
- *   04/07/03  Nicolas Pitre      unified SMC91x driver, killed irq races,
- *                                more bus abstraction, big cleanup, etc.
- *   29/09/03  Russell King       - add driver model support
- *                                - ethtool support
- *                                - convert to use generic MII interface
- *                                - add link up/down notification
- *                                - don't try to handle full negotiation in
- *                                  smc_phy_configure
- *                                - clean up (and fix stack overrun) in PHY
- *                                  MII read/write functions
- *   22/09/04  Nicolas Pitre      big update (see commit log for details)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 static const char version[] =
 	"smc91x.c: v1.1, sep 22 2004 by Nicolas Pitre <nico@fluxnic.net>\n";
 

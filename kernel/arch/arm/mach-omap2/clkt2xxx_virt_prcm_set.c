@@ -1,29 +1,20 @@
 /*
- * OMAP2xxx DVFS virtual clock functions
- *
- * Copyright (C) 2005-2008, 2012 Texas Instruments, Inc.
- * Copyright (C) 2004-2010 Nokia Corporation
- *
- * Contacts:
- * Richard Woodruff <r-woodruff2@ti.com>
- * Paul Walmsley
- *
- * Based on earlier work by Tuukka Tikkanen, Tony Lindgren,
- * Gordon McNutt and RidgeRun, Inc.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * XXX Some of this code should be replaceable by the upcoming OPP layer
- * code.  However, some notion of "rate set" is probably still necessary
- * for OMAP2xxx at least.  Rate sets should be generalized so they can be
- * used for any OMAP chip, not just OMAP2xxx.  In particular, Richard Woodruff
- * has in the past expressed a preference to use rate sets for OPP changes,
- * rather than dynamically recalculating the clock tree, so if someone wants
- * this badly enough to write the code to handle it, we should support it
- * as an option.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #undef DEBUG
 
 #include <beep/kernel.h>

@@ -1,155 +1,20 @@
 /*
- * Beep WiMAX
- * Collection of tools to manage debug operations.
- *
- *
- * Copyright (C) 2005-2007 Intel Corporation
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License version
- * 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- * 02110-1301, USA.
- *
- *
- * Don't #include this file directly, read on!
- *
- *
- * EXECUTING DEBUGGING ACTIONS OR NOT
- *
- * The main thing this framework provides is decission power to take a
- * debug action (like printing a message) if the current debug level
- * allows it.
- *
- * The decission power is at two levels: at compile-time (what does
- * not make it is compiled out) and at run-time. The run-time
- * selection is done per-submodule (as they are declared by the user
- * of the framework).
- *
- * A call to d_test(L) (L being the target debug level) returns true
- * if the action should be taken because the current debug levels
- * allow it (both compile and run time).
- *
- * It follows that a call to d_test() that can be determined to be
- * always false at compile time will get the code depending on it
- * compiled out by optimization.
- *
- *
- * DEBUG LEVELS
- *
- * It is up to the caller to define how much a debugging level is.
- *
- * Convention sets 0 as "no debug" (so an action marked as debug level 0
- * will always be taken). The increasing debug levels are used for
- * increased verbosity.
- *
- *
- * USAGE
- *
- * Group the code in modules and submodules inside each module [which
- * in most cases maps to Beep modules and .c files that compose
- * those].
- *
- *
- * For each module, there is:
- *
- *  - a MODULENAME (single word, legal C identifier)
- *
- *  - a debug-levels.h header file that declares the list of
- *    submodules and that is included by all .c files that use
- *    the debugging tools. The file name can be anything.
- *
- *  - some (optional) .c code to manipulate the runtime debug levels
- *    through debugfs.
- *
- * The debug-levels.h file would look like:
- *
- *     #ifndef __debug_levels__h__
- *     #define __debug_levels__h__
- *
- *     #define D_MODULENAME modulename
- *     #define D_MASTER 10
- *
- *     #include <beep/wimax/debug.h>
- *
- *     enum d_module {
- *             D_SUBMODULE_DECLARE(submodule_1),
- *             D_SUBMODULE_DECLARE(submodule_2),
- *             ...
- *             D_SUBMODULE_DECLARE(submodule_N)
- *     };
- *
- *     #endif
- *
- * D_MASTER is the maximum compile-time debug level; any debug actions
- * above this will be out. D_MODULENAME is the module name (legal C
- * identifier), which has to be unique for each module (to avoid
- * namespace collisions during linkage). Note those #defines need to
- * be done before #including debug.h
- *
- * We declare N different submodules whose debug level can be
- * independently controlled during runtime.
- *
- * In a .c file of the module (and only in one of them), define the
- * following code:
- *
- *     struct d_level D_LEVEL[] = {
- *             D_SUBMODULE_DEFINE(submodule_1),
- *             D_SUBMODULE_DEFINE(submodule_2),
- *             ...
- *             D_SUBMODULE_DEFINE(submodule_N),
- *     };
- *     size_t D_LEVEL_SIZE = ARRAY_SIZE(D_LEVEL);
- *
- * Externs for d_level_MODULENAME and d_level_size_MODULENAME are used
- * and declared in this file using the D_LEVEL and D_LEVEL_SIZE macros
- * #defined also in this file.
- *
- * To manipulate from user space the levels, create a debugfs dentry
- * and then register each submodule with:
- *
- *     result = d_level_register_debugfs("PREFIX_", submodule_X, parent);
- *     if (result < 0)
- *            goto error;
- *
- * Where PREFIX_ is a name of your chosing. This will create debugfs
- * file with a single numeric value that can be use to tweak it. To
- * remove the entires, just use debugfs_remove_recursive() on 'parent'.
- *
- * NOTE: remember that even if this will show attached to some
- *     particular instance of a device, the settings are *global*.
- *
- *
- * On each submodule (for example, .c files), the debug infrastructure
- * should be included like this:
- *
- *     #define D_SUBMODULE submodule_x     // matches one in debug-levels.h
- *     #include "debug-levels.h"
- *
- * after #including all your include files.
- *
- *
- * Now you can use the d_*() macros below [d_test(), d_fnstart(),
- * d_fnend(), d_printf(), d_dump()].
- *
- * If their debug level is greater than D_MASTER, they will be
- * compiled out.
- *
- * If their debug level is lower or equal than D_MASTER but greater
- * than the current debug level of their submodule, they'll be
- * ignored.
- *
- * Otherwise, the action will be performed.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __debug__h__
 #define __debug__h__
 

@@ -1,38 +1,20 @@
 /*
- * GPIO driver for Marvell SoCs
- *
- * Copyright (C) 2012 Marvell
- *
- * Thomas Petazzoni <thomas.petazzoni@free-electrons.com>
- * Andrew Lunn <andrew@lunn.ch>
- * Sebastian Hesselbarth <sebastian.hesselbarth@gmail.com>
- *
- * This file is licensed under the terms of the GNU General Public
- * License version 2.  This program is licensed "as is" without any
- * warranty of any kind, whether express or implied.
- *
- * This driver is a fairly straightforward GPIO driver for the
- * complete family of Marvell EBU SoC platforms (Orion, Dove,
- * Kirkwood, Discovery, Armada 370/XP). The only complexity of this
- * driver is the different register layout that exists between the
- * non-SMP platforms (Orion, Dove, Kirkwood, Armada 370) and the SMP
- * platforms (MV78200 from the Discovery family and the Armada
- * XP). Therefore, this driver handles three variants of the GPIO
- * block:
- * - the basic variant, called "orion-gpio", with the simplest
- *   register set. Used on Orion, Dove, Kirkwoord, Armada 370 and
- *   non-SMP Discovery systems
- * - the mv78200 variant for MV78200 Discovery systems. This variant
- *   turns the edge mask and level mask registers into CPU0 edge
- *   mask/level mask registers, and adds CPU1 edge mask/level mask
- *   registers.
- * - the armadaxp variant for Armada XP systems. This variant keeps
- *   the normal cause/edge mask/level mask registers when the global
- *   interrupts are used, but adds per-CPU cause/edge mask/level mask
- *   registers n a separate memory area for the per-CPU GPIO
- *   interrupts.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/gpio.h>
 #include <beep/irq.h>

@@ -1,22 +1,20 @@
 /*
- * <beep/usb/audio.h> -- USB Audio definitions.
- *
- * Copyright (C) 2006 Thumtronics Pty Ltd.
- * Developed for Thumtronics by Grey Innovation
- * Ben Williamson <ben.williamson@greyinnovation.com>
- *
- * This software is distributed under the terms of the GNU General Public
- * License ("GPL") version 2, as published by the Free Software Foundation.
- *
- * This file holds USB constants and structures defined
- * by the USB Device Class Definition for Audio Devices.
- * Comments below reference relevant sections of that document:
- *
- * http://www.usb.org/developers/devclass_docs/audio10.pdf
- *
- * Types and defines in this file are either specific to version 1.0 of
- * this standard or common for newer versions.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __BEEP_USB_AUDIO_H
 #define __BEEP_USB_AUDIO_H
 

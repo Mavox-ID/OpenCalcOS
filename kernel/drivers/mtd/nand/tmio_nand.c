@@ -1,28 +1,20 @@
 /*
- * Toshiba TMIO NAND flash controller driver
- *
- * Slightly murky pre-git history of the driver:
- *
- * Copyright (c) Ian Molton 2004, 2005, 2008
- *    Original work, independent of sharps code. Included hardware ECC support.
- *    Hard ECC did not work for writes in the early revisions.
- * Copyright (c) Dirk Opfer 2005.
- *    Modifications developed from sharps code but
- *    NOT containing any, ported onto Ians base.
- * Copyright (c) Chris Humbert 2005
- * Copyright (c) Dmitry Baryshkov 2008
- *    Minor fixes
- *
- * Parts copyright Sebastian Carlier
- *
- * This file is licensed under
- * the terms of the GNU General Public License version 2. This program
- * is licensed "as is" without any warranty of any kind, whether express
- * or implied.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/platform_device.h>

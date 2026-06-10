@@ -1,44 +1,20 @@
 /*
- *  beep/arch/m32r/kernel/smpboot.c
- *    orig : i386 2.4.10
- *
- *  M32R SMP booting functions
- *
- *  Copyright (c) 2001, 2002, 2003  Hitoshi Yamamoto
- *
- *  Taken from i386 version.
- *	  (c) 1995 Alan Cox, Building #3 <alan@redhat.com>
- *	  (c) 1998, 1999, 2000 Ingo Molnar <mingo@redhat.com>
- *
- *	Much of the core SMP work is based on previous work by Thomas Radke, to
- *	whom a great many thanks are extended.
- *
- *	Thanks to Intel for making available several different Pentium,
- *	Pentium Pro and Pentium-II/Xeon MP machines.
- *	Original development of Beep SMP code supported by Caldera.
- *
- *	This code is released under the GNU General Public License version 2 or
- *	later.
- *
- *	Fixes
- *		Felix Koop	:	NR_CPUS used properly
- *		Jose Renau	:	Handle single CPU case.
- *		Alan Cox	:	By repeated request
- *					8) - Total BogoMIP report.
- *		Greg Wright	:	Fix for kernel stacks panic.
- *		Erich Boleyn	:	MP v1.4 and additional changes.
- *	Matthias Sattler	:	Changes for 2.1 kernel map.
- *	Michel Lespinasse	:	Changes for 2.1 kernel map.
- *	Michael Chastain	:	Change trampoline.S to gnu as.
- *		Alan Cox	:	Dumb bug: 'B' step PPro's are fine
- *		Ingo Molnar	:	Added APIC timers, based on code
- *					from Jose Renau
- *		Ingo Molnar	:	various cleanups and rewrites
- *		Tigran Aivazian	:	fixed "0.00 in /proc/uptime on SMP" bug.
- *	Maciej W. Rozycki	:	Bits for genuine 82489DX APICs
- *		Martin J. Bligh	: 	Added support for multi-quad systems
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/cpu.h>
 #include <beep/init.h>

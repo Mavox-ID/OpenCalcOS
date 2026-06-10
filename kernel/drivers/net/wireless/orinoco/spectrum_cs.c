@@ -1,23 +1,20 @@
 /*
- * Driver for 802.11b cards using RAM-loadable Symbol firmware, such as
- * Symbol Wireless Networker LA4137, CompactFlash cards by Socket
- * Communications and Intel PRO/Wireless 2011B.
- *
- * The driver implements Symbol firmware download.  The rest is handled
- * in hermes.c and main.c.
- *
- * Utilities for downloading the Symbol firmware are available at
- * http://sourceforge.net/projects/orinoco/
- *
- * Copyright (C) 2002-2005 Pavel Roskin <proski@gnu.org>
- * Portions based on orinoco_cs.c:
- *	Copyright (C) David Gibson, Beepcare Australia
- * Portions based on Spectrum24tDnld.c from original spectrum24 driver:
- *	Copyright (C) Symbol Technologies.
- *
- * See copyright notice in file main.c.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define DRIVER_NAME "spectrum_cs"
 #define PFX DRIVER_NAME ": "
 

@@ -1,31 +1,20 @@
 /*
- * dz.c: Serial port driver for DECstations equipped
- *       with the DZ chipset.
- *
- * Copyright (C) 1998 Olivier A. D. Lebaillif
- *
- * Email: olivier.lebaillif@ifrsys.com
- *
- * Copyright (C) 2004, 2006, 2007  Maciej W. Rozycki
- *
- * [31-AUG-98] triemer
- * Changed IRQ to use Harald's dec internals interrupts.h
- * removed base_addr code - moving address assignment to setup.c
- * Changed name of dz_init to rs_init to be consistent with tc code
- * [13-NOV-98] triemer fixed code to receive characters
- *    after patches by harald to irq code.
- * [09-JAN-99] triemer minor fix for schedule - due to removal of timeout
- *            field from "current" - somewhere between 2.1.121 and 2.1.131
- Qua Jun 27 15:02:26 BRT 2001
- * [27-JUN-2001] Arnaldo Carvalho de Melo <acme@conectiva.com.br> - cleanups
- *
- * Parts (C) 1999 David Airlie, airlied@beep.ie
- * [07-SEP-99] Bugfixes
- *
- * [06-Jan-2002] Russell King <rmk@arm.beep.org.uk>
- * Converted to new serial core
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #undef DEBUG_DZ
 
 #if defined(CONFIG_SERIAL_DZ_CONSOLE) && defined(CONFIG_MAGIC_SYSRQ)

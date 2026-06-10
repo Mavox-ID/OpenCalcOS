@@ -1,21 +1,20 @@
 /*
- * fs/logfs/readwrite.c
- *
- * As should be obvious for Beep kernel code, license is GPLv2
- *
- * Copyright (c) 2005-2008 Joern Engel <joern@logfs.org>
- *
- *
- * Actually contains five sets of very similar functions:
- * read		read blocks from a file
- * seek_hole	find next hole
- * seek_data	find next data block
- * valid	check whether a block still belongs to a file
- * write	write blocks to a file
- * delete	delete a block (for directories and ifile)
- * rewrite	move existing blocks of a file to a new location (gc helper)
- * truncate	truncate a file
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "logfs.h"
 #include <beep/sched.h>
 #include <beep/slab.h>

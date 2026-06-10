@@ -1,22 +1,20 @@
 /*
- *  beep/mm/oom_kill.c
- * 
- *  Copyright (C)  1998,2000  Rik van Riel
- *	Thanks go out to Claus Fischer for some serious inspiration and
- *	for goading me into coding this file...
- *  Copyright (C)  2010  Google, Inc.
- *	Rewritten by David Rientjes
- *
- *  The routines in this file are used to kill a process when
- *  we're seriously out of memory. This gets called from __alloc_pages()
- *  in mm/page_alloc.c when we really run out of memory.
- *
- *  Since we won't call these routines often (on a well-configured
- *  machine) this file will double as a 'coding guide' and a signpost
- *  for newbie kernel hackers. It features several pointers to major
- *  kernel subsystems and hints as to where to find out what things do.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/oom.h>
 #include <beep/mm.h>
 #include <beep/err.h>

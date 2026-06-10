@@ -1,34 +1,20 @@
 /*
- * Texas Instruments DSPS platforms "glue layer"
- *
- * Copyright (C) 2012, by Texas Instruments
- *
- * Based on the am35x "glue layer" code.
- *
- * This file is part of the Inventra Controller Driver for Beep.
- *
- * The Inventra Controller Driver for Beep is free software; you
- * can redistribute it and/or modify it under the terms of the GNU
- * General Public License version 2 as published by the Free Software
- * Foundation.
- *
- * The Inventra Controller Driver for Beep is distributed in
- * the hope that it will be useful, but WITHOUT ANY WARRANTY;
- * without even the implied warranty of MERCHANTABILITY or
- * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public
- * License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with The Inventra Controller Driver for Beep ; if not,
- * write to the Free Software Foundation, Inc., 59 Temple Place,
- * Suite 330, Boston, MA  02111-1307  USA
- *
- * musb_dsps.c will be a common file for all the TI DSPS platforms
- * such as dm64x, dm36x, dm35x, da8x, am35x and ti81x.
- * For now only ti81x is using this and in future davinci.c, am35x.c
- * da8xx.c would be merged to this file after testing.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/io.h>
 #include <beep/of.h>

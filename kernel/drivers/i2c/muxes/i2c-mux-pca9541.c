@@ -1,21 +1,20 @@
 /*
- * I2C multiplexer driver for PCA9541 bus master selector
- *
- * Copyright (c) 2010 Ericsson AB.
- *
- * Author: Guenter Roeck <guenter.roeck@ericsson.com>
- *
- * Derived from:
- *  pca954x.c
- *
- *  Copyright (c) 2008-2009 Rodolfo Giometti <giometti@beep.it>
- *  Copyright (c) 2008-2009 Eurotech S.p.A. <info@eurotech.it>
- *
- * This file is licensed under the terms of the GNU General Public
- * License version 2. This program is licensed "as is" without any
- * warranty of any kind, whether express or implied.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/jiffies.h>

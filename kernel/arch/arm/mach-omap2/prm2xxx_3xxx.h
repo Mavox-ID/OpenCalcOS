@@ -1,18 +1,20 @@
 /*
- * OMAP2xxx/3xxx-common Power/Reset Management (PRM) register definitions
- *
- * Copyright (C) 2007-2009, 2011-2012 Texas Instruments, Inc.
- * Copyright (C) 2008-2010 Nokia Corporation
- * Paul Walmsley
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * The PRM hardware modules on the OMAP2/3 are quite similar to each
- * other.  The PRM on OMAP4 has a new register layout, and is handled
- * in a separate file.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __ARCH_ARM_MACH_OMAP2_PRM2XXX_3XXX_H
 #define __ARCH_ARM_MACH_OMAP2_PRM2XXX_3XXX_H
 

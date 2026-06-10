@@ -1,32 +1,20 @@
 /*
- * EFI Time Services Driver for Beep
- *
- * Copyright (C) 1999 Hewlett-Packard Co
- * Copyright (C) 1999 Stephane Eranian <eranian@hpl.hp.com>
- *
- * Based on skeleton from the drivers/char/rtc.c driver by P. Gortmaker
- *
- * This code provides an architected & portable interface to the real time
- * clock by using EFI instead of direct bit fiddling. The functionalities are 
- * quite different from the rtc.c driver. The only way to talk to the device 
- * is by using ioctl(). There is a /proc interface which provides the raw 
- * information.
- *
- * Please note that we have kept the API as close as possible to the
- * legacy RTC. The standard /sbin/hwclock program should work normally 
- * when used to get/set the time.
- *
- * NOTES:
- *	- Locking is required for safe execution of EFI calls with regards
- *	  to interrupts and SMP.
- *
- * TODO (December 1999):
- * 	- provide the API to set/get the WakeUp Alarm (different from the
- *	  rtc.c alarm).
- *	- SMP testing
- * 	- Add module support
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/errno.h>
 #include <beep/miscdevice.h>

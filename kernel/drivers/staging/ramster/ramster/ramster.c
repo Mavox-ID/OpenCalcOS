@@ -1,31 +1,20 @@
 /*
- * ramster.c
- *
- * Copyright (c) 2010-2012, Dan Magenheimer, Oracle Corp.
- *
- * RAMster implements peer-to-peer transcendent memory, allowing a "cluster" of
- * kernels to dynamically pool their RAM so that a RAM-hungry workload on one
- * machine can temporarily and transparently utilize RAM on another machine
- * which is presumably idle or running a non-RAM-hungry workload.
- *
- * RAMster combines a clustering and messaging foundation based on the ocfs2
- * cluster layer with the in-kernel compression implementation of zcache, and
- * adds code to glue them together.  When a page is "put" to RAMster, it is
- * compressed and stored locally.  Periodically, a thread will "remotify" these
- * pages by sending them via messages to a remote machine.  When the page is
- * later needed as indicated by a page fault, a "get" is issued.  If the data
- * is local, it is uncompressed and the fault is resolved.  If the data is
- * remote, a message is sent to fetch the data and the faulting thread sleeps;
- * when the data arrives, the thread awakens, the data is decompressed and
- * the fault is resolved.
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
- * As of V5, clusters up to eight nodes are supported; each node can remotify
- * pages to one specified node, so clusters can be configured as clients to
- * a "memory server".  Some simple policy is in place that will need to be
- * refined over time.  Larger clusters and fault-resistant protocols can also
- * be added over time.
- */
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/cpu.h>
 #include <beep/highmem.h>

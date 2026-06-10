@@ -1,16 +1,20 @@
 /*
- * Intel i82586 Ethernet definitions
- *
- * This is an extension to the Beep operating system, and is covered by the
- * same Gnu Public License that covers that work.
- *
- * copyrights (c) 1994 by Michael Hipp (hippm@informatik.uni-tuebingen.de)
- *
- * I have done a look in the following sources:
- *   crynwr-packet-driver by Russ Nelson
- *   Garret A. Wollman's i82586-driver for BSD
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * Cloned from ni52.h, copyright as above.
  *

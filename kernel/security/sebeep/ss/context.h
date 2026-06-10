@@ -1,17 +1,20 @@
 /*
- * A security context is a set of security attributes
- * associated with each subject and object controlled
- * by the security policy.  Security contexts are
-  * externally represented as variable-length strings
- * that can be interpreted by a user or application
- * with an understanding of the security policy.
- * Internally, the security server uses a simple
- * structure.  This structure is private to the
- * security server and can be changed without affecting
- * clients of the security server.
- *
- * Author : Stephen Smalley, <sds@epoch.ncsc.mil>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _SS_CONTEXT_H_
 #define _SS_CONTEXT_H_
 

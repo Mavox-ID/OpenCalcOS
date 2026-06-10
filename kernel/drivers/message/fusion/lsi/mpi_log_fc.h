@@ -1,16 +1,20 @@
 /*
- *  Copyright (c) 2000-2008 LSI Corporation. All rights reserved.
- *
- *  NAME:           fc_log.h
- *  SUMMARY:        MPI IocLogInfo definitions for the SYMFC9xx chips
- *  DESCRIPTION:    Contains the enumerated list of values that may be returned
- *                  in the IOCLogInfo field of a MPI Default Reply Message.
- *
- *  CREATION DATE:  6/02/2000
- *  ID:             $Id: fc_log.h,v 4.6 2001/07/26 14:41:33 sschremm Exp $
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * MpiIocLogInfo_t enum
  *

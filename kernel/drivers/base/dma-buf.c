@@ -1,27 +1,20 @@
 /*
- * Framework for buffer objects that can be shared across devices/subsystems.
- *
- * Copyright(C) 2011 Linaro Limited. All rights reserved.
- * Author: Sumit Semwal <sumit.semwal@ti.com>
- *
- * Many thanks to linaro-mm-sig list, and specially
- * Arnd Bergmann <arnd@arndb.de>, Rob Clark <rob@ti.com> and
- * Daniel Vetter <daniel@ffwll.ch> for their support in creation and
- * refining of this idea.
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License version 2 as published by
- * the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
- * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
- * more details.
- *
- * You should have received a copy of the GNU General Public License along with
- * this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/fs.h>
 #include <beep/slab.h>
 #include <beep/dma-buf.h>

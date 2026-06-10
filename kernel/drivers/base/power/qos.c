@@ -1,39 +1,20 @@
 /*
- * Devices PM QoS constraints management
- *
- * Copyright (C) 2011 Texas Instruments, Inc.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- *
- * This module exposes the interface to kernel space for specifying
- * per-device PM QoS dependencies. It provides infrastructure for registration
- * of:
- *
- * Dependents on a QoS value : register requests
- * Watchers of QoS value : get notified when target QoS value changes
- *
- * This QoS design is best effort based. Dependents register their QoS needs.
- * Watchers register to keep track of the current QoS needs of the system.
- * Watchers can register different types of notification callbacks:
- *  . a per-device notification callback using the dev_pm_qos_*_notifier API.
- *    The notification chain data is stored in the per-device constraint
- *    data struct.
- *  . a system-wide notification callback using the dev_pm_qos_*_global_notifier
- *    API. The notification chain data is stored in a static variable.
- *
- * Note about the per-device constraint data struct allocation:
- * . The per-device constraints data struct ptr is tored into the device
- *    dev_pm_info.
- * . To minimize the data usage by the per-device constraints, the data struct
- *   is only allocated at the first call to dev_pm_qos_add_request.
- * . The data is later free'd when the device is removed from the system.
- *  . A global mutex protects the constraints users from the data being
- *     allocated and free'd.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/pm_qos.h>
 #include <beep/spinlock.h>
 #include <beep/slab.h>

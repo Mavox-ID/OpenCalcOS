@@ -1,22 +1,20 @@
 /*
- * Device driver for the via-pmu on Apple Powermacs.
- *
- * The VIA (versatile interface adapter) interfaces to the PMU,
- * a 6805 microprocessor core whose primary function is to control
- * battery charging and system power on the PowerBook 3400 and 2400.
- * The PMU also controls the ADB (Apple Desktop Bus) which connects
- * to the keyboard and mouse, as well as the non-volatile RAM
- * and the RTC (real time clock) chip.
- *
- * Copyright (C) 1998 Paul Mackerras and Fabio Riccardi.
- * Copyright (C) 2001-2002 Benjamin Herrenschmidt
- * Copyright (C) 2006-2007 Johannes Berg
- *
- * THIS DRIVER IS BECOMING A TOTAL MESS !
- *  - Cleanup atomically disabling reply to PMU events after
- *    a sleep or a freq. switch
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <stdarg.h>
 #include <beep/mutex.h>
 #include <beep/types.h>

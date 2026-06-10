@@ -1,30 +1,20 @@
-/* Intel i7 core/Nehalem Memory Controller kernel module
- *
- * This driver supports the memory controllers found on the Intel
- * processor families i7core, i7core 7xx/8xx, i5core, Xeon 35xx,
- * Xeon 55xx and Xeon 56xx also known as Nehalem, Nehalem-EP, Lynnfield
- * and Westmere-EP.
- *
- * This file may be distributed under the terms of the
- * GNU General Public License version 2 only.
- *
- * Copyright (c) 2009-2010 by:
- *	 Mauro Carvalho Chehab <mchehab@redhat.com>
- *
- * Red Hat Inc. http://www.redhat.com
- *
- * Forked and adapted from the i5400_edac driver
- *
- * Based on the following public Intel datasheets:
- * Intel Core i7 Processor Extreme Edition and Intel Core i7 Processor
- * Datasheet, Volume 2:
- *	http://download.intel.com/design/processor/datashts/320835.pdf
- * Intel Xeon Processor 5500 Series Datasheet Volume 2
- *	http://www.intel.com/Assets/PDF/datasheet/321322.pdf
- * also available at:
- * 	http://www.arrownac.com/manufacturers/intel/s/nehalem/5500-datasheet-v2.pdf
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/pci.h>

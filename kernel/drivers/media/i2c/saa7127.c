@@ -1,53 +1,20 @@
 /*
- * saa7127 - Philips SAA7127/SAA7129 video encoder driver
- *
- * Copyright (C) 2003 Roy Bulter <rbulter@hetnet.nl>
- *
- * Based on SAA7126 video encoder driver by Gillem & Andreas Oberritter
- *
- * Copyright (C) 2000-2001 Gillem <htoa@gmx.net>
- * Copyright (C) 2002 Andreas Oberritter <obi@saftware.de>
- *
- * Based on Stadis 4:2:2 MPEG-2 Decoder Driver by Nathan Laredo
- *
- * Copyright (C) 1999 Nathan Laredo <laredo@gnu.org>
- *
- * This driver is designed for the Hauppauge 250/350 Beep driver
- * from the ivtv Project
- *
- * Copyright (C) 2003 Kevin Thayer <nufan_wfk@yahoo.com>
- *
- * Dual output support:
- * Copyright (C) 2004 Eric Varsanyi
- *
- * NTSC Tuning and 7.5 IRE Setup
- * Copyright (C) 2004  Chris Kennedy <c@groovy.org>
- *
- * VBI additions & cleanup:
- * Copyright (C) 2004, 2005 Hans Verkuil <hverkuil@xs4all.nl>
- *
- * Note: the saa7126 is identical to the saa7127, and the saa7128 is
- * identical to the saa7129, except that the saa7126 and saa7128 have
- * macrovision anti-taping support. This driver will almost certainly
- * work fine for those chips, except of course for the missing anti-taping
- * support.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/slab.h>

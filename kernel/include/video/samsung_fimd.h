@@ -1,25 +1,20 @@
-/* include/video/samsung_fimd.h
- *
- * Copyright 2008 Openmoko, Inc.
- * Copyright 2008 Simtec Electronics
- *      http://armbeep.simtec.co.uk/
- *      Ben Dooks <ben@simtec.co.uk>
- *
- * S3C Platform - new-style fimd and framebuffer register definitions
- *
- * This is the register set for the fimd and new style framebuffer interface
- * found from the S3C2443 onwards into the S3C2416, S3C2450 and the
- * S3C64XX series such as the S3C6400 and S3C6410.
- *
- * The file does not contain the cpu specific items which are based on
- * whichever architecture is selected, it only contains the core of the
- * register set. See <mach/regs-fb.h> to get the specifics.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
-*/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* VIDCON0 */
 
 #define VIDCON0					(0x00)

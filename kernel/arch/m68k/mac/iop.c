@@ -1,17 +1,20 @@
 /*
- * I/O Processor (IOP) management
- * Written and (C) 1999 by Joshua M. Thompson (funaho@jurai.org)
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- * 1. Redistributions of source code must retain the above copyright
- *    notice and this list of conditions.
- * 2. Redistributions in binary form must reproduce the above copyright
- *    notice and this list of conditions in the documentation and/or other
- *    materials provided with the distribution.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * The IOP chips are used in the IIfx and some Quadras (900, 950) to manage
  * serial and ADB. They are actually a 6502 processor and some glue logic.

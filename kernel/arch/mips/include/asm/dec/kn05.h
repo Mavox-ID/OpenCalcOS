@@ -1,23 +1,20 @@
 /*
- *	include/asm-mips/dec/kn05.h
- *
- *	DECstation/DECsystem 5000/260 (4max+ or KN05), 5000/150 (4min
- *	or KN04-BA), Personal DECstation/DECsystem 5000/50 (4maxine or
- *	KN04-CA) and DECsystem 5900/260 (KN05) R4k CPU card MB ASIC
- *	definitions.
- *
- *	Copyright (C) 2002, 2003, 2005, 2008  Maciej W. Rozycki
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- *
- *	WARNING!  All this information is pure guesswork based on the
- *	ROM.  It is provided here in hope it will give someone some
- *	food for thought.  No documentation for the KN05 nor the KN04
- *	module has been located so far.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __ASM_MIPS_DEC_KN05_H
 #define __ASM_MIPS_DEC_KN05_H
 

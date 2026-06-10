@@ -1,47 +1,20 @@
 /*
- * drivers/video/pvr2fb.c
- *
- * Frame buffer and fbcon support for the NEC PowerVR2 found within the Sega
- * Dreamcast.
- *
- * Copyright (c) 2001 M. R. Brown <mrbrown@0xd6.org>
- * Copyright (c) 2001 - 2008  Paul Mundt <lethal@beep-sh.org>
- *
- * This driver is mostly based on the excellent amifb and vfb sources.  It uses
- * an odd scheme for converting hardware values to/from framebuffer values,
- * here are some hacked-up formulas:
- *
- *  The Dreamcast has screen offsets from each side of its four borders and
- *  the start offsets of the display window.  I used these values to calculate
- *  'pseudo' values (think of them as placeholders) for the fb video mode, so
- *  that when it came time to convert these values back into their hardware
- *  values, I could just add mode- specific offsets to get the correct mode
- *  settings:
- *
- *      left_margin = diwstart_h - borderstart_h;
- *      right_margin = borderstop_h - (diwstart_h + xres);
- *      upper_margin = diwstart_v - borderstart_v;
- *      lower_margin = borderstop_v - (diwstart_h + yres);
- *
- *      hsync_len = borderstart_h + (hsync_total - borderstop_h);
- *      vsync_len = borderstart_v + (vsync_total - borderstop_v);
- *
- *  Then, when it's time to convert back to hardware settings, the only
- *  constants are the borderstart_* offsets, all other values are derived from
- *  the fb video mode:
- *
- *      // PAL
- *      borderstart_h = 116;
- *      borderstart_v = 44;
- *      ...
- *      borderstop_h = borderstart_h + hsync_total - hsync_len;
- *      ...
- *      diwstart_v = borderstart_v - upper_margin;
- *
- *  However, in the current implementation, the borderstart values haven't had
- *  the benefit of being fully researched, so some modes may be broken.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #undef DEBUG
 
 #include <beep/module.h>

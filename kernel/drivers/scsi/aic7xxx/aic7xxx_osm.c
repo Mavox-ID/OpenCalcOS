@@ -1,99 +1,20 @@
 /*
- * Adaptec AIC7xxx device driver for Beep.
- *
- * $Id: //depot/aic7xxx/beep/drivers/scsi/aic7xxx/aic7xxx_osm.c#235 $
- *
- * Copyright (c) 1994 John Aycock
- *   The University of Calgary Department of Computer Science.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; see the file COPYING.  If not, write to
- * the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
- *
- * Sources include the Adaptec 1740 driver (aha1740.c), the Ultrastor 24F
- * driver (ultrastor.c), various Beep kernel source, the Adaptec EISA
- * config file (!adp7771.cfg), the Adaptec AHA-2740A Series User's Guide,
- * the Beep Kernel Hacker's Guide, Writing a SCSI Device Driver for Beep,
- * the Adaptec 1542 driver (aha1542.c), the Adaptec EISA overlay file
- * (adp7770.ovl), the Adaptec AHA-2740 Series Technical Reference Manual,
- * the Adaptec AIC-7770 Data Book, the ANSI SCSI specification, the
- * ANSI SCSI-2 specification (draft 10c), ...
- *
- * --------------------------------------------------------------------------
- *
- *  Modifications by Daniel M. Eischen (deischen@iworks.InterWorks.org):
- *
- *  Substantially modified to include support for wide and twin bus
- *  adapters, DMAing of SCBs, tagged queueing, IRQ sharing, bug fixes,
- *  SCB paging, and other rework of the code.
- *
- * --------------------------------------------------------------------------
- * Copyright (c) 1994-2000 Justin T. Gibbs.
- * Copyright (c) 2000-2001 Adaptec Inc.
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions, and the following disclaimer,
- *    without modification.
- * 2. Redistributions in binary form must reproduce at minimum a disclaimer
- *    substantially similar to the "NO WARRANTY" disclaimer below
- *    ("Disclaimer") and any redistribution must be conditioned upon
- *    including a substantially similar Disclaimer requirement for further
- *    binary redistribution.
- * 3. Neither the names of the above-listed copyright holders nor the names
- *    of any contributors may be used to endorse or promote products derived
- *    from this software without specific prior written permission.
- *
- * Alternatively, this software may be distributed under the terms of the
- * GNU General Public License ("GPL") version 2 as published by the Free
- * Software Foundation.
- *
- * NO WARRANTY
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
- * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
- * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR
- * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
- * HOLDERS OR CONTRIBUTORS BE LIABLE FOR SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
- * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
- * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
- * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
- * STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
- * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- * POSSIBILITY OF SUCH DAMAGES.
- *
- *---------------------------------------------------------------------------
- *
- *  Thanks also go to (in alphabetical order) the following:
- *
- *    Rory Bolt     - Sequencer bug fixes
- *    Jay Estabrook - Initial DEC Alpha support
- *    Doug Ledford  - Much needed abort/reset bug fixes
- *    Kai Makisara  - DMAing of SCBs
- *
- *  A Boot time option was also added for not resetting the scsi bus.
- *
- *    Form:  aic7xxx=extended
- *           aic7xxx=no_reset
- *           aic7xxx=verbose
- *
- *  Daniel M. Eischen, deischen@iworks.InterWorks.org, 1/23/97
- *
- *  Id: aic7xxx.c,v 4.1 1997/06/12 08:23:42 deang Exp
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * Further driver modifications made by Doug Ledford <dledford@redhat.com>
  *

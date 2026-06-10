@@ -1,45 +1,20 @@
 /*
- * forcedeth: Ethernet driver for NVIDIA nForce media access controllers.
- *
- * Note: This driver is a cleanroom reimplementation based on reverse
- *      engineered documentation written by Carl-Daniel Hailfinger
- *      and Andrew de Quincey.
- *
- * NVIDIA, nForce and other NVIDIA marks are trademarks or registered
- * trademarks of NVIDIA Corporation in the United States and other
- * countries.
- *
- * Copyright (C) 2003,4,5 Manfred Spraul
- * Copyright (C) 2004 Andrew de Quincey (wol support)
- * Copyright (C) 2004 Carl-Daniel Hailfinger (invalid MAC handling, insane
- *		IRQ rate fixes, bigendian fixes, cleanups, verification)
- * Copyright (c) 2004,2005,2006,2007,2008,2009 NVIDIA Corporation
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *
- * Known bugs:
- * We suspect that on some hardware no TX done interrupts are generated.
- * This means recovery from netif_stop_queue only happens if the hw timer
- * interrupt fires (100 times/second, configurable with NVREG_POLL_DEFAULT)
- * and the timer is active in the IRQMask, or if a rx packet arrives by chance.
- * If your hardware reliably generates tx done interrupts, then you can remove
- * DEV_NEED_TIMERIRQ from the driver_data flags.
- * DEV_NEED_TIMERIRQ will not harm you on sane hardware, only generating a few
- * superfluous timer interrupts from the nic.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #define FORCEDETH_VERSION		"0.64"

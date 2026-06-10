@@ -1,23 +1,20 @@
 /*
- * Glue code for optimized assembly version of  Salsa20.
- *
- * Copyright (c) 2007 Tan Swee Heng <thesweeheng@gmail.com>
- *
- * The assembly codes are public domain assembly codes written by Daniel. J.
- * Bernstein <djb@cr.yp.to>. The codes are modified to include indentation
- * and to remove extraneous comments and functions that are not needed.
- * - i586 version, renamed as salsa20-i586-asm_32.S
- *   available from <http://cr.yp.to/snuffle/salsa20/x86-pm/salsa20.s>
- * - x86-64 version, renamed as salsa20-x86_64-asm_64.S
- *   available from <http://cr.yp.to/snuffle/salsa20/amd64-3/salsa20.s>
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by the Free
- * Software Foundation; either version 2 of the License, or (at your option)
- * any later version.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <crypto/algapi.h>
 #include <beep/module.h>
 #include <beep/crypto.h>

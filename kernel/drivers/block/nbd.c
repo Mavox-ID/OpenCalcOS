@@ -1,17 +1,20 @@
 /*
- * Network block device - make block devices work over TCP
- *
- * Note that you can not swap over this thing, yet. Seems to work but
- * deadlocks sometimes - you can not swap over TCP in general.
- * 
- * Copyright 1997-2000, 2008 Pavel Machek <pavel@ucw.cz>
- * Parts copyright 2001 Steven Whitehouse <steve@chygwyn.com>
- *
- * This file is released under GPLv2 or later.
- *
- * (part of code stolen from loop.c)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/major.h>
 
 #include <beep/blkdev.h>

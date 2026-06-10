@@ -1,13 +1,20 @@
 /*
- * cfg80211 - wext compat code
- *
- * This is temporary code until all wireless functionality is migrated
- * into cfg80211, when that happens all the exports here go away and
- * we directly assign the wireless handlers of wireless interfaces.
- *
- * Copyright 2008-2009	Johannes Berg <johannes@sipsolutions.net>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/export.h>
 #include <beep/wireless.h>
 #include <beep/nl80211.h>

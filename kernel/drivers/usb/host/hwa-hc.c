@@ -1,58 +1,20 @@
 /*
- * Host Wire Adapter:
- * Driver glue, HWA-specific functions, bridges to WAHC and WUSBHC
- *
- * Copyright (C) 2005-2006 Intel Corporation
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License version
- * 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- * 02110-1301, USA.
- *
- *
- * The HWA driver is a simple layer that forwards requests to the WAHC
- * (Wire Adater Host Controller) or WUSBHC (Wireless USB Host
- * Controller) layers.
- *
- * Host Wire Adapter is the 'WUSB 1.0 standard' name for Wireless-USB
- * Host Controller that is connected to your system via USB (a USB
- * dongle that implements a USB host...). There is also a Device Wired
- * Adaptor, DWA (Wireless USB hub) that uses the same mechanism for
- * transferring data (it is after all a USB host connected via
- * Wireless USB), we have a common layer called Wire Adapter Host
- * Controller that does all the hard work. The WUSBHC (Wireless USB
- * Host Controller) is the part common to WUSB Host Controllers, the
- * HWA and the PCI-based one, that is implemented following the WHCI
- * spec. All these layers are implemented in ../wusbcore.
- *
- * The main functions are hwahc_op_urb_{en,de}queue(), that pass the
- * job of converting a URB to a Wire Adapter
- *
- * Entry points:
- *
- *   hwahc_driver_*()   Driver initialization, registration and
- *                      teardown.
- *
- *   hwahc_probe()	New device came up, create an instance for
- *                      it [from device enumeration].
- *
- *   hwahc_disconnect()	Remove device instance [from device
- *                      enumeration].
- *
- *   [__]hwahc_op_*()   Host-Wire-Adaptor specific functions for
- *                      starting/stopping/etc (some might be made also
- *                      DWA).
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/init.h>
 #include <beep/slab.h>

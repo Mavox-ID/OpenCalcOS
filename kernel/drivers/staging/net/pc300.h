@@ -1,101 +1,20 @@
 /*
- * pc300.h	Cyclades-PC300(tm) Kernel API Definitions.
- *
- * Author:	Ivan Passos <ivan@cyclades.com>
- *
- * Copyright:	(c) 1999-2002 Cyclades Corp.
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- *
- * $Log: pc300.h,v $
- * Revision 3.12  2002/03/07 14:17:09  henrique
- * License data fixed
- *
- * Revision 3.11  2002/01/28 21:09:39  daniela
- * Included ';' after pc300hw.bus.
- *
- * Revision 3.10  2002/01/17 17:58:52  ivan
- * Support for PC300-TE/M (PMC).
- *
- * Revision 3.9  2001/09/28 13:30:53  daniela
- * Renamed dma_start routine to rx_dma_start.
- *
- * Revision 3.8  2001/09/24 13:03:45  daniela
- * Fixed BOF interrupt treatment. Created dma_start routine.
- *
- * Revision 3.7  2001/08/10 17:19:58  daniela
- * Fixed IOCTLs defines.
- *
- * Revision 3.6  2001/07/18 19:24:42  daniela
- * Included kernel version.
- *
- * Revision 3.5  2001/07/05 18:38:08  daniela
- * DMA transmission bug fix.
- *
- * Revision 3.4  2001/06/26 17:10:40  daniela
- * New configuration parameters (line code, CRC calculation and clock).
- *
- * Revision 3.3  2001/06/22 13:13:02  regina
- * MLPPP implementation
- *
- * Revision 3.2  2001/06/18 17:56:09  daniela
- * Increased DEF_MTU and TX_QUEUE_LEN.
- *
- * Revision 3.1  2001/06/15 12:41:10  regina
- * upping major version number
- *
- * Revision 1.1.1.1  2001/06/13 20:25:06  daniela
- * PC300 initial CVS version (3.4.0-pre1)
- *
- * Revision 2.3 2001/03/05 daniela
- * Created struct pc300conf, to provide the hardware information to pc300util.
- * Inclusion of 'alloc_ramsize' field on structure 'pc300hw'.
- * 
- * Revision 2.2 2000/12/22 daniela
- * Structures and defines to support pc300util: statistics, status, 
- * loopback tests, trace.
- * 
- * Revision 2.1 2000/09/28 ivan
- * Inclusion of 'iophys' and 'iosize' fields on structure 'pc300hw', to 
- * allow release of I/O region at module unload.
- * Changed location of include files.
- *
- * Revision 2.0 2000/03/27 ivan
- * Added support for the PC300/TE cards.
- *
- * Revision 1.1 2000/01/31 ivan
- * Replaced 'pc300[drv|sca].h' former PC300 driver include files.
- *
- * Revision 1.0 1999/12/16 ivan
- * First official release.
- * Inclusion of 'nchan' field on structure 'pc300hw', to allow variable 
- * number of ports per card.
- * Inclusion of 'if_ptr' field on structure 'pc300dev'.
- *
- * Revision 0.6 1999/11/17 ivan
- * Changed X.25-specific function names to comply with adopted convention.
- *
- * Revision 0.5 1999/11/16 Daniela Squassoni
- * X.25 support.
- *
- * Revision 0.4 1999/11/15 ivan
- * Inclusion of 'clock' field on structure 'pc300hw'.
- *
- * Revision 0.3 1999/11/10 ivan
- * IOCTL name changing.
- * Inclusion of driver function prototypes.
- *
- * Revision 0.2 1999/11/03 ivan
- * Inclusion of 'tx_skb' and union 'ifu' on structure 'pc300dev'.
- *
- * Revision 0.1 1999/01/15 ivan
- * Initial version.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef	_PC300_H
 #define	_PC300_H
 

@@ -1,29 +1,20 @@
 /*
- * ARC On-Chip(fpga) UART Driver
- *
- * Copyright (C) 2010-2012 Synopsys, Inc. (www.synopsys.com)
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * vineetg: July 10th 2012
- *  -Decoupled the driver from arch/arc
- *    +Using platform_get_resource() for irq/membase (thx to bfin_uart.c)
- *    +Using early_platform_xxx() for early console (thx to mach-shmobile/xxx)
- *
- * Vineetg: Aug 21st 2010
- *  -Is uart_tx_stopped() not done in tty write path as it has already been
- *   taken care of, in serial core
- *
- * Vineetg: Aug 18th 2010
- *  -New Serial Core based ARC UART driver
- *  -Derived largely from blackfin driver albiet with some major tweaks
- *
- * TODO:
- *  -check if sysreq works
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #if defined(CONFIG_SERIAL_ARC_CONSOLE) && defined(CONFIG_MAGIC_SYSRQ)
 #define SUPPORT_SYSRQ
 #endif

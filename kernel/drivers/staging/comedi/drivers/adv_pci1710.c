@@ -1,20 +1,19 @@
 /*
- * comedi/drivers/adv_pci1710.c
- *
- * Author: Michal Dobes <dobes@tesnet.cz>
- *
- * Thanks to ZhenGang Shang <ZhenGang.Shang@Advantech.com.cn>
- * for testing and informations.
- *
- *  hardware driver for Advantech cards:
- *   card:   PCI-1710, PCI-1710HG, PCI-1711, PCI-1713, PCI-1720, PCI-1731
- *   driver: pci1710,  pci1710hg,  pci1711,  pci1713,  pci1720,  pci1731
- *
- * Options:
- *  [0] - PCI bus number - if bus number and slot number are 0,
- *                         then driver search for first unused card
- *  [1] - PCI slot number
- *
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 /*
 Driver: adv_pci1710

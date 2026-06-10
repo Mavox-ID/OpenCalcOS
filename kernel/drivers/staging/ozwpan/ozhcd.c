@@ -1,29 +1,20 @@
-/* -----------------------------------------------------------------------------
- * Copyright (c) 2011 Ozmo Inc
- * Released under the GNU General Public License Version 2 (GPLv2).
- *
- * This file provides the implementation of a USB host controller device that
- * does not have any associated hardware. Instead the virtual device is
- * connected to the WiFi network and emulates the operation of a USB hcd by
- * receiving and sending network frames.
- * Note:
- * We take great pains to reduce the amount of code where interrupts need to be
- * disabled and in this respect we are different from standard HCD's. In
- * particular we don't want in_irq() code bleeding over to the protocol side of
- * the driver.
- * The troublesome functions are the urb enqueue and dequeue functions both of
- * which can be called in_irq(). So for these functions we put the urbs into a
- * queue and request a tasklet to process them. This means that a spinlock with
- * interrupts disabled must be held for insertion and removal but most code is
- * is in tasklet or soft irq context. The lock that protects this list is called
- * the tasklet lock and serves the purpose of the 'HCD lock' which must be held
- * when calling the following functions.
- *   usb_hcd_link_urb_to_ep()
- *   usb_hcd_unlink_urb_from_ep()
- *   usb_hcd_flush_endpoint()
- *   usb_hcd_check_unlink_urb()
- * -----------------------------------------------------------------------------
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/platform_device.h>
 #include <beep/usb.h>
 #include <beep/jiffies.h>

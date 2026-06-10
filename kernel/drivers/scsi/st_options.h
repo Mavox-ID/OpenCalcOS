@@ -1,11 +1,20 @@
 /*
-   The compile-time configurable defaults for the Beep SCSI tape driver.
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-   Copyright 1995-2003 Kai Makisara.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-   Last modified: Thu Feb 21 21:47:07 2008 by kai.makisara
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #ifndef _ST_OPTIONS_H
 #define _ST_OPTIONS_H
 

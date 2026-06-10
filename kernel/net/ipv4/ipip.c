@@ -1,29 +1,20 @@
 /*
- *	Beep NET3:	IP/IP protocol decoder.
- *
- *	Authors:
- *		Sam Lantinga (slouken@cs.ucdavis.edu)  02/01/95
- *
- *	Fixes:
- *		Alan Cox	:	Merged and made usable non modular (its so tiny its silly as
- *					a module taking up 2 pages).
- *		Alan Cox	: 	Fixed bug with 1.3.18 and IPIP not working (now needs to set skb->h.iph)
- *					to keep ip_forward happy.
- *		Alan Cox	:	More fixes for 1.3.21, and firewall fix. Maybe this will work soon 8).
- *		Kai Schulte	:	Fixed #defines for IP_FIREWALL->FIREWALL
- *              David Woodhouse :       Perform some basic ICMP handling.
- *                                      IPIP Routing without decapsulation.
- *              Carlos Picoto   :       GRE over IP support
- *		Alexey Kuznetsov:	Reworked. Really, now it is truncated version of ipv4/ip_gre.c.
- *					I do not want to merge them together.
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* tunnel.c: an IP tunnel driver
 
 	The purpose of this driver is to provide an IP tunnel through

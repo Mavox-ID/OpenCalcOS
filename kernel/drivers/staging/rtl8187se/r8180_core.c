@@ -1,32 +1,20 @@
 /*
-   This is part of rtl818x pci OpenSource driver - v 0.1
-   Copyright (C) Andrea Merello 2004-2005  <andreamrl@tiscali.it>
-   Released under the terms of GPL (General Public License)
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-   Parts of this driver are based on the GPL part of the official
-   Realtek driver.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-   Parts of this driver are based on the rtl8180 driver skeleton
-   from Patric Schenke & Andres Salomon.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-   Parts of this driver are based on the Intel Pro Wireless 2100 GPL driver.
-
-   Parts of BB/RF code are derived from David Young rtl8180 netbsd driver.
-
-   RSSI calc function from 'The Deuce'
-
-   Some ideas borrowed from the 8139too.c driver included in beep kernel.
-
-   We (I?) want to thanks the Authors of those projecs and also the
-   Ndiswrapper's project Authors.
-
-   A big big thanks goes also to Realtek corp. for their help in my attempt to
-   add RTL8185 and RTL8225 support, and to David Young also.
-
-   Power management interface routines.
-   Written by Mariusz Matuszek.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #undef RX_DONT_PASS_UL

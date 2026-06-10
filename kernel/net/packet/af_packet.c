@@ -1,57 +1,20 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the BEEP
- *		operating system.  INET is implemented using the  BSD Socket
- *		interface as the means of communication with the user level.
- *
- *		PACKET - implements raw packet sockets.
- *
- * Authors:	Ross Biro
- *		Fred N. van Kempen, <waltje@uWalt.NL.Mugnet.ORG>
- *		Alan Cox, <gw4pts@gw4pts.ampr.org>
- *
- * Fixes:
- *		Alan Cox	:	verify_area() now used correctly
- *		Alan Cox	:	new skbuff lists, look ma no backlogs!
- *		Alan Cox	:	tidied skbuff lists.
- *		Alan Cox	:	Now uses generic datagram routines I
- *					added. Also fixed the peek/read crash
- *					from all old Beep datagram code.
- *		Alan Cox	:	Uses the improved datagram code.
- *		Alan Cox	:	Added NULL's for socket options.
- *		Alan Cox	:	Re-commented the code.
- *		Alan Cox	:	Use new kernel side addressing
- *		Rob Janssen	:	Correct MTU usage.
- *		Dave Platt	:	Counter leaks caused by incorrect
- *					interrupt locking and some slightly
- *					dubious gcc output. Can you read
- *					compiler: it said _VOLATILE_
- *	Richard Kooijman	:	Timestamp fixes.
- *		Alan Cox	:	New buffers. Use sk->mac.raw.
- *		Alan Cox	:	sendmsg/recvmsg support.
- *		Alan Cox	:	Protocol setting support
- *	Alexey Kuznetsov	:	Untied from IPv4 stack.
- *	Cyrus Durgin		:	Fixed kerneld for kmod.
- *	Michal Ostrowski        :       Module initialization cleanup.
- *         Ulises Alonso        :       Frame number limit removal and
- *                                      packet_set_ring memory leak.
- *		Eric Biederman	:	Allow for > 8 byte hardware addresses.
- *					The convention is that longer addresses
- *					will simply extend the hardware address
- *					byte arrays at the end of sockaddr_ll
- *					and packet_mreq.
- *		Johann Baudy	:	Added TX RING.
- *		Chetan Loke	:	Implemented TPACKET_V3 block abstraction
- *					layer.
- *					Copyright (C) 2011, <lokec@ccs.neu.edu>
- *
- *
- *		This program is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/mm.h>
 #include <beep/capability.h>

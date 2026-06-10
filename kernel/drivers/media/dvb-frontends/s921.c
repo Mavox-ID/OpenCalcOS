@@ -1,27 +1,20 @@
 /*
- *   Sharp VA3A5JZ921 One Seg Broadcast Module driver
- *   This device is labeled as just S. 921 at the top of the frontend can
- *
- *   Copyright (C) 2009-2010 Mauro Carvalho Chehab <mchehab@redhat.com>
- *   Copyright (C) 2009-2010 Douglas Landgraf <dougsland@redhat.com>
- *
- *   Developed for Leadership SBTVD 1seg device sold in Brazil
- *
- *   Frontend module based on cx24123 driver, getting some info from
- *	the old s921 driver.
- *
- *   FIXME: Need to port to DVB v5.2 API
- *
- *   This program is free software; you can redistribute it and/or
- *   modify it under the terms of the GNU General Public License as
- *   published by the Free Software Foundation version 2.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- *   General Public License for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <asm/div64.h>
 

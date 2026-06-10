@@ -1,15 +1,20 @@
-/* Simple code to turn various tables in an ELF file into alias definitions.
- * This deals with kernel datastructures where they should be
- * dealt with: in the kernel source.
- *
- * Copyright 2002-2003  Rusty Russell, IBM Corporation
- *           2003       Kai Germaschewski
- *
- *
- * This software may be used and distributed according to the terms
- * of the GNU General Public License, incorporated herein by reference.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "modpost.h"
 
 /* We use the ELF typedefs for kernel_ulong_t but bite the bullet and

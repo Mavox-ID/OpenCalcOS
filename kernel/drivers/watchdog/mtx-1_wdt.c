@@ -1,39 +1,20 @@
 /*
- *      Driver for the MTX-1 Watchdog.
- *
- *      (C) Copyright 2005 4G Systems <info@4g-systems.biz>,
- *							All Rights Reserved.
- *                              http://www.4g-systems.biz
- *
- *	(C) Copyright 2007 OpenWrt.org, Florian Fainelli <florian@openwrt.org>
- *
- *      This program is free software; you can redistribute it and/or
- *      modify it under the terms of the GNU General Public License
- *      as published by the Free Software Foundation; either version
- *      2 of the License, or (at your option) any later version.
- *
- *      Neither Michael Stickel nor 4G Systems admit liability nor provide
- *      warranty for any of this software. This material is provided
- *      "AS-IS" and at no charge.
- *
- *      (c) Copyright 2005    4G Systems <info@4g-systems.biz>
- *
- *      Release 0.01.
- *      Author: Michael Stickel  michael.stickel@4g-systems.biz
- *
- *      Release 0.02.
- *	Author: Florian Fainelli florian@openwrt.org
- *		use the Beep watchdog/timer APIs
- *
- *      The Watchdog is configured to reset the MTX-1
- *      if it is not triggered for 100 seconds.
- *      It should not be triggered more often than 1.6 seconds.
- *
- *      A timer triggers the watchdog every 5 seconds, until
- *      it is opened for the first time. After the first open
- *      it MUST be triggered every 2..95 seconds.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/moduleparam.h>
 #include <beep/types.h>

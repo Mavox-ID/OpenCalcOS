@@ -1,49 +1,20 @@
 /*
- * Generic driver for memory-mapped GPIO controllers.
- *
- * Copyright 2008 MontaVista Software, Inc.
- * Copyright 2008,2010 Anton Vorontsov <cbouatmailru@gmail.com>
- *
- * This program is free software; you can redistribute  it and/or modify it
- * under  the terms of  the GNU General  Public License as published by the
- * Free Software Foundation;  either version 2 of the  License, or (at your
- * option) any later version.
- *
- * ....``.```~~~~````.`.`.`.`.```````'',,,.........`````......`.......
- * ...``                                                         ```````..
- * ..The simplest form of a GPIO controller that the driver supports is``
- *  `.just a single "data" register, where GPIO state can be read and/or `
- *    `,..written. ,,..``~~~~ .....``.`.`.~~.```.`.........``````.```````
- *        `````````
-                                    ___
-_/~~|___/~|   . ```~~~~~~       ___/___\___     ,~.`.`.`.`````.~~...,,,,...
-__________|~$@~~~        %~    /o*o*o*o*o*o\   .. Implementing such a GPIO .
-o        `                     ~~~~\___/~~~~    ` controller in FPGA is ,.`
-                                                 `....trivial..'~`.```.```
- *                                                    ```````
- *  .```````~~~~`..`.``.``.
- * .  The driver supports  `...       ,..```.`~~~```````````````....````.``,,
- * .   big-endian notation, just`.  .. A bit more sophisticated controllers ,
- *  . register the device with -be`. .with a pair of set/clear-bit registers ,
- *   `.. suffix.  ```~~`````....`.`   . affecting the data register and the .`
- *     ``.`.``...```                  ```.. output pins are also supported.`
- *                        ^^             `````.`````````.,``~``~``~~``````
- *                                                   .                  ^^
- *   ,..`.`.`...````````````......`.`.`.`.`.`..`.`.`..
- * .. The expectation is that in at least some cases .    ,-~~~-,
- *  .this will be used with roll-your-own ASIC/FPGA .`     \   /
- *  .logic in Verilog or VHDL. ~~~`````````..`````~~`       \ /
- *  ..````````......```````````                             \o_
- *                                                           |
- *                              ^^                          / \
- *
- *           ...`````~~`.....``.`..........``````.`.``.```........``.
- *            `  8, 16, 32 and 64 bits registers are supported, and``.
- *            . the number of GPIOs is determined by the width of   ~
- *             .. the registers. ,............```.`.`..`.`.~~~.`.`.`~
- *               `.......````.```
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/err.h>
 #include <beep/bug.h>

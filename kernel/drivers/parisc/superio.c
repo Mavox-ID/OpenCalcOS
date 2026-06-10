@@ -1,36 +1,20 @@
-/*      National Semiconductor NS87560UBD Super I/O controller used in
- *      HP [BCJ]x000 workstations.
- *
- *      This chip is a horrid piece of engineering, and National
- *      denies any knowledge of its existence. Thus no datasheet is
- *      available off www.national.com. 
- *
- *	(C) Copyright 2000 Beepcare, Inc.
- * 	(C) Copyright 2000 Beepcare Canada, Inc.
- *	(C) Copyright 2000 Martin K. Petersen <mkp@beepcare.com>
- * 	(C) Copyright 2000 Alex deVries <alex@onefishtwo.ca>
- *      (C) Copyright 2001 John Marvin <jsm fc hp com>
- *      (C) Copyright 2003 Grant Grundler <grundler parisc-beep org>
- *	(C) Copyright 2005 Kyle McMartin <kyle@parisc-beep.org>
- *	(C) Copyright 2006 Helge Deller <deller@gmx.de>
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License as
- *	published by the Free Software Foundation; either version 2 of
- *	the License, or (at your option) any later version.  
- *
- *	The initial version of this is by Martin Peterson.  Alex deVries
- *	has spent a bit of time trying to coax it into working.
- *
- *      Major changes to get basic interrupt infrastructure working to
- *      hopefully be able to support all SuperIO devices. Currently
- *      works with serial. -- John Marvin <jsm@fc.hp.com>
- *
- *	Converted superio_init() to be a PCI_FIXUP_FINAL callee.
- *         -- Kyle McMartin <kyle@parisc-beep.org>
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* NOTES:
  * 
  * Function 0 is an IDE controller. It is identical to a PC87415 IDE

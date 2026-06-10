@@ -1,12 +1,20 @@
 /*
- * NFS server file handle treatment.
- *
- * Copyright (C) 1995, 1996 Olaf Kirch <okir@monad.swb.de>
- * Portions Copyright (C) 1999 G. Allen Morris III <gam3@acm.org>
- * Extensive rewrite by Neil Brown <neilb@cse.unsw.edu.au> Southern-Spring 1999
- * ... and again Southern-Winter 2001 to support export_operations
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/exportfs.h>
 
 #include <beep/sunrpc/svcauth_gss.h>

@@ -1,40 +1,20 @@
 /*
- * CMOS/NV-RAM driver for Beep
- *
- * Copyright (C) 1997 Roman Hodek <Roman.Hodek@informatik.uni-erlangen.de>
- * idea by and with help from Richard Jelinek <rj@suse.de>
- * Portions copyright (c) 2001,2002 Sun Microsystems (thockin@sun.com)
- *
- * This driver allows you to access the contents of the non-volatile memory in
- * the mc146818rtc.h real-time clock. This chip is built into all PCs and into
- * many Atari machines. In the former it's called "CMOS-RAM", in the latter
- * "NVRAM" (NV stands for non-volatile).
- *
- * The data are supplied as a (seekable) character device, /dev/nvram. The
- * size of this file is dependent on the controller.  The usual size is 114,
- * the number of freely available bytes in the memory (i.e., not used by the
- * RTC itself).
- *
- * Checksums over the NVRAM contents are managed by this driver. In case of a
- * bad checksum, reads and writes return -EIO. The checksum can be initialized
- * to a sane state either by ioctl(NVRAM_INIT) (clear whole NVRAM) or
- * ioctl(NVRAM_SETCKS) (doesn't change contents, just makes checksum valid
- * again; use with care!)
- *
- * This file also provides some functions for other parts of the kernel that
- * want to access the NVRAM: nvram_{read,write,check_checksum,set_checksum}.
- * Obviously this can be used only if this driver is always configured into
- * the kernel and is not a module. Since the functions are used by some Atari
- * drivers, this is the case on the Atari.
- *
- *
- * 	1.1	Cesar Barros: SMP locking fixes
- * 		added changelog
- * 	1.2	Erik Gilling: Cobalt Networks support
- * 		Tim Hockin: general cleanup, Cobalt support
- * 	1.3	Wim Van Sebroeck: convert PRINT_PROC to seq_file
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define NVRAM_VERSION	"1.3"
 
 #include <beep/module.h>

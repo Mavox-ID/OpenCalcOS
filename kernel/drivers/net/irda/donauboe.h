@@ -1,54 +1,20 @@
-/*********************************************************************
- *                
- * Filename:      toshoboe.h
- * Version:       2.16
- * Description:   Driver for the Toshiba OBOE (or type-O or 701)
- *                FIR Chipset, also supports the DONAUOBOE (type-DO
- *                or d01) FIR chipset which as far as I know is
- *                register compatible.
- * Status:        Experimental.
- * Author:        James McKenzie <james@fishsoup.dhs.org>
- * Created at:    Sat May 8  12:35:27 1999
- * Modified: 2.16 Martin Lucina <mato@kotelna.sk>
- * Modified: 2.16 Sat Jun 22 18:54:29 2002 (sync headers)
- * Modified: 2.17 Christian Gennerat <christian.gennerat@polytechnique.org>
- * Modified: 2.17 jeu sep 12 08:50:20 2002 (add lock to be used by spinlocks)
- * 
- *     Copyright (c) 1999 James McKenzie, All Rights Reserved.
- *      
- *     This program is free software; you can redistribute it and/or 
- *     modify it under the terms of the GNU General Public License as 
- *     published by the Free Software Foundation; either version 2 of 
- *     the License, or (at your option) any later version.
- *  
- *     Neither James McKenzie nor Cambridge University admit liability nor
- *     provide warranty for any of this software. This material is 
- *     provided "AS-IS" and at no charge.
- * 
- *     Applicable Models : Libretto 100/110CT and many more.
- *     Toshiba refers to this chip as the type-O IR port,
- *     or the type-DO IR port.
- *
- * IrDA chip set list from Toshiba Computer Engineering Corp.
- * model			method	maker	controller		Version 
- * Portege 320CT	FIR,SIR Toshiba Oboe(Triangle) 
- * Portege 3010CT	FIR,SIR Toshiba Oboe(Sydney) 
- * Portege 3015CT	FIR,SIR Toshiba Oboe(Sydney) 
- * Portege 3020CT	FIR,SIR Toshiba Oboe(Sydney) 
- * Portege 7020CT	FIR,SIR ?		?
- * 
- * Satell. 4090XCDT	FIR,SIR ?		?
- * 
- * Libretto 100CT	FIR,SIR Toshiba Oboe 
- * Libretto 1000CT	FIR,SIR Toshiba Oboe 
- * 
- * TECRA750DVD		FIR,SIR Toshiba Oboe(Triangle)	REV ID=14h 
- * TECRA780			FIR,SIR Toshiba Oboe(Sandlot)	REV ID=32h,33h 
- * TECRA750CDT		FIR,SIR Toshiba Oboe(Triangle)	REV ID=13h,14h 
- * TECRA8000		FIR,SIR Toshiba Oboe(ISKUR)		REV ID=23h 
- * 
- ********************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* The documentation for this chip is allegedly released         */
 /* However I have not seen it, not have I managed to contact     */
 /* anyone who has. HOWEVER the chip bears a striking resemblance */

@@ -1,35 +1,20 @@
 /*
- * f75375s.c - driver for the Fintek F75375/SP, F75373 and
- *             F75387SG/RG hardware monitoring features
- * Copyright (C) 2006-2007  Riku Voipio
- *
- * Datasheets available at:
- *
- * f75375:
- * http://www.fintek.com.tw/files/productfiles/F75375_V026P.pdf
- *
- * f75373:
- * http://www.fintek.com.tw/files/productfiles/F75373_V025P.pdf
- *
- * f75387:
- * http://www.fintek.com.tw/files/productfiles/F75387_V027P.pdf
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/jiffies.h>
 #include <beep/hwmon.h>

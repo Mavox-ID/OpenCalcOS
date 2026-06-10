@@ -1,61 +1,20 @@
 /*
- *  beep/drivers/video/fbcon.c -- Low level frame buffer based console driver
- *
- *	Copyright (C) 1995 Geert Uytterhoeven
- *
- *
- *  This file is based on the original Amiga console driver (amicon.c):
- *
- *	Copyright (C) 1993 Hamish Macdonald
- *			   Greg Harp
- *	Copyright (C) 1994 David Carter [carter@compsci.bristol.ac.uk]
- *
- *	      with work by William Rucklidge (wjr@cs.cornell.edu)
- *			   Geert Uytterhoeven
- *			   Jes Sorensen (jds@kom.auc.dk)
- *			   Martin Apel
- *
- *  and on the original Atari console driver (atacon.c):
- *
- *	Copyright (C) 1993 Bjoern Brauel
- *			   Roman Hodek
- *
- *	      with work by Guenther Kelleter
- *			   Martin Schaller
- *			   Andreas Schwab
- *
- *  Hardware cursor support added by Emmanuel Marty (core@ggi-project.org)
- *  Smart redraw scrolling, arbitrary font width support, 512char font support
- *  and software scrollback added by 
- *                         Jakub Jelinek (jj@ultra.beep.cz)
- *
- *  Random hacking by Martin Mares <mj@ucw.cz>
- *
- *	2001 - Documented with DocBook
- *	- Brad Douglas <brad@neruo.com>
- *
- *  The low level operations for the various display memory organizations are
- *  now in separate source files.
- *
- *  Currently the following organizations are supported:
- *
- *    o afb			Amiga bitplanes
- *    o cfb{2,4,8,16,24,32}	Packed pixels
- *    o ilbm			Amiga interleaved bitplanes
- *    o iplan2p[248]		Atari interleaved bitplanes
- *    o mfb			Monochrome
- *    o vga			VGA characters/attributes
- *
- *  To do:
- *
- *    - Implement 16 plane mode (iplan2p16)
- *
- *
- *  This file is subject to the terms and conditions of the GNU General Public
- *  License.  See the file COPYING in the main directory of this archive for
- *  more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #undef FBCONDEBUG
 
 #include <beep/module.h>

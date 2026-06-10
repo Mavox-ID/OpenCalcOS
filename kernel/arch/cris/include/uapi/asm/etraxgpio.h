@@ -1,37 +1,20 @@
 /*
- * The following devices are accessible using this driver using
- * GPIO_MAJOR (120) and a couple of minor numbers.
- *
- * For ETRAX 100LX (CONFIG_ETRAX_ARCH_V10):
- * /dev/gpioa  minor 0, 8 bit GPIO, each bit can change direction
- * /dev/gpiob  minor 1, 8 bit GPIO, each bit can change direction
- * /dev/leds   minor 2, Access to leds depending on kernelconfig
- * /dev/gpiog  minor 3
- *       g0dir, g8_15dir, g16_23dir, g24 dir configurable in R_GEN_CONFIG
- *       g1-g7 and g25-g31 is both input and outputs but on different pins
- *       Also note that some bits change pins depending on what interfaces
- *       are enabled.
- *
- * For ETRAX FS (CONFIG_ETRAXFS):
- * /dev/gpioa  minor 0,  8 bit GPIO, each bit can change direction
- * /dev/gpiob  minor 1, 18 bit GPIO, each bit can change direction
- * /dev/gpioc  minor 3, 18 bit GPIO, each bit can change direction
- * /dev/gpiod  minor 4, 18 bit GPIO, each bit can change direction
- * /dev/gpioe  minor 5, 18 bit GPIO, each bit can change direction
- * /dev/leds   minor 2, Access to leds depending on kernelconfig
- *
- * For ARTPEC-3 (CONFIG_CRIS_MACH_ARTPEC3):
- * /dev/gpioa  minor 0, 32 bit GPIO, each bit can change direction
- * /dev/gpiob  minor 1, 32 bit GPIO, each bit can change direction
- * /dev/gpioc  minor 3, 16 bit GPIO, each bit can change direction
- * /dev/gpiod  minor 4, 32 bit GPIO, input only
- * /dev/leds   minor 2, Access to leds depending on kernelconfig
- * /dev/pwm0   minor 16, PWM channel 0 on PA30
- * /dev/pwm1   minor 17, PWM channel 1 on PA31
- * /dev/pwm2   minor 18, PWM channel 2 on PB26
- * /dev/ppwm   minor 19, PPWM channel
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _ASM_ETRAXGPIO_H
 #define _ASM_ETRAXGPIO_H
 

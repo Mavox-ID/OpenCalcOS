@@ -1,38 +1,20 @@
 /*
- * Generic parallel printer driver
- *
- * Copyright (C) 1992 by Jim Weigand and Linus Torvalds
- * Copyright (C) 1992,1993 by Michael K. Johnson
- * - Thanks much to Gunter Windau for pointing out to me where the error
- *   checking ought to be.
- * Copyright (C) 1993 by Nigel Gamble (added interrupt code)
- * Copyright (C) 1994 by Alan Cox (Modularised it)
- * LPCAREFUL, LPABORT, LPGETSTATUS added by Chris Metcalf, metcalf@lcs.mit.edu
- * Statistics and support for slow printers by Rob Janssen, rob@knoware.nl
- * "lp=" command line parameters added by Grant Guenther, grant@torque.net
- * lp_read (Status readback) support added by Carsten Gross,
- *                                             carsten@sol.wohnheim.uni-ulm.de
- * Support for parport by Philip Blundell <philb@gnu.org>
- * Parport sharing hacking by Andrea Arcangeli
- * Fixed kernel_(to/from)_user memory copy to check for errors
- * 				by Riccardo Facchetti <fizban@tin.it>
- * 22-JAN-1998  Added support for devfs  Richard Gooch <rgooch@atnf.csiro.au>
- * Redesigned interrupt handling for handle printers with buggy handshake
- *				by Andrea Arcangeli, 11 May 1998
- * Full efficient handling of printer with buggy irq handshake (now I have
- * understood the meaning of the strange handshake). This is done sending new
- * characters if the interrupt is just happened, even if the printer say to
- * be still BUSY. This is needed at least with Epson Stylus Color. To enable
- * the new TRUST_IRQ mode read the `LP OPTIMIZATION' section below...
- * Fixed the irq on the rising edge of the strobe case.
- * Obsoleted the CAREFUL flag since a printer that doesn' t work with
- * CAREFUL will block a bit after in lp_check_status().
- *				Andrea Arcangeli, 15 Oct 1998
- * Obsoleted and removed all the lowlevel stuff implemented in the last
- * month to use the IEEE1284 functions (that handle the _new_ compatibilty
- * mode fine).
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* This driver should, in theory, work with any parallel port that has an
  * appropriate low-level driver; all I/O is done through the parport
  * abstraction layer.

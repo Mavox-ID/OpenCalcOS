@@ -1,28 +1,20 @@
 /*
- * beep/arch/unicore32/mm/ioremap.c
- *
- * Code specific to PKUnity SoC and UniCore ISA
- *
- * Copyright (C) 2001-2010 GUAN Xue-tao
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- *
- * Re-map IO memory to kernel address space so that we can access it.
- *
- * This allows a driver to remap an arbitrary region of bus memory into
- * virtual space.  One should *only* use readl, writel, memcpy_toio and
- * so on with such remapped areas.
- *
- * Because UniCore only has a 32-bit address space we can't address the
- * whole of the (physical) PCI space at once.  PCI huge-mode addressing
- * allows us to circumvent this restriction by splitting PCI space into
- * two 2GB chunks and mapping only one at a time into processor memory.
- * We use MMU protection domains to trap any attempt to access the bank
- * that is not currently mapped.  (This isn't fully implemented yet.)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/errno.h>
 #include <beep/mm.h>

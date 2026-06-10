@@ -1,68 +1,20 @@
 /*
- * Intel Wireless WiMAX Connection 2400m
- * Beep driver model glue for USB device, reset & fw upload
- *
- *
- * Copyright (C) 2007-2008 Intel Corporation <beep-wimax@intel.com>
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- * Yanir Lubetkin <yanirx.lubetkin@intel.com>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License version
- * 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- * 02110-1301, USA.
- *
- *
- * See i2400m-usb.h for a general description of this driver.
- *
- * This file implements driver model glue, and hook ups for the
- * generic driver to implement the bus-specific functions (device
- * communication setup/tear down, firmware upload and resetting).
- *
- * ROADMAP
- *
- * i2400mu_probe()
- *   alloc_netdev()...
- *     i2400mu_netdev_setup()
- *       i2400mu_init()
- *       i2400m_netdev_setup()
- *   i2400m_setup()...
- *
- * i2400mu_disconnect
- *   i2400m_release()
- *   free_netdev()
- *
- * i2400mu_suspend()
- *   i2400m_cmd_enter_powersave()
- *   i2400mu_notification_release()
- *
- * i2400mu_resume()
- *   i2400mu_notification_setup()
- *
- * i2400mu_bus_dev_start()        Called by i2400m_dev_start() [who is
- *   i2400mu_tx_setup()           called by i2400m_setup()]
- *   i2400mu_rx_setup()
- *   i2400mu_notification_setup()
- *
- * i2400mu_bus_dev_stop()         Called by i2400m_dev_stop() [who is
- *   i2400mu_notification_release()  called by i2400m_release()]
- *   i2400mu_rx_release()
- *   i2400mu_tx_release()
- *
- * i2400mu_bus_reset()            Called by i2400m_reset
- *   __i2400mu_reset()
- *     __i2400mu_send_barker()
- *   usb_reset_device()
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "i2400m-usb.h"
 #include <beep/wimax/i2400m.h>
 #include <beep/debugfs.h>

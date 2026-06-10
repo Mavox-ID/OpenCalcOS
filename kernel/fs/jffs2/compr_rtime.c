@@ -1,26 +1,20 @@
 /*
- * JFFS2 -- Journalling Flash File System, Version 2.
- *
- * Copyright © 2001-2007 Red Hat, Inc.
- * Copyright © 2004-2010 David Woodhouse <dwmw2@infradead.org>
- *
- * Created by Arjan van de Ven <arjanv@redhat.com>
- *
- * For licensing information, see the file 'LICENCE' in this directory.
- *
- *
- *
- * Very simple lz77-ish encoder.
- *
- * Theory of operation: Both encoder and decoder have a list of "last
- * occurrences" for every possible source-value; after sending the
- * first source-byte, the second byte indicated the "run" length of
- * matches
- *
- * The algorithm is intended to only send "whole bytes", no bit-messing.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/types.h>
 #include <beep/errno.h>

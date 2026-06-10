@@ -1,23 +1,20 @@
 /*
- * R/W semaphores for ia64
- *
- * Copyright (C) 2003 Ken Chen <kenneth.w.chen@intel.com>
- * Copyright (C) 2003 Asit Mallick <asit.k.mallick@intel.com>
- * Copyright (C) 2005 Christoph Lameter <clameter@sgi.com>
- *
- * Based on asm-i386/rwsem.h and other architecture implementation.
- *
- * The MSW of the count is the negated number of active writers and
- * waiting lockers, and the LSW is the total number of active locks.
- *
- * The lock count is initialized to 0 (no active and no waiting lockers).
- *
- * When a writer subtracts WRITE_BIAS, it'll get 0xffffffff00000001 for
- * the case of an uncontended lock. Readers increment by 1 and see a positive
- * value when uncontended, negative if there are writers (and maybe) readers
- * waiting (in which case it goes to sleep).
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _ASM_IA64_RWSEM_H
 #define _ASM_IA64_RWSEM_H
 

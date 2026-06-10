@@ -29,16 +29,14 @@ if [ -d "ndless/ncurses" ] && [ -f "ndless/ncurses/Makefile" ]; then
 fi
 
 echo -e "${YELLOW}Cleaning Kernel...${NC}"
-(cd kernel && make clean > /dev/null 2>&1 && rm -rf prog/build && cd ..)
+(cd kernel && make clean > /dev/null 2>&1 && rm -rf prog/build && rm -rf arch/arm/boot/Calc arch/arm/boot/zCalc arch/arm/boot/compressed/vmbeep && cd ..)
 
 echo -e "${YELLOW}Cleaning Busybox...${NC}"
-(cd busybox && make clean > /dev/null 2>&1 && rm -rf ../calcfs/bin && mkdir ../calcfs/bin && cd ..)
+(cd busybox && make clean > /dev/null 2>&1 && cd ..)
 
 echo -e "${YELLOW}Cleaning Nano...${NC}"
 if [ -d "busybox/nano" ] && ( [ -f "busybox/nano/Makefile" ] || [ -f "busybox/nano/makefile" ] ); then
-    (cd busybox/nano && make distclean)
-else
-    echo "Makefile not found in busybox/nano, skipping..."
+    (cd busybox/nano && make distclean > /dev/null 2>&1)
 fi
 
 echo -e "${YELLOW}Cleaning Loader...${NC}"

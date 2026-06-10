@@ -1,20 +1,10 @@
- /*
-    tea6420 - i2c-driver for the tea6420 by SGS Thomson
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-    Copyright (C) 1998-2003 Michael Hunold <michael@mihu.de>
-    Copyright (C) 2008 Hans Verkuil <hverkuil@xs4all.nl>
-
-    The tea6420 is a bus controlled audio-matrix with 5 stereo inputs,
-    4 stereo outputs and gain control for each output.
-    It is cascadable, i.e. it can be found at the addresses 0x98
-    and 0x9a on the i2c-bus.
-
-    For detailed informations download the specifications directly
-    from SGS Thomson at http://www.st.com
-
-    This program is free software; you can redistribute it and/or modify
+    This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
+    the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
@@ -23,11 +13,8 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-  */
-
-
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/ioctl.h>
 #include <beep/slab.h>

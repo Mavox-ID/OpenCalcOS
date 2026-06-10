@@ -1,18 +1,20 @@
-/* 
-	frpw.c	(c) 1996-8  Grant R. Guenther <grant@torque.net>
-		            Under the terms of the GNU General Public License
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-	frpw.c is a low-level protocol driver for the Freecom "Power"
-	parallel port IDE adapter.
-	
-	Some applications of this adapter may require a "printer" reset
-	prior to loading the driver.  This can be done by loading and
-	unloading the "lp" driver, or it can be done by this driver
-	if you define FRPW_HARD_RESET.  The latter is not recommended
-	as it may upset devices on other ports.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 /* Changes:
 
         1.01    GRG 1998.05.06 init_proto, release_proto

@@ -1,53 +1,20 @@
 /*
- * Helper macros to support writing architecture specific
- * linker scripts.
- *
- * A minimal linker scripts has following content:
- * [This is a sample, architectures may have special requiriements]
- *
- * OUTPUT_FORMAT(...)
- * OUTPUT_ARCH(...)
- * ENTRY(...)
- * SECTIONS
- * {
- *	. = START;
- *	__init_begin = .;
- *	HEAD_TEXT_SECTION
- *	INIT_TEXT_SECTION(PAGE_SIZE)
- *	INIT_DATA_SECTION(...)
- *	PERCPU_SECTION(CACHELINE_SIZE)
- *	__init_end = .;
- *
- *	_stext = .;
- *	TEXT_SECTION = 0
- *	_etext = .;
- *
- *      _sdata = .;
- *	RO_DATA_SECTION(PAGE_SIZE)
- *	RW_DATA_SECTION(...)
- *	_edata = .;
- *
- *	EXCEPTION_TABLE(...)
- *	NOTES
- *
- *	BSS_SECTION(0, 0, 0)
- *	_end = .;
- *
- *	STABS_DEBUG
- *	DWARF_DEBUG
- *
- *	DISCARDS		// must be the last
- * }
- *
- * [__init_begin, __init_end] is the init section that may be freed after init
- * [_stext, _etext] is the text section
- * [_sdata, _edata] is the data section
- *
- * Some of the included output section have their own set of constants.
- * Examples are: [__initramfs_start, __initramfs_end] for initramfs and
- *               [__nosave_begin, __nosave_end] for the nosave data
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef LOAD_OFFSET
 #define LOAD_OFFSET 0
 #endif

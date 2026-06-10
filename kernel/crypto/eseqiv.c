@@ -1,20 +1,20 @@
 /*
- * eseqiv: Encrypted Sequence Number IV Generator
- *
- * This generator generates an IV based on a sequence number by xoring it
- * with a salt and then encrypting it with the same key as used to encrypt
- * the plain text.  This algorithm requires that the block size be equal
- * to the IV size.  It is mainly useful for CBC.
- *
- * Copyright (c) 2007 Herbert Xu <herbert@gondor.apana.org.au>
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by the Free
- * Software Foundation; either version 2 of the License, or (at your option)
- * any later version.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <crypto/internal/skcipher.h>
 #include <crypto/rng.h>
 #include <crypto/scatterwalk.h>

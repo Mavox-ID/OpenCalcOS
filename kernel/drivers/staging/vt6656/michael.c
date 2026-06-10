@@ -1,44 +1,20 @@
 /*
- * Copyright (c) 1996, 2003 VIA Networking Technologies, Inc.
- * All rights reserved.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License along
- * with this program; if not, write to the Free Software Foundation, Inc.,
- * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
- *
- *
- * File: michael.cpp
- *
- * Purpose: The implementation of LIST data structure.
- *
- * Author: Kyle Hsu
- *
- * Date: Sep 4, 2002
- *
- * Functions:
- *      s_dwGetUINT32 - Convert from BYTE[] to DWORD in a portable way
- *      s_vPutUINT32 - Convert from DWORD to BYTE[] in a portable way
- *      s_vClear - Reset the state to the empty message.
- *      s_vSetKey - Set the key.
- *      MIC_vInit - Set the key.
- *      s_vAppendByte - Append the byte to our word-sized buffer.
- *      MIC_vAppend - call s_vAppendByte.
- *      MIC_vGetMIC - Append the minimum padding and call s_vAppendByte.
- *
- * Revision History:
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "tmacro.h"
 #include "michael.h"
 

@@ -1,35 +1,20 @@
 /*
- *  Copyright (c) 2000-2010 LSI Corporation.
- *
- *
- *           Name:  mpi2_tool.h
- *          Title:  MPI diagnostic tool structures and definitions
- *  Creation Date:  March 26, 2007
- *
- *    mpi2_tool.h Version:  02.00.07
- *
- *  Version History
- *  ---------------
- *
- *  Date      Version   Description
- *  --------  --------  ------------------------------------------------------
- *  04-30-07  02.00.00  Corresponds to Fusion-MPT MPI Specification Rev A.
- *  12-18-07  02.00.01  Added Diagnostic Buffer Post and Diagnostic Release
- *                      structures and defines.
- *  02-29-08  02.00.02  Modified various names to make them 32-character unique.
- *  05-06-09  02.00.03  Added ISTWI Read Write Tool and Diagnostic CLI Tool.
- *  07-30-09  02.00.04  Added ExtendedType field to DiagnosticBufferPost request
- *                      and reply messages.
- *                      Added MPI2_DIAG_BUF_TYPE_EXTENDED.
- *                      Incremented MPI2_DIAG_BUF_TYPE_COUNT.
- *  05-12-10  02.00.05  Added Diagnostic Data Upload tool.
- *  08-11-10  02.00.06  Added defines that were missing for Diagnostic Buffer
- *                      Post Request.
- *  05-25-11  02.00.07  Added Flags field and related defines to
- *                      MPI2_TOOLBOX_ISTWI_READ_WRITE_REQUEST.
- *  --------------------------------------------------------------------------
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef MPI2_TOOL_H
 #define MPI2_TOOL_H
 

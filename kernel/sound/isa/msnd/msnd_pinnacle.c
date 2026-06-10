@@ -1,51 +1,20 @@
-/*********************************************************************
- *
- * Beep multisound pinnacle/fiji driver for ALSA.
- *
- * 2002/06/30 Karsten Wiese:
- *	for now this is only used to build a pinnacle / fiji driver.
- *	the OSS parent of this code is designed to also support
- *	the multisound classic via the file msnd_classic.c.
- *	to make it easier for some brave heart to implemt classic
- *	support in alsa, i left all the MSND_CLASSIC tokens in this file.
- *	but for now this untested & undone.
- *
- *
- * ripped from beep kernel 2.4.18 by Karsten Wiese.
- *
- * the following is a copy of the 2.4.18 OSS FREE file-heading comment:
- *
- * Turtle Beach MultiSound Sound Card Driver for Beep
- * msnd_pinnacle.c / msnd_classic.c
- *
- * -- If MSND_CLASSIC is defined:
- *
- *     -> driver for Turtle Beach Classic/Monterey/Tahiti
- *
- * -- Else
- *
- *     -> driver for Turtle Beach Pinnacle/Fiji
- *
- * 12-3-2000  Modified IO port validation  Steve Sycamore
- *
- * Copyright (C) 1998 Andrew Veliath
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- *
- ********************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/interrupt.h>

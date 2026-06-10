@@ -1,86 +1,20 @@
 /*
- * WUSB Wire Adapter: Radio Control Interface (WUSB[8])
- * Notification and Event Handling
- *
- * Copyright (C) 2005-2006 Intel Corporation
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License version
- * 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- * 02110-1301, USA.
- *
- *
- * The RC interface of the Host Wire Adapter (USB dongle) or WHCI PCI
- * card delivers a stream of notifications and events to the
- * notification end event endpoint or area. This code takes care of
- * getting a buffer with that data, breaking it up in separate
- * notifications and events and then deliver those.
- *
- * Events are answers to commands and they carry a context ID that
- * associates them to the command. Notifications are that,
- * notifications, they come out of the blue and have a context ID of
- * zero. Think of the context ID kind of like a handler. The
- * uwb_rc_neh_* code deals with managing context IDs.
- *
- * This is why you require a handle to operate on a UWB host. When you
- * open a handle a context ID is assigned to you.
- *
- * So, as it is done is:
- *
- * 1. Add an event handler [uwb_rc_neh_add()] (assigns a ctx id)
- * 2. Issue command [rc->cmd(rc, ...)]
- * 3. Arm the timeout timer [uwb_rc_neh_arm()]
- * 4, Release the reference to the neh [uwb_rc_neh_put()]
- * 5. Wait for the callback
- * 6. Command result (RCEB) is passed to the callback
- *
- * If (2) fails, you should remove the handle [uwb_rc_neh_rm()]
- * instead of arming the timer.
- *
- * Handles are for using in *serialized* code, single thread.
- *
- * When the notification/event comes, the IRQ handler/endpoint
- * callback passes the data read to uwb_rc_neh_grok() which will break
- * it up in a discrete series of events, look up who is listening for
- * them and execute the pertinent callbacks.
- *
- * If the reader detects an error while reading the data stream, call
- * uwb_rc_neh_error().
- *
- * CONSTRAINTS/ASSUMPTIONS:
- *
- * - Most notifications/events are small (less thank .5k), copying
- *   around is ok.
- *
- * - Notifications/events are ALWAYS smaller than PAGE_SIZE
- *
- * - Notifications/events always come in a single piece (ie: a buffer
- *   will always contain entire notifications/events).
- *
- * - we cannot know in advance how long each event is (because they
- *   lack a length field in their header--smart move by the standards
- *   body, btw). So we need a facility to get the event size given the
- *   header. This is what the EST code does (notif/Event Size
- *   Tables), check nest.c--as well, you can associate the size to
- *   the handle [w/ neh->extra_size()].
- *
- * - Most notifications/events are fixed size; only a few are variable
- *   size (NEST takes care of that).
- *
- * - Listeners of events expect them, so they usually provide a
- *   buffer, as they know the size. Listeners to notifications don't,
- *   so we allocate their buffers dynamically.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/timer.h>
 #include <beep/slab.h>

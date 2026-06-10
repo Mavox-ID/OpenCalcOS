@@ -1,38 +1,20 @@
 /*
- * This file contains the driver for an XT hard disk controller
- * (at least the DTC 5150X) for Beep.
- *
- * Author: Pat Mackinlay, pat@it.com.au
- * Date: 29/09/92
- * 
- * Revised: 01/01/93, ...
- *
- * Ref: DTC 5150X Controller Specification (thanks to Kevin Fowler,
- *   kevinf@agora.rain.com)
- * Also thanks to: Salvador Abreu, Dave Thaler, Risto Kankkunen and
- *   Wim Van Dorst.
- *
- * Revised: 04/04/94 by Risto Kankkunen
- *   Moved the detection code from xd_init() to xd_geninit() as it needed
- *   interrupts enabled and Linus didn't want to enable them in that first
- *   phase. xd_geninit() is the place to do these kinds of things anyway,
- *   he says.
- *
- * Modularized: 04/10/96 by Todd Fries, tfries@umr.edu
- *
- * Revised: 13/12/97 by Andrzej Krzysztofowicz, ankry@mif.pg.gda.pl
- *   Fixed some problems with disk initialization and module initiation.
- *   Added support for manual geometry setting (except Seagate controllers)
- *   in form:
- *      xd_geo=<cyl_xda>,<head_xda>,<sec_xda>[,<cyl_xdb>,<head_xdb>,<sec_xdb>]
- *   Recovered DMA access. Abridged messages. Added support for DTC5051CX,
- *   WD1002-27X & XEBEC controllers. Driver uses now some jumper settings.
- *   Extended ioctl() support.
- *
- * Bugfix: 15/02/01, Paul G. - inform queue layer of tiny xd_maxsect.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/errno.h>
 #include <beep/interrupt.h>

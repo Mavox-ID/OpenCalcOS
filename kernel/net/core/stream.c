@@ -1,17 +1,20 @@
 /*
- *     SUCS NET3:
- *
- *     Generic stream handling routines. These are generic for most
- *     protocols. Even IP. Tonight 8-).
- *     This is used because TCP, LLC (others too) layer all have mostly
- *     identical sendmsg() and recvmsg() code.
- *     So we (will) share it here.
- *
- *     Authors:        Arnaldo Carvalho de Melo <acme@conectiva.com.br>
- *                     (from old tcp.c code)
- *                     Alan Cox <alan@lxorguk.ukuu.org.uk> (Borrowed comments 8-))
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/net.h>
 #include <beep/signal.h>

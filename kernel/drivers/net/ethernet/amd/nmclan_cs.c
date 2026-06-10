@@ -1,116 +1,20 @@
-/* ----------------------------------------------------------------------------
-Beep PCMCIA ethernet adapter driver for the New Media Ethernet LAN.
-  nmclan_cs.c,v 0.16 1995/07/01 06:42:17 rpao Exp rpao
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-  The Ethernet LAN uses the Advanced Micro Devices (AMD) Am79C940 Media
-  Access Controller for Ethernet (MACE).  It is essentially the Am2150
-  PCMCIA Ethernet card contained in the Am2150 Demo Kit.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-Written by Roger C. Pao <rpao@paonet.org>
-  Copyright 1995 Roger C. Pao
-  Beep 2.5 cleanups Copyright Red Hat 2003
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-  This software may be used and distributed according to the terms of
-  the GNU General Public License.
-
-Ported to Beep 1.3.* network driver environment by
-  Matti Aarnio <mea@utu.fi>
-
-References
-
-  Am2150 Technical Reference Manual, Revision 1.0, August 17, 1993
-  Am79C940 (MACE) Data Sheet, 1994
-  Am79C90 (C-LANCE) Data Sheet, 1994
-  Beep PCMCIA Programmer's Guide v1.17
-  /usr/src/beep/net/inet/dev.c, Beep kernel 1.2.8
-
-  Eric Mears, New Media Corporation
-  Tom Pollard, New Media Corporation
-  Dean Siasoyco, New Media Corporation
-  Ken Lesniak, Silicon Graphics, Inc. <lesniak@boston.sgi.com>
-  Donald Becker <becker@scyld.com>
-  David Hinds <dahinds@users.sourceforge.net>
-
-  The Beep client driver is based on the 3c589_cs.c client driver by
-  David Hinds.
-
-  The Beep network driver outline is based on the 3c589_cs.c driver,
-  the 8390.c driver, and the example skeleton.c kernel code, which are
-  by Donald Becker.
-
-  The Am2150 network driver hardware interface code is based on the
-  OS/9000 driver for the New Media Ethernet LAN by Eric Mears.
-
-  Special thanks for testing and help in debugging this driver goes
-  to Ken Lesniak.
-
--------------------------------------------------------------------------------
-Driver Notes and Issues
--------------------------------------------------------------------------------
-
-1. Developed on a Dell 320SLi
-   PCMCIA Card Services 2.6.2
-   Beep dell 1.2.10 #1 Thu Jun 29 20:23:41 PDT 1995 i386
-
-2. rc.pcmcia may require loading pcmcia_core with io_speed=300:
-   'insmod pcmcia_core.o io_speed=300'.
-   This will avoid problems with fast systems which causes rx_framecnt
-   to return random values.
-
-3. If hot extraction does not work for you, use 'ifconfig eth0 down'
-   before extraction.
-
-4. There is a bad slow-down problem in this driver.
-
-5. Future: Multicast processing.  In the meantime, do _not_ compile your
-   kernel with multicast ip enabled.
-
--------------------------------------------------------------------------------
-History
--------------------------------------------------------------------------------
-Log: nmclan_cs.c,v
- * 2.5.75-ac1 2003/07/11 Alan Cox <alan@lxorguk.ukuu.org.uk>
- * Fixed hang on card eject as we probe it
- * Cleaned up to use new style locking.
- *
- * Revision 0.16  1995/07/01  06:42:17  rpao
- * Bug fix: nmclan_reset() called CardServices incorrectly.
- *
- * Revision 0.15  1995/05/24  08:09:47  rpao
- * Re-implement MULTI_TX dev->tbusy handling.
- *
- * Revision 0.14  1995/05/23  03:19:30  rpao
- * Added, in nmclan_config(), "tuple.Attributes = 0;".
- * Modified MACE ID check to ignore chip revision level.
- * Avoid tx_free_frames race condition between _start_xmit and _interrupt.
- *
- * Revision 0.13  1995/05/18  05:56:34  rpao
- * Statistics changes.
- * Bug fix: nmclan_reset did not enable TX and RX: call restore_multicast_list.
- * Bug fix: mace_interrupt checks ~MACE_IMR_DEFAULT.  Fixes driver lockup.
- *
- * Revision 0.12  1995/05/14  00:12:23  rpao
- * Statistics overhaul.
- *
-
-95/05/13 rpao	V0.10a
-		Bug fix: MACE statistics counters used wrong I/O ports.
-		Bug fix: mace_interrupt() needed to allow statistics to be
-		processed without RX or TX interrupts pending.
-95/05/11 rpao	V0.10
-		Multiple transmit request processing.
-		Modified statistics to use MACE counters where possible.
-95/05/10 rpao	V0.09 Bug fix: Must use IO_DATA_PATH_WIDTH_AUTO.
-		*Released
-95/05/10 rpao	V0.08
-		Bug fix: Make all non-exported functions private by using
-		static keyword.
-		Bug fix: Test IntrCnt _before_ reading MACE_IR.
-95/05/10 rpao	V0.07 Statistics.
-95/05/09 rpao	V0.06 Fix rx_framecnt problem by addition of PCIC wait states.
-
----------------------------------------------------------------------------- */
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #define DRV_NAME	"nmclan_cs"

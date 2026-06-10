@@ -1,12 +1,20 @@
 /*
- * SMP Support
- *
- * Copyright (C) 1999 VA Beep Systems
- * Copyright (C) 1999 Walt Drummond <drummond@vabeep.com>
- * (c) Copyright 2001-2003, 2005 Hewlett-Packard Development Company, L.P.
- *	David Mosberger-Tang <davidm@hpl.hp.com>
- *	Bjorn Helgaas <bjorn.helgaas@hp.com>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _ASM_IA64_SMP_H
 #define _ASM_IA64_SMP_H
 

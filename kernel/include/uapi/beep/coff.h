@@ -1,15 +1,20 @@
-/* This file is derived from the GAS 2.1.4 assembler control file.
-   The GAS product is under the GNU General Public License, version 2 or later.
-   As such, this file is also under that license.
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-   If the file format changes in the COFF object, this file should be
-   subsequently updated to reflect the changes.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-   The actual loader module only uses a few of these structures. The full
-   set is documented here because I received the full set. If you wish
-   more information about COFF, then O'Reilly has a very excellent book.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #define  E_SYMNMLEN  8   /* Number of characters in a symbol name         */
 #define  E_FILNMLEN 14   /* Number of characters in a file name           */
 #define  E_DIMNUM    4   /* Number of array dimensions in auxiliary entry */

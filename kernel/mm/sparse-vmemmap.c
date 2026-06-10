@@ -1,22 +1,20 @@
 /*
- * Virtual Memory Map support
- *
- * (C) 2007 sgi. Christoph Lameter.
- *
- * Virtual memory maps allow VM primitives pfn_to_page, page_to_pfn,
- * virt_to_page, page_address() to be implemented as a base offset
- * calculation without memory access.
- *
- * However, virtual mappings need a page table and TLBs. Many Beep
- * architectures already map their physical space using 1-1 mappings
- * via TLBs. For those arches the virtual memory map is essentially
- * for free if we use the same page size as the 1-1 mappings. In that
- * case the overhead consists of a few additional pages that are
- * allocated to create a view of memory for vmemmap.
- *
- * The architecture is expected to provide a vmemmap_populate() function
- * to instantiate the mapping.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/mm.h>
 #include <beep/mmzone.h>
 #include <beep/bootmem.h>

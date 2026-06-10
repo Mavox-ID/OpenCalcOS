@@ -1,42 +1,20 @@
 /*
- * Neil Brown <neilb@cse.unsw.edu.au>
- * J. Bruce Fields <bfields@umich.edu>
- * Andy Adamson <andros@umich.edu>
- * Dug Song <dugsong@monkey.org>
- *
- * RPCSEC_GSS server authentication.
- * This implements RPCSEC_GSS as defined in rfc2203 (rpcsec_gss) and rfc2078
- * (gssapi)
- *
- * The RPCSEC_GSS involves three stages:
- *  1/ context creation
- *  2/ data exchange
- *  3/ context destruction
- *
- * Context creation is handled largely by upcalls to user-space.
- *  In particular, GSS_Accept_sec_context is handled by an upcall
- * Data exchange is handled entirely within the kernel
- *  In particular, GSS_GetMIC, GSS_VerifyMIC, GSS_Seal, GSS_Unseal are in-kernel.
- * Context destruction is handled in-kernel
- *  GSS_Delete_sec_context is in-kernel
- *
- * Context creation is initiated by a RPCSEC_GSS_INIT request arriving.
- * The context handle and gss_token are used as a key into the rpcsec_init cache.
- * The content of this cache includes some of the outputs of GSS_Accept_sec_context,
- * being major_status, minor_status, context_handle, reply_token.
- * These are sent back to the client.
- * Sequence window management is handled by the kernel.  The window size if currently
- * a compile time constant.
- *
- * When user-space is happy that a context is established, it places an entry
- * in the rpcsec_context cache. The key for this cache is the context_handle.
- * The content includes:
- *   uid/gidlist - for determining access rights
- *   mechanism type
- *   mechanism specific information, such as a key
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/slab.h>
 #include <beep/types.h>
 #include <beep/module.h>

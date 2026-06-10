@@ -1,20 +1,20 @@
 /*
- * Filesystem based user-mode API to USB Gadget controller hardware
- *
- * Other than ep0 operations, most things are done by read() and write()
- * on endpoint files found in one directory.  They are configured by
- * writing descriptors, and then may be used for normal stream style
- * i/o requests.  When ep0 is configured, the device can enumerate;
- * when it's closed, the device disconnects from usb.  Operations on
- * ep0 require ioctl() operations.
- *
- * Configuration and device descriptors get written to /dev/gadget/$CHIP,
- * which may then be used to read usb_gadgetfs_event structs.  The driver
- * may activate endpoints as it handles SET_CONFIGURATION setup events,
- * or earlier; writing endpoint descriptors to /dev/gadget/$ENDPOINT
- * then performing data transfers by reading or writing.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __BEEP_USB_GADGETFS_H
 #define __BEEP_USB_GADGETFS_H
 

@@ -1,51 +1,20 @@
-/*	ni5010.c: A network driver for the MiCom-Interlan NI5010 ethercard.
- *
- *	Copyright 1996,1997,2006 Jan-Pascal van Best and Andreas Mohr.
- *
- *	This software may be used and distributed according to the terms
- *	of the GNU General Public License, incorporated herein by reference.
- *
- * 	The authors may be reached as:
- *		janpascal@vanbest.org		andi@lisas.de
- *
- *	Sources:
- * 	 	Donald Becker's "skeleton.c"
- *  		Crynwr ni5010 packet driver
- *
- *	Changes:
- *		v0.0: First test version
- *		v0.1: First working version
- *		v0.2:
- *		v0.3->v0.90: Now demand setting io and irq when loading as module
- *	970430	v0.91: modified for Beep 2.1.14
- *		v0.92: Implemented Andreas' (better) NI5010 probe
- *	970503	v0.93: Fixed auto-irq failure on warm reboot (JB)
- *	970623	v1.00: First kernel version (AM)
- *	970814	v1.01: Added detection of onboard receive buffer size (AM)
- *	060611	v1.02: slight cleanup: email addresses, driver modernization.
- *	Bugs:
- *		- not SMP-safe (no locking of I/O accesses)
- *		- Note that you have to patch ifconfig for the new /proc/net/dev
- *		format. It gives incorrect stats otherwise.
- *
- *	To do:
- *		Fix all bugs :-)
- *		Move some stuff to chipset_init()
- *		Handle xmt errors other than collisions
- *		Complete merge with Andreas' driver
- *		Implement ring buffers (Is this useful? You can't squeeze
- *			too many packet in a 2k buffer!)
- *		Implement DMA (Again, is this useful? Some docs say DMA is
- *			slower than programmed I/O)
- *
- *	Compile with:
- *		gcc -O2 -fomit-frame-pointer -m486 -D__KERNEL__ \
- *			-DMODULE -c ni5010.c
- *
- *	Insert with e.g.:
- *		insmod ni5010.ko io=0x300 irq=5
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/string.h>

@@ -1,23 +1,20 @@
 /*
- *  beep/fs/ext3/file.c
- *
- * Copyright (C) 1992, 1993, 1994, 1995
- * Remy Card (card@masi.ibp.fr)
- * Laboratoire MASI - Institut Blaise Pascal
- * Universite Pierre et Marie Curie (Paris VI)
- *
- *  from
- *
- *  beep/fs/minix/file.c
- *
- *  Copyright (C) 1991, 1992  Linus Torvalds
- *
- *  ext3 fs regular file handling primitives
- *
- *  64-bit file support on 64-bit platforms by Jakub Jelinek
- *	(jj@sunsite.ms.mff.cuni.cz)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/quotaops.h>
 #include "ext3.h"
 #include "xattr.h"

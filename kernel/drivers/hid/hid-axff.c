@@ -1,16 +1,20 @@
 /*
- * Force feedback support for ACRUX game controllers
- *
- * From what I have gathered, these devices are mass produced in China
- * by several vendors. They often share the same design as the original
- * Xbox 360 controller.
- *
- * 1a34:0802 "ACRUX USB GAMEPAD 8116"
- *  - tested with an EXEQ EQ-PCU-02090 game controller.
- *
- * Copyright (c) 2010 Sergei Kolzun <x0r@dv-life.ru>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

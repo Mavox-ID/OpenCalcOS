@@ -1,43 +1,20 @@
 /*
- * sca3000.c -- support VTI sca3000 series accelerometers
- *              via SPI
- *
- * Copyright (c) 2007 Jonathan Cameron <jic23@kernel.org>
- *
- * Partly based upon tle62x0.c
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * Initial mode is direct measurement.
- *
- * Untested things
- *
- * Temperature reading (the e05 I'm testing with doesn't have a sensor)
- *
- * Free fall detection mode - supported but untested as I'm not droping my
- * dubious wire rig far enough to test it.
- *
- * Unsupported as yet
- *
- * Time stamping of data from ring. Various ideas on how to do this but none
- * are remotely simple. Suggestions welcome.
- *
- * Individual enabling disabling of channels going into ring buffer
- *
- * Overflow handling (this is signaled for all but 8 bit ring buffer mode.)
- *
- * Motion detector using AND combinations of signals.
- *
- * Note: Be very careful about not touching an register bytes marked
- * as reserved on the data sheet. They really mean it as changing convents of
- * some will cause the device to lock up.
- *
- * Known issues - on rare occasions the interrupts lock up. Not sure why as yet.
- * Can probably alleviate this by reading the interrupt register on start, but
- * that is really just brushing the problem under the carpet.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define SCA3000_WRITE_REG(a) (((a) << 2) | 0x02)
 #define SCA3000_READ_REG(a) ((a) << 2)
 

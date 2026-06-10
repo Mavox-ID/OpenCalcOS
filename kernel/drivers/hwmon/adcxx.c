@@ -1,39 +1,20 @@
 /*
- * adcxx.c
- *
- * The adcxx4s is an AD converter family from National Semiconductor (NS).
- *
- * Copyright (c) 2008 Marc Pignat <marc.pignat@hevs.ch>
- *
- * The adcxx4s communicates with a host processor via an SPI/Microwire Bus
- * interface. This driver supports the whole family of devices with name
- * ADC<bb><c>S<sss>, where
- * * bb is the resolution in number of bits (8, 10, 12)
- * * c is the number of channels (1, 2, 4, 8)
- * * sss is the maximum conversion speed (021 for 200 kSPS, 051 for 500 kSPS
- *   and 101 for 1 MSPS)
- *
- * Complete datasheets are available at National's website here:
- * http://www.national.com/ds/DC/ADC<bb><c>S<sss>.pdf
- *
- * Handling of 8, 10 and 12 bits converters are the same, the
- * unavailable bits are 0 :)
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/module.h>
 #include <beep/kernel.h>

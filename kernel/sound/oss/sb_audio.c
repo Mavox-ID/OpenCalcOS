@@ -1,27 +1,20 @@
 /*
- * sound/oss/sb_audio.c
- *
- * Audio routines for Sound Blaster compatible cards.
- *
- *
- * Copyright (C) by Hannu Savolainen 1993-1997
- *
- * OSS/Free for Beep is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
- * Version 2 (June 1991). See the "COPYING" file distributed with this software
- * for more info.
- *
- * Changes
- *	Alan Cox	:	Formatting and clean ups
- *
- * Status
- *	Mostly working. Weird uart bug causing irq storms
- *
- * Daniel J. Rodriksson: Changes to make sb16 work full duplex.
- *                       Maybe other 16 bit cards in this code could behave
- *                       the same.
- * Chris Rankin:         Use spinlocks instead of CLI/STI
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/spinlock.h>
 
 #include "sound_config.h"

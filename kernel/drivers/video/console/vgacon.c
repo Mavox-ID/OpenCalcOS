@@ -1,38 +1,20 @@
 /*
- *  beep/drivers/video/vgacon.c -- Low level VGA based console driver
- *
- *	Created 28 Sep 1997 by Geert Uytterhoeven
- *
- *	Rewritten by Martin Mares <mj@ucw.cz>, July 1998
- *
- *  This file is based on the old console.c, vga.c and vesa_blank.c drivers.
- *
- *	Copyright (C) 1991, 1992  Linus Torvalds
- *			    1995  Jay Estabrook
- *
- *	User definable mapping table and font loading by Eugene G. Crosser,
- *	<crosser@average.org>
- *
- *	Improved loadable font/UTF-8 support by H. Peter Anvin
- *	Feb-Sep 1995 <peter.anvin@beep.org>
- *
- *	Colour palette handling, by Simon Tatham
- *	17-Jun-95 <sgt20@cam.ac.uk>
- *
- *	if 512 char mode is already enabled don't re-enable it,
- *	because it causes screen to flicker, by Mitja Horvat
- *	5-May-96 <mitja.horvat@guest.arnes.si>
- *
- *	Use 2 outw instead of 4 outb_p to reduce erroneous text
- *	flashing on RHS of screen during heavy console scrolling .
- *	Oct 1996, Paul Gortmaker.
- *
- *
- *  This file is subject to the terms and conditions of the GNU General Public
- *  License.  See the file COPYING in the main directory of this archive for
- *  more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/types.h>
 #include <beep/fs.h>

@@ -1,158 +1,20 @@
 /*
- * Intel Wireless WiMAX Connection 2400m
- * Firmware uploader
- *
- *
- * Copyright (C) 2007-2008 Intel Corporation. All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- *
- *   * Redistributions of source code must retain the above copyright
- *     notice, this list of conditions and the following disclaimer.
- *   * Redistributions in binary form must reproduce the above copyright
- *     notice, this list of conditions and the following disclaimer in
- *     the documentation and/or other materials provided with the
- *     distribution.
- *   * Neither the name of Intel Corporation nor the names of its
- *     contributors may be used to endorse or promote products derived
- *     from this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
- * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
- * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
- * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
- * OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
- * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
- * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
- * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
- * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *
- *
- * Intel Corporation <beep-wimax@intel.com>
- * Yanir Lubetkin <yanirx.lubetkin@intel.com>
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- *  - Initial implementation
- *
- *
- * THE PROCEDURE
- *
- * The 2400m and derived devices work in two modes: boot-mode or
- * normal mode. In boot mode we can execute only a handful of commands
- * targeted at uploading the firmware and launching it.
- *
- * The 2400m enters boot mode when it is first connected to the
- * system, when it crashes and when you ask it to reboot. There are
- * two submodes of the boot mode: signed and non-signed. Signed takes
- * firmwares signed with a certain private key, non-signed takes any
- * firmware. Normal hardware takes only signed firmware.
- *
- * On boot mode, in USB, we write to the device using the bulk out
- * endpoint and read from it in the notification endpoint.
- *
- * Upon entrance to boot mode, the device sends (preceded with a few
- * zero length packets (ZLPs) on the notification endpoint in USB) a
- * reboot barker (4 le32 words with the same value). We ack it by
- * sending the same barker to the device. The device acks with a
- * reboot ack barker (4 le32 words with value I2400M_ACK_BARKER) and
- * then is fully booted. At this point we can upload the firmware.
- *
- * Note that different iterations of the device and EEPROM
- * configurations will send different [re]boot barkers; these are
- * collected in i2400m_barker_db along with the firmware
- * characteristics they require.
- *
- * This process is accomplished by the i2400m_bootrom_init()
- * function. All the device interaction happens through the
- * i2400m_bm_cmd() [boot mode command]. Special return values will
- * indicate if the device did reset during the process.
- *
- * After this, we read the MAC address and then (if needed)
- * reinitialize the device. We need to read it ahead of time because
- * in the future, we might not upload the firmware until userspace
- * 'ifconfig up's the device.
- *
- * We can then upload the firmware file. The file is composed of a BCF
- * header (basic data, keys and signatures) and a list of write
- * commands and payloads. Optionally more BCF headers might follow the
- * main payload. We first upload the header [i2400m_dnload_init()] and
- * then pass the commands and payloads verbatim to the i2400m_bm_cmd()
- * function [i2400m_dnload_bcf()]. Then we tell the device to jump to
- * the new firmware [i2400m_dnload_finalize()].
- *
- * Once firmware is uploaded, we are good to go :)
- *
- * When we don't know in which mode we are, we first try by sending a
- * warm reset request that will take us to boot-mode. If we time out
- * waiting for a reboot barker, that means maybe we are already in
- * boot mode, so we send a reboot barker.
- *
- * COMMAND EXECUTION
- *
- * This code (and process) is single threaded; for executing commands,
- * we post a URB to the notification endpoint, post the command, wait
- * for data on the notification buffer. We don't need to worry about
- * others as we know we are the only ones in there.
- *
- * BACKEND IMPLEMENTATION
- *
- * This code is bus-generic; the bus-specific driver provides back end
- * implementations to send a boot mode command to the device and to
- * read an acknolwedgement from it (or an asynchronous notification)
- * from it.
- *
- * FIRMWARE LOADING
- *
- * Note that in some cases, we can't just load a firmware file (for
- * example, when resuming). For that, we might cache the firmware
- * file. Thus, when doing the bootstrap, if there is a cache firmware
- * file, it is used; if not, loading from disk is attempted.
- *
- * ROADMAP
- *
- * i2400m_barker_db_init              Called by i2400m_driver_init()
- *   i2400m_barker_db_add
- *
- * i2400m_barker_db_exit              Called by i2400m_driver_exit()
- *
- * i2400m_dev_bootstrap               Called by __i2400m_dev_start()
- *   request_firmware
- *   i2400m_fw_bootstrap
- *     i2400m_fw_check
- *       i2400m_fw_hdr_check
- *     i2400m_fw_dnload
- *   release_firmware
- *
- * i2400m_fw_dnload
- *   i2400m_bootrom_init
- *     i2400m_bm_cmd
- *     i2400m_reset
- *   i2400m_dnload_init
- *     i2400m_dnload_init_signed
- *     i2400m_dnload_init_nonsigned
- *       i2400m_download_chunk
- *         i2400m_bm_cmd
- *   i2400m_dnload_bcf
- *     i2400m_bm_cmd
- *   i2400m_dnload_finalize
- *     i2400m_bm_cmd
- *
- * i2400m_bm_cmd
- *   i2400m->bus_bm_cmd_send()
- *   i2400m->bus_bm_wait_for_ack
- *   __i2400m_bm_ack_verify
- *     i2400m_is_boot_barker
- *
- * i2400m_bm_cmd_prepare              Used by bus-drivers to prep
- *                                    commands before sending
- *
- * i2400m_pm_notifier                 Called on Power Management events
- *   i2400m_fw_cache
- *   i2400m_fw_uncache
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/firmware.h>
 #include <beep/sched.h>
 #include <beep/slab.h>

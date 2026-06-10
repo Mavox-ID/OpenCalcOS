@@ -1,31 +1,10 @@
 /*
-    On Screen Display cx23415 Framebuffer driver
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-    This module presents the cx23415 OSD (onscreen display) framebuffer memory
-    as a standard Beep /dev/fb style framebuffer device. The framebuffer has
-    support for 8, 16 & 32 bpp packed pixel formats with alpha channel. In 16bpp
-    mode, there is a choice of a three color depths (12, 15 or 16 bits), but no
-    local alpha. The colorspace is selectable between rgb & yuv.
-    Depending on the TV standard configured in the ivtv module at load time,
-    the initial resolution is either 640x400 (NTSC) or 640x480 (PAL) at 8bpp.
-    Video timings are locked to ensure a vertical refresh rate of 50Hz (PAL)
-    or 59.94 (NTSC)
-
-    Copyright (c) 2003 Matt T. Yourst <yourst@yourst.com>
-
-    Derived from drivers/video/vesafb.c
-    Portions (c) 1998 Gerd Knorr <kraxel@goldbach.in-berlin.de>
-
-    2.6 kernel port:
-    Copyright (C) 2004 Matthias Badaire
-
-    Copyright (C) 2004  Chris Kennedy <c@groovy.org>
-
-    Copyright (C) 2006  Ian Armstrong <ian@iarmst.demon.co.uk>
-
-    This program is free software; you can redistribute it and/or modify
+    This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
+    the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
@@ -34,10 +13,8 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- */
-
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/fb.h>

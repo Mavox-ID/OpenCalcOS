@@ -1,47 +1,20 @@
 /*
- *  Copyright (c) 2000-2008 LSI Corporation.
- *
- *
- *           Name:  mpi_fc.h
- *          Title:  MPI Fibre Channel messages and structures
- *  Creation Date:  June 12, 2000
- *
- *    mpi_fc.h Version:  01.05.01
- *
- *  Version History
- *  ---------------
- *
- *  Date      Version   Description
- *  --------  --------  ------------------------------------------------------
- *  05-08-00  00.10.01  Original release for 0.10 spec dated 4/26/2000.
- *  06-06-00  01.00.01  Update version number for 1.0 release.
- *  06-12-00  01.00.02  Added _MSG_FC_ABORT_REPLY structure.
- *  11-02-00  01.01.01  Original release for post 1.0 work
- *  12-04-00  01.01.02  Added messages for Common Transport Send and
- *                      Primitive Send.
- *  01-09-01  01.01.03  Modifed some of the new flags to have an MPI prefix
- *                      and modified the FcPrimitiveSend flags.
- *  01-25-01  01.01.04  Move InitiatorIndex in LinkServiceRsp reply to a larger
- *                      field.
- *                      Added FC_ABORT_TYPE_CT_SEND_REQUEST and
- *                      FC_ABORT_TYPE_EXLINKSEND_REQUEST for FcAbort request.
- *                      Added MPI_FC_PRIM_SEND_FLAGS_STOP_SEND.
- *  02-20-01  01.01.05  Started using MPI_POINTER.
- *  03-27-01  01.01.06  Added Flags field to MSG_LINK_SERVICE_BUFFER_POST_REPLY
- *                      and defined MPI_LS_BUF_POST_REPLY_FLAG_NO_RSP_NEEDED.
- *                      Added MPI_FC_PRIM_SEND_FLAGS_RESET_LINK define.
- *                      Added structure offset comments.
- *  04-09-01  01.01.07  Added RspLength field to MSG_LINK_SERVICE_RSP_REQUEST.
- *  08-08-01  01.02.01  Original release for v1.2 work.
- *  09-28-01  01.02.02  Change name of reserved field in
- *                      MSG_LINK_SERVICE_RSP_REPLY.
- *  05-31-02  01.02.03  Adding AliasIndex to FC Direct Access requests.
- *  01-16-04  01.02.04  Added define for MPI_FC_PRIM_SEND_FLAGS_ML_RESET_LINK.
- *  05-11-04  01.03.01  Original release for MPI v1.3.
- *  08-19-04  01.05.01  Original release for MPI v1.5.
- *  --------------------------------------------------------------------------
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef MPI_FC_H
 #define MPI_FC_H
 

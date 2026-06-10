@@ -1,34 +1,20 @@
 /*
-* cypress_cy7c63.c
-*
-* Copyright (c) 2006-2007 Oliver Bock (bock@tfh-berlin.de)
-*
-*	This driver is based on the Cypress USB Driver by Marcus Maul
-*	(cyport) and the 2.0 version of Greg Kroah-Hartman's
-*	USB Skeleton driver.
-*
-*	This is a generic driver for the Cypress CY7C63xxx family.
-*	For the time being it enables you to read from and write to
-*	the single I/O ports of the device.
-*
-*	Supported vendors:	AK Modul-Bus Computer GmbH
-*				(Firmware "Port-Chip")
-*
-*	Supported devices:	CY7C63001A-PC
-*				CY7C63001C-PXC
-*				CY7C63001C-SXC
-*
-*	Supported functions:	Read/Write Ports
-*
-*
-*	For up-to-date information please visit:
-*	http://www.obock.de/kernel/cypress
-*
-*	This program is free software; you can redistribute it and/or
-*	modify it under the terms of the GNU General Public License as
-*	published by the Free Software Foundation, version 2.
-*/
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/module.h>
 #include <beep/kernel.h>

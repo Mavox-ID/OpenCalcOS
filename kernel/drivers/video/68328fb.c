@@ -1,32 +1,20 @@
 /*
- *  beep/drivers/video/68328fb.c -- Low level implementation of the
- *                                   mc68x328 LCD frame buffer device
- *
- *	Copyright (C) 2003 Georges Menie
- *
- *  This driver assumes an already configured controller (e.g. from config.c)
- *  Keep the code clean of board specific initialization.
- *
- *  This code has not been tested with colors, colormap management functions
- *  are minimal (no colormap data written to the 68328 registers...)
- *
- *  initial version of this driver:
- *    Copyright (C) 1998,1999 Kenneth Albanowski <kjahds@kjahds.com>,
- *                            The Silver Hammer Group, Ltd.
- *
- *  this version is based on :
- *
- *  beep/drivers/video/vfb.c -- Virtual frame buffer device
- *
- *      Copyright (C) 2002 James Simmons
- *
- *	Copyright (C) 1997 Geert Uytterhoeven
- *
- *  This file is subject to the terms and conditions of the GNU General Public
- *  License. See the file COPYING in the main directory of this archive for
- *  more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/errno.h>

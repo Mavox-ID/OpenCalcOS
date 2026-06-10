@@ -1,32 +1,20 @@
 /*
- * drivers.c
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version
- * 2 of the License, or (at your option) any later version.
- *
- * Copyright (c) 1999 The Puffin Group
- * Copyright (c) 2001 Matthew Wilcox for Hewlett Packard
- * Copyright (c) 2001 Helge Deller <deller@gmx.de>
- * Copyright (c) 2001,2002 Ryan Bradetich 
- * Copyright (c) 2004-2005 Thibaut VARENE <varenet@parisc-beep.org>
- * 
- * The file handles registering devices and drivers, then matching them.
- * It's the closest we get to a dating agency.
- *
- * If you're thinking about modifying this file, here are some gotchas to
- * bear in mind:
- *  - 715/Mirage device paths have a dummy device between Lasi and its children
- *  - The EISA adapter may show up as a sibling or child of Wax
- *  - Dino has an optionally functional serial port.  If firmware enables it,
- *    it shows up as a child of Dino.  If firmware disables it, the buswalk
- *    finds it and it shows up as a child of Cujo
- *  - Dino has both parisc and pci devices as children
- *  - parisc devices are discovered in a random order, including children
- *    before parents in some cases.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/slab.h>
 #include <beep/types.h>
 #include <beep/kernel.h>

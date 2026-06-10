@@ -1,71 +1,20 @@
-/* DVB USB compliant beep driver for
- *
- * DM04/QQBOX DVB-S USB BOX	LME2510C + SHARP:BS2F7HZ7395
- *				LME2510C + LG TDQY-P001F
- *				LME2510C + BS2F7HZ0194
- *				LME2510 + LG TDQY-P001F
- *				LME2510 + BS2F7HZ0194
- *
- * MVB7395 (LME2510C+SHARP:BS2F7HZ7395)
- * SHARP:BS2F7HZ7395 = (STV0288+Sharp IX2505V)
- *
- * MV001F (LME2510+LGTDQY-P001F)
- * LG TDQY - P001F =(TDA8263 + TDA10086H)
- *
- * MVB0001F (LME2510C+LGTDQT-P001F)
- *
- * MV0194 (LME2510+SHARP:BS2F7HZ0194)
- * SHARP:BS2F7HZ0194 = (STV0299+IX2410)
- *
- * MVB0194 (LME2510C+SHARP0194)
- *
- * LME2510C + M88RS2000
- *
- * For firmware see Documentation/dvb/lmedm04.txt
- *
- * I2C addresses:
- * 0xd0 - STV0288	- Demodulator
- * 0xc0 - Sharp IX2505V	- Tuner
- * --
- * 0x1c - TDA10086   - Demodulator
- * 0xc0 - TDA8263    - Tuner
- * --
- * 0xd0 - STV0299	- Demodulator
- * 0xc0 - IX2410	- Tuner
- *
- *
- * VID = 3344  PID LME2510=1122 LME2510C=1120
- *
- * Copyright (C) 2010 Malcolm Priestley (tvboxspy@gmail.com)
- * LME2510(C)(C) Leaguerme (Shenzhen) MicroElectronics Co., Ltd.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License Version 2, as
- * published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- *
- *
- * see Documentation/dvb/README.dvb-usb for more information
- *
- * Known Issues :
- *	LME2510: Non Intel USB chipsets fail to maintain High Speed on
- * Boot or Hot Plug.
- *
- * QQbox suffers from noise on LNB voltage.
- *
- *	LME2510: SHARP:BS2F7HZ0194(MV0194) cannot cold reset and share system
- * with other tuners. After a cold reset streaming will not start.
- *
- * M88RS2000 suffers from loss of lock.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define DVB_USB_LOG_PREFIX "LME2510(C)"
 #include <beep/usb.h>
 #include <beep/usb/input.h>

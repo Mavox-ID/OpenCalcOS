@@ -1,29 +1,20 @@
 /*
- * rrunner.c: Beep driver for the Essential RoadRunner HIPPI board.
- *
- * Copyright (C) 1998-2002 by Jes Sorensen, <jes@wildopensource.com>.
- *
- * Thanks to Essential Communication for providing us with hardware
- * and very comprehensive documentation without which I would not have
- * been able to write this driver. A special thank you to John Gibbon
- * for sorting out the legal issues, with the NDA, allowing the code to
- * be released under the GPL.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * Thanks to Jayaram Bhat from ODS/Essential for fixing some of the
- * stupid bugs in my code.
- *
- * Softnet support and various other patches from Val Henson of
- * ODS/Essential.
- *
- * PCI DMA mapping code partly based on work by Francois Romieu.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define DEBUG 1
 #define RX_DMA_SKBUFF 1
 #define PKT_COPY_THRESHOLD 512

@@ -1,13 +1,20 @@
 /*
- * Driver for C-Media CMI8328-based soundcards, such as AudioExcel AV500
- * Copyright (c) 2012 Ondrej Zary
- *
- * AudioExcel AV500 card consists of:
- *  - CMI8328 - main chip (SB Pro emulation, gameport, OPL3, MPU401, CD-ROM)
- *  - CS4231A - WSS codec
- *  - Dream SAM9233+GMS950400+RAM+ROM: Wavetable MIDI, connected to MPU401
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/isa.h>
 #include <beep/module.h>

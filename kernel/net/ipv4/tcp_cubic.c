@@ -1,28 +1,20 @@
 /*
- * TCP CUBIC: Binary Increase Congestion control for TCP v2.3
- * Home page:
- *      http://netsrv.csc.ncsu.edu/twiki/bin/view/Main/BIC
- * This is from the implementation of CUBIC TCP in
- * Sangtae Ha, Injong Rhee and Lisong Xu,
- *  "CUBIC: A New TCP-Friendly High-Speed TCP Variant"
- *  in ACM SIGOPS Operating System Review, July 2008.
- * Available from:
- *  http://netsrv.csc.ncsu.edu/export/cubic_a_new_tcp_2008.pdf
- *
- * CUBIC integrates a new slow start algorithm, called HyStart.
- * The details of HyStart are presented in
- *  Sangtae Ha and Injong Rhee,
- *  "Taming the Elephants: New TCP Slow Start", NCSU TechReport 2008.
- * Available from:
- *  http://netsrv.csc.ncsu.edu/export/hystart_techreport_2008.pdf
- *
- * All testing results are available from:
- * http://netsrv.csc.ncsu.edu/wiki/index.php/TCP_Testing
- *
- * Unless CUBIC is enabled and congestion window is large
- * this behaves the same as the original Reno.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/mm.h>
 #include <beep/module.h>
 #include <beep/math64.h>

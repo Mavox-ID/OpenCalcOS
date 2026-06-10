@@ -1,21 +1,20 @@
 /*
- *
- *		SNMP MIB entries for the IP subsystem.
- *		
- *		Alan Cox <gw4pts@gw4pts.ampr.org>
- *
- *		We don't chose to implement SNMP in the kernel (this would
- *		be silly as SNMP is a pain in the backside in places). We do
- *		however need to collect the MIB statistics and export them
- *		out of /proc (eventually)
- *
- *		This program is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- *
- */
- 
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _SNMP_H
 #define _SNMP_H
 

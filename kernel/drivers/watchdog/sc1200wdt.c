@@ -1,36 +1,20 @@
 /*
- *	National Semiconductor PC87307/PC97307 (ala SC1200) WDT driver
- *	(c) Copyright 2002 Zwane Mwaikambo <zwane@commfireservices.com>,
- *			All Rights Reserved.
- *	Based on wdt.c and wdt977.c by Alan Cox and Woody Suwalski respectively.
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- *
- *	The author(s) of this software shall not be held liable for damages
- *	of any nature resulting due to the use of this software. This
- *	software is provided AS-IS with no warranties.
- *
- *	Changelog:
- *	20020220 Zwane Mwaikambo	Code based on datasheet, no hardware.
- *	20020221 Zwane Mwaikambo	Cleanups as suggested by Jeff Garzik
- *					and Alan Cox.
- *	20020222 Zwane Mwaikambo	Added probing.
- *	20020225 Zwane Mwaikambo	Added ISAPNP support.
- *	20020412 Rob Radez		Broke out start/stop functions
- *		 <rob@osinvestor.com>	Return proper status instead of
- *					temperature warning
- *					Add WDIOC_GETBOOTSTATUS and
- *					WDIOC_SETOPTIONS ioctls
- *					Fix CONFIG_WATCHDOG_NOWAYOUT
- *	20020530 Joel Becker		Add Matt Domsch's nowayout module
- *					option
- *	20030116 Adam Belay		Updated to the latest pnp code
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

@@ -1,24 +1,20 @@
 /*
- *  A low-level PATA driver to handle a Compact Flash connected on the
- *  Mikrotik's RouterBoard 532 board.
- *
- *  Copyright (C) 2007 Gabor Juhos <juhosg at openwrt.org>
- *  Copyright (C) 2008 Florian Fainelli <florian@openwrt.org>
- *
- *  This file was based on: drivers/ata/pata_ixp4xx_cf.c
- *	Copyright (C) 2006-07 Tower Technologies
- *	Author: Alessandro Zummo <a.zummo@towertech.it>
- *
- *  Also was based on the driver for Beep 2.4.xx published by Mikrotik for
- *  their RouterBoard 1xx and 5xx series devices. The original Mikrotik code
- *  seems not to have a license.
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License version 2 as
- *  published by the Free Software Foundation.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/gfp.h>
 #include <beep/kernel.h>
 #include <beep/module.h>

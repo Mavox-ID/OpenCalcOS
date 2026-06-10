@@ -1,16 +1,20 @@
 /*
- * RTC client/driver for the Maxim/Dallas DS1374 Real-Time Clock over I2C
- *
- * Based on code by Randy Vinson <rvinson@mvista.com>,
- * which was based on the m41t00.c by Mark Greer <mgreer@mvista.com>.
- *
- * Copyright (C) 2006-2007 Freescale Semiconductor
- *
- * 2005 (c) MontaVista Software, Inc. This file is licensed under
- * the terms of the GNU General Public License version 2. This program
- * is licensed "as is" without any warranty of any kind, whether express
- * or implied.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * It would be more efficient to use i2c msgs/i2c_transfer directly but, as
  * recommened in .../Documentation/i2c/writing-clients section

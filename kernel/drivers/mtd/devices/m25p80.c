@@ -1,20 +1,20 @@
 /*
- * MTD SPI driver for ST M25Pxx (and similar) serial flash chips
- *
- * Author: Mike Lavender, mike@steroidmicros.com
- *
- * Copyright (c) 2005, Intec Automation Inc.
- *
- * Some parts are based on lart.c by Abraham Van Der Merwe
- *
- * Cleaned up and generalized based on mtd_dataflash.c
- *
- * This code is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/err.h>
 #include <beep/errno.h>

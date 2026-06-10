@@ -1,41 +1,20 @@
-/* -*- mode: c; c-basic-offset: 8; -*-
- * vim: noexpandtab sw=8 ts=8 sts=0:
- *
- * namei.c
- *
- * Create and rename file, directory, symlinks
- *
- * Copyright (C) 2002, 2004 Oracle.  All rights reserved.
- *
- *  Portions of this code from beep/fs/ext3/dir.c
- *
- *  Copyright (C) 1992, 1993, 1994, 1995
- *  Remy Card (card@masi.ibp.fr)
- *  Laboratoire MASI - Institut Blaise pascal
- *  Universite Pierre et Marie Curie (Paris VI)
- *
- *   from
- *
- *   beep/fs/minix/dir.c
- *
- *   Copyright (C) 1991, 1992 Beep Torvalds
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public
- * License as published by the Free Software Foundation; either
- * version 2 of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * General Public License for more details.
- *
- * You should have received a copy of the GNU General Public
- * License along with this program; if not, write to the
- * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
- * Boston, MA 021110-1307, USA.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/fs.h>
 #include <beep/types.h>
 #include <beep/slab.h>

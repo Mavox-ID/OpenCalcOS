@@ -1,27 +1,20 @@
 /*
- * tc35815.c: A TOSHIBA TC35815CF PCI 10/100Mbps ethernet driver for beep.
- *
- * Based on skelton.c by Donald Becker.
- *
- * This driver is a replacement of older and less maintained version.
- * This is a header of the older version:
- *	-----<snip>-----
- *	Copyright 2001 MontaVista Software Inc.
- *	Author: MontaVista Software, Inc.
- *		ahennessy@mvista.com
- *	Copyright (C) 2000-2001 Toshiba Corporation
- *	static const char *version =
- *		"tc35815.c:v0.00 26/07/2000 by Toshiba Corporation\n";
- *	-----<snip>-----
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file "COPYING" in the main directory of this archive
- * for more details.
- *
- * (C) Copyright TOSHIBA CORPORATION 2004-2005
- * All Rights Reserved.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define DRV_VERSION	"1.39"
 static const char *version = "tc35815.c:v" DRV_VERSION "\n";
 #define MODNAME			"tc35815"

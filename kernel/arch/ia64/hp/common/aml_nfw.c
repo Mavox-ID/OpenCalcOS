@@ -1,27 +1,20 @@
 /*
- * OpRegion handler to allow AML to call native firmware
- *
- * (c) Copyright 2007 Hewlett-Packard Development Company, L.P.
- *	Bjorn Helgaas <bjorn.helgaas@hp.com>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * This driver implements HP Open Source Review Board proposal 1842,
- * which was approved on 9/20/2006.
- *
- * For technical documentation, see the HP SPPA Firmware EAS, Appendix F.
- *
- * ACPI does not define a mechanism for AML methods to call native firmware
- * interfaces such as PAL or SAL.  This OpRegion handler adds such a mechanism.
- * After the handler is installed, an AML method can call native firmware by
- * storing the arguments and firmware entry point to specific offsets in the
- * OpRegion.  When AML reads the "return value" offset from the OpRegion, this
- * handler loads up the arguments, makes the firmware call, and returns the
- * result.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <acpi/acpi_bus.h>
 #include <acpi/acpi_drivers.h>

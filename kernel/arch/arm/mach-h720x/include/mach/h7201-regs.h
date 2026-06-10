@@ -1,22 +1,20 @@
 /*
- * arch/arm/mach-h720x/include/mach/h7201-regs.h
- *
- * Copyright (C) 2000 Jungjun Kim, Hynix Semiconductor Inc.
- *           (C) 2003 Thomas Gleixner <tglx@linutronix.de>
- *           (C) 2003 Robert Schwebel <r.schwebel@pengutronix.de>
- *           (C) 2004 Sascha Hauer    <s.hauer@pengutronix.de>
- *
- * This file contains the hardware definitions of the h720x processors
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * Do not add implementations specific defines here. This files contains
- * only defines of the onchip peripherals. Add those defines to boards.h,
- * which is included by this file.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define SERIAL2_VIRT 		(IO_VIRT + 0x50100)
 #define SERIAL3_VIRT 		(IO_VIRT + 0x50200)
 

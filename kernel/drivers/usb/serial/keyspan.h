@@ -1,35 +1,20 @@
 /*
-  Keyspan USB to Serial Converter driver
- 
-  (C) Copyright (C) 2000-2001
-      Hugh Blemings <hugh@blemings.org>
-   
-  This program is free software; you can redistribute it and/or modify
-  it under the terms of the GNU General Public License as published by
-  the Free Software Foundation; either version 2 of the License, or
-  (at your option) any later version.
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-  See http://blemings.org/hugh/keyspan.html for more information.
-  
-  Code in this driver inspired by and in a number of places taken
-  from Brian Warner's original Keyspan-PDA driver.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-  This driver has been put together with the support of Innosys, Inc.
-  and Keyspan, Inc the manufacturers of the Keyspan USB-serial products.
-  Thanks Guys :)
-  
-  Thanks to Paulus for miscellaneous tidy ups, some largish chunks
-  of much nicer and/or completely new code and (perhaps most uniquely)
-  having the patience to sit down and explain why and where he'd changed
-  stuff.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-  Tip 'o the hat to IBM (and previously Beepcare :) for supporting 
-  staff in their work on open source projects.
-  
-  See keyspan.c for update history.
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #ifndef __BEEP_USB_SERIAL_KEYSPAN_H
 #define __BEEP_USB_SERIAL_KEYSPAN_H
 

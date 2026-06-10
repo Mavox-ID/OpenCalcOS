@@ -1,85 +1,20 @@
 /*
- * drivers/net/wan/dscc4/dscc4.c: a DSCC4 HDLC driver for Beep
- *
- * This software may be used and distributed according to the terms of the
- * GNU General Public License.
- *
- * The author may be reached as romieu@cogenit.fr.
- * Specific bug reports/asian food will be welcome.
- *
- * Special thanks to the nice people at CS-Telecom for the hardware and the
- * access to the test/measure tools.
- *
- *
- *                             Theory of Operation
- *
- * I. Board Compatibility
- *
- * This device driver is designed for the Siemens PEB20534 4 ports serial
- * controller as found on Etinc PCISYNC cards. The documentation for the
- * chipset is available at http://www.infineon.com:
- * - Data Sheet "DSCC4, DMA Supported Serial Communication Controller with
- * 4 Channels, PEB 20534 Version 2.1, PEF 20534 Version 2.1";
- * - Application Hint "Management of DSCC4 on-chip FIFO resources".
- * - Errata sheet DS5 (courtesy of Michael Skerritt).
- * Jens David has built an adapter based on the same chipset. Take a look
- * at http://www.afthd.tu-darmstadt.de/~dg1kjd/pciscc4 for a specific
- * driver.
- * Sample code (2 revisions) is available at Infineon.
- *
- * II. Board-specific settings
- *
- * Pcisync can transmit some clock signal to the outside world on the
- * *first two* ports provided you put a quartz and a line driver on it and
- * remove the jumpers. The operation is described on Etinc web site. If you
- * go DCE on these ports, don't forget to use an adequate cable.
- *
- * Sharing of the PCI interrupt line for this board is possible.
- *
- * III. Driver operation
- *
- * The rx/tx operations are based on a linked list of descriptors. The driver
- * doesn't use HOLD mode any more. HOLD mode is definitely buggy and the more
- * I tried to fix it, the more it started to look like (convoluted) software
- * mutation of LxDA method. Errata sheet DS5 suggests to use LxDA: consider
- * this a rfc2119 MUST.
- *
- * Tx direction
- * When the tx ring is full, the xmit routine issues a call to netdev_stop.
- * The device is supposed to be enabled again during an ALLS irq (we could
- * use HI but as it's easy to lose events, it's fscked).
- *
- * Rx direction
- * The received frames aren't supposed to span over multiple receiving areas.
- * I may implement it some day but it isn't the highest ranked item.
- *
- * IV. Notes
- * The current error (XDU, RFO) recovery code is untested.
- * So far, RDO takes his RX channel down and the right sequence to enable it
- * again is still a mystery. If RDO happens, plan a reboot. More details
- * in the code (NB: as this happens, TX still works).
- * Don't mess the cables during operation, especially on DTE ports. I don't
- * suggest it for DCE either but at least one can get some messages instead
- * of a complete instant freeze.
- * Tests are done on Rev. 20 of the silicium. The RDO handling changes with
- * the documentation/chipset releases.
- *
- * TODO:
- * - test X25.
- * - use polling at high irq/s,
- * - performance analysis,
- * - endianness.
- *
- * 2001/12/10	Daniela Squassoni  <daniela@cyclades.com>
- * - Contribution to support the new generic HDLC layer.
- *
- * 2002/01	Ueimor
- * - old style interface removal
- * - dscc4_release_ring fix (related to DMA mapping)
- * - hard_start_xmit fix (hint: TxSizeMax)
- * - misc crapectomy.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

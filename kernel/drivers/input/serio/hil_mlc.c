@@ -1,57 +1,20 @@
 /*
- * HIL MLC state machine and serio interface driver
- *
- * Copyright (c) 2001 Brian S. Julin
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions, and the following disclaimer,
- *    without modification.
- * 2. The name of the author may not be used to endorse or promote products
- *    derived from this software without specific prior written permission.
- *
- * Alternatively, this software may be distributed under the terms of the
- * GNU General Public License ("GPL").
- *
- * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND
- * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- * ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE FOR
- * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
- * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
- * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
- * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
- * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
- *
- * References:
- * HP-HIL Technical Reference Manual.  Hewlett Packard Product No. 45918A
- *
- *
- *	Driver theory of operation:
- *
- *	Some access methods and an ISR is defined by the sub-driver
- *	(e.g. hp_sdc_mlc.c).  These methods are expected to provide a
- *	few bits of logic in addition to raw access to the HIL MLC,
- *	specifically, the ISR, which is entirely registered by the
- *	sub-driver and invoked directly, must check for record
- *	termination or packet match, at which point a semaphore must
- *	be cleared and then the hil_mlcs_tasklet must be scheduled.
- *
- *	The hil_mlcs_tasklet processes the state machine for all MLCs
- *	each time it runs, checking each MLC's progress at the current
- *	node in the state machine, and moving the MLC to subsequent nodes
- *	in the state machine when appropriate.  It will reschedule
- *	itself if output is pending.  (This rescheduling should be replaced
- *	at some point with a sub-driver-specific mechanism.)
- *
- *	A timer task prods the tasklet once per second to prevent
- *	hangups when attached devices do not return expected data
- *	and to initiate probes of the loop for new devices.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/hil_mlc.h>
 #include <beep/errno.h>
 #include <beep/kernel.h>

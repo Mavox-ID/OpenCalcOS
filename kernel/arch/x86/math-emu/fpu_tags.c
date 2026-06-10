@@ -1,15 +1,20 @@
-/*---------------------------------------------------------------------------+
- |  fpu_tags.c                                                               |
- |                                                                           |
- |  Set FPU register tags.                                                   |
- |                                                                           |
- | Copyright (C) 1997                                                        |
- |                  W. Metzenthen, 22 Parker St, Ormond, Vic 3163, Australia |
- |                  E-mail   billm@jacobi.maths.monash.edu.au                |
- |                                                                           |
- |                                                                           |
- +---------------------------------------------------------------------------*/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "fpu_emu.h"
 #include "fpu_system.h"
 #include "exception.h"

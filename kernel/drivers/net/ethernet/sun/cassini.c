@@ -1,71 +1,20 @@
-/* cassini.c: Sun Microsystems Cassini(+) ethernet driver.
- *
- * Copyright (C) 2004 Sun Microsystems Inc.
- * Copyright (C) 2003 Adrian Sun (asun@darksunrising.com)
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License as
- * published by the Free Software Foundation; either version 2 of the
- * License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * This driver uses the sungem driver (c) David Miller
- * (davem@redhat.com) as its basis.
- *
- * The cassini chip has a number of features that distinguish it from
- * the gem chip:
- *  4 transmit descriptor rings that are used for either QoS (VLAN) or
- *      load balancing (non-VLAN mode)
- *  batching of multiple packets
- *  multiple CPU dispatching
- *  page-based RX descriptor engine with separate completion rings
- *  Gigabit support (GMII and PCS interface)
- *  MIF link up/down detection works
- *
- * RX is handled by page sized buffers that are attached as fragments to
- * the skb. here's what's done:
- *  -- driver allocates pages at a time and keeps reference counts
- *     on them.
- *  -- the upper protocol layers assume that the header is in the skb
- *     itself. as a result, cassini will copy a small amount (64 bytes)
- *     to make them happy.
- *  -- driver appends the rest of the data pages as frags to skbuffs
- *     and increments the reference count
- *  -- on page reclamation, the driver swaps the page with a spare page.
- *     if that page is still in use, it frees its reference to that page,
- *     and allocates a new page for use. otherwise, it just recycles the
- *     the page.
- *
- * NOTE: cassini can parse the header. however, it's not worth it
- *       as long as the network stack requires a header copy.
- *
- * TX has 4 queues. currently these queues are used in a round-robin
- * fashion for load balancing. They can also be used for QoS. for that
- * to work, however, QoS information needs to be exposed down to the driver
- * level so that subqueues get targeted to particular transmit rings.
- * alternatively, the queues can be configured via use of the all-purpose
- * ioctl.
- *
- * RX DATA: the rx completion ring has all the info, but the rx desc
- * ring has all of the data. RX can conceivably come in under multiple
- * interrupts, but the INT# assignment needs to be set up properly by
- * the BIOS and conveyed to the driver. PCI BIOSes don't know how to do
- * that. also, the two descriptor rings are designed to distinguish between
- * encrypted and non-encrypted packets, but we use them for buffering
- * instead.
- *
- * by default, the selective clear mask is set up to process rx packets.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

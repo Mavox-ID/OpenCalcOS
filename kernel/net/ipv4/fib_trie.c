@@ -1,53 +1,20 @@
 /*
- *   This program is free software; you can redistribute it and/or
- *   modify it under the terms of the GNU General Public License
- *   as published by the Free Software Foundation; either version
- *   2 of the License, or (at your option) any later version.
- *
- *   Robert Olsson <robert.olsson@its.uu.se> Uppsala Universitet
- *     & Swedish University of Agricultural Sciences.
- *
- *   Jens Laas <jens.laas@data.slu.se> Swedish University of
- *     Agricultural Sciences.
- *
- *   Hans Liss <hans.liss@its.uu.se>  Uppsala Universitet
- *
- * This work is based on the LPC-trie which is originally described in:
- *
- * An experimental study of compression methods for dynamic tries
- * Stefan Nilsson and Matti Tikkanen. Algorithmica, 33(1):19-33, 2002.
- * http://www.csc.kth.se/~snilsson/software/dyntrie2/
- *
- *
- * IP-address lookup using LC-tries. Stefan Nilsson and Gunnar Karlsson
- * IEEE Journal on Selected Areas in Communications, 17(6):1083-1092, June 1999
- *
- *
- * Code from fib_hash has been reused which includes the following header:
- *
- *
- * INET		An implementation of the TCP/IP protocol suite for the BEEP
- *		operating system.  INET is implemented using the  BSD Socket
- *		interface as the means of communication with the user level.
- *
- *		IPv4 FIB: lookup engine and maintenance routines.
- *
- *
- * Authors:	Alexey Kuznetsov, <kuznet@ms2.inr.ac.ru>
- *
- *		This program is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- *
- * Substantial contributions to this work comes from:
- *
- *		David S. Miller, <davem@davemloft.net>
- *		Stephen Hemminger <shemminger@osdl.org>
- *		Paul E. McKenney <paulmck@us.ibm.com>
- *		Patrick McHardy <kaber@trash.net>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define VERSION "0.409"
 
 #include <asm/uaccess.h>

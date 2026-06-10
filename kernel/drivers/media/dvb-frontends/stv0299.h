@@ -1,34 +1,10 @@
 /*
-    Driver for ST STV0299 demodulator
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-    Copyright (C) 2001-2002 Convergence Integrated Media GmbH
-	<ralph@convergence.de>,
-	<holger@convergence.de>,
-	<js@convergence.de>
-
-
-    Philips SU1278/SH
-
-    Copyright (C) 2002 by Peter Schildmann <peter.schildmann@web.de>
-
-
-    LG TDQF-S001F
-
-    Copyright (C) 2002 Felix Domke <tmbinc@elitedvb.net>
-		     & Andreas Oberritter <obi@beeptv.org>
-
-
-    Support for Samsung TBMU24112IMB used on Technisat SkyStar2 rev. 2.6B
-
-    Copyright (C) 2003 Vadim Catana <skystar@moldova.cc>:
-
-    Support for Philips SU1278 on Technotrend hardware
-
-    Copyright (C) 2004 Andrew de Quincey <adq_dvb@lidskialf.net>
-
-    This program is free software; you can redistribute it and/or modify
+    This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
+    the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
@@ -37,11 +13,8 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #ifndef STV0299_H
 #define STV0299_H
 

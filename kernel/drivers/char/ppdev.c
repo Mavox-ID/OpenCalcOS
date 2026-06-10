@@ -1,61 +1,20 @@
 /*
- * beep/drivers/char/ppdev.c
- *
- * This is the code behind /dev/parport* -- it allows a user-space
- * application to use the parport subsystem.
- *
- * Copyright (C) 1998-2000, 2002 Tim Waugh <tim@cyberelk.net>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version
- * 2 of the License, or (at your option) any later version.
- *
- * A /dev/parportx device node represents an arbitrary device
- * on port 'x'.  The following operations are possible:
- *
- * open		do nothing, set up default IEEE 1284 protocol to be COMPAT
- * close	release port and unregister device (if necessary)
- * ioctl
- *   EXCL	register device exclusively (may fail)
- *   CLAIM	(register device first time) parport_claim_or_block
- *   RELEASE	parport_release
- *   SETMODE	set the IEEE 1284 protocol to use for read/write
- *   SETPHASE	set the IEEE 1284 phase of a particular mode.  Not to be
- *              confused with ioctl(fd, SETPHASER, &stun). ;-)
- *   DATADIR	data_forward / data_reverse
- *   WDATA	write_data
- *   RDATA	read_data
- *   WCONTROL	write_control
- *   RCONTROL	read_control
- *   FCONTROL	frob_control
- *   RSTATUS	read_status
- *   NEGOT	parport_negotiate
- *   YIELD	parport_yield_blocking
- *   WCTLONIRQ	on interrupt, set control lines
- *   CLRIRQ	clear (and return) interrupt count
- *   SETTIME	sets device timeout (struct timeval)
- *   GETTIME	gets device timeout (struct timeval)
- *   GETMODES	gets hardware supported modes (unsigned int)
- *   GETMODE	gets the current IEEE1284 mode
- *   GETPHASE   gets the current IEEE1284 phase
- *   GETFLAGS   gets current (user-visible) flags
- *   SETFLAGS   sets current (user-visible) flags
- * read/write	read or write in current IEEE 1284 protocol
- * select	wait for interrupt (in readfds)
- *
- * Changes:
- * Added SETTIME/GETTIME ioctl, Fred Barnes, 1999.
- *
- * Arnaldo Carvalho de Melo <acme@conectiva.com.br> 2000/08/25
- * - On error, copy_from_user and copy_to_user do not return -EFAULT,
- *   They return the positive number of bytes *not* copied due to address
- *   space errors.
- *
- * Added GETMODES/GETMODE/GETPHASE ioctls, Fred Barnes <frmb2@ukc.ac.uk>, 03/01/2001.
- * Added GETFLAGS/SETFLAGS ioctls, Fred Barnes, 04/2001
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/sched.h>

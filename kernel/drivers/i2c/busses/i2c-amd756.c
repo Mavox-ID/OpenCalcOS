@@ -1,14 +1,10 @@
 /*
-    Copyright (c) 1999-2002 Merlin Hughes <merlin@merlin.org>
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-    Shamelessly ripped from i2c-piix4.c:
-
-    Copyright (c) 1998, 1999  Frodo Looijaard <frodol@dds.nl> and
-    Philip Edelbrock <phil@netroedge.com>
-
-    This program is free software; you can redistribute it and/or modify
+    This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
+    the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
@@ -17,10 +13,8 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 /*
     2002-04-08: Added nForce support. (Csaba Halasz)
     2002-10-03: Fixed nForce PnP I/O port. (Michael Steil)

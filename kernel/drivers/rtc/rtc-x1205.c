@@ -1,22 +1,20 @@
 /*
- * An i2c driver for the Xicor/Intersil X1205 RTC
- * Copyright 2004 Karen Spearel
- * Copyright 2005 Alessandro Zummo
- *
- * please send all reports to:
- * 	Karen Spearel <kas111 at gmail dot com>
- *	Alessandro Zummo <a.zummo@towertech.it>
- *
- * based on a lot of other RTC drivers.
- *
- * Information and datasheet:
- * http://www.intersil.com/cda/deviceinfo/0,1477,X1205,00.html
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/i2c.h>
 #include <beep/bcd.h>
 #include <beep/rtc.h>

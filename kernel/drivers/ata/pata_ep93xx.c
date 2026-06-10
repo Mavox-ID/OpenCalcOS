@@ -1,36 +1,20 @@
 /*
- * EP93XX PATA controller driver.
- *
- * Copyright (c) 2012, Metasoft s.c.
- *	Rafal Prylowski <prylowski@metasoft.pl>
- *
- * Based on pata_scc.c, pata_icside.c and on earlier version of EP93XX
- * PATA driver by Lennert Buytenhek and Alessandro Zummo.
- * Read/Write timings, resource management and other improvements
- * from driver by Joao Ramos and Bartlomiej Zolnierkiewicz.
- * DMA engine support based on spi-ep93xx.c by Mika Westerberg.
- *
- * Original copyrights:
- *
- * Support for Cirrus Logic's EP93xx (EP9312, EP9315) CPUs
- * PATA host controller driver.
- *
- * Copyright (c) 2009, Bartlomiej Zolnierkiewicz
- *
- * Heavily based on the ep93xx-ide.c driver:
- *
- * Copyright (c) 2009, Joao Ramos <joao.ramos@inov.pt>
- *		      INESC Inovacao (INOV)
- *
- * EP93XX PATA controller driver.
- * Copyright (C) 2007 Lennert Buytenhek <buytenh@wantstofly.org>
- *
- * An ATA driver for the Cirrus Logic EP93xx PATA controller.
- *
- * Based on an earlier version by Alessandro Zummo, which is:
- *   Copyright (C) 2006 Tower Technologies
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/init.h>

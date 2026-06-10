@@ -1,44 +1,20 @@
 /*
- * Implementation of the security services.
- *
- * Authors : Stephen Smalley, <sds@epoch.ncsc.mil>
- *	     James Morris <jmorris@redhat.com>
- *
- * Updated: Trusted Computer Solutions, Inc. <dgoeddel@trustedcs.com>
- *
- *	Support for enhanced MLS infrastructure.
- *	Support for context based audit filters.
- *
- * Updated: Frank Mayer <mayerf@tresys.com> and Karl MacMillan <kmacmillan@tresys.com>
- *
- *	Added conditional policy language extensions
- *
- * Updated: Hewlett-Packard <paul@paul-moore.com>
- *
- *      Added support for NetLabel
- *      Added support for the policy capability bitmap
- *
- * Updated: Chad Sellers <csellers@tresys.com>
- *
- *  Added validation of kernel classes and permissions
- *
- * Updated: KaiGai Kohei <kaigai@ak.jp.nec.com>
- *
- *  Added support for bounds domain and audit messaged on masked permissions
- *
- * Updated: Guido Trentalancia <guido@trentalancia.com>
- *
- *  Added support for runtime switching of the policy type
- *
- * Copyright (C) 2008, 2009 NEC Corporation
- * Copyright (C) 2006, 2007 Hewlett-Packard Development Company, L.P.
- * Copyright (C) 2004-2006 Trusted Computer Solutions, Inc.
- * Copyright (C) 2003 - 2004, 2006 Tresys Technology, LLC
- * Copyright (C) 2003 Red Hat, Inc., James Morris <jmorris@redhat.com>
- *	This program is free software; you can redistribute it and/or modify
- *	it under the terms of the GNU General Public License as published by
- *	the Free Software Foundation, version 2.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/slab.h>
 #include <beep/string.h>

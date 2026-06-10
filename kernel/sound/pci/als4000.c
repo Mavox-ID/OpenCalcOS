@@ -1,70 +1,20 @@
 /*
- *  card-als4000.c - driver for Avance Logic ALS4000 based soundcards.
- *  Copyright (C) 2000 by Bart Hartgers <bart@etpmod.phys.tue.nl>,
- *			  Jaroslav Kysela <perex@perex.cz>
- *  Copyright (C) 2002, 2008 by Andreas Mohr <hw7oshyuv3001@sneakemail.com>
- *
- *  Framework borrowed from Massimo Piccioni's card-als100.c.
- *
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
- *
- * NOTES
- *
- *  Since Avance does not provide any meaningful documentation, and I
- *  bought an ALS4000 based soundcard, I was forced to base this driver
- *  on reverse engineering.
- *
- *  Note: this is no longer true (thank you!):
- *  pretty verbose chip docu (ALS4000a.PDF) can be found on the ALSA web site.
- *  Page numbers stated anywhere below with the "SPECS_PAGE:" tag
- *  refer to: ALS4000a.PDF specs Ver 1.0, May 28th, 1998.
- *
- *  The ALS4000 seems to be the PCI-cousin of the ALS100. It contains an
- *  ALS100-like SB DSP/mixer, an OPL3 synth, a MPU401 and a gameport 
- *  interface. These subsystems can be mapped into ISA io-port space, 
- *  using the PCI-interface. In addition, the PCI-bit provides DMA and IRQ 
- *  services to the subsystems.
- * 
- * While ALS4000 is very similar to a SoundBlaster, the differences in
- * DMA and capturing require more changes to the SoundBlaster than
- * desirable, so I made this separate driver.
- * 
- * The ALS4000 can do real full duplex playback/capture.
- *
- * FMDAC:
- * - 0x4f -> port 0x14
- * - port 0x15 |= 1
- *
- * Enable/disable 3D sound:
- * - 0x50 -> port 0x14
- * - change bit 6 (0x40) of port 0x15
- *
- * Set QSound:
- * - 0xdb -> port 0x14
- * - set port 0x15:
- *   0x3e (mode 3), 0x3c (mode 2), 0x3a (mode 1), 0x38 (mode 0)
- *
- * Set KSound:
- * - value -> some port 0x0c0d
- *
- * ToDo:
- * - by default, don't enable legacy game and use PCI game I/O
- * - power management? (card can do voice wakeup according to datasheet!!)
- */
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <asm/io.h>
 #include <beep/init.h>
 #include <beep/pci.h>

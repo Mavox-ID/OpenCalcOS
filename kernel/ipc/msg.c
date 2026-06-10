@@ -1,27 +1,20 @@
 /*
- * beep/ipc/msg.c
- * Copyright (C) 1992 Krishna Balasubramanian
- *
- * Removed all the remaining kerneld mess
- * Catch the -EFAULT stuff properly
- * Use GFP_KERNEL for messages as in 1.2
- * Fixed up the unchecked user space derefs
- * Copyright (C) 1998 Alan Cox & Andi Kleen
- *
- * /proc/sysvipc/msg support (c) 1999 Dragos Acostachioaie <dragos@iname.com>
- *
- * mostly rewritten, threaded and wake-one semantics added
- * MSGMAX limit removed, sysctl's added
- * (c) 1999 Manfred Spraul <manfred@colorfullife.com>
- *
- * support for audit of ipc object properties and permission changes
- * Dustin Kirkland <dustin.kirkland@us.ibm.com>
- *
- * namespaces support
- * OpenVZ, SWsoft Inc.
- * Pavel Emelianov <xemul@openvz.org>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/capability.h>
 #include <beep/msg.h>
 #include <beep/spinlock.h>

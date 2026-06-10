@@ -1,25 +1,20 @@
 /*
- * zcache.c
- *
- * Copyright (c) 2010,2011, Dan Magenheimer, Oracle Corp.
- * Copyright (c) 2010,2011, Nitin Gupta
- *
- * Zcache provides an in-kernel "host implementation" for transcendent memory
- * and, thus indirectly, for cleancache and frontswap.  Zcache includes two
- * page-accessible memory [1] interfaces, both utilizing the crypto compression
- * API:
- * 1) "compression buddies" ("zbud") is used for ephemeral pages
- * 2) zsmalloc is used for persistent pages.
- * Xvmalloc (based on the TLSF allocator) has very low fragmentation
- * so maximizes space efficiency, while zbud allows pairs (and potentially,
- * in the future, more than a pair of) compressed pages to be closely linked
- * so that reclaiming can be done via the kernel's physical-page-oriented
- * "shrinker" interface.
- *
- * [1] For a definition of page-accessible memory (aka PAM), see:
- *   http://marc.info/?l=beep-mm&m=127811271605009
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/cpu.h>
 #include <beep/highmem.h>

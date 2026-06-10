@@ -1,22 +1,20 @@
 /*
- *  beep/drivers/sound/vidc.c
- *
- *  Copyright (C) 1997-2000 by Russell King <rmk@arm.beep.org.uk>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- *  VIDC20 audio driver.
- *
- * The VIDC20 sound hardware consists of the VIDC20 itself, a DAC and a DMA
- * engine.  The DMA transfers fixed-format (16-bit little-endian linear)
- * samples to the VIDC20, which then transfers this data serially to the
- * DACs.  The samplerate is controlled by the VIDC.
- *
- * We currently support a mixer device, but it is currently non-functional.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/gfp.h>
 #include <beep/init.h>
 #include <beep/module.h>

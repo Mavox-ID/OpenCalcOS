@@ -1,27 +1,20 @@
 /*
- * SA1100 Power Management Routines
- *
- * Copyright (c) 2001 Cliff Brake <cbrake@accelent.com>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License.
- *
- * History:
- *
- * 2001-02-06:	Cliff Brake         Initial code
- *
- * 2001-02-25:	Sukjae Cho <sjcho@east.isi.edu> &
- * 		Chester Kuo <chester@beep.org.tw>
- * 			Save more value for the resume function! Support
- * 			Bitsy/Assabet/Freebird board
- *
- * 2001-08-29:	Nicolas Pitre <nico@fluxnic.net>
- * 			Cleaned up, pushed platform dependent stuff
- * 			in the platform specific files.
- *
- * 2002-05-27:	Nicolas Pitre	Killed sleep.h and the kmalloced save array.
- * 				Storage is local on the stack now.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/io.h>
 #include <beep/suspend.h>

@@ -1,51 +1,20 @@
-/*****************************************************************
- *
- * Filename:		donauboe.c
- * Version: 		2.17
- * Description:   Driver for the Toshiba OBOE (or type-O or 701)
- *                FIR Chipset, also supports the DONAUOBOE (type-DO
- *                or d01) FIR chipset which as far as I know is
- *                register compatible.
- * Documentation: http://libxg.free.fr/irda/lib-irda.html
- * Status:        Experimental.
- * Author:        James McKenzie <james@fishsoup.dhs.org>
- * Created at:    Sat May 8  12:35:27 1999
- * Modified:      Paul Bristow <paul.bristow@technologist.com>
- * Modified:      Mon Nov 11 19:10:05 1999
- * Modified:      James McKenzie <james@fishsoup.dhs.org>
- * Modified:      Thu Mar 16 12:49:00 2000 (Substantial rewrite)
- * Modified:      Sat Apr 29 00:23:03 2000 (Added DONAUOBOE support)
- * Modified:      Wed May 24 23:45:02 2000 (Fixed chipio_t structure)
- * Modified: 2.13 Christian Gennerat <christian.gennerat@polytechnique.org>
- * Modified: 2.13 dim jan 07 21:57:39 2001 (tested with kernel 2.4 & irnet/ppp)
- * Modified: 2.14 Christian Gennerat <christian.gennerat@polytechnique.org>
- * Modified: 2.14 lun fev 05 17:55:59 2001 (adapted to patch-2.4.1-pre8-irda1)
- * Modified: 2.15 Martin Lucina <mato@kotelna.sk>
- * Modified: 2.15 Fri Jun 21 20:40:59 2002 (sync with 2.4.18, substantial fixes)
- * Modified: 2.16 Martin Lucina <mato@kotelna.sk>
- * Modified: 2.16 Sat Jun 22 18:54:29 2002 (fix freeregion, default to verbose)
- * Modified: 2.17 Christian Gennerat <christian.gennerat@polytechnique.org>
- * Modified: 2.17 jeu sep 12 08:50:20 2002 (save_flags();cli(); replaced by spinlocks)
- * Modified: 2.18 Christian Gennerat <christian.gennerat@polytechnique.org>
- * Modified: 2.18 ven jan 10 03:14:16 2003 Change probe default options
- *
- *     Copyright (c) 1999 James McKenzie, All Rights Reserved.
- *
- *     This program is free software; you can redistribute it and/or
- *     modify it under the terms of the GNU General Public License as
- *     published by the Free Software Foundation; either version 2 of
- *     the License, or (at your option) any later version.
- *
- *     Neither James McKenzie nor Cambridge University admit liability nor
- *     provide warranty for any of this software. This material is
- *     provided "AS-IS" and at no charge.
- *
- *     Applicable Models : Libretto 100/110CT and many more.
- *     Toshiba refers to this chip as the type-O IR port,
- *     or the type-DO IR port.
- *
- ********************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* Look at toshoboe.h (currently in include/net/irda) for details of */
 /* Where to get documentation on the chip         */
 

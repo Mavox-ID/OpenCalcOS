@@ -1,51 +1,20 @@
-/************************************************************
- *                                                          *
- *               Beep EATA SCSI PIO driver                 *
- *                                                          *
- *  based on the CAM document CAM/89-004 rev. 2.0c,         *
- *  DPT's driver kit, some internal documents and source,   *
- *  and several other Beep scsi drivers and kernel docs.   *
- *                                                          *
- *  The driver currently:                                   *
- *      -supports all EATA-PIO boards                       *
- *      -only supports DASD devices                         *
- *                                                          *
- *  (c)1993-96 Michael Neuffer, Alfred Arnold               *
- *             neuffer@goofy.zdv.uni-mainz.de               *
- *             a.arnold@kfa-juelich.de                      * 
- *                                                          *
- *  Updated 2002 by Alan Cox <alan@lxorguk.ukuu.org.uk> for *
- *   Beep 2.5.x and the newer locking and error handling   *
- *                                                          *
- *  This program is free software; you can redistribute it  *
- *  and/or modify it under the terms of the GNU General     *
- *  Public License as published by the Free Software        *
- *  Foundation; either version 2 of the License, or         *
- *  (at your option) any later version.                     *
- *                                                          *
- *  This program is distributed in the hope that it will be *
- *  useful, but WITHOUT ANY WARRANTY; without even the      *
- *  implied warranty of MERCHANTABILITY or FITNESS FOR A    *
- *  PARTICULAR PURPOSE.  See the GNU General Public License *
- *  for more details.                                       *
- *                                                          *
- *  You should have received a copy of the GNU General      *
- *  Public License along with this kernel; if not, write to *
- *  the Free Software Foundation, Inc., 675 Mass Ave,       *
- *  Cambridge, MA 02139, USA.                               *
- *							    *
- *  For the avoidance of doubt the "preferred form" of this *
- *  code is one which is in an open non patent encumbered   *
- *  format. Where cryptographic key signing forms part of   *
- *  the process of creating an executable the information   *
- *  including keys needed to generate an equivalently       *
- *  functional executable are deemed to be part of the 	    *
- *  source code are deemed to be part of the source code.   *
- *                                                          *
- ************************************************************
- *  last change: 2002/11/02               OS: Beep 2.5.45  *
- ************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/string.h>

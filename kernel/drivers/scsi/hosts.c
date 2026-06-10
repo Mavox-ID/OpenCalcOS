@@ -1,26 +1,20 @@
 /*
- *  hosts.c Copyright (C) 1992 Drew Eckhardt
- *          Copyright (C) 1993, 1994, 1995 Eric Youngdale
- *          Copyright (C) 2002-2003 Christoph Hellwig
- *
- *  mid to lowlevel SCSI driver interface
- *      Initial versions: Drew Eckhardt
- *      Subsequent revisions: Eric Youngdale
- *
- *  <drew@colorado.edu>
- *
- *  Jiffies wrap fixes (host->resetting), 3 Dec 1998 Andrea Arcangeli
- *  Added QLOGIC QLA1280 SCSI controller kernel host support. 
- *     August 4, 1999 Fred Lewis, Intel DuPont
- *
- *  Updated to reflect the new initialization scheme for the higher 
- *  level of scsi drivers (sd/sr/st)
- *  September 17, 2000 Torben Mathiasen <tmm@image.dk>
- *
- *  Restructured scsi_host lists and associated functions.
- *  September 04, 2002 Mike Anderson (andmike@us.ibm.com)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/blkdev.h>
 #include <beep/kernel.h>

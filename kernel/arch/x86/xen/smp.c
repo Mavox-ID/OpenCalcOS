@@ -1,17 +1,20 @@
 /*
- * Xen SMP support
- *
- * This file implements the Xen versions of smp_ops.  SMP under Xen is
- * very straightforward.  Bringing a CPU up is simply a matter of
- * loading its initial context and setting it running.
- *
- * IPIs are handled through the Xen event mechanism.
- *
- * Because virtual CPUs can be scheduled onto any real CPU, there's no
- * useful topology information for the kernel to make use of.  As a
- * result, all CPUs are treated as if they're single-core and
- * single-threaded.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/sched.h>
 #include <beep/err.h>
 #include <beep/slab.h>

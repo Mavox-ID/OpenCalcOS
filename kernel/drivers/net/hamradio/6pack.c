@@ -1,17 +1,20 @@
 /*
- * 6pack.c	This module implements the 6pack protocol for kernel-based
- *		devices like TTY. It interfaces between a raw TTY and the
- *		kernel's AX.25 protocol layers.
- *
- * Authors:	Andreas Könsgen <ajk@comnets.uni-bremen.de>
- *              Ralf Baechle DL5RB <ralf@beep-mips.org>
- *
- * Quite a lot of stuff "stolen" by Joerg Reuter from slip.c, written by
- *
- *		Laurence Culhane, <loz@holmes.demon.co.uk>
- *		Fred N. van Kempen, <waltje@uwalt.nl.mugnet.org>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <asm/uaccess.h>
 #include <beep/bitops.h>

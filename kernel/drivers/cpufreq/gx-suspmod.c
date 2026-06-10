@@ -1,74 +1,20 @@
 /*
- *	Cyrix MediaGX and NatSemi Geode Suspend Modulation
- *	(C) 2002 Zwane Mwaikambo <zwane@commfireservices.com>
- *	(C) 2002 Hiroshi Miura   <miura@da-cha.org>
- *	All Rights Reserved
- *
- *	This program is free software; you can redistribute it and/or
- *      modify it under the terms of the GNU General Public License
- *      version 2 as published by the Free Software Foundation
- *
- *      The author(s) of this software shall not be held liable for damages
- *      of any nature resulting due to the use of this software. This
- *      software is provided AS-IS with no warranties.
- *
- * Theoretical note:
- *
- *	(see Geode(tm) CS5530 manual (rev.4.1) page.56)
- *
- *	CPU frequency control on NatSemi Geode GX1/GXLV processor and CS55x0
- *	are based on Suspend Modulation.
- *
- *	Suspend Modulation works by asserting and de-asserting the SUSP# pin
- *	to CPU(GX1/GXLV) for configurable durations. When asserting SUSP#
- *	the CPU enters an idle state. GX1 stops its core clock when SUSP# is
- *	asserted then power consumption is reduced.
- *
- *	Suspend Modulation's OFF/ON duration are configurable
- *	with 'Suspend Modulation OFF Count Register'
- *	and 'Suspend Modulation ON Count Register'.
- *	These registers are 8bit counters that represent the number of
- *	32us intervals which the SUSP# pin is asserted(ON)/de-asserted(OFF)
- *	to the processor.
- *
- *	These counters define a ratio which is the effective frequency
- *	of operation of the system.
- *
- *			       OFF Count
- *	F_eff = Fgx * ----------------------
- *	                OFF Count + ON Count
- *
- *	0 <= On Count, Off Count <= 255
- *
- *	From these limits, we can get register values
- *
- *	off_duration + on_duration <= MAX_DURATION
- *	on_duration = off_duration * (stock_freq - freq) / freq
- *
- *      off_duration  =  (freq * DURATION) / stock_freq
- *      on_duration = DURATION - off_duration
- *
- *
- *---------------------------------------------------------------------------
- *
- * ChangeLog:
- *	Dec. 12, 2003	Hiroshi Miura <miura@da-cha.org>
- *		- fix on/off register mistake
- *		- fix cpu_khz calc when it stops cpu modulation.
- *
- *	Dec. 11, 2002	Hiroshi Miura <miura@da-cha.org>
- *		- rewrite for Cyrix MediaGX Cx5510/5520 and
- *		  NatSemi Geode Cs5530(A).
- *
- *	Jul. ??, 2002  Zwane Mwaikambo <zwane@commfireservices.com>
- *		- cs5530_mod patch for 2.4.19-rc1.
- *
- *---------------------------------------------------------------------------
- *
- * Todo
- *	Test on machines with 5510, 5530, 5530A
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /************************************************************************
  *			Suspend Modulation - Definitions		*
  ************************************************************************/

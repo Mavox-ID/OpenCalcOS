@@ -1,9 +1,20 @@
 /*
- * enc28j60_hw.h: EDTP FrameThrower style enc28j60 registers
- *
- * $Id: enc28j60_hw.h,v 1.9 2007/12/14 11:59:16 claudio Exp $
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _ENC28J60_HW_H
 #define _ENC28J60_HW_H
 

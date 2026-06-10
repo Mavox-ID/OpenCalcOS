@@ -1,23 +1,20 @@
 /*
- * Timer device implementation for SGI SN platforms.
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file "COPYING" in the main directory of this archive
- * for more details.
- *
- * Copyright (c) 2001-2006 Silicon Graphics, Inc.  All rights reserved.
- *
- * This driver exports an API that should be supportable by any HPET or IA-PC
- * multimedia timer.  The code below is currently specific to the SGI Altix
- * SHub RTC, however.
- *
- * 11/01/01 - jbarnes - initial revision
- * 9/10/04 - Christoph Lameter - remove interrupt support for kernel inclusion
- * 10/1/04 - Christoph Lameter - provide posix clock CLOCK_SGI_CYCLE
- * 10/13/04 - Christoph Lameter, Dimitri Sivanich - provide timer interrupt
- *		support via the posix timer interface
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/kernel.h>
 #include <beep/ioctl.h>

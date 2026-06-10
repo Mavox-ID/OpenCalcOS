@@ -1,59 +1,20 @@
-/*    Kernel dynamically loadable module help for PARISC.
- *
- *    The best reference for this stuff is probably the Processor-
- *    Specific ELF Supplement for PA-RISC:
- *        http://ftp.parisc-beep.org/docs/arch/elf-pa-hp.pdf
- *
- *    Beep/PA-RISC Project (http://www.parisc-beep.org/)
- *    Copyright (C) 2003 Randolph Chung <tausq at debian . org>
- *    Copyright (C) 2008 Helge Deller <deller@gmx.de>
- *
- *
- *    This program is free software; you can redistribute it and/or modify
- *    it under the terms of the GNU General Public License as published by
- *    the Free Software Foundation; either version 2 of the License, or
- *    (at your option) any later version.
- *
- *    This program is distributed in the hope that it will be useful,
- *    but WITHOUT ANY WARRANTY; without even the implied warranty of
- *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *    GNU General Public License for more details.
- *
- *    You should have received a copy of the GNU General Public License
- *    along with this program; if not, write to the Free Software
- *    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *
- *
- *    Notes:
- *    - PLT stub handling
- *      On 32bit (and sometimes 64bit) and with big kernel modules like xfs or
- *      ipv6 the relocation types R_PARISC_PCREL17F and R_PARISC_PCREL22F may
- *      fail to reach their PLT stub if we only create one big stub array for
- *      all sections at the beginning of the core or init section.
- *      Instead we now insert individual PLT stub entries directly in front of
- *      of the code sections where the stubs are actually called.
- *      This reduces the distance between the PCREL location and the stub entry
- *      so that the relocations can be fulfilled.
- *      While calculating the final layout of the kernel module in memory, the
- *      kernel module loader calls arch_mod_section_prepend() to request the
- *      to be reserved amount of memory in front of each individual section.
- *
- *    - SEGREL32 handling
- *      We are not doing SEGREL32 handling correctly. According to the ABI, we
- *      should do a value offset, like this:
- *			if (in_init(me, (void *)val))
- *				val -= (uint32_t)me->module_init;
- *			else
- *				val -= (uint32_t)me->module_core;
- *	However, SEGREL32 is used only for PARISC unwind entries, and we want
- *	those entries to have an absolute address, and not just an offset.
- *
- *	The unwind table mechanism has the ability to specify an offset for 
- *	the unwind table; however, because we split off the init functions into
- *	a different piece of memory, it is not possible to do this using a 
- *	single offset. Instead, we use the above hack for now.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/moduleloader.h>
 #include <beep/elf.h>
 #include <beep/vmalloc.h>

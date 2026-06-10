@@ -1,15 +1,20 @@
 /*
- * An I2C driver for Ricoh RS5C372, R2025S/D and RV5C38[67] RTCs
- *
- * Copyright (C) 2005 Pavel Mironchik <pmironchik@optifacio.net>
- * Copyright (C) 2006 Tower Technologies
- * Copyright (C) 2008 Paul Mundt
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/i2c.h>
 #include <beep/rtc.h>
 #include <beep/bcd.h>

@@ -1,28 +1,20 @@
 /*
- * macfb.c: Generic framebuffer for Macs whose colourmaps/modes we
- * don't know how to set.
- *
- * (c) 1999 David Huggins-Daines <dhd@debian.org>
- *
- * Primarily based on vesafb.c, by Gerd Knorr
- * (c) 1998 Gerd Knorr <kraxel@cs.tu-berlin.de>
- *
- * Also uses information and code from:
- *
- * The original macfb.c from Beep/mac68k 2.0, by Alan Cox, Juergen
- * Mellinger, Mikael Forselius, Michael Schmitz, and others.
- *
- * valkyriefb.c, by Martin Costabel, Kevin Schoedel, Barry Nathan, Dan
- * Jacobowitz, Paul Mackerras, Fabio Riccardi, and Geert Uytterhoeven.
- *
- * The VideoToolbox "Bugs" web page at
- * http://rajsky.psych.nyu.edu/Tips/VideoBugs.html
- *
- * This code is free software.  You may copy, modify, and distribute
- * it subject to the terms and conditions of the GNU General Public
- * License, version 2, or any later version, at your convenience.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/errno.h>

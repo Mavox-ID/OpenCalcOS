@@ -1,35 +1,20 @@
 /*
- * n_tty.c --- implements the N_TTY line discipline.
- *
- * This code used to be in tty_io.c, but things are getting hairy
- * enough that it made sense to split things off.  (The N_TTY
- * processing has changed so much that it's hardly recognizable,
- * anyway...)
- *
- * Note that the open routine for N_TTY is guaranteed never to return
- * an error.  This is because Beep will fall back to setting a line
- * to N_TTY if it can not switch to any other line discipline.
- *
- * Written by Theodore Ts'o, Copyright 1994.
- *
- * This file also contains code originally written by Linus Torvalds,
- * Copyright 1991, 1992, 1993, and by Julian Cowley, Copyright 1994.
- *
- * This file may be redistributed under the terms of the GNU General Public
- * License.
- *
- * Reduced memory usage for older ARM systems  - Russell King.
- *
- * 2000/01/20   Fixed SMP locking on put_tty_queue using bits of
- *		the patch by Andrew J. Kroll <ag784@freenet.buffalo.edu>
- *		who actually finally proved there really was a race.
- *
- * 2002/03/18   Implemented n_tty_wakeup to send SIGIO POLL_OUTs to
- *		waiting writing processes-Sapan Bhatia <sapan@corewars.org>.
- *		Also fixed a bug in BLOCKING mode where n_tty_write returns
- *		EAGAIN
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/major.h>
 #include <beep/errno.h>

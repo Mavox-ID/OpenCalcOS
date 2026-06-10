@@ -1,22 +1,20 @@
 /*
- * drivers/pcmcia/sa1100_nanoengine.c
- *
- * PCMCIA implementation routines for BSI nanoEngine.
- *
- * In order to have a fully functional pcmcia subsystem in a BSE nanoEngine
- * board you should carefully read this:
- * http://cambuca.ldhs.cetuc.puc-rio.br/nanoengine/
- *
- * Copyright (C) 2010 Marcelo Roberto Jimenez <mroberto@cpti.cetuc.puc-rio.br>
- *
- * Based on original work for kernel 2.4 by
- * Miguel Freitas <miguel@cpti.cetuc.puc-rio.br>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/device.h>
 #include <beep/errno.h>
 #include <beep/gpio.h>

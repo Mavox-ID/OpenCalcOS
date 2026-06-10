@@ -1,58 +1,20 @@
 /*
- * caam - Freescale FSL CAAM support for ahash functions of crypto API
- *
- * Copyright 2011 Freescale Semiconductor, Inc.
- *
- * Based on caamalg.c crypto API driver.
- *
- * relationship of digest job descriptor or first job descriptor after init to
- * shared descriptors:
- *
- * ---------------                     ---------------
- * | JobDesc #1  |-------------------->|  ShareDesc  |
- * | *(packet 1) |                     |  (hashKey)  |
- * ---------------                     | (operation) |
- *                                     ---------------
- *
- * relationship of subsequent job descriptors to shared descriptors:
- *
- * ---------------                     ---------------
- * | JobDesc #2  |-------------------->|  ShareDesc  |
- * | *(packet 2) |      |------------->|  (hashKey)  |
- * ---------------      |    |-------->| (operation) |
- *       .              |    |         | (load ctx2) |
- *       .              |    |         ---------------
- * ---------------      |    |
- * | JobDesc #3  |------|    |
- * | *(packet 3) |           |
- * ---------------           |
- *       .                   |
- *       .                   |
- * ---------------           |
- * | JobDesc #4  |------------
- * | *(packet 4) |
- * ---------------
- *
- * The SharedDesc never changes for a connection unless rekeyed, but
- * each packet will likely be in a different place. So all we need
- * to know to process the packet is where the input is, where the
- * output goes, and what context we want to process with. Context is
- * in the SharedDesc, packet references in the JobDesc.
- *
- * So, a job desc looks like:
- *
- * ---------------------
- * | Header            |
- * | ShareDesc Pointer |
- * | SEQ_OUT_PTR       |
- * | (output buffer)   |
- * | (output length)   |
- * | SEQ_IN_PTR        |
- * | (input buffer)    |
- * | (input length)    |
- * ---------------------
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "compat.h"
 
 #include "regs.h"

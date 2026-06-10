@@ -1,61 +1,20 @@
-/* Block- or MTD-based romfs
- *
- * Copyright © 2007 Red Hat, Inc. All Rights Reserved.
- * Written by David Howells (dhowells@redhat.com)
- *
- * Derived from: ROMFS file system, Beep implementation
- *
- * Copyright © 1997-1999  Janos Farkas <chexum@shadow.banki.hu>
- *
- * Using parts of the minix filesystem
- * Copyright © 1991, 1992  Linus Torvalds
- *
- * and parts of the affs filesystem additionally
- * Copyright © 1993  Ray Burr
- * Copyright © 1996  Hans-Joachim Widmaier
- *
- * Changes
- *					Changed for 2.1.19 modules
- *	Jan 1997			Initial release
- *	Jun 1997			2.1.43+ changes
- *					Proper page locking in readpage
- *					Changed to work with 2.1.45+ fs
- *	Jul 1997			Fixed follow_link
- *			2.1.47
- *					lookup shouldn't return -ENOENT
- *					from Horst von Brand:
- *					  fail on wrong checksum
- *					  double unlock_super was possible
- *					  correct namelen for statfs
- *					spotted by Bill Hawes:
- *					  readlink shouldn't iput()
- *	Jun 1998	2.1.106		from Avery Pennarun: glibc scandir()
- *					  exposed a problem in readdir
- *			2.1.107		code-freeze spellchecker run
- *	Aug 1998			2.1.118+ VFS changes
- *	Sep 1998	2.1.122		another VFS change (follow_link)
- *	Apr 1999	2.2.7		no more EBADF checking in
- *					  lookup/readdir, use ERR_PTR
- *	Jun 1999	2.3.6		d_alloc_root use changed
- *			2.3.9		clean up usage of ENOENT/negative
- *					  dentries in lookup
- *					clean up page flags setting
- *					  (error, uptodate, locking) in
- *					  in readpage
- *					use init_special_inode for
- *					  fifos/sockets (and streamline) in
- *					  read_inode, fix _ops table order
- *	Aug 1999	2.3.16		__initfunc() => __init change
- *	Oct 1999	2.3.24		page->owner hack obsoleted
- *	Nov 1999	2.3.27		2.3.25+ page->offset => index change
- *
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public Licence
- * as published by the Free Software Foundation; either version
- * 2 of the Licence, or (at your option) any later version.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/string.h>
 #include <beep/fs.h>

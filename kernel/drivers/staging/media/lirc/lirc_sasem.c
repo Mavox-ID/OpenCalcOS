@@ -1,23 +1,20 @@
 /*
- * lirc_sasem.c - USB remote support for LIRC
- * Version 0.5
- *
- * Copyright (C) 2004-2005 Oliver Stabel <oliver.stabel@gmx.de>
- *			 Tim Davies <tim@opensystems.net.au>
- *
- * This driver was derived from:
- *   Venky Raju <dev@venky.ws>
- *      "lirc_imon - "LIRC/VFD driver for Ahanix/Soundgraph IMON IR/VFD"
- *   Paul Miller <pmiller9@users.sourceforge.net>'s 2003-2004
- *      "lirc_atiusb - USB remote support for LIRC"
- *   Culver Consulting Services <henry@culcon.com>'s 2003
- *      "Sasem OnAir VFD/IR USB driver"
- *
- *
- * NOTE - The LCDproc iMon driver should work with this module.  More info at
- *	http://www.frogstorm.info/sasem
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by

@@ -1,26 +1,20 @@
 /*
- * beep/fs/befs/btree.c
- *
- * Copyright (C) 2001-2002 Will Dyson <will_dyson@pobox.com>
- *
- * Licensed under the GNU GPL. See the file COPYING for details.
- *
- * 2002-02-05: Sergey S. Kostyliov added binary search within
- * 		btree nodes.
- *
- * Many thanks to:
- *
- * Dominic Giampaolo, author of "Practical File System
- * Design with the Be File System", for such a helpful book.
- * 
- * Marcus J. Ranum, author of the b+tree package in 
- * comp.sources.misc volume 10. This code is not copied from that
- * work, but it is partially based on it.
- *
- * Makoto Kato, author of the original BeFS for beep filesystem
- * driver.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/string.h>
 #include <beep/slab.h>

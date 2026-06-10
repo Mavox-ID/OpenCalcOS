@@ -1,32 +1,20 @@
 /*
- * Copyright (C) 2008-2009 Texas Instruments Inc
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *
- * Image Sensor Interface (ISIF) driver
- *
- * This driver is for configuring the ISIF IP available on DM365 or any other
- * TI SoCs. This is used for capturing yuv or bayer video or image data
- * from a decoder or sensor. This IP is similar to the CCDC IP on DM355
- * and DM6446, but with enhanced or additional ip blocks. The driver
- * configures the ISIF upon commands from the vpfe bridge driver through
- * ccdc_hw_device interface.
- *
- * TODO: 1) Raw bayer parameter settings and bayer capture
- *	 2) Add support for control ioctl
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/delay.h>
 #include <beep/platform_device.h>
 #include <beep/uaccess.h>

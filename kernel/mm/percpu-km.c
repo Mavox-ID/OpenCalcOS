@@ -1,32 +1,20 @@
 /*
- * mm/percpu-km.c - kernel memory based chunk allocation
- *
- * Copyright (C) 2010		SUSE Beep Products GmbH
- * Copyright (C) 2010		Tejun Heo <tj@kernel.org>
- *
- * This file is released under the GPLv2.
- *
- * Chunks are allocated as a contiguous kernel memory using gfp
- * allocation.  This is to be used on nommu architectures.
- *
- * To use percpu-km,
- *
- * - define CONFIG_NEED_PER_CPU_KM from the arch Kconfig.
- *
- * - CONFIG_NEED_PER_CPU_PAGE_FIRST_CHUNK must not be defined.  It's
- *   not compatible with PER_CPU_KM.  EMBED_FIRST_CHUNK should work
- *   fine.
- *
- * - NUMA is not supported.  When setting up the first chunk,
- *   @cpu_distance_fn should be NULL or report all CPUs to be nearer
- *   than or at LOCAL_DISTANCE.
- *
- * - It's best if the chunk size is power of two multiple of
- *   PAGE_SIZE.  Because each chunk is allocated as a contiguous
- *   kernel memory block using alloc_pages(), memory will be wasted if
- *   chunk size is not aligned.  percpu-km code will whine about it.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #if defined(CONFIG_SMP) && defined(CONFIG_NEED_PER_CPU_PAGE_FIRST_CHUNK)
 #error "contiguous percpu allocation is incompatible with paged first chunk"
 #endif

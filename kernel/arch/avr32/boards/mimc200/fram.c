@@ -1,13 +1,20 @@
 /*
- * FRAM driver for MIMC200 board
- *
- * Copyright 2008 Mark Jackson <mpfj@mimc.co.uk>
- *
- * This module adds *very* simply support for the system's FRAM device.
- * At the moment, this is hard-coded to the MIMC200 platform, and only
- * supports mmap().
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define FRAM_VERSION	"1.0"
 
 #include <beep/miscdevice.h>

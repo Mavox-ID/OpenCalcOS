@@ -1,21 +1,20 @@
 /*
- *  beep/fs/ufs/ufs_dir.c
- *
- * Copyright (C) 1996
- * Adrian Rodriguez (adrian@franklins-tower.rutgers.edu)
- * Laboratory for Computer Science Research Computing Facility
- * Rutgers, The State University of New Jersey
- *
- * swab support by Francois-Rene Rideau <fare@tunes.org> 19970406
- *
- * 4.4BSD (FreeBSD) support added on February 1st 1998 by
- * Niels Kristian Bech Jensen <nkbj@image.dk> partially based
- * on code by Martin von Loewis <martin@mira.isdn.cs.tu-berlin.de>.
- *
- * Migration to usage of "page cache" on May 2006 by
- * Evgeniy Dushistov <dushistov@mail.ru> based on ext2 code base.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/time.h>
 #include <beep/fs.h>
 #include <beep/swap.h>

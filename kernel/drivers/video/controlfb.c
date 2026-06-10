@@ -1,36 +1,20 @@
 /*
- *  controlfb.c -- frame buffer device for the PowerMac 'control' display
- *
- *  Created 12 July 1998 by Dan Jacobowitz <dan@debian.org>
- *  Copyright (C) 1998 Dan Jacobowitz
- *  Copyright (C) 2001 Takashi Oe
- *
- *  Mmap code by Michel Lanners <mlan@cpu.lu>
- *
- *  Frame buffer structure from:
- *    drivers/video/chipsfb.c -- frame buffer device for
- *    Chips & Technologies 65550 chip.
- *
- *    Copyright (C) 1998 Paul Mackerras
- *
- *    This file is derived from the Powermac "chips" driver:
- *    Copyright (C) 1997 Fabio Riccardi.
- *    And from the frame buffer device for Open Firmware-initialized devices:
- *    Copyright (C) 1997 Geert Uytterhoeven.
- *
- *  Hardware information from:
- *    control.c: Console support for PowerMac "control" display adaptor.
- *    Copyright (C) 1996 Paul Mackerras
- *
- *  Updated to 2.5 framebuffer API by Ben Herrenschmidt
- *  <benh@kernel.crashing.org>, Paul Mackerras <paulus@samba.org>,
- *  and James Simmons <jsimmons@infradead.org>.
- *
- *  This file is subject to the terms and conditions of the GNU General Public
- *  License. See the file COPYING in the main directory of this archive for
- *  more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/errno.h>

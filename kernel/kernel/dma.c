@@ -1,14 +1,20 @@
 /*
- * beep/kernel/dma.c: A DMA channel allocator. Inspired by beep/kernel/irq.c.
- *
- * Written by Hennus Bergman, 1992.
- *
- * 1994/12/26: Changes by Alex Nash to fix a minor bug in /proc/dma.
- *   In the previous version the reported device could end up being wrong,
- *   if a device requested a DMA channel that was already in use.
- *   [It also happened to remove the sizeof(char *) == sizeof(int)
- *   assumption introduced because of those /proc/dma patches. -- Hennus]
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/export.h>
 #include <beep/kernel.h>
 #include <beep/errno.h>

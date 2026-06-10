@@ -1,33 +1,20 @@
-/*****************************************************************************
-*
-* Filename:      stir4200.c
-* Version:       0.4
-* Description:   Irda SigmaTel USB Dongle
-* Status:        Experimental
-* Author:        Stephen Hemminger <shemminger@osdl.org>
-*
-*  	Based on earlier driver by Paul Stewart <stewart@parc.com>
-*
-*	Copyright (C) 2000, Roman Weissgaerber <weissg@vienna.at>
-*	Copyright (C) 2001, Dag Brattli <dag@brattli.net>
-*	Copyright (C) 2001, Jean Tourrilhes <jt@hpl.hp.com>
-*	Copyright (C) 2004, Stephen Hemminger <shemminger@osdl.org>
-*
-*	This program is free software; you can redistribute it and/or modify
-*	it under the terms of the GNU General Public License as published by
-*	the Free Software Foundation; either version 2 of the License.
-*
-*	This program is distributed in the hope that it will be useful,
-*	but WITHOUT ANY WARRANTY; without even the implied warranty of
-*	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-*	GNU General Public License for more details.
-*
-*	You should have received a copy of the GNU General Public License
-*	along with this program; if not, write to the Free Software
-*	Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-*
-*****************************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * This dongle does no framing, and requires polling to receive the
  * data.  The STIr4200 has bulk in and out endpoints just like

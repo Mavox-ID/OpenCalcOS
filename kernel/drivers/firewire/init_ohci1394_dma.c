@@ -1,37 +1,20 @@
 /*
- * init_ohci1394_dma.c - Initializes physical DMA on all OHCI 1394 controllers
- *
- * Copyright (C) 2006-2007      Bernhard Kaindl <bk@suse.de>
- *
- * Derived from drivers/ieee1394/ohci1394.c and arch/x86/kernel/early-quirks.c
- * this file has functions to:
- * - scan the PCI very early on boot for all OHCI 1394-compliant controllers
- * - reset and initialize them and make them join the IEEE1394 bus and
- * - enable physical DMA on them to allow remote debugging
- *
- * All code and data is marked as __init and __initdata, respective as
- * during boot, all OHCI1394 controllers may be claimed by the firewire
- * stack and at this point, this code should not touch them anymore.
- *
- * To use physical DMA after the initialization of the firewire stack,
- * be sure that the stack enables it and (re-)attach after the bus reset
- * which may be caused by the firewire stack initialization.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software Foundation,
- * Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/delay.h>
 #include <beep/io.h>
 #include <beep/kernel.h>

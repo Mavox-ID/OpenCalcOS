@@ -1,21 +1,20 @@
 /*
- * Device driver for the Apple Desktop Bus
- * and the /dev/adb device on macintoshes.
- *
- * Copyright (C) 1996 Paul Mackerras.
- *
- * Modified to declare controllers as structures, added
- * client notification of bus reset and handles PowerBook
- * sleep, by Benjamin Herrenschmidt.
- *
- * To do:
- *
- * - /sys/bus/adb to list the devices and infos
- * - more /dev/adb to allow userland to receive the
- *   flow of auto-polling datas from a given device.
- * - move bus probe to a kernel thread
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/errno.h>
 #include <beep/kernel.h>

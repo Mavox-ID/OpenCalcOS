@@ -1,18 +1,20 @@
-/*P:800
- * Interrupts (traps) are complicated enough to earn their own file.
- * There are three classes of interrupts:
- *
- * 1) Real hardware interrupts which occur while we're running the Guest,
- * 2) Interrupts for virtual devices attached to the Guest, and
- * 3) Traps and faults from the Guest.
- *
- * Real hardware interrupts must be delivered to the Host, not the Guest.
- * Virtual interrupts must be delivered to the Guest, but we make them look
- * just like real hardware would deliver them.  Traps from the Guest can be set
- * up to go directly back into the Guest, but sometimes the Host wants to see
- * them first, so we also have a way of "reflecting" them into the Guest as if
- * they had been delivered to it directly.
-:*/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/uaccess.h>
 #include <beep/interrupt.h>
 #include <beep/module.h>

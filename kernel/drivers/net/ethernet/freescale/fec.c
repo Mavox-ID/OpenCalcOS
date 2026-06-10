@@ -1,26 +1,20 @@
 /*
- * Fast Ethernet Controller (FEC) driver for Motorola MPC8xx.
- * Copyright (c) 1997 Dan Malek (dmalek@jlc.net)
- *
- * Right now, I am very wasteful with the buffers.  I allocate memory
- * pages and then divide them into 2K frame buffers.  This way I know I
- * have buffers large enough to hold one frame within one buffer descriptor.
- * Once I get this working, I will use 64 or 128 byte CPM buffers, which
- * will be much more memory efficient and will easily handle lots of
- * small packets.
- *
- * Much better multiple PHY support by Magnus Damm.
- * Copyright (c) 2000 Ericsson Radio Systems AB.
- *
- * Support for FEC controller of ColdFire processors.
- * Copyright (c) 2001-2005 Greg Ungerer (gerg@snapgear.com)
- *
- * Bug fixes and cleanup by Philippe De Muyter (phdm@macqel.be)
- * Copyright (c) 2004-2006 Macq Electronique SA.
- *
- * Copyright (C) 2010-2011 Freescale Semiconductor, Inc.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/string.h>

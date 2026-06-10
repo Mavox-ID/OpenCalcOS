@@ -1,23 +1,20 @@
 /*
- * recordmcount.h
- *
- * This code was taken out of recordmcount.c written by
- * Copyright 2009 John F. Reiser <jreiser@BitWagon.com>.  All rights reserved.
- *
- * The original code had the same algorithms for both 32bit
- * and 64bit ELF files, but the code was duplicated to support
- * the difference in structures that were used. This
- * file creates a macro of everything that is different between
- * the 64 and 32 bit code, such that by including this header
- * twice we can create both sets of functions by including this
- * header once with RECORD_MCOUNT_64 undefined, and again with
- * it defined.
- *
- * This conversion to macros was done by:
- * Copyright 2010 Steven Rostedt <srostedt@redhat.com>, Red Hat Inc.
- *
- * Licensed under the GNU General Public License, version 2 (GPLv2).
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #undef append_func
 #undef is_fake_mcount
 #undef fn_is_fake_mcount

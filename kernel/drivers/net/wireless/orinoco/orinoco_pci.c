@@ -1,46 +1,20 @@
-/* orinoco_pci.c
- *
- * Driver for Prism 2.5/3 devices that have a direct PCI interface
- * (i.e. these are not PCMCIA cards in a PCMCIA-to-PCI bridge).
- * The card contains only one PCI region, which contains all the usual
- * hermes registers, as well as the COR register.
- *
- * Current maintainers are:
- *	Pavel Roskin <proski AT gnu.org>
- * and	David Gibson <hermes AT gibson.dropbear.id.au>
- *
- * Some of this code is borrowed from orinoco_plx.c
- *	Copyright (C) 2001 Daniel Barlow <dan AT telent.net>
- * Some of this code is "inspired" by beep-wlan-ng-0.1.10, but nothing
- * has been copied from it. beep-wlan-ng-0.1.10 is originally :
- *	Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
- * This file originally written by:
- *	Copyright (C) 2001 Jean Tourrilhes <jt AT hpl.hp.com>
- * And is now maintained by:
- *	(C) Copyright David Gibson, IBM Corp. 2002-2003.
- *
- * The contents of this file are subject to the Mozilla Public License
- * Version 1.1 (the "License"); you may not use this file except in
- * compliance with the License. You may obtain a copy of the License
- * at http://www.mozilla.org/MPL/
- *
- * Software distributed under the License is distributed on an "AS IS"
- * basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See
- * the License for the specific language governing rights and
- * limitations under the License.
- *
- * Alternatively, the contents of this file may be used under the
- * terms of the GNU General Public License version 2 (the "GPL"), in
- * which case the provisions of the GPL are applicable instead of the
- * above.  If you wish to allow the use of your version of this file
- * only under the terms of the GPL and not to allow others to use your
- * version of this file under the MPL, indicate your decision by
- * deleting the provisions above and replace them with the notice and
- * other provisions required by the GPL.  If you do not delete the
- * provisions above, a recipient may use your version of this file
- * under either the MPL or the GPL.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define DRIVER_NAME "orinoco_pci"
 #define PFX DRIVER_NAME ": "
 

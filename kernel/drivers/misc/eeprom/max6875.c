@@ -1,31 +1,20 @@
 /*
- * max6875.c - driver for MAX6874/MAX6875
- *
- * Copyright (C) 2005 Ben Gardner <bgardner@wabtec.com>
- *
- * Based on eeprom.c
- *
- * The MAX6875 has a bank of registers and two banks of EEPROM.
- * Address ranges are defined as follows:
- *  * 0x0000 - 0x0046 = configuration registers
- *  * 0x8000 - 0x8046 = configuration EEPROM
- *  * 0x8100 - 0x82FF = user EEPROM
- *
- * This driver makes the user EEPROM available for read.
- *
- * The registers & config EEPROM should be accessed via i2c-dev.
- *
- * The MAX6875 ignores the lowest address bit, so each chip responds to
- * two addresses - 0x50/0x51 and 0x52/0x53.
- *
- * Note that the MAX6875 uses i2c_smbus_write_byte_data() to set the read
- * address, so this driver is destructive if loaded for the wrong EEPROM chip.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; version 2 of the License.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/init.h>
 #include <beep/module.h>

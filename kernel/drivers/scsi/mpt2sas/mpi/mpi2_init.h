@@ -1,44 +1,20 @@
 /*
- *  Copyright (c) 2000-2012 LSI Corporation.
- *
- *
- *           Name:  mpi2_init.h
- *          Title:  MPI SCSI initiator mode messages and structures
- *  Creation Date:  June 23, 2006
- *
- *    mpi2_init.h Version:  02.00.13
- *
- *  Version History
- *  ---------------
- *
- *  Date      Version   Description
- *  --------  --------  ------------------------------------------------------
- *  04-30-07  02.00.00  Corresponds to Fusion-MPT MPI Specification Rev A.
- *  10-31-07  02.00.01  Fixed name for pMpi2SCSITaskManagementRequest_t.
- *  12-18-07  02.00.02  Modified Task Management Target Reset Method defines.
- *  02-29-08  02.00.03  Added Query Task Set and Query Unit Attention.
- *  03-03-08  02.00.04  Fixed name of struct _MPI2_SCSI_TASK_MANAGE_REPLY.
- *  05-21-08  02.00.05  Fixed typo in name of Mpi2SepRequest_t.
- *  10-02-08  02.00.06  Removed Untagged and No Disconnect values from SCSI IO
- *                      Control field Task Attribute flags.
- *                      Moved LUN field defines to mpi2.h because they are
- *                      common to many structures.
- *  05-06-09  02.00.07  Changed task management type of Query Unit Attention to
- *                      Query Asynchronous Event.
- *                      Defined two new bits in the SlotStatus field of the SCSI
- *                      Enclosure Processor Request and Reply.
- *  10-28-09  02.00.08  Added defines for decoding the ResponseInfo bytes for
- *                      both SCSI IO Error Reply and SCSI Task Management Reply.
- *                      Added ResponseInfo field to MPI2_SCSI_TASK_MANAGE_REPLY.
- *                      Added MPI2_SCSITASKMGMT_RSP_TM_OVERLAPPED_TAG define.
- *  02-10-10  02.00.09  Removed unused structure that had "#if 0" around it.
- *  05-12-10  02.00.10  Added optional vendor-unique region to SCSI IO Request.
- *  11-10-10  02.00.11  Added MPI2_SCSIIO_NUM_SGLOFFSETS define.
- *  02-06-12  02.00.13  Added alternate defines for Task Priority / Command
- *                      Priority to match SAM-4.
- *  --------------------------------------------------------------------------
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef MPI2_INIT_H
 #define MPI2_INIT_H
 

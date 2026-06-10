@@ -1,25 +1,20 @@
 /*
- *  include/asm-ppc/hydra.h -- Mac I/O `Hydra' definitions
- *
- *  Copyright (C) 1997 Geert Uytterhoeven
- *
- *  This file is based on the following documentation:
- *
- *	Macintosh Technology in the Common Hardware Reference Platform
- *	Apple Computer, Inc.
- *
- *	© Copyright 1995 Apple Computer, Inc. All rights reserved.
- *
- *  It's available online from http://www.cpu.lu/~mlan/ftp/MacTech.pdf
- *  You can obtain paper copies of this book from computer bookstores or by
- *  writing Morgan Kaufmann Publishers, Inc., 340 Pine Street, Sixth Floor, San
- *  Francisco, CA 94104. Reference ISBN 1-55860-393-X.
- *
- *  This file is subject to the terms and conditions of the GNU General Public
- *  License.  See the file COPYING in the main directory of this archive
- *  for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _ASMPPC_HYDRA_H
 #define _ASMPPC_HYDRA_H
 

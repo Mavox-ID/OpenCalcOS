@@ -1,26 +1,20 @@
-/* hermes.h
- *
- * Driver core for the "Hermes" wireless MAC controller, as used in
- * the Lucent Orinoco and Cabletron RoamAbout cards. It should also
- * work on the hfa3841 and hfa3842 MAC controller chips used in the
- * Prism I & II chipsets.
- *
- * This is not a complete driver, just low-level access routines for
- * the MAC controller itself.
- *
- * Based on the prism2 driver from Absolute Value Systems' beep-wlan
- * project, the Beep wvlan_cs driver, Lucent's HCF-Light
- * (wvlan_hcf.c) library, and the NetBSD wireless driver.
- *
- * Copyright (C) 2000, David Gibson, Beepcare Australia.
- * (C) Copyright David Gibson, IBM Corp. 2001-2003.
- *
- * Portions taken from hfa384x.h.
- * Copyright (C) 1999 AbsoluteValue Systems, Inc. All Rights Reserved.
- *
- * This file distributed under the GPL, version 2.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _HERMES_H
 #define _HERMES_H
 

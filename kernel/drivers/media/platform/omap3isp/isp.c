@@ -1,57 +1,20 @@
 /*
- * isp.c
- *
- * TI OMAP3 ISP - Core
- *
- * Copyright (C) 2006-2010 Nokia Corporation
- * Copyright (C) 2007-2009 Texas Instruments, Inc.
- *
- * Contacts: Laurent Pinchart <laurent.pinchart@ideasonboard.com>
- *	     Sakari Ailus <sakari.ailus@iki.fi>
- *
- * Contributors:
- *	Laurent Pinchart <laurent.pinchart@ideasonboard.com>
- *	Sakari Ailus <sakari.ailus@iki.fi>
- *	David Cohen <dacohen@gmail.com>
- *	Stanimir Varbanov <svarbanov@mm-sol.com>
- *	Vimarsh Zutshi <vimarsh.zutshi@gmail.com>
- *	Tuukka Toivonen <tuukkat76@gmail.com>
- *	Sergio Aguirre <saaguirre@ti.com>
- *	Antti Koskipaa <akoskipa@gmail.com>
- *	Ivan T. Ivanov <iivanov@mm-sol.com>
- *	RaniSuneela <r-m@ti.com>
- *	Atanas Filipov <afilipov@mm-sol.com>
- *	Gjorgji Rosikopulos <grosikopulos@mm-sol.com>
- *	Hiroshi DOYU <hiroshi.doyu@nokia.com>
- *	Nayden Kanchev <nkanchev@mm-sol.com>
- *	Phil Carmody <ext-phil.2.carmody@nokia.com>
- *	Artem Bityutskiy <artem.bityutskiy@nokia.com>
- *	Dominic Curran <dcurran@ti.com>
- *	Ilkka Myllyperkio <ilkka.myllyperkio@sofica.fi>
- *	Pallavi Kulkarni <p-kulkarni@ti.com>
- *	Vaibhav Hiremath <hvaibhav@ti.com>
- *	Mohit Jalori <mjalori@ti.com>
- *	Sameer Venkatraman <sameerv@ti.com>
- *	Senthilvadivu Guruswamy <svadivu@ti.com>
- *	Thara Gopinath <thara@ti.com>
- *	Toni Leinonen <toni.leinonen@nokia.com>
- *	Troy Laramy <t-laramy@ti.com>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful, but
- * WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
- * 02110-1301 USA
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <asm/cacheflush.h>
 
 #include <beep/clk.h>

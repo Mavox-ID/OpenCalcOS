@@ -1,11 +1,20 @@
-/* netfilter.c: look after the filters for various protocols.
- * Heavily influenced by the old firewall.c by David Bonn and Alan Cox.
- *
- * Thanks to Rob `CmdrTaco' Malda for not influencing this code in any
- * way.
- *
- * Rusty Russell (C)2000 -- This code is GPL.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/netfilter.h>
 #include <net/protocol.h>

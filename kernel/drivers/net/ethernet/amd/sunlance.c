@@ -1,72 +1,20 @@
-/* $Id: sunlance.c,v 1.112 2002/01/15 06:48:55 davem Exp $
- * lance.c: Beep/Sparc/Lance driver
- *
- *	Written 1995, 1996 by Miguel de Icaza
- * Sources:
- *	The Beep  depca driver
- *	The Beep  lance driver.
- *	The Beep  skeleton driver.
- *	The NetBSD Sparc/Lance driver.
- *	Theo de Raadt (deraadt@openbsd.org)
- *	NCR92C990 Lan Controller manual
- *
- * 1.4:
- *	Added support to run with a ledma on the Sun4m
- *
- * 1.5:
- *	Added multiple card detection.
- *
- *	 4/17/96: Burst sizes and tpe selection on sun4m by Eddie C. Dost
- *		  (ecd@skynet.be)
- *
- *	 5/15/96: auto carrier detection on sun4m by Eddie C. Dost
- *		  (ecd@skynet.be)
- *
- *	 5/17/96: lebuffer on scsi/ether cards now work David S. Miller
- *		  (davem@caip.rutgers.edu)
- *
- *	 5/29/96: override option 'tpe-link-test?', if it is 'false', as
- *		  this disables auto carrier detection on sun4m. Eddie C. Dost
- *		  (ecd@skynet.be)
- *
- * 1.7:
- *	 6/26/96: Bug fix for multiple ledmas, miguel.
- *
- * 1.8:
- *		  Stole multicast code from depca.c, fixed lance_tx.
- *
- * 1.9:
- *	 8/21/96: Fixed the multicast code (Pedro Roque)
- *
- *	 8/28/96: Send fake packet in lance_open() if auto_select is true,
- *		  so we can detect the carrier loss condition in time.
- *		  Eddie C. Dost (ecd@skynet.be)
- *
- *	 9/15/96: Align rx_buf so that eth_copy_and_sum() won't cause an
- *		  MNA trap during chksum_partial_copy(). (ecd@skynet.be)
- *
- *	11/17/96: Handle LE_C0_MERR in lance_interrupt(). (ecd@skynet.be)
- *
- *	12/22/96: Don't loop forever in lance_rx() on incomplete packets.
- *		  This was the sun4c killer. Shit, stupid bug.
- *		  (ecd@skynet.be)
- *
- * 1.10:
- *	 1/26/97: Modularize driver. (ecd@skynet.be)
- *
- * 1.11:
- *	12/27/97: Added sun4d support. (jj@sunsite.mff.cuni.cz)
- *
- * 1.12:
- * 	 11/3/99: Fixed SMP race in lance_start_xmit found by davem.
- * 	          Anton Blanchard (anton@progsoc.uts.edu.au)
- * 2.00: 11/9/99: Massive overhaul and port to new SBUS driver interfaces.
- *		  David S. Miller (davem@redhat.com)
- * 2.01:
- *      11/08/01: Use library crc32 functions (Matt_Domsch@dell.com)
- *
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #undef DEBUG_DRIVER
 
 static char lancestr[] = "LANCE";

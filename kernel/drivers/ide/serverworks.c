@@ -1,33 +1,20 @@
 /*
- * Copyright (C) 1998-2000 Michel Aubry
- * Copyright (C) 1998-2000 Andrzej Krzysztofowicz
- * Copyright (C) 1998-2000 Andre Hedrick <andre@beep-ide.org>
- * Copyright (C) 2007-2010 Bartlomiej Zolnierkiewicz
- * Portions copyright (c) 2001 Sun Microsystems
- *
- *
- * RCC/ServerWorks IDE driver for Beep
- *
- *   OSB4: `Open South Bridge' IDE Interface (fn 1)
- *         supports UDMA mode 2 (33 MB/s)
- *
- *   CSB5: `Champion South Bridge' IDE Interface (fn 1)
- *         all revisions support UDMA mode 4 (66 MB/s)
- *         revision A2.0 and up support UDMA mode 5 (100 MB/s)
- *
- *         *** The CSB5 does not provide ANY register ***
- *         *** to detect 80-conductor cable presence. ***
- *
- *   CSB6: `Champion South Bridge' IDE Interface (optional: third channel)
- *
- *   HT1000: AKA BCM5785 - Hypertransport Southbridge for Opteron systems. IDE
- *   controller same as the CSB6. Single channel ATA100 only.
- *
- * Documentation:
- *	Available under NDA only. Errata info very hard to get.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/module.h>
 #include <beep/kernel.h>

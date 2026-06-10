@@ -1,28 +1,20 @@
 /*
- *  qla_target.c SCSI LLD infrastructure for QLogic 22xx/23xx/24xx/25xx
- *
- *  based on qla2x00t.c code:
- *
- *  Copyright (C) 2004 - 2010 Vladislav Bolkhovitin <vst@vlnb.net>
- *  Copyright (C) 2004 - 2005 Leonid Stoljar
- *  Copyright (C) 2006 Nathaniel Clark <nate@misrule.us>
- *  Copyright (C) 2006 - 2010 ID7 Ltd.
- *
- *  Forward port and refactoring to modern qla2xxx and target/configfs
- *
- *  Copyright (C) 2010-2011 Nicholas A. Bellinger <nab@kernel.org>
- *
- *  This program is free software; you can redistribute it and/or
- *  modify it under the terms of the GNU General Public License
- *  as published by the Free Software Foundation, version 2
- *  of the License.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- *  GNU General Public License for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/types.h>

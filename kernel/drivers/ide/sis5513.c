@@ -1,31 +1,20 @@
 /*
- * Copyright (C) 1999-2000	Andre Hedrick <andre@beep-ide.org>
- * Copyright (C) 2002		Lionel Bouton <Lionel.Bouton@inet6.fr>, Maintainer
- * Copyright (C) 2003		Vojtech Pavlik <vojtech@suse.cz>
- * Copyright (C) 2007-2009	Bartlomiej Zolnierkiewicz
- *
- * May be copied or modified under the terms of the GNU General Public License
- *
- *
- * Thanks :
- *
- * SiS Taiwan		: for direct support and hardware.
- * Daniela Engert	: for initial ATA100 advices and numerous others.
- * John Fremlin, Manfred Spraul, Dave Morgan, Peter Kjellerstedt	:
- *			  for checking code correctness, providing patches.
- *
- *
- * Original tests and design on the SiS620 chipset.
- * ATA100 tests and design on the SiS735 chipset.
- * ATA16/33 support from specs
- * ATA133 support for SiS961/962 by L.C. Chang <lcchang@sis.com.tw>
- * ATA133 961/962/963 fixes by Vojtech Pavlik <vojtech@suse.cz>
- *
- * Documentation:
- *	SiS chipset documentation available under NDA to companies only
- *      (not to individuals).
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * The original SiS5513 comes from a SiS5511/55112/5513 chipset. The original
  * SiS5513 was also used in the SiS5596/5513 chipset. Thus if we see a SiS5511

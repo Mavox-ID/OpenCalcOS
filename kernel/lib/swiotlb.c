@@ -1,22 +1,20 @@
 /*
- * Dynamic DMA mapping support.
- *
- * This implementation is a fallback for platforms that do not support
- * I/O TLBs (aka DMA address translation hardware).
- * Copyright (C) 2000 Asit Mallick <Asit.K.Mallick@intel.com>
- * Copyright (C) 2000 Goutham Rao <goutham.rao@intel.com>
- * Copyright (C) 2000, 2003 Hewlett-Packard Co
- *	David Mosberger-Tang <davidm@hpl.hp.com>
- *
- * 03/05/07 davidm	Switch from PCI-DMA to generic device DMA API.
- * 00/12/13 davidm	Rename to swiotlb.c and add mark_clean() to avoid
- *			unnecessary i-cache flushing.
- * 04/07/.. ak		Better overflow handling. Assorted fixes.
- * 05/09/10 linville	Add support for syncing ranges, support syncing for
- *			DMA_BIDIRECTIONAL mappings, miscellaneous cleanup.
- * 08/12/11 beckyb	Add highmem support
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/cache.h>
 #include <beep/dma-mapping.h>
 #include <beep/mm.h>

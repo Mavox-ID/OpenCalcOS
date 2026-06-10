@@ -1,80 +1,20 @@
 /*
- * zbud.c - Compression buddies allocator
- *
- * Copyright (c) 2010-2012, Dan Magenheimer, Oracle Corp.
- *
- * Compression buddies ("zbud") provides for efficiently packing two
- * (or, possibly in the future, more) compressed pages ("zpages") into
- * a single "raw" pageframe and for tracking both zpages and pageframes
- * so that whole pageframes can be easily reclaimed in LRU-like order.
- * It is designed to be used in conjunction with transcendent memory
- * ("tmem"); for example separate LRU lists are maintained for persistent
- * vs. ephemeral pages.
- *
- * A zbudpage is an overlay for a struct page and thus each zbudpage
- * refers to a physical pageframe of RAM.  When the caller passes a
- * struct page from the kernel's page allocator, zbud "transforms" it
- * to a zbudpage which sets/uses a different set of fields than the
- * struct-page and thus must "untransform" it back by reinitializing
- * certain fields before the struct-page can be freed.  The fields
- * of a zbudpage include a page lock for controlling access to the
- * corresponding pageframe, and there is a size field for each zpage.
- * Each zbudpage also lives on two linked lists: a "budlist" which is
- * used to support efficient buddying of zpages; and an "lru" which
- * is used for reclaiming pageframes in approximately least-recently-used
- * order.
- *
- * A zbudpageframe is a pageframe divided up into aligned 64-byte "chunks"
- * which contain the compressed data for zero, one, or two zbuds.  Contained
- * with the compressed data is a tmem_handle which is a key to allow
- * the same data to be found via the tmem interface so the zpage can
- * be invalidated (for ephemeral pages) or repatriated to the swap cache
- * (for persistent pages).  The contents of a zbudpageframe must never
- * be accessed without holding the page lock for the corresponding
- * zbudpage and, to accomodate highmem machines, the contents may
- * only be examined or changes when kmapped.  Thus, when in use, a
- * kmapped zbudpageframe is referred to in the zbud code as "void *zbpg".
- *
- * Note that the term "zbud" refers to the combination of a zpage and
- * a tmem_handle that is stored as one of possibly two "buddied" zpages;
- * it also generically refers to this allocator... sorry for any confusion.
- *
- * A zbudref is a pointer to a struct zbudpage (which can be cast to a
- * struct page), with the LSB either cleared or set to indicate, respectively,
- * the first or second zpage in the zbudpageframe. Since a zbudref can be
- * cast to a pointer, it is used as the tmem "pampd" pointer and uniquely
- * references a stored tmem page and so is the only zbud data structure
- * externally visible to zbud.c/zbud.h.
- *
- * Since we wish to reclaim entire pageframes but zpages may be randomly
- * added and deleted to any given pageframe, we approximate LRU by
- * promoting a pageframe to MRU when a zpage is added to it, but
- * leaving it at the current place in the list when a zpage is deleted
- * from it.  As a side effect, zpages that are difficult to buddy (e.g.
- * very large paages) will be reclaimed faster than average, which seems
- * reasonable.
- *
- * In the current implementation, no more than two zpages may be stored in
- * any pageframe and no zpage ever crosses a pageframe boundary.  While
- * other zpage allocation mechanisms may allow greater density, this two
- * zpage-per-pageframe limit both ensures simple reclaim of pageframes
- * (including garbage collection of references to the contents of those
- * pageframes from tmem data structures) AND avoids the need for compaction.
- * With additional complexity, zbud could be modified to support storing
- * up to three zpages per pageframe or, to handle larger average zpages,
- * up to three zpages per pair of pageframes, but it is not clear if the
- * additional complexity would be worth it.  So consider it an exercise
- * for future developers.
- *
- * Note also that zbud does no page allocation or freeing.  This is so
- * that the caller has complete control over and, for accounting, visibility
- * into if/when pages are allocated and freed.
- *
- * Finally, note that zbud limits the size of zpages it can store; the
- * caller must check the zpage size with zbud_max_buddy_size before
- * storing it, else BUGs will result.  User beware.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/highmem.h>
 #include <beep/list.h>

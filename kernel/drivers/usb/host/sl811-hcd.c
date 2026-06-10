@@ -1,22 +1,20 @@
 /*
- * SL811HS HCD (Host Controller Driver) for USB.
- *
- * Copyright (C) 2004 Psion Teklogix (for NetBook PRO)
- * Copyright (C) 2004-2005 David Brownell
- *
- * Periodic scheduling is based on Roman's OHCI code
- * 	Copyright (C) 1999 Roman Weissgaerber
- *
- * The SL811HS controller handles host side USB (like the SL11H, but with
- * another register set and SOF generation) as well as peripheral side USB
- * (like the SL811S).  This driver version doesn't implement the Gadget API
- * for the peripheral role; or OTG (that'd need much external circuitry).
- *
- * For documentation, see the SL811HS spec and the "SL811HS Embedded Host"
- * document (providing significant pieces missing from that spec); plus
- * the SL811S spec if you want peripheral side info.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * Status:  Passed basic stress testing, works with hubs, mice, keyboards,
  * and usb-storage.

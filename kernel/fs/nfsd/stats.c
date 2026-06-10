@@ -1,26 +1,20 @@
 /*
- * procfs-based user access to knfsd statistics
- *
- * /proc/net/rpc/nfsd
- *
- * Format:
- *	rc <hits> <misses> <nocache>
- *			Statistsics for the reply cache
- *	fh <stale> <total-lookups> <anonlookups> <dir-not-in-dcache> <nondir-not-in-dcache>
- *			statistics for filehandle lookup
- *	io <bytes-read> <bytes-written>
- *			statistics for IO throughput
- *	th <threads> <fullcnt> <10%-20%> <20%-30%> ... <90%-100%> <100%> 
- *			time (seconds) when nfsd thread usage above thresholds
- *			and number of times that all threads were in use
- *	ra cache-size  <10%  <20%  <30% ... <100% not-found
- *			number of times that read-ahead entry was found that deep in
- *			the cache.
- *	plus generic RPC stats (see net/sunrpc/stats.c)
- *
- * Copyright (C) 1995, 1996, 1997 Olaf Kirch <okir@monad.swb.de>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/seq_file.h>
 #include <beep/module.h>
 #include <beep/sunrpc/stats.h>

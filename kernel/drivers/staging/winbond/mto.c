@@ -1,22 +1,20 @@
 /*
- * ============================================================================
- * MTO.C -
- *
- * Description:
- * MAC Throughput Optimization for W89C33 802.11g WLAN STA.
- *
- * The following MIB attributes or internal variables will be affected
- * while the MTO is being executed:
- *	dot11FragmentationThreshold,
- *	dot11RTSThreshold,
- *	transmission rate and PLCP preamble type,
- *	CCA mode,
- *	antenna diversity.
- *
- * Copyright (c) 2003 Winbond Electronics Corp. All rights reserved.
- * ============================================================================
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "sme_api.h"
 #include "wbhal.h"
 #include "wb35reg_f.h"

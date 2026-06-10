@@ -1,25 +1,20 @@
 /*
- *  c 2001 PPC 64 Team, IBM Corp
- *
- *      This program is free software; you can redistribute it and/or
- *      modify it under the terms of the GNU General Public License
- *      as published by the Free Software Foundation; either version
- *      2 of the License, or (at your option) any later version.
- *
- * scan-log-data driver for PPC64  Todd Inglett <tinglett@vnet.ibm.com>
- *
- * When ppc64 hardware fails the service processor dumps internal state
- * of the system.  After a reboot the operating system can access a dump
- * of this data using this driver.  A dump exists if the device-tree
- * /chosen/ibm,scan-log-data property exists.
- *
- * This driver exports /proc/powerpc/scan-log-dump which can be read.
- * The driver supports only sequential reads.
- *
- * The driver looks at a write to the driver for the single word "reset".
- * If given, the driver will reset the scanlog so the platform can free it.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/types.h>
 #include <beep/errno.h>

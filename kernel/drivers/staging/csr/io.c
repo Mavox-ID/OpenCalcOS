@@ -1,35 +1,20 @@
 /*
- * ---------------------------------------------------------------------------
- *  FILE:     io.c
- *
- *  PURPOSE:
- *      This file contains routines that the SDIO driver can call when a
- *      UniFi card is first inserted (or detected) and removed.
- *
- *      When used with sdioemb, the udev scripts (at least on Ubuntu) don't
- *      recognise a UniFi being added to the system. This is because sdioemb
- *      does not register itself as a device_driver, it uses it's own code
- *      to handle insert and remove.
- *      To have Ubuntu recognise UniFi, edit /etc/udev/rules.d/85-ifupdown.rules
- *      to change this line:
- *          SUBSYSTEM=="net", DRIVERS=="?*", GOTO="net_start"
- *      to these:
- *          #SUBSYSTEM=="net", DRIVERS=="?*", GOTO="net_start"
- *          SUBSYSTEM=="net", GOTO="net_start"
- *
- *      Then you can add a stanza to /etc/network/interfaces like this:
- *          auto eth1
- *          iface eth1 inet dhcp
- *          wpa-conf /etc/wpa_supplicant.conf
- *      This will then automatically associate when a car dis inserted.
- *
- * Copyright (C) 2006-2009 by Cambridge Silicon Radio Ltd.
- *
- * Refer to LICENSE.txt included with this source code for details on
- * the license terms.
- *
- * ---------------------------------------------------------------------------
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/proc_fs.h>
 
 #include "csr_wifi_hip_unifi.h"

@@ -1,36 +1,20 @@
 /*
- * IPVS         An implementation of the IP virtual server support for the
- *              BEEP operating system.  IPVS is now implemented as a module
- *              over the NetFilter framework. IPVS can be used to build a
- *              high-performance and highly available server based on a
- *              cluster of servers.
- *
- * Version 1,   is capable of handling both version 0 and 1 messages.
- *              Version 0 is the plain old format.
- *              Note Version 0 receivers will just drop Ver 1 messages.
- *              Version 1 is capable of handle IPv6, Persistence data,
- *              time-outs, and firewall marks.
- *              In ver.1 "ip_vs_sync_conn_options" will be sent in netw. order.
- *              Ver. 0 can be turned on by sysctl -w net.ipv4.vs.sync_version=0
- *
- * Definitions  Message: is a complete datagram
- *              Sync_conn: is a part of a Message
- *              Param Data is an option to a Sync_conn.
- *
- * Authors:     Wensong Zhang <wensong@beepvirtualserver.org>
- *
- * ip_vs_sync:  sync connection info from master load balancer to backups
- *              through multicast
- *
- * Changes:
- *	Alexandre Cassen	:	Added master & backup support at a time.
- *	Alexandre Cassen	:	Added SyncID support for incoming sync
- *					messages filtering.
- *	Justin Ossevoort	:	Fix endian problem on sync message size.
- *	Hans Schillstrom	:	Added Version 1: i.e. IPv6,
- *					Persistence support, fwmark and time-out.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 

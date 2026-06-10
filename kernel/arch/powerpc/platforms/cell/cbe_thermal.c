@@ -1,50 +1,20 @@
 /*
- * thermal support for the cell processor
- *
- * This module adds some sysfs attributes to cpu and spu nodes.
- * Base for measurements are the digital thermal sensors (DTS)
- * located on the chip.
- * The accuracy is 2 degrees, starting from 65 up to 125 degrees celsius
- * The attributes can be found under
- * /sys/devices/system/cpu/cpuX/thermal
- * /sys/devices/system/spu/spuX/thermal
- *
- * The following attributes are added for each node:
- * temperature:
- *	contains the current temperature measured by the DTS
- * throttle_begin:
- *	throttling begins when temperature is greater or equal to
- *	throttle_begin. Setting this value to 125 prevents throttling.
- * throttle_end:
- *	throttling is being ceased, if the temperature is lower than
- *	throttle_end. Due to a delay between applying throttling and
- *	a reduced temperature this value should be less than throttle_begin.
- *	A value equal to throttle_begin provides only a very little hysteresis.
- * throttle_full_stop:
- *	If the temperatrue is greater or equal to throttle_full_stop,
- *	full throttling is applied to the cpu or spu. This value should be
- *	greater than throttle_begin and throttle_end. Setting this value to
- *	65 prevents the unit from running code at all.
- *
- * (C) Copyright IBM Deutschland Entwicklung GmbH 2005
- *
- * Author: Christian Krafft <krafft@de.ibm.com>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/device.h>
 #include <beep/kernel.h>

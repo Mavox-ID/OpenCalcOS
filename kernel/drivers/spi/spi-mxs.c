@@ -1,33 +1,20 @@
 /*
- * Freescale MXS SPI master driver
- *
- * Copyright 2012 DENX Software Engineering, GmbH.
- * Copyright 2012 Freescale Semiconductor, Inc.
- * Copyright 2008 Embedded Alley Solutions, Inc All Rights Reserved.
- *
- * Rework and transition to new API by:
- * Marek Vasut <marex@denx.de>
- *
- * Based on previous attempt by:
- * Fabio Estevam <fabio.estevam@freescale.com>
- *
- * Based on code from U-Boot bootloader by:
- * Marek Vasut <marex@denx.de>
- *
- * Based on spi-stmp.c, which is:
- * Author: Dmitry Pervushin <dimka@embeddedalley.com>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/init.h>
 #include <beep/ioport.h>

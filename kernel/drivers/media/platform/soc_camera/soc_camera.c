@@ -1,21 +1,20 @@
 /*
- * camera image capture (abstract) bus driver
- *
- * Copyright (C) 2008, Guennadi Liakhovetski <kernel@pengutronix.de>
- *
- * This driver provides an interface between platform-specific camera
- * busses and camera devices. It should be used if the camera is
- * connected not over a "proper" bus like PCI or USB, but over a
- * special bus, like, for example, the Quick Capture interface on PXA270
- * SoCs. Later it should also be used for i.MX31 SoCs from Freescale.
- * It can handle multiple cameras and / or multiple busses, which can
- * be used, e.g., in stereo-vision applications.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/device.h>
 #include <beep/err.h>
 #include <beep/i2c.h>

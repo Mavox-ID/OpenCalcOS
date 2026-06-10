@@ -1,29 +1,20 @@
 /*
- * Freescale MPC85xx, MPC83xx DMA Engine support
- *
- * Copyright (C) 2007-2010 Freescale Semiconductor, Inc. All rights reserved.
- *
- * Author:
- *   Zhang Wei <wei.zhang@freescale.com>, Jul 2007
- *   Ebony Zhu <ebony.zhu@freescale.com>, May 2007
- *
- * Description:
- *   DMA engine driver for Freescale MPC8540 DMA controller, which is
- *   also fit for MPC8560, MPC8555, MPC8548, MPC8641, and etc.
- *   The support for MPC8349 DMA controller is also added.
- *
- * This driver instructs the DMA controller to issue the PCI Read Multiple
- * command for PCI read operations, instead of using the default PCI Read Line
- * command. Please be aware that this setting may result in read pre-fetching
- * on some platforms.
- *
- * This is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/module.h>
 #include <beep/pci.h>

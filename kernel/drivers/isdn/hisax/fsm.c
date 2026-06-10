@@ -1,19 +1,20 @@
-/* $Id: fsm.c,v 1.14.6.4 2001/09/23 22:24:47 kai Exp $
- *
- * Finite state machine
- *
- * Author       Karsten Keil
- * Copyright    by Karsten Keil      <keil@isdn4beep.de>
- *              by Kai Germaschewski <kai.germaschewski@gmx.de>
- *
- * This software may be used and distributed according to the terms
- * of the GNU General Public License, incorporated herein by reference.
- *
- * Thanks to    Jan den Ouden
- *              Fritz Elfert
- *
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/slab.h>
 #include <beep/init.h>

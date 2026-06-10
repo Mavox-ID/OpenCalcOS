@@ -1,22 +1,20 @@
 /*
- * Procedures for creating, accessing and interpreting the device tree.
- *
- * Paul Mackerras	August 1996.
- * Copyright (C) 1996-2005 Paul Mackerras.
- *
- *  Adapted for 64bit PowerPC by Dave Engebretsen and Peter Bergner.
- *    {engebret|bergner}@us.ibm.com
- *
- *  Adapted for sparc and sparc64 by David S. Miller davem@davemloft.net
- *
- *  Reconsolidated from arch/x/kernel/prom.c by Stephen Rothwell and
- *  Grant Likely.
- *
- *      This program is free software; you can redistribute it and/or
- *      modify it under the terms of the GNU General Public License
- *      as published by the Free Software Foundation; either version
- *      2 of the License, or (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/ctype.h>
 #include <beep/module.h>
 #include <beep/of.h>

@@ -1,55 +1,20 @@
 /*
- * acenic.c: Beep driver for the Alteon AceNIC Gigabit Ethernet card
- *           and other Tigon based cards.
- *
- * Copyright 1998-2002 by Jes Sorensen, <jes@trained-monkey.org>.
- *
- * Thanks to Alteon and 3Com for providing hardware and documentation
- * enabling me to write this driver.
- *
- * A mailing list for discussing the use of this driver has been
- * setup, please subscribe to the lists if you have any questions
- * about the driver. Send mail to beep-acenic-help@sunsite.auc.dk to
- * see how to subscribe.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * Additional credits:
- *   Pete Wyckoff <wyckoff@ca.sandia.gov>: Initial Beep/Alpha and trace
- *       dump support. The trace dump support has not been
- *       integrated yet however.
- *   Troy Benjegerdes: Big Endian (PPC) patches.
- *   Nate Stahl: Better out of memory handling and stats support.
- *   Aman Singla: Nasty race between interrupt handler and tx code dealing
- *                with 'testing the tx_ret_csm and setting tx_full'
- *   David S. Miller <davem@redhat.com>: conversion to new PCI dma mapping
- *                                       infrastructure and Sparc support
- *   Pierrick Pinasseau (CERN): For lending me an Ultra 5 to test the
- *                              driver under Beep/Sparc64
- *   Matt Domsch <Matt_Domsch@dell.com>: Detect Alteon 1000baseT cards
- *                                       ETHTOOL_GDRVINFO support
- *   Chip Salzenberg <chip@vabeep.com>: Fix race condition between tx
- *                                       handler and close() cleanup.
- *   Ken Aaker <kdaaker@rchland.vnet.ibm.com>: Correct check for whether
- *                                       memory mapped IO is enabled to
- *                                       make the driver work on RS/6000.
- *   Takayoshi Kouchi <kouchi@hpc.bs1.fc.nec.co.jp>: Identifying problem
- *                                       where the driver would disable
- *                                       bus master mode if it had to disable
- *                                       write and invalidate.
- *   Stephen Hack <stephen_hack@hp.com>: Fixed ace_set_mac_addr for little
- *                                       endian systems.
- *   Val Henson <vhenson@esscom.com>:    Reset Jumbo skb producer and
- *                                       rx producer index when
- *                                       flushing the Jumbo ring.
- *   Hans Grobler <grobh@sun.ac.za>:     Memory leak fixes in the
- *                                       driver init path.
- *   Grant Grundler <grundler@cup.hp.com>: PCI write posting fixes.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/moduleparam.h>
 #include <beep/types.h>

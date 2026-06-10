@@ -1,78 +1,20 @@
-/* beep/net/ipv4/arp.c
- *
- * Copyright (C) 1994 by Florian  La Roche
- *
- * This module implements the Address Resolution Protocol ARP (RFC 826),
- * which is used to convert IP addresses (or in the future maybe other
- * high-level addresses) into a low-level hardware address (like an Ethernet
- * address).
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version
- * 2 of the License, or (at your option) any later version.
- *
- * Fixes:
- *		Alan Cox	:	Removed the Ethernet assumptions in
- *					Florian's code
- *		Alan Cox	:	Fixed some small errors in the ARP
- *					logic
- *		Alan Cox	:	Allow >4K in /proc
- *		Alan Cox	:	Make ARP add its own protocol entry
- *		Ross Martin     :       Rewrote arp_rcv() and arp_get_info()
- *		Stephen Henson	:	Add AX25 support to arp_get_info()
- *		Alan Cox	:	Drop data when a device is downed.
- *		Alan Cox	:	Use init_timer().
- *		Alan Cox	:	Double lock fixes.
- *		Martin Seine	:	Move the arphdr structure
- *					to if_arp.h for compatibility.
- *					with BSD based programs.
- *		Andrew Tridgell :       Added ARP netmask code and
- *					re-arranged proxy handling.
- *		Alan Cox	:	Changed to use notifiers.
- *		Niibe Yutaka	:	Reply for this device or proxies only.
- *		Alan Cox	:	Don't proxy across hardware types!
- *		Jonathan Naylor :	Added support for NET/ROM.
- *		Mike Shaver     :       RFC1122 checks.
- *		Jonathan Naylor :	Only lookup the hardware address for
- *					the correct hardware type.
- *		Germano Caronni	:	Assorted subtle races.
- *		Craig Schlenter :	Don't modify permanent entry
- *					during arp_rcv.
- *		Russ Nelson	:	Tidied up a few bits.
- *		Alexey Kuznetsov:	Major changes to caching and behaviour,
- *					eg intelligent arp probing and
- *					generation
- *					of host down events.
- *		Alan Cox	:	Missing unlock in device events.
- *		Eckes		:	ARP ioctl control errors.
- *		Alexey Kuznetsov:	Arp free fix.
- *		Manuel Rodriguez:	Gratuitous ARP.
- *              Jonathan Layes  :       Added arpd support through kerneld
- *                                      message queue (960314)
- *		Mike Shaver	:	/proc/sys/net/ipv4/arp_* support
- *		Mike McLagan    :	Routing by source
- *		Stuart Cheshire	:	Metricom and grat arp fixes
- *					*** FOR 2.1 clean this up ***
- *		Lawrence V. Stefani: (08/12/96) Added FDDI support.
- *		Alan Cox	:	Took the AP1000 nasty FDDI hack and
- *					folded into the mainstream FDDI code.
- *					Ack spit, Linus how did you allow that
- *					one in...
- *		Jes Sorensen	:	Make FDDI work again in 2.1.x and
- *					clean up the APFDDI & gen. FDDI bits.
- *		Alexey Kuznetsov:	new arp state machine;
- *					now it is in net/core/neighbour.c.
- *		Krzysztof Halasa:	Added Frame Relay ARP support.
- *		Arnaldo C. Melo :	convert /proc/net/arp to seq_file
- *		Shmulik Hen:		Split arp_send to arp_create and
- *					arp_xmit so intermediate drivers like
- *					bonding can change the skb before
- *					sending (e.g. insert 8021q tag).
- *		Harald Welte	:	convert to make use of jenkins hash
- *		Jesper D. Brouer:       Proxy ARP PVLAN RFC 3069 support.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

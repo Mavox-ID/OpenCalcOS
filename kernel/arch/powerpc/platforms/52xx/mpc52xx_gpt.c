@@ -1,57 +1,20 @@
 /*
- * MPC5200 General Purpose Timer device driver
- *
- * Copyright (c) 2009 Secret Lab Technologies Ltd.
- * Copyright (c) 2008 Sascha Hauer <s.hauer@pengutronix.de>, Pengutronix
- *
- * This program is free software; you can redistribute  it and/or modify it
- * under  the terms of  the GNU General  Public License as published by the
- * Free Software Foundation;  either version 2 of the  License, or (at your
- * option) any later version.
- *
- * This file is a driver for the the General Purpose Timer (gpt) devices
- * found on the MPC5200 SoC.  Each timer has an IO pin which can be used
- * for GPIO or can be used to raise interrupts.  The timer function can
- * be used independently from the IO pin, or it can be used to control
- * output signals or measure input signals.
- *
- * This driver supports the GPIO and IRQ controller functions of the GPT
- * device.  Timer functions are not yet supported.
- *
- * The timer gpt0 can be used as watchdog (wdt).  If the wdt mode is used,
- * this prevents the use of any gpt0 gpt function (i.e. they will fail with
- * -EBUSY).  Thus, the safety wdt function always has precedence over the gpt
- * function.  If the kernel has been compiled with CONFIG_WATCHDOG_NOWAYOUT,
- * this means that gpt0 is locked in wdt mode until the next reboot - this
- * may be a requirement in safety applications.
- *
- * To use the GPIO function, the following two properties must be added
- * to the device tree node for the gpt device (typically in the .dts file
- * for the board):
- * 	gpio-controller;
- * 	#gpio-cells = < 2 >;
- * This driver will register the GPIO pin if it finds the gpio-controller
- * property in the device tree.
- *
- * To use the IRQ controller function, the following two properties must
- * be added to the device tree node for the gpt device:
- * 	interrupt-controller;
- * 	#interrupt-cells = < 1 >;
- * The IRQ controller binding only uses one cell to specify the interrupt,
- * and the IRQ flags are encoded in the cell.  A cell is not used to encode
- * the IRQ number because the GPT only has a single IRQ source.  For flags,
- * a value of '1' means rising edge sensitive and '2' means falling edge.
- *
- * The GPIO and the IRQ controller functions can be used at the same time,
- * but in this use case the IO line will only work as an input.  Trying to
- * use it as a GPIO output will not work.
- *
- * When using the GPIO line as an output, it can either be driven as normal
- * IO, or it can be an Open Collector (OC) output.  At the moment it is the
- * responsibility of either the bootloader or the platform setup code to set
- * the output mode.  This driver does not change the output mode setting.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/device.h>
 #include <beep/irq.h>
 #include <beep/interrupt.h>

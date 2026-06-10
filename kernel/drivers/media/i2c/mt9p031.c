@@ -1,17 +1,20 @@
 /*
- * Driver for MT9P031 CMOS Image Sensor from Aptina
- *
- * Copyright (C) 2011, Laurent Pinchart <laurent.pinchart@ideasonboard.com>
- * Copyright (C) 2011, Javier Martin <javier.martin@vista-silicon.com>
- * Copyright (C) 2011, Guennadi Liakhovetski <g.liakhovetski@gmx.de>
- *
- * Based on the MT9V032 driver and Bastian Hecht's code.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/delay.h>
 #include <beep/device.h>
 #include <beep/gpio.h>

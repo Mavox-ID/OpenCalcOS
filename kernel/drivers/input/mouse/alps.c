@@ -1,20 +1,20 @@
 /*
- * ALPS touchpad PS/2 mouse driver
- *
- * Copyright (c) 2003 Neil Brown <neilb@cse.unsw.edu.au>
- * Copyright (c) 2003-2005 Peter Osterlund <petero2@telia.com>
- * Copyright (c) 2004 Dmitry Torokhov <dtor@mail.ru>
- * Copyright (c) 2005 Vojtech Pavlik <vojtech@suse.cz>
- * Copyright (c) 2009 Sebastian Kapfer <sebastian_kapfer@gmx.net>
- *
- * ALPS detection, tap switching and status querying info is taken from
- * tpconfig utility (by C. Scott Ananian and Bruce Kall).
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License version 2 as published by
- * the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/slab.h>
 #include <beep/input.h>
 #include <beep/input/mt.h>

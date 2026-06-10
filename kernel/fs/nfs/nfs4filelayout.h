@@ -1,32 +1,20 @@
 /*
- *  NFSv4 file layout driver data structures.
- *
- *  Copyright (c) 2002
- *  The Regents of the University of Michigan
- *  All Rights Reserved
- *
- *  Dean Hildebrand <dhildebz@umich.edu>
- *
- *  Permission is granted to use, copy, create derivative works, and
- *  redistribute this software and such derivative works for any purpose,
- *  so long as the name of the University of Michigan is not used in
- *  any advertising or publicity pertaining to the use or distribution
- *  of this software without specific, written prior authorization. If
- *  the above copyright notice or any other identification of the
- *  University of Michigan is included in any copy of any portion of
- *  this software, then the disclaimer below must also be included.
- *
- *  This software is provided as is, without representation or warranty
- *  of any kind either express or implied, including without limitation
- *  the implied warranties of merchantability, fitness for a particular
- *  purpose, or noninfringement.  The Regents of the University of
- *  Michigan shall not be liable for any damages, including special,
- *  indirect, incidental, or consequential damages, with respect to any
- *  claim arising out of or in connection with the use of the software,
- *  even if it has been or is hereafter advised of the possibility of
- *  such damages.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef FS_NFS_NFS4FILELAYOUT_H
 #define FS_NFS_NFS4FILELAYOUT_H
 

@@ -1,16 +1,20 @@
 /*
- *  dir.c
- *
- *  Copyright (C) 1995, 1996 by Volker Lendecke
- *  Modified for big endian by J.F. Chadima and David S. Miller
- *  Modified 1997 Peter Waltenberg, Bill Hawes, David Woodhouse for 2.1 dcache
- *  Modified 1998, 1999 Wolfram Pienkoss for NLS
- *  Modified 1999 Wolfram Pienkoss for directory caching
- *  Modified 2000 Ben Harris, University of Cambridge for NFS NS meta-info
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/time.h>
 #include <beep/errno.h>
 #include <beep/stat.h>

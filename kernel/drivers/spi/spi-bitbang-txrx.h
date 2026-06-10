@@ -1,21 +1,20 @@
 /*
- * Mix this utility code with some glue code to get one of several types of
- * simple SPI master driver.  Two do polled word-at-a-time I/O:
- *
- *   -	GPIO/parport bitbangers.  Provide chipselect() and txrx_word[](),
- *	expanding the per-word routines from the inline templates below.
- *
- *   -	Drivers for controllers resembling bare shift registers.  Provide
- *	chipselect() and txrx_word[](), with custom setup()/cleanup() methods
- *	that use your controller's clock and chipselect registers.
- *
- * Some hardware works well with requests at spi_transfer scope:
- *
- *   -	Drivers leveraging smarter hardware, with fifos or DMA; or for half
- *	duplex (MicroWire) controllers.  Provide chipselect() and txrx_bufs(),
- *	and custom setup()/cleanup() methods.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * The code that knows what GPIO pins do what should have declared four
  * functions, ideally as inlines, before including this header:

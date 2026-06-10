@@ -1,28 +1,20 @@
 /*
- *  Copyright (C) 1991, 1992  Linus Torvalds
- *
- * This is the low-level hd interrupt support. It traverses the
- * request-list, using interrupts to jump between functions. As
- * all the functions are called within interrupts, we may not
- * sleep. Special care is recommended.
- *
- *  modified by Drew Eckhardt to check nr of hd's from the CMOS.
- *
- *  Thanks to Branko Lankester, lankeste@fwi.uva.nl, who found a bug
- *  in the early extended-partition checks and added DM partitions
- *
- *  IRQ-unmask, drive-id, multiple-mode, support for ">16 heads",
- *  and general streamlining by Mark Lord.
- *
- *  Removed 99% of above. Use Mark's ide driver for those options.
- *  This is now a lightweight ST-506 driver. (Paul Gortmaker)
- *
- *  Modified 1995 Russell King for ARM processor.
- *
- *  Bugfix: max_sectors must be <= 255 or the wheels tend to come
- *  off in a hurry once you queue things up - Paul G. 02/2001
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* Uncomment the following if you want verbose error reports. */
 /* #define VERBOSE_ERRORS */
 

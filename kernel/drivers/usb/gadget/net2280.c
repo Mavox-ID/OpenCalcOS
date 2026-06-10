@@ -1,27 +1,20 @@
 /*
- * Driver for the PLX NET2280 USB device controller.
- * Specs and errata are available from <http://www.plxtech.com>.
- *
- * PLX Technology Inc. (formerly NetChip Technology) supported the
- * development of this driver.
- *
- *
- * CODE STATUS HIGHLIGHTS
- *
- * This driver should work well with most "gadget" drivers, including
- * the Mass Storage, Serial, and Ethernet/RNDIS gadget drivers
- * as well as Gadget Zero and Gadgetfs.
- *
- * DMA is enabled by default.  Drivers using transfer queues might use
- * DMA chaining to remove IRQ latencies between transfers.  (Except when
- * short OUT transfers happen.)  Drivers can use the req->no_interrupt
- * hint to completely eliminate some IRQs, if a later IRQ is guaranteed
- * and DMA chaining is enabled.
- *
- * Note that almost all the errata workarounds here are only needed for
- * rev1 chips.  Rev1a silicon (0110) fixes almost all of them.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * Copyright (C) 2003 David Brownell
  * Copyright (C) 2003-2005 PLX Technology, Inc.

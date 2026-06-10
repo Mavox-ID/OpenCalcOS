@@ -1,65 +1,20 @@
 /*
- * slip.c	This module implements the SLIP protocol for kernel-based
- *		devices like TTY.  It interfaces between a raw TTY, and the
- *		kernel's INET protocol layers.
- *
- * Version:	@(#)slip.c	0.8.3	12/24/94
- *
- * Authors:	Laurence Culhane, <loz@holmes.demon.co.uk>
- *		Fred N. van Kempen, <waltje@uwalt.nl.mugnet.org>
- *
- * Fixes:
- *		Alan Cox	: 	Sanity checks and avoid tx overruns.
- *					Has a new sl->mtu field.
- *		Alan Cox	: 	Found cause of overrun. ifconfig sl0
- *					mtu upwards. Driver now spots this
- *					and grows/shrinks its buffers(hack!).
- *					Memory leak if you run out of memory
- *					setting up a slip driver fixed.
- *		Matt Dillon	:	Printable slip (borrowed from NET2E)
- *	Pauline Middelink	:	Slip driver fixes.
- *		Alan Cox	:	Honours the old SL_COMPRESSED flag
- *		Alan Cox	:	KISS AX.25 and AXUI IP support
- *		Michael Riepe	:	Automatic CSLIP recognition added
- *		Charles Hedrick :	CSLIP header length problem fix.
- *		Alan Cox	:	Corrected non-IP cases of the above.
- *		Alan Cox	:	Now uses hardware type as per FvK.
- *		Alan Cox	:	Default to 192.168.0.0 (RFC 1597)
- *		A.N.Kuznetsov	:	dev_tint() recursion fix.
- *	Dmitry Gorodchanin	:	SLIP memory leaks
- *      Dmitry Gorodchanin      :       Code cleanup. Reduce tty driver
- *                                      buffering from 4096 to 256 bytes.
- *                                      Improving SLIP response time.
- *                                      CONFIG_SLIP_MODE_SLIP6.
- *                                      ifconfig sl? up & down now works
- *					correctly.
- *					Modularization.
- *              Alan Cox        :       Oops - fix AX.25 buffer lengths
- *      Dmitry Gorodchanin      :       Even more cleanups. Preserve CSLIP
- *                                      statistics. Include CSLIP code only
- *                                      if it really needed.
- *		Alan Cox	:	Free slhc buffers in the right place.
- *		Alan Cox	:	Allow for digipeated IP over AX.25
- *		Matti Aarnio	:	Dynamic SLIP devices, with ideas taken
- *					from Jim Freeman's <jfree@caldera.com>
- *					dynamic PPP devices.  We do NOT kfree()
- *					device entries, just reg./unreg. them
- *					as they are needed.  We kfree() them
- *					at module cleanup.
- *					With MODULE-loading ``insmod'', user
- *					can issue parameter:  slip_maxdev=1024
- *					(Or how much he/she wants.. Default
- *					is 256)
- *	Stanislav Voronyi	:	Slip line checking, with ideas taken
- *					from multislip BSDI driver which was
- *					written by Igor Chechik, RELCOM Corp.
- *					Only algorithms have been ported to
- *					Beep SLIP driver.
- *	Vitaly E. Lavrov	:	Sane behaviour on tty hangup.
- *	Alexey Kuznetsov	:	Cleanup interfaces to tty & netdevice
- *					modules.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define SL_CHECK_TRANSMIT
 #include <beep/module.h>
 #include <beep/moduleparam.h>

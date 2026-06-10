@@ -1,36 +1,20 @@
-/*------------------------------------------------------------------------
- . smc91x.h - macros for SMSC's 91C9x/91C1xx single-chip Ethernet device.
- .
- . Copyright (C) 1996 by Erik Stahlman
- . Copyright (C) 2001 Standard Microsystems Corporation
- .	Developed by Simple Network Magic Corporation
- . Copyright (C) 2003 Monta Vista Software, Inc.
- .	Unified SMC91x driver by Nicolas Pitre
- .
- . This program is free software; you can redistribute it and/or modify
- . it under the terms of the GNU General Public License as published by
- . the Free Software Foundation; either version 2 of the License, or
- . (at your option) any later version.
- .
- . This program is distributed in the hope that it will be useful,
- . but WITHOUT ANY WARRANTY; without even the implied warranty of
- . MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- . GNU General Public License for more details.
- .
- . You should have received a copy of the GNU General Public License
- . along with this program; if not, write to the Free Software
- . Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .
- . Information contained in this file was obtained from the LAN91C111
- . manual from SMC.  To get a copy, if you really want one, you can find
- . information under www.smsc.com.
- .
- . Authors
- .	Erik Stahlman		<erik@vt.edu>
- .	Daris A Nevil		<dnevil@snmc.com>
- .	Nicolas Pitre 		<nico@fluxnic.net>
- .
- ---------------------------------------------------------------------------*/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _SMC91X_H_
 #define _SMC91X_H_
 

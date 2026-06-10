@@ -1,49 +1,20 @@
 /*
- * AIRcable USB Bluetooth Dongle Driver.
- *
- * Copyright (C) 2010 Johan Hovold <jhovold@gmail.com>
- * Copyright (C) 2006 Manuel Francisco Naranjo (naranjo.manuel@gmail.com)
- *
- * This program is free software; you can redistribute it and/or modify it under
- * the terms of the GNU General Public License version 2 as published by the
- * Free Software Foundation.
- *
- * The device works as an standard CDC device, it has 2 interfaces, the first
- * one is for firmware access and the second is the serial one.
- * The protocol is very simply, there are two posibilities reading or writing.
- * When writing the first urb must have a Header that starts with 0x20 0x29 the
- * next two bytes must say how much data will be sended.
- * When reading the process is almost equal except that the header starts with
- * 0x00 0x20.
- *
- * The device simply need some stuff to understand data coming from the usb
- * buffer: The First and Second byte is used for a Header, the Third and Fourth
- * tells the  device the amount of information the package holds.
- * Packages are 60 bytes long Header Stuff.
- * When writing to the device the first two bytes of the header are 0x20 0x29
- * When reading the bytes are 0x00 0x20, or 0x00 0x10, there is an strange
- * situation, when too much data arrives to the device because it sends the data
- * but with out the header. I will use a simply hack to override this situation,
- * if there is data coming that does not contain any header, then that is data
- * that must go directly to the tty, as there is no documentation about if there
- * is any other control code, I will simply check for the first
- * one.
- *
- * The driver registers himself with the USB-serial core and the USB Core. I had
- * to implement a probe function against USB-serial, because other way, the
- * driver was attaching himself to both interfaces. I have tryed with different
- * configurations of usb_serial_driver with out exit, only the probe function
- * could handle this correctly.
- *
- * I have taken some info from a Greg Kroah-Hartman article:
- * http://www.beepjournal.com/article/6573
- * And from Beep Device Driver Kit CD, which is a great work, the authors taken
- * the work to recompile lots of information an knowladge in drivers development
- * and made it all avaible inside a cd.
- * URL: http://kernel.org/pub/beep/kernel/people/gregkh/ddk/
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <asm/unaligned.h>
 #include <beep/tty.h>
 #include <beep/slab.h>

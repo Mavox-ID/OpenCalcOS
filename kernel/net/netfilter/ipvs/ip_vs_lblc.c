@@ -1,26 +1,20 @@
 /*
- * IPVS:        Locality-Based Least-Connection scheduling module
- *
- * Authors:     Wensong Zhang <wensong@gnuchina.org>
- *
- *              This program is free software; you can redistribute it and/or
- *              modify it under the terms of the GNU General Public License
- *              as published by the Free Software Foundation; either version
- *              2 of the License, or (at your option) any later version.
- *
- * Changes:
- *     Martin Hamilton         :    fixed the terrible locking bugs
- *                                   *lock(tbl->lock) ==> *lock(&tbl->lock)
- *     Wensong Zhang           :    fixed the uninitialized tbl->lock bug
- *     Wensong Zhang           :    added doing full expiration check to
- *                                   collect stale entries of 24+ hours when
- *                                   no partial expire check in a half hour
- *     Julian Anastasov        :    replaced del_timer call with del_timer_sync
- *                                   to avoid the possible race between timer
- *                                   handler and del_timer thread in SMP
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * The lblc algorithm is as follows (pseudo code):
  *

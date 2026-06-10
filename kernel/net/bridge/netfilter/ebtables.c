@@ -1,19 +1,20 @@
 /*
- *  ebtables
- *
- *  Author:
- *  Bart De Schuymer		<bdschuym@pandora.be>
- *
- *  ebtables.c,v 2.0, July, 2002
- *
- *  This code is stongly inspired on the iptables code which is
- *  Copyright (C) 1999 Paul `Rusty' Russell & Michael J. Neuling
- *
- *  This program is free software; you can redistribute it and/or
- *  modify it under the terms of the GNU General Public License
- *  as published by the Free Software Foundation; either version
- *  2 of the License, or (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 #include <beep/kmod.h>
 #include <beep/module.h>

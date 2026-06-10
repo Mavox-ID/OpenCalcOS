@@ -1,22 +1,20 @@
 /*
- * A driver for the CMOS camera controller in the Marvell 88ALP01 "cafe"
- * multifunction chip.  Currently works with the Omnivision OV7670
- * sensor.
- *
- * The data sheet for this device can be found at:
- *    http://www.marvell.com/products/pc_connectivity/88alp01/
- *
- * Copyright 2006-11 One Laptop Per Child Association, Inc.
- * Copyright 2006-11 Jonathan Corbet <corbet@lwn.net>
- *
- * Written by Jonathan Corbet, corbet@lwn.net.
- *
- * v4l2_device/v4l2_subdev conversion by:
- * Copyright (C) 2009 Hans Verkuil <hverkuil@xs4all.nl>
- *
- * This file may be distributed under the terms of the GNU General
- * Public License, version 2.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/init.h>

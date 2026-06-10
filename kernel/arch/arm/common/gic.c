@@ -1,27 +1,20 @@
 /*
- *  beep/arch/arm/common/gic.c
- *
- *  Copyright (C) 2002 ARM Limited, All Rights Reserved.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * Interrupt architecture for the GIC:
- *
- * o There is one Interrupt Distributor, which receives interrupts
- *   from system devices and sends them to the Interrupt Controllers.
- *
- * o There is one CPU Interface per CPU, which sends interrupts sent
- *   by the Distributor, and interrupts generated locally, to the
- *   associated CPU. The base address of the CPU interface is usually
- *   aliased so that the same address points to different chips depending
- *   on the CPU it is accessed from.
- *
- * Note that IRQs 0-31 are special - they are local to each CPU.
- * As such, the enable set/clear, pending set/clear and active bit
- * registers are banked per-cpu for these sources.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/kernel.h>
 #include <beep/err.h>

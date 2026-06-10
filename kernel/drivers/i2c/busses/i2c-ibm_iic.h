@@ -1,24 +1,20 @@
 /*
- * drivers/i2c/busses/i2c-ibm_iic.h
- *
- * Support for the IIC peripheral on IBM PPC 4xx
- *
- * Copyright (c) 2003 Zultys Technologies.
- * Eugene Surovegin <eugene.surovegin@zultys.com> or <ebs@ebshome.net>
- *
- * Based on original work by
- * 	Ian DaSilva  <idasilva@mvista.com>
- *      Armin Kuster <akuster@mvista.com>
- * 	Matt Porter  <mporter@mvista.com>
- *
- *      Copyright 2000-2003 MontaVista Software Inc.
- *
- * This program is free software; you can redistribute  it and/or modify it
- * under  the terms of  the GNU General  Public License as published by the
- * Free Software Foundation;  either version 2 of the  License, or (at your
- * option) any later version.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __I2C_IBM_IIC_H_
 #define __I2C_IBM_IIC_H_
 

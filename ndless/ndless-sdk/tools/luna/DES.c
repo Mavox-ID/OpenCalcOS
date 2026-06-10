@@ -231,3 +231,23 @@ void DES_ecb3_encrypt(const DES_cblock *input, DES_cblock *output,
   l2c(l0, out);
   l2c(l1, out);
 }
+
+/* Stub functions for PKware encryption (not used when NOCRYPT is defined) */
+#ifndef NOCRYPT
+unsigned int crypthead(const char *passwd, unsigned char *buf, 
+                      unsigned int bufSize, unsigned int *keys,
+                      const unsigned long *crcTable, unsigned long crc)
+{
+  /* Generate random header for PKware encryption */
+  /* This is a stub implementation */
+  return 0;
+}
+
+unsigned char zencode(unsigned int *keys, const unsigned long *crcTable,
+                     unsigned char c, int t)
+{
+  /* Encode a byte for PKware encryption */
+  /* This is a stub implementation */
+  return c;
+}
+#endif

@@ -1,15 +1,20 @@
 /*
- * Memory subsystem support
- *
- * Written by Matt Tolentino <matthew.e.tolentino@intel.com>
- *            Dave Hansen <haveblue@us.ibm.com>
- *
- * This file provides the necessary infrastructure to represent
- * a SPARSEMEM-memory-model system's physical memory in /sysfs.
- * All arch-independent code that assumes MEMORY_HOTPLUG requires
- * SPARSEMEM should be contained here, or in mm/memory_hotplug.c.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/topology.h>

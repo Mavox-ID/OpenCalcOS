@@ -1,11 +1,20 @@
-/*P:500
- * Just as userspace programs request kernel operations through a system
- * call, the Guest requests Host operations through a "hypercall".  You might
- * notice this nomenclature doesn't really follow any logic, but the name has
- * been around for long enough that we're stuck with it.  As you'd expect, this
- * code is basically a one big switch statement.
-:*/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*  Copyright (C) 2006 Rusty Russell IBM Corporation
 
     This program is free software; you can redistribute it and/or modify

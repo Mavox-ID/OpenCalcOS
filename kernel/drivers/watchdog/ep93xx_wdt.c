@@ -1,31 +1,20 @@
 /*
- * Watchdog driver for Cirrus Logic EP93xx family of devices.
- *
- * Copyright (c) 2004 Ray Lehtiniemi
- * Copyright (c) 2006 Tower Technologies
- * Based on ep93xx driver, bits from alim7101_wdt.c
- *
- * Authors: Ray Lehtiniemi <rayl@mail.com>,
- *	Alessandro Zummo <a.zummo@towertech.it>
- *
- * Copyright (c) 2012 H Hartley Sweeten <hsweeten@visionengravers.com>
- *	Convert to a platform device and use the watchdog framework API
- *
- * This file is licensed under the terms of the GNU General Public
- * License version 2. This program is licensed "as is" without any
- * warranty of any kind, whether express or implied.
- *
- * This watchdog fires after 250msec, which is a too short interval
- * for us to rely on the user space daemon alone. So we ping the
- * wdt each ~200msec and eventually stop doing it if the user space
- * daemon dies.
- *
- * TODO:
- *
- *	- Test last reset from watchdog status
- *	- Add a few missing ioctls
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/platform_device.h>
 #include <beep/module.h>
 #include <beep/miscdevice.h>

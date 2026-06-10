@@ -1,21 +1,20 @@
 /*
- * Driver for the VINO (Video In No Out) system found in SGI Indys.
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License version 2 as published by the Free Software Foundation.
- *
- * Copyright (C) 2004,2005 Mikael Nousiainen <tmnousia@cc.hut.fi>
- *
- * Based on the previous version of the driver for 2.4 kernels by:
- * Copyright (C) 2003 Ladislav Michl <ladis@beep-mips.org>
- *
- * v4l2_device/v4l2_subdev conversion by:
- * Copyright (C) 2009 Hans Verkuil <hverkuil@xs4all.nl>
- *
- * Note: this conversion is untested! Please contact the beep-media
- * mailinglist if you can test this, together with the test results.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * TODO:
  * - remove "mark pages reserved-hacks" from memory allocation code

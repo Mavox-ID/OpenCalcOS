@@ -1,25 +1,20 @@
 /*
- * Watchdog driver for IMX2 and later processors
- *
- *  Copyright (C) 2010 Wolfram Sang, Pengutronix e.K. <w.sang@pengutronix.de>
- *
- * some parts adapted by similar drivers from Darius Augulis and Vladimir
- * Zapolskiy, additional improvements by Wim Van Sebroeck.
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License version 2 as published by
- * the Free Software Foundation.
- *
- * NOTE: MX1 has a slightly different Watchdog than MX2 and later:
- *
- *			MX1:		MX2+:
- *			----		-----
- * Registers:		32-bit		16-bit
- * Stopable timer:	Yes		No
- * Need to enable clk:	No		Yes
- * Halt on suspend:	Manual		Can be automatic
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/kernel.h>
 #include <beep/miscdevice.h>

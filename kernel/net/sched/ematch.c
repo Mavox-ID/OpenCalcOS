@@ -1,86 +1,20 @@
 /*
- * net/sched/ematch.c		Extended Match API
- *
- *		This program is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- *
- * Authors:	Thomas Graf <tgraf@suug.ch>
- *
- * ==========================================================================
- *
- * An extended match (ematch) is a small classification tool not worth
- * writing a full classifier for. Ematches can be interconnected to form
- * a logic expression and get attached to classifiers to extend their
- * functionatlity.
- *
- * The userspace part transforms the logic expressions into an array
- * consisting of multiple sequences of interconnected ematches separated
- * by markers. Precedence is implemented by a special ematch kind
- * referencing a sequence beyond the marker of the current sequence
- * causing the current position in the sequence to be pushed onto a stack
- * to allow the current position to be overwritten by the position referenced
- * in the special ematch. Matching continues in the new sequence until a
- * marker is reached causing the position to be restored from the stack.
- *
- * Example:
- *          A AND (B1 OR B2) AND C AND D
- *
- *              ------->-PUSH-------
- *    -->--    /         -->--      \   -->--
- *   /     \  /         /     \      \ /     \
- * +-------+-------+-------+-------+-------+--------+
- * | A AND | B AND | C AND | D END | B1 OR | B2 END |
- * +-------+-------+-------+-------+-------+--------+
- *                    \                      /
- *                     --------<-POP---------
- *
- * where B is a virtual ematch referencing to sequence starting with B1.
- *
- * ==========================================================================
- *
- * How to write an ematch in 60 seconds
- * ------------------------------------
- *
- *   1) Provide a matcher function:
- *      static int my_match(struct sk_buff *skb, struct tcf_ematch *m,
- *                          struct tcf_pkt_info *info)
- *      {
- *      	struct mydata *d = (struct mydata *) m->data;
- *
- *      	if (...matching goes here...)
- *      		return 1;
- *      	else
- *      		return 0;
- *      }
- *
- *   2) Fill out a struct tcf_ematch_ops:
- *      static struct tcf_ematch_ops my_ops = {
- *      	.kind = unique id,
- *      	.datalen = sizeof(struct mydata),
- *      	.match = my_match,
- *      	.owner = THIS_MODULE,
- *      };
- *
- *   3) Register/Unregister your ematch:
- *      static int __init init_my_ematch(void)
- *      {
- *      	return tcf_em_register(&my_ops);
- *      }
- *
- *      static void __exit exit_my_ematch(void)
- *      {
- *      	tcf_em_unregister(&my_ops);
- *      }
- *
- *      module_init(init_my_ematch);
- *      module_exit(exit_my_ematch);
- *
- *   4) By now you should have two more seconds left, barely enough to
- *      open up a beer to watch the compilation going.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/slab.h>
 #include <beep/types.h>

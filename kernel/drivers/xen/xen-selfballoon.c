@@ -1,72 +1,20 @@
-/******************************************************************************
- * Xen selfballoon driver (and optional frontswap self-shrinking driver)
- *
- * Copyright (c) 2009-2011, Dan Magenheimer, Oracle Corp.
- *
- * This code complements the cleancache and frontswap patchsets to optimize
- * support for Xen Transcendent Memory ("tmem").  The policy it implements
- * is rudimentary and will likely improve over time, but it does work well
- * enough today.
- *
- * Two functionalities are implemented here which both use "control theory"
- * (feedback) to optimize memory utilization. In a virtualized environment
- * such as Xen, RAM is often a scarce resource and we would like to ensure
- * that each of a possibly large number of virtual machines is using RAM
- * efficiently, i.e. using as little as possible when under light load
- * and obtaining as much as possible when memory demands are high.
- * Since RAM needs vary highly dynamically and sometimes dramatically,
- * "hysteresis" is used, that is, memory target is determined not just
- * on current data but also on past data stored in the system.
- *
- * "Selfballooning" creates memory pressure by managing the Xen balloon
- * driver to decrease and increase available kernel memory, driven
- * largely by the target value of "Committed_AS" (see /proc/meminfo).
- * Since Committed_AS does not account for clean mapped pages (i.e. pages
- * in RAM that are identical to pages on disk), selfballooning has the
- * affect of pushing less frequently used clean pagecache pages out of
- * kernel RAM and, presumably using cleancache, into Xen tmem where
- * Xen can more efficiently optimize RAM utilization for such pages.
- *
- * When kernel memory demand unexpectedly increases faster than Xen, via
- * the selfballoon driver, is able to (or chooses to) provide usable RAM,
- * the kernel may invoke swapping.  In most cases, frontswap is able
- * to absorb this swapping into Xen tmem.  However, due to the fact
- * that the kernel swap subsystem assumes swapping occurs to a disk,
- * swapped pages may sit on the disk for a very long time; even if
- * the kernel knows the page will never be used again.  This is because
- * the disk space costs very little and can be overwritten when
- * necessary.  When such stale pages are in frontswap, however, they
- * are taking up valuable real estate.  "Frontswap selfshrinking" works
- * to resolve this:  When frontswap activity is otherwise stable
- * and the guest kernel is not under memory pressure, the "frontswap
- * selfshrinking" accounts for this by providing pressure to remove some
- * pages from frontswap and return them to kernel memory.
- *
- * For both "selfballooning" and "frontswap-selfshrinking", a worker
- * thread is used and sysfs tunables are provided to adjust the frequency
- * and rate of adjustments to achieve the goal, as well as to disable one
- * or both functions independently.
- *
- * While some argue that this functionality can and should be implemented
- * in userspace, it has been observed that bad things happen (e.g. OOMs).
- *
- * System configuration note: Selfballooning should not be enabled on
- * systems without a sufficiently large swap device configured; for best
- * results, it is recommended that total swap be increased by the size
- * of the guest memory.  Also, while technically not required to be
- * configured, it is highly recommended that frontswap also be configured
- * and enabled when selfballooning is running.  So, selfballooning
- * is disabled by default if frontswap is not configured and can only
- * be enabled with the "selfballooning" kernel boot option; similarly
- * selfballooning is enabled by default if frontswap is configured and
- * can be disabled with the "noselfballooning" kernel boot option.  Finally,
- * when frontswap is configured, frontswap-selfshrinking can be disabled
- * with the "noselfshrink" kernel boot option.
- *
- * Selfballooning is disallowed in domain0 and force-disabled.
- *
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/bootmem.h>
 #include <beep/swap.h>

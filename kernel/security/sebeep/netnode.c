@@ -1,19 +1,20 @@
 /*
- * Network node table
- *
- * SEBeep must keep a mapping of network nodes to labels/SIDs.  This
- * mapping is maintained as part of the normal policy but a fast cache is
- * needed to reduce the lookup overhead since most of these queries happen on
- * a per-packet basis.
- *
- * Author: Paul Moore <paul@paul-moore.com>
- *
- * This code is heavily based on the "netif" concept originally developed by
- * James Morris <jmorris@redhat.com>
- *   (see security/sebeep/netif.c for more information)
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * (c) Copyright Hewlett-Packard Development Company, L.P., 2007
  *

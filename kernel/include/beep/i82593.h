@@ -1,36 +1,20 @@
 /*
- * Definitions for Intel 82593 CSMA/CD Core LAN Controller
- * The definitions are taken from the 1992 users manual with Intel
- * order number 297125-001.
- *
- * /usr/src/pc/RCS/i82593.h,v 1.1 1996/07/17 15:23:12 root Exp
- *
- * Copyright 1994, Anders Klemets <klemets@it.kth.se>
- *
- * HISTORY
- * i82593.h,v
- * Revision 1.4  2005/11/4  09:15:00  baroniunas
- * Modified copyright with permission of author as follows:
- *
- *   "If I82539.H is the only file with my copyright statement
- *    that is included in the Source Forge project, then you have
- *    my approval to change the copyright statement to be a GPL
- *    license, in the way you proposed on October 10."
- *
- * Revision 1.1  1996/07/17 15:23:12  root
- * Initial revision
- *
- * Revision 1.3  1995/04/05  15:13:58  adj
- * Initial alpha release
- *
- * Revision 1.2  1994/06/16  23:57:31  klemets
- * Mirrored all the fields in the configuration block.
- *
- * Revision 1.1  1994/06/02  20:25:34  klemets
- * Initial revision
- *
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef	_I82593_H
 #define	_I82593_H
 

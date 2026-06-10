@@ -1,38 +1,20 @@
 /*
- * cp1emu.c: a MIPS coprocessor 1 (fpu) instruction emulator
- *
- * MIPS floating point support
- * Copyright (C) 1994-2000 Algorithmics Ltd.
- *
- * Kevin D. Kissell, kevink@mips.com and Carsten Langgaard, carstenl@mips.com
- * Copyright (C) 2000  MIPS Technologies, Inc.
- *
- *  This program is free software; you can distribute it and/or modify it
- *  under the terms of the GNU General Public License (Version 2) as
- *  published by the Free Software Foundation.
- *
- *  This program is distributed in the hope it will be useful, but WITHOUT
- *  ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
- *  FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
- *  for more details.
- *
- *  You should have received a copy of the GNU General Public License along
- *  with this program; if not, write to the Free Software Foundation, Inc.,
- *  59 Temple Place - Suite 330, Boston MA 02111-1307, USA.
- *
- * A complete emulator for MIPS coprocessor 1 instructions.  This is
- * required for #float(switch) or #float(trap), where it catches all
- * COP1 instructions via the "CoProcessor Unusable" exception.
- *
- * More surprisingly it is also required for #float(ieee), to help out
- * the hardware fpu at the boundaries of the IEEE-754 representation
- * (denormalised values, infinities, underflow, etc).  It is made
- * quite nasty because emulation of some non-COP1 instructions is
- * required, e.g. in branch delay slots.
- *
- * Note if you know that you won't have an fpu, then you'll get much
- * better performance by compiling with -msoft-float!
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/sched.h>
 #include <beep/module.h>
 #include <beep/debugfs.h>

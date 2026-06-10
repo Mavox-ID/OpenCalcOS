@@ -1,184 +1,20 @@
-/************************************************************************
- *	FILE NAME : TMSCSIM.C						*
- *	     BY   : C.L. Huang,  ching@tekram.com.tw			*
- *	Description: Device Driver for Tekram DC-390(T) PCI SCSI	*
- *		     Bus Master Host Adapter				*
- * (C)Copyright 1995-1996 Tekram Technology Co., Ltd.			*
- ************************************************************************
- * (C) Copyright: put under GNU GPL in 10/96				*
- *				(see Documentation/scsi/tmscsim.txt)	*
- ************************************************************************
- * $Id: tmscsim.c,v 2.60.2.30 2000/12/20 01:07:12 garloff Exp $		*
- *	Enhancements and bugfixes by					*
- *	Kurt Garloff <kurt@garloff.de>	<garloff@suse.de>		*
- ************************************************************************
- *	HISTORY:							*
- *									*
- *	REV#	DATE	NAME	DESCRIPTION				*
- *	1.00  96/04/24	CLH	First release				*
- *	1.01  96/06/12	CLH	Fixed bug of Media Change for Removable *
- *				Device, scan all LUN. Support Pre2.0.10 *
- *	1.02  96/06/18	CLH	Fixed bug of Command timeout ...	*
- *	1.03  96/09/25	KG	Added tmscsim_proc_info()		*
- *	1.04  96/10/11	CLH	Updating for support KV 2.0.x		*
- *	1.05  96/10/18	KG	Fixed bug in DC390_abort(null ptr deref)*
- *	1.06  96/10/25	KG	Fixed module support			*
- *	1.07  96/11/09	KG	Fixed tmscsim_proc_info()		*
- *	1.08  96/11/18	KG	Fixed null ptr in DC390_Disconnect()	*
- *	1.09  96/11/30	KG	Added register the allocated IO space	*
- *	1.10  96/12/05	CLH	Modified tmscsim_proc_info(), and reset *
- *				pending interrupt in DC390_detect()	*
- *	1.11  97/02/05	KG/CLH	Fixeds problem with partitions greater	*
- *				than 1GB				*
- *	1.12  98/02/15  MJ      Rewritten PCI probing			*
- *	1.13  98/04/08	KG	Support for non DC390, __initfunc decls,*
- *				changed max devs from 10 to 16		*
- *	1.14a 98/05/05	KG	Dynamic DCB allocation, add-single-dev	*
- *				for LUNs if LUN_SCAN (BIOS) not set	*
- *				runtime config using /proc interface	*
- *	1.14b 98/05/06	KG	eliminated cli (); sti (); spinlocks	*
- *	1.14c 98/05/07	KG	2.0.x compatibility			*
- *	1.20a 98/05/07	KG	changed names of funcs to be consistent *
- *				DC390_ (entry points), dc390_ (internal)*
- *				reworked locking			*
- *	1.20b 98/05/12	KG	bugs: version, kfree, _ctmp		*
- *				debug output				*
- *	1.20c 98/05/12	KG	bugs: kfree, parsing, EEpromDefaults	*
- *	1.20d 98/05/14	KG	bugs: list linkage, clear flag after  	*
- *				reset on startup, code cleanup		*
- *	1.20e 98/05/15	KG	spinlock comments, name space cleanup	*
- *				pLastDCB now part of ACB structure	*
- *				added stats, timeout for 2.1, TagQ bug	*
- *				RESET and INQUIRY interface commands	*
- *	1.20f 98/05/18	KG	spinlocks fixes, max_lun fix, free DCBs	*
- *				for missing LUNs, pending int		*
- *	1.20g 98/05/19	KG	Clean up: Avoid short			*
- *	1.20h 98/05/21	KG	Remove AdaptSCSIID, max_lun ...		*
- *	1.20i 98/05/21	KG	Aiiie: Bug with TagQMask       		*
- *	1.20j 98/05/24	KG	Handle STAT_BUSY, handle pACB->pLinkDCB	*
- *				== 0 in remove_dev and DoingSRB_Done	*
- *	1.20k 98/05/25	KG	DMA_INT	(experimental)	       		*
- *	1.20l 98/05/27	KG	remove DMA_INT; DMA_IDLE cmds added;	*
- *	1.20m 98/06/10	KG	glitch configurable; made some global	*
- *				vars part of ACB; use DC390_readX	*
- *	1.20n 98/06/11	KG	startup params				*
- *	1.20o 98/06/15	KG	added TagMaxNum to boot/module params	*
- *				Device Nr -> Idx, TagMaxNum power of 2  *
- *	1.20p 98/06/17	KG	Docu updates. Reset depends on settings *
- *				pci_set_master added; 2.0.xx: pcibios_*	*
- *				used instead of MechNum things ...	*
- *	1.20q 98/06/23	KG	Changed defaults. Added debug code for	*
- *				removable media and fixed it. TagMaxNum	*
- *				fixed for DC390. Locking: ACB, DRV for	*
- *				better IRQ sharing. Spelling: Queueing	*
- *				Parsing and glitch_cfg changes. Display	*
- *				real SyncSpeed value. Made DisConn	*
- *				functional (!)				*
- *	1.20r 98/06/30	KG	Debug macros, allow disabling DsCn, set	*
- *				BIT4 in CtrlR4, EN_PAGE_INT, 2.0 module	*
- *				param -1 fixed.				*
- *	1.20s 98/08/20	KG	Debug info on abort(), try to check PCI,*
- *				phys_to_bus instead of phys_to_virt,	*
- *				fixed sel. process, fixed locking,	*
- *				added MODULE_XXX infos, changed IRQ	*
- *				request flags, disable DMA_INT		*
- *	1.20t 98/09/07	KG	TagQ report fixed; Write Erase DMA Stat;*
- *				initfunc -> __init; better abort;	*
- *				Timeout for XFER_DONE & BLAST_COMPLETE;	*
- *				Allow up to 33 commands being processed *
- *	2.0a  98/10/14	KG	Max Cmnds back to 17. DMA_Stat clearing *
- *				all flags. Clear within while() loops	*
- *				in DataIn_0/Out_0. Null ptr in dumpinfo	*
- *				for pSRB==0. Better locking during init.*
- *				bios_param() now respects part. table.	*
- *	2.0b  98/10/24	KG	Docu fixes. Timeout Msg in DMA Blast.	*
- *				Disallow illegal idx in INQUIRY/REMOVE	*
- *	2.0c  98/11/19	KG	Cleaned up detect/init for SMP boxes, 	*
- *				Write Erase DMA (1.20t) caused problems	*
- *	2.0d  98/12/25	KG	Christmas release ;-) Message handling  *
- *				completely reworked. Handle target ini-	*
- *				tiated SDTR correctly.			*
- *	2.0d1 99/01/25	KG	Try to handle RESTORE_PTR		*
- *	2.0d2 99/02/08	KG	Check for failure of kmalloc, correct 	*
- *				inclusion of scsicam.h, DelayReset	*
- *	2.0d3 99/05/31	KG	DRIVER_OK -> DID_OK, DID_NO_CONNECT,	*
- *				detect Target mode and warn.		*
- *				pcmd->result handling cleaned up.	*
- *	2.0d4 99/06/01	KG	Cleaned selection process. Found bug	*
- *				which prevented more than 16 tags. Now:	*
- *				24. SDTR cleanup. Cleaner multi-LUN	*
- *				handling. Don't modify ControlRegs/FIFO	*
- *				when connected.				*
- *	2.0d5 99/06/01	KG	Clear DevID, Fix INQUIRY after cfg chg.	*
- *	2.0d6 99/06/02	KG	Added ADD special command to allow cfg.	*
- *				before detection. Reset SYNC_NEGO_DONE	*
- *				after a bus reset.			*
- *	2.0d7 99/06/03	KG	Fixed bugs wrt add,remove commands	*
- *	2.0d8 99/06/04	KG	Removed copying of cmnd into CmdBlock.	*
- *				Fixed Oops in _release().		*
- *	2.0d9 99/06/06	KG	Also tag queue INQUIRY, T_U_R, ...	*
- *				Allow arb. no. of Tagged Cmnds. Max 32	*
- *	2.0d1099/06/20	KG	TagMaxNo changes now honoured! Queueing *
- *				clearified (renamed ..) TagMask handling*
- *				cleaned.				*
- *	2.0d1199/06/28	KG	cmd->result now identical to 2.0d2	*
- *	2.0d1299/07/04	KG	Changed order of processing in IRQ	*
- *	2.0d1399/07/05	KG	Don't update DCB fields if removed	*
- *	2.0d1499/07/05	KG	remove_dev: Move kfree() to the end	*
- *	2.0d1599/07/12	KG	use_new_eh_code: 0, ULONG -> UINT where	*
- *				appropriate				*
- *	2.0d1699/07/13	KG	Reenable StartSCSI interrupt, Retry msg	*
- *	2.0d1799/07/15	KG	Remove debug msg. Disable recfg. when	*
- *				there are queued cmnds			*
- *	2.0d1899/07/18	KG	Selection timeout: Don't requeue	*
- *	2.0d1999/07/18	KG	Abort: Only call scsi_done if dequeued	*
- *	2.0d2099/07/19	KG	Rst_Detect: DoingSRB_Done		*
- *	2.0d2199/08/15	KG	dev_id for request/free_irq, cmnd[0] for*
- *				RETRY, SRBdone does DID_ABORT for the 	*
- *				cmd passed by DC390_reset()		*
- *	2.0d2299/08/25	KG	dev_id fixed. can_queue: 42		*
- *	2.0d2399/08/25	KG	Removed some debugging code. dev_id 	*
- *				now is set to pACB. Use u8,u16,u32. 	*
- *	2.0d2499/11/14	KG	Unreg. I/O if failed IRQ alloc. Call	*
- * 				done () w/ DID_BAD_TARGET in case of	*
- *				missing DCB. We	are old EH!!		*
- *	2.0d2500/01/15	KG	2.3.3x compat from Andreas Schultz	*
- *				set unique_id. Disable RETRY message.	*
- *	2.0d2600/01/29	KG	Go to new EH.				*
- *	2.0d2700/01/31	KG	... but maintain 2.0 compat.		*
- *				and fix DCB freeing			*
- *	2.0d2800/02/14	KG	Queue statistics fixed, dump special cmd*
- *				Waiting_Timer for failed StartSCSI	*
- *				New EH: Don't return cmnds to ML on RST *
- *				Use old EH (don't have new EH fns yet)	*
- * 				Reset: Unlock, but refuse to queue	*
- * 				2.3 __setup function			*
- *	2.0e  00/05/22	KG	Return residual for 2.3			*
- *	2.0e1 00/05/25	KG	Compile fixes for 2.3.99		*
- *	2.0e2 00/05/27	KG	Jeff Garzik's pci_enable_device()	*
- *	2.0e3 00/09/29	KG	Some 2.4 changes. Don't try Sync Nego	*
- *				before INQUIRY has reported ability. 	*
- *				Recognise INQUIRY as scanning command.	*
- *	2.0e4 00/10/13	KG	Allow compilation into 2.4 kernel	*
- *	2.0e5 00/11/17	KG	Store Inq.flags in DCB			*
- *	2.0e6 00/11/22  KG	2.4 init function (Thx to O.Schumann)	*
- * 				2.4 PCI device table (Thx to A.Richter)	*
- *	2.0e7 00/11/28	KG	Allow overriding of BIOS settings	*
- *	2.0f  00/12/20	KG	Handle failed INQUIRYs during scan	*
- *	2.1a  03/11/29  GL, KG	Initial fixing for 2.6. Convert to	*
- *				use the current PCI-mapping API, update	*
- *				command-queuing.			*
- *	2.1b  04/04/13  GL	Fix for 64-bit platforms		*
- *	2.1b1 04/01/31	GL	(applied 05.04) Remove internal		*
- *				command-queuing.			*
- *	2.1b2 04/02/01	CH	(applied 05.04) Fix error-handling	*
- *	2.1c  04/05/23  GL	Update to use the new pci_driver API,	*
- *				some scsi EH updates, more cleanup.	*
- *	2.1d  04/05/27	GL	Moved setting of scan_devices to	*
- *				slave_alloc/_configure/_destroy, as	*
- *				suggested by CH.			*
- ***********************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* DEBUG options */
 //#define DC390_DEBUG0
 //#define DC390_DEBUG1

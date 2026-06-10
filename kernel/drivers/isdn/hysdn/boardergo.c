@@ -1,19 +1,20 @@
-/* $Id: boardergo.c,v 1.5.6.7 2001/11/06 21:58:19 kai Exp $
- *
- * Beep driver for HYSDN cards, specific routines for ergo type boards.
- *
- * Author    Werner Cornelius (werner@titro.de) for Hypercope GmbH
- * Copyright 1999 by Werner Cornelius (werner@titro.de)
- *
- * This software may be used and distributed according to the terms
- * of the GNU General Public License, incorporated herein by reference.
- *
- * As all Beep supported cards Champ2, Ergo and Metro2/4 use the same
- * DPRAM interface and layout with only minor differences all related
- * stuff is done here, not in separate modules.
- *
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/signal.h>
 #include <beep/kernel.h>
 #include <beep/ioport.h>

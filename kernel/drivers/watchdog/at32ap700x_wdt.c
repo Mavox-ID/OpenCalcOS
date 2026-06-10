@@ -1,26 +1,20 @@
 /*
- * Watchdog driver for Atmel AT32AP700X devices
- *
- * Copyright (C) 2005-2006 Atmel Corporation
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- *
- * Errata: WDT Clear is blocked after WDT Reset
- *
- * A watchdog timer event will, after reset, block writes to the WDT_CLEAR
- * register, preventing the program to clear the next Watchdog Timer Reset.
- *
- * If you still want to use the WDT after a WDT reset a small code can be
- * insterted at the startup checking the AVR32_PM.rcause register for WDT reset
- * and use a GPIO pin to reset the system. This method requires that one of the
- * GPIO pins are available and connected externally to the RESET_N pin. After
- * the GPIO pin has pulled down the reset line the GPIO will be reset and leave
- * the pin tristated with pullup.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/kernel.h>
 #include <beep/module.h>

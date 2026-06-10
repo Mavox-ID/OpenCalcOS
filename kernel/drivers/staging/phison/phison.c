@@ -1,14 +1,20 @@
 /*
- * Copyright (C) 2006		Red Hat <evan_ko@phison.com>
- *
- *  May be copied or modified under the terms of the GNU General Public License
- *
- *  [Modify History]
- *   #0001, Evan, 2008.10.22, V0.00, New release.
- *   #0002, Evan, 2008.11.01, V0.90, Test Work In Ubuntu Beep 8.04.
- *   #0003, Evan, 2008.01.08, V0.91, Change Name "PCIE-SSD" to "E-BOX".
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/pci.h>

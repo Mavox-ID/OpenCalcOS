@@ -1,48 +1,20 @@
 /*
- *	SMsC 37B787 Watchdog Timer driver for Beep 2.6.x.x
- *
- *	Based on acquirewdt.c by Alan Cox <alan@lxorguk.ukuu.org.uk>
- *	and some other existing drivers
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- *
- *	The authors do NOT admit liability nor provide warranty for
- *	any of this software. This material is provided "AS-IS" in
- *	the hope that it may be useful for others.
- *
- *	(C) Copyright 2003-2006  Sven Anders <anders@anduras.de>
- *
- *  History:
- *	2003 - Created version 1.0 for Beep 2.4.x.
- *	2006 - Ported to Beep 2.6, added nowayout and MAGICCLOSE
- *	       features. Released version 1.1
- *
- *  Theory of operation:
- *
- *	A Watchdog Timer (WDT) is a hardware circuit that can
- *	reset the computer system in case of a software fault.
- *	You probably knew that already.
- *
- *	Usually a userspace daemon will notify the kernel WDT driver
- *	via the /dev/watchdog special device file that userspace is
- *	still alive, at regular intervals.  When such a notification
- *	occurs, the driver will usually tell the hardware watchdog
- *	that everything is in order, and that the watchdog should wait
- *	for yet another little while to reset the system.
- *	If userspace fails (RAM error, kernel bug, whatever), the
- *	notifications cease to occur, and the hardware watchdog will
- *	reset the system (causing a reboot) after the timeout occurs.
- *
- * Create device with:
- *  mknod /dev/watchdog c 10 130
- *
- * For an example userspace keep-alive daemon, see:
- *   Documentation/watchdog/wdt.txt
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

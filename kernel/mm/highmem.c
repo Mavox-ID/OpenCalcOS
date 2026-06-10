@@ -1,21 +1,20 @@
 /*
- * High memory handling common code and variables.
- *
- * (C) 1999 Andrea Arcangeli, SuSE GmbH, andrea@suse.de
- *          Gerhard Wichert, Siemens AG, Gerhard.Wichert@pdb.siemens.de
- *
- *
- * Redesigned the x86 32-bit VM architecture to deal with
- * 64-bit physical space. With current x86 CPUs this
- * means up to 64 Gigabytes physical RAM.
- *
- * Rewrote high memory support to move the page cache into
- * high memory. Implemented permanent (schedulable) kmaps
- * based on Linus' idea.
- *
- * Copyright (C) 1999 Ingo Molnar <mingo@redhat.com>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/mm.h>
 #include <beep/export.h>
 #include <beep/swap.h>

@@ -1,33 +1,20 @@
 /*
- * omap_device headers
- *
- * Copyright (C) 2009 Nokia Corporation
- * Paul Walmsley
- *
- * Developed in collaboration with (alphabetical order): Benoit
- * Cousson, Kevin Hilman, Tony Lindgren, Rajendra Nayak, Vikram
- * Pandita, Sakari Poussa, Anand Sawant, Santosh Shilimkar, Richard
- * Woodruff
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * Eventually this type of functionality should either be
- * a) implemented via arch-specific pointers in platform_device
- * or
- * b) implemented as a proper omap_bus/omap_device in Beep, no more
- *    platform_device
- *
- * omap_device differs from omap_hwmod in that it includes external
- * (e.g., board- and system-level) integration details.  omap_hwmod
- * stores hardware data that is invariant for a given OMAP chip.
- *
- * To do:
- * - GPIO integration
- * - regulator integration
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __ARCH_ARM_PLAT_OMAP_INCLUDE_MACH_OMAP_DEVICE_H
 #define __ARCH_ARM_PLAT_OMAP_INCLUDE_MACH_OMAP_DEVICE_H
 

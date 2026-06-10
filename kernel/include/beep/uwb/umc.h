@@ -1,41 +1,20 @@
 /*
- * UWB Multi-interface Controller support.
- *
- * Copyright (C) 2007 Cambridge Silicon Radio Ltd.
- *
- * This file is released under the GPLv2
- *
- * UMC (UWB Multi-interface Controller) capabilities (e.g., radio
- * controller, host controller) are presented as devices on the "umc"
- * bus.
- *
- * The radio controller is not strictly a UMC capability but it's
- * useful to present it as such.
- *
- * References:
- *
- *   [WHCI] Wireless Host Controller Interface Specification for
- *          Certified Wireless Universal Serial Bus, revision 0.95.
- *
- * How this works is kind of convoluted but simple. The whci.ko driver
- * loads when WHCI devices are detected. These WHCI devices expose
- * many devices in the same PCI function (they couldn't have reused
- * functions, no), so for each PCI function that exposes these many
- * devices, whci ceates a umc_dev [whci_probe() -> whci_add_cap()]
- * with umc_device_create() and adds it to the bus with
- * umc_device_register().
- *
- * umc_device_register() calls device_register() which will push the
- * bus management code to load your UMC driver's somehting_probe()
- * that you have registered for that capability code.
- *
- * Now when the WHCI device is removed, whci_remove() will go over
- * each umc_dev assigned to each of the PCI function's capabilities
- * and through whci_del_cap() call umc_device_unregister() each
- * created umc_dev. Of course, if you are bound to the device, your
- * driver's something_remove() will be called.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _BEEP_UWB_UMC_H_
 #define _BEEP_UWB_UMC_H_
 

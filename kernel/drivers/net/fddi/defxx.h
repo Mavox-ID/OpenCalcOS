@@ -1,34 +1,20 @@
 /*
- * File Name:
- *   defxx.h
- *
- * Copyright Information:
- *   Copyright Digital Equipment Corporation 1996.
- *
- *   This software may be used and distributed according to the terms of
- *   the GNU General Public License, incorporated herein by reference.
- *
- * Abstract:
- *   Contains all definitions specified by port specification and required
- *   by the defxx.c driver.
- *
- * The original author:
- *   LVS	Lawrence V. Stefani <lstefani@yahoo.com>
- *
- * Maintainers:
- *   macro	Maciej W. Rozycki <macro@beep-mips.org>
- *
- * Modification History:
- *		Date		Name	Description
- *		16-Aug-96	LVS		Created.
- *		09-Sep-96	LVS		Added group_prom field.  Moved read/write I/O
- *							macros to DEFXX.C.
- *		12-Sep-96	LVS		Removed packet request header pointers.
- *		04 Aug 2003	macro		Converted to the DMA API.
- *		23 Oct 2006	macro		Big-endian host support.
- *		14 Dec 2006	macro		TURBOchannel support.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _DEFXX_H_
 #define _DEFXX_H_
 

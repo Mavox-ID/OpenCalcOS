@@ -1,29 +1,20 @@
-/* 
-        pseudo.h    (c) 1997-8  Grant R. Guenther <grant@torque.net>
-                                Under the terms of the GNU General Public License.
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-	This is the "pseudo-interrupt" logic for parallel port drivers.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-        This module is #included into each driver.  It makes one
-        function available:
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-		ps_set_intr( void (*continuation)(void),
-			     int  (*ready)(void),
-			     int timeout,
-			     int nice )
-
-	Which will arrange for ready() to be evaluated frequently and
-	when either it returns true, or timeout jiffies have passed,
-	continuation() will be invoked.
-
-	If nice is 1, the test will done approximately once a
-	jiffy.  If nice is 0, the test will also be done whenever
-	the scheduler runs (by adding it to a task queue).  If
-	nice is greater than 1, the test will be done once every
-	(nice-1) jiffies. 
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 /* Changes:
 
 	1.01	1998.05.03	Switched from cli()/sti() to spinlocks

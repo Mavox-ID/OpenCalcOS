@@ -1,19 +1,20 @@
 /*
- * xircom_cb: A driver for the (tulip-like) Xircom Cardbus ethernet cards
- *
- * This software is (C) by the respective authors, and licensed under the GPL
- * License.
- *
- * Written by Arjan van de Ven for Red Hat, Inc.
- * Based on work by Jeff Garzik, Doug Ledford and Donald Becker
- *
- *  	This software may be used and distributed according to the terms
- *      of the GNU General Public License, incorporated herein by reference.
- *
- *
- * 	$Id: xircom_cb.c,v 1.33 2001/03/19 14:02:07 arjanv Exp $
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

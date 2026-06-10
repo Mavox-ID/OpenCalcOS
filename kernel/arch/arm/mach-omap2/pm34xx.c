@@ -1,23 +1,20 @@
 /*
- * OMAP3 Power Management Routines
- *
- * Copyright (C) 2006-2008 Nokia Corporation
- * Tony Lindgren <tony@atomide.com>
- * Jouni Hogander
- *
- * Copyright (C) 2007 Texas Instruments, Inc.
- * Rajendra Nayak <rnayak@ti.com>
- *
- * Copyright (C) 2005 Texas Instruments, Inc.
- * Richard Woodruff <r-woodruff2@ti.com>
- *
- * Based on pm.c for omap1
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/pm.h>
 #include <beep/suspend.h>
 #include <beep/interrupt.h>

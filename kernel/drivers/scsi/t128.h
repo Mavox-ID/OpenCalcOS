@@ -1,39 +1,20 @@
 /*
- * Trantor T128/T128F/T228 defines
- *	Note : architecturally, the T100 and T128 are different and won't work
- *
- * Copyright 1993, Drew Eckhardt
- *	Visionary Computing
- *	(Unix and Beep consulting and custom programming)
- *	drew@colorado.edu
- *      +1 (303) 440-4894
- *
- * DISTRIBUTION RELEASE 3.
- *
- * For more information, please consult
- *
- * Trantor Systems, Ltd.
- * T128/T128F/T228 SCSI Host Adapter
- * Hardware Specifications
- *
- * Trantor Systems, Ltd.
- * 5415 Randall Place
- * Fremont, CA 94538
- * 1+ (415) 770-1400, FAX 1+ (415) 770-9910
- *
- * and
- *
- * NCR 5380 Family
- * SCSI Protocol Controller
- * Databook
- *
- * NCR Microelectronics
- * 1635 Aeroplaza Drive
- * Colorado Springs, CO 80916
- * 1+ (719) 578-3400
- * 1+ (800) 334-5454
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * $Log: t128.h,v $
  */

@@ -1,15 +1,20 @@
 /*
- *	ultrastor.c	(C) 1991 David B. Gentzel
- *	Low-level scsi driver for UltraStor 14F
- *	by David B. Gentzel, Whitfield Software Services, Carnegie, PA
- *	    (gentzel@nova.enet.dec.com)
- *  scatter/gather added by Scott Taylor (n217cg@tamuts.tamu.edu)
- *  24F support by John F. Carr (jfc@athena.mit.edu)
- *    John's work modified by Caleb Epstein (cae@jpmorgan.com) and 
- *    Eric Youngdale (eric@tantalus.nrl.navy.mil).
- *	Thanks to UltraStor for providing the necessary documentation
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _ULTRASTOR_H
 #define _ULTRASTOR_H
 

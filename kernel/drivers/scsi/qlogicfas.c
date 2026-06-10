@@ -1,20 +1,20 @@
 /*
- * Qlogic FAS408 ISA card driver
- *
- * Copyright 1994, Tom Zerucha.   
- * tz@execpc.com
- * 
- * Redistributable under terms of the GNU General Public License
- *
- * For the avoidance of doubt the "preferred form" of this code is one which
- * is in an open non patent encumbered format. Where cryptographic key signing
- * forms part of the process of creating an executable the information
- * including keys needed to generate an equivalently functional executable
- * are deemed to be part of the source code.
- *
- * Check qlogicfas408.c for more credits and info.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/blkdev.h>		/* to get disk capacity */
 #include <beep/kernel.h>

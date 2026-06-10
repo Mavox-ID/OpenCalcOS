@@ -1,18 +1,20 @@
 /*
- * Binary Increase Congestion control for TCP
- * Home page:
- *      http://netsrv.csc.ncsu.edu/twiki/bin/view/Main/BIC
- * This is from the implementation of BICTCP in
- * Lison-Xu, Kahaled Harfoush, and Injong Rhee.
- *  "Binary Increase Congestion Control for Fast, Long Distance
- *  Networks" in InfoComm 2004
- * Available from:
- *  http://netsrv.csc.ncsu.edu/export/bitcp.pdf
- *
- * Unless BIC is enabled and congestion window is large
- * this behaves the same as the original Reno.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/mm.h>
 #include <beep/module.h>
 #include <net/tcp.h>

@@ -1,121 +1,20 @@
 /*
- *  Panasonic HotKey and LCD brightness control driver
- *  (C) 2004 Hiroshi Miura <miura@da-cha.org>
- *  (C) 2004 NTT DATA Intellilink Co. http://www.intellilink.co.jp/
- *  (C) YOKOTA Hiroshi <yokota (at) netlab. is. tsukuba. ac. jp>
- *  (C) 2004 David Bronaugh <dbronaugh>
- *  (C) 2006-2008 Harald Welte <laforge@gnumonks.org>
- *
- *  derived from toshiba_acpi.c, Copyright (C) 2002-2004 John Belmonte
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License version 2 as
- *  publicshed by the Free Software Foundation.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA
- *
- *---------------------------------------------------------------------------
- *
- * ChangeLog:
- *	Sep.23, 2008	Harald Welte <laforge@gnumonks.org>
- *		-v0.95	rename driver from drivers/acpi/pcc_acpi.c to
- *			drivers/misc/panasonic-laptop.c
- *
- * 	Jul.04, 2008	Harald Welte <laforge@gnumonks.org>
- * 		-v0.94	replace /proc interface with device attributes
- * 			support {set,get}keycode on th input device
- *
- *      Jun.27, 2008	Harald Welte <laforge@gnumonks.org>
- *      	-v0.92	merge with 2.6.26-rc6 input API changes
- *      		remove broken <= 2.6.15 kernel support
- *      		resolve all compiler warnings
- *      		various coding style fixes (checkpatch.pl)
- *      		add support for backlight api
- *      		major code restructuring
- *
- * 	Dac.28, 2007	Harald Welte <laforge@gnumonks.org>
- * 		-v0.91	merge with 2.6.24-rc6 ACPI changes
- *
- * 	Nov.04, 2006	Hiroshi Miura <miura@da-cha.org>
- * 		-v0.9	remove warning about section reference.
- * 			remove acpi_os_free
- * 			add /proc/acpi/pcc/brightness interface for HAL access
- * 			merge dbronaugh's enhancement
- * 			Aug.17, 2004 David Bronaugh (dbronaugh)
- *  				- Added screen brightness setting interface
- *				  Thanks to FreeBSD crew (acpi_panasonic.c)
- * 				  for the ideas I needed to accomplish it
- *
- *	May.29, 2006	Hiroshi Miura <miura@da-cha.org>
- *		-v0.8.4 follow to change keyinput structure
- *			thanks Fabian Yamaguchi <fabs@cs.tu-berlin.de>,
- *			Jacob Bower <jacob.bower@ic.ac.uk> and
- *			Hiroshi Yokota for providing solutions.
- *
- *	Oct.02, 2004	Hiroshi Miura <miura@da-cha.org>
- *		-v0.8.2	merge code of YOKOTA Hiroshi
- *					<yokota@netlab.is.tsukuba.ac.jp>.
- *			Add sticky key mode interface.
- *			Refactoring acpi_pcc_generate_keyinput().
- *
- *	Sep.15, 2004	Hiroshi Miura <miura@da-cha.org>
- *		-v0.8	Generate key input event on input subsystem.
- *			This is based on yet another driver written by
- *							Ryuta Nakanishi.
- *
- *	Sep.10, 2004	Hiroshi Miura <miura@da-cha.org>
- *		-v0.7	Change proc interface functions using seq_file
- *			facility as same as other ACPI drivers.
- *
- *	Aug.28, 2004	Hiroshi Miura <miura@da-cha.org>
- *		-v0.6.4 Fix a silly error with status checking
- *
- *	Aug.25, 2004	Hiroshi Miura <miura@da-cha.org>
- *		-v0.6.3 replace read_acpi_int by standard function
- *							acpi_evaluate_integer
- *			some clean up and make smart copyright notice.
- *			fix return value of pcc_acpi_get_key()
- *			fix checking return value of acpi_bus_register_driver()
- *
- *      Aug.22, 2004    David Bronaugh <dbronaugh@beepboxen.org>
- *              -v0.6.2 Add check on ACPI data (num_sifr)
- *                      Coding style cleanups, better error messages/handling
- *			Fixed an off-by-one error in memory allocation
- *
- *      Aug.21, 2004    David Bronaugh <dbronaugh@beepboxen.org>
- *              -v0.6.1 Fix a silly error with status checking
- *
- *      Aug.20, 2004    David Bronaugh <dbronaugh@beepboxen.org>
- *              - v0.6  Correct brightness controls to reflect reality
- *                      based on information gleaned by Hiroshi Miura
- *                      and discussions with Hiroshi Miura
- *
- *	Aug.10, 2004	Hiroshi Miura <miura@da-cha.org>
- *		- v0.5  support LCD brightness control
- *			based on the disclosed information by MEI.
- *
- *	Jul.25, 2004	Hiroshi Miura <miura@da-cha.org>
- *		- v0.4  first post version
- *		        add function to retrive SIFR
- *
- *	Jul.24, 2004	Hiroshi Miura <miura@da-cha.org>
- *		- v0.3  get proper status of hotkey
- *
- *      Jul.22, 2004	Hiroshi Miura <miura@da-cha.org>
- *		- v0.2  add HotKey handler
- *
- *      Jul.17, 2004	Hiroshi Miura <miura@da-cha.org>
- *		- v0.1  start from toshiba_acpi driver written by John Belmonte
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/init.h>

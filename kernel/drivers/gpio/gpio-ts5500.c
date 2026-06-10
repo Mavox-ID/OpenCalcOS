@@ -1,27 +1,20 @@
 /*
- * Digital I/O driver for Technologic Systems TS-5500
- *
- * Copyright (c) 2012 Savoir-faire Beep Inc.
- *	Vivien Didelot <vivien.didelot@savoirfairebeep.com>
- *
- * Technologic Systems platforms have pin blocks, exposing several Digital
- * Input/Output lines (DIO). This driver aims to support single pin blocks.
- * In that sense, the support is not limited to the TS-5500 blocks.
- * Actually, the following platforms have DIO support:
- *
- * TS-5500:
- *   Documentation: http://wiki.embeddedarm.com/wiki/TS-5500
- *   Blocks: DIO1, DIO2 and LCD port.
- *
- * TS-5600:
- *   Documentation: http://wiki.embeddedarm.com/wiki/TS-5600
- *   Blocks: LCD port (identical to TS-5500 LCD).
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/bitops.h>
 #include <beep/gpio.h>
 #include <beep/io.h>

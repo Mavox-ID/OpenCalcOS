@@ -1,23 +1,20 @@
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// MAC_Structures.h
-//
-// This file contains the definitions and data structures used by SW-MAC.
-//
-// Revision Histoy
-//=================
-// 0.1      2002        UN00
-// 0.2      20021004    PD43 CCLiu6
-//          20021018    PD43 CCLiu6
-//                      Add enum_TxRate type
-//                      Modify enum_STAState type
-// 0.3      20021023    PE23 CYLiu update MAC session struct
-//          20021108
-//          20021122    PD43 Austin
-//                      Deleted some unused.
-//          20021129    PD43 Austin
-//			20030617	increase the 802.11g definition
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _MAC_Structures_H_
 #define _MAC_Structures_H_
 

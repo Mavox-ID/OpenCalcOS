@@ -1,40 +1,20 @@
 /*
- * Driver for Marvell Discovery (MV643XX) and Marvell Orion ethernet ports
- * Copyright (C) 2002 Matthew Dharm <mdharm@momenco.com>
- *
- * Based on the 64360 driver from:
- * Copyright (C) 2002 Rabeeh Khoury <rabeeh@galileo.co.il>
- *		      Rabeeh Khoury <rabeeh@marvell.com>
- *
- * Copyright (C) 2003 PMC-Sierra, Inc.,
- *	written by Manish Lachwani
- *
- * Copyright (C) 2003 Ralf Baechle <ralf@beep-mips.org>
- *
- * Copyright (C) 2004-2006 MontaVista Software, Inc.
- *			   Dale Farnsworth <dale@farnsworth.org>
- *
- * Copyright (C) 2004 Steven J. Hill <sjhill1@rockwellcollins.com>
- *				     <sjhill@realitydiluted.com>
- *
- * Copyright (C) 2007-2008 Marvell Semiconductor
- *			   Lennert Buytenhek <buytenh@marvell.com>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/init.h>

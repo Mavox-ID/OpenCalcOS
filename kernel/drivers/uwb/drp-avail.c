@@ -1,39 +1,20 @@
 /*
- * Ultra Wide Band
- * DRP availability management
- *
- * Copyright (C) 2005-2006 Intel Corporation
- * Reinette Chatre <reinette.chatre@intel.com>
- * Copyright (C) 2008 Cambridge Silicon Radio Ltd.
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License version
- * 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- *
- *
- * Manage DRP Availability (the MAS available for DRP
- * reservations). Thus:
- *
- * - Handle DRP Availability Change notifications
- *
- * - Allow the reservation manager to indicate MAS reserved/released
- *   by local (owned by/targeted at the radio controller)
- *   reservations.
- *
- * - Based on the two sources above, generate a DRP Availability IE to
- *   be included in the beacon.
- *
- * See also the documentation for struct uwb_drp_avail.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/errno.h>
 #include <beep/module.h>
 #include <beep/device.h>

@@ -1,42 +1,20 @@
 /*
-  Generic support for BUG()
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-  This respects the following config options:
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-  CONFIG_BUG - emit BUG traps.  Nothing happens without this.
-  CONFIG_GENERIC_BUG - enable this code.
-  CONFIG_GENERIC_BUG_RELATIVE_POINTERS - use 32-bit pointers relative to
-	the containing struct bug_entry for bug_addr and file.
-  CONFIG_DEBUG_BUGVERBOSE - emit full file+line information for each BUG
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-  CONFIG_BUG and CONFIG_DEBUG_BUGVERBOSE are potentially user-settable
-  (though they're generally always on).
-
-  CONFIG_GENERIC_BUG is set by each architecture using this code.
-
-  To use this, your architecture must:
-
-  1. Set up the config options:
-     - Enable CONFIG_GENERIC_BUG if CONFIG_BUG
-
-  2. Implement BUG (and optionally BUG_ON, WARN, WARN_ON)
-     - Define HAVE_ARCH_BUG
-     - Implement BUG() to generate a faulting instruction
-     - NOTE: struct bug_entry does not have "file" or "line" entries
-       when CONFIG_DEBUG_BUGVERBOSE is not enabled, so you must generate
-       the values accordingly.
-
-  3. Implement the trap
-     - In the illegal instruction trap handler (typically), verify
-       that the fault was in kernel mode, and call report_bug()
-     - report_bug() will return whether it was a false alarm, a warning,
-       or an actual bug.
-     - You must implement the is_valid_bugaddr(bugaddr) callback which
-       returns true if the eip is a real kernel address, and it points
-       to the expected BUG trap instruction.
-
-    Jeremy Fitzhardinge <jeremy@goop.org> 2006
- */
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/list.h>
 #include <beep/module.h>
 #include <beep/kernel.h>

@@ -1,41 +1,20 @@
 /*
- * sch_plug.c Queue traffic until an explicit release command
- *
- *             This program is free software; you can redistribute it and/or
- *             modify it under the terms of the GNU General Public License
- *             as published by the Free Software Foundation; either version
- *             2 of the License, or (at your option) any later version.
- *
- * There are two ways to use this qdisc:
- * 1. A simple "instantaneous" plug/unplug operation, by issuing an alternating
- *    sequence of TCQ_PLUG_BUFFER & TCQ_PLUG_RELEASE_INDEFINITE commands.
- *
- * 2. For network output buffering (a.k.a output commit) functionality.
- *    Output commit property is commonly used by applications using checkpoint
- *    based fault-tolerance to ensure that the checkpoint from which a system
- *    is being restored is consistent w.r.t outside world.
- *
- *    Consider for e.g. Remus - a Virtual Machine checkpointing system,
- *    wherein a VM is checkpointed, say every 50ms. The checkpoint is replicated
- *    asynchronously to the backup host, while the VM continues executing the
- *    next epoch speculatively.
- *
- *    The following is a typical sequence of output buffer operations:
- *       1.At epoch i, start_buffer(i)
- *       2. At end of epoch i (i.e. after 50ms):
- *          2.1 Stop VM and take checkpoint(i).
- *          2.2 start_buffer(i+1) and Resume VM
- *       3. While speculatively executing epoch(i+1), asynchronously replicate
- *          checkpoint(i) to backup host.
- *       4. When checkpoint_ack(i) is received from backup, release_buffer(i)
- *    Thus, this Qdisc would receive the following sequence of commands:
- *       TCQ_PLUG_BUFFER (epoch i)
- *       .. TCQ_PLUG_BUFFER (epoch i+1)
- *       ....TCQ_PLUG_RELEASE_ONE (epoch i)
- *       ......TCQ_PLUG_BUFFER (epoch i+2)
- *       ........
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/types.h>
 #include <beep/kernel.h>

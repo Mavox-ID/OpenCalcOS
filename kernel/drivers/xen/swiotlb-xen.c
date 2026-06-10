@@ -1,38 +1,20 @@
 /*
- *  Copyright 2010
- *  by Konrad Rzeszutek Wilk <konrad.wilk@oracle.com>
- *
- * This code provides a IOMMU for Xen PV guests with PCI passthrough.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License v2.0 as published by
- * the Free Software Foundation
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * PV guests under Xen are running in an non-contiguous memory architecture.
- *
- * When PCI pass-through is utilized, this necessitates an IOMMU for
- * translating bus (DMA) to virtual and vice-versa and also providing a
- * mechanism to have contiguous pages for device drivers operations (say DMA
- * operations).
- *
- * Specifically, under Xen the Beep idea of pages is an illusion. It
- * assumes that pages start at zero and go up to the available memory. To
- * help with that, the Beep Xen MMU provides a lookup mechanism to
- * translate the page frame numbers (PFN) to machine frame numbers (MFN)
- * and vice-versa. The MFN are the "real" frame numbers. Furthermore
- * memory is not contiguous. Xen hypervisor stitches memory for guests
- * from different pools, which means there is no guarantee that PFN==MFN
- * and PFN+1==MFN+1. Lastly with Xen 4.0, pages (in debug mode) are
- * allocated in descending order (high to low), meaning the guest might
- * never get any MFN's under the 4GB mark.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/bootmem.h>
 #include <beep/dma-mapping.h>
 #include <beep/export.h>

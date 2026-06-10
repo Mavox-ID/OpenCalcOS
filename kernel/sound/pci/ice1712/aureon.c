@@ -1,51 +1,20 @@
 /*
- *   ALSA driver for ICEnsemble VT1724 (Envy24HT)
- *
- *   Lowlevel functions for Terratec Aureon cards
- *
- *	Copyright (c) 2003 Takashi Iwai <tiwai@suse.de>
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 2 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, write to the Free Software
- *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
- *
- *
- * NOTES:
- *
- * - we reuse the struct snd_akm4xxx record for storing the wm8770 codec data.
- *   both wm and akm codecs are pretty similar, so we can integrate
- *   both controls in the future, once if wm codecs are reused in
- *   many boards.
- *
- * - DAC digital volumes are not implemented in the mixer.
- *   if they show better response than DAC analog volumes, we can use them
- *   instead.
- *
- *   Lowlevel functions for AudioTrak Prodigy 7.1 (and possibly 192) cards
- *      Copyright (c) 2003 Dimitromanolakis Apostolos <apostol@cs.utoronto.ca>
- *
- *   version 0.82: Stable / not all features work yet (no communication with AC97 secondary)
- *       added 64x/128x oversampling switch (should be 64x only for 96khz)
- *       fixed some recording labels (still need to check the rest)
- *       recording is working probably thanks to correct wm8770 initialization
- *
- *   version 0.5: Initial release:
- *           working: analog output, mixer, headphone amplifier switch
- *       not working: prety much everything else, at least i could verify that
- *                    we have no digital output, no capture, pretty bad clicks and poops
- *                    on mixer switch and other coll stuff.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/delay.h>
 #include <beep/interrupt.h>
 #include <beep/init.h>

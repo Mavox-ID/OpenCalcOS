@@ -1,25 +1,20 @@
 /*
- * Intel 5100 Memory Controllers kernel module
- *
- * This file may be distributed under the terms of the
- * GNU General Public License.
- *
- * This module is based on the following document:
- *
- * Intel 5100X Chipset Memory Controller Hub (MCH) - Datasheet
- *      http://download.intel.com/design/chipsets/datashts/318378.pdf
- *
- * The intel 5100 has two independent channels. EDAC core currently
- * can not reflect this configuration so instead the chip-select
- * rows for each respective channel are laid out one after another,
- * the first half belonging to channel 0, the second half belonging
- * to channel 1.
- *
- * This driver is for DDR2 DIMMs, and it uses chip select to select among the
- * several ranks. However, instead of showing memories as ranks, it outputs
- * them as DIMM's. An internal table creates the association between ranks
- * and DIMM's.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/pci.h>

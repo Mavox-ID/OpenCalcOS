@@ -1,26 +1,20 @@
 /*
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file "COPYING" in the main directory of this archive
- * for more details.
- *
- * Synthesize TLB refill handlers at runtime.
- *
- * Copyright (C) 2004, 2005, 2006, 2008  Thiemo Seufer
- * Copyright (C) 2005, 2007, 2008, 2009  Maciej W. Rozycki
- * Copyright (C) 2006  Ralf Baechle (ralf@beep-mips.org)
- * Copyright (C) 2008, 2009 Cavium Networks, Inc.
- * Copyright (C) 2011  MIPS Technologies, Inc.
- *
- * ... and the days got worse and worse and now you see
- * I've gone completly out of my mind.
- *
- * They're coming to take me a away haha
- * they're coming to take me a away hoho hihi haha
- * to the funny farm where code is beautiful all the time ...
- *
- * (Condolences to Napoleon XIV)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/bug.h>
 #include <beep/kernel.h>
 #include <beep/types.h>

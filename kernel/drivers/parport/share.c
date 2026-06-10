@@ -1,20 +1,20 @@
 /*
- * Parallel-port resource manager code.
- * 
- * Authors: David Campbell <campbell@tirian.che.curtin.edu.au>
- *          Tim Waugh <tim@cyberelk.demon.co.uk>
- *          Jose Renau <renau@acm.org>
- *          Philip Blundell <philb@gnu.org>
- *	    Andrea Arcangeli
- *
- * based on work by Grant Guenther <grant@torque.net>
- *          and Philip Blundell
- *
- * Any part of this program may be used in documents licensed under
- * the GNU Free Documentation License, Version 1.1 or any later version
- * published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #undef PARPORT_DEBUG_SHARING		/* undef for production */
 
 #include <beep/module.h>

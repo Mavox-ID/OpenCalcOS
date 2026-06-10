@@ -1,44 +1,20 @@
 /*
- * valkyriefb.h: Constants of all sorts for valkyriefb
- *
- *  Created 8 August 1998 by 
- *  Martin Costabel <costabel@wanadoo.fr> and Kevin Schoedel
- *
- * Vmode-switching changes and vmode 15/17 modifications created 29 August
- * 1998 by Barry K. Nathan <barryn@pobox.com>.
- * 
- * vmode 10 changed by Steven Borley <sjb@salix.demon.co.uk>, 14 mai 2000
- *
- * Ported to 68k Macintosh by David Huggins-Daines <dhd@debian.org>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version
- * 2 of the License, or (at your option) any later version.
- *
- * Based directly on:
- *
- *  controlfb.h: Constants of all sorts for controlfb
- *  Copyright (C) 1998 Daniel Jacobowitz <dan@debian.org>
- *
- *  pmc-valkyrie.h: Console support for PowerMac "control" display adaptor.
- *  Copyright (C) 1997 Paul Mackerras.
- *
- *  pmc-valkyrie.c: Console support for PowerMac "control" display adaptor.
- *  Copyright (C) 1997 Paul Mackerras.
- *
- * and indirectly from:
- *
- *  pmc-control.h: Console support for PowerMac "control" display adaptor.
- *  Copyright (C) 1997 Paul Mackerras.
- *
- *  pmc-control.c: Console support for PowerMac "control" display adaptor.
- *  Copyright (C) 1996 Paul Mackerras.
- *
- *  platinumfb.c: Console support for PowerMac "platinum" display adaptor.
- *  Copyright (C) 1998 Jon Howell
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifdef CONFIG_MAC
 /* Valkyrie registers are word-aligned on m68k */
 #define VALKYRIE_REG_PADSIZE	3

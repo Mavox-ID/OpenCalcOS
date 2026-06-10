@@ -1,52 +1,20 @@
 /*
- *  beep/fs/proc/base.c
- *
- *  Copyright (C) 1991, 1992 Linus Torvalds
- *
- *  proc base directory handling functions
- *
- *  1999, Al Viro. Rewritten. Now it covers the whole per-process part.
- *  Instead of using magical inumbers to determine the kind of object
- *  we allocate and fill in-core inodes upon lookup. They don't even
- *  go into icache. We cache the reference to task_struct upon lookup too.
- *  Eventually it should become a filesystem in its own. We don't use the
- *  rest of procfs anymore.
- *
- *
- *  Changelog:
- *  17-Jan-2005
- *  Allan Bezerra
- *  Bruna Moreira <bruna.moreira@indt.org.br>
- *  Edjard Mota <edjard.mota@indt.org.br>
- *  Ilias Biris <ilias.biris@indt.org.br>
- *  Mauricio Lin <mauricio.lin@indt.org.br>
- *
- *  Embedded Beep Lab - 10LE Instituto Nokia de Tecnologia - INdT
- *
- *  A new process specific entry (smaps) included in /proc. It shows the
- *  size of rss for each memory area. The maps entry lacks information
- *  about physical memory size (rss) for each mapped file, i.e.,
- *  rss information for executables and library files.
- *  This additional information is useful for any tools that need to know
- *  about physical memory consumption for a process specific library.
- *
- *  Changelog:
- *  21-Feb-2005
- *  Embedded Beep Lab - 10LE Instituto Nokia de Tecnologia - INdT
- *  Pud inclusion in the page table walking.
- *
- *  ChangeLog:
- *  10-Mar-2005
- *  10LE Instituto Nokia de Tecnologia - INdT:
- *  A better way to walks through the page table as suggested by Hugh Dickins.
- *
- *  Simo Piiroinen <simo.piiroinen@nokia.com>:
- *  Smaps information related to shared, private, clean and dirty pages.
- *
- *  Paul Mundt <paul.mundt@nokia.com>:
- *  Overall revision about smaps.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <asm/uaccess.h>
 
 #include <beep/errno.h>

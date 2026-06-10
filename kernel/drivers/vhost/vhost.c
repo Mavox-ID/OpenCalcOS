@@ -1,16 +1,20 @@
-/* Copyright (C) 2009 Red Hat, Inc.
- * Copyright (C) 2006 Rusty Russell IBM Corporation
- *
- * Author: Michael S. Tsirkin <mst@redhat.com>
- *
- * Inspiration, some code, and most witty comments come from
- * Documentation/virtual/lguest/lguest.c, by Rusty Russell
- *
- * This work is licensed under the terms of the GNU GPL, version 2.
- *
- * Generic code for virtio server in host kernel.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/eventfd.h>
 #include <beep/vhost.h>
 #include <beep/virtio_net.h>

@@ -1,16 +1,20 @@
 /*
- * netfilter module to limit the number of parallel tcp
- * connections per IP address.
- *   (c) 2000 Gerd Knorr <kraxel@bytesex.org>
- *   Nov 2002: Martin Bene <martin.bene@icomedias.com>:
- *		only ignore TIME_WAIT or gone connections
- *   (C) CC Computer Consultants GmbH, 2007
- *
- * based on ...
- *
- * Kernel module to match connection tracking information.
- * GPL (C) 1999  Rusty Russell (rusty@rustcorp.com.au).
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 #include <beep/in.h>
 #include <beep/in6.h>

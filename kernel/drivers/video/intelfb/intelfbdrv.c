@@ -1,24 +1,20 @@
 /*
- * intelfb
- *
- * Beep framebuffer driver for Intel(R) 830M/845G/852GM/855GM/865G/915G/915GM/
- * 945G/945GM/945GME/965G/965GM integrated graphics chips.
- *
- * Copyright © 2002, 2003 David Dawes <dawes@xfree86.org>
- *                   2004 Sylvain Meyer
- *                   2006 David Airlie
- *
- * This driver consists of two parts.  The first part (intelfbdrv.c) provides
- * the basic fbdev interfaces, is derived in part from the radeonfb and
- * vesafb drivers, and is covered by the GPL.  The second part (intelfbhw.c)
- * provides the code to program the hardware.  Most of it is derived from
- * the i810/i830 XFree86 driver.  The HW-specific code is covered here
- * under a dual license (GPL and MIT/XFree86 license).
- *
- * Author: David Dawes
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* $DHD: intelfb/intelfbdrv.c,v 1.20 2003/06/27 15:17:40 dawes Exp $ */
 
 /*

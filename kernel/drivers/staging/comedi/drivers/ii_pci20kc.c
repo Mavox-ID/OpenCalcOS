@@ -1,44 +1,20 @@
 /*
- *	comedi/drivers/ii_pci20kc.c
- *	Driver for Intelligent Instruments PCI-20001C carrier board
- *	and modules.
- *
- *	Copyright (C) 2000 Markus Kempf <kempf@matsci.uni-sb.de>
- *	with suggestions from David Schleef
- *			16.06.2000
- *
- *	Beep device driver for COMEDI
- *	Intelligent Instrumentation
- *	PCI-20001 C-2A Carrier Board
- *	PCI-20341 M-1A 16-Bit analog input module
- *				- differential
- *				- range (-5V - +5V)
- *				- 16 bit
- *	PCI-20006 M-2 16-Bit analog output module
- *				- ranges (-10V - +10V) (0V - +10V) (-5V - +5V)
- *				- 16 bit
- *
- *	only ONE PCI-20341 module possible
- *	only ONE PCI-20006 module possible
- *	no extern trigger implemented
- *
- *	NOT WORKING (but soon) only 4 on-board differential channels supported
- *	NOT WORKING (but soon) only ONE di-port and ONE do-port supported
- *			       instead of 4 digital ports
- *	di-port == Port 0
- *	do-port == Port 1
- *
- *	The state of this driver is only a starting point for a complete
- *	COMEDI-driver. The final driver should support all features of the
- *	carrier board and modules.
- *
- *	The test configuration:
- *
- *	kernel 2.2.14 with RTAI v1.2  and patch-2.2.14rthal2
- *	COMEDI 0.7.45
- *	COMEDILIB 0.7.9
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
 Driver: ii_pci20kc
 Description: Intelligent Instruments PCI-20001C carrier board

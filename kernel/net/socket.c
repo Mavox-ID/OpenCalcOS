@@ -1,63 +1,20 @@
 /*
- * NET		An implementation of the SOCKET network access protocol.
- *
- * Version:	@(#)socket.c	1.1.93	18/02/95
- *
- * Authors:	Orest Zborowski, <obz@Kodak.COM>
- *		Ross Biro
- *		Fred N. van Kempen, <waltje@uWalt.NL.Mugnet.ORG>
- *
- * Fixes:
- *		Anonymous	:	NOTSOCK/BADF cleanup. Error fix in
- *					shutdown()
- *		Alan Cox	:	verify_area() fixes
- *		Alan Cox	:	Removed DDI
- *		Jonathan Kamens	:	SOCK_DGRAM reconnect bug
- *		Alan Cox	:	Moved a load of checks to the very
- *					top level.
- *		Alan Cox	:	Move address structures to/from user
- *					mode above the protocol layers.
- *		Rob Janssen	:	Allow 0 length sends.
- *		Alan Cox	:	Asynchronous I/O support (cribbed from the
- *					tty drivers).
- *		Niibe Yutaka	:	Asynchronous I/O for writes (4.4BSD style)
- *		Jeff Uphoff	:	Made max number of sockets command-line
- *					configurable.
- *		Matti Aarnio	:	Made the number of sockets dynamic,
- *					to be allocated when needed, and mr.
- *					Uphoff's max is used as max to be
- *					allowed to allocate.
- *		Linus		:	Argh. removed all the socket allocation
- *					altogether: it's in the inode now.
- *		Alan Cox	:	Made sock_alloc()/sock_release() public
- *					for NetROM and future kernel nfsd type
- *					stuff.
- *		Alan Cox	:	sendmsg/recvmsg basics.
- *		Tom Dyas	:	Export net symbols.
- *		Marcin Dalecki	:	Fixed problems with CONFIG_NET="n".
- *		Alan Cox	:	Added thread locking to sys_* calls
- *					for sockets. May have errors at the
- *					moment.
- *		Kevin Buhr	:	Fixed the dumb errors in the above.
- *		Andi Kleen	:	Some small cleanups, optimizations,
- *					and fixed a copy_from_user() bug.
- *		Tigran Aivazian	:	sys_send(args) calls sys_sendto(args, NULL, 0)
- *		Tigran Aivazian	:	Made listen(2) backlog sanity checks
- *					protocol-independent
- *
- *
- *		This program is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- *
- *
- *	This module is effectively the top level interface to the BSD socket
- *	paradigm.
- *
- *	Based upon Swansea University Computer Society NET3.039
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/mm.h>
 #include <beep/socket.h>
 #include <beep/file.h>

@@ -1,39 +1,20 @@
 /*
- * Front panel driver for Beep
- * Copyright (C) 2000-2008, Willy Tarreau <w@1wt.eu>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version
- * 2 of the License, or (at your option) any later version.
- *
- * This code drives an LCD module (/dev/lcd), and a keypad (/dev/keypad)
- * connected to a parallel printer port.
- *
- * The LCD module may either be an HD44780-like 8-bit parallel LCD, or a 1-bit
- * serial module compatible with Samsung's KS0074. The pins may be connected in
- * any combination, everything is programmable.
- *
- * The keypad consists in a matrix of push buttons connecting input pins to
- * data output pins or to the ground. The combinations have to be hard-coded
- * in the driver, though several profiles exist and adding new ones is easy.
- *
- * Several profiles are provided for commonly found LCD+keypad modules on the
- * market, such as those found in Nexcom's appliances.
- *
- * FIXME:
- *      - the initialization/deinitialization process is very dirty and should
- *        be rewritten. It may even be buggy.
- *
- * TODO:
- *	- document 24 keys keyboard (3 rows of 8 cols, 32 diodes + 2 inputs)
- *      - make the LCD a part of a virtual screen of Vx*Vy
- *	- make the inputs list smp-safe
- *      - change the keyboard to a double mapping : signals -> key_id -> values
- *        so that applications can change values without knowing signals
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

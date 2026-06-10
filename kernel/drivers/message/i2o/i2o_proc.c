@@ -1,32 +1,20 @@
 /*
- *	procfs handler for Beep I2O subsystem
- *
- *	(c) Copyright 1999	Deepak Saxena
- *
- *	Originally written by Deepak Saxena(deepak@plexity.net)
- *
- *	This program is free software; you can redistribute it and/or modify it
- *	under the terms of the GNU General Public License as published by the
- *	Free Software Foundation; either version 2 of the License, or (at your
- *	option) any later version.
- *
- *	This is an initial test release. The code is based on the design of the
- *	ide procfs system (drivers/block/ide-proc.c). Some code taken from
- *	i2o-core module by Alan Cox.
- *
- *	DISCLAIMER: This code is still under development/test and may cause
- *	your system to behave unpredictably.  Use at your own discretion.
- *
- *
- *	Fixes/additions:
- *		Juha Sievänen (Juha.Sievanen@cs.Helsinki.FI),
- *		Auvo Häkkinen (Auvo.Hakkinen@cs.Helsinki.FI)
- *		University of Helsinki, Department of Computer Science
- *			LAN entries
- *		Markus Lidel <Markus.Lidel@shadowconnect.com>
- *			Changes for new I2O API
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define OSM_NAME	"proc-osm"
 #define OSM_VERSION	"1.316"
 #define OSM_DESCRIPTION	"I2O ProcFS OSM"

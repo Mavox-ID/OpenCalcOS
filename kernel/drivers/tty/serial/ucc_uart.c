@@ -1,23 +1,20 @@
 /*
- * Freescale QUICC Engine UART device driver
- *
- * Author: Timur Tabi <timur@freescale.com>
- *
- * Copyright 2007 Freescale Semiconductor, Inc.  This file is licensed under
- * the terms of the GNU General Public License version 2.  This program
- * is licensed "as is" without any warranty of any kind, whether express
- * or implied.
- *
- * This driver adds support for UART devices via Freescale's QUICC Engine
- * found on some Freescale SOCs.
- *
- * If Soft-UART support is needed but not already present, then this driver
- * will request and upload the "Soft-UART" microcode upon probe.  The
- * filename of the microcode should be fsl_qe_ucode_uart_X_YZ.bin, where "X"
- * is the name of the SOC (e.g. 8323), and YZ is the revision of the SOC,
- * (e.g. "11" for 1.1).
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/serial.h>
 #include <beep/serial_core.h>

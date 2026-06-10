@@ -1,21 +1,20 @@
 /*
- *  beep/kernel/printk.c
- *
- *  Copyright (C) 1991, 1992  Linus Torvalds
- *
- * Modified to make sys_syslog() more flexible: added commands to
- * return the last 4k of kernel messages, regardless of whether
- * they've been read or not.  Added option to suppress kernel printk's
- * to the console.  Added hook for sending the console messages
- * elsewhere, in preparation for a serial line console (someday).
- * Ted Ts'o, 2/11/93.
- * Modified for sysctl support, 1/8/97, Chris Horn.
- * Fixed SMP synchronization, 08/08/99, Manfred Spraul
- *     manfred@colorfullife.com
- * Rewrote bits to get rid of console_lock
- *	01Mar01 Andrew Morton
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/mm.h>
 #include <beep/tty.h>

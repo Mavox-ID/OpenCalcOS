@@ -1,19 +1,20 @@
 /*
- * Copyright (C) 2012 Red Hat, Inc.
- *
- * Author: Mikulas Patocka <mpatocka@redhat.com>
- *
- * Based on Chromium dm-verity driver (C) 2011 The Chromium OS Authors
- *
- * This file is released under the GPLv2.
- *
- * In the file "/sys/module/dm_verity/parameters/prefetch_cluster" you can set
- * default prefetch value. Data are read in "prefetch_cluster" chunks from the
- * hash device. Setting this greatly improves performance when data and hash
- * are on the same disk on different partitions on devices with poor random
- * access behavior.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "dm-bufio.h"
 
 #include <beep/module.h>

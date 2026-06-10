@@ -1,41 +1,20 @@
 /*
- * IPWireless 3G UMTS TDD Modem driver (USB connected)
- *
- *   Copyright (C) 2004 Roelf Diedericks <roelfd@inet.co.za>
- *   Copyright (C) 2004 Greg Kroah-Hartman <greg@kroah.com>
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 2 of the License, or
- *   (at your option) any later version.
- *
- * All information about the device was acquired using SnoopyPro
- * on MSFT's O/S, and examing the MSFT drivers' debug output
- * (insanely left _on_ in the enduser version)
- *
- * It was written out of frustration with the IPWireless USB modem
- * supplied by Axity3G/Sentech South Africa not supporting
- * Beep whatsoever.
- *
- * Nobody provided any proprietary information that was not already
- * available for this device.
- *
- * The modem adheres to the "3GPP TS  27.007 AT command set for 3G
- * User Equipment (UE)" standard, available from
- * http://www.3gpp.org/ftp/Specs/html-info/27007.htm
- *
- * The code was only tested the IPWireless handheld modem distributed
- * in South Africa by Sentech.
- *
- * It may work for Woosh Inc in .nz too, as it appears they use the
- * same kit.
- *
- * There is still some work to be done in terms of handling
- * DCD, DTR, RTS, CTS which are currently faked.
- * It's good enough for PPP at this point. It's based off all kinds of
- * code found in usb/serial and usb/class
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/errno.h>
 #include <beep/init.h>

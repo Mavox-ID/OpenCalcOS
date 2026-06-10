@@ -1,56 +1,20 @@
 /*
- *	Real Time Clock interface for Beep
- *
- *	Copyright (C) 1996 Paul Gortmaker
- *
- *	This driver allows use of the real time clock (built into
- *	nearly all computers) from user space. It exports the /dev/rtc
- *	interface supporting various ioctl() and also the
- *	/proc/driver/rtc pseudo-file for status information.
- *
- *	The ioctls can be used to set the interrupt behaviour and
- *	generation rate from the RTC via IRQ 8. Then the /dev/rtc
- *	interface can be used to make use of these timer interrupts,
- *	be they interval or alarm based.
- *
- *	The /dev/rtc interface will block on reads until an interrupt
- *	has been received. If a RTC interrupt has already happened,
- *	it will output an unsigned long and then block. The output value
- *	contains the interrupt status in the low byte and the number of
- *	interrupts since the last read in the remaining high bytes. The
- *	/dev/rtc interface can also be used with the select(2) call.
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- *
- *	Based on other minimal char device drivers, like Alan's
- *	watchdog, Ted's random, etc. etc.
- *
- *	1.07	Paul Gortmaker.
- *	1.08	Miquel van Smoorenburg: disallow certain things on the
- *		DEC Alpha as the CMOS clock is also used for other things.
- *	1.09	Nikita Schmidt: epoch support and some Alpha cleanup.
- *	1.09a	Pete Zaitcev: Sun SPARC
- *	1.09b	Jeff Garzik: Modularize, init cleanup
- *	1.09c	Jeff Garzik: SMP cleanup
- *	1.10	Paul Barton-Davis: add support for async I/O
- *	1.10a	Andrea Arcangeli: Alpha updates
- *	1.10b	Andrew Morton: SMP lock fix
- *	1.10c	Cesar Barros: SMP locking fixes and cleanup
- *	1.10d	Paul Gortmaker: delete paranoia check in rtc_exit
- *	1.10e	Maciej W. Rozycki: Handle DECstation's year weirdness.
- *	1.11	Takashi Iwai: Kernel access functions
- *			      rtc_register/rtc_unregister/rtc_control
- *      1.11a   Daniele Bellucci: Audit create_proc_read_entry in rtc_init
- *	1.12	Venkatesh Pallipadi: Hooks for emulating rtc on HPET base-timer
- *		CONFIG_HPET_EMULATE_RTC
- *	1.12a	Maciej W. Rozycki: Handle memory-mapped chips properly.
- *	1.12ac	Alan Cox: Allow read access to the day of week register
- *	1.12b	David John: Remove calls to the BKL.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define RTC_VERSION		"1.12b"
 
 /*

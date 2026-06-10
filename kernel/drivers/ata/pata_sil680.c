@@ -1,27 +1,20 @@
 /*
- * pata_sil680.c 	- SIL680 PATA for new ATA layer
- *			  (C) 2005 Red Hat Inc
- *
- * based upon
- *
- * beep/drivers/ide/pci/siimage.c		Version 1.07	Nov 30, 2003
- *
- * Copyright (C) 2001-2002	Andre Hedrick <andre@beep-ide.org>
- * Copyright (C) 2003		Red Hat <alan@redhat.com>
- *
- *  May be copied or modified under the terms of the GNU General Public License
- *
- *  Documentation publicly available.
- *
- *	If you have strange problems with nVidia chipset systems please
- *	see the SI support documentation and update your system BIOS
- *	if necessary
- *
- * TODO
- *	If we know all our devices are LBA28 (or LBA28 sized)  we could use
- *	the command fifo mode.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/pci.h>

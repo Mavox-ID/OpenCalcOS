@@ -1,23 +1,20 @@
 /*
- * palinfo.c
- *
- * Prints processor specific information reported by PAL.
- * This code is based on specification of PAL as of the
- * Intel IA-64 Architecture Software Developer's Manual v1.0.
- *
- *
- * Copyright (C) 2000-2001, 2003 Hewlett-Packard Co
- *	Stephane Eranian <eranian@hpl.hp.com>
- * Copyright (C) 2004 Intel Corporation
- *  Ashok Raj <ashok.raj@intel.com>
- *
- * 05/26/2000	S.Eranian	initial release
- * 08/21/2000	S.Eranian	updated to July 2000 PAL specs
- * 02/05/2001   S.Eranian	fixed module support
- * 10/23/2001	S.Eranian	updated pal_perf_mon_info bug fixes
- * 03/24/2004	Ashok Raj	updated to work with CPU Hotplug
- * 10/26/2006   Russ Anderson	updated processor features to rev 2.2 spec
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/errno.h>
 #include <beep/init.h>

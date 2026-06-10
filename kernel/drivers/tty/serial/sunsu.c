@@ -1,20 +1,20 @@
 /*
- * su.c: Small serial driver for keyboard/mouse interface on sparc32/PCI
- *
- * Copyright (C) 1997  Eddie C. Dost  (ecd@skynet.be)
- * Copyright (C) 1998-1999  Pete Zaitcev   (zaitcev@yahoo.com)
- *
- * This is mainly a variation of 8250.c, credits go to authors mentioned
- * therein.  In fact this driver should be merged into the generic 8250.c
- * infrastructure perhaps using a 8250_sparc.c module.
- *
- * Fixed to use tty_get_baud_rate().
- *   Theodore Ts'o <tytso@mit.edu>, 2001-Oct-12
- *
- * Converted to new 2.5.x UART layer.
- *   David S. Miller (davem@davemloft.net), 2002-Jul-29
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/spinlock.h>

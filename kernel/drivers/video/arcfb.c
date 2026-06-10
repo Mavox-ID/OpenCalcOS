@@ -1,38 +1,20 @@
 /*
- * beep/drivers/video/arcfb.c -- FB driver for Arc monochrome LCD board
- *
- * Copyright (C) 2005, Jaya Kumar <jayalk@intworks.biz>
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License. See the file COPYING in the main directory of this archive for
- * more details.
- *
- * Layout is based on skeletonfb.c by James Simmons and Geert Uytterhoeven.
- *
- * This driver was written to be used with the Arc LCD board. Arc uses a
- * set of KS108 chips that control individual 64x64 LCD matrices. The board
- * can be paneled in a variety of setups such as 2x1=128x64, 4x4=256x256 and
- * so on. The interface between the board and the host is TTL based GPIO. The
- * GPIO requirements are 8 writable data lines and 4+n lines for control. On a
- * GPIO-less system, the board can be tested by connecting the respective sigs
- * up to a parallel port connector. The driver requires the IO addresses for
- * data and control GPIO at load time. It is unable to probe for the
- * existence of the LCD so it must be told at load time whether it should
- * be enabled or not.
- *
- * Todo:
- * - testing with 4x4
- * - testing with interrupt hw
- *
- * General notes:
- * - User must set tuhold. It's in microseconds. According to the 108 spec,
- *   the hold time is supposed to be at least 1 microsecond.
- * - User must set num_cols=x num_rows=y, eg: x=2 means 128
- * - User must set arcfb_enable=1 to enable it
- * - User must set dio_addr=0xIOADDR cio_addr=0xIOADDR
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/errno.h>

@@ -1,35 +1,20 @@
-/*=============================================================================
- *
- * A  PCMCIA client driver for the Raylink wireless LAN card.
- * The starting point for this module was the skeleton.c in the
- * PCMCIA 2.9.12 package written by David Hinds, dahinds@users.sourceforge.net
- *
- *
- * Copyright (c) 1998  Corey Thomas (corey@world.std.com)
- *
- * This driver is free software; you can redistribute it and/or modify
- * it under the terms of version 2 only of the GNU General Public License as
- * published by the Free Software Foundation.
- *
- * It is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
- *
- * Changes:
- * Arnaldo Carvalho de Melo <acme@conectiva.com.br> - 08/08/2000
- * - reorganize kmallocs in ray_attach, checking all for failure
- *   and releasing the previous allocations if one fails
- *
- * Daniele Bellucci <bellucda@tiscali.it> - 07/10/2003
- * - Audit copy_to_user in ioctl(SIOCGIWESSID)
- *
-=============================================================================*/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/proc_fs.h>

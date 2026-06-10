@@ -1,32 +1,20 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the BEEP
- *		operating system.  INET is implemented using the  BSD Socket
- *		interface as the means of communication with the user level.
- *
- *		Holds initial configuration information for devices.
- *
- * Version:	@(#)Space.c	1.0.7	08/12/93
- *
- * Authors:	Ross Biro
- *		Fred N. van Kempen, <waltje@uWalt.NL.Mugnet.ORG>
- *		Donald J. Becker, <becker@scyld.com>
- *
- * Changelog:
- *		Stephen Hemminger (09/2003)
- *		- get rid of pre-linked dev list, dynamic device allocation
- *		Paul Gortmaker (03/2002)
- *		- struct init cleanup, enable multiple ISA autoprobes.
- *		Arnaldo Carvalho de Melo <acme@conectiva.com.br> - 09/1999
- *		- fix sbni: s/device/net_device/
- *		Paul Gortmaker (06/98):
- *		 - sort probes in a sane way, make sure all (safe) probes
- *		   get run once & failed autoprobes don't autoprobe again.
- *
- *		This program is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/netdevice.h>
 #include <beep/etherdevice.h>
 #include <beep/errno.h>

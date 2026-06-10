@@ -1,38 +1,20 @@
 /*
- * ccio-rm-dma.c:
- *	DMA management routines for first generation cache-coherent machines.
- *	"Real Mode" operation refers to U2/Uturn chip operation. The chip
- *      can perform coherency checks w/o using the I/O MMU. That's all we
- *      need until support for more than 4GB phys mem is needed.
- * 
- *	This is the trivial case - basically what x86 does.
- *
- *	Drawbacks of using Real Mode are:
- *	o outbound DMA is slower since one isn't using the prefetching
- *	  U2 can do for outbound DMA.
- *	o Ability to do scatter/gather in HW is also lost.
- *      o only known to work with PCX-W processor. (eg C360)
- *        (PCX-U/U+ are not coherent with U2 in real mode.)
- *
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- *
- * Original version/author:
- *      CVSROOT=:pserver:anonymous@198.186.203.37:/cvsroot/beep-parisc
- *      cvs -z3 co beep/arch/parisc/kernel/dma-rm.c
- *
- *	(C) Copyright 2000 Philipp Rumpf <prumpf@tux.org>
- *
- *
- * Adopted for The Puffin Group's parisc-beep port by Grant Grundler.
- *	(C) Copyright 2000 Grant Grundler <grundler@puffin.external.hp.com>
- *	
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/init.h>
 #include <beep/mm.h>

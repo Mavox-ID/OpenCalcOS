@@ -1,15 +1,20 @@
 /*
- * TX4939 setup routines
- * Based on beep/arch/mips/txx9/generic/setup_tx4938.c,
- *	    and RBTX49xx patch from CELF patch archive.
- *
- * 2003-2005 (c) MontaVista Software, Inc.
- * (C) Copyright TOSHIBA CORPORATION 2000-2001, 2004-2007
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file "COPYING" in the main directory of this archive
- * for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/ioport.h>
 #include <beep/delay.h>

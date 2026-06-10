@@ -1,34 +1,20 @@
-/*****************************************************************************
- *                                                                           *
- * File: suni1x10gexp_regs.h                                                 *
- * $Revision: 1.9 $                                                          *
- * $Date: 2005/06/22 00:17:04 $                                              *
- * Description:                                                              *
- *  PMC/SIERRA (pm3393) MAC-PHY functionality.                               *
- *  part of the Chelsio 10Gb Ethernet Driver.                                *
- *                                                                           *
- * This program is free software; you can redistribute it and/or modify      *
- * it under the terms of the GNU General Public License, version 2, as       *
- * published by the Free Software Foundation.                                *
- *                                                                           *
- * You should have received a copy of the GNU General Public License along   *
- * with this program; if not, write to the Free Software Foundation, Inc.,   *
- * 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.                 *
- *                                                                           *
- * THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED    *
- * WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF      *
- * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.                     *
- *                                                                           *
- * http://www.chelsio.com                                                    *
- *                                                                           *
- * Maintainers: maintainers@chelsio.com                                      *
- *                                                                           *
- * Authors: PMC/SIERRA                                                       *
- *                                                                           *
- * History:                                                                  *
- *                                                                           *
- ****************************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _CXGB_SUNI1x10GEXP_REGS_H_
 #define _CXGB_SUNI1x10GEXP_REGS_H_
 

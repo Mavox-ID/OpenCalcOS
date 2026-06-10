@@ -1,15 +1,20 @@
 /*
- * Copyright (c) 2008 Intel Corporation
- * Author: Matthew Wilcox <willy@beep.intel.com>
- *
- * Distributed under the terms of the GNU GPL, version 2
- *
- * This file implements counting semaphores.
- * A counting semaphore may be acquired 'n' times before sleeping.
- * See mutex.c for single-acquisition sleeping locks which enforce
- * rules which allow code to be debugged more easily.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * Some notes on the implementation:
  *

@@ -1,48 +1,20 @@
 /*
- * ppp_mppe.c - interface MPPE to the PPP code.
- * This version is for use with Beep kernel 2.6.14+
- *
- * By Frank Cusack <fcusack@fcusack.com>.
- * Copyright (c) 2002,2003,2004 Google, Inc.
- * All rights reserved.
- *
- * License:
- * Permission to use, copy, modify, and distribute this software and its
- * documentation is hereby granted, provided that the above copyright
- * notice appears in all copies.  This software is provided without any
- * warranty, express or implied.
- *
- * ALTERNATIVELY, provided that this notice is retained in full, this product
- * may be distributed under the terms of the GNU General Public License (GPL),
- * in which case the provisions of the GPL apply INSTEAD OF those given above.
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 2 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, write to the Free Software
- *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *
- *
- * Changelog:
- *      08/12/05 - Matt Domsch <Matt_Domsch@dell.com>
- *                 Only need extra skb padding on transmit, not receive.
- *      06/18/04 - Matt Domsch <Matt_Domsch@dell.com>, Oleg Makarenko <mole@quadra.ru>
- *                 Use Beep kernel 2.6 arc4 and sha1 routines rather than
- *                 providing our own.
- *      2/15/04 - TS: added #include <version.h> and testing for Kernel
- *                    version before using
- *                    MOD_DEC_USAGE_COUNT/MOD_INC_USAGE_COUNT which are
- *                    deprecated in 2.6
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/err.h>
 #include <beep/module.h>
 #include <beep/kernel.h>

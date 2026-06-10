@@ -1,24 +1,20 @@
-/**
-   nsc_gpio.c
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-   National Semiconductor GPIO common access methods.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-   struct nsc_gpio_ops abstracts the low-level access
-   operations for the GPIO units on 2 NSC chip families; the GEODE
-   integrated CPU, and the PC-8736[03456] integrated PC-peripheral
-   chips.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-   The GPIO units on these chips have the same pin architecture, but
-   the access methods differ.  Thus, scx200_gpio and pc8736x_gpio
-   implement their own versions of these routines; and use the common
-   file-operations routines implemented in nsc_gpio module.
-
-   Copyright (c) 2005 Jim Cromie <jim.cromie@gmail.com>
-
-   NB: this work was tested on the Geode SC-1100 and PC-87366 chips.
-   NSC sold the GEODE line to AMD, and the PC-8736x line to Winbond.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 struct nsc_gpio_ops {
 	struct module*	owner;
 	u32	(*gpio_config)	(unsigned iminor, u32 mask, u32 bits);

@@ -1,20 +1,20 @@
 /*
- * u_serial.c - utilities for USB gadget "serial port"/TTY support
- *
- * Copyright (C) 2003 Al Borchers (alborchers@steinerpoint.com)
- * Copyright (C) 2008 David Brownell
- * Copyright (C) 2008 by Nokia Corporation
- *
- * This code also borrows from usbserial.c, which is
- * Copyright (C) 1999 - 2002 Greg Kroah-Hartman (greg@kroah.com)
- * Copyright (C) 2000 Peter Berger (pberger@brimson.com)
- * Copyright (C) 2000 Al Borchers (alborchers@steinerpoint.com)
- *
- * This software is distributed under the terms of the GNU General
- * Public License ("GPL") as published by the Free Software Foundation,
- * either version 2 of that License or (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* #define VERBOSE_DEBUG */
 
 #include <beep/kernel.h>

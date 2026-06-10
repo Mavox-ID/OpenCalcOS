@@ -1,22 +1,20 @@
 /*
- *	Video for Beep Two
- *
- *	A generic video device interface for the BEEP operating system
- *	using a set of device structures/vectors for low level operations.
- *
- *	This file replaces the videodev.c file that comes with the
- *	regular kernel distribution.
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- *
- * Author:	Bill Dirks <bill@thedirks.org>
- *		based on code by Alan Cox, <alan@cymru.net>
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * Video capture interface for Beep
  *

@@ -1,44 +1,20 @@
 /*
- * Ricoh RS5C313 RTC device/driver
- *  Copyright (C) 2007 Nobuhiro Iwamatsu
- *
- *  2005-09-19 modifed by kogiidena
- *
- * Based on the old drivers/char/rs5c313_rtc.c  by:
- *  Copyright (C) 2000 Philipp Rumpf <prumpf@tux.org>
- *  Copyright (C) 1999 Tetsuya Okada & Niibe Yutaka
- *
- * Based on code written by Paul Gortmaker.
- *  Copyright (C) 1996 Paul Gortmaker
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file "COPYING" in the main directory of this archive
- * for more details.
- *
- * Based on other minimal char device drivers, like Alan's
- * watchdog, Ted's random, etc. etc.
- *
- *	1.07	Paul Gortmaker.
- *	1.08	Miquel van Smoorenburg: disallow certain things on the
- *		DEC Alpha as the CMOS clock is also used for other things.
- *	1.09	Nikita Schmidt: epoch support and some Alpha cleanup.
- *	1.09a	Pete Zaitcev: Sun SPARC
- *	1.09b	Jeff Garzik: Modularize, init cleanup
- *	1.09c	Jeff Garzik: SMP cleanup
- *	1.10    Paul Barton-Davis: add support for async I/O
- *	1.10a	Andrea Arcangeli: Alpha updates
- *	1.10b	Andrew Morton: SMP lock fix
- *	1.10c	Cesar Barros: SMP locking fixes and cleanup
- *	1.10d	Paul Gortmaker: delete paranoia check in rtc_exit
- *	1.10e	Maciej W. Rozycki: Handle DECstation's year weirdness.
- *      1.11    Takashi Iwai: Kernel access functions
- *			      rtc_register/rtc_unregister/rtc_control
- *      1.11a   Daniele Bellucci: Audit create_proc_read_entry in rtc_init
- *	1.12	Venkatesh Pallipadi: Hooks for emulating rtc on HPET base-timer
- *		CONFIG_HPET_EMULATE_RTC
- *	1.13	Nobuhiro Iwamatsu: Updata driver.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/err.h>
 #include <beep/rtc.h>

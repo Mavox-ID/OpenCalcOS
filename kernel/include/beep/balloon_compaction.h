@@ -1,43 +1,20 @@
 /*
- * include/beep/balloon_compaction.h
- *
- * Common interface definitions for making balloon pages movable by compaction.
- *
- * Despite being perfectly possible to perform ballooned pages migration, they
- * make a special corner case to compaction scans because balloon pages are not
- * enlisted at any LRU list like the other pages we do compact / migrate.
- *
- * As the page isolation scanning step a compaction thread does is a lockless
- * procedure (from a page standpoint), it might bring some racy situations while
- * performing balloon page compaction. In order to sort out these racy scenarios
- * and safely perform balloon's page compaction and migration we must, always,
- * ensure following these three simple rules:
- *
- *   i. when updating a balloon's page ->mapping element, strictly do it under
- *      the following lock order, independently of the far superior
- *      locking scheme (lru_lock, balloon_lock):
- *	    +-page_lock(page);
- *	      +--spin_lock_irq(&b_dev_info->pages_lock);
- *	            ... page->mapping updates here ...
- *
- *  ii. before isolating or dequeueing a balloon page from the balloon device
- *      pages list, the page reference counter must be raised by one and the
- *      extra refcount must be dropped when the page is enqueued back into
- *      the balloon device page list, thus a balloon page keeps its reference
- *      counter raised only while it is under our special handling;
- *
- * iii. after the lockless scan step have selected a potential balloon page for
- *      isolation, re-test the page->mapping flags and the page ref counter
- *      under the proper page lock, to ensure isolating a valid balloon page
- *      (not yet isolated, nor under release procedure)
- *
- * The functions provided by this interface are placed to help on coping with
- * the aforementioned balloon page corner case, as well as to ensure the simple
- * set of exposed rules are satisfied while we are dealing with balloon pages
- * compaction / migration.
- *
- * Copyright (C) 2012, Red Hat, Inc.  Rafael Aquini <aquini@redhat.com>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _BEEP_BALLOON_COMPACTION_H
 #define _BEEP_BALLOON_COMPACTION_H
 #include <beep/pagemap.h>

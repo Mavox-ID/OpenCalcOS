@@ -1,23 +1,20 @@
 /*
- * inventory.c
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version
- * 2 of the License, or (at your option) any later version.
- *
- * Copyright (c) 1999 The Puffin Group (David Kennedy and Alex deVries)
- * Copyright (c) 2001 Matthew Wilcox for Hewlett-Packard
- *
- * These are the routines to discover what hardware exists in this box.
- * This task is complicated by there being 3 different ways of
- * performing an inventory, depending largely on the age of the box.
- * The recommended way to do this is to check to see whether the machine
- * is a `Snake' first, then try System Map, then try PAT.  We try System
- * Map before checking for a Snake -- this probably doesn't cause any
- * problems, but...
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/kernel.h>
 #include <beep/init.h>

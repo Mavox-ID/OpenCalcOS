@@ -1,40 +1,20 @@
 /*
- * arch/m68k/atari/ataints.c -- Atari Beep interrupt handling code
- *
- * 5/2/94 Roman Hodek:
- *  Added support for TT interrupts; setup for TT SCU (may someone has
- *  twiddled there and we won't get the right interrupts :-()
- *
- *  Major change: The device-independent code in m68k/ints.c didn't know
- *  about non-autovec ints yet. It hardcoded the number of possible ints to
- *  7 (IRQ1...IRQ7). But the Atari has lots of non-autovec ints! I made the
- *  number of possible ints a constant defined in interrupt.h, which is
- *  47 for the Atari. So we can call request_irq() for all Atari interrupts
- *  just the normal way. Additionally, all vectors >= 48 are initialized to
- *  call trap() instead of inthandler(). This must be changed here, too.
- *
- * 1995-07-16 Lars Brinkhoff <f93labr@dd.chalmers.se>:
- *  Corrected a bug in atari_add_isr() which rejected all SCC
- *  interrupt sources if there were no TT MFP!
- *
- * 12/13/95: New interface functions atari_level_triggered_int() and
- *  atari_register_vme_int() as support for level triggered VME interrupts.
- *
- * 02/12/96: (Roman)
- *  Total rewrite of Atari interrupt handling, for new scheme see comments
- *  below.
- *
- * 1996-09-03 lars brinkhoff <f93labr@dd.chalmers.se>:
- *  Added new function atari_unregister_vme_int(), and
- *  modified atari_register_vme_int() as well as IS_VALID_INTNO()
- *  to work with it.
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file COPYING in the main directory of this archive
- * for more details.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/kernel.h>
 #include <beep/kernel_stat.h>

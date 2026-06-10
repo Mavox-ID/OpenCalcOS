@@ -1,142 +1,21 @@
 /*
- *  beep/sound/oss/dmasound/dmasound_core.c
- *
- *
- *  OSS/Free compatible Atari TT/Falcon and Amiga DMA sound driver for
- *  Beep/m68k
- *  Extended to support Power Macintosh for Beep/ppc by Paul Mackerras
- *
- *  (c) 1995 by Michael Schlueter & Michael Marte
- *
- *  Michael Schlueter (michael@duck.syd.de) did the basic structure of the VFS
- *  interface and the u-law to signed byte conversion.
- *
- *  Michael Marte (marte@informatik.uni-muenchen.de) did the sound queue,
- *  /dev/mixer, /dev/sndstat and complemented the VFS interface. He would like
- *  to thank:
- *    - Michael Schlueter for initial ideas and documentation on the MFP and
- *	the DMA sound hardware.
- *    - Therapy? for their CD 'Troublegum' which really made me rock.
- *
- *  /dev/sndstat is based on code by Hannu Savolainen, the author of the
- *  VoxWare family of drivers.
- *
- *  This file is subject to the terms and conditions of the GNU General Public
- *  License.  See the file COPYING in the main directory of this archive
- *  for more details.
- *
- *  History:
- *
- *	1995/8/25	First release
- *
- *	1995/9/02	Roman Hodek:
- *			  - Fixed atari_stram_alloc() call, the timer
- *			    programming and several race conditions
- *	1995/9/14	Roman Hodek:
- *			  - After some discussion with Michael Schlueter,
- *			    revised the interrupt disabling
- *			  - Slightly speeded up U8->S8 translation by using
- *			    long operations where possible
- *			  - Added 4:3 interpolation for /dev/audio
- *
- *	1995/9/20	Torsten Scherer:
- *			  - Fixed a bug in sq_write and changed /dev/audio
- *			    converting to play at 12517Hz instead of 6258Hz.
- *
- *	1995/9/23	Torsten Scherer:
- *			  - Changed sq_interrupt() and sq_play() to pre-program
- *			    the DMA for another frame while there's still one
- *			    running. This allows the IRQ response to be
- *			    arbitrarily delayed and playing will still continue.
- *
- *	1995/10/14	Guenther Kelleter, Torsten Scherer:
- *			  - Better support for Falcon audio (the Falcon doesn't
- *			    raise an IRQ at the end of a frame, but at the
- *			    beginning instead!). uses 'if (codec_dma)' in lots
- *			    of places to simply switch between Falcon and TT
- *			    code.
- *
- *	1995/11/06	Torsten Scherer:
- *			  - Started introducing a hardware abstraction scheme
- *			    (may perhaps also serve for Amigas?)
- *			  - Can now play samples at almost all frequencies by
- *			    means of a more generalized expand routine
- *			  - Takes a good deal of care to cut data only at
- *			    sample sizes
- *			  - Buffer size is now a kernel runtime option
- *			  - Implemented fsync() & several minor improvements
- *			Guenther Kelleter:
- *			  - Useful hints and bug fixes
- *			  - Cross-checked it for Falcons
- *
- *	1996/3/9	Geert Uytterhoeven:
- *			  - Support added for Amiga, A-law, 16-bit little
- *			    endian.
- *			  - Unification to drivers/sound/dmasound.c.
- *
- *	1996/4/6	Martin Mitchell:
- *			  - Updated to 1.3 kernel.
- *
- *	1996/6/13       Topi Kanerva:
- *			  - Fixed things that were broken (mainly the amiga
- *			    14-bit routines)
- *			  - /dev/sndstat shows now the real hardware frequency
- *			  - The lowpass filter is disabled by default now
- *
- *	1996/9/25	Geert Uytterhoeven:
- *			  - Modularization
- *
- *	1998/6/10	Andreas Schwab:
- *			  - Converted to use sound_core
- *
- *	1999/12/28	Richard Zidlicky:
- *			  - Added support for Q40
- *
- *	2000/2/27	Geert Uytterhoeven:
- *			  - Clean up and split the code into 4 parts:
- *			      o dmasound_core: machine-independent code
- *			      o dmasound_atari: Atari TT and Falcon support
- *			      o dmasound_awacs: Apple PowerMac support
- *			      o dmasound_paula: Amiga support
- *
- *	2000/3/25	Geert Uytterhoeven:
- *			  - Integration of dmasound_q40
- *			  - Small clean ups
- *
- *	2001/01/26 [1.0] Iain Sandoe
- *			  - make /dev/sndstat show revision & edition info.
- *			  - since dmasound.mach.sq_setup() can fail on pmac
- *			    its type has been changed to int and the returns
- *			    are checked.
- *		   [1.1]  - stop missing translations from being called.
- *	2001/02/08 [1.2]  - remove unused translation tables & move machine-
- *			    specific tables to low-level.
- *			  - return correct info. for SNDCTL_DSP_GETFMTS.
- *		   [1.3]  - implement SNDCTL_DSP_GETCAPS fully.
- *		   [1.4]  - make /dev/sndstat text length usage deterministic.
- *			  - make /dev/sndstat call to low-level
- *			    dmasound.mach.state_info() pass max space to ll driver.
- *			  - tidy startup banners and output info.
- *		   [1.5]  - tidy up a little (removed some unused #defines in
- *			    dmasound.h)
- *			  - fix up HAS_RECORD conditionalisation.
- *			  - add record code in places it is missing...
- *			  - change buf-sizes to bytes to allow < 1kb for pmac
- *			    if user param entry is < 256 the value is taken to
- *			    be in kb > 256 is taken to be in bytes.
- *			  - make default buff/frag params conditional on
- *			    machine to allow smaller values for pmac.
- *			  - made the ioctls, read & write comply with the OSS
- *			    rules on setting params.
- *			  - added parsing of _setup() params for record.
- *	2001/04/04 [1.6]  - fix bug where sample rates higher than maximum were
- *			    being reported as OK.
- *			  - fix open() to return -EBUSY as per OSS doc. when
- *			    audio is in use - this is independent of O_NOBLOCK.
- *			  - fix bug where SNDCTL_DSP_POST was blocking.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
- /* Record capability notes 30/01/2001:
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+/* Record capability notes 30/01/2001:
   * At present these observations apply only to pmac LL driver (the only one
   * that can do record, at present).  However, if other LL drivers for machines
   * with record are added they may apply.

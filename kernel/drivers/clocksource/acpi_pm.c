@@ -1,21 +1,20 @@
 /*
- * beep/drivers/clocksource/acpi_pm.c
- *
- * This file contains the ACPI PM based clocksource.
- *
- * This code was largely moved from the i386 timer_pm.c file
- * which was (C) Dominik Brodowski <beep@brodo.de> 2003
- * and contained the following comments:
- *
- * Driver to use the Power Management Timer (PMTMR) available in some
- * southbridges as primary timing source for the Beep kernel.
- *
- * Based on parts of beep/drivers/acpi/hardware/hwtimer.c, timer_pit.c,
- * timer_hpet.c, and on Arjan van de Ven's implementation for 2.4.
- *
- * This file is licensed under the GPL v2.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/acpi_pmtmr.h>
 #include <beep/clocksource.h>
 #include <beep/timex.h>

@@ -1,32 +1,20 @@
 /*
- *  Copyright (C) 1998-2000 Michel Aubry, Maintainer
- *  Copyright (C) 1998-2000 Andrzej Krzysztofowicz, Maintainer
- *  Copyright (C) 1999-2000 CJ, cjtsai@ali.com.tw, Maintainer
- *
- *  Copyright (C) 1998-2000 Andre Hedrick (andre@beep-ide.org)
- *  May be copied or modified under the terms of the GNU General Public License
- *  Copyright (C) 2002 Alan Cox
- *  ALi (now ULi M5228) support by Clear Zhang <Clear.Zhang@ali.com.tw>
- *  Copyright (C) 2007 MontaVista Software, Inc. <source@mvista.com>
- *  Copyright (C) 2007-2010 Bartlomiej Zolnierkiewicz
- *
- *  (U)DMA capable version of ali 1533/1543(C), 1535(D)
- *
- **********************************************************************
- *  9/7/99 --Parts from the above author are included and need to be
- *  converted into standard interface, once I finish the thought.
- *
- *  Recent changes
- *	Don't use LBA48 mode on ALi <= 0xC4
- *	Don't poke 0x79 with a non ALi northbridge
- *	Don't flip undefined bits on newer chipsets (fix Fujitsu laptop hang)
- *	Allow UDMA6 on revisions > 0xC4
- *
- *  Documentation
- *	Chipset documentation available under NDA only
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/types.h>
 #include <beep/kernel.h>

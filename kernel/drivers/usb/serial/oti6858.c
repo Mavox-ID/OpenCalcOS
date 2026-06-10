@@ -1,42 +1,20 @@
 /*
- * Ours Technology Inc. OTi-6858 USB to serial adapter driver.
- *
- * Copyleft  (C) 2007 Kees Lemmens (adapted for kernel 2.6.20)
- * Copyright (C) 2006 Tomasz Michal Lukaszewski (FIXME: add e-mail)
- * Copyright (C) 2001-2004 Greg Kroah-Hartman (greg@kroah.com)
- * Copyright (C) 2003 IBM Corp.
- *
- * Many thanks to the authors of pl2303 driver: all functions in this file
- * are heavily based on pl2303 code, buffering code is a 1-to-1 copy.
- *
- * Warning! You use this driver on your own risk! The only official
- * description of this device I have is datasheet from manufacturer,
- * and it doesn't contain almost any information needed to write a driver.
- * Almost all knowlegde used while writing this driver was gathered by:
- *  - analyzing traffic between device and the M$ Windows 2000 driver,
- *  - trying different bit combinations and checking pin states
- *    with a voltmeter,
- *  - receiving malformed frames and producing buffer overflows
- *    to learn how errors are reported,
- * So, THIS CODE CAN DESTROY OTi-6858 AND ANY OTHER DEVICES, THAT ARE
- * CONNECTED TO IT!
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License.
- *
- * See Documentation/usb/usb-serial.txt for more information on using this
- * driver
- *
- * TODO:
- *  - implement correct flushing for ioctls and oti6858_close()
- *  - check how errors (rx overflow, parity error, framing error) are reported
- *  - implement oti6858_break_ctl()
- *  - implement more ioctls
- *  - test/implement flow control
- *  - allow setting custom baud rates
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/errno.h>
 #include <beep/init.h>

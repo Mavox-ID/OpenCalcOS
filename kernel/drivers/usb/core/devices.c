@@ -1,54 +1,20 @@
 /*
- * devices.c
- * (C) Copyright 1999 Randy Dunlap.
- * (C) Copyright 1999,2000 Thomas Sailer <sailer@ife.ee.ethz.ch>.
- *     (proc file per device)
- * (C) Copyright 1999 Deti Fliegl (new USB architecture)
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *
- *************************************************************
- *
- * <mountpoint>/devices contains USB topology, device, config, class,
- * interface, & endpoint data.
- *
- * I considered using /proc/bus/usb/devices/device# for each device
- * as it is attached or detached, but I didn't like this for some
- * reason -- maybe it's just too deep of a directory structure.
- * I also don't like looking in multiple places to gather and view
- * the data.  Having only one file for ./devices also prevents race
- * conditions that could arise if a program was reading device info
- * for devices that are being removed (unplugged).  (That is, the
- * program may find a directory for devnum_12 then try to open it,
- * but it was just unplugged, so the directory is now deleted.
- * But programs would just have to be prepared for situations like
- * this in any plug-and-play environment.)
- *
- * 1999-12-16: Thomas Sailer <sailer@ife.ee.ethz.ch>
- *   Converted the whole proc stuff to real
- *   read methods. Now not the whole device list needs to fit
- *   into one page, only the device list for one bus.
- *   Added a poll method to /proc/bus/usb/devices, to wake
- *   up an eventual usbd
- * 2000-01-04: Thomas Sailer <sailer@ife.ee.ethz.ch>
- *   Turned into its own filesystem
- * 2000-07-05: Ashley Montanaro <ashley@compsoc.man.ac.uk>
- *   Converted file reading routine to dump to buffer once
- *   per device, not per bus
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/fs.h>
 #include <beep/mm.h>
 #include <beep/gfp.h>

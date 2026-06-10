@@ -1,62 +1,20 @@
 /*
- * arch/sparc/math-emu/math.c
- *
- * Copyright (C) 1998 Peter Maydell (pmaydell@chiark.greenend.org.uk)
- * Copyright (C) 1997, 1999 Jakub Jelinek (jj@ultra.beep.cz)
- * Copyright (C) 1999 David S. Miller (davem@redhat.com)
- *
- * This is a good place to start if you're trying to understand the
- * emulation code, because it's pretty simple. What we do is
- * essentially analyse the instruction to work out what the operation
- * is and which registers are involved. We then execute the appropriate
- * FXXXX function. [The floating point queue introduces a minor wrinkle;
- * see below...]
- * The fxxxxx.c files each emulate a single insn. They look relatively
- * simple because the complexity is hidden away in an unholy tangle
- * of preprocessor macros.
- *
- * The first layer of macros is single.h, double.h, quad.h. Generally
- * these files define macros for working with floating point numbers
- * of the three IEEE formats. FP_ADD_D(R,A,B) is for adding doubles,
- * for instance. These macros are usually defined as calls to more
- * generic macros (in this case _FP_ADD(D,2,R,X,Y) where the number
- * of machine words required to store the given IEEE format is passed
- * as a parameter. [double.h and co check the number of bits in a word
- * and define FP_ADD_D & co appropriately].
- * The generic macros are defined in op-common.h. This is where all
- * the grotty stuff like handling NaNs is coded. To handle the possible
- * word sizes macros in op-common.h use macros like _FP_FRAC_SLL_##wc()
- * where wc is the 'number of machine words' parameter (here 2).
- * These are defined in the third layer of macros: op-1.h, op-2.h
- * and op-4.h. These handle operations on floating point numbers composed
- * of 1,2 and 4 machine words respectively. [For example, on sparc64
- * doubles are one machine word so macros in double.h eventually use
- * constructs in op-1.h, but on sparc32 they use op-2.h definitions.]
- * soft-fp.h is on the same level as op-common.h, and defines some
- * macros which are independent of both word size and FP format.
- * Finally, sfp-machine.h is the machine dependent part of the
- * code: it defines the word size and what type a word is. It also
- * defines how _FP_MUL_MEAT_t() maps to _FP_MUL_MEAT_n_* : op-n.h
- * provide several possible flavours of multiply algorithm, most
- * of which require that you supply some form of asm or C primitive to
- * do the actual multiply. (such asm primitives should be defined
- * in sfp-machine.h too). udivmodti4.c is the same sort of thing.
- *
- * There may be some errors here because I'm working from a
- * SPARC architecture manual V9, and what I really want is V8...
- * Also, the insns which can generate exceptions seem to be a
- * greater subset of the FPops than for V9 (for example, FCMPED
- * has to be emulated on V8). So I think I'm going to have
- * to emulate them all just to be on the safe side...
- *
- * Emulation routines originate from soft-fp package, which is
- * part of glibc and has appropriate copyrights in it (allegedly).
- *
- * NB: on sparc int == long == 4 bytes, long long == 8 bytes.
- * Most bits of the kernel seem to go for long rather than int,
- * so we follow that practice...
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* TODO:
  * fpsave() saves the FP queue but fpload() doesn't reload it.
  * Therefore when we context switch or change FPU ownership

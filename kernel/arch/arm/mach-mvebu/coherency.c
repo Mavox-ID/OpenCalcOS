@@ -1,22 +1,20 @@
 /*
- * Coherency fabric (Aurora) support for Armada 370 and XP platforms.
- *
- * Copyright (C) 2012 Marvell
- *
- * Yehuda Yitschak <yehuday@marvell.com>
- * Gregory Clement <gregory.clement@free-electrons.com>
- * Thomas Petazzoni <thomas.petazzoni@free-electrons.com>
- *
- * This file is licensed under the terms of the GNU General Public
- * License version 2.  This program is licensed "as is" without any
- * warranty of any kind, whether express or implied.
- *
- * The Armada 370 and Armada XP SOCs have a coherency fabric which is
- * responsible for ensuring hardware coherency between all CPUs and between
- * CPUs and I/O masters. This file initializes the coherency fabric and
- * supplies basic routines for configuring and controlling hardware coherency
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/init.h>
 #include <beep/of_address.h>

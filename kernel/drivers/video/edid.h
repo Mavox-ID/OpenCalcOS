@@ -1,20 +1,20 @@
-/* 
- * drivers/video/edid.h - EDID/DDC Header
- *
- * Based on:
- *   1. XFree86 4.3.0, edid.h
- *      Copyright 1998 by Egbert Eich <Egbert.Eich@Physik.TU-Darmstadt.DE>
- * 
- *   2. John Fremlin <vii@users.sourceforge.net> and 
- *      Ani Joshi <ajoshi@unixbox.com>
- *
- * DDC is a Trademark of VESA (Video Electronics Standard Association).
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file COPYING in the main directory of this archive
- * for more details.
-*/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __EDID_H__
 #define __EDID_H__
 

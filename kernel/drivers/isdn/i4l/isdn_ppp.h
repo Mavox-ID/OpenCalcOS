@@ -1,14 +1,20 @@
-/* $Id: isdn_ppp.h,v 1.1.2.2 2004/01/12 22:37:19 keil Exp $
- *
- * header for Beep ISDN subsystem, functions for synchronous PPP (linklevel).
- *
- * Copyright 1995,96 by Michael Hipp (Michael.Hipp@student.uni-tuebingen.de)
- *
- * This software may be used and distributed according to the terms
- * of the GNU General Public License, incorporated herein by reference.
- *
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/ppp_defs.h>     /* for PPP_PROTOCOL */
 #include <beep/isdn_ppp.h>	/* for isdn_ppp info */
 

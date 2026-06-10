@@ -1,12 +1,10 @@
 /*
-    Conexant CX22700 DVB OFDM demodulator driver
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-    Copyright (C) 2001-2002 Convergence Integrated Media GmbH
-	Holger Waechtler <holger@convergence.de>
-
-    This program is free software; you can redistribute it and/or modify
+    This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
+    the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
@@ -15,11 +13,8 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #ifndef CX22700_H
 #define CX22700_H
 

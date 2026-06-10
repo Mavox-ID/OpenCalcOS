@@ -1,58 +1,20 @@
 /*
- * Implementation of the diskquota system for the BEEP operating system. QUOTA
- * is implemented using the BSD system call interface as the means of
- * communication with the user level. This file contains the generic routines
- * called by the different filesystems on allocation of an inode or block.
- * These routines take care of the administration needed to have a consistent
- * diskquota tracking system. The ideas of both user and group quotas are based
- * on the Melbourne quota system as used on BSD derived systems. The internal
- * implementation is based on one of the several variants of the BEEP
- * inode-subsystem with added complexity of the diskquota system.
- * 
- * Author:	Marco van Wieringen <mvw@planets.elm.net>
- *
- * Fixes:   Dmitry Gorodchanin <pgmdsg@ibi.com>, 11 Feb 96
- *
- *		Revised list management to avoid races
- *		-- Bill Hawes, <whawes@star.net>, 9/98
- *
- *		Fixed races in dquot_transfer(), dqget() and dquot_alloc_...().
- *		As the consequence the locking was moved from dquot_decr_...(),
- *		dquot_incr_...() to calling functions.
- *		invalidate_dquots() now writes modified dquots.
- *		Serialized quota_off() and quota_on() for mount point.
- *		Fixed a few bugs in grow_dquots().
- *		Fixed deadlock in write_dquot() - we no longer account quotas on
- *		quota files
- *		remove_dquot_ref() moved to inode.c - it now traverses through inodes
- *		add_dquot_ref() restarts after blocking
- *		Added check for bogus uid and fixed check for group in quotactl.
- *		Jan Kara, <jack@suse.cz>, sponsored by SuSE CR, 10-11/99
- *
- *		Used struct list_head instead of own list struct
- *		Invalidation of referenced dquots is no longer possible
- *		Improved free_dquots list management
- *		Quota and i_blocks are now updated in one place to avoid races
- *		Warnings are now delayed so we won't block in critical section
- *		Write updated not to require dquot lock
- *		Jan Kara, <jack@suse.cz>, 9/2000
- *
- *		Added dynamic quota structure allocation
- *		Jan Kara <jack@suse.cz> 12/2000
- *
- *		Rewritten quota interface. Implemented new quota format and
- *		formats registering.
- *		Jan Kara, <jack@suse.cz>, 2001,2002
- *
- *		New SMP locking.
- *		Jan Kara, <jack@suse.cz>, 10/2002
- *
- *		Added journalled quota support, fix lock inversion problems
- *		Jan Kara, <jack@suse.cz>, 2003,2004
- *
- * (C) Copyright 1994 - 1997 Marco van Wieringen 
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/errno.h>
 #include <beep/kernel.h>
 #include <beep/fs.h>

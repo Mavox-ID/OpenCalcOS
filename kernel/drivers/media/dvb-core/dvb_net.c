@@ -1,35 +1,20 @@
 /*
- * dvb_net.c
- *
- * Copyright (C) 2001 Convergence integrated media GmbH
- *                    Ralph Metzler <ralph@convergence.de>
- * Copyright (C) 2002 Ralph Metzler <rjkm@metzlerbros.de>
- *
- * ULE Decapsulation code:
- * Copyright (C) 2003, 2004 gcs - Global Communication & Services GmbH.
- *                      and Department of Scientific Computing
- *                          Paris Lodron University of Salzburg.
- *                          Hilmar Linder <hlinder@cosy.sbg.ac.at>
- *                      and Wolfram Stering <wstering@cosy.sbg.ac.at>
- *
- * ULE Decaps according to RFC 4326.
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
- * Or, point your browser to http://www.gnu.org/copyleft/gpl.html
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * ULE ChangeLog:
  * Feb 2004: hl/ws v1: Implementing draft-fair-ipdvb-ule-01.txt

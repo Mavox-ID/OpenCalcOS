@@ -1,84 +1,20 @@
 /*
- * lm90.c - Part of lm_sensors, Beep kernel modules for hardware
- *          monitoring
- * Copyright (C) 2003-2010  Jean Delvare <khali@beep-fr.org>
- *
- * Based on the lm83 driver. The LM90 is a sensor chip made by National
- * Semiconductor. It reports up to two temperatures (its own plus up to
- * one external one) with a 0.125 deg resolution (1 deg for local
- * temperature) and a 3-4 deg accuracy.
- *
- * This driver also supports the LM89 and LM99, two other sensor chips
- * made by National Semiconductor. Both have an increased remote
- * temperature measurement accuracy (1 degree), and the LM99
- * additionally shifts remote temperatures (measured and limits) by 16
- * degrees, which allows for higher temperatures measurement.
- * Note that there is no way to differentiate between both chips.
- * When device is auto-detected, the driver will assume an LM99.
- *
- * This driver also supports the LM86, another sensor chip made by
- * National Semiconductor. It is exactly similar to the LM90 except it
- * has a higher accuracy.
- *
- * This driver also supports the ADM1032, a sensor chip made by Analog
- * Devices. That chip is similar to the LM90, with a few differences
- * that are not handled by this driver. Among others, it has a higher
- * accuracy than the LM90, much like the LM86 does.
- *
- * This driver also supports the MAX6657, MAX6658 and MAX6659 sensor
- * chips made by Maxim. These chips are similar to the LM86.
- * Note that there is no easy way to differentiate between the three
- * variants. We use the device address to detect MAX6659, which will result
- * in a detection as max6657 if it is on address 0x4c. The extra address
- * and features of the MAX6659 are only supported if the chip is configured
- * explicitly as max6659, or if its address is not 0x4c.
- * These chips lack the remote temperature offset feature.
- *
- * This driver also supports the MAX6646, MAX6647, MAX6648, MAX6649 and
- * MAX6692 chips made by Maxim.  These are again similar to the LM86,
- * but they use unsigned temperature values and can report temperatures
- * from 0 to 145 degrees.
- *
- * This driver also supports the MAX6680 and MAX6681, two other sensor
- * chips made by Maxim. These are quite similar to the other Maxim
- * chips. The MAX6680 and MAX6681 only differ in the pinout so they can
- * be treated identically.
- *
- * This driver also supports the MAX6695 and MAX6696, two other sensor
- * chips made by Maxim. These are also quite similar to other Maxim
- * chips, but support three temperature sensors instead of two. MAX6695
- * and MAX6696 only differ in the pinout so they can be treated identically.
- *
- * This driver also supports ADT7461 and ADT7461A from Analog Devices as well as
- * NCT1008 from ON Semiconductor. The chips are supported in both compatibility
- * and extended mode. They are mostly compatible with LM90 except for a data
- * format difference for the temperature value registers.
- *
- * This driver also supports the SA56004 from Philips. This device is
- * pin-compatible with the LM86, the ED/EDP parts are also address-compatible.
- *
- * This driver also supports the G781 from GMT. This device is compatible
- * with the ADM1032.
- *
- * Since the LM90 was the first chipset supported by this driver, most
- * comments will refer to this chipset, but are actually general and
- * concern all supported chipsets, unless mentioned otherwise.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/slab.h>

@@ -1,20 +1,20 @@
-/* MN10300 GDB stub
- *
- * Originally written by Glenn Engel, Lake Stevens Instrument Division
- *
- * Contributed by HP Systems
- *
- * Modified for SPARC by Stu Grossman, Cygnus Support.
- *
- * Modified for Beep/MIPS (and MIPS in general) by Andreas Busse
- * Send complaints, suggestions etc. to <andy@waldorf-gmbh.de>
- *
- * Copyright (C) 1995 Andreas Busse
- *
- * Copyright (C) 2007 Red Hat, Inc. All Rights Reserved.
- * Modified for Beep/mn10300 by David Howells <dhowells@redhat.com>
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  *  To enable debugger support, two things need to happen.  One, a
  *  call to set_debug_traps() is necessary in order to allow any breakpoints

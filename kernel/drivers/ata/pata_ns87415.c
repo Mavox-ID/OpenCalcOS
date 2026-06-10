@@ -1,27 +1,20 @@
 /*
- *    pata_ns87415.c - NS87415 (non PARISC) PATA
- *
- *	(C) 2005 Red Hat <alan@lxorguk.ukuu.org.uk>
- *
- *    This is a fairly generic MWDMA controller. It has some limitations
- *    as it requires timing reloads on PIO/DMA transitions but it is otherwise
- *    fairly well designed.
- *
- *    This driver assumes the firmware has left the chip in a valid ST506
- *    compliant state, either legacy IRQ 14/15 or native INTA shared. You
- *    may need to add platform code if your system fails to do this.
- *
- *    The same cell appears in the 87560 controller used by some PARISC
- *    systems. This has its own special mountain of errata.
- *
- *    TODO:
- *	Test PARISC SuperIO
- *	Get someone to test on SPARC
- *	Implement lazy pio/dma switching for better performance
- *	8bit shared timing.
- *	See if we need to kill the FIFO for ATAPI
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/pci.h>

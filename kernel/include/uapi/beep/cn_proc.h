@@ -1,20 +1,20 @@
 /*
- * cn_proc.h - process events connector
- *
- * Copyright (C) Matt Helsley, IBM Corp. 2005
- * Based on cn_fork.h by Nguyen Anh Quynh and Guillaume Thouvenin
- * Copyright (C) 2005 Nguyen Anh Quynh <aquynh@gmail.com>
- * Copyright (C) 2005 Guillaume Thouvenin <guillaume.thouvenin@bull.net>
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of version 2.1 of the GNU Lesser General Public License
- * as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it would be useful, but
- * WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _UAPICN_PROC_H
 #define _UAPICN_PROC_H
 

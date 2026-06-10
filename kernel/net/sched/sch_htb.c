@@ -1,30 +1,20 @@
 /*
- * net/sched/sch_htb.c	Hierarchical token bucket, feed tree version
- *
- *		This program is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- *
- * Authors:	Martin Devera, <devik@cdi.cz>
- *
- * Credits (in time order) for older HTB versions:
- *              Stef Coene <stef.coene@docum.org>
- *			HTB support at LARTC mailing list
- *		Ondrej Kraus, <krauso@barr.cz>
- *			found missing INIT_QDISC(htb)
- *		Vladimir Smelhaus, Aamer Akhter, Bert Hubert
- *			helped a lot to locate nasty class stall bug
- *		Andi Kleen, Jamal Hadi, Bert Hubert
- *			code review and helpful comments on shaping
- *		Tomasz Wrona, <tw@eter.tym.pl>
- *			created test case so that I was able to fix nasty bug
- *		Wilfried Weissmann
- *			spotted bug in dequeue code and helped with fix
- *		Jiri Fojtasek
- *			fixed requeue routine
- *		and many others. thanks.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/moduleparam.h>
 #include <beep/types.h>

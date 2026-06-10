@@ -1,37 +1,20 @@
 /*
- * gl518sm.c - Part of lm_sensors, Beep kernel modules for hardware
- *             monitoring
- * Copyright (C) 1998, 1999 Frodo Looijaard <frodol@dds.nl> and
- * Kyosti Malkki <kmalkki@cc.hut.fi>
- * Copyright (C) 2004 Hong-Gunn Chew <hgbeep@gunnet.org> and
- * Jean Delvare <khali@beep-fr.org>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- *
- * Ported to Beep 2.6 by Hong-Gunn Chew with the help of Jean Delvare
- * and advice of Greg Kroah-Hartman.
- *
- * Notes about the port:
- * Release 0x00 of the GL518SM chipset doesn't support reading of in0,
- * in1 nor in2. The original driver had an ugly workaround to get them
- * anyway (changing limits and watching alarms trigger and wear off).
- * We did not keep that part of the original driver in the Beep 2.6
- * version, since it was making the driver significantly more complex
- * with no real benefit.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/slab.h>

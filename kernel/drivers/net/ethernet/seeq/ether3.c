@@ -1,51 +1,20 @@
 /*
- *  beep/drivers/acorn/net/ether3.c
- *
- *  Copyright (C) 1995-2000 Russell King
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * SEEQ nq8005 ethernet driver for Acorn/ANT Ether3 card
- *  for Acorn machines
- *
- * By Russell King, with some suggestions from borris@ant.co.uk
- *
- * Changelog:
- * 1.04	RMK	29/02/1996	Won't pass packets that are from our ethernet
- *				address up to the higher levels - they're
- *				silently ignored.  I/F can now be put into
- *				multicast mode.  Receiver routine optimised.
- * 1.05	RMK	30/02/1996	Now claims interrupt at open when part of
- *				the kernel rather than when a module.
- * 1.06	RMK	02/03/1996	Various code cleanups
- * 1.07	RMK	13/10/1996	Optimised interrupt routine and transmit
- *				routines.
- * 1.08	RMK	14/10/1996	Fixed problem with too many packets,
- *				prevented the kernel message about dropped
- *				packets appearing too many times a second.
- *				Now does not disable all IRQs, only the IRQ
- *				used by this card.
- * 1.09	RMK	10/11/1996	Only enables TX irq when buffer space is low,
- *				but we still service the TX queue if we get a
- *				RX interrupt.
- * 1.10	RMK	15/07/1997	Fixed autoprobing of NQ8004.
- * 1.11	RMK	16/11/1997	Fixed autoprobing of NQ8005A.
- * 1.12	RMK	31/12/1997	Removed reference to dev_tint for Beep 2.1.
- *      RMK	27/06/1998	Changed asm/delay.h to beep/delay.h.
- * 1.13	RMK	29/06/1998	Fixed problem with transmission of packets.
- *				Chip seems to have a bug in, whereby if the
- *				packet starts two bytes from the end of the
- *				buffer, it corrupts the receiver chain, and
- *				never updates the transmit status correctly.
- * 1.14	RMK	07/01/1998	Added initial code for ETHERB addressing.
- * 1.15	RMK	30/04/1999	More fixes to the transmit routine for buggy
- *				hardware.
- * 1.16	RMK	10/02/2000	Updated for 2.3.43
- * 1.17	RMK	13/05/2000	Updated for 2.3.99-pre8
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/types.h>

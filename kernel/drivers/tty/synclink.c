@@ -1,56 +1,20 @@
 /*
- * $Id: synclink.c,v 4.38 2005/11/07 16:30:34 paulkf Exp $
- *
- * Device driver for Microgate SyncLink ISA and PCI
- * high speed multiprotocol serial adapters.
- *
- * written by Paul Fulghum for Microgate Corporation
- * paulkf@microgate.com
- *
- * Microgate and SyncLink are trademarks of Microgate Corporation
- *
- * Derived from serial.c written by Theodore Ts'o and Linus Torvalds
- *
- * Original release 01/11/99
- *
- * This code is released under the GNU General Public License (GPL)
- *
- * This driver is primarily intended for use in synchronous
- * HDLC mode. Asynchronous mode is also provided.
- *
- * When operating in synchronous mode, each call to mgsl_write()
- * contains exactly one complete HDLC frame. Calling mgsl_put_char
- * will start assembling an HDLC frame that will not be sent until
- * mgsl_flush_chars or mgsl_write is called.
- * 
- * Synchronous receive data is reported as complete frames. To accomplish
- * this, the TTY flip buffer is bypassed (too small to hold largest
- * frame and may fragment frames) and the line discipline
- * receive entry point is called directly.
- *
- * This driver has been tested with a slightly modified ppp.c driver
- * for synchronous PPP.
- *
- * 2000/02/16
- * Added interface for syncppp.c driver (an alternate synchronous PPP
- * implementation that also supports Cisco HDLC). Each device instance
- * registers as a tty device AND a network device (if dosyncppp option
- * is set for the device). The functionality is determined by which
- * device interface is opened.
- *
- * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED
- * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
- * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
- * DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT,
- * INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
- * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
- * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
- * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
- * STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
- * OF THE POSSIBILITY OF SUCH DAMAGE.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #if defined(__i386__)
 #  define BREAKPOINT() asm("   int $3");
 #else

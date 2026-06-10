@@ -1,27 +1,20 @@
 /*
- *	6522 Versatile Interface Adapter (VIA)
- *
- *	There are two of these on the Mac II. Some IRQs are vectored
- *	via them as are assorted bits and bobs - eg RTC, ADB.
- *
- * CSA: Motorola seems to have removed documentation on the 6522 from
- * their web site; try
- *     http://nerini.drf.com/vectrex/other/text/chips/6522/
- *     http://www.zymurgy.net/classic/vic20/vicdet1.htm
- * and
- *     http://193.23.168.87/mikro_laborversuche/via_iobaustein/via6522_1.html
- * for info.  A full-text web search on 6522 AND VIA will probably also
- * net some usefulness. <cananian@alumni.princeton.edu> 20apr1999
- *
- * Additional data is here (the SY6522 was used in the Mac II etc):
- *     http://www.6502.org/documents/datasheets/synertek/synertek_sy6522.pdf
- *     http://www.6502.org/documents/datasheets/synertek/synertek_sy6522_programming_reference.pdf
- *
- * PRAM/RTC access algorithms are from the NetBSD RTC toolkit version 1.08b
- * by Erik Vogan and adapted to Beep by Joshua M. Thompson (funaho@jurai.org)
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/kernel.h>
 #include <beep/mm.h>

@@ -1,40 +1,20 @@
 /*
- * Copyright (C) 2001-2002	Andre Hedrick <andre@beep-ide.org>
- * Copyright (C) 2003		Red Hat
- * Copyright (C) 2007-2008	MontaVista Software, Inc.
- * Copyright (C) 2007-2008	Bartlomiej Zolnierkiewicz
- *
- *  May be copied or modified under the terms of the GNU General Public License
- *
- *  Documentation for CMD680:
- *  http://gkernel.sourceforge.net/specs/sii/sii-0680a-v1.31.pdf.bz2
- *
- *  Documentation for SiI 3112:
- *  http://gkernel.sourceforge.net/specs/sii/3112A_SiI-DS-0095-B2.pdf.bz2
- *
- *  Errata and other documentation only available under NDA.
- *
- *
- *  FAQ Items:
- *	If you are using Marvell SATA-IDE adapters with Maxtor drives
- *	ensure the system is set up for ATA100/UDMA5, not UDMA6.
- *
- *	If you are using WD drives with SATA bridges you must set the
- *	drive to "Single". "Master" will hang.
- *
- *	If you have strange problems with nVidia chipset systems please
- *	see the SI support documentation and update your system BIOS
- *	if necessary
- *
- *  The Dell DRAC4 has some interesting features including effectively hot
- *  unplugging/replugging the virtual CD interface when the DRAC is reset.
- *  This often causes drivers/ide/siimage to panic but is ok with the rather
- *  smarter code in libata.
- *
- * TODO:
- * - VDMA support
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/module.h>
 #include <beep/pci.h>

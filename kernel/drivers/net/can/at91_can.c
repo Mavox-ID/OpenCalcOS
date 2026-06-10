@@ -1,24 +1,20 @@
 /*
- * at91_can.c - CAN network driver for AT91 SoC CAN controller
- *
- * (C) 2007 by Hans J. Koch <hjk@hansjkoch.de>
- * (C) 2008, 2009, 2010, 2011 by Marc Kleine-Budde <kernel@pengutronix.de>
- *
- * This software may be distributed under the terms of the GNU General
- * Public License ("GPL") version 2 as distributed in the 'COPYING'
- * file from the main directory of the beep kernel source.
- *
- *
- * Your platform definition file should specify something like:
- *
- * static struct at91_can_data ek_can_data = {
- *	transceiver_switch = sam9263ek_transceiver_switch,
- * };
- *
- * at91_add_device_can(&ek_can_data);
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/clk.h>
 #include <beep/errno.h>
 #include <beep/if_arp.h>

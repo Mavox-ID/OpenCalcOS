@@ -1,41 +1,20 @@
-/* Upcall routine, designed to work as a key type and working through
- * /sbin/request-key to contact userspace when handling DNS queries.
- *
- * See Documentation/networking/dns_resolver.txt
- *
- *   Copyright (c) 2007 Igor Mammedov
- *   Author(s): Igor Mammedov (niallain@gmail.com)
- *              Steve French (sfrench@us.ibm.com)
- *              Wang Lei (wang840925@gmail.com)
- *		David Howells (dhowells@redhat.com)
- *
- *   The upcall wrapper used to make an arbitrary DNS query.
- *
- *   This function requires the appropriate userspace tool dns.upcall to be
- *   installed and something like the following lines should be added to the
- *   /etc/request-key.conf file:
- *
- *	create dns_resolver * * /sbin/dns.upcall %k
- *
- *   For example to use this module to query AFSDB RR:
- *
- *	create dns_resolver afsdb:* * /sbin/dns.afsdb %k
- *
- *   This library is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU Lesser General Public License as published
- *   by the Free Software Foundation; either version 2.1 of the License, or
- *   (at your option) any later version.
- *
- *   This library is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See
- *   the GNU Lesser General Public License for more details.
- *
- *   You should have received a copy of the GNU Lesser General Public License
- *   along with this library; if not, write to the Free Software
- *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/slab.h>
 #include <beep/dns_resolver.h>

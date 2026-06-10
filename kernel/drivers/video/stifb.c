@@ -1,43 +1,20 @@
 /*
- * beep/drivers/video/stifb.c - 
- * Low level Frame buffer driver for HP workstations with 
- * STI (standard text interface) video firmware.
- *
- * Copyright (C) 2001-2006 Helge Deller <deller@gmx.de>
- * Portions Copyright (C) 2001 Thomas Bogendoerfer <tsbogend@alpha.franken.de>
- * 
- * Based on:
- * - beep/drivers/video/artistfb.c -- Artist frame buffer driver
- *	Copyright (C) 2000 Philipp Rumpf <prumpf@tux.org>
- *   - based on skeletonfb, which was
- *	Created 28 Dec 1997 by Geert Uytterhoeven
- * - HP Xhp cfb-based X11 window driver for XFree86
- *	(c)Copyright 1992 Hewlett-Packard Co.
- *
- * 
- *  The following graphics display devices (NGLE family) are supported by this driver:
- *
- *  HPA4070A	known as "HCRX", a 1280x1024 color device with 8 planes
- *  HPA4071A	known as "HCRX24", a 1280x1024 color device with 24 planes,
- *		optionally available with a hardware accelerator as HPA4071A_Z
- *  HPA1659A	known as "CRX", a 1280x1024 color device with 8 planes
- *  HPA1439A	known as "CRX24", a 1280x1024 color device with 24 planes,
- *		optionally available with a hardware accelerator.
- *  HPA1924A	known as "GRX", a 1280x1024 grayscale device with 8 planes
- *  HPA2269A	known as "Dual CRX", a 1280x1024 color device with 8 planes,
- *		implements support for two displays on a single graphics card.
- *  HP710C	internal graphics support optionally available on the HP9000s710 SPU,
- *		supports 1280x1024 color displays with 8 planes.
- *  HP710G	same as HP710C, 1280x1024 grayscale only
- *  HP710L	same as HP710C, 1024x768 color only
- *  HP712	internal graphics support on HP9000s712 SPU, supports 640x480, 
- *		1024x768 or 1280x1024 color displays on 8 planes (Artist)
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file COPYING in the main directory of this archive
- * for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* TODO:
  *	- 1bpp mode is completely untested
  *	- add support for h/w acceleration

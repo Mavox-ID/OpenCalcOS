@@ -1,31 +1,20 @@
 /*
- *  beep/drivers/net/wireless/libertas/if_sdio.c
- *
- *  Copyright 2007-2008 Pierre Ossman
- *
- * Inspired by if_cs.c, Copyright 2007 Holger Schurig
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or (at
- * your option) any later version.
- *
- * This hardware has more or less no CMD53 support, so all registers
- * must be accessed using sdio_readb()/sdio_writeb().
- *
- * Transfers must be in one transaction or the firmware goes bonkers.
- * This means that the transfer must either be small enough to do a
- * byte based transfer or it must be padded to a multiple of the
- * current block size.
- *
- * As SDIO is still new to the kernel, it is unfortunately common with
- * bugs in the host controllers related to that. One such bug is that
- * controllers cannot do transfers that aren't a multiple of 4 bytes.
- * If you don't have time to fix the host controller driver, you can
- * work around the problem by modifying if_sdio_host_to_card() and
- * if_sdio_card_to_host() to pad the data.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/kernel.h>

@@ -1,31 +1,20 @@
 /*
- *  beep/drivers/acorn/net/etherh.c
- *
- *  Copyright (C) 2000-2002 Russell King
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * NS8390 I-cubed EtherH and ANT EtherM specific driver
- * Thanks to I-Cubed for information on their cards.
- * EtherM conversion (C) 1999 Chris Kemp and Tim Watterton
- * EtherM integration (C) 2000 Aleph One Ltd (Tak-Shing Chan)
- * EtherM integration re-engineered by Russell King.
- *
- * Changelog:
- *  08-12-1996	RMK	1.00	Created
- *		RMK	1.03	Added support for EtherLan500 cards
- *  23-11-1997	RMK	1.04	Added media autodetection
- *  16-04-1998	RMK	1.05	Improved media autodetection
- *  10-02-2000	RMK	1.06	Updated for 2.3.43
- *  13-05-2000	RMK	1.07	Updated for 2.3.99-pre8
- *  12-10-1999  CK/TEW		EtherM driver first release
- *  21-12-2000	TTC		EtherH/EtherM integration
- *  25-12-2000	RMK	1.08	Clean integration of EtherM into this driver.
- *  03-01-2002	RMK	1.09	Always enable IRQs if we're in the nic slot.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/types.h>

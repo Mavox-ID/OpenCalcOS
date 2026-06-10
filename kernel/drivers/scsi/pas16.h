@@ -1,38 +1,20 @@
 /*
- * This driver adapted from Drew Eckhardt's Trantor T128 driver
- *
- * Copyright 1993, Drew Eckhardt
- *	Visionary Computing
- *	(Unix and Beep consulting and custom programming)
- *	drew@colorado.edu
- *      +1 (303) 666-5836
- *
- *  ( Based on T128 - DISTRIBUTION RELEASE 3. ) 
- *
- * Modified to work with the Pro Audio Spectrum/Studio 16
- * by John Weidman.
- *
- *
- * For more information, please consult 
- *
- * Media Vision
- * (510) 770-8600
- * (800) 348-7116
- * 
- * and 
- *
- * NCR 5380 Family
- * SCSI Protocol Controller
- * Databook
- *
- * NCR Microelectronics
- * 1635 Aeroplaza Drive
- * Colorado Springs, CO 80916
- * 1+ (719) 578-3400
- * 1+ (800) 334-5454
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef PAS16_H
 #define PAS16_H
 

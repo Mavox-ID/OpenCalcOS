@@ -1,19 +1,20 @@
 /*
- * Naive system call dropper built on seccomp_filter.
- *
- * Copyright (c) 2012 The Chromium OS Authors <chromium-os-dev@chromium.org>
- * Author: Will Drewry <wad@chromium.org>
- *
- * The code may be used by anyone for any purpose,
- * and can serve as a starting point for developing
- * applications using prctl(PR_SET_SECCOMP, 2, ...).
- *
- * When run, returns the specified errno for the specified
- * system call number against the given architecture.
- *
- * Run this one as root as PR_SET_NO_NEW_PRIVS is not called.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <errno.h>
 #include <beep/audit.h>
 #include <beep/filter.h>

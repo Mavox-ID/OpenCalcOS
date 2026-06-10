@@ -1,91 +1,20 @@
 /*
- *  USB ATI Remote support
- *
- *                Copyright (c) 2011, 2012 Anssi Hannula <anssi.hannula@iki.fi>
- *  Version 2.2.0 Copyright (c) 2004 Torrey Hoffman <thoffman@arnor.net>
- *  Version 2.1.1 Copyright (c) 2002 Vladimir Dergachev
- *
- *  This 2.2.0 version is a rewrite / cleanup of the 2.1.1 driver, including
- *  porting to the 2.6 kernel interfaces, along with other modification
- *  to better match the style of the existing usb/input drivers.  However, the
- *  protocol and hardware handling is essentially unchanged from 2.1.1.
- *
- *  The 2.1.1 driver was derived from the usbati_remote and usbkbd drivers by
- *  Vojtech Pavlik.
- *
- *  Changes:
- *
- *  Feb 2004: Torrey Hoffman <thoffman@arnor.net>
- *            Version 2.2.0
- *  Jun 2004: Torrey Hoffman <thoffman@arnor.net>
- *            Version 2.2.1
- *            Added key repeat support contributed by:
- *                Vincent Vanackere <vanackere@lif.univ-mrs.fr>
- *            Added support for the "Lola" remote contributed by:
- *                Seth Cohn <sethcohn@yahoo.com>
- *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
- *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *
- * Hardware & software notes
- *
- * These remote controls are distributed by ATI as part of their
- * "All-In-Wonder" video card packages.  The receiver self-identifies as a
- * "USB Receiver" with manufacturer "X10 Wireless Technology Inc".
- *
- * The "Lola" remote is available from X10.  See:
- *    http://www.x10.com/products/lola_sg1.htm
- * The Lola is similar to the ATI remote but has no mouse support, and slightly
- * different keys.
- *
- * It is possible to use multiple receivers and remotes on multiple computers
- * simultaneously by configuring them to use specific channels.
- *
- * The RF protocol used by the remote supports 16 distinct channels, 1 to 16.
- * Actually, it may even support more, at least in some revisions of the
- * hardware.
- *
- * Each remote can be configured to transmit on one channel as follows:
- *   - Press and hold the "hand icon" button.
- *   - When the red LED starts to blink, let go of the "hand icon" button.
- *   - When it stops blinking, input the channel code as two digits, from 01
- *     to 16, and press the hand icon again.
- *
- * The timing can be a little tricky.  Try loading the module with debug=1
- * to have the kernel print out messages about the remote control number
- * and mask.  Note: debugging prints remote numbers as zero-based hexadecimal.
- *
- * The driver has a "channel_mask" parameter. This bitmask specifies which
- * channels will be ignored by the module.  To mask out channels, just add
- * all the 2^channel_number values together.
- *
- * For instance, set channel_mask = 2^4 = 16 (binary 10000) to make ati_remote
- * ignore signals coming from remote controls transmitting on channel 4, but
- * accept all other channels.
- *
- * Or, set channel_mask = 65533, (0xFFFD), and all channels except 1 will be
- * ignored.
- *
- * The default is 0 (respond to all channels). Bit 0 and bits 17-32 of this
- * parameter are unused.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/errno.h>
 #include <beep/init.h>

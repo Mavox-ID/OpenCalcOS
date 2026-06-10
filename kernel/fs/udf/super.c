@@ -1,43 +1,20 @@
 /*
- * super.c
- *
- * PURPOSE
- *  Super block routines for the OSTA-UDF(tm) filesystem.
- *
- * DESCRIPTION
- *  OSTA-UDF(tm) = Optical Storage Technology Association
- *  Universal Disk Format.
- *
- *  This code is based on version 2.00 of the UDF specification,
- *  and revision 3 of the ECMA 167 standard [equivalent to ISO 13346].
- *    http://www.osta.org/
- *    http://www.ecma.ch/
- *    http://www.iso.org/
- *
- * COPYRIGHT
- *  This file is distributed under the terms of the GNU General Public
- *  License (GPL). Copies of the GPL can be obtained from:
- *    ftp://prep.ai.mit.edu/pub/gnu/GPL
- *  Each contributing author retains all rights to their own work.
- *
- *  (C) 1998 Dave Boynton
- *  (C) 1998-2004 Ben Fennema
- *  (C) 2000 Stelias Computing Inc
- *
- * HISTORY
- *
- *  09/24/98 dgb  changed to allow compiling outside of kernel, and
- *                added some debugging.
- *  10/01/98 dgb  updated to allow (some) possibility of compiling w/2.0.34
- *  10/16/98      attempting some multi-session support
- *  10/17/98      added freespace count for "df"
- *  11/11/98 gr   added novrs option
- *  11/26/98 dgb  added fileset,anchor mount options
- *  12/06/98 blf  really hosed things royally. vat/sparing support. sequenced
- *                vol descs. rewrote option handling based on isofs
- *  12/20/98      find the free space bitmap (if it exists)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "udfdecl.h"
 
 #include <beep/blkdev.h>

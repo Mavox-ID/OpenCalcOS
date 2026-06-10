@@ -1,19 +1,19 @@
 /*
-* cycx_cfm.h	Cyclom 2X WAN Link Driver.
-*		Definitions for the Cyclom 2X Firmware Module (CFM).
-*
-* Author:	Arnaldo Carvalho de Melo <acme@conectiva.com.br>
-*
-* Copyright:	(c) 1998-2003 Arnaldo Carvalho de Melo
-*
-* Based on sdlasfm.h by Gene Kozin <74604.152@compuserve.com>
-*
-*		This program is free software; you can redistribute it and/or
-*		modify it under the terms of the GNU General Public License
-*		as published by the Free Software Foundation; either version
-*		2 of the License, or (at your option) any later version.
-* ============================================================================
-* 1998/08/08	acme		Initial version.
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 #ifndef	_CYCX_CFM_H
 #define	_CYCX_CFM_H

@@ -1,35 +1,20 @@
 /*
- * beep/drivers/video/hgafb.c -- Hercules graphics adaptor frame buffer device
- * 
- *      Created 25 Nov 1999 by Ferenc Bakonyi (fero@drama.obuda.kando.hu)
- *      Based on skeletonfb.c by Geert Uytterhoeven and
- *               mdacon.c by Andrew Apted
- *
- * History:
- *
- * - Revision 0.1.8 (23 Oct 2002): Ported to new framebuffer api.
- * 
- * - Revision 0.1.7 (23 Jan 2001): fix crash resulting from MDA only cards 
- *				   being detected as Hercules.	 (Paul G.)
- * - Revision 0.1.6 (17 Aug 2000): new style structs
- *                                 documentation
- * - Revision 0.1.5 (13 Mar 2000): spinlocks instead of saveflags();cli();etc
- *                                 minor fixes
- * - Revision 0.1.4 (24 Jan 2000): fixed a bug in hga_card_detect() for 
- *                                  HGA-only systems
- * - Revision 0.1.3 (22 Jan 2000): modified for the new fb_info structure
- *                                 screen is cleared after rmmod
- *                                 virtual resolutions
- *                                 module parameter 'nologo={0|1}'
- *                                 the most important: boot logo :)
- * - Revision 0.1.0  (6 Dec 1999): faster scrolling and minor fixes
- * - First release  (25 Nov 1999)
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file COPYING in the main directory of this archive
- * for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/errno.h>

@@ -1,59 +1,20 @@
 /*
- * beep/drivers/video/neofb.c -- NeoMagic Framebuffer Driver
- *
- * Copyright (c) 2001-2002  Denis Oliver Kropp <dok@directfb.org>
- *
- *
- * Card specific code is based on XFree86's neomagic driver.
- * Framebuffer framework code is based on code of cyber2000fb.
- *
- * This file is subject to the terms and conditions of the GNU General
- * Public License.  See the file COPYING in the main directory of this
- * archive for more details.
- *
- *
- * 0.4.1
- *  - Cosmetic changes (dok)
- *
- * 0.4
- *  - Toshiba Libretto support, allow modes larger than LCD size if
- *    LCD is disabled, keep BIOS settings if internal/external display
- *    haven't been enabled explicitly
- *                          (Thomas J. Moore <dark@mama.indstate.edu>)
- *
- * 0.3.3
- *  - Porting over to new fbdev api. (jsimmons)
- *  
- * 0.3.2
- *  - got rid of all floating point (dok) 
- *
- * 0.3.1
- *  - added module license (dok)
- *
- * 0.3
- *  - hardware accelerated clear and move for 2200 and above (dok)
- *  - maximum allowed dotclock is handled now (dok)
- *
- * 0.2.1
- *  - correct panning after X usage (dok)
- *  - added module and kernel parameters (dok)
- *  - no stretching if external display is enabled (dok)
- *
- * 0.2
- *  - initial version (dok)
- *
- *
- * TODO
- * - ioctl for internal/external switching
- * - blanking
- * - 32bit depth support, maybe impossible
- * - disable pan-on-sync, need specs
- *
- * BUGS
- * - white margin on bootup like with tdfxfb (colormap problem?)
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/errno.h>

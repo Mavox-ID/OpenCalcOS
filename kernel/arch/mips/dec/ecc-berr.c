@@ -1,17 +1,20 @@
 /*
- *	Bus error event handling code for systems equipped with ECC
- *	handling logic, i.e. DECstation/DECsystem 5000/200 (KN02),
- *	5000/240 (KN03), 5000/260 (KN05) and DECsystem 5900 (KN03),
- *	5900/260 (KN05) systems.
- *
- *	Copyright (c) 2003, 2005  Maciej W. Rozycki
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/interrupt.h>
 #include <beep/kernel.h>

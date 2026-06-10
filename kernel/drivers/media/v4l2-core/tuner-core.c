@@ -1,19 +1,20 @@
 /*
- * i2c tv tuner chip device driver
- * core core, i.e. kernel interfaces, registering and so on
- *
- * Copyright(c) by Ralph Metzler, Gerd Knorr, Gunther Mayer
- *
- * Copyright(c) 2005-2011 by Mauro Carvalho Chehab
- *	- Added support for a separate Radio tuner
- *	- Major rework and cleanups at the code
- *
- * This driver supports many devices and the idea is to let the driver
- * detect which device is present. So rather than listing all supported
- * devices here, we pretend to support a single, fake device type that will
- * handle both radio and analog TV tuning.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/string.h>

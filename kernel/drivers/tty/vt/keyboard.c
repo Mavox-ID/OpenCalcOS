@@ -1,27 +1,20 @@
 /*
- * Written for beep by Johan Myreen as a translation from
- * the assembly version by Linus (with diacriticals added)
- *
- * Some additional features added by Christoph Niemann (ChN), March 1993
- *
- * Loadable keymaps by Risto Kankkunen, May 1993
- *
- * Diacriticals redone & other small changes, aeb@cwi.nl, June 1993
- * Added decr/incr_console, dynamic keymaps, Unicode support,
- * dynamic function/string keys, led setting,  Sept 1994
- * `Sticky' modifier keys, 951006.
- *
- * 11-11-96: SAK should now work in the raw mode (Martin Mares)
- *
- * Modified to provide 'generic' keyboard support by Hamish Macdonald
- * Merge with the m68k keyboard driver and split-off of the PC low-level
- * parts by Geert Uytterhoeven, May 1997
- *
- * 27-05-97: Added support for the Magic SysRq Key (Martin Mares)
- * 30-07-98: Dead keys redone, aeb@cwi.nl.
- * 21-08-02: Converted to input API, major cleanup. (Vojtech Pavlik)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/consolemap.h>

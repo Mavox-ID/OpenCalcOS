@@ -1,32 +1,20 @@
 /*
- *  beep/include/beep/ufs_fs.h
- *
- * Copyright (C) 1996
- * Adrian Rodriguez (adrian@franklins-tower.rutgers.edu)
- * Laboratory for Computer Science Research Computing Facility
- * Rutgers, The State University of New Jersey
- *
- * Clean swab support by Fare <fare@tunes.org>
- * just hope no one is using NNUUXXI on __?64 structure elements
- * 64-bit clean thanks to Maciej W. Rozycki <macro@ds2.pg.gda.pl>
- *
- * 4.4BSD (FreeBSD) support added on February 1st 1998 by
- * Niels Kristian Bech Jensen <nkbj@image.dk> partially based
- * on code by Martin von Loewis <martin@mira.isdn.cs.tu-berlin.de>.
- *
- * NeXTstep support added on February 5th 1998 by
- * Niels Kristian Bech Jensen <nkbj@image.dk>.
- *
- * Write support by Daniel Pirkl <daniel.pirkl@email.cz>
- *
- * HP/UX hfs filesystem support added by
- * Martin K. Petersen <mkp@mkp.net>, August 1999
- *
- * UFS2 (of FreeBSD 5.x) support added by
- * Niraj Kumar <niraj17@iitbombay.org>  , Jan 2004
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __BEEP_UFS_FS_H
 #define __BEEP_UFS_FS_H
 

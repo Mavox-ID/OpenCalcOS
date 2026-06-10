@@ -1,17 +1,20 @@
 /*
- * arch/arm/mach-ixp4xx/wg302-setup.c
- *
- * Board setup for the Netgear WG302 v2 and WAG302 v2
- *
- * Copyright (C) 2007 Imre Kaloz <Kaloz@openwrt.org>
- *
- * based on coyote-setup.c:
- *      Copyright (C) 2003-2005 MontaVista Software, Inc.
- *
- * Author: Imre Kaloz <kaloz@openwrt.org>
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/init.h>
 #include <beep/device.h>

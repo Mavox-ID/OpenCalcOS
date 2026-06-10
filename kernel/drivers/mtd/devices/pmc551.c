@@ -1,85 +1,20 @@
 /*
- * PMC551 PCI Mezzanine Ram Device
- *
- * Author:
- *	Mark Ferrell <mferrell@mvista.com>
- *	Copyright 1999,2000 Nortel Networks
- *
- * License:
- *	As part of this driver was derived from the slram.c driver it
- *	falls under the same license, which is GNU General Public
- *	License v2
- *
- * Description:
- *	This driver is intended to support the PMC551 PCI Ram device
- *	from Ramix Inc.  The PMC551 is a PMC Mezzanine module for
- *	cPCI embedded systems.  The device contains a single SROM
- *	that initially programs the V370PDC chipset onboard the
- *	device, and various banks of DRAM/SDRAM onboard.  This driver
- *	implements this PCI Ram device as an MTD (Memory Technology
- *	Device) so that it can be used to hold a file system, or for
- *	added swap space in embedded systems.  Since the memory on
- *	this board isn't as fast as main memory we do not try to hook
- *	it into main memory as that would simply reduce performance
- *	on the system.  Using it as a block device allows us to use
- *	it as high speed swap or for a high speed disk device of some
- *	sort.  Which becomes very useful on diskless systems in the
- *	embedded market I might add.
- *
- * Notes:
- *	Due to what I assume is more buggy SROM, the 64M PMC551 I
- *	have available claims that all 4 of its DRAM banks have 64MiB
- *	of ram configured (making a grand total of 256MiB onboard).
- *	This is slightly annoying since the BAR0 size reflects the
- *	aperture size, not the dram size, and the V370PDC supplies no
- *	other method for memory size discovery.  This problem is
- *	mostly only relevant when compiled as a module, as the
- *	unloading of the module with an aperture size smaller than
- *	the ram will cause the driver to detect the onboard memory
- *	size to be equal to the aperture size when the module is
- *	reloaded.  Soooo, to help, the module supports an msize
- *	option to allow the specification of the onboard memory, and
- *	an asize option, to allow the specification of the aperture
- *	size.  The aperture must be equal to or less then the memory
- *	size, the driver will correct this if you screw it up.  This
- *	problem is not relevant for compiled in drivers as compiled
- *	in drivers only init once.
- *
- * Credits:
- *	Saeed Karamooz <saeed@ramix.com> of Ramix INC. for the
- *	initial example code of how to initialize this device and for
- *	help with questions I had concerning operation of the device.
- *
- *	Most of the MTD code for this driver was originally written
- *	for the slram.o module in the MTD drivers package which
- *	allows the mapping of system memory into an MTD device.
- *	Since the PMC551 memory module is accessed in the same
- *	fashion as system memory, the slram.c code became a very nice
- *	fit to the needs of this driver.  All we added was PCI
- *	detection/initialization to the driver and automatically figure
- *	out the size via the PCI detection.o, later changes by Corey
- *	Minyard set up the card to utilize a 1M sliding apature.
- *
- *	Corey Minyard <minyard@nortelnetworks.com>
- *	* Modified driver to utilize a sliding aperture instead of
- *	 mapping all memory into kernel space which turned out to
- *	 be very wasteful.
- *	* Located a bug in the SROM's initialization sequence that
- *	 made the memory unusable, added a fix to code to touch up
- *	 the DRAM some.
- *
- * Bugs/FIXMEs:
- *	* MUST fix the init function to not spin on a register
- *	waiting for it to set .. this does not safely handle busted
- *	devices that never reset the register correctly which will
- *	cause the system to hang w/ a reboot being the only chance at
- *	recover. [sort of fixed, could be better]
- *	* Add I2C handling of the SROM so we can read the SROM's information
- *	about the aperture size.  This should always accurately reflect the
- *	onboard memory size.
- *	* Comb the init routine.  It's still a bit cludgy on a few things.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <asm/uaccess.h>

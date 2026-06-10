@@ -1,31 +1,20 @@
 /*
- * AimsLab RadioTrack (aka RadioVeveal) driver
- *
- * Copyright 1997 M. Kirkwood
- *
- * Converted to the radio-isa framework by Hans Verkuil <hans.verkuil@cisco.com>
- * Converted to V4L2 API by Mauro Carvalho Chehab <mchehab@infradead.org>
- * Converted to new API by Alan Cox <alan@lxorguk.ukuu.org.uk>
- * Various bugfixes and enhancements by Russell Kroll <rkroll@exploits.org>
- *
- * Notes on the hardware (reverse engineered from other peoples'
- * reverse engineering of AIMS' code :-)
- *
- *  Frequency control is done digitally -- ie out(port,encodefreq(95.8));
- *
- *  The signal strength query is unsurprisingly inaccurate.  And it seems
- *  to indicate that (on my card, at least) the frequency setting isn't
- *  too great.  (I have to tune up .025MHz from what the freq should be
- *  to get a report that the thing is tuned.)
- *
- *  Volume control is (ugh) analogue:
- *   out(port, start_increasing_volume);
- *   wait(a_wee_while);
- *   out(port, stop_changing_the_volume);
- *
- * Fully tested with the Keene USB FM Transmitter and the v4l2-compliance tool.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>	/* Modules 			*/
 #include <beep/init.h>		/* Initdata			*/
 #include <beep/ioport.h>	/* request_region		*/

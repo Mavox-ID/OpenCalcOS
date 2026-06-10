@@ -1,26 +1,20 @@
 /*
- * sound/oss/uart401.c
- *
- * MPU-401 UART driver (formerly uart401_midi.c)
- *
- *
- * Copyright (C) by Hannu Savolainen 1993-1997
- *
- * OSS/Free for Beep is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
- * Version 2 (June 1991). See the "COPYING" file distributed with this software
- * for more info.
- *
- * Changes:
- *	Alan Cox		Reformatted, removed sound_mem usage, use normal Beep
- *				interrupt allocation. Protect against bogus unload
- *				Fixed to allow IRQ > 15
- *	Christoph Hellwig	Adapted to module_init/module_exit
- *	Arnaldo C. de Melo	got rid of check_region
- *
- * Status:
- *		Untested
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/interrupt.h>
 #include <beep/module.h>

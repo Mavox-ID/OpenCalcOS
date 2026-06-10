@@ -1,132 +1,20 @@
 /*
- * Copyright (c) 2000-2012 LSI Corporation.
- *
- *
- *          Name:  mpi2_ioc.h
- *         Title:  MPI IOC, Port, Event, FW Download, and FW Upload messages
- * Creation Date:  October 11, 2006
- *
- * mpi2_ioc.h Version:  02.00.21
- *
- * NOTE: Names (typedefs, defines, etc.) beginning with an MPI25 or Mpi25
- *       prefix are for use only on MPI v2.5 products, and must not be used
- *       with MPI v2.0 products. Unless otherwise noted, names beginning with
- *       MPI2 or Mpi2 are for use with both MPI v2.0 and MPI v2.5 products.
- *
- * Version History
- * ---------------
- *
- * Date      Version   Description
- * --------  --------  ------------------------------------------------------
- * 04-30-07  02.00.00  Corresponds to Fusion-MPT MPI Specification Rev A.
- * 06-04-07  02.00.01  In IOCFacts Reply structure, renamed MaxDevices to
- *                     MaxTargets.
- *                     Added TotalImageSize field to FWDownload Request.
- *                     Added reserved words to FWUpload Request.
- * 06-26-07  02.00.02  Added IR Configuration Change List Event.
- * 08-31-07  02.00.03  Removed SystemReplyQueueDepth field from the IOCInit
- *                     request and replaced it with
- *                     ReplyDescriptorPostQueueDepth and ReplyFreeQueueDepth.
- *                     Replaced the MinReplyQueueDepth field of the IOCFacts
- *                     reply with MaxReplyDescriptorPostQueueDepth.
- *                     Added MPI2_RDPQ_DEPTH_MIN define to specify the minimum
- *                     depth for the Reply Descriptor Post Queue.
- *                     Added SASAddress field to Initiator Device Table
- *                     Overflow Event data.
- * 10-31-07  02.00.04  Added ReasonCode MPI2_EVENT_SAS_INIT_RC_NOT_RESPONDING
- *                     for SAS Initiator Device Status Change Event data.
- *                     Modified Reason Code defines for SAS Topology Change
- *                     List Event data, including adding a bit for PHY Vacant
- *                     status, and adding a mask for the Reason Code.
- *                     Added define for
- *                     MPI2_EVENT_SAS_TOPO_ES_DELAY_NOT_RESPONDING.
- *                     Added define for MPI2_EXT_IMAGE_TYPE_MEGARAID.
- * 12-18-07  02.00.05  Added Boot Status defines for the IOCExceptions field of
- *                     the IOCFacts Reply.
- *                     Removed MPI2_IOCFACTS_CAPABILITY_EXTENDED_BUFFER define.
- *                     Moved MPI2_VERSION_UNION to mpi2.h.
- *                     Changed MPI2_EVENT_NOTIFICATION_REQUEST to use masks
- *                     instead of enables, and added SASBroadcastPrimitiveMasks
- *                     field.
- *                     Added Log Entry Added Event and related structure.
- * 02-29-08  02.00.06  Added define MPI2_IOCFACTS_CAPABILITY_INTEGRATED_RAID.
- *                     Removed define MPI2_IOCFACTS_PROTOCOL_SMP_TARGET.
- *                     Added MaxVolumes and MaxPersistentEntries fields to
- *                     IOCFacts reply.
- *                     Added ProtocalFlags and IOCCapabilities fields to
- *                     MPI2_FW_IMAGE_HEADER.
- *                     Removed MPI2_PORTENABLE_FLAGS_ENABLE_SINGLE_PORT.
- * 03-03-08  02.00.07  Fixed MPI2_FW_IMAGE_HEADER by changing Reserved26 to
- *                     a U16 (from a U32).
- *                     Removed extra 's' from EventMasks name.
- * 06-27-08  02.00.08  Fixed an offset in a comment.
- * 10-02-08  02.00.09  Removed SystemReplyFrameSize from MPI2_IOC_INIT_REQUEST.
- *                     Removed CurReplyFrameSize from MPI2_IOC_FACTS_REPLY and
- *                     renamed MinReplyFrameSize to ReplyFrameSize.
- *                     Added MPI2_IOCFACTS_EXCEPT_IR_FOREIGN_CONFIG_MAX.
- *                     Added two new RAIDOperation values for Integrated RAID
- *                     Operations Status Event data.
- *                     Added four new IR Configuration Change List Event data
- *                     ReasonCode values.
- *                     Added two new ReasonCode defines for SAS Device Status
- *                     Change Event data.
- *                     Added three new DiscoveryStatus bits for the SAS
- *                     Discovery event data.
- *                     Added Multiplexing Status Change bit to the PhyStatus
- *                     field of the SAS Topology Change List event data.
- *                     Removed define for MPI2_INIT_IMAGE_BOOTFLAGS_XMEMCOPY.
- *                     BootFlags are now product-specific.
- *                     Added defines for the indivdual signature bytes
- *                     for MPI2_INIT_IMAGE_FOOTER.
- * 01-19-09  02.00.10  Added MPI2_IOCFACTS_CAPABILITY_EVENT_REPLAY define.
- *                     Added MPI2_EVENT_SAS_DISC_DS_DOWNSTREAM_INITIATOR
- *                     define.
- *                     Added MPI2_EVENT_SAS_DEV_STAT_RC_SATA_INIT_FAILURE
- *                     define.
- *                     Removed MPI2_EVENT_SAS_DISC_DS_SATA_INIT_FAILURE define.
- * 05-06-09  02.00.11  Added MPI2_IOCFACTS_CAPABILITY_RAID_ACCELERATOR define.
- *                     Added MPI2_IOCFACTS_CAPABILITY_MSI_X_INDEX define.
- *                     Added two new reason codes for SAS Device Status Change
- *                     Event.
- *                     Added new event: SAS PHY Counter.
- * 07-30-09  02.00.12  Added GPIO Interrupt event define and structure.
- *                     Added MPI2_IOCFACTS_CAPABILITY_EXTENDED_BUFFER define.
- *                     Added new product id family for 2208.
- * 10-28-09  02.00.13  Added HostMSIxVectors field to MPI2_IOC_INIT_REQUEST.
- *                     Added MaxMSIxVectors field to MPI2_IOC_FACTS_REPLY.
- *                     Added MinDevHandle field to MPI2_IOC_FACTS_REPLY.
- *                     Added MPI2_IOCFACTS_CAPABILITY_HOST_BASED_DISCOVERY.
- *                     Added MPI2_EVENT_HOST_BASED_DISCOVERY_PHY define.
- *                     Added MPI2_EVENT_SAS_TOPO_ES_NO_EXPANDER define.
- *                     Added Host Based Discovery Phy Event data.
- *                     Added defines for ProductID Product field
- *                     (MPI2_FW_HEADER_PID_).
- *                     Modified values for SAS ProductID Family
- *                     (MPI2_FW_HEADER_PID_FAMILY_).
- * 02-10-10  02.00.14  Added SAS Quiesce Event structure and defines.
- *                     Added PowerManagementControl Request structures and
- *                     defines.
- * 05-12-10  02.00.15  Marked Task Set Full Event as obsolete.
- *                     Added MPI2_EVENT_SAS_TOPO_LR_UNSUPPORTED_PHY define.
- * 11-10-10  02.00.16  Added MPI2_FW_DOWNLOAD_ITYPE_MIN_PRODUCT_SPECIFIC.
- * 02-23-11  02.00.17  Added SAS NOTIFY Primitive event, and added
- *                     SASNotifyPrimitiveMasks field to
- *                     MPI2_EVENT_NOTIFICATION_REQUEST.
- *                     Added Temperature Threshold Event.
- *                     Added Host Message Event.
- *                     Added Send Host Message request and reply.
- * 05-25-11  02.00.18  For Extended Image Header, added
- *                     MPI2_EXT_IMAGE_TYPE_MIN_PRODUCT_SPECIFIC and
- *                     MPI2_EXT_IMAGE_TYPE_MAX_PRODUCT_SPECIFIC defines.
- *                     Deprecated MPI2_EXT_IMAGE_TYPE_MAX define.
- * 08-24-11  02.00.19  Added PhysicalPort field to
- *                     MPI2_EVENT_DATA_SAS_DEVICE_STATUS_CHANGE structure.
- *                     Marked MPI2_PM_CONTROL_FEATURE_PCIE_LINK as obsolete.
- * 11-18-11  02.00.20  Incorporating additions for MPI v2.5.
- * 03-29-12  02.00.21  Added a product specific range to event values.
- * --------------------------------------------------------------------------
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef MPI2_IOC_H
 #define MPI2_IOC_H
 

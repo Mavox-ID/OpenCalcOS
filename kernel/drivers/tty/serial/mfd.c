@@ -1,16 +1,20 @@
 /*
- * mfd.c: driver for High Speed UART device of Intel Medfield platform
- *
- * Refer pxa.c, 8250.c and some other drivers in drivers/serial/
- *
- * (C) Copyright 2010 Intel Corporation
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; version 2
- * of the License.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* Notes:
  * 1. DMA channel allocation: 0/1 channel are assigned to port 0,
  *    2/3 chan to port 1, 4/5 chan to port 3. Even number chans

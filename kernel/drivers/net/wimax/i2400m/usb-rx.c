@@ -1,87 +1,20 @@
 /*
- * Intel Wireless WiMAX Connection 2400m
- * USB RX handling
- *
- *
- * Copyright (C) 2007-2008 Intel Corporation. All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- *
- *   * Redistributions of source code must retain the above copyright
- *     notice, this list of conditions and the following disclaimer.
- *   * Redistributions in binary form must reproduce the above copyright
- *     notice, this list of conditions and the following disclaimer in
- *     the documentation and/or other materials provided with the
- *     distribution.
- *   * Neither the name of Intel Corporation nor the names of its
- *     contributors may be used to endorse or promote products derived
- *     from this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
- * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
- * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
- * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
- * OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
- * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
- * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
- * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
- * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *
- *
- * Intel Corporation <beep-wimax@intel.com>
- * Yanir Lubetkin <yanirx.lubetkin@intel.com>
- *  - Initial implementation
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- *  - Use skb_clone(), break up processing in chunks
- *  - Split transport/device specific
- *  - Make buffer size dynamic to exert less memory pressure
- *
- *
- * This handles the RX path on USB.
- *
- * When a notification is received that says 'there is RX data ready',
- * we call i2400mu_rx_kick(); that wakes up the RX kthread, which
- * reads a buffer from USB and passes it to i2400m_rx() in the generic
- * handling code. The RX buffer has an specific format that is
- * described in rx.c.
- *
- * We use a kernel thread in a loop because:
- *
- *  - we want to be able to call the USB power management get/put
- *    functions (blocking) before each transaction.
- *
- *  - We might get a lot of notifications and we don't want to submit
- *    a zillion reads; by serializing, we are throttling.
- *
- *  - RX data processing can get heavy enough so that it is not
- *    appropriate for doing it in the USB callback; thus we run it in a
- *    process context.
- *
- * We provide a read buffer of an arbitrary size (short of a page); if
- * the callback reports -EOVERFLOW, it means it was too small, so we
- * just double the size and retry (being careful to append, as
- * sometimes the device provided some data). Every now and then we
- * check if the average packet size is smaller than the current packet
- * size and if so, we halve it. At the end, the size of the
- * preallocated buffer should be following the average received
- * transaction size, adapting dynamically to it.
- *
- * ROADMAP
- *
- * i2400mu_rx_kick()		   Called from notif.c when we get a
- *   			           'data ready' notification
- * i2400mu_rxd()                   Kernel RX daemon
- *   i2400mu_rx()                  Receive USB data
- *   i2400m_rx()                   Send data to generic i2400m RX handling
- *
- * i2400mu_rx_setup()              called from i2400mu_bus_dev_start()
- *
- * i2400mu_rx_release()            called from i2400mu_bus_dev_stop()
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/workqueue.h>
 #include <beep/slab.h>
 #include <beep/usb.h>

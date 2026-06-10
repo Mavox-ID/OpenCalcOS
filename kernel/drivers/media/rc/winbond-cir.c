@@ -1,45 +1,20 @@
 /*
- *  winbond-cir.c - Driver for the Consumer IR functionality of Winbond
- *                  SuperI/O chips.
- *
- *  Currently supports the Winbond WPCD376i chip (PNP id WEC1022), but
- *  could probably support others (Winbond WEC102X, NatSemi, etc)
- *  with minor modifications.
- *
- *  Original Author: David Härdeman <david@hardeman.nu>
- *     Copyright (C) 2012 Sean Young <sean@mess.org>
- *     Copyright (C) 2009 - 2011 David Härdeman <david@hardeman.nu>
- *
- *  Dedicated to my daughter Matilda, without whose loving attention this
- *  driver would have been finished in half the time and with a fraction
- *  of the bugs.
- *
- *  Written using:
- *    o Winbond WPCD376I datasheet helpfully provided by Jesse Barnes at Intel
- *    o NatSemi PC87338/PC97338 datasheet (for the serial port stuff)
- *    o DSDT dumps
- *
- *  Supported features:
- *    o IR Receive
- *    o IR Transmit
- *    o Wake-On-CIR functionality
- *    o Carrier detection
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

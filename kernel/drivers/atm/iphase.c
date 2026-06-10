@@ -1,45 +1,20 @@
-/******************************************************************************
-         iphase.c: Device driver for Interphase ATM PCI adapter cards 
-                    Author: Peter Wang  <pwang@iphase.com>            
-		   Some fixes: Arnaldo Carvalho de Melo <acme@conectiva.com.br>
-                   Interphase Corporation  <www.iphase.com>           
-                               Version: 1.0                           
-*******************************************************************************
-      
-      This software may be used and distributed according to the terms
-      of the GNU General Public License (GPL), incorporated herein by reference.
-      Drivers based on this skeleton fall under the GPL and must retain
-      the authorship (implicit copyright) notice.
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-      This program is distributed in the hope that it will be useful, but
-      WITHOUT ANY WARRANTY; without even the implied warranty of
-      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
-      General Public License for more details.
-      
-      Modified from an incomplete driver for Interphase 5575 1KVC 1M card which 
-      was originally written by Monalisa Agrawal at UNH. Now this driver 
-      supports a variety of varients of Interphase ATM PCI (i)Chip adapter 
-      card family (See www.iphase.com/products/ClassSheet.cfm?ClassID=ATM) 
-      in terms of PHY type, the size of control memory and the size of 
-      packet memory. The followings are the change log and history:
-     
-          Bugfix the Mona's UBR driver.
-          Modify the basic memory allocation and dma logic.
-          Port the driver to the latest kernel from 2.0.46.
-          Complete the ABR logic of the driver, and added the ABR work-
-              around for the hardware anormalies.
-          Add the CBR support.
-	  Add the flow control logic to the driver to allow rate-limit VC.
-          Add 4K VC support to the board with 512K control memory.
-          Add the support of all the variants of the Interphase ATM PCI 
-          (i)Chip adapter cards including x575 (155M OC3 and UTP155), x525
-          (25M UTP25) and x531 (DS3 and E3).
-          Add SMP support.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-      Support and updates available at: ftp://ftp.iphase.com/pub/atm
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-*******************************************************************************/
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>  
 #include <beep/kernel.h>  
 #include <beep/mm.h>  

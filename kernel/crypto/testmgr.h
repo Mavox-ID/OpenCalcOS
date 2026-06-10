@@ -1,26 +1,20 @@
 /*
- * Algorithm testing framework and tests.
- *
- * Copyright (c) 2002 James Morris <jmorris@intercode.com.au>
- * Copyright (c) 2002 Jean-Francois Dive <jef@beepbe.org>
- * Copyright (c) 2007 Nokia Siemens Networks
- * Copyright (c) 2008 Herbert Xu <herbert@gondor.apana.org.au>
- *
- * Updated RFC4106 AES-GCM testing. Some test vectors were taken from
- * http://csrc.nist.gov/groups/ST/toolkit/BCM/documents/proposedmodes/
- * gcm/gcm-test-vectors.tar.gz
- *     Authors: Aidan O'Mahony (aidan.o.mahony@intel.com)
- *              Adrian Hoban <adrian.hoban@intel.com>
- *              Gabriele Paoloni <gabriele.paoloni@intel.com>
- *              Tadeusz Struk (tadeusz.struk@intel.com)
- *     Copyright (c) 2010, Intel Corporation.
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by the Free
- * Software Foundation; either version 2 of the License, or (at your option)
- * any later version.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _CRYPTO_TESTMGR_H
 #define _CRYPTO_TESTMGR_H
 

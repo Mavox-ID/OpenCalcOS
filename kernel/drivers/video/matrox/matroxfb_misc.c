@@ -1,90 +1,20 @@
 /*
- *
- * Hardware accelerated Matrox Millennium I, II, Mystique, G100, G200 and G400
- *
- * (c) 1998-2002 Petr Vandrovec <vandrove@vc.cvut.cz>
- *
- * Portions Copyright (c) 2001 Matrox Graphics Inc.
- *
- * Version: 1.65 2002/08/14
- *
- * MTRR stuff: 1998 Tom Rini <trini@kernel.crashing.org>
- *
- * Contributors: "menion?" <menion@mindless.com>
- *                     Betatesting, fixes, ideas
- *
- *               "Kurt Garloff" <garloff@suse.de>
- *                     Betatesting, fixes, ideas, videomodes, videomodes timmings
- *
- *               "Tom Rini" <trini@kernel.crashing.org>
- *                     MTRR stuff, PPC cleanups, betatesting, fixes, ideas
- *
- *               "Bibek Sahu" <scorpio@dodds.net>
- *                     Access device through readb|w|l and write b|w|l
- *                     Extensive debugging stuff
- *
- *               "Daniel Haun" <haund@usa.net>
- *                     Testing, hardware cursor fixes
- *
- *               "Scott Wood" <sawst46+@pitt.edu>
- *                     Fixes
- *
- *               "Gerd Knorr" <kraxel@goldbach.isdn.cs.tu-berlin.de>
- *                     Betatesting
- *
- *               "Kelly French" <targon@hazmat.com>
- *               "Fernando Herrera" <fherrera@eurielec.etsit.upm.es>
- *                     Betatesting, bug reporting
- *
- *               "Pablo Bianucci" <pbian@pccp.com.ar>
- *                     Fixes, ideas, betatesting
- *
- *               "Inaky Perez Gonzalez" <inaky@peloncho.fis.ucm.es>
- *                     Fixes, enhandcements, ideas, betatesting
- *
- *               "Ryuichi Oikawa" <roikawa@rr.iiij4u.or.jp>
- *                     PPC betatesting, PPC support, backward compatibility
- *
- *               "Paul Womar" <Paul@pwomar.demon.co.uk>
- *               "Owen Waller" <O.Waller@ee.qub.ac.uk>
- *                     PPC betatesting
- *
- *               "Thomas Pornin" <pornin@bolet.ens.fr>
- *                     Alpha betatesting
- *
- *               "Pieter van Leuven" <pvl@iae.nl>
- *               "Ulf Jaenicke-Roessler" <ujr@physik.phy.tu-dresden.de>
- *                     G100 testing
- *
- *               "H. Peter Arvin" <hpa@transmeta.com>
- *                     Ideas
- *
- *               "Cort Dougan" <cort@cs.nmt.edu>
- *                     CHRP fixes and PReP cleanup
- *
- *               "Mark Vojkovich" <mvojkovi@ucsd.edu>
- *                     G400 support
- *
- *               "David C. Hansen" <haveblue@us.ibm.com>
- *                     Fixes
- *
- *               "Ian Romanick" <idr@us.ibm.com>
- *                     Find PInS data in BIOS on PowerPC systems.
- *
- * (following author is not in any relation with this code, but his code
- *  is included in this driver)
- *
- * Based on framebuffer driver for VBE 2.0 compliant graphic boards
- *     (c) 1998 Gerd Knorr <kraxel@cs.tu-berlin.de>
- *
- * (following author is not in any relation with this code, but his ideas
- *  were used when writing this driver)
- *
- *		 FreeVBE/AF (Matrox), "Shawn Hargreaves" <shawn@talula.demon.co.uk>
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "matroxfb_misc.h"
 #include <beep/interrupt.h>
 #include <beep/matroxfb.h>

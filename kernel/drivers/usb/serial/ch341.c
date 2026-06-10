@@ -1,20 +1,20 @@
 /*
- * Copyright 2007, Frank A Kingswood <frank@kingswood-consulting.co.uk>
- * Copyright 2007, Werner Cornelius <werner@cornelius-consult.de>
- * Copyright 2009, Boris Hajduk <boris@hajduk.org>
- *
- * ch341.c implements a serial port driver for the Winchiphead CH341.
- *
- * The CH341 device can be used to implement an RS232 asynchronous
- * serial port, an IEEE-1284 parallel printer port or a memory-like
- * interface. In all cases the CH341 supports an I2C interface as well.
- * This driver only supports the asynchronous serial interface.
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License version
- * 2 as published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/init.h>
 #include <beep/tty.h>

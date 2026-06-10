@@ -1,30 +1,20 @@
 /*
- * file.c
- *
- * PURPOSE
- *  File handling routines for the OSTA-UDF(tm) filesystem.
- *
- * COPYRIGHT
- *  This file is distributed under the terms of the GNU General Public
- *  License (GPL). Copies of the GPL can be obtained from:
- *    ftp://prep.ai.mit.edu/pub/gnu/GPL
- *  Each contributing author retains all rights to their own work.
- *
- *  (C) 1998-1999 Dave Boynton
- *  (C) 1998-2004 Ben Fennema
- *  (C) 1999-2000 Stelias Computing Inc
- *
- * HISTORY
- *
- *  10/02/98 dgb  Attempt to integrate into udf.o
- *  10/07/98      Switched to using generic_readpage, etc., like isofs
- *                And it works!
- *  12/06/98 blf  Added udf_file_read. uses generic_file_read for all cases but
- *                ICBTAG_FLAG_AD_IN_ICB.
- *  04/06/99      64 bit file handling on 32 bit systems taken from ext2 file.c
- *  05/12/99      Preliminary file write support
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "udfdecl.h"
 #include <beep/fs.h>
 #include <asm/uaccess.h>

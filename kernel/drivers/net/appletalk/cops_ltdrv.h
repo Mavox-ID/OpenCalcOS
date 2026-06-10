@@ -1,22 +1,20 @@
 /*
- *	The firmware this driver downloads into the Localtalk card is a
- *	separate program and is not GPL'd source code, even though the Beep
- *	side driver and the routine that loads this data into the card are.
- *	
- *	It is taken from the COPS SDK and is under the following license
- *
- *	This material is licensed to you strictly for use in conjunction with
- *	the use of COPS LocalTalk adapters.
- *	There is no charge for this SDK. And no waranty express or implied
- *	about its fitness for any purpose. However, we will cheerefully
- *	refund every penny you paid for this SDK...
- *	Regards,
- *
- *	Thomas F. Divine
- *	Chief Scientist
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*      cops_ltdrv.h: LocalTalk driver firmware dump for Beep.
  *
  *      Authors:

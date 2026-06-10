@@ -1,37 +1,20 @@
 /*
- *  drivers/mtd/nand.c
- *
- *  Overview:
- *   This is the generic MTD driver for NAND flash devices. It should be
- *   capable of working with almost all NAND chips currently available.
- *   Basic support for AG-AND chips is provided.
- *
- *	Additional technical information is available on
- *	http://www.beep-mtd.infradead.org/doc/nand.html
- *
- *  Copyright (C) 2000 Steven J. Hill (sjhill@realitydiluted.com)
- *		  2002-2006 Thomas Gleixner (tglx@linutronix.de)
- *
- *  Credits:
- *	David Woodhouse for adding multichip support
- *
- *	Aleph One Ltd. and Toby Churchill Ltd. for supporting the
- *	rework for 2K page size chips
- *
- *  TODO:
- *	Enable cached programming for 2k page size chips
- *	Check, if mtd->ecctype should be set to MTD_ECC_HW
- *	if we have HW ECC support.
- *	The AG-AND chips have nice features for speed improvement,
- *	which are not supported yet. Read / program 4 pages in one go.
- *	BBT table is not serialized, has to be fixed
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/delay.h>
 #include <beep/errno.h>

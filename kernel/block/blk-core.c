@@ -1,13 +1,20 @@
 /*
- * Copyright (C) 1991, 1992 Linus Torvalds
- * Copyright (C) 1994,      Karl Keyte: Added support for disk statistics
- * Elevator latency, (C) 2000  Andrea Arcangeli <andrea@suse.de> SuSE
- * Queue request tables / lock, selectable elevator, Jens Axboe <axboe@suse.de>
- * kernel-doc documentation started by NeilBrown <neilb@cse.unsw.edu.au>
- *	-  July2000
- * bio rewrite, highmem i/o, etc, Jens Axboe <axboe@suse.de> - may 2001
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * This handles all read/write requests to block devices
  */

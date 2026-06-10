@@ -1,22 +1,20 @@
 /*
- * Copyright (c) 2010 Red Hat Inc.
- * Author : Dave Airlie <airlied@redhat.com>
- *
- *
- * Licensed under GPLv2
- *
- * vga_switcheroo.c - Support for laptop with dual GPU using one set of outputs
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
- Switcher interface - methods require for ATPX and DCM
- - switchto - this throws the output MUX switch
- - discrete_set_power - sets the power state for the discrete card
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
- GPU driver interface
- - set_gpu_state - this should do the equiv of s/r for the card
-		  - this should *not* set the discrete power state
- - switch_check  - check if the device is in a position to switch now
- */
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/seq_file.h>
 #include <beep/uaccess.h>

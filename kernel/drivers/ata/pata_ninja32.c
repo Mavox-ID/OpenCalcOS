@@ -1,39 +1,20 @@
 /*
- * pata_ninja32.c 	- Ninja32 PATA for new ATA layer
- *			  (C) 2007 Red Hat Inc
- *
- * Note: The controller like many controllers has shared timings for
- * PIO and DMA. We thus flip to the DMA timings in dma_start and flip back
- * in the dma_stop function. Thus we actually don't need a set_dmamode
- * method as the PIO method is always called and will set the right PIO
- * timing parameters.
- *
- * The Ninja32 Cardbus is not a generic SFF controller. Instead it is
- * laid out as follows off BAR 0. This is based upon Mark Lord's delkin
- * driver and the extensive analysis done by the BSD developers, notably
- * ITOH Yasufumi.
- *
- *	Base + 0x00 IRQ Status
- *	Base + 0x01 IRQ control
- *	Base + 0x02 Chipset control
- *	Base + 0x03 Unknown
- *	Base + 0x04 VDMA and reset control + wait bits
- *	Base + 0x08 BMIMBA
- *	Base + 0x0C DMA Length
- *	Base + 0x10 Taskfile
- *	Base + 0x18 BMDMA Status ?
- *	Base + 0x1C
- *	Base + 0x1D Bus master control
- *		bit 0 = enable
- *		bit 1 = 0 write/1 read
- *		bit 2 = 1 sgtable
- *		bit 3 = go
- *		bit 4-6 wait bits
- *		bit 7 = done
- *	Base + 0x1E AltStatus
- *	Base + 0x1F timing register
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/pci.h>

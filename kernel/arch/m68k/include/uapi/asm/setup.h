@@ -1,25 +1,20 @@
 /*
-** asm/setup.h -- Definition of the Beep/m68k setup information
-**
-** Copyright 1992 by Greg Harp
-**
-** This file is subject to the terms and conditions of the GNU General Public
-** License.  See the file COPYING in the main directory of this archive
-** for more details.
-**
-** Created 09/29/92 by Greg Harp
-**
-** 5/2/94 Roman Hodek:
-**   Added bi_atari part of the machine dependent union bi_un; for now it
-**   contains just a model field to distinguish between TT and Falcon.
-** 26/7/96 Roman Zippel:
-**   Renamed to setup.h; added some useful macros to allow gcc some
-**   optimizations if possible.
-** 5/10/96 Geert Uytterhoeven:
-**   Redesign of the boot information structure; moved boot information
-**   structure to bootinfo.h
-*/
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _UAPI_M68K_SETUP_H
 #define _UAPI_M68K_SETUP_H
 

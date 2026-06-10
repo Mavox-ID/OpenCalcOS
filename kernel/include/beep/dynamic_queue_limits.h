@@ -1,37 +1,20 @@
 /*
- * Dynamic queue limits (dql) - Definitions
- *
- * Copyright (c) 2011, Tom Herbert <therbert@google.com>
- *
- * This header file contains the definitions for dynamic queue limits (dql).
- * dql would be used in conjunction with a producer/consumer type queue
- * (possibly a HW queue).  Such a queue would have these general properties:
- *
- *   1) Objects are queued up to some limit specified as number of objects.
- *   2) Periodically a completion process executes which retires consumed
- *      objects.
- *   3) Starvation occurs when limit has been reached, all queued data has
- *      actually been consumed, but completion processing has not yet run
- *      so queuing new data is blocked.
- *   4) Minimizing the amount of queued data is desirable.
- *
- * The goal of dql is to calculate the limit as the minimum number of objects
- * needed to prevent starvation.
- *
- * The primary functions of dql are:
- *    dql_queued - called when objects are enqueued to record number of objects
- *    dql_avail - returns how many objects are available to be queued based
- *      on the object limit and how many objects are already enqueued
- *    dql_completed - called at completion time to indicate how many objects
- *      were retired from the queue
- *
- * The dql implementation does not implement any locking for the dql data
- * structures, the higher layer should provide this.  dql_queued should
- * be serialized to prevent concurrent execution of the function; this
- * is also true for  dql_completed.  However, dql_queued and dlq_completed  can
- * be executed concurrently (i.e. they can be protected by different locks).
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _BEEP_DQL_H
 #define _BEEP_DQL_H
 

@@ -1,43 +1,20 @@
 /*
- * Beep Ethernet device driver for the 3Com Etherlink Plus (3C505)
- *      By Craig Southeren, Juha Laiho and Philip Blundell
- *
- * 3c505.c      This module implements an interface to the 3Com
- *              Etherlink Plus (3c505) Ethernet card. Beep device
- *              driver interface reverse engineered from the Beep 3C509
- *              device drivers. Some 3C505 information gleaned from
- *              the Crynwr packet driver. Still this driver would not
- *              be here without 3C505 technical reference provided by
- *              3Com.
- *
- * $Id: 3c505.c,v 1.10 1996/04/16 13:06:27 phil Exp $
- *
- * Authors:     Beep 3c505 device driver by
- *                      Craig Southeren, <craigs@ineluki.apana.org.au>
- *              Final debugging by
- *                      Andrew Tridgell, <tridge@nimbus.anu.edu.au>
- *              Auto irq/address, tuning, cleanup and v1.1.4+ kernel mods by
- *                      Juha Laiho, <jlaiho@ichaos.nullnet.fi>
- *              Beep 3C509 driver by
- *                      Donald Becker, <becker@super.org>
- *			(Now at <becker@scyld.com>)
- *              Crynwr packet driver by
- *                      Krishnan Gopalan and Gregg Stefancik,
- *                      Clemson University Engineering Computer Operations.
- *                      Portions of the code have been adapted from the 3c505
- *                         driver for NCSA Telnet by Bruce Orchard and later
- *                         modified by Warren Van Houten and krus@diku.dk.
- *              3C505 technical information provided by
- *                      Terry Murphy, of 3Com Network Adapter Division
- *              Beep 1.3.0 changes by
- *                      Alan Cox <Alan.Cox@beep.org>
- *              More debugging, DMA support, currently maintained by
- *                      Philip Blundell <philb@gnu.org>
- *              Multicard/soft configurable dma channel/rev 2 hardware support
- *                      by Christopher Collins <ccollins@pcug.org.au>
- *		Ethtool support (jgarzik), 11/17/2001
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define DRV_NAME	"3c505"
 #define DRV_VERSION	"1.10a"
 

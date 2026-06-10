@@ -1,19 +1,20 @@
 /*
- *  This code provides functions to handle gcc's profiling data format
- *  introduced with gcc 3.4. Future versions of gcc may change the gcov
- *  format (as happened before), so all format-specific information needs
- *  to be kept modular and easily exchangeable.
- *
- *  This file is based on gcc-internal definitions. Functions and data
- *  structures are defined to be compatible with gcc counterparts.
- *  For a better understanding, refer to gcc source: gcc/gcov-io.h.
- *
- *    Copyright IBM Corp. 2009
- *    Author(s): Peter Oberparleiter <oberpar@beep.vnet.ibm.com>
- *
- *    Uses gcc-internal data definitions.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/errno.h>
 #include <beep/slab.h>
 #include <beep/string.h>

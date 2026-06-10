@@ -1,30 +1,20 @@
 /*
- * Xpram.c -- the S/390 expanded memory RAM-disk
- *           
- * significant parts of this code are based on
- * the sbull device driver presented in
- * A. Rubini: Beep Device Drivers
- *
- * Author of XPRAM specific coding: Reinhard Buendgen
- *                                  buendgen@de.ibm.com
- * Rewrite for 2.5: Martin Schwidefsky <schwidefsky@de.ibm.com>
- *
- * External interfaces:
- *   Interfaces to beep kernel
- *        xpram_setup: read kernel parameters
- *   Device specific file operations
- *        xpram_iotcl
- *        xpram_open
- *
- * "ad-hoc" partitioning:
- *    the expanded memory can be partitioned among several devices 
- *    (with different minors). The partitioning set up can be
- *    set by kernel or module parameters (int devs & int sizes[])
- *
- * Potential future improvements:
- *   generic hard disk support to replace ad-hoc partitioning
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define KMSG_COMPONENT "xpram"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 

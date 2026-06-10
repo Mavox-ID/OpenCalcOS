@@ -1,10 +1,20 @@
 /*
- * This file contains the Montecito PMU register description tables
- * and pmc checker used by perfmon.c.
- *
- * Copyright (c) 2005-2006 Hewlett-Packard Development Company, L.P.
- *               Contributed by Stephane Eranian <eranian@hpl.hp.com>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 static int pfm_mont_pmc_check(struct task_struct *task, pfm_context_t *ctx, unsigned int cnum, unsigned long *val, struct pt_regs *regs);
 
 #define RDEP_MONT_ETB	(RDEP(38)|RDEP(39)|RDEP(48)|RDEP(49)|RDEP(50)|RDEP(51)|RDEP(52)|RDEP(53)|RDEP(54)|\

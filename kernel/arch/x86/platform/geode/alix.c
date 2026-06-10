@@ -1,22 +1,20 @@
 /*
- * System Specific setup for PCEngines ALIX.
- * At the moment this means setup of GPIO control of LEDs
- * on Alix.2/3/6 boards.
- *
- *
- * Copyright (C) 2008 Constantin Baranov <const@mimas.ru>
- * Copyright (C) 2011 Ed Wildgoose <kernel@wildgooses.com>
- *                and Philip Prindeville <philipp@redfish-solutions.com>
- *
- * TODO: There are large similarities with leds-net5501.c
- * by Alessandro Zummo <a.zummo@towertech.it>
- * In the future leds-net5501.c should be migrated over to platform
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2
- * as published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/init.h>
 #include <beep/io.h>

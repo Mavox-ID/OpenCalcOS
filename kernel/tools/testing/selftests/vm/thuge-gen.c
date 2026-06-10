@@ -1,16 +1,20 @@
-/* Test selecting other page sizes for mmap/shmget.
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-   Before running this huge pages for each huge page size must have been
-   reserved.
-   For large pages beyond MAX_ORDER (like 1GB on x86) boot options must be used.
-   Also shmmax must be increased.
-   And you need to run as root to work around some weird permissions in shm.
-   And nothing using huge pages should run in parallel.
-   When the program aborts you may need to clean up the shm segments with
-   ipcrm -m by hand, like this
-   sudo ipcs | awk '$1 == "0x00000000" {print $2}' | xargs -n1 sudo ipcrm -m
-   (warning this will remove all if someone else uses them) */
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define _GNU_SOURCE 1
 #include <sys/mman.h>
 #include <stdlib.h>

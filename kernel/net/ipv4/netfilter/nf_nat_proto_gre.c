@@ -1,28 +1,20 @@
 /*
- * nf_nat_proto_gre.c
- *
- * NAT protocol helper module for GRE.
- *
- * GRE is a generic encapsulation protocol, which is generally not very
- * suited for NAT, as it has no protocol-specific part as port numbers.
- *
- * It has an optional key field, which may help us distinguishing two
- * connections between the same two hosts.
- *
- * GRE is defined in RFC 1701 and RFC 1702, as well as RFC 2784
- *
- * PPTP is built on top of a modified version of GRE, and has a mandatory
- * field called "CallID", which serves us for the same purpose as the key
- * field in plain GRE.
- *
- * Documentation about PPTP can be found in RFC 2637
- *
- * (C) 2000-2005 by Harald Welte <laforge@gnumonks.org>
- *
- * Development of this code funded by Astaro AG (http://www.astaro.com/)
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/skbuff.h>
 #include <beep/ip.h>

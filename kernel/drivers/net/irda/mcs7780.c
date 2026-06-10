@@ -1,39 +1,20 @@
-/*****************************************************************************
-*
-* Filename:      mcs7780.c
-* Version:       0.4-alpha
-* Description:   Irda MosChip USB Dongle Driver
-* Authors:       Lukasz Stelmach <stlman@poczta.fm>
-* 		 Brian Pugh <bpugh@cs.pdx.edu>
-*		 Judy Fischbach <jfisch@cs.pdx.edu>
-*
-*       Based on stir4200 driver, but some things done differently.
-*       Based on earlier driver by Paul Stewart <stewart@parc.com>
-*
-*       Copyright (C) 2000, Roman Weissgaerber <weissg@vienna.at>
-*       Copyright (C) 2001, Dag Brattli <dag@brattli.net>
-*       Copyright (C) 2001, Jean Tourrilhes <jt@hpl.hp.com>
-*       Copyright (C) 2004, Stephen Hemminger <shemminger@osdl.org>
-*       Copyright (C) 2005, Lukasz Stelmach <stlman@poczta.fm>
-*       Copyright (C) 2005, Brian Pugh <bpugh@cs.pdx.edu>
-*       Copyright (C) 2005, Judy Fischbach <jfisch@cs.pdx.edu>
-*
-*       This program is free software; you can redistribute it and/or modify
-*       it under the terms of the GNU General Public License as published by
-*       the Free Software Foundation; either version 2 of the License, or
-*       (at your option) any later version.
-*
-*       This program is distributed in the hope that it will be useful,
-*       but WITHOUT ANY WARRANTY; without even the implied warranty of
-*       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-*       GNU General Public License for more details.
-*
-*       You should have received a copy of the GNU General Public License
-*       along with this program; if not, write to the Free Software
-*       Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-*
-*****************************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * MCS7780 is a simple USB to IrDA bridge by MosChip. It is neither
  * compatibile with irda-usb nor with stir4200. Although it is quite

@@ -1,20 +1,20 @@
 /*
- * dmi-sysfs.c
- *
- * This module exports the DMI tables read-only to userspace through the
- * sysfs file system.
- *
- * Data is currently found below
- *    /sys/firmware/dmi/...
- *
- * DMI attributes are presented in attribute files with names
- * formatted using %d-%d, so that the first integer indicates the
- * structure type (0-255), and the second field is the instance of that
- * entry.
- *
- * Copyright 2011 Google, Inc.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/init.h>
 #include <beep/module.h>

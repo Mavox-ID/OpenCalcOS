@@ -1,40 +1,20 @@
 /*
- *  ATI Frame Buffer Device Driver Core
- *
- *	Copyright (C) 2004  Alex Kern <alex.kern@gmx.de>
- *	Copyright (C) 1997-2001  Geert Uytterhoeven
- *	Copyright (C) 1998  Bernd Harries
- *	Copyright (C) 1998  Eddie C. Dost  (ecd@skynet.be)
- *
- *  This driver supports the following ATI graphics chips:
- *    - ATI Mach64
- *
- *  To do: add support for
- *    - ATI Rage128 (from aty128fb.c)
- *    - ATI Radeon (from radeonfb.c)
- *
- *  This driver is partly based on the PowerMac console driver:
- *
- *	Copyright (C) 1996 Paul Mackerras
- *
- *  and on the PowerMac ATI/mach64 display driver:
- *
- *	Copyright (C) 1997 Michael AK Tesch
- *
- *	      with work by Jon Howell
- *			   Harry AC Eaton
- *			   Anthony Tong <atong@uiuc.edu>
- *
- *  Generic LCD support written by Daniel Mantione, ported from 2.4.20 by Alex Kern
- *  Many Thanks to Ville Syrjälä for patches and fixing nasting 16 bit color bug.
- *
- *  This file is subject to the terms and conditions of the GNU General Public
- *  License. See the file COPYING in the main directory of this archive for
- *  more details.
- *
- *  Many thanks to Nitya from ATI devrel for support and patience !
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /******************************************************************************
 
   TODO:

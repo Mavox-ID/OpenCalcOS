@@ -1,37 +1,20 @@
 /*
- * spu_switch.c
- *
- * (C) Copyright IBM Corp. 2005
- *
- * Author: Mark Nutter <mnutter@us.ibm.com>
- *
- * Host-side part of SPU context switch sequence outlined in
- * Synergistic Processor Element, Book IV.
- *
- * A fully premptive switch of an SPE is very expensive in terms
- * of time and system resources.  SPE Book IV indicates that SPE
- * allocation should follow a "serially reusable device" model,
- * in which the SPE is assigned a task until it completes.  When
- * this is not possible, this sequence may be used to premptively
- * save, and then later (optionally) restore the context of a
- * program executing on an SPE.
- *
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/export.h>
 #include <beep/errno.h>
 #include <beep/hardirq.h>

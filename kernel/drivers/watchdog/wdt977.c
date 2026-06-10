@@ -1,28 +1,20 @@
 /*
- *	Wdt977	0.04:	A Watchdog Device for Netwinder W83977AF chip
- *
- *	(c) Copyright 1998 Rebel.com (Woody Suwalski <woody@netwinder.org>)
- *
- *			-----------------------
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- *
- *			-----------------------
- *      14-Dec-2001 Matt Domsch <Matt_Domsch@dell.com>
- *           Added nowayout module option to override CONFIG_WATCHDOG_NOWAYOUT
- *	19-Dec-2001 Woody Suwalski: Netwinder fixes, ioctl interface
- *	06-Jan-2002 Woody Suwalski: For compatibility, convert all timeouts
- *				    from minutes to seconds.
- *      07-Jul-2003 Daniele Bellucci: Audit return code of misc_register in
- *                                    nwwatchdog_init.
- *      25-Oct-2005 Woody Suwalski: Convert addresses to #defs, add spinlocks
- *				    remove limitiation to be used on
- *				    Netwinders only
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

@@ -1,13 +1,20 @@
 /*
- * beep/arch/arm/mach-sa1100/time.c
- *
- * Copyright (C) 1998 Deborah Wallach.
- * Twiddles  (C) 1999 Hugo Fiennes <hugo@empeg.com>
- *
- * 2000/03/29 (C) Nicolas Pitre <nico@fluxnic.net>
- *	Rewritten: big cleanup, much simpler, better HZ accuracy.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/errno.h>
 #include <beep/interrupt.h>

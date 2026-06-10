@@ -1,26 +1,20 @@
 /*
- * If TRACE_SYSTEM is defined, that will be the directory created
- * in the ftrace directory under /sys/kernel/debug/tracing/events/<system>
- *
- * The define_trace.h below will also look for a file name of
- * TRACE_SYSTEM.h where TRACE_SYSTEM is what is defined here.
- * In this case, it would look for sample.h
- *
- * If the header name will be different than the system name
- * (as in this case), then you can override the header name that
- * define_trace.h will look up by defining TRACE_INCLUDE_FILE
- *
- * This file is called trace-events-sample.h but we want the system
- * to be called "sample". Therefore we must define the name of this
- * file:
- *
- * #define TRACE_INCLUDE_FILE trace-events-sample
- *
- * As we do an the bottom of this file.
- *
- * Notice that TRACE_SYSTEM should be defined outside of #if
- * protection, just like TRACE_INCLUDE_FILE.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM sep
 

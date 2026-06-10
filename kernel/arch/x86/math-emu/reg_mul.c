@@ -1,16 +1,20 @@
-/*---------------------------------------------------------------------------+
- |  reg_mul.c                                                                |
- |                                                                           |
- | Multiply one FPU_REG by another, put the result in a destination FPU_REG. |
- |                                                                           |
- | Copyright (C) 1992,1993,1997                                              |
- |                  W. Metzenthen, 22 Parker St, Ormond, Vic 3163, Australia |
- |                  E-mail   billm@suburbia.net                              |
- |                                                                           |
- | Returns the tag of the result if no exceptions or errors occurred.        |
- |                                                                           |
- +---------------------------------------------------------------------------*/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*---------------------------------------------------------------------------+
  | The destination may be any FPU_REG, including one of the source FPU_REGs. |
  +---------------------------------------------------------------------------*/

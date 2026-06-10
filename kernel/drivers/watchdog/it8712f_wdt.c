@@ -1,25 +1,20 @@
 /*
- *	IT8712F "Smart Guardian" Watchdog support
- *
- *	Copyright (c) 2006-2007 Jorge Boncompte - DTI2 <jorge@dti2.net>
- *
- *	Based on info and code taken from:
- *
- *	drivers/char/watchdog/scx200_wdt.c
- *	drivers/hwmon/it87.c
- *	IT8712F EC-LPC I/O Preliminary Specification 0.8.2
- *	IT8712F EC-LPC I/O Preliminary Specification 0.9.3
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License as
- *	published by the Free Software Foundation; either version 2 of the
- *	License, or (at your option) any later version.
- *
- *	The author(s) of this software shall not be held liable for damages
- *	of any nature resulting due to the use of this software. This
- *	software is provided AS-IS with no warranties.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

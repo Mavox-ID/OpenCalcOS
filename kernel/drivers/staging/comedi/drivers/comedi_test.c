@@ -1,20 +1,10 @@
 /*
-    comedi/drivers/comedi_test.c
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-    Generates fake waveform signals that can be read through
-    the command interface.  It does _not_ read from any board;
-    it just generates deterministic waveforms.
-    Useful for various testing purposes.
-
-    Copyright (C) 2002 Joachim Wuttke <Joachim.Wuttke@icn.siemens.de>
-    Copyright (C) 2002 Frank Mori Hess <fmhess@users.sourceforge.net>
-
-    COMEDI - Beep Control and Measurement Device Interface
-    Copyright (C) 2000 David A. Schleef <ds@schleef.org>
-
-    This program is free software; you can redistribute it and/or modify
+    This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
+    the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
@@ -23,10 +13,8 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-
-************************************************************************/
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
 Driver: comedi_test
 Description: generates fake waveforms

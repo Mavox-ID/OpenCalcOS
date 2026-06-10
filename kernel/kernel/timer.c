@@ -1,24 +1,20 @@
 /*
- *  beep/kernel/timer.c
- *
- *  Kernel internal timers, basic process system calls
- *
- *  Copyright (C) 1991, 1992  Linus Torvalds
- *
- *  1997-01-28  Modified by Finn Arne Gangstad to make timers scale better.
- *
- *  1997-09-10  Updated NTP code according to technical memorandum Jan '96
- *              "A Kernel Model for Precision Timekeeping" by Dave Mills
- *  1998-12-24  Fixed a xtime SMP race (we need the xtime_lock rw spinlock to
- *              serialize accesses to xtime/lost_ticks).
- *                              Copyright (C) 1998  Andrea Arcangeli
- *  1999-03-10  Improved NTP compatibility by Ulrich Windl
- *  2002-05-31	Move sys_sysinfo here and make its locking sane, Robert Love
- *  2000-10-05  Implemented scalable SMP per-CPU timer handling.
- *                              Copyright (C) 2000, 2001, 2002  Ingo Molnar
- *              Designed by David S. Miller, Alexey Kuznetsov and Ingo Molnar
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel_stat.h>
 #include <beep/export.h>
 #include <beep/interrupt.h>

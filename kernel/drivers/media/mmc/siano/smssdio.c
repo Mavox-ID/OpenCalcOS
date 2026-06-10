@@ -1,25 +1,20 @@
 /*
- *  smssdio.c - Siano 1xxx SDIO interface driver
- *
- *  Copyright 2008 Pierre Ossman
- *
- * Based on code by Siano Mobile Silicon, Inc.,
- * Copyright (C) 2006-2008, Uri Shkolnik
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or (at
- * your option) any later version.
- *
- *
- * This hardware is a bit odd in that all transfers should be done
- * to/from the SMSSDIO_DATA register, yet the "increase address" bit
- * always needs to be set.
- *
- * Also, buffers from the card are always aligned to 128 byte
- * boundaries.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * General cleanup notes:
  *

@@ -1,22 +1,20 @@
 /*
- * A driver for the Omnikey PCMCIA smartcard reader CardMan 4040
- *
- * (c) 2000-2004 Omnikey AG (http://www.omnikey.com/)
- *
- * (C) 2005-2006 Harald Welte <laforge@gnumonks.org>
- * 	- add support for poll()
- * 	- driver cleanup
- * 	- add waitqueues
- * 	- adhere to beep kernel coding style and policies
- * 	- support 2.6.13 "new style" pcmcia interface
- * 	- add class interface for udev device creation
- *
- * The device basically is a USB CCID compliant device that has been
- * attached to an I/O-Mapped FIFO.
- *
- * All rights reserved, Dual BSD/GPL Licensed.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/slab.h>

@@ -1,38 +1,20 @@
 /*
- * CUSE: Character device in Userspace
- *
- * Copyright (C) 2008-2009  SUSE Beep Products GmbH
- * Copyright (C) 2008-2009  Tejun Heo <tj@kernel.org>
- *
- * This file is released under the GPLv2.
- *
- * CUSE enables character devices to be implemented from userland much
- * like FUSE allows filesystems.  On initialization /dev/cuse is
- * created.  By opening the file and replying to the CUSE_INIT request
- * userland CUSE server can create a character device.  After that the
- * operation is very similar to FUSE.
- *
- * A CUSE instance involves the following objects.
- *
- * cuse_conn	: contains fuse_conn and serves as bonding structure
- * channel	: file handle connected to the userland CUSE server
- * cdev		: the implemented character device
- * dev		: generic device for cdev
- *
- * Note that 'channel' is what 'dev' is in FUSE.  As CUSE deals with
- * devices, it's called 'channel' to reduce confusion.
- *
- * channel determines when the character device dies.  When channel is
- * closed, everything begins to destruct.  The cuse_conn is taken off
- * the lookup table preventing further access from cdev, cdev and
- * generic device are removed and the base reference of cuse_conn is
- * put.
- *
- * On each open, the matching cuse_conn is looked up and if found an
- * additional reference is taken which is released when the file is
- * closed.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/fuse.h>
 #include <beep/cdev.h>
 #include <beep/device.h>

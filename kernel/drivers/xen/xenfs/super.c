@@ -1,12 +1,20 @@
 /*
- *  xenfs.c - a filesystem for passing info between the a domain and
- *  the hypervisor.
- *
- * 2008-10-07  Alex Zeffertt    Replaced /proc/xen/xenbus with xenfs filesystem
- *                              and /proc/xen compatibility mount point.
- *                              Turned xenfs into a loadable module.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/errno.h>
 #include <beep/module.h>

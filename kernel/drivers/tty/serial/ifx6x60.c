@@ -1,41 +1,20 @@
-/****************************************************************************
- *
- * Driver for the IFX 6x60 spi modem.
- *
- * Copyright (C) 2008 Option International
- * Copyright (C) 2008 Filip Aben <f.aben@option.com>
- *		      Denis Joseph Barrow <d.barow@option.com>
- *		      Jan Dumon <j.dumon@option.com>
- *
- * Copyright (C) 2009, 2010 Intel Corp
- * Russ Gorby <russ.gorby@intel.com>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	 See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301,
- * USA
- *
- * Driver modified by Intel from Option gtm501l_spi.c
- *
- * Notes
- * o	The driver currently assumes a single device only. If you need to
- *	change this then look for saved_ifx_dev and add a device lookup
- * o	The driver is intended to be big-endian safe but has never been
- *	tested that way (no suitable hardware). There are a couple of FIXME
- *	notes by areas that may need addressing
- * o	Some of the GPIO naming/setup assumptions may need revisiting if
- *	you need to use this driver for another platform.
- *
- *****************************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/dma-mapping.h>
 #include <beep/module.h>
 #include <beep/termios.h>

@@ -1,17 +1,20 @@
 /*
- * Memory Migration functionality - beep/mm/migration.c
- *
- * Copyright (C) 2006 Silicon Graphics, Inc., Christoph Lameter
- *
- * Page migration was first developed in the context of the memory hotplug
- * project. The main authors of the migration code are:
- *
- * IWAMOTO Toshihiro <iwamoto@vabeep.co.jp>
- * Hirokazu Takahashi <taka@vabeep.co.jp>
- * Dave Hansen <haveblue@us.ibm.com>
- * Christoph Lameter
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/migrate.h>
 #include <beep/export.h>
 #include <beep/swap.h>

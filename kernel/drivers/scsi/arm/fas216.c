@@ -1,39 +1,20 @@
 /*
- *  beep/drivers/acorn/scsi/fas216.c
- *
- *  Copyright (C) 1997-2003 Russell King
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * Based on information in qlogicfas.c by Tom Zerucha, Michael Griffith, and
- * other sources, including:
- *   the AMD Am53CF94 data sheet
- *   the AMD Am53C94 data sheet
- *
- * This is a generic driver.  To use it, have a look at cumana_2.c.  You
- * should define your own structure that overlays FAS216_Info, eg:
- * struct my_host_data {
- *    FAS216_Info info;
- *    ... my host specific data ...
- * };
- *
- * Changelog:
- *  30-08-1997	RMK	Created
- *  14-09-1997	RMK	Started disconnect support
- *  08-02-1998	RMK	Corrected real DMA support
- *  15-02-1998	RMK	Started sync xfer support
- *  06-04-1998	RMK	Tightened conditions for printing incomplete
- *			transfers
- *  02-05-1998	RMK	Added extra checks in fas216_reset
- *  24-05-1998	RMK	Fixed synchronous transfers with period >= 200ns
- *  27-06-1998	RMK	Changed asm/delay.h to beep/delay.h
- *  26-08-1998	RMK	Improved message support wrt MESSAGE_REJECT
- *  02-04-2000	RMK	Converted to use the new error handling, and
- *			automatically request sense data upon check
- *			condition status from targets.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/blkdev.h>
 #include <beep/kernel.h>

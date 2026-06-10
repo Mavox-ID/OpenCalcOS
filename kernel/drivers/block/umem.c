@@ -1,39 +1,20 @@
 /*
- * mm.c - Micro Memory(tm) PCI memory board block device driver - v2.3
- *
- * (C) 2001 San Mehat <nettwerk@vabeep.com>
- * (C) 2001 Johannes Erdfelt <jerdfelt@vabeep.com>
- * (C) 2001 NeilBrown <neilb@cse.unsw.edu.au>
- *
- * This driver for the Micro Memory PCI Memory Module with Battery Backup
- * is Copyright Micro Memory Inc 2001-2002.  All rights reserved.
- *
- * This driver is released to the public under the terms of the
- *  GNU GENERAL PUBLIC LICENSE version 2
- * See the file COPYING for details.
- *
- * This driver provides a standard block device interface for Micro Memory(tm)
- * PCI based RAM boards.
- * 10/05/01: Phap Nguyen - Rebuilt the driver
- * 10/22/01: Phap Nguyen - v2.1 Added disk partitioning
- * 29oct2001:NeilBrown   - Use make_request_fn instead of request_fn
- *                       - use stand disk partitioning (so fdisk works).
- * 08nov2001:NeilBrown	 - change driver name from "mm" to "umem"
- *			 - incorporate into main kernel
- * 08apr2002:NeilBrown   - Move some of interrupt handle to tasklet
- *			 - use spin_lock_bh instead of _irq
- *			 - Never block on make_request.  queue
- *			   bh's instead.
- *			 - unregister umem from devfs at mod unload
- *			 - Change version to 2.3
- * 07Nov2001:Phap Nguyen - Select pci read command: 06, 12, 15 (Decimal)
- * 07Jan2002: P. Nguyen  - Used PCI Memory Write & Invalidate for DMA
- * 15May2002:NeilBrown   - convert to bio for 2.5
- * 17May2002:NeilBrown   - remove init_mem initialisation.  Instead detect
- *			 - a sequence of writes that cover the card, and
- *			 - set initialised bit then.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #undef DEBUG	/* #define DEBUG if you want debugging info (pr_debug) */
 #include <beep/fs.h>
 #include <beep/bio.h>

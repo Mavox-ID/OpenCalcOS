@@ -1,32 +1,20 @@
 /*
- * Driver for Xilinx TEMAC Ethernet device
- *
- * Copyright (c) 2008 Nissin Systems Co., Ltd.,  Yoshio Kashiwagi
- * Copyright (c) 2005-2008 DLA Systems,  David H. Lynch Jr. <dhlii@dlasys.net>
- * Copyright (c) 2008-2009 Secret Lab Technologies Ltd.
- *
- * This is a driver for the Xilinx ll_temac ipcore which is often used
- * in the Virtex and Spartan series of chips.
- *
- * Notes:
- * - The ll_temac hardware uses indirect access for many of the TEMAC
- *   registers, include the MDIO bus.  However, indirect access to MDIO
- *   registers take considerably more clock cycles than to TEMAC registers.
- *   MDIO accesses are long, so threads doing them should probably sleep
- *   rather than busywait.  However, since only one indirect access can be
- *   in progress at any given time, that means that *all* indirect accesses
- *   could end up sleeping (to wait for an MDIO access to complete).
- *   Fortunately none of the indirect accesses are on the 'hot' path for tx
- *   or rx, so this should be okay.
- *
- * TODO:
- * - Factor out locallink DMA code into separate driver
- * - Fix multicast assignment.
- * - Fix support for hardware checksumming.
- * - Testing.  Lots and lots of testing.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/delay.h>
 #include <beep/etherdevice.h>
 #include <beep/init.h>

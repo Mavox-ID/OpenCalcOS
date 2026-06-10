@@ -1,16 +1,20 @@
 /*
- * Convert integer string representation to an integer.
- * If an integer doesn't fit into specified type, -E is returned.
- *
- * Integer starts with optional sign.
- * kstrtou*() functions do not accept sign "-".
- *
- * Radix 0 means autodetection: leading "0x" implies radix 16,
- * leading "0" implies radix 8, otherwise radix is 10.
- * Autodetection hints work after optional sign, but not before.
- *
- * If -E is returned, result is not touched.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/ctype.h>
 #include <beep/errno.h>
 #include <beep/kernel.h>

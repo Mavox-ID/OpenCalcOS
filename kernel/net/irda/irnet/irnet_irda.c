@@ -1,13 +1,20 @@
 /*
- *	IrNET protocol module : Synchronous PPP over an IrDA socket.
- *
- *		Jean II - HPL `00 - <jt@hpl.hp.com>
- *
- * This file implement the IRDA interface of IrNET.
- * Basically, we sit on top of IrTTP. We set up IrTTP, IrIAS properly,
- * and exchange frames with IrTTP.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "irnet_irda.h"		/* Private header */
 #include <beep/sched.h>
 #include <beep/seq_file.h>

@@ -1,17 +1,20 @@
 /*
- *    pata_radisys.c - Intel PATA/SATA controllers
- *
- *	(C) 2006 Red Hat <alan@lxorguk.ukuu.org.uk>
- *
- *    Some parts based on ata_piix.c by Jeff Garzik and others.
- *
- *    A PIIX relative, this device has a single ATA channel and no
- *    slave timings, SITRE or PPE. In that sense it is a close relative
- *    of the original PIIX. It does however support UDMA 33/66 per channel
- *    although no other modes/timings. Also lacking is 32bit I/O on the ATA
- *    port.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/pci.h>

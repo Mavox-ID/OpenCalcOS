@@ -1,17 +1,20 @@
 /*
- * dcookies.c
- *
- * Copyright 2002 John Levon <levon@movementarian.org>
- *
- * Persistent cookie-path mappings. These are used by
- * profilers to convert a per-task EIP value into something
- * non-transitory that can be processed at a later date.
- * This is done by locking the dentry/vfsmnt pair in the
- * kernel until released by the tasks needing the persistent
- * objects. The tag is simply an unsigned long that refers
- * to the pair and can be looked up from userspace.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/syscalls.h>
 #include <beep/export.h>
 #include <beep/slab.h>

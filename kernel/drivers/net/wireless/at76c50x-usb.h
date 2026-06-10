@@ -1,24 +1,20 @@
 /*
- * Copyright (c) 2002,2003 Oliver Kurth
- *	     (c) 2003,2004 Joerg Albert <joerg.albert@gmx.de>
- *	     (c) 2007 Guido Guenther <agx@sigxcpu.org>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License as
- * published by the Free Software Foundation; either version 2 of
- * the License, or (at your option) any later version.
- *
- * This driver was based on information from the Sourceforge driver
- * released and maintained by Atmel:
- *
- *  http://sourceforge.net/projects/atmelwlandriver/
- *
- * Although the code was completely re-written,
- * it would have been impossible without Atmel's decision to
- * release an Open Source driver (unfortunately the firmware was
- * kept binary only). Thanks for that decision to Atmel!
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _AT76_USB_H
 #define _AT76_USB_H
 

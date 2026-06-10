@@ -1,20 +1,20 @@
 /*
- * Radisys 82600 Embedded chipset Memory Controller kernel module
- * (C) 2005 EADS Astrium
- * This file may be distributed under the terms of the
- * GNU General Public License.
- *
- * Written by Tim Small <tim@buttersideup.com>, based on work by Thayne
- * Harbaugh, Dan Hollis <goemon at anime dot net> and others.
- *
- * $Id: edac_r82600.c,v 1.1.2.6 2005/10/05 00:43:44 dsp_llnl Exp $
- *
- * Written with reference to 82600 High Integration Dual PCI System
- * Controller Data Book:
- * www.radisys.com/files/support_downloads/007-01277-0002.82600DataBook.pdf
- * references to this document given in []
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/pci.h>

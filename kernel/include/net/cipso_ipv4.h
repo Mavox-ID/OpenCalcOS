@@ -1,17 +1,20 @@
 /*
- * CIPSO - Commercial IP Security Option
- *
- * This is an implementation of the CIPSO 2.2 protocol as specified in
- * draft-ietf-cipso-ipsecurity-01.txt with additional tag types as found in
- * FIPS-188, copies of both documents can be found in the Documentation
- * directory.  While CIPSO never became a full IETF RFC standard many vendors
- * have chosen to adopt the protocol and over the years it has become a
- * de-facto standard for labeled networking.
- *
- * Author: Paul Moore <paul@paul-moore.com>
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * (c) Copyright Hewlett-Packard Development Company, L.P., 2006
  *

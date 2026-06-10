@@ -1,24 +1,20 @@
 /*
- * f_midi.c -- USB MIDI class function driver
- *
- * Copyright (C) 2006 Thumtronics Pty Ltd.
- * Developed for Thumtronics by Grey Innovation
- * Ben Williamson <ben.williamson@greyinnovation.com>
- *
- * Rewritten for the composite framework
- *   Copyright (C) 2011 Daniel Mack <zonque@gmail.com>
- *
- * Based on drivers/usb/gadget/f_audio.c,
- *   Copyright (C) 2008 Bryan Wu <cooloney@kernel.org>
- *   Copyright (C) 2008 Analog Devices, Inc
- *
- * and drivers/usb/gadget/midi.c,
- *   Copyright (C) 2006 Thumtronics Pty Ltd.
- *   Ben Williamson <ben.williamson@greyinnovation.com>
- *
- * Licensed under the GPL-2 or later.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/slab.h>
 #include <beep/device.h>

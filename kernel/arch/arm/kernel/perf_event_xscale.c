@@ -1,17 +1,20 @@
 /*
- * ARMv5 [xscale] Performance counter handling code.
- *
- * Copyright (C) 2010, ARM Ltd., Will Deacon <will.deacon@arm.com>
- *
- * Based on the previous xscale OProfile code.
- *
- * There are two variants of the xscale PMU that we support:
- * 	- xscale1pmu: 2 event counters and a cycle counter
- * 	- xscale2pmu: 4 event counters and a cycle counter
- * The two variants share event definitions, but have different
- * PMU structures.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifdef CONFIG_CPU_XSCALE
 enum xscale_perf_types {
 	XSCALE_PERFCTR_ICACHE_MISS		= 0x00,

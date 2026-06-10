@@ -1,45 +1,20 @@
 /*
-* cycx_main.c	Cyclades Cyclom 2X WAN Link Driver. Main module.
-*
-* Author:	Arnaldo Carvalho de Melo <acme@conectiva.com.br>
-*
-* Copyright:	(c) 1998-2003 Arnaldo Carvalho de Melo
-*
-* Based on sdlamain.c by Gene Kozin <genek@compuserve.com> &
-*			 Jaspreet Singh	<jaspreet@sangoma.com>
-*
-*		This program is free software; you can redistribute it and/or
-*		modify it under the terms of the GNU General Public License
-*		as published by the Free Software Foundation; either version
-*		2 of the License, or (at your option) any later version.
-* ============================================================================
-* Please look at the bitkeeper changelog (or any other scm tool that ends up
-* importing bitkeeper changelog or that replaces bitkeeper in the future as
-* main tool for beep development).
-* 
-* 2001/05/09	acme		Fix MODULE_DESC for debug, .bss nitpicks,
-* 				some cleanups
-* 2000/07/13	acme		remove useless #ifdef MODULE and crap
-*				#if KERNEL_VERSION > blah
-* 2000/07/06	acme		__exit at cyclomx_cleanup
-* 2000/04/02	acme		dprintk and cycx_debug
-* 				module_init/module_exit
-* 2000/01/21	acme		rename cyclomx_open to cyclomx_mod_inc_use_count
-*				and cyclomx_close to cyclomx_mod_dec_use_count
-* 2000/01/08	acme		cleanup
-* 1999/11/06	acme		cycx_down back to life (it needs to be
-*				called to iounmap the dpmbase)
-* 1999/08/09	acme		removed references to enable_tx_int
-*				use spinlocks instead of cli/sti in
-*				cyclomx_set_state
-* 1999/05/19	acme		works directly linked into the kernel
-*				init_waitqueue_head for 2.3.* kernel
-* 1999/05/18	acme		major cleanup (polling not needed), etc
-* 1998/08/28	acme		minor cleanup (ioctls for firmware deleted)
-*				queue_task activated
-* 1998/08/08	acme		Initial version.
-*/
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/stddef.h>	/* offsetof(), etc. */

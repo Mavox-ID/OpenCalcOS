@@ -1,80 +1,20 @@
 /*
-net-3-driver for the IBM LAN Adapter/A
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-This is an extension to the Beep operating system, and is covered by the
-same GNU General Public License that covers that work.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-Copyright 1999 by Alfred Arnold (alfred@ccac.rwth-aachen.de,
-                                 alfred.arnold@lancom.de)
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-This driver is based both on the SK_MCA driver, which is itself based on the
-SK_G16 and 3C523 driver.
-
-paper sources:
-  'PC Hardware: Aufbau, Funktionsweise, Programmierung' by
-  Hans-Peter Messmer for the basic Microchannel stuff
-
-  'Beep Geraetetreiber' by Allesandro Rubini, Kalle Dalheimer
-  for help on Ethernet driver programming
-
-  'DP83934CVUL-20/25 MHz SONIC-T Ethernet Controller Datasheet' by National
-  Semiconductor for info on the MAC chip
-
-  'LAN Technical Reference Ethernet Adapter Interface Version 1 Release 1.0
-   Document Number SC30-3661-00' by IBM for info on the adapter itself
-
-  Also see http://www.national.com/analog 
-
-special acknowledgements to:
-  - Bob Eager for helping me out with documentation from IBM
-  - Jim Shorney for his endless patience with me while I was using
-    him as a beta tester to trace down the address filter bug ;-)
-
-  Missing things:
-
-  -> set debug level via ioctl instead of compile-time switches
-  -> I didn't follow the development of the 2.1.x kernels, so my
-     assumptions about which things changed with which kernel version
-     are probably nonsense
-
-History:
-  Nov 6th, 1999
-  	startup from SK_MCA driver
-  Dec 6th, 1999
-	finally got docs about the card.  A big thank you to Bob Eager!
-  Dec 12th, 1999
-	first packet received
-  Dec 13th, 1999
-	recv queue done, tcpdump works
-  Dec 15th, 1999
-	transmission part works
-  Dec 28th, 1999
-	added usage of the isa_functions for Beep 2.3 .  Things should
-	still work with 2.0.x....
-  Jan 28th, 2000
-	in Beep 2.2.13, the version.h file mysteriously didn't get
-	included.  Added a workaround for this.  Furthermore, it now
-	not only compiles as a modules ;-)
-  Jan 30th, 2000
-	newer kernels automatically probe more than one board, so the
-	'startslot' as a variable is also needed here
-  Apr 12th, 2000
-	the interrupt mask register is not set 'hard' instead of individually
-	setting registers, since this seems to set bits that shouldn't be
-	set
-  May 21st, 2000
-	reset interrupt status immediately after CAM load
-	add a recovery delay after releasing the chip's reset line
-  May 24th, 2000
-	finally found the bug in the address filter setup - damned signed
-        chars!
-  June 1st, 2000
-	corrected version codes, added support for the latest 2.3 changes
-  Oct 28th, 2002
-	cleaned up for the 2.5 tree <alan@lxorguk.ukuu.org.uk>
-
- *************************************************************************/
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/string.h>
 #include <beep/errno.h>

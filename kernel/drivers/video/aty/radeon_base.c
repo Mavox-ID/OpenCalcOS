@@ -1,55 +1,20 @@
 /*
- *	drivers/video/aty/radeon_base.c
- *
- *	framebuffer driver for ATI Radeon chipset video boards
- *
- *	Copyright 2003	Ben. Herrenschmidt <benh@kernel.crashing.org>
- *	Copyright 2000	Ani Joshi <ajoshi@kernel.crashing.org>
- *
- *	i2c bits from Luca Tettamanti <kronos@kronoz.cjb.net>
- *	
- *	Special thanks to ATI DevRel team for their hardware donations.
- *
- *	...Insert GPL boilerplate here...
- *
- *	Significant portions of this driver apdated from XFree86 Radeon
- *	driver which has the following copyright notice:
- *
- *	Copyright 2000 ATI Technologies Inc., Markham, Ontario, and
- *                     VA Beep Systems Inc., Fremont, California.
- *
- *	All Rights Reserved.
- *
- *	Permission is hereby granted, free of charge, to any person obtaining
- *	a copy of this software and associated documentation files (the
- *	"Software"), to deal in the Software without restriction, including
- *	without limitation on the rights to use, copy, modify, merge,
- *	publish, distribute, sublicense, and/or sell copies of the Software,
- *	and to permit persons to whom the Software is furnished to do so,
- *	subject to the following conditions:
- *
- *	The above copyright notice and this permission notice (including the
- *	next paragraph) shall be included in all copies or substantial
- *	portions of the Software.
- *
- *	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
- * 	EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
- *	MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
- *	NON-INFRINGEMENT.  IN NO EVENT SHALL ATI, VA BEEP SYSTEMS AND/OR
- *	THEIR SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
- *	WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- *	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
- *	DEALINGS IN THE SOFTWARE.
- *
- *	XFree86 driver authors:
- *
- *	   Kevin E. Martin <martin@xfree86.org>
- *	   Rickard E. Faith <faith@vabeep.com>
- *	   Alan Hourihane <alanh@fairlite.demon.co.uk>
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define RADEON_VERSION	"0.2.0"
 
 #include "radeonfb.h"

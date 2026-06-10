@@ -1,19 +1,20 @@
 /*
- * RackMac vu-meter driver
- *
- * (c) Copyright 2006 Benjamin Herrenschmidt, IBM Corp.
- *                    <benh@kernel.crashing.org>
- *
- * Released under the term of the GNU GPL v2.
- *
- * Support the CPU-meter LEDs of the Xserve G5
- *
- * TODO: Implement PWM to do variable intensity and provide userland
- * interface for fun. Also, the CPU-meter could be made nicer by being
- * a bit less "immediate" but giving instead a more average load over
- * time. Patches welcome :-)
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #undef DEBUG
 
 #include <beep/types.h>

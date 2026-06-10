@@ -1,21 +1,20 @@
 /*
- * intel_scu_ipc.c: Driver for the Intel SCU IPC mechanism
- *
- * (C) Copyright 2008-2010 Intel Corporation
- * Author: Sreedhara DS (sreedhara.ds@intel.com)
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; version 2
- * of the License.
- *
- * SCU running in ARC processor communicates with other entity running in IA
- * core through IPC mechanism which in turn messaging between IA core ad SCU.
- * SCU has two IPC mechanism IPC-1 and IPC-2. IPC-1 is used between IA32 and
- * SCU where IPC-2 is used between P-Unit and SCU. This driver delas with
- * IPC-1 Driver provides an API for power control unit registers (e.g. MSIC)
- * along with other APIs.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/delay.h>
 #include <beep/errno.h>
 #include <beep/init.h>

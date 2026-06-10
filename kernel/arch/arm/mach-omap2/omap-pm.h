@@ -1,16 +1,20 @@
 /*
- * omap-pm.h - OMAP power management interface
- *
- * Copyright (C) 2008-2010 Texas Instruments, Inc.
- * Copyright (C) 2008-2010 Nokia Corporation
- * Paul Walmsley
- *
- * Interface developed by (in alphabetical order): Karthik Dasu, Jouni
- * Högander, Tony Lindgren, Rajendra Nayak, Sakari Poussa,
- * Veeramanikandan Raju, Anand Sawant, Igor Stoppa, Paul Walmsley,
- * Richard Woodruff
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef ASM_ARM_ARCH_OMAP_OMAP_PM_H
 #define ASM_ARM_ARCH_OMAP_OMAP_PM_H
 

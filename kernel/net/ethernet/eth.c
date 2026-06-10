@@ -1,42 +1,20 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the BEEP
- *		operating system.  INET is implemented using the  BSD Socket
- *		interface as the means of communication with the user level.
- *
- *		Ethernet-type device handling.
- *
- * Version:	@(#)eth.c	1.0.7	05/25/93
- *
- * Authors:	Ross Biro
- *		Fred N. van Kempen, <waltje@uWalt.NL.Mugnet.ORG>
- *		Mark Evans, <evansmp@uhura.aston.ac.uk>
- *		Florian  La Roche, <rzsfl@rz.uni-sb.de>
- *		Alan Cox, <gw4pts@gw4pts.ampr.org>
- *
- * Fixes:
- *		Mr Beep	: Arp problems
- *		Alan Cox	: Generic queue tidyup (very tiny here)
- *		Alan Cox	: eth_header ntohs should be htons
- *		Alan Cox	: eth_rebuild_header missing an htons and
- *				  minor other things.
- *		Tegge		: Arp bug fixes.
- *		Florian		: Removed many unnecessary functions, code cleanup
- *				  and changes for new arp and skbuff.
- *		Alan Cox	: Redid header building to reflect new format.
- *		Alan Cox	: ARP only when compiled with CONFIG_INET
- *		Greg Page	: 802.2 and SNAP stuff.
- *		Alan Cox	: MAC layer pointers/new format.
- *		Paul Gortmaker	: eth_copy_and_sum shouldn't csum padding.
- *		Alan Cox	: Protect against forwarding explosions with
- *				  older network drivers and IFF_ALLMULTI.
- *	Christer Weinigel	: Better rebuild header message.
- *             Andrew Morton    : 26Feb01: kill ether_setup() - use netdev_boot_setup().
- *
- *		This program is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/types.h>
 #include <beep/kernel.h>

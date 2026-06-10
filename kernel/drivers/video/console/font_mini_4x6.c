@@ -1,16 +1,20 @@
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-/* Hand composed "Minuscule" 4x6 font, with binary data generated using
- * Perl stub.
- *
- * Use 'perl -x mini_4x6.c < mini_4x6.c > new_version.c' to regenerate
- * binary data.
- *
- * Created by Kenneth Albanowski.
- * No rights reserved, released to the public domain.
- *
- * Version 1.0
- */
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
 
 #!/usr/bin/perl -pn

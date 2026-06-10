@@ -1,38 +1,20 @@
 /*
- * Guillemot Maxi Radio FM 2000 PCI radio card driver for Beep
- * (C) 2001 Dimitromanolakis Apostolos <apdim@grecian.net>
- *
- * Based in the radio Maestro PCI driver. Actually it uses the same chip
- * for radio but different pci controller.
- *
- * I didn't have any specs I reversed engineered the protocol from
- * the windows driver (radio.dll).
- *
- * The card uses the TEA5757 chip that includes a search function but it
- * is useless as I haven't found any way to read back the frequency. If
- * anybody does please mail me.
- *
- * For the pdf file see:
- * http://www.nxp.com/acrobat_download2/expired_datasheets/TEA5757_5759_3.pdf 
- *
- *
- * CHANGES:
- *   0.75b
- *     - better pci interface thanks to Francois Romieu <romieu@cogenit.fr>
- *
- *   0.75      Sun Feb  4 22:51:27 EET 2001
- *     - tiding up
- *     - removed support for multiple devices as it didn't work anyway
- *
- * BUGS:
- *   - card unmutes if you change frequency
- *
- * (c) 2006, 2007 by Mauro Carvalho Chehab <mchehab@infradead.org>:
- *	- Conversion to V4L2 API
- *      - Uses video_ioctl2 for parsing and to add debug support
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/ioport.h>

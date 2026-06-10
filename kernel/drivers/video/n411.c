@@ -1,28 +1,20 @@
 /*
- * beep/drivers/video/n411.c -- Platform device for N411 EPD kit
- *
- * Copyright (C) 2008, Jaya Kumar
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License. See the file COPYING in the main directory of this archive for
- * more details.
- *
- * Layout is based on skeletonfb.c by James Simmons and Geert Uytterhoeven.
- *
- * This driver is written to be used with the Hecuba display controller
- * board, and tested with the EInk 800x600 display in 1 bit mode.
- * The interface between Hecuba and the host is TTL based GPIO. The
- * GPIO requirements are 8 writable data lines and 6 lines for control.
- * Only 4 of the controls are actually used here but 6 for future use.
- * The driver requires the IO addresses for data and control GPIO at
- * load time. It is also possible to use this display with a standard
- * PC parallel port.
- *
- * General notes:
- * - User must set dio_addr=0xIOADDR cio_addr=0xIOADDR c2io_addr=0xIOADDR
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/errno.h>

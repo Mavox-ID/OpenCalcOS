@@ -1,64 +1,20 @@
 /*
- *  Copyright (c) 2000-2008 LSI Corporation.
- *
- *
- *           Name:  mpi_init.h
- *          Title:  MPI initiator mode messages and structures
- *  Creation Date:  June 8, 2000
- *
- *    mpi_init.h Version:  01.05.09
- *
- *  Version History
- *  ---------------
- *
- *  Date      Version   Description
- *  --------  --------  ------------------------------------------------------
- *  05-08-00  00.10.01  Original release for 0.10 spec dated 4/26/2000.
- *  05-24-00  00.10.02  Added SenseBufferLength to _MSG_SCSI_IO_REPLY.
- *  06-06-00  01.00.01  Update version number for 1.0 release.
- *  06-08-00  01.00.02  Added MPI_SCSI_RSP_INFO_ definitions.
- *  11-02-00  01.01.01  Original release for post 1.0 work.
- *  12-04-00  01.01.02  Added MPI_SCSIIO_CONTROL_NO_DISCONNECT.
- *  02-20-01  01.01.03  Started using MPI_POINTER.
- *  03-27-01  01.01.04  Added structure offset comments.
- *  04-10-01  01.01.05  Added new MsgFlag for MSG_SCSI_TASK_MGMT.
- *  08-08-01  01.02.01  Original release for v1.2 work.
- *  08-29-01  01.02.02  Added MPI_SCSITASKMGMT_TASKTYPE_LOGICAL_UNIT_RESET.
- *                      Added MPI_SCSI_STATE_QUEUE_TAG_REJECTED for
- *                      MSG_SCSI_IO_REPLY.
- *  09-28-01  01.02.03  Added structures and defines for SCSI Enclosure
- *                      Processor messages.
- *  10-04-01  01.02.04  Added defines for SEP request Action field.
- *  05-31-02  01.02.05  Added MPI_SCSIIO_MSGFLGS_CMD_DETERMINES_DATA_DIR define
- *                      for SCSI IO requests.
- *  11-15-02  01.02.06  Added special extended SCSI Status defines for FCP.
- *  06-26-03  01.02.07  Added MPI_SCSI_STATUS_FCPEXT_UNASSIGNED define.
- *  05-11-04  01.03.01  Original release for MPI v1.3.
- *  08-19-04  01.05.01  Added MsgFlags defines for EEDP to SCSI IO request.
- *                      Added new word to MSG_SCSI_IO_REPLY to add TaskTag field
- *                      and a reserved U16.
- *                      Added new MSG_SCSI_IO32_REQUEST structure.
- *                      Added a TaskType of Clear Task Set to SCSI
- *                      Task Management request.
- *  12-07-04  01.05.02  Added support for Task Management Query Task.
- *  01-15-05  01.05.03  Modified SCSI Enclosure Processor Request to support
- *                      WWID addressing.
- *  03-11-05  01.05.04  Removed EEDP flags from SCSI IO Request.
- *                      Removed SCSI IO 32 Request.
- *                      Modified SCSI Enclosure Processor Request and Reply to
- *                      support Enclosure/Slot addressing rather than WWID
- *                      addressing.
- *  06-24-05  01.05.05  Added SCSI IO 32 structures and defines.
- *                      Added four new defines for SEP SlotStatus.
- *  08-03-05  01.05.06  Fixed some MPI_SCSIIO32_MSGFLGS_ defines to make them
- *                      unique in the first 32 characters.
- *  03-27-06  01.05.07  Added Task Management type of Clear ACA.
- *  10-11-06  01.05.08  Shortened define for Task Management type of Clear ACA.
- *  02-28-07  01.05.09  Defined two new MsgFlags bits for SCSI Task Management
- *                      Request: Do Not Send Task IU and Soft Reset Option.
- *  --------------------------------------------------------------------------
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef MPI_INIT_H
 #define MPI_INIT_H
 

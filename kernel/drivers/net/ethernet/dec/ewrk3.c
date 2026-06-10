@@ -1,148 +1,20 @@
-/*  ewrk3.c: A DIGITAL EtherWORKS 3 ethernet driver for Beep.
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-   Written 1994 by David C. Davies.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-   Copyright 1994 Digital Equipment Corporation.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-   This software may be used and distributed according to the terms of
-   the GNU General Public License, incorporated herein by reference.
-
-   This driver is written for the Digital Equipment Corporation series
-   of EtherWORKS ethernet cards:
-
-   DE203 Turbo (BNC)
-   DE204 Turbo (TP)
-   DE205 Turbo (TP BNC)
-
-   The driver has been tested on a relatively busy  network using the DE205
-   card and benchmarked with 'ttcp': it transferred 16M  of data at 975kB/s
-   (7.8Mb/s) to a DECstation 5000/200.
-
-   The author may be reached at davies@maniac.ultranet.com.
-
-   =========================================================================
-   This driver has been written  substantially  from scratch, although  its
-   inheritance of style and stack interface from 'depca.c' and in turn from
-   Donald Becker's 'lance.c' should be obvious.
-
-   The  DE203/4/5 boards  all  use a new proprietary   chip in place of the
-   LANCE chip used in prior cards  (DEPCA, DE100, DE200/1/2, DE210, DE422).
-   Use the depca.c driver in the standard distribution  for the LANCE based
-   cards from DIGITAL; this driver will not work with them.
-
-   The DE203/4/5 cards have 2  main modes: shared memory  and I/O only. I/O
-   only makes  all the card accesses through  I/O transactions and  no high
-   (shared)  memory is used. This  mode provides a >48% performance penalty
-   and  is deprecated in this  driver,  although allowed to provide initial
-   setup when hardstrapped.
-
-   The shared memory mode comes in 3 flavours: 2kB, 32kB and 64kB. There is
-   no point in using any mode other than the 2kB  mode - their performances
-   are virtually identical, although the driver has  been tested in the 2kB
-   and 32kB modes. I would suggest you uncomment the line:
-
-   FORCE_2K_MODE;
-
-   to allow the driver to configure the card as a  2kB card at your current
-   base  address, thus leaving more  room to clutter  your  system box with
-   other memory hungry boards.
-
-   As many ISA  and EISA cards  can be supported  under this driver  as you
-   wish, limited primarily  by the available IRQ lines,  rather than by the
-   available I/O addresses  (24 ISA,  16 EISA).   I have  checked different
-   configurations of  multiple  depca cards and  ewrk3 cards  and have  not
-   found a problem yet (provided you have at least depca.c v0.38) ...
-
-   The board IRQ setting   must be at  an unused  IRQ which is  auto-probed
-   using  Donald  Becker's autoprobe  routines.   All  these cards   are at
-   {5,10,11,15}.
-
-   No 16MB memory  limitation should exist with this  driver as DMA is  not
-   used and the common memory area is in low memory on the network card (my
-   current system has 20MB and I've not had problems yet).
-
-   The ability to load  this driver as a  loadable module has been included
-   and used  extensively during the  driver development (to save those long
-   reboot sequences). To utilise this ability, you have to do 8 things:
-
-   0) have a copy of the loadable modules code installed on your system.
-   1) copy ewrk3.c from the  /beep/drivers/net directory to your favourite
-   temporary directory.
-   2) edit the  source code near  line 1898 to reflect  the I/O address and
-   IRQ you're using.
-   3) compile  ewrk3.c, but include -DMODULE in  the command line to ensure
-   that the correct bits are compiled (see end of source code).
-   4) if you are wanting to add a new  card, goto 5. Otherwise, recompile a
-   kernel with the ewrk3 configuration turned off and reboot.
-   5) insmod ewrk3.o
-   [Alan Cox: Changed this so you can insmod ewrk3.o irq=x io=y]
-   [Adam Kropelin: now accepts irq=x1,x2 io=y1,y2 for multiple cards]
-   6) run the net startup bits for your new eth?? interface manually
-   (usually /etc/rc.inet[12] at boot time).
-   7) enjoy!
-
-   Note that autoprobing is not allowed in loadable modules - the system is
-   already up and running and you're messing with interrupts.
-
-   To unload a module, turn off the associated interface
-   'ifconfig eth?? down' then 'rmmod ewrk3'.
-
-   Promiscuous   mode has been  turned  off  in this driver,   but  all the
-   multicast  address bits  have been   turned on. This  improved the  send
-   performance on a busy network by about 13%.
-
-   Ioctl's have now been provided (primarily because  I wanted to grab some
-   packet size statistics). They  are patterned after 'plipconfig.c' from a
-   suggestion by Alan Cox.  Using these  ioctls, you can enable promiscuous
-   mode, add/delete multicast  addresses, change the hardware address,  get
-   packet size distribution statistics and muck around with the control and
-   status register. I'll add others if and when the need arises.
-
-   TO DO:
-   ------
-
-
-   Revision History
-   ----------------
-
-   Version   Date        Description
-
-   0.1     26-aug-94   Initial writing. ALPHA code release.
-   0.11    31-aug-94   Fixed: 2k mode memory base calc.,
-   LeMAC version calc.,
-   IRQ vector assignments during autoprobe.
-   0.12    31-aug-94   Tested working on LeMAC2 (DE20[345]-AC) card.
-   Fixed up MCA hash table algorithm.
-   0.20     4-sep-94   Added IOCTL functionality.
-   0.21    14-sep-94   Added I/O mode.
-   0.21axp 15-sep-94   Special version for ALPHA AXP Beep V1.0.
-   0.22    16-sep-94   Added more IOCTLs & tidied up.
-   0.23    21-sep-94   Added transmit cut through.
-   0.24    31-oct-94   Added uid checks in some ioctls.
-   0.30     1-nov-94   BETA code release.
-   0.31     5-dec-94   Added check/allocate region code.
-   0.32    16-jan-95   Broadcast packet fix.
-   0.33    10-Feb-95   Fix recognition bug reported by <bkm@star.rl.ac.uk>.
-   0.40    27-Dec-95   Rationalise MODULE and autoprobe code.
-   Rewrite for portability & updated.
-   ALPHA support from <jestabro@amt.tay1.dec.com>
-   Added verify_area() calls in ewrk3_ioctl() from
-   suggestion by <heiko@colossus.escape.de>.
-   Add new multicasting code.
-   0.41    20-Jan-96   Fix IRQ set up problem reported by
-   <kenneth@bbs.sas.ntu.ac.sg>.
-   0.42    22-Apr-96   Fix alloc_device() bug <jari@markkus2.fimr.fi>
-   0.43    16-Aug-96   Update alloc_device() to conform to de4x5.c
-   0.44    08-Nov-01   use library crc32 functions <Matt_Domsch@dell.com>
-   0.45    19-Jul-02   fix unaligned access on alpha <martin@bruli.net>
-   0.46    10-Oct-02   Multiple NIC support when module <akropel1@rochester.rr.com>
-   0.47    18-Oct-02   ethtool support <akropel1@rochester.rr.com>
-   0.48    18-Oct-02   cli/sti removal for 2.5 <vda@port.imtp.ilyichevsk.odessa.ua>
-   ioctl locking, signature search cleanup <akropel1@rochester.rr.com>
-
-   =========================================================================
- */
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/sched.h>

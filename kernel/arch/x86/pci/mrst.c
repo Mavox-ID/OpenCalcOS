@@ -1,23 +1,20 @@
 /*
- * Moorestown PCI support
- *   Copyright (c) 2008 Intel Corporation
- *     Jesse Barnes <jesse.barnes@intel.com>
- *
- * Moorestown has an interesting PCI implementation:
- *   - configuration space is memory mapped (as defined by MCFG)
- *   - Lincroft devices also have a real, type 1 configuration space
- *   - Early Lincroft silicon has a type 1 access bug that will cause
- *     a hang if non-existent devices are accessed
- *   - some devices have the "fixed BAR" capability, which means
- *     they can't be relocated or modified; check for that during
- *     BAR sizing
- *
- * So, we use the MCFG space for all reads and writes, but also send
- * Lincroft writes to type 1 space.  But only read/write if the device
- * actually exists, otherwise return all 1s for reads and bit bucket
- * the writes.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/sched.h>
 #include <beep/pci.h>
 #include <beep/ioport.h>

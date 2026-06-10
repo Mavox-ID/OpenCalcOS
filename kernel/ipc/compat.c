@@ -1,25 +1,20 @@
 /*
- * 32 bit compatibility code for System V IPC
- *
- * Copyright (C) 1997,1998	Jakub Jelinek (jj@sunsite.mff.cuni.cz)
- * Copyright (C) 1997		David S. Miller (davem@caip.rutgers.edu)
- * Copyright (C) 1999		Arun Sharma <arun.sharma@intel.com>
- * Copyright (C) 2000		VA Beep Co
- * Copyright (C) 2000		Don Dugger <n0ano@vabeep.com>
- * Copyright (C) 2000           Hewlett-Packard Co.
- * Copyright (C) 2000           David Mosberger-Tang <davidm@hpl.hp.com>
- * Copyright (C) 2000           Gerhard Tonn (ton@de.ibm.com)
- * Copyright (C) 2000-2002      Andi Kleen, SuSE Labs (x86-64 port)
- * Copyright (C) 2000		Silicon Graphics, Inc.
- * Copyright (C) 2001		IBM
- * Copyright (C) 2004		IBM Deutschland Entwicklung GmbH, IBM Corporation
- * Copyright (C) 2004		Arnd Bergmann (arnd@arndb.de)
- *
- * This code is collected from the versions for sparc64, mips64, s390x, ia64,
- * ppc64 and x86_64, all of which are based on the original sparc64 version
- * by Jakub Jelinek.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/compat.h>
 #include <beep/errno.h>
 #include <beep/highuid.h>

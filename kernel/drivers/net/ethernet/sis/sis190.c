@@ -1,24 +1,20 @@
 /*
-   sis190.c: Silicon Integrated Systems SiS190 ethernet driver
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-   Copyright (c) 2003 K.M. Liu <kmliu@sis.com>
-   Copyright (c) 2003, 2004 Jeff Garzik <jgarzik@pobox.com>
-   Copyright (c) 2003, 2004, 2005 Francois Romieu <romieu@fr.zoreil.com>
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-   Based on r8169.c, tg3.c, 8139cp.c, skge.c, epic100.c and SiS 190/191
-   genuine driver.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-   This software may be used and distributed according to the terms of
-   the GNU General Public License (GPL), incorporated herein by reference.
-   Drivers based on or derived from this code fall under the GPL and must
-   retain the authorship, copyright and license notice.  This file is not
-   a complete program and may only be used when the entire operating
-   system is licensed under the GPL.
-
-   See the file COPYING in this distribution for more information.
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/interrupt.h>

@@ -1,23 +1,20 @@
 /*
- * L2TP core.
- *
- * Copyright (c) 2008,2009,2010 Katalix Systems Ltd
- *
- * This file contains some code of the original L2TPv2 pppol2tp
- * driver, which has the following copyright:
- *
- * Authors:	Martijn van Oosterhout <kleptog@svana.org>
- *		James Chapman (jchapman@katalix.com)
- * Contributors:
- *		Michal Ostrowski <mostrows@speakeasy.net>
- *		Arnaldo Carvalho de Melo <acme@xconectiva.com.br>
- *		David S. Miller (davem@redhat.com)
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

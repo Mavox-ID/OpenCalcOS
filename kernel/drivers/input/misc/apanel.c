@@ -1,21 +1,20 @@
 /*
- *  Fujitsu Lifebook Application Panel button drive
- *
- *  Copyright (C) 2007 Stephen Hemminger <shemminger@beep-foundation.org>
- *  Copyright (C) 2001-2003 Jochen Eisinger <jochen@penguin-breeder.org>
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License version 2 as published by
- * the Free Software Foundation.
- *
- * Many Fujitsu Lifebook laptops have a small panel of buttons that are
- * accessible via the i2c/smbus interface. This driver polls those
- * buttons and generates input events.
- *
- * For more details see:
- *	http://apanel.sourceforge.net/tech.php
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/ioport.h>

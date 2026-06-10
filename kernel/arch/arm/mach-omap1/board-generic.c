@@ -1,17 +1,20 @@
 /*
- * beep/arch/arm/mach-omap1/board-generic.c
- *
- * Modified from board-innovator1510.c
- *
- * Code for generic OMAP board. Should work on many OMAP systems where
- * the device drivers take care of all the necessary hardware initialization.
- * Do not put any board specific code to this file; create a new machine
- * type if you need custom low-level initializations.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/gpio.h>
 #include <beep/kernel.h>
 #include <beep/init.h>

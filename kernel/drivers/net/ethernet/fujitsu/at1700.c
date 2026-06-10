@@ -1,40 +1,20 @@
-/* at1700.c: A network device driver for  the Allied Telesis AT1700.
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-	Written 1993-98 by Donald Becker.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-	Copyright 1993 United States Government as represented by the
-	Director, National Security Agency.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-	This software may be used and distributed according to the terms
-	of the GNU General Public License, incorporated herein by reference.
-
-	The author may be reached as becker@scyld.com, or C/O
-	Scyld Computing Corporation
-	410 Severn Ave., Suite 210
-	Annapolis MD 21403
-
-	This is a device driver for the Allied Telesis AT1700, and
-        Fujitsu FMV-181/182/181A/182A/183/184/183A/184A, which are
-	straight-forward Fujitsu MB86965 implementations.
-
-	Modification for Fujitsu FMV-18X cards is done by Yutaka Tamiya
-	(tamy@flab.fujitsu.co.jp).
-
-  Sources:
-    The Fujitsu MB86965 datasheet.
-
-	After the initial version of this driver was written Gerry Sawkins of
-	ATI provided their EEPROM configuration code header file.
-    Thanks to NIIBE Yutaka <gniibe@mri.co.jp> for bug fixes.
-
-    MCA bus (AT1720) support (now deleted) by Rene Schmit <rene@bss.lu>
-
-  Bugs:
-	The MB86965 has a design flaw that makes all probes unreliable.  Not
-	only is it difficult to detect, it also moves around in I/O space in
-	response to inb()s from other device probes!
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #include <beep/errno.h>
 #include <beep/netdevice.h>
 #include <beep/etherdevice.h>

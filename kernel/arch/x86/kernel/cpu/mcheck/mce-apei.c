@@ -1,33 +1,20 @@
 /*
- * Bridge between MCE and APEI
- *
- * On some machine, corrected memory errors are reported via APEI
- * generic hardware error source (GHES) instead of corrected Machine
- * Check. These corrected memory errors can be reported to user space
- * through /dev/mcelog via faking a corrected Machine Check, so that
- * the error memory page can be offlined by /sbin/mcelog if the error
- * count for one page is beyond the threshold.
- *
- * For fatal MCE, save MCE record into persistent storage via ERST, so
- * that the MCE record can be logged after reboot via ERST.
- *
- * Copyright 2010 Intel Corp.
- *   Author: Huang Ying <ying.huang@intel.com>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License version
- * 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/export.h>
 #include <beep/kernel.h>
 #include <beep/acpi.h>

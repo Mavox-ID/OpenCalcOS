@@ -1,115 +1,20 @@
-/* src/prism2/driver/hfa384x_usb.c
-*
-* Functions that talk to the USB variantof the Intersil hfa384x MAC
-*
-* Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
-* --------------------------------------------------------------------
-*
-* beep-wlan
-*
-*   The contents of this file are subject to the Mozilla Public
-*   License Version 1.1 (the "License"); you may not use this file
-*   except in compliance with the License. You may obtain a copy of
-*   the License at http://www.mozilla.org/MPL/
-*
-*   Software distributed under the License is distributed on an "AS
-*   IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or
-*   implied. See the License for the specific language governing
-*   rights and limitations under the License.
-*
-*   Alternatively, the contents of this file may be used under the
-*   terms of the GNU Public License version 2 (the "GPL"), in which
-*   case the provisions of the GPL are applicable instead of the
-*   above.  If you wish to allow the use of your version of this file
-*   only under the terms of the GPL and not to allow others to use
-*   your version of this file under the MPL, indicate your decision
-*   by deleting the provisions above and replace them with the notice
-*   and other provisions required by the GPL.  If you do not delete
-*   the provisions above, a recipient may use your version of this
-*   file under either the MPL or the GPL.
-*
-* --------------------------------------------------------------------
-*
-* Inquiries regarding the beep-wlan Open Source project can be
-* made directly to:
-*
-* AbsoluteValue Systems Inc.
-* info@beep-wlan.com
-* http://www.beep-wlan.com
-*
-* --------------------------------------------------------------------
-*
-* Portions of the development of this software were funded by
-* Intersil Corporation as part of PRISM(R) chipset product development.
-*
-* --------------------------------------------------------------------
-*
-* This file implements functions that correspond to the prism2/hfa384x
-* 802.11 MAC hardware and firmware host interface.
-*
-* The functions can be considered to represent several levels of
-* abstraction.  The lowest level functions are simply C-callable wrappers
-* around the register accesses.  The next higher level represents C-callable
-* prism2 API functions that match the Intersil documentation as closely
-* as is reasonable.  The next higher layer implements common sequences
-* of invocations of the API layer (e.g. write to bap, followed by cmd).
-*
-* Common sequences:
-* hfa384x_drvr_xxx	Highest level abstractions provided by the
-*			hfa384x code.  They are driver defined wrappers
-*			for common sequences.  These functions generally
-*			use the services of the lower levels.
-*
-* hfa384x_drvr_xxxconfig  An example of the drvr level abstraction. These
-*			functions are wrappers for the RID get/set
-*			sequence. They call copy_[to|from]_bap() and
-*			cmd_access(). These functions operate on the
-*			RIDs and buffers without validation. The caller
-*			is responsible for that.
-*
-* API wrapper functions:
-* hfa384x_cmd_xxx	functions that provide access to the f/w commands.
-*			The function arguments correspond to each command
-*			argument, even command arguments that get packed
-*			into single registers.  These functions _just_
-*			issue the command by setting the cmd/parm regs
-*			& reading the status/resp regs.  Additional
-*			activities required to fully use a command
-*			(read/write from/to bap, get/set int status etc.)
-*			are implemented separately.  Think of these as
-*			C-callable prism2 commands.
-*
-* Lowest Layer Functions:
-* hfa384x_docmd_xxx	These functions implement the sequence required
-*			to issue any prism2 command.  Primarily used by the
-*			hfa384x_cmd_xxx functions.
-*
-* hfa384x_bap_xxx	BAP read/write access functions.
-*			Note: we usually use BAP0 for non-interrupt context
-*			 and BAP1 for interrupt context.
-*
-* hfa384x_dl_xxx	download related functions.
-*
-* Driver State Issues:
-* Note that there are two pairs of functions that manage the
-* 'initialized' and 'running' states of the hw/MAC combo.  The four
-* functions are create(), destroy(), start(), and stop().  create()
-* sets up the data structures required to support the hfa384x_*
-* functions and destroy() cleans them up.  The start() function gets
-* the actual hardware running and enables the interrupts.  The stop()
-* function shuts the hardware down.  The sequence should be:
-* create()
-* start()
-*  .
-*  .  Do interesting things w/ the hardware
-*  .
-* stop()
-* destroy()
-*
-* Note that destroy() can be called without calling stop() first.
-* --------------------------------------------------------------------
-*/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/sched.h>

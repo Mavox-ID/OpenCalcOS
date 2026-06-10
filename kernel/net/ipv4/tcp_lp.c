@@ -1,38 +1,20 @@
 /*
- * TCP Low Priority (TCP-LP)
- *
- * TCP Low Priority is a distributed algorithm whose goal is to utilize only
- *   the excess network bandwidth as compared to the ``fair share`` of
- *   bandwidth as targeted by TCP.
- *
- * As of 2.6.13, Beep supports pluggable congestion control algorithms.
- * Due to the limitation of the API, we take the following changes from
- * the original TCP-LP implementation:
- *   o We use newReno in most core CA handling. Only add some checking
- *     within cong_avoid.
- *   o Error correcting in remote HZ, therefore remote HZ will be keeped
- *     on checking and updating.
- *   o Handling calculation of One-Way-Delay (OWD) within rtt_sample, since
- *     OWD have a similar meaning as RTT. Also correct the buggy formular.
- *   o Handle reaction for Early Congestion Indication (ECI) within
- *     pkts_acked, as mentioned within pseudo code.
- *   o OWD is handled in relative format, where local time stamp will in
- *     tcp_time_stamp format.
- *
- * Original Author:
- *   Aleksandar Kuzmanovic <akuzma@northwestern.edu>
- * Available from:
- *   http://www.ece.rice.edu/~akuzma/Doc/akuzma/TCP-LP.pdf
- * Original implementation for 2.4.19:
- *   http://www-ece.rice.edu/networks/TCP-LP/
- *
- * 2.6.x module Authors:
- *   Wong Hoi Sing, Edison <hswong3i@gmail.com>
- *   Hung Hing Lun, Mike <hlhung3i@gmail.com>
- * SourceForge project page:
- *   http://tcp-lp-mod.sourceforge.net/
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <net/tcp.h>
 

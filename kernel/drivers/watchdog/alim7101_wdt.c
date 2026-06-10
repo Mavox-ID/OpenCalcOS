@@ -1,24 +1,20 @@
 /*
- *	ALi M7101 PMU Computer Watchdog Timer driver
- *
- *	Based on w83877f_wdt.c by Scott Jennings <beepdrivers@oro.net>
- *	and the Cobalt kernel WDT timer driver by Tim Hockin
- *	                                      <thockin@cobaltnet.com>
- *
- *	(c)2002 Steve Hill <steve@navaho.co.uk>
- *
- *  This WDT driver is different from most other Beep WDT
- *  drivers in that the driver will ping the watchdog by itself,
- *  because this particular WDT has a very short timeout (1.6
- *  seconds) and it would be insane to count on any userspace
- *  daemon always getting scheduled within that time frame.
- *
- *  Additions:
- *   Aug 23, 2004 - Added use_gpio module parameter for use on revision a1d PMUs
- *                  found on very old cobalt hardware.
- *                  -- Mike Waychison <michael.waychison@sun.com>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

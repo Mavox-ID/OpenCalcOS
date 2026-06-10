@@ -1,170 +1,20 @@
-/* $Id: $
- *  beep/drivers/scsi/wd7000.c
- *
- *  Copyright (C) 1992  Thomas Wuensche
- *	closely related to the aha1542 driver from Tommy Thorn
- *	( as close as different hardware allows on a lowlevel-driver :-) )
- *
- *  Revised (and renamed) by John Boyd <boyd@cis.ohio-state.edu> to
- *  accommodate Eric Youngdale's modifications to scsi.c.  Nov 1992.
- *
- *  Additional changes to support scatter/gather.  Dec. 1992.  tw/jb
- *
- *  No longer tries to reset SCSI bus at boot (it wasn't working anyway).
- *  Rewritten to support multiple host adapters.
- *  Miscellaneous cleanup.
- *  So far, still doesn't do reset or abort correctly, since I have no idea
- *  how to do them with this board (8^(.                      Jan 1994 jb
- *
- * This driver now supports both of the two standard configurations (per
- * the 3.36 Owner's Manual, my latest reference) by the same method as
- * before; namely, by looking for a BIOS signature.  Thus, the location of
- * the BIOS signature determines the board configuration.  Until I have
- * time to do something more flexible, users should stick to one of the
- * following:
- *
- * Standard configuration for single-adapter systems:
- *    - BIOS at CE00h
- *    - I/O base address 350h
- *    - IRQ level 15
- *    - DMA channel 6
- * Standard configuration for a second adapter in a system:
- *    - BIOS at C800h
- *    - I/O base address 330h
- *    - IRQ level 11
- *    - DMA channel 5
- *
- * Anyone who can recompile the kernel is welcome to add others as need
- * arises, but unpredictable results may occur if there are conflicts.
- * In any event, if there are multiple adapters in a system, they MUST
- * use different I/O bases, IRQ levels, and DMA channels, since they will be
- * indistinguishable (and in direct conflict) otherwise.
- *
- *   As a point of information, the NO_OP command toggles the CMD_RDY bit
- * of the status port, and this fact could be used as a test for the I/O
- * base address (or more generally, board detection).  There is an interrupt
- * status port, so IRQ probing could also be done.  I suppose the full
- * DMA diagnostic could be used to detect the DMA channel being used.  I
- * haven't done any of this, though, because I think there's too much of
- * a chance that such explorations could be destructive, if some other
- * board's resources are used inadvertently.  So, call me a wimp, but I
- * don't want to try it.  The only kind of exploration I trust is memory
- * exploration, since it's more certain that reading memory won't be
- * destructive.
- *
- * More to my liking would be a LILO boot command line specification, such
- * as is used by the aha152x driver (and possibly others).  I'll look into
- * it, as I have time...
- *
- *   I get mail occasionally from people who either are using or are
- * considering using a WD7000 with Beep.  There is a variety of
- * nomenclature describing WD7000's.  To the best of my knowledge, the
- * following is a brief summary (from an old WD doc - I don't work for
- * them or anything like that):
- *
- * WD7000-FASST2: This is a WD7000 board with the real-mode SST ROM BIOS
- *        installed.  Last I heard, the BIOS was actually done by Columbia
- *        Data Products.  The BIOS is only used by this driver (and thus
- *        by Beep) to identify the board; none of it can be executed under
- *        Beep.
- *
- * WD7000-ASC: This is the original adapter board, with or without BIOS.
- *        The board uses a WD33C93 or WD33C93A SBIC, which in turn is
- *        controlled by an onboard Z80 processor.  The board interface
- *        visible to the host CPU is defined effectively by the Z80's
- *        firmware, and it is this firmware's revision level that is
- *        determined and reported by this driver.  (The version of the
- *        on-board BIOS is of no interest whatsoever.)  The host CPU has
- *        no access to the SBIC; hence the fact that it is a WD33C93 is
- *        also of no interest to this driver.
- *
- * WD7000-AX:
- * WD7000-MX:
- * WD7000-EX: These are newer versions of the WD7000-ASC.  The -ASC is
- *        largely built from discrete components; these boards use more
- *        integration.  The -AX is an ISA bus board (like the -ASC),
- *        the -MX is an MCA (i.e., PS/2) bus board), and the -EX is an
- *        EISA bus board.
- *
- *  At the time of my documentation, the -?X boards were "future" products,
- *  and were not yet available.  However, I vaguely recall that Thomas
- *  Wuensche had an -AX, so I believe at least it is supported by this
- *  driver.  I have no personal knowledge of either -MX or -EX boards.
- *
- *  P.S. Just recently, I've discovered (directly from WD and Future
- *  Domain) that all but the WD7000-EX have been out of production for
- *  two years now.  FD has production rights to the 7000-EX, and are
- *  producing it under a new name, and with a new BIOS.  If anyone has
- *  one of the FD boards, it would be nice to come up with a signature
- *  for it.
- *                                                           J.B. Jan 1994.
- *
- *
- *  Revisions by Miroslav Zagorac <zaga@fly.cc.fer.hr>
- *
- *  08/24/1996.
- *
- *  Enhancement for wd7000_detect function has been made, so you don't have
- *  to enter BIOS ROM address in initialisation data (see struct Config).
- *  We cannot detect IRQ, DMA and I/O base address for now, so we have to
- *  enter them as arguments while wd_7000 is detected. If someone has IRQ,
- *  DMA or I/O base address set to some other value, he can enter them in
- *  configuration without any problem. Also I wrote a function wd7000_setup,
- *  so now you can enter WD-7000 definition as kernel arguments,
- *  as in lilo.conf:
- *
- *     append="wd7000=IRQ,DMA,IO"
- *
- *  PS: If card BIOS ROM is disabled, function wd7000_detect now will recognize
- *      adapter, unlike the old one. Anyway, BIOS ROM from WD7000 adapter is
- *      useless for Beep. B^)
- *
- *
- *  09/06/1996.
- *
- *  Autodetecting of I/O base address from wd7000_detect function is removed,
- *  some little bugs removed, etc...
- *
- *  Thanks to Roger Scott for driver debugging.
- *
- *  06/07/1997
- *
- *  Added support for /proc file system (/proc/scsi/wd7000/[0...] files).
- *  Now, driver can handle hard disks with capacity >1GB.
- *
- *  01/15/1998
- *
- *  Added support for BUS_ON and BUS_OFF parameters in config line.
- *  Miscellaneous cleanup.
- *
- *  03/01/1998
- *
- *  WD7000 driver now work on kernels >= 2.1.x
- *
- *
- * 12/31/2001 - Arnaldo Carvalho de Melo <acme@conectiva.com.br>
- *
- * use host->host_lock, not io_request_lock, cleanups
- *
- * 2002/10/04 - Alan Cox <alan@lxorguk.ukuu.org.uk>
- *
- * Use dev_id for interrupts, kill __func__ pasting
- * Add a lock for the scb pool, clean up all other cli/sti usage stuff
- * Use the adapter lock for the other places we had the cli's
- *
- * 2002/10/06 - Alan Cox <alan@lxorguk.ukuu.org.uk>
- *
- * Switch to new style error handling
- * Clean up delay to udelay, and yielding sleeps
- * Make host reset actually reset the card
- * Make everything static
- *
- * 2003/02/12 - Christoph Hellwig <hch@infradead.org>
- *
- * Cleaned up host template definition
- * Removed now obsolete wd7000.h
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/delay.h>
 #include <beep/module.h>
 #include <beep/interrupt.h>

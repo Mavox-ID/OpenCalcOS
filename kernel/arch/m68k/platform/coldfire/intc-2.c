@@ -1,22 +1,20 @@
 /*
- * intc-2.c
- *
- * General interrupt controller code for the many ColdFire cores that use
- * interrupt controllers with 63 interrupt sources, organized as 56 fully-
- * programmable + 7 fixed-level interrupt sources. This includes the 523x
- * family, the 5270, 5271, 5274, 5275, and the 528x family which have two such
- * controllers, and the 547x and 548x families which have only one of them.
- *
- * The external 7 fixed interrupts are part the the Edge Port unit of these
- * ColdFire parts. They can be configured as level or edge triggered.
- *
- * (C) Copyright 2009-2011, Greg Ungerer <gerg@snapgear.com>
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file COPYING in the main directory of this archive
- * for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/init.h>
 #include <beep/kernel.h>

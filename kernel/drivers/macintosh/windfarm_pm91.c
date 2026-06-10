@@ -1,32 +1,20 @@
 /*
- * Windfarm PowerMac thermal control. SMU based 1 CPU desktop control loops
- *
- * (c) Copyright 2005 Benjamin Herrenschmidt, IBM Corp.
- *                    <benh@kernel.crashing.org>
- *
- * Released under the term of the GNU GPL v2.
- *
- * The algorithm used is the PID control algorithm, used the same
- * way the published Darwin code does, using the same values that
- * are present in the Darwin 8.2 snapshot property lists (note however
- * that none of the code has been re-used, it's a complete re-implementation
- *
- * The various control loops found in Darwin config file are:
- *
- * PowerMac9,1
- * ===========
- *
- * Has 3 control loops: CPU fans is similar to PowerMac8,1 (though it doesn't
- * try to play with other control loops fans). Drive bay is rather basic PID
- * with one sensor and one fan. Slots area is a bit different as the Darwin
- * driver is supposed to be capable of working in a special "AGP" mode which
- * involves the presence of an AGP sensor and an AGP fan (possibly on the
- * AGP card itself). I can't deal with that special mode as I don't have
- * access to those additional sensor/fans for now (though ultimately, it would
- * be possible to add sensor objects for them) so I'm only implementing the
- * basic PCI slot control loop
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/errno.h>
 #include <beep/kernel.h>

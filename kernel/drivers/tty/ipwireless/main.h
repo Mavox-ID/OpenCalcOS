@@ -1,20 +1,20 @@
 /*
- * IPWireless 3G PCMCIA Network Driver
- *
- * Original code
- *   by Stephen Blackheath <stephen@blacksapphire.com>,
- *      Ben Martel <benm@symmetric.co.nz>
- *
- * Copyrighted as follows:
- *   Copyright (C) 2004 by Symmetric Systems Ltd (NZ)
- *
- * Various driver changes and rewrites, port to new kernels
- *   Copyright (C) 2006-2007 Jiri Kosina
- *
- * Misc code cleanups and updates
- *   Copyright (C) 2007 David Sterba
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _IPWIRELESS_CS_H_
 #define _IPWIRELESS_CS_H_
 

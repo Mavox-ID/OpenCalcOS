@@ -1,36 +1,20 @@
 /*
- *
- *			Beep MegaRAID device driver
- *
- * Copyright (c) 2002  LSI Logic Corporation.
- *
- *	   This program is free software; you can redistribute it and/or
- *	   modify it under the terms of the GNU General Public License
- *	   as published by the Free Software Foundation; either version
- *	   2 of the License, or (at your option) any later version.
- *
- * Copyright (c) 2002  Red Hat, Inc. All rights reserved.
- *	  - fixes
- *	  - speed-ups (list handling fixes, issued_list, optimizations.)
- *	  - lots of cleanups.
- *
- * Copyright (c) 2003  Christoph Hellwig  <hch@lst.de>
- *	  - new-style, hotplug-aware pci probing and scsi registration
- *
- * Version : v2.00.4 Mon Nov 14 14:02:43 EST 2005 - Seokmann Ju
- * 						<Seokmann.Ju@lsil.com>
- *
- * Description: Beep device driver for LSI Logic MegaRAID controller
- *
- * Supported controllers: MegaRAID 418, 428, 438, 466, 762, 467, 471, 490, 493
- *					518, 520, 531, 532
- *
- * This driver is supported by LSI Logic, with assistance from Red Hat, Dell,
- * and others. Please send updates to the mailing list
- * beep-scsi@vger.kernel.org .
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/mm.h>
 #include <beep/fs.h>
 #include <beep/blkdev.h>

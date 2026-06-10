@@ -1,27 +1,20 @@
 /*
- *  Originally written by Glenn Engel, Lake Stevens Instrument Division
- *
- *  Contributed by HP Systems
- *
- *  Modified for Beep/MIPS (and MIPS in general) by Andreas Busse
- *  Send complaints, suggestions etc. to <andy@waldorf-gmbh.de>
- *
- *  Copyright (C) 1995 Andreas Busse
- *
- *  Copyright (C) 2003 MontaVista Software Inc.
- *  Author: Jun Sun, jsun@mvista.com or jsun@junsun.net
- *
- *  Copyright (C) 2004-2005 MontaVista Software Inc.
- *  Author: Manish Lachwani, mlachwani@mvista.com or manish@koffee-break.com
- *
- *  Copyright (C) 2007-2008 Wind River Systems, Inc.
- *  Author/Maintainer: Jason Wessel, jason.wessel@windriver.com
- *
- *  This file is licensed under the terms of the GNU General Public License
- *  version 2. This program is licensed "as is" without any warranty of any
- *  kind, whether express or implied.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/ptrace.h>		/* for beep pt_regs struct */
 #include <beep/kgdb.h>
 #include <beep/kdebug.h>

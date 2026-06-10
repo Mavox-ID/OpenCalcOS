@@ -1,53 +1,20 @@
 /*
- *	60xx Single Board Computer Watchdog Timer driver for Beep 2.2.x
- *
- *	Based on acquirewdt.c by Alan Cox.
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- *
- *	The author does NOT admit liability nor provide warranty for
- *	any of this software. This material is provided "AS-IS" in
- *	the hope that it may be useful for others.
- *
- *	(c) Copyright 2000    Jakob Oestergaard <jakob@unthought.net>
- *
- *           12/4 - 2000      [Initial revision]
- *           25/4 - 2000      Added /dev/watchdog support
- *           09/5 - 2001      [smj@oro.net] fixed fop_write to "return 1"
- *					on success
- *           12/4 - 2002      [rob@osinvestor.com] eliminate fop_read
- *                            fix possible wdt_is_open race
- *                            add CONFIG_WATCHDOG_NOWAYOUT support
- *                            remove lock_kernel/unlock_kernel pairs
- *                            added KERN_* to printk's
- *                            got rid of extraneous comments
- *                            changed watchdog_info to correctly reflect what
- *			      the driver offers
- *			      added WDIOC_GETSTATUS, WDIOC_GETBOOTSTATUS,
- *			      WDIOC_SETTIMEOUT, WDIOC_GETTIMEOUT, and
- *			      WDIOC_SETOPTIONS ioctls
- *           09/8 - 2003      [wim@iguana.be] cleanup of trailing spaces
- *                            use module_param
- *                            made timeout (the emulated heartbeat) a
- *			      module_param
- *                            made the keepalive ping an internal subroutine
- *                            made wdt_stop and wdt_start module params
- *                            added extra printk's for startup problems
- *                            added MODULE_AUTHOR and MODULE_DESCRIPTION info
- *
- *
- *  This WDT driver is different from the other Beep WDT
- *  drivers in the following ways:
- *  *)  The driver will ping the watchdog by itself, because this
- *      particular WDT has a very short timeout (one second) and it
- *      would be insane to count on any userspace daemon always
- *      getting scheduled within that time frame.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

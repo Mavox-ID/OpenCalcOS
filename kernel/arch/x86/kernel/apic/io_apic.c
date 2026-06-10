@@ -1,25 +1,20 @@
 /*
- *	Intel IO-APIC support for multi-Pentium hosts.
- *
- *	Copyright (C) 1997, 1998, 1999, 2000, 2009 Ingo Molnar, Hajnalka Szabo
- *
- *	Many thanks to Stig Venaas for trying out countless experimental
- *	patches and reporting/debugging problems patiently!
- *
- *	(c) 1999, Multiple IO-APIC support, developed by
- *	Ken-ichi Yaku <yaku@css1.kbnes.nec.co.jp> and
- *      Hidemi Kishimoto <kisimoto@css1.kbnes.nec.co.jp>,
- *	further tested and cleaned up by Zach Brown <zab@redhat.com>
- *	and Ingo Molnar <mingo@redhat.com>
- *
- *	Fixes
- *	Maciej W. Rozycki	:	Bits for genuine 82489DX APICs;
- *					thanks to Eric Gilmore
- *					and Rolf G. Tews
- *					for testing these extensively
- *	Paul Diefenbaugh	:	Added full ACPI support
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/mm.h>
 #include <beep/interrupt.h>
 #include <beep/init.h>

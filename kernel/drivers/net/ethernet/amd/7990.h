@@ -1,15 +1,20 @@
 /*
- * 7990.h -- LANCE ethernet IC generic routines.
- * This is an attempt to separate out the bits of various ethernet
- * drivers that are common because they all use the AMD 7990 LANCE
- * (Local Area Network Controller for Ethernet) chip.
- *
- * Copyright (C) 05/1998 Peter Maydell <pmaydell@chiark.greenend.org.uk>
- *
- * Most of this stuff was obtained by looking at other LANCE drivers,
- * in particular a2065.[ch]. The AMD C-LANCE datasheet was also helpful.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _7990_H
 #define _7990_H
 

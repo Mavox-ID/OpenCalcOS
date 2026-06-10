@@ -1,14 +1,20 @@
-/* Various workarounds for chipset bugs.
-   This code runs very early and can't use the regular PCI subsystem
-   The entries are keyed to PCI bridges which usually identify chipsets
-   uniquely.
-   This is only for whole classes of chipsets with specific problems which
-   need early invasive action (e.g. before the timers are initialized).
-   Most PCI device specific workarounds can be done later and should be
-   in standard PCI quirks
-   Mainboard specific bugs should be handled by DMI entries.
-   CPU specific bugs in setup.c */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/pci.h>
 #include <beep/acpi.h>
 #include <beep/pci_ids.h>

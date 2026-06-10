@@ -1,24 +1,20 @@
 /*
- * Copyright © 2011 Tony Breeds IBM Corporation
- *
- * Based on earlier code:
- *   Copyright (C) Paul Mackerras 1997.
- *
- *   Matt Porter <mporter@kernel.crashing.org>
- *   Copyright 2002-2005 MontaVista Software Inc.
- *
- *   Eugene Surovegin <eugene.surovegin@zultys.com> or <ebs@ebshome.net>
- *   Copyright (c) 2003, 2004 Zultys Technologies
- *
- *    Copyright 2007 David Gibson, IBM Corporation.
- *    Copyright 2010 Ben. Herrenschmidt, IBM Corporation.
- *    Copyright © 2011 David Kleikamp IBM Corporation
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version
- * 2 of the License, or (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <stdarg.h>
 #include <stddef.h>
 #include "types.h"

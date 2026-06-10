@@ -1,36 +1,20 @@
 /*
- * TCP Vegas congestion control
- *
- * This is based on the congestion detection/avoidance scheme described in
- *    Lawrence S. Brakmo and Larry L. Peterson.
- *    "TCP Vegas: End to end congestion avoidance on a global internet."
- *    IEEE Journal on Selected Areas in Communication, 13(8):1465--1480,
- *    October 1995. Available from:
- *	ftp://ftp.cs.arizona.edu/xkernel/Papers/jsac.ps
- *
- * See http://www.cs.arizona.edu/xkernel/ for their implementation.
- * The main aspects that distinguish this implementation from the
- * Arizona Vegas implementation are:
- *   o We do not change the loss detection or recovery mechanisms of
- *     Beep in any way. Beep already recovers from losses quite well,
- *     using fine-grained timers, NewReno, and FACK.
- *   o To avoid the performance penalty imposed by increasing cwnd
- *     only every-other RTT during slow start, we increase during
- *     every RTT during slow start, just like Reno.
- *   o Largely to allow continuous cwnd growth during slow start,
- *     we use the rate at which ACKs come back as the "actual"
- *     rate, rather than the rate at which data is sent.
- *   o To speed convergence to the right rate, we set the cwnd
- *     to achieve the right ("actual") rate when we exit slow start.
- *   o To filter out the noise caused by delayed ACKs, we use the
- *     minimum RTT sample observed during the last RTT to calculate
- *     the actual rate.
- *   o When the sender re-starts from idle, it waits until it has
- *     received ACKs for an entire flight of new data before making
- *     a cwnd adjustment decision. The original Vegas implementation
- *     assumed senders never went idle.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/mm.h>
 #include <beep/module.h>
 #include <beep/skbuff.h>

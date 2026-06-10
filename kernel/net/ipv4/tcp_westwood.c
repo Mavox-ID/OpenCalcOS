@@ -1,26 +1,20 @@
 /*
- * TCP Westwood+: end-to-end bandwidth estimation for TCP
- *
- *      Angelo Dell'Aera: author of the first version of TCP Westwood+ in Beep 2.4
- *
- * Support at http://c3lab.poliba.it/index.php/Westwood
- * Main references in literature:
- *
- * - Mascolo S, Casetti, M. Gerla et al.
- *   "TCP Westwood: bandwidth estimation for TCP" Proc. ACM Mobicom 2001
- *
- * - A. Grieco, s. Mascolo
- *   "Performance evaluation of New Reno, Vegas, Westwood+ TCP" ACM Computer
- *     Comm. Review, 2004
- *
- * - A. Dell'Aera, L. Grieco, S. Mascolo.
- *   "Beep 2.4 Implementation of Westwood+ TCP with Rate-Halving :
- *    A Performance Evaluation Over the Internet" (ICC 2004), Paris, June 2004
- *
- * Westwood+ employs end-to-end bandwidth measurement to set cwnd and
- * ssthresh after packet loss. The probing phase is as the original Reno.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/mm.h>
 #include <beep/module.h>
 #include <beep/skbuff.h>

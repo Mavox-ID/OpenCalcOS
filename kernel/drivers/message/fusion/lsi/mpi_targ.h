@@ -1,63 +1,20 @@
 /*
- *  Copyright (c) 2000-2008 LSI Corporation.
- *
- *
- *           Name:  mpi_targ.h
- *          Title:  MPI Target mode messages and structures
- *  Creation Date:  June 22, 2000
- *
- *    mpi_targ.h Version:  01.05.06
- *
- *  Version History
- *  ---------------
- *
- *  Date      Version   Description
- *  --------  --------  ------------------------------------------------------
- *  05-08-00  00.10.01  Original release for 0.10 spec dated 4/26/2000.
- *  06-06-00  01.00.01  Update version number for 1.0 release.
- *  06-22-00  01.00.02  Added _MSG_TARGET_CMD_BUFFER_POST_REPLY structure.
- *                      Corrected DECSRIPTOR typo to DESCRIPTOR.
- *  11-02-00  01.01.01  Original release for post 1.0 work
- *                      Modified target mode to use IoIndex instead of
- *                      HostIndex and IocIndex. Added Alias.
- *  01-09-01  01.01.02  Added defines for TARGET_ASSIST_FLAGS_REPOST_CMD_BUFFER
- *                      and TARGET_STATUS_SEND_FLAGS_REPOST_CMD_BUFFER.
- *  02-20-01  01.01.03  Started using MPI_POINTER.
- *                      Added structures for MPI_TARGET_SCSI_SPI_CMD_BUFFER and
- *                      MPI_TARGET_FCP_CMD_BUFFER.
- *  03-27-01  01.01.04  Added structure offset comments.
- *  08-08-01  01.02.01  Original release for v1.2 work.
- *  09-28-01  01.02.02  Added structure for MPI_TARGET_SCSI_SPI_STATUS_IU.
- *                      Added PriorityReason field to some replies and
- *                      defined more PriorityReason codes.
- *                      Added some defines for to support previous version
- *                      of MPI.
- *  10-04-01  01.02.03  Added PriorityReason to MSG_TARGET_ERROR_REPLY.
- *  11-01-01  01.02.04  Added define for TARGET_STATUS_SEND_FLAGS_HIGH_PRIORITY.
- *  03-14-02  01.02.05  Modified MPI_TARGET_FCP_RSP_BUFFER to get the proper
- *                      byte ordering.
- *  05-31-02  01.02.06  Modified TARGET_MODE_REPLY_ALIAS_MASK to only include
- *                      one bit.
- *                      Added AliasIndex field to MPI_TARGET_FCP_CMD_BUFFER.
- *  09-16-02  01.02.07  Added flags for confirmed completion.
- *                      Added PRIORITY_REASON_TARGET_BUSY.
- *  11-15-02  01.02.08  Added AliasID field to MPI_TARGET_SCSI_SPI_CMD_BUFFER.
- *  04-01-03  01.02.09  Added OptionalOxid field to MPI_TARGET_FCP_CMD_BUFFER.
- *  05-11-04  01.03.01  Original release for MPI v1.3.
- *  08-19-04  01.05.01  Added new request message structures for
- *                      MSG_TARGET_CMD_BUF_POST_BASE_REQUEST,
- *                      MSG_TARGET_CMD_BUF_POST_LIST_REQUEST, and
- *                      MSG_TARGET_ASSIST_EXT_REQUEST.
- *                      Added new structures for SAS SSP Command buffer, SSP
- *                      Task buffer, and SSP Status IU.
- *  10-05-04  01.05.02  MSG_TARGET_CMD_BUFFER_POST_BASE_LIST_REPLY added.
- *  02-22-05  01.05.03  Changed a comment.
- *  03-11-05  01.05.04  Removed TargetAssistExtended Request.
- *  06-24-05  01.05.05  Added TargetAssistExtended structures and defines.
- *  03-27-06  01.05.06  Added a comment.
- *  --------------------------------------------------------------------------
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef MPI_TARG_H
 #define MPI_TARG_H
 

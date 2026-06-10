@@ -1,64 +1,20 @@
 /*
- * Apple Onboard Audio driver for tas codec
- *
- * Copyright 2006 Johannes Berg <johannes@sipsolutions.net>
- *
- * GPL v2, can be found in COPYING.
- *
- * Open questions:
- *  - How to distinguish between 3004 and versions?
- *
- * FIXMEs:
- *  - This codec driver doesn't honour the 'connected'
- *    property of the aoa_codec struct, hence if
- *    it is used in machines where not everything is
- *    connected it will display wrong mixer elements.
- *  - Driver assumes that the microphone is always
- *    monaureal and connected to the right channel of
- *    the input. This should also be a codec-dependent
- *    flag, maybe the codec should have 3 different
- *    bits for the three different possibilities how
- *    it can be hooked up...
- *    But as long as I don't see any hardware hooked
- *    up that way...
- *  - As Apple notes in their code, the tas3004 seems
- *    to delay the right channel by one sample. You can
- *    see this when for example recording stereo in
- *    audacity, or recording the tas output via cable
- *    on another machine (use a sinus generator or so).
- *    I tried programming the BiQuads but couldn't
- *    make the delay work, maybe someone can read the
- *    datasheet and fix it. The relevant Apple comment
- *    is in AppleTAS3004Audio.cpp lines 1637 ff. Note
- *    that their comment describing how they program
- *    the filters sucks...
- *
- * Other things:
- *  - this should actually register *two* aoa_codec
- *    structs since it has two inputs. Then it must
- *    use the prepare callback to forbid running the
- *    secondary output on a different clock.
- *    Also, whatever bus knows how to do this must
- *    provide two soundbus_dev devices and the fabric
- *    must be able to link them correctly.
- *
- *    I don't even know if Apple ever uses the second
- *    port on the tas3004 though, I don't think their
- *    i2s controllers can even do it. OTOH, they all
- *    derive the clocks from common clocks, so it
- *    might just be possible. The framework allows the
- *    codec to refine the transfer_info items in the
- *    usable callback, so we can simply remove the
- *    rates the second instance is not using when it
- *    actually is in use.
- *    Maybe we'll need to make the sound busses have
- *    a 'clock group id' value so the codec can
- *    determine if the two outputs can be driven at
- *    the same time. But that is likely overkill, up
- *    to the fabric to not link them up incorrectly,
- *    and up to the hardware designer to not wire
- *    them up in some weird unusable way.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <stddef.h>
 #include <beep/i2c.h>
 #include <asm/pmac_low_i2c.h>

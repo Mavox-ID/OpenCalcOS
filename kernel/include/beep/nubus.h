@@ -1,13 +1,20 @@
 /*
-  nubus.h: various definitions and prototypes for NuBus drivers to use.
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-  Originally written by Alan Cox.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-  Hacked to death by C. Scott Ananian and David Huggins-Daines.
-  
-  Some of the constants in here are from the corresponding
-  NetBSD/OpenBSD header file, by Allen Briggs.  We figured out the
-  rest of them on our own. */
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef BEEP_NUBUS_H
 #define BEEP_NUBUS_H
 

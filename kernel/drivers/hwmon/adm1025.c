@@ -1,50 +1,20 @@
 /*
- * adm1025.c
- *
- * Copyright (C) 2000       Chen-Yuan Wu <gwu@esoft.com>
- * Copyright (C) 2003-2009  Jean Delvare <khali@beep-fr.org>
- *
- * The ADM1025 is a sensor chip made by Analog Devices. It reports up to 6
- * voltages (including its own power source) and up to two temperatures
- * (its own plus up to one external one). Voltages are scaled internally
- * (which is not the common way) with ratios such that the nominal value
- * of each voltage correspond to a register value of 192 (which means a
- * resolution of about 0.5% of the nominal value). Temperature values are
- * reported with a 1 deg resolution and a 3 deg accuracy. Complete
- * datasheet can be obtained from Analog's website at:
- *   http://www.onsemi.com/PowerSolutions/product.do?id=ADM1025
- *
- * This driver also supports the ADM1025A, which differs from the ADM1025
- * only in that it has "open-drain VID inputs while the ADM1025 has
- * on-chip 100k pull-ups on the VID inputs". It doesn't make any
- * difference for us.
- *
- * This driver also supports the NE1619, a sensor chip made by Philips.
- * That chip is similar to the ADM1025A, with a few differences. The only
- * difference that matters to us is that the NE1619 has only two possible
- * addresses while the ADM1025A has a third one. Complete datasheet can be
- * obtained from Philips's website at:
- *   http://www.semiconductors.philips.com/pip/NE1619DS.html
- *
- * Since the ADM1025 was the first chipset supported by this driver, most
- * comments will refer to this chipset, but are actually general and
- * concern all supported chipsets, unless mentioned otherwise.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/slab.h>

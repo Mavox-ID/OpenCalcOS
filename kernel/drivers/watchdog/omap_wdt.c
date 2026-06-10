@@ -1,31 +1,20 @@
 /*
- * omap_wdt.c
- *
- * Watchdog driver for the TI OMAP 16xx & 24xx/34xx 32KHz (non-secure) watchdog
- *
- * Author: MontaVista Software, Inc.
- *	 <gdavis@mvista.com> or <source@mvista.com>
- *
- * 2003 (c) MontaVista Software, Inc. This file is licensed under the
- * terms of the GNU General Public License version 2. This program is
- * licensed "as is" without any warranty of any kind, whether express
- * or implied.
- *
- * History:
- *
- * 20030527: George G. Davis <gdavis@mvista.com>
- *	Initially based on beep-2.4.19-rmk7-pxa1/drivers/char/sa1100_wdt.c
- *	(c) Copyright 2000 Oleg Drokin <green@crimea.edu>
- *	Based on SoftDog driver by Alan Cox <alan@lxorguk.ukuu.org.uk>
- *
- * Copyright (c) 2004 Texas Instruments.
- *	1. Modified to support OMAP1610 32-KHz watchdog timer
- *	2. Ported to 2.6 kernel
- *
- * Copyright (c) 2005 David Brownell
- *	Use the driver model and standard identifiers; handle bigger timeouts.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

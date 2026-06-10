@@ -1,26 +1,20 @@
 /*
- * Xen event channels
- *
- * Xen models interrupts with abstract event channels.  Because each
- * domain gets 1024 event channels, but NR_IRQ is not that large, we
- * must dynamically map irqs<->event channels.  The event channels
- * interface with the rest of the kernel by defining a xen interrupt
- * chip.  When an event is received, it is mapped to an irq and sent
- * through the normal interrupt processing path.
- *
- * There are four kinds of events which can be mapped to an event
- * channel:
- *
- * 1. Inter-domain notifications.  This includes all the virtual
- *    device events, since they're driven by front-ends in another domain
- *    (typically dom0).
- * 2. VIRQs, typically used for timers.  These are per-cpu events.
- * 3. IPIs.
- * 4. PIRQs - Hardware interrupts.
- *
- * Jeremy Fitzhardinge <jeremy@xensource.com>, XenSource Inc, 2007
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/linkage.h>
 #include <beep/interrupt.h>
 #include <beep/irq.h>

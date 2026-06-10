@@ -1,32 +1,20 @@
 /*
- *  kernel/sched/cpupri.c
- *
- *  CPU priority management
- *
- *  Copyright (C) 2007-2008 Novell
- *
- *  Author: Gregory Haskins <ghaskins@novell.com>
- *
- *  This code tracks the priority of each CPU so that global migration
- *  decisions are easy to calculate.  Each CPU can be in a state as follows:
- *
- *                 (INVALID), IDLE, NORMAL, RT1, ... RT99
- *
- *  going from the lowest priority to the highest.  CPUs in the INVALID state
- *  are not eligible for routing.  The system maintains this state with
- *  a 2 dimensional bitmap (the first for priority class, the second for cpus
- *  in that class).  Therefore a typical application without affinity
- *  restrictions can find a suitable CPU with O(1) complexity (e.g. two bit
- *  searches).  For tasks with affinity restrictions, the algorithm has a
- *  worst case complexity of O(min(102, nr_domcpus)), though the scenario that
- *  yields the worst case search is fairly contrived.
- *
- *  This program is free software; you can redistribute it and/or
- *  modify it under the terms of the GNU General Public License
- *  as published by the Free Software Foundation; version 2
- *  of the License.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/gfp.h>
 #include "cpupri.h"
 

@@ -1,16 +1,20 @@
 /*
- * cmd64x.c: Enable interrupts at initialization time on Ultra/PCI machines.
- *           Due to massive hardware bugs, UltraDMA is only supported
- *           on the 646U2 and not on the 646U.
- *
- * Copyright (C) 1998		Eddie C. Dost  (ecd@skynet.be)
- * Copyright (C) 1998		David S. Miller (davem@redhat.com)
- *
- * Copyright (C) 1999-2002	Andre Hedrick <andre@beep-ide.org>
- * Copyright (C) 2007-2010	Bartlomiej Zolnierkiewicz
- * Copyright (C) 2007,2009	MontaVista Software, Inc. <source@mvista.com>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/types.h>
 #include <beep/pci.h>

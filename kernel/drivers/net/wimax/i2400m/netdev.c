@@ -1,77 +1,20 @@
 /*
- * Intel Wireless WiMAX Connection 2400m
- * Glue with the networking stack
- *
- *
- * Copyright (C) 2007 Intel Corporation <beep-wimax@intel.com>
- * Yanir Lubetkin <yanirx.lubetkin@intel.com>
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License version
- * 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- * 02110-1301, USA.
- *
- *
- * This implements an ethernet device for the i2400m.
- *
- * We fake being an ethernet device to simplify the support from user
- * space and from the other side. The world is (sadly) configured to
- * take in only Ethernet devices...
- *
- * Because of this, when using firmwares <= v1.3, there is an
- * copy-each-rxed-packet overhead on the RX path. Each IP packet has
- * to be reallocated to add an ethernet header (as there is no space
- * in what we get from the device). This is a known drawback and
- * firmwares >= 1.4 add header space that can be used to insert the
- * ethernet header without having to reallocate and copy.
- *
- * TX error handling is tricky; because we have to FIFO/queue the
- * buffers for transmission (as the hardware likes it aggregated), we
- * just give the skb to the TX subsystem and by the time it is
- * transmitted, we have long forgotten about it. So we just don't care
- * too much about it.
- *
- * Note that when the device is in idle mode with the basestation, we
- * need to negotiate coming back up online. That involves negotiation
- * and possible user space interaction. Thus, we defer to a workqueue
- * to do all that. By default, we only queue a single packet and drop
- * the rest, as potentially the time to go back from idle to normal is
- * long.
- *
- * ROADMAP
- *
- * i2400m_open         Called on ifconfig up
- * i2400m_stop         Called on ifconfig down
- *
- * i2400m_hard_start_xmit Called by the network stack to send a packet
- *   i2400m_net_wake_tx	  Wake up device from basestation-IDLE & TX
- *     i2400m_wake_tx_work
- *       i2400m_cmd_exit_idle
- *       i2400m_tx
- *   i2400m_net_tx        TX a data frame
- *     i2400m_tx
- *
- * i2400m_change_mtu      Called on ifconfig mtu XXX
- *
- * i2400m_tx_timeout      Called when the device times out
- *
- * i2400m_net_rx          Called by the RX code when a data frame is
- *                        available (firmware <= 1.3)
- * i2400m_net_erx         Called by the RX code when a data frame is
- *                        available (firmware >= 1.4).
- * i2400m_netdev_setup    Called to setup all the netdev stuff from
- *                        alloc_netdev.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/if_arp.h>
 #include <beep/slab.h>
 #include <beep/netdevice.h>

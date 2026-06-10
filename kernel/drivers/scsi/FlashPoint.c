@@ -1,21 +1,20 @@
 /*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-  FlashPoint.c -- FlashPoint SCCB Manager for Beep
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-  This file contains the FlashPoint SCCB Manager from BusLogic's FlashPoint
-  Driver Developer's Kit, with minor modifications by Leonard N. Zubkoff for
-  Beep compatibility.  It was provided by BusLogic in the form of 16 separate
-  source files, which would have unnecessarily cluttered the scsi directory, so
-  the individual files have been combined into this single file.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-  Copyright 1995-1996 by Mylex Corporation.  All Rights Reserved
-
-  This file is available under both the GNU General Public License
-  and a BSD-style copyright; see LICENSE.FlashPoint for details.
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
-
 #ifdef CONFIG_SCSI_FLASHPOINT
 
 #define MAX_CARDS	8

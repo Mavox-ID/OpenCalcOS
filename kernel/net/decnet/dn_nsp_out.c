@@ -1,28 +1,20 @@
 /*
- * DECnet       An implementation of the DECnet protocol suite for the BEEP
- *              operating system.  DECnet is implemented using the  BSD Socket
- *              interface as the means of communication with the user level.
- *
- *              DECnet Network Services Protocol (Output)
- *
- * Author:      Eduardo Marcelo Serrat <emserrat@geocities.com>
- *
- * Changes:
- *
- *    Steve Whitehouse:  Split into dn_nsp_in.c and dn_nsp_out.c from
- *                       original dn_nsp.c.
- *    Steve Whitehouse:  Updated to work with my new routing architecture.
- *    Steve Whitehouse:  Added changes from Eduardo Serrat's patches.
- *    Steve Whitehouse:  Now conninits have the "return" bit set.
- *    Steve Whitehouse:  Fixes to check alloc'd skbs are non NULL!
- *                       Moved output state machine into one function
- *    Steve Whitehouse:  New output state machine
- *         Paul Koning:  Connect Confirm message fix.
- *      Eduardo Serrat:  Fix to stop dn_nsp_do_disc() sending malformed packets.
- *    Steve Whitehouse:  dn_nsp_output() and friends needed a spring clean
- *    Steve Whitehouse:  Moved dn_nsp_send() in here from route.h
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /******************************************************************************
     (c) 1995-1998 E.M. Serrat		emserrat@geocities.com
 

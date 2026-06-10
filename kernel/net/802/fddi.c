@@ -1,31 +1,20 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the BEEP
- *		operating system.  INET is implemented using the BSD Socket
- *		interface as the means of communication with the user level.
- *
- *		FDDI-type device handling.
- *
- * Version:	@(#)fddi.c	1.0.0	08/12/96
- *
- * Authors:	Lawrence V. Stefani, <stefani@lkg.dec.com>
- *
- *		fddi.c is based on previous eth.c and tr.c work by
- *			Ross Biro
- *			Fred N. van Kempen, <waltje@uWalt.NL.Mugnet.ORG>
- *			Mark Evans, <evansmp@uhura.aston.ac.uk>
- *			Florian La Roche, <rzsfl@rz.uni-sb.de>
- *			Alan Cox, <gw4pts@gw4pts.ampr.org>
- *
- *		This program is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- *
- *	Changes
- *		Alan Cox		:	New arp/rebuild header
- *		Maciej W. Rozycki	:	IPv6 support
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/types.h>
 #include <beep/kernel.h>

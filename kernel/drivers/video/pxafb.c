@@ -1,37 +1,20 @@
 /*
- *  beep/drivers/video/pxafb.c
- *
- *  Copyright (C) 1999 Eric A. Thomas.
- *  Copyright (C) 2004 Jean-Frederic Clere.
- *  Copyright (C) 2004 Ian Campbell.
- *  Copyright (C) 2004 Jeff Lackey.
- *   Based on sa1100fb.c Copyright (C) 1999 Eric A. Thomas
- *  which in turn is
- *   Based on acornfb.c Copyright (C) Russell King.
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file COPYING in the main directory of this archive for
- * more details.
- *
- *	        Intel PXA250/210 LCD Controller Frame Buffer Driver
- *
- * Please direct your questions and comments on this driver to the following
- * email address:
- *
- *	beep-arm-kernel@lists.arm.beep.org.uk
- *
- * Add support for overlay1 and overlay2 based on pxafb_overlay.c:
- *
- *   Copyright (C) 2004, Intel Corporation
- *
- *     2003/08/27: <yu.tang@intel.com>
- *     2004/03/10: <stanley.cai@intel.com>
- *     2004/10/28: <yan.yin@intel.com>
- *
- *   Copyright (C) 2006-2008 Marvell International Ltd.
- *   All Rights Reserved
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/moduleparam.h>
 #include <beep/kernel.h>

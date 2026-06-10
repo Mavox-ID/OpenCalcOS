@@ -1,41 +1,20 @@
-/******************************************************************************
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-  Copyright(c) 2003 - 2006 Intel Corporation. All rights reserved.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-  This program is free software; you can redistribute it and/or modify it
-  under the terms of version 2 of the GNU General Public License as
-  published by the Free Software Foundation.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-  This program is distributed in the hope that it will be useful, but WITHOUT
-  ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
-  FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
-  more details.
-
-  You should have received a copy of the GNU General Public License along with
-  this program; if not, write to the Free Software Foundation, Inc., 59
-  Temple Place - Suite 330, Boston, MA  02111-1307, USA.
-
-  The full GNU General Public License is included in this distribution in the
-  file called LICENSE.
-
-  Contact Information:
-  Intel Beep Wireless <ilw@beep.intel.com>
-  Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
-
-  Portions of this file are based on the sample_* files provided by Wireless
-  Extensions 0.26 package and copyright (c) 1997-2003 Jean Tourrilhes
-  <jt@hpl.hp.com>
-
-  Portions of this file are based on the Host AP project,
-  Copyright (c) 2001-2002, SSH Communications Security Corp and Jouni Malinen
-    <j@w1.fi>
-  Copyright (c) 2002-2003, Jouni Malinen <j@w1.fi>
-
-  Portions of ipw2100_mod_firmware_load, ipw2100_do_mod_firmware_load, and
-  ipw2100_fw_load are loosely based on drivers/sound/sound_firmware.c
-  available in the 2.4.25 kernel sources, and are copyright (c) Alan Cox
-
-******************************************************************************/
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
 
  Initial driver on which this is based was developed by Janusz Gorycki,

@@ -1,49 +1,20 @@
 /*
- * Watchdog driver for SiByte SB1 SoCs
- *
- * Copyright (C) 2007 OnStor, Inc. * Andrew Sharp <andy.sharp@lsi.com>
- *
- * This driver is intended to make the second of two hardware watchdogs
- * on the Sibyte 12XX and 11XX SoCs available to the user.  There are two
- * such devices available on the SoC, but it seems that there isn't an
- * enumeration class for watchdogs in Beep like there is for RTCs.
- * The second is used rather than the first because it uses IRQ 1,
- * thereby avoiding all that IRQ 0 problematic nonsense.
- *
- * I have not tried this driver on a 1480 processor; it might work
- * just well enough to really screw things up.
- *
- * It is a simple timer, and there is an interrupt that is raised the
- * first time the timer expires.  The second time it expires, the chip
- * is reset and there is no way to redirect that NMI.  Which could
- * be problematic in some cases where this chip is sitting on the HT
- * bus and has just taken responsibility for providing a cache block.
- * Since the reset can't be redirected to the external reset pin, it is
- * possible that other HT connected processors might hang and not reset.
- * For Beep, a soft reset would probably be even worse than a hard reset.
- * There you have it.
- *
- * The timer takes 23 bits of a 64 bit register (?) as a count value,
- * and decrements the count every microsecond, for a max value of
- * 0x7fffff usec or about 8.3ish seconds.
- *
- * This watchdog borrows some user semantics from the softdog driver,
- * in that if you close the fd, it leaves the watchdog running, unless
- * you previously wrote a 'V' to the fd, in which case it disables
- * the watchdog when you close the fd like some other drivers.
- *
- * Based on various other watchdog drivers, which are probably all
- * loosely based on something Alan Cox wrote years ago.
- *
- *	(c) Copyright 1996 Alan Cox <alan@lxorguk.ukuu.org.uk>,
- *						All Rights Reserved.
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	version 1 or 2 as published by the Free Software Foundation.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

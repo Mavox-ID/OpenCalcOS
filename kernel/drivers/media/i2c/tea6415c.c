@@ -1,20 +1,10 @@
- /*
-    tea6415c - i2c-driver for the tea6415c by SGS Thomson
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-    Copyright (C) 1998-2003 Michael Hunold <michael@mihu.de>
-    Copyright (C) 2008 Hans Verkuil <hverkuil@xs4all.nl>
-
-    The tea6415c is a bus controlled video-matrix-switch
-    with 8 inputs and 6 outputs.
-    It is cascadable, i.e. it can be found at the addresses
-    0x86 and 0x06 on the i2c-bus.
-
-    For detailed informations download the specifications directly
-    from SGS Thomson at http://www.st.com
-
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License vs published by
-    the Free Software Foundation; either version 2 of the License, or
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
@@ -23,11 +13,8 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 675 Mvss Ave, Cambridge, MA 02139, USA.
-  */
-
-
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/ioctl.h>
 #include <beep/slab.h>

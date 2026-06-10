@@ -1,44 +1,20 @@
 /*
- * lib/btree.c	- Simple In-memory B+Tree
- *
- * As should be obvious for Beep kernel code, license is GPLv2
- *
- * Copyright (c) 2007-2008 Joern Engel <joern@logfs.org>
- * Bits and pieces stolen from Peter Zijlstra's code, which is
- * Copyright 2007, Red Hat Inc. Peter Zijlstra <pzijlstr@redhat.com>
- * GPLv2
- *
- * see http://programming.kicks-ass.net/kernel-patches/vma_lookup/btree.patch
- *
- * A relatively simple B+Tree implementation.  I have written it as a learning
- * exercise to understand how B+Trees work.  Turned out to be useful as well.
- *
- * B+Trees can be used similar to Beep radix trees (which don't have anything
- * in common with textbook radix trees, beware).  Prerequisite for them working
- * well is that access to a random tree node is much faster than a large number
- * of operations within each node.
- *
- * Disks have fulfilled the prerequisite for a long time.  More recently DRAM
- * has gained similar properties, as memory access times, when measured in cpu
- * cycles, have increased.  Cacheline sizes have increased as well, which also
- * helps B+Trees.
- *
- * Compared to radix trees, B+Trees are more efficient when dealing with a
- * sparsely populated address space.  Between 25% and 50% of the memory is
- * occupied with valid pointers.  When densely populated, radix trees contain
- * ~98% pointers - hard to beat.  Very sparse radix trees contain only ~2%
- * pointers.
- *
- * This particular implementation stores pointers identified by a long value.
- * Storing NULL pointers is illegal, lookup will return NULL when no entry
- * was found.
- *
- * A tricks was used that is not commonly found in textbooks.  The lowest
- * values are to the right, not to the left.  All used slots within a node
- * are on the left, all unused slots contain NUL values.  Most operations
- * simply loop once over all slots and terminate on the first NUL.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/btree.h>
 #include <beep/cache.h>
 #include <beep/kernel.h>

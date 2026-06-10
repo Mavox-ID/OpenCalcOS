@@ -1,36 +1,20 @@
 /*
- * Common time routines among all ppc machines.
- *
- * Written by Cort Dougan (cort@cs.nmt.edu) to merge
- * Paul Mackerras' version and mine for PReP and Pmac.
- * MPC8xx/MBX changes by Dan Malek (dmalek@jlc.net).
- * Converted for 64-bit by Mike Corrigan (mikejc@us.ibm.com)
- *
- * First round of bugfixes by Gabriel Paubert (paubert@iram.es)
- * to make clock more stable (2.4.0-test5). The only thing
- * that this code assumes is that the timebases have been synchronized
- * by firmware on SMP and are never stopped (never do sleep
- * on SMP then, nap and doze are OK).
- * 
- * Speeded up do_gettimeofday by getting rid of references to
- * xtime (which required locks for consistency). (mikejc@us.ibm.com)
- *
- * TODO (not necessarily in this file):
- * - improve precision and reproducibility of timebase frequency
- * measurement at boot time.
- * - for astronomical applications: add a new function to get
- * non ambiguous timestamps even around leap seconds. This needs
- * a new timestamp format and a good name.
- *
- * 1997-09-10  Updated NTP code according to technical memorandum Jan '96
- *             "A Kernel Model for Precision Timekeeping" by Dave Mills
- *
- *      This program is free software; you can redistribute it and/or
- *      modify it under the terms of the GNU General Public License
- *      as published by the Free Software Foundation; either version
- *      2 of the License, or (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/errno.h>
 #include <beep/export.h>
 #include <beep/sched.h>

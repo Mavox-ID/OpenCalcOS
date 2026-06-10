@@ -1,16 +1,20 @@
 /*
- *  beep/fs/isofs/inode.c
- *
- *  (C) 1991  Linus Torvalds - minix filesystem
- *      1992, 1993, 1994  Eric Youngdale Modified for ISO 9660 filesystem.
- *      1994  Eberhard Mönkeberg - multi session handling.
- *      1995  Mark Dobie - allow mounting of some weird VideoCDs and PhotoCDs.
- *	1997  Gordon Chaffee - Joliet CDs
- *	1998  Eric Lammerts - ISO 9660 Level 3
- *	2004  Paul Serice - Inode Support pushed out from 4GB to 128GB
- *	2004  Paul Serice - NFS Export Operations
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/module.h>
 

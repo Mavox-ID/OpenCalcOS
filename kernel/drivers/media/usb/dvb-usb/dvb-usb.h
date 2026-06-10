@@ -1,12 +1,20 @@
-/* dvb-usb.h is part of the DVB USB library.
- *
- * Copyright (C) 2004-6 Patrick Boettcher (patrick.boettcher@desy.de)
- * see dvb-usb-init.c for copyright information.
- *
- * the headerfile, all dvb-usb-drivers have to include.
- *
- * TODO: clean-up the structures for unused fields and update the comments
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __DVB_USB_H__
 #define __DVB_USB_H__
 

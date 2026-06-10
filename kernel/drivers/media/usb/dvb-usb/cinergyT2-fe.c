@@ -1,32 +1,20 @@
 /*
- * TerraTec Cinergy T2/qanu USB2 DVB-T adapter.
- *
- * Copyright (C) 2007 Tomi Orava (tomimo@ncircle.nullnet.fi)
- *
- * Based on the dvb-usb-framework code and the
- * original Terratec Cinergy T2 driver by:
- *
- * Copyright (C) 2004 Daniel Mack <daniel@qanu.de> and
- *                  Holger Waechtler <holger@qanu.de>
- *
- *  Protocol Spec published on http://qanu.de/specs/terratec_cinergyT2.pdf
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "cinergyT2.h"
 
 

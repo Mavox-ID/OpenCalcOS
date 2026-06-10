@@ -1,17 +1,20 @@
 /*
- * In-kernel rpcbind client supporting versions 2, 3, and 4 of the rpcbind
- * protocol
- *
- * Based on RFC 1833: "Binding Protocols for ONC RPC Version 2" and
- * RFC 3530: "Network File System (NFS) version 4 Protocol"
- *
- * Original: Gilles Quillard, Bull Open Source, 2005 <gilles.quillard@bull.net>
- * Updated: Chuck Lever, Oracle Corporation, 2007 <chuck.lever@oracle.com>
- *
- * Descended from net/sunrpc/pmap_clnt.c,
- *  Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 
 #include <beep/types.h>

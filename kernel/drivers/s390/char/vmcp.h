@@ -1,17 +1,20 @@
 /*
- * Copyright IBM Corp. 2004, 2005
- * Interface implementation for communication with the z/VM control program
- * Version 1.0
- * Author(s): Christian Borntraeger <cborntra@de.ibm.com>
- *
- *
- * z/VMs CP offers the possibility to issue commands via the diagnose code 8
- * this driver implements a character device that issues these commands and
- * returns the answer of CP.
- *
- * The idea of this driver is based on cpint from Neale Ferguson
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/ioctl.h>
 #include <beep/mutex.h>
 

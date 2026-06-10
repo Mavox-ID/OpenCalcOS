@@ -1,24 +1,20 @@
 /*
- * This file implements the perfmon-2 subsystem which is used
- * to program the IA-64 Performance Monitoring Unit (PMU).
- *
- * The initial version of perfmon.c was written by
- * Ganesh Venkitachalam, IBM Corp.
- *
- * Then it was modified for perfmon-1.x by Stephane Eranian and
- * David Mosberger, Hewlett Packard Co.
- *
- * Version Perfmon-2.x is a rewrite of perfmon-1.x
- * by Stephane Eranian, Hewlett Packard Co.
- *
- * Copyright (C) 1999-2005  Hewlett Packard Co
- *               Stephane Eranian <eranian@hpl.hp.com>
- *               David Mosberger-Tang <davidm@hpl.hp.com>
- *
- * More information about perfmon available at:
- * 	http://www.hpl.hp.com/research/beep/perfmon
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/sched.h>

@@ -1,31 +1,20 @@
 /*
- * sound/oss/sb_common.c
- *
- * Common routines for Sound Blaster compatible cards.
- *
- *
- * Copyright (C) by Hannu Savolainen 1993-1997
- *
- * OSS/Free for Beep is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
- * Version 2 (June 1991). See the "COPYING" file distributed with this software
- * for more info.
- *
- *
- * Daniel J. Rodriksson: Modified sbintr to handle 8 and 16 bit interrupts
- *                       for full duplex support ( only sb16 by now )
- * Rolf Fokkens:	 Added (BETA?) support for ES1887 chips.
- * (fokkensr@vertis.nl)	 Which means: You can adjust the recording levels.
- *
- * 2000/01/18 - separated sb_card and sb_common -
- * Jeff Garzik <jgarzik@pobox.com>
- *
- * 2000/09/18 - got rid of attach_uart401
- * Arnaldo Carvalho de Melo <acme@conectiva.com.br>
- *
- * 2001/01/26 - replaced CLI/STI with spinlocks
- * Chris Rankin <rankinc@zipworld.com.au>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/interrupt.h>
 #include <beep/module.h>

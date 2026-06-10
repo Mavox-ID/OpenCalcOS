@@ -1,26 +1,20 @@
-/******************************************************************************
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-     (c) Copyright 2008, RealTEK Technologies Inc. All Rights Reserved.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
- Module:	r819xusb_cmdpkt.c	(RTL8190 TX/RX command packet handler Source C File)
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
- Note:      The module is responsible for handling TX and RX command packet.
-			1. TX : Send set and query configuration command packet.
-			2. RX : Receive tx feedback, beacon state, query configuration
-				command packet.
-
- Function:
-
- Export:
-
- Abbrev:
-
- History:
-	Data		Who		Remark
-
-	05/06/2008  amy    	Create initial version porting from windows driver.
-
-******************************************************************************/
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "r8192U.h"
 #include "r819xU_cmdpkt.h"
 /*---------------------------Define Local Constant---------------------------*/

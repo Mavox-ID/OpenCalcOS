@@ -1,16 +1,20 @@
 /*
- * Force feedback support for DragonRise Inc. game controllers
- *
- * From what I have gathered, these devices are mass produced in China and are
- * distributed under several vendors. They often share the same design as
- * the original PlayStation DualShock controller.
- *
- * 0079:0006 "DragonRise Inc.   Generic   USB  Joystick  "
- *  - tested with a Tesun USB-703 game controller.
- *
- * Copyright (c) 2009 Richard Walmsley <richwalm@gmail.com>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

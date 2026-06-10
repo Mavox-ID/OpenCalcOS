@@ -1,119 +1,20 @@
-/* 
-	pg.c    (c) 1998  Grant R. Guenther <grant@torque.net>
-			  Under the terms of the GNU General Public License.
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-	The pg driver provides a simple character device interface for
-	sending ATAPI commands to a device.  With the exception of the
-	ATAPI reset operation, all operations are performed by a pair
-	of read and write operations to the appropriate /dev/pgN device.
-	A write operation delivers a command and any outbound data in
-	a single buffer.  Normally, the write will succeed unless the
-	device is offline or malfunctioning, or there is already another
-	command pending.  If the write succeeds, it should be followed
-	immediately by a read operation, to obtain any returned data and
-	status information.  A read will fail if there is no operation
-	in progress.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-	As a special case, the device can be reset with a write operation,
-	and in this case, no following read is expected, or permitted.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-	There are no ioctl() operations.  Any single operation
-	may transfer at most PG_MAX_DATA bytes.  Note that the driver must
-	copy the data through an internal buffer.  In keeping with all
-	current ATAPI devices, command packets are assumed to be exactly
-	12 bytes in length.
-
-	To permit future changes to this interface, the headers in the
-	read and write buffers contain a single character "magic" flag.
-	Currently this flag must be the character "P".
-
-	By default, the driver will autoprobe for a single parallel
-	port ATAPI device, but if their individual parameters are
-	specified, the driver can handle up to 4 devices.
-
-	To use this device, you must have the following device 
-	special files defined:
-
-		/dev/pg0 c 97 0
-		/dev/pg1 c 97 1
-		/dev/pg2 c 97 2
-		/dev/pg3 c 97 3
-
-	(You'll need to change the 97 to something else if you use
-	the 'major' parameter to install the driver on a different
-	major number.)
-
-	The behaviour of the pg driver can be altered by setting
-	some parameters from the insmod command line.  The following
-	parameters are adjustable:
-
-	    drive0      These four arguments can be arrays of       
-	    drive1      1-6 integers as follows:
-	    drive2
-	    drive3      <prt>,<pro>,<uni>,<mod>,<slv>,<dly>
-
-			Where,
-
-		<prt>   is the base of the parallel port address for
-			the corresponding drive.  (required)
-
-		<pro>   is the protocol number for the adapter that
-			supports this drive.  These numbers are
-			logged by 'paride' when the protocol modules
-			are initialised.  (0 if not given)
-
-		<uni>   for those adapters that support chained
-			devices, this is the unit selector for the
-			chain of devices on the given port.  It should
-			be zero for devices that don't support chaining.
-			(0 if not given)
-
-		<mod>   this can be -1 to choose the best mode, or one
-			of the mode numbers supported by the adapter.
-			(-1 if not given)
-
-		<slv>   ATAPI devices can be jumpered to master or slave.
-			Set this to 0 to choose the master drive, 1 to
-			choose the slave, -1 (the default) to choose the
-			first drive found.
-
-		<dly>   some parallel ports require the driver to 
-			go more slowly.  -1 sets a default value that
-			should work with the chosen protocol.  Otherwise,
-			set this to a small integer, the larger it is
-			the slower the port i/o.  In some cases, setting
-			this to zero will speed up the device. (default -1)
-
-	    major	You may use this parameter to overide the
-			default major number (97) that this driver
-			will use.  Be sure to change the device
-			name as well.
-
-	    name	This parameter is a character string that
-			contains the name the kernel will use for this
-			device (in /proc output, for instance).
-			(default "pg").
-
-	    verbose     This parameter controls the amount of logging
-			that is done by the driver.  Set it to 0 for 
-			quiet operation, to 1 to enable progress
-			messages while the driver probes for devices,
-			or to 2 for full debug logging.  (default 0)
-
-	If this driver is built into the kernel, you can use 
-	the following command line parameters, with the same values
-	as the corresponding module parameters listed above:
-
-	    pg.drive0
-	    pg.drive1
-	    pg.drive2
-	    pg.drive3
-
-	In addition, you can use the parameter pg.disable to disable
-	the driver entirely.
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 /* Changes:
 
 	1.01	GRG 1998.06.16	Bug fixes

@@ -1,22 +1,20 @@
 /*
- * DECnet       An implementation of the DECnet protocol suite for the BEEP
- *              operating system.  DECnet is implemented using the  BSD Socket
- *              interface as the means of communication with the user level.
- *
- *              DECnet Routing Forwarding Information Base (Glue/Info List)
- *
- * Author:      Steve Whitehouse <SteveW@ACM.org>
- *
- *
- * Changes:
- *              Alexey Kuznetsov : SMP locking changes
- *              Steve Whitehouse : Rewrote it... Well to be more correct, I
- *                                 copied most of it from the ipv4 fib code.
- *              Steve Whitehouse : Updated it in style and fixed a few bugs
- *                                 which were fixed in the ipv4 code since
- *                                 this code was copied from it.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/string.h>
 #include <beep/net.h>
 #include <beep/socket.h>

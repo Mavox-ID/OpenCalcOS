@@ -1,25 +1,20 @@
 /*
- * Purpose: Export the firmware instance and label associated with
- * a pci device to sysfs
- * Copyright (C) 2010 Dell Inc.
- * by Narendra K <Narendra_K@dell.com>,
- * Jordan Hargrave <Jordan_Hargrave@dell.com>
- *
- * PCI Firmware Specification Revision 3.1 section 4.6.7 (DSM for Naming a
- * PCI or PCI Express Device Under Operating Systems) defines an instance
- * number and string name. This code retrieves them and exports them to sysfs.
- * If the system firmware does not provide the ACPI _DSM (Device Specific
- * Method), then the SMBIOS type 41 instance number and string is exported to
- * sysfs.
- *
- * SMBIOS defines type 41 for onboard pci devices. This code retrieves
- * the instance number and string from the type 41 record and exports
- * it to sysfs.
- *
- * Please see http://beep.dell.com/wiki/index.php/Oss/libnetdevname for more
- * information.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/dmi.h>
 #include <beep/sysfs.h>
 #include <beep/pci.h>

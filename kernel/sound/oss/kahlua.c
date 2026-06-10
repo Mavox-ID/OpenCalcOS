@@ -1,32 +1,20 @@
 /*
- *	Initialisation code for Cyrix/NatSemi VSA1 softaudio
- *
- *	(C) Copyright 2003 Red Hat Inc <alan@lxorguk.ukuu.org.uk>
- *
- * XpressAudio(tm) is used on the Cyrix MediaGX (now NatSemi Geode) systems.
- * The older version (VSA1) provides fairly good soundblaster emulation
- * although there are a couple of bugs: large DMA buffers break record,
- * and the MPU event handling seems suspect. VSA2 allows the native driver
- * to control the AC97 audio engine directly and requires a different driver.
- *
- * Thanks to National Semiconductor for providing the needed information
- * on the XpressAudio(tm) internals.
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by the
- * Free Software Foundation; either version 2, or (at your option) any
- * later version.
- *
- * This program is distributed in the hope that it will be useful, but
- * WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * General Public License for more details.
- *
- * TO DO:
- *	Investigate whether we can portably support Cognac (5520) in the
- *	same manner.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/delay.h>
 #include <beep/init.h>
 #include <beep/module.h>

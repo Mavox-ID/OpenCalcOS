@@ -1,28 +1,20 @@
 /*
- *	Video4Beep Colour QuickCam driver
- *	Copyright 1997-2000 Philip Blundell <philb@gnu.org>
- *
- *    Module parameters:
- *
- *	parport=auto      -- probe all parports (default)
- *	parport=0         -- parport0 becomes qcam1
- *	parport=2,0,1     -- parports 2,0,1 are tried in that order
- *
- *	probe=0		  -- do no probing, assume camera is present
- *	probe=1		  -- use IEEE-1284 autoprobe data only (default)
- *	probe=2		  -- probe aggressively for cameras
- *
- *	force_rgb=1       -- force data format to RGB (default is BGR)
- *
- * The parport parameter controls which parports will be scanned.
- * Scanning all parports causes some printers to print a garbage page.
- *       -- March 14, 1999  Billy Donahue <billy@escape.com>
- *
- * Fixed data format to BGR, added force_rgb parameter. Added missing
- * parport_unregister_driver() on module removal.
- *       -- May 28, 2000  Claudio Matsuoka <claudio@conectiva.com>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/delay.h>
 #include <beep/errno.h>

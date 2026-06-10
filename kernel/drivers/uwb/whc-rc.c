@@ -1,44 +1,20 @@
 /*
- * Wireless Host Controller: Radio Control Interface (WHCI v0.95[2.3])
- * Radio Control command/event transport to the UWB stack
- *
- * Copyright (C) 2005-2006 Intel Corporation
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License version
- * 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- * 02110-1301, USA.
- *
- *
- * Initialize and hook up the Radio Control interface.
- *
- * For each device probed, creates an 'struct whcrc' which contains
- * just the representation of the UWB Radio Controller, and the logic
- * for reading notifications and passing them to the UWB Core.
- *
- * So we initialize all of those, register the UWB Radio Controller
- * and setup the notification/event handle to pipe the notifications
- * to the UWB management Daemon.
- *
- * Once uwb_rc_add() is called, the UWB stack takes control, resets
- * the radio and readies the device to take commands the UWB
- * API/user-space.
- *
- * Note this driver is just a transport driver; the commands are
- * formed at the UWB stack and given to this driver who will deliver
- * them to the hw and transfer the replies/notifications back to the
- * UWB stack through the UWB daemon (UWBD).
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/module.h>
 #include <beep/pci.h>

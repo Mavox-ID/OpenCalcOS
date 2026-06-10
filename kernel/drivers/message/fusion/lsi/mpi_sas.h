@@ -1,35 +1,20 @@
 /*
- *  Copyright (c) 2004-2008 LSI Corporation.
- *
- *
- *           Name:  mpi_sas.h
- *          Title:  MPI Serial Attached SCSI structures and definitions
- *  Creation Date:  August 19, 2004
- *
- *    mpi_sas.h Version:  01.05.05
- *
- *  Version History
- *  ---------------
- *
- *  Date      Version   Description
- *  --------  --------  ------------------------------------------------------
- *  08-19-04  01.05.01  Original release.
- *  08-30-05  01.05.02  Added DeviceInfo bit for SEP.
- *                      Added PrimFlags and Primitive field to SAS IO Unit
- *                      Control request, and added a new operation code.
- *  03-27-06  01.05.03  Added Force Full Discovery, Transmit Port Select Signal,
- *                      and Remove Device operations to SAS IO Unit Control.
- *                      Added DevHandle field to SAS IO Unit Control request and
- *                      reply.
- *  10-11-06  01.05.04  Fixed the name of a define for Operation field of SAS IO
- *                      Unit Control request.
- *  01-15-08  01.05.05  Added support for MPI_SAS_OP_SET_IOC_PARAMETER,
- *                      including adding IOCParameter and IOCParameter value
- *                      fields to SAS IO Unit Control Request.
- *                      Added MPI_SAS_DEVICE_INFO_PRODUCT_SPECIFIC define.
- *  --------------------------------------------------------------------------
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef MPI_SAS_H
 #define MPI_SAS_H
 

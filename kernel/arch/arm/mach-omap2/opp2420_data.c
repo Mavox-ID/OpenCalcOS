@@ -1,33 +1,20 @@
 /*
- * opp2420_data.c - old-style "OPP" table for OMAP2420
- *
- * Copyright (C) 2005-2009 Texas Instruments, Inc.
- * Copyright (C) 2004-2009 Nokia Corporation
- *
- * Richard Woodruff <r-woodruff2@ti.com>
- *
- * The OMAP2 processor can be run at several discrete 'PRCM configurations'.
- * These configurations are characterized by voltage and speed for clocks.
- * The device is only validated for certain combinations. One way to express
- * these combinations is via the 'ratios' which the clocks operate with
- * respect to each other. These ratio sets are for a given voltage/DPLL
- * setting. All configurations can be described by a DPLL setting and a ratio.
- *
- * XXX Missing voltage data.
- * XXX Missing 19.2MHz sys_clk rate sets (needed for N800/N810)
- *
- * THe format described in this file is deprecated.  Once a reasonable
- * OPP API exists, the data in this file should be converted to use it.
- *
- * This is technically part of the OMAP2xxx clock code.
- *
- * Considerable work is still needed to fully support dynamic frequency
- * changes on OMAP2xxx-series chips.  Readers interested in such a
- * project are encouraged to review the Maemo Diablo RX-34 and RX-44
- * kernel source at:
- *     http://repository.maemo.org/pool/diablo/free/k/kernel-source-diablo/
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 
 #include "opp2xxx.h"

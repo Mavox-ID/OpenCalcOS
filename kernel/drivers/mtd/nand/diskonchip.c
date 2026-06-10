@@ -1,22 +1,20 @@
 /*
- * drivers/mtd/nand/diskonchip.c
- *
- * (C) 2003 Red Hat, Inc.
- * (C) 2004 Dan Brown <dan_brown@ieee.org>
- * (C) 2004 Kalev Lember <kalev@smartlink.ee>
- *
- * Author: David Woodhouse <dwmw2@infradead.org>
- * Additional Diskonchip 2000 and Millennium support by Dan Brown <dan_brown@ieee.org>
- * Diskonchip Millennium Plus support by Kalev Lember <kalev@smartlink.ee>
- *
- * Error correction code lifted from the old docecc code
- * Author: Fabrice Bellard (fabrice.bellard@netgem.com)
- * Copyright (C) 2000 Netgem S.A.
- * converted to the generic Reed-Solomon library by Thomas Gleixner <tglx@linutronix.de>
- *
- * Interface to generic NAND code for M-Systems DiskOnChip devices
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/init.h>
 #include <beep/sched.h>

@@ -1,45 +1,20 @@
 /*
- * Bond several ethernet interfaces into a Cisco, running 'Etherchannel'.
- *
- *
- * Portions are (c) Copyright 1995 Simon "Guru Aleph-Null" Janes
- * NCM: Network and Communications Management, Inc.
- *
- * BUT, I'm the one who modified it for ethernet, so:
- * (c) Copyright 1999, Thomas Davis, tadavis@lbl.gov
- *
- *	This software may be used and distributed according to the terms
- *	of the GNU Public License, incorporated herein by reference.
- *
- * 2003/03/18 - Amir Noam <amir.noam at intel dot com>
- *	- Added support for getting slave's speed and duplex via ethtool.
- *	  Needed for 802.3ad and other future modes.
- *
- * 2003/03/18 - Tsippy Mendelson <tsippy.mendelson at intel dot com> and
- *		Shmulik Hen <shmulik.hen at intel dot com>
- *	- Enable support of modes that need to use the unique mac address of
- *	  each slave.
- *
- * 2003/03/18 - Tsippy Mendelson <tsippy.mendelson at intel dot com> and
- *		Amir Noam <amir.noam at intel dot com>
- *	- Moved driver's private data types to bonding.h
- *
- * 2003/03/18 - Amir Noam <amir.noam at intel dot com>,
- *		Tsippy Mendelson <tsippy.mendelson at intel dot com> and
- *		Shmulik Hen <shmulik.hen at intel dot com>
- *	- Added support for IEEE 802.3ad Dynamic link aggregation mode.
- *
- * 2003/05/01 - Amir Noam <amir.noam at intel dot com>
- *	- Added ABI version control to restore compatibility between
- *	  new/old ifenslave and new/old bonding.
- *
- * 2003/12/01 - Shmulik Hen <shmulik.hen at intel dot com>
- *	- Code cleanup and style changes
- *
- * 2005/05/05 - Jason Gabler <jygabler at lbl dot gov>
- *      - added definitions for various XOR hashing policies
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _BEEP_IF_BONDING_H
 #define _BEEP_IF_BONDING_H
 

@@ -1,45 +1,20 @@
 /*
- * Mars MR97310A library
- *
- * The original mr97310a driver, which supported the Aiptek Pencam VGA+, is
- * Copyright (C) 2009 Kyle Guinn <elyk03@gmail.com>
- *
- * Support for the MR97310A cameras in addition to the Aiptek Pencam VGA+
- * and for the routines for detecting and classifying these various cameras,
- * is Copyright (C) 2009 Theodore Kilgore <kilgota@auburn.edu>
- *
- * Support for the control settings for the CIF cameras is
- * Copyright (C) 2009 Hans de Goede <hdegoede@redhat.com> and
- * Thomas Kaiser <thomas@kaiser-beep.li>
- *
- * Support for the control settings for the VGA cameras is
- * Copyright (C) 2009 Theodore Kilgore <kilgota@auburn.edu>
- *
- * Several previously unsupported cameras are owned and have been tested by
- * Hans de Goede <hdegoede@redhat.com> and
- * Thomas Kaiser <thomas@kaiser-beep.li> and
- * Theodore Kilgore <kilgota@auburn.edu> and
- * Edmond Rodriguez <erodrig_97@yahoo.com> and
- * Aurelien Jacobs <aurel@gnuage.org>
- *
- * The MR97311A support in gspca/mars.c has been helpful in understanding some
- * of the registers in these cameras.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #define MODULE_NAME "mr97310a"

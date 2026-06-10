@@ -1,53 +1,20 @@
 /*
- *    Lance ethernet driver for the MIPS processor based
- *      DECstation family
- *
- *
- *      adopted from sunlance.c by Richard van den Berg
- *
- *      Copyright (C) 2002, 2003, 2005, 2006  Maciej W. Rozycki
- *
- *      additional sources:
- *      - PMAD-AA TURBOchannel Ethernet Module Functional Specification,
- *        Revision 1.2
- *
- *      History:
- *
- *      v0.001: The kernel accepts the code and it shows the hardware address.
- *
- *      v0.002: Removed most sparc stuff, left only some module and dma stuff.
- *
- *      v0.003: Enhanced base address calculation from proposals by
- *              Harald Koerfgen and Thomas Riemer.
- *
- *      v0.004: lance-regs is pointing at the right addresses, added prom
- *              check. First start of address mapping and DMA.
- *
- *      v0.005: started to play around with LANCE-DMA. This driver will not
- *              work for non IOASIC lances. HK
- *
- *      v0.006: added pointer arrays to lance_private and setup routine for
- *              them in dec_lance_init. HK
- *
- *      v0.007: Big shit. The LANCE seems to use a different DMA mechanism to
- *              access the init block. This looks like one (short) word at a
- *              time, but the smallest amount the IOASIC can transfer is a
- *              (long) word. So we have a 2-2 padding here. Changed
- *              lance_init_block accordingly. The 16-16 padding for the buffers
- *              seems to be correct. HK
- *
- *      v0.008: mods to make PMAX_LANCE work. 01/09/1999 triemer
- *
- *      v0.009: Module support fixes, multiple interfaces support, various
- *              bits. macro
- *
- *      v0.010: Fixes for the PMAD mapping of the LANCE buffer and for the
- *              PMAX requirement to only use halfword accesses to the
- *              buffer. macro
- *
- *      v0.011: Converted the PMAD to the driver model. macro
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/crc32.h>
 #include <beep/delay.h>
 #include <beep/errno.h>

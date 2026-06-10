@@ -1,32 +1,20 @@
 /*
- * Permedia2 framebuffer driver.
- *
- * 2.5/2.6 driver:
- * Copyright (c) 2003 Jim Hague (jim.hague@acm.org)
- *
- * based on 2.4 driver:
- * Copyright (c) 1998-2000 Ilario Nardinocchi (nardinoc@CS.UniBO.IT)
- * Copyright (c) 1999 Jakub Jelinek (jakub@redhat.com)
- *
- * and additional input from James Simmon's port of Hannu Mallat's tdfx
- * driver.
- *
- * I have a Creative Graphics Blaster Exxtreme card - pm2fb on x86. I
- * have no access to other pm2fb implementations. Sparc (and thus
- * hopefully other big-endian) devices now work, thanks to a lot of
- * testing work by Ron Murray. I have no access to CVision hardware,
- * and therefore for now I am omitting the CVision code.
- *
- * Multiple boards support has been on the TODO list for ages.
- * Don't expect this to change.
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License. See the file COPYING in the main directory of this archive for
- * more details.
- *
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/moduleparam.h>
 #include <beep/kernel.h>

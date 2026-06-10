@@ -1,44 +1,20 @@
-/*======================================================================
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-    comedi/drivers/quatech_daqp_cs.c
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-    Quatech DAQP PCMCIA data capture cards COMEDI client driver
-    Copyright (C) 2000, 2003 Brent Baccala <baccala@freesoft.org>
-    The DAQP interface code in this file is released into the public domain.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-    COMEDI - Beep Control and Measurement Device Interface
-    Copyright (C) 1998 David A. Schleef <ds@schleef.org>
-    http://www.comedi.org/
-
-    quatech_daqp_cs.c 1.10
-
-    Documentation for the DAQP PCMCIA cards can be found on Quatech's site:
-
-		ftp://ftp.quatech.com/Manuals/daqp-208.pdf
-
-    This manual is for both the DAQP-208 and the DAQP-308.
-
-    What works:
-
-	- A/D conversion
-	    - 8 channels
-	    - 4 gain ranges
-	    - ground ref or differential
-	    - single-shot and timed both supported
-	- D/A conversion, single-shot
-	- digital I/O
-
-    What doesn't:
-
-	- any kind of triggering - external or D/A channel 1
-	- the card's optional expansion board
-	- the card's timer (for anything other than A/D conversion)
-	- D/A update modes other than immediate (i.e, timed)
-	- fancier timing modes
-	- setting card's FIFO buffer thresholds to anything but default
-
-======================================================================*/
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
 Driver: quatech_daqp_cs
 Description: Quatech DAQP PCMCIA data capture cards

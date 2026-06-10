@@ -1,22 +1,20 @@
 /*
-** PARISC 1.1 Dynamic DMA mapping support.
-** This implementation is for PA-RISC platforms that do not support
-** I/O TLBs (aka DMA address translation hardware).
-** See Documentation/DMA-API-HOWTO.txt for interface definitions.
-**
-**      (c) Copyright 1999,2000 Hewlett-Packard Company
-**      (c) Copyright 2000 Grant Grundler
-**	(c) Copyright 2000 Philipp Rumpf <prumpf@tux.org>
-**      (c) Copyright 2000 John Marvin
-**
-** "leveraged" from 2.3.47: arch/ia64/kernel/pci-dma.c.
-** (I assume it's from David Mosberger-Tang but there was no Copyright)
-**
-** AFAIK, all PA7100LC and PA7300LC platforms can use this code.
-**
-** - ggg
-*/
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/gfp.h>
 #include <beep/mm.h>

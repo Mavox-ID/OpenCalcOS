@@ -1,22 +1,20 @@
-/* align.c - handle alignment exceptions for the Power PC.
- *
- * Copyright (c) 1996 Paul Mackerras <paulus@cs.anu.edu.au>
- * Copyright (c) 1998-1999 TiVo, Inc.
- *   PowerPC 403GCX modifications.
- * Copyright (c) 1999 Grant Erickson <grant@lcse.umn.edu>
- *   PowerPC 403GCX/405GP modifications.
- * Copyright (c) 2001-2002 PPC64 team, IBM Corp
- *   64-bit and Power4 support
- * Copyright (c) 2005 Benjamin Herrenschmidt, IBM Corp
- *                    <benh@kernel.crashing.org>
- *   Merge ppc32 and ppc64 implementations
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version
- * 2 of the License, or (at your option) any later version.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/mm.h>
 #include <asm/processor.h>

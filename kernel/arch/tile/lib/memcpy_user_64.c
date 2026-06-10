@@ -1,30 +1,20 @@
 /*
- * Copyright 2011 Tilera Corporation. All Rights Reserved.
- *
- *   This program is free software; you can redistribute it and/or
- *   modify it under the terms of the GNU General Public License
- *   as published by the Free Software Foundation, version 2.
- *
- *   This program is distributed in the hope that it will be useful, but
- *   WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE, GOOD TITLE or
- *   NON INFRINGEMENT.  See the GNU General Public License for
- *   more details.
- *
- * Do memcpy(), but trap and return "n" when a load or store faults.
- *
- * Note: this idiom only works when memcpy() compiles to a leaf function.
- * Here leaf function not only means it does not have calls, but also
- * requires no stack operations (sp, stack frame pointer) and no
- * use of callee-saved registers, else "jrp lr" will be incorrect since
- * unwinding stack frame is bypassed. Since memcpy() is not complex so
- * these conditions are satisfied here, but we need to be careful when
- * modifying this file. This is not a clean solution but is the best
- * one so far.
- *
- * Also note that we are capturing "n" from the containing scope here.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define _ST(p, inst, v)						\
 	({							\
 		asm("1: " #inst " %0, %1;"			\

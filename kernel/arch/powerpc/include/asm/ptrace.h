@@ -1,25 +1,20 @@
 /*
- * Copyright (C) 2001 PPC64 Team, IBM Corp
- *
- * This struct defines the way the registers are stored on the
- * kernel stack during a system call or other kernel entry.
- *
- * this should only contain volatile regs
- * since we can keep non-volatile in the thread_struct
- * should set this up when only volatiles are saved
- * by intr code.
- *
- * Since this is going on the stack, *CARE MUST BE TAKEN* to insure
- * that the overall structure is a multiple of 16 bytes in length.
- *
- * Note that the offsets of the fields in this struct correspond with
- * the PT_* values below.  This simplifies arch/powerpc/kernel/ptrace.c.
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version
- * 2 of the License, or (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _ASM_POWERPC_PTRACE_H
 #define _ASM_POWERPC_PTRACE_H
 

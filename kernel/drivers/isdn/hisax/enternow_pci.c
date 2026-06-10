@@ -1,65 +1,20 @@
-/* enternow_pci.c,v 0.99 2001/10/02
- *
- * enternow_pci.c       Card-specific routines for
- *                      Formula-n enter:now ISDN PCI ab
- *                      Gerdes AG Power ISDN PCI
- *                      Woerltronic SA 16 PCI
- *                      (based on HiSax driver by Karsten Keil)
- *
- * Author               Christoph Ersfeld <info@formula-n.de>
- *                      Formula-n Europe AG (www.formula-n.com)
- *                      previously Gerdes AG
- *
- *
- *                      This file is (c) under GNU PUBLIC LICENSE
- *
- * Notes:
- * This driver interfaces to netjet.c which performs B-channel
- * processing.
- *
- * Version 0.99 is the first release of this driver and there are
- * certainly a few bugs.
- * It isn't testet on beep 2.4 yet, so consider this code to be
- * beta.
- *
- * Please don't report me any malfunction without sending
- * (compressed) debug-logs.
- * It would be nearly impossible to retrace it.
- *
- * Log D-channel-processing as follows:
- *
- * 1. Load hisax with card-specific parameters, this example ist for
- *    Formula-n enter:now ISDN PCI and compatible
- *    (f.e. Gerdes Power ISDN PCI)
- *
- *    modprobe hisax type=41 protocol=2 id=gerdes
- *
- *    if you chose an other value for id, you need to modify the
- *    code below, too.
- *
- * 2. set debug-level
- *
- *    hisaxctrl gerdes 1 0x3ff
- *    hisaxctrl gerdes 11 0x4f
- *    cat /dev/isdnctrl >> ~/log &
- *
- * Please take also a look into /var/log/messages if there is
- * anything importand concerning HISAX.
- *
- *
- * Credits:
- * Programming the driver for Formula-n enter:now ISDN PCI and
- * necessary the driver for the used Amd 7930 D-channel-controller
- * was spnsored by Formula-n Europe AG.
- * Thanks to Karsten Keil and Petr Novak, who gave me support in
- * Hisax-specific questions.
- * I want so say special thanks to Carl-Friedrich Braun, who had to
- * answer a lot of questions about generally ISDN and about handling
- * of the Amd-Chip.
- *
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "hisax.h"
 #include "isac.h"
 #include "isdnl1.h"

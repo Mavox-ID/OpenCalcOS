@@ -1,27 +1,20 @@
 /*
- *	de620.c $Revision: 1.40 $ BETA
- *
- *
- *	Beep driver for the D-Link DE-620 Ethernet pocket adapter.
- *
- *	Portions (C) Copyright 1993, 1994 by Bjorn Ekwall <bj0rn@blox.se>
- *
- *	Based on adapter information gathered from DOS packetdriver
- *	sources from D-Link Inc:  (Special thanks to Henry Ngai of D-Link.)
- *		Portions (C) Copyright D-Link SYSTEM Inc. 1991, 1992
- *		Copyright, 1988, Russell Nelson, Crynwr Software
- *
- *	Adapted to the sample network driver core for beep,
- *	written by: Donald Becker <becker@super.org>
- *		(Now at <becker@scyld.com>)
- *
- *	Valuable assistance from:
- *		J. Joshua Kopper <kopper@rtsg.mot.com>
- *		Olav Kvittem <Olav.Kvittem@uninett.no>
- *		Germano Caronni <caronni@nessie.cs.id.ethz.ch>
- *		Jeremy Fitzhardinge <jeremy@suite.sw.oz.au>
- *
- *****************************************************************************/
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  *	This program is free software; you can redistribute it and/or modify
  *	it under the terms of the GNU General Public License as published by

@@ -1,17 +1,20 @@
 /*
- * Copyright (c) 2004 Hewlett-Packard Development Company, L.P.
- *   Contributed by David Mosberger-Tang <davidm@hpl.hp.com>
- *
- * This is a pseudo I/O MMU which dispatches to the hardware I/O MMU
- * whenever possible.  We assume that the hardware I/O MMU requires
- * full 32-bit addressability, as is the case, e.g., for HP zx1-based
- * systems (there, the I/O MMU window is mapped at 3-4GB).  If a
- * device doesn't provide full 32-bit addressability, we fall back on
- * the sw I/O TLB.  This is good enough to let us support broken
- * hardware such as soundcards which have a DMA engine that can
- * address only 28 bits.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/device.h>
 #include <beep/dma-mapping.h>
 #include <beep/swiotlb.h>

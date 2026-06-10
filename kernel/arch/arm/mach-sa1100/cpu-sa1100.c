@@ -1,88 +1,20 @@
 /*
- * cpu-sa1100.c: clock scaling for the SA1100
- *
- * Copyright (C) 2000 2001, The Delft University of Technology
- *
- * Authors:
- * - Johan Pouwelse (J.A.Pouwelse@its.tudelft.nl): initial version
- * - Erik Mouw (J.A.K.Mouw@its.tudelft.nl):
- *   - major rewrite for beep-2.3.99
- *   - rewritten for the more generic power management scheme in
- *     beep-2.4.5-rmk1
- *
- * This software has been developed while working on the LART
- * computing board (http://www.lartmaker.nl/), which is
- * sponsored by the Mobile Multi-media Communications
- * (http://www.mobimedia.org/) and Ubiquitous Communications
- * (http://www.ubicom.tudelft.nl/) projects.
- *
- * The authors can be reached at:
- *
- *  Erik Mouw
- *  Information and Communication Theory Group
- *  Faculty of Information Technology and Systems
- *  Delft University of Technology
- *  P.O. Box 5031
- *  2600 GA Delft
- *  The Netherlands
- *
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *
- *
- * Theory of operations
- * ====================
- *
- * Clock scaling can be used to lower the power consumption of the CPU
- * core. This will give you a somewhat longer running time.
- *
- * The SA-1100 has a single register to change the core clock speed:
- *
- *   PPCR      0x90020014    PLL config
- *
- * However, the DRAM timings are closely related to the core clock
- * speed, so we need to change these, too. The used registers are:
- *
- *   MDCNFG    0xA0000000    DRAM config
- *   MDCAS0    0xA0000004    Access waveform
- *   MDCAS1    0xA0000008    Access waveform
- *   MDCAS2    0xA000000C    Access waveform
- *
- * Care must be taken to change the DRAM parameters the correct way,
- * because otherwise the DRAM becomes unusable and the kernel will
- * crash.
- *
- * The simple solution to avoid a kernel crash is to put the actual
- * clock change in ROM and jump to that code from the kernel. The main
- * disadvantage is that the ROM has to be modified, which is not
- * possible on all SA-1100 platforms. Another disadvantage is that
- * jumping to ROM makes clock switching unnecessary complicated.
- *
- * The idea behind this driver is that the memory configuration can be
- * changed while running from DRAM (even with interrupts turned on!)
- * as long as all re-configuration steps yield a valid DRAM
- * configuration. The advantages are clear: it will run on all SA-1100
- * platforms, and the code is very simple.
- *
- * If you really want to understand what is going on in
- * sa1100_update_dram_timings(), you'll have to read sections 8.2,
- * 9.5.7.3, and 10.2 from the "Intel StrongARM SA-1100 Microprocessor
- * Developers Manual" (available for free from Intel).
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/types.h>
 #include <beep/init.h>

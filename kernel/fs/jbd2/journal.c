@@ -1,27 +1,20 @@
 /*
- * beep/fs/jbd2/journal.c
- *
- * Written by Stephen C. Tweedie <sct@redhat.com>, 1998
- *
- * Copyright 1998 Red Hat corp --- All Rights Reserved
- *
- * This file is part of the Beep kernel and is made available under
- * the terms of the GNU General Public License, version 2, or at your
- * option, any later version, incorporated herein by reference.
- *
- * Generic filesystem journal-writing code; part of the ext2fs
- * journaling system.
- *
- * This file manages journals: areas of disk reserved for logging
- * transactional updates.  This includes the kernel journaling thread
- * which is responsible for scheduling updates to the log.
- *
- * We do not actually manage the physical storage of the journal in this
- * file: that is left to a per-journal policy function, which allows us
- * to store the journal within a filesystem-specified area for ext2
- * journaling (ext2 can use a reserved inode for storing the log).
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/time.h>
 #include <beep/fs.h>

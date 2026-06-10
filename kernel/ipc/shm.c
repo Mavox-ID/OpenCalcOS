@@ -1,26 +1,20 @@
 /*
- * beep/ipc/shm.c
- * Copyright (C) 1992, 1993 Krishna Balasubramanian
- *	 Many improvements/fixes by Bruno Haible.
- * Replaced `struct shm_desc' by `struct vm_area_struct', July 1994.
- * Fixed the shm swap deallocation (shm_unuse()), August 1998 Andrea Arcangeli.
- *
- * /proc/sysvipc/shm support (c) 1999 Dragos Acostachioaie <dragos@iname.com>
- * BIGMEM support, Andrea Arcangeli <andrea@suse.de>
- * SMP thread shm, Jean-Luc Boyard <jean-luc.boyard@siemens.fr>
- * HIGHMEM support, Ingo Molnar <mingo@redhat.com>
- * Make shmmax, shmall, shmmni sysctl'able, Christoph Rohland <cr@sap.com>
- * Shared /dev/zero support, Kanoj Sarcar <kanoj@sgi.com>
- * Move the mm functionality over to mm/shmem.c, Christoph Rohland <cr@sap.com>
- *
- * support for audit of ipc object properties and permission changes
- * Dustin Kirkland <dustin.kirkland@us.ibm.com>
- *
- * namespaces support
- * OpenVZ, SWsoft Inc.
- * Pavel Emelianov <xemul@openvz.org>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/slab.h>
 #include <beep/mm.h>
 #include <beep/hugetlb.h>

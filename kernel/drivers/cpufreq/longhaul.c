@@ -1,26 +1,20 @@
 /*
- *  (C) 2001-2004  Dave Jones. <davej@redhat.com>
- *  (C) 2002  Padraig Brady. <padraig@antefacto.com>
- *
- *  Licensed under the terms of the GNU GPL License version 2.
- *  Based upon datasheets & sample CPUs kindly provided by VIA.
- *
- *  VIA have currently 3 different versions of Longhaul.
- *  Version 1 (Longhaul) uses the BCR2 MSR at 0x1147.
- *   It is present only in Samuel 1 (C5A), Samuel 2 (C5B) stepping 0.
- *  Version 2 of longhaul is backward compatible with v1, but adds
- *   LONGHAUL MSR for purpose of both frequency and voltage scaling.
- *   Present in Samuel 2 (steppings 1-7 only) (C5B), and Ezra (C5C).
- *  Version 3 of longhaul got renamed to Powersaver and redesigned
- *   to use only the POWERSAVER MSR at 0x110a.
- *   It is present in Ezra-T (C5M), Nehemiah (C5X) and above.
- *   It's pretty much the same feature wise to longhaul v2, though
- *   there is provision for scaling FSB too, but this doesn't work
- *   too well in practice so we don't even try to use this.
- *
- *  BIG FAT DISCLAIMER: Work in progress code. Possibly *dangerous*
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/moduleparam.h>

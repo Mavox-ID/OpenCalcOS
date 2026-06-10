@@ -1,22 +1,20 @@
 /*
- * Common Flash Interface support:
- *   Intel Extended Vendor Command Set (ID 0x0001)
- *
- * (C) 2000 Red Hat. GPL'd
- *
- *
- * 10/10/2000	Nicolas Pitre <nico@fluxnic.net>
- * 	- completely revamped method functions so they are aware and
- * 	  independent of the flash geometry (buswidth, interleave, etc.)
- * 	- scalability vs code size is completely set at compile-time
- * 	  (see include/beep/mtd/cfi.h for selection)
- *	- optimized write buffer method
- * 02/05/2002	Christopher Hoover <ch@hpl.hp.com>/<ch@murgatroid.com>
- *	- reworked lock/unlock/erase support for var size flash
- * 21/03/2007   Rodolfo Giometti <giometti@beep.it>
- * 	- auto unlock sectors on resume for auto locking flash on power up
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/types.h>
 #include <beep/kernel.h>

@@ -1,37 +1,20 @@
 /*
- *	Copyright (C) 2002 Motorola GSG-China
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version 2
- *	of the License, or (at your option) any later version.
- *
- *	This program is distributed in the hope that it will be useful,
- *	but WITHOUT ANY WARRANTY; without even the implied warranty of
- *	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *	GNU General Public License for more details.
- *
- *	You should have received a copy of the GNU General Public License
- *	along with this program; if not, write to the Free Software
- *	Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307,
- *	USA.
- *
- * Author:
- *	Darius Augulis, Teltonika Inc.
- *
- * Desc.:
- *	Implementation of I2C Adapter/Algorithm Driver
- *	for I2C Bus integrated in Freescale i.MX/MXC processors
- *
- *	Derived from Motorola GSG China I2C example driver
- *
- *	Copyright (C) 2005 Torsten Koschorrek <koschorrek at synertronixx.de
- *	Copyright (C) 2005 Matthias Blaschke <blaschke at synertronixx.de
- *	Copyright (C) 2007 RightHand Technologies, Inc.
- *	Copyright (C) 2008 Darius Augulis <darius.augulis at teltonika.lt>
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /** Includes *******************************************************************
 *******************************************************************************/
 

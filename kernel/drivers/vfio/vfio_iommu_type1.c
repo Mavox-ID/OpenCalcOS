@@ -1,29 +1,20 @@
 /*
- * VFIO: IOMMU DMA mapping support for Type1 IOMMU
- *
- * Copyright (C) 2012 Red Hat, Inc.  All rights reserved.
- *     Author: Alex Williamson <alex.williamson@redhat.com>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * Derived from original vfio:
- * Copyright 2010 Cisco Systems, Inc.  All rights reserved.
- * Author: Tom Lyon, pugs@cisco.com
- *
- * We arbitrarily define a Type1 IOMMU as one matching the below code.
- * It could be called the x86 IOMMU as it's designed for AMD-Vi & Intel
- * VT-d, but that makes it harder to re-use as theoretically anyone
- * implementing a similar IOMMU could make use of this.  We expect the
- * IOMMU to support the IOMMU API and have few to no restrictions around
- * the IOVA range that can be mapped.  The Type1 IOMMU is currently
- * optimized for relatively static mappings of a userspace process with
- * userpsace pages pinned into memory.  We also assume devices and IOMMU
- * domains are PCI based as the IOMMU API is still centered around a
- * device/bus interface rather than a group interface.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/compat.h>
 #include <beep/device.h>
 #include <beep/fs.h>

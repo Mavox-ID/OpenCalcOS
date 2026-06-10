@@ -1,13 +1,20 @@
 /*
- * ADIS16260 Programmable Digital Gyroscope Sensor Driver Platform Data
- *
- * Based on adis16255.h Matthia Brugger <m_brugger&web.de>
- *
- * Copyright (C) 2010 Fraunhofer Institute for Integrated Circuits
-  *
- * Licensed under the GPL-2 or later.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /**
  * struct adis16260_platform_data - instance specific data
  * @direction: x y or z

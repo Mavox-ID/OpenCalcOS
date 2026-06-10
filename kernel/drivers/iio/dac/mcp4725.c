@@ -1,21 +1,20 @@
 /*
- * mcp4725.c - Support for Microchip MCP4725
- *
- * Copyright (C) 2012 Peter Meerwald <pmeerw@pmeerw.net>
- *
- * Based on max517 by Roland Stigge <stigge@antcom.de>
- *
- * This file is subject to the terms and conditions of version 2 of
- * the GNU General Public License.  See the file COPYING in the main
- * directory of this archive for more details.
- *
- * driver for the Microchip I2C 12-bit digital-to-analog converter (DAC)
- * (7-bit I2C slave address 0x60, the three LSBs can be configured in
- * hardware)
- *
- * writing the DAC value to EEPROM is not supported
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/i2c.h>

@@ -1,21 +1,20 @@
 /*
- * ARMv7 Cortex-A8 and Cortex-A9 Performance Events handling code.
- *
- * ARMv7 support: Jean Pihet <jpihet@mvista.com>
- * 2010 (c) MontaVista Software, LLC.
- *
- * Copied from ARMv6 code, with the low level code inspired
- *  by the ARMv7 Oprofile code.
- *
- * Cortex-A8 has up to 4 configurable performance counters and
- *  a single cycle counter.
- * Cortex-A9 has up to 31 configurable performance counters and
- *  a single cycle counter.
- *
- * All counters can be enabled/disabled and IRQ masked separately. The cycle
- *  counter and all 4 performance counters together can be reset separately.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifdef CONFIG_CPU_V7
 
 /*

@@ -1,10 +1,20 @@
 /*
- * Driver for the 98626/98644/internal serial interface on hp300/hp400
- * (based on the National Semiconductor INS8250/NS16550AF/WD16C552 UARTs)
- *
- * Ported from 2.2 and modified to use the normal 8250 driver
- * by Kars de Jong <jongk@beep-m68k.org>, May 2004.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/string.h>

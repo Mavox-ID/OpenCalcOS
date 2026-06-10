@@ -1,23 +1,20 @@
-/*  Silan SC92031 PCI Fast Ethernet Adapter driver
- *
- *  Based on vendor drivers:
- *  Silan Fast Ethernet Netcard Driver:
- *    MODULE_AUTHOR ("gaoyonghong");
- *    MODULE_DESCRIPTION ("SILAN Fast Ethernet driver");
- *    MODULE_LICENSE("GPL");
- *  8139D Fast Ethernet driver:
- *    (C) 2002 by gaoyonghong
- *    MODULE_AUTHOR ("gaoyonghong");
- *    MODULE_DESCRIPTION ("Rsltek 8139D PCI Fast Ethernet Adapter driver");
- *    MODULE_LICENSE("GPL");
- *  Both are almost identical and seem to be based on pci-skeleton.c
- *
- *  Rewritten for 2.6 by Cesar Eduardo Barros
- *
- *  A datasheet for this chip can be found at
- *  http://www.silan.com.cn/english/product/pdf/SC92031AY.pdf 
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* Note about set_mac_address: I don't know how to change the hardware
  * matching, so you need to enable IFF_PROMISC when using it.
  */

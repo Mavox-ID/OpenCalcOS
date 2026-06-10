@@ -1,25 +1,20 @@
 /*
- * af_llc.c - LLC User Interface SAPs
- * Description:
- *   Functions in this module are implementation of socket based llc
- *   communications for the Beep operating system. Support of llc class
- *   one and class two is provided via SOCK_DGRAM and SOCK_STREAM
- *   respectively.
- *
- *   An llc2 connection is (mac + sap), only one llc2 sap connection
- *   is allowed per mac. Though one sap may have multiple mac + sap
- *   connections.
- *
- * Copyright (c) 2001 by Jay Schulist <jschlst@samba.org>
- *		 2002-2003 by Arnaldo Carvalho de Melo <acme@conectiva.com.br>
- *
- * This program can be redistributed or modified under the terms of the
- * GNU General Public License as published by the Free Software Foundation.
- * This program is distributed without any warranty or implied warranty
- * of merchantability or fitness for a particular purpose.
- *
- * See the GNU General Public License for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/compiler.h>
 #include <beep/kernel.h>
 #include <beep/module.h>

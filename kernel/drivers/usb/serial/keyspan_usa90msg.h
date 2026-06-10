@@ -1,46 +1,20 @@
 /*
-	usa90msg.h
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-	Copyright (c) 1998-2003 InnoSys Incorporated.  All Rights Reserved
-	This file is available under a BSD-style copyright
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-	Keyspan USB Async Message Formats for the USA19HS
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-	Redistribution and use in source and binary forms, with or without
-	modification, are permitted provided that the following conditions are
-	met:
-
-	1. Redistributions of source code must retain this licence text
-   	without modification, this list of conditions, and the following
-   	disclaimer.  The following copyright notice must appear immediately at
-   	the beginning of all source files:
-
-        	Copyright (c) 1998-2003 InnoSys Incorporated.  All Rights Reserved
-
-        	This file is available under a BSD-style copyright
-
-	2. The name of InnoSys Incorporated may not be used to endorse or promote
-   	products derived from this software without specific prior written
-   	permission.
-
-	THIS SOFTWARE IS PROVIDED BY INNOSYS CORP. ``AS IS'' AND ANY EXPRESS OR
-	IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
-	OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN
-	NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
-	INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-	(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-	SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-	CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
-	LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
-	OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
-	SUCH DAMAGE.    
-
-	Revisions:
-
-	2003feb14		add setTxMode/txMode  and cancelRxXoff to portControl
-	2003mar21		change name of PARITY_0/1 to add MARK/SPACE
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #ifndef	__USA90MSG__
 #define	__USA90MSG__
 

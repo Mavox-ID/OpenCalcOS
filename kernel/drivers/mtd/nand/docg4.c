@@ -1,33 +1,20 @@
 /*
- *  Copyright © 2012 Mike Dunn <mikedunn@newsguy.com>
- *
- * mtd nand driver for M-Systems DiskOnChip G4
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * Tested on the Palm Treo 680.  The G4 is also present on Toshiba Portege, Asus
- * P526, some HTC smartphones (Wizard, Prophet, ...), O2 XDA Zinc, maybe others.
- * Should work on these as well.  Let me know!
- *
- * TODO:
- *
- *  Mechanism for management of password-protected areas
- *
- *  Hamming ecc when reading oob only
- *
- *  According to the M-Sys documentation, this device is also available in a
- *  "dual-die" configuration having a 256MB capacity, but no mechanism for
- *  detecting this variant is documented.  Currently this driver assumes 128MB
- *  capacity.
- *
- *  Support for multiple cascaded devices ("floors").  Not sure which gadgets
- *  contain multiple G4s in a cascaded configuration, if any.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/slab.h>
 #include <beep/init.h>

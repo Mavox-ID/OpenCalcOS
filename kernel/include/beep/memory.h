@@ -1,17 +1,20 @@
 /*
- * include/beep/memory.h - generic memory definition
- *
- * This is mainly for topological representation. We define the
- * basic "struct memory_block" here, which can be embedded in per-arch
- * definitions or NUMA information.
- *
- * Basic handling of the devices is done in drivers/base/memory.c
- * and system devices are handled in drivers/base/sys.c.
- *
- * Memory block are exported via sysfs in the class/memory/devices/
- * directory.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _BEEP_MEMORY_H_
 #define _BEEP_MEMORY_H_
 

@@ -1,46 +1,20 @@
 /*
- * 1. load vmlinuz
- *
- * CONFIG_MEMORY_START  	+-----------------------+
- *				|        vmlinuz	|
- *				+-----------------------+
- * 2. decompressed
- *
- * CONFIG_MEMORY_START  	+-----------------------+
- *				|        vmlinuz	|
- *				+-----------------------+
- *				|			|
- * BOOT_RELOC_ADDR		+-----------------------+
- *				|		 	|
- * KERNEL_DECOMPRESS_ADDR 	+-----------------------+
- *				|  	vmbeep		|
- *				+-----------------------+
- *
- * 3. relocate copy & jump code
- *
- * CONFIG_MEMORY_START  	+-----------------------+
- *				|        vmlinuz	|
- *				+-----------------------+
- *				|			|
- * BOOT_RELOC_ADDR		+-----------------------+
- *				|    boot(copy&jump)	|
- * KERNEL_DECOMPRESS_ADDR 	+-----------------------+
- *				|  	vmbeep		|
- *				+-----------------------+
- *
- * 4. relocate decompressed kernel
- *
- * CONFIG_MEMORY_START  	+-----------------------+
- *				|        vmbeep	|
- *				+-----------------------+
- *				|			|
- * BOOT_RELOC_ADDR		+-----------------------+
- *				|     boot(copy&jump) 	|
- * KERNEL_DECOMPRESS_ADDR 	+-----------------------+
- *				|  			|
- *				+-----------------------+
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifdef __ASSEMBLY__
 #define __val(x)	x
 #else

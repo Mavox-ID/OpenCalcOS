@@ -1,64 +1,20 @@
-/***    ltpc.c -- a driver for the LocalTalk PC card.
- *
- *      Copyright (c) 1995,1996 Bradford W. Johnson <johns393@maroon.tc.umn.edu>
- *
- *      This software may be used and distributed according to the terms
- *      of the GNU General Public License, incorporated herein by reference.
- *
- *      This is ALPHA code at best.  It may not work for you.  It may
- *      damage your equipment.  It may damage your relations with other
- *      users of your network.  Use it at your own risk!
- *
- *      Based in part on:
- *      skeleton.c      by Donald Becker
- *      dummy.c         by Nick Holloway and Alan Cox
- *      loopback.c      by Ross Biro, Fred van Kampen, Donald Becker
- *      the netatalk source code (UMICH)
- *      lots of work on the card...
- *
- *      I do not have access to the (proprietary) SDK that goes with the card.
- *      If you do, I don't want to know about it, and you can probably write
- *      a better driver yourself anyway.  This does mean that the pieces that
- *      talk to the card are guesswork on my part, so use at your own risk!
- *
- *      This is my first try at writing Beep networking code, and is also
- *      guesswork.  Again, use at your own risk!  (Although on this part, I'd
- *      welcome suggestions)
- *
- *      This is a loadable kernel module which seems to work at my site
- *      consisting of a 1.2.13 beep box running netatalk 1.3.3, and with
- *      the kernel support from 1.3.3b2 including patches routing.patch
- *      and ddp.disappears.from.chooser.  In order to run it, you will need
- *      to patch ddp.c and aarp.c in the kernel, but only a little...
- *
- *      I'm fairly confident that while this is arguably badly written, the
- *      problems that people experience will be "higher level", that is, with
- *      complications in the netatalk code.  The driver itself doesn't do
- *      anything terribly complicated -- it pretends to be an ether device
- *      as far as netatalk is concerned, strips the DDP data out of the ether
- *      frame and builds a LLAP packet to send out the card.  In the other
- *      direction, it receives LLAP frames from the card and builds a fake
- *      ether packet that it then tosses up to the networking code.  You can
- *      argue (correctly) that this is an ugly way to do things, but it
- *      requires a minimal amount of fooling with the code in ddp.c and aarp.c.
- *
- *      The card will do a lot more than is used here -- I *think* it has the
- *      layers up through ATP.  Even if you knew how that part works (which I
- *      don't) it would be a big job to carve up the kernel ddp code to insert
- *      things at a higher level, and probably a bad idea...
- *
- *      There are a number of other cards that do LocalTalk on the PC.  If
- *      nobody finds any insurmountable (at the netatalk level) problems
- *      here, this driver should encourage people to put some work into the
- *      other cards (some of which I gather are still commercially available)
- *      and also to put hooks for LocalTalk into the official ddp code.
- *
- *      I welcome comments and suggestions.  This is my first try at Beep
- *      networking stuff, and there are probably lots of things that I did
- *      suboptimally.  
- *
- ***/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /***
  *
  * $Log: ltpc.c,v $

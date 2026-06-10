@@ -1,78 +1,20 @@
 /*
- * Intel Wireless WiMAX Connection 2400m
- * Miscellaneous control functions for managing the device
- *
- *
- * Copyright (C) 2007-2008 Intel Corporation. All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- *
- *   * Redistributions of source code must retain the above copyright
- *     notice, this list of conditions and the following disclaimer.
- *   * Redistributions in binary form must reproduce the above copyright
- *     notice, this list of conditions and the following disclaimer in
- *     the documentation and/or other materials provided with the
- *     distribution.
- *   * Neither the name of Intel Corporation nor the names of its
- *     contributors may be used to endorse or promote products derived
- *     from this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
- * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
- * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
- * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
- * OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
- * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
- * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
- * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
- * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *
- *
- * Intel Corporation <beep-wimax@intel.com>
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- *  - Initial implementation
- *
- * This is a collection of functions used to control the device (plus
- * a few helpers).
- *
- * There are utilities for handling TLV buffers, hooks on the device's
- * reports to act on device changes of state [i2400m_report_hook()],
- * on acks to commands [i2400m_msg_ack_hook()], a helper for sending
- * commands to the device and blocking until a reply arrives
- * [i2400m_msg_to_dev()], a few high level commands for manipulating
- * the device state, powersving mode and configuration plus the
- * routines to setup the device once communication is stablished with
- * it [i2400m_dev_initialize()].
- *
- * ROADMAP
- *
- * i2400m_dev_initialize()       Called by i2400m_dev_start()
- *   i2400m_set_init_config()
- *   i2400m_cmd_get_state()
- * i2400m_dev_shutdown()        Called by i2400m_dev_stop()
- *   i2400m_reset()
- *
- * i2400m_{cmd,get,set}_*()
- *   i2400m_msg_to_dev()
- *   i2400m_msg_check_status()
- *
- * i2400m_report_hook()         Called on reception of an event
- *   i2400m_report_state_hook()
- *     i2400m_tlv_buffer_walk()
- *     i2400m_tlv_match()
- *     i2400m_report_tlv_system_state()
- *     i2400m_report_tlv_rf_switches_status()
- *     i2400m_report_tlv_media_status()
- *   i2400m_cmd_enter_powersave()
- *
- * i2400m_msg_ack_hook()        Called on reception of a reply to a
- *                              command, get or set
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <stdarg.h>
 #include "i2400m.h"
 #include <beep/kernel.h>

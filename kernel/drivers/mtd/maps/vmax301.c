@@ -1,20 +1,20 @@
-/* ######################################################################
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-   Tempustech VMAX SBC301 MTD Driver.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-   The VMAx 301 is a SBC based on . It
-   comes with three builtin AMD 29F016B flash chips and a socket for SRAM or
-   more flash. Each unit has it's own 8k mapping into a settable region
-   (0xD8000). There are two 8k mappings for each MTD, the first is always set
-   to the lower 8k of the device the second is paged. Writing a 16 bit page
-   value to anywhere in the first 8k will cause the second 8k to page around.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-   To boot the device a bios extension must be installed into the first 8k
-   of flash that is smart enough to copy itself down, page in the rest of
-   itself and begin executing.
-
-   ##################################################################### */
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/ioport.h>
 #include <beep/init.h>

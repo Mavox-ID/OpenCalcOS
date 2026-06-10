@@ -1,23 +1,20 @@
 /*
- * PowerPC64 LPAR Configuration Information Driver
- *
- * Dave Engebretsen engebret@us.ibm.com
- *    Copyright (c) 2003 Dave Engebretsen
- * Will Schmidt willschm@us.ibm.com
- *    SPLPAR updates, Copyright (c) 2003 Will Schmidt IBM Corporation.
- *    seq_file updates, Copyright (c) 2004 Will Schmidt IBM Corporation.
- * Nathan Lynch nathanl@austin.ibm.com
- *    Added lparcfg_write, Copyright (C) 2004 Nathan Lynch IBM Corporation.
- *
- *      This program is free software; you can redistribute it and/or
- *      modify it under the terms of the GNU General Public License
- *      as published by the Free Software Foundation; either version
- *      2 of the License, or (at your option) any later version.
- *
- * This driver creates a proc file at /proc/ppc64/lparcfg which contains
- * keyword - value pairs that specify the configuration of the partition.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/types.h>
 #include <beep/errno.h>

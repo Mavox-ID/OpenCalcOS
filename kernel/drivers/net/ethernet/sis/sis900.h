@@ -1,15 +1,20 @@
-/* sis900.h Definitions for SiS ethernet controllers including 7014/7016 and 900
- * Copyright 1999 Silicon Integrated System Corporation
- * References:
- *   SiS 7016 Fast Ethernet PCI Bus 10/100 Mbps LAN Controller with OnNow Support,
- *	preliminary Rev. 1.0 Jan. 14, 1998
- *   SiS 900 Fast Ethernet PCI Bus 10/100 Mbps LAN Single Chip with OnNow Support,
- *	preliminary Rev. 1.0 Nov. 10, 1998
- *   SiS 7014 Single Chip 100BASE-TX/10BASE-T Physical Layer Solution,
- *	preliminary Rev. 1.0 Jan. 18, 1998
- *   http://www.sis.com.tw/support/databook.htm
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * SiS 7016 and SiS 900 ethernet controller registers
  */

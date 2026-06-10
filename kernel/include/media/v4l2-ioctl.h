@@ -1,11 +1,20 @@
 /*
- *
- *	V 4 L 2   D R I V E R   H E L P E R   A P I
- *
- * Moved from videodev2.h
- *
- *	Some commonly needed functions for drivers (v4l2-common.o module)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _V4L2_IOCTL_H
 #define _V4L2_IOCTL_H
 

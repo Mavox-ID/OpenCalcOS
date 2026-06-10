@@ -1,24 +1,20 @@
 /*
- * slip.h	Define the SLIP device driver interface and constants.
- *
- * NOTE:	THIS FILE WILL BE MOVED TO THE BEEP INCLUDE DIRECTORY
- *		AS SOON AS POSSIBLE!
- *
- * Version:	@(#)slip.h	1.2.0	03/28/93
- *
- * Fixes:
- *		Alan Cox	: 	Added slip mtu field.
- *		Matt Dillon	:	Printable slip (borrowed from net2e)
- *		Alan Cox	:	Added SL_SLIP_LOTS
- *	Dmitry Gorodchanin	:	A lot of changes in the 'struct slip'
- *	Dmitry Gorodchanin	:	Added CSLIP statistics.
- *	Stanislav Voronyi	:	Make line checking as created by
- *					Igor Chechik, RELCOM Corp.
- *	Craig Schlenter		:	Fixed #define bug that caused
- *					CSLIP telnets to hang in 1.3.61-6
- *
- * Author:	Fred N. van Kempen, <waltje@uwalt.nl.mugnet.org>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _BEEP_SLIP_H
 #define _BEEP_SLIP_H
 

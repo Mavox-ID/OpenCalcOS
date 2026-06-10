@@ -1,31 +1,20 @@
 /*
- * Generic pidhash and scalable, time-bounded PID allocator
- *
- * (C) 2002-2003 Nadia Yvette Chambers, IBM
- * (C) 2004 Nadia Yvette Chambers, Oracle
- * (C) 2002-2004 Ingo Molnar, Red Hat
- *
- * pid-structures are backing objects for tasks sharing a given ID to chain
- * against. There is very little to them aside from hashing them and
- * parking tasks using given ID's on a list.
- *
- * The hash is always changed with the tasklist_lock write-acquired,
- * and the hash is only accessed with the tasklist_lock at least
- * read-acquired, so there's no additional SMP locking needed here.
- *
- * We have a list of bitmap pages, which bitmaps represent the PID space.
- * Allocating and freeing PIDs is completely lockless. The worst-case
- * allocation scenario when all but one out of 1 million PIDs possible are
- * allocated already: the scanning of 32 list entries and at most PAGE_SIZE
- * bytes. The typical fastpath is a single successful setbit. Freeing is O(1).
- *
- * Pid namespaces:
- *    (C) 2007 Pavel Emelyanov <xemul@openvz.org>, OpenVZ, SWsoft Inc.
- *    (C) 2007 Sukadev Bhattiprolu <sukadev@us.ibm.com>, IBM
- *     Many thanks to Oleg Nesterov for comments and help
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/mm.h>
 #include <beep/export.h>
 #include <beep/slab.h>

@@ -1,16 +1,20 @@
 /*
- * Support for the Maxtor OneTouch USB hard drive's button
- *
- * Current development and maintenance by:
- *	Copyright (c) 2005 Nick Sillik <n.sillik@temple.edu>
- *
- * Initial work by:
- *	Copyright (c) 2003 Erik Thyren <erth7411@student.uu.se>
- *
- * Based on usbmouse.c (Vojtech Pavlik) and xpad.c (Marko Friedemann)
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

@@ -1,28 +1,20 @@
 /*
- * kernel/workqueue.c - generic async execution with shared worker pool
- *
- * Copyright (C) 2002		Ingo Molnar
- *
- *   Derived from the taskqueue/keventd code by:
- *     David Woodhouse <dwmw2@infradead.org>
- *     Andrew Morton
- *     Kai Petzke <wpp@marie.physik.tu-berlin.de>
- *     Theodore Ts'o <tytso@mit.edu>
- *
- * Made to use alloc_percpu by Christoph Lameter.
- *
- * Copyright (C) 2010		SUSE Beep Products GmbH
- * Copyright (C) 2010		Tejun Heo <tj@kernel.org>
- *
- * This is the generic async execution mechanism.  Work items as are
- * executed in process context.  The worker pool is shared and
- * automatically managed.  There is one worker pool for each CPU and
- * one extra for works which are better served by workers which are
- * not bound to any specific CPU.
- *
- * Please read Documentation/workqueue.txt for details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/export.h>
 #include <beep/kernel.h>
 #include <beep/sched.h>

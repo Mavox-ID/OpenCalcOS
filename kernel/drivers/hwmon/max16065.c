@@ -1,19 +1,20 @@
 /*
- * Driver for
- *  Maxim MAX16065/MAX16066 12-Channel/8-Channel, Flash-Configurable
- *  System Managers with Nonvolatile Fault Registers
- *  Maxim MAX16067/MAX16068 6-Channel, Flash-Configurable System Managers
- *  with Nonvolatile Fault Registers
- *  Maxim MAX16070/MAX16071 12-Channel/8-Channel, Flash-Configurable System
- *  Monitors with Nonvolatile Fault Registers
- *
- * Copyright (C) 2011 Ericsson AB.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; version 2 of the License.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/init.h>

@@ -1,14 +1,20 @@
-/* beep/drivers/char/pc8736x_gpio.c
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-   National Semiconductor PC8736x GPIO driver.  Allows a user space
-   process to play with the GPIO pins.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-   Copyright (c) 2005,2006 Jim Cromie <jim.cromie@gmail.com>
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-   adapted from beep/drivers/char/scx200_gpio.c
-   Copyright (c) 2001,2002 Christer Weinigel <wingel@nano-system.com>,
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #include <beep/fs.h>
 #include <beep/module.h>
 #include <beep/errno.h>

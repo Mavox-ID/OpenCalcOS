@@ -1,16 +1,20 @@
 /*
-	backpack.c (c) 2001 Micro Solutions Inc.
-		Released under the terms of the GNU General Public license
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-	backpack.c is a low-level protocol driver for the Micro Solutions
-		"BACKPACK" parallel port IDE adapter
-		(Works on Series 6 drives)
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-	Written by: Ken Hahn     (beep-dev@micro-solutions.com)
-	            Clive Turvey (beep-dev@micro-solutions.com)
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 /*
    This is Ken's beep wrapper for the PPC library
    Version 1.0.0 is the backpack driver for which source is not available

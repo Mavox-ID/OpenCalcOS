@@ -1,15 +1,20 @@
 /*
- * Racal-Interlan ni5010 Ethernet definitions
- *
- * This is an extension to the Beep operating system, and is covered by the
- * same GNU General Public License that covers that work.
- *
- * copyrights (c) 1996 by Jan-Pascal van Best (jvbest@wi.leidenuniv.nl)
- *
- * I have done a look in the following sources:
- *   crynwr-packet-driver by Russ Nelson
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define NI5010_BUFSIZE	2048	/* number of bytes in a buffer */
 
 #define NI5010_MAGICVAL0 0x00  /* magic-values for ni5010 card */

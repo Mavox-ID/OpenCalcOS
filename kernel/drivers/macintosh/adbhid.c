@@ -1,39 +1,20 @@
 /*
- * drivers/macintosh/adbhid.c
- *
- * ADB HID driver for Power Macintosh computers.
- *
- * Adapted from drivers/macintosh/mac_keyb.c by Franz Sirl.
- * drivers/macintosh/mac_keyb.c was Copyright (C) 1996 Paul Mackerras
- * with considerable contributions from Ben Herrenschmidt and others.
- *
- * Copyright (C) 2000 Franz Sirl.
- *
- * Adapted to ADB changes and support for more devices by
- * Benjamin Herrenschmidt. Adapted from code in MkBeep
- * and reworked.
- * 
- * Supported devices:
- *
- * - Standard 1 button mouse
- * - All standard Apple Extended protocol (handler ID 4)
- * - mouseman and trackman mice & trackballs 
- * - PowerBook Trackpad (default setup: enable tapping)
- * - MicroSpeed mouse & trackball (needs testing)
- * - CH Products Trackball Pro (needs testing)
- * - Contour Design (Contour Mouse)
- * - Hunter digital (NoHandsMouse)
- * - Kensignton TurboMouse 5 (needs testing)
- * - Mouse Systems A3 mice and trackballs <aidan@kublai.com>
- * - MacAlly 2-buttons mouse (needs testing) <pochini@denise.shiny.it>
- *
- * To do:
- *
- * Improve Kensington support.
- * Split mouse/kbd
- * Move to syfs
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/slab.h>
 #include <beep/init.h>

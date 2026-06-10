@@ -1,19 +1,20 @@
 /*
- * LM73 Sensor driver
- * Based on LM75
- *
- * Copyright (C) 2007, CenoSYS (www.cenosys.com).
- * Copyright (C) 2009, Bollore telecom (www.bolloretelecom.eu).
- *
- * Guillaume Ligneul <guillaume.ligneul@gmail.com>
- * Adrien Demarez <adrien.demarez@bolloretelecom.eu>
- * Jeremy Laine <jeremy.laine@bolloretelecom.eu>
- *
- * This software program is licensed subject to the GNU General Public License
- * (GPL).Version 2,June 1991, available at
- * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/i2c.h>

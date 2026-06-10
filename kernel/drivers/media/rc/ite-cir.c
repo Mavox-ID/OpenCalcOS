@@ -1,35 +1,20 @@
 /*
- * Driver for ITE Tech Inc. IT8712F/IT8512 CIR
- *
- * Copyright (C) 2010 Juan Jesús García de Soria <skandalfo@gmail.com>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License as
- * published by the Free Software Foundation; either version 2 of the
- * License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful, but
- * WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
- * General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
- * USA.
- *
- * Inspired by the original lirc_it87 and lirc_ite8709 drivers, on top of the
- * skeleton provided by the nuvoton-cir driver.
- *
- * The lirc_it87 driver was originally written by Hans-Gunter Lutke Uphues
- * <hg_lu@web.de> in 2001, with enhancements by Christoph Bartelmus
- * <lirc@bartelmus.de>, Andrew Calkin <r_tay@hotmail.com> and James Edwards
- * <jimbo-lirc@edwardsclan.net>.
- *
- * The lirc_ite8709 driver was written by Grégory Lardière
- * <spmf2004-lirc@yahoo.fr> in 2008.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/pnp.h>

@@ -1,19 +1,20 @@
 /*
-	This is part of rtl8187 OpenSource driver.
-	Copyright (C) Andrea Merello 2004-2005  <andreamrl@tiscali.it>
-	Released under the terms of GPL (General Public Licence)
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-	Parts of this driver are based on the GPL part of the
-	official Realtek driver.
-	Parts of this driver are based on the rtl8180 driver skeleton
-	from Patric Schenke & Andres Salomon.
-	Parts of this driver are based on the Intel Pro Wireless
-	2100 GPL driver.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-	We want to thank the Authors of those projects
-	and the Ndiswrapper project Authors.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 /* Mariusz Matuszek added full registers definition with Realtek's name */
 
 /* this file contains register definitions for the rtl8187 MAC controller */

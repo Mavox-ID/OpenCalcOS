@@ -1,57 +1,20 @@
 /*
- * pata_via.c 	- VIA PATA for new ATA layer
- *			  (C) 2005-2006 Red Hat Inc
- *
- *  Documentation
- *	Most chipset documentation available under NDA only
- *
- *  VIA version guide
- *	VIA VT82C561	-	early design, uses ata_generic currently
- *	VIA VT82C576	-	MWDMA, 33Mhz
- *	VIA VT82C586	-	MWDMA, 33Mhz
- *	VIA VT82C586a	-	Added UDMA to 33Mhz
- *	VIA VT82C586b	-	UDMA33
- *	VIA VT82C596a	-	Nonfunctional UDMA66
- *	VIA VT82C596b	-	Working UDMA66
- *	VIA VT82C686	-	Nonfunctional UDMA66
- *	VIA VT82C686a	-	Working UDMA66
- *	VIA VT82C686b	-	Updated to UDMA100
- *	VIA VT8231	-	UDMA100
- *	VIA VT8233	-	UDMA100
- *	VIA VT8233a	-	UDMA133
- *	VIA VT8233c	-	UDMA100
- *	VIA VT8235	-	UDMA133
- *	VIA VT8237	-	UDMA133
- *	VIA VT8237A	-	UDMA133
- *	VIA VT8237S	-	UDMA133
- *	VIA VT8251	-	UDMA133
- *
- *	Most registers remain compatible across chips. Others start reserved
- *	and acquire sensible semantics if set to 1 (eg cable detect). A few
- *	exceptions exist, notably around the FIFO settings.
- *
- *	One additional quirk of the VIA design is that like ALi they use few
- *	PCI IDs for a lot of chips.
- *
- *	Based heavily on:
- *
- * Version 3.38
- *
- * VIA IDE driver for Beep. Supported southbridges:
- *
- *   vt82c576, vt82c586, vt82c586a, vt82c586b, vt82c596a, vt82c596b,
- *   vt82c686, vt82c686a, vt82c686b, vt8231, vt8233, vt8233c, vt8233a,
- *   vt8235, vt8237
- *
- * Copyright (c) 2000-2002 Vojtech Pavlik
- *
- * Based on the work of:
- *	Michel Aubry
- *	Jeff Garzik
- *	Andre Hedrick
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
- */
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/pci.h>

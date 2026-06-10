@@ -1,42 +1,20 @@
 /*
- *  beep/net/sunrpc/xprt.c
- *
- *  This is a generic RPC call interface supporting congestion avoidance,
- *  and asynchronous calls.
- *
- *  The interface works like this:
- *
- *  -	When a process places a call, it allocates a request slot if
- *	one is available. Otherwise, it sleeps on the backlog queue
- *	(xprt_reserve).
- *  -	Next, the caller puts together the RPC message, stuffs it into
- *	the request struct, and calls xprt_transmit().
- *  -	xprt_transmit sends the message and installs the caller on the
- *	transport's wait list. At the same time, if a reply is expected,
- *	it installs a timer that is run after the packet's timeout has
- *	expired.
- *  -	When a packet arrives, the data_ready handler walks the list of
- *	pending requests for that transport. If a matching XID is found, the
- *	caller is woken up, and the timer removed.
- *  -	When no reply arrives within the timeout interval, the timer is
- *	fired by the kernel and runs xprt_timer(). It either adjusts the
- *	timeout values (minor timeout) or wakes up the caller with a status
- *	of -ETIMEDOUT.
- *  -	When the caller receives a notification from RPC that a reply arrived,
- *	it should release the RPC slot, and process the reply.
- *	If the call timed out, it may choose to retry the operation by
- *	adjusting the initial timeout value, and simply calling rpc_call
- *	again.
- *
- *  Support for async RPC is done through a set of RPC-specific scheduling
- *  primitives that `transparently' work for processes as well as async
- *  tasks that rely on callbacks.
- *
- *  Copyright (C) 1995-1997, Olaf Kirch <okir@monad.swb.de>
- *
- *  Transport switch API copyright (C) 2005, Chuck Lever <cel@netapp.com>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 
 #include <beep/types.h>

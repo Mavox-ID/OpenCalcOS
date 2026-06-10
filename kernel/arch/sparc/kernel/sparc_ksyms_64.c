@@ -1,10 +1,20 @@
-/* arch/sparc64/kernel/sparc64_ksyms.c: Sparc64 specific ksyms support.
- *
- * Copyright (C) 1996, 2007 David S. Miller (davem@davemloft.net)
- * Copyright (C) 1996 Eddie C. Dost (ecd@skynet.be)
- * Copyright (C) 1999 Jakub Jelinek (jj@ultra.beep.cz)
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/export.h>
 #include <beep/pci.h>
 #include <beep/init.h>

@@ -1,40 +1,20 @@
 /*
- *
- * keyboard input driver for i2c IR remote controls
- *
- * Copyright (c) 2000-2003 Gerd Knorr <kraxel@bytesex.org>
- * modified for PixelView (BT878P+W/FM) by
- *      Michal Kochanowicz <mkochano@pld.org.pl>
- *      Christoph Bartelmus <lirc@bartelmus.de>
- * modified for KNC ONE TV Station/Anubis Typhoon TView Tuner by
- *      Ulrich Mueller <ulrich.mueller42@web.de>
- * modified for em2820 based USB TV tuners by
- *      Markus Rechberger <mrechberger@gmail.com>
- * modified for DViCO Fusion HDTV 5 RT GOLD by
- *      Chaogui Zhang <czhang1974@gmail.com>
- * modified for MSI TV@nywhere Plus by
- *      Henry Wong <henry@stuffedcow.net>
- *      Mark Schultz <n9xmj@yahoo.com>
- *      Brian Rogers <brian_rogers@comcast.net>
- * modified for AVerMedia Cardbus by
- *      Oldrich Jedlicka <oldium.pro@seznam.cz>
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/kernel.h>

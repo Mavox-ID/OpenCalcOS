@@ -1,23 +1,20 @@
 /*
- *  User-space visible declarations for NFS client per-mount
- *  point statistics
- *
- *  Copyright (C) 2005, 2006 Chuck Lever <cel@netapp.com>
- *
- *  NFS client per-mount statistics provide information about the
- *  health of the NFS client and the health of each NFS mount point.
- *  Generally these are not for detailed problem diagnosis, but
- *  simply to indicate that there is a problem.
- *
- *  These counters are not meant to be human-readable, but are meant
- *  to be integrated into system monitoring tools such as "sar" and
- *  "iostat".  As such, the counters are sampled by the tools over
- *  time, and are never zeroed after a file system is mounted.
- *  Moving averages can be computed by the tools by taking the
- *  difference between two instantaneous samples  and dividing that
- *  by the time between the samples.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _BEEP_NFS_IOSTAT
 #define _BEEP_NFS_IOSTAT
 

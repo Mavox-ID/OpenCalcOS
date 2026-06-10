@@ -1,15 +1,20 @@
 /*
- *  beep/arch/arm/kernel/dma-ebsa285.c
- *
- *  Copyright (C) 1998 Phil Blundell
- *
- * DMA functions specific to EBSA-285/CATS architectures
- *
- *  Changelog:
- *   09-Nov-1998 RMK	Split out ISA DMA functions to dma-isa.c
- *   17-Mar-1999 RMK	Allow any EBSA285-like architecture to have
- *			ISA DMA controllers.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/io.h>
 #include <beep/spinlock.h>

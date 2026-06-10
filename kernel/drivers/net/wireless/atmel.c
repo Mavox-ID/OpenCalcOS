@@ -1,44 +1,20 @@
-/*** -*- beep-c -*- **********************************************************
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-     Driver for Atmel at76c502 at76c504 and at76c506 wireless cards.
-
-	Copyright 2000-2001 ATMEL Corporation.
-	Copyright 2003-2004 Simon Kelley.
-
-    This code was developed from version 2.1.1 of the Atmel drivers,
-    released by Atmel corp. under the GPL in December 2002. It also
-    includes code from the Beep aironet drivers (C) Benjamin Reed,
-    and the Beep PCMCIA package, (C) David Hinds and the Beep wireless
-    extensions, (C) Jean Tourrilhes.
-
-    The firmware module for reading the MAC address of the card comes from
-    net.russotto.AtmelMACFW, written by Matthew T. Russotto and copyright
-    by him. net.russotto.AtmelMACFW is used under the GPL license version 2.
-    This file contains the module in binary form and, under the terms
-    of the GPL, in source form. The source is located at the end of the file.
-
-    This program is free software; you can redistribute it and/or modify
+    This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
+    the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    This software is distributed in the hope that it will be useful,
+    This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with Atmel wireless lan drivers; if not, write to the Free Software
-    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-
-    For all queries about this code, please contact the current author,
-    Simon Kelley <simon@thekelleys.org.uk> and not Atmel Corporation.
-
-    Credit is due to HP UK and Cambridge Online Systems Ltd for supplying
-    hardware used during development of this driver.
-
-******************************************************************************/
-
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/interrupt.h>
 

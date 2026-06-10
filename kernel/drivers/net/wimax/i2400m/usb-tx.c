@@ -1,73 +1,20 @@
 /*
- * Intel Wireless WiMAX Connection 2400m
- * USB specific TX handling
- *
- *
- * Copyright (C) 2007-2008 Intel Corporation. All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- *
- *   * Redistributions of source code must retain the above copyright
- *     notice, this list of conditions and the following disclaimer.
- *   * Redistributions in binary form must reproduce the above copyright
- *     notice, this list of conditions and the following disclaimer in
- *     the documentation and/or other materials provided with the
- *     distribution.
- *   * Neither the name of Intel Corporation nor the names of its
- *     contributors may be used to endorse or promote products derived
- *     from this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
- * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
- * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
- * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
- * OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
- * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
- * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
- * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
- * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *
- *
- * Intel Corporation <beep-wimax@intel.com>
- * Yanir Lubetkin <yanirx.lubetkin@intel.com>
- *  - Initial implementation
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- *  - Split transport/device specific
- *
- *
- * Takes the TX messages in the i2400m's driver TX FIFO and sends them
- * to the device until there are no more.
- *
- * If we fail sending the message, we just drop it. There isn't much
- * we can do at this point. We could also retry, but the USB stack has
- * already retried and still failed, so there is not much of a
- * point. As well, most of the traffic is network, which has recovery
- * methods for dropped packets.
- *
- * For sending we just obtain a FIFO buffer to send, send it to the
- * USB bulk out, tell the TX FIFO code we have sent it; query for
- * another one, etc... until done.
- *
- * We use a thread so we can call usb_autopm_enable() and
- * usb_autopm_disable() for each transaction; this way when the device
- * goes idle, it will suspend. It also has less overhead than a
- * dedicated workqueue, as it is being used for a single task.
- *
- * ROADMAP
- *
- * i2400mu_tx_setup()
- * i2400mu_tx_release()
- *
- * i2400mu_bus_tx_kick()	- Called by the tx.c code when there
- *                                is new data in the FIFO.
- * i2400mu_txd()
- *   i2400m_tx_msg_get()
- *   i2400m_tx_msg_sent()
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "i2400m-usb.h"
 
 

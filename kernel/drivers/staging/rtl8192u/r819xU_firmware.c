@@ -1,17 +1,20 @@
-/**************************************************************************************************
- * Procedure:    Init boot code/firmware code/data session
- *
- * Description: This routine will initialize firmware. If any error occurs during the initialization
- * 		process, the routine shall terminate immediately and return fail.
- *		NIC driver should call NdisOpenFile only from MiniportInitialize.
- *
- * Arguments:   The pointer of the adapter
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
- * Returns:
- *        NDIS_STATUS_FAILURE - the following initialization process should be terminated
- *        NDIS_STATUS_SUCCESS - if firmware initialization process success
-**************************************************************************************************/
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "r8192U.h"
 #include "r8192U_hw.h"
 #include "r819xU_firmware_img.h"

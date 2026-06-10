@@ -1,34 +1,20 @@
 /*
- * netfilter module for userspace packet logging daemons
- *
- * (C) 2000-2004 by Harald Welte <laforge@netfilter.org>
- * (C) 1999-2001 Paul `Rusty' Russell
- * (C) 2002-2004 Netfilter Core Team <coreteam@netfilter.org>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * This module accepts two parameters:
- *
- * nlbufsiz:
- *   The parameter specifies how big the buffer for each netlink multicast
- * group is. e.g. If you say nlbufsiz=8192, up to eight kb of packets will
- * get accumulated in the kernel until they are sent to userspace. It is
- * NOT possible to allocate more than 128kB, and it is strongly discouraged,
- * because atomically allocating 128kB inside the network rx softirq is not
- * reliable. Please also keep in mind that this buffer size is allocated for
- * each nlgroup you are using, so the total kernel memory usage increases
- * by that factor.
- *
- * Actually you should use nlbufsiz a bit smaller than PAGE_SIZE, since
- * nlbufsiz is used with alloc_skb, which adds another
- * sizeof(struct skb_shared_info).  Use NLMSG_GOODSIZE instead.
- *
- * flushtimeout:
- *   Specify, after how many hundredths of a second the queue should be
- *   flushed even if it is not full yet.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 #include <beep/module.h>
 #include <beep/spinlock.h>

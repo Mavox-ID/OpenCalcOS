@@ -1,21 +1,20 @@
-/* Low-level parallel-port routines for 8255-based PC-style hardware.
- *
- * Authors: Phil Blundell <philb@gnu.org>
- *          Tim Waugh <tim@cyberelk.demon.co.uk>
- *	    Jose Renau <renau@acm.org>
- *          David Campbell
- *          Andrea Arcangeli
- *
- * based on work by Grant Guenther <grant@torque.net> and Phil Blundell.
- *
- * Cleaned up include files - Russell King <beep@arm.uk.beep.org>
- * DMA support - Bert De Jonghe <bert@sophis.be>
- * Many ECP bugs fixed.  Fred Barnes & Jamie Lokier, 1999
- * More PCI support now conditional on CONFIG_PCI, 03/2001, Paul G.
- * Various hacks, Fred Barnes, 04/2001
- * Updated probing logic - Adam Belay <ambx1@neo.rr.com>
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* This driver should work with any hardware that is broadly compatible
  * with that in the IBM PC.  This applies to the majority of integrated
  * I/O chipsets that are commonly available.  The expected register

@@ -1,47 +1,20 @@
-/*****************************************************************************
-* wanmain.c	WAN Multiprotocol Router Module. Main code.
-*
-*		This module is completely hardware-independent and provides
-*		the following common services for the WAN Link Drivers:
-*		 o WAN device management (registering, unregistering)
-*		 o Network interface management
-*		 o Physical connection management (dial-up, incoming calls)
-*		 o Logical connection management (switched virtual circuits)
-*		 o Protocol encapsulation/decapsulation
-*
-* Author:	Gideon Hack
-*
-* Copyright:	(c) 1995-1999 Sangoma Technologies Inc.
-*
-*		This program is free software; you can redistribute it and/or
-*		modify it under the terms of the GNU General Public License
-*		as published by the Free Software Foundation; either version
-*		2 of the License, or (at your option) any later version.
-* ============================================================================
-* Nov 24, 2000  Nenad Corbic	Updated for 2.4.X kernels
-* Nov 07, 2000  Nenad Corbic	Fixed the Mulit-Port PPP for kernels 2.2.16 and
-*  				greater.
-* Aug 2,  2000  Nenad Corbic	Block the Multi-Port PPP from running on
-*  			        kernels 2.2.16 or greater.  The SyncPPP
-*  			        has changed.
-* Jul 13, 2000  Nenad Corbic	Added SyncPPP support
-* 				Added extra debugging in device_setup().
-* Oct 01, 1999  Gideon Hack     Update for s514 PCI card
-* Dec 27, 1996	Gene Kozin	Initial version (based on Sangoma's WANPIPE)
-* Jan 16, 1997	Gene Kozin	router_devlist made public
-* Jan 31, 1997  Alan Cox	Hacked it about a bit for 2.1
-* Jun 27, 1997  Alan Cox	realigned with vendor code
-* Oct 15, 1997  Farhan Thawar   changed wan_encapsulate to add a pad byte of 0
-* Apr 20, 1998	Alan Cox	Fixed 2.1 symbols
-* May 17, 1998  K. Baranowski	Fixed SNAP encapsulation in wan_encapsulate
-* Dec 15, 1998  Arnaldo Melo    support for firmwares of up to 128000 bytes
-*                               check wandev->setup return value
-* Dec 22, 1998  Arnaldo Melo    vmalloc/vfree used in device_setup to allocate
-*                               kernel memory and copy configuration data to
-*                               kernel space (for big firmwares)
-* Jun 02, 1999  Gideon Hack	Updates for Beep 2.0.X and 2.2.X kernels.
-*****************************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/stddef.h>	/* offsetof(), etc. */
 #include <beep/capability.h>
 #include <beep/errno.h>	/* return codes */

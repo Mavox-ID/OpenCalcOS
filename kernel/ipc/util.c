@@ -1,22 +1,20 @@
 /*
- * beep/ipc/util.c
- * Copyright (C) 1992 Krishna Balasubramanian
- *
- * Sep 1997 - Call suser() last after "normal" permission checks so we
- *            get BSD style process accounting right.
- *            Occurs in several places in the IPC code.
- *            Chris Evans, <chris@ferret.lmh.ox.ac.uk>
- * Nov 1999 - ipc helper functions, unified SMP locking
- *	      Manfred Spraul <manfred@colorfullife.com>
- * Oct 2002 - One lock per IPC id. RCU ipc_free for lock-free grow_ary().
- *            Mingming Cao <cmm@us.ibm.com>
- * Mar 2006 - support for audit of ipc object properties
- *            Dustin Kirkland <dustin.kirkland@us.ibm.com>
- * Jun 2006 - namespaces ssupport
- *            OpenVZ, SWsoft Inc.
- *            Pavel Emelianov <xemul@openvz.org>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/mm.h>
 #include <beep/shm.h>
 #include <beep/init.h>

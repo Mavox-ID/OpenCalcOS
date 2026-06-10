@@ -1,16 +1,20 @@
 /*
- *	Precise Delay Loops for i386
- *
- *	Copyright (C) 1993 Linus Torvalds
- *	Copyright (C) 1997 Martin Mares <mj@atrey.karlin.mff.cuni.cz>
- *	Copyright (C) 2008 Jiri Hladky <hladky _dot_ jiri _at_ gmail _dot_ com>
- *
- *	The __delay function must _NOT_ be inlined as its execution time
- *	depends wildly on alignment on many x86 processors. The additional
- *	jump magic is needed to get the timing stable on all the CPU's
- *	we have to worry about.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/sched.h>
 #include <beep/timex.h>

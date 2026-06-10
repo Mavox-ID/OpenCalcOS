@@ -1,16 +1,20 @@
 /*
- * Interrupt request handling routines. On the
- * Sparc the IRQs are basically 'cast in stone'
- * and you are supposed to probe the prom's device
- * node trees to find out who's got which IRQ.
- *
- *  Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
- *  Copyright (C) 1995 Miguel de Icaza (miguel@nuclecu.unam.mx)
- *  Copyright (C) 1995,2002 Pete A. Zaitcev (zaitcev@yahoo.com)
- *  Copyright (C) 1996 Dave Redman (djhr@tadpole.co.uk)
- *  Copyright (C) 1998-2000 Anton Blanchard (anton@samba.org)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel_stat.h>
 #include <beep/seq_file.h>
 #include <beep/export.h>

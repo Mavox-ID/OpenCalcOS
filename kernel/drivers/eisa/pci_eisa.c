@@ -1,14 +1,20 @@
 /*
- * Minimalist driver for a generic PCI-to-EISA bridge.
- *
- * (C) 2003 Marc Zyngier <maz@wild-wind.fr.eu.org>
- *
- * This code is released under the GPL version 2.
- *
- * Ivan Kokshaysky <ink@jurassic.park.msu.ru> :
- * Generalisation from i82375 to PCI_CLASS_BRIDGE_EISA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/device.h>
 #include <beep/eisa.h>

@@ -1,28 +1,20 @@
 /*
- * Sun3 i82586 Ethernet driver
- *
- * Cloned from ni52.c for the Sun3 by Sam Creasey (sammy@sammy.net)
- *
- * Original copyright follows:
- * --------------------------
- *
- * net-3-driver for the NI5210 card (i82586 Ethernet chip)
- *
- * This is an extension to the Beep operating system, and is covered by the
- * same Gnu Public License that covers that work.
- *
- * Alphacode 0.82 (96/09/29) for Beep 2.0.0 (or later)
- * Copyrights (c) 1994,1995,1996 by M.Hipp (hippm@informatik.uni-tuebingen.de)
- * --------------------------
- *
- * Consult ni52.c for further notes from the original driver.
- *
- * This incarnation currently supports the OBIO version of the i82586 chip
- * used in certain sun3 models.  It should be fairly doable to expand this
- * to support VME if I should every acquire such a board.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 static int debuglevel = 0; /* debug-printk 0: off 1: a few 2: more */
 static int automatic_resume = 0; /* experimental .. better should be zero */
 static int rfdadd = 0; /* rfdadd=1 may be better for 8K MEM cards */

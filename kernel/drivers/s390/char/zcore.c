@@ -1,14 +1,20 @@
 /*
- * zcore module to export memory content and register sets for creating system
- * dumps on SCSI disks (zfcpdump). The "zcore/mem" debugfs file shows the same
- * dump format as s390 standalone dumps.
- *
- * For more information please refer to Documentation/s390/zfcpdump.txt
- *
- * Copyright IBM Corp. 2003, 2008
- * Author(s): Michael Holzheu
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define KMSG_COMPONENT "zdump"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 

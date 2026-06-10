@@ -1,17 +1,20 @@
-/* sound/soc/samsung/s3c-i2s-v2.h
- *
- * ALSA Soc Audio Layer - S3C_I2SV2 I2S driver
- *
- * Copyright (c) 2007 Simtec Electronics
- *	http://armbeep.simtec.co.uk/
- *	Ben Dooks <ben@simtec.co.uk>
- *
- *  This program is free software; you can redistribute  it and/or modify it
- *  under  the terms of  the GNU General  Public License as published by the
- *  Free Software Foundation;  either version 2 of the  License, or (at your
- *  option) any later version.
-*/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* This code is the core support for the I2S block found in a number of
  * Samsung SoC devices which is unofficially named I2S-V2. Currently the
  * S3C2412 and the S3C64XX series use this block to provide 1 or 2 I2S

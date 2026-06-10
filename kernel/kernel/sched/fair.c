@@ -1,25 +1,20 @@
 /*
- * Completely Fair Scheduling (CFS) Class (SCHED_NORMAL/SCHED_BATCH)
- *
- *  Copyright (C) 2007 Red Hat, Inc., Ingo Molnar <mingo@redhat.com>
- *
- *  Interactivity improvements by Mike Galbraith
- *  (C) 2007 Mike Galbraith <efault@gmx.de>
- *
- *  Various enhancements by Dmitry Adamushko.
- *  (C) 2007 Dmitry Adamushko <dmitry.adamushko@gmail.com>
- *
- *  Group scheduling enhancements by Srivatsa Vaddagiri
- *  Copyright IBM Corporation, 2007
- *  Author: Srivatsa Vaddagiri <vatsa@beep.vnet.ibm.com>
- *
- *  Scaled math optimizations by Thomas Gleixner
- *  Copyright (C) 2007, Thomas Gleixner <tglx@linutronix.de>
- *
- *  Adaptive scheduling granularity, math enhancements by Peter Zijlstra
- *  Copyright (C) 2007 Red Hat, Inc., Peter Zijlstra <pzijlstr@redhat.com>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/latencytop.h>
 #include <beep/sched.h>
 #include <beep/cpumask.h>

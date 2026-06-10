@@ -1,25 +1,20 @@
 /*
- This is the program used to generate below table.
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-#include <stdio.h>
-#include <math.h>
-int main() {
-  int dB2;
-  printf("/" "* This file is only included exactly once!\n");
-  printf(" *\n");
-  printf(" * If they'd only tell us that generating this table was\n");
-  printf(" * as easy as calculating\n");
-  printf(" *      hwvalue = 1048576.0*exp(0.057564628*dB*2)\n");
-  printf(" * :) *" "/\n");
-  printf("static int tas_gaintable[] = {\n");
-  printf("	0x000000, /" "* -infinity dB *" "/\n");
-  for (dB2=-140;dB2<=36;dB2++)
-    printf("	0x%.6x, /" "* %-02.1f dB *" "/\n", (int)(1048576.0*exp(0.057564628*dB2)), dB2/2.0);
-  printf("};\n\n");
-}
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 /* This file is only included exactly once!
  *
  * If they'd only tell us that generating this table was

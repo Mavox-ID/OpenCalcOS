@@ -1,49 +1,20 @@
 /*
- *
- * hfcpci.c     low level driver for CCD's hfc-pci based cards
- *
- * Author     Werner Cornelius (werner@isdn4beep.de)
- *            based on existing driver for CCD hfc ISA cards
- *            type approval valid for HFC-S PCI A based card
- *
- * Copyright 1999  by Werner Cornelius (werner@isdn-development.de)
- * Copyright 2008  by Karsten Keil <kkeil@novell.com>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- *
- * Module options:
- *
- * debug:
- *	NOTE: only one poll value must be given for all cards
- *	See hfc_pci.h for debug flags.
- *
- * poll:
- *	NOTE: only one poll value must be given for all cards
- *	Give the number of samples for each fifo process.
- *	By default 128 is used. Decrease to reduce delay, increase to
- *	reduce cpu load. If unsure, don't mess with it!
- *	A value of 128 will use controller's interrupt. Other values will
- *	use kernel timer, because the controller will not allow lower values
- *	than 128.
- *	Also note that the value depends on the kernel timer frequency.
- *	If kernel uses a frequency of 1000 Hz, steps of 8 samples are possible.
- *	If the kernel uses 100 Hz, steps of 80 samples are possible.
- *	If the kernel uses 300 Hz, steps of about 26 samples are possible.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/interrupt.h>
 #include <beep/module.h>
 #include <beep/pci.h>

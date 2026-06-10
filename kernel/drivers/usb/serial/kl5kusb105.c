@@ -1,35 +1,20 @@
 /*
- * KLSI KL5KUSB105 chip RS232 converter driver
- *
- *   Copyright (C) 2010 Johan Hovold <jhovold@gmail.com>
- *   Copyright (C) 2001 Utz-Uwe Haus <haus@uuhaus.de>
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 2 of the License, or
- *   (at your option) any later version.
- *
- * All information about the device was acquired using SniffUSB ans snoopUSB
- * on Windows98.
- * It was written out of frustration with the PalmConnect USB Serial adapter
- * sold by Palm Inc.
- * Neither Palm, nor their contractor (MCCI) or their supplier (KLSI) provided
- * information that was not already available.
- *
- * It seems that KLSI bought some silicon-design information from ScanLogic,
- * whose SL11R processor is at the core of the KL5KUSB chipset from KLSI.
- * KLSI has firmware available for their devices; it is probable that the
- * firmware differs from that used by KLSI in their products. If you have an
- * original KLSI device and can provide some information on it, I would be
- * most interested in adding support for it here. If you have any information
- * on the protocol used (or find errors in my reverse-engineered stuff), please
- * let me know.
- *
- * The code was only tested with a PalmConnect USB adapter; if you
- * are adventurous, try it with any KLSI-based device and let me know how it
- * breaks so that I can fix it!
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* TODO:
  *	check modem line signals
  *	implement handshaking or decide that we do not support it

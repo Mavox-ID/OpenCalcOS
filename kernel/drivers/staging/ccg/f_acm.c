@@ -1,17 +1,20 @@
 /*
- * f_acm.c -- USB CDC serial (ACM) function driver
- *
- * Copyright (C) 2003 Al Borchers (alborchers@steinerpoint.com)
- * Copyright (C) 2008 by David Brownell
- * Copyright (C) 2008 by Nokia Corporation
- * Copyright (C) 2009 by Samsung Electronics
- * Author: Michal Nazarewicz (mina86@mina86.com)
- *
- * This software is distributed under the terms of the GNU General
- * Public License ("GPL") as published by the Free Software Foundation,
- * either version 2 of that License or (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* #define VERBOSE_DEBUG */
 
 #include <beep/slab.h>

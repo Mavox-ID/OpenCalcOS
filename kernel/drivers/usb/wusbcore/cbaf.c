@@ -1,91 +1,20 @@
 /*
- * Wireless USB - Cable Based Association
- *
- *
- * Copyright (C) 2006 Intel Corporation
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- * Copyright (C) 2008 Cambridge Silicon Radio Ltd.
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License version
- * 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- * 02110-1301, USA.
- *
- *
- * WUSB devices have to be paired (associated in WUSB lingo) so
- * that they can connect to the system.
- *
- * One way of pairing is using CBA-Cable Based Association. First
- * time you plug the device with a cable, association is done between
- * host and device and subsequent times, you can connect wirelessly
- * without having to associate again. That's the idea.
- *
- * This driver does nothing Earth shattering. It just provides an
- * interface to chat with the wire-connected device so we can get a
- * CDID (device ID) that might have been previously associated to a
- * CHID (host ID) and to set up a new <CHID,CDID,CK> triplet
- * (connection context), with the CK being the secret, or connection
- * key. This is the pairing data.
- *
- * When a device with the CBA capability connects, the probe routine
- * just creates a bunch of sysfs files that a user space enumeration
- * manager uses to allow it to connect wirelessly to the system or not.
- *
- * The process goes like this:
- *
- * 1. Device plugs, cbaf is loaded, notifications happen.
- *
- * 2. The connection manager (CM) sees a device with CBAF capability
- *    (the wusb_chid etc. files in /sys/devices/blah/OURDEVICE).
- *
- * 3. The CM writes the host name, supported band groups, and the CHID
- *    (host ID) into the wusb_host_name, wusb_host_band_groups and
- *    wusb_chid files. These get sent to the device and the CDID (if
- *    any) for this host is requested.
- *
- * 4. The CM can verify that the device's supported band groups
- *    (wusb_device_band_groups) are compatible with the host.
- *
- * 5. The CM reads the wusb_cdid file.
- *
- * 6. The CM looks up its database
- *
- * 6.1 If it has a matching CHID,CDID entry, the device has been
- *     authorized before (paired) and nothing further needs to be
- *     done.
- *
- * 6.2 If the CDID is zero (or the CM doesn't find a matching CDID in
- *     its database), the device is assumed to be not known.  The CM
- *     may associate the host with device by: writing a randomly
- *     generated CDID to wusb_cdid and then a random CK to wusb_ck
- *     (this uploads the new CC to the device).
- *
- *     CMD may choose to prompt the user before associating with a new
- *     device.
- *
- * 7. Device is unplugged.
- *
- * When the device tries to connect wirelessly, it will present its
- * CDID to the WUSB host controller.  The CM will query the
- * database. If the CHID/CDID pair found, it will (with a 4-way
- * handshake) challenge the device to demonstrate it has the CK secret
- * key (from our database) without actually exchanging it. Once
- * satisfied, crypto keys are derived from the CK, the device is
- * connected and all communication is encrypted.
- *
- * References:
- *   [WUSB-AM] Association Models Supplement to the Certified Wireless
- *             Universal Serial Bus Specification, version 1.0.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/ctype.h>
 #include <beep/usb.h>

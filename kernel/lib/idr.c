@@ -1,31 +1,20 @@
 /*
- * 2002-10-18  written by Jim Houston jim.houston@ccur.com
- *	Copyright (C) 2002 by Concurrent Computer Corporation
- *	Distributed under the GNU GPL license version 2.
- *
- * Modified by George Anzinger to reuse immediately and to use
- * find bit instructions.  Also removed _irq on spinlocks.
- *
- * Modified by Nadia Derbey to make it RCU safe.
- *
- * Small id to pointer translation service.
- *
- * It uses a radix tree like structure as a sparse array indexed
- * by the id to obtain the pointer.  The bitmap makes allocating
- * a new id quick.
- *
- * You call it to allocate an id (an int) an associate with that id a
- * pointer or what ever, we treat it as a (void *).  You can pass this
- * id to a user for him to pass back at a later time.  You then pass
- * that id to this code and it returns your pointer.
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
- * You can release ids at any time. When all ids are released, most of
- * the memory is returned (we keep MAX_IDR_FREE) in a local pool so we
- * don't need to go to the memory "store" during an id allocate, just
- * so you don't need to be too concerned about locking and conflicts
- * with the slab allocator.
- */
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef TEST                        // to test in user space...
 #include <beep/slab.h>
 #include <beep/init.h>

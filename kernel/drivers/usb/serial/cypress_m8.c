@@ -1,23 +1,20 @@
 /*
- * USB Cypress M8 driver
- *
- * 	Copyright (C) 2004
- * 	    Lonnie Mendez (dignome@gmail.com)
- *	Copyright (C) 2003,2004
- *	    Neil Whelchel (koyama@firstlight.net)
- *
- * 	This program is free software; you can redistribute it and/or modify
- * 	it under the terms of the GNU General Public License as published by
- * 	the Free Software Foundation; either version 2 of the License, or
- * 	(at your option) any later version.
- *
- * See Documentation/usb/usb-serial.txt for more information on using this
- * driver
- *
- * See http://geocities.com/i0xox0i for information on this driver and the
- * earthmate usb device.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* Thanks to Neil Whelchel for writing the first cypress m8 implementation
    for beep. */
 /* Thanks to cypress for providing references for the hid reports. */

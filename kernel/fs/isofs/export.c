@@ -1,18 +1,20 @@
 /*
- * fs/isofs/export.c
- *
- *  (C) 2004  Paul Serice - The new inode scheme requires switching
- *                          from iget() to iget5_locked() which means
- *                          the NFS export operations have to be hand
- *                          coded because the default routines rely on
- *                          iget().
- *
- * The following files are helpful:
- *
- *     Documentation/filesystems/nfs/Exporting
- *     fs/exportfs/expfs.c.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "isofs.h"
 
 static struct dentry *

@@ -1,20 +1,20 @@
-/*======================================================================
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-    NinjaSCSI-3 / NinjaSCSI-32Bi PCMCIA SCSI host adapter card driver
-      By: YOKOTA Hiroshi <yokota@netlab.is.tsukuba.ac.jp>
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-    Ver.2.8   Support 32bit MMIO mode
-              Support Synchronous Data Transfer Request (SDTR) mode
-    Ver.2.0   Support 32bit PIO mode
-    Ver.1.1.2 Fix for scatter list buffer exceeds
-    Ver.1.1   Support scatter list
-    Ver.0.1   Initial version
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-    This software may be used and distributed according to the terms of
-    the GNU General Public License.
-
-======================================================================*/
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /***********************************************************************
     This driver is for these PCcards.
 

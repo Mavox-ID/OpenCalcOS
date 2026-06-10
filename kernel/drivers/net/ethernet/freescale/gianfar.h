@@ -1,25 +1,20 @@
 /*
- * drivers/net/ethernet/freescale/gianfar.h
- *
- * Gianfar Ethernet Driver
- * Driver for FEC on MPC8540 and TSEC on MPC8540/MPC8560
- * Based on 8260_io/fcc_enet.c
- *
- * Author: Andy Fleming
- * Maintainer: Kumar Gala
- * Modifier: Sandeep Gopalpet <sandeep.kumar@freescale.com>
- *
- * Copyright 2002-2009, 2011 Freescale Semiconductor, Inc.
- *
- * This program is free software; you can redistribute  it and/or modify it
- * under  the terms of  the GNU General  Public License as published by the
- * Free Software Foundation;  either version 2 of the  License, or (at your
- * option) any later version.
- *
- *  Still left to do:
- *      -Add support for module parameters
- *	-Add patch for ethtool phys id
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __GIANFAR_H
 #define __GIANFAR_H
 

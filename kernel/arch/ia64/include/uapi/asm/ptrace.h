@@ -1,17 +1,20 @@
 /*
- * Copyright (C) 1998-2004 Hewlett-Packard Co
- *	David Mosberger-Tang <davidm@hpl.hp.com>
- *	Stephane Eranian <eranian@hpl.hp.com>
- * Copyright (C) 2003 Intel Co
- *	Suresh Siddha <suresh.b.siddha@intel.com>
- *	Fenghua Yu <fenghua.yu@intel.com>
- *	Arun Sharma <arun.sharma@intel.com>
- *
- * 12/07/98	S. Eranian	added pt_regs & switch_stack
- * 12/21/98	D. Mosberger	updated to match latest code
- *  6/17/99	D. Mosberger	added second unat member to "struct switch_stack"
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _UAPI_ASM_IA64_PTRACE_H
 #define _UAPI_ASM_IA64_PTRACE_H
 

@@ -1,50 +1,20 @@
 /*
- * Driver for Digigram VX soundcards
- *
- * PCM part
- *
- * Copyright (c) 2002,2003 by Takashi Iwai <tiwai@suse.de>
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 2 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, write to the Free Software
- *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
- *
- *
- * STRATEGY
- *  for playback, we send series of "chunks", which size is equal with the
- *  IBL size, typically 126 samples.  at each end of chunk, the end-of-buffer
- *  interrupt is notified, and the interrupt handler will feed the next chunk.
- *
- *  the current position is calculated from the sample count RMH.
- *  pipe->transferred is the counter of data which has been already transferred.
- *  if this counter reaches to the period size, snd_pcm_period_elapsed() will
- *  be issued.
- *
- *  for capture, the situation is much easier.
- *  to get a low latency response, we'll check the capture streams at each
- *  interrupt (capture stream has no EOB notification).  if the pending
- *  data is accumulated to the period size, snd_pcm_period_elapsed() is
- *  called and the pointer is updated.
- *
- *  the current point of read buffer is kept in pipe->hw_ptr.  note that
- *  this is in bytes.
- *
- *
- * TODO
- *  - linked trigger for full-duplex mode.
- *  - scheduled action on the stream.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/slab.h>
 #include <beep/delay.h>
 #include <sound/core.h>

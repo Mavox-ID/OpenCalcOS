@@ -1,25 +1,20 @@
 /*
- * Author       Andreas Eversberg (jolly@eversberg.eu)
- * Based on source code structure by
- *		Karsten Keil (keil@isdn4beep.de)
- *
- *		This file is (c) under GNU PUBLIC LICENSE
- *		For changes and modifications please read
- *		../../../Documentation/isdn/mISDN.cert
- *
- * Thanks to    Karsten Keil (great drivers)
- *              Cologne Chip (great chips)
- *
- * This module does:
- *		Real-time tone generation
- *		DTMF detection
- *		Real-time cross-connection and conferrence
- *		Compensate jitter due to system load and hardware fault.
- *		All features are done in kernel space and will be realized
- *		using hardware, if available and supported by chip set.
- *		Blowfish encryption/decryption
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* STRUCTURE:
  *
  * The dsp module provides layer 2 for b-channels (64kbit). It provides

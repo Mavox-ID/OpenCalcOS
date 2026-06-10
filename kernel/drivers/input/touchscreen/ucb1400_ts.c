@@ -1,23 +1,20 @@
 /*
- *  Philips UCB1400 touchscreen driver
- *
- *  Author:	Nicolas Pitre
- *  Created:	September 25, 2006
- *  Copyright:	MontaVista Software, Inc.
- *
- * Spliting done by: Marek Vasut <marek.vasut@gmail.com>
- * If something doesn't work and it worked before spliting, e-mail me,
- * dont bother Nicolas please ;-)
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * This code is heavily based on ucb1x00-*.c copyrighted by Russell King
- * covering the UCB1100, UCB1200 and UCB1300..  Support for the UCB1400 has
- * been made separate from ucb1x00-core/ucb1x00-ts on Russell's request.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/delay.h>

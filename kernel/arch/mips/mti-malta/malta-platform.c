@@ -1,26 +1,20 @@
 /*
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file "COPYING" in the main directory of this archive
- * for more details.
- *
- * Copyright (C) 2006, 07 MIPS Technologies, Inc.
- *   written by Ralf Baechle (ralf@beep-mips.org)
- *     written by Ralf Baechle <ralf@beep-mips.org>
- *
- * Copyright (C) 2008 Wind River Systems, Inc.
- *   updated by Tiejun Chen <tiejun.chen@windriver.com>
- *
- * 1. Probe driver for the Malta's UART ports:
- *
- *   o 2 ports in the SMC SuperIO
- *   o 1 port in the CBUS UART, a discrete 16550 which normally is only used
- *     for bringups.
- *
- * We don't use 8250_platform.c on Malta as it would result in the CBUS
- * UART becoming ttyS0.
- *
- * 2. Register RTC-CMOS platform device on Malta.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/serial_8250.h>
 #include <beep/mc146818rtc.h>

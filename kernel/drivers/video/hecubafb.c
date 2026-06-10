@@ -1,32 +1,20 @@
 /*
- * beep/drivers/video/hecubafb.c -- FB driver for Hecuba/Apollo controller
- *
- * Copyright (C) 2006, Jaya Kumar
- * This work was sponsored by CIS(M) Sdn Bhd
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License. See the file COPYING in the main directory of this archive for
- * more details.
- *
- * Layout is based on skeletonfb.c by James Simmons and Geert Uytterhoeven.
- * This work was possible because of apollo display code from E-Ink's website
- * http://support.eink.com/community
- * All information used to write this code is from public material made
- * available by E-Ink on its support site. Some commands such as 0xA4
- * were found by looping through cmd=0x00 thru 0xFF and supplying random
- * values. There are other commands that the display is capable of,
- * beyond the 5 used here but they are more complex.
- *
- * This driver is written to be used with the Hecuba display architecture.
- * The actual display chip is called Apollo and the interface electronics
- * it needs is called Hecuba.
- *
- * It is intended to be architecture independent. A board specific driver
- * must be used to perform all the physical IO interactions. An example
- * is provided as n411.c
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/errno.h>

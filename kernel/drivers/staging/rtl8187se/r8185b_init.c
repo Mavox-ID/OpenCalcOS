@@ -1,23 +1,20 @@
 /*
- * Copyright (c) Realtek Semiconductor Corp. All rights reserved.
- *
- * Module Name:
- *	r8185b_init.c
- *
- * Abstract:
- *	Hardware Initialization and Hardware IO for RTL8185B
- *
- * Major Change History:
- *	When		Who				What
- *	----------	---------------		-------------------------------
- *	2006-11-15	Xiong			Created
- *
- * Notes:
- *	This file is ported from RTL8185B Windows driver.
- *
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*--------------------------Include File------------------------------------*/
 #include <beep/spinlock.h>
 #include "r8180_hw.h"

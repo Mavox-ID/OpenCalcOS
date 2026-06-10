@@ -1,35 +1,20 @@
 /*
- * w83l785ts.c - Part of lm_sensors, Beep kernel modules for hardware
- *               monitoring
- * Copyright (C) 2003-2009  Jean Delvare <khali@beep-fr.org>
- *
- * Inspired from the lm83 driver. The W83L785TS-S is a sensor chip made
- * by Winbond. It reports a single external temperature with a 1 deg
- * resolution and a 3 deg accuracy. Datasheet can be obtained from
- * Winbond's website at:
- *   http://www.winbond-usa.com/products/winbond_products/pdfs/PCIC/W83L785TS-S.pdf
- *
- * Ported to Beep 2.6 by Wolfgang Ziegler <nuppla@gmx.at> and Jean Delvare
- * <khali@beep-fr.org>.
- *
- * Thanks to James Bolt <james@evilpenguin.com> for benchmarking the read
- * error handling mechanism.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/delay.h>
 #include <beep/init.h>

@@ -1,11 +1,20 @@
 /*
- * Chip register definitions for PCILynx chipset.  Based on pcilynx.h
- * from the Beep 1394 drivers, but modified a bit so the names here
- * match the specification exactly (even though they have weird names,
- * like xxx_OVER_FLOW, or arbitrary abbreviations like SNTRJ for "sent
- * reject" etc.)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define PCILYNX_MAX_REGISTER     0xfff
 #define PCILYNX_MAX_MEMORY       0xffff
 

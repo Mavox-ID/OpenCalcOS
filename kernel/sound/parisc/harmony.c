@@ -1,40 +1,20 @@
-/* Hewlett-Packard Harmony audio driver
- *
- *   This is a driver for the Harmony audio chipset found
- *   on the LASI ASIC of various early HP PA-RISC workstations.
- *
- *   Copyright (C) 2004, Kyle McMartin <kyle@{debian.org,parisc-beep.org}>
- *
- *     Based on the previous Harmony incarnations by,
- *       Copyright 2000 (c) Beepcare Canada, Alex deVries
- *       Copyright 2000-2003 (c) Helge Deller
- *       Copyright 2001 (c) Matthieu Delahaye
- *       Copyright 2001 (c) Jean-Christophe Vaugeois
- *       Copyright 2003 (c) Laurent Canet
- *       Copyright 2004 (c) Stuart Brady
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License, version 2, as
- *   published by the Free Software Foundation.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, write to the Free Software
- *   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- *
- * Notes:
- *   - graveyard and silence buffers last for lifetime of
- *     the driver. playback and capture buffers are allocated
- *     per _open()/_close().
- * 
- * TODO:
- *
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/slab.h>
 #include <beep/time.h>

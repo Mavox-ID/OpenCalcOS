@@ -1,36 +1,20 @@
 /*
- * Driver for Alauda-based card readers
- *
- * Current development and maintenance by:
- *   (c) 2005 Daniel Drake <dsd@gentoo.org>
- *
- * The 'Alauda' is a chip manufacturered by RATOC for OEM use.
- *
- * Alauda implements a vendor-specific command set to access two media reader
- * ports (XD, SmartMedia). This driver converts SCSI commands to the commands
- * which are accepted by these devices.
- *
- * The driver was developed through reverse-engineering, with the help of the
- * sddr09 driver which has many similarities, and with some help from the
- * (very old) vendor-supplied GPL sma03 driver.
- *
- * For protocol info, see http://alauda.sourceforge.net
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by the
- * Free Software Foundation; either version 2, or (at your option) any
- * later version.
- *
- * This program is distributed in the hope that it will be useful, but
- * WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License along
- * with this program; if not, write to the Free Software Foundation, Inc.,
- * 675 Mass Ave, Cambridge, MA 02139, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/slab.h>
 

@@ -1,36 +1,20 @@
 /*
- * lm83.c - Part of lm_sensors, Beep kernel modules for hardware
- *          monitoring
- * Copyright (C) 2003-2009  Jean Delvare <khali@beep-fr.org>
- *
- * Heavily inspired from the lm78, lm75 and adm1021 drivers. The LM83 is
- * a sensor chip made by National Semiconductor. It reports up to four
- * temperatures (its own plus up to three external ones) with a 1 deg
- * resolution and a 3-4 deg accuracy. Complete datasheet can be obtained
- * from National's website at:
- *   http://www.national.com/pf/LM/LM83.html
- * Since the datasheet omits to give the chip stepping code, I give it
- * here: 0x03 (at register 0xff).
- *
- * Also supports the LM82 temp sensor, which is basically a stripped down
- * model of the LM83.  Datasheet is here:
- * http://www.national.com/pf/LM/LM82.html
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/slab.h>

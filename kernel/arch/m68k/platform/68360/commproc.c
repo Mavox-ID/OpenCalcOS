@@ -1,29 +1,20 @@
 /*
- * General Purpose functions for the global management of the
- * Communication Processor Module.
- *
- * Copyright (c) 2000 Michael Leslie <mleslie@lineo.com>
- * Copyright (c) 1997 Dan Malek (dmalek@jlc.net)
- *
- * In addition to the individual control of the communication
- * channels, there are a few functions that globally affect the
- * communication processor.
- *
- * Buffer descriptors must be allocated from the dual ported memory
- * space.  The allocator for that is here.  When the communication
- * process is reset, we reclaim the memory available.  There is
- * currently no deallocator for this memory.
- * The amount of space available is platform dependent.  On the
- * MBX, the EPPC software loads additional microcode into the
- * communication processor, and uses some of the DP ram for this
- * purpose.  Current, the first 512 bytes and the last 256 bytes of
- * memory are used.  Right now I am conservative and only use the
- * memory that can never be used for microcode.  If there are
- * applications that require more DP ram, we can expand the boundaries
- * but then we have to be careful of any downloaded microcode.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * Michael Leslie <mleslie@lineo.com>
  * adapted Dan Malek's ppc8xx drivers to M68360

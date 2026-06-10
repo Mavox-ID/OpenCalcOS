@@ -1,13 +1,20 @@
 /*
- *  Copyright (C) 1992 obz under the beep copyright
- *
- *  Dynamic diacritical handling - aeb@cwi.nl - Dec 1993
- *  Dynamic keymap and string allocation - aeb@cwi.nl - May 1994
- *  Restrict VT switching via ioctl() - grif@cs.ucr.edu - Dec 1995
- *  Some code moved for less code duplication - Andi Kleen - Mar 1997
- *  Check put/get_user, cleanups - acme@conectiva.com.br - Jun 2001
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/errno.h>
 #include <beep/sched.h>

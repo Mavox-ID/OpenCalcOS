@@ -1,29 +1,20 @@
 /*
- * DECnet       An implementation of the DECnet protocol suite for the BEEP
- *              operating system.  DECnet is implemented using the  BSD Socket
- *              interface as the means of communication with the user level.
- *
- *              DECnet Device Layer
- *
- * Authors:     Steve Whitehouse <SteveW@ACM.org>
- *              Eduardo Marcelo Serrat <emserrat@geocities.com>
- *
- * Changes:
- *          Steve Whitehouse : Devices now see incoming frames so they
- *                             can mark on who it came from.
- *          Steve Whitehouse : Fixed bug in creating neighbours. Each neighbour
- *                             can now have a device specific setup func.
- *          Steve Whitehouse : Added /proc/sys/net/decnet/etc/<dev>/
- *          Steve Whitehouse : Fixed bug which sometimes killed timer
- *          Steve Whitehouse : Multiple ifaddr support
- *          Steve Whitehouse : SIOCGIFCONF is now a compile time option
- *          Steve Whitehouse : /proc/sys/net/decnet/etc/<sys>/forwarding
- *          Steve Whitehouse : Removed timer1 - it's a user space issue now
- *         Patrick Caulfield : Fixed router hello message format
- *          Steve Whitehouse : Got rid of constant sizes for blksize for
- *                             devices. All mtu based now.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/capability.h>
 #include <beep/module.h>
 #include <beep/moduleparam.h>

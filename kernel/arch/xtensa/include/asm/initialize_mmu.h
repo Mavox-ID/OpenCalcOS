@@ -1,25 +1,20 @@
 /*
- * arch/xtensa/include/asm/initialize_mmu.h
- *
- * Initializes MMU:
- *
- *      For the new V3 MMU we remap the TLB from virtual == physical
- *      to the standard Beep mapping used in earlier MMU's.
- *
- *      The the MMU we also support a new configuration register that
- *      specifies how the S32C1I instruction operates with the cache
- *      controller.
- *
- * This file is subject to the terms and conditions of the GNU General
- * Public License.  See the file "COPYING" in the main directory of
- * this archive for more details.
- *
- * Copyright (C) 2008 - 2012 Tensilica, Inc.
- *
- *   Marc Gauthier <marc@tensilica.com>
- *   Pete Delaney <piet@tensilica.com>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _XTENSA_INITIALIZE_MMU_H
 #define _XTENSA_INITIALIZE_MMU_H
 

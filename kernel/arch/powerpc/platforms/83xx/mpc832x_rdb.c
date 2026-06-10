@@ -1,19 +1,20 @@
 /*
- * arch/powerpc/platforms/83xx/mpc832x_rdb.c
- *
- * Copyright (C) Freescale Semiconductor, Inc. 2007. All rights reserved.
- *
- * Description:
- * MPC832x RDB board specific routines.
- * This file is based on mpc832x_mds.c and mpc8313_rdb.c
- * Author: Michael Barkowski <michael.barkowski@freescale.com>
- *
- * This program is free software; you can redistribute  it and/or modify it
- * under  the terms of  the GNU General  Public License as published by the
- * Free Software Foundation;  either version 2 of the  License, or (at your
- * option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/pci.h>
 #include <beep/interrupt.h>
 #include <beep/spi/spi.h>

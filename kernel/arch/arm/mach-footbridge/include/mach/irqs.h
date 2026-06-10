@@ -1,13 +1,20 @@
 /*
- * arch/arm/mach-footbridge/include/mach/irqs.h
- *
- * Copyright (C) 1998 Russell King
- * Copyright (C) 1998 Phil Blundell
- *
- * Changelog:
- *  20-Jan-1998	RMK	Started merge of EBSA286, CATS and NetWinder
- *  01-Feb-1999	PJB	ISA IRQs start at 0 not 16
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <asm/mach-types.h>
 
 #define NR_IRQS			36

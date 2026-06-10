@@ -1,77 +1,20 @@
 /*
- * Handle unaligned accesses by emulation.
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file "COPYING" in the main directory of this archive
- * for more details.
- *
- * Copyright (C) 1996, 1998, 1999, 2002 by Ralf Baechle
- * Copyright (C) 1999 Silicon Graphics, Inc.
- *
- * This file contains exception handler for address error exception with the
- * special capability to execute faulting instructions in software.  The
- * handler does not try to handle the case when the program counter points
- * to an address not aligned to a word boundary.
- *
- * Putting data to unaligned addresses is a bad practice even on Intel where
- * only the performance is affected.  Much worse is that such code is non-
- * portable.  Due to several programs that die on MIPS due to alignment
- * problems I decided to implement this handler anyway though I originally
- * didn't intend to do this at all for user code.
- *
- * For now I enable fixing of address errors by default to make life easier.
- * I however intend to disable this somewhen in the future when the alignment
- * problems with user programs have been fixed.  For programmers this is the
- * right way to go.
- *
- * Fixing address errors is a per process option.  The option is inherited
- * across fork(2) and execve(2) calls.  If you really want to use the
- * option in your user programs - I discourage the use of the software
- * emulation strongly - use the following code in your userland stuff:
- *
- * #include <sys/sysmips.h>
- *
- * ...
- * sysmips(MIPS_FIXADE, x);
- * ...
- *
- * The argument x is 0 for disabling software emulation, enabled otherwise.
- *
- * Below a little program to play around with this feature.
- *
- * #include <stdio.h>
- * #include <sys/sysmips.h>
- *
- * struct foo {
- *         unsigned char bar[8];
- * };
- *
- * main(int argc, char *argv[])
- * {
- *         struct foo x = {0, 1, 2, 3, 4, 5, 6, 7};
- *         unsigned int *p = (unsigned int *) (x.bar + 3);
- *         int i;
- *
- *         if (argc > 1)
- *                 sysmips(MIPS_FIXADE, atoi(argv[1]));
- *
- *         printf("*p = %08lx\n", *p);
- *
- *         *p = 0xdeadface;
- *
- *         for(i = 0; i <= 7; i++)
- *         printf("%02x ", x.bar[i]);
- *         printf("\n");
- * }
- *
- * Coprocessor loads are not supported; I think this case is unimportant
- * in the practice.
- *
- * TODO: Handle ndc (attempted store to doubleword in uncached memory)
- *       exception for the R6000.
- *       A store crossing a page boundary might be executed only partially.
- *       Undo the partial store in this case.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/mm.h>
 #include <beep/signal.h>
 #include <beep/smp.h>

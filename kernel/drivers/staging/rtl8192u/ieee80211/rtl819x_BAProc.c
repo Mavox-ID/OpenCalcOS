@@ -1,9 +1,20 @@
-/********************************************************************************************************************************
- * This file is created to process BA Action Frame. According to 802.11 spec, there are 3 BA action types at all. And as BA is
- * related to TS, this part need some structure defined in QOS side code. Also TX RX is going to be resturctured, so how to send
- * ADDBAREQ ADDBARSP and DELBA packet is still on consideration. Temporarily use MANAGE QUEUE instead of Normal Queue.
- * WB 2008-05-27
- * *****************************************************************************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "ieee80211.h"
 #include "rtl819x_BA.h"
 

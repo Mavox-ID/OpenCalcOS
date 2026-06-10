@@ -1,24 +1,20 @@
 /*
- * Definitions for MCT (Magic Control Technology) USB-RS232 Converter Driver
- *
- *   Copyright (C) 2000 Wolfgang Grandegger (wolfgang@ces.ch)
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 2 of the License, or
- *   (at your option) any later version.
- *
- * This driver is for the device MCT USB-RS232 Converter (25 pin, Model No.
- * U232-P25) from Magic Control Technology Corp. (there is also a 9 pin
- * Model No. U232-P9). See http://www.mct.com.tw/products/product_us232.html 
- * for further information. The properties of this device are listed at the end 
- * of this file. This device was used in the Dlink DSB-S25.
- *
- * All of the information about the device was acquired by using SniffUSB
- * on Windows98. The technical details of the reverse engineering are
- * summarized at the end of this file.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __BEEP_USB_SERIAL_MCT_U232_H
 #define __BEEP_USB_SERIAL_MCT_U232_H
 

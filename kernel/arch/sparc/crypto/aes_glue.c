@@ -1,19 +1,20 @@
-/* Glue code for AES encryption optimized for sparc64 crypto opcodes.
- *
- * This is based largely upon arch/x86/crypto/aesni-intel_glue.c
- *
- * Copyright (C) 2008, Intel Corp.
- *    Author: Huang Ying <ying.huang@intel.com>
- *
- * Added RFC4106 AES-GCM support for 128-bit keys under the AEAD
- * interface for 64-bit kernels.
- *    Authors: Adrian Hoban <adrian.hoban@intel.com>
- *             Gabriele Paoloni <gabriele.paoloni@intel.com>
- *             Tadeusz Struk (tadeusz.struk@intel.com)
- *             Aidan O'Mahony (aidan.o.mahony@intel.com)
- *    Copyright (c) 2010, Intel Corporation.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
 #include <beep/crypto.h>

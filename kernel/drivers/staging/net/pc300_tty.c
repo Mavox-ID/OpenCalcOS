@@ -1,41 +1,20 @@
 /*
- * pc300_tty.c	Cyclades-PC300(tm) TTY Driver.
- *
- * Author:	Regina Kodato <reginak@cyclades.com>
- *
- * Copyright:	(c) 1999-2002 Cyclades Corp.
- *
- *	This program is free software; you can redistribute it and/or
- *  modify it under the terms of the GNU General Public License
- *  as published by the Free Software Foundation; either version
- *  2 of the License, or (at your option) any later version.
- *   
- *  $Log: pc300_tty.c,v $
- *  Revision 3.7  2002/03/07 14:17:09  henrique
- *  License data fixed
- *
- *  Revision 3.6  2001/12/10 12:29:42  regina
- *  Fix the MLPPP bug
- *
- *  Revision 3.5  2001/10/31 11:20:05  regina
- *  automatic pppd starts
- *
- *  Revision 3.4  2001/08/06 12:01:51  regina
- *  problem in DSR_DE bit
- *
- *  Revision 3.3  2001/07/26 22:58:41  regina
- *  update EDA value
- *
- *  Revision 3.2  2001/07/12 13:11:20  regina
- *  bug fix - DCD-OFF in pc300 tty driver
- *
- *	DMA transmission bug fix
- *  
- *  Revision 3.1  2001/06/22 13:13:02  regina
- *  MLPPP implementation
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/errno.h>

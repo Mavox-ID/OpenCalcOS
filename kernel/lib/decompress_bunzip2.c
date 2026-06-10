@@ -1,14 +1,20 @@
-/*	Small bzip2 deflate implementation, by Rob Landley (rob@landley.net).
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-	Based on bzip2 decompression code by Julian R Seward (jseward@acm.org),
-	which also acknowledges contributions by Mike Burrows, David Wheeler,
-	Peter Fenwick, Alistair Moffat, Radford Neal, Ian H. Witten,
-	Robert Sedgewick, and Jon L. Bentley.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-	This code is licensed under the LGPLv2:
-		LGPL (http://www.gnu.org/copyleft/lgpl.html
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 /*
 	Size and speed optimizations by Manuel Novoa III  (mjn3@codepoet.org).
 

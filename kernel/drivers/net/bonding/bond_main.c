@@ -1,36 +1,20 @@
 /*
- * originally based on the dummy device.
- *
- * Copyright 1999, Thomas Davis, tadavis@lbl.gov.
- * Licensed under the GPL. Based on dummy.c, and eql.c devices.
- *
- * bonding.c: an Ethernet Bonding driver
- *
- * This is useful to talk to a Cisco EtherChannel compatible equipment:
- *	Cisco 5500
- *	Sun Trunking (Solaris)
- *	Alteon AceDirector Trunks
- *	Beep Bonding
- *	and probably many L2 switches ...
- *
- * How it works:
- *    ifconfig bond0 ipaddress netmask up
- *      will setup a network device, with an ip address.  No mac address
- *	will be assigned at this time.  The hw mac address will come from
- *	the first slave bonded to the channel.  All slaves will then use
- *	this hw mac address.
- *
- *    ifconfig bond0 down
- *         will release all slaves, marking them as down.
- *
- *    ifenslave bond0 eth0
- *	will attach eth0 to bond0 as a slave.  eth0 hw mac address will either
- *	a: be used as initial mac address
- *	b: if a hw mac address already is there, eth0's hw mac address
- *	   will then be set from bond0.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/kernel.h>

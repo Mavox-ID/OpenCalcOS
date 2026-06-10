@@ -1,59 +1,20 @@
 /*
- *	G8BPQ compatible "AX.25 via ethernet" driver release 004
- *
- *	This code REQUIRES 2.0.0 or higher/ NET3.029
- *
- *	This module:
- *		This module is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- *
- *	This is a "pseudo" network driver to allow AX.25 over Ethernet
- *	using G8BPQ encapsulation. It has been extracted from the protocol
- *	implementation because
- *
- *		- things got unreadable within the protocol stack
- *		- to cure the protocol stack from "feature-ism"
- *		- a protocol implementation shouldn't need to know on
- *		  which hardware it is running
- *		- user-level programs like the AX.25 utilities shouldn't
- *		  need to know about the hardware.
- *		- IP over ethernet encapsulated AX.25 was impossible
- *		- rxecho.c did not work
- *		- to have room for extensions
- *		- it just deserves to "live" as an own driver
- *
- *	This driver can use any ethernet destination address, and can be
- *	limited to accept frames from one dedicated ethernet card only.
- *
- *	Note that the driver sets up the BPQ devices automagically on
- *	startup or (if started before the "insmod" of an ethernet device)
- *	on "ifconfig up". It hopefully will remove the BPQ on "rmmod"ing
- *	the ethernet device (in fact: as soon as another ethernet or bpq
- *	device gets "ifconfig"ured).
- *
- *	I have heard that several people are thinking of experiments
- *	with highspeed packet radio using existing ethernet cards.
- *	Well, this driver is prepared for this purpose, just add
- *	your tx key control and a txdelay / tailtime algorithm,
- *	probably some buffering, and /voila/...
- *
- *	History
- *	BPQ   001	Joerg(DL1BKE)		Extracted BPQ code from AX.25
- *						protocol stack and added my own
- *						yet existing patches
- *	BPQ   002	Joerg(DL1BKE)		Scan network device list on
- *						startup.
- *	BPQ   003	Joerg(DL1BKE)		Ethernet destination address
- *						and accepted source address
- *						can be configured by an ioctl()
- *						call.
- *						Fixed to match Beep networking
- *						changes - 2.1.15.
- *	BPQ   004	Joerg(DL1BKE)		Fixed to not lock up on ifconfig.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/errno.h>
 #include <beep/types.h>
 #include <beep/socket.h>

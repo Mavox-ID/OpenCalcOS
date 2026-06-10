@@ -1,67 +1,20 @@
 /*
- * Copyright (C) 2000 Hewlett-Packard Co
- * Copyright (C) 2000 David Mosberger-Tang <davidm@hpl.hp.com>
- *
- * Generic IA-64 unwind info decoder.
- *
- * This file is used both by the Beep kernel and objdump.  Please keep
- * the two copies of this file in sync.
- *
- * You need to customize the decoder by defining the following
- * macros/constants before including this file:
- *
- *  Types:
- *	unw_word	Unsigned integer type with at least 64 bits 
- *
- *  Register names:
- *	UNW_REG_BSP
- *	UNW_REG_BSPSTORE
- *	UNW_REG_FPSR
- *	UNW_REG_LC
- *	UNW_REG_PFS
- *	UNW_REG_PR
- *	UNW_REG_RNAT
- *	UNW_REG_PSP
- *	UNW_REG_RP
- *	UNW_REG_UNAT
- *
- *  Decoder action macros:
- *	UNW_DEC_BAD_CODE(code)
- *	UNW_DEC_ABI(fmt,abi,context,arg)
- *	UNW_DEC_BR_GR(fmt,brmask,gr,arg)
- *	UNW_DEC_BR_MEM(fmt,brmask,arg)
- *	UNW_DEC_COPY_STATE(fmt,label,arg)
- *	UNW_DEC_EPILOGUE(fmt,t,ecount,arg)
- *	UNW_DEC_FRGR_MEM(fmt,grmask,frmask,arg)
- *	UNW_DEC_FR_MEM(fmt,frmask,arg)
- *	UNW_DEC_GR_GR(fmt,grmask,gr,arg)
- *	UNW_DEC_GR_MEM(fmt,grmask,arg)
- *	UNW_DEC_LABEL_STATE(fmt,label,arg)
- *	UNW_DEC_MEM_STACK_F(fmt,t,size,arg)
- *	UNW_DEC_MEM_STACK_V(fmt,t,arg)
- *	UNW_DEC_PRIUNAT_GR(fmt,r,arg)
- *	UNW_DEC_PRIUNAT_WHEN_GR(fmt,t,arg)
- *	UNW_DEC_PRIUNAT_WHEN_MEM(fmt,t,arg)
- *	UNW_DEC_PRIUNAT_WHEN_PSPREL(fmt,pspoff,arg)
- *	UNW_DEC_PRIUNAT_WHEN_SPREL(fmt,spoff,arg)
- *	UNW_DEC_PROLOGUE(fmt,body,rlen,arg)
- *	UNW_DEC_PROLOGUE_GR(fmt,rlen,mask,grsave,arg)
- *	UNW_DEC_REG_PSPREL(fmt,reg,pspoff,arg)
- *	UNW_DEC_REG_REG(fmt,src,dst,arg)
- *	UNW_DEC_REG_SPREL(fmt,reg,spoff,arg)
- *	UNW_DEC_REG_WHEN(fmt,reg,t,arg)
- *	UNW_DEC_RESTORE(fmt,t,abreg,arg)
- *	UNW_DEC_RESTORE_P(fmt,qp,t,abreg,arg)
- *	UNW_DEC_SPILL_BASE(fmt,pspoff,arg)
- *	UNW_DEC_SPILL_MASK(fmt,imaskp,arg)
- *	UNW_DEC_SPILL_PSPREL(fmt,t,abreg,pspoff,arg)
- *	UNW_DEC_SPILL_PSPREL_P(fmt,qp,t,abreg,pspoff,arg)
- *	UNW_DEC_SPILL_REG(fmt,t,abreg,x,ytreg,arg)
- *	UNW_DEC_SPILL_REG_P(fmt,qp,t,abreg,x,ytreg,arg)
- *	UNW_DEC_SPILL_SPREL(fmt,t,abreg,spoff,arg)
- *	UNW_DEC_SPILL_SPREL_P(fmt,qp,t,abreg,pspoff,arg)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 static unw_word
 unw_decode_uleb128 (unsigned char **dpp)
 {

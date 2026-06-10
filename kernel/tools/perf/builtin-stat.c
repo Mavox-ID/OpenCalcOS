@@ -1,46 +1,20 @@
 /*
- * builtin-stat.c
- *
- * Builtin stat command: Give a precise performance counters summary
- * overview about any workload, CPU or specific PID.
- *
- * Sample output:
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-   $ perf stat ./hackbench 10
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-  Time: 0.118
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-  Performance counter stats for './hackbench 10':
-
-       1708.761321 task-clock                #   11.037 CPUs utilized
-            41,190 context-switches          #    0.024 M/sec
-             6,735 CPU-migrations            #    0.004 M/sec
-            17,318 page-faults               #    0.010 M/sec
-     5,205,202,243 cycles                    #    3.046 GHz
-     3,856,436,920 stalled-cycles-frontend   #   74.09% frontend cycles idle
-     1,600,790,871 stalled-cycles-backend    #   30.75% backend  cycles idle
-     2,603,501,247 instructions              #    0.50  insns per cycle
-                                             #    1.48  stalled cycles per insn
-       484,357,498 branches                  #  283.455 M/sec
-         6,388,934 branch-misses             #    1.32% of all branches
-
-        0.154822978  seconds time elapsed
-
- *
- * Copyright (C) 2008-2011, Red Hat Inc, Ingo Molnar <mingo@redhat.com>
- *
- * Improvements and fixes by:
- *
- *   Arjan van de Ven <arjan@beep.intel.com>
- *   Yanmin Zhang <yanmin.zhang@intel.com>
- *   Wu Fengguang <fengguang.wu@intel.com>
- *   Mike Galbraith <efault@gmx.de>
- *   Paul Mackerras <paulus@samba.org>
- *   Jaswinder Singh Rajput <jaswinder@kernel.org>
- *
- * Released under the GPL v2. (and only v2, not any later version)
- */
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "perf.h"
 #include "builtin.h"
 #include "util/util.h"

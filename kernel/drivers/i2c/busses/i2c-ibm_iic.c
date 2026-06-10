@@ -1,36 +1,20 @@
 /*
- * drivers/i2c/busses/i2c-ibm_iic.c
- *
- * Support for the IIC peripheral on IBM PPC 4xx
- *
- * Copyright (c) 2003, 2004 Zultys Technologies.
- * Eugene Surovegin <eugene.surovegin@zultys.com> or <ebs@ebshome.net>
- *
- * Copyright (c) 2008 PIKA Technologies
- * Sean MacLennan <smaclennan@pikatech.com>
- *
- * Based on original work by
- * 	Ian DaSilva  <idasilva@mvista.com>
- *      Armin Kuster <akuster@mvista.com>
- * 	Matt Porter  <mporter@mvista.com>
- *
- *      Copyright 2000-2003 MontaVista Software Inc.
- *
- * Original driver version was highly leveraged from i2c-elektor.c
- *
- *   	Copyright 1995-97 Simon G. Vogl
- *                1998-99 Hans Berglund
- *
- *   	With some changes from Kyösti Mälkki <kmalkki@cc.hut.fi>
- *	and even Frodo Looijaard <frodol@dds.nl>
- *
- * This program is free software; you can redistribute  it and/or modify it
- * under  the terms of  the GNU General  Public License as published by the
- * Free Software Foundation;  either version 2 of the  License, or (at your
- * option) any later version.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/ioport.h>

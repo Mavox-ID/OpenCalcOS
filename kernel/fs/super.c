@@ -1,25 +1,20 @@
 /*
- *  beep/fs/super.c
- *
- *  Copyright (C) 1991, 1992  Linus Torvalds
- *
- *  super.c contains code to handle: - mount structures
- *                                   - super-block tables
- *                                   - filesystem drivers list
- *                                   - mount system call
- *                                   - umount system call
- *                                   - ustat system call
- *
- * GK 2/5/95  -  Changed to support mounting the root fs via NFS
- *
- *  Added kerneld support: Jacques Gelinas and Bjorn Ekwall
- *  Added change_root: Werner Almesberger & Hans Lermen, Feb '96
- *  Added options to /proc/mounts:
- *    Torbjörn Lindh (torbjorn.lindh@gopta.se), April 14, 1996.
- *  Added devfs support: Richard Gooch <rgooch@atnf.csiro.au>, 13-JAN-1998
- *  Heavily rewritten for 'one fs - one tree' dcache architecture. AV, Mar 2000
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/export.h>
 #include <beep/slab.h>
 #include <beep/acct.h>

@@ -1,20 +1,20 @@
-/* sunsab.c: ASYNC Driver for the SIEMENS SAB82532 DUSCC.
- *
- * Copyright (C) 1997  Eddie C. Dost  (ecd@skynet.be)
- * Copyright (C) 2002, 2006  David S. Miller (davem@davemloft.net)
- *
- * Rewrote buffer handling to use CIRC(Circular Buffer) macros.
- *   Maxim Krasnyanskiy <maxk@qualcomm.com>
- *
- * Fixed to use tty_get_baud_rate, and to allow for arbitrary baud
- * rates to be programmed into the UART.  Also eliminated a lot of
- * duplicated code in the console setup.
- *   Theodore Ts'o <tytso@mit.edu>, 2001-Oct-12
- *
- * Ported to new 2.5.x UART layer.
- *   David S. Miller <davem@davemloft.net>
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/errno.h>

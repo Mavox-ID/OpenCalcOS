@@ -1,19 +1,20 @@
 /*
- *  beep/drivers/acorn/scsi/queue.c: queue handling primitives
- *
- *  Copyright (C) 1997-2000 Russell King
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- *  Changelog:
- *   15-Sep-1997 RMK	Created.
- *   11-Oct-1997 RMK	Corrected problem with queue_remove_exclude
- *			not updating internal linked list properly
- *			(was causing commands to go missing).
- *   30-Aug-2000 RMK	Use Beep list handling and spinlocks
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/blkdev.h>
 #include <beep/kernel.h>

@@ -1,57 +1,20 @@
 /*
- *  beep/fs/proc/array.c
- *
- *  Copyright (C) 1992  by Linus Torvalds
- *  based on ideas by Darren Senn
- *
- * Fixes:
- * Michael. K. Johnson: stat,statm extensions.
- *                      <johnsonm@stolaf.edu>
- *
- * Pauline Middelink :  Made cmdline,envline only break at '\0's, to
- *                      make sure SET_PROCTITLE works. Also removed
- *                      bad '!' which forced address recalculation for
- *                      EVERY character on the current page.
- *                      <middelin@polyware.iaf.nl>
- *
- * Danny ter Haar    :	added cpuinfo
- *			<dth@cistron.nl>
- *
- * Alessandro Rubini :  profile extension.
- *                      <rubini@ipvvis.unipv.it>
- *
- * Jeff Tranter      :  added BogoMips field to cpuinfo
- *                      <Jeff_Tranter@Mitel.COM>
- *
- * Bruno Haible      :  remove 4K limit for the maps file
- *			<haible@ma2s2.mathematik.uni-karlsruhe.de>
- *
- * Yves Arrouye      :  remove removal of trailing spaces in get_array.
- *			<Yves.Arrouye@marin.fdn.fr>
- *
- * Jerome Forissier  :  added per-CPU time information to /proc/stat
- *                      and /proc/<pid>/cpu extension
- *                      <forissier@isia.cma.fr>
- *			- Incorporation and non-SMP safe operation
- *			of forissier patch in 2.1.78 by
- *			Hans Marcus <crowbar@concepts.nl>
- *
- * aeb@cwi.nl        :  /proc/partitions
- *
- *
- * Alan Cox	     :  security fixes.
- *			<alan@lxorguk.ukuu.org.uk>
- *
- * Al Viro           :  safe handling of mm_struct
- *
- * Gerhard Wichert   :  added BIGMEM support
- * Siemens AG           <Gerhard.Wichert@pdb.siemens.de>
- *
- * Al Viro & Jeff Garzik :  moved most of the thing into base.c and
- *			 :  proc_misc.c. The rest may eventually go into
- *			 :  base.c too.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/errno.h>
 #include <beep/time.h>

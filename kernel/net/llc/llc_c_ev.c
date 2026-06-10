@@ -1,38 +1,20 @@
 /*
- * llc_c_ev.c - Connection component state transition event qualifiers
- *
- * A 'state' consists of a number of possible event matching functions,
- * the actions associated with each being executed when that event is
- * matched; a 'state machine' accepts events in a serial fashion from an
- * event queue. Each event is passed to each successive event matching
- * function until a match is made (the event matching function returns
- * success, or '0') or the list of event matching functions is exhausted.
- * If a match is made, the actions associated with the event are executed
- * and the state is changed to that event's transition state. Before some
- * events are recognized, even after a match has been made, a certain
- * number of 'event qualifier' functions must also be executed. If these
- * all execute successfully, then the event is finally executed.
- *
- * These event functions must return 0 for success, to show a matched
- * event, of 1 if the event does not match. Event qualifier functions
- * must return a 0 for success or a non-zero for failure. Each function
- * is simply responsible for verifying one single thing and returning
- * either a success or failure.
- *
- * All of followed event functions are described in 802.2 LLC Protocol
- * standard document except two functions that we added that will explain
- * in their comments, at below.
- *
- * Copyright (c) 1997 by Procom Technology, Inc.
- * 		 2001-2003 by Arnaldo Carvalho de Melo <acme@conectiva.com.br>
- *
- * This program can be redistributed or modified under the terms of the
- * GNU General Public License as published by the Free Software Foundation.
- * This program is distributed without any warranty or implied warranty
- * of merchantability or fitness for a particular purpose.
- *
- * See the GNU General Public License for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/netdevice.h>
 #include <net/llc_conn.h>
 #include <net/llc_sap.h>

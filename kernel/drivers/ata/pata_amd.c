@@ -1,19 +1,20 @@
 /*
- * pata_amd.c 	- AMD PATA for new ATA layer
- *			  (C) 2005-2006 Red Hat Inc
- *
- *  Based on pata-sil680. Errata information is taken from data sheets
- *  and the amd74xx.c driver by Vojtech Pavlik. Nvidia SATA devices are
- *  claimed by sata-nv.c.
- *
- *  TODO:
- *	Variable system clock when/if it makes sense
- *	Power management on ports
- *
- *
- *  Documentation publicly available.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/pci.h>

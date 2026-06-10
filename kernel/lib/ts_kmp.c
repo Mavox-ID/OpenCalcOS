@@ -1,35 +1,20 @@
 /*
- * lib/ts_kmp.c		Knuth-Morris-Pratt text search implementation
- *
- *		This program is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- *
- * Authors:	Thomas Graf <tgraf@suug.ch>
- *
- * ==========================================================================
- * 
- *   Implements a linear-time string-matching algorithm due to Knuth,
- *   Morris, and Pratt [1]. Their algorithm avoids the explicit
- *   computation of the transition function DELTA altogether. Its
- *   matching time is O(n), for n being length(text), using just an
- *   auxiliary function PI[1..m], for m being length(pattern),
- *   precomputed from the pattern in time O(m). The array PI allows
- *   the transition function DELTA to be computed efficiently
- *   "on the fly" as needed. Roughly speaking, for any state
- *   "q" = 0,1,...,m and any character "a" in SIGMA, the value
- *   PI["q"] contains the information that is independent of "a" and
- *   is needed to compute DELTA("q", "a") [2]. Since the array PI
- *   has only m entries, whereas DELTA has O(m|SIGMA|) entries, we
- *   save a factor of |SIGMA| in the preprocessing time by computing
- *   PI rather than DELTA.
- *
- *   [1] Cormen, Leiserson, Rivest, Stein
- *       Introdcution to Algorithms, 2nd Edition, MIT Press
- *   [2] See finite automation theory
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/types.h>
 #include <beep/string.h>

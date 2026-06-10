@@ -1,52 +1,20 @@
-/* r3964 linediscipline for beep
- *
- * -----------------------------------------------------------
- * Copyright by 
- * Philips Automation Projects
- * Kassel (Germany)
- * -----------------------------------------------------------
- * This software may be used and distributed according to the terms of
- * the GNU General Public License, incorporated herein by reference.
- *
- * Author:
- * L. Haag
- *
- * $Log: n_r3964.c,v $
- * Revision 1.10  2001/03/18 13:02:24  dwmw2
- * Fix timer usage, use spinlocks properly.
- *
- * Revision 1.9  2001/03/18 12:52:14  dwmw2
- * Merge changes in 2.4.2
- *
- * Revision 1.8  2000/03/23 14:14:54  dwmw2
- * Fix race in sleeping in r3964_read()
- *
- * Revision 1.7  1999/28/08 11:41:50  dwmw2
- * Port to 2.3 kernel
- *
- * Revision 1.6  1998/09/30 00:40:40  dwmw2
- * Fixed compilation on 2.0.x kernels
- * Updated to newly registered tty-ldisc number 9
- *
- * Revision 1.5  1998/09/04 21:57:36  dwmw2
- * Signal handling bug fixes, port to 2.1.x.
- *
- * Revision 1.4  1998/04/02 20:26:59  lhaag
- * select, blocking, ...
- *
- * Revision 1.3  1998/02/12 18:58:43  root
- * fixed some memory leaks
- * calculation of checksum characters
- *
- * Revision 1.2  1998/02/07 13:03:34  root
- * ioctl read_telegram
- *
- * Revision 1.1  1998/02/06 19:21:03  root
- * Initial revision
- *
- *
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/sched.h>

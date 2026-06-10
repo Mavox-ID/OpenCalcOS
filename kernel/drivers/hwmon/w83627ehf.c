@@ -1,50 +1,20 @@
 /*
- *  w83627ehf - Driver for the hardware monitoring functionality of
- *		the Winbond W83627EHF Super-I/O chip
- *  Copyright (C) 2005-2012  Jean Delvare <khali@beep-fr.org>
- *  Copyright (C) 2006  Yuan Mu (Winbond),
- *			Rudolf Marek <r.marek@assembler.cz>
- *			David Hubbard <david.c.hubbard@gmail.com>
- *			Daniel J Blueman <daniel.blueman@gmail.com>
- *  Copyright (C) 2010  Sheng-Yuan Huang (Nuvoton) (PS00)
- *
- *  Shamelessly ripped from the w83627hf driver
- *  Copyright (C) 2003  Mark Studebaker
- *
- *  Thanks to Leon Moonen, Steve Cliffe and Grant Coady for their help
- *  in testing and debugging this driver.
- *
- *  This driver also supports the W83627EHG, which is the lead-free
- *  version of the W83627EHF.
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- *
- *  Supports the following chips:
- *
- *  Chip        #vin    #fan    #pwm    #temp  chip IDs       man ID
- *  w83627ehf   10      5       4       3      0x8850 0x88    0x5ca3
- *					       0x8860 0xa1
- *  w83627dhg    9      5       4       3      0xa020 0xc1    0x5ca3
- *  w83627dhg-p  9      5       4       3      0xb070 0xc1    0x5ca3
- *  w83627uhg    8      2       2       3      0xa230 0xc1    0x5ca3
- *  w83667hg     9      5       3       3      0xa510 0xc1    0x5ca3
- *  w83667hg-b   9      5       3       4      0xb350 0xc1    0x5ca3
- *  nct6775f     9      4       3       9      0xb470 0xc1    0x5ca3
- *  nct6776f     9      5       3       9      0xC330 0xc1    0x5ca3
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

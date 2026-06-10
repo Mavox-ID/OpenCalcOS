@@ -1,25 +1,20 @@
 /*
- * ATAPI CD-ROM driver.
- *
- * Copyright (C) 1994-1996   Scott Snyder <snyder@fnald0.fnal.gov>
- * Copyright (C) 1996-1998   Erik Andersen <andersee@debian.org>
- * Copyright (C) 1998-2000   Jens Axboe <axboe@suse.de>
- * Copyright (C) 2005, 2007-2009  Bartlomiej Zolnierkiewicz
- *
- * May be copied or modified under the terms of the GNU General Public
- * License.  See beep/COPYING for more information.
- *
- * See Documentation/cdrom/ide-cd for usage information.
- *
- * Suggestions are welcome. Patches that work are more welcome though. ;-)
- *
- * Documentation:
- *	Mt. Fuji (SFF8090 version 4) and ATAPI (SFF-8020i rev 2.6) standards.
- *
- * For historical changelog please see:
- *	Documentation/ide/ChangeLog.ide-cd.1994-2004
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define DRV_NAME "ide-cd"
 #define PFX DRV_NAME ": "
 

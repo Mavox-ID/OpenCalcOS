@@ -1,18 +1,20 @@
 /*
- * printf.c:  Internal prom library printf facility.
- *
- * Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
- * Copyright (C) 1997 Jakub Jelinek (jj@sunsite.mff.cuni.cz)
- * Copyright (c) 2002 Pete Zaitcev (zaitcev@yahoo.com)
- *
- * We used to warn all over the code: DO NOT USE prom_printf(),
- * and yet people do. Anton's banking code was outputting banks
- * with prom_printf for most of the 2.4 lifetime. Since an effective
- * stick is not available, we deployed a carrot: an early printk
- * through PROM by means of -p boot option. This ought to fix it.
- * USE printk; if you need, deploy -p.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/compiler.h>
 #include <beep/spinlock.h>

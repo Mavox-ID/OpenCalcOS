@@ -1,22 +1,20 @@
 /*
- * 32-bit compatibility support for ELF format executables and core dumps.
- *
- * Copyright (C) 2007 Red Hat, Inc.  All rights reserved.
- *
- * This copyrighted material is made available to anyone wishing to use,
- * modify, copy, or redistribute it subject to the terms and conditions
- * of the GNU General Public License v.2.
- *
- * Red Hat Author: Roland McGrath.
- *
- * This file is used in a 64-bit kernel that wants to support 32-bit ELF.
- * asm/elf.h is responsible for defining the compat_* and COMPAT_* macros
- * used below, with definitions appropriate for 32-bit ABI compatibility.
- *
- * We use macros to rename the ABI types and machine-dependent
- * functions used in binfmt_elf.c to compat versions.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/elfcore-compat.h>
 #include <beep/time.h>
 

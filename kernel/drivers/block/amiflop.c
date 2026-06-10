@@ -1,58 +1,20 @@
 /*
- *  beep/amiga/amiflop.c
- *
- *  Copyright (C) 1993  Greg Harp
- *  Portions of this driver are based on code contributed by Brad Pepers
- *  
- *  revised 28.5.95 by Joerg Dorchain
- *  - now no bugs(?) any more for both HD & DD
- *  - added support for 40 Track 5.25" drives, 80-track hopefully behaves
- *    like 3.5" dd (no way to test - are there any 5.25" drives out there
- *    that work on an A4000?)
- *  - wrote formatting routine (maybe dirty, but works)
- *
- *  june/july 1995 added ms-dos support by Joerg Dorchain
- *  (portions based on messydos.device and various contributors)
- *  - currently only 9 and 18 sector disks
- *
- *  - fixed a bug with the internal trackbuffer when using multiple 
- *    disks the same time
- *  - made formatting a bit safer
- *  - added command line and machine based default for "silent" df0
- *
- *  december 1995 adapted for 1.2.13pl4 by Joerg Dorchain
- *  - works but I think it's inefficient. (look in redo_fd_request)
- *    But the changes were very efficient. (only three and a half lines)
- *
- *  january 1996 added special ioctl for tracking down read/write problems
- *  - usage ioctl(d, RAW_TRACK, ptr); the raw track buffer (MFM-encoded data
- *    is copied to area. (area should be large enough since no checking is
- *    done - 30K is currently sufficient). return the actual size of the
- *    trackbuffer
- *  - replaced udelays() by a timer (CIAA timer B) for the waits 
- *    needed for the disk mechanic.
- *
- *  february 1996 fixed error recovery and multiple disk access
- *  - both got broken the first time I tampered with the driver :-(
- *  - still not safe, but better than before
- *
- *  revised Marts 3rd, 1996 by Jes Sorensen for use in the 1.3.28 kernel.
- *  - Minor changes to accept the kdev_t.
- *  - Replaced some more udelays with ms_delays. Udelay is just a loop,
- *    and so the delay will be different depending on the given
- *    processor :-(
- *  - The driver could use a major cleanup because of the new
- *    major/minor handling that came with kdev_t. It seems to work for
- *    the time being, but I can't guarantee that it will stay like
- *    that when we start using 16 (24?) bit minors.
- *
- * restructured jan 1997 by Joerg Dorchain
- * - Fixed Bug accessing multiple disks
- * - some code cleanup
- * - added trackbuffer for each drive to speed things up
- * - fixed some race conditions (who finds the next may send it to me ;-)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/slab.h>
 

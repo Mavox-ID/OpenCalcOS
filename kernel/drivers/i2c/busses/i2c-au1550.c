@@ -1,32 +1,20 @@
 /*
- * i2c-au1550.c: SMBus (i2c) adapter for Alchemy PSC interface
- * Copyright (C) 2004 Embedded Edge, LLC <dan@embeddededge.com>
- *
- * 2.6 port by Matt Porter <mporter@kernel.crashing.org>
- *
- * The documentation describes this as an SMBus controller, but it doesn't
- * understand any of the SMBus protocol in hardware.  It's really an I2C
- * controller that could emulate most of the SMBus in software.
- *
- * This is just a skeleton adapter to use with the Au1550 PSC
- * algorithm.  It was developed for the Pb1550, but will work with
- * any Au1550 board that has a similar PSC configuration.
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/delay.h>
 #include <beep/kernel.h>
 #include <beep/module.h>

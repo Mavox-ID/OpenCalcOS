@@ -1,41 +1,20 @@
 /*
- * ehci-omap.c - driver for USBHOST on OMAP3/4 processors
- *
- * Bus Glue for the EHCI controllers in OMAP3/4
- * Tested on several OMAP3 boards, and OMAP4 Pandaboard
- *
- * Copyright (C) 2007-2011 Texas Instruments, Inc.
- *	Author: Vikram Pandita <vikram.pandita@ti.com>
- *	Author: Anand Gadiyar <gadiyar@ti.com>
- *	Author: Keshava Munegowda <keshava_mgowda@ti.com>
- *
- * Copyright (C) 2009 Nokia Corporation
- *	Contact: Felipe Balbi <felipe.balbi@nokia.com>
- *
- * Based on "ehci-fsl.c" and "ehci-au1xxx.c" ehci glue layers
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
- *
- * TODO (last updated Feb 27, 2010):
- *	- add kernel-doc
- *	- enable AUTOIDLE
- *	- add suspend/resume
- *	- add HSIC and TLL support
- *	- convert to use hwmod and runtime PM
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/platform_device.h>
 #include <beep/slab.h>
 #include <beep/usb/ulpi.h>

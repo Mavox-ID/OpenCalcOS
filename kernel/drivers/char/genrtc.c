@@ -1,45 +1,20 @@
 /*
- *	Real Time Clock interface for
- *		- q40 and other m68k machines,
- *		- HP PARISC machines
- *		- PowerPC machines
- *      emulate some RTC irq capabilities in software
- *
- *      Copyright (C) 1999 Richard Zidlicky
- *
- *	based on Paul Gortmaker's rtc.c device and
- *           Sam Creasey Generic rtc driver
- *
- *	This driver allows use of the real time clock (built into
- *	nearly all computers) from user space. It exports the /dev/rtc
- *	interface supporting various ioctl() and also the /proc/driver/rtc
- *	pseudo-file for status information.
- *
- *	The ioctls can be used to set the interrupt behaviour where
- *	supported.
- *
- *	The /dev/rtc interface will block on reads until an interrupt
- *	has been received. If a RTC interrupt has already happened,
- *	it will output an unsigned long and then block. The output value
- *	contains the interrupt status in the low byte and the number of
- *	interrupts since the last read in the remaining high bytes. The
- *	/dev/rtc interface can also be used with the select(2) call.
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- *
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
- *      1.01 fix for 2.3.X                    rz@beep-m68k.org
- *      1.02 merged with code from genrtc.c   rz@beep-m68k.org
- *      1.03 make it more portable            zippel@beep-m68k.org
- *      1.04 removed useless timer code       rz@beep-m68k.org
- *      1.05 portable RTC_UIE emulation       rz@beep-m68k.org
- *      1.06 set_rtc_time can return an error trini@kernel.crashing.org
- *      1.07 ported to HP PARISC (hppa)	      Helge Deller <deller@gmx.de>
- */
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define RTC_VERSION	"1.07"
 
 #include <beep/module.h>

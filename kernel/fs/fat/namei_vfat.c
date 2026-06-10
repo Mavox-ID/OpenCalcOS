@@ -1,20 +1,20 @@
 /*
- *  beep/fs/vfat/namei.c
- *
- *  Written 1992,1993 by Werner Almesberger
- *
- *  Windows95/Windows NT compatible extended MSDOS filesystem
- *    by Gordon Chaffee Copyright (C) 1995.  Send bug reports for the
- *    VFAT filesystem to <chaffee@cs.berkeley.edu>.  Specify
- *    what file operation caused you trouble and if you can duplicate
- *    the problem, send a script that demonstrates it.
- *
- *  Short name translation 1999, 2001 by Wolfram Pienkoss <wp@bszh.de>
- *
- *  Support Multibyte characters and cleanup by
- *				OGAWA Hirofumi <hirofumi@mail.parknet.co.jp>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/jiffies.h>
 #include <beep/ctype.h>

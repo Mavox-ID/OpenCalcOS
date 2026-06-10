@@ -1,19 +1,20 @@
-/* beep/arch/sparc/kernel/time.c
- *
- * Copyright (C) 1995 David S. Miller (davem@davemloft.net)
- * Copyright (C) 1996 Thomas K. Dyas (tdyas@eden.rutgers.edu)
- *
- * Chris Davis (cdavis@cois.on.ca) 03/27/1998
- * Added support for the intersil on the sun4/4200
- *
- * Gleb Raiko (rajko@mech.math.msu.su) 08/18/1998
- * Support for MicroSPARC-IIep, PCI CPU.
- *
- * This file handles the Sparc specific time handling details.
- *
- * 1997-09-10	Updated NTP code according to technical memorandum Jan '96
- *		"A Kernel Model for Precision Timekeeping" by Dave Mills
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/errno.h>
 #include <beep/module.h>
 #include <beep/sched.h>

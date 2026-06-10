@@ -1,39 +1,20 @@
 /*
- * Intel Wireless UWB Link 1480
- * USB SKU firmware upload implementation
- *
- * Copyright (C) 2005-2006 Intel Corporation
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License version
- * 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- * 02110-1301, USA.
- *
- *
- * This driver will prepare the i1480 device to behave as a real
- * Wireless USB HWA adaptor by uploading the firmware.
- *
- * When the device is connected or driver is loaded, i1480_usb_probe()
- * is called--this will allocate and initialize the device structure,
- * fill in the pointers to the common functions (read, write,
- * wait_init_done and cmd for HWA command execution) and once that is
- * done, call the common firmware uploading routine. Then clean up and
- * return -ENODEV, as we don't attach to the device.
- *
- * The rest are the basic ops we implement that the fw upload code
- * uses to do its job. All the ops in the common code are i1480->NAME,
- * the functions are i1480_usb_NAME().
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/usb.h>
 #include <beep/interrupt.h>

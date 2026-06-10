@@ -1,63 +1,20 @@
 /*
- * Copyright (c) 1996, 2003 VIA Networking Technologies, Inc.
- * All rights reserved.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License along
- * with this program; if not, write to the Free Software Foundation, Inc.,
- * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
- *
- * File: device_main.c
- *
- * Purpose: driver entry for initial, open, close, tx and rx.
- *
- * Author: Lyndon Chen
- *
- * Date: Jan 8, 2003
- *
- * Functions:
- *
- *   vt6655_probe - module initial (insmod) driver entry
- *   vt6655_remove - module remove entry
- *   vt6655_init_info - device structure resource allocation function
- *   device_free_info - device structure resource free function
- *   device_get_pci_info - get allocated pci io/mem resource
- *   device_print_info - print out resource
- *   device_open - allocate dma/descripter resource & initial mac/bbp function
- *   device_xmit - asynchrous data tx function
- *   device_intr - interrupt handle function
- *   device_set_multi - set mac filter
- *   device_ioctl - ioctl entry
- *   device_close - shutdown mac/bbp & free dma/descripter resource
- *   device_rx_srv - rx service function
- *   device_receive_frame - rx data function
- *   device_alloc_rx_buf - rx buffer pre-allocated function
- *   device_alloc_frag_buf - rx fragement pre-allocated function
- *   device_free_tx_buf - free tx buffer function
- *   device_free_frag_buf- free de-fragement buffer
- *   device_dma0_tx_80211- tx 802.11 frame via dma0
- *   device_dma0_xmit- tx PS bufferred frame via dma0
- *   device_init_rd0_ring- initial rd dma0 ring
- *   device_init_rd1_ring- initial rd dma1 ring
- *   device_init_td0_ring- initial tx dma0 ring buffer
- *   device_init_td1_ring- initial tx dma1 ring buffer
- *   device_init_registers- initial MAC & BBP & RF internal registers.
- *   device_init_rings- initial tx/rx ring buffer
- *   device_init_defrag_cb- initial & allocate de-fragement buffer.
- *   device_free_rings- free all allocated ring buffer
- *   device_tx_srv- tx interrupt service function
- *
- * Revision History:
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #undef __NO_VERSION__
 
 #include "device.h"

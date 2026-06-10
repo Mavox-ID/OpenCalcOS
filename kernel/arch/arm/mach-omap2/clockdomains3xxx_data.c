@@ -1,29 +1,20 @@
 /*
- * OMAP3xxx clockdomains
- *
- * Copyright (C) 2008-2011 Texas Instruments, Inc.
- * Copyright (C) 2008-2010 Nokia Corporation
- *
- * Paul Walmsley, Jouni Högander
- *
- * This file contains clockdomains and clockdomain wakeup/sleep
- * dependencies for the OMAP3xxx chips.  Some notes:
- *
- * A useful validation rule for struct clockdomain: Any clockdomain
- * referenced by a wkdep_srcs or sleepdep_srcs array must have a
- * dep_bit assigned.  So wkdep_srcs/sleepdep_srcs are really just
- * software-controllable dependencies.  Non-software-controllable
- * dependencies do exist, but they are not encoded below (yet).
- *
- * The overly-specific dep_bit names are due to a bit name collision
- * with CM_FCLKEN_{DSP,IVA2}.  The DSP/IVA2 PM_WKDEP and CM_SLEEPDEP shift
- * value are the same for all powerdomains: 2
- *
- * XXX should dep_bit be a mask, so we can test to see if it is 0 as a
- * sanity check?
- * XXX encode hardware fixed wakeup dependencies -- esp. for 3430 CORE
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * To-Do List
  * -> Port the Sleep/Wakeup dependencies for the domains

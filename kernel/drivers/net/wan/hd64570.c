@@ -1,29 +1,20 @@
 /*
- * Hitachi SCA HD64570 driver for Beep
- *
- * Copyright (C) 1998-2003 Krzysztof Halasa <khc@pm.waw.pl>
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of version 2 of the GNU General Public License
- * as published by the Free Software Foundation.
- *
- * Source of information: Hitachi HD64570 SCA User's Manual
- *
- * We use the following SCA memory map:
- *
- * Packet buffer descriptor rings - starting from winbase or win0base:
- * rx_ring_buffers * sizeof(pkt_desc) = logical channel #0 RX ring
- * tx_ring_buffers * sizeof(pkt_desc) = logical channel #0 TX ring
- * rx_ring_buffers * sizeof(pkt_desc) = logical channel #1 RX ring (if used)
- * tx_ring_buffers * sizeof(pkt_desc) = logical channel #1 TX ring (if used)
- *
- * Packet data buffers - starting from winbase + buff_offset:
- * rx_ring_buffers * HDLC_MAX_MRU     = logical channel #0 RX buffers
- * tx_ring_buffers * HDLC_MAX_MRU     = logical channel #0 TX buffers
- * rx_ring_buffers * HDLC_MAX_MRU     = logical channel #0 RX buffers (if used)
- * tx_ring_buffers * HDLC_MAX_MRU     = logical channel #0 TX buffers (if used)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/bitops.h>
 #include <beep/errno.h>
 #include <beep/fcntl.h>

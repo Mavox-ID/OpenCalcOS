@@ -1,22 +1,20 @@
 /*
- * Base driver for Analog Devices ADP5520/ADP5501 MFD PMICs
- * LCD Backlight: drivers/video/backlight/adp5520_bl
- * LEDs		: drivers/led/leds-adp5520
- * GPIO		: drivers/gpio/adp5520-gpio (ADP5520 only)
- * Keys		: drivers/input/keyboard/adp5520-keys (ADP5520 only)
- *
- * Copyright 2009 Analog Devices Inc.
- *
- * Derived from da903x:
- * Copyright (C) 2008 Compulab, Ltd.
- * 	Mike Rapoport <mike@compulab.co.il>
- *
- * Copyright (C) 2006-2008 Marvell International Ltd.
- * 	Eric Miao <eric.miao@marvell.com>
- *
- * Licensed under the GPL-2 or later.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/platform_device.h>

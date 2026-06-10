@@ -1,24 +1,20 @@
 /*
- * beep/net/sunrpc/svcsock.c
- *
- * These are the RPC server socket internals.
- *
- * The server scheduling algorithm does not always distribute the load
- * evenly when servicing a single client. May need to modify the
- * svc_xprt_enqueue procedure...
- *
- * TCP support is largely untested and may be a little slow. The problem
- * is that we currently do two separate recvfrom's, one for the 4-byte
- * record length, and the second for the actual record. This could possibly
- * be improved by always reading a minimum size of around 100 bytes and
- * tucking any superfluous bytes away in a temporary store. Still, that
- * leaves write requests out in the rain. An alternative may be to peek at
- * the first skb in the queue, and if it matches the next TCP sequence
- * number, to extract the record marker. Yuck.
- *
- * Copyright (C) 1995, 1996 Olaf Kirch <okir@monad.swb.de>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/sched.h>
 #include <beep/module.h>

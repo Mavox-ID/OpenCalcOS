@@ -1,27 +1,20 @@
 /*
- * drivers/input/serio/gscps2.c
- *
- * Copyright (c) 2004-2006 Helge Deller <deller@gmx.de>
- * Copyright (c) 2002 Laurent Canet <canetl@esiee.fr>
- * Copyright (c) 2002 Thibaut Varene <varenet@parisc-beep.org>
- *
- * Pieces of code based on beep-2.4's hp_mouse.c & hp_keyb.c
- *	Copyright (c) 1999 Alex deVries <alex@onefishtwo.ca>
- *	Copyright (c) 1999-2000 Philipp Rumpf <prumpf@tux.org>
- *	Copyright (c) 2000 Xavier Debacker <debackex@esiee.fr>
- *	Copyright (c) 2000-2001 Thomas Marteau <marteaut@esiee.fr>
- *
- * HP GSC PS/2 port driver, found in PA/RISC Workstations
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file "COPYING" in the main directory of this archive
- * for more details.
- *
- * TODO:
- * - Dino testing (did HP ever shipped a machine on which this port
- *                 was usable/enabled ?)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/module.h>
 #include <beep/slab.h>

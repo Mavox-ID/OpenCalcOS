@@ -1,19 +1,20 @@
-/* 68328serial.c: Serial port driver for 68328 microcontroller
- *
- * Copyright (C) 1995       David S. Miller    <davem@caip.rutgers.edu>
- * Copyright (C) 1998       Kenneth Albanowski <kjahds@kjahds.com>
- * Copyright (C) 1998, 1999 D. Jeff Dionne     <jeff@ucbeep.org>
- * Copyright (C) 1999       Vladimir Gurevich  <vgurevic@cisco.com>
- * Copyright (C) 2002-2003  David McCullough   <davidm@snapgear.com>
- * Copyright (C) 2002       Greg Ungerer       <gerg@snapgear.com>
- *
- * VZ Support/Fixes             Evan Stawnyczy <e@lineo.ca>
- * Multiple UART support        Daniel Potts <danielp@cse.unsw.edu.au>
- * Power management support     Daniel Potts <danielp@cse.unsw.edu.au>
- * VZ Second Serial Port enable Phil Wilshire
- * 2.4/2.5 port                 David McCullough
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <asm/dbg.h>
 #include <beep/module.h>
 #include <beep/errno.h>

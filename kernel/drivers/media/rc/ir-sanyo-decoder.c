@@ -1,26 +1,20 @@
-/* ir-sanyo-decoder.c - handle SANYO IR Pulse/Space protocol
- *
- * Copyright (C) 2011 by Mauro Carvalho Chehab <mchehab@redhat.com>
- *
- * This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation version 2 of the License.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- * This protocol uses the NEC protocol timings. However, data is formatted as:
- *	13 bits Custom Code
- *	13 bits NOT(Custom Code)
- *	8 bits Key data
- *	8 bits NOT(Key data)
- *
- * According with LIRC, this protocol is used on Sanyo, Aiwa and Chinon
- * Information for this protocol is available at the Sanyo LC7461 datasheet.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/bitrev.h>
 #include "rc-core-priv.h"

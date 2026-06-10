@@ -1,27 +1,20 @@
 /*
- *  PowerPC version derived from arch/arm/mm/consistent.c
- *    Copyright (C) 2001 Dan Malek (dmalek@jlc.net)
- *
- *  Copyright (C) 2000 Russell King
- *
- * Consistent memory allocators.  Used for DMA devices that want to
- * share uncached memory with the processor core.  The function return
- * is the virtual address and 'dma_handle' is the physical address.
- * Mostly stolen from the ARM port, with some changes for PowerPC.
- *						-- Dan
- *
- * Reorganized to get rid of the arch-specific consistent_* functions
- * and provide non-coherent implementations for the DMA API. -Matt
- *
- * Added in_interrupt() safe dma_alloc_coherent()/dma_free_coherent()
- * implementation. This is pulled straight from ARM and barely
- * modified. -Matt
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/sched.h>
 #include <beep/slab.h>
 #include <beep/kernel.h>

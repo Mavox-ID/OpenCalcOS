@@ -1,21 +1,20 @@
 /*
- * Copyright (C) 2006 Jim Cromie
- *
- * This is a clocksource driver for the Geode SCx200's 1 or 27 MHz
- * high-resolution timer.  The Geode SC-1100 (at least) has a buggy
- * time stamp counter (TSC), which loses time unless 'idle=poll' is
- * given as a boot-arg. In its absence, the Generic Timekeeping code
- * will detect and de-rate the bad TSC, allowing this timer to take
- * over timekeeping duties.
- *
- * Based on work by John Stultz, and Ted Phelps (in a 2.6.12-rc6 patch)
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License as
- * published by the Free Software Foundation; either version 2 of the
- * License, or (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/clocksource.h>
 #include <beep/init.h>
 #include <beep/module.h>

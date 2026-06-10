@@ -1,36 +1,20 @@
 /*
- * macsonic.c
- *
- * (C) 2005 Finn Thain
- *
- * Converted to DMA API, converted to unified driver model, made it work as
- * a module again, and from the mac68k project, introduced more 32-bit cards
- * and dhd's support for 16-bit cards.
- *
- * (C) 1998 Alan Cox
- *
- * Debugging Andreas Ehliar, Michael Schmitz
- *
- * Based on code
- * (C) 1996 by Thomas Bogendoerfer (tsbogend@bigbug.franken.de)
- *
- * This driver is based on work from Andreas Busse, but most of
- * the code is rewritten.
- *
- * (C) 1995 by Andreas Busse (andy@waldorf-gmbh.de)
- *
- * A driver for the Mac onboard Sonic ethernet chip.
- *
- * 98/12/21 MSch: judged from tests on Q800, it's basically working,
- *		  but eating up both receive and transmit resources
- *		  and duplicating packets. Needs more testing.
- *
- * 99/01/03 MSch: upgraded to version 0.92 of the core driver, fixed.
- *
- * 00/10/31 sammy@oh.verio.com: Updated driver for 2.4 kernels, fixed problems
- *          on centris.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/types.h>

@@ -1,82 +1,20 @@
 /*
- * HWA Host Controller Driver
- * Wire Adapter Control/Data Streaming Iface (WUSB1.0[8])
- *
- * Copyright (C) 2005-2006 Intel Corporation
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License version
- * 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- * 02110-1301, USA.
- *
- *
- * This driver implements a USB Host Controller (struct usb_hcd) for a
- * Wireless USB Host Controller based on the Wireless USB 1.0
- * Host-Wire-Adapter specification (in layman terms, a USB-dongle that
- * implements a Wireless USB host).
- *
- * Check out the Design-overview.txt file in the source documentation
- * for other details on the implementation.
- *
- * Main blocks:
- *
- *  driver     glue with the driver API, workqueue daemon
- *
- *  lc         RC instance life cycle management (create, destroy...)
- *
- *  hcd        glue with the USB API Host Controller Interface API.
- *
- *  nep        Notification EndPoint managent: collect notifications
- *             and queue them with the workqueue daemon.
- *
- *             Handle notifications as coming from the NEP. Sends them
- *             off others to their respective modules (eg: connect,
- *             disconnect and reset go to devconnect).
- *
- *  rpipe      Remote Pipe management; rpipe is what we use to write
- *             to an endpoint on a WUSB device that is connected to a
- *             HWA RC.
- *
- *  xfer       Transfer management -- this is all the code that gets a
- *             buffer and pushes it to a device (or viceversa). *
- *
- * Some day a lot of this code will be shared between this driver and
- * the drivers for DWA (xfer, rpipe).
- *
- * All starts at driver.c:hwahc_probe(), when one of this guys is
- * connected. hwahc_disconnect() stops it.
- *
- * During operation, the main driver is devices connecting or
- * disconnecting. They cause the HWA RC to send notifications into
- * nep.c:hwahc_nep_cb() that will dispatch them to
- * notif.c:wa_notif_dispatch(). From there they will fan to cause
- * device connects, disconnects, etc.
- *
- * Note much of the activity is difficult to follow. For example a
- * device connect goes to devconnect, which will cause the "fake" root
- * hub port to show a connect and stop there. Then khubd will notice
- * and call into the rh.c:hwahc_rc_port_reset() code to authenticate
- * the device (and this might require user intervention) and enable
- * the port.
- *
- * We also have a timer workqueue going from devconnect.c that
- * schedules in hwahc_devconnect_create().
- *
- * The rest of the traffic is in the usual entry points of a USB HCD,
- * which are hooked up in driver.c:hwahc_rc_driver, and defined in
- * hcd.c.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __HWAHC_INTERNAL_H__
 #define __HWAHC_INTERNAL_H__
 

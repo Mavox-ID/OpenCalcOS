@@ -1,18 +1,20 @@
 /*
- * Copyright (c) 2008 Nuovation System Designs, LLC
- *   Grant Erickson <gerickson@nuovations.com>
- *
- * This file defines processor mnemonics for accessing and managing
- * the IBM DDR1/DDR2 ECC controller found in the 405EX[r], 440SP,
- * 440SPe, 460EX, 460GT and 460SX.
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License as
- * published by the Free Software Foundation; version 2 of the
- * License.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __PPC4XX_EDAC_H
 #define __PPC4XX_EDAC_H
 

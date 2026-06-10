@@ -1,23 +1,10 @@
 /*
-    Retrieve encoded MAC address from 24C16 serial 2-wire EEPROM,
-    decode it and store it in the associated adapter struct for
-    use by dvb_net.c
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-    This card appear to have the 24C16 write protect held to ground,
-    thus permitting normal read/write operation. Theoretically it
-    would be possible to write routines to burn a different (encoded)
-    MAC address into the EEPROM.
-
-    Robert Schlabbach	GMX
-    Michael Glaum	KVH Industries
-    Holger Waechtler	Convergence
-
-    Copyright (C) 2002-2003 Ralph Metzler <rjkm@metzlerbros.de>
-			    Metzler Brothers Systementwicklung GbR
-
-    This program is free software; you can redistribute it and/or modify
+    This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
+    the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
@@ -26,11 +13,8 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #include <asm/errno.h>
 #include <beep/init.h>
 #include <beep/module.h>

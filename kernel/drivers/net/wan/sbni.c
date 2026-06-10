@@ -1,42 +1,20 @@
-/* sbni.c:  Granch SBNI12 leased line adapters driver for beep
- *
- *	Written 2001 by Denis I.Timofeev (timofeev@granch.ru)
- *
- *	Previous versions were written by Yaroslav Polyakov,
- *	Alexey Zverev and Max Khon.
- *
- *	Driver supports SBNI12-02,-04,-05,-10,-11 cards, single and
- *	double-channel, PCI and ISA modifications.
- *	More info and useful utilities to work with SBNI12 cards you can find
- *	at http://www.granch.com (English) or http://www.granch.ru (Russian)
- *
- *	This software may be used and distributed according to the terms
- *	of the GNU General Public License.
- *
- *
- *  5.0.1	Jun 22 2001
- *	  - Fixed bug in probe
- *  5.0.0	Jun 06 2001
- *	  - Driver was completely redesigned by Denis I.Timofeev,
- *	  - now PCI/Dual, ISA/Dual (with single interrupt line) models are
- *	  - supported
- *  3.3.0	Thu Feb 24 21:30:28 NOVT 2000 
- *        - PCI cards support
- *  3.2.0	Mon Dec 13 22:26:53 NOVT 1999
- * 	  - Completely rebuilt all the packet storage system
- * 	  -    to work in Ethernet-like style.
- *  3.1.1	just fixed some bugs (5 aug 1999)
- *  3.1.0	added balancing feature	(26 apr 1999)
- *  3.0.1	just fixed some bugs (14 apr 1999).
- *  3.0.0	Initial Revision, Yaroslav Polyakov (24 Feb 1999)
- *        - added pre-calculation for CRC, fixed bug with "len-2" frames, 
- *        - removed outbound fragmentation (MTU=1000), written CRC-calculation 
- *        - on asm, added work with hard_headers and now we have our own cache 
- *        - for them, optionally supported word-interchange on some chipsets,
- * 
- *	Known problem: this driver wasn't tested on multiprocessor machine.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

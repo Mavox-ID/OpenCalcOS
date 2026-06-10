@@ -1,23 +1,20 @@
 /*
- *  fs/partitions/msdos.c
- *
- *  Code extracted from drivers/block/genhd.c
- *  Copyright (C) 1991-1998  Linus Torvalds
- *
- *  Thanks to Branko Lankester, lankeste@fwi.uva.nl, who found a bug
- *  in the early extended-partition checks and added DM partitions
- *
- *  Support for DiskManager v6.0x added by Mark Lord,
- *  with information provided by OnTrack.  This now works for beep fdisk
- *  and LILO, as well as loadlin and bootln.  Note that disks other than
- *  /dev/hda *must* have a "DOS" type 0x51 partition in the first slot (hda1).
- *
- *  More flexible handling of extended partitions - aeb, 950831
- *
- *  Check partition table on IDE disks for common CHS translations
- *
- *  Re-organised Feb 1998 Russell King
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/msdos_fs.h>
 
 #include "check.h"

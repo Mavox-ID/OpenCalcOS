@@ -1,36 +1,20 @@
 /*
- * Beep driver for digital TV devices equipped with B2C2 FlexcopII(b)/III
- * flexcop.c - main module part
- * Copyright (C) 2004-9 Patrick Boettcher <patrick.boettcher@desy.de>
- * based on skystar2-driver Copyright (C) 2003 Vadim Catana, skystar@moldova.cc
- *
- * Acknowledgements:
- *   John Jurrius from BBTI, Inc. for extensive support
- *                    with code examples and data books
- *   Bjarne Steinsbo, bjarne at steinsbo.com (some ideas for rewriting)
- *
- * Contributions to the skystar2-driver have been done by
- *   Vincenzo Di Massa, hawk.it at tiscalinet.it (several DiSEqC fixes)
- *   Roberto Ragusa, r.ragusa at libero.it (polishing, restyling the code)
- *   Uwe Bugla, uwe.bugla at gmx.de (doing tests, restyling code, writing docu)
- *   Niklas Peinecke, peinecke at gdv.uni-hannover.de (hardware pid/mac
- *               filtering)
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public License
- * as published by the Free Software Foundation; either version 2.1
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU Lesser General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "flexcop.h"
 
 #define DRIVER_NAME "B2C2 FlexcopII/II(b)/III digital TV receiver chip"

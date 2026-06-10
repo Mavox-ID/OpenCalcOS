@@ -1,17 +1,20 @@
 /*
-        kbic.c    (c) 1997-8  Grant R. Guenther <grant@torque.net>
-                              Under the terms of the GNU General Public License.
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-        This is a low-level driver for the KBIC-951A and KBIC-971A
-        parallel to IDE adapter chips from KingByte Information Systems.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-	The chips are almost identical, however, the wakeup code 
-	required for the 971A interferes with the correct operation of
-        the 951A, so this driver registers itself twice, once for
-	each chip.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 /* Changes:
 
         1.01    GRG 1998.05.06 init_proto, release_proto

@@ -1,19 +1,20 @@
-/* cpwd.c - driver implementation for hardware watchdog
- * timers found on Sun Microsystems CP1400 and CP1500 boards.
- *
- * This device supports both the generic Beep watchdog
- * interface and Solaris-compatible ioctls as best it is
- * able.
- *
- * NOTE:	CP1400 systems appear to have a defective intr_mask
- *			register on the PLD, preventing the disabling of
- *			timer interrupts.  We use a timer to periodically
- *			reset 'stopped' watchdogs on affected platforms.
- *
- * Copyright (c) 2000 Eric Brower (ebrower@usa.net)
- * Copyright (C) 2008 David S. Miller <davem@davemloft.net>
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/kernel.h>

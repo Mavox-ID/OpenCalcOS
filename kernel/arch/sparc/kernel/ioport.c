@@ -1,30 +1,20 @@
 /*
- * ioport.c:  Simple io mapping allocator.
- *
- * Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
- * Copyright (C) 1995 Miguel de Icaza (miguel@nuclecu.unam.mx)
- *
- * 1996: sparc_free_io, 1999: ioremap()/iounmap() by Pete Zaitcev.
- *
- * 2000/01/29
- * <rth> zait: as long as pci_alloc_consistent produces something addressable, 
- *	things are ok.
- * <zaitcev> rth: no, it is relevant, because get_free_pages returns you a
- *	pointer into the big page mapping
- * <rth> zait: so what?
- * <rth> zait: remap_it_my_way(virt_to_phys(get_free_page()))
- * <zaitcev> Hmm
- * <zaitcev> Suppose I did this remap_it_my_way(virt_to_phys(get_free_page())).
- *	So far so good.
- * <zaitcev> Now, driver calls pci_free_consistent(with result of
- *	remap_it_my_way()).
- * <zaitcev> How do you find the address to pass to free_pages()?
- * <rth> zait: walk the page tables?  It's only two or three level after all.
- * <rth> zait: you have to walk them anyway to remove the mapping.
- * <zaitcev> Hmm
- * <zaitcev> Sounds reasonable
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/sched.h>
 #include <beep/kernel.h>

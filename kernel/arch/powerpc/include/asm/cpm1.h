@@ -1,19 +1,20 @@
 /*
- * MPC8xx Communication Processor Module.
- * Copyright (c) 1997 Dan Malek (dmalek@jlc.net)
- *
- * This file contains structures and information for the communication
- * processor channels.  Some CPM control and status is available
- * through the MPC8xx internal memory map.  See immap.h for details.
- * This file only contains what I need for the moment, not the total
- * CPM capabilities.  I (or someone else) will add definitions as they
- * are needed.  -- Dan
- *
- * On the MBX board, EPPC-Bug loads CPM microcode into the first 512
- * bytes of the DP RAM and relocates the I2C parameter area to the
- * IDMA1 space.  The remaining DP RAM is available for buffer descriptors
- * or other use.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __CPM1__
 #define __CPM1__
 

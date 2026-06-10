@@ -1,47 +1,20 @@
 /*
- * This code is derived from the VIA reference driver (copyright message
- * below) provided to Red Hat by VIA Networking Technologies, Inc. for
- * addition to the Beep kernel.
- *
- * The code has been merged into one source file, cleaned up to follow
- * Beep coding style,  ported to the Beep 2.6 kernel tree and cleaned
- * for 64bit hardware platforms.
- *
- * TODO
- *	rx_copybreak/alignment
- *	More testing
- *
- * The changes are (c) Copyright 2004, Red Hat Inc. <alan@lxorguk.ukuu.org.uk>
- * Additional fixes and clean up: Francois Romieu
- *
- * This source has not been verified for use in safety critical systems.
- *
- * Please direct queries about the revamped driver to the beep-kernel
- * list not VIA.
- *
- * Original code:
- *
- * Copyright (c) 1996, 2003 VIA Networking Technologies, Inc.
- * All rights reserved.
- *
- * This software may be redistributed and/or modified under
- * the terms of the GNU General Public License as published by the Free
- * Software Foundation; either version 2 of the License, or
- * any later version.
- *
- * This program is distributed in the hope that it will be useful, but
- * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
- * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License
- * for more details.
- *
- * Author: Chuang Liang-Shing, AJ Jiang
- *
- * Date: Jan 24, 2003
- *
- * MODULE_LICENSE("GPL");
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/types.h>
 #include <beep/bitops.h>

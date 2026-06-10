@@ -1,82 +1,20 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the BEEP
- *		operating system.  INET is implemented using the  BSD Socket
- *		interface as the means of communication with the user level.
- *
- *		The User Datagram Protocol (UDP).
- *
- * Authors:	Ross Biro
- *		Fred N. van Kempen, <waltje@uWalt.NL.Mugnet.ORG>
- *		Arnt Gulbrandsen, <agulbra@nvg.unit.no>
- *		Alan Cox, <alan@lxorguk.ukuu.org.uk>
- *		Hirokazu Takahashi, <taka@vabeep.co.jp>
- *
- * Fixes:
- *		Alan Cox	:	verify_area() calls
- *		Alan Cox	: 	stopped close while in use off icmp
- *					messages. Not a fix but a botch that
- *					for udp at least is 'valid'.
- *		Alan Cox	:	Fixed icmp handling properly
- *		Alan Cox	: 	Correct error for oversized datagrams
- *		Alan Cox	:	Tidied select() semantics.
- *		Alan Cox	:	udp_err() fixed properly, also now
- *					select and read wake correctly on errors
- *		Alan Cox	:	udp_send verify_area moved to avoid mem leak
- *		Alan Cox	:	UDP can count its memory
- *		Alan Cox	:	send to an unknown connection causes
- *					an ECONNREFUSED off the icmp, but
- *					does NOT close.
- *		Alan Cox	:	Switched to new sk_buff handlers. No more backlog!
- *		Alan Cox	:	Using generic datagram code. Even smaller and the PEEK
- *					bug no longer crashes it.
- *		Fred Van Kempen	: 	Net2e support for sk->broadcast.
- *		Alan Cox	:	Uses skb_free_datagram
- *		Alan Cox	:	Added get/set sockopt support.
- *		Alan Cox	:	Broadcasting without option set returns EACCES.
- *		Alan Cox	:	No wakeup calls. Instead we now use the callbacks.
- *		Alan Cox	:	Use ip_tos and ip_ttl
- *		Alan Cox	:	SNMP Mibs
- *		Alan Cox	:	MSG_DONTROUTE, and 0.0.0.0 support.
- *		Matt Dillon	:	UDP length checks.
- *		Alan Cox	:	Smarter af_inet used properly.
- *		Alan Cox	:	Use new kernel side addressing.
- *		Alan Cox	:	Incorrect return on truncated datagram receive.
- *	Arnt Gulbrandsen 	:	New udp_send and stuff
- *		Alan Cox	:	Cache last socket
- *		Alan Cox	:	Route cache
- *		Jon Peatfield	:	Minor efficiency fix to sendto().
- *		Mike Shaver	:	RFC1122 checks.
- *		Alan Cox	:	Nonblocking error fix.
- *	Willy Konynenberg	:	Transparent proxying support.
- *		Mike McLagan	:	Routing by source
- *		David S. Miller	:	New socket lookup architecture.
- *					Last socket cache retained as it
- *					does have a high hit rate.
- *		Olaf Kirch	:	Don't linearise iovec on sendmsg.
- *		Andi Kleen	:	Some cleanups, cache destination entry
- *					for connect.
- *	Vitaly E. Lavrov	:	Transparent proxy revived after year coma.
- *		Melvin Smith	:	Check msg_name not msg_namelen in sendto(),
- *					return ENOTCONN for unconnected sockets (POSIX)
- *		Janos Farkas	:	don't deliver multi/broadcasts to a different
- *					bound-to-device socket
- *	Hirokazu Takahashi	:	HW checksumming for outgoing UDP
- *					datagrams.
- *	Hirokazu Takahashi	:	sendfile() on UDP works now.
- *		Arnaldo C. Melo :	convert /proc/net/udp to seq_file
- *	YOSHIFUJI Hideaki @USAGI and:	Support IPV6_V6ONLY socket option, which
- *	Alexey Kuznetsov:		allow both IPv4 and IPv6 sockets to bind
- *					a single port at the same time.
- *	Derek Atkins <derek@ihtfp.com>: Add Encapulation Support
- *	James Chapman		:	Add L2TP encapsulation type.
- *
- *
- *		This program is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) "UDP: " fmt
 
 #include <asm/uaccess.h>

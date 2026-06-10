@@ -1,14 +1,20 @@
 /*
- * USB block power/access management abstraction.
- *
- * Au1000+: The OHCI block control register is at the far end of the OHCI memory
- *	    area. Au1550 has OHCI on different base address. No need to handle
- *	    UDC here.
- * Au1200:  one register to control access and clocks to O/EHCI, UDC and OTG
- *	    as well as the PHY for EHCI and UDC.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/io.h>
 #include <beep/module.h>

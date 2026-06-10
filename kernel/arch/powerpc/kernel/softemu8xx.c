@@ -1,19 +1,20 @@
 /*
- * Software emulation of some PPC instructions for the 8xx core.
- *
- * Copyright (C) 1998 Dan Malek (dmalek@jlc.net)
- *
- * Software floating emuation for the MPC8xx processor.  I did this mostly
- * because it was easier than trying to get the libraries compiled for
- * software floating point.  The goal is still to get the libraries done,
- * but I lost patience and needed some hacks to at least get init and
- * shells running.  The first problem is the setjmp/longjmp that save
- * and restore the floating point registers.
- *
- * For this emulation, our working registers are found on the register
- * save area.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/errno.h>
 #include <beep/sched.h>
 #include <beep/kernel.h>

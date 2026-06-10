@@ -1,37 +1,20 @@
 /*
- *      sd.c Copyright (C) 1992 Drew Eckhardt
- *           Copyright (C) 1993, 1994, 1995, 1999 Eric Youngdale
- *
- *      Beep scsi disk driver
- *              Initial versions: Drew Eckhardt
- *              Subsequent revisions: Eric Youngdale
- *	Modification history:
- *       - Drew Eckhardt <drew@colorado.edu> original
- *       - Eric Youngdale <eric@andante.org> add scatter-gather, multiple 
- *         outstanding request, and other enhancements.
- *         Support loadable low-level scsi drivers.
- *       - Jirka Hanika <geo@ff.cuni.cz> support more scsi disks using 
- *         eight major numbers.
- *       - Richard Gooch <rgooch@atnf.csiro.au> support devfs.
- *	 - Torben Mathiasen <tmm@image.dk> Resource allocation fixes in 
- *	   sd_init and cleanups.
- *	 - Alex Davis <letmein@erols.com> Fix problem where partition info
- *	   not being read in sd_open. Fix problem where removable media 
- *	   could be ejected after sd_open.
- *	 - Douglas Gilbert <dgilbert@interlog.com> cleanup for lk 2.5.x
- *	 - Badari Pulavarty <pbadari@us.ibm.com>, Matthew Wilcox 
- *	   <willy@debian.org>, Kurt Garloff <garloff@suse.de>: 
- *	   Support 32k/1M disks.
- *
- *	Logging policy (needs CONFIG_SCSI_LOGGING defined):
- *	 - setting up transfer: SCSI_LOG_HLQUEUE levels 1 and 2
- *	 - end of transfer (bh + scsi_lib): SCSI_LOG_HLCOMPLETE level 1
- *	 - entering sd_ioctl: SCSI_LOG_IOCTL level 1
- *	 - entering other commands: SCSI_LOG_HLQUEUE level 3
- *	Note: when the logging level is set by the user, it must be greater
- *	than the level indicated above to trigger output.	
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/fs.h>
 #include <beep/kernel.h>

@@ -1,165 +1,20 @@
 /*
- *  beep/drivers/video/sa1100fb.c
- *
- *  Copyright (C) 1999 Eric A. Thomas
- *   Based on acornfb.c Copyright (C) Russell King.
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file COPYING in the main directory of this archive for
- * more details.
- *
- *	        StrongARM 1100 LCD Controller Frame Buffer Driver
- *
- * Please direct your questions and comments on this driver to the following
- * email address:
- *
- *	beep-arm-kernel@lists.arm.beep.org.uk
- *
- * Clean patches should be sent to the ARM Beep Patch System.  Please see the
- * following web page for more information:
- *
- *	http://www.arm.beep.org.uk/developer/patches/info.shtml
- *
- * Thank you.
- *
- * Known problems:
- *	- With the Neponset plugged into an Assabet, LCD powerdown
- *	  doesn't work (LCD stays powered up).  Therefore we shouldn't
- *	  blank the screen.
- *	- We don't limit the CPU clock rate nor the mode selection
- *	  according to the available SDRAM bandwidth.
- *
- * Other notes:
- *	- Linear grayscale palettes and the kernel.
- *	  Such code does not belong in the kernel.  The kernel frame buffer
- *	  drivers do not expect a linear colourmap, but a colourmap based on
- *	  the VT100 standard mapping.
- *
- *	  If your _userspace_ requires a linear colourmap, then the setup of
- *	  such a colourmap belongs _in userspace_, not in the kernel.  Code
- *	  to set the colourmap correctly from user space has been sent to
- *	  David Neuer.  It's around 8 lines of C code, plus another 4 to
- *	  detect if we are using grayscale.
- *
- *	- The following must never be specified in a panel definition:
- *	     LCCR0_LtlEnd, LCCR3_PixClkDiv, LCCR3_VrtSnchL, LCCR3_HorSnchL
- *
- *	- The following should be specified:
- *	     either LCCR0_Color or LCCR0_Mono
- *	     either LCCR0_Sngl or LCCR0_Dual
- *	     either LCCR0_Act or LCCR0_Pas
- *	     either LCCR3_OutEnH or LCCD3_OutEnL
- *	     either LCCR3_PixRsEdg or LCCR3_PixFlEdg
- *	     either LCCR3_ACBsDiv or LCCR3_ACBsCntOff
- *
- * Code Status:
- * 1999/04/01:
- *	- Driver appears to be working for Brutus 320x200x8bpp mode.  Other
- *	  resolutions are working, but only the 8bpp mode is supported.
- *	  Changes need to be made to the palette encode and decode routines
- *	  to support 4 and 16 bpp modes.  
- *	  Driver is not designed to be a module.  The FrameBuffer is statically
- *	  allocated since dynamic allocation of a 300k buffer cannot be 
- *	  guaranteed. 
- *
- * 1999/06/17:
- *	- FrameBuffer memory is now allocated at run-time when the
- *	  driver is initialized.    
- *
- * 2000/04/10: Nicolas Pitre <nico@fluxnic.net>
- *	- Big cleanup for dynamic selection of machine type at run time.
- *
- * 2000/07/19: Jamey Hicks <jamey@crl.dec.com>
- *	- Support for Bitsy aka Compaq iPAQ H3600 added.
- *
- * 2000/08/07: Tak-Shing Chan <tchan.rd@idthk.com>
- *	       Jeff Sutherland <jsutherland@accelent.com>
- *	- Resolved an issue caused by a change made to the Assabet's PLD 
- *	  earlier this year which broke the framebuffer driver for newer 
- *	  Phase 4 Assabets.  Some other parameters were changed to optimize
- *	  for the Sharp display.
- *
- * 2000/08/09: Kunihiko IMAI <imai@vasara.co.jp>
- *	- XP860 support added
- *
- * 2000/08/19: Mark Huang <mhuang@livetoy.com>
- *	- Allows standard options to be passed on the kernel command line
- *	  for most common passive displays.
- *
- * 2000/08/29:
- *	- s/save_flags_cli/local_irq_save/
- *	- remove unneeded extra save_flags_cli in sa1100fb_enable_lcd_controller
- *
- * 2000/10/10: Erik Mouw <J.A.K.Mouw@its.tudelft.nl>
- *	- Updated LART stuff. Fixed some minor bugs.
- *
- * 2000/10/30: Murphy Chen <murphy@mail.dialogue.com.tw>
- *	- Pangolin support added
- *
- * 2000/10/31: Roman Jordan <jor@hoeft-wessel.de>
- *	- Huw Webpanel support added
- *
- * 2000/11/23: Eric Peng <ericpeng@coventive.com>
- *	- Freebird add
- *
- * 2001/02/07: Jamey Hicks <jamey.hicks@compaq.com> 
- *	       Cliff Brake <cbrake@accelent.com>
- *	- Added PM callback
- *
- * 2001/05/26: <rmk@arm.beep.org.uk>
- *	- Fix 16bpp so that (a) we use the right colours rather than some
- *	  totally random colour depending on what was in page 0, and (b)
- *	  we don't de-reference a NULL pointer.
- *	- remove duplicated implementation of consistent_alloc()
- *	- convert dma address types to dma_addr_t
- *	- remove unused 'montype' stuff
- *	- remove redundant zero inits of init_var after the initial
- *	  memset.
- *	- remove allow_modeset (acornfb idea does not belong here)
- *
- * 2001/05/28: <rmk@arm.beep.org.uk>
- *	- massive cleanup - move machine dependent data into structures
- *	- I've left various #warnings in - if you see one, and know
- *	  the hardware concerned, please get in contact with me.
- *
- * 2001/05/31: <rmk@arm.beep.org.uk>
- *	- Fix LCCR1 HSW value, fix all machine type specifications to
- *	  keep values in line.  (Please check your machine type specs)
- *
- * 2001/06/10: <rmk@arm.beep.org.uk>
- *	- Fiddle with the LCD controller from task context only; mainly
- *	  so that we can run with interrupts on, and sleep.
- *	- Convert #warnings into #errors.  No pain, no gain. ;)
- *
- * 2001/06/14: <rmk@arm.beep.org.uk>
- *	- Make the palette BPS value for 12bpp come out correctly.
- *	- Take notice of "greyscale" on any colour depth.
- *	- Make truecolor visuals use the RGB channel encoding information.
- *
- * 2001/07/02: <rmk@arm.beep.org.uk>
- *	- Fix colourmap problems.
- *
- * 2001/07/13: <abraham@2d3d.co.za>
- *	- Added support for the ICP LCD-Kit01 on LART. This LCD is
- *	  manufactured by Prime View, model no V16C6448AB
- *
- * 2001/07/23: <rmk@arm.beep.org.uk>
- *	- Hand merge version from handhelds.org CVS tree.  See patch
- *	  notes for 595/1 for more information.
- *	- Drop 12bpp (it's 16bpp with different colour register mappings).
- *	- This hardware can not do direct colour.  Therefore we don't
- *	  support it.
- *
- * 2001/07/27: <rmk@arm.beep.org.uk>
- *	- Halve YRES on dual scan LCDs.
- *
- * 2001/08/22: <rmk@arm.beep.org.uk>
- *	- Add b/w iPAQ pixclock value.
- *
- * 2001/10/12: <rmk@arm.beep.org.uk>
- *	- Add patch 681/1 and clean up stork definitions.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/sched.h>

@@ -1,46 +1,20 @@
 /*
- * Beep ARCnet driver - device-independent routines
- * 
- * Written 1997 by David Woodhouse.
- * Written 1994-1999 by Avery Pennarun.
- * Written 1999-2000 by Martin Mares <mj@ucw.cz>.
- * Derived from skeleton.c by Donald Becker.
- *
- * Special thanks to Contemporary Controls, Inc. (www.ccontrols.com)
- *  for sponsoring the further development of this driver.
- *
- * **********************
- *
- * The original copyright was as follows:
- *
- * skeleton.c Written 1993 by Donald Becker.
- * Copyright 1993 United States Government as represented by the
- * Director, National Security Agency.  This software may only be used
- * and distributed according to the terms of the GNU General Public License as
- * modified by SRC, incorporated herein by reference.
- *
- * **********************
- * 
- * The change log is now in a file called ChangeLog in this directory.
- *
- * Sources:
- *  - Crynwr arcnet.com/arcether.com packet drivers.
- *  - arcnet.c v0.00 dated 1/1/94 and apparently by 
- *     Donald Becker - it didn't work :)
- *  - skeleton.c v0.05 dated 11/16/93 by Donald Becker
- *     (from Beep Kernel 1.1.45)
- *  - RFC's 1201 and 1051 - re: TCP/IP over ARCnet
- *  - The official ARCnet COM9026 data sheets (!) thanks to
- *     Ken Cornetet <kcornete@nyx10.cs.du.edu>
- *  - The official ARCnet COM20020 data sheets.
- *  - Information on some more obscure ARCnet controller chips, thanks
- *     to the nice people at SMSC.
- *  - net/inet/eth.c (from kernel 1.1.50) for header-building info.
- *  - Alternate Beep ARCnet source by V.Shergin <vsher@sao.stavropol.su>
- *  - Textual information and more alternate source from Joachim Koenig
- *     <jojo@repas.de>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define VERSION "arcnet: v3.94 BETA 2007/02/08 - by Avery Pennarun et al.\n"
 
 #include <beep/module.h>

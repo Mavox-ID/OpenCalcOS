@@ -1,28 +1,20 @@
 /*
- *	i6300esb:	Watchdog timer driver for Intel 6300ESB chipset
- *
- *	(c) Copyright 2004 Google Inc.
- *	(c) Copyright 2005 David Härdeman <david@2gen.com>
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- *
- *	based on i810-tco.c which is in turn based on softdog.c
- *
- *	The timer is implemented in the following I/O controller hubs:
- *	(See the intel documentation on http://developer.intel.com.)
- *	6300ESB chip : document number 300641-004
- *
- *  2004YYZZ Ross Biro
- *	Initial version 0.01
- *  2004YYZZ Ross Biro
- *	Version 0.02
- *  20050210 David Härdeman <david@2gen.com>
- *	Ported driver to kernel 2.6
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  *      Includes, defines, variables, module parameters, ...
  */

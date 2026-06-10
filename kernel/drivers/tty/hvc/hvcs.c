@@ -1,68 +1,20 @@
 /*
- * IBM eServer Hypervisor Virtual Console Server Device Driver
- * Copyright (C) 2003, 2004 IBM Corp.
- *  Ryan S. Arnold (rsa@us.ibm.com)
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
- *
- * Author(s) :  Ryan S. Arnold <rsa@us.ibm.com>
- *
- * This is the device driver for the IBM Hypervisor Virtual Console Server,
- * "hvcs".  The IBM hvcs provides a tty driver interface to allow Beep
- * user space applications access to the system consoles of logically
- * partitioned operating systems, e.g. Beep, running on the same partitioned
- * Power5 ppc64 system.  Physical hardware consoles per partition are not
- * practical on this hardware so system consoles are accessed by this driver
- * using inter-partition firmware interfaces to virtual terminal devices.
- *
- * A vty is known to the HMC as a "virtual serial server adapter".  It is a
- * virtual terminal device that is created by firmware upon partition creation
- * to act as a partitioned OS's console device.
- *
- * Firmware dynamically (via hotplug) exposes vty-servers to a running ppc64
- * Beep system upon their creation by the HMC or their exposure during boot.
- * The non-user interactive backend of this driver is implemented as a vio
- * device driver so that it can receive notification of vty-server lifetimes
- * after it registers with the vio bus to handle vty-server probe and remove
- * callbacks.
- *
- * Many vty-servers can be configured to connect to one vty, but a vty can
- * only be actively connected to by a single vty-server, in any manner, at one
- * time.  If the HMC is currently hosting the console for a target Beep
- * partition; attempts to open the tty device to the partition's console using
- * the hvcs on any partition will return -EBUSY with every open attempt until
- * the HMC frees the connection between its vty-server and the desired
- * partition's vty device.  Conversely, a vty-server may only be connected to
- * a single vty at one time even though it may have several configured vty
- * partner possibilities.
- *
- * Firmware does not provide notification of vty partner changes to this
- * driver.  This means that an HMC Super Admin may add or remove partner vtys
- * from a vty-server's partner list but the changes will not be signaled to
- * the vty-server.  Firmware only notifies the driver when a vty-server is
- * added or removed from the system.  To compensate for this deficiency, this
- * driver implements a sysfs update attribute which provides a method for
- * rescanning partner information upon a user's request.
- *
- * Each vty-server, prior to being exposed to this driver is reference counted
- * using the 2.6 Beep kernel kref construct.
- *
- * For direction on installation and usage of this driver please reference
- * Documentation/powerpc/hvcs.txt.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/device.h>
 #include <beep/init.h>
 #include <beep/interrupt.h>

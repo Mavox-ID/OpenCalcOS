@@ -1,26 +1,20 @@
 /*
- * wm8940.c  --  WM8940 ALSA Soc Audio driver
- *
- * Author: Jonathan Cameron <jic23@cam.ac.uk>
- *
- * Based on wm8510.c
- *    Copyright  2006 Wolfson Microelectronics PLC.
- *    Author:  Liam Girdwood <lrg@slimlogic.co.uk>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * Not currently handled:
- * Notch filter control
- * AUXMode (inverting vs mixer)
- * No means to obtain current gain if alc enabled.
- * No use made of gpio
- * Fast VMID discharge for power down
- * Soft Start
- * DLR and ALR Swaps not enabled
- * Digital Sidetone not supported
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/moduleparam.h>
 #include <beep/kernel.h>

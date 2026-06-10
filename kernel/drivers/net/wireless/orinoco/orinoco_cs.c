@@ -1,15 +1,20 @@
-/* orinoco_cs.c (formerly known as dldwd_cs.c)
- *
- * A driver for "Hermes" chipset based PCMCIA wireless adaptors, such
- * as the Lucent WavelanIEEE/Orinoco cards and their OEM (Cabletron/
- * EnteraSys RoamAbout 802.11, ELSA Airlancer, Melco Buffalo and others).
- * It should also be usable on various Prism II based cards such as the
- * Linksys, D-Link and Farallon Skyline. It should also work on Symbol
- * cards such as the 3Com AirConnect and Ericsson WLAN.
- *
- * Copyright notice & release notes in file main.c
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define DRIVER_NAME "orinoco_cs"
 #define PFX DRIVER_NAME ": "
 

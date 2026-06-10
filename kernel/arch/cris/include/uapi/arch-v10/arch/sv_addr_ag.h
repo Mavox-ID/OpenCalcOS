@@ -1,18 +1,20 @@
-/*!**************************************************************************
-*!                                                            
-*! MACROS:
-*!   IO_MASK(reg,field)
-*!   IO_STATE(reg,field,state)
-*!   IO_EXTRACT(reg,field,val)
-*!   IO_STATE_VALUE(reg,field,state)
-*!   IO_BITNR(reg,field)
-*!   IO_WIDTH(reg,field)
-*!   IO_FIELD(reg,field,val)
-*!   IO_RD(reg)
-*!   All moderegister addresses and fields of these.
-*!
-*!**************************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __sv_addr_ag_h__
 #define __sv_addr_ag_h__
 

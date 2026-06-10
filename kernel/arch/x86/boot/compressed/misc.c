@@ -1,14 +1,20 @@
 /*
- * misc.c
- *
- * This is a collection of several routines from gzip-1.0.3
- * adapted for Beep.
- *
- * malloc by Hannu Savolainen 1993 and Matthias Urlichs 1994
- * puts by Nick Holloway 1993, better puts by Martin Mares 1995
- * High loaded stuff by Hans Lermen & Werner Almesberger, Feb. 1996
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "misc.h"
 
 /* WARNING!!

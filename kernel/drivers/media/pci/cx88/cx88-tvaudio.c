@@ -1,28 +1,10 @@
 /*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-    cx88x-audio.c - Conexant CX23880/23881 audio downstream driver driver
-
-     (c) 2001 Michael Eskin, Tom Zakrajsek [Windows version]
-     (c) 2002 Yurij Sysoev <yurij@naturesoft.net>
-     (c) 2003 Gerd Knorr <kraxel@bytesex.org>
-
-    -----------------------------------------------------------------------
-
-    Lot of voodoo here.  Even the data sheet doesn't help to
-    understand what is going on here, the documentation for the audio
-    part of the cx2388x chip is *very* bad.
-
-    Some of this comes from party done beep driver sources I got from
-    [undocumented].
-
-    Some comes from the dscaler sources, one of the dscaler driver guy works
-    for Conexant ...
-
-    -----------------------------------------------------------------------
-
-    This program is free software; you can redistribute it and/or modify
+    This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
+    the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
@@ -31,10 +13,8 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #include <beep/module.h>
 #include <beep/errno.h>
 #include <beep/freezer.h>

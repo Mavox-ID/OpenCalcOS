@@ -1,25 +1,20 @@
 /*
- * beep/fs/lockd/svclock.c
- *
- * Handling of server-side locks, mostly of the blocked variety.
- * This is the ugliest part of lockd because we tread on very thin ice.
- * GRANT and CANCEL calls may get stuck, meet in mid-flight, etc.
- * IMNSHO introducing the grant callback into the NLM protocol was one
- * of the worst ideas Sun ever had. Except maybe for the idea of doing
- * NFS file locking at all.
- *
- * I'm trying hard to avoid race conditions by protecting most accesses
- * to a file's list of blocked locks through a semaphore. The global
- * list of blocked locks is not protected in this fashion however.
- * Therefore, some functions (such as the RPC callback for the async grant
- * call) move blocked locks towards the head of the list *while some other
- * process might be traversing it*. This should not be a problem in
- * practice, because this will only cause functions traversing the list
- * to visit some blocks twice.
- *
- * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/slab.h>
 #include <beep/errno.h>

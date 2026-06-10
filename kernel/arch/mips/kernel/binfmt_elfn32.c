@@ -1,14 +1,20 @@
 /*
- * Support for n32 Beep/MIPS ELF binaries.
- *
- * Copyright (C) 1999, 2001 Ralf Baechle
- * Copyright (C) 1999, 2001 Silicon Graphics, Inc.
- *
- * Heavily inspired by the 32-bit Sparc compat code which is
- * Copyright (C) 1995, 1996, 1997, 1998 David S. Miller (davem@redhat.com)
- * Copyright (C) 1995, 1996, 1997, 1998 Jakub Jelinek   (jj@ultra.beep.cz)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define ELF_ARCH		EM_MIPS
 #define ELF_CLASS		ELFCLASS32
 #ifdef __MIPSEB__

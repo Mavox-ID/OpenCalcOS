@@ -1,40 +1,20 @@
 /*
- *  beep/arch/arm/kernel/fiq.c
- *
- *  Copyright (C) 1998 Russell King
- *  Copyright (C) 1998, 1999 Phil Blundell
- *
- *  FIQ support written by Philip Blundell <philb@gnu.org>, 1998.
- *
- *  FIQ support re-written by Russell King to be more generic
- *
- * We now properly support a method by which the FIQ handlers can
- * be stacked onto the vector.  We still do not support sharing
- * the FIQ vector itself.
- *
- * Operation is as follows:
- *  1. Owner A claims FIQ:
- *     - default_fiq relinquishes control.
- *  2. Owner A:
- *     - inserts code.
- *     - sets any registers,
- *     - enables FIQ.
- *  3. Owner B claims FIQ:
- *     - if owner A has a relinquish function.
- *       - disable FIQs.
- *       - saves any registers.
- *       - returns zero.
- *  4. Owner B:
- *     - inserts code.
- *     - sets any registers,
- *     - enables FIQ.
- *  5. Owner B releases FIQ:
- *     - Owner A is asked to reacquire FIQ:
- *	 - inserts code.
- *	 - restores saved registers.
- *	 - enables FIQ.
- *  6. Goto 3
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/init.h>

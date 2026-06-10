@@ -1,90 +1,20 @@
 /*
- * Copyright (c) 2000-2012 LSI Corporation.
- *
- *
- *          Name:  mpi2.h
- *         Title:  MPI Message independent structures and definitions
- *                 including System Interface Register Set and
- *                 scatter/gather formats.
- * Creation Date:  June 21, 2006
- *
- * mpi2.h Version:  02.00.26
- *
- * NOTE: Names (typedefs, defines, etc.) beginning with an MPI25 or Mpi25
- *       prefix are for use only on MPI v2.5 products, and must not be used
- *       with MPI v2.0 products. Unless otherwise noted, names beginning with
- *       MPI2 or Mpi2 are for use with both MPI v2.0 and MPI v2.5 products.
- *
- * Version History
- * ---------------
- *
- * Date      Version   Description
- * --------  --------  ------------------------------------------------------
- * 04-30-07  02.00.00  Corresponds to Fusion-MPT MPI Specification Rev A.
- * 06-04-07  02.00.01  Bumped MPI2_HEADER_VERSION_UNIT.
- * 06-26-07  02.00.02  Bumped MPI2_HEADER_VERSION_UNIT.
- * 08-31-07  02.00.03  Bumped MPI2_HEADER_VERSION_UNIT.
- *                     Moved ReplyPostHostIndex register to offset 0x6C of the
- *                     MPI2_SYSTEM_INTERFACE_REGS and modified the define for
- *                     MPI2_REPLY_POST_HOST_INDEX_OFFSET.
- *                     Added union of request descriptors.
- *                     Added union of reply descriptors.
- * 10-31-07  02.00.04  Bumped MPI2_HEADER_VERSION_UNIT.
- *                     Added define for MPI2_VERSION_02_00.
- *                     Fixed the size of the FunctionDependent5 field in the
- *                     MPI2_DEFAULT_REPLY structure.
- * 12-18-07  02.00.05  Bumped MPI2_HEADER_VERSION_UNIT.
- *                     Removed the MPI-defined Fault Codes and extended the
- *                     product specific codes up to 0xEFFF.
- *                     Added a sixth key value for the WriteSequence register
- *                     and changed the flush value to 0x0.
- *                     Added message function codes for Diagnostic Buffer Post
- *                     and Diagnsotic Release.
- *                     New IOCStatus define: MPI2_IOCSTATUS_DIAGNOSTIC_RELEASED
- *                     Moved MPI2_VERSION_UNION from mpi2_ioc.h.
- * 02-29-08  02.00.06  Bumped MPI2_HEADER_VERSION_UNIT.
- * 03-03-08  02.00.07  Bumped MPI2_HEADER_VERSION_UNIT.
- * 05-21-08  02.00.08  Bumped MPI2_HEADER_VERSION_UNIT.
- *                     Added #defines for marking a reply descriptor as unused.
- * 06-27-08  02.00.09  Bumped MPI2_HEADER_VERSION_UNIT.
- * 10-02-08  02.00.10  Bumped MPI2_HEADER_VERSION_UNIT.
- *                     Moved LUN field defines from mpi2_init.h.
- * 01-19-09  02.00.11  Bumped MPI2_HEADER_VERSION_UNIT.
- * 05-06-09  02.00.12  Bumped MPI2_HEADER_VERSION_UNIT.
- *                     In all request and reply descriptors, replaced VF_ID
- *                     field with MSIxIndex field.
- *                     Removed DevHandle field from
- *                     MPI2_SCSI_IO_SUCCESS_REPLY_DESCRIPTOR and made those
- *                     bytes reserved.
- *                     Added RAID Accelerator functionality.
- * 07-30-09  02.00.13  Bumped MPI2_HEADER_VERSION_UNIT.
- * 10-28-09  02.00.14  Bumped MPI2_HEADER_VERSION_UNIT.
- *                     Added MSI-x index mask and shift for Reply Post Host
- *                     Index register.
- *                     Added function code for Host Based Discovery Action.
- * 02-10-10  02.00.15  Bumped MPI2_HEADER_VERSION_UNIT.
- *                     Added define for MPI2_FUNCTION_PWR_MGMT_CONTROL.
- *                     Added defines for product-specific range of message
- *                     function codes, 0xF0 to 0xFF.
- * 05-12-10  02.00.16  Bumped MPI2_HEADER_VERSION_UNIT.
- *                     Added alternative defines for the SGE Direction bit.
- * 08-11-10  02.00.17  Bumped MPI2_HEADER_VERSION_UNIT.
- * 11-10-10  02.00.18  Bumped MPI2_HEADER_VERSION_UNIT.
- *                     Added MPI2_IEEE_SGE_FLAGS_SYSTEMPLBCPI_ADDR define.
- * 02-23-11  02.00.19  Bumped MPI2_HEADER_VERSION_UNIT.
- *                     Added MPI2_FUNCTION_SEND_HOST_MESSAGE.
- * 03-09-11  02.00.20  Bumped MPI2_HEADER_VERSION_UNIT.
- * 05-25-11  02.00.21  Bumped MPI2_HEADER_VERSION_UNIT.
- * 08-24-11  02.00.22  Bumped MPI2_HEADER_VERSION_UNIT.
- * 11-18-11  02.00.23  Bumped MPI2_HEADER_VERSION_UNIT.
- *                     Incorporating additions for MPI v2.5.
- * 02-06-12  02.00.24  Bumped MPI2_HEADER_VERSION_UNIT.
- * 03-29-12  02.00.25  Bumped MPI2_HEADER_VERSION_UNIT.
- *                     Added Hard Reset delay timings.
- * 07-10-12  02.00.26  Bumped MPI2_HEADER_VERSION_UNIT.
- * --------------------------------------------------------------------------
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef MPI2_H
 #define MPI2_H
 

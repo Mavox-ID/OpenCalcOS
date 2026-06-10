@@ -1,35 +1,20 @@
 /*
- * GCC stack protector support.
- *
- * Stack protector works by putting predefined pattern at the start of
- * the stack frame and verifying that it hasn't been overwritten when
- * returning from the function.  The pattern is called stack canary
- * and unfortunately gcc requires it to be at a fixed offset from %gs.
- * On x86_64, the offset is 40 bytes and on x86_32 20 bytes.  x86_64
- * and x86_32 use segment registers differently and thus handles this
- * requirement differently.
- *
- * On x86_64, %gs is shared by percpu area and stack canary.  All
- * percpu symbols are zero based and %gs points to the base of percpu
- * area.  The first occupant of the percpu area is always
- * irq_stack_union which contains stack_canary at offset 40.  Userland
- * %gs is always saved and restored on kernel entry and exit using
- * swapgs, so stack protector doesn't add any complexity there.
- *
- * On x86_32, it's slightly more complicated.  As in x86_64, %gs is
- * used for userland TLS.  Unfortunately, some processors are much
- * slower at loading segment registers with different value when
- * entering and leaving the kernel, so the kernel uses %fs for percpu
- * area and manages %gs lazily so that %gs is switched only when
- * necessary, usually during task switch.
- *
- * As gcc requires the stack canary at %gs:20, %gs can't be managed
- * lazily if stack protector is enabled, so the kernel saves and
- * restores userland %gs on kernel entry and exit.  This behavior is
- * controlled by CONFIG_X86_32_LAZY_GS and accessors are defined in
- * system.h to hide the details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _ASM_STACKPROTECTOR_H
 #define _ASM_STACKPROTECTOR_H 1
 

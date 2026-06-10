@@ -1,35 +1,20 @@
 /*
- * ARMv6 Performance counter handling code.
- *
- * Copyright (C) 2009 picoChip Designs, Ltd., Jamie Iles
- *
- * ARMv6 has 2 configurable performance counters and a single cycle counter.
- * They all share a single reset bit but can be written to zero so we can use
- * that for a reset.
- *
- * The counters can't be individually enabled or disabled so when we remove
- * one event and replace it with another we could get spurious counts from the
- * wrong event. However, we can take advantage of the fact that the
- * performance counters can export events to the event bus, and the event bus
- * itself can be monitored. This requires that we *don't* export the events to
- * the event bus. The procedure for disabling a configurable counter is:
- *	- change the counter to count the ETMEXTOUT[0] signal (0x20). This
- *	  effectively stops the counter from counting.
- *	- disable the counter's interrupt generation (each counter has it's
- *	  own interrupt enable bit).
- * Once stopped, the counter value can be written as 0 to reset.
- *
- * To enable a counter:
- *	- enable the counter's interrupt generation.
- *	- set the new event type.
- *
- * Note: the dedicated cycle counter only counts cycles and can't be
- * enabled/disabled independently of the others. When we want to disable the
- * cycle counter, we have to just disable the interrupt reporting and start
- * ignoring that counter. When re-enabling, we have to reset the value and
- * enable the interrupt.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #if defined(CONFIG_CPU_V6) || defined(CONFIG_CPU_V6K)
 enum armv6_perf_types {
 	ARMV6_PERFCTR_ICACHE_MISS	    = 0x0,

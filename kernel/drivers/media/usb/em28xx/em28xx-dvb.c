@@ -1,24 +1,20 @@
 /*
- DVB device driver for em28xx
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
- (c) 2008-2011 Mauro Carvalho Chehab <mchehab@infradead.org>
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
- (c) 2008 Devin Heitmueller <devin.heitmueller@gmail.com>
-	- Fixes for the driver to properly work with HVR-950
-	- Fixes for the driver to properly work with Pinnacle PCTV HD Pro Stick
-	- Fixes for the driver to properly work with AMD ATI TV Wonder HD 600
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
- (c) 2008 Aidan Thornton <makosoft@googlemail.com>
-
- Based on cx88-dvb, saa7134-dvb and videobuf-dvb originally written by:
-	(c) 2004, 2005 Chris Pascoe <c.pascoe@itee.uq.edu.au>
-	(c) 2004 Gerd Knorr <kraxel@bytesex.org> [SuSE Labs]
-
- This program is free software; you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 2 of the License.
- */
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/slab.h>
 #include <beep/usb.h>

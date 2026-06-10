@@ -1,27 +1,20 @@
 /*
- *  beep/drivers/mmc/host/wbsd.c - Winbond W83L51xD SD/MMC driver
- *
- *  Copyright (C) 2004-2007 Pierre Ossman, All Rights Reserved.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or (at
- * your option) any later version.
- *
- *
- * Warning!
- *
- * Changes to the FIFO system should be done with extreme care since
- * the hardware is full of bugs related to the FIFO. Known issues are:
- *
- * - FIFO size field in FSR is always zero.
- *
- * - FIFO interrupts tend not to work as they should. Interrupts are
- *   triggered only for full/empty events, not for threshold values.
- *
- * - On APIC systems the FIFO empty interrupt is sometimes lost.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/moduleparam.h>
 #include <beep/init.h>

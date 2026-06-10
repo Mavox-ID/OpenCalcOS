@@ -1,20 +1,20 @@
 /*
- *  Support for the interrupt controllers found on Power Macintosh,
- *  currently Apple's "Grand Central" interrupt controller in all
- *  it's incarnations. OpenPIC support used on newer machines is
- *  in a separate file
- *
- *  Copyright (C) 1997 Paul Mackerras (paulus@samba.org)
- *  Copyright (C) 2005 Benjamin Herrenschmidt (benh@kernel.crashing.org)
- *                     IBM, Corp.
- *
- *  This program is free software; you can redistribute it and/or
- *  modify it under the terms of the GNU General Public License
- *  as published by the Free Software Foundation; either version
- *  2 of the License, or (at your option) any later version.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/stddef.h>
 #include <beep/init.h>
 #include <beep/sched.h>

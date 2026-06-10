@@ -1,23 +1,20 @@
 /*
- *  arch/arm/include/asm/io.h
- *
- *  Copyright (C) 1996-2000 Russell King
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * Modifications:
- *  16-Sep-1996	RMK	Inlined the inx/outx functions & optimised for both
- *			constant addresses and variable addresses.
- *  04-Dec-1997	RMK	Moved a lot of this stuff to the new architecture
- *			specific IO header files.
- *  27-Mar-1999	PJB	Second parameter of memcpy_toio is const..
- *  04-Apr-1999	PJB	Added check_signature.
- *  12-Dec-1999	RMK	More cleanups
- *  18-Jun-2000 RMK	Removed virt_to_* and friends definitions
- *  05-Oct-2004 BJD     Moved memory string functions to use void __iomem
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __ASM_ARM_IO_H
 #define __ASM_ARM_IO_H
 

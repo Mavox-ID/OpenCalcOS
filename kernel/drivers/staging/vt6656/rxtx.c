@@ -1,51 +1,20 @@
 /*
- * Copyright (c) 1996, 2003 VIA Networking Technologies, Inc.
- * All rights reserved.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License along
- * with this program; if not, write to the Free Software Foundation, Inc.,
- * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
- *
- * File: rxtx.c
- *
- * Purpose: handle WMAC/802.3/802.11 rx & tx functions
- *
- * Author: Lyndon Chen
- *
- * Date: May 20, 2003
- *
- * Functions:
- *      s_vGenerateTxParameter - Generate tx dma required parameter.
- *      s_vGenerateMACHeader - Translate 802.3 to 802.11 header
- *      csBeacon_xmit - beacon tx function
- *      csMgmt_xmit - management tx function
- *      s_uGetDataDuration - get tx data required duration
- *      s_uFillDataHead- fulfill tx data duration header
- *      s_uGetRTSCTSDuration- get rtx/cts required duration
- *      s_uGetRTSCTSRsvTime- get rts/cts reserved time
- *      s_uGetTxRsvTime- get frame reserved time
- *      s_vFillCTSHead- fulfill CTS ctl header
- *      s_vFillFragParameter- Set fragment ctl parameter.
- *      s_vFillRTSHead- fulfill RTS ctl header
- *      s_vFillTxKey- fulfill tx encrypt key
- *      s_vSWencryption- Software encrypt header
- *      vDMA0_tx_80211- tx 802.11 frame via dma0
- *      vGenerateFIFOHeader- Generate tx FIFO ctl header
- *
- * Revision History:
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "device.h"
 #include "rxtx.h"
 #include "tether.h"

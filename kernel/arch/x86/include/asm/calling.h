@@ -1,51 +1,20 @@
 /*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
- x86 function call convention, 64-bit:
- -------------------------------------
-  arguments           |  callee-saved      | extra caller-saved | return
- [callee-clobbered]   |                    | [callee-clobbered] |
- ---------------------------------------------------------------------------
- rdi rsi rdx rcx r8-9 | rbx rbp [*] r12-15 | r10-11             | rax, rdx [**]
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
- ( rsp is obviously invariant across normal function calls. (gcc can 'merge'
-   functions when it sees tail-call optimization possibilities) rflags is
-   clobbered. Leftover arguments are passed over the stack frame.)
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
- [*]  In the frame-pointers case rbp is fixed to the stack frame.
-
- [**] for struct return values wider than 64 bits the return convention is a
-      bit more complex: up to 128 bits width we return small structures
-      straight in rax, rdx. For structures larger than that (3 words or
-      larger) the caller puts a pointer to an on-stack return struct
-      [allocated in the caller's stack frame] into the first argument - i.e.
-      into rdi. All other arguments shift up by one in this case.
-      Fortunately this case is rare in the kernel.
-
-For 32-bit we have the following conventions - kernel is built with
--mregparm=3 and -freg-struct-return:
-
- x86 function calling convention, 32-bit:
- ----------------------------------------
-  arguments         | callee-saved        | extra caller-saved | return
- [callee-clobbered] |                     | [callee-clobbered] |
- -------------------------------------------------------------------------
- eax edx ecx        | ebx edi esi ebp [*] | <none>             | eax, edx [**]
-
- ( here too esp is obviously invariant across normal function calls. eflags
-   is clobbered. Leftover arguments are passed over the stack frame. )
-
- [*]  In the frame-pointers case ebp is fixed to the stack frame.
-
- [**] We build with -freg-struct-return, which on 32-bit means similar
-      semantics as on 64-bit: edx can be used for a second return value
-      (i.e. covering integer and structure sizes up to 64 bits) - after that
-      it gets more complex and more expensive: 3-word or larger struct returns
-      get done in the caller's frame and the pointer to the return struct goes
-      into regparm0, i.e. eax - the other arguments shift up and the
-      function's register parameters degenerate to regparm=2 in essence.
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #include <asm/dwarf2.h>
 
 /*

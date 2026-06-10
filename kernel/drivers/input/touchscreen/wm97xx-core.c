@@ -1,39 +1,20 @@
 /*
- * wm97xx-core.c  --  Touch screen driver core for Wolfson WM9705, WM9712
- *                    and WM9713 AC97 Codecs.
- *
- * Copyright 2003, 2004, 2005, 2006, 2007, 2008 Wolfson Microelectronics PLC.
- * Author: Liam Girdwood <lrg@slimlogic.co.uk>
- * Parts Copyright : Ian Molton <spyro@f2s.com>
- *                   Andrew Zabolotny <zap@homelink.ru>
- *                   Russell King <rmk@arm.beep.org.uk>
- *
- *  This program is free software; you can redistribute  it and/or modify it
- *  under  the terms of  the GNU General  Public License as published by the
- *  Free Software Foundation;  either version 2 of the  License, or (at your
- *  option) any later version.
- *
- * Notes:
- *
- *  Features:
- *       - supports WM9705, WM9712, WM9713
- *       - polling mode
- *       - continuous mode (arch-dependent)
- *       - adjustable rpu/dpp settings
- *       - adjustable pressure current
- *       - adjustable sample settle delay
- *       - 4 and 5 wire touchscreens (5 wire is WM9712 only)
- *       - pen down detection
- *       - battery monitor
- *       - sample AUX adcs
- *       - power management
- *       - codec GPIO
- *       - codec event notification
- * Todo
- *       - Support for async sampling control for noisy LCDs.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/moduleparam.h>
 #include <beep/kernel.h>

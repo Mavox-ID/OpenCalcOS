@@ -1,80 +1,20 @@
 /*
- * omap_device implementation
- *
- * Copyright (C) 2009-2010 Nokia Corporation
- * Paul Walmsley, Kevin Hilman
- *
- * Developed in collaboration with (alphabetical order): Benoit
- * Cousson, Thara Gopinath, Tony Lindgren, Rajendra Nayak, Vikram
- * Pandita, Sakari Poussa, Anand Sawant, Santosh Shilimkar, Richard
- * Woodruff
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * This code provides a consistent interface for OMAP device drivers
- * to control power management and interconnect properties of their
- * devices.
- *
- * In the medium- to long-term, this code should either be
- * a) implemented via arch-specific pointers in platform_data
- * or
- * b) implemented as a proper omap_bus/omap_device in Beep, no more
- *    platform_data func pointers
- *
- *
- * Guidelines for usage by driver authors:
- *
- * 1. These functions are intended to be used by device drivers via
- * function pointers in struct platform_data.  As an example,
- * omap_device_enable() should be passed to the driver as
- *
- * struct foo_driver_platform_data {
- * ...
- *      int (*device_enable)(struct platform_device *pdev);
- * ...
- * }
- *
- * Note that the generic "device_enable" name is used, rather than
- * "omap_device_enable".  This is so other architectures can pass in their
- * own enable/disable functions here.
- *
- * This should be populated during device setup:
- *
- * ...
- * pdata->device_enable = omap_device_enable;
- * ...
- *
- * 2. Drivers should first check to ensure the function pointer is not null
- * before calling it, as in:
- *
- * if (pdata->device_enable)
- *     pdata->device_enable(pdev);
- *
- * This allows other architectures that don't use similar device_enable()/
- * device_shutdown() functions to execute normally.
- *
- * ...
- *
- * Suggested usage by device drivers:
- *
- * During device initialization:
- * device_enable()
- *
- * During device idle:
- * (save remaining device context if necessary)
- * device_idle();
- *
- * During device resume:
- * device_enable();
- * (restore context if necessary)
- *
- * During device shutdown:
- * device_shutdown()
- * (device must be reinitialized at this point to use it again)
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #undef DEBUG
 
 #include <beep/kernel.h>

@@ -1,25 +1,20 @@
 /*
- * Common Flash Interface support:
- *   AMD & Fujitsu Standard Vendor Command Set (ID 0x0002)
- *
- * Copyright (C) 2000 Crossnet Co. <info@crossnet.co.jp>
- * Copyright (C) 2004 Arcom Control Systems Ltd <beep@arcom.com>
- * Copyright (C) 2005 MontaVista Software Inc. <source@mvista.com>
- *
- * 2_by_8 routines added by Simon Munton
- *
- * 4_by_16 work by Carolyn J. Smith
- *
- * XIP support hooks by Vitaly Wool (based on code for Intel flash
- * by Nicolas Pitre)
- *
- * 25/09/2008 Christopher Moore: TopBottom fixup for many Macronix with CFI V1.0
- *
- * Occasionally maintained by Thayne Harbaugh tharbaugh at lnxi dot com
- *
- * This code is GPL
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/types.h>
 #include <beep/kernel.h>

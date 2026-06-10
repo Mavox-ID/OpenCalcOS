@@ -1,55 +1,20 @@
 /*
- * Routines to compress and uncompress tcp packets (for transmission
- * over low speed serial lines).
- *
- * Copyright (c) 1989 Regents of the University of California.
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms are permitted
- * provided that the above copyright notice and this paragraph are
- * duplicated in all such forms and that any documentation,
- * advertising materials, and other materials related to such
- * distribution and use acknowledge that the software was developed
- * by the University of California, Berkeley.  The name of the
- * University may not be used to endorse or promote products derived
- * from this software without specific prior written permission.
- * THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR
- * IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
- * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
- *
- *	Van Jacobson (van@helios.ee.lbl.gov), Dec 31, 1989:
- *	- Initial distribution.
- *
- *
- * modified for KA9Q Internet Software Package by
- * Katie Stevens (dkstevens@ucdavis.edu)
- * University of California, Davis
- * Computing Services
- *	- 01-31-90	initial adaptation (from 1.19)
- *	PPP.05	02-15-90 [ks]
- *	PPP.08	05-02-90 [ks]	use PPP protocol field to signal compression
- *	PPP.15	09-90	 [ks]	improve mbuf handling
- *	PPP.16	11-02	 [karn]	substantially rewritten to use NOS facilities
- *
- *	- Feb 1991	Bill_Simpson@um.cc.umich.edu
- *			variable number of conversation slots
- *			allow zero or one slots
- *			separate routines
- *			status display
- *	- Jul 1994	Dmitry Gorodchanin
- *			Fixes for memory leaks.
- *      - Oct 1994      Dmitry Gorodchanin
- *                      Modularization.
- *	- Jan 1995	Bjorn Ekwall
- *			Use ip_fast_csum from ip.h
- *	- July 1995	Christos A. Polyzols
- *			Spotted bug in tcp option checking
- *
- *
- *	This module is a difficult issue. It's clearly inet code but it's also clearly
- *	driver code belonging close to PPP and SLIP
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/slab.h>
 #include <beep/types.h>

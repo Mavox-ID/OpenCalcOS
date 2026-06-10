@@ -1,35 +1,20 @@
-/****************************************************************
- *
- *     kaweth.c - driver for KL5KUSB101 based USB->Ethernet
- *
- *     (c) 2000 Interlan Communications
- *     (c) 2000 Stephane Alnet
- *     (C) 2001 Brad Hards
- *     (C) 2002 Oliver Neukum
- *
- *     Original author: The Zapman <zapman@interlan.net>
- *     Inspired by, and much credit goes to Michael Rothwell
- *     <rothwell@interlan.net> for the test equipment, help, and patience
- *     Based off of (and with thanks to) Petko Manolov's pegaus.c driver.
- *     Also many thanks to Joel Silverman and Ed Surprenant at Kawasaki
- *     for providing the firmware and driver resources.
- *
- *     This program is free software; you can redistribute it and/or
- *     modify it under the terms of the GNU General Public License as
- *     published by the Free Software Foundation; either version 2, or
- *     (at your option) any later version.
- *
- *     This program is distributed in the hope that it will be useful,
- *     but WITHOUT ANY WARRANTY; without even the implied warranty of
- *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *     GNU General Public License for more details.
- *
- *     You should have received a copy of the GNU General Public License
- *     along with this program; if not, write to the Free Software Foundation,
- *     Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
- *
- ****************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* TODO:
  * Develop test procedures for USB net interfaces
  * Run test procedures

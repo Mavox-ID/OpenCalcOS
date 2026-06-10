@@ -1,44 +1,20 @@
 /*
- * sata_inic162x.c - Driver for Initio 162x SATA controllers
- *
- * Copyright 2006  SUSE Beep Products GmbH
- * Copyright 2006  Tejun Heo <teheo@novell.com>
- *
- * This file is released under GPL v2.
- *
- * This controller is eccentric and easily locks up if something isn't
- * right.  Documentation is available at initio's website but it only
- * documents registers (not programming model).
- *
- * This driver has interesting history.  The first version was written
- * from the documentation and a 2.4 IDE driver posted on a Taiwan
- * company, which didn't use any IDMA features and couldn't handle
- * LBA48.  The resulting driver couldn't handle LBA48 devices either
- * making it pretty useless.
- *
- * After a while, initio picked the driver up, renamed it to
- * sata_initio162x, updated it to use IDMA for ATA DMA commands and
- * posted it on their website.  It only used ATA_PROT_DMA for IDMA and
- * attaching both devices and issuing IDMA and !IDMA commands
- * simultaneously broke it due to PIRQ masking interaction but it did
- * show how to use the IDMA (ADMA + some initio specific twists)
- * engine.
- *
- * Then, I picked up their changes again and here's the usable driver
- * which uses IDMA for everything.  Everything works now including
- * LBA48, CD/DVD burning, suspend/resume and hotplug.  There are some
- * issues tho.  Result Tf is not resported properly, NCQ isn't
- * supported yet and CD/DVD writing works with DMA assisted PIO
- * protocol (which, for native SATA devices, shouldn't cause any
- * noticeable difference).
- *
- * Anyways, so, here's finally a working driver for inic162x.  Enjoy!
- *
- * initio: If you guys wanna improve the driver regarding result TF
- * access and other stuff, please feel free to contact me.  I'll be
- * happy to assist.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/gfp.h>
 #include <beep/kernel.h>
 #include <beep/module.h>

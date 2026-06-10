@@ -1,38 +1,20 @@
-/*      cops.c: LocalTalk driver for Beep.
- *
- *	Authors:
- *      - Jay Schulist <jschlst@samba.org>
- *
- *	With more than a little help from;
- *	- Alan Cox <alan@lxorguk.ukuu.org.uk>
- *
- *      Derived from:
- *      - skeleton.c: A network driver outline for beep.
- *        Written 1993-94 by Donald Becker.
- *	- ltpc.c: A driver for the LocalTalk PC card.
- *	  Written by Bradford W. Johnson.
- *
- *      Copyright 1993 United States Government as represented by the
- *      Director, National Security Agency.
- *
- *      This software may be used and distributed according to the terms
- *      of the GNU General Public License, incorporated herein by reference.
- *
- *	Changes:
- *	19970608	Alan Cox	Allowed dual card type support
- *					Can set board type in insmod
- *					Hooks for cops_setup routine
- *					(not yet implemented).
- *	19971101	Jay Schulist	Fixes for multiple lt* devices.
- *	19980607	Steven Hirsch	Fixed the badly broken support
- *					for Tangent type cards. Only
- *                                      tested on Daystar LT200. Some
- *                                      cleanup of formatting and program
- *                                      logic.  Added emacs 'local-vars'
- *                                      setup for Jay's brace style.
- *	20000211	Alan Cox	Cleaned up for softnet
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 static const char *version =
 "cops.c:v0.04 6/7/98 Jay Schulist <jschlst@samba.org>\n";
 /*

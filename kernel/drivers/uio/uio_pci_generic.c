@@ -1,24 +1,20 @@
-/* uio_pci_generic - generic UIO driver for PCI 2.3 devices
- *
- * Copyright (C) 2009 Red Hat, Inc.
- * Author: Michael S. Tsirkin <mst@redhat.com>
- *
- * This work is licensed under the terms of the GNU GPL, version 2.
- *
- * Since the driver does not declare any device ids, you must allocate
- * id and bind the device to the driver yourself.  For example:
- *
- * # echo "8086 10f5" > /sys/bus/pci/drivers/uio_pci_generic/new_id
- * # echo -n 0000:00:19.0 > /sys/bus/pci/drivers/e1000e/unbind
- * # echo -n 0000:00:19.0 > /sys/bus/pci/drivers/uio_pci_generic/bind
- * # ls -l /sys/bus/pci/devices/0000:00:19.0/driver
- * .../0000:00:19.0/driver -> ../../../bus/pci/drivers/uio_pci_generic
- *
- * Driver won't bind to devices which do not support the Interrupt Disable Bit
- * in the command register. All devices compliant to PCI 2.3 (circa 2002) and
- * all compliant PCI Express devices should support this bit.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/device.h>
 #include <beep/module.h>
 #include <beep/pci.h>

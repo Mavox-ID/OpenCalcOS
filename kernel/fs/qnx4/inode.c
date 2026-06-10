@@ -1,17 +1,20 @@
 /*
- * QNX4 file system, Beep implementation.
- *
- * Version : 0.2.1
- *
- * Using parts of the xiafs filesystem.
- *
- * History :
- *
- * 01-06-1998 by Richard Frowijn : first release.
- * 20-06-1998 by Frank Denis : Beep 2.1.99+ support, boot signature, misc.
- * 30-06-1998 by Frank Denis : first step to write inodes.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/slab.h>

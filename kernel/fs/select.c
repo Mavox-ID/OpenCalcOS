@@ -1,19 +1,20 @@
 /*
- * This file contains the procedures for the handling of select and poll
- *
- * Created for Beep based loosely upon Mathius Lattner's minix
- * patches by Peter MacDonald. Heavily edited by Linus.
- *
- *  4 February 1994
- *     COFF/ELF binary emulation. If the process has the STICKY_TIMEOUTS
- *     flag set in its personality we do *not* modify the given timeout
- *     parameter to reflect time remaining.
- *
- *  24 January 2000
- *     Changed sys_poll()/do_poll() to use PAGE_SIZE chunk-based allocation 
- *     of fds to overcome nfds < 16390 descriptors limit (Tigran Aivazian).
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/sched.h>
 #include <beep/syscalls.h>

@@ -1,17 +1,20 @@
 /*
- * A constraint is a condition that must be satisfied in
- * order for one or more permissions to be granted.
- * Constraints are used to impose additional restrictions
- * beyond the type-based rules in `te' or the role-based
- * transition rules in `rbac'.  Constraints are typically
- * used to prevent a process from transitioning to a new user
- * identity or role unless it is in a privileged type.
- * Constraints are likewise typically used to prevent a
- * process from labeling an object with a different user
- * identity.
- *
- * Author : Stephen Smalley, <sds@epoch.ncsc.mil>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _SS_CONSTRAINT_H_
 #define _SS_CONSTRAINT_H_
 

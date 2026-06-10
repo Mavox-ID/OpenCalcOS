@@ -1,36 +1,20 @@
 /*
- * usblp.c
- *
- * Copyright (c) 1999 Michael Gee	<michael@beepspecific.com>
- * Copyright (c) 1999 Pavel Machek	<pavel@ucw.cz>
- * Copyright (c) 2000 Randy Dunlap	<rdunlap@xenotime.net>
- * Copyright (c) 2000 Vojtech Pavlik	<vojtech@suse.cz>
- # Copyright (c) 2001 Pete Zaitcev	<zaitcev@redhat.com>
- # Copyright (c) 2001 David Paschal	<paschal@rcsis.com>
- * Copyright (c) 2006 Oliver Neukum	<oliver@neukum.name>
- *
- * USB Printer Device Class driver for USB printers and printer cables
- *
- * Sponsored by SuSE
- *
- * ChangeLog:
- *	v0.1 - thorough cleaning, URBification, almost a rewrite
- *	v0.2 - some more cleanups
- *	v0.3 - cleaner again, waitqueue fixes
- *	v0.4 - fixes in unidirectional mode
- *	v0.5 - add DEVICE_ID string support
- *	v0.6 - never time out
- *	v0.7 - fixed bulk-IN read and poll (David Paschal)
- *	v0.8 - add devfs support
- *	v0.9 - fix unplug-while-open paths
- *	v0.10- remove sleep_on, fix error on oom (oliver@neukum.org)
- *	v0.11 - add proto_bias option (Pete Zaitcev)
- *	v0.12 - add hpoj.sourceforge.net ioctls (David Paschal)
- *	v0.13 - alloc space for statusbuf (<status> not on stack);
- *		use usb_alloc_coherent() for read buf & write buf;
- *      none  - Maintained in Beep kernel after v0.13
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

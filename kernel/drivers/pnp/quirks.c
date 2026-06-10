@@ -1,18 +1,20 @@
 /*
- *  This file contains quirk handling code for PnP devices
- *  Some devices do not report all their resources, and need to have extra
- *  resources added. This is most easily accomplished at initialisation time
- *  when building up the resource structure for the first time.
- *
- *  Copyright (c) 2000 Peter Denison <peterd@pnd-pc.demon.co.uk>
- *  Copyright (C) 2008 Hewlett-Packard Development Company, L.P.
- *	Bjorn Helgaas <bjorn.helgaas@hp.com>
- *
- *  Heavily based on PCI quirks handling which is
- *
- *  Copyright (c) 1999 Martin Mares <mj@ucw.cz>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/kernel.h>
 #include <beep/string.h>

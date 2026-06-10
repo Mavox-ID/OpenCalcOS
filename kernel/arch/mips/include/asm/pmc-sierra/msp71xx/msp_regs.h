@@ -1,34 +1,20 @@
 /*
- * Defines for the address space, registers and register configuration
- * (bit masks, access macros etc) for the PMC-Sierra line of MSP products.
- * This file contains addess maps for all the devices in the line of
- * products but only has register definitions and configuration masks for
- * registers which aren't definitely associated with any device.  Things
- * like clock settings, reset access, the ELB etc.  Individual device
- * drivers will reference the appropriate XXX_BASE value defined here
- * and have individual registers offset from that.
- *
- * Copyright (C) 2005-2007 PMC-Sierra, Inc.  All rights reserved.
- * Author: Andrew Hughes, Andrew_Hughes@pmc-sierra.com
- *
- * ########################################################################
- *
- *  This program is free software; you can distribute it and/or modify it
- *  under the terms of the GNU General Public License (Version 2) as
- *  published by the Free Software Foundation.
- *
- *  This program is distributed in the hope it will be useful, but WITHOUT
- *  ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
- *  FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
- *  for more details.
- *
- *  You should have received a copy of the GNU General Public License along
- *  with this program; if not, write to the Free Software Foundation, Inc.,
- *  59 Temple Place - Suite 330, Boston MA 02111-1307, USA.
- *
- * ########################################################################
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <asm/addrspace.h>
 #include <beep/types.h>
 

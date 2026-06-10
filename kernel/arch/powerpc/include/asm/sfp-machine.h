@@ -1,32 +1,20 @@
-/* Machine-dependent software floating-point definitions.  PPC version.
-   Copyright (C) 1997 Free Software Foundation, Inc.
-   This file is part of the GNU C Library.
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-   The GNU C Library is free software; you can redistribute it and/or
-   modify it under the terms of the GNU Library General Public License as
-   published by the Free Software Foundation; either version 2 of the
-   License, or (at your option) any later version.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-   The GNU C Library is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-   Library General Public License for more details.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-   You should have received a copy of the GNU Library General Public
-   License along with the GNU C Library; see the file COPYING.LIB.  If
-   not, write to the Free Software Foundation, Inc.,
-   59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
-
-   Actually, this is a PPC (32bit) version, written based on the
-   i386, sparc, and sparc64 versions, by me,
-   Peter Maydell (pmaydell@chiark.greenend.org.uk).
-   Comments are by and large also mine, although they may be inaccurate.
-
-   In picking out asm fragments I've gone with the lowest common
-   denominator, which also happens to be the hardware I have :->
-   That is, a SPARC without hardware multiply and divide.
- */
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* basic word size definitions */
 #define _FP_W_TYPE_SIZE		32
 #define _FP_W_TYPE		unsigned int

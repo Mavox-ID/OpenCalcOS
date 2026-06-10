@@ -1,41 +1,20 @@
 /*
- * Copyright (C) 2006-2008 Michael Hennerich, Analog Devices Inc.
- *
- * Description:	AD7877 based touchscreen, sensor (ADCs), DAC and GPIO driver
- * Based on:	ads7846.c
- *
- * Bugs:        Enter bugs at http://blackfin.ucbeep.org/
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, see the file COPYING, or write
- * to the Free Software Foundation, Inc.,
- * 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
- *
- * History:
- * Copyright (c) 2005 David Brownell
- * Copyright (c) 2006 Nokia Corporation
- * Various changes: Imre Deak <imre.deak@nokia.com>
- *
- * Using code from:
- *  - corgi_ts.c
- *	Copyright (C) 2004-2005 Richard Purdie
- *  - omap_ts.[hc], ads7846.h, ts_osk.c
- *	Copyright (C) 2002 MontaVista Software
- *	Copyright (C) 2004 Texas Instruments
- *	Copyright (C) 2005 Dirk Behme
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/device.h>
 #include <beep/init.h>
 #include <beep/delay.h>

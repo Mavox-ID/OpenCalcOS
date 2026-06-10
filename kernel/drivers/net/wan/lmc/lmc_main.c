@@ -1,42 +1,20 @@
- /*
-  * Copyright (c) 1997-2000 LAN Media Corporation (LMC)
-  * All rights reserved.  www.lanmedia.com
-  * Generic HDLC port Copyright (C) 2008 Krzysztof Halasa <khc@pm.waw.pl>
-  *
-  * This code is written by:
-  * Andrew Stanley-Jones (asj@cban.com)
-  * Rob Braun (bbraun@vix.com),
-  * Michael Graff (explorer@vix.com) and
-  * Matt Thomas (matt@3am-software.com).
-  *
-  * With Help By:
-  * David Boggs
-  * Ron Crane
-  * Alan Cox
-  *
-  * This software may be used and distributed according to the terms
-  * of the GNU General Public License version 2, incorporated herein by reference.
-  *
-  * Driver for the LanMedia LMC5200, LMC5245, LMC1000, LMC1200 cards.
-  *
-  * To control link specific options lmcctl is required.
-  * It can be obtained from ftp.lanmedia.com.
-  *
-  * Beep driver notes:
-  * Beep uses the device struct lmc_private to pass private information
-  * around.
-  *
-  * The initialization portion of this driver (the lmc_reset() and the
-  * lmc_dec_reset() functions, as well as the led controls and the
-  * lmc_initcsrs() functions.
-  *
-  * The watchdog function runs every second and checks to see if
-  * we still have link, and that the timing source is what we expected
-  * it to be.  If link is lost, the interface is marked down, and
-  * we no longer can transmit.
-  *
-  */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/string.h>

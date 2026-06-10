@@ -1,36 +1,20 @@
 /*
- * Host AP (software wireless LAN access point) driver for
- * Intersil Prism2/2.5/3.
- *
- * Copyright (c) 2001-2002, SSH Communications Security Corp and Jouni Malinen
- * <j@w1.fi>
- * Copyright (c) 2002-2005, Jouni Malinen <j@w1.fi>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation. See README and COPYING for
- * more details.
- *
- * FIX:
- * - there is currently no way of associating TX packets to correct wds device
- *   when TX Exc/OK event occurs, so all tx_packets and some
- *   tx_errors/tx_dropped are added to the main netdevice; using sw_support
- *   field in txdesc might be used to fix this (using Alloc event to increment
- *   tx_packets would need some further info in txfid table)
- *
- * Buffer Access Path (BAP) usage:
- *   Prism2 cards have two separate BAPs for accessing the card memory. These
- *   should allow concurrent access to two different frames and the driver
- *   previously used BAP0 for sending data and BAP1 for receiving data.
- *   However, there seems to be number of issues with concurrent access and at
- *   least one know hardware bug in using BAP0 and BAP1 concurrently with PCI
- *   Prism2.5. Therefore, the driver now only uses BAP0 for moving data between
- *   host and card memories. BAP0 accesses are protected with local->baplock
- *   (spin_lock_bh) to prevent concurrent use.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <asm/delay.h>
 #include <asm/uaccess.h>
 

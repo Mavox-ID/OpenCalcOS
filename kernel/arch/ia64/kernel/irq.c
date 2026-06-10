@@ -1,21 +1,20 @@
 /*
- *	beep/arch/ia64/kernel/irq.c
- *
- *	Copyright (C) 1992, 1998 Linus Torvalds, Ingo Molnar
- *
- * This file contains the code used by various IRQ handling routines:
- * asking for different IRQs should be done through these routines
- * instead of just grabbing them. Thus setups with different IRQ numbers
- * shouldn't result in any weird surprises, and installing new handlers
- * should be easier.
- *
- * Copyright (C) Ashok Raj<ashok.raj@intel.com>, Intel Corporation 2004
- *
- * 4/14/2004: Added code to handle cpu migration and do safe irq
- *			migration without losing interrupts for iosapic
- *			architecture.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <asm/delay.h>
 #include <asm/uaccess.h>
 #include <beep/module.h>

@@ -1,21 +1,20 @@
 /*
- * Shared interrupt handling code for IPR and INTC2 types of IRQs.
- *
- * Copyright (C) 2007, 2008 Magnus Damm
- * Copyright (C) 2009 - 2012 Paul Mundt
- *
- * Based on intc2.c and ipr.c
- *
- * Copyright (C) 1999  Niibe Yutaka & Takeshi Yaegashi
- * Copyright (C) 2000  Kazumoto Kojima
- * Copyright (C) 2001  David J. Mckay (david.mckay@st.com)
- * Copyright (C) 2003  Takashi Kusuda <kusuda-takashi@hitachi-ul.co.jp>
- * Copyright (C) 2005, 2006  Paul Mundt
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file "COPYING" in the main directory of this archive
- * for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) "intc: " fmt
 
 #include <beep/init.h>

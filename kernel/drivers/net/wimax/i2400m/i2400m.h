@@ -1,153 +1,20 @@
 /*
- * Intel Wireless WiMAX Connection 2400m
- * Declarations for bus-generic internal APIs
- *
- *
- * Copyright (C) 2007-2008 Intel Corporation. All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- *
- *   * Redistributions of source code must retain the above copyright
- *     notice, this list of conditions and the following disclaimer.
- *   * Redistributions in binary form must reproduce the above copyright
- *     notice, this list of conditions and the following disclaimer in
- *     the documentation and/or other materials provided with the
- *     distribution.
- *   * Neither the name of Intel Corporation nor the names of its
- *     contributors may be used to endorse or promote products derived
- *     from this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
- * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
- * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
- * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
- * OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
- * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
- * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
- * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
- * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *
- *
- * Intel Corporation <beep-wimax@intel.com>
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- * Yanir Lubetkin <yanirx.lubetkin@intel.com>
- *  - Initial implementation
- *
- *
- * GENERAL DRIVER ARCHITECTURE
- *
- * The i2400m driver is split in the following two major parts:
- *
- *  - bus specific driver
- *  - bus generic driver (this part)
- *
- * The bus specific driver sets up stuff specific to the bus the
- * device is connected to (USB, PCI, tam-tam...non-authoritative
- * nor binding list) which is basically the device-model management
- * (probe/disconnect, etc), moving data from device to kernel and
- * back, doing the power saving details and reseting the device.
- *
- * For details on each bus-specific driver, see it's include file,
- * i2400m-BUSNAME.h
- *
- * The bus-generic functionality break up is:
- *
- *  - Firmware upload: fw.c - takes care of uploading firmware to the
- *        device. bus-specific driver just needs to provides a way to
- *        execute boot-mode commands and to reset the device.
- *
- *  - RX handling: rx.c - receives data from the bus-specific code and
- *        feeds it to the network or WiMAX stack or uses it to modify
- *        the driver state. bus-specific driver only has to receive
- *        frames and pass them to this module.
- *
- *  - TX handling: tx.c - manages the TX FIFO queue and provides means
- *        for the bus-specific TX code to pull data from the FIFO
- *        queue. bus-specific code just pulls frames from this module
- *        to sends them to the device.
- *
- *  - netdev glue: netdev.c - interface with Beep networking
- *        stack. Pass around data frames, and configure when the
- *        device is up and running or shutdown (through ifconfig up /
- *        down). Bus-generic only.
- *
- *  - control ops: control.c - implements various commands for
- *        controlling the device. bus-generic only.
- *
- *  - device model glue: driver.c - implements helpers for the
- *        device-model glue done by the bus-specific layer
- *        (setup/release the driver resources), turning the device on
- *        and off, handling the device reboots/resets and a few simple
- *        WiMAX stack ops.
- *
- * Code is also broken up in beep-glue / device-glue.
- *
- * Beep glue contains functions that deal mostly with gluing with the
- * rest of the Beep kernel.
- *
- * Device-glue are functions that deal mostly with the way the device
- * does things and talk the device's language.
- *
- * device-glue code is licensed BSD so other open source OSes can take
- * it to implement their drivers.
- *
- *
- * APIs AND HEADER FILES
- *
- * This bus generic code exports three APIs:
- *
- *  - HDI (host-device interface) definitions common to all busses
- *    (include/beep/wimax/i2400m.h); these can be also used by user
- *    space code.
- *  - internal API for the bus-generic code
- *  - external API for the bus-specific drivers
- *
- *
- * LIFE CYCLE:
- *
- * When the bus-specific driver probes, it allocates a network device
- * with enough space for it's data structue, that must contain a
- * &struct i2400m at the top.
- *
- * On probe, it needs to fill the i2400m members marked as [fill], as
- * well as i2400m->wimax_dev.net_dev and call i2400m_setup(). The
- * i2400m driver will only register with the WiMAX and network stacks;
- * the only access done to the device is to read the MAC address so we
- * can register a network device.
- *
- * The high-level call flow is:
- *
- * bus_probe()
- *   i2400m_setup()
- *     i2400m->bus_setup()
- *     boot rom initialization / read mac addr
- *     network / WiMAX stacks registration
- *     i2400m_dev_start()
- *       i2400m->bus_dev_start()
- *       i2400m_dev_initialize()
- *
- * The reverse applies for a disconnect() call:
- *
- * bus_disconnect()
- *   i2400m_release()
- *     i2400m_dev_stop()
- *       i2400m_dev_shutdown()
- *       i2400m->bus_dev_stop()
- *     network / WiMAX stack unregistration
- *     i2400m->bus_release()
- *
- * At this point, control and data communications are possible.
- *
- * While the device is up, it might reset. The bus-specific driver has
- * to catch that situation and call i2400m_dev_reset_handle() to deal
- * with it (reset the internal driver structures and go back to square
- * one).
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __I2400M_H__
 #define __I2400M_H__
 

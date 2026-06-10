@@ -1,24 +1,20 @@
 /*
- * Basic EISA bus support for the SGI Indigo-2.
- *
- * (C) 2002 Pascal Dameme <netinet@freesurf.fr>
- *      and Marc Zyngier <mzyngier@freesurf.fr>
- *
- * This code is released under both the GPL version 2 and BSD
- * licenses.  Either license may be used.
- *
- * This code offers a very basic support for this EISA bus present in
- * the SGI Indigo-2. It currently only supports PIO (forget about DMA
- * for the time being). This is enough for a low-end ethernet card,
- * but forget about your favorite SCSI card...
- *
- * TODO :
- * - Fix bugs...
- * - Add ISA support
- * - Add DMA (yeah, right...).
- * - Fix more bugs.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/eisa.h>
 #include <beep/types.h>
 #include <beep/init.h>

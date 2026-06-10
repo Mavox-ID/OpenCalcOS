@@ -1,15 +1,20 @@
 /*
- * Hardware info about DECstation 5000/200 systems (otherwise known as
- * 3max or KN02).
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file "COPYING" in the main directory of this archive
- * for more details.
- *
- * Copyright (C) 1995,1996 by Paul M. Antoine, some code and definitions
- * are by courtesy of Chris Fraser.
- * Copyright (C) 2002, 2003, 2005  Maciej W. Rozycki
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __ASM_MIPS_DEC_KN02_H
 #define __ASM_MIPS_DEC_KN02_H
 

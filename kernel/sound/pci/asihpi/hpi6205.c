@@ -1,11 +1,11 @@
-/******************************************************************************
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-    AudioScience HPI driver
-    Copyright (C) 1997-2011  AudioScience Inc. <support@audioscience.com>
-
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of version 2 of the GNU General Public License as
-    published by the Free Software Foundation;
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -13,20 +13,8 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-
- Hardware Programming Interface (HPI) for AudioScience
- ASI50xx, AS51xx, ASI6xxx, ASI87xx ASI89xx series adapters.
- These PCI and PCIe bus adapters are based on a
- TMS320C6205 PCI bus mastering DSP,
- and (except ASI50xx) TI TMS320C6xxx floating point DSP
-
- Exported function:
- void HPI_6205(struct hpi_message *phm, struct hpi_response *phr)
-
-(C) Copyright AudioScience Inc. 1998-2010
-*******************************************************************************/
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define SOURCEFILE_NAME "hpi6205.c"
 
 #include "hpi_internal.h"

@@ -1,28 +1,20 @@
 /*
- * Neuros Technologies OSD2 board support
- *
- * Modified from original 644X-EVM board support.
- * 2008 (c) Neuros Technology, LLC.
- * 2009 (c) Jorge Luis Zapata Muga <jorgeluis.zapata@gmail.com>
- * 2009 (c) Andrey A. Porodko <Andrey.Porodko@gmail.com>
- *
- * The Neuros OSD 2.0 is the hardware component of the Neuros Open
- * Internet Television Platform. Hardware is very close to TI
- * DM644X-EVM board. It has:
- * 	DM6446M02 module with 256MB NAND, 256MB RAM, TLV320AIC32 AIC,
- * 	USB, Ethernet, SD/MMC, UART, THS8200, TVP7000 for video.
- * 	Additionally realtime clock, IR remote control receiver,
- * 	IR Blaster based on MSP430 (firmware although is different
- * 	from used in DM644X-EVM), internal ATA-6 3.5” HDD drive
- * 	with PATA interface, two muxed red-green leds.
- *
- * For more information please refer to
- * 		http://wiki.neurostechnology.com/index.php/OSD_2.0_HD
- *
- * This file is licensed under the terms of the GNU General Public
- * License version 2. This program is licensed "as is" without any
- * warranty of any kind, whether express or implied.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/platform_device.h>
 #include <beep/gpio.h>
 #include <beep/mtd/partitions.h>

@@ -1,26 +1,20 @@
-/*******************************************************************************
- * Filename:  tcm_fc.c
- *
- * This file contains the configfs implementation for TCM_fc fabric node.
- * Based on tcm_loop_configfs.c
- *
- * Copyright (c) 2010 Cisco Systems, Inc.
- * Copyright (c) 2009,2010 Rising Tide, Inc.
- * Copyright (c) 2009,2010 Beep-iSCSI.org
- *
- * Copyright (c) 2009,2010 Nicholas A. Bellinger <nab@beep-iscsi.org>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- ****************************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/moduleparam.h>
 #include <generated/utsrelease.h>

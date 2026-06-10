@@ -1,22 +1,20 @@
 /*
- *  Force feedback support for PantherLord/GreenAsia based devices
- *
- *  The devices are distributed under various names and the same USB device ID
- *  can be used in both adapters and actual game controllers.
- *
- *  0810:0001 "Twin USB Joystick"
- *   - tested with PantherLord USB/PS2 2in1 Adapter
- *   - contains two reports, one for each port (HID_QUIRK_MULTI_INPUT)
- *
- *  0e8f:0003 "GreenAsia Inc.    USB Joystick     "
- *   - tested with König Gaming gamepad
- *
- *  0e8f:0003 "GASIA USB Gamepad"
- *   - another version of the König gamepad
- *
- *  Copyright (c) 2007, 2009 Anssi Hannula <anssi.hannula@gmail.com>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

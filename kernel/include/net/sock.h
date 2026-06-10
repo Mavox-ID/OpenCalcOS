@@ -1,42 +1,20 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the BEEP
- *		operating system.  INET is implemented using the  BSD Socket
- *		interface as the means of communication with the user level.
- *
- *		Definitions for the AF_INET socket handler.
- *
- * Version:	@(#)sock.h	1.0.4	05/13/93
- *
- * Authors:	Ross Biro
- *		Fred N. van Kempen, <waltje@uWalt.NL.Mugnet.ORG>
- *		Corey Minyard <wf-rch!minyard@relay.EU.net>
- *		Florian La Roche <flla@stud.uni-sb.de>
- *
- * Fixes:
- *		Alan Cox	:	Volatiles in skbuff pointers. See
- *					skbuff comments. May be overdone,
- *					better to prove they can be removed
- *					than the reverse.
- *		Alan Cox	:	Added a zapped field for tcp to note
- *					a socket is reset and must stay shut up
- *		Alan Cox	:	New fields for options
- *	Pauline Middelink	:	identd support
- *		Alan Cox	:	Eliminate low level recv/recvfrom
- *		David S. Miller	:	New socket lookup architecture.
- *              Steve Whitehouse:       Default routines for sock_ops
- *              Arnaldo C. Melo :	removed net_pinfo, tp_pinfo and made
- *              			protinfo be just a void pointer, as the
- *              			protocol specific parts were moved to
- *              			respective headers and ipv4/v6, etc now
- *              			use private slabcaches for its socks
- *              Pedro Hortas	:	New flags field for socket options
- *
- *
- *		This program is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _SOCK_H
 #define _SOCK_H
 

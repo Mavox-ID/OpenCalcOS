@@ -1,21 +1,20 @@
 /*
- *  drivers/video/imsttfb.c -- frame buffer device for IMS TwinTurbo
- *
- *  This file is derived from the powermac console "imstt" driver:
- *  Copyright (C) 1997 Sigurdur Asgeirsson
- *  With additional hacking by Jeffrey Kuskin (jsk@mojave.stanford.edu)
- *  Modified by Danilo Beuche 1998
- *  Some register values added by Damien Doligez, INRIA Rocquencourt
- *  Various cleanups by Paul Mundt (lethal@chaoticdreams.org)
- *
- *  This file was written by Ryan Nielsen (ran@krazynet.com)
- *  Most of the frame buffer device stuff was copied from atyfb.c
- *
- *  This file is subject to the terms and conditions of the GNU General Public
- *  License. See the file COPYING in the main directory of this archive for
- *  more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/errno.h>

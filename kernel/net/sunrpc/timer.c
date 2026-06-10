@@ -1,18 +1,20 @@
 /*
- * beep/net/sunrpc/timer.c
- *
- * Estimate RPC request round trip time.
- *
- * Based on packet round-trip and variance estimator algorithms described
- * in appendix A of "Congestion Avoidance and Control" by Van Jacobson
- * and Michael J. Karels (ACM Computer Communication Review; Proceedings
- * of the Sigcomm '88 Symposium in Stanford, CA, August, 1988).
- *
- * This RTT estimator is used only for RPC over datagram protocols.
- *
- * Copyright (C) 2002 Trond Myklebust <trond.myklebust@fys.uio.no>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <asm/param.h>
 
 #include <beep/types.h>

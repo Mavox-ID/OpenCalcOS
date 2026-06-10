@@ -1,25 +1,20 @@
-/*======================================================================
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-    Aironet driver for 4500 and 4800 series cards
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-    This code is released under both the GPL version 2 and BSD licenses.
-    Either license may be used.  The respective licenses are found at
-    the end of this file.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-    This code was developed by Benjamin Reed <breed@users.sourceforge.net>
-    including portions of which come from the Aironet PC4500
-    Developer's Reference Manual and used with permission.  Copyright
-    (C) 1999 Benjamin Reed.  All Rights Reserved.  Permission to use
-    code in the Developer's manual was granted for this driver by
-    Aironet.
-
-    In addition this module was derived from dummy_cs.
-    The initial developer of dummy_cs is David A. Hinds
-    <dahinds@users.sourceforge.net>.  Portions created by David A. Hinds
-    are Copyright (C) 1999 David A. Hinds.  All Rights Reserved.
-
-======================================================================*/
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifdef __IN_PCMCIA_PACKAGE__
 #include <pcmcia/k_compat.h>
 #endif

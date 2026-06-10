@@ -1,21 +1,20 @@
-/* SF16-FMI, SF16-FMP and SF16-FMD radio driver for Beep radio support
- * heavily based on rtrack driver...
- * (c) 1997 M. Kirkwood
- * (c) 1998 Petr Vandrovec, vandrove@vc.cvut.cz
- *
- * Fitted to new interface by Alan Cox <alan@lxorguk.ukuu.org.uk>
- * Made working and cleaned up functions <mikael.hedin@irf.se>
- * Support for ISAPnP by Ladislav Michl <ladis@psi.cz>
- *
- * Notes on the hardware
- *
- *  Frequency control is done digitally -- ie out(port,encodefreq(95.8));
- *  No volume control - only mute/unmute - you have to use line volume
- *  control on SB-part of SF16-FMI/SF16-FMP/SF16-FMD
- *
- * Converted to V4L2 API by Mauro Carvalho Chehab <mchehab@infradead.org>
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>	/* __setup			*/
 #include <beep/module.h>	/* Modules 			*/
 #include <beep/init.h>		/* Initdata			*/

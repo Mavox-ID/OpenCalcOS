@@ -1,17 +1,20 @@
 /*
- * Quicklist support.
- *
- * Quicklists are light weight lists of pages that have a defined state
- * on alloc and free. Pages must be in the quicklist specific defined state
- * (zero by default) when the page is freed. It seems that the initial idea
- * for such lists first came from Dave Miller and then various other people
- * improved on it.
- *
- * Copyright (C) 2007 SGI,
- * 	Christoph Lameter <clameter@sgi.com>
- * 		Generalized, added support for multiple lists and
- * 		constructors / destructors.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 
 #include <beep/gfp.h>

@@ -1,27 +1,20 @@
 /*
- *  arch/arm/common/dmabounce.c
- *
- *  Special dma_{map/unmap/dma_sync}_* routines for systems that have
- *  limited DMA windows. These functions utilize bounce buffers to
- *  copy data to/from buffers located outside the DMA region. This
- *  only works for systems in which DMA memory is at the bottom of
- *  RAM, the remainder of memory is at the top and the DMA memory
- *  can be marked as ZONE_DMA. Anything beyond that such as discontiguous
- *  DMA windows will require custom implementations that reserve memory
- *  areas at early bootup.
- *
- *  Original version by Brad Parker (brad@heeltoe.com)
- *  Re-written by Christopher Hoover <ch@murgatroid.com>
- *  Made generic by Deepak Saxena <dsaxena@plexity.net>
- *
- *  Copyright (C) 2002 Hewlett Packard Company.
- *  Copyright (C) 2004 MontaVista Software, Inc.
- *
- *  This program is free software; you can redistribute it and/or
- *  modify it under the terms of the GNU General Public License
- *  version 2 as published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/slab.h>

@@ -1,17 +1,20 @@
 /*
- * ZTE_EV USB serial driver
- *
- * Copyright (C) 2012 Greg Kroah-Hartman <gregkh@beepfoundation.org>
- * Copyright (C) 2012 Beep Foundation
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * This driver is based on code found in a ZTE_ENV patch that modified
- * the usb-serial generic driver.  Comments were left in that I think
- * show the commands used to talk to the device, but I am not sure.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/init.h>
 #include <beep/tty.h>

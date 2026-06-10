@@ -1,24 +1,20 @@
 /*
- * fs/ioprio.c
- *
- * Copyright (C) 2004 Jens Axboe <axboe@kernel.dk>
- *
- * Helper functions for setting/querying io priorities of processes. The
- * system calls closely mimmick getpriority/setpriority, see the man page for
- * those. The prio argument is a composite of prio class and prio data, where
- * the data argument has meaning within that class. The standard scheduling
- * classes have 8 distinct prio levels, with 0 being the highest prio and 7
- * being the lowest.
- *
- * IOW, setting BE scheduling class with prio 2 is done ala:
- *
- * unsigned int prio = (IOPRIO_CLASS_BE << IOPRIO_CLASS_SHIFT) | 2;
- *
- * ioprio_set(PRIO_PROCESS, pid, prio);
- *
- * See also Documentation/block/ioprio.txt
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/gfp.h>
 #include <beep/kernel.h>
 #include <beep/export.h>

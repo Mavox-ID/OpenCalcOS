@@ -1,53 +1,20 @@
 /*
-* cycx_drv.c	Cyclom 2X Support Module.
-*
-*		This module is a library of common hardware specific
-*		functions used by the Cyclades Cyclom 2X sync card.
-*
-* Author:	Arnaldo Carvalho de Melo <acme@conectiva.com.br>
-*
-* Copyright:	(c) 1998-2003 Arnaldo Carvalho de Melo
-*
-* Based on sdladrv.c by Gene Kozin <genek@compuserve.com>
-*
-*		This program is free software; you can redistribute it and/or
-*		modify it under the terms of the GNU General Public License
-*		as published by the Free Software Foundation; either version
-*		2 of the License, or (at your option) any later version.
-* ============================================================================
-* 1999/11/11	acme		set_current_state(TASK_INTERRUPTIBLE), code
-*				cleanup
-* 1999/11/08	acme		init_cyc2x deleted, doing nothing
-* 1999/11/06	acme		back to read[bw], write[bw] and memcpy_to and
-*				fromio to use dpmbase ioremaped
-* 1999/10/26	acme		use isa_read[bw], isa_write[bw] & isa_memcpy_to
-*				& fromio
-* 1999/10/23	acme		cleanup to only supports cyclom2x: all the other
-*				boards are no longer manufactured by cyclades,
-*				if someone wants to support them... be my guest!
-* 1999/05/28    acme		cycx_intack & cycx_intde gone for good
-* 1999/05/18	acme		lots of unlogged work, submitting to Linus...
-* 1999/01/03	acme		more judicious use of data types
-* 1999/01/03	acme		judicious use of data types :>
-*				cycx_inten trying to reset pending interrupts
-*				from cyclom 2x - I think this isn't the way to
-*				go, but for now...
-* 1999/01/02	acme		cycx_intack ok, I think there's nothing to do
-*				to ack an int in cycx_drv.c, only handle it in
-*				cyx_isr (or in the other protocols: cyp_isr,
-*				cyf_isr, when they get implemented.
-* Dec 31, 1998	acme		cycx_data_boot & cycx_code_boot fixed, crossing
-*				fingers to see x25_configure in cycx_x25.c
-*				work... :)
-* Dec 26, 1998	acme		load implementation fixed, seems to work! :)
-*				cycx_2x_dpmbase_options with all the possible
-*				DPM addresses (20).
-*				cycx_intr implemented (test this!)
-*				general code cleanup
-* Dec  8, 1998	Ivan Passos	Cyclom-2X firmware load implementation.
-* Aug  8, 1998	acme		Initial version.
-*/
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/init.h>		/* __init */

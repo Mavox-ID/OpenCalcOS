@@ -1,18 +1,20 @@
-/* sunhme.c: Sparc HME/BigMac 10/100baseT half/full duplex auto switching,
- *           auto carrier detecting ethernet driver.  Also known as the
- *           "Happy Meal Ethernet" found on SunSwift SBUS cards.
- *
- * Copyright (C) 1996, 1998, 1999, 2002, 2003,
- *		2006, 2008 David S. Miller (davem@davemloft.net)
- *
- * Changes :
- * 2000/11/11 Willy Tarreau <willy AT meta-x.org>
- *   - port to non-sparc architectures. Tested only on x86 and
- *     only currently works with QFE PCI cards.
- *   - ability to specify the MAC address at module load time by passing this
- *     argument : macaddr=0x00,0x10,0x20,0x30,0x40,0x50
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/types.h>

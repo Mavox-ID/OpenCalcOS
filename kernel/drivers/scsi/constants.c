@@ -1,12 +1,20 @@
-/* 
- * ASCII values for a number of symbolic constants, printing functions,
- * etc.
- * Additions for SCSI 2 and Beep 2.2.x by D. Gilbert (990422)
- * Additions for SCSI 3+ (SPC-3 T10/1416-D Rev 07 3 May 2002)
- *   by D. Gilbert and aeb (20020609)
- * Update to SPC-4 T10/1713-D Rev 20, 22 May 2009, D. Gilbert 20090624
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/blkdev.h>
 #include <beep/module.h>
 #include <beep/kernel.h>

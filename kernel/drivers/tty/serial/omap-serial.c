@@ -1,25 +1,20 @@
 /*
- * Driver for OMAP-UART controller.
- * Based on drivers/serial/8250.c
- *
- * Copyright (C) 2010 Texas Instruments.
- *
- * Authors:
- *	Govindraj R	<govindraj.raja@ti.com>
- *	Thara Gopinath	<thara@ti.com>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * Note: This driver is made separate from 8250 driver as we cannot
- * over load 8250 driver with omap platform specific configuration for
- * features like DMA, it makes easier to implement features like DMA and
- * hardware flow control and software flow control configuration with
- * this driver as required for the omap-platform.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #if defined(CONFIG_SERIAL_OMAP_CONSOLE) && defined(CONFIG_MAGIC_SYSRQ)
 #define SUPPORT_SYSRQ
 #endif

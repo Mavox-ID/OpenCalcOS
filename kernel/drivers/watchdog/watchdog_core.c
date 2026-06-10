@@ -1,31 +1,20 @@
 /*
- *	watchdog_core.c
- *
- *	(c) Copyright 2008-2011 Alan Cox <alan@lxorguk.ukuu.org.uk>,
- *						All Rights Reserved.
- *
- *	(c) Copyright 2008-2011 Wim Van Sebroeck <wim@iguana.be>.
- *
- *	This source code is part of the generic code that can be used
- *	by all the watchdog timer drivers.
- *
- *	Based on source code of the following authors:
- *	  Matt Domsch <Matt_Domsch@dell.com>,
- *	  Rob Radez <rob@osinvestor.com>,
- *	  Rusty Lynch <rusty@beep.co.intel.com>
- *	  Satyam Sharma <satyam@infradead.org>
- *	  Randy Dunlap <randy.dunlap@oracle.com>
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- *
- *	Neither Alan Cox, CymruNet Ltd., Wim Van Sebroeck nor Iguana vzw.
- *	admit liability nor provide warranty for any of this software.
- *	This material is provided "AS-IS" and at no charge.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>	/* For EXPORT_SYMBOL/module stuff/... */

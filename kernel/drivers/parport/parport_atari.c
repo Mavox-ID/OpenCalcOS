@@ -1,14 +1,20 @@
-/* Low-level parallel port routines for the Atari builtin port
- *
- * Author: Andreas Schwab <schwab@issan.informatik.uni-dortmund.de>
- *
- * Based on parport_amiga.c.
- *
- * The built-in Atari parallel port provides one port at a fixed address
- * with 8 output data lines (D0 - D7), 1 output control line (STROBE)
- * and 1 input status line (BUSY) able to cause an interrupt.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/parport.h>

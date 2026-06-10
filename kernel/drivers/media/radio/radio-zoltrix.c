@@ -1,43 +1,20 @@
 /*
- * Zoltrix Radio Plus driver
- * Copyright 1998 C. van Schaik <carl@leg.uct.ac.za>
- *
- * BUGS
- *  Due to the inconsistency in reading from the signal flags
- *  it is difficult to get an accurate tuned signal.
- *
- *  It seems that the card is not linear to 0 volume. It cuts off
- *  at a low volume, and it is not possible (at least I have not found)
- *  to get fine volume control over the low volume range.
- *
- *  Some code derived from code by Romolo Manfredini
- *				   romolo@bicnet.it
- *
- * 1999-05-06 - (C. van Schaik)
- *	      - Make signal strength and stereo scans
- *		kinder to cpu while in delay
- * 1999-01-05 - (C. van Schaik)
- *	      - Changed tuning to 1/160Mhz accuracy
- *	      - Added stereo support
- *		(card defaults to stereo)
- *		(can explicitly force mono on the card)
- *		(can detect if station is in stereo)
- *	      - Added unmute function
- *	      - Reworked ioctl functions
- * 2002-07-15 - Fix Stereo typo
- *
- * 2006-07-24 - Converted to V4L2 API
- *		by Mauro Carvalho Chehab <mchehab@infradead.org>
- *
- * Converted to the radio-isa framework by Hans Verkuil <hans.verkuil@cisco.com>
- *
- * Note that this is the driver for the Zoltrix Radio Plus.
- * This driver does not work for the Zoltrix Radio Plus 108 or the
- * Zoltrix Radio Plus for Windows.
- *
- * Fully tested with the Keene USB FM Transmitter and the v4l2-compliance tool.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>	/* Modules                        */
 #include <beep/init.h>		/* Initdata                       */
 #include <beep/ioport.h>	/* request_region		  */

@@ -1,22 +1,20 @@
 /*
- *  beep/arch/h8300/mm/memory.c
- *
- *  Copyright (C) 2002  Yoshinori Sato <ysato@users.sourceforge.jp>,
- *
- *  Based on:
- *
- *  beep/arch/m68knommu/mm/memory.c
- *
- *  Copyright (C) 1998  Kenneth Albanowski <kjahds@kjahds.com>,
- *  Copyright (C) 1999-2002, Greg Ungerer (gerg@snapgear.com)
- *
- *  Based on:
- *
- *  beep/arch/m68k/mm/memory.c
- *
- *  Copyright (C) 1995  Hamish Macdonald
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/mm.h>
 #include <beep/kernel.h>
 #include <beep/string.h>

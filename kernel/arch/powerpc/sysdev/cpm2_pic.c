@@ -1,19 +1,20 @@
 /*
- * Platform information definitions.
- *
- * Copied from arch/ppc/syslib/cpm2_pic.c with minor subsequent updates
- * to make in work in arch/powerpc/. Original (c) belongs to Dan Malek.
- *
- * Author:  Vitaly Bordug <vbordug@ru.mvista.com>
- *
- * 1999-2001 (c) Dan Malek <dan@embeddedalley.com>
- * 2006 (c) MontaVista Software, Inc.
- *
- * This file is licensed under the terms of the GNU General Public License
- * version 2. This program is licensed "as is" without any warranty of any
- * kind, whether express or implied.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* The CPM2 internal interrupt controller.  It is usually
  * the only interrupt controller.
  * There are two 32-bit registers (high/low) for up to 64

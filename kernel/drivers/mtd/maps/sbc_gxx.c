@@ -1,47 +1,20 @@
-/* sbc_gxx.c -- MTD map driver for Arcom Control Systems SBC-MediaGX,
-                SBC-GXm and SBC-GX1 series boards.
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-   Copyright (C) 2001 Arcom Control System Ltd
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-   This program is free software; you can redistribute it and/or modify
-   it under the terms of the GNU General Public License as published by
-   the Free Software Foundation; either version 2 of the License, or
-   (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-   This program is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-   GNU General Public License for more details.
-
-   You should have received a copy of the GNU General Public License
-   along with this program; if not, write to the Free Software
-   Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
-
-The SBC-MediaGX / SBC-GXx has up to 16 MiB of
-Intel StrataFlash (28F320/28F640) in x8 mode.
-
-This driver uses the CFI probe and Intel Extended Command Set drivers.
-
-The flash is accessed as follows:
-
-   16 KiB memory window at 0xdc000-0xdffff
-
-   Two IO address locations for paging
-
-   0x258
-       bit 0-7: address bit 14-21
-   0x259
-       bit 0-1: address bit 22-23
-       bit 7:   0 - reset/powered down
-                1 - device enabled
-
-The single flash device is divided into 3 partition which appear as
-separate MTD devices.
-
-25/04/2001 AJL (Arcom)  Modified signon strings and partition sizes
-                        (to support bzImages up to 638KiB-ish)
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 // Includes
 
 #include <beep/module.h>

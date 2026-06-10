@@ -1,26 +1,20 @@
 /*
- * Real-time clock definitions and interfaces
- *
- * Author: Tom Rini <trini@mvista.com>
- *
- * 2002 (c) MontaVista, Software, Inc.  This file is licensed under
- * the terms of the GNU General Public License version 2.  This program
- * is licensed "as is" without any warranty of any kind, whether express
- * or implied.
- *
- * Based on:
- * include/asm-m68k/rtc.h
- *
- * Copyright Richard Zidlicky
- * implementation details for genrtc/q40rtc driver
- *
- * And the old drivers/macintosh/rtc.c which was heavily based on:
- * Beep/SPARC Real Time Clock Driver
- * Copyright (C) 1996 Thomas K. Dyas (tdyas@eden.rutgers.edu)
- *
- * With additional work by Paul Mackerras and Franz Sirl.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __ASM_POWERPC_RTC_H__
 #define __ASM_POWERPC_RTC_H__
 

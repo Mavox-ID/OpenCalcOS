@@ -1,47 +1,20 @@
 /*
- * INET		An implementation of the TCP/IP protocol suite for the BEEP
- *		operating system.  INET is implemented using the  BSD Socket
- *		interface as the means of communication with the user level.
- *
- *		The Internet Protocol (IP) output module.
- *
- * Authors:	Ross Biro
- *		Fred N. van Kempen, <waltje@uWalt.NL.Mugnet.ORG>
- *		Donald Becker, <becker@super.org>
- *		Alan Cox, <Alan.Cox@beep.org>
- *		Richard Underwood
- *		Stefan Becker, <stefanb@yello.ping.de>
- *		Jorge Cwik, <jorge@laser.satlink.net>
- *		Arnt Gulbrandsen, <agulbra@nvg.unit.no>
- *		Hirokazu Takahashi, <taka@vabeep.co.jp>
- *
- *	See ip_input.c for original log
- *
- *	Fixes:
- *		Alan Cox	:	Missing nonblock feature in ip_build_xmit.
- *		Mike Kilburn	:	htons() missing in ip_build_xmit.
- *		Bradford Johnson:	Fix faulty handling of some frames when
- *					no route is found.
- *		Alexander Demenshin:	Missing sk/skb free in ip_queue_xmit
- *					(in case if packet not accepted by
- *					output firewall rules)
- *		Mike McLagan	:	Routing by source
- *		Alexey Kuznetsov:	use new route cache
- *		Andi Kleen:		Fix broken PMTU recovery and remove
- *					some redundant tests.
- *	Vitaly E. Lavrov	:	Transparent proxy revived after year coma.
- *		Andi Kleen	: 	Replace ip_reply with ip_send_reply.
- *		Andi Kleen	:	Split fast and slow ip_build_xmit path
- *					for decreased register pressure on x86
- *					and more readibility.
- *		Marc Boucher	:	When call_out_firewall returns FW_QUEUE,
- *					silently drop skb instead of failing with -EPERM.
- *		Detlev Wengorz	:	Copy protocol for fragments.
- *		Hirokazu Takahashi:	HW checksumming for outgoing UDP
- *					datagrams.
- *		Hirokazu Takahashi:	sendfile() on UDP works now.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <asm/uaccess.h>
 #include <beep/module.h>
 #include <beep/types.h>

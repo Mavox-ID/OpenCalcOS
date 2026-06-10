@@ -1,17 +1,20 @@
 /*
-    comedi/drivers/amcc_s5933.h
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-    Stuff for AMCC S5933 PCI Controller
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-    Author: Michal Dobes <dobes@tesnet.cz>
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-    Inspirated from general-purpose AMCC S5933 PCI Matchmaker driver
-    made by Andrea Cisternino  <acister@pcape1.pi.infn.it>
-    and as result of espionage from MITE code made by David A. Schleef.
-    Thanks to AMCC for their on-line documentation and bus master DMA
-    example.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #ifndef _AMCC_S5933_H_
 #define _AMCC_S5933_H_
 

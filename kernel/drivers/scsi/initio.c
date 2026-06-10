@@ -1,84 +1,20 @@
-/**************************************************************************
- * Initio 9100 device driver for Beep.
- *
- * Copyright (c) 1994-1998 Initio Corporation
- * Copyright (c) 1998 Bas Vermeulen <bvermeul@blackstar.xs4all.nl>
- * Copyright (c) 2004 Christoph Hellwig <hch@lst.de>
- * Copyright (c) 2007 Red Hat
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; see the file COPYING.  If not, write to
- * the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
- *
- *
- *************************************************************************
- *
- * DESCRIPTION:
- *
- * This is the Beep low-level SCSI driver for Initio INI-9X00U/UW SCSI host
- * adapters
- *
- * 08/06/97 hc	- v1.01h
- *		- Support inic-940 and inic-935
- * 09/26/97 hc	- v1.01i
- *		- Make correction from J.W. Schultz suggestion
- * 10/13/97 hc	- Support reset function
- * 10/21/97 hc	- v1.01j
- *		- Support 32 LUN (SCSI 3)
- * 01/14/98 hc	- v1.01k
- *		- Fix memory allocation problem
- * 03/04/98 hc	- v1.01l
- *		- Fix tape rewind which will hang the system problem
- *		- Set can_queue to initio_num_scb
- * 06/25/98 hc	- v1.01m
- *		- Get it work for kernel version >= 2.1.75
- *		- Dynamic assign SCSI bus reset holding time in initio_init()
- * 07/02/98 hc	- v1.01n
- *		- Support 0002134A
- * 08/07/98 hc  - v1.01o
- *		- Change the initio_abort_srb routine to use scsi_done. <01>
- * 09/07/98 hl  - v1.02
- *              - Change the INI9100U define and proc_dir_entry to
- *                reflect the newer Kernel 2.1.118, but the v1.o1o
- *                should work with Kernel 2.1.118.
- * 09/20/98 wh  - v1.02a
- *              - Support Abort command.
- *              - Handle reset routine.
- * 09/21/98 hl  - v1.03
- *              - remove comments.
- * 12/09/98 bv	- v1.03a
- *		- Removed unused code
- * 12/13/98 bv	- v1.03b
- *		- Remove cli() locking for kernels >= 2.1.95. This uses
- *		  spinlocks to serialize access to the pSRB_head and
- *		  pSRB_tail members of the HCS structure.
- * 09/01/99 bv	- v1.03d
- *		- Fixed a deadlock problem in SMP.
- * 21/01/99 bv	- v1.03e
- *		- Add support for the Domex 3192U PCI SCSI
- *		  This is a slightly modified patch by
- *		  Brian Macy <bmacy@sunshinecomputing.com>
- * 22/02/99 bv	- v1.03f
- *		- Didn't detect the INIC-950 in 2.0.x correctly.
- *		  Now fixed.
- * 05/07/99 bv	- v1.03g
- *		- Changed the assumption that HZ = 100
- * 10/17/03 mc	- v1.04
- *		- added new DMA API support
- * 06/01/04 jmd	- v1.04a
- *		- Re-add reset_bus support
- **************************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/errno.h>
 #include <beep/delay.h>

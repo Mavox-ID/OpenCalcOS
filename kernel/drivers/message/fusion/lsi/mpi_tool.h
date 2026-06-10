@@ -1,33 +1,20 @@
 /*
- *  Copyright (c) 2001-2008 LSI Corporation.
- *
- *
- *           Name:  mpi_tool.h
- *          Title:  MPI Toolbox structures and definitions
- *  Creation Date:  July 30, 2001
- *
- *    mpi_tool.h Version:  01.05.03
- *
- *  Version History
- *  ---------------
- *
- *  Date      Version   Description
- *  --------  --------  ------------------------------------------------------
- *  08-08-01  01.02.01  Original release.
- *  08-29-01  01.02.02  Added DIAG_DATA_UPLOAD_HEADER and related defines.
- *  01-16-04  01.02.03  Added defines and structures for new tools
- *.                     MPI_TOOLBOX_ISTWI_READ_WRITE_TOOL and
- *                      MPI_TOOLBOX_FC_MANAGEMENT_TOOL.
- *  04-29-04  01.02.04  Added message structures for Diagnostic Buffer Post and
- *                      Diagnostic Release requests and replies.
- *  05-11-04  01.03.01  Original release for MPI v1.3.
- *  08-19-04  01.05.01  Original release for MPI v1.5.
- *  10-06-04  01.05.02  Added define for MPI_DIAG_BUF_TYPE_COUNT.
- *  02-09-05  01.05.03  Added frame size option to FC management tool.
- *                      Added Beacon tool to the Toolbox.
- *  --------------------------------------------------------------------------
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef MPI_TOOL_H
 #define MPI_TOOL_H
 

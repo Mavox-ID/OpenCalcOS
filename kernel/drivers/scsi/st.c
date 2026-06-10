@@ -1,22 +1,20 @@
 /*
-   SCSI Tape Driver for Beep version 1.1 and newer. See the accompanying
-   file Documentation/scsi/st.txt for more information.
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-   History:
-   Rewritten from Dwayne Forsyth's SCSI tape driver by Kai Makisara.
-   Contribution and ideas from several people including (in alphabetical
-   order) Klaus Ehrenfried, Eugene Exarevsky, Eric Lee Green, Wolfgang Denk,
-   Steve Hirsch, Andreas Koppenh"ofer, Michael Leodolter, Eyal Lebedinsky,
-   Michael Schaefer, J"org Weule, and Eric Youngdale.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-   Copyright 1992 - 2010 Kai Makisara
-   email Kai.Makisara@kolumbus.fi
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-   Some small formal changes - aeb, 950809
-
-   Last modified: 18-JAN-1998 Richard Gooch <rgooch@atnf.csiro.au> Devfs support
- */
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 static const char *verstr = "20101219";
 
 #include <beep/module.h>

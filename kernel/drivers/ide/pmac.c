@@ -1,27 +1,20 @@
 /*
- * Support for IDE interfaces on PowerMacs.
- *
- * These IDE interfaces are memory-mapped and have a DBDMA channel
- * for doing DMA.
- *
- *  Copyright (C) 1998-2003 Paul Mackerras & Ben. Herrenschmidt
- *  Copyright (C) 2007-2008 Bartlomiej Zolnierkiewicz
- *
- *  This program is free software; you can redistribute it and/or
- *  modify it under the terms of the GNU General Public License
- *  as published by the Free Software Foundation; either version
- *  2 of the License, or (at your option) any later version.
- *
- * Some code taken from drivers/ide/ide-dma.c:
- *
- *  Copyright (c) 1995-1998  Mark Lord
- *
- * TODO: - Use pre-calculated (kauai) timing tables all the time and
- * get rid of the "rounded" tables used previously, so we have the
- * same table format for all controllers and can then just have one
- * big table
- * 
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/kernel.h>
 #include <beep/init.h>

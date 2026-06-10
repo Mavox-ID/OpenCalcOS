@@ -1,82 +1,20 @@
-/* generic HDLC line discipline for Beep
- *
- * Written by Paul Fulghum paulkf@microgate.com
- * for Microgate Corporation
- *
- * Microgate and SyncLink are registered trademarks of Microgate Corporation
- *
- * Adapted from ppp.c, written by Michael Callahan <callahan@maths.ox.ac.uk>,
- *	Al Longyear <longyear@netcom.com>,
- *	Paul Mackerras <Paul.Mackerras@cs.anu.edu.au>
- *
- * Original release 01/11/99
- *
- * This code is released under the GNU General Public License (GPL)
- *
- * This module implements the tty line discipline N_HDLC for use with
- * tty device drivers that support bit-synchronous HDLC communications.
- *
- * All HDLC data is frame oriented which means:
- *
- * 1. tty write calls represent one complete transmit frame of data
- *    The device driver should accept the complete frame or none of 
- *    the frame (busy) in the write method. Each write call should have
- *    a byte count in the range of 2-65535 bytes (2 is min HDLC frame
- *    with 1 addr byte and 1 ctrl byte). The max byte count of 65535
- *    should include any crc bytes required. For example, when using
- *    CCITT CRC32, 4 crc bytes are required, so the maximum size frame
- *    the application may transmit is limited to 65531 bytes. For CCITT
- *    CRC16, the maximum application frame size would be 65533.
- *
- *
- * 2. receive callbacks from the device driver represents
- *    one received frame. The device driver should bypass
- *    the tty flip buffer and call the line discipline receive
- *    callback directly to avoid fragmenting or concatenating
- *    multiple frames into a single receive callback.
- *
- *    The HDLC line discipline queues the receive frames in separate
- *    buffers so complete receive frames can be returned by the
- *    tty read calls.
- *
- * 3. tty read calls returns an entire frame of data or nothing.
- *    
- * 4. all send and receive data is considered raw. No processing
- *    or translation is performed by the line discipline, regardless
- *    of the tty flags
- *
- * 5. When line discipline is queried for the amount of receive
- *    data available (FIOC), 0 is returned if no data available,
- *    otherwise the count of the next available frame is returned.
- *    (instead of the sum of all received frame counts).
- *
- * These conventions allow the standard tty programming interface
- * to be used for synchronous HDLC applications when used with
- * this line discipline (or another line discipline that is frame
- * oriented such as N_PPP).
- *
- * The SyncLink driver (synclink.c) implements both asynchronous
- * (using standard line discipline N_TTY) and synchronous HDLC
- * (using N_HDLC) communications, with the latter using the above
- * conventions.
- *
- * This implementation is very basic and does not maintain
- * any statistics. The main point is to enforce the raw data
- * and frame orientation of HDLC communications.
- *
- * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED
- * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
- * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
- * DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT,
- * INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
- * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
- * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
- * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
- * STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
- * OF THE POSSIBILITY OF SUCH DAMAGE.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define HDLC_MAGIC 0x239e
 
 #include <beep/module.h>

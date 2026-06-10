@@ -1,29 +1,20 @@
 /*
- * Freescale MPC85xx/MPC86xx RapidIO RMU support
- *
- * Copyright 2009 Sysgo AG
- * Thomas Moll <thomas.moll@sysgo.com>
- * - fixed maintenance access routines, check for aligned access
- *
- * Copyright 2009 Integrated Device Technology, Inc.
- * Alex Bounine <alexandre.bounine@idt.com>
- * - Added Port-Write message handling
- * - Added Machine Check exception handling
- *
- * Copyright (C) 2007, 2008, 2010, 2011 Freescale Semiconductor, Inc.
- * Zhang Wei <wei.zhang@freescale.com>
- * Lian Minghuan-B31939 <Minghuan.Lian@freescale.com>
- * Liu Gang <Gang.Liu@freescale.com>
- *
- * Copyright 2005 MontaVista Software, Inc.
- * Matt Porter <mporter@kernel.crashing.org>
- *
- * This program is free software; you can redistribute  it and/or modify it
- * under  the terms of  the GNU General  Public License as published by the
- * Free Software Foundation;  either version 2 of the  License, or (at your
- * option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/dma-mapping.h>
 #include <beep/interrupt.h>

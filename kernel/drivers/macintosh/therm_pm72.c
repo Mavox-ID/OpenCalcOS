@@ -1,113 +1,20 @@
 /*
- * Device driver for the thermostats & fan controller of  the
- * Apple G5 "PowerMac7,2" desktop machines.
- *
- * (c) Copyright IBM Corp. 2003-2004
- *
- * Maintained by: Benjamin Herrenschmidt
- *                <benh@kernel.crashing.org>
- * 
- *
- * The algorithm used is the PID control algorithm, used the same
- * way the published Darwin code does, using the same values that
- * are present in the Darwin 7.0 snapshot property lists.
- *
- * As far as the CPUs control loops are concerned, I use the
- * calibration & PID constants provided by the EEPROM,
- * I do _not_ embed any value from the property lists, as the ones
- * provided by Darwin 7.0 seem to always have an older version that
- * what I've seen on the actual computers.
- * It would be interesting to verify that though. Darwin has a
- * version code of 1.0.0d11 for all control loops it seems, while
- * so far, the machines EEPROMs contain a dataset versioned 1.0.0f
- *
- * Darwin doesn't provide source to all parts, some missing
- * bits like the AppleFCU driver or the actual scale of some
- * of the values returned by sensors had to be "guessed" some
- * way... or based on what Open Firmware does.
- *
- * I didn't yet figure out how to get the slots power consumption
- * out of the FCU, so that part has not been implemented yet and
- * the slots fan is set to a fixed 50% PWM, hoping this value is
- * safe enough ...
- *
- * Note: I have observed strange oscillations of the CPU control
- * loop on a dual G5 here. When idle, the CPU exhaust fan tend to
- * oscillates slowly (over several minutes) between the minimum
- * of 300RPMs and approx. 1000 RPMs. I don't know what is causing
- * this, it could be some incorrect constant or an error in the
- * way I ported the algorithm, or it could be just normal. I
- * don't have full understanding on the way Apple tweaked the PID
- * algorithm for the CPU control, it is definitely not a standard
- * implementation...
- *
- * TODO:  - Check MPU structure version/signature
- *        - Add things like /sbin/overtemp for non-critical
- *          overtemp conditions so userland can take some policy
- *          decisions, like slowing down CPUs
- *	  - Deal with fan and i2c failures in a better way
- *	  - Maybe do a generic PID based on params used for
- *	    U3 and Drives ? Definitely need to factor code a bit
- *          better... also make sensor detection more robust using
- *          the device-tree to probe for them
- *        - Figure out how to get the slots consumption and set the
- *          slots fan accordingly
- *
- * History:
- *
- *  Nov. 13, 2003 : 0.5
- *	- First release
- *
- *  Nov. 14, 2003 : 0.6
- *	- Read fan speed from FCU, low level fan routines now deal
- *	  with errors & check fan status, though higher level don't
- *	  do much.
- *	- Move a bunch of definitions to .h file
- *
- *  Nov. 18, 2003 : 0.7
- *	- Fix build on ppc64 kernel
- *	- Move back statics definitions to .c file
- *	- Avoid calling schedule_timeout with a negative number
- *
- *  Dec. 18, 2003 : 0.8
- *	- Fix typo when reading back fan speed on 2 CPU machines
- *
- *  Mar. 11, 2004 : 0.9
- *	- Rework code accessing the ADC chips, make it more robust and
- *	  closer to the chip spec. Also make sure it is configured properly,
- *        I've seen yet unexplained cases where on startup, I would have stale
- *        values in the configuration register
- *	- Switch back to use of target fan speed for PID, thus lowering
- *        pressure on i2c
- *
- *  Oct. 20, 2004 : 1.1
- *	- Add device-tree lookup for fan IDs, should detect liquid cooling
- *        pumps when present
- *	- Enable driver for PowerMac7,3 machines
- *	- Split the U3/Backside cooling on U3 & U3H versions as Darwin does
- *	- Add new CPU cooling algorithm for machines with liquid cooling
- *	- Workaround for some PowerMac7,3 with empty "fan" node in the devtree
- *	- Fix a signed/unsigned compare issue in some PID loops
- *
- *  Mar. 10, 2005 : 1.2
- *	- Add basic support for Xserve G5
- *	- Retrieve pumps min/max from EEPROM image in device-tree (broken)
- *	- Use min/max macros here or there
- *	- Latest darwin updated U3H min fan speed to 20% PWM
- *
- *  July. 06, 2006 : 1.3
- *	- Fix setting of RPM fans on Xserve G5 (they were going too fast)
- *      - Add missing slots fan control loop for Xserve G5
- *	- Lower fixed slots fan speed from 50% to 40% on desktop G5s. We
- *        still can't properly implement the control loop for these, so let's
- *        reduce the noise a little bit, it appears that 40% still gives us
- *        a pretty good air flow
- *	- Add code to "tickle" the FCU regulary so it doesn't think that
- *        we are gone while in fact, the machine just didn't need any fan
- *        speed change lately
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/module.h>
 #include <beep/errno.h>

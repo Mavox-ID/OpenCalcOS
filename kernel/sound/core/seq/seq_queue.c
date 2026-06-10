@@ -1,40 +1,20 @@
 /*
- *   ALSA sequencer Timing queue handling
- *   Copyright (c) 1998-1999 by Frank van de Pol <fvdpol@coil.demon.nl>
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 2 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, write to the Free Software
- *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
- *
- * MAJOR CHANGES
- *   Nov. 13, 1999	Takashi Iwai <iwai@ww.uni-erlangen.de>
- *     - Queues are allocated dynamically via ioctl.
- *     - When owner client is deleted, all owned queues are deleted, too.
- *     - Owner of unlocked queue is kept unmodified even if it is
- *	 manipulated by other clients.
- *     - Owner field in SET_QUEUE_OWNER ioctl must be identical with the
- *       caller client.  i.e. Changing owner to a third client is not
- *       allowed.
- *
- *  Aug. 30, 2000	Takashi Iwai
- *     - Queues are managed in static array again, but with better way.
- *       The API itself is identical.
- *     - The queue is locked when struct snd_seq_queue pointer is returned via
- *       queueptr().  This pointer *MUST* be released afterward by
- *       queuefree(ptr).
- *     - Addition of experimental sync support.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/slab.h>
 #include <sound/core.h>

@@ -1,75 +1,20 @@
 /*
- *
- *			Beep MegaRAID device driver
- *
- * Copyright (c) 2003-2004  LSI Logic Corporation.
- *
- *	   This program is free software; you can redistribute it and/or
- *	   modify it under the terms of the GNU General Public License
- *	   as published by the Free Software Foundation; either version
- *	   2 of the License, or (at your option) any later version.
- *
- * FILE		: megaraid_mbox.c
- * Version	: v2.20.5.1 (Nov 16 2006)
- *
- * Authors:
- * 	Atul Mukker		<Atul.Mukker@lsi.com>
- * 	Sreenivas Bagalkote	<Sreenivas.Bagalkote@lsi.com>
- * 	Manoj Jose		<Manoj.Jose@lsi.com>
- * 	Seokmann Ju
- *
- * List of supported controllers
- *
- * OEM	Product Name			VID	DID	SSVID	SSID
- * ---	------------			---	---	----	----
- * Dell PERC3/QC			101E	1960	1028	0471
- * Dell PERC3/DC			101E	1960	1028	0493
- * Dell PERC3/SC			101E	1960	1028	0475
- * Dell PERC3/Di			1028	1960	1028	0123
- * Dell PERC4/SC			1000	1960	1028	0520
- * Dell PERC4/DC			1000	1960	1028	0518
- * Dell PERC4/QC			1000	0407	1028	0531
- * Dell PERC4/Di			1028	000F	1028	014A
- * Dell PERC 4e/Si			1028	0013	1028	016c
- * Dell PERC 4e/Di			1028	0013	1028	016d
- * Dell PERC 4e/Di			1028	0013	1028	016e
- * Dell PERC 4e/Di			1028	0013	1028	016f
- * Dell PERC 4e/Di			1028	0013	1028	0170
- * Dell PERC 4e/DC			1000	0408	1028	0002
- * Dell PERC 4e/SC			1000	0408	1028	0001
- *
- *
- * LSI MegaRAID SCSI 320-0		1000	1960	1000	A520
- * LSI MegaRAID SCSI 320-1		1000	1960	1000	0520
- * LSI MegaRAID SCSI 320-2		1000	1960	1000	0518
- * LSI MegaRAID SCSI 320-0X		1000	0407	1000	0530
- * LSI MegaRAID SCSI 320-2X		1000	0407	1000	0532
- * LSI MegaRAID SCSI 320-4X		1000	0407	1000	0531
- * LSI MegaRAID SCSI 320-1E		1000	0408	1000	0001
- * LSI MegaRAID SCSI 320-2E		1000	0408	1000	0002
- * LSI MegaRAID SATA 150-4		1000	1960	1000	4523
- * LSI MegaRAID SATA 150-6		1000	1960	1000	0523
- * LSI MegaRAID SATA 300-4X		1000	0409	1000	3004
- * LSI MegaRAID SATA 300-8X		1000	0409	1000	3008
- *
- * INTEL RAID Controller SRCU42X	1000	0407	8086	0532
- * INTEL RAID Controller SRCS16		1000	1960	8086	0523
- * INTEL RAID Controller SRCU42E	1000	0408	8086	0002
- * INTEL RAID Controller SRCZCRX	1000	0407	8086	0530
- * INTEL RAID Controller SRCS28X	1000	0409	8086	3008
- * INTEL RAID Controller SROMBU42E	1000	0408	8086	3431
- * INTEL RAID Controller SROMBU42E	1000	0408	8086	3499
- * INTEL RAID Controller SRCU51L	1000	1960	8086	0520
- *
- * FSC	MegaRAID PCI Express ROMB	1000	0408	1734	1065
- *
- * ACER	MegaRAID ROMB-2E		1000	0408	1025	004D
- *
- * NEC	MegaRAID PCI Express ROMB	1000	0408	1033	8287
- *
- * For history of changes, see Documentation/scsi/ChangeLog.megaraid
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/slab.h>
 #include <beep/module.h>
 #include "megaraid_mbox.h"

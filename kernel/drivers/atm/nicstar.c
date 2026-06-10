@@ -1,22 +1,20 @@
 /*
- * nicstar.c
- *
- * Device driver supporting CBR for IDT 77201/77211 "NICStAR" based cards.
- *
- * IMPORTANT: The included file nicstarmac.c was NOT WRITTEN BY ME.
- *            It was taken from the frle-0.22 device driver.
- *            As the file doesn't have a copyright notice, in the file
- *            nicstarmac.copyright I put the copyright notice from the
- *            frle-0.22 device driver.
- *            Some code is based on the nicstar driver by M. Welsh.
- *
- * Author: Rui Prior (rprior@inescn.pt)
- * PowerPC support by Jay Talbott (jay_talbott@mcg.mot.com) April 1999
- *
- *
- * (C) INESC 1999
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * IMPORTANT INFORMATION
  *

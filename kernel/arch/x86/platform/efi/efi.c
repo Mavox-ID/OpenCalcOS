@@ -1,31 +1,20 @@
 /*
- * Common EFI (Extensible Firmware Interface) support functions
- * Based on Extensible Firmware Interface Specification version 1.0
- *
- * Copyright (C) 1999 VA Beep Systems
- * Copyright (C) 1999 Walt Drummond <drummond@vabeep.com>
- * Copyright (C) 1999-2002 Hewlett-Packard Co.
- *	David Mosberger-Tang <davidm@hpl.hp.com>
- *	Stephane Eranian <eranian@hpl.hp.com>
- * Copyright (C) 2005-2008 Intel Co.
- *	Fenghua Yu <fenghua.yu@intel.com>
- *	Bibo Mao <bibo.mao@intel.com>
- *	Chandramouli Narayanan <mouli@beep.intel.com>
- *	Huang Ying <ying.huang@intel.com>
- *
- * Copied from efi_32.c to eliminate the duplicated code between EFI
- * 32/64 support code. --ying 2007-10-26
- *
- * All EFI Runtime Services are not implemented yet as EFI only
- * supports physical mode addressing on SoftSDV. This is to be fixed
- * in a future version.  --drummond 1999-07-20
- *
- * Implemented EFI runtime services and virtual mode calls.  --davidm
- *
- * Goutham Rao: <goutham.rao@intel.com>
- *	Skip non-WB memory and ignore empty memory ranges.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/kernel.h>

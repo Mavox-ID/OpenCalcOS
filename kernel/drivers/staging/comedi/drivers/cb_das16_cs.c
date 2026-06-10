@@ -1,13 +1,10 @@
 /*
-    comedi/drivers/das16cs.c
-    Driver for Computer Boards PC-CARD DAS16/16.
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-    COMEDI - Beep Control and Measurement Device Interface
-    Copyright (C) 2000, 2001, 2002 David A. Schleef <ds@schleef.org>
-
-    This program is free software; you can redistribute it and/or modify
+    This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
+    the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
@@ -16,16 +13,7 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-
-    PCMCIA support code for this driver is adapted from the dummy_cs.c
-    driver of the Beep PCMCIA Card Services package.
-
-    The initial developer of the original code is David A. Hinds
-    <dahinds@users.sourceforge.net>.  Portions created by David A. Hinds
-    are Copyright (C) 1999 David A. Hinds.  All Rights Reserved.
-
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 /*
 Driver: cb_das16_cs

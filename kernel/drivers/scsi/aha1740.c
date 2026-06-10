@@ -1,42 +1,20 @@
-/*  $Id$
- *  1993/03/31
- *  beep/kernel/aha1740.c
- *
- *  Based loosely on aha1542.c which is
- *  Copyright (C) 1992  Tommy Thorn and
- *  Modified by Eric Youngdale
- *
- *  This file is aha1740.c, written and
- *  Copyright (C) 1992,1993  Brad McLean
- *  brad@saturn.gaylord.com or brad@bradpc.gaylord.com.
- *  
- *  Modifications to makecode and queuecommand
- *  for proper handling of multiple devices courteously
- *  provided by Michael Weller, March, 1993
- *
- *  Multiple adapter support, extended translation detection,
- *  update to current scsi subsystem changes, proc fs support,
- *  working (!) module support based on patches from Andreas Arens,
- *  by Andreas Degert <ad@papyrus.hamburg.com>, 2/1997
- *
- * aha1740_makecode may still need even more work
- * if it doesn't work for your devices, take a look.
- *
- * Reworked for new_eh and new locking by Alan Cox <alan@lxorguk.ukuu.org.uk>
- *
- * Converted to EISA and generic DMA APIs by Marc Zyngier
- * <maz@wild-wind.fr.eu.org>, 4/2003.
- *
- * Shared interrupt support added by Rask Ingemann Lambertsen
- * <rask@sygehus.dk>, 10/2003
- *
- * For the avoidance of doubt the "preferred form" of this code is one which
- * is in an open non patent encumbered format. Where cryptographic key signing
- * forms part of the process of creating an executable the information
- * including keys needed to generate an equivalently functional executable
- * are deemed to be part of the source code.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/blkdev.h>
 #include <beep/interrupt.h>
 #include <beep/module.h>

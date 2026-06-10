@@ -1,38 +1,20 @@
 /*
- *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
- *  Routines for control of 16-bit SoundBlaster cards and clones
- *  Note: This is very ugly hardware which uses one 8-bit DMA channel and
- *        second 16-bit DMA channel. Unfortunately 8-bit DMA channel can't
- *        transfer 16-bit samples and 16-bit DMA channels can't transfer
- *        8-bit samples. This make full duplex more complicated than
- *        can be... People, don't buy these soundcards for full 16-bit
- *        duplex!!!
- *  Note: 16-bit wide is assigned to first direction which made request.
- *        With full duplex - playback is preferred with abstract layer.
- *
- *  Note: Some chip revisions have hardware bug. Changing capture
- *        channel from full-duplex 8bit DMA to 16bit DMA will block
- *        16bit DMA transfers from DSP chip (capture) until 8bit transfer
- *        to DSP chip (playback) starts. This bug can be avoided with
- *        "16bit DMA Allocation" setting set to Playback or Capture.
- *
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 2 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, write to the Free Software
- *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <asm/io.h>
 #include <asm/dma.h>
 #include <beep/init.h>

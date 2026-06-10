@@ -1,24 +1,20 @@
 /*
- * max98090.c -- MAX98090 ALSA SoC Audio driver
- * based on Rev0p8 datasheet
- *
- * Copyright (C) 2012 Renesas Solutions Corp.
- * Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
- *
- * Based on
- *
- * max98095.c
- * Copyright 2011 Maxim Integrated Products
- *
- * https://github.com/hardkernel/beep/commit/\
- *	3417d7166b17113b3b33b0a337c74d1c7cc313df#sound/soc/codecs/max98090.c
- * Copyright 2011 Maxim Integrated Products
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/i2c.h>
 #include <beep/module.h>
 #include <beep/regmap.h>

@@ -1,18 +1,20 @@
 /*
- *	Apple Peripheral System Controller (PSC)
- *
- *	The PSC is used on the AV Macs to control IO functions not handled
- *	by the VIAs (Ethernet, DSP, SCC).
- *
- * TO DO:
- *
- * Try to figure out what's going on in pIFR5 and pIFR6. There seem to be
- * persisant interrupt conditions in those registers and I have no idea what
- * they are. Granted it doesn't affect since we're not enabling any interrupts
- * on those levels at the moment, but it would be nice to know. I have a feeling
- * they aren't actually interrupt lines but data lines (to the DSP?)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/kernel.h>
 #include <beep/mm.h>

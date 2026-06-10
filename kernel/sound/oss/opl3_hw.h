@@ -1,41 +1,20 @@
 /*
- *	opl3_hw.h	- Definitions of the OPL-3 registers
- *
- *
- * Copyright (C) by Hannu Savolainen 1993-1997
- *
- * OSS/Free for Beep is distributed under the GNU GENERAL PUBLIC LICENSE (GPL)
- * Version 2 (June 1991). See the "COPYING" file distributed with this software
- * for more info.
- *
- *
- *	The OPL-3 mode is switched on by writing 0x01, to the offset 5
- *	of the right side.
- *
- *	Another special register at the right side is at offset 4. It contains
- *	a bit mask defining which voices are used as 4 OP voices.
- *
- *	The percussive mode is implemented in the left side only.
- *
- *	With the above exceptions the both sides can be operated independently.
- *	
- *	A 4 OP voice can be created by setting the corresponding
- *	bit at offset 4 of the right side.
- *
- *	For example setting the rightmost bit (0x01) changes the
- *	first voice on the right side to the 4 OP mode. The fourth
- *	voice is made inaccessible.
- *
- *	If a voice is set to the 2 OP mode, it works like 2 OP modes
- *	of the original YM3812 (AdLib). In addition the voice can 
- *	be connected the left, right or both stereo channels. It can
- *	even be left unconnected. This works with 4 OP voices also.
- *
- *	The stereo connection bits are located in the FEEDBACK_CONNECTION
- *	register of the voice (0xC0-0xC8). In 4 OP voices these bits are
- *	in the second half of the voice.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  *	Register numbers for the global registers
  */

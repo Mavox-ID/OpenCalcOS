@@ -1,68 +1,20 @@
 /*
- * Intel Wireless WiMAX Connection 2400m
- * Generic probe/disconnect, reset and message passing
- *
- *
- * Copyright (C) 2007-2008 Intel Corporation <beep-wimax@intel.com>
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License version
- * 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- * 02110-1301, USA.
- *
- *
- * See i2400m.h for driver documentation. This contains helpers for
- * the driver model glue [_setup()/_release()], handling device resets
- * [_dev_reset_handle()], and the backends for the WiMAX stack ops
- * reset [_op_reset()] and message from user [_op_msg_from_user()].
- *
- * ROADMAP:
- *
- * i2400m_op_msg_from_user()
- *   i2400m_msg_to_dev()
- *   wimax_msg_to_user_send()
- *
- * i2400m_op_reset()
- *   i240m->bus_reset()
- *
- * i2400m_dev_reset_handle()
- *   __i2400m_dev_reset_handle()
- *     __i2400m_dev_stop()
- *     __i2400m_dev_start()
- *
- * i2400m_setup()
- *   i2400m->bus_setup()
- *   i2400m_bootrom_init()
- *   register_netdev()
- *   wimax_dev_add()
- *   i2400m_dev_start()
- *     __i2400m_dev_start()
- *       i2400m_dev_bootstrap()
- *       i2400m_tx_setup()
- *       i2400m->bus_dev_start()
- *       i2400m_firmware_check()
- *       i2400m_check_mac_addr()
- *
- * i2400m_release()
- *   i2400m_dev_stop()
- *     __i2400m_dev_stop()
- *       i2400m_dev_shutdown()
- *       i2400m->bus_dev_stop()
- *       i2400m_tx_release()
- *   i2400m->bus_release()
- *   wimax_dev_rm()
- *   unregister_netdev()
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "i2400m.h"
 #include <beep/etherdevice.h>
 #include <beep/wimax/i2400m.h>

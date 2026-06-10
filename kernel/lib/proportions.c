@@ -1,75 +1,20 @@
 /*
- * Floating proportions
- *
- *  Copyright (C) 2007 Red Hat, Inc., Peter Zijlstra <pzijlstr@redhat.com>
- *
- * Description:
- *
- * The floating proportion is a time derivative with an exponentially decaying
- * history:
- *
- *   p_{j} = \Sum_{i=0} (dx_{j}/dt_{-i}) / 2^(1+i)
- *
- * Where j is an element from {prop_local}, x_{j} is j's number of events,
- * and i the time period over which the differential is taken. So d/dt_{-i} is
- * the differential over the i-th last period.
- *
- * The decaying history gives smooth transitions. The time differential carries
- * the notion of speed.
- *
- * The denominator is 2^(1+i) because we want the series to be normalised, ie.
- *
- *   \Sum_{i=0} 1/2^(1+i) = 1
- *
- * Further more, if we measure time (t) in the same events as x; so that:
- *
- *   t = \Sum_{j} x_{j}
- *
- * we get that:
- *
- *   \Sum_{j} p_{j} = 1
- *
- * Writing this in an iterative fashion we get (dropping the 'd's):
- *
- *   if (++x_{j}, ++t > period)
- *     t /= 2;
- *     for_each (j)
- *       x_{j} /= 2;
- *
- * so that:
- *
- *   p_{j} = x_{j} / t;
- *
- * We optimize away the '/= 2' for the global time delta by noting that:
- *
- *   if (++t > period) t /= 2:
- *
- * Can be approximated by:
- *
- *   period/2 + (++t % period/2)
- *
- * [ Furthermore, when we choose period to be 2^n it can be written in terms of
- *   binary operations and wraparound artefacts disappear. ]
- *
- * Also note that this yields a natural counter of the elapsed periods:
- *
- *   c = t / (period/2)
- *
- * [ Its monotonic increasing property can be applied to mitigate the wrap-
- *   around issue. ]
- *
- * This allows us to do away with the loop over all prop_locals on each period
- * expiration. By remembering the period count under which it was last accessed
- * as c_{j}, we can obtain the number of 'missed' cycles from:
- *
- *   c - c_{j}
- *
- * We can then lazily catch up to the global period count every time we are
- * going to use x_{j}, by doing:
- *
- *   x_{j} /= 2^(c - c_{j}), c_{j} = c
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/proportions.h>
 #include <beep/rcupdate.h>
 

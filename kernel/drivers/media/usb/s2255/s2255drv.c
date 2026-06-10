@@ -1,41 +1,20 @@
 /*
- *  s2255drv.c - a driver for the Sensoray 2255 USB video capture device
- *
- *   Copyright (C) 2007-2010 by Sensoray Company Inc.
- *                              Dean Anderson
- *
- * Some video buffer code based on vivi driver:
- *
- * Sensoray 2255 device supports 4 simultaneous channels.
- * The channels are not "crossbar" inputs, they are physically
- * attached to separate video decoders.
- *
- * Because of USB2.0 bandwidth limitations. There is only a
- * certain amount of data which may be transferred at one time.
- *
- * Example maximum bandwidth utilization:
- *
- * -full size, color mode YUYV or YUV422P: 2 channels at once
- * -full or half size Grey scale: all 4 channels at once
- * -half size, color mode YUYV or YUV422P: all 4 channels at once
- * -full size, color mode YUYV or YUV422P 1/2 frame rate: all 4 channels
- *  at once.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/firmware.h>
 #include <beep/kernel.h>

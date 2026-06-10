@@ -1,50 +1,20 @@
 /*
-	es3210.c
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-	Beep driver for Racal-Interlan ES3210 EISA Network Adapter
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-	Copyright (C) 1996, Paul Gortmaker.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-	This software may be used and distributed according to the terms
-	of the GNU General Public License, incorporated herein by reference.
-
-	Information and Code Sources:
-
-	1) The existing myriad of Beep 8390 drivers written by Donald Becker.
-
-	2) Once again Russ Nelson's asm packet driver provided additional info.
-
-	3) Info for getting IRQ and sh-mem gleaned from the EISA cfg files.
-	   Too bad it doesn't work -- see below.
-
-	The ES3210 is an EISA shared memory NS8390 implementation. Note
-	that all memory copies to/from the board must be 32bit transfers.
-	Which rules out using eth_io_copy_and_sum() in this driver.
-
-	Apparently there are two slightly different revisions of the
-	card, since there are two distinct EISA cfg files (!rii0101.cfg
-	and !rii0102.cfg) One has media select in the cfg file and the
-	other doesn't. Hopefully this will work with either.
-
-	That is about all I can tell you about it, having never actually
-	even seen one of these cards. :)  Try http://www.interlan.com
-	if you want more info.
-
-	Thanks go to Mark Salazar for testing v0.02 of this driver.
-
-	Bugs, to-fix, etc:
-
-	1) The EISA cfg ports that are *supposed* to have the IRQ and shared
-	   mem values just read 0xff all the time. Hrrmpf. Apparently the
-	   same happens with the packet driver as the code for reading
-	   these registers is disabled there. In the meantime, boot with:
-	   ether=<IRQ>,0,0x<shared_mem_addr>,eth0 to override the IRQ and
-	   shared memory detection. (The i/o port detection is okay.)
-
-	2) Module support currently untested. Probably works though.
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 static const char version[] =
 	"es3210.c: Driver revision v0.03, 14/09/96\n";
 

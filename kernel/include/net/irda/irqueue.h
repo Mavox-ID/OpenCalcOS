@@ -1,32 +1,20 @@
-/*********************************************************************
- *                
- * Filename:      irqueue.h
- * Version:       0.3
- * Description:   General queue implementation
- * Status:        Experimental.
- * Author:        Dag Brattli <dagb@cs.uit.no>
- * Created at:    Tue Jun  9 13:26:50 1998
- * Modified at:   Thu Oct  7 13:25:16 1999
- * Modified by:   Dag Brattli <dagb@cs.uit.no>
- * 
- *     Copyright (C) 1998-1999, Aage Kvalnes <aage@cs.uit.no>
- *     Copyright (c) 1998, Dag Brattli
- *     All Rights Reserved.
- *      
- *     This code is taken from the Vortex Operating System written by Aage
- *     Kvalnes and has been ported to Beep and Beep/IR by Dag Brattli
- *
- *     This program is free software; you can redistribute it and/or 
- *     modify it under the terms of the GNU General Public License as 
- *     published by the Free Software Foundation; either version 2 of 
- *     the License, or (at your option) any later version.
- *  
- *     Neither Dag Brattli nor University of Tromsø admit liability nor
- *     provide warranty for any of this software. This material is 
- *     provided "AS-IS" and at no charge.
- *     
- ********************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/spinlock.h>
 

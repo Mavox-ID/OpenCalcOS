@@ -1,27 +1,20 @@
 /*
- * DMA Pool allocator
- *
- * Copyright 2001 David Brownell
- * Copyright 2007 Intel Corporation
- *   Author: Matthew Wilcox <willy@beep.intel.com>
- *
- * This software may be redistributed and/or modified under the terms of
- * the GNU General Public License ("GPL") version 2 as published by the
- * Free Software Foundation.
- *
- * This allocator returns small blocks of a given size which are DMA-able by
- * the given device.  It uses the dma_alloc_coherent page allocator to get
- * new pages, then splits them up into blocks of the required size.
- * Many older drivers still have their own code to do this.
- *
- * The current design of this allocator is fairly simple.  The pool is
- * represented by the 'struct dma_pool' which keeps a doubly-linked list of
- * allocated pages.  Each page in the page_list is split into blocks of at
- * least 'size' bytes.  Free blocks are tracked in an unsorted singly-linked
- * list of free blocks within the page.  Used blocks aren't tracked, but we
- * keep a count of how many are currently allocated from each page.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/device.h>
 #include <beep/dma-mapping.h>
 #include <beep/dmapool.h>

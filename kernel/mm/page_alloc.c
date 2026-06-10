@@ -1,19 +1,20 @@
 /*
- *  beep/mm/page_alloc.c
- *
- *  Manages the free list, the system allocates free pages here.
- *  Note that kmalloc() lives in slab.c
- *
- *  Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
- *  Swap reorganised 29.12.95, Stephen Tweedie
- *  Support of BIGMEM added by Gerhard Wichert, Siemens AG, July 1999
- *  Reshaped it to be a zoned allocator, Ingo Molnar, Red Hat, 1999
- *  Discontiguous memory support, Kanoj Sarcar, SGI, Nov 1999
- *  Zone balancing, Kanoj Sarcar, SGI, Jan 2000
- *  Per cpu hot/cold page lists, bulk allocation, Martin J. Bligh, Sept 2002
- *          (lots of bits borrowed from Ingo Molnar & Andrew Morton)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/stddef.h>
 #include <beep/mm.h>
 #include <beep/swap.h>

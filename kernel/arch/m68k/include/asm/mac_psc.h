@@ -1,38 +1,20 @@
 /*
- * Apple Peripheral System Controller (PSC)
- *
- * The PSC is used on the AV Macs to control IO functions not handled
- * by the VIAs (Ethernet, DSP, SCC, Sound). This includes nine DMA
- * channels.
- *
- * The first seven DMA channels appear to be "one-shot" and are actually
- * sets of two channels; one member is active while the other is being
- * configured, and then you flip the active member and start all over again.
- * The one-shot channels are grouped together and are:
- *
- * 1. SCSI
- * 2. Ethernet Read
- * 3. Ethernet Write
- * 4. Floppy Disk Controller
- * 5. SCC Channel A Receive
- * 6. SCC Channel B Receive
- * 7. SCC Channel A Transmit
- *
- * The remaining two channels are handled somewhat differently. They appear
- * to be closely tied and share one set of registers. They also seem to run
- * continuously, although how you keep the buffer filled in this scenario is
- * not understood as there seems to be only one input and one output buffer
- * pointer.
- *
- * Much of this was extrapolated from what was known about the Ethernet
- * registers and subsequently confirmed using MacsBug (ie by pinging the
- * machine with easy-to-find patterns and looking for them in the DMA
- * buffers, or by sending a file over the serial ports and finding the
- * file in the buffers.)
- *
- * 1999-05-25 (jmt)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define PSC_BASE	(0x50F31000)
 
 /*

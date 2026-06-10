@@ -1,32 +1,20 @@
 /*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-	mii.c: MII interface library
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-	Maintained by Jeff Garzik <jgarzik@pobox.com>
-	Copyright 2001,2002 Jeff Garzik
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-	Various code came from myson803.c and other files by
-	Donald Becker.  Copyright:
-
-		Written 1998-2002 by Donald Becker.
-
-		This software may be used and distributed according
-		to the terms of the GNU General Public License (GPL),
-		incorporated herein by reference.  Drivers based on
-		or derived from this code fall under the GPL and must
-		retain the authorship, copyright and license notice.
-		This file is not a complete program and may only be
-		used when the entire operating system is licensed
-		under the GPL.
-
-		The author may be reached as becker@scyld.com, or C/O
-		Scyld Computing Corporation
-		410 Severn Ave., Suite 210
-		Annapolis MD 21403
-
-
- */
-
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/netdevice.h>

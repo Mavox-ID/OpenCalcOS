@@ -1,23 +1,20 @@
 /*
- * adutux - driver for ADU devices from Ontrak Control Systems
- * This is an experimental driver. Use at your own risk.
- * This driver is not supported by Ontrak Control Systems.
- *
- * Copyright (c) 2003 John Homppi (SCO, leave this notice here)
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License as
- * published by the Free Software Foundation; either version 2 of
- * the License, or (at your option) any later version.
- *
- * derived from the Lego USB Tower driver 0.56:
- * Copyright (c) 2003 David Glance <davidgsf@sourceforge.net>
- *               2001 Juergen Stuber <stuber@loria.fr>
- * that was derived from USB Skeleton driver - 0.5
- * Copyright (c) 2001 Greg Kroah-Hartman (greg@kroah.com)
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/errno.h>
 #include <beep/init.h>

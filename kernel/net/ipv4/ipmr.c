@@ -1,31 +1,20 @@
 /*
- *	IP multicast routing support for mrouted 3.6/3.8
- *
- *		(c) 1995 Alan Cox, <alan@lxorguk.ukuu.org.uk>
- *	  Beep Consultancy and Custom Driver Development
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- *
- *	Fixes:
- *	Michael Chastain	:	Incorrect size of copying.
- *	Alan Cox		:	Added the cache manager code
- *	Alan Cox		:	Fixed the clone/copy bug and device race.
- *	Mike McLagan		:	Routing by source
- *	Malcolm Beattie		:	Buffer handling fixes.
- *	Alexey Kuznetsov	:	Double buffer free and other fixes.
- *	SVR Anand		:	Fixed several multicast bugs and problems.
- *	Alexey Kuznetsov	:	Status, optimisations and more.
- *	Brad Parker		:	Better behaviour on mrouted upcall
- *					overflow.
- *      Carlos Picoto           :       PIMv1 Support
- *	Pavlin Ivanov Radoslavov:	PIMv2 Registers must checksum only PIM header
- *					Relax this requirement to work with older peers.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <asm/uaccess.h>
 #include <beep/types.h>
 #include <beep/capability.h>

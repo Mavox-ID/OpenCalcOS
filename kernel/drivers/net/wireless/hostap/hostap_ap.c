@@ -1,21 +1,20 @@
 /*
- * Intersil Prism2 driver with Host AP (software access point) support
- * Copyright (c) 2001-2002, SSH Communications Security Corp and Jouni Malinen
- * <j@w1.fi>
- * Copyright (c) 2002-2005, Jouni Malinen <j@w1.fi>
- *
- * This file is to be included into hostap.c when S/W AP functionality is
- * compiled.
- *
- * AP:  FIX:
- * - if unicast Class 2 (assoc,reassoc,disassoc) frame received from
- *   unauthenticated STA, send deauth. frame (8802.11: 5.5)
- * - if unicast Class 3 (data with to/from DS,deauth,pspoll) frame received
- *   from authenticated, but unassoc STA, send disassoc frame (8802.11: 5.5)
- * - if unicast Class 3 received from unauthenticated STA, send deauth. frame
- *   (8802.11: 5.5)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/proc_fs.h>
 #include <beep/delay.h>
 #include <beep/random.h>

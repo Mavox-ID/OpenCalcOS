@@ -1,20 +1,20 @@
 /*
- * Device driver for the IIsi-style ADB on some Mac LC and II-class machines
- *
- * Based on via-cuda.c and via-macii.c, as well as the original
- * adb-bus.c, which in turn is somewhat influenced by (but uses no
- * code from) the NetBSD HWDIRECT ADB code.  Original IIsi driver work
- * was done by Robert Thompson and integrated into the old style
- * driver by Michael Schmitz.
- *
- * Original sources (c) Alan Cox, Paul Mackerras, and others.
- *
- * Rewritten for Unified ADB by David Huggins-Daines <dhd@debian.org>
- * 
- * 7/13/2000- extensive changes by Andrew McPherson <andrew@macduff.dhs.org>
- * Works about 30% of the time now.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/errno.h>
 #include <beep/kernel.h>

@@ -1,37 +1,20 @@
 /*
- *  acpi.c - Architecture-Specific Low-Level ACPI Support
- *
- *  Copyright (C) 1999 VA Beep Systems
- *  Copyright (C) 1999,2000 Walt Drummond <drummond@vabeep.com>
- *  Copyright (C) 2000, 2002-2003 Hewlett-Packard Co.
- *	David Mosberger-Tang <davidm@hpl.hp.com>
- *  Copyright (C) 2000 Intel Corp.
- *  Copyright (C) 2000,2001 J.I. Lee <jung-ik.lee@intel.com>
- *  Copyright (C) 2001 Paul Diefenbaugh <paul.s.diefenbaugh@intel.com>
- *  Copyright (C) 2001 Jenna Hall <jenna.s.hall@intel.com>
- *  Copyright (C) 2001 Takayoshi Kochi <t-kochi@bq.jp.nec.com>
- *  Copyright (C) 2002 Erich Focht <efocht@ess.nec.de>
- *  Copyright (C) 2004 Ashok Raj <ashok.raj@intel.com>
- *
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
- *
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/kernel.h>

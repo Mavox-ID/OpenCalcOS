@@ -1,36 +1,20 @@
 /*
- * Beep ARCnet driver - COM20020 PCMCIA support
- * 
- * Written 1994-1999 by Avery Pennarun,
- *    based on an ISA version by David Woodhouse.
- * Derived from ibmtr_cs.c by Steve Kipisz (pcmcia-cs 3.1.4)
- *    which was derived from pcnet_cs.c by David Hinds.
- * Some additional portions derived from skeleton.c by Donald Becker.
- *
- * Special thanks to Contemporary Controls, Inc. (www.ccontrols.com)
- *  for sponsoring the further development of this driver.
- *
- * **********************
- *
- * The original copyright of skeleton.c was as follows:
- *
- * skeleton.c Written 1993 by Donald Becker.
- * Copyright 1993 United States Government as represented by the
- * Director, National Security Agency.  This software may only be used
- * and distributed according to the terms of the GNU General Public License as
- * modified by SRC, incorporated herein by reference.
- * 
- * **********************
- * Changes:
- * Arnaldo Carvalho de Melo <acme@conectiva.com.br> - 08/08/2000
- * - reorganize kmallocs in com20020_attach, checking all for failure
- *   and releasing the previous allocations if one fails
- * **********************
- * 
- * For more details, see drivers/net/arcnet.c
- *
- * **********************
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/init.h>
 #include <beep/ptrace.h>

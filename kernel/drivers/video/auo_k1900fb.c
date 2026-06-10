@@ -1,31 +1,20 @@
 /*
- * auok190xfb.c -- FB driver for AUO-K1900 controllers
- *
- * Copyright (C) 2011, 2012 Heiko Stuebner <heiko@sntech.de>
- *
- * based on broadsheetfb.c
- *
- * Copyright (C) 2008, Jaya Kumar
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * Layout is based on skeletonfb.c by James Simmons and Geert Uytterhoeven.
- *
- * This driver is written to be used with the AUO-K1900 display controller.
- *
- * It is intended to be architecture independent. A board specific driver
- * must be used to perform all the physical IO interactions.
- *
- * The controller supports different update modes:
- * mode0+1 16 step gray (4bit)
- * mode2 4 step gray (2bit) - FIXME: add strange refresh
- * mode3 2 step gray (1bit) - FIXME: add strange refresh
- * mode4 handwriting mode (strange behaviour)
- * mode5 automatic selection of update mode
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/errno.h>

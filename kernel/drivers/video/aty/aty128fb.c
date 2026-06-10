@@ -1,45 +1,20 @@
-/* $Id: aty128fb.c,v 1.1.1.1.36.1 1999/12/11 09:03:05 Exp $
- *  beep/drivers/video/aty128fb.c -- Frame buffer device for ATI Rage128
- *
- *  Copyright (C) 1999-2003, Brad Douglas <brad@neruo.com>
- *  Copyright (C) 1999, Anthony Tong <atong@uiuc.edu>
- *
- *                Ani Joshi / Jeff Garzik
- *                      - Code cleanup
- *
- *                Michel Danzer <michdaen@iiic.ethz.ch>
- *                      - 15/16 bit cleanup
- *                      - fix panning
- *
- *                Benjamin Herrenschmidt
- *                      - pmac-specific PM stuff
- *			- various fixes & cleanups
- *
- *                Andreas Hundt <andi@convergence.de>
- *                      - FB_ACTIVATE fixes
- *
- *		  Paul Mackerras <paulus@samba.org>
- *			- Convert to new framebuffer API,
- *			  fix colormap setting at 16 bits/pixel (565)
- *
- *		  Paul Mundt 
- *		  	- PCI hotplug
- *
- *		  Jon Smirl <jonsmirl@yahoo.com>
- * 			- PCI ID update
- * 			- replace ROM BIOS search
- *
- *  Based off of Geert's atyfb.c and vfb.c.
- *
- *  TODO:
- *		- monitor sensing (DDC)
- *              - virtual display
- *		- other platform support (only ppc/x86 supported)
- *		- hardware cursor support
- *
- *    Please cc: your patches to brad@neruo.com.
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * A special note of gratitude to ATI's devrel for providing documentation,
  * example code and hardware. Thanks Nitya.	-atong and brad

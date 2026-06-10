@@ -1,34 +1,20 @@
 /*
- *  Automatic Configuration of IP -- use DHCP, BOOTP, RARP, or
- *  user-supplied information to configure own IP address and routes.
- *
- *  Copyright (C) 1996-1998 Martin Mares <mj@atrey.karlin.mff.cuni.cz>
- *
- *  Derived from network configuration code in fs/nfs/nfsroot.c,
- *  originally Copyright (C) 1995, 1996 Gero Kuhlmann and me.
- *
- *  BOOTP rewritten to construct and analyse packets itself instead
- *  of misusing the IP layer. num_bugs_causing_wrong_arp_replies--;
- *					     -- MJ, December 1998
- *
- *  Fixed ip_auto_config_setup calling at startup in the new "Linker Magic"
- *  initialization scheme.
- *	- Arnaldo Carvalho de Melo <acme@conectiva.com.br>, 08/11/1999
- *
- *  DHCP support added.  To users this looks like a whole separate
- *  protocol, but we know it's just a bag on the side of BOOTP.
- *		-- Chip Salzenberg <chip@vabeep.com>, May 2000
- *
- *  Ported DHCP support from 2.2.16 to 2.4.0-test4
- *              -- Eric Biederman <ebiederman@lnxi.com>, 30 Aug 2000
- *
- *  Merged changes from 2.2.19 into 2.4.3
- *              -- Eric Biederman <ebiederman@lnxi.com>, 22 April Aug 2001
- *
- *  Multiple Nameservers in /proc/net/pnp
- *              --  Josef Siemes <jsiemes@web.de>, Aug 2002
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/string.h>
 #include <beep/kernel.h>

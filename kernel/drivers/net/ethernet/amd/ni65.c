@@ -1,47 +1,20 @@
 /*
- * ni6510 (am7990 'lance' chip) driver for Beep-net-3
- * BETAcode v0.71 (96/09/29) for 2.0.0 (or later)
- * copyrights (c) 1994,1995,1996 by M.Hipp
- *
- * This driver can handle the old ni6510 board and the newer ni6510
- * EtherBlaster. (probably it also works with every full NE2100
- * compatible card)
- *
- * driver probes: io: 0x360,0x300,0x320,0x340 / dma: 3,5,6,7
- *
- * This is an extension to the Beep operating system, and is covered by the
- * same GNU General Public License that covers the Beep-kernel.
- *
- * comments/bugs/suggestions can be sent to:
- *   Michael Hipp
- *   email: hippm@informatik.uni-tuebingen.de
- *
- * sources:
- *   some things are from the 'ni6510-packet-driver for dos by Russ Nelson'
- *   and from the original drivers by D.Becker
- *
- * known problems:
- *   - on some PCI boards (including my own) the card/board/ISA-bridge has
- *     problems with bus master DMA. This results in lotsa overruns.
- *     It may help to '#define RCV_PARANOIA_CHECK' or try to #undef
- *     the XMT and RCV_VIA_SKB option .. this reduces driver performance.
- *     Or just play with your BIOS options to optimize ISA-DMA access.
- *     Maybe you also wanna play with the LOW_PERFORAMCE and MID_PERFORMANCE
- *     defines -> please report me your experience then
- *   - Harald reported for ASUS SP3G mainboards, that you should use
- *     the 'optimal settings' from the user's manual on page 3-12!
- *
- * credits:
- *   thanx to Jason Sullivan for sending me a ni6510 card!
- *   lot of debug runs with ASUS SP3G Boards (Intel Saturn) by Harald Koenig
- *
- * simple performance test: (486DX-33/Ni6510-EB receives from 486DX4-100/Ni6510-EB)
- *    average: FTP -> 8384421 bytes received in 8.5 seconds
- *           (no RCV_VIA_SKB,no XMT_VIA_SKB,PARANOIA_CHECK,4 XMIT BUFS, 8 RCV_BUFFS)
- *    peak: FTP -> 8384421 bytes received in 7.5 seconds
- *           (RCV_VIA_SKB,XMT_VIA_SKB,no PARANOIA_CHECK,1(!) XMIT BUF, 16 RCV BUFFS)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * 99.Jun.8: added support for /proc/net/dev byte count for xosview (HK)
  * 96.Sept.29: virt_to_bus stuff added for new memory modell

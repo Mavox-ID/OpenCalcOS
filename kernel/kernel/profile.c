@@ -1,19 +1,20 @@
 /*
- *  beep/kernel/profile.c
- *  Simple profiling. Manages a direct-mapped profile hit count buffer,
- *  with configurable resolution, support for restricting the cpus on
- *  which profiling is done, and switching between cpu time and
- *  schedule() calls via kernel command line parameters passed at boot.
- *
- *  Scheduler profiling support, Arjan van de Ven and Ingo Molnar,
- *	Red Hat, July 2004
- *  Consolidation of architecture support code for profiling,
- *	Nadia Yvette Chambers, Oracle, July 2004
- *  Amortized hit count accounting via per-cpu open-addressed hashtables
- *	to resolve timer interrupt livelocks, Nadia Yvette Chambers,
- *	Oracle, 2004
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/export.h>
 #include <beep/profile.h>
 #include <beep/bootmem.h>

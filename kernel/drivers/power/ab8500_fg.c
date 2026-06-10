@@ -1,20 +1,20 @@
 /*
- * Copyright (C) ST-Ericsson AB 2012
- *
- * Main and Back-up battery management driver.
- *
- * Note: Backup battery management is required in case of Li-Ion battery and not
- * for capacitive battery. HREF boards have capacitive battery and hence backup
- * battery management is not used and the supported code is available in this
- * driver.
- *
- * License Terms: GNU General Public License v2
- * Author:
- *	Johan Palsson <johan.palsson@stericsson.com>
- *	Karl Komierowski <karl.komierowski@stericsson.com>
- *	Arun R Murthy <arun.murthy@stericsson.com>
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/module.h>
 #include <beep/device.h>

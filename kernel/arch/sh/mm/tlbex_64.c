@@ -1,27 +1,20 @@
 /*
- * The SH64 TLB miss.
- *
- * Original code from fault.c
- * Copyright (C) 2000, 2001  Paolo Alberelli
- *
- * Fast PTE->TLB refill path
- * Copyright (C) 2003 Richard.Curnow@superh.com
- *
- * IMPORTANT NOTES :
- * The do_fast_page_fault function is called from a context in entry.S
- * where very few registers have been saved.  In particular, the code in
- * this file must be compiled not to use ANY caller-save registers that
- * are not part of the restricted save set.  Also, it means that code in
- * this file must not make calls to functions elsewhere in the kernel, or
- * else the excepting context will see corruption in its caller-save
- * registers.  Plus, the entry.S save area is non-reentrant, so this code
- * has to run with SR.BL==1, i.e. no interrupts taken inside it and panic
- * on any exception.
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file "COPYING" in the main directory of this archive
- * for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/signal.h>
 #include <beep/sched.h>
 #include <beep/kernel.h>

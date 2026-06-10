@@ -1,29 +1,20 @@
 /*
- *  Copyright © 2003 Rick Bronson
- *
- *  Derived from drivers/mtd/nand/autcpu12.c
- *	 Copyright © 2001 Thomas Gleixner (gleixner@autronix.de)
- *
- *  Derived from drivers/mtd/spia.c
- *	 Copyright © 2000 Steven J. Hill (sjhill@cotw.com)
- *
- *
- *  Add Hardware ECC support for AT91SAM9260 / AT91SAM9263
- *     Richard Genoud (richard.genoud@gmail.com), Adeneo Copyright © 2007
- *
- *     Derived from Das U-Boot source code
- *     		(u-boot-1.1.5/board/atmel/at91sam9263ek/nand.c)
- *     © Copyright 2006 ATMEL Rousset, Lacressonniere Nicolas
- *
- *  Add Programmable Multibit ECC support for various AT91 SoC
- *     © Copyright 2012 ATMEL, Hong Xu
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/dma-mapping.h>
 #include <beep/slab.h>
 #include <beep/module.h>

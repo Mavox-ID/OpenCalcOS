@@ -1,50 +1,20 @@
-/******************************************************************************
- * usbtouchscreen.c
- * Driver for USB Touchscreens, supporting those devices:
- *  - eGalax Touchkit
- *    includes eTurboTouch CT-410/510/700
- *  - 3M/Microtouch  EX II series
- *  - ITM
- *  - PanJit TouchSet
- *  - eTurboTouch
- *  - Gunze AHL61
- *  - DMC TSC-10/25
- *  - IRTOUCHSYSTEMS/UNITOP
- *  - IdealTEK URTC1000
- *  - General Touch
- *  - GoTop Super_Q2/GogoPen/PenPower tablets
- *  - JASTEC USB touch controller/DigiTech DTR-02U
- *  - Zytronic capacitive touchscreen
- *  - NEXIO/iNexio
- *  - Elo TouchSystems 2700 IntelliTouch
- *  - EasyTouch USB Dual/Multi touch controller from Data Modul
- *
- * Copyright (C) 2004-2007 by Daniel Ritz <daniel.ritz@gmx.ch>
- * Copyright (C) by Todd E. Johnson (mtouchusb.c)
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License as
- * published by the Free Software Foundation; either version 2 of the
- * License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful, but
- * WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- *
- * Driver is based on touchkitusb.c
- * - ITM parts are from itmtouch.c
- * - 3M parts are from mtouchusb.c
- * - PanJit parts are from an unmerged driver by Lanslott Gish
- * - DMC TSC 10/25 are from Holger Schurig, with ideas from an unmerged
- *   driver from Marius Vollmer
- *
- *****************************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 //#define DEBUG
 
 #include <beep/kernel.h>

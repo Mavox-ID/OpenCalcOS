@@ -1,19 +1,20 @@
 /*
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file "COPYING" in the main directory of this archive
- * for more details.
- *
- * Copyright (C) 1995, 1996, 1997, 1999, 2001 by Ralf Baechle
- * Copyright (C) 1999 by Silicon Graphics, Inc.
- * Copyright (C) 2001 MIPS Technologies, Inc.
- * Copyright (C) 2002  Maciej W. Rozycki
- *
- * Some useful macros for MIPS assembler code
- *
- * Some of the routines below contain useless nops that will be optimized
- * away by gas in -O mode. These nops are however required to fill delay
- * slots in noreorder mode.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __ASM_ASM_H
 #define __ASM_ASM_H
 

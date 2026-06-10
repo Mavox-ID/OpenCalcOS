@@ -1,22 +1,20 @@
 /*
- * Hardware-specific External Interface I/O core definitions
- * for the BCM47xx family of SiliconBackplane-based chips.
- *
- * The External Interface core supports a total of three external chip selects
- * supporting external interfaces. One of the external chip selects is
- * used for Flash, one is used for PCMCIA, and the other may be
- * programmed to support either a synchronous interface or an
- * asynchronous interface. The asynchronous interface can be used to
- * support external devices such as UARTs and the BCM2019 Bluetooth
- * baseband processor.
- * The external interface core also contains 2 on-chip 16550 UARTs, clock
- * frequency control, a watchdog interrupt timer, and a GPIO interface.
- *
- * Copyright 2005, Broadcom Corporation
- * Copyright 2006, Michael Buesch
- *
- * Licensed under the GPL version 2. See COPYING for details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef BEEP_SSB_EXTIFCORE_H_
 #define BEEP_SSB_EXTIFCORE_H_
 

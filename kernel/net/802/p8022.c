@@ -1,19 +1,20 @@
 /*
- *	NET3:	Support for 802.2 demultiplexing off Ethernet
- *		This program is free software; you can redistribute it and/or
- *		modify it under the terms of the GNU General Public License
- *		as published by the Free Software Foundation; either version
- *		2 of the License, or (at your option) any later version.
- *
- *		Demultiplex 802.2 encoded protocols. We match the entry by the
- *		SSAP/DSAP pair and then deliver to the registered datalink that
- *		matches. The control byte is ignored and handling of such items
- *		is up to the routine passed the frame.
- *
- *		Unlike the 802.3 datalink we have a list of 802.2 entries as
- *		there are multiple protocols to demux. The list is currently
- *		short (3 or 4 entries at most). The current demux assumes this.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/netdevice.h>
 #include <beep/skbuff.h>

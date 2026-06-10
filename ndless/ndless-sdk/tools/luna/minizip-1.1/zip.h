@@ -60,6 +60,10 @@ extern "C" {
 
 #define Z_BZIP2ED 12
 
+#ifndef RAND_HEAD_LEN
+#define RAND_HEAD_LEN 2
+#endif
+
 #if defined(STRICTZIP) || defined(STRICTZIPUNZIP)
 /* like the STRICT of WIN32, we define a pointer that cannot be converted
     from (void*) without cast */

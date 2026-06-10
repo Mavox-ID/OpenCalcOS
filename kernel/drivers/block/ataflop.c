@@ -1,66 +1,20 @@
 /*
- *  drivers/block/ataflop.c
- *
- *  Copyright (C) 1993  Greg Harp
- *  Atari Support by Bjoern Brauel, Roman Hodek
- *
- *  Big cleanup Sep 11..14 1994 Roman Hodek:
- *   - Driver now works interrupt driven
- *   - Support for two drives; should work, but I cannot test that :-(
- *   - Reading is done in whole tracks and buffered to speed up things
- *   - Disk change detection and drive deselecting after motor-off
- *     similar to TOS
- *   - Autodetection of disk format (DD/HD); untested yet, because I
- *     don't have an HD drive :-(
- *
- *  Fixes Nov 13 1994 Martin Schaller:
- *   - Autodetection works now
- *   - Support for 5 1/4'' disks
- *   - Removed drive type (unknown on atari)
- *   - Do seeks with 8 Mhz
- *
- *  Changes by Andreas Schwab:
- *   - After errors in multiple read mode try again reading single sectors
- *  (Feb 1995):
- *   - Clean up error handling
- *   - Set blk_size for proper size checking
- *   - Initialize track register when testing presence of floppy
- *   - Implement some ioctl's
- *
- *  Changes by Torsten Lang:
- *   - When probing the floppies we should add the FDCCMDADD_H flag since
- *     the FDC will otherwise wait forever when no disk is inserted...
- *
- * ++ Freddi Aschwanden (fa) 20.9.95 fixes for medusa:
- *  - MFPDELAY() after each FDC access -> atari 
- *  - more/other disk formats
- *  - DMA to the block buffer directly if we have a 32bit DMA
- *  - for medusa, the step rate is always 3ms
- *  - on medusa, use only cache_push()
- * Roman:
- *  - Make disk format numbering independent from minors
- *  - Let user set max. supported drive type (speeds up format
- *    detection, saves buffer space)
- *
- * Roman 10/15/95:
- *  - implement some more ioctls
- *  - disk formatting
- *  
- * Andreas 95/12/12:
- *  - increase gap size at start of track for HD/ED disks
- *
- * Michael (MSch) 11/07/96:
- *  - implemented FDSETPRM and FDDEFPRM ioctl
- *
- * Andreas (97/03/19):
- *  - implemented missing BLK* ioctls
- *
- *  Things left to do:
- *   - Formatting
- *   - Maybe a better strategy for disk change detection (does anyone
- *     know one?)
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 
 #include <beep/fd.h>

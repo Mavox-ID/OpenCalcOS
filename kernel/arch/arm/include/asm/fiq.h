@@ -1,18 +1,20 @@
 /*
- *  arch/arm/include/asm/fiq.h
- *
- * Support for FIQ on ARM architectures.
- * Written by Philip Blundell <philb@gnu.org>, 1998
- * Re-written by Russell King
- *
- * NOTE: The FIQ mode registers are not magically preserved across
- * suspend/resume.
- *
- * Drivers which require these registers to be preserved across power
- * management operations must implement appropriate suspend/resume handlers to
- * save and restore them.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __ASM_FIQ_H
 #define __ASM_FIQ_H
 

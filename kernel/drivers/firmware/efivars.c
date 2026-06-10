@@ -1,70 +1,20 @@
 /*
- * EFI Variables - efivars.c
- *
- * Copyright (C) 2001,2003,2004 Dell <Matt_Domsch@dell.com>
- * Copyright (C) 2004 Intel Corporation <matthew.e.tolentino@intel.com>
- *
- * This code takes all variables accessible from EFI runtime and
- *  exports them via sysfs
- *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *
- * Changelog:
- *
- *  17 May 2004 - Matt Domsch <Matt_Domsch@dell.com>
- *   remove check for efi_enabled in exit
- *   add MODULE_VERSION
- *
- *  26 Apr 2004 - Matt Domsch <Matt_Domsch@dell.com>
- *   minor bug fixes
- *
- *  21 Apr 2004 - Matt Tolentino <matthew.e.tolentino@intel.com)
- *   converted driver to export variable information via sysfs
- *   and moved to drivers/firmware directory
- *   bumped revision number to v0.07 to reflect conversion & move
- *
- *  10 Dec 2002 - Matt Domsch <Matt_Domsch@dell.com>
- *   fix locking per Peter Chubb's findings
- *
- *  25 Mar 2002 - Matt Domsch <Matt_Domsch@dell.com>
- *   move uuid_unparse() to include/asm-ia64/efi.h:efi_guid_unparse()
- *
- *  12 Feb 2002 - Matt Domsch <Matt_Domsch@dell.com>
- *   use list_for_each_safe when deleting vars.
- *   remove ifdef CONFIG_SMP around include <beep/smp.h>
- *   v0.04 release to beep-ia64@beepia64.org
- *
- *  20 April 2001 - Matt Domsch <Matt_Domsch@dell.com>
- *   Moved vars from /proc/efi to /proc/efi/vars, and made
- *   efi.c own the /proc/efi directory.
- *   v0.03 release to beep-ia64@beepia64.org
- *
- *  26 March 2001 - Matt Domsch <Matt_Domsch@dell.com>
- *   At the request of Stephane, moved ownership of /proc/efi
- *   to efi.c, and now efivars lives under /proc/efi/vars.
- *
- *  12 March 2001 - Matt Domsch <Matt_Domsch@dell.com>
- *   Feedback received from Stephane Eranian incorporated.
- *   efivar_write() checks copy_from_user() return value.
- *   efivar_read/write() returns proper errno.
- *   v0.02 release to beep-ia64@beepia64.org
- *
- *  26 February 2001 - Matt Domsch <Matt_Domsch@dell.com>
- *   v0.01 release to beep-ia64@beepia64.org
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/capability.h>
 #include <beep/types.h>
 #include <beep/errno.h>

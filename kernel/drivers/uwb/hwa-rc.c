@@ -1,56 +1,20 @@
 /*
- * WUSB Host Wire Adapter: Radio Control Interface (WUSB[8.6])
- * Radio Control command/event transport
- *
- * Copyright (C) 2005-2006 Intel Corporation
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License version
- * 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	 See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- * 02110-1301, USA.
- *
- *
- * Initialize the Radio Control interface Driver.
- *
- * For each device probed, creates an 'struct hwarc' which contains
- * just the representation of the UWB Radio Controller, and the logic
- * for reading notifications and passing them to the UWB Core.
- *
- * So we initialize all of those, register the UWB Radio Controller
- * and setup the notification/event handle to pipe the notifications
- * to the UWB management Daemon.
- *
- * Command and event filtering.
- *
- * This is the driver for the Radio Control Interface described in WUSB
- * 1.0. The core UWB module assumes that all drivers are compliant to the
- * WHCI 0.95 specification. We thus create a filter that parses all
- * incoming messages from the (WUSB 1.0) device and manipulate them to
- * conform to the WHCI 0.95 specification. Similarly, outgoing messages
- * are parsed and manipulated to conform to the WUSB 1.0 compliant messages
- * that the device expects. Only a few messages are affected:
- * Affected events:
- *    UWB_RC_EVT_BEACON
- *    UWB_RC_EVT_BP_SLOT_CHANGE
- *    UWB_RC_EVT_DRP_AVAIL
- *    UWB_RC_EVT_DRP
- * Affected commands:
- *    UWB_RC_CMD_SCAN
- *    UWB_RC_CMD_SET_DRP_IE
- *
- *
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/module.h>
 #include <beep/slab.h>

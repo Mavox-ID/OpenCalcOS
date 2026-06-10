@@ -1,76 +1,20 @@
 /*
- * Beep WiMAX
- * Generic messaging interface between userspace and driver/device
- *
- *
- * Copyright (C) 2007-2008 Intel Corporation <beep-wimax@intel.com>
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License version
- * 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
- * 02110-1301, USA.
- *
- *
- * This implements a direct communication channel between user space and
- * the driver/device, by which free form messages can be sent back and
- * forth.
- *
- * This is intended for device-specific features, vendor quirks, etc.
- *
- * See include/net/wimax.h
- *
- * GENERIC NETLINK ENCODING AND CAPACITY
- *
- * A destination "pipe name" is added to each message; it is up to the
- * drivers to assign or use those names (if using them at all).
- *
- * Messages are encoded as a binary netlink attribute using nla_put()
- * using type NLA_UNSPEC (as some versions of libnl still in
- * deployment don't yet understand NLA_BINARY).
- *
- * The maximum capacity of this transport is PAGESIZE per message (so
- * the actual payload will be bit smaller depending on the
- * netlink/generic netlink attributes and headers).
- *
- * RECEPTION OF MESSAGES
- *
- * When a message is received from user space, it is passed verbatim
- * to the driver calling wimax_dev->op_msg_from_user(). The return
- * value from this function is passed back to user space as an ack
- * over the generic netlink protocol.
- *
- * The stack doesn't do any processing or interpretation of these
- * messages.
- *
- * SENDING MESSAGES
- *
- * Messages can be sent with wimax_msg().
- *
- * If the message delivery needs to happen on a different context to
- * that of its creation, wimax_msg_alloc() can be used to get a
- * pointer to the message that can be delivered later on with
- * wimax_msg_send().
- *
- * ROADMAP
- *
- * wimax_gnl_doit_msg_from_user()    Process a message from user space
- *   wimax_dev_get_by_genl_info()
- *   wimax_dev->op_msg_from_user()   Delivery of message to the driver
- *
- * wimax_msg()                       Send a message to user space
- *   wimax_msg_alloc()
- *   wimax_msg_send()
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/device.h>
 #include <beep/slab.h>
 #include <net/genetlink.h>

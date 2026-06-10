@@ -1,25 +1,20 @@
 /*
- *	Berkshire PCI-PC Watchdog Card Driver
- *
- *	(c) Copyright 2003-2007 Wim Van Sebroeck <wim@iguana.be>.
- *
- *	Based on source code of the following authors:
- *	  Ken Hollis <kenji@bitgate.com>,
- *	  Lindsay Harris <lindsay@bluegum.com>,
- *	  Alan Cox <alan@lxorguk.ukuu.org.uk>,
- *	  Matt Domsch <Matt_Domsch@dell.com>,
- *	  Rob Radez <rob@osinvestor.com>
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- *
- *	Neither Wim Van Sebroeck nor Iguana vzw. admit liability nor
- *	provide warranty for any of this software. This material is
- *	provided "AS-IS" and at no charge.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  *	A bells and whistles driver is available from:
  *	http://www.kernel.org/pub/beep/kernel/people/wim/pcwd/pcwd_pci/

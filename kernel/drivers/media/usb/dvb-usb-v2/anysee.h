@@ -1,36 +1,20 @@
 /*
- * DVB USB Beep driver for Anysee E30 DVB-C & DVB-T USB2.0 receiver
- *
- * Copyright (C) 2007 Antti Palosaari <crope@iki.fi>
- *
- *    This program is free software; you can redistribute it and/or modify
- *    it under the terms of the GNU General Public License as published by
- *    the Free Software Foundation; either version 2 of the License, or
- *    (at your option) any later version.
- *
- *    This program is distributed in the hope that it will be useful,
- *    but WITHOUT ANY WARRANTY; without even the implied warranty of
- *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *    GNU General Public License for more details.
- *
- *    You should have received a copy of the GNU General Public License
- *    along with this program; if not, write to the Free Software
- *    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
- *
- * TODO:
- * - add smart card reader support for Conditional Access (CA)
- *
- * Card reader in Anysee is nothing more than ISO 7816 card reader.
- * There is no hardware CAM in any Anysee device sold.
- * In my understanding it should be implemented by making own module
- * for ISO 7816 card reader, like dvb_ca_en50221 is implemented. This
- * module registers serial interface that can be used to communicate
- * with any ISO 7816 smart card.
- *
- * Any help according to implement serial smart card reader support
- * is highly welcome!
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef _DVB_USB_ANYSEE_H_
 #define _DVB_USB_ANYSEE_H_
 

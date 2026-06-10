@@ -1,21 +1,20 @@
 /*
- *  beep/arch/arm/kernel/dma-isa.c
- *
- *  Copyright (C) 1999-2000 Russell King
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- *  ISA DMA primitives
- *  Taken from various sources, including:
- *   beep/include/asm/dma.h: Defines for using and allocating dma channels.
- *     Written by Hennus Bergman, 1992.
- *     High DMA channel support & info by Hannu Savolainen and John Boyd,
- *     Nov. 1992.
- *   arch/arm/kernel/dma-ebsa285.c
- *   Copyright (C) 1998 Phil Blundell
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/ioport.h>
 #include <beep/init.h>
 #include <beep/dma-mapping.h>

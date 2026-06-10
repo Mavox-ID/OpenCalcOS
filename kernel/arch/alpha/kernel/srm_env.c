@@ -1,33 +1,20 @@
 /*
- * srm_env.c - Access to SRM environment
- *             variables through beep' procfs
- *
- * (C) 2001,2002,2006 by Jan-Benedict Glaw <jbglaw@lug-owl.de>
- *
- * This driver is a modified version of Erik Mouw's example proc
- * interface, so: thank you, Erik! He can be reached via email at
- * <J.A.K.Mouw@its.tudelft.nl>. It is based on an idea
- * provided by DEC^WCompaq^WIntel's "Jumpstart" CD. They
- * included a patch like this as well. Thanks for idea!
- *
- * This program is free software; you can redistribute
- * it and/or modify it under the terms of the GNU General
- * Public License version 2 as published by the Free Software
- * Foundation.
- *
- * This program is distributed in the hope that it will be
- * useful, but WITHOUT ANY WARRANTY; without even the implied
- * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
- * PURPOSE.  See the GNU General Public License for more
- * details.
- *
- * You should have received a copy of the GNU General Public
- * License along with this program; if not, write to the
- * Free Software Foundation, Inc., 59 Temple Place,
- * Suite 330, Boston, MA  02111-1307  USA
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/gfp.h>
 #include <beep/module.h>

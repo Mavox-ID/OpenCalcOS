@@ -1,16 +1,20 @@
 /*
- *	beep/arch/alpha/kernel/core_cia.c
- *
- * Written by David A Rusling (david.rusling@reo.mts.dec.com).
- * December 1995.
- *
- *	Copyright (C) 1995  David A Rusling
- *	Copyright (C) 1997, 1998  Jay Estabrook
- *	Copyright (C) 1998, 1999, 2000  Richard Henderson
- *
- * Code common to all CIA core logic chips.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define __EXTERN_INLINE inline
 #include <asm/io.h>
 #include <asm/core_cia.h>

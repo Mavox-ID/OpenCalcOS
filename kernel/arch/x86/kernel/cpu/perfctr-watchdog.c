@@ -1,16 +1,20 @@
 /*
- * local apic based NMI watchdog for various CPUs.
- *
- * This file also handles reservation of performance counters for coordination
- * with other users (like oprofile).
- *
- * Note that these events normally don't tick when the CPU idles. This means
- * the frequency varies with CPU load.
- *
- * Original code for K7/P6 written by Keith Owens
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/percpu.h>
 #include <beep/module.h>
 #include <beep/kernel.h>

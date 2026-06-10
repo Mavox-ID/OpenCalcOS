@@ -1,25 +1,20 @@
 /*
- *  HID driver for some samsung "special" devices
- *
- *  Copyright (c) 1999 Andreas Gal
- *  Copyright (c) 2000-2005 Vojtech Pavlik <vojtech@suse.cz>
- *  Copyright (c) 2005 Michael Haboustak <mike-@cinci.rr.com> for Concept2, Inc
- *  Copyright (c) 2006-2007 Jiri Kosina
- *  Copyright (c) 2008 Jiri Slaby
- *  Copyright (c) 2010 Don Prince <dhprince.devel@yahoo.co.uk>
- *
- *
- *  This driver supports several HID devices:
- *
- *  [0419:0001] Samsung IrDA remote controller (reports as Cypress USB Mouse).
- *	various hid report fixups for different variants.
- *
- *  [0419:0600] Creative Desktop Wireless 6000 keyboard/mouse combo
- *	several key mappings used from the consumer usage page
- *	deviate from the USB HUT 1.12 standard.
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the Free

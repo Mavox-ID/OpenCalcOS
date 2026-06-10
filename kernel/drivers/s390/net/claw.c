@@ -1,65 +1,20 @@
 /*
- *    ESCON CLAW network driver
- *
- *  Beep for zSeries version
- *    Copyright IBM Corp. 2002, 2009
- *  Author(s) Original code written by:
- *		Kazuo Iimura <iimura@jp.ibm.com>
- *   	      Rewritten by
- *		Andy Richter <richtera@us.ibm.com>
- *		Marc Price <mwprice@us.ibm.com>
- *
- *    sysfs parms:
- *   group x.x.rrrr,x.x.wwww
- *   read_buffer nnnnnnn
- *   write_buffer nnnnnn
- *   host_name  aaaaaaaa
- *   adapter_name aaaaaaaa
- *   api_type    aaaaaaaa
- *
- *  eg.
- *   group  0.0.0200 0.0.0201
- *   read_buffer 25
- *   write_buffer 20
- *   host_name BEEP390
- *   adapter_name RS6K
- *   api_type     TCPIP
- *
- *  where
- *
- *   The device id is decided by the order entries
- *   are added to the group the first is claw0 the second claw1
- *   up to CLAW_MAX_DEV
- *
- *   rrrr     -	the first of 2 consecutive device addresses used for the
- *		CLAW protocol.
- *		The specified address is always used as the input (Read)
- *		channel and the next address is used as the output channel.
- *
- *   wwww     -	the second of 2 consecutive device addresses used for
- *		the CLAW protocol.
- *              The specified address is always used as the output
- *		channel and the previous address is used as the input channel.
- *
- *   read_buffer	-       specifies number of input buffers to allocate.
- *   write_buffer       -       specifies number of output buffers to allocate.
- *   host_name          -       host name
- *   adaptor_name       -       adaptor name
- *   api_type           -       API type TCPIP or API will be sent and expected
- *				as ws_name
- *
- *   Note the following requirements:
- *   1)  host_name must match the configured adapter_name on the remote side
- *   2)  adaptor_name must match the configured host name on the remote side
- *
- *  Change History
- *    1.00  Initial release shipped
- *    1.10  Changes for Buffer allocation
- *    1.15  Changed for 2.6 Kernel  No longer compiles on 2.4 or lower
- *    1.25  Added Packing support
- *    1.5
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define KMSG_COMPONENT "claw"
 
 #include <asm/ccwdev.h>

@@ -1,24 +1,20 @@
 /*
-  USB Driver layer for GSM modems
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
-  Copyright (C) 2005  Matthias Urlichs <smurf@smurf.noris.de>
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-  This driver is free software; you can redistribute it and/or modify
-  it under the terms of Version 2 of the GNU General Public License as
-  published by the Free Software Foundation.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-  Portions copied from the Keyspan driver by Hugh Blemings <hugh@blemings.org>
-
-  History: see the git log.
-
-  Work sponsored by: Sigos GmbH, Germany <info@sigos.de>
-
-  This driver exists because the "normal" serial driver doesn't work too well
-  with GSM modems. Issues:
-  - data loss -- one single Receive URB is not nearly enough
-  - controlling the baud rate doesn't make sense
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #define DRIVER_AUTHOR "Matthias Urlichs <smurf@smurf.noris.de>"
 #define DRIVER_DESC "USB Driver for GSM modems"
 

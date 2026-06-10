@@ -1,21 +1,20 @@
 /*
- *	MMX 3DNow! library helper functions
- *
- *	To do:
- *	We can use MMX just for prefetch in IRQ's. This may be a win.
- *		(reported so on K6-III)
- *	We should use a better code neutral filler for the short jump
- *		leal ebx. [ebx] is apparently best for K6-2, but Cyrix ??
- *	We also want to clobber the filler register so we don't get any
- *		register forwarding stalls on the filler.
- *
- *	Add *user handling. Checksums are not a win with MMX on any CPU
- *	tested so far for any MMX solution figured.
- *
- *	22/09/2000 - Arjan van de Ven
- *		Improved for non-egineering-sample Athlons
- *
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/hardirq.h>
 #include <beep/string.h>
 #include <beep/module.h>

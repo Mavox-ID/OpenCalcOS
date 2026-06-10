@@ -1,32 +1,20 @@
 /*
- * Definition of platform feature hooks for PowerMacs
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file "COPYING" in the main directory of this archive
- * for more details.
- *
- * Copyright (C) 1998 Paul Mackerras &
- *                    Ben. Herrenschmidt.
- *
- *
- * Note: I removed media-bay details from the feature stuff, I believe it's
- *       not worth it, the media-bay driver can directly use the mac-io
- *       ASIC registers.
- *
- * Implementation note: Currently, none of these functions will block.
- * However, they may internally protect themselves with a spinlock
- * for way too long. Be prepared for at least some of these to block
- * in the future.
- *
- * Unless specifically defined, the result code is assumed to be an
- * error when negative, 0 is the default success result. Some functions
- * may return additional positive result values.
- *
- * To keep implementation simple, all feature calls are assumed to have
- * the prototype parameters (struct device_node* node, int value).
- * When either is not used, pass 0.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifdef __KERNEL__
 #ifndef __ASM_POWERPC_PMAC_FEATURE_H
 #define __ASM_POWERPC_PMAC_FEATURE_H

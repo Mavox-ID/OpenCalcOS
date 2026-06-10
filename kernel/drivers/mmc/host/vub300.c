@@ -1,40 +1,20 @@
 /*
- * Remote VUB300 SDIO/SDmem Host Controller Driver
- *
- * Copyright (C) 2010 Elan Digital Systems Limited
- *
- * based on USB Skeleton driver - 2.2
- *
- * Copyright (C) 2001-2004 Greg Kroah-Hartman (greg@kroah.com)
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License as
- * published by the Free Software Foundation, version 2
- *
- * VUB300: is a USB 2.0 client device with a single SDIO/SDmem/MMC slot
- *         Any SDIO/SDmem/MMC device plugged into the VUB300 will appear,
- *         by virtue of this driver, to have been plugged into a local
- *         SDIO host controller, similar to, say, a PCI Ricoh controller
- *         This is because this kernel device driver is both a USB 2.0
- *         client device driver AND an MMC host controller driver. Thus
- *         if there is an existing driver for the inserted SDIO/SDmem/MMC
- *         device then that driver will be used by the kernel to manage
- *         the device in exactly the same fashion as if it had been
- *         directly plugged into, say, a local pci bus Ricoh controller
- *
- * RANT: this driver was written using a display 128x48 - converting it
- *       to a line width of 80 makes it very difficult to support. In
- *       particular functions have been broken down into sub functions
- *       and the original meaningful names have been shortened into
- *       cryptic ones.
- *       The problem is that executing a fragment of code subject to
- *       two conditions means an indentation of 24, thus leaving only
- *       56 characters for a C statement. And that is quite ridiculous!
- *
- * Data types: data passed to/from the VUB300 is fixed to a number of
- *             bits and driver data fields reflect that limit by using
- *             u8, u16, u32
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/errno.h>
 #include <beep/init.h>

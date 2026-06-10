@@ -1,19 +1,20 @@
 /*
- *	Operating System Services (OSS) chip handling
- *	Written by Joshua M. Thompson (funaho@jurai.org)
- *
- *
- *	This chip is used in the IIfx in place of VIA #2. It acts like a fancy
- *	VIA chip with prorammable interrupt levels.
- *
- * 990502 (jmt) - Major rewrite for new interrupt architecture as well as some
- *		  recent insights into OSS operational details.
- * 990610 (jmt) - Now taking full advantage of the OSS. Interrupts are mapped
- *		  to mostly match the A/UX interrupt scheme supported on the
- *		  VIA side. Also added support for enabling the ISM irq again
- *		  since we now have a functional IOP manager.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/types.h>
 #include <beep/kernel.h>
 #include <beep/mm.h>

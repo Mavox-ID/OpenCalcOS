@@ -1,28 +1,20 @@
 /*
- *  NSA Security-Enhanced Beep (SEBeep) security module
- *
- *  This file contains the SEBeep hook function implementations.
- *
- *  Authors:  Stephen Smalley, <sds@epoch.ncsc.mil>
- *	      Chris Vance, <cvance@nai.com>
- *	      Wayne Salamon, <wsalamon@nai.com>
- *	      James Morris <jmorris@redhat.com>
- *
- *  Copyright (C) 2001,2002 Networks Associates Technology, Inc.
- *  Copyright (C) 2003-2008 Red Hat, Inc., James Morris <jmorris@redhat.com>
- *					   Eric Paris <eparis@redhat.com>
- *  Copyright (C) 2004-2005 Trusted Computer Solutions, Inc.
- *			    <dgoeddel@trustedcs.com>
- *  Copyright (C) 2006, 2007, 2009 Hewlett-Packard Development Company, L.P.
- *	Paul Moore <paul@paul-moore.com>
- *  Copyright (C) 2007 Hitachi Software Engineering Co., Ltd.
- *		       Yuichi Nakamura <ynakam@hitachisoft.jp>
- *
- *	This program is free software; you can redistribute it and/or modify
- *	it under the terms of the GNU General Public License version 2,
- *	as published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/kd.h>
 #include <beep/kernel.h>

@@ -1,65 +1,20 @@
 /*
- * sched_clock for unstable cpu clocks
- *
- *  Copyright (C) 2008 Red Hat, Inc., Peter Zijlstra <pzijlstr@redhat.com>
- *
- *  Updates and enhancements:
- *    Copyright (C) 2008 Red Hat, Inc. Steven Rostedt <srostedt@redhat.com>
- *
- * Based on code by:
- *   Ingo Molnar <mingo@redhat.com>
- *   Guillaume Chazarain <guichaz@gmail.com>
- *
- *
- * What:
- *
- * cpu_clock(i) provides a fast (execution time) high resolution
- * clock with bounded drift between CPUs. The value of cpu_clock(i)
- * is monotonic for constant i. The timestamp returned is in nanoseconds.
- *
- * ######################### BIG FAT WARNING ##########################
- * # when comparing cpu_clock(i) to cpu_clock(j) for i != j, time can #
- * # go backwards !!                                                  #
- * ####################################################################
- *
- * There is no strict promise about the base, although it tends to start
- * at 0 on boot (but people really shouldn't rely on that).
- *
- * cpu_clock(i)       -- can be used from any context, including NMI.
- * sched_clock_cpu(i) -- must be used with local IRQs disabled (implied by NMI)
- * local_clock()      -- is cpu_clock() on the current cpu.
- *
- * How:
- *
- * The implementation either uses sched_clock() when
- * !CONFIG_HAVE_UNSTABLE_SCHED_CLOCK, which means in that case the
- * sched_clock() is assumed to provide these properties (mostly it means
- * the architecture provides a globally synchronized highres time source).
- *
- * Otherwise it tries to create a semi stable clock from a mixture of other
- * clocks, including:
- *
- *  - GTOD (clock monotomic)
- *  - sched_clock()
- *  - explicit idle events
- *
- * We use GTOD as base and use sched_clock() deltas to improve resolution. The
- * deltas are filtered to provide monotonicity and keeping it within an
- * expected window.
- *
- * Furthermore, explicit sleep and wakeup hooks allow us to account for time
- * that is otherwise invisible (TSC gets stopped).
- *
- *
- * Notes:
- *
- * The !IRQ-safetly of sched_clock() and sched_clock_cpu() comes from things
- * like cpufreq interrupts that can change the base clock (TSC) multiplier
- * and cause funny jumps in time -- although the filtering provided by
- * sched_clock_cpu() should mitigate serious artifacts we cannot rely on it
- * in general since for !CONFIG_HAVE_UNSTABLE_SCHED_CLOCK we fully rely on
- * sched_clock().
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/spinlock.h>
 #include <beep/hardirq.h>
 #include <beep/export.h>

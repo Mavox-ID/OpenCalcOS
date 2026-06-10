@@ -1,45 +1,20 @@
-/* Transport & Protocol Driver for In-System Design, Inc. ISD200 ASIC
- *
- * Current development and maintenance:
- *   (C) 2001-2002 Björn Stenberg (bjorn@haxx.se)
- *
- * Developed with the assistance of:
- *   (C) 2002 Alan Stern <stern@rowland.org>
- *
- * Initial work:
- *   (C) 2000 In-System Design, Inc. (support@in-system.com)
- *
- * The ISD200 ASIC does not natively support ATA devices.  The chip
- * does implement an interface, the ATA Command Block (ATACB) which provides
- * a means of passing ATA commands and ATA register accesses to a device.
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by the
- * Free Software Foundation; either version 2, or (at your option) any
- * later version.
- *
- * This program is distributed in the hope that it will be useful, but
- * WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License along
- * with this program; if not, write to the Free Software Foundation, Inc.,
- * 675 Mass Ave, Cambridge, MA 02139, USA.
- *
- * History:
- *
- *  2002-10-19: Removed the specialized transfer routines.
- *		(Alan Stern <stern@rowland.harvard.edu>)
- *  2001-02-24: Removed lots of duplicate code and simplified the structure.
- *	      (bjorn@haxx.se)
- *  2002-01-16: Fixed endianness bug so it works on the ppc arch.
- *	      (Luc Saillard <luc@saillard.org>)
- *  2002-01-17: All bitfields removed.
- *	      (bjorn@haxx.se)
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* Include files */
 
 #include <beep/jiffies.h>

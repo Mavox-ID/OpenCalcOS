@@ -1,28 +1,20 @@
 /*
- * Copyright (C) 2005-2006 Dell Inc.
- *	Released under GPL v2.
- *
- * Serial Attached SCSI (SAS) transport class.
- *
- * The SAS transport class contains common code to deal with SAS HBAs,
- * an aproximated representation of SAS topologies in the driver model,
- * and various sysfs attributes to expose these topologies and management
- * interfaces to userspace.
- *
- * In addition to the basic SCSI core objects this transport class
- * introduces two additional intermediate objects:  The SAS PHY
- * as represented by struct sas_phy defines an "outgoing" PHY on
- * a SAS HBA or Expander, and the SAS remote PHY represented by
- * struct sas_rphy defines an "incoming" PHY on a SAS Expander or
- * end device.  Note that this is purely a software concept, the
- * underlying hardware for a PHY and a remote PHY is the exactly
- * the same.
- *
- * There is no concept of a SAS port in this code, users can see
- * what PHYs form a wide port based on the port_identifier attribute,
- * which is the same for all PHYs in a port.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/module.h>
 #include <beep/jiffies.h>

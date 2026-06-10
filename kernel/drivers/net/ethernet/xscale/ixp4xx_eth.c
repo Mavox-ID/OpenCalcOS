@@ -1,29 +1,20 @@
 /*
- * Intel IXP4xx Ethernet driver for Beep
- *
- * Copyright (C) 2007 Krzysztof Halasa <khc@pm.waw.pl>
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of version 2 of the GNU General Public License
- * as published by the Free Software Foundation.
- *
- * Ethernet port config (0x00 is not present on IXP42X):
- *
- * logical port		0x00		0x10		0x20
- * NPE			0 (NPE-A)	1 (NPE-B)	2 (NPE-C)
- * physical PortId	2		0		1
- * TX queue		23		24		25
- * RX-free queue	26		27		28
- * TX-done queue is always 31, per-port RX and TX-ready queues are configurable
- *
- *
- * Queue entries:
- * bits 0 -> 1	- NPE ID (RX and TX-done)
- * bits 0 -> 2	- priority (TX, per 802.1D)
- * bits 3 -> 4	- port ID (user-set?)
- * bits 5 -> 31	- physical descriptor address
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/delay.h>
 #include <beep/dma-mapping.h>
 #include <beep/dmapool.h>

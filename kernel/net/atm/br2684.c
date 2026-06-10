@@ -1,11 +1,20 @@
 /*
- * Ethernet netdevice using ATM AAL5 as underlying carrier
- * (RFC1483 obsoleted by RFC2684) for Beep
- *
- * Authors: Marcell GAL, 2000, XDSL Ltd, Hungary
- *          Eric Kinzie, 2006-2007, US Naval Research Laboratory
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
 #include <beep/module.h>

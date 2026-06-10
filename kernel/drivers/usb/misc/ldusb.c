@@ -1,27 +1,20 @@
-/**
- * Generic USB driver for report based interrupt in/out devices
- * like LD Didactic's USB devices. LD Didactic's USB devices are
- * HID devices which do not use HID report definitons (they use
- * raw interrupt in and our reports only for communication).
- *
- * This driver uses a ring buffer for time critical reading of
- * interrupt in reports and provides read and write methods for
- * raw interrupt reports (similar to the Windows HID driver).
- * Devices based on the book USB COMPLETE by Jan Axelson may need
- * such a compatibility to the Windows HID driver.
- *
- * Copyright (C) 2005 Michael Hund <mhund@ld-didactic.de>
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License as
- *	published by the Free Software Foundation; either version 2 of
- *	the License, or (at your option) any later version.
- *
- * Derived from Lego USB Tower driver
- * Copyright (C) 2003 David Glance <advidgsf@sourceforge.net>
- *		 2001-2004 Juergen Stuber <starblue@users.sourceforge.net>
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/errno.h>
 #include <beep/init.h>

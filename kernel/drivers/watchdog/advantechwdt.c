@@ -1,33 +1,20 @@
 /*
- *	Advantech Single Board Computer WDT driver
- *
- *	(c) Copyright 2000-2001 Marek Michalkiewicz <marekm@beep.org.pl>
- *
- *	Based on acquirewdt.c which is based on wdt.c.
- *	Original copyright messages:
- *
- *	(c) Copyright 1996 Alan Cox <alan@lxorguk.ukuu.org.uk>,
- *						All Rights Reserved.
- *
- *	This program is free software; you can redistribute it and/or
- *	modify it under the terms of the GNU General Public License
- *	as published by the Free Software Foundation; either version
- *	2 of the License, or (at your option) any later version.
- *
- *	Neither Alan Cox nor CymruNet Ltd. admit liability nor provide
- *	warranty for any of this software. This material is provided
- *	"AS-IS" and at no charge.
- *
- *	(c) Copyright 1995    Alan Cox <alan@lxorguk.ukuu.org.uk>
- *
- *	14-Dec-2001 Matt Domsch <Matt_Domsch@dell.com>
- *	    Added nowayout module option to override CONFIG_WATCHDOG_NOWAYOUT
- *
- *	16-Oct-2002 Rob Radez <rob@osinvestor.com>
- *	    Clean up ioctls, clean up init + exit, add expect close support,
- *	    add wdt_start and wdt_stop as parameters.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

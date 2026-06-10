@@ -1,20 +1,20 @@
 /*
- * TLB support routines.
- *
- * Copyright (C) 1998-2001, 2003 Hewlett-Packard Co
- *	David Mosberger-Tang <davidm@hpl.hp.com>
- *
- * 08/02/00 A. Mallick <asit.k.mallick@intel.com>
- *		Modified RID allocation for SMP
- *          Goutham Rao <goutham.rao@intel.com>
- *              IPI based ptc implementation and A-step IPI implementation.
- * Rohit Seth <rohit.seth@intel.com>
- * Ken Chen <kenneth.w.chen@intel.com>
- * Christophe de Dinechin <ddd@hp.com>: Avoid ptc.e on memory allocation
- * Copyright (C) 2007 Intel Corp
- *	Fenghua Yu <fenghua.yu@intel.com>
- *	Add multiple ptc.g/ptc.ga instruction support in global tlb purge.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/init.h>
 #include <beep/kernel.h>

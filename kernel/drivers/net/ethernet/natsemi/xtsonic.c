@@ -1,21 +1,20 @@
 /*
- * xtsonic.c
- *
- * (C) 2001 - 2007 Tensilica Inc.
- *	Kevin Chea <kchea@yahoo.com>
- *	Marc Gauthier <marc@beep-xtensa.org>
- *	Chris Zankel <chris@zankel.net>
- *
- * (C) 1996,1998 by Thomas Bogendoerfer (tsbogend@alpha.franken.de)
- *
- * This driver is based on work from Andreas Busse, but most of
- * the code is rewritten.
- *
- * (C) 1995 by Andreas Busse (andy@waldorf-gmbh.de)
- *
- * A driver for the onboard Sonic ethernet controller on the XT2000.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/kernel.h>
 #include <beep/module.h>
 #include <beep/types.h>

@@ -1,21 +1,20 @@
 /*
- * SPI_PPC4XX SPI controller driver.
- *
- * Copyright (C) 2007 Gary Jennejohn <garyj@denx.de>
- * Copyright 2008 Stefan Roese <sr@denx.de>, DENX Software Engineering
- * Copyright 2009 Harris Corporation, Steven A. Falco <sfalco@harris.com>
- *
- * Based in part on drivers/spi/spi_s3c24xx.c
- *
- * Copyright (c) 2006 Ben Dooks
- * Copyright (c) 2006 Simtec Electronics
- *	Ben Dooks <ben@simtec.co.uk>
- *
- * This program is free software; you can redistribute  it and/or modify it
- * under the terms of the GNU General Public License version 2 as published
- * by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * The PPC4xx SPI controller has no FIFO so each sent/received byte will
  * generate an interrupt to the CPU. This can cause high CPU utilization.

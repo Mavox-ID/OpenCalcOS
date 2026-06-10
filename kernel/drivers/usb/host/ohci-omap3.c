@@ -1,34 +1,20 @@
 /*
- * ohci-omap3.c - driver for OHCI on OMAP3 and later processors
- *
- * Bus Glue for OMAP3 USBHOST 3 port OHCI controller
- * This controller is also used in later OMAPs and AM35x chips
- *
- * Copyright (C) 2007-2010 Texas Instruments, Inc.
- * Author: Vikram Pandita <vikram.pandita@ti.com>
- * Author: Anand Gadiyar <gadiyar@ti.com>
- * Author: Keshava Munegowda <keshava_mgowda@ti.com>
- *
- * Based on ehci-omap.c and some other ohci glue layers
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
- *
- * TODO (last updated Feb 27, 2011):
- *	- add kernel-doc
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/platform_device.h>
 #include <beep/pm_runtime.h>
 

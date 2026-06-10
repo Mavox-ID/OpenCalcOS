@@ -1,17 +1,20 @@
 /*
- * cbe_regs.h
- *
- * This file is intended to hold the various register definitions for CBE
- * on-chip system devices (memory controller, IO controller, etc...)
- *
- * (C) Copyright IBM Corporation 2001,2006
- *
- * Authors: Maximino Aguilar (maguilar@us.ibm.com)
- *          David J. Erb (djerb@us.ibm.com)
- *
- * (c) 2006 Benjamin Herrenschmidt <benh@kernel.crashing.org>, IBM Corp.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef CBE_REGS_H
 #define CBE_REGS_H
 

@@ -1,48 +1,20 @@
 /*
- * zs.c: Serial port driver for IOASIC DECstations.
- *
- * Derived from drivers/sbus/char/sunserial.c by Paul Mackerras.
- * Derived from drivers/macintosh/macserial.c by Harald Koerfgen.
- *
- * DECstation changes
- * Copyright (C) 1998-2000 Harald Koerfgen
- * Copyright (C) 2000, 2001, 2002, 2003, 2004, 2005, 2007  Maciej W. Rozycki
- *
- * For the rest of the code the original Copyright applies:
- * Copyright (C) 1996 Paul Mackerras (Paul.Mackerras@cs.anu.edu.au)
- * Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
- *
- *
- * Note: for IOASIC systems the wiring is as follows:
- *
- * mouse/keyboard:
- * DIN-7 MJ-4  signal        SCC
- * 2     1     TxD       <-  A.TxD
- * 3     4     RxD       ->  A.RxD
- *
- * EIA-232/EIA-423:
- * DB-25 MMJ-6 signal        SCC
- * 2     2     TxD       <-  B.TxD
- * 3     5     RxD       ->  B.RxD
- * 4           RTS       <- ~A.RTS
- * 5           CTS       -> ~B.CTS
- * 6     6     DSR       -> ~A.SYNC
- * 8           CD        -> ~B.DCD
- * 12          DSRS(DCE) -> ~A.CTS  (*)
- * 15          TxC       ->  B.TxC
- * 17          RxC       ->  B.RxC
- * 20    1     DTR       <- ~A.DTR
- * 22          RI        -> ~A.DCD
- * 23          DSRS(DTE) <- ~B.RTS
- *
- * (*) EIA-232 defines the signal at this pin to be SCD, while DSRS(DCE)
- *     is shared with DSRS(DTE) at pin 23.
- *
- * As you can immediately notice the wiring of the RTS, DTR and DSR signals
- * is a bit odd.  This makes the handling of port B unnecessarily
- * complicated and prevents the use of some automatic modes of operation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #if defined(CONFIG_SERIAL_ZS_CONSOLE) && defined(CONFIG_MAGIC_SYSRQ)
 #define SUPPORT_SYSRQ
 #endif

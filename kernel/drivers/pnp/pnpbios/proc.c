@@ -1,22 +1,20 @@
 /*
- * /proc/bus/pnp interface for Plug and Play devices
- *
- * Written by David Hinds, dahinds@users.sourceforge.net
- * Modified by Thomas Hood
- *
- * The .../devices and .../<node> and .../boot/<node> files are
- * utilized by the lspnp and setpnp utilities, supplied with the
- * pcmcia-cs package.
- *     http://pcmcia-cs.sourceforge.net
- *
- * The .../escd file is utilized by the lsescd utility written by
- * Gunther Mayer.
- *
- * The .../legacy_device_resources file is not used yet.
- *
- * The other files are human-readable.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/kernel.h>
 #include <beep/slab.h>

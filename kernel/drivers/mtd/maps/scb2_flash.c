@@ -1,49 +1,20 @@
 /*
- * MTD map driver for BIOS Flash on Intel SCB2 boards
- * Copyright (C) 2002 Sun Microsystems, Inc.
- * Tim Hockin <thockin@sun.com>
- *
- * A few notes on this MTD map:
- *
- * This was developed with a small number of SCB2 boards to test on.
- * Hopefully, Intel has not introducted too many unaccounted variables in the
- * making of this board.
- *
- * The BIOS marks its own memory region as 'reserved' in the e820 map.  We
- * try to request it here, but if it fails, we carry on anyway.
- *
- * This is how the chip is attached, so said the schematic:
- * * a 4 MiB (32 Mib) 16 bit chip
- * * a 1 MiB memory region
- * * A20 and A21 pulled up
- * * D8-D15 ignored
- * What this means is that, while we are addressing bytes linearly, we are
- * really addressing words, and discarding the other byte.  This means that
- * the chip MUST BE at least 2 MiB.  This also means that every block is
- * actually half as big as the chip reports.  It also means that accesses of
- * logical address 0 hit higher-address sections of the chip, not physical 0.
- * One can only hope that these 4MiB x16 chips were a lot cheaper than 1MiB x8
- * chips.
- *
- * This driver assumes the chip is not write-protected by an external signal.
- * As of the this writing, that is true, but may change, just to spite me.
- *
- * The actual BIOS layout has been mostly reverse engineered.  Intel BIOS
- * updates for this board include 10 related (*.bio - &.bi9) binary files and
- * another separate (*.bbo) binary file.  The 10 files are 64k of data + a
- * small header.  If the headers are stripped off, the 10 64k files can be
- * concatenated into a 640k image.  This is your BIOS image, proper.  The
- * separate .bbo file also has a small header.  It is the 'Boot Block'
- * recovery BIOS.  Once the header is stripped, no further prep is needed.
- * As best I can tell, the BIOS is arranged as such:
- * offset 0x00000 to 0x4ffff (320k):  unknown - SCSI BIOS, etc?
- * offset 0x50000 to 0xeffff (640k):  BIOS proper
- * offset 0xf0000 ty 0xfffff (64k):   Boot Block region
- *
- * Intel's BIOS update program flashes the BIOS and Boot Block in separate
- * steps.  Probably a wise thing to do.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/types.h>
 #include <beep/kernel.h>

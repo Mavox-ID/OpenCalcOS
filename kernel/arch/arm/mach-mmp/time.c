@@ -1,23 +1,20 @@
 /*
- * beep/arch/arm/mach-mmp/time.c
- *
- *   Support for clocksource and clockevents
- *
- * Copyright (C) 2008 Marvell International Ltd.
- * All rights reserved.
- *
- *   2008-04-11: Jason Chagas <Jason.chagas@marvell.com>
- *   2008-10-08: Bin Yang <bin.yang@marvell.com>
- *
- * The timers module actually includes three timers, each timer with up to
- * three match comparators. Timer #0 is used here in free-running mode as
- * the clock source, and match comparator #1 used as clock event device.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/kernel.h>
 #include <beep/interrupt.h>

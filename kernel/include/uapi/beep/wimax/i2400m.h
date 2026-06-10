@@ -1,123 +1,20 @@
 /*
- * Intel Wireless WiMax Connection 2400m
- * Host-Device protocol interface definitions
- *
- *
- * Copyright (C) 2007-2008 Intel Corporation. All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- *
- *   * Redistributions of source code must retain the above copyright
- *     notice, this list of conditions and the following disclaimer.
- *   * Redistributions in binary form must reproduce the above copyright
- *     notice, this list of conditions and the following disclaimer in
- *     the documentation and/or other materials provided with the
- *     distribution.
- *   * Neither the name of Intel Corporation nor the names of its
- *     contributors may be used to endorse or promote products derived
- *     from this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
- * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
- * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
- * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
- * OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
- * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
- * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
- * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
- * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *
- *
- * Intel Corporation <beep-wimax@intel.com>
- * Inaky Perez-Gonzalez <inaky.perez-gonzalez@intel.com>
- *  - Initial implementation
- *
- *
- * This header defines the data structures and constants used to
- * communicate with the device.
- *
- * BOOTMODE/BOOTROM/FIRMWARE UPLOAD PROTOCOL
- *
- * The firmware upload protocol is quite simple and only requires a
- * handful of commands. See drivers/net/wimax/i2400m/fw.c for more
- * details.
- *
- * The BCF data structure is for the firmware file header.
- *
- *
- * THE DATA / CONTROL PROTOCOL
- *
- * This is the normal protocol spoken with the device once the
- * firmware is uploaded. It transports data payloads and control
- * messages back and forth.
- *
- * It consists 'messages' that pack one or more payloads each. The
- * format is described in detail in drivers/net/wimax/i2400m/rx.c and
- * tx.c.
- *
- *
- * THE L3L4 PROTOCOL
- *
- * The term L3L4 refers to Layer 3 (the device), Layer 4 (the
- * driver/host software).
- *
- * This is the control protocol used by the host to control the i2400m
- * device (scan, connect, disconnect...). This is sent to / received
- * as control frames. These frames consist of a header and zero or
- * more TLVs with information. We call each control frame a "message".
- *
- * Each message is composed of:
- *
- * HEADER
- * [TLV0 + PAYLOAD0]
- * [TLV1 + PAYLOAD1]
- * [...]
- * [TLVN + PAYLOADN]
- *
- * The HEADER is defined by 'struct i2400m_l3l4_hdr'. The payloads are
- * defined by a TLV structure (Type Length Value) which is a 'header'
- * (struct i2400m_tlv_hdr) and then the payload.
- *
- * All integers are represented as Little Endian.
- *
- * - REQUESTS AND EVENTS
- *
- * The requests can be clasified as follows:
- *
- *   COMMAND:  implies a request from the host to the device requesting
- *             an action being performed. The device will reply with a
- *             message (with the same type as the command), status and
- *             no (TLV) payload. Execution of a command might cause
- *             events (of different type) to be sent later on as
- *             device's state changes.
- *
- *   GET/SET:  similar to COMMAND, but will not cause other
- *             EVENTs. The reply, in the case of GET, will contain
- *             TLVs with the requested information.
- *
- *   EVENT:    asynchronous messages sent from the device, maybe as a
- *             consequence of previous COMMANDs but disassociated from
- *             them.
- *
- * Only one request might be pending at the same time (ie: don't
- * parallelize nor post another GET request before the previous
- * COMMAND has been acknowledged with it's corresponding reply by the
- * device).
- *
- * The different requests and their formats are described below:
- *
- *  I2400M_MT_*   Message types
- *  I2400M_MS_*   Message status (for replies, events)
- *  i2400m_tlv_*  TLVs
- *
- * data types are named 'struct i2400m_msg_OPNAME', OPNAME matching the
- * operation.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __BEEP__WIMAX__I2400M_H__
 #define __BEEP__WIMAX__I2400M_H__
 

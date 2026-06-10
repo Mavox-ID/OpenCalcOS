@@ -1,157 +1,20 @@
 /*
- *  Copyright (c) 2000-2011 LSI Corporation.
- *
- *
- *           Name:  mpi2_cnfg.h
- *          Title:  MPI Configuration messages and pages
- *  Creation Date:  November 10, 2006
- *
- *    mpi2_cnfg.h Version:  02.00.22
- *
- *  Version History
- *  ---------------
- *
- *  Date      Version   Description
- *  --------  --------  ------------------------------------------------------
- *  04-30-07  02.00.00  Corresponds to Fusion-MPT MPI Specification Rev A.
- *  06-04-07  02.00.01  Added defines for SAS IO Unit Page 2 PhyFlags.
- *                      Added Manufacturing Page 11.
- *                      Added MPI2_SAS_EXPANDER0_FLAGS_CONNECTOR_END_DEVICE
- *                      define.
- *  06-26-07  02.00.02  Adding generic structure for product-specific
- *                      Manufacturing pages: MPI2_CONFIG_PAGE_MANUFACTURING_PS.
- *                      Rework of BIOS Page 2 configuration page.
- *                      Fixed MPI2_BIOSPAGE2_BOOT_DEVICE to be a union of the
- *                      forms.
- *                      Added configuration pages IOC Page 8 and Driver
- *                      Persistent Mapping Page 0.
- *  08-31-07  02.00.03  Modified configuration pages dealing with Integrated
- *                      RAID (Manufacturing Page 4, RAID Volume Pages 0 and 1,
- *                      RAID Physical Disk Pages 0 and 1, RAID Configuration
- *                      Page 0).
- *                      Added new value for AccessStatus field of SAS Device
- *                      Page 0 (_SATA_NEEDS_INITIALIZATION).
- *  10-31-07  02.00.04  Added missing SEPDevHandle field to
- *                      MPI2_CONFIG_PAGE_SAS_ENCLOSURE_0.
- *  12-18-07  02.00.05  Modified IO Unit Page 0 to use 32-bit version fields for
- *                      NVDATA.
- *                      Modified IOC Page 7 to use masks and added field for
- *                      SASBroadcastPrimitiveMasks.
- *                      Added MPI2_CONFIG_PAGE_BIOS_4.
- *                      Added MPI2_CONFIG_PAGE_LOG_0.
- *  02-29-08  02.00.06  Modified various names to make them 32-character unique.
- *                      Added SAS Device IDs.
- *                      Updated Integrated RAID configuration pages including
- *                      Manufacturing Page 4, IOC Page 6, and RAID Configuration
- *                      Page 0.
- *  05-21-08  02.00.07  Added define MPI2_MANPAGE4_MIX_SSD_SAS_SATA.
- *                      Added define MPI2_MANPAGE4_PHYSDISK_128MB_COERCION.
- *                      Fixed define MPI2_IOCPAGE8_FLAGS_ENCLOSURE_SLOT_MAPPING.
- *                      Added missing MaxNumRoutedSasAddresses field to
- *                      MPI2_CONFIG_PAGE_EXPANDER_0.
- *                      Added SAS Port Page 0.
- *                      Modified structure layout for
- *                      MPI2_CONFIG_PAGE_DRIVER_MAPPING_0.
- *  06-27-08  02.00.08  Changed MPI2_CONFIG_PAGE_RD_PDISK_1 to use
- *                      MPI2_RAID_PHYS_DISK1_PATH_MAX to size the array.
- *  10-02-08  02.00.09  Changed MPI2_RAID_PGAD_CONFIGNUM_MASK from 0x0000FFFF
- *                      to 0x000000FF.
- *                      Added two new values for the Physical Disk Coercion Size
- *                      bits in the Flags field of Manufacturing Page 4.
- *                      Added product-specific Manufacturing pages 16 to 31.
- *                      Modified Flags bits for controlling write cache on SATA
- *                      drives in IO Unit Page 1.
- *                      Added new bit to AdditionalControlFlags of SAS IO Unit
- *                      Page 1 to control Invalid Topology Correction.
- *                      Added additional defines for RAID Volume Page 0
- *                      VolumeStatusFlags field.
- *                      Modified meaning of RAID Volume Page 0 VolumeSettings
- *                      define for auto-configure of hot-swap drives.
- *                      Added SupportedPhysDisks field to RAID Volume Page 1 and
- *                      added related defines.
- *                      Added PhysDiskAttributes field (and related defines) to
- *                      RAID Physical Disk Page 0.
- *                      Added MPI2_SAS_PHYINFO_PHY_VACANT define.
- *                      Added three new DiscoveryStatus bits for SAS IO Unit
- *                      Page 0 and SAS Expander Page 0.
- *                      Removed multiplexing information from SAS IO Unit pages.
- *                      Added BootDeviceWaitTime field to SAS IO Unit Page 4.
- *                      Removed Zone Address Resolved bit from PhyInfo and from
- *                      Expander Page 0 Flags field.
- *                      Added two new AccessStatus values to SAS Device Page 0
- *                      for indicating routing problems. Added 3 reserved words
- *                      to this page.
- *  01-19-09  02.00.10  Fixed defines for GPIOVal field of IO Unit Page 3.
- *                      Inserted missing reserved field into structure for IOC
- *                      Page 6.
- *                      Added more pending task bits to RAID Volume Page 0
- *                      VolumeStatusFlags defines.
- *                      Added MPI2_PHYSDISK0_STATUS_FLAG_NOT_CERTIFIED define.
- *                      Added a new DiscoveryStatus bit for SAS IO Unit Page 0
- *                      and SAS Expander Page 0 to flag a downstream initiator
- *                      when in simplified routing mode.
- *                      Removed SATA Init Failure defines for DiscoveryStatus
- *                      fields of SAS IO Unit Page 0 and SAS Expander Page 0.
- *                      Added MPI2_SAS_DEVICE0_ASTATUS_DEVICE_BLOCKED define.
- *                      Added PortGroups, DmaGroup, and ControlGroup fields to
- *                      SAS Device Page 0.
- *  05-06-09  02.00.11  Added structures and defines for IO Unit Page 5 and IO
- *                      Unit Page 6.
- *                      Added expander reduced functionality data to SAS
- *                      Expander Page 0.
- *                      Added SAS PHY Page 2 and SAS PHY Page 3.
- *  07-30-09  02.00.12  Added IO Unit Page 7.
- *                      Added new device ids.
- *                      Added SAS IO Unit Page 5.
- *                      Added partial and slumber power management capable flags
- *                      to SAS Device Page 0 Flags field.
- *                      Added PhyInfo defines for power condition.
- *                      Added Ethernet configuration pages.
- *  10-28-09  02.00.13  Added MPI2_IOUNITPAGE1_ENABLE_HOST_BASED_DISCOVERY.
- *                      Added SAS PHY Page 4 structure and defines.
- *  02-10-10  02.00.14  Modified the comments for the configuration page
- *                      structures that contain an array of data. The host
- *                      should use the "count" field in the page data (e.g. the
- *                      NumPhys field) to determine the number of valid elements
- *                      in the array.
- *                      Added/modified some MPI2_MFGPAGE_DEVID_SAS defines.
- *                      Added PowerManagementCapabilities to IO Unit Page 7.
- *                      Added PortWidthModGroup field to
- *                      MPI2_SAS_IO_UNIT5_PHY_PM_SETTINGS.
- *                      Added MPI2_CONFIG_PAGE_SASIOUNIT_6 and related defines.
- *                      Added MPI2_CONFIG_PAGE_SASIOUNIT_7 and related defines.
- *                      Added MPI2_CONFIG_PAGE_SASIOUNIT_8 and related defines.
- *  05-12-10  02.00.15  Added MPI2_RAIDVOL0_STATUS_FLAG_VOL_NOT_CONSISTENT
- *                      define.
- *                      Added MPI2_PHYSDISK0_INCOMPATIBLE_MEDIA_TYPE define.
- *                      Added MPI2_SAS_NEG_LINK_RATE_UNSUPPORTED_PHY define.
- *  08-11-10  02.00.16  Removed IO Unit Page 1 device path (multi-pathing)
- *                      defines.
- *  11-10-10  02.00.17  Added ReceptacleID field (replacing Reserved1) to
- *                      MPI2_MANPAGE7_CONNECTOR_INFO and reworked defines for
- *                      the Pinout field.
- *                      Added BoardTemperature and BoardTemperatureUnits fields
- *                      to MPI2_CONFIG_PAGE_IO_UNIT_7.
- *                      Added MPI2_CONFIG_EXTPAGETYPE_EXT_MANUFACTURING define
- *                      and MPI2_CONFIG_PAGE_EXT_MAN_PS structure.
- *  02-23-11  02.00.18  Added ProxyVF_ID field to MPI2_CONFIG_REQUEST.
- *                      Added IO Unit Page 8, IO Unit Page 9,
- *                      and IO Unit Page 10.
- *                      Added SASNotifyPrimitiveMasks field to
- *                      MPI2_CONFIG_PAGE_IOC_7.
- *  03-09-11  02.00.19  Fixed IO Unit Page 10 (to match the spec).
- *  05-25-11  02.00.20  Cleaned up a few comments.
- *  08-24-11  02.00.21  Marked the IO Unit Page 7 PowerManagementCapabilities
- *                      for PCIe link as obsolete.
- *                      Added SpinupFlags field containing a Disable Spin-up
- *                      bit to the MPI2_SAS_IOUNIT4_SPINUP_GROUP fields of
- *                      SAS IO Unit Page 4.
- *  11-18-11  02.00.22  Added define MPI2_IOCPAGE6_CAP_FLAGS_4K_SECTORS_SUPPORT.
- *                      Added UEFIVersion field to BIOS Page 1 and defined new
- *                      BiosOptions bits.
- *  --------------------------------------------------------------------------
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef MPI2_CNFG_H
 #define MPI2_CNFG_H
 

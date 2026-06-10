@@ -1,23 +1,20 @@
 /*
- * VIA IDE driver for Beep. Supported southbridges:
- *
- *   vt82c576, vt82c586, vt82c586a, vt82c586b, vt82c596a, vt82c596b,
- *   vt82c686, vt82c686a, vt82c686b, vt8231, vt8233, vt8233c, vt8233a,
- *   vt8235, vt8237, vt8237a
- *
- * Copyright (c) 2000-2002 Vojtech Pavlik
- * Copyright (c) 2007-2010 Bartlomiej Zolnierkiewicz
- *
- * Based on the work of:
- *	Michel Aubry
- *	Jeff Garzik
- *	Andre Hedrick
- *
- * Documentation:
- *	Obsolete device documentation publicly available from via.com.tw
- *	Current device documentation available under NDA only
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /*
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License version 2 as published by

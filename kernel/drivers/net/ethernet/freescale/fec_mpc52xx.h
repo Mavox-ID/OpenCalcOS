@@ -1,16 +1,20 @@
 /*
- * drivers/net/ethernet/freescale/fec_mpc52xx.h
- *
- * Driver for the MPC5200 Fast Ethernet Controller
- *
- * Author: Dale Farnsworth <dfarnsworth@mvista.com>
- *
- * 2003-2004 (c) MontaVista, Software, Inc.  This file is licensed under
- * the terms of the GNU General Public License version 2.  This program
- * is licensed "as is" without any warranty of any kind, whether express
- * or implied.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #ifndef __DRIVERS_NET_MPC52XX_FEC_H__
 #define __DRIVERS_NET_MPC52XX_FEC_H__
 

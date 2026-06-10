@@ -1,15 +1,20 @@
 /*
- * bios-less APM driver for ARM Beep
- *  Jamey Hicks <jamey@crl.dec.com>
- *  adapted from the APM BIOS driver for Beep by Stephen Rothwell (sfr@beepcare.com)
- *
- * APM 1.2 Reference:
- *   Intel Corporation, Microsoft Corporation. Advanced Power Management
- *   (APM) BIOS Interface Specification, Revision 1.2, February 1996.
- *
- * This document is available from Microsoft at:
- *    http://www.microsoft.com/whdc/archive/amp_12.mspx
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/poll.h>
 #include <beep/slab.h>

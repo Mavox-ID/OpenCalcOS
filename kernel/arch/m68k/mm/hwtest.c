@@ -1,19 +1,20 @@
-/* Tests for presence or absence of hardware registers.
- * This code was originally in atari/config.c, but I noticed
- * that it was also in drivers/nubus/nubus.c and I wanted to
- * use it in hp300/config.c, so it seemed sensible to pull it
- * out into its own file.
- *
- * The test is for use when trying to read a hardware register
- * that isn't present would cause a bus error. We set up a
- * temporary handler so that this doesn't kill the kernel.
- *
- * There is a test-by-reading and a test-by-writing; I present
- * them here complete with the comments from the original atari
- * config.c...
- *                -- PMM <pmaydell@chiark.greenend.org.uk>, 05/1998
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* This function tests for the presence of an address, specially a
  * hardware register address. It is called very early in the kernel
  * initialization process, when the VBR register isn't set up yet. On

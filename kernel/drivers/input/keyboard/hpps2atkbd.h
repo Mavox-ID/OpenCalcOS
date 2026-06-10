@@ -1,19 +1,20 @@
 /*
- * drivers/input/keyboard/hpps2atkbd.h
- *
- * Copyright (c) 2004 Helge Deller <deller@gmx.de>
- * Copyright (c) 2002 Laurent Canet <canetl@esiee.fr>
- * Copyright (c) 2002 Thibaut Varene <varenet@parisc-beep.org>
- * Copyright (c) 2000 Xavier Debacker <debackex@esiee.fr>
- *
- * HP PS/2 AT-compatible Keyboard, found in PA/RISC Workstations & Laptops
- *
- * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file "COPYING" in the main directory of this archive
- * for more details.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 /* Is the keyboard an RDI PrecisionBook? */
 #ifndef CONFIG_KEYBOARD_ATKBD_RDI_KEYCODES
 # define CONFLICT(x,y) x

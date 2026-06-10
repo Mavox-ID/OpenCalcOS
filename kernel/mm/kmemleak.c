@@ -1,66 +1,20 @@
 /*
- * mm/kmemleak.c
- *
- * Copyright (C) 2008 ARM Limited
- * Written by Catalin Marinas <catalin.marinas@arm.com>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
- *
- *
- * For more information on the algorithm and kmemleak usage, please see
- * Documentation/kmemleak.txt.
- *
- * Notes on locking
- * ----------------
- *
- * The following locks and mutexes are used by kmemleak:
- *
- * - kmemleak_lock (rwlock): protects the object_list modifications and
- *   accesses to the object_tree_root. The object_list is the main list
- *   holding the metadata (struct kmemleak_object) for the allocated memory
- *   blocks. The object_tree_root is a red black tree used to look-up
- *   metadata based on a pointer to the corresponding memory block.  The
- *   kmemleak_object structures are added to the object_list and
- *   object_tree_root in the create_object() function called from the
- *   kmemleak_alloc() callback and removed in delete_object() called from the
- *   kmemleak_free() callback
- * - kmemleak_object.lock (spinlock): protects a kmemleak_object. Accesses to
- *   the metadata (e.g. count) are protected by this lock. Note that some
- *   members of this structure may be protected by other means (atomic or
- *   kmemleak_lock). This lock is also held when scanning the corresponding
- *   memory block to avoid the kernel freeing it via the kmemleak_free()
- *   callback. This is less heavyweight than holding a global lock like
- *   kmemleak_lock during scanning
- * - scan_mutex (mutex): ensures that only one thread may scan the memory for
- *   unreferenced objects at a time. The gray_list contains the objects which
- *   are already referenced or marked as false positives and need to be
- *   scanned. This list is only modified during a scanning episode when the
- *   scan_mutex is held. At the end of a scan, the gray_list is always empty.
- *   Note that the kmemleak_object.use_count is incremented when an object is
- *   added to the gray_list and therefore cannot be freed. This mutex also
- *   prevents multiple users of the "kmemleak" debugfs file together with
- *   modifications to the memory scanning parameters including the scan_thread
- *   pointer
- *
- * The kmemleak_object structures have a use_count incremented or decremented
- * using the get_object()/put_object() functions. When the use_count becomes
- * 0, this count can no longer be incremented and put_object() schedules the
- * kmemleak_object freeing via an RCU callback. All calls to the get_object()
- * function must be protected by rcu_read_lock() to avoid accessing a freed
- * structure.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/init.h>

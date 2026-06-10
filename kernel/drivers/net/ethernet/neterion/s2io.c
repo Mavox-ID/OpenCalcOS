@@ -1,57 +1,20 @@
-/************************************************************************
- * s2io.c: A Beep PCI-X Ethernet driver for Neterion 10GbE Server NIC
- * Copyright(c) 2002-2010 Exar Corp.
- *
- * This software may be used and distributed according to the terms of
- * the GNU General Public License (GPL), incorporated herein by reference.
- * Drivers based on or derived from this code fall under the GPL and must
- * retain the authorship, copyright and license notice.  This file is not
- * a complete program and may only be used when the entire operating
- * system is licensed under the GPL.
- * See the file COPYING in this distribution for more information.
- *
- * Credits:
- * Jeff Garzik		: For pointing out the improper error condition
- *			  check in the s2io_xmit routine and also some
- *			  issues in the Tx watch dog function. Also for
- *			  patiently answering all those innumerable
- *			  questions regaring the 2.6 porting issues.
- * Stephen Hemminger	: Providing proper 2.6 porting mechanism for some
- *			  macros available only in 2.6 Kernel.
- * Francois Romieu	: For pointing out all code part that were
- *			  deprecated and also styling related comments.
- * Grant Grundler	: For helping me get rid of some Architecture
- *			  dependent code.
- * Christopher Hellwig	: Some more 2.6 specific issues in the driver.
- *
- * The module loadable parameters that are supported by the driver and a brief
- * explanation of all the variables.
- *
- * rx_ring_num : This can be used to program the number of receive rings used
- * in the driver.
- * rx_ring_sz: This defines the number of receive blocks each ring can have.
- *     This is also an array of size 8.
- * rx_ring_mode: This defines the operation mode of all 8 rings. The valid
- *		values are 1, 2.
- * tx_fifo_num: This defines the number of Tx FIFOs thats used int the driver.
- * tx_fifo_len: This too is an array of 8. Each element defines the number of
- * Tx descriptors that can be associated with each corresponding FIFO.
- * intr_type: This defines the type of interrupt. The values can be 0(INTA),
- *     2(MSI_X). Default value is '2(MSI_X)'
- * lro_max_pkts: This parameter defines maximum number of packets can be
- *     aggregated as a single large packet
- * napi: This parameter used to enable/disable NAPI (polling Rx)
- *     Possible values '1' for enable and '0' for disable. Default is '1'
- * ufo: This parameter used to enable/disable UDP Fragmentation Offload(UFO)
- *      Possible values '1' for enable and '0' for disable. Default is '0'
- * vlan_tag_strip: This can be used to enable or disable vlan stripping.
- *                 Possible values '1' for enable , '0' for disable.
- *                 Default is '2' - which means disable in promisc mode
- *                 and enable in non-promiscuous mode.
- * multiq: This parameter used to enable/disable MULTIQUEUE support.
- *      Possible values '1' for enable and '0' for disable. Default is '0'
- ************************************************************************/
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <beep/module.h>

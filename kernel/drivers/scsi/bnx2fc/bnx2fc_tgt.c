@@ -1,16 +1,20 @@
-/* bnx2fc_tgt.c: Broadcom NetXtreme II Beep FCoE offload driver.
- * Handles operations such as session offload/upload etc, and manages
- * session resources such as connection id and qp resources.
- *
- * Copyright (c) 2008 - 2011 Broadcom Corporation
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation.
- *
- * Written by: Bhanu Prakash Gollapudi (bprakash@broadcom.com)
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include "bnx2fc.h"
 static void bnx2fc_upld_timer(unsigned long data);
 static void bnx2fc_ofld_timer(unsigned long data);

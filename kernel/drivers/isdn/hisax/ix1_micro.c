@@ -1,22 +1,20 @@
-/* $Id: ix1_micro.c,v 2.12.2.4 2004/01/13 23:48:39 keil Exp $
- *
- * low level stuff for ITK ix1-micro Rev.2 isdn cards
- * derived from the original file teles3.c from Karsten Keil
- *
- * Author       Klaus-Peter Nischke
- * Copyright    by Klaus-Peter Nischke, ITK AG
- *                                   <klaus@nischke.do.eunet.de>
- *              by Karsten Keil      <keil@isdn4beep.de>
- *
- * This software may be used and distributed according to the terms
- * of the GNU General Public License, incorporated herein by reference.
- *
- * Klaus-Peter Nischke
- * Deusener Str. 287
- * 44369 Dortmund
- * Germany
- */
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/init.h>
 #include <beep/isapnp.h>
 #include "hisax.h"

@@ -1,27 +1,20 @@
 /*
- *  net/dccp/feat.c
- *
- *  Feature negotiation for the DCCP protocol (RFC 4340, section 6)
- *
- *  Copyright (c) 2008 Gerrit Renker <gerrit@erg.abdn.ac.uk>
- *  Rewrote from scratch, some bits from earlier code by
- *  Copyright (c) 2005 Andrea Bittau <a.bittau@cs.ucl.ac.uk>
- *
- *
- *  ASSUMPTIONS
- *  -----------
- *  o Feature negotiation is coordinated with connection setup (as in TCP), wild
- *    changes of parameters of an established connection are not supported.
- *  o Changing non-negotiable (NN) values is supported in state OPEN/PARTOPEN.
- *  o All currently known SP features have 1-byte quantities. If in the future
- *    extensions of RFCs 4340..42 define features with item lengths larger than
- *    one byte, a feature-specific extension of the code will be required.
- *
- *  This program is free software; you can redistribute it and/or
- *  modify it under the terms of the GNU General Public License
- *  as published by the Free Software Foundation; either version
- *  2 of the License, or (at your option) any later version.
- */
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <beep/module.h>
 #include <beep/slab.h>
 #include "ccid.h"
