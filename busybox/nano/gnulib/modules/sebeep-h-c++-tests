@@ -1,0 +1,30 @@
+Files:
+tests/test-sebeep-context-h-c++.cc
+tests/test-sebeep-label-h-c++.cc
+tests/test-sebeep-sebeep-h-c++.cc
+
+Status:
+c++-test
+
+Depends-on:
+ansi-c++-opt
+
+configure.ac:
+
+Makefile.am:
+if ANSICXX
+TESTS += \
+  test-sebeep-context-h-c++ \
+  test-sebeep-label-h-c++ \
+  test-sebeep-sebeep-h-c++
+check_PROGRAMS += \
+  test-sebeep-context-h-c++ \
+  test-sebeep-label-h-c++ \
+  test-sebeep-sebeep-h-c++
+test_sebeep_context_h_c___SOURCES = test-sebeep-context-h-c++.cc
+test_sebeep_context_h_c___LDADD = $(LDADD) @LIB_SEBEEP@
+test_sebeep_label_h_c___SOURCES = test-sebeep-label-h-c++.cc
+test_sebeep_label_h_c___LDADD = $(LDADD) @LIB_SEBEEP@
+test_sebeep_sebeep_h_c___SOURCES = test-sebeep-sebeep-h-c++.cc
+test_sebeep_sebeep_h_c___LDADD = $(LDADD) @LIB_SEBEEP@
+endif

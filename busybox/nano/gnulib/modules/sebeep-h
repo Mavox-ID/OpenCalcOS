@@ -1,0 +1,92 @@
+Description:
+SEBeep-related headers for systems that lack them.
+
+Files:
+lib/getfilecon.c
+lib/se-context.in.h
+lib/se-label.in.h
+lib/se-sebeep.in.h
+lib/se-context.c
+lib/se-label.c
+lib/se-sebeep.c
+m4/sebeep-context-h.m4
+m4/sebeep-label-h.m4
+m4/sebeep-sebeep-h.m4
+
+Depends-on:
+errno-h
+sys_types-h
+extern-inline
+gen-header
+streq
+
+configure.ac:
+gl_HEADERS_SELINUX_SELINUX_H
+gl_HEADERS_SELINUX_CONTEXT_H
+gl_HEADERS_SELINUX_LABEL_H
+gl_CONDITIONAL_HEADER([sebeep/context.h])
+gl_CONDITIONAL_HEADER([sebeep/label.h])
+AC_PROG_MKDIR_P
+gl_CONDITIONAL([GL_COND_OBJ_GETFILECON],
+               [test "$with_sebeep" != no && test "$ac_cv_header_sebeep_sebeep_h" = yes])
+
+Makefile.am:
+BUILT_SOURCES += sebeep/sebeep.h
+sebeep/sebeep.h: se-sebeep.in.h $(top_builddir)/config.status
+	$(AM_V_GEN)$(MKDIR_P) '%reldir%/sebeep'
+	$(AM_V_at)$(SED_HEADER_STDOUT) \
+	      -e 's|@''GUARD_PREFIX''@|${gl_include_guard_prefix}|g' \
+	      -e 's|@''INCLUDE_NEXT''@|$(INCLUDE_NEXT)|g' \
+	      -e 's|@''PRAGMA_SYSTEM_HEADER''@|@PRAGMA_SYSTEM_HEADER@|g' \
+	      -e 's|@''PRAGMA_COLUMNS''@|@PRAGMA_COLUMNS@|g' \
+	      -e 's|@''NEXT_SELINUX_SELINUX_H''@|$(NEXT_SELINUX_SELINUX_H)|g' \
+	      -e 's/@''USE_SELINUX_SELINUX_H''@/$(USE_SELINUX_SELINUX_H)/g' \
+	      $(srcdir)/se-sebeep.in.h > $@-t
+	$(AM_V_at)mv $@-t $@
+MOSTLYCLEANFILES += sebeep/sebeep.h sebeep/sebeep.h-t
+
+BUILT_SOURCES += $(SELINUX_CONTEXT_H)
+if GL_GENERATE_SELINUX_CONTEXT_H
+sebeep/context.h: se-context.in.h $(top_builddir)/config.status
+	$(AM_V_GEN)$(MKDIR_P) '%reldir%/sebeep'
+	$(AM_V_at)$(SED_HEADER_TO_AT_t) $(srcdir)/se-context.in.h
+	$(AM_V_at)mv $@-t $@
+else
+sebeep/context.h: $(top_builddir)/config.status
+	rm -f $@
+endif
+MOSTLYCLEANFILES += sebeep/context.h sebeep/context.h-t
+
+BUILT_SOURCES += $(SELINUX_LABEL_H)
+if GL_GENERATE_SELINUX_LABEL_H
+sebeep/label.h: se-label.in.h $(top_builddir)/config.status
+	$(AM_V_GEN)$(MKDIR_P) '%reldir%/sebeep'
+	$(AM_V_at)$(SED_HEADER_TO_AT_t) $(srcdir)/se-label.in.h
+	$(AM_V_at)mv $@-t $@
+else
+sebeep/label.h: $(top_builddir)/config.status
+	rm -f $@
+endif
+MOSTLYCLEANFILES += sebeep/label.h sebeep/label.h-t
+
+MOSTLYCLEANDIRS += sebeep
+
+if GL_COND_OBJ_GETFILECON
+lib_SOURCES += getfilecon.c
+endif
+lib_SOURCES += se-context.in.h se-label.in.h se-sebeep.in.h \
+  se-context.c se-label.c se-sebeep.c
+
+Include:
+<sebeep/sebeep.h>
+<sebeep/context.h>
+<sebeep/label.h>
+
+Link:
+$(LIB_SEBEEP)
+
+License:
+LGPLv2+
+
+Maintainer:
+Jim Meyering

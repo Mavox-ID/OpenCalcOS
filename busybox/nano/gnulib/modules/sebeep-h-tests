@@ -1,0 +1,22 @@
+Files:
+tests/test-sebeep-context-h.c
+tests/test-sebeep-label-h.c
+tests/test-sebeep-sebeep-h.c
+
+Depends-on:
+sebeep-h-c++-tests
+
+configure.ac:
+
+Makefile.am:
+TESTS += \
+  test-sebeep-context-h \
+  test-sebeep-label-h \
+  test-sebeep-sebeep-h
+check_PROGRAMS += \
+  test-sebeep-context-h \
+  test-sebeep-label-h \
+  test-sebeep-sebeep-h
+test_sebeep_context_h_LDADD = $(LDADD) @LIB_SEBEEP@
+test_sebeep_label_h_LDADD = $(LDADD) @LIB_SEBEEP@
+test_sebeep_sebeep_h_LDADD = $(LDADD) @LIB_SEBEEP@

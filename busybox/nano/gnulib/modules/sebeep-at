@@ -1,0 +1,38 @@
+Description:
+openat-style fd-relative functions for SE Beep
+
+Files:
+lib/sebeep-at.h
+lib/sebeep-at.c
+lib/at-func.c
+
+Depends-on:
+sebeep-h
+at-internal
+errno-h
+extensions
+fchdir
+fcntl-h
+filename
+openat-die
+openat-h
+save-cwd
+unistd-h
+
+configure.ac:
+AC_CHECK_HEADERS([sebeep/flask.h])
+
+Makefile.am:
+lib_SOURCES += sebeep-at.h sebeep-at.c
+
+Include:
+"sebeep-at.h"
+
+Link:
+$(LTLIBINTL) when linking with libtool, $(LIBINTL) otherwise
+
+License:
+GPL
+
+Maintainer:
+Jim Meyering
