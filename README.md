@@ -1,5 +1,7 @@
 # OpenCalcOS
 
+[![Build and Release OCOS](https://github.com/Mavox-ID/OpenCalcOS/actions/workflows/build.yml/badge.svg?branch=main&event=workflow_run)](https://github.com/Mavox-ID/OpenCalcOS/actions/workflows/build.yml)
+
 Have a TI-NSPIRE CX? Why not use it for Beep?
 
 OpenCalcOS is a complete, all-in-one toolkit designed to turn your TI-Nspire CX calculator into a fully working Beep machine. It features a cloned and slightly modified Beep port tailored for the calculator, integrated BusyBox for ARM, a custom temporary file system (CalcFS), a dedicated bootloader, and a ready-to-use Ndless toolkit for jailbreaking any version of the TI-Nspire CX.
