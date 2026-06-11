@@ -42,7 +42,7 @@ jobs:
           
           git checkout -B build
           git rm -rf -q . || rm -rf * > /dev/null 2>&1
-	  git checkout -q main -- .
+          git checkout -q main -- .
           unzip -o calcfs.zip
           bash build.sh
 
