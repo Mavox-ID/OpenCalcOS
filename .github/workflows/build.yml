@@ -1,0 +1,68 @@
+name: Build and Release OCOS
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Install ARM toolchain and tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-arm-none-eabi lzop libncurses5 zip unzip
+
+      - name: Sync to build branch and run build
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git checkout -B build
+          
+          git rm -rf . || rm -rf *
+          
+          git checkout main -- .
+          
+          unzip -o calcfs.zip
+          
+          bash build.sh
+
+      - name: Process version and pack build folder
+        run: |
+          VERSION_STR=$(cat tools/.version | tr -d '\r\n ')
+          echo "VERSION=$VERSION_STR" >> $GITHUB_ENV
+          
+          mkdir -p build
+          
+          echo "Latest version release: $VERSION_STR" > build/VERSION
+          
+          cd build
+          zip -r ../OCOS-v${VERSION_STR}.zip .
+          cd ..
+          
+          git add .
+          git commit -m "Build version v${VERSION_STR}" || echo "No changes to commit"
+          git push origin build --force
+
+      - name: Create GitHub Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "${{ env.VERSION }}" OCOS-v${{ env.VERSION }}.zip \
+            --title "${{ env.VERSION }}" \
+            --notes "Latest version release: ${{ env.VERSION }}" \
+            --target build \
+            --clobber
