@@ -33,7 +33,9 @@ jobs:
             libmpc-dev \
             texinfo \
             bison \
-            flex
+            flex \
+            libboost-program-options-dev \
+            zlib1g-dev
 
       - name: Sync to build branch and run build
         run: |

@@ -1,6 +1,7 @@
 # OpenCalcOS
 
-[![Build and Release OCOS](https://github.com/Mavox-ID/OpenCalcOS/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/Mavox-ID/OpenCalcOS/actions/workflows/build.yml)
+[![Build OCOS](https://github.com/Mavox-ID/OpenCalcOS/actions/workflows/build.yml/badge.svg?branch=main&event=workflow_run)](https://github.com/Mavox-ID/OpenCalcOS/actions/workflows/build.yml)
+[![Release OCOS](https://github.com/Mavox-ID/OpenCalcOS/actions/workflows/build.yml/badge.svg?branch=main&event=release)](https://github.com/Mavox-ID/OpenCalcOS/actions/workflows/build.yml)
 
 Have a TI-NSPIRE CX? Why not use it for Beep?
 
