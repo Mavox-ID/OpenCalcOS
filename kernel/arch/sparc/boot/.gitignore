@@ -1,8 +1,0 @@
-btfix.S
-btfixupprep
-image
-zImage
-tftpboot.img
-vmbeep.aout
-piggyback
-

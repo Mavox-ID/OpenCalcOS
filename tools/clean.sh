@@ -29,7 +29,7 @@ if [ -d "ndless/ncurses" ] && [ -f "ndless/ncurses/Makefile" ]; then
 fi
 
 echo -e "${YELLOW}Cleaning Kernel...${NC}"
-(cd kernel && make clean > /dev/null 2>&1 && rm -rf prog/build && rm -rf arch/arm/boot/Calc arch/arm/boot/zCalc arch/arm/boot/compressed/vmbeep && cd ..)
+(cd kernel && export ARCH=arm && export CROSS_COMPILE=arm-none-eabi- && make clean > /dev/null 2>&1 && rm -rf prog/build && rm -rf arch/arm/boot/Calc arch/arm/boot/zCalc arch/arm/boot/compressed/vmbeep && cd ..)
 
 echo -e "${YELLOW}Cleaning Busybox...${NC}"
 (cd busybox && make clean > /dev/null 2>&1 && cd ..)

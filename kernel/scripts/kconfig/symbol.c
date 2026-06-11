@@ -1012,7 +1012,7 @@ static void dep_stack_insert(struct dep_stack *stack, struct symbol *sym)
 		check_top->next = stack;
 	stack->prev = check_top;
 	stack->sym = sym;
-	check_top = stack;
+	check_top = (struct dep_stack *)stack;
 }
 
 static void dep_stack_remove(void)

@@ -19,13 +19,14 @@ GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 NC='\033[0m'
 set -e && cd ..
+export ARCH=arm
+export CROSS_COMPILE=arm-none-eabi-
 export PATH="$(pwd)/ndless/ndless-sdk/toolchain/install/bin:$PATH"
+export KCONFIG_NOSILENTUPDATE=1
+echo -e "${GREEN}Exported ARCH && CROSS${NC}"
 echo -e "${GREEN}Cleaning build...${NC}"
 cd kernel && make clean && rm -rf arch/arm/boot/Calc arch/arm/boot/zCalc arch/arm/boot/compressed/vmbeep
 echo -e "${GREEN}Building kernel...${NC}"
-export ARCH=arm
-export CROSS_COMPILE=arm-none-eabi-
-echo -e "${GREEN}Exported ARCH && CROSS${NC}"
 make -j"$(nproc)" KCFLAGS="-w" zCalc
 
 echo -e "${GREEN}Building progs...${NC}"

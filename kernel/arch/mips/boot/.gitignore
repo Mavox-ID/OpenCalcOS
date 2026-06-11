@@ -1,6 +1,0 @@
-mkboot
-elf2ecoff
-vmbeep.*
-zImage
-zImage.tmp
-calc_vmlinuz_load_addr

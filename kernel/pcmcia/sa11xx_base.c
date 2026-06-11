@@ -1,0 +1,254 @@
+/*
+    Mavox-ID | https://ye-a.pp.ua
+    Copyright (C) 2026  Mavox-ID
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+#include <beep/module.h>
+#include <beep/init.h>
+#include <beep/cpufreq.h>
+#include <beep/ioport.h>
+#include <beep/kernel.h>
+#include <beep/spinlock.h>
+#include <beep/io.h>
+#include <beep/slab.h>
+
+#include <mach/hardware.h>
+#include <asm/irq.h>
+
+#include "soc_common.h"
+#include "sa11xx_base.h"
+
+
+/*
+ * sa1100_pcmcia_default_mecr_timing
+ * ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *
+ * Calculate MECR clock wait states for given CPU clock
+ * speed and command wait state. This function can be over-
+ * written by a board specific version.
+ *
+ * The default is to simply calculate the BS values as specified in
+ * the INTEL SA1100 development manual
+ * "Expansion Memory (PCMCIA) Configuration Register (MECR)"
+ * that's section 10.2.5 in _my_ version of the manual ;)
+ */
+static unsigned int
+sa1100_pcmcia_default_mecr_timing(struct soc_pcmcia_socket *skt,
+				  unsigned int cpu_speed,
+				  unsigned int cmd_time)
+{
+	return sa1100_pcmcia_mecr_bs(cmd_time, cpu_speed);
+}
+
+/* sa1100_pcmcia_set_mecr()
+ * ^^^^^^^^^^^^^^^^^^^^^^^^
+ *
+ * set MECR value for socket <sock> based on this sockets
+ * io, mem and attribute space access speed.
+ * Call board specific BS value calculation to allow boards
+ * to tweak the BS values.
+ */
+static int
+sa1100_pcmcia_set_mecr(struct soc_pcmcia_socket *skt, unsigned int cpu_clock)
+{
+	struct soc_pcmcia_timing timing;
+	u32 mecr, old_mecr;
+	unsigned long flags;
+	unsigned int bs_io, bs_mem, bs_attr;
+
+	soc_common_pcmcia_get_timing(skt, &timing);
+
+	bs_io = skt->ops->get_timing(skt, cpu_clock, timing.io);
+	bs_mem = skt->ops->get_timing(skt, cpu_clock, timing.mem);
+	bs_attr = skt->ops->get_timing(skt, cpu_clock, timing.attr);
+
+	local_irq_save(flags);
+
+	old_mecr = mecr = MECR;
+	MECR_FAST_SET(mecr, skt->nr, 0);
+	MECR_BSIO_SET(mecr, skt->nr, bs_io);
+	MECR_BSA_SET(mecr, skt->nr, bs_attr);
+	MECR_BSM_SET(mecr, skt->nr, bs_mem);
+	if (old_mecr != mecr)
+		MECR = mecr;
+
+	local_irq_restore(flags);
+
+	debug(skt, 2, "FAST %X  BSM %X  BSA %X  BSIO %X\n",
+	      MECR_FAST_GET(mecr, skt->nr),
+	      MECR_BSM_GET(mecr, skt->nr), MECR_BSA_GET(mecr, skt->nr),
+	      MECR_BSIO_GET(mecr, skt->nr));
+
+	return 0;
+}
+
+#ifdef CONFIG_CPU_FREQ
+static int
+sa1100_pcmcia_frequency_change(struct soc_pcmcia_socket *skt,
+			       unsigned long val,
+			       struct cpufreq_freqs *freqs)
+{
+	switch (val) {
+	case CPUFREQ_PRECHANGE:
+		if (freqs->new > freqs->old)
+			sa1100_pcmcia_set_mecr(skt, freqs->new);
+		break;
+
+	case CPUFREQ_POSTCHANGE:
+		if (freqs->new < freqs->old)
+			sa1100_pcmcia_set_mecr(skt, freqs->new);
+		break;
+	case CPUFREQ_RESUMECHANGE:
+		sa1100_pcmcia_set_mecr(skt, freqs->new);
+		break;
+	}
+
+	return 0;
+}
+
+#endif
+
+static int
+sa1100_pcmcia_set_timing(struct soc_pcmcia_socket *skt)
+{
+	return sa1100_pcmcia_set_mecr(skt, cpufreq_get(0));
+}
+
+static int
+sa1100_pcmcia_show_timing(struct soc_pcmcia_socket *skt, char *buf)
+{
+	struct soc_pcmcia_timing timing;
+	unsigned int clock = cpufreq_get(0);
+	unsigned long mecr = MECR;
+	char *p = buf;
+
+	soc_common_pcmcia_get_timing(skt, &timing);
+
+	p+=sprintf(p, "I/O      : %u (%u)\n", timing.io,
+		   sa1100_pcmcia_cmd_time(clock, MECR_BSIO_GET(mecr, skt->nr)));
+
+	p+=sprintf(p, "attribute: %u (%u)\n", timing.attr,
+		   sa1100_pcmcia_cmd_time(clock, MECR_BSA_GET(mecr, skt->nr)));
+
+	p+=sprintf(p, "common   : %u (%u)\n", timing.mem,
+		   sa1100_pcmcia_cmd_time(clock, MECR_BSM_GET(mecr, skt->nr)));
+
+	return p - buf;
+}
+
+static const char *skt_names[] = {
+	"PCMCIA socket 0",
+	"PCMCIA socket 1",
+};
+
+#define SKT_DEV_INFO_SIZE(n) \
+	(sizeof(struct skt_dev_info) + (n)*sizeof(struct soc_pcmcia_socket))
+
+int sa11xx_drv_pcmcia_add_one(struct soc_pcmcia_socket *skt)
+{
+	skt->res_skt.start = _PCMCIA(skt->nr);
+	skt->res_skt.end = _PCMCIA(skt->nr) + PCMCIASp - 1;
+	skt->res_skt.name = skt_names[skt->nr];
+	skt->res_skt.flags = IORESOURCE_MEM;
+
+	skt->res_io.start = _PCMCIAIO(skt->nr);
+	skt->res_io.end = _PCMCIAIO(skt->nr) + PCMCIAIOSp - 1;
+	skt->res_io.name = "io";
+	skt->res_io.flags = IORESOURCE_MEM | IORESOURCE_BUSY;
+
+	skt->res_mem.start = _PCMCIAMem(skt->nr);
+	skt->res_mem.end = _PCMCIAMem(skt->nr) + PCMCIAMemSp - 1;
+	skt->res_mem.name = "memory";
+	skt->res_mem.flags = IORESOURCE_MEM;
+
+	skt->res_attr.start = _PCMCIAAttr(skt->nr);
+	skt->res_attr.end = _PCMCIAAttr(skt->nr) + PCMCIAAttrSp - 1;
+	skt->res_attr.name = "attribute";
+	skt->res_attr.flags = IORESOURCE_MEM;
+
+	return soc_pcmcia_add_one(skt);
+}
+EXPORT_SYMBOL(sa11xx_drv_pcmcia_add_one);
+
+void sa11xx_drv_pcmcia_ops(struct pcmcia_low_level *ops)
+{
+	/*
+	 * set default MECR calculation if the board specific
+	 * code did not specify one...
+	 */
+	if (!ops->get_timing)
+		ops->get_timing = sa1100_pcmcia_default_mecr_timing;
+
+	/* Provide our SA11x0 specific timing routines. */
+	ops->set_timing  = sa1100_pcmcia_set_timing;
+	ops->show_timing = sa1100_pcmcia_show_timing;
+#ifdef CONFIG_CPU_FREQ
+	ops->frequency_change = sa1100_pcmcia_frequency_change;
+#endif
+}
+EXPORT_SYMBOL(sa11xx_drv_pcmcia_ops);
+
+int sa11xx_drv_pcmcia_probe(struct device *dev, struct pcmcia_low_level *ops,
+			    int first, int nr)
+{
+	struct skt_dev_info *sinfo;
+	struct soc_pcmcia_socket *skt;
+	int i, ret = 0;
+
+	sa11xx_drv_pcmcia_ops(ops);
+
+	sinfo = kzalloc(SKT_DEV_INFO_SIZE(nr), GFP_KERNEL);
+	if (!sinfo)
+		return -ENOMEM;
+
+	sinfo->nskt = nr;
+
+	/* Initialize processor specific parameters */
+	for (i = 0; i < nr; i++) {
+		skt = &sinfo->skt[i];
+
+		skt->nr = first + i;
+		soc_pcmcia_init_one(skt, ops, dev);
+
+		ret = sa11xx_drv_pcmcia_add_one(skt);
+		if (ret)
+			break;
+	}
+
+	if (ret) {
+		while (--i >= 0)
+			soc_pcmcia_remove_one(&sinfo->skt[i]);
+		kfree(sinfo);
+	} else {
+		dev_set_drvdata(dev, sinfo);
+	}
+
+	return ret;
+}
+EXPORT_SYMBOL(sa11xx_drv_pcmcia_probe);
+
+static int __init sa11xx_pcmcia_init(void)
+{
+	return 0;
+}
+fs_initcall(sa11xx_pcmcia_init);
+
+static void __exit sa11xx_pcmcia_exit(void) {}
+
+module_exit(sa11xx_pcmcia_exit);
+
+MODULE_AUTHOR("John Dorsey <john+@cs.cmu.edu>");
+MODULE_DESCRIPTION("Beep PCMCIA Card Services: SA-11xx core socket driver");
+MODULE_LICENSE("Dual MPL/GPL");

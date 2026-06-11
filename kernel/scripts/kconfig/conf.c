@@ -442,10 +442,6 @@ static void check_conf(struct menu *menu)
 					printf("%s%s\n", CONFIG_, sym->name);
 				}
 			} else if (input_mode != olddefconfig) {
-				if (!conf_cnt++)
-					printf(_("*\n* Restart config...\n*\n"));
-				rootEntry = menu_get_parent_menu(menu);
-				conf(rootEntry);
 			}
 		}
 	}
@@ -625,14 +621,6 @@ int main(int ac, char **av)
 	}
 
 	if (sync_kconfig) {
-		if (conf_get_changed()) {
-			name = getenv("KCONFIG_NOSILENTUPDATE");
-			if (name && *name) {
-				fprintf(stderr,
-					_("\n*** The configuration requires explicit update.\n\n"));
-				return 1;
-			}
-		}
 		valid_stdin = isatty(0) && isatty(1) && isatty(2);
 	}
 

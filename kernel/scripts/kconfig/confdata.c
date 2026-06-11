@@ -758,7 +758,7 @@ int conf_write(const char *name)
 			strcpy(dirname, name);
 			strcat(dirname, "/");
 			basename = conf_get_configname();
-		} else if ((slash = strrchr(name, '/'))) {
+		} else if ((slash = (char *)strrchr(name, '/'))) {
 			int size = slash - name + 1;
 			memcpy(dirname, name, size);
 			dirname[size] = 0;

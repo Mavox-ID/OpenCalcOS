@@ -517,7 +517,6 @@ scripts: scripts_basic include/config/auto.conf include/config/tristate.conf
 # Objects we will link into vmbeep / subdirs we need to visit
 init-y		:= init/
 drivers-y	:= drivers/ sound/ firmware/
-net-y		:= net/
 libs-y		:= lib/
 core-y		:= usr/
 endif # KBUILD_EXTMOD
@@ -733,24 +732,23 @@ core-y		+= kernel/ mm/ fs/ ipc/ security/ crypto/ block/
 
 vmbeep-dirs	:= $(patsubst %/,%,$(filter %/, $(init-y) $(init-m) \
 		     $(core-y) $(core-m) $(drivers-y) $(drivers-m) \
-		     $(net-y) $(net-m) $(libs-y) $(libs-m)))
+		     $(libs-y) $(libs-m)))
 
 vmbeep-alldirs	:= $(sort $(vmbeep-dirs) $(patsubst %/,%,$(filter %/, \
 		     $(init-n) $(init-) \
 		     $(core-n) $(core-) $(drivers-n) $(drivers-) \
-		     $(net-n)  $(net-)  $(libs-n)    $(libs-))))
+		     $(libs-n)    $(libs-))))
 
 init-y		:= $(patsubst %/, %/built-in.o, $(init-y))
 core-y		:= $(patsubst %/, %/built-in.o, $(core-y))
 drivers-y	:= $(patsubst %/, %/built-in.o, $(drivers-y))
-net-y		:= $(patsubst %/, %/built-in.o, $(net-y))
 libs-y1		:= $(patsubst %/, %/lib.a, $(libs-y))
 libs-y2		:= $(patsubst %/, %/built-in.o, $(libs-y))
 libs-y		:= $(libs-y1) $(libs-y2)
 
 # Externally visible symbols (used by link-vmbeep.sh)
 export KBUILD_VMBEEP_INIT := $(head-y) $(init-y)
-export KBUILD_VMBEEP_MAIN := $(core-y) $(libs-y) $(drivers-y) $(net-y)
+export KBUILD_VMBEEP_MAIN := $(core-y) $(libs-y) $(drivers-y)
 export KBUILD_LDS          := arch/$(SRCARCH)/kernel/vmbeep.lds
 export LDFLAGS_vmbeep
 
@@ -765,9 +763,6 @@ quiet_cmd_link-vmbeep = LINK    $@
 vmbeep: scripts/link-vmbeep.sh $(vmbeep-deps) FORCE
 ifdef CONFIG_HEADERS_CHECK
 	$(Q)$(MAKE) -f $(srctree)/Makefile headers_check
-endif
-ifdef CONFIG_SAMPLES
-	$(Q)$(MAKE) $(build)=samples
 endif
 ifdef CONFIG_BUILD_DOCSRC
 endif
@@ -1022,7 +1017,7 @@ MRPROPER_FILES += .config .config.old .version .old_version $(version_h) \
 #
 clean: rm-dirs  := $(CLEAN_DIRS)
 clean: rm-files := $(CLEAN_FILES)
-clean-dirs      := $(addprefix _clean_, . $(vmbeep-alldirs) samples)
+clean-dirs      := $(addprefix _clean_, . $(vmbeep-alldirs))
 
 PHONY += $(clean-dirs) clean archclean vmbeepclean
 $(clean-dirs):
