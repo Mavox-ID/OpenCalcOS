@@ -41,13 +41,9 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
           git checkout -B build
-          
-          git rm -rf . || rm -rf *
-          
-          git checkout main -- .
-          
+          git rm -rf -q . || rm -rf * > /dev/null 2>&1
+	  git checkout -q main -- .
           unzip -o calcfs.zip
-          
           bash build.sh
 
       - name: Process version and pack build folder
@@ -56,7 +52,6 @@ jobs:
           echo "VERSION=$VERSION_STR" >> $GITHUB_ENV
           
           mkdir -p build
-          
           echo "Latest version release: $VERSION_STR" > build/VERSION
           
           cd build
@@ -64,6 +59,9 @@ jobs:
           cd ..
           
           git add .
+          git add -f build/
+          git add -f OCOS-v${VERSION_STR}.zip
+          
           git commit -m "Build version v${VERSION_STR}" || echo "No changes to commit"
           git push origin build --force
 
