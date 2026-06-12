@@ -54,16 +54,22 @@ jobs:
           git checkout -q main -- .
           unzip -o calcfs.zip
 
-      - name: Cache Ndless Toolchain
-        id: cache-toolchain
-        uses: actions/cache@v4
-        with:
-          path: ndless/ndless-sdk/toolchain
-          key: ${{ runner.os }}-ndless-toolchain-v1
+      - name: Restore Ndless Toolchain Cache
+          id: cache-toolchain
+          uses: actions/cache/restore@v4
+          with:
+            path: ndless/ndless-sdk/toolchain/install
+            key: Linux-ndless-toolchain-v1
 
-      - name: Run build
-        run: |
-          bash build.sh
+      - name: Build OpenCalcOS
+          run: bash build.sh
+
+      - name: Save Ndless Toolchain Cache
+          if: always() && steps.cache-toolchain.outputs.cache-hit != 'true'
+          uses: actions/cache/save@v4
+          with:
+            path: ndless/ndless-sdk/toolchain/install
+            key: Linux-ndless-toolchain-v1
 
       - name: Process version and pack build folder
         run: |
