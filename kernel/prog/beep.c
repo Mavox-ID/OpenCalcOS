@@ -16,46 +16,37 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 #include <stdio.h>
-#include <stdlib.h>
 #include <fcntl.h>
 #include <unistd.h>
 
-int main(void) {
-    FILE *f_in = fopen("/data/Beep.raw", "rb");
-    if (!f_in) {
-        printf("Error: Cannot open /data/Beep.raw\n");
-        return 1;
-    }
+__asm__(
+    ".section .rodata\n"
+    ".global beep_raw_start\n"
+    "beep_raw_start:\n"
+    ".incbin \"Beep.raw\"\n"
+    "beep_raw_end:\n"
+);
 
+extern const char beep_raw_start[];
+
+int main(void) {
     int fb = open("/dev/fb0", O_WRONLY);
     if (fb < 0) {
         printf("Error: Cannot open /dev/fb0\n");
-        fclose(f_in);
         return 1;
     }
 
-    size_t screensize = 320 * 240 * 2;
-    
-    char *buffer = malloc(screensize);
-    if (!buffer) {
-        printf("Error: Memory allocation failed\n");
-        close(fb);
-        fclose(f_in);
-        return 1;
-    }
+    printf("\e[?25l");
+    fflush(stdout);
 
-    size_t read_bytes = fread(buffer, 1, screensize, f_in);
-    
-    if (read_bytes > 0) {
-        write(fb, buffer, read_bytes);
-    }
+    size_t screensize = 320 * 240 * 2; // 153600b
+    lseek(fb, 0, SEEK_SET);
+    write(fb, beep_raw_start, screensize);
 
-    free(buffer);
-    fclose(f_in);
     close(fb);
-
     getchar();
+    printf("\e[?25h");
+    fflush(stdout);
 
     return 0;
 }
-

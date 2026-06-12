@@ -33,7 +33,7 @@ arm-beep-gnueabi-gcc -Os -marm prog/beep.c -o prog/build/beep \
     -Wl,-dynamic-linker=/libs/ld-beep-armhf.so.3 -Wl,-rpath,/libs
 arm-beep-gnueabi-strip --strip-all prog/build/beep
 cp prog/build/beep ../calcfs/bin/beep
-cp prog/Beep.raw ../calcfs/data/Beep.raw
+chmod +x ../calcfs/bin/beep
 echo -e "${GREEN}Done beep programm in${NC} ${YELLOW}calcfs/bin/beep${NC}"
 
 echo -e "${YELLOW}Starting Calc...${NC}"
@@ -43,6 +43,7 @@ prog/calc.c -o prog/build/calc \
 -Wl,-dynamic-linker=/libs/ld-beep-armhf.so.3 -Wl,-rpath,/libs
 arm-beep-gnueabi-strip --strip-all prog/build/calc
 cp prog/build/calc ../calcfs/bin/calc
+chmod +x ../calcfs/bin/calc
 echo -e "${GREEN}Done calc programm in${NC} ${YELLOW}calcfs/bin/calc${NC}"
 
 echo -e "${YELLOW}Starting Pipes...${NC}"
