@@ -1,7 +1,9 @@
 # OpenCalcOS
 
-[![Build OCOS](https://github.com/Mavox-ID/OpenCalcOS/actions/workflows/build.yml/badge.svg?branch=main&event=workflow_run)](https://github.com/Mavox-ID/OpenCalcOS/actions/workflows/build.yml)
-[![Release OCOS](https://github.com/Mavox-ID/OpenCalcOS/actions/workflows/build.yml/badge.svg?branch=main&event=release)](https://github.com/Mavox-ID/OpenCalcOS/actions/workflows/build.yml)
+[![Build OCOS](https://github.com/Mavox-ID/OpenCalcOS/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/Mavox-ID/OpenCalcOS/actions/workflows/build.yml)
+[![Latest Release](https://img.shields.io/github/v/release/Mavox-ID/OpenCalcOS?color=blue)](https://github.com/Mavox-ID/OpenCalcOS/releases)
+[![Downloads](https://img.shields.io/github/downloads/Mavox-ID/OpenCalcOS/total?color=brightgreen)](https://github.com/Mavox-ID/OpenCalcOS/releases)
+[![Repo Size](https://img.shields.io/github/repo-size/Mavox-ID/OpenCalcOS?color=orange)](https://github.com/Mavox-ID/OpenCalcOS)
 
 Have a TI-NSPIRE CX? Why not use it for Beep?
 
