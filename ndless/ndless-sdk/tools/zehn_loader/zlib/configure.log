@@ -15136,3 +15136,177 @@ uname = eabi
 --------------------
 
 
+--------------------
+../../../thirdparty/zlib/configure --static
+Fri Jun 12 19:07:41 UTC 2026
+Using arm-none-eabi-ar
+Using arm-none-eabi-ranlib
+Using arm-none-eabi-nm
+=== ztest8212.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+nspire-gcc -c ztest8212.c
+... using gcc
+
+Checking for obsessive-compulsive compiler options...
+=== ztest8212.c ===
+int foo() { return 0; }
+===
+nspire-gcc -c -Os -fPIE -ffunction-sections -fdata-sections -DNO_GZIP -ffreestanding -c ztest8212.c
+
+Building static library libz.a version 1.2.11 with nspire-gcc.
+
+=== ztest8212.c ===
+#include <stdio.h>
+#include <stdlib.h>
+size_t dummy = 0;
+===
+nspire-gcc -c -Os -fPIE -ffunction-sections -fdata-sections -DNO_GZIP -ffreestanding -c ztest8212.c
+Checking for size_t... Yes.
+
+
+=== ztest8212.c ===
+#include <sys/types.h>
+off64_t dummy = 0;
+===
+nspire-gcc -c -Os -fPIE -ffunction-sections -fdata-sections -DNO_GZIP -ffreestanding -c -D_LARGEFILE64_SOURCE=1 ztest8212.c
+ztest8212.c:2:1: error: unknown type name ‘off64_t’; did you mean ‘_off64_t’?
+    2 | off64_t dummy = 0;
+      | ^~~~~~~
+      | _off64_t
+(exit code 1)
+Checking for off64_t... No.
+
+=== ztest8212.c ===
+#include <stdio.h>
+int main(void) {
+  fseeko(NULL, 0, 0);
+  return 0;
+}
+===
+nspire-gcc -Os -fPIE -ffunction-sections -fdata-sections -DNO_GZIP -ffreestanding -c -o ztest8212 ztest8212.c
+Checking for fseeko... Yes.
+
+=== ztest8212.c ===
+#include <string.h>
+#include <errno.h>
+int main() { return strlen(strerror(errno)); }
+===
+nspire-gcc -Os -fPIE -ffunction-sections -fdata-sections -DNO_GZIP -ffreestanding -c -o ztest8212 ztest8212.c
+Checking for strerror... Yes.
+
+=== ztest8212.c ===
+#include <unistd.h>
+int main() { return 0; }
+===
+nspire-gcc -c -Os -fPIE -ffunction-sections -fdata-sections -DNO_GZIP -ffreestanding -c ztest8212.c
+Checking for unistd.h... Yes.
+
+=== ztest8212.c ===
+#include <stdarg.h>
+int main() { return 0; }
+===
+nspire-gcc -c -Os -fPIE -ffunction-sections -fdata-sections -DNO_GZIP -ffreestanding -c ztest8212.c
+Checking for stdarg.h... Yes.
+
+=== ztest8212.c ===
+#include <stdio.h>
+#include <stdarg.h>
+#include "zconf.h"
+int main()
+{
+#ifndef STDC
+  choke me
+#endif
+  return 0;
+}
+===
+nspire-gcc -c -Os -fPIE -ffunction-sections -fdata-sections -DNO_GZIP -ffreestanding -c ztest8212.c
+Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
+
+=== ztest8212.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return 0;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+nspire-gcc -Os -fPIE -ffunction-sections -fdata-sections -DNO_GZIP -ffreestanding -c -o ztest8212 ztest8212.c
+Checking for vsnprintf() in stdio.h... Yes.
+
+=== ztest8212.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  int n;
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  n = vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return n;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+nspire-gcc -c -Os -fPIE -ffunction-sections -fdata-sections -DNO_GZIP -ffreestanding -c ztest8212.c
+Checking for return value of vsnprintf()... Yes.
+
+=== ztest8212.c ===
+#define ZLIB_INTERNAL __attribute__((visibility ("hidden")))
+int ZLIB_INTERNAL foo;
+int main()
+{
+  return 0;
+}
+===
+nspire-gcc -c -Os -fPIE -ffunction-sections -fdata-sections -DNO_GZIP -ffreestanding -c ztest8212.c
+Checking for attribute(visibility) support... Yes.
+
+ALL = static
+AR = arm-none-eabi-ar
+ARFLAGS = rc
+CC = nspire-gcc
+CFLAGS = -Os -fPIE -ffunction-sections -fdata-sections -DNO_GZIP -ffreestanding -c -DHAVE_HIDDEN
+CPP = nspire-gcc -E
+EXE =
+LDCONFIG = ldconfig
+LDFLAGS =
+LDSHARED = nspire-gcc
+LDSHAREDLIBC = -lc
+OBJC = $(OBJZ) $(OBJG)
+PIC_OBJC = $(PIC_OBJZ) $(PIC_OBJG)
+RANLIB = arm-none-eabi-ranlib
+SFLAGS = -Os -fPIE -ffunction-sections -fdata-sections -DNO_GZIP -ffreestanding -c -fPIC -DHAVE_HIDDEN
+SHAREDLIB =
+SHAREDLIBM =
+SHAREDLIBV =
+STATICLIB = libz.a
+TEST = all teststatic
+VER = 1.2.11
+Z_U4 =
+SRCDIR = ../../../thirdparty/zlib/
+exec_prefix = ${prefix}
+includedir = ${prefix}/include
+libdir = ${exec_prefix}/lib
+mandir = ${prefix}/share/man
+prefix = /usr/local
+sharedlibdir = ${libdir}
+uname = eabi
+--------------------
+
+
