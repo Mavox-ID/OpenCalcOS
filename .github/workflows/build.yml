@@ -96,8 +96,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release create "${{ env.VERSION }}" OCOS-v${{ env.VERSION }}.zip \
+          gh release create "${{ env.VERSION }}" "OCOS-v${{ env.VERSION }}.zip" \
             --title "${{ env.VERSION }}" \
             --notes "Latest version release: ${{ env.VERSION }}" \
             --target build \
-            --clobber
+            || gh release upload "${{ env.VERSION }}" "OCOS-v${{ env.VERSION }}.zip" --clobber
