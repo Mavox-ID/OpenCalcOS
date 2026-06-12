@@ -21,7 +21,7 @@ GREEN='\033[0;32m'
 NC='\033[0m'
 cd ..
 echo -e "${YELLOW}Cleaning Ndless...${NC}"
-(cd ndless && make clean > /dev/null 2>&1 && cd ndless && make clean > /dev/null 2>&1 && cd calcbin && rm -rf * && cd ../../ndless-sdk && make clean > /dev/null 2>&1 && cd ../..)
+(cd ndless && make clean > /dev/null 2>&1 && cd ndless && make clean > /dev/null 2>&1 && cd ../ndless-sdk && make clean > /dev/null 2>&1 && cd ../..)
 
 echo -e "${YELLOW}Cleaning Ncurses...${NC}"
 if [ -d "ndless/ncurses" ] && [ -f "ndless/ncurses/Makefile" ]; then
