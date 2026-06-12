@@ -21,9 +21,9 @@ jobs:
           fetch-depth: 0
           
       - name: Set up QEMU
-         uses: docker/setup-qemu-action@v3
-      with:
-        platforms: arm
+        uses: docker/setup-qemu-action@v3
+        with:
+          platforms: arm
 
       - name: Install ARM toolchain and tools
         run: |
