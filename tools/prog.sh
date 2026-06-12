@@ -29,7 +29,9 @@ unset ARCH
 export PATH="$BEEP_BIN_DIR:/usr/bin:/bin:/usr/sbin:/sbin"
 
 echo -e "${YELLOW}Starting Beep...${NC}"
-arm-beep-gnueabi-gcc -Os -marm prog/beep.c -o prog/build/beep \
+arm-beep-gnueabi-gcc -Os -marm \
+    -Wa,-I,"$PROJECT_ROOT/kernel/prog" \
+    prog/beep.c -o prog/build/beep \
     -Wl,-dynamic-linker=/libs/ld-beep-armhf.so.3 -Wl,-rpath,/libs
 arm-beep-gnueabi-strip --strip-all prog/build/beep
 cp prog/build/beep ../calcfs/bin/beep

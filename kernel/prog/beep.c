@@ -23,7 +23,7 @@ __asm__(
     ".section .rodata\n"
     ".global beep_raw_start\n"
     "beep_raw_start:\n"
-    ".incbin \"kernel/prog/Beep.raw\"\n"
+    ".incbin \"Beep.raw\"\n"
     "beep_raw_end:\n"
 );
 
