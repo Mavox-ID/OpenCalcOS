@@ -38,8 +38,10 @@ cd ../calcfs/bin && ./busybox --install -s . && cd ../..
 echo -e "\033[1;33mBuilding nano...\033[0m"
 (
     cd busybox/nano
-    if [ ! -f configure ]; then
+    if [ -f autogen.sh ]; then
         ./autogen.sh
+    else
+        autoreconf -vfi
     fi
     export PATH="$PROJECT_ROOT/.local_bin:$PATH"
     
