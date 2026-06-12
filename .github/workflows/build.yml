@@ -25,7 +25,7 @@ jobs:
         with:
           platforms: arm
 
-      - name: Install ARM toolchain and tools
+- name: Install ARM toolchain and tools
         run: |
           sudo apt-get update
           sudo apt-get install -y \
@@ -55,21 +55,21 @@ jobs:
           unzip -o calcfs.zip
 
       - name: Restore Ndless Toolchain Cache
-          id: cache-toolchain
-          uses: actions/cache/restore@v4
-          with:
-            path: ndless/ndless-sdk/toolchain/install
-            key: Linux-ndless-toolchain-v1
+        id: cache-toolchain
+        uses: actions/cache/restore@v4
+        with:
+          path: ndless/ndless-sdk/toolchain/install
+          key: Linux-ndless-toolchain-v1
 
       - name: Build OpenCalcOS
-          run: bash build.sh
+        run: bash build.sh
 
       - name: Save Ndless Toolchain Cache
-          if: always() && steps.cache-toolchain.outputs.cache-hit != 'true'
-          uses: actions/cache/save@v4
-          with:
-            path: ndless/ndless-sdk/toolchain/install
-            key: Linux-ndless-toolchain-v1
+        if: always() && steps.cache-toolchain.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: ndless/ndless-sdk/toolchain/install
+          key: Linux-ndless-toolchain-v1
 
       - name: Process version and pack build folder
         run: |
