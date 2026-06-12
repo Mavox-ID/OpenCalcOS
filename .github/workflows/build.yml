@@ -36,6 +36,7 @@ jobs:
             autoconf \
             automake \
             gettext \
+            autopoint \
             libgmp-dev \
             libmpfr-dev \
             libmpc-dev \
