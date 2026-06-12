@@ -1,7 +1,7 @@
 # OpenCalcOS
 
-[![Build OCOS](https://github.com/Mavox-ID/OpenCalcOS/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/Mavox-ID/OpenCalcOS/actions/workflows/build.yml)
-[![Latest Release](https://img.shields.io/github/v/release/Mavox-ID/OpenCalcOS?color=blue)](https://github.com/Mavox-ID/OpenCalcOS/releases)
+[![Build OCOS](https://img.shields.io/github/actions/workflow/status/Mavox-ID/OpenCalcOS/build.yml?branch=main&label=Build%20OCOS)](https://github.com/Mavox-ID/OpenCalcOS/actions/workflows/build.yml)
+[![Latest Release](https://img.shields.io/github/v/release/Mavox-ID/OpenCalcOS?color=blue&include_prereleases)](https://github.com/Mavox-ID/OpenCalcOS/releases)
 [![Downloads](https://img.shields.io/github/downloads/Mavox-ID/OpenCalcOS/total?color=brightgreen)](https://github.com/Mavox-ID/OpenCalcOS/releases)
 [![Repo Size](https://img.shields.io/github/repo-size/Mavox-ID/OpenCalcOS?color=orange)](https://github.com/Mavox-ID/OpenCalcOS)
 
