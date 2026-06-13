@@ -1,0 +1,38 @@
+name: "Info: Repository Analytics"
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  calculate-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Show Disk Usage and File Counts
+        run: |
+          echo "======================================================="
+          echo "           Total weight of the repository              "
+          echo "======================================================="
+          du -sh .
+          
+          echo -e "\n=== Weight of key directories ==="
+          du -sh kernel loader tools busybox ndless calcfs.zip 2>/dev/null || true
+          
+          echo "======================================================="
+          echo "                   File Statistics                     "
+          echo "======================================================="
+          echo "C source files (*.c): $(find . -name "*.c" | wc -l)"
+          echo "C++ files (*.cpp): $(find . -name "*.cpp" | wc -l)"
+          echo "Assembler files (*.asm/*.s): $(find . -name "*.asm" -o -name "*.s" | wc -l)"
+          echo "Bash scripts (*.sh): $(find . -name "*.sh" | wc -l)"
+          echo "Header files (*.h): $(find . -name "*.h" | wc -l)"
+          
+          echo "=========================================================="
+          echo "                Number of lines of code                   "
+          echo "=========================================================="
+          find . -type f \( -name "*.c" -o -name "*.h" -o -name "*.asm" -o -name "*.s" \) -not -path "*/ndless/*" -not -path "*/busybox/*" | xargs wc -l || true
