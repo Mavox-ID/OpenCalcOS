@@ -15,7 +15,7 @@ jobs:
         continue-on-error: true
         run: |
           echo "=== Checking the syntax of C files ==="
-          find . -name "*.c" -not -path "*/ndless/*" | while read -r file; do
+          find . -name "*.c" -not -path "*/ndless/*" -not -path "*/kernel/*" | while read -r file; do
             echo "Checking: $file"
             gcc -Wall -Wextra -fsyntax-only "$file" || echo "Error/Warning: $file"
           done

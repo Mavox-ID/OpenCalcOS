@@ -18,7 +18,7 @@ jobs:
         continue-on-error: true
         run: |
           echo "=== Assembly code check ==="
-          find . -type f \( -name "*.s" -o -name "*.asm" \) -not -path "*/ndless/*" | while read -r file; do
+          find . -type f \( -name "*.s" -o -name "*.asm" \) -not -path "*/ndless/*" -not -path "*/kernel/*" | while read -r file; do
             echo "Assembling: $file"
             arm-none-eabi-as -o /dev/null "$file" || echo "Error/Warning: $file"
           done

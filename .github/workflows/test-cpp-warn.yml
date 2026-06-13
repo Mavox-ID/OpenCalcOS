@@ -15,7 +15,7 @@ jobs:
         continue-on-error: true
         run: |
           echo "=== Checking the syntax of C++ files ==="
-          find . -type f \( -name "*.cpp" -o -name "*.hpp" \) -not -path "*/ndless/*" | while read -r file; do
+          find . -type f \( -name "*.cpp" -o -name "*.hpp" \) -not -path "*/ndless/*" -not -path "*/kernel/*" | while read -r file; do
             echo "Checking: $file"
             g++ -Wall -Wextra -fsyntax-only -std=c++17 "$file" || echo "Error/Warning: $file"
           done

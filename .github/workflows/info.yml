@@ -33,6 +33,17 @@ jobs:
           echo "Header files (*.h): $(find . -name "*.h" | wc -l)"
           
           echo "=========================================================="
-          echo "                Number of lines of code                   "
+          echo "                 Number of lines of code                  "
           echo "=========================================================="
-          find . -type f \( -name "*.c" -o -name "*.h" -o -name "*.asm" -o -name "*.s" \) -not -path "*/ndless/*" -not -path "*/busybox/*" | xargs wc -l || true
+          
+          FILES=$(find . -type f \( -name "*.c" -o -name "*.h" -o -name "*.asm" -o -name "*.s" \) -not -path "*/ndless/*" -not -path "*/busybox/*")
+          
+          TOTAL_LINES=$(cat $FILES 2>/dev/null | wc -l)
+          
+          CLEAN_LINES=$(cat $FILES 2>/dev/null | grep -v '^[[:space:]]*//' | grep -v '^[[:space:]]*/\*' | grep -v '^[[:space:]]*\*' | grep -v '^[[:space:]]*$' | wc -l)
+          
+          echo "Total lines (with comments/blanks): $TOTAL_LINES"
+          echo "Lines of pure code (no comments):   $CLEAN_LINES"
+          echo "=========================================================="
+          
+          echo "$FILES" | xargs wc -l || true
