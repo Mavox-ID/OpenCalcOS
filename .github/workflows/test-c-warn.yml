@@ -1,0 +1,21 @@
+name: "Test C Code Quality"
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  check-c:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Scan and Check C Files
+        continue-on-error: true
+        run: |
+          echo "=== Checking the syntax of C files ==="
+          find . -name "*.c" -not -path "*/ndless/*" | while read -r file; do
+            echo "Checking: $file"
+            gcc -Wall -Wextra -fsyntax-only "$file" || echo "Error/Warning: $file"
+          done
