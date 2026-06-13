@@ -1,0 +1,24 @@
+name: "Test ASM Syntax"
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  check-asm:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install ARM Toolchain
+        run: sudo apt-get update && sudo apt-get install -y gcc-arm-none-eabi
+
+      - name: Check Assembly Files
+        continue-on-error: true
+        run: |
+          echo "=== Assembly code check ==="
+          find . -type f \( -name "*.s" -o -name "*.asm" \) -not -path "*/ndless/*" | while read -r file; do
+            echo "Assembling: $file"
+            arm-none-eabi-as -o /dev/null "$file" || echo "Error/Warning: $file"
+          done
