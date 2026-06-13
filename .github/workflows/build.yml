@@ -4,6 +4,15 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'build.sh'
+      - 'calcfs.zip'
+      - '.github/workflows/build.yml'
+      - 'busybox/**'
+      - 'kernel/**'
+      - 'loader/**'
+      - 'ndless/**'
+      - 'tools/**'
 
 permissions:
   contents: write
@@ -61,7 +70,7 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: ndless/ndless-sdk/toolchain/install
-          key: Linux-ndless-toolchain-v1
+          key: Linux-ndless-toolchain-${{ hashFiles('ndless/ndless-sdk/toolchain/**', '!ndless/ndless-sdk/toolchain/install/**') }}
 
       - name: Build OpenCalcOS
         run: bash build.sh
@@ -71,7 +80,7 @@ jobs:
         uses: actions/cache/save@v4
         with:
           path: ndless/ndless-sdk/toolchain/install
-          key: Linux-ndless-toolchain-v1
+          key: Linux-ndless-toolchain-${{ hashFiles('ndless/ndless-sdk/toolchain/**', '!ndless/ndless-sdk/toolchain/install/**') }}
 
       - name: Process version and pack build folder
         run: |
