@@ -33,7 +33,14 @@ make -j"$(nproc)" CROSS_COMPILE=arm-beep-gnueabi- \
     CONFIG_EXTRA_LDFLAGS="-Wl,--no-warnings"
 
 cp busybox ../calcfs/bin/busybox
-cd ../calcfs/bin && ./busybox --install -s . && cd ../..
+cd ../calcfs/bin
+./busybox --install -s .
+for f in *; do
+    if [ -L "$f" ] && [ "$f" != "busybox" ]; then
+        ln -sf busybox "$f"
+    fi
+done
+cd ../..
 
 echo -e "\033[1;33mBuilding nano...\033[0m"
 (
