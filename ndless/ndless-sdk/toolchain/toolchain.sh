@@ -76,7 +76,7 @@ archivesAndExtract() {
 # Section 1: GNU Binutils.
 if [ "$(cat .built_binutils 2>/dev/null)" != "${BINUTILS}" ]; then
 	if [ ! -d "archives/${BINUTILS}" ]; then
-		echo "Using Binutils..."
+		echo "Using archive: Binutils..."
 		archivesAndExtract https://ftpmirror.gnu.org/gnu/binutils/${BINUTILS}.tar.bz2
 	fi
 
@@ -93,7 +93,7 @@ fi
 # Section 2: GCC, step 1.
 if [ "$(cat .built_gcc_step1 2>/dev/null)" != "${GCC}" ]; then
 	if [ ! -d "archives/${GCC}" ]; then
-		echo "Using GCC..."
+		echo "Using archive: GCC..."
 		archivesAndExtract https://ftpmirror.gnu.org/gnu/gcc/${GCC}/${GCC}.tar.xz
 	fi
 
@@ -101,7 +101,7 @@ if [ "$(cat .built_gcc_step1 2>/dev/null)" != "${GCC}" ]; then
 	# While this shouldn't be necessary, it doesn't load the libc provided limits.h
 	# from the gcc generated include-fixed/limits.h otherwise...
 	if [ ! -d "archives/${NEWLIB}" ]; then
-		echo "Using Newlib..."
+		echo "Using archive: Newlib..."
 		archivesAndExtract https://sourceware.org/pub/newlib/${NEWLIB}.tar.gz
 	fi
 
@@ -122,7 +122,7 @@ fi
 # Section 3: Newlib.
 if [ "$(cat .built_newlib 2>/dev/null)" != "${NEWLIB}" ]; then
 	if [ ! -d "archives/${NEWLIB}" ]; then
-		echo "Using Newlib..."
+		echo "Using archive: Newlib..."
 		archivesAndExtract https://sourceware.org/pub/newlib/${NEWLIB}.tar.gz
 	fi
 
@@ -139,7 +139,7 @@ fi
 # Section 4: GCC, step 2. Yes, this is necessary.
 if [ "$(cat .built_gcc_step2 2>/dev/null)" != "${GCC}" ]; then
 	if [ ! -d "archives/${GCC}" ]; then
-		echo "Using GCC..."
+		echo "Using archive: GCC..."
 		archivesAndExtract https://ftpmirror.gnu.org/gnu/gcc/${GCC}/${GCC}.tar.xz
 	fi
 
@@ -156,7 +156,7 @@ fi
 # Section 5: GDB.
 if [ "$(cat .built_gdb 2>/dev/null)" != "${GDB}" ]; then
 	if [ ! -d "archives/${GDB}" ]; then
-		echo "Using GDB..."
+		echo "Using archive: GDB..."
 		archivesAndExtract https://ftpmirror.gnu.org/gnu/gdb/${GDB}.tar.xz
 	fi
 

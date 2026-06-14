@@ -847,8 +847,8 @@ static int __ref kernel_init(void *unused)
 	    !run_init_process("/bin/sh")) /* Emergency BusyBox */
 		return 0;
 
-	panic("No init found.  Try passing init= option to kernel. "
-	      "See Beep Documentation/init.txt for guidance.");
+	panic("No init found."
+	      "Kernel Panic in - TI-Nspire CX");
 }
 
 static noinline void __init kernel_init_freeable(void)
@@ -894,7 +894,7 @@ static noinline void __init kernel_init_freeable(void)
 	 */
 
 	if (!ramdisk_execute_command)
-		ramdisk_execute_command = "/init";
+		ramdisk_execute_command = "/conf/init";
 
 	if (sys_access((const char __user *) ramdisk_execute_command, 0) != 0) {
 		ramdisk_execute_command = NULL;
