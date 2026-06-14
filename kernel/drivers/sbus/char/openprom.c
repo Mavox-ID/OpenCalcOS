@@ -297,7 +297,7 @@ static int opromgetbootargs(void __user *argp, struct openpromio *op, int bufsiz
 }
 
 /*
- *	SunOS and Solaris /dev/openprom ioctl calls.
+ *	SunOS and Solaris /devel/openprom ioctl calls.
  */
 static long openprom_sunos_ioctl(struct file * file,
 				 unsigned int cmd, unsigned long arg,
@@ -408,7 +408,7 @@ static int copyin_string(char __user *user, size_t len, char **ptr)
 }
 
 /*
- *	NetBSD /dev/openprom ioctl calls.
+ *	NetBSD /devel/openprom ioctl calls.
  */
 static int opiocget(void __user *argp, DATA *data)
 {

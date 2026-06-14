@@ -55,10 +55,10 @@ main ()
   alarm (alarm_value);
 # endif
 
-  fdnull = open ("/dev/null", O_RDWR);
+  fdnull = open ("/devel/null", O_RDWR);
   if (fdnull < 0)
     {
-      perror ("Could not open /dev/null");
+      perror ("Could not open /devel/null");
       return 1;
     }
 

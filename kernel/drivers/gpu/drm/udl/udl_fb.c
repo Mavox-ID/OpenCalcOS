@@ -317,7 +317,7 @@ static int udl_fb_open(struct fb_info *info, int user)
 		fb_deferred_io_init(info);
 	}
 
-	pr_notice("open /dev/fb%d user=%d fb_info=%p count=%d\n",
+	pr_notice("open /devel/fb%d user=%d fb_info=%p count=%d\n",
 		  info->node, user, info, ufbdev->fb_count);
 
 	return 0;
@@ -340,7 +340,7 @@ static int udl_fb_release(struct fb_info *info, int user)
 		info->fbops->fb_mmap = udl_fb_mmap;
 	}
 
-	pr_warn("released /dev/fb%d user=%d count=%d\n",
+	pr_warn("released /devel/fb%d user=%d count=%d\n",
 		info->node, user, ufbdev->fb_count);
 
 	return 0;

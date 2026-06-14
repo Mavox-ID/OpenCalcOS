@@ -64,7 +64,7 @@
 /* Some compile options */
 #undef DEBUG_SLEEP
 
-/* Misc minor number allocated for /dev/pmu */
+/* Misc minor number allocated for /devel/pmu */
 #define PMU_MINOR		154
 
 /* How many iterations between battery polls */
@@ -2014,7 +2014,7 @@ static int powerbook_sleep_3400(void)
 #endif /* CONFIG_SUSPEND && CONFIG_PPC32 */
 
 /*
- * Support for /dev/pmu device
+ * Support for /devel/pmu device
  */
 #define RB_SIZE		0x10
 struct pmu_private {

@@ -112,7 +112,7 @@ struct fsck_instance {
 #endif
 	char	*prog;
 	char	*device;
-	char	*base_device; /* /dev/hda for /dev/hdaN etc */
+	char	*base_device; /* /devel/hda for /devel/hdaN etc */
 };
 
 static const char ignored_types[] ALIGN1 =
@@ -136,7 +136,7 @@ static const char really_wanted[] ALIGN1 =
 	"xfs\0";
 #endif
 
-#define BASE_MD "/dev/md"
+#define BASE_MD "/devel/md"
 
 struct globals {
 	char **args;
@@ -187,7 +187,7 @@ struct globals {
  */
 #if ENABLE_FEATURE_DEVFS
 /*
- * Required for the uber-silly devfs /dev/ide/host1/bus2/target3/lun3
+ * Required for the uber-silly devfs /devel/ide/host1/bus2/target3/lun3
  * pathames.
  */
 static const char *const devfs_hier[] ALIGN_PTR = {
@@ -205,7 +205,7 @@ static char *base_device(const char *device)
 #endif
 	str = xstrdup(device);
 
-	/* Skip over "/dev/"; if it's not present, give up */
+	/* Skip over "/devel/"; if it's not present, give up */
 	cp = skip_dev_pfx(str);
 	if (cp == str)
 		goto errout;
@@ -229,10 +229,10 @@ static char *base_device(const char *device)
 		return str;
 	}
 
-	/* Now let's handle /dev/hd* and /dev/sd* devices.... */
+	/* Now let's handle /devel/hd* and /devel/sd* devices.... */
 	if ((cp[0] == 'h' || cp[0] == 's') && cp[1] == 'd') {
 		cp += 2;
-		/* If there's a single number after /dev/hd, skip it */
+		/* If there's a single number after /devel/hd, skip it */
 		if (isdigit(*cp))
 			cp++;
 		/* What follows must be an alpha char, or give up */
@@ -273,7 +273,7 @@ static char *base_device(const char *device)
 		return str;
 	}
 
-	/* Now handle devfs /dev/disc or /dev/disk names */
+	/* Now handle devfs /devel/disc or /devel/disk names */
 	disk = NULL;
 	if (is_prefixed_with(cp, "discs/"))
 		disk = "disc";
@@ -971,7 +971,7 @@ int fsck_main(int argc UNUSED_PARAM, char **argv)
 		char *options;
 		char *arg = *argv;
 
-		/* "/dev/blk" or "/path" or "UUID=xxx" or "LABEL=xxx" */
+		/* "/devel/blk" or "/path" or "UUID=xxx" or "LABEL=xxx" */
 		if ((arg[0] == '/' && !opts_for_fsck) || strchr(arg, '=')) {
 // FIXME: must check that arg is a blkdev, or resolve
 // "/path", "UUID=xxx" or "LABEL=xxx" into block device name
@@ -1074,7 +1074,7 @@ int fsck_main(int argc UNUSED_PARAM, char **argv)
 	if (!notitle)
 		puts("fsck (busybox "BB_VER")");
 
-	/* Even plain "fsck /dev/hda1" needs fstab to get fs type,
+	/* Even plain "fsck /devel/hda1" needs fstab to get fs type,
 	 * so we are scanning it anyway */
 	fstab = getenv("FSTAB_FILE");
 	if (!fstab)

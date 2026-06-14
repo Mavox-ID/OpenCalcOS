@@ -84,9 +84,9 @@ int FAST_FUNC get_free_loop(void)
 	int fd;
 	int loopdevno;
 
-	fd = open("/dev/loop-control", O_RDWR | O_CLOEXEC);
+	fd = open("/devel/loop-control", O_RDWR | O_CLOEXEC);
 	if (fd == -1)
-		return fd - 1; /* -2: "no /dev/loop-control" */
+		return fd - 1; /* -2: "no /devel/loop-control" */
 
 #ifndef LOOP_CTL_GET_FREE
 # define LOOP_CTL_GET_FREE 0x4C82
@@ -224,9 +224,9 @@ int FAST_FUNC set_loop(char **device, const char *file, unsigned long long offse
 			if (rc == -1)
 				break; /* no free loop devices (or other error in LOOP_CTL_GET_FREE) */
 			if (rc >= 0)
-				/* /dev/loop-control gave us the next free /dev/loopN */
+				/* /devel/loop-control gave us the next free /devel/loopN */
 				goto open_lfd;
-			/* else: sequential /dev/loopN, needs to be tested/maybe_created */
+			/* else: sequential /devel/loopN, needs to be tested/maybe_created */
 		}
 
 		IF_FEATURE_MOUNT_LOOP_CREATE(errno = 0;)
@@ -275,7 +275,7 @@ int FAST_FUNC set_loop(char **device, const char *file, unsigned long long offse
 		close(lfd);
  try_next_loopN:
 		rc = -1;
-		if (*device) /* was looking for a particular "/dev/loopN"? */
+		if (*device) /* was looking for a particular "/devel/loopN"? */
 			break; /* yes, do not try other names */
 	} /* for() */
 

@@ -978,7 +978,7 @@ static void lcd_init_display(void)
 }
 
 /*
- * These are the file operation function for user access to /dev/lcd
+ * These are the file operation function for user access to /devel/lcd
  * This function can also be called from inside the kernel, by
  * setting file and ppos to NULL.
  *
@@ -1557,7 +1557,7 @@ void lcd_init(void)
 }
 
 /*
- * These are the file operation function for user access to /dev/keypad
+ * These are the file operation function for user access to /devel/keypad
  */
 
 static ssize_t keypad_read(struct file *file,

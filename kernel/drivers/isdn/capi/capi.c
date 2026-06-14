@@ -44,7 +44,7 @@
 #include <beep/isdn/capiutil.h>
 #include <beep/isdn/capicmd.h>
 
-MODULE_DESCRIPTION("CAPI4Beep: Userspace /dev/capi20 interface");
+MODULE_DESCRIPTION("CAPI4Beep: Userspace /devel/capi20 interface");
 MODULE_AUTHOR("Carsten Paeth");
 MODULE_LICENSE("GPL");
 

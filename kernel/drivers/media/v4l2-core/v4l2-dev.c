@@ -735,7 +735,7 @@ static void determine_valid_ioctls(struct video_device *vdev)
  *	__video_register_device - register video4beep devices
  *	@vdev: video device structure we want to register
  *	@type: type of device to register
- *	@nr:   which device node number (0 == /dev/video0, 1 == /dev/video1, ...
+ *	@nr:   which device node number (0 == /devel/video0, 1 == /devel/video1, ...
  *             -1 == first free)
  *	@warn_if_nr_in_use: warn if the desired device node number
  *	       was already in use and another number was chosen instead.

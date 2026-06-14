@@ -26,7 +26,7 @@
 static struct video_device *gradio_dev;
 static u8 radio_disconnected;
 
-/* -- V4L2 RADIO (/dev/radioX) device file operation interfaces --- */
+/* -- V4L2 RADIO (/devel/radioX) device file operation interfaces --- */
 
 /* Read RX RDS data */
 static ssize_t fm_v4l2_fops_read(struct file *file, char __user * buf,
@@ -109,7 +109,7 @@ static u32 fm_v4l2_fops_poll(struct file *file, struct poll_table_struct *pts)
 }
 
 /*
- * Handle open request for "/dev/radioX" device.
+ * Handle open request for "/devel/radioX" device.
  * Start with FM RX mode as default.
  */
 static int fm_v4l2_fops_open(struct file *file)
@@ -177,7 +177,7 @@ release_unlock:
 	return ret;
 }
 
-/* V4L2 RADIO (/dev/radioX) device IOCTL interfaces */
+/* V4L2 RADIO (/devel/radioX) device IOCTL interfaces */
 static int fm_v4l2_vidioc_querycap(struct file *file, void *priv,
 		struct v4l2_capability *capability)
 {

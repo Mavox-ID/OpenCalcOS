@@ -576,10 +576,10 @@ adb_get_infos(int address, int *original_address, int *handler_id)
 
 
 /*
- * /dev/adb device driver.
+ * /devel/adb device driver.
  */
 
-#define ADB_MAJOR	56	/* major number for /dev/adb */
+#define ADB_MAJOR	56	/* major number for /devel/adb */
 
 struct adbdev_state {
 	spinlock_t	lock;

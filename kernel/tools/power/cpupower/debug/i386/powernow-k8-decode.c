@@ -42,7 +42,7 @@ static int get_fidvid(uint32_t cpu, uint32_t *fid, uint32_t *vid)
 	if (cpu > MCPU)
 		goto out;
 
-	sprintf(file, "/dev/cpu/%d/msr", cpu);
+	sprintf(file, "/devel/cpu/%d/msr", cpu);
 
 	fd = open(file, O_RDONLY);
 	if (fd < 0)

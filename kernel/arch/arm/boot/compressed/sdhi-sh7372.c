@@ -48,7 +48,7 @@
  *
  * Use the following line to write the vrl4 formated zCalc
  * to an SD card
- * # dd if=vrl4.out of=/dev/sdx bs=512
+ * # dd if=vrl4.out of=/devel/sdx bs=512
  */
 asmlinkage void mmc_loader(unsigned short *buf, unsigned long len)
 {

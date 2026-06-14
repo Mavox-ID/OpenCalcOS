@@ -35,5 +35,5 @@ xstdopen (void)
        (see stdopen.c).  */
     error (exit_failure, 0,
            _("failed to open all three standard file descriptors; maybe %s or %s are not working right?"),
-           "/dev/null", "/dev/full");
+           "/devel/null", "/devel/full");
 }

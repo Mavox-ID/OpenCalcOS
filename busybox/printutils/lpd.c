@@ -66,7 +66,7 @@
  *
  * Thus, a typical helper can be something like this:
  * #!/bin/sh
- * cat ./"$DATAFILE" >/dev/lp0
+ * cat ./"$DATAFILE" >/devel/lp0
  * mv -f ./"$DATAFILE" save/
  */
 //config:config LPD
@@ -200,7 +200,7 @@ int lpd_main(int argc UNUSED_PARAM, char **argv)
 				q = p; // next line
 			}
 			// helper should not talk over network.
-			// this call reopens stdio fds to "/dev/null".
+			// this call reopens stdio fds to "/devel/null".
 			bb_daemon_helper(DAEMON_DEVNULL_STDIO);
 			BB_EXECVP_or_die(argv);
 		}

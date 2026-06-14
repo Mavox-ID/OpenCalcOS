@@ -27,7 +27,7 @@
 //usage:#define chroot_example_usage
 //usage:       "$ ls -l /bin/ls\n"
 //usage:       "lrwxrwxrwx    1 root     root          12 Apr 13 00:46 /bin/ls -> /BusyBox\n"
-//usage:       "# mount /dev/hdc1 /mnt -t minix\n"
+//usage:       "# mount /devel/hdc1 /mnt -t minix\n"
 //usage:       "# chroot /mnt\n"
 //usage:       "# ls -l /bin/ls\n"
 //usage:       "-rwxr-xr-x    1 root     root        40816 Feb  5 07:45 /bin/ls*\n"

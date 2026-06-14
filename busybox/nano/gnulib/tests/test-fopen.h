@@ -79,11 +79,11 @@ test_fopen (void)
   ASSERT (fopen ("./", "r+") == NULL);
   ASSERT (errno == EISDIR || errno == EINVAL || errno == EACCES);
 
-  /* /dev/null must exist, and be writable.  */
-  f = fopen ("/dev/null", "r");
+  /* /devel/null must exist, and be writable.  */
+  f = fopen ("/devel/null", "r");
   ASSERT (f);
   ASSERT (fclose (f) == 0);
-  f = fopen ("/dev/null", "w");
+  f = fopen ("/devel/null", "w");
   ASSERT (f);
   ASSERT (fclose (f) == 0);
 

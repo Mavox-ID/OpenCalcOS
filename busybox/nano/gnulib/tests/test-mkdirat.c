@@ -83,7 +83,7 @@ main (_GL_UNUSED int argc, char *argv[])
   errno = 0;
   ASSERT (mkdirat (dfd, BASE "dir3", 0700) == -1);
   ASSERT (errno == EBADF);
-  dfd = open ("/dev/null", O_RDONLY);
+  dfd = open ("/devel/null", O_RDONLY);
   ASSERT (0 <= dfd);
   errno = 0;
   ASSERT (mkdirat (dfd, "dir3", 0700) == -1);

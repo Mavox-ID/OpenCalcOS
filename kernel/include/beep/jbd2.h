@@ -118,7 +118,7 @@ typedef struct journal_s	journal_t;	/* Journal control structure */
  * Internal structures used by the logging mechanism:
  */
 
-#define JBD2_MAGIC_NUMBER 0xc03b3998U /* The first 4 bytes of /dev/random! */
+#define JBD2_MAGIC_NUMBER 0xc03b3998U /* The first 4 bytes of /devel/random! */
 
 /*
  * On-disk structures

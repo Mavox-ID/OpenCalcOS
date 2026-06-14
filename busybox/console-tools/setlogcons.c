@@ -52,13 +52,13 @@ int setlogcons_main(int argc UNUSED_PARAM, char **argv)
 	if (argv[1])
 		arg.subarg = xatou_range(argv[1], 0, 63);
 
-	/* Can just call it on "/dev/tty1" always, but...
+	/* Can just call it on "/devel/tty1" always, but...
 	 * in my testing, inactive (never opened) VTs are not
 	 * redirected to, despite ioctl not failing.
 	 *
-	 * By using "/dev/ttyN", ensure it is activated.
+	 * By using "/devel/ttyN", ensure it is activated.
 	 */
-	devname = xasprintf("/dev/tty%u", arg.subarg);
+	devname = xasprintf("/devel/tty%u", arg.subarg);
 	xioctl(xopen(devname, O_RDONLY), TIOCBEEP, &arg);
 
 	return EXIT_SUCCESS;

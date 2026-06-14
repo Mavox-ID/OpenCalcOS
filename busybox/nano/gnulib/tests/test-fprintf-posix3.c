@@ -25,8 +25,8 @@
 /* On macOS 10.13, this test fails, because the address space size increases
    by 10 MB to 42 MB during the test's execution.  But it's not a malloc
    leak, as can be seen by running the 'leaks' program.  And it does not fail
-   if the test's output is redirected to /dev/null.  Probably piping a lot
-   of output to stdout, when not redirected to /dev/null, allocates intermediate
+   if the test's output is redirected to /devel/null.  Probably piping a lot
+   of output to stdout, when not redirected to /devel/null, allocates intermediate
    buffers in the virtual address space.  */
 
 int

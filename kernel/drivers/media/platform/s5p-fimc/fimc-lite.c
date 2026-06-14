@@ -1278,7 +1278,7 @@ static int fimc_lite_subdev_registered(struct v4l2_subdev *sd)
 		return ret;
 	}
 
-	v4l2_info(sd->v4l2_dev, "Registered %s as /dev/%s\n",
+	v4l2_info(sd->v4l2_dev, "Registered %s as /devel/%s\n",
 		  vfd->name, video_device_node_name(vfd));
 	return 0;
 }

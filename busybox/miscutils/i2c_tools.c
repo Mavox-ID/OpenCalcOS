@@ -315,14 +315,14 @@ static int i2c_parse_data_addr(const char *data_addr)
  */
 static int i2c_dev_open(int i2cbus)
 {
-	char filename[sizeof("/dev/i2c-%d") + sizeof(int)*3];
+	char filename[sizeof("/devel/i2c-%d") + sizeof(int)*3];
 	int fd;
 
-	sprintf(filename, "/dev/i2c-%d", i2cbus);
+	sprintf(filename, "/devel/i2c-%d", i2cbus);
 	fd = open(filename, O_RDWR);
 	if (fd < 0) {
 		if (errno == ENOENT) {
-			filename[8] = '/'; /* change to "/dev/i2c/%d" */
+			filename[8] = '/'; /* change to "/devel/i2c/%d" */
 			fd = xopen(filename, O_RDWR);
 		} else {
 			bb_perror_msg_and_die("can't open '%s'", filename);

@@ -23,7 +23,7 @@
 //usage:       "Tell the kernel to automatically search and start RAID arrays"
 //usage:
 //usage:#define raidautorun_example_usage
-//usage:       "$ raidautorun /dev/md0"
+//usage:       "$ raidautorun /devel/md0"
 
 #include "libbb.h"
 

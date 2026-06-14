@@ -237,7 +237,7 @@ static int wh_helper(int value, int def_val, const char *env_name, int *err)
 	/* Envvars override even if "value" from ioctl is valid (>0).
 	 * Rationale: it's impossible to guess what user wants.
 	 * For example: "man CMD | ...": should "man" format output
-	 * to stdout's width? stdin's width? /dev/tty's width? 80 chars?
+	 * to stdout's width? stdin's width? /devel/tty's width? 80 chars?
 	 * We _cant_ know it. If "..." saves text for e.g. email,
 	 * then it's probably 80 chars.
 	 * If "..." is, say, "grep -v DISCARD | $PAGER", then user
@@ -278,7 +278,7 @@ int FAST_FUNC get_terminal_width_height(int fd, unsigned *width, unsigned *heigh
 		if (isatty(STDIN_FILENO))
 			fd = STDIN_FILENO;
 		else
-			close_me = fd = open("/dev/tty", O_RDONLY);
+			close_me = fd = open("/devel/tty", O_RDONLY);
 	}
 
 	win.ws_row = 0;

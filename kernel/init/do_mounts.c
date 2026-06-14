@@ -193,11 +193,11 @@ done:
  *	Convert a name into device number.  We accept the following variants:
  *
  *	1) device number in hexadecimal	represents itself
- *	2) /dev/nfs represents Root_NFS (0xff)
- *	3) /dev/<disk_name> represents the device number of disk
- *	4) /dev/<disk_name><decimal> represents the device number
+ *	2) /devel/nfs represents Root_NFS (0xff)
+ *	3) /devel/<disk_name> represents the device number of disk
+ *	4) /devel/<disk_name><decimal> represents the device number
  *         of partition - device number of disk plus the partition number
- *	5) /dev/<disk_name>p<decimal> - same as the above, that form is
+ *	5) /devel/<disk_name>p<decimal> - same as the above, that form is
  *	   used when disk name of partitioned disk ends on a digit.
  *	6) PARTUUID=00112233-4455-6677-8899-AABBCCDDEEFF representing the
  *	   unique id of a partition if the partition table provides it.
@@ -231,7 +231,7 @@ dev_t name_to_dev_t(char *name)
 	}
 #endif
 
-	if (strncmp(name, "/dev/", 5) != 0) {
+	if (strncmp(name, "/devel/", 5) != 0) {
 		unsigned maj, min;
 
 		if (sscanf(name, "%u:%u", &maj, &min) == 2) {
@@ -492,13 +492,13 @@ void __init change_floppy(char *fmt, ...)
 	va_start(args, fmt);
 	vsprintf(buf, fmt, args);
 	va_end(args);
-	fd = sys_open("/dev/root", O_RDWR | O_NDELAY, 0);
+	fd = sys_open("/devel/root", O_RDWR | O_NDELAY, 0);
 	if (fd >= 0) {
 		sys_ioctl(fd, FDEJECT, 0);
 		sys_close(fd);
 	}
 	printk(KERN_NOTICE "VFS: Insert %s and press ENTER\n", buf);
-	fd = sys_open("/dev/console", O_RDWR, 0);
+	fd = sys_open("/devel/console", O_RDWR, 0);
 	if (fd >= 0) {
 		sys_ioctl(fd, TCGETS, (long)&termios);
 		termios.c_lflag &= ~ICANON;
@@ -535,8 +535,8 @@ void __init mount_root(void)
 	}
 #endif
 #ifdef CONFIG_BLOCK
-	create_dev("/dev/root", ROOT_DEV);
-	mount_block_root("/dev/root", root_mountflags);
+	create_dev("/devel/root", ROOT_DEV);
+	mount_block_root("/devel/root", root_mountflags);
 #endif
 }
 
@@ -572,7 +572,7 @@ void __init prepare_namespace(void)
 			goto out;
 		}
 		ROOT_DEV = name_to_dev_t(root_device_name);
-		if (strncmp(root_device_name, "/dev/", 5) == 0)
+		if (strncmp(root_device_name, "/devel/", 5) == 0)
 			root_device_name += 5;
 	}
 

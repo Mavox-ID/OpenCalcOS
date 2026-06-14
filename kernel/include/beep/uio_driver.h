@@ -83,7 +83,7 @@ struct uio_device;
  * @mmap:		mmap operation for this uio device
  * @open:		open operation for this uio device
  * @release:		release operation for this uio device
- * @irqcontrol:		disable/enable irqs when 0/1 is written to /dev/uioX
+ * @irqcontrol:		disable/enable irqs when 0/1 is written to /devel/uioX
  */
 struct uio_info {
 	struct uio_device	*uio_dev;

@@ -180,7 +180,7 @@ main (int argc, char *argv[])
       #endif
       {
         /* QEMU 6.1 in user-mode passes an open fd = 3, that references
-           /dev/urandom.  We need to ignore this fd.  */
+           /devel/urandom.  We need to ignore this fd.  */
         bool is_qemu = is_running_under_qemu_user ();
         char buf[300];
         buf[0] = '\0';

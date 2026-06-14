@@ -4079,7 +4079,7 @@ setjobctl(int on)
 		int ofd;
 		ofd = fd = open(_PATH_TTY, O_RDWR);
 		if (fd < 0) {
-	/* BTW, bash will try to open(ttyname(0)) if open("/dev/tty") fails.
+	/* BTW, bash will try to open(ttyname(0)) if open("/devel/tty") fails.
 	 * That sometimes helps to acquire controlling tty.
 	 * Obviously, a workaround for bugs when someone
 	 * failed to provide a controlling tty to bash! :) */
@@ -4090,7 +4090,7 @@ setjobctl(int on)
 		}
 		/* fd is a tty at this point */
 		fd = fcntl(fd, F_DUPFD_CLOEXEC, 10);
-		if (ofd >= 0) /* if it is "/dev/tty", close. If 0/1/2, don't */
+		if (ofd >= 0) /* if it is "/devel/tty", close. If 0/1/2, don't */
 			close(ofd);
 		if (fd < 0)
 			goto out; /* F_DUPFD failed */
@@ -5136,7 +5136,7 @@ commandtext(union node *n)
  *                   process group even if job control is on.
  *
  * When job control is turned off, background processes have their standard
- * input redirected to /dev/null (except for the second and later processes
+ * input redirected to /devel/null (except for the second and later processes
  * in a pipeline).
  *
  * Called with interrupts off.
@@ -5761,7 +5761,7 @@ save_fd_on_redirect(int fd, int avoid_fd, struct redirtab *sq)
 			return 0; /* "we did not close fd" */
 		}
 		if (fd == sq->two_fd[i].orig_fd) {
-			/* Example: echo Hello >/dev/null 1>&2 */
+			/* Example: echo Hello >/devel/null 1>&2 */
 			TRACE(("redirect_fd %d: already moved\n", fd));
 			return 0; /* "we did not close fd" */
 		}
@@ -5912,7 +5912,7 @@ redirectsafe(union node *redir, int flags)
 	struct jmploc jmploc;
 
 	SAVE_INT(saveint);
-	/* "echo 9>/dev/null; echo >&9; echo result: $?" - result should be 1, not 2! */
+	/* "echo 9>/devel/null; echo >&9; echo result: $?" - result should be 1, not 2! */
 	err = setjmp(jmploc.loc); /* was = setjmp(jmploc.loc) * 2; */
 	if (!err) {
 		exception_handler = &jmploc;
@@ -7065,8 +7065,8 @@ subevalvar(char *start, char *str, int strloc,
 		/* The pattern can't be empty.
 		 * IOW: if the first char after "${v//" is a slash,
 		 * it does not terminate the pattern - it's the first char of the pattern:
-		 *  v=/dev/ram; echo ${v////-}  prints -dev-ram (pattern is "/")
-		 *  v=/dev/ram; echo ${v///r/-} prints /dev-am  (pattern is "/r")
+		 *  v=/devel/ram; echo ${v////-}  prints -dev-ram (pattern is "/")
+		 *  v=/devel/ram; echo ${v///r/-} prints /dev-am  (pattern is "/r")
 		 */
 		if (*repl == '/')
 			repl++;
@@ -9627,9 +9627,9 @@ expredir(union node *n)
 #endif
 #if 0
 // By the design of stack allocator, the loop of this kind:
-//	while true; do while true; do break; done </dev/null; done
+//	while true; do while true; do break; done </devel/null; done
 // will look like a memory leak: ash plans to free expfname's
-// of "/dev/null" as soon as it finishes running the loop
+// of "/devel/null" as soon as it finishes running the loop
 // (in this case, never).
 // This "fix" is wrong:
 			if (redir->nfile.expfname)
@@ -11359,7 +11359,7 @@ setparam(char **argv)
  * we see that bash does not do that (set "finishes" with error code 1 instead,
  * and shell continues), and people rely on this behavior!
  * Testcase:
- * set -o barfoo 2>/dev/null
+ * set -o barfoo 2>/devel/null
  * echo $?
  *
  * Oh well. Let's mimic that.

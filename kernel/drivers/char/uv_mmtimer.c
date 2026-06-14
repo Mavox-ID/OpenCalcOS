@@ -61,7 +61,7 @@ static const struct file_operations uv_mmtimer_fops = {
 };
 
 /**
- * uv_mmtimer_ioctl - ioctl interface for /dev/uv_mmtimer
+ * uv_mmtimer_ioctl - ioctl interface for /devel/uv_mmtimer
  * @file: file structure for the device
  * @cmd: command to execute
  * @arg: optional argument to command

@@ -18,7 +18,7 @@ unsigned FAST_FUNC ubi_devnum_from_devname(const char *str)
 {
 	unsigned ubi_devnum;
 
-	if (sscanf(str, "/dev/ubi%u", &ubi_devnum) != 1)
+	if (sscanf(str, "/devel/ubi%u", &ubi_devnum) != 1)
 		bb_error_msg_and_die("not an UBI device: '%s'", str);
 	return ubi_devnum;
 }

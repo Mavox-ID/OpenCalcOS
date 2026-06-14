@@ -334,8 +334,8 @@ static void from_sys_clock(const char **pp_rtcname, int utc)
 //Options:
 // -u, --utc            the RTC timescale is UTC
 // -l, --localtime      the RTC timescale is Local
-// -f, --rtc <file>     use an alternate file to /dev/rtc0
-//     --directisa      use the ISA bus instead of /dev/rtc0 access
+// -f, --rtc <file>     use an alternate file to /devel/rtc0
+//     --directisa      use the ISA bus instead of /devel/rtc0 access
 //     --date <time>    date/time input for --set and --predict
 //     --delay <sec>    delay used when set new RTC time
 //     --update-drift   update the RTC drift factor
@@ -361,7 +361,7 @@ static void from_sys_clock(const char **pp_rtcname, int utc)
 //usage:     "\n	--systz	Set in-kernel timezone, correct system time"
 //usage:     "\n		if RTC is kept in local time"
 //usage:	)
-//usage:     "\n	-f DEV	Use specified device (e.g. /dev/rtc2)"
+//usage:     "\n	-f DEV	Use specified device (e.g. /devel/rtc2)"
 //usage:     "\n	-u	Assume RTC is kept in UTC"
 //usage:     "\n	-l	Assume RTC is kept in local time"
 //usage:     "\n		(if neither is given, read from "ADJTIME_PATH")"

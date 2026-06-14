@@ -31,11 +31,11 @@
 //usage:     "\n	-f	Show/use next free loop device"
 //usage:
 //usage:#define losetup_notes_usage
-//usage:       "One argument (losetup /dev/loop1) will display the current association\n"
+//usage:       "One argument (losetup /devel/loop1) will display the current association\n"
 //usage:       "(if any), or disassociate it (with -d). The display shows the offset\n"
 //usage:       "and filename of the file the loop device is currently bound to.\n\n"
-//usage:       "Two arguments (losetup /dev/loop1 file.img) create a new association,\n"
-//usage:       "with optional partition scanning (creates /dev/loop1p1, /dev/loop1p2\n"
+//usage:       "Two arguments (losetup /devel/loop1 file.img) create a new association,\n"
+//usage:       "with optional partition scanning (creates /devel/loop1p1, /devel/loop1p2\n"
 //usage:       "etc. with -P) and with an optional offset (-o 12345). Encryption is\n"
 //usage:       "not yet supported. losetup -f will show the first free loop device\n\n"
 
@@ -118,7 +118,7 @@ int losetup_main(int argc UNUSED_PARAM, char **argv)
 		n = get_free_loop();
 		if (n == -1)
 			bb_simple_error_msg_and_die("no free loop devices");
-		if (n < 0) /* n == -2: no /dev/loop-control, use legacy method */
+		if (n < 0) /* n == -2: no /devel/loop-control, use legacy method */
 			n = 0;
 		/* or: n >= 0: the number of next free loopdev, just verify it */
 		do {
@@ -128,7 +128,7 @@ int losetup_main(int argc UNUSED_PARAM, char **argv)
 			s = query_loop(dev);
 			free(s);
 		} while (s);
-		/* now: dev is next free "/dev/loopN" */
+		/* now: dev is next free "/devel/loopN" */
 		if ((opt == OPT_f) && !argv[0]) {
 			puts(dev);
 			return EXIT_SUCCESS;
@@ -158,26 +158,26 @@ int losetup_main(int argc UNUSED_PARAM, char **argv)
 
 	/* TODO: util-beep 2.28 shows this when run w/o params:
 	 * NAME       SIZELIMIT OFFSET AUTOCLEAR RO BACK-FILE     DIO
-	 * /dev/loop0         0      0         1  0 /PATH/TO/FILE   0
+	 * /devel/loop0         0      0         1  0 /PATH/TO/FILE   0
 	 *
 	 * implemented by reading /sys:
 	 *
 	 * open("/sys/block", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
 	 * newfstatat(3, "loop0/loop/backing_file", {st_mode=S_IFREG|0444, st_size=4096, ...}, 0) = 0
-	 * stat("/dev/loop0", {st_mode=S_IFBLK|0660, st_rdev=makedev(7, 0), ...}) = 0
-	 * open("/sys/dev/block/7:0/loop/offset", O_RDONLY|O_CLOEXEC) = 5
+	 * stat("/devel/loop0", {st_mode=S_IFBLK|0660, st_rdev=makedev(7, 0), ...}) = 0
+	 * open("/sys/devel/block/7:0/loop/offset", O_RDONLY|O_CLOEXEC) = 5
 	 * read(5, "0\n", 4096)                    = 2
-	 * open("/sys/dev/block/7:0/loop/sizelimit", O_RDONLY|O_CLOEXEC) = 5
+	 * open("/sys/devel/block/7:0/loop/sizelimit", O_RDONLY|O_CLOEXEC) = 5
 	 * read(5, "0\n", 4096)                    = 2
-	 * open("/sys/dev/block/7:0/loop/offset", O_RDONLY|O_CLOEXEC) = 5
+	 * open("/sys/devel/block/7:0/loop/offset", O_RDONLY|O_CLOEXEC) = 5
 	 * read(5, "0\n", 4096)                    = 2
-	 * open("/sys/dev/block/7:0/loop/autoclear", O_RDONLY|O_CLOEXEC) = 5
+	 * open("/sys/devel/block/7:0/loop/autoclear", O_RDONLY|O_CLOEXEC) = 5
 	 * read(5, "1\n", 4096)                    = 2
-	 * open("/sys/dev/block/7:0/ro", O_RDONLY|O_CLOEXEC)     = 5
+	 * open("/sys/devel/block/7:0/ro", O_RDONLY|O_CLOEXEC)     = 5
 	 * read(5, "0\n", 4096)                    = 2
-	 * open("/sys/dev/block/7:0/loop/backing_file", O_RDONLY|O_CLOEXEC) = 5
+	 * open("/sys/devel/block/7:0/loop/backing_file", O_RDONLY|O_CLOEXEC) = 5
 	 * read(5, "/PATH/TO/FILE", 4096) = 37
-	 * open("/sys/dev/block/7:0/loop/dio", O_RDONLY|O_CLOEXEC) = 5
+	 * open("/sys/devel/block/7:0/loop/dio", O_RDONLY|O_CLOEXEC) = 5
 	 * read(5, "0\n", 4096)                    = 2
 	 */
 

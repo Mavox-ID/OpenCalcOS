@@ -1164,7 +1164,7 @@ static short U14TryToOpen(int n1401, long* plRetVal, short* psHandle)
     for (nDev = nFirst; nDev <= nLast; nDev++)
     {
         char szDevName[40];                 // name of the device to open
-        sprintf(szDevName,"/dev/cedusb/%d", nDev-1);
+        sprintf(szDevName,"/devel/cedusb/%d", nDev-1);
         fh = open(szDevName, O_RDWR);       // can only be opened once at a time
         if (fh > 0)                         // Check 1401 if opened
         {

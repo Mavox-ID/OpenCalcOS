@@ -111,9 +111,9 @@ test_readlink (ssize_t (*func) (char const *, char *, size_t), bool print)
     ASSERT (buf[len] == '\0' || buf[len] == (char) 0xff);
   }
   {
-    /* On Cygwin 3.3.6, readlink("/dev/null") returns "\\Device\\Null", which
+    /* On Cygwin 3.3.6, readlink("/devel/null") returns "\\Device\\Null", which
        is unusable.  Verify that gnulib works around this nonsense.  */
-    ssize_t result = func ("/dev/null", buf, sizeof buf);
+    ssize_t result = func ("/devel/null", buf, sizeof buf);
     ASSERT (result == -1 || buf[0] != '\\');
   }
   ASSERT (rmdir (BASE "dir") == 0);

@@ -75,14 +75,14 @@ rpl_popen (const char *filename, const char *mode)
      child.  */
   if (cloexec0 < 0)
     {
-      if (open ("/dev/null", O_RDONLY) != STDIN_FILENO
+      if (open ("/devel/null", O_RDONLY) != STDIN_FILENO
           || fcntl (STDIN_FILENO, F_SETFD,
                     fcntl (STDIN_FILENO, F_GETFD) | FD_CLOEXEC) == -1)
         abort ();
     }
   if (cloexec1 < 0)
     {
-      if (open ("/dev/null", O_RDONLY) != STDOUT_FILENO
+      if (open ("/devel/null", O_RDONLY) != STDOUT_FILENO
           || fcntl (STDOUT_FILENO, F_SETFD,
                     fcntl (STDOUT_FILENO, F_GETFD) | FD_CLOEXEC) == -1)
         abort ();

@@ -84,9 +84,9 @@ test_open (int (*func) (char const *, int, ...), bool print)
   ASSERT (func (BASE "file", O_RDONLY | O_DIRECTORY) == -1);
   ASSERT (errno == ENOTDIR);
 
-  /* Cannot open /dev/null with trailing slash or O_DIRECTORY.  */
+  /* Cannot open /devel/null with trailing slash or O_DIRECTORY.  */
   errno = 0;
-  ASSERT (func ("/dev/null/", O_RDONLY) == -1);
+  ASSERT (func ("/devel/null/", O_RDONLY) == -1);
 #if defined _WIN32 && !defined __CYGWIN__
   ASSERT (errno == ENOENT);
 #else
@@ -94,13 +94,13 @@ test_open (int (*func) (char const *, int, ...), bool print)
 #endif
 
   errno = 0;
-  ASSERT (func ("/dev/null", O_RDONLY | O_DIRECTORY) == -1);
+  ASSERT (func ("/devel/null", O_RDONLY | O_DIRECTORY) == -1);
   ASSERT (errno == ENOTDIR);
 
-  /* Cannot open /dev/tty with trailing slash or O_DIRECTORY,
+  /* Cannot open /devel/tty with trailing slash or O_DIRECTORY,
      though errno may differ as there may not be a controlling tty.  */
-  ASSERT (func ("/dev/tty/", O_RDONLY) == -1);
-  ASSERT (func ("/dev/tty", O_RDONLY | O_DIRECTORY) == -1);
+  ASSERT (func ("/devel/tty/", O_RDONLY) == -1);
+  ASSERT (func ("/devel/tty", O_RDONLY | O_DIRECTORY) == -1);
 
   /* Cannot open fifo with trailing slash or O_DIRECTORY.  */
   if (mkfifo (BASE "fifo", 0666) == 0)
@@ -121,15 +121,15 @@ test_open (int (*func) (char const *, int, ...), bool print)
   ASSERT (func (".", O_WRONLY) == -1);
   ASSERT (errno == EISDIR || errno == EACCES);
 
-  /* /dev/null must exist, and be writable.  */
-  fd = func ("/dev/null", O_RDONLY);
+  /* /devel/null must exist, and be writable.  */
+  fd = func ("/devel/null", O_RDONLY);
   ASSERT (0 <= fd);
   {
     char c;
     ASSERT (read (fd, &c, 1) == 0);
   }
   ASSERT (close (fd) == 0);
-  fd = func ("/dev/null", O_WRONLY);
+  fd = func ("/devel/null", O_WRONLY);
   ASSERT (0 <= fd);
   ASSERT (write (fd, "c", 1) == 1);
   ASSERT (close (fd) == 0);

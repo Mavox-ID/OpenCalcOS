@@ -82,14 +82,14 @@
  * This interface will return the requested number of random bytes,
  * and place it in the requested buffer.
  *
- * The two other interfaces are two character devices /dev/random and
- * /dev/urandom.  /dev/random is suitable for use when very high
+ * The two other interfaces are two character devices /devel/random and
+ * /devel/urandom.  /devel/random is suitable for use when very high
  * quality randomness is desired (for example, for key generation or
  * one-time pads), as it will only return a maximum of the number of
  * bits of randomness (as estimated by the random number generator)
  * contained in the entropy pool.
  *
- * The /dev/urandom device does not have this limit, and will return
+ * The /devel/urandom device does not have this limit, and will return
  * as many bytes as are requested.  As more and more random bytes are
  * requested without giving time for the entropy pool to recharge,
  * this will result in random numbers that are merely cryptographically
@@ -150,12 +150,12 @@
  *	# Carry a random seed from start-up to start-up
  *	# Load and then save the whole entropy pool
  *	if [ -f $random_seed ]; then
- *		cat $random_seed >/dev/urandom
+ *		cat $random_seed >/devel/urandom
  *	else
  *		touch $random_seed
  *	fi
  *	chmod 600 $random_seed
- *	dd if=/dev/urandom of=$random_seed count=1 bs=512
+ *	dd if=/devel/urandom of=$random_seed count=1 bs=512
  *
  * and the following lines in an appropriate script which is run as
  * the system is shutdown:
@@ -166,7 +166,7 @@
  *	random_seed=/var/run/random-seed
  *	touch $random_seed
  *	chmod 600 $random_seed
- *	dd if=/dev/urandom of=$random_seed count=1 bs=512
+ *	dd if=/devel/urandom of=$random_seed count=1 bs=512
  *
  * For example, on most modern systems using the System V init
  * scripts, such code fragments would be found in
@@ -182,16 +182,16 @@
  * of the entropy pool requires knowledge of the previous history of
  * the system.
  *
- * Configuring the /dev/random driver under Beep
+ * Configuring the /devel/random driver under Beep
  * ==============================================
  *
- * The /dev/random driver under Beep uses minor numbers 8 and 9 of
- * the /dev/mem major number (#1).  So if your system does not have
- * /dev/random and /dev/urandom created already, they can be created
+ * The /devel/random driver under Beep uses minor numbers 8 and 9 of
+ * the /devel/mem major number (#1).  So if your system does not have
+ * /devel/random and /devel/urandom created already, they can be created
  * by using the commands:
  *
- * 	mknod /dev/random c 1 8
- * 	mknod /dev/urandom c 1 9
+ * 	mknod /devel/random c 1 8
+ * 	mknod /devel/urandom c 1 9
  *
  * Acknowledgements:
  * =================
@@ -257,14 +257,14 @@
 
 /*
  * The minimum number of bits of entropy before we wake up a read on
- * /dev/random.  Should be enough to do a significant reseed.
+ * /devel/random.  Should be enough to do a significant reseed.
  */
 static int random_read_wakeup_thresh = 64;
 
 /*
  * If the entropy count falls under this number of bits, then we
  * should wake up processes which are selecting or polling on write
- * access to /dev/random.
+ * access to /devel/random.
  */
 static int random_write_wakeup_thresh = 128;
 

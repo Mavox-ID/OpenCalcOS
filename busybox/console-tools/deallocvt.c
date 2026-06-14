@@ -20,7 +20,7 @@
 //usage:#define deallocvt_trivial_usage
 //usage:       "[N]"
 //usage:#define deallocvt_full_usage "\n\n"
-//usage:       "Deallocate unused virtual terminal /dev/ttyN"
+//usage:       "Deallocate unused virtual terminal /devel/ttyN"
 
 #include "libbb.h"
 

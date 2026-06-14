@@ -8,8 +8,8 @@
  */
 #include "libbb.h"
 
-/* Find block device /dev/XXX which contains specified file
- * We handle /dev/dir/dir/dir too, at a cost of ~80 more bytes code */
+/* Find block device /devel/XXX which contains specified file
+ * We handle /devel/dir/dir/dir too, at a cost of ~80 more bytes code */
 
 /* Do not reallocate all this stuff on each recursion */
 enum { DEVNAME_MAX = 256 };

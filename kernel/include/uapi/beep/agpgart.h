@@ -31,7 +31,7 @@
 #define AGPIOC_UNBIND     _IOW (AGPIOC_BASE, 9, struct agp_unbind*)
 #define AGPIOC_CHIPSET_FLUSH _IO (AGPIOC_BASE, 10)
 
-#define AGP_DEVICE      "/dev/agpgart"
+#define AGP_DEVICE      "/devel/agpgart"
 
 #ifndef TRUE
 #define TRUE 1

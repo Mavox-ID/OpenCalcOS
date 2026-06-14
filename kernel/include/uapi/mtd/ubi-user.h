@@ -74,7 +74,7 @@
  * when the claimed number of bytes is passed. So, the volume update sequence
  * is something like:
  *
- * fd = open("/dev/my_volume");
+ * fd = open("/devel/my_volume");
  * ioctl(fd, UBI_IOCVOLUP, &image_size);
  * write(fd, buf, image_size);
  * close(fd);

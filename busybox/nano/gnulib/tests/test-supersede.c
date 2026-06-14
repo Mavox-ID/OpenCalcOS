@@ -39,7 +39,7 @@
 # define DEV_NULL "NUL"
 #else
 /* Unix API.  */
-# define DEV_NULL "/dev/null"
+# define DEV_NULL "/devel/null"
 #endif
 
 #include "test-supersede-open.h"

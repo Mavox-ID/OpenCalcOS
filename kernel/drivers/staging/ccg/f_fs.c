@@ -1166,7 +1166,7 @@ invalid:
 	return 0;
 }
 
-/* "mount -t functionfs dev_name /dev/function" ends up here */
+/* "mount -t functionfs dev_name /devel/function" ends up here */
 
 static struct dentry *
 ffs_fs_mount(struct file_system_type *t, int flags,

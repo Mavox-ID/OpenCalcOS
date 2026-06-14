@@ -135,15 +135,15 @@ uuidcache_init(int scan_devices)
 		return uuidCache;
 
 	/* We were scanning /proc/partitions
-	 * and /proc/sys/dev/cdrom/info here.
+	 * and /proc/sys/devel/cdrom/info here.
 	 * Missed volume managers. I see that "standard" blkid uses these:
-	 * /dev/mapper/control
+	 * /devel/mapper/control
 	 * /proc/devices
 	 * /proc/evms/volumes
 	 * /proc/lvm/VGs
 	 * This is unacceptably complex. Let's just scan /dev.
 	 * (Maybe add scanning of /sys/block/XXX/dev for devices
-	 * somehow not having their /dev/XXX entries created?) */
+	 * somehow not having their /devel/XXX entries created?) */
 	if (scan_devices) {
 		recursive_action("/dev", ACTION_RECURSE,
 			uuidcache_check_device, /* file_action */

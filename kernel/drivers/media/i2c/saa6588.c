@@ -391,21 +391,21 @@ static long saa6588_ioctl(struct v4l2_subdev *sd, unsigned int cmd, void *arg)
 	struct saa6588_command *a = arg;
 
 	switch (cmd) {
-		/* --- open() for /dev/radio --- */
+		/* --- open() for /devel/radio --- */
 	case SAA6588_CMD_OPEN:
 		a->result = 0;	/* return error if chip doesn't work ??? */
 		break;
-		/* --- close() for /dev/radio --- */
+		/* --- close() for /devel/radio --- */
 	case SAA6588_CMD_CLOSE:
 		s->data_available_for_read = 1;
 		wake_up_interruptible(&s->read_queue);
 		a->result = 0;
 		break;
-		/* --- read() for /dev/radio --- */
+		/* --- read() for /devel/radio --- */
 	case SAA6588_CMD_READ:
 		read_from_buf(s, a);
 		break;
-		/* --- poll() for /dev/radio --- */
+		/* --- poll() for /devel/radio --- */
 	case SAA6588_CMD_POLL:
 		a->result = 0;
 		if (s->data_available_for_read) {

@@ -26,7 +26,7 @@
 #include "macros.h"
 
 #define FILE1 "/etc/resolv.conf"
-#define FILE2 "/dev/null"
+#define FILE2 "/devel/null"
 
 static int
 test_read_file (int flags)
@@ -97,7 +97,7 @@ test_read_file (int flags)
               err = 1;
             }
 
-          /* /dev/null should always be empty.  Ignore statbuf.st_size, since it
+          /* /devel/null should always be empty.  Ignore statbuf.st_size, since it
              is not a regular file.  */
           if (len != 0)
             {

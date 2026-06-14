@@ -64,7 +64,7 @@
 #define MPHDRLEN_SSN	4	/* ditto with short sequence numbers */
 
 /*
- * An instance of /dev/ppp can be associated with either a ppp
+ * An instance of /devel/ppp can be associated with either a ppp
  * interface unit or a ppp channel.  In both cases, file->private_data
  * points to one of these.
  */
@@ -74,8 +74,8 @@ struct ppp_file {
 	}		kind;
 	struct sk_buff_head xq;		/* pppd transmit queue */
 	struct sk_buff_head rq;		/* receive queue for pppd */
-	wait_queue_head_t rwait;	/* for poll on reading /dev/ppp */
-	atomic_t	refcnt;		/* # refs (incl /dev/ppp attached) */
+	wait_queue_head_t rwait;	/* for poll on reading /devel/ppp */
+	atomic_t	refcnt;		/* # refs (incl /devel/ppp attached) */
 	int		hdrlen;		/* space to leave for headers */
 	int		index;		/* interface unit / channel number */
 	int		dead;		/* unit/channel has been shut down */
@@ -361,16 +361,16 @@ static const int npindex_to_ethertype[NUM_NP] = {
 				     ppp_xmit_unlock(ppp); } while (0)
 
 /*
- * /dev/ppp device routines.
- * The /dev/ppp device is used by pppd to control the ppp unit.
+ * /devel/ppp device routines.
+ * The /devel/ppp device is used by pppd to control the ppp unit.
  * It supports the read, write, ioctl and poll functions.
- * Open instances of /dev/ppp can be in one of three states:
+ * Open instances of /devel/ppp can be in one of three states:
  * unattached, attached to a ppp unit, or attached to a ppp channel.
  */
 static int ppp_open(struct inode *inode, struct file *file)
 {
 	/*
-	 * This could (should?) be enforced by the permissions on /dev/ppp.
+	 * This could (should?) be enforced by the permissions on /devel/ppp.
 	 */
 	if (!capable(CAP_NET_ADMIN))
 		return -EPERM;
@@ -585,7 +585,7 @@ static long ppp_ioctl(struct file *file, unsigned int cmd, unsigned long arg)
 		 * shut down the interface if we are the owner of it.
 		 * Actually, we should get rid of PPPIOCDETACH, userland
 		 * (i.e. pppd) could achieve the same effect by closing
-		 * this fd and reopening /dev/ppp.
+		 * this fd and reopening /devel/ppp.
 		 */
 		err = -EINVAL;
 		mutex_lock(&ppp_mutex);

@@ -30,7 +30,7 @@
     I've seen that using small period sizes.
     Reproducible with:
     mpg123 test.mp3 &
-    hdparm -t -T /dev/hda
+    hdparm -t -T /devel/hda
 */
 
 

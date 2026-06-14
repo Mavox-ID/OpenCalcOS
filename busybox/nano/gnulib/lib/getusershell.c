@@ -29,7 +29,7 @@
 #  define SHELLS_FILE "/etc/shells"
 # else
 /* This is a horrible kludge.  Isn't there a better way?  */
-#  define SHELLS_FILE "/dev/env/DJDIR/etc/shells"
+#  define SHELLS_FILE "/devel/env/DJDIR/etc/shells"
 # endif
 #endif
 

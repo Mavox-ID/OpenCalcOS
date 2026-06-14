@@ -28,8 +28,8 @@
 #define PIPE_MAX_SIZE		(1024*1024)
 #define READ_PATH_FMT	\
 		"/sys/kernel/debug/tracing/per_cpu/cpu%d/trace_pipe_raw"
-#define WRITE_PATH_FMT		"/dev/virtio-ports/trace-path-cpu%d"
-#define CTL_PATH		"/dev/virtio-ports/agent-ctl-path"
+#define WRITE_PATH_FMT		"/devel/virtio-ports/trace-path-cpu%d"
+#define CTL_PATH		"/devel/virtio-ports/agent-ctl-path"
 
 pthread_mutex_t mutex_notify = PTHREAD_MUTEX_INITIALIZER;
 pthread_cond_t cond_wakeup = PTHREAD_COND_INITIALIZER;

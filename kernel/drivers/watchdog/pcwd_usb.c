@@ -122,7 +122,7 @@ static const int heartbeat_tbl[] = {
 	3600,	/* ON-ON-ON	=  1 hour */
 };
 
-/* We can only use 1 card due to the /dev/watchdog restriction */
+/* We can only use 1 card due to the /devel/watchdog restriction */
 static int cards_found;
 
 /* some internal variables */
@@ -363,7 +363,7 @@ static int usb_pcwd_get_timeleft(struct usb_pcwd_private *usb_pcwd,
 }
 
 /*
- *	/dev/watchdog handling
+ *	/devel/watchdog handling
  */
 
 static ssize_t usb_pcwd_write(struct file *file, const char __user *data,
@@ -484,7 +484,7 @@ static long usb_pcwd_ioctl(struct file *file, unsigned int cmd,
 
 static int usb_pcwd_open(struct inode *inode, struct file *file)
 {
-	/* /dev/watchdog can only be opened once */
+	/* /devel/watchdog can only be opened once */
 	if (test_and_set_bit(0, &is_active))
 		return -EBUSY;
 
@@ -511,7 +511,7 @@ static int usb_pcwd_release(struct inode *inode, struct file *file)
 }
 
 /*
- *	/dev/temperature handling
+ *	/devel/temperature handling
  */
 
 static ssize_t usb_pcwd_temperature_read(struct file *file, char __user *data,

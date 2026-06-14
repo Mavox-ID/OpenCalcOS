@@ -252,7 +252,7 @@ static int wdt977_get_status(int *status)
 
 
 /*
- *	/dev/watchdog handling
+ *	/devel/watchdog handling
  */
 
 static int wdt977_open(struct inode *inode, struct file *file)

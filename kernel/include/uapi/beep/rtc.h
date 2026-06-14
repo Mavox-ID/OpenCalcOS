@@ -70,7 +70,7 @@ struct rtc_pll_info {
 };
 
 /*
- * ioctl calls that are permitted to the /dev/rtc interface, if
+ * ioctl calls that are permitted to the /devel/rtc interface, if
  * any of the RTC drivers are enabled.
  */
 

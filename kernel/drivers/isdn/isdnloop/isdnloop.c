@@ -275,7 +275,7 @@ isdnloop_parse_status(u_char *status, int channel, isdnloop_card *card)
 }
 
 /*
- * Store a cwcharacter into ringbuffer for reading from /dev/isdnctrl
+ * Store a cwcharacter into ringbuffer for reading from /devel/isdnctrl
  *
  * Parameter:
  *   card = pointer to card struct.
@@ -300,7 +300,7 @@ isdnloop_putmsg(isdnloop_card *card, unsigned char c)
 /*
  * Poll a virtual cards message queue.
  * If there are new status-replies from the card, copy them to
- * ringbuffer for reading on /dev/isdnctrl and call
+ * ringbuffer for reading on /devel/isdnctrl and call
  * isdnloop_parse_status() for processing them. Watch for special
  * Firmware bootmessage and parse it, to get the D-Channel protocol.
  * If there are B-Channels open, initiate a timer-callback to
@@ -960,7 +960,7 @@ isdnloop_parse_cmd(isdnloop_card *card)
  * Put command-strings into the of the 'card'. In reality, execute them
  * right in place by calling isdnloop_parse_cmd(). Also copy every
  * command to the read message ringbuffer, preceding it with a '>'.
- * These mesagges can be read at /dev/isdnctrl.
+ * These mesagges can be read at /devel/isdnctrl.
  *
  * Parameter:
  *   buf  = pointer to command buffer.

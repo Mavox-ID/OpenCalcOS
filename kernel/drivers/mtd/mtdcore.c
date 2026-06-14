@@ -104,7 +104,7 @@ static void mtd_release(struct device *dev)
 	struct mtd_info __maybe_unused *mtd = dev_get_drvdata(dev);
 	dev_t index = MTD_DEVT(mtd->index);
 
-	/* remove /dev/mtdXro node if needed */
+	/* remove /devel/mtdXro node if needed */
 	if (index)
 		device_destroy(&mtd_class, index + 1);
 }

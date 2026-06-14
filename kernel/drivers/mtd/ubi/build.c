@@ -1162,7 +1162,7 @@ static struct mtd_info * __init open_mtd_by_chdev(const char *mtd_dev)
 
 	if (minor & 1)
 		/*
-		 * Just do not think the "/dev/mtdrX" devices support is need,
+		 * Just do not think the "/devel/mtdrX" devices support is need,
 		 * so do not support them to avoid doing extra work.
 		 */
 		return ERR_PTR(-EINVAL);
@@ -1446,9 +1446,9 @@ MODULE_PARM_DESC(mtd, "MTD devices to attach. Parameter format: mtd=<name|num|pa
 		      "Optional \"max_beb_per1024\" parameter specifies the maximum expected bad eraseblock per 1024 eraseblocks. (default value ("
 		      __stringify(CONFIG_MTD_UBI_BEB_LIMIT) ") if 0)\n"
 		      "\n"
-		      "Example 1: mtd=/dev/mtd0 - attach MTD device /dev/mtd0.\n"
+		      "Example 1: mtd=/devel/mtd0 - attach MTD device /devel/mtd0.\n"
 		      "Example 2: mtd=content,1984 mtd=4 - attach MTD device with name \"content\" using VID header offset 1984, and MTD device number 4 with default VID header offset.\n"
-		      "Example 3: mtd=/dev/mtd1,0,25 - attach MTD device /dev/mtd1 using default VID header offset and reserve 25*nand_size_in_blocks/1024 erase blocks for bad block handling.\n"
+		      "Example 3: mtd=/devel/mtd1,0,25 - attach MTD device /devel/mtd1 using default VID header offset and reserve 25*nand_size_in_blocks/1024 erase blocks for bad block handling.\n"
 		      "\t(e.g. if the NAND *chipset* has 4096 PEB, 100 will be reserved for this UBI device).");
 #ifdef CONFIG_MTD_UBI_FASTMAP
 module_param(fm_autoconvert, bool, 0644);

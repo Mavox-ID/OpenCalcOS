@@ -64,9 +64,9 @@ test_lstat_func (int (*func) (char const *, struct stat *), bool print)
   ASSERT (func (BASE "file/", &st1) == -1);
   ASSERT (errno == ENOTDIR);
 
-  /* /dev/null is a character device.
+  /* /devel/null is a character device.
      Except on Solaris, where it is a symlink.  */
-  ASSERT (func ("/dev/null", &st1) == 0);
+  ASSERT (func ("/devel/null", &st1) == 0);
   ASSERT (!S_ISREG (st1.st_mode));
 #if !defined __sun
   ASSERT (S_ISCHR (st1.st_mode));

@@ -124,7 +124,7 @@ static inline struct shmem_sb_info *SHMEM_SB(struct super_block *sb)
 
 /*
  * shmem_file_setup pre-accounts the whole fixed size of a VM object,
- * for shared memory and for shared anonymous (/dev/zero) mappings
+ * for shared memory and for shared anonymous (/devel/zero) mappings
  * (unless MAP_NORESERVE and sysctl_overcommit_memory <= 1),
  * consistent with the pre-accounting of private mappings ...
  */

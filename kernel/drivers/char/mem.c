@@ -76,7 +76,7 @@ static inline int range_is_allowed(unsigned long pfn, unsigned long size)
 	while (cursor < to) {
 		if (!devmem_is_allowed(pfn)) {
 			printk(KERN_INFO
-		"Program %s tried to access /dev/mem between %Lx->%Lx.\n",
+		"Program %s tried to access /devel/mem between %Lx->%Lx.\n",
 				current->comm, from, to);
 			return 0;
 		}
@@ -694,7 +694,7 @@ static ssize_t write_full(struct file *file, const char __user *buf,
 }
 
 /*
- * Special lseek() function for /dev/null and /dev/zero.  Most notably, you
+ * Special lseek() function for /devel/null and /devel/zero.  Most notably, you
  * can fopen() both devices with "a" now.  This was previously impossible.
  * -- SRB.
  */
@@ -793,7 +793,7 @@ static const struct file_operations zero_fops = {
 };
 
 /*
- * capabilities for /dev/zero
+ * capabilities for /devel/zero
  * - permits private mappings, "copies" are taken of the source of zeros
  * - no writeback happens
  */
@@ -859,7 +859,7 @@ static int memory_open(struct inode *inode, struct file *filp)
 	if (dev->dev_info)
 		filp->f_mapping->backing_dev_info = dev->dev_info;
 
-	/* Is /dev/mem or /dev/kmem ? */
+	/* Is /devel/mem or /devel/kmem ? */
 	if (dev->dev_info == &directly_mappable_cdev_bdi)
 		filp->f_mode |= FMODE_UNSIGNED_OFFSET;
 
@@ -905,7 +905,7 @@ static int __init chr_dev_init(void)
 			continue;
 
 		/*
-		 * Create /dev/port? 
+		 * Create /devel/port? 
 		 */
 		if ((minor == DEVPORT_MINOR) && !arch_has_dev_port())
 			continue;

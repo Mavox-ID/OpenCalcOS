@@ -242,8 +242,8 @@ int FAST_FUNC procps_read_smaps(pid_t pid, struct smaprec *total,
 
 			// skipping "rw-s FILEOFS M:m INODE "
 			tp = skip_whitespace(skip_fields(tp, 4));
-			// filter out /dev/something (something != zero)
-			if (!is_prefixed_with(tp, "/dev/") || strcmp(tp, "/dev/zero\n") == 0) {
+			// filter out /devel/something (something != zero)
+			if (!is_prefixed_with(tp, "/devel/") || strcmp(tp, "/devel/zero\n") == 0) {
 				if (currec.smap_mode[1] == 'w') {
 					currec.mapped_rw = currec.smap_size;
 					total->mapped_rw += currec.smap_size;

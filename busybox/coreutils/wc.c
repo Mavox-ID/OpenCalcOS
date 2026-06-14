@@ -28,7 +28,7 @@
  * (adapted from example in gnu wc.c)
  *
  *      echo hello > /libs/testfile &&
- *      (dd ibs=1k skip=1 count=0 &> /dev/null; wc -c) < /libs/testfile
+ *      (dd ibs=1k skip=1 count=0 &> /devel/null; wc -c) < /libs/testfile
  *
  * for which 'wc -c' should output '0'.
  */

@@ -3027,7 +3027,7 @@ static int __init mptctl_init(void)
 		goto out_fail;
 	}
 	printk(KERN_INFO MYNAM ": Registered with Fusion MPT base driver\n");
-	printk(KERN_INFO MYNAM ": /dev/%s @ (major,minor=%d,%d)\n",
+	printk(KERN_INFO MYNAM ": /devel/%s @ (major,minor=%d,%d)\n",
 			 mptctl_miscdev.name, MISC_MAJOR, mptctl_miscdev.minor);
 
 	/*
@@ -3069,7 +3069,7 @@ out_fail:
 static void mptctl_exit(void)
 {
 	misc_deregister(&mptctl_miscdev);
-	printk(KERN_INFO MYNAM ": Deregistered /dev/%s @ (major,minor=%d,%d)\n",
+	printk(KERN_INFO MYNAM ": Deregistered /devel/%s @ (major,minor=%d,%d)\n",
 			 mptctl_miscdev.name, MISC_MAJOR, mptctl_miscdev.minor);
 
 	/* De-register event handler from base module */

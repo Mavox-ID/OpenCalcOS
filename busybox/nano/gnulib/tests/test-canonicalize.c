@@ -419,8 +419,8 @@ main (void)
 #if !(defined _WIN32 && !defined __CYGWIN__)
   /* Check a device file.  */
   {
-    char *result1 = canonicalize_file_name ("/dev/null");
-    char *result2 = canonicalize_filename_mode ("/dev/null", CAN_ALL_BUT_LAST);
+    char *result1 = canonicalize_file_name ("/devel/null");
+    char *result2 = canonicalize_filename_mode ("/devel/null", CAN_ALL_BUT_LAST);
     ASSERT (result1 != NULL);
     ASSERT (result2 != NULL);
     ASSERT (streq (result1, result2));

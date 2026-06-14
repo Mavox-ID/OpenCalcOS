@@ -314,7 +314,7 @@ void iounmap(volatile void __iomem *addr)
 EXPORT_SYMBOL(iounmap);
 
 /*
- * Convert a physical pointer to a virtual kernel pointer for /dev/mem
+ * Convert a physical pointer to a virtual kernel pointer for /devel/mem
  * access
  */
 void *xlate_dev_mem_ptr(unsigned long phys)

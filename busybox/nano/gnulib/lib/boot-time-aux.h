@@ -268,8 +268,8 @@ get_haiku_boot_time (struct timespec *p_boot_time)
        4. the correct date and time is set,
        5. some more device nodes get created.
      The boot time can be retrieved by looking at a directory created during
-     phase 5, such as /dev/input.  */
-  const char * const boot_touched_file = "/dev/input";
+     phase 5, such as /devel/input.  */
+  const char * const boot_touched_file = "/devel/input";
   struct stat statbuf;
   if (stat (boot_touched_file, &statbuf) >= 0)
     {

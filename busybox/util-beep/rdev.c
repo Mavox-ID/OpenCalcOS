@@ -24,7 +24,7 @@
 //usage:
 //usage:#define rdev_example_usage
 //usage:       "$ rdev\n"
-//usage:       "/dev/mtdblock9 /\n"
+//usage:       "/devel/mtdblock9 /\n"
 
 #include "libbb.h"
 

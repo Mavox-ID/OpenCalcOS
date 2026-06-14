@@ -16,7 +16,7 @@
 //config:	bool "eject (4 kb)"
 //config:	default y
 //config:	help
-//config:	Used to eject cdroms. (defaults to /dev/cdrom)
+//config:	Used to eject cdroms. (defaults to /devel/cdrom)
 //config:
 //config:config FEATURE_EJECT_SCSI
 //config:	bool "SCSI support"
@@ -33,7 +33,7 @@
 //usage:#define eject_trivial_usage
 //usage:       "[-t] [-T] [DEVICE]"
 //usage:#define eject_full_usage "\n\n"
-//usage:       "Eject DEVICE or default /dev/cdrom\n"
+//usage:       "Eject DEVICE or default /devel/cdrom\n"
 //usage:	IF_FEATURE_EJECT_SCSI(
 //usage:     "\n	-s	SCSI device"
 //usage:	)
@@ -126,7 +126,7 @@ int eject_main(int argc UNUSED_PARAM, char **argv)
 	flags = getopt32(argv, "^" "tT"IF_FEATURE_EJECT_SCSI("s")
 			"\0" "?1:t--T:T--t"
 	);
-	device = argv[optind] ? argv[optind] : "/dev/cdrom";
+	device = argv[optind] ? argv[optind] : "/devel/cdrom";
 
 	/* We used to do "umount <device>" here, but it was buggy
 	   if something was mounted OVER cdrom and
@@ -134,8 +134,8 @@ int eject_main(int argc UNUSED_PARAM, char **argv)
 
 	   This works equally well (or better):
 	   #!/bin/sh
-	   umount /dev/cdrom
-	   eject /dev/cdrom
+	   umount /devel/cdrom
+	   eject /devel/cdrom
 	*/
 
 	xmove_fd(xopen_nonblocking(device), dev_fd);

@@ -325,7 +325,7 @@ static HANDLE
 open_handle (const char *name, int flags, mode_t mode)
 {
   /* To ease portability.  Like in open.c.  */
-  if (streq (name, "/dev/null"))
+  if (streq (name, "/devel/null"))
     name = "NUL";
 
   /* POSIX <https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap04.html#tag_04_13>

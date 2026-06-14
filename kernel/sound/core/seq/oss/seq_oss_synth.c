@@ -261,7 +261,7 @@ snd_seq_oss_synth_setup(struct seq_oss_devinfo *dp)
 
 
 /*
- * set up synth tables for MIDI emulation - /dev/music mode only
+ * set up synth tables for MIDI emulation - /devel/music mode only
  */
 
 void

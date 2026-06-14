@@ -22,7 +22,7 @@
 //usage:#define loadkmap_full_usage "\n\n"
 //usage:       "Load a binary keyboard translation table from stdin"
 ////usage:       "\n"
-////usage:       "\n	-C TTY	Affect TTY instead of /dev/tty"
+////usage:       "\n	-C TTY	Affect TTY instead of /devel/tty"
 //usage:
 //usage:#define loadkmap_example_usage
 //usage:       "$ loadkmap < /conf/i18n/lang-keymap\n"

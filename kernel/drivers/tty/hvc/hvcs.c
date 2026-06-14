@@ -52,7 +52,7 @@
  * instances from hvcs_try_write().  They probably aren't needed with locking in
  * place.  Added check and cleanup for hvcs_pi_buff = kmalloc() in
  * hvcs_module_init().  Exposed hvcs_struct.index via a sysfs attribute so that
- * the coupling between /dev/hvcs* and a vty-server can be automatically
+ * the coupling between /devel/hvcs* and a vty-server can be automatically
  * determined.  Moved kobject_put() in hvcs_open outside of the
  * spin_unlock_irqrestore().
  *

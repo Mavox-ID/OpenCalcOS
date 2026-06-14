@@ -221,7 +221,7 @@ static void sch311x_wdt_get_status(int *status)
 }
 
 /*
- *	/dev/watchdog handling
+ *	/devel/watchdog handling
  */
 
 static ssize_t sch311x_wdt_write(struct file *file, const char __user *buf,

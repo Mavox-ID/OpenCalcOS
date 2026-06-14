@@ -60,7 +60,7 @@ struct apm_queue {
 };
 
 /*
- * thread states (for threads using a writable /dev/apm_bios fd):
+ * thread states (for threads using a writable /devel/apm_bios fd):
  *
  * SUSPEND_NONE:	nothing happening
  * SUSPEND_PENDING:	suspend event queued for thread and pending to be read
@@ -136,7 +136,7 @@ static DECLARE_WAIT_QUEUE_HEAD(apm_waitqueue);
 static DECLARE_WAIT_QUEUE_HEAD(apm_suspend_waitqueue);
 
 /*
- * This is a list of everyone who has opened /dev/apm_bios
+ * This is a list of everyone who has opened /devel/apm_bios
  */
 static DECLARE_RWSEM(user_list_lock);
 static LIST_HEAD(apm_user_list);
@@ -262,8 +262,8 @@ static unsigned int apm_poll(struct file *fp, poll_table * wait)
  * APM_IOC_SUSPEND
  *   This IOCTL is overloaded, and performs two functions.  It is used to:
  *     - initiate a suspend
- *     - acknowledge a suspend read from /dev/apm_bios.
- *   Only when everyone who has opened /dev/apm_bios with write permission
+ *     - acknowledge a suspend read from /devel/apm_bios.
+ *   Only when everyone who has opened /devel/apm_bios with write permission
  *   has acknowledge does the actual suspend happen.
  */
 static long
@@ -284,7 +284,7 @@ apm_ioctl(struct file *filp, u_int cmd, u_long arg)
 		switch (as->suspend_state) {
 		case SUSPEND_READ:
 			/*
-			 * If we read a suspend command from /dev/apm_bios,
+			 * If we read a suspend command from /devel/apm_bios,
 			 * then the corresponding APM_IOC_SUSPEND ioctl is
 			 * interpreted as an acknowledge.
 			 */

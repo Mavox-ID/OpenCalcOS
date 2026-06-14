@@ -21,7 +21,7 @@
  *
  * This driver currently can only support 1 watchdog - there are 2 in the
  * hardware that this driver supports. Thus one could be configured as a
- * process-based watchdog (via /dev/watchdog), the second (using the interrupt
+ * process-based watchdog (via /devel/watchdog), the second (using the interrupt
  * capabilities) a kernel-based watchdog.
  */
 

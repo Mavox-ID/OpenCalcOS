@@ -35,7 +35,7 @@ main (void)
   char buf[100];
 
   /* Open the controlling tty of the current process.  */
-  fd = open ("/dev/tty", O_RDONLY);
+  fd = open ("/devel/tty", O_RDONLY);
   if (fd < 0)
     {
       fprintf (stderr, "Skipping test: cannot open controlling tty\n");
@@ -45,7 +45,7 @@ main (void)
   ASSERT (ttyname_r (fd, buf, 1) == ERANGE);
 
   ASSERT (ttyname_r (fd, buf, sizeof (buf)) == 0);
-  ASSERT (memeq (buf, "/dev/", 5));
+  ASSERT (memeq (buf, "/devel/", 5));
 
   /* Test behaviour for invalid file descriptors.  */
   {

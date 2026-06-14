@@ -586,13 +586,13 @@ struct mount *__lookup_mnt(struct vfsmount *mnt, struct dentry *dentry,
  * "First" means first mounted chronologically.  If you create the
  * following mounts:
  *
- * mount /dev/sda1 /mnt
- * mount /dev/sda2 /mnt
- * mount /dev/sda3 /mnt
+ * mount /devel/sda1 /mnt
+ * mount /devel/sda2 /mnt
+ * mount /devel/sda3 /mnt
  *
  * Then lookup_mnt() on the base /mnt dentry in the root mount will
- * return successively the root dentry and vfsmount of /dev/sda1, then
- * /dev/sda2, then /dev/sda3, then NULL.
+ * return successively the root dentry and vfsmount of /devel/sda1, then
+ * /devel/sda2, then /devel/sda3, then NULL.
  *
  * lookup_mnt takes a reference to the found vfsmount.
  */

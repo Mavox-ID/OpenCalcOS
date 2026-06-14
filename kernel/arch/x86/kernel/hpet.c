@@ -175,7 +175,7 @@ do {								\
 } while (0)
 
 /*
- * When the hpet driver (/dev/hpet) is enabled, we need to reserve
+ * When the hpet driver (/devel/hpet) is enabled, we need to reserve
  * timer 0 and timer 1 in case of RTC emulation.
  */
 #ifdef CONFIG_HPET
@@ -567,7 +567,7 @@ static void init_one_hpet_msi_clockevent(struct hpet_dev *hdev, int cpu)
 }
 
 #ifdef CONFIG_HPET
-/* Reserve at least one timer for userspace (/dev/hpet) */
+/* Reserve at least one timer for userspace (/devel/hpet) */
 #define RESERVE_TIMERS 1
 #else
 #define RESERVE_TIMERS 0

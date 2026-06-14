@@ -30,7 +30,7 @@
 
 /*
  * We do use our own empty page to avoid interference with other users
- * of ZERO_PAGE(), such as /dev/zero
+ * of ZERO_PAGE(), such as /devel/zero
  */
 static DEFINE_MUTEX(xip_sparse_mutex);
 static seqcount_t xip_sparse_seq = SEQCNT_ZERO;

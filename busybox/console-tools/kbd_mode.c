@@ -50,8 +50,8 @@ int kbd_mode_main(int argc UNUSED_PARAM, char **argv)
 		fd = xopen_nonblocking(tty_name);
 	} else {
 		/* kbd-2.0.3 tries in sequence:
-		 * fd#0, /dev/tty, /dev/tty0.
-		 * get_console_fd_or_die: /dev/console, /dev/tty0, /dev/tty.
+		 * fd#0, /devel/tty, /devel/tty0.
+		 * get_console_fd_or_die: /devel/console, /devel/tty0, /devel/tty.
 		 * kbd-2.0.3 checks KDGKBTYPE, get_console_fd_or_die checks too.
 		 */
 		fd = get_console_fd_or_die();

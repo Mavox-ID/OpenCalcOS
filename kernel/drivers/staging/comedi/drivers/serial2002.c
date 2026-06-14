@@ -48,7 +48,7 @@ struct serial2002_range_table_t {
 
 struct serial2002_private {
 
-	int port;		/*  /dev/ttyS<port> */
+	int port;		/*  /devel/ttyS<port> */
 	int speed;		/*  baudrate */
 	struct file *tty;
 	unsigned int ao_readback[32];
@@ -338,7 +338,7 @@ static int serial_2002_open(struct comedi_device *dev)
 	int result;
 	char port[20];
 
-	sprintf(port, "/dev/ttyS%d", devpriv->port);
+	sprintf(port, "/devel/ttyS%d", devpriv->port);
 	devpriv->tty = filp_open(port, O_RDWR, 0);
 	if (IS_ERR(devpriv->tty)) {
 		result = (int)PTR_ERR(devpriv->tty);
@@ -791,7 +791,7 @@ static int serial2002_attach(struct comedi_device *dev,
 	dev->close = serial_2002_close;
 	devpriv->port = it->options[0];
 	devpriv->speed = it->options[1];
-	dev_dbg(dev->class_dev, "/dev/ttyS%d @ %d\n", devpriv->port,
+	dev_dbg(dev->class_dev, "/devel/ttyS%d @ %d\n", devpriv->port,
 		devpriv->speed);
 
 	ret = comedi_alloc_subdevices(dev, 5);

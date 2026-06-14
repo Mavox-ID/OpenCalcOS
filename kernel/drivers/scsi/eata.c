@@ -160,7 +160,7 @@
  *  lilo.conf additional commands as in the following example:
  *
  *  fix-table
- *  disk=/dev/sda bios=0x80 sectors=63 heads=128 cylindres=546
+ *  disk=/devel/sda bios=0x80 sectors=63 heads=128 cylindres=546
  *
  *  where the above geometry should be replaced with the one reported at
  *  power up by the DPT controller.

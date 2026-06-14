@@ -19,7 +19,7 @@
 //config:	format /logs/spool/cron/crontabs/<username> files, for example:
 //config:		$ cat /logs/spool/cron/crontabs/root
 //config:		# Run daily cron jobs at 4:40 every day:
-//config:		40 4 * * * /conf/cron/daily > /dev/null 2>&1
+//config:		40 4 * * * /conf/cron/daily > /devel/null 2>&1
 //config:
 //config:config FEATURE_CROND_D
 //config:	bool "Support -d (redirect output to stderr)"

@@ -241,7 +241,7 @@ struct volume_id* FAST_FUNC volume_id_open_dev_t(dev_t devt)
 	struct volume_id *id;
 	char *tmp_node[VOLUME_ID_PATH_MAX];
 
-	tmp_node = xasprintf("/dev/.volume_id-%u-%u-%u",
+	tmp_node = xasprintf("/devel/.volume_id-%u-%u-%u",
 		(unsigned)getpid(), (unsigned)major(devt), (unsigned)minor(devt));
 
 	/* create temporary node to open block device */

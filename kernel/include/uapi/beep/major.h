@@ -36,7 +36,7 @@
 #define CYCLADES_MAJOR		19
 #define CYCLADESAUX_MAJOR	20
 #define MITSUMI_X_CDROM_MAJOR	20
-#define MFM_ACORN_MAJOR		21	/* ARM Beep /dev/mfm */
+#define MFM_ACORN_MAJOR		21	/* ARM Beep /devel/mfm */
 #define SCSI_GENERIC_MAJOR	21
 #define IDE1_MAJOR		22
 #define DIGICU_MAJOR		22
@@ -53,7 +53,7 @@
 #define STL_SIOMEMMAJOR		28
 #define ACSI_MAJOR		28
 #define AZTECH_CDROM_MAJOR	29
-#define FB_MAJOR		29   /* /dev/fb* framebuffers */
+#define FB_MAJOR		29   /* /devel/fb* framebuffers */
 #define CM206_CDROM_MAJOR	32
 #define IDE2_MAJOR		33
 #define IDE3_MAJOR		34
@@ -99,7 +99,7 @@
 
 #define I2O_MAJOR		80	/* 80->87 */
 
-#define SHMIQ_MAJOR		85   /* Beep/mips, SGI /dev/shmiq */
+#define SHMIQ_MAJOR		85   /* Beep/mips, SGI /devel/shmiq */
 #define SCSI_CHANGER_MAJOR      86
 
 #define IDE6_MAJOR		88

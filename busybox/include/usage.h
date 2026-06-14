@@ -420,7 +420,7 @@
        "N" \
 
 #define chvt_full_usage "\n\n" \
-       "Change the foreground virtual terminal to /dev/ttyN" \
+       "Change the foreground virtual terminal to /devel/ttyN" \
 
 #define clear_trivial_usage \
        "" \
@@ -432,7 +432,7 @@
        "[N]" \
 
 #define deallocvt_full_usage "\n\n" \
-       "Deallocate unused virtual terminal /dev/ttyN" \
+       "Deallocate unused virtual terminal /devel/ttyN" \
 
 #define dumpkmap_trivial_usage \
        "> keymap" \
@@ -475,7 +475,7 @@
 #define setfont_full_usage "\n\n" \
        "Load a console font\n" \
      "\n	-m MAPFILE	Load console screen map" \
-     "\n	-C TTY		Affect TTY instead of /dev/tty" \
+     "\n	-C TTY		Affect TTY instead of /devel/tty" \
 
 #define setfont_example_usage \
        "$ setfont -m koi8-r /conf/i18n/fontname\n" \
@@ -517,10 +517,10 @@
        "[-r] [DEVICE]" \
 
 #define setconsole_full_usage "\n\n" \
-       "Make writes to /dev/console appear on DEVICE (default: /dev/tty)." \
-   "\n""Does not redirect kernel log output or reads from /dev/console." \
+       "Make writes to /devel/console appear on DEVICE (default: /devel/tty)." \
+   "\n""Does not redirect kernel log output or reads from /devel/console." \
    "\n" \
-   "\n""	-r	Reset: writes to /dev/console go to kernel log tty(s)" \
+   "\n""	-r	Reset: writes to /devel/console go to kernel log tty(s)" \
 
 #define setkeycodes_trivial_usage \
        "{ SCANCODE KEYCODE }..." \
@@ -680,7 +680,7 @@
 #define chroot_example_usage \
        "$ ls -l /bin/ls\n" \
        "lrwxrwxrwx    1 root     root          12 Apr 13 00:46 /bin/ls -> /BusyBox\n" \
-       "# mount /dev/hdc1 /mnt -t minix\n" \
+       "# mount /devel/hdc1 /mnt -t minix\n" \
        "# chroot /mnt\n" \
        "# ls -l /bin/ls\n" \
        "-rwxr-xr-x    1 root     root        40816 Feb  5 07:45 /bin/ls*\n" \
@@ -821,7 +821,7 @@
      "\nN may be suffixed by c (1), w (2), b (512), kB (1000), k (1024), MB, M, GB, G" \
 
 #define dd_example_usage \
-       "$ dd if=/dev/zero of=/dev/ram1 bs=1M count=4\n" \
+       "$ dd if=/devel/zero of=/devel/ram1 bs=1M count=4\n" \
        "4+0 records in\n" \
        "4+0 records out\n" \
 
@@ -851,17 +851,17 @@
 #define df_example_usage \
        "$ df\n" \
        "Filesystem           1K-blocks      Used Available Use% Mounted on\n" \
-       "/dev/sda3              8690864   8553540    137324  98% /\n" \
-       "/dev/sda1                64216     36364     27852  57% /boot\n" \
-       "$ df /dev/sda3\n" \
+       "/devel/sda3              8690864   8553540    137324  98% /\n" \
+       "/devel/sda1                64216     36364     27852  57% /boot\n" \
+       "$ df /devel/sda3\n" \
        "Filesystem           1K-blocks      Used Available Use% Mounted on\n" \
-       "/dev/sda3              8690864   8553540    137324  98% /\n" \
-       "$ POSIXLY_CORRECT=sure df /dev/sda3\n" \
+       "/devel/sda3              8690864   8553540    137324  98% /\n" \
+       "$ POSIXLY_CORRECT=sure df /devel/sda3\n" \
        "Filesystem         512B-blocks      Used Available Use% Mounted on\n" \
-       "/dev/sda3             17381728  17107080    274648  98% /\n" \
-       "$ POSIXLY_CORRECT=yep df -P /dev/sda3\n" \
+       "/devel/sda3             17381728  17107080    274648  98% /\n" \
+       "$ POSIXLY_CORRECT=yep df -P /devel/sda3\n" \
        "Filesystem          512-blocks      Used Available Capacity Mounted on\n" \
-       "/dev/sda3             17381728  17107080    274648      98% /\n" \
+       "/devel/sda3             17381728  17107080    274648      98% /\n" \
 
 #define dirname_trivial_usage \
        "FILENAME" \
@@ -1321,7 +1321,7 @@
      "\n	p	Named pipe (MAJOR MINOR must be omitted)" \
 
 #define mknod_example_usage \
-       "$ mknod /dev/fd0 b 2 0\n" \
+       "$ mknod /devel/fd0 b 2 0\n" \
        "$ mknod -m 644 /libs/pipe p\n" \
 
 #define mktemp_trivial_usage \
@@ -1859,7 +1859,7 @@
 
 #define tty_example_usage \
        "$ tty\n" \
-       "/dev/tty2\n" \
+       "/devel/tty2\n" \
 
 #define uname_trivial_usage \
        "[-amnrspvio]" \
@@ -2445,7 +2445,7 @@
 	IF_FEATURE_XARGS_SUPPORT_ARGS_FILE( \
      "\n	-a FILE	Read from FILE instead of stdin" \
 	) \
-     "\n	-o	Reopen stdin as /dev/tty" \
+     "\n	-o	Reopen stdin as /devel/tty" \
      "\n	-r	Don't run command if input is empty" \
      "\n	-t	Print the command on stderr before execution" \
 	IF_FEATURE_XARGS_SUPPORT_CONFIRMATION( \
@@ -2560,7 +2560,7 @@
 	"		WARNING: This field has a non-traditional meaning for BusyBox init!\n" \
 	"		The id field is used by BusyBox init to specify the controlling tty for\n" \
 	"		the specified process to run on. The contents of this field are\n" \
-	"		appended to \"/dev/\" and used as-is. There is no need for this field to\n" \
+	"		appended to \"/devel/\" and used as-is. There is no need for this field to\n" \
 	"		be unique, although if it isn't you may have strange results. If this\n" \
 	"		field is left blank, then the init's stdin/out will be used.\n" \
 	"\n" \
@@ -2624,7 +2624,7 @@
 	"	#\n" \
 	"	# Start an \"askfirst\" shell on the console (whatever that may be)\n" \
 	"	::askfirst:-/bin/sh\n" \
-	"	# Start an \"askfirst\" shell on /dev/tty2-4\n" \
+	"	# Start an \"askfirst\" shell on /devel/tty2-4\n" \
 	"	tty2::askfirst:-/bin/sh\n" \
 	"	tty3::askfirst:-/bin/sh\n" \
 	"	tty4::askfirst:-/bin/sh\n" \
@@ -3001,7 +3001,7 @@
      "\nTo exit, quickly press ESC 3 times." \
      "\n" \
      "\n	-v	Don't send keystrokes to the console" \
-     "\n	-c	Create missing /dev/{tty,vcsa}N" \
+     "\n	-c	Create missing /devel/{tty,vcsa}N" \
      "\n	-s	Open a SHELL session" \
      "\n	-n	Black & white" \
      "\n	-d	Dump console to stdout" \
@@ -3066,7 +3066,7 @@
 #define fbsplash_full_usage "\n\n" \
        "	-s	Image" \
      "\n	-c	Hide cursor" \
-     "\n	-d	Framebuffer device (default /dev/fb0)" \
+     "\n	-d	Framebuffer device (default /devel/fb0)" \
      "\n	-i	Config file (var=value):" \
      "\n			BAR_LEFT,BAR_TOP,BAR_WIDTH,BAR_HEIGHT" \
      "\n			BAR_R,BAR_G,BAR_B,IMG_LEFT,IMG_TOP" \
@@ -3315,13 +3315,13 @@
      "\nIf 's' is the last argument, the base device is created as well." \
      "\n" \
      "\nExamples:" \
-     "\n	makedevs /dev/ttyS c 4 66 2 63   ->  ttyS2-ttyS63" \
-     "\n	makedevs /dev/hda b 3 0 0 8 s    ->  hda,hda1-hda8" \
+     "\n	makedevs /devel/ttyS c 4 66 2 63   ->  ttyS2-ttyS63" \
+     "\n	makedevs /devel/hda b 3 0 0 8 s    ->  hda,hda1-hda8" \
 
 #define makedevs_example_usage \
-       "# makedevs /dev/ttyS c 4 66 2 63\n" \
+       "# makedevs /devel/ttyS c 4 66 2 63\n" \
        "[creates ttyS2-ttyS63]\n" \
-       "# makedevs /dev/hda b 3 0 0 8 s\n" \
+       "# makedevs /devel/hda b 3 0 0 8 s\n" \
        "[creates hda,hda1-hda8]\n" \
 
 #endif \
@@ -3349,18 +3349,18 @@
        "For example:\n" \
        "<name>    <type> <mode><uid><gid><major><minor><start><inc><count>\n" \
        "/dev         d   755    0    0    -      -      -      -    -\n" \
-       "/dev/console c   666    0    0    5      1      -      -    -\n" \
-       "/dev/null    c   666    0    0    1      3      0      0    -\n" \
-       "/dev/zero    c   666    0    0    1      5      0      0    -\n" \
-       "/dev/hda     b   640    0    0    3      0      0      0    -\n" \
-       "/dev/hda     b   640    0    0    3      1      1      1    15\n\n" \
+       "/devel/console c   666    0    0    5      1      -      -    -\n" \
+       "/devel/null    c   666    0    0    1      3      0      0    -\n" \
+       "/devel/zero    c   666    0    0    1      5      0      0    -\n" \
+       "/devel/hda     b   640    0    0    3      0      0      0    -\n" \
+       "/devel/hda     b   640    0    0    3      1      1      1    15\n\n" \
        "Will Produce:\n" \
        "/dev\n" \
-       "/dev/console\n" \
-       "/dev/null\n" \
-       "/dev/zero\n" \
-       "/dev/hda\n" \
-       "/dev/hda[0-15]\n" \
+       "/devel/console\n" \
+       "/devel/null\n" \
+       "/devel/zero\n" \
+       "/devel/hda\n" \
+       "/devel/hda[0-15]\n" \
 
 #endif \
 
@@ -3443,7 +3443,7 @@
        "Tell the kernel to automatically search and start RAID arrays" \
 
 #define raidautorun_example_usage \
-       "$ raidautorun /dev/md0" \
+       "$ raidautorun /devel/md0" \
 
 #define readahead_trivial_usage \
        "[FILE]..." \
@@ -3631,7 +3631,7 @@
        "[DEVICE]" \
 
 #define volname_full_usage "\n\n" \
-       "Show CD volume name of the DEVICE (default /dev/cdrom)" \
+       "Show CD volume name of the DEVICE (default /devel/cdrom)" \
 
 #define watchdog_trivial_usage \
        "[-t N[ms]] [-T N[ms]] [-F] DEV" \
@@ -4357,15 +4357,15 @@
 	IF_NC_EXTRA( \
      "\n	-w SEC	Connect timeout" \
      "\n	-i SEC	Delay interval for lines sent" \
-     "\n	-f FILE	Use file (ala /dev/ttyS0) instead of network" \
+     "\n	-f FILE	Use file (ala /devel/ttyS0) instead of network" \
      "\n	-e PROG	Run PROG after connect" \
 	) \
 
 #define nc_notes_usage "" \
 	IF_NC_EXTRA( \
        "To use netcat as a terminal emulator on a serial port:\n\n" \
-       "$ stty 115200 -F /dev/ttyS0\n" \
-       "$ stty raw -echo -ctlecho && nc -f /dev/ttyS0\n" \
+       "$ stty 115200 -F /devel/ttyS0\n" \
+       "$ stty raw -echo -ctlecho && nc -f /devel/ttyS0\n" \
 	) \
 
 #define nc_example_usage \
@@ -4808,7 +4808,7 @@
 
 #define tunctl_full_usage "\n\n" \
        "Create or delete TUN/TAP interfaces\n" \
-     "\n	-f DEV	TUN device (default /dev/net/tun)" \
+     "\n	-f DEV	TUN device (default /devel/net/tun)" \
      "\n	-t NAME	Create iface (default: tapN)" \
      "\n	-d NAME	Delete iface" \
 	IF_FEATURE_TUNCTL_UG( \
@@ -5657,7 +5657,7 @@
 	) \
 
 #define acpid_example_usage \
-       "Without -e option, acpid uses all /dev/input/event* files\n" \
+       "Without -e option, acpid uses all /devel/input/event* files\n" \
        "# acpid\n" \
        "# acpid -l /logs/log/my-acpi-log\n" \
        "# acpid -e /proc/acpi/event\n" \
@@ -5672,7 +5672,7 @@
      "\n	-s	Perform a secure discard" \
 
 #define blkdiscard_example_usage \
-	"$ blkdiscard -o 0 -l 1G /dev/sdb" \
+	"$ blkdiscard -o 0 -l 1G /devel/sdb" \
 
 #define blkid_trivial_usage \
        "[BLOCKDEV]..." \
@@ -5738,7 +5738,7 @@
        "[-t] [-T] [DEVICE]" \
 
 #define eject_full_usage "\n\n" \
-       "Eject DEVICE or default /dev/cdrom\n" \
+       "Eject DEVICE or default /devel/cdrom\n" \
 	IF_FEATURE_EJECT_SCSI( \
      "\n	-s	SCSI device" \
 	) \
@@ -5840,7 +5840,7 @@
        "Free all memory used by the specified ramdisk" \
 
 #define freeramdisk_example_usage \
-       "$ freeramdisk /dev/ram2\n" \
+       "$ freeramdisk /devel/ram2\n" \
 
 #define fdflush_trivial_usage \
        "DEVICE" \
@@ -5985,7 +5985,7 @@
      "\n	--systz	Set in-kernel timezone, correct system time" \
      "\n		if RTC is kept in local time" \
 	) \
-     "\n	-f DEV	Use specified device (e.g. /dev/rtc2)" \
+     "\n	-f DEV	Use specified device (e.g. /devel/rtc2)" \
      "\n	-u	Assume RTC is kept in UTC" \
      "\n	-l	Assume RTC is kept in local time" \
      "\n		(if neither is given, read from "ADJTIME_PATH")" \
@@ -6050,11 +6050,11 @@
      "\n	-f	Show/use next free loop device" \
 
 #define losetup_notes_usage \
-       "One argument (losetup /dev/loop1) will display the current association\n" \
+       "One argument (losetup /devel/loop1) will display the current association\n" \
        "(if any), or disassociate it (with -d). The display shows the offset\n" \
        "and filename of the file the loop device is currently bound to.\n\n" \
-       "Two arguments (losetup /dev/loop1 file.img) create a new association,\n" \
-       "with optional partition scanning (creates /dev/loop1p1, /dev/loop1p2\n" \
+       "Two arguments (losetup /devel/loop1 file.img) create a new association,\n" \
+       "with optional partition scanning (creates /devel/loop1p1, /devel/loop1p2\n" \
        "etc. with -P) and with an optional offset (-o 12345). Encryption is\n" \
        "not yet supported. losetup -f will show the first free loop device\n\n" \
 
@@ -6098,11 +6098,11 @@
        "	$MODALIAS=.* 0:0 660 @modprobe \"$MODALIAS\"\n" \
 	) \
        "\n" \
-       "If /dev/mdev.seq file exists, mdev will wait for its value\n" \
+       "If /devel/mdev.seq file exists, mdev will wait for its value\n" \
        "to match $SEQNUM variable. This prevents plug/unplug races.\n" \
-       "To activate this feature, create empty /dev/mdev.seq at boot.\n" \
+       "To activate this feature, create empty /devel/mdev.seq at boot.\n" \
        "\n" \
-       "If /dev/mdev.log file exists, debug log will be appended to it." \
+       "If /devel/mdev.log file exists, debug log will be appended to it." \
 
 #define mesg_trivial_usage \
        "[y|n]" \
@@ -6227,10 +6227,10 @@
 
 #define mount_example_usage \
        "$ mount\n" \
-       "/dev/hda3 on / type minix (rw)\n" \
+       "/devel/hda3 on / type minix (rw)\n" \
        "proc on /proc type proc (rw)\n" \
-       "devpts on /dev/pts type devpts (rw)\n" \
-       "$ mount /dev/fd0 /mnt -t msdos -o ro\n" \
+       "devpts on /devel/pts type devpts (rw)\n" \
+       "$ mount /devel/fd0 /mnt -t msdos -o ro\n" \
        "$ mount /libs/diskimage /opt -t ext2 -o loop\n" \
        "$ mount cd_image.iso mydir\n" \
 
@@ -6302,7 +6302,7 @@
 
 #define rdev_example_usage \
        "$ rdev\n" \
-       "/dev/mtdblock9 /\n" \
+       "/devel/mtdblock9 /\n" \
 
 #define readprofile_trivial_usage \
        "[OPTIONS]" \
@@ -6497,7 +6497,7 @@
      "\n	-t FSTYPE[,...]	Unmount only these filesystem type(s)" \
 
 #define umount_example_usage \
-       "$ umount /dev/hdc1\n" \
+       "$ umount /devel/hdc1\n" \
 
 #define unshare_trivial_usage \
        "[OPTIONS] [PROG ARGS]" \

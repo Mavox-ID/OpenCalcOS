@@ -356,7 +356,7 @@ static int drm_version(struct drm_device *dev, void *data,
 }
 
 /**
- * Called whenever a process performs an ioctl on /dev/drm.
+ * Called whenever a process performs an ioctl on /devel/drm.
  *
  * \param inode device inode.
  * \param file_priv DRM file private.

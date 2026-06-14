@@ -49,7 +49,7 @@ static int init_beeprc(struct subprocess_info *info, struct cred *new)
 {
 	sys_unshare(CLONE_FS | CLONE_FILES);
 	/* stdin/stdout/stderr for /beeprc */
-	sys_open("/dev/console", O_RDWR, 0);
+	sys_open("/devel/console", O_RDWR, 0);
 	sys_dup(0);
 	sys_dup(0);
 	/* move initrd over / and chdir/chroot in initrd root */
@@ -67,9 +67,9 @@ static void __init handle_initrd(void)
 	int error;
 
 	real_root_dev = new_encode_dev(ROOT_DEV);
-	create_dev("/dev/root.old", Root_RAM0);
+	create_dev("/devel/root.old", Root_RAM0);
 	/* mount initrd on rootfs' /root */
-	mount_block_root("/dev/root.old", root_mountflags & ~MS_RDONLY);
+	mount_block_root("/devel/root.old", root_mountflags & ~MS_RDONLY);
 	sys_mkdir("/old", 0700);
 	sys_chdir("/old");
 
@@ -103,7 +103,7 @@ static void __init handle_initrd(void)
 	if (!error)
 		printk("okay\n");
 	else {
-		int fd = sys_open("/dev/root.old", O_RDWR, 0);
+		int fd = sys_open("/devel/root.old", O_RDWR, 0);
 		if (error == -ENOENT)
 			printk("/initrd does not exist. Ignored.\n");
 		else
@@ -124,10 +124,10 @@ static void __init handle_initrd(void)
 int __init initrd_load(void)
 {
 	if (mount_initrd) {
-		create_dev("/dev/ram", Root_RAM0);
+		create_dev("/devel/ram", Root_RAM0);
 		/*
-		 * Load the initrd data into /dev/ram0. Execute it as initrd
-		 * unless /dev/ram0 is supposed to be our actual root device,
+		 * Load the initrd data into /devel/ram0. Execute it as initrd
+		 * unless /devel/ram0 is supposed to be our actual root device,
 		 * in that case the ram disk is just set up here, and gets
 		 * mounted in the normal path.
 		 */

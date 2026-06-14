@@ -207,12 +207,12 @@ static void tco_timer_disable(void)
 }
 
 /*
- *	/dev/watchdog handling
+ *	/devel/watchdog handling
  */
 
 static int sp5100_tco_open(struct inode *inode, struct file *file)
 {
-	/* /dev/watchdog can only be opened once */
+	/* /devel/watchdog can only be opened once */
 	if (test_and_set_bit(0, &timer_alive))
 		return -EBUSY;
 

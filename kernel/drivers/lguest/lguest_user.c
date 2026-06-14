@@ -184,7 +184,7 @@ static int attach_eventfd(struct lguest *lg, const unsigned long __user *input)
 
 /*L:050
  * Sending an interrupt is done by writing LHREQ_IRQ and an interrupt
- * number to /dev/lguest.
+ * number to /devel/lguest.
  */
 static int user_send_irq(struct lg_cpu *cpu, const unsigned long __user *input)
 {
@@ -205,7 +205,7 @@ static int user_send_irq(struct lg_cpu *cpu, const unsigned long __user *input)
 
 /*L:040
  * Once our Guest is initialized, the Launcher makes it run by reading
- * from /dev/lguest.
+ * from /devel/lguest.
  */
 static ssize_t read(struct file *file, char __user *user, size_t size,loff_t*o)
 {
@@ -402,7 +402,7 @@ unlock:
  * LHREQ_INITIALIZE to set up the Guest.  After that the Launcher can use
  * writes of other values to send interrupts or set up receipt of notifications.
  *
- * Note that we overload the "offset" in the /dev/lguest file to indicate what
+ * Note that we overload the "offset" in the /devel/lguest file to indicate what
  * CPU number we're dealing with.  Currently this is always 0 since we only
  * support uniprocessor Guests, but you can see the beginnings of SMP support
  * here.
@@ -518,7 +518,7 @@ static int close(struct inode *inode, struct file *file)
  * shall see more of that later.
  *
  * We begin our understanding with the Host kernel interface which the Launcher
- * uses: reading and writing a character device called /dev/lguest.  All the
+ * uses: reading and writing a character device called /devel/lguest.  All the
  * work happens in the read(), write() and close() routines:
  */
 static const struct file_operations lguest_fops = {

@@ -147,12 +147,12 @@ static int tco_timer_set_heartbeat(int t)
 }
 
 /*
- *	/dev/watchdog handling
+ *	/devel/watchdog handling
  */
 
 static int nv_tco_open(struct inode *inode, struct file *file)
 {
-	/* /dev/watchdog can only be opened once */
+	/* /devel/watchdog can only be opened once */
 	if (test_and_set_bit(0, &timer_alive))
 		return -EBUSY;
 

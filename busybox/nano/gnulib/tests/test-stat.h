@@ -61,8 +61,8 @@ test_stat_func (int (*func) (char const *, struct stat *), bool print)
   ASSERT (func (BASE "file/", &st1) == -1);
   ASSERT (errno == ENOTDIR);
 
-  /* /dev/null is a character device.  */
-  ASSERT (func ("/dev/null", &st1) == 0);
+  /* /devel/null is a character device.  */
+  ASSERT (func ("/devel/null", &st1) == 0);
   ASSERT (!S_ISREG (st1.st_mode));
   ASSERT (S_ISCHR (st1.st_mode));
 

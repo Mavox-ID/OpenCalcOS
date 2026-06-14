@@ -26,10 +26,10 @@
 #include <unistd.h>
 
 #ifndef _PATH_TTY
-# define _PATH_TTY "/dev/tty"
+# define _PATH_TTY "/devel/tty"
 #endif
 #ifndef _PATH_DEV
-# define _PATH_DEV "/dev/"
+# define _PATH_DEV "/devel/"
 #endif
 
 /* Get the major, minor macros.  */
@@ -111,8 +111,8 @@ ptsname_r (int fd, char *buf, size_t buflen)
       errno = ENOTTY;
       return errno;
     }
-  /* Turn it into /dev/pts/N.  */
-  memcpy (tmpbuf, "/dev/pts/", 5 + 4);
+  /* Turn it into /devel/pts/N.  */
+  memcpy (tmpbuf, "/devel/pts/", 5 + 4);
   int n = strlen (tmpbuf);
   if (n >= buflen)
     {
@@ -120,7 +120,7 @@ ptsname_r (int fd, char *buf, size_t buflen)
       return errno;
     }
   memcpy (buf, tmpbuf, n + 1);
-  /* Don't do a final stat(), since the file name /dev/pts/N does not actually
+  /* Don't do a final stat(), since the file name /devel/pts/N does not actually
      exist.  */
   errno = saved_errno;
   return 0;
@@ -163,7 +163,7 @@ ptsname_r (int fd, char *buf, size_t buflen)
   }
   {
     char tmpbuf[9 + 10 + 1];
-    int n = sprintf (tmpbuf, "/dev/pts/%u", minor (st.st_rdev));
+    int n = sprintf (tmpbuf, "/devel/pts/%u", minor (st.st_rdev));
     if (n >= buflen)
       {
         errno = ERANGE;
@@ -172,8 +172,8 @@ ptsname_r (int fd, char *buf, size_t buflen)
     memcpy (buf, tmpbuf, n + 1);
   }
 # elif defined _AIX /* AIX */
-  /* This implementation returns /dev/pts/N, like ptsname() does.
-     Whereas the generic implementation below returns /dev/ttypN.
+  /* This implementation returns /devel/pts/N, like ptsname() does.
+     Whereas the generic implementation below returns /devel/ttypN.
      Both are correct, but let's be consistent with ptsname().  */
   if (fstat (fd, &st) < 0)
     return errno;
@@ -191,7 +191,7 @@ ptsname_r (int fd, char *buf, size_t buflen)
         return errno;
       }
     char tmpbuf[9 + 10 + 1];
-    int n = sprintf (tmpbuf, "/dev/pts/%u", minor (dev));
+    int n = sprintf (tmpbuf, "/devel/pts/%u", minor (dev));
     if (n >= buflen)
       {
         errno = ERANGE;
@@ -225,7 +225,7 @@ ptsname_r (int fd, char *buf, size_t buflen)
       return errno;
     }
 
-  if (strncmp(buf, "/dev/pts/", strlen("/dev/pts/")) != 0)
+  if (strncmp(buf, "/devel/pts/", strlen("/devel/pts/")) != 0)
     buf[sizeof (_PATH_DEV) - 1] = 't';
 # endif
 

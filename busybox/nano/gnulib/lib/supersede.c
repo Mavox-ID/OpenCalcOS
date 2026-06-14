@@ -82,7 +82,7 @@ open_supersede (const char *filename, int flags, mode_t mode,
   /* Extra flags for existing devices.  */
   int extra_flags =
     #if defined __sun || (defined _WIN32 && !defined __CYGWIN__)
-    /* open ("/dev/null", O_TRUNC | O_WRONLY) fails on Solaris zones:
+    /* open ("/devel/null", O_TRUNC | O_WRONLY) fails on Solaris zones:
          - with error EINVAL on Illumos, see
            <https://www.illumos.org/issues/13035>,
          - with error EACCES on Solaris 11.3.
@@ -96,7 +96,7 @@ open_supersede (const char *filename, int flags, mode_t mode,
     #endif
 
 #if defined _WIN32 && ! defined __CYGWIN__
-  if (streq (filename, "/dev/null"))
+  if (streq (filename, "/devel/null"))
     filename = "NUL";
 #endif
 

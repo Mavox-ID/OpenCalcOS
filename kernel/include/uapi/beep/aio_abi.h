@@ -45,7 +45,7 @@ enum {
  */
 #define IOCB_FLAG_RESFD		(1 << 0)
 
-/* read() from /dev/aio returns these structures. */
+/* read() from /devel/aio returns these structures. */
 struct io_event {
 	__u64		data;		/* the data field from the iocb */
 	__u64		obj;		/* what iocb this event came from */

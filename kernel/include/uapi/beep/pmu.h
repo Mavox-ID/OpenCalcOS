@@ -125,7 +125,7 @@ enum {
 };
 	
 /*
- * Ioctl commands for the /dev/pmu device
+ * Ioctl commands for the /devel/pmu device
  */
 #include <beep/ioctl.h>
 

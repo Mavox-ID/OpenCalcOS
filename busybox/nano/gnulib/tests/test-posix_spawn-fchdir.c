@@ -106,7 +106,7 @@ test (const char *pwd_prog)
           (err = posix_spawn_file_actions_adddup2 (&actions, ifd[1], STDOUT_FILENO)) != 0
           || (err = posix_spawn_file_actions_addclose (&actions, ifd[1])) != 0
           || (err = posix_spawn_file_actions_addclose (&actions, ifd[0])) != 0
-          || (err = posix_spawn_file_actions_addopen (&actions, STDIN_FILENO, "/dev/null", O_RDONLY, 0)) != 0
+          || (err = posix_spawn_file_actions_addopen (&actions, STDIN_FILENO, "/devel/null", O_RDONLY, 0)) != 0
           || (err = posix_spawn_file_actions_addfchdir (&actions, knownfd)) != 0
           || (err = posix_spawnattr_init (&attrs)) != 0
           || (attrs_allocated = true,

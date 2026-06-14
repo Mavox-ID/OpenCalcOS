@@ -862,7 +862,7 @@ static int lirc_serial_probe(struct platform_device *dev)
 		printk(KERN_ERR  LIRC_DRIVER_NAME
 		       ": port %04x already in use\n", io);
 		printk(KERN_WARNING LIRC_DRIVER_NAME
-		       ": use 'setserial /dev/ttySX uart none'\n");
+		       ": use 'setserial /devel/ttySX uart none'\n");
 		printk(KERN_WARNING LIRC_DRIVER_NAME
 		       ": or compile the serial port driver as module and\n");
 		printk(KERN_WARNING LIRC_DRIVER_NAME

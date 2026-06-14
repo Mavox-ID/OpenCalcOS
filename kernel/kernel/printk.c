@@ -187,7 +187,7 @@ static int console_may_schedule;
  * userspace, it is a kernel-private implementation detail that might
  * need to be changed in the future, when the requirements change.
  *
- * /dev/kmsg exports the structured data in the following line format:
+ * /devel/kmsg exports the structured data in the following line format:
  *   "level,sequnum,timestamp;<message text>\n"
  *
  * The optional key/value pairs are attached as continuation lines starting
@@ -367,7 +367,7 @@ static void log_store(int facility, int level,
 	log_next_seq++;
 }
 
-/* /dev/kmsg - userspace message inject/listen interface */
+/* /devel/kmsg - userspace message inject/listen interface */
 struct devkmsg_user {
 	u64 seq;
 	u32 idx;
@@ -574,7 +574,7 @@ static loff_t devkmsg_llseek(struct file *file, loff_t offset, int whence)
 	case SEEK_DATA:
 		/*
 		 * The first record after the last SYSLOG_ACTION_CLEAR,
-		 * like issued by 'dmesg -c'. Reading /dev/kmsg itself
+		 * like issued by 'dmesg -c'. Reading /devel/kmsg itself
 		 * changes no global state, and does not clear anything.
 		 */
 		user->idx = clear_idx;
@@ -1613,7 +1613,7 @@ asmlinkage int vprintk_emit(int facility, int level,
 
 	/*
 	 * Try to acquire and then immediately release the console semaphore.
-	 * The release will print out buffers and wake up /dev/kmsg and syslog()
+	 * The release will print out buffers and wake up /devel/kmsg and syslog()
 	 * users.
 	 *
 	 * The console_trylock_for_printk() function will release 'logbuf_lock'
@@ -2031,7 +2031,7 @@ out:
  * by printk().  If this is the case, console_unlock(); emits
  * the output prior to releasing the lock.
  *
- * If there is output waiting, we wake /dev/kmsg and syslog() users.
+ * If there is output waiting, we wake /devel/kmsg and syslog() users.
  *
  * console_unlock(); may be called from any context.
  */

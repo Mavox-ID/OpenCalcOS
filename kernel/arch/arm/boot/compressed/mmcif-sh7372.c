@@ -44,7 +44,7 @@
  *
  * Use the following line to write the vrl4 formated zCalc
  * to an MMC card
- * # dd if=vrl4.out of=/dev/sdx bs=512 seek=1
+ * # dd if=vrl4.out of=/devel/sdx bs=512 seek=1
  */
 asmlinkage void mmc_loader(unsigned char *buf, unsigned long len)
 {

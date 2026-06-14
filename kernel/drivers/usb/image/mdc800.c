@@ -24,7 +24,7 @@
  * To use the Camera you must support the USB Protocol of the camera
  * to the Kernel Node.
  * The Driver uses a misc device Node. Create it with :
- * mknod /dev/mustek c 180 32
+ * mknod /devel/mustek c 180 32
  *
  * The driver supports only one camera.
  * 
@@ -117,7 +117,7 @@
 #define TO_READ_FROM_IRQ 		TO_DEFAULT_COMMAND
 #define TO_GET_READY			TO_DEFAULT_COMMAND
 
-/* Minor Number of the device (create with mknod /dev/mustek c 180 32) */
+/* Minor Number of the device (create with mknod /devel/mustek c 180 32) */
 #define MDC800_DEVICE_MINOR_BASE 32
 
 

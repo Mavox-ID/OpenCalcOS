@@ -59,7 +59,7 @@ int resize_main(int argc UNUSED_PARAM, char **argv UNUSED_PARAM)
 
 	/* We use _stderr_ in order to make resize usable
 	 * in shell backticks (those redirect stdout away from tty).
-	 * NB: other versions of resize open "/dev/tty"
+	 * NB: other versions of resize open "/devel/tty"
 	 * and operate on it - should we do the same?
 	 */
 

@@ -69,7 +69,7 @@ void devm_ioremap_release(struct device *dev, void *res);
 
 /*
  * Some systems do not have legacy ISA devices.
- * /dev/port is not a valid interface on these systems.
+ * /devel/port is not a valid interface on these systems.
  * So for those archs, <asm/io.h> should define the following symbol.
  */
 #ifndef arch_has_dev_port

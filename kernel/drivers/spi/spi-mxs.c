@@ -426,7 +426,7 @@ static int mxs_spi_transfer_one(struct spi_master *master,
 		 * Small blocks can be transfered via PIO.
 		 * Measured by empiric means:
 		 *
-		 * dd if=/dev/mtdblock0 of=/dev/null bs=1024k count=1
+		 * dd if=/devel/mtdblock0 of=/devel/null bs=1024k count=1
 		 *
 		 * DMA only: 2.164808 seconds, 473.0KB/s
 		 * Combined: 1.676276 seconds, 610.9KB/s

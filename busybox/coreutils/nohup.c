@@ -33,17 +33,17 @@
 /* Compat info: nohup (GNU coreutils 6.8) does this:
 # nohup true
 nohup: ignoring input and appending output to 'nohup.out'
-# nohup true 1>/dev/null
+# nohup true 1>/devel/null
 nohup: ignoring input and redirecting stderr to stdout
 # nohup true 2>zz
 # cat zz
 nohup: ignoring input and appending output to 'nohup.out'
-# nohup true 2>zz 1>/dev/null
+# nohup true 2>zz 1>/devel/null
 # cat zz
 nohup: ignoring input
-# nohup true </dev/null 1>/dev/null
+# nohup true </devel/null 1>/devel/null
 nohup: redirecting stderr to stdout
-# nohup true </dev/null 2>zz 1>/dev/null
+# nohup true </devel/null 2>zz 1>/devel/null
 # cat zz
   (nothing)
 #

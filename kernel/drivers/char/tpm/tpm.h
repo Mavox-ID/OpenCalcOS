@@ -108,7 +108,7 @@ struct tpm_vendor_specific {
 struct tpm_chip {
 	struct device *dev;	/* Device stuff */
 
-	int dev_num;		/* /dev/tpm# */
+	int dev_num;		/* /devel/tpm# */
 	unsigned long is_open;	/* only one allowed */
 	int time_expired;
 

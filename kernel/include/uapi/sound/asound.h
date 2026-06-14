@@ -63,7 +63,7 @@ struct snd_cea_861_aud_if {
 
 /****************************************************************************
  *                                                                          *
- *      Section for driver hardware dependent interface - /dev/snd/hw?      *
+ *      Section for driver hardware dependent interface - /devel/snd/hw?      *
  *                                                                          *
  ****************************************************************************/
 
@@ -127,7 +127,7 @@ struct snd_hwdep_dsp_image {
 
 /*****************************************************************************
  *                                                                           *
- *             Digital Audio (PCM) interface - /dev/snd/pcm??                *
+ *             Digital Audio (PCM) interface - /devel/snd/pcm??                *
  *                                                                           *
  *****************************************************************************/
 
@@ -541,7 +541,7 @@ enum {
  *****************************************************************************/
 
 /*
- *  Raw MIDI section - /dev/snd/midi??
+ *  Raw MIDI section - /devel/snd/midi??
  */
 
 #define SNDRV_RAWMIDI_VERSION		SNDRV_PROTOCOL_VERSION(2, 0, 0)
@@ -594,7 +594,7 @@ struct snd_rawmidi_status {
 #define SNDRV_RAWMIDI_IOCTL_DRAIN	_IOW('W', 0x31, int)
 
 /*
- *  Timer section - /dev/snd/timer
+ *  Timer section - /devel/snd/timer
  */
 
 #define SNDRV_TIMER_VERSION		SNDRV_PROTOCOL_VERSION(2, 0, 6)
@@ -748,7 +748,7 @@ struct snd_timer_tread {
 
 /****************************************************************************
  *                                                                          *
- *        Section for driver control interface - /dev/snd/control?          *
+ *        Section for driver control interface - /devel/snd/control?          *
  *                                                                          *
  ****************************************************************************/
 

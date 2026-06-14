@@ -1787,8 +1787,8 @@ static void __init config_types( void )
 }
 
 /*
- * floppy_open check for aliasing (/dev/fd0 can be the same as
- * /dev/PS0 etc), and disallows simultaneous access to the same
+ * floppy_open check for aliasing (/devel/fd0 can be the same as
+ * /devel/PS0 etc), and disallows simultaneous access to the same
  * drive with different device numbers.
  */
 

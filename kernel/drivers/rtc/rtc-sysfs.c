@@ -195,7 +195,7 @@ rtc_sysfs_set_wakealarm(struct device *dev, struct device_attribute *attr,
 	if (alarm > now) {
 		/* Avoid accidentally clobbering active alarms; we can't
 		 * entirely prevent that here, without even the minimal
-		 * locking from the /dev/rtcN api.
+		 * locking from the /devel/rtcN api.
 		 */
 		retval = rtc_read_alarm(rtc, &alm);
 		if (retval < 0)

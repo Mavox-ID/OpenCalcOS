@@ -98,7 +98,7 @@ static bool verbose;
 static void *guest_base;
 /* The maximum guest physical address allowed, and maximum possible. */
 static unsigned long guest_limit, guest_max;
-/* The /dev/lguest file descriptor. */
+/* The /devel/lguest file descriptor. */
 static int lguest_fd;
 
 /* a per-cpu variable indicating whose vcpu is currently running */
@@ -286,7 +286,7 @@ static int open_or_die(const char *name, int flags)
 /* map_zeroed_pages() takes a number of pages. */
 static void *map_zeroed_pages(unsigned int num)
 {
-	int fd = open_or_die("/dev/zero", O_RDONLY);
+	int fd = open_or_die("/devel/zero", O_RDONLY);
 	void *addr;
 
 	/*
@@ -298,7 +298,7 @@ static void *map_zeroed_pages(unsigned int num)
 		    PROT_NONE, MAP_PRIVATE, fd, 0);
 
 	if (addr == MAP_FAILED)
-		err(1, "Mmapping %u pages of /dev/zero", num);
+		err(1, "Mmapping %u pages of /devel/zero", num);
 
 	if (mprotect(addr + getpagesize(), getpagesize() * num,
 		     PROT_READ|PROT_WRITE) == -1)
@@ -555,9 +555,9 @@ static void tell_kernel(unsigned long start)
 				 guest_limit / getpagesize(), start };
 	verbose("Guest: %p - %p (%#lx)\n",
 		guest_base, guest_base + guest_limit, guest_limit);
-	lguest_fd = open_or_die("/dev/lguest", O_RDWR);
+	lguest_fd = open_or_die("/devel/lguest", O_RDWR);
 	if (write(lguest_fd, args, sizeof(args)) < 0)
-		err(1, "Writing to /dev/lguest");
+		err(1, "Writing to /devel/lguest");
 }
 /*:*/
 
@@ -872,7 +872,7 @@ static void console_output(struct virtqueue *vq)
  * The Network
  *
  * Handling output for network is also simple: we get all the output buffers
- * and write them to /dev/net/tun.
+ * and write them to /devel/net/tun.
  */
 struct net_info {
 	int tunfd;
@@ -889,7 +889,7 @@ static void net_output(struct virtqueue *vq)
 	if (in)
 		errx(1, "Input buffers in net output queue?");
 	/*
-	 * Send the whole thing through to /dev/net/tun.  It expects the exact
+	 * Send the whole thing through to /devel/net/tun.  It expects the exact
 	 * same format: what a coincidence!
 	 */
 	if (writev(net_info->tunfd, iov, out) < 0)
@@ -906,7 +906,7 @@ static void net_output(struct virtqueue *vq)
  * Handling network input is a bit trickier, because I've tried to optimize it.
  *
  * First we have a helper routine which tells is if from this file descriptor
- * (ie. the /dev/net/tun device) will block:
+ * (ie. the /devel/net/tun device) will block:
  */
 static bool will_block(int fd)
 {
@@ -1299,7 +1299,7 @@ static struct device *new_device(const char *name, u16 type)
 	 * Append to device list.  Prepending to a single-linked list is
 	 * easier, but the user expects the devices to be arranged on the bus
 	 * in command-line order.  The first network device on the command line
-	 * is eth0, the first block device /dev/vda, etc.
+	 * is eth0, the first block device /devel/vda, etc.
 	 */
 	if (devices.lastdev)
 		devices.lastdev->next = dev;
@@ -1448,16 +1448,16 @@ static int get_tun_device(char tapif[IFNAMSIZ])
 	memset(&ifr, 0, sizeof(ifr));
 
 	/*
-	 * We open the /dev/net/tun device and tell it we want a tap device.  A
+	 * We open the /devel/net/tun device and tell it we want a tap device.  A
 	 * tap device is like a tun device, only somehow different.  To tell
 	 * the truth, I completely blundered my way through this code, but it
 	 * works now!
 	 */
-	netfd = open_or_die("/dev/net/tun", O_RDWR);
+	netfd = open_or_die("/devel/net/tun", O_RDWR);
 	ifr.ifr_flags = IFF_TAP | IFF_NO_PI | IFF_VNET_HDR;
 	strcpy(ifr.ifr_name, "tap%d");
 	if (ioctl(netfd, TUNSETIFF, &ifr) != 0)
-		err(1, "configuring /dev/net/tun");
+		err(1, "configuring /devel/net/tun");
 
 	if (ioctl(netfd, TUNSETOFFLOAD,
 		  TUN_F_CSUM|TUN_F_TSO4|TUN_F_TSO6|TUN_F_TSO_ECN) != 0)
@@ -1724,9 +1724,9 @@ static void setup_block_file(const char *filename)
 }
 
 /*L:211
- * Our random number generator device reads from /dev/random into the Guest's
+ * Our random number generator device reads from /devel/random into the Guest's
  * input buffers.  The usual case is that the Guest doesn't want random numbers
- * and so has no buffers although /dev/random is still readable, whereas
+ * and so has no buffers although /devel/random is still readable, whereas
  * console is the reverse.
  *
  * The same logic applies, however.
@@ -1754,7 +1754,7 @@ static void rng_input(struct virtqueue *vq)
 	while (!iov_empty(iov, in_num)) {
 		len = readv(rng_info->rfd, iov, in_num);
 		if (len <= 0)
-			err(1, "Read from /dev/random gave %i", len);
+			err(1, "Read from /devel/random gave %i", len);
 		iov_consume(iov, in_num, NULL, len);
 		totlen += len;
 	}
@@ -1771,8 +1771,8 @@ static void setup_rng(void)
 	struct device *dev;
 	struct rng_info *rng_info = malloc(sizeof(*rng_info));
 
-	/* Our device's privat info simply contains the /dev/random fd. */
-	rng_info->rfd = open_or_die("/dev/random", O_RDONLY);
+	/* Our device's privat info simply contains the /devel/random fd. */
+	rng_info->rfd = open_or_die("/devel/random", O_RDONLY);
 
 	/* Create the new device. */
 	dev = new_device("rng", VIRTIO_ID_RNG);
@@ -1814,7 +1814,7 @@ static void __attribute__((noreturn)) run_guest(void)
 		unsigned long notify_addr;
 		int readval;
 
-		/* We read from the /dev/lguest device to run the Guest. */
+		/* We read from the /devel/lguest device to run the Guest. */
 		readval = pread(lguest_fd, &notify_addr,
 				sizeof(notify_addr), cpu_id);
 

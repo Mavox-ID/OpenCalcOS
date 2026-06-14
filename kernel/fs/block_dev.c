@@ -825,7 +825,7 @@ static void del_symlink(struct kobject *from, struct kobject *to)
  * - from "slaves" directory of the holder @disk to the claimed @bdev
  * - from "holders" directory of the @bdev to the holder @disk
  *
- * For example, if /dev/dm-0 maps to /dev/sda and disk for dm-0 is
+ * For example, if /devel/dm-0 maps to /devel/sda and disk for dm-0 is
  * passed to bd_link_disk_holder(), then:
  *
  *   /sys/block/dm-0/slaves/sda --> /sys/block/sda

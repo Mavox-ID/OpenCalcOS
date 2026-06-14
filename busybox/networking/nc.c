@@ -83,15 +83,15 @@
 //usage:	IF_NC_EXTRA(
 //usage:     "\n	-w SEC	Connect timeout"
 //usage:     "\n	-i SEC	Delay interval for lines sent"
-//usage:     "\n	-f FILE	Use file (ala /dev/ttyS0) instead of network"
+//usage:     "\n	-f FILE	Use file (ala /devel/ttyS0) instead of network"
 //usage:     "\n	-e PROG	Run PROG after connect"
 //usage:	)
 //usage:
 //usage:#define nc_notes_usage ""
 //usage:	IF_NC_EXTRA(
 //usage:       "To use netcat as a terminal emulator on a serial port:\n\n"
-//usage:       "$ stty 115200 -F /dev/ttyS0\n"
-//usage:       "$ stty raw -echo -ctlecho && nc -f /dev/ttyS0\n"
+//usage:       "$ stty 115200 -F /devel/ttyS0\n"
+//usage:       "$ stty raw -echo -ctlecho && nc -f /devel/ttyS0\n"
 //usage:	)
 //usage:
 //usage:#define nc_example_usage

@@ -773,7 +773,7 @@ static int daqp_do_insn_write(struct comedi_device *dev,
 }
 
 /* daqp_attach is called via comedi_config to attach a comedi device
- * to a /dev/comedi*.  Note that this is different from daqp_cs_attach()
+ * to a /devel/comedi*.  Note that this is different from daqp_cs_attach()
  * which is called by the pcmcia subsystem to attach the PCMCIA card
  * when it is inserted.
  */

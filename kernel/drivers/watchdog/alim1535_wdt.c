@@ -131,7 +131,7 @@ static int ali_settimer(int t)
 }
 
 /*
- *	/dev/watchdog handling
+ *	/devel/watchdog handling
  */
 
 /*
@@ -251,7 +251,7 @@ static long ali_ioctl(struct file *file, unsigned int cmd, unsigned long arg)
 
 static int ali_open(struct inode *inode, struct file *file)
 {
-	/* /dev/watchdog can only be opened once */
+	/* /devel/watchdog can only be opened once */
 	if (test_and_set_bit(0, &ali_is_open))
 		return -EBUSY;
 

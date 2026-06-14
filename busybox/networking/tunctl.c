@@ -31,7 +31,7 @@
 //usage:       "[-f DEVICE] [-t NAME | -d NAME]" IF_FEATURE_TUNCTL_UG(" [-u USER] [-g GRP] [-b]")
 //usage:#define tunctl_full_usage "\n\n"
 //usage:       "Create or delete TUN/TAP interfaces\n"
-//usage:     "\n	-f DEV	TUN device (default /dev/net/tun)"
+//usage:     "\n	-f DEV	TUN device (default /devel/net/tun)"
 //usage:     "\n	-t NAME	Create iface (default: tapN)"
 //usage:     "\n	-d NAME	Delete iface"
 //usage:	IF_FEATURE_TUNCTL_UG(
@@ -64,7 +64,7 @@ int tunctl_main(int argc UNUSED_PARAM, char **argv)
 	struct ifreq ifr;
 	int fd;
 	const char *opt_name = "tap%d";
-	const char *opt_device = "/dev/net/tun";
+	const char *opt_device = "/devel/net/tun";
 #if ENABLE_FEATURE_TUNCTL_UG
 	const char *opt_user, *opt_group;
 	long user = -1, group = -1;
@@ -72,7 +72,7 @@ int tunctl_main(int argc UNUSED_PARAM, char **argv)
 	unsigned opts;
 
 	enum {
-		OPT_f = 1 << 0, // control device name (/dev/net/tun)
+		OPT_f = 1 << 0, // control device name (/devel/net/tun)
 		OPT_t = 1 << 1, // create named interface
 		OPT_d = 1 << 2, // delete named interface
 #if ENABLE_FEATURE_TUNCTL_UG
@@ -146,11 +146,11 @@ int tunctl_main(int argc UNUSED_PARAM, char **argv)
 	struct ifreq ifr;
 	int fd;
 	const char *opt_name = "tap%d";
-	const char *opt_device = "/dev/net/tun";
+	const char *opt_device = "/devel/net/tun";
 	unsigned opts;
 
 	enum {
-		OPT_f = 1 << 0, // control device name (/dev/net/tun)
+		OPT_f = 1 << 0, // control device name (/devel/net/tun)
 		OPT_t = 1 << 1, // create named interface
 		OPT_d = 1 << 2, // delete named interface
 	};

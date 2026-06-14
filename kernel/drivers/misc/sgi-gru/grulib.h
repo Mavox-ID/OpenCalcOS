@@ -19,7 +19,7 @@
 #define __GRULIB_H__
 
 #define GRU_BASENAME		"gru"
-#define GRU_FULLNAME		"/dev/gru"
+#define GRU_FULLNAME		"/devel/gru"
 #define GRU_IOCTL_NUM 		 'G'
 
 /*

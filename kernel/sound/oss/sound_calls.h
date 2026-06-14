@@ -39,7 +39,7 @@ void DMAbuf_reset (int dev);
 int DMAbuf_sync (int dev);
 
 /*
- *	System calls for /dev/dsp and /dev/audio (audio.c)
+ *	System calls for /devel/dsp and /devel/audio (audio.c)
  */
 
 int audio_read (int dev, struct file *file, char __user *buf, int count);
@@ -52,7 +52,7 @@ void audio_init_devices (void);
 void reorganize_buffers (int dev, struct dma_buffparms *dmap, int recording);
 
 /*
- *	System calls for the /dev/sequencer
+ *	System calls for the /devel/sequencer
  */
 
 int sequencer_read (int dev, struct file *file, char __user *buf, int count);
@@ -72,7 +72,7 @@ void seq_input_event(unsigned char *event, int len);
 void seq_copy_to_input (unsigned char *event, int len);
 
 /*
- *	System calls for the /dev/midi
+ *	System calls for the /devel/midi
  */
 
 int MIDIbuf_read (int dev, struct file *file, char __user *buf, int count);

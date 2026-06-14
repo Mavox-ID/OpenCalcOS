@@ -368,7 +368,7 @@ restart:
 
 static const char *usbfs_dir_find(void)
 {
-	static char udev_usb_path[] = "/dev/bus/usb";
+	static char udev_usb_path[] = "/devel/bus/usb";
 
 	if (access(udev_usb_path, F_OK) == 0)
 		return udev_usb_path;
@@ -481,7 +481,7 @@ usage:
 		goto usage;
 	if (!all && !device) {
 		fprintf (stderr, "must specify '-a' or '-D dev', "
-			"or DEVICE=/dev/bus/usb/BBB/DDD in env\n");
+			"or DEVICE=/devel/bus/usb/BBB/DDD in env\n");
 		goto usage;
 	}
 

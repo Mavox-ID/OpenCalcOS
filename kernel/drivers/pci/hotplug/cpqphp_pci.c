@@ -110,7 +110,7 @@ int cpqhp_unconfigure_device(struct pci_func* func)
 {
 	int j;
 
-	dbg("%s: bus/dev/func = %x/%x/%x\n", __func__, func->bus, func->device, func->function);
+	dbg("%s: bus/devel/func = %x/%x/%x\n", __func__, func->bus, func->device, func->function);
 
 	for (j=0; j<8 ; j++) {
 		struct pci_dev* temp = pci_get_bus_and_slot(func->bus, PCI_DEVFN(func->device, j));

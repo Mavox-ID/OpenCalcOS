@@ -50,15 +50,15 @@ static unsigned int bus_num;
 /* Currently Documentation/devices.txt defines the following for VME:
  *
  * 221 char	VME bus
- *		  0 = /dev/bus/vme/m0		First master image
- *		  1 = /dev/bus/vme/m1		Second master image
- *		  2 = /dev/bus/vme/m2		Third master image
- *		  3 = /dev/bus/vme/m3		Fourth master image
- *		  4 = /dev/bus/vme/s0		First slave image
- *		  5 = /dev/bus/vme/s1		Second slave image
- *		  6 = /dev/bus/vme/s2		Third slave image
- *		  7 = /dev/bus/vme/s3		Fourth slave image
- *		  8 = /dev/bus/vme/ctl		Control
+ *		  0 = /devel/bus/vme/m0		First master image
+ *		  1 = /devel/bus/vme/m1		Second master image
+ *		  2 = /devel/bus/vme/m2		Third master image
+ *		  3 = /devel/bus/vme/m3		Fourth master image
+ *		  4 = /devel/bus/vme/s0		First slave image
+ *		  5 = /devel/bus/vme/s1		Second slave image
+ *		  6 = /devel/bus/vme/s2		Third slave image
+ *		  7 = /devel/bus/vme/s3		Fourth slave image
+ *		  8 = /devel/bus/vme/ctl		Control
  *
  *		It is expected that all VME bus drivers will use the
  *		same interface.  For interface documentation see

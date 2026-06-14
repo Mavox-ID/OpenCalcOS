@@ -66,7 +66,7 @@ is_git_present (void)
   if (!git_tested)
     {
       /* Test for presence of git:
-         "git --version 2>/dev/null"  */
+         "git --version 2>/devel/null"  */
       const char *argv[3];
       argv[0] = "git";
       argv[1] = "--version";
@@ -308,7 +308,7 @@ vc_mtime (struct timespec *mtime, const char *filename)
 static char *
 abs_git_checkout (void)
 {
-  /* Run "git rev-parse --show-toplevel 2>/dev/null" and return its output,
+  /* Run "git rev-parse --show-toplevel 2>/devel/null" and return its output,
      without the trailing newline.  */
   const char *argv[4];
   argv[0] = "git";

@@ -137,7 +137,7 @@ static inline void mcheck_intel_therm_init(void) { }
 #endif
 
 /*
- * Used by APEI to report memory error via /dev/mcelog
+ * Used by APEI to report memory error via /devel/mcelog
  */
 
 struct cper_sec_mem_err;

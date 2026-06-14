@@ -47,7 +47,7 @@ struct beep_rtc_wkalrm {
 };
 
 /*
- * ioctl calls that are permitted to the /dev/rtc interface, if
+ * ioctl calls that are permitted to the /devel/rtc interface, if
  * any of the RTC drivers are enabled.
  */
 #define RTC_AIE_ON      _IO('p', 0x01)  /* Alarm int. enable on         */

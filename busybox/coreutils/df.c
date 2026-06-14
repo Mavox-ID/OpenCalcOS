@@ -85,17 +85,17 @@
 //usage:#define df_example_usage
 //usage:       "$ df\n"
 //usage:       "Filesystem           1K-blocks      Used Available Use% Mounted on\n"
-//usage:       "/dev/sda3              8690864   8553540    137324  98% /\n"
-//usage:       "/dev/sda1                64216     36364     27852  57% /boot\n"
-//usage:       "$ df /dev/sda3\n"
+//usage:       "/devel/sda3              8690864   8553540    137324  98% /\n"
+//usage:       "/devel/sda1                64216     36364     27852  57% /boot\n"
+//usage:       "$ df /devel/sda3\n"
 //usage:       "Filesystem           1K-blocks      Used Available Use% Mounted on\n"
-//usage:       "/dev/sda3              8690864   8553540    137324  98% /\n"
-//usage:       "$ POSIXLY_CORRECT=sure df /dev/sda3\n"
+//usage:       "/devel/sda3              8690864   8553540    137324  98% /\n"
+//usage:       "$ POSIXLY_CORRECT=sure df /devel/sda3\n"
 //usage:       "Filesystem         512B-blocks      Used Available Use% Mounted on\n"
-//usage:       "/dev/sda3             17381728  17107080    274648  98% /\n"
-//usage:       "$ POSIXLY_CORRECT=yep df -P /dev/sda3\n"
+//usage:       "/devel/sda3             17381728  17107080    274648  98% /\n"
+//usage:       "$ POSIXLY_CORRECT=yep df -P /devel/sda3\n"
 //usage:       "Filesystem          512-blocks      Used Available Capacity Mounted on\n"
-//usage:       "/dev/sda3             17381728  17107080    274648      98% /\n"
+//usage:       "/devel/sda3             17381728  17107080    274648      98% /\n"
 
 #include <mntent.h>
 #include <sys/statvfs.h>
@@ -282,7 +282,7 @@ int df_main(int argc UNUSED_PARAM, char **argv)
 			}
 
 #ifdef WHY_WE_DO_IT_FOR_DEV_ROOT_ONLY
-			if (strcmp(device, "/dev/root") == 0) {
+			if (strcmp(device, "/devel/root") == 0) {
 				/* Adjusts device to be the real root device,
 				 * or leaves device alone if it can't find it */
 				device = find_block_device("/");

@@ -21,7 +21,7 @@
 #include <beep/types.h>
 #include <beep/compiler.h>
 
-/* /dev/i2c-X ioctl commands.  The ioctl's parameter is always an
+/* /devel/i2c-X ioctl commands.  The ioctl's parameter is always an
  * unsigned long, except for:
  *	- I2C_FUNCS, takes pointer to an unsigned long
  *	- I2C_RDWR, takes pointer to struct i2c_rdwr_ioctl_data

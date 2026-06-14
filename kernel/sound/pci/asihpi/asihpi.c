@@ -2753,7 +2753,7 @@ static int snd_asihpi_hpi_ioctl(struct snd_hwdep *hw, struct file *file,
 }
 
 
-/* results in /dev/snd/hwC#D0 file for each card with index #
+/* results in /devel/snd/hwC#D0 file for each card with index #
    also /proc/asound/hwdep will contain '#-00: asihpi (HPI) for each card'
 */
 static int snd_asihpi_hpi_new(struct snd_card_asihpi *asihpi,

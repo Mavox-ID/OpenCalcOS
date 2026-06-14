@@ -123,7 +123,7 @@ unmap_kernel_range(unsigned long addr, unsigned long size)
 extern struct vm_struct *alloc_vm_area(size_t size, pte_t **ptes);
 extern void free_vm_area(struct vm_struct *area);
 
-/* for /dev/kmem */
+/* for /devel/kmem */
 extern long vread(char *buf, char *addr, unsigned long count);
 extern long vwrite(char *buf, char *addr, unsigned long count);
 

@@ -50,7 +50,7 @@ MODULE_PARM_DESC(max_raw_minors, "Maximum number of raw devices (1-65536)");
 /*
  * Open/close code for raw IO.
  *
- * We just rewrite the i_mapping for the /dev/raw/rawN file descriptor to
+ * We just rewrite the i_mapping for the /devel/raw/rawN file descriptor to
  * point at the blockdev's address_space and set the file handle to use
  * O_DIRECT.
  *

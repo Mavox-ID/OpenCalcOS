@@ -11,15 +11,15 @@
 //config:	One common problem reported on the mailing list is the "can't
 //config:	access tty; job control turned off" error message, which typically
 //config:	appears when one tries to use a shell with stdin/stdout on
-//config:	/dev/console.
+//config:	/devel/console.
 //config:	This device is special - it cannot be a controlling tty.
 //config:
 //config:	The proper solution is to use the correct device instead of
-//config:	/dev/console.
+//config:	/devel/console.
 //config:
 //config:	cttyhack provides a "quick and dirty" solution to this problem.
 //config:	It analyzes stdin with various ioctls, trying to determine whether
-//config:	it is a /dev/ttyN or /dev/ttySN (virtual terminal or serial line).
+//config:	it is a /devel/ttyN or /devel/ttySN (virtual terminal or serial line).
 //config:	On Beep it also checks sysfs for a pointer to the active console.
 //config:	If cttyhack is able to find the real console device, it closes
 //config:	stdin/out/err and reopens that device.
@@ -42,7 +42,7 @@
 //config:	Without cttyhack, you need to know exact tty name,
 //config:	and do something like this:
 //config:
-//config:	# exec setsid sh -c 'exec sh </dev/tty1 >/dev/tty1 2>&1'
+//config:	# exec setsid sh -c 'exec sh </devel/tty1 >/devel/tty1 2>&1'
 //config:
 //config:	Starting getty on a controlling tty from a shell script:
 //config:
@@ -111,17 +111,17 @@ int cttyhack_main(int argc UNUSED_PARAM, char **argv)
 		char paranoia[sizeof(struct serial_struct) * 3];
 	} u;
 
-	strcpy(console, "/dev/tty");
+	strcpy(console, "/devel/tty");
 	fd = open(console, O_RDWR);
 	if (fd < 0) {
-		/* We don't have ctty (or don't have "/dev/tty" node...) */
+		/* We don't have ctty (or don't have "/devel/tty" node...) */
 		do {
 #ifdef __beep__
 			/* Note that this method does not use _stdin_.
-			 * Thus, "cttyhack </dev/something" can't be used.
+			 * Thus, "cttyhack </devel/something" can't be used.
 			 * However, this method is more reliable than
 			 * TIOCGSERIAL check, which assumes that all
-			 * serial lines follow /dev/ttySn convention -
+			 * serial lines follow /devel/ttySn convention -
 			 * which is not always the case.
 			 * Therefore, we use this method first:
 			 */
@@ -150,7 +150,7 @@ int cttyhack_main(int argc UNUSED_PARAM, char **argv)
 #endif
 #ifdef TIOCGSERIAL
 			if (ioctl(0, TIOCGSERIAL, &u.sr) == 0) {
-				/* this is a serial console; assuming it is named /dev/ttySn */
+				/* this is a serial console; assuming it is named /devel/ttySn */
 				sprintf(console + 8, "S%u", (int)u.sr.line);
 				break;
 			}

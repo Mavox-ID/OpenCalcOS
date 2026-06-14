@@ -332,7 +332,7 @@ typedef struct servtab_t {
 static void FAST_FUNC echo_stream(int, servtab_t *);
 static void FAST_FUNC echo_dg(int, servtab_t *);
 #endif
-/* Internet /dev/null */
+/* Internet /devel/null */
 #if ENABLE_FEATURE_INETD_SUPPORT_BUILTIN_DISCARD
 static void FAST_FUNC discard_stream(int, servtab_t *);
 static void FAST_FUNC discard_dg(int, servtab_t *);

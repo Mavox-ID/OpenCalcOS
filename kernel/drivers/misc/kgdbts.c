@@ -76,14 +76,14 @@
  *    loops.
  *
  * ## This tests break points on sys_open
- * while [ 1 ] ; do find / > /dev/null 2>&1 ; done &
- * while [ 1 ] ; do find / > /dev/null 2>&1 ; done &
+ * while [ 1 ] ; do find / > /devel/null 2>&1 ; done &
+ * while [ 1 ] ; do find / > /devel/null 2>&1 ; done &
  * echo kgdbts=V1S10000 > /sys/module/kgdbts/parameters/kgdbts
  * fg # and hit control-c
  * fg # and hit control-c
  * ## This tests break points on do_fork
- * while [ 1 ] ; do date > /dev/null ; done &
- * while [ 1 ] ; do date > /dev/null ; done &
+ * while [ 1 ] ; do date > /devel/null ; done &
+ * while [ 1 ] ; do date > /devel/null ; done &
  * echo kgdbts=V1F1000 > /sys/module/kgdbts/parameters/kgdbts
  * fg # and hit control-c
  *

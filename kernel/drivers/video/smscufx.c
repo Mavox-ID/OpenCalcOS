@@ -885,7 +885,7 @@ static int ufx_handle_damage(struct ufx_data *dev, int x, int y,
 }
 
 /* Path triggered by usermode clients who write to filesystem
- * e.g. cat filename > /dev/fb1
+ * e.g. cat filename > /devel/fb1
  * Not used by X Windows or text-mode console. But useful for testing.
  * Slow because of extra copy and we must assume all pixels dirty. */
 static ssize_t ufx_ops_write(struct fb_info *info, const char __user *buf,
@@ -1088,7 +1088,7 @@ static int ufx_ops_open(struct fb_info *info, int user)
 		fb_deferred_io_init(info);
 	}
 
-	pr_debug("open /dev/fb%d user=%d fb_info=%p count=%d",
+	pr_debug("open /devel/fb%d user=%d fb_info=%p count=%d",
 		info->node, user, info, dev->fb_count);
 
 	return 0;
@@ -1143,7 +1143,7 @@ static void ufx_free_framebuffer_work(struct work_struct *work)
 	/* Assume info structure is freed after this point */
 	framebuffer_release(info);
 
-	pr_debug("fb_info for /dev/fb%d has been freed", node);
+	pr_debug("fb_info for /devel/fb%d has been freed", node);
 
 	/* ref taken in probe() as part of registering framebfufer */
 	kref_put(&dev->kref, ufx_free);
@@ -1169,7 +1169,7 @@ static int ufx_ops_release(struct fb_info *info, int user)
 		info->fbops->fb_mmap = ufx_ops_mmap;
 	}
 
-	pr_debug("released /dev/fb%d user=%d count=%d",
+	pr_debug("released /devel/fb%d user=%d count=%d",
 		  info->node, user, dev->fb_count);
 
 	kref_put(&dev->kref, ufx_free);
@@ -1721,7 +1721,7 @@ static int ufx_usb_probe(struct usb_interface *interface,
 	retval = register_framebuffer(info);
 	check_warn_goto_error(retval, "error %d register_framebuffer", retval);
 
-	dev_info(dev->gdev, "SMSC UDX USB device /dev/fb%d attached. %dx%d resolution."
+	dev_info(dev->gdev, "SMSC UDX USB device /devel/fb%d attached. %dx%d resolution."
 		" Using %dK framebuffer memory\n", info->node,
 		info->var.xres, info->var.yres, info->fix.smem_len >> 10);
 

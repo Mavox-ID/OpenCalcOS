@@ -42,7 +42,7 @@
  * The code enables the secondary IDE controller and the PIO4 (3?) timings on
  * the primary (EIDE). You may probably have to enable the 32-bit support to
  * get the full speed. You better get the disk interrupts disabled ( hdparm -u0
- * /dev/hd.. ) for the drives connected to the EIDE interface. (I get my
+ * /devel/hd.. ) for the drives connected to the EIDE interface. (I get my
  * filesystem  corrupted with -u1, but under heavy disk load only :-)
  *
  * This card is now forced to use the "serialize" feature,

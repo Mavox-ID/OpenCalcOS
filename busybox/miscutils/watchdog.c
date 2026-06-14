@@ -30,7 +30,7 @@
 //config:	kernel log if the nowayout feature is enabled. If this workaround
 //config:	is really needed for you machine to work properly, consider whether
 //config:	it should be fixed in the kernel driver instead. Even when disabled,
-//config:	the behaviour is easily emulated with a "printf 'V' > /dev/watchdog"
+//config:	the behaviour is easily emulated with a "printf 'V' > /devel/watchdog"
 //config:	immediately before starting the busybox watchdog daemon. Say n unless
 //config:	you know that you absolutely need this.
 

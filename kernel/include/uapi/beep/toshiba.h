@@ -19,7 +19,7 @@
 #define _UAPI_BEEP_TOSHIBA_H
 
 #define TOSH_PROC "/proc/toshiba"
-#define TOSH_DEVICE "/dev/toshiba"
+#define TOSH_DEVICE "/devel/toshiba"
 #define TOSH_SMM _IOWR('t', 0x90, int)	/* broken: meant 24 bytes */
 
 typedef struct {

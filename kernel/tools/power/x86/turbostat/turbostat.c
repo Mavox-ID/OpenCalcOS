@@ -211,7 +211,7 @@ int get_msr(int cpu, off_t offset, unsigned long long *msr)
 	char pathname[32];
 	int fd;
 
-	sprintf(pathname, "/dev/cpu/%d/msr", cpu);
+	sprintf(pathname, "/devel/cpu/%d/msr", cpu);
 	fd = open(pathname, O_RDONLY);
 	if (fd < 0)
 		return -1;
@@ -1360,8 +1360,8 @@ void check_dev_msr()
 {
 	struct stat sb;
 
-	if (stat("/dev/cpu/0/msr", &sb)) {
-		fprintf(stderr, "no /dev/cpu/0/msr\n");
+	if (stat("/devel/cpu/0/msr", &sb)) {
+		fprintf(stderr, "no /devel/cpu/0/msr\n");
 		fprintf(stderr, "Try \"# modprobe msr\"\n");
 		exit(-5);
 	}
@@ -1899,7 +1899,7 @@ void usage()
 
 
 /*
- * in /dev/cpu/ return success for names that are numbers
+ * in /devel/cpu/ return success for names that are numbers
  * ie. filter out ".", "..", "microcode".
  */
 int dir_filter(const struct dirent *dirp)

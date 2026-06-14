@@ -101,7 +101,7 @@ static void klogd_close(void)
 
 # ifndef _PATH_KLOG
 #  if defined(__GNU__) || defined (__FreeBSD__)
-#   define _PATH_KLOG "/dev/klog"
+#   define _PATH_KLOG "/devel/klog"
 #  else
 #   error "your system's _PATH_KLOG is unknown"
 #  endif
@@ -211,7 +211,7 @@ int klogd_main(int argc UNUSED_PARAM, char **argv)
 	 * to open-code its own openlog and syslog implementation (!).
 	 *
 	 * Note that prohibiting openlog(LOG_KERN) on libc level does not
-	 * add any security: any process can open a socket to "/dev/log"
+	 * add any security: any process can open a socket to "/devel/log"
 	 * and write a string "<0>Voila, a LOG_KERN + LOG_EMERG message"
 	 *
 	 * Google code search tells me there is no widespread use of

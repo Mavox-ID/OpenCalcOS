@@ -6067,7 +6067,7 @@ _scsih_sas_volume_delete(struct MPT2SAS_ADAPTER *ioc, u16 handle)
 }
 
 /**
- * _scsih_sas_pd_expose - expose pd component to /dev/sdX
+ * _scsih_sas_pd_expose - expose pd component to /devel/sdX
  * @ioc: per adapter object
  * @element: IR config element data
  * Context: user.
@@ -6107,7 +6107,7 @@ _scsih_sas_pd_expose(struct MPT2SAS_ADAPTER *ioc,
 }
 
 /**
- * _scsih_sas_pd_hide - hide pd component from /dev/sdX
+ * _scsih_sas_pd_hide - hide pd component from /devel/sdX
  * @ioc: per adapter object
  * @element: IR config element data
  * Context: user.

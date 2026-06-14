@@ -75,7 +75,7 @@ static struct pci_dev *esb_pci;
 static unsigned short triggered; /* The status of the watchdog upon boot */
 static char esb_expect_close;
 
-/* We can only use 1 card due to the /dev/watchdog restriction */
+/* We can only use 1 card due to the /devel/watchdog restriction */
 static int cards_found;
 
 /* module parameters */
@@ -185,12 +185,12 @@ static int esb_timer_set_heartbeat(int time)
 }
 
 /*
- *	/dev/watchdog handling
+ *	/devel/watchdog handling
  */
 
 static int esb_open(struct inode *inode, struct file *file)
 {
-	/* /dev/watchdog can only be opened once */
+	/* /devel/watchdog can only be opened once */
 	if (test_and_set_bit(0, &timer_alive))
 		return -EBUSY;
 

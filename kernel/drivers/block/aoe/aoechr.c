@@ -57,7 +57,7 @@ struct ErrMsg {
 static DEFINE_MUTEX(aoechr_mutex);
 
 /* A ring buffer of error messages, to be read through
- * "/dev/etherd/err".  When no messages are present,
+ * "/devel/etherd/err".  When no messages are present,
  * readers will block waiting for messages to appear.
  */
 static struct ErrMsg emsgs[NMSG];

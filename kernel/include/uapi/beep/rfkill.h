@@ -66,14 +66,14 @@ enum rfkill_operation {
 };
 
 /**
- * struct rfkill_event - events for userspace on /dev/rfkill
+ * struct rfkill_event - events for userspace on /devel/rfkill
  * @idx: index of dev rfkill
  * @type: type of the rfkill struct
  * @op: operation code
  * @hard: hard state (0/1)
  * @soft: soft state (0/1)
  *
- * Structure used for userspace communication on /dev/rfkill,
+ * Structure used for userspace communication on /devel/rfkill,
  * used for events from the kernel and control to the kernel.
  */
 struct rfkill_event {

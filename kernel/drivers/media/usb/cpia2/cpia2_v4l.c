@@ -31,7 +31,7 @@
 
 static int video_nr = -1;
 module_param(video_nr, int, 0);
-MODULE_PARM_DESC(video_nr, "video device to register (0=/dev/video0, etc)");
+MODULE_PARM_DESC(video_nr, "video device to register (0=/devel/video0, etc)");
 
 static int buffer_size = 68 * 1024;
 module_param(buffer_size, int, 0);

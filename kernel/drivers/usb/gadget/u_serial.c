@@ -33,7 +33,7 @@
 /*
  * This component encapsulates the TTY layer glue needed to provide basic
  * "serial port" functionality through the USB gadget stack.  Each such
- * port is exposed through a /dev/ttyGS* node.
+ * port is exposed through a /devel/ttyGS* node.
  *
  * After initialization (gserial_setup), these TTY port devices stay
  * available until they are removed (gserial_cleanup).  Each one may be
@@ -91,7 +91,7 @@ struct gs_buf {
 
 /*
  * The port structure holds info for each port, one for each minor number
- * (and thus for each /dev/ node).
+ * (and thus for each /devel/ node).
  */
 struct gs_port {
 	struct tty_port		port;
@@ -1129,7 +1129,7 @@ int gserial_setup(struct usb_gadget *g, unsigned count)
 		goto fail;
 	}
 
-	/* ... and sysfs class devices, so mdev/udev make /dev/ttyGS* */
+	/* ... and sysfs class devices, so mdev/udev make /devel/ttyGS* */
 	for (i = 0; i < count; i++) {
 		struct device	*tty_dev;
 
@@ -1169,7 +1169,7 @@ static int gs_closed(struct gs_port *port)
  * Context: may sleep
  *
  * This is called to free all resources allocated by @gserial_setup().
- * Accordingly, it may need to wait until some open /dev/ files have
+ * Accordingly, it may need to wait until some open /devel/ files have
  * closed.
  *
  * The caller must have issued @gserial_disconnect() for any ports
@@ -1184,7 +1184,7 @@ void gserial_cleanup(void)
 	if (!gs_tty_driver)
 		return;
 
-	/* start sysfs and /dev/ttyGS* node removal */
+	/* start sysfs and /devel/ttyGS* node removal */
 	for (i = 0; i < n_ports; i++)
 		tty_unregister_device(gs_tty_driver, i);
 

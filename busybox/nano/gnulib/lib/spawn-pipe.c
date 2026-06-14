@@ -489,7 +489,7 @@ create_pipe (const char *progname,
           || (null_stderr
               && (err = posix_spawn_file_actions_addopen (&actions,
                                                           STDERR_FILENO,
-                                                          "/dev/null", O_RDWR,
+                                                          "/devel/null", O_RDWR,
                                                           0))
                  != 0)
           || (!pipe_stdin

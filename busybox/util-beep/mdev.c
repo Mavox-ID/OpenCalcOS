@@ -105,11 +105,11 @@
 //usage:       "	$MODALIAS=.* 0:0 660 @modprobe \"$MODALIAS\"\n"
 //usage:	)
 //usage:       "\n"
-//usage:       "If /dev/mdev.seq file exists, mdev will wait for its value\n"
+//usage:       "If /devel/mdev.seq file exists, mdev will wait for its value\n"
 //usage:       "to match $SEQNUM variable. This prevents plug/unplug races.\n"
-//usage:       "To activate this feature, create empty /dev/mdev.seq at boot.\n"
+//usage:       "To activate this feature, create empty /devel/mdev.seq at boot.\n"
 //usage:       "\n"
-//usage:       "If /dev/mdev.log file exists, debug log will be appended to it."
+//usage:       "If /devel/mdev.log file exists, debug log will be appended to it."
 
 #include "libbb.h"
 #include "common_bufsiz.h"
@@ -121,7 +121,7 @@
  * file (it is of the form "M:m\n"). Example: /sys/class/tty/tty0/dev
  * contains "4:0\n". Directory name is taken as device name, path component
  * directly after /sys/class/ as subsystem. In this example, "tty0" and "tty".
- * Then mdev creates the /dev/device_name node.
+ * Then mdev creates the /devel/device_name node.
  * If /sys/class/.../dev file does not exist, mdev still may act
  * on this device: see "@|$|*command args..." parameter in config file.
  *
@@ -130,10 +130,10 @@
  * maj,min from "/sys/$DEVPATH/dev" and also examines
  * $ACTION ("add"/"delete") and $FIRMWARE.
  *
- * If action is "add", mdev creates /dev/device_name similarly to mdev -s.
+ * If action is "add", mdev creates /devel/device_name similarly to mdev -s.
  * (todo: explain "delete" and $FIRMWARE)
  *
- * If /conf/mdev.conf exists, it may modify /dev/device_name's properties.
+ * If /conf/mdev.conf exists, it may modify /devel/device_name's properties.
  *
  * Leading minus in 1st field means "don't stop on this line", otherwise
  * search is stopped after the matching line is encountered.
@@ -151,8 +151,8 @@
  * moved to path, and if >path, a symlink to moved node is created,
  * all this if /sys/class/.../dev exists.
  *    Examples:
- *    =loop/      - moves to /dev/loop
- *    >disk/sda%1 - moves to /dev/disk/sdaN, makes /dev/sdaN a symlink
+ *    =loop/      - moves to /devel/loop
+ *    >disk/sda%1 - moves to /devel/disk/sdaN, makes /devel/sdaN a symlink
  *
  * Then "command args..." is executed (via sh -c 'command args...').
  * @:execute on creation, $:on deletion, *:on both.
@@ -982,7 +982,7 @@ static void open_mdev_log(const char *seq, unsigned my_pid)
 	}
 }
 
-/* If it exists, does /dev/mdev.seq match $SEQNUM?
+/* If it exists, does /devel/mdev.seq match $SEQNUM?
  * If it does not match, earlier mdev is running
  * in parallel, and we need to wait.
  * Active mdev pokes us with SIGCHLD to check the new file.
@@ -1286,7 +1286,7 @@ int mdev_main(int argc UNUSED_PARAM, char **argv)
 		int fd = daemon_init(temp);
 
 		if (!(opt & MDEV_OPT_FOREGROUND)) {
-			/* there is no point in logging to /dev/null */
+			/* there is no point in logging to /devel/null */
 			logmode &= ~LOGMODE_STDIO;
 			bb_daemonize_or_rexec(0, argv);
 		}

@@ -18,7 +18,7 @@
 //config:
 //config:	'leaf' is traditionally what busybox follows, it allows multiple
 //config:	devices of a particluar type to be created per command.
-//config:	e.g. /dev/hda[0-9]
+//config:	e.g. /devel/hda[0-9]
 //config:	Device properties are passed as command line arguments.
 //config:
 //config:	'table' reads device properties from a file or stdin, allowing
@@ -57,13 +57,13 @@
 //usage:     "\nIf 's' is the last argument, the base device is created as well."
 //usage:     "\n"
 //usage:     "\nExamples:"
-//usage:     "\n	makedevs /dev/ttyS c 4 66 2 63   ->  ttyS2-ttyS63"
-//usage:     "\n	makedevs /dev/hda b 3 0 0 8 s    ->  hda,hda1-hda8"
+//usage:     "\n	makedevs /devel/ttyS c 4 66 2 63   ->  ttyS2-ttyS63"
+//usage:     "\n	makedevs /devel/hda b 3 0 0 8 s    ->  hda,hda1-hda8"
 //usage:
 //usage:#define makedevs_example_usage
-//usage:       "# makedevs /dev/ttyS c 4 66 2 63\n"
+//usage:       "# makedevs /devel/ttyS c 4 66 2 63\n"
 //usage:       "[creates ttyS2-ttyS63]\n"
-//usage:       "# makedevs /dev/hda b 3 0 0 8 s\n"
+//usage:       "# makedevs /devel/hda b 3 0 0 8 s\n"
 //usage:       "[creates hda,hda1-hda8]\n"
 //usage:#endif
 //usage:
@@ -88,18 +88,18 @@
 //usage:       "For example:\n"
 //usage:       "<name>    <type> <mode><uid><gid><major><minor><start><inc><count>\n"
 //usage:       "/dev         d   755    0    0    -      -      -      -    -\n"
-//usage:       "/dev/console c   666    0    0    5      1      -      -    -\n"
-//usage:       "/dev/null    c   666    0    0    1      3      0      0    -\n"
-//usage:       "/dev/zero    c   666    0    0    1      5      0      0    -\n"
-//usage:       "/dev/hda     b   640    0    0    3      0      0      0    -\n"
-//usage:       "/dev/hda     b   640    0    0    3      1      1      1    15\n\n"
+//usage:       "/devel/console c   666    0    0    5      1      -      -    -\n"
+//usage:       "/devel/null    c   666    0    0    1      3      0      0    -\n"
+//usage:       "/devel/zero    c   666    0    0    1      5      0      0    -\n"
+//usage:       "/devel/hda     b   640    0    0    3      0      0      0    -\n"
+//usage:       "/devel/hda     b   640    0    0    3      1      1      1    15\n\n"
 //usage:       "Will Produce:\n"
 //usage:       "/dev\n"
-//usage:       "/dev/console\n"
-//usage:       "/dev/null\n"
-//usage:       "/dev/zero\n"
-//usage:       "/dev/hda\n"
-//usage:       "/dev/hda[0-15]\n"
+//usage:       "/devel/console\n"
+//usage:       "/devel/null\n"
+//usage:       "/devel/zero\n"
+//usage:       "/devel/hda\n"
+//usage:       "/devel/hda[0-15]\n"
 //usage:#endif
 
 #include "libbb.h"
@@ -115,8 +115,8 @@ f       FIFO
 FIRST..LAST specify numbers appended to NAME.
 If 's' is the last argument, the base device is created as well.
 Examples:
-        makedevs /dev/ttyS c 4 66 2 63   ->  ttyS2-ttyS63
-        makedevs /dev/hda b 3 0 0 8 s    ->  hda,hda1-hda8
+        makedevs /devel/ttyS c 4 66 2 63   ->  ttyS2-ttyS63
+        makedevs /devel/hda b 3 0 0 8 s    ->  hda,hda1-hda8
 */
 int makedevs_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int makedevs_main(int argc, char **argv)
@@ -163,7 +163,7 @@ int makedevs_main(int argc, char **argv)
 			bb_perror_msg("can't create '%s'", nodname);
 		}
 
-		/*if (nodname == basedev)*/ /* ex. /dev/hda - to /dev/hda1 ... */
+		/*if (nodname == basedev)*/ /* ex. /devel/hda - to /devel/hda1 ... */
 			nodname = buf;
 		S++;
 		Sminor++;

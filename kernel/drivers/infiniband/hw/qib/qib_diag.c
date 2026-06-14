@@ -761,7 +761,7 @@ static ssize_t qib_diag_read(struct file *fp, char __user *data,
 		/* address or length is not 32-bit aligned, hence invalid */
 		ret = -EINVAL;
 	else if (dc->state < READY && (*off || count != 8))
-		ret = -EINVAL;  /* prevent cat /dev/qib_diag* */
+		ret = -EINVAL;  /* prevent cat /devel/qib_diag* */
 	else {
 		unsigned long flags;
 		u64 data64 = 0;

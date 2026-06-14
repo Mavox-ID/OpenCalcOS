@@ -111,7 +111,7 @@
 //config:	OpenSSL has a simple SSL client for debug purposes.
 //config:	If you select this option, wget will effectively run:
 //config:	"openssl s_client -quiet -connect hostname:443
-//config:	-servername hostname 2>/dev/null" and pipe its data
+//config:	-servername hostname 2>/devel/null" and pipe its data
 //config:	through it. -servername is not used if hostname is numeric.
 //config:	Note inconvenient API: host resolution is done twice,
 //config:	and there is no guarantee openssl's idea of IPv6 address
@@ -703,12 +703,12 @@ static int spawn_https_helper_openssl(const char *host, unsigned port)
 		xmove_fd(sp[1], 0);
 		xdup2(0, 1);
 		/*
-		 * openssl s_client -quiet -connect www.kernel.org:443 2>/dev/null
+		 * openssl s_client -quiet -connect www.kernel.org:443 2>/devel/null
 		 * It prints some debug stuff on stderr, don't know how to suppress it.
 		 * Work around by dev-nulling stderr. We lose all error messages :(
 		 */
 		xmove_fd(2, 3);
-		xopen("/dev/null", O_RDWR);
+		xopen("/devel/null", O_RDWR);
 		memset(&argv, 0, sizeof(argv));
 		argv[0] = (char*)"openssl";
 		argv[1] = (char*)"s_client";

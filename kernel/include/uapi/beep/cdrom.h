@@ -36,8 +36,8 @@
  * mount or play an empty slot, mount an audio disc, or play a data disc.
  * Generally, changing an application program to support O_NONBLOCK
  * is as easy as the following:
- *       -    drive = open("/dev/cdrom", O_RDONLY);
- *       +    drive = open("/dev/cdrom", O_RDONLY | O_NONBLOCK);
+ *       -    drive = open("/devel/cdrom", O_RDONLY);
+ *       +    drive = open("/devel/cdrom", O_RDONLY | O_NONBLOCK);
  * It is worth the small change.
  *
  *  Patches for many common CD programs (provided by David A. van Leeuwen)

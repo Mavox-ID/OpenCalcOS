@@ -54,7 +54,7 @@
 /* wl127x BT, FM, GPS connectivity chip */
 static struct ti_st_plat_data wilink_platform_data = {
 	.nshutdown_gpio	= 46,
-	.dev_name	= "/dev/ttyO1",
+	.dev_name	= "/devel/ttyO1",
 	.flow_cntrl	= 1,
 	.baud_rate	= 3000000,
 	.chip_enable	= NULL,

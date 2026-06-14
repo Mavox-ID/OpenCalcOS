@@ -2094,7 +2094,7 @@ static void hso_log_port(struct hso_device *hso_dev)
 	if ((hso_dev->port_spec & HSO_PORT_MASK) == HSO_PORT_NETWORK) {
 		sprintf(port_dev, "%s", dev2net(hso_dev)->net->name);
 	} else
-		sprintf(port_dev, "/dev/%s%d", tty_filename,
+		sprintf(port_dev, "/devel/%s%d", tty_filename,
 			dev2ser(hso_dev)->minor);
 
 	dev_dbg(&hso_dev->interface->dev, "HSO: Found %s port %s\n",

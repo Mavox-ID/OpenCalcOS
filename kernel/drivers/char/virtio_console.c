@@ -1029,7 +1029,7 @@ static int port_fops_open(struct inode *inode, struct file *filp)
 
 	/*
 	 * Don't allow opening of console port devices -- that's done
-	 * via /dev/hvc
+	 * via /devel/hvc
 	 */
 	if (is_console_port(port)) {
 		ret = -ENXIO;
@@ -1079,7 +1079,7 @@ static int port_fops_fasync(int fd, struct file *filp, int mode)
  * The file operations that we support: programs in the guest can open
  * a console device, read from it, write to it, poll for data and
  * close it.  The devices are at
- *   /dev/vport<device number>p<port number>
+ *   /devel/vport<device number>p<port number>
  */
 static const struct file_operations port_fops = {
 	.owner = THIS_MODULE,

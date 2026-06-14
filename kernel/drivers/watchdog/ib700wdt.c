@@ -126,7 +126,7 @@ static int ibwdt_set_heartbeat(int t)
 }
 
 /*
- *	/dev/watchdog handling
+ *	/devel/watchdog handling
  */
 
 static ssize_t ibwdt_write(struct file *file, const char __user *buf,

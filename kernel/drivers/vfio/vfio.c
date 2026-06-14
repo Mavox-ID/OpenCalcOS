@@ -147,7 +147,7 @@ again:
 	if (unlikely(idr_pre_get(&vfio.group_idr, GFP_KERNEL) == 0))
 		return -ENOMEM;
 
-	/* index 0 is used by /dev/vfio/vfio */
+	/* index 0 is used by /devel/vfio/vfio */
 	ret = idr_get_new_above(&vfio.group_idr, group, 1, &minor);
 	if (ret == -EAGAIN)
 		goto again;
@@ -170,7 +170,7 @@ static int vfio_iommu_group_notifier(struct notifier_block *nb,
 static void vfio_group_get(struct vfio_group *group);
 
 /**
- * Container objects - containers are created when /dev/vfio/vfio is
+ * Container objects - containers are created when /devel/vfio/vfio is
  * opened, but their lifecycle extends until the last user is done, so
  * it's freed via kref.  Must support container/group/device being
  * closed in any order.
@@ -696,7 +696,7 @@ void *vfio_del_group_dev(struct device *dev)
 EXPORT_SYMBOL_GPL(vfio_del_group_dev);
 
 /**
- * VFIO base fd, /dev/vfio/vfio
+ * VFIO base fd, /devel/vfio/vfio
  */
 static long vfio_ioctl_check_extension(struct vfio_container *container,
 				       unsigned long arg)
@@ -952,7 +952,7 @@ static const struct file_operations vfio_fops = {
 };
 
 /**
- * VFIO Group fd, /dev/vfio/$GROUP
+ * VFIO Group fd, /devel/vfio/$GROUP
  */
 static void __vfio_group_unset_container(struct vfio_group *group)
 {
@@ -1363,7 +1363,7 @@ static int __init vfio_init(void)
 		goto err_base_dev;
 	}
 
-	/* /dev/vfio/$GROUP */
+	/* /devel/vfio/$GROUP */
 	cdev_init(&vfio.group_cdev, &vfio_group_fops);
 	ret = cdev_add(&vfio.group_cdev,
 		       MKDEV(MAJOR(vfio.devt), 1), MINORMASK - 1);

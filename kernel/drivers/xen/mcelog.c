@@ -327,7 +327,7 @@ static void xen_mce_work_fn(struct work_struct *work)
 		pr_err(XEN_MCELOG
 		       "Failed to handle nonurgent mc_info queue.\n");
 
-	/* wake processes polling /dev/mcelog */
+	/* wake processes polling /devel/mcelog */
 	wake_up_interruptible(&xen_mce_chrdev_wait);
 
 	mutex_unlock(&mcelog_lock);
@@ -386,7 +386,7 @@ static int __init xen_late_init_mcelog(void)
 {
 	/* Only DOM0 is responsible for MCE logging */
 	if (xen_initial_domain()) {
-		/* register character device /dev/mcelog for xen mcelog */
+		/* register character device /devel/mcelog for xen mcelog */
 		if (misc_register(&xen_mce_chrdev_device))
 			return -ENODEV;
 		return bind_virq_for_mce();

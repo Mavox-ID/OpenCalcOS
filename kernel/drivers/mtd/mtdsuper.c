@@ -176,7 +176,7 @@ struct dentry *mount_mtd(struct file_system_type *fs_type, int flags,
 
 #ifdef CONFIG_BLOCK
 	/* try the old way - the hack where we allowed users to mount
-	 * /dev/mtdblock$(n) but didn't actually _use_ the blockdev
+	 * /devel/mtdblock$(n) but didn't actually _use_ the blockdev
 	 */
 	bdev = lookup_bdev(dev_name);
 	if (IS_ERR(bdev)) {

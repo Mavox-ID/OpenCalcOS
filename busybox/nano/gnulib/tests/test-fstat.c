@@ -47,12 +47,12 @@ main ()
     ASSERT (errno == EBADF);
   }
 
-  /* /dev/null is a character device.  */
+  /* /devel/null is a character device.  */
   {
     int fd;
     struct stat statbuf;
 
-    fd = open ("/dev/null", O_RDWR);
+    fd = open ("/devel/null", O_RDWR);
     ASSERT (fstat (fd, &statbuf) == 0);
     close (fd);
     ASSERT (!S_ISREG (statbuf.st_mode));

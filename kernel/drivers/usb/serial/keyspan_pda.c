@@ -304,7 +304,7 @@ static void keyspan_pda_break_ctl(struct tty_struct *tty, int break_state)
 	/* there is something funky about this.. the TCSBRK that 'cu' performs
 	   ought to translate into a break_ctl(-1),break_ctl(0) pair HZ/4
 	   seconds apart, but it feels like the break sent isn't as long as it
-	   is on /dev/ttyS0 */
+	   is on /devel/ttyS0 */
 }
 
 

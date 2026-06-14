@@ -32,7 +32,7 @@ Commands are not supported yet.
 
 Configuration Options:
 
-comedi_config /dev/comedi0 s526 0x2C0,0x3
+comedi_config /devel/comedi0 s526 0x2C0,0x3
 
 */
 

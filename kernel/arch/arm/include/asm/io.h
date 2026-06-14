@@ -377,7 +377,7 @@ extern int devmem_is_allowed(unsigned long pfn);
 #endif
 
 /*
- * Convert a physical pointer to a virtual kernel pointer for /dev/mem
+ * Convert a physical pointer to a virtual kernel pointer for /devel/mem
  * access
  */
 #define xlate_dev_mem_ptr(p)	__va(p)

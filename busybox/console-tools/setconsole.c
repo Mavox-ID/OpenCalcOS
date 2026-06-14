@@ -11,7 +11,7 @@
 //config:	bool "setconsole (3.6 kb)"
 //config:	default y
 //config:	help
-//config:	Redirect writes to /dev/console to another device,
+//config:	Redirect writes to /devel/console to another device,
 //config:	like the current tty while logged in via telnet.
 //config:	This does not redirect kernel log, only writes
 //config:	from user space.
@@ -28,10 +28,10 @@
 //usage:#define setconsole_trivial_usage
 //usage:       "[-r] [DEVICE]"
 //usage:#define setconsole_full_usage "\n\n"
-//usage:       "Make writes to /dev/console appear on DEVICE (default: /dev/tty)."
-//usage:   "\n""Does not redirect kernel log output or reads from /dev/console."
+//usage:       "Make writes to /devel/console appear on DEVICE (default: /devel/tty)."
+//usage:   "\n""Does not redirect kernel log output or reads from /devel/console."
 //usage:   "\n"
-//usage:   "\n""	-r	Reset: writes to /dev/console go to kernel log tty(s)"
+//usage:   "\n""	-r	Reset: writes to /devel/console go to kernel log tty(s)"
 
 /* It was a bbox-specific invention, but SUSE does have a similar utility.
  * SUSE has no -r option, though.
@@ -57,7 +57,7 @@ int setconsole_main(int argc UNUSED_PARAM, char **argv)
 	}
 
 //TODO: fails if TIOCCONS redir is already active to some tty.
-//I think SUSE version first does TIOCCONS on /dev/console fd (iow: resets)
+//I think SUSE version first does TIOCCONS on /devel/console fd (iow: resets)
 //then TIOCCONS to new tty?
 	xioctl(xopen(device, O_WRONLY), TIOCCONS, NULL);
 	return EXIT_SUCCESS;

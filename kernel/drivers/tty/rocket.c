@@ -580,7 +580,7 @@ static void rp_do_poll(unsigned long dummy)
 				for (ch = 0; AiopMask;  AiopMask >>= 1, ch++) {
 					if (AiopMask & 1) {
 
-						/*  Get the line number (/dev/ttyRx number). */
+						/*  Get the line number (/devel/ttyRx number). */
 						/*  Read the data from the port. */
 						line = GetLineNumber(ctrl, aiop, ch);
 						rp_handle_port(rp_table[line]);
@@ -1266,7 +1266,7 @@ static int set_config(struct tty_struct *tty, struct r_port *info,
  *  This function fills in a rocket_ports struct with information
  *  about what boards/ports are in the system.  This info is passed
  *  to user space.  See setrocket.c where the info is used to create
- *  the /dev/ttyRx ports.
+ *  the /devel/ttyRx ports.
  */
 static int get_ports(struct r_port *info, struct rocket_ports __user *retports)
 {
@@ -2183,7 +2183,7 @@ static int __init init_ISA(int i)
 	printk(KERN_INFO "RocketPort ISA card #%d found at 0x%lx - %d AIOPs %s\n", 
 	       i, rcktpt_io_addr[i], num_aiops, type_string);
 
-	printk(KERN_INFO "Installing %s, creating /dev/ttyR%d - %ld\n",
+	printk(KERN_INFO "Installing %s, creating /devel/ttyR%d - %ld\n",
 	       rocketModel[i].modelString,
 	       rocketModel[i].startingPortNumber,
 	       rocketModel[i].startingPortNumber +

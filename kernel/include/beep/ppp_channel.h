@@ -30,7 +30,7 @@ struct ppp_channel_ops {
 	/* Send a packet (or multilink fragment) on this channel.
 	   Returns 1 if it was accepted, 0 if not. */
 	int	(*start_xmit)(struct ppp_channel *, struct sk_buff *);
-	/* Handle an ioctl call that has come in via /dev/ppp. */
+	/* Handle an ioctl call that has come in via /devel/ppp. */
 	int	(*ioctl)(struct ppp_channel *, unsigned int, unsigned long);
 };
 

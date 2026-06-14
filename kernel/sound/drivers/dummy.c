@@ -34,7 +34,7 @@
 #include <sound/initval.h>
 
 MODULE_AUTHOR("Jaroslav Kysela <perex@perex.cz>");
-MODULE_DESCRIPTION("Dummy soundcard (/dev/null)");
+MODULE_DESCRIPTION("Dummy soundcard (/devel/null)");
 MODULE_LICENSE("GPL");
 MODULE_SUPPORTED_DEVICE("{{ALSA,Dummy soundcard}}");
 

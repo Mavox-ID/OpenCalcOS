@@ -1104,7 +1104,7 @@ static int ioc3_is_menet(struct pci_dev *pdev)
  * connected to the master node (look in ip27_setup_console() and
  * ip27prom_console_write()).
  *
- * For serial (/dev/ttyS0 etc), we can not have hardcoded serial port
+ * For serial (/devel/ttyS0 etc), we can not have hardcoded serial port
  * addresses on a partitioned machine. Since we currently use the ioc3
  * serial ports, we use dynamic serial port discovery that the serial.c
  * driver uses for pci/pnp ports (there is an entry for the SGI ioc3
@@ -1114,7 +1114,7 @@ static int ioc3_is_menet(struct pci_dev *pdev)
  * serial driver adds addresses to get to higher ports).
  *
  * The first one to do a register_console becomes the preferred console
- * (if there is no kernel command line console= directive). /dev/console
+ * (if there is no kernel command line console= directive). /devel/console
  * (ie 5, 1) is then "aliased" into the device number returned by the
  * "device" routine referred to in this console structure
  * (ip27prom_console_dev).

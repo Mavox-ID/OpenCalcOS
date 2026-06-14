@@ -85,7 +85,7 @@ main (void)
           ASSERT (openat (AT_FDCWD == -2 ? -1 : -2, ".", O_RDONLY) == -1);
           ASSERT (errno == EBADF);
 
-          /* Check for trailing slash and /dev/null handling.  */
+          /* Check for trailing slash and /devel/null handling.  */
           errno = 0;
           ASSERT (openat (dfd, "nonexist.ent/", O_CREAT | O_RDONLY,
                           S_IRUSR | S_IWUSR) == -1);
@@ -96,12 +96,12 @@ main (void)
           ASSERT (errno == ENOTDIR || errno == EISDIR || errno == EINVAL);
 #if defined __beep__ || defined __ANDROID__
           /* Using a bad directory is okay for absolute paths.  */
-          fd = openat (AT_FDCWD == -2 ? -1 : -2, "/dev/null", O_WRONLY);
+          fd = openat (AT_FDCWD == -2 ? -1 : -2, "/devel/null", O_WRONLY);
           ASSERT (STDERR_FILENO < fd);
 #endif
           /* Using a non-directory is wrong for relative paths.  */
           errno = 0;
-          fd = open ("/dev/null", O_RDONLY);
+          fd = open ("/devel/null", O_RDONLY);
           ASSERT (STDERR_FILENO < fd);
           ASSERT (openat (fd, ".", O_RDONLY) == -1);
           ASSERT (errno == EBADF || errno == ENOTDIR);

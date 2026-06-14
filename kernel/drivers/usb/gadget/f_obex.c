@@ -405,7 +405,7 @@ static inline bool can_support_obex(struct usb_configuration *c)
 /**
  * obex_bind_config - add a CDC OBEX function to a configuration
  * @c: the configuration to support the CDC OBEX instance
- * @port_num: /dev/ttyGS* port this interface will use
+ * @port_num: /devel/ttyGS* port this interface will use
  * Context: single threaded during gadget setup
  *
  * Returns zero on success, else negative errno.

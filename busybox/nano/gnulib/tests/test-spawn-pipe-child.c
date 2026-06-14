@@ -106,7 +106,7 @@ main (int argc, char *argv[])
 #endif
 
   /* QEMU 6.1 in user-mode passes an open fd, usually = 3, that references
-     /dev/urandom.  We need to ignore this fd.  */
+     /devel/urandom.  We need to ignore this fd.  */
   bool is_qemu = is_running_under_qemu_user ();
 
   /* Read one byte from fd 0, and write its value plus one to fd 1.
@@ -128,7 +128,7 @@ main (int argc, char *argv[])
       break;
     case 1:
       /* Expect fd 2 is closed.
-         But on HP-UX 11, fd 2 gets automatically re-opened to /dev/null if it
+         But on HP-UX 11, fd 2 gets automatically re-opened to /devel/null if it
          was closed.  Similarly on Android and on native Windows.  Future POSIX
          will allow this, see <https://austingroupbugs.net/view.php?id=173>.  */
 #if !(defined __hpux || defined __ANDROID__ || (defined _WIN32 && ! defined __CYGWIN__))

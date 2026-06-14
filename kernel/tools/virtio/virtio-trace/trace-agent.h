@@ -11,7 +11,7 @@
  * @pipe_size:	size of pipe (default 1MB)
  * @use_stdout:	set to true when o option is added (default false)
  * @cpus:	total number of CPUs
- * @ctl_fd:	fd of control path, /dev/virtio-ports/agent-ctl-path
+ * @ctl_fd:	fd of control path, /devel/virtio-ports/agent-ctl-path
  * @rw_ti:	structure managing information of read/write threads
  */
 struct agent_info {

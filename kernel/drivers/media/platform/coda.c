@@ -1837,7 +1837,7 @@ static void coda_fw_callback(const struct firmware *fw, void *context)
 		v4l2_err(&dev->v4l2_dev, "Failed to register video device\n");
 		goto rel_m2m;
 	}
-	v4l2_info(&dev->v4l2_dev, "codec registered as /dev/video%d\n",
+	v4l2_info(&dev->v4l2_dev, "codec registered as /devel/video%d\n",
 		  dev->vfd.num);
 
 	return;

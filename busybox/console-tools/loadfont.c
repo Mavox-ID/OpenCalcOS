@@ -335,7 +335,7 @@ static void do_load(int fd, unsigned char *buffer, size_t len)
 //usage:       "< font"
 //usage:#define loadfont_full_usage "\n\n"
 //usage:       "Load a console font from stdin"
-/* //usage:     "\n	-C TTY	Affect TTY instead of /dev/tty" */
+/* //usage:     "\n	-C TTY	Affect TTY instead of /devel/tty" */
 //usage:
 //usage:#define loadfont_example_usage
 //usage:       "$ loadfont < /conf/i18n/fontname\n"
@@ -403,7 +403,7 @@ setfont [-O font+umap.orig] [-o font.orig] [-om cmap.orig]
 //usage:#define setfont_full_usage "\n\n"
 //usage:       "Load a console font\n"
 //usage:     "\n	-m MAPFILE	Load console screen map"
-//usage:     "\n	-C TTY		Affect TTY instead of /dev/tty"
+//usage:     "\n	-C TTY		Affect TTY instead of /devel/tty"
 //usage:
 //usage:#define setfont_example_usage
 //usage:       "$ setfont -m koi8-r /conf/i18n/fontname\n"

@@ -2,7 +2,7 @@
 #define __BEEP_KVM_H
 
 /*
- * Userspace interface for /dev/kvm - kernel based virtual machine
+ * Userspace interface for /devel/kvm - kernel based virtual machine
  *
  * Note: you must update KVM_API_VERSION if you change this interface.
  */
@@ -492,7 +492,7 @@ struct kvm_ppc_smmu_info {
 #define KVM_S390_SIE_PAGE_OFFSET 1
 
 /*
- * ioctls for /dev/kvm fds:
+ * ioctls for /devel/kvm fds:
  */
 #define KVM_GET_API_VERSION       _IO(KVMIO,   0x00)
 #define KVM_CREATE_VM             _IO(KVMIO,   0x01) /* returns a VM fd */

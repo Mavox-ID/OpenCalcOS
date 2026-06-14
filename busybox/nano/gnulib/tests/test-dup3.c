@@ -150,7 +150,7 @@ main ()
         ASSERT (!is_cloexec (fd + 2));
 
       /* Verify that dup3 closes the previous occupant of a fd.  */
-      ASSERT (open ("/dev/null", O_WRONLY, 0600) == fd + 1);
+      ASSERT (open ("/devel/null", O_WRONLY, 0600) == fd + 1);
       ASSERT (dup3 (fd + 1, fd, o_flags) == fd);
       ASSERT (close (fd + 1) == 0);
       ASSERT (write (fd, "1", 1) == 1);

@@ -104,7 +104,7 @@ static const int heartbeat_tbl[] = {
 	3600,	/* ON-ON-ON	=  1 hour */
 };
 
-/* We can only use 1 card due to the /dev/watchdog restriction */
+/* We can only use 1 card due to the /devel/watchdog restriction */
 static int cards_found;
 
 /* internal variables */
@@ -427,7 +427,7 @@ static int pcipcwd_get_timeleft(int *time_left)
 }
 
 /*
- *	/dev/watchdog handling
+ *	/devel/watchdog handling
  */
 
 static ssize_t pcipcwd_write(struct file *file, const char __user *data,
@@ -563,7 +563,7 @@ static long pcipcwd_ioctl(struct file *file, unsigned int cmd,
 
 static int pcipcwd_open(struct inode *inode, struct file *file)
 {
-	/* /dev/watchdog can only be opened once */
+	/* /devel/watchdog can only be opened once */
 	if (test_and_set_bit(0, &is_active)) {
 		if (debug >= VERBOSE)
 			pr_err("Attempt to open already opened device\n");
@@ -593,7 +593,7 @@ static int pcipcwd_release(struct inode *inode, struct file *file)
 }
 
 /*
- *	/dev/temperature handling
+ *	/devel/temperature handling
  */
 
 static ssize_t pcipcwd_temp_read(struct file *file, char __user *data,

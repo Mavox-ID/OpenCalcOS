@@ -75,8 +75,8 @@ static int force_boot;
 module_param(force_boot, int, 0);
 MODULE_PARM_DESC(force_boot,
 		"A value of 1 means that the driver will reboot"
-		"the system immediately if the /dev/watchdog device is closed"
-		"A value of 0 means that when /dev/watchdog device is closed"
+		"the system immediately if the /devel/watchdog device is closed"
+		"A value of 0 means that when /devel/watchdog device is closed"
 		"the watchdog timer will be refreshed for one more interval"
 		"of length: timer_set. At the end of this interval, the"
 		"watchdog timer will reset the system."
@@ -285,7 +285,7 @@ static int intel_scu_set_heartbeat(u32 t)
 }
 
 /*
- * /dev/watchdog handling
+ * /devel/watchdog handling
  */
 
 static int intel_scu_open(struct inode *inode, struct file *file)
@@ -324,7 +324,7 @@ static int intel_scu_release(struct inode *inode, struct file *file)
 		return 0;
 	}
 
-	pr_crit("Unexpected close of /dev/watchdog!\n");
+	pr_crit("Unexpected close of /devel/watchdog!\n");
 
 	/* Since the timer was started, prevent future reopens */
 	watchdog_device.driver_closed = 1;

@@ -188,7 +188,7 @@ void nvram_set_checksum(void)
 #endif  /*  0  */
 
 /*
- * The are the file operation function for user access to /dev/nvram
+ * The are the file operation function for user access to /devel/nvram
  */
 
 static loff_t nvram_llseek(struct file *file, loff_t offset, int origin)

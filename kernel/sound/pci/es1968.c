@@ -1048,7 +1048,7 @@ static void init_capture_apu(struct es1968 *chip, struct esschan *es, int channe
 		apu_set_register(chip, apu, i, 0x0000);
 
 	/* need to enable subgroups.. and we should probably
-	   have different groups for different /dev/dsps..  */
+	   have different groups for different /devel/dsps..  */
 	apu_set_register(chip, apu, 2, 0x8);
 
 	/* Load the buffer into the wave engine */

@@ -2668,7 +2668,7 @@ void unload_ms_sound(struct address_info *hw_config)
 #ifndef EXCLUDE_TIMERS
 
 /*
- * Timer stuff (for /dev/music).
+ * Timer stuff (for /devel/music).
  */
 
 static unsigned int current_interval;

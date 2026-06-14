@@ -601,7 +601,7 @@ static irqreturn_t AmiInterrupt(int irq, void *dummy)
 
 
 /*
- * /dev/mixer abstraction
+ * /devel/mixer abstraction
  */
 
 static void __init AmiMixerInit(void)

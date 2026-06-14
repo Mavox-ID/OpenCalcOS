@@ -38,7 +38,7 @@
 
 /*
  * Our device numbers have no business in system headers.
- * The only thing a user knows is the device name /dev/jsflash.
+ * The only thing a user knows is the device name /devel/jsflash.
  *
  * Block devices are laid out like this:
  *   minor+0	- Bootstrap, for 8MB SIMM 0x20400000[0x800000]

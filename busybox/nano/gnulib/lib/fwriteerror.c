@@ -123,9 +123,9 @@ fwriteerror_no_ebadf (FILE *fp)
 
 #if TEST
 
-/* Name of a file on which writing fails.  On systems without /dev/full,
+/* Name of a file on which writing fails.  On systems without /devel/full,
    you can choose a filename on a full file system.  */
-#define UNWRITABLE_FILE "/dev/full"
+#define UNWRITABLE_FILE "/devel/full"
 
 int
 main ()

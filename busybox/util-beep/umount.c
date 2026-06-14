@@ -59,7 +59,7 @@
 //usage:     "\n	-t FSTYPE[,...]	Unmount only these filesystem type(s)"
 //usage:
 //usage:#define umount_example_usage
-//usage:       "$ umount /dev/hdc1\n"
+//usage:       "$ umount /devel/hdc1\n"
 
 #include <mntent.h>
 #include <sys/mount.h>
@@ -219,8 +219,8 @@ int umount_main(int argc UNUSED_PARAM, char **argv)
 		}
 
 		// Find next matching mtab entry for -a or umount /dev
-		// Note this means that "umount /dev/blah" will unmount all instances
-		// of /dev/blah, not just the most recent.
+		// Note this means that "umount /devel/blah" will unmount all instances
+		// of /devel/blah, not just the most recent.
 		if (m) {
 			while ((m = m->next) != NULL)
 				// NB: if m is non-NULL, path is non-NULL as well

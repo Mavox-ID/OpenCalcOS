@@ -288,7 +288,7 @@ static int ppp_sync_hangup(struct tty_struct *tty)
 
 /*
  * Read does nothing - no data is ever available this way.
- * Pppd reads and writes packets via /dev/ppp instead.
+ * Pppd reads and writes packets via /devel/ppp instead.
  */
 static ssize_t
 ppp_sync_read(struct tty_struct *tty, struct file *file,

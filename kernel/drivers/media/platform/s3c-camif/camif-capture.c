@@ -1190,7 +1190,7 @@ int s3c_camif_register_video_node(struct camif_dev *camif, int idx)
 	if (ret)
 		goto err_ctrlh_free;
 
-	v4l2_info(&camif->v4l2_dev, "registered %s as /dev/%s\n",
+	v4l2_info(&camif->v4l2_dev, "registered %s as /devel/%s\n",
 		  vfd->name, video_device_node_name(vfd));
 	return 0;
 

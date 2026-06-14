@@ -93,7 +93,7 @@ struct r10bio {
 	unsigned long		state;
 	struct mddev		*mddev;
 	/*
-	 * original bio going to /dev/mdx
+	 * original bio going to /devel/mdx
 	 */
 	struct bio		*master_bio;
 	/*

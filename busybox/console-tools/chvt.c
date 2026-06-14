@@ -11,7 +11,7 @@
 //config:	default y
 //config:	help
 //config:	This program is used to change to another terminal.
-//config:	Example: chvt 4 (change to terminal /dev/tty4)
+//config:	Example: chvt 4 (change to terminal /devel/tty4)
 
 //applet:IF_CHVT(APPLET_NOEXEC(chvt, chvt, BB_DIR_USR_BIN, BB_SUID_DROP, chvt))
 
@@ -20,7 +20,7 @@
 //usage:#define chvt_trivial_usage
 //usage:       "N"
 //usage:#define chvt_full_usage "\n\n"
-//usage:       "Change the foreground virtual terminal to /dev/ttyN"
+//usage:       "Change the foreground virtual terminal to /devel/ttyN"
 
 #include "libbb.h"
 

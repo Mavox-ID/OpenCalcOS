@@ -1333,7 +1333,7 @@ out:
 
 
 /*
- * /dev/mixer abstraction
+ * /devel/mixer abstraction
  */
 
 #define RECLEVEL_VOXWARE_TO_GAIN(v)	\

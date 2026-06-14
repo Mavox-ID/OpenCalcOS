@@ -300,7 +300,7 @@ static void console_init(void)
 #if defined(__FreeBSD__) || defined(__FreeBSD_kernel__)
 	/* BSD people say their kernels do not open fd 0,1,2; they need this: */
 	if (!s)
-		s = (char*)"/dev/console";
+		s = (char*)"/devel/console";
 #endif
 	if (s) {
 		int fd = open(s, O_RDWR | O_NONBLOCK | O_NOCTTY);
@@ -714,9 +714,9 @@ static void parse_inittab(void)
 		action = index_in_strings(actions, token[2]);
 		if (action < 0 || !token[3][0]) /* token[3]: command */
 			goto bad_entry;
-		/* turn .*TTY -> /dev/TTY */
+		/* turn .*TTY -> /devel/TTY */
 		if (tty[0]) {
-			tty = concat_path_file("/dev/", skip_dev_pfx(tty));
+			tty = concat_path_file("/devel/", skip_dev_pfx(tty));
 		}
 		new_init_action(1 << action, token[3], tty);
 		if (tty[0])
@@ -1267,7 +1267,7 @@ int init_main(int argc UNUSED_PARAM, char **argv)
 //usage:	"		WARNING: This field has a non-traditional meaning for BusyBox init!\n"
 //usage:	"		The id field is used by BusyBox init to specify the controlling tty for\n"
 //usage:	"		the specified process to run on. The contents of this field are\n"
-//usage:	"		appended to \"/dev/\" and used as-is. There is no need for this field to\n"
+//usage:	"		appended to \"/devel/\" and used as-is. There is no need for this field to\n"
 //usage:	"		be unique, although if it isn't you may have strange results. If this\n"
 //usage:	"		field is left blank, then the init's stdin/out will be used.\n"
 //usage:	"\n"
@@ -1331,7 +1331,7 @@ int init_main(int argc UNUSED_PARAM, char **argv)
 //usage:	"	#\n"
 //usage:	"	# Start an \"askfirst\" shell on the console (whatever that may be)\n"
 //usage:	"	::askfirst:-/bin/sh\n"
-//usage:	"	# Start an \"askfirst\" shell on /dev/tty2-4\n"
+//usage:	"	# Start an \"askfirst\" shell on /devel/tty2-4\n"
 //usage:	"	tty2::askfirst:-/bin/sh\n"
 //usage:	"	tty3::askfirst:-/bin/sh\n"
 //usage:	"	tty4::askfirst:-/bin/sh\n"

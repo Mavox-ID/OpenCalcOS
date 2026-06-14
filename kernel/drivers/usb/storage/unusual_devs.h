@@ -1903,7 +1903,7 @@ UNUSUAL_DEV(  0x177f, 0x0400, 0x0000, 0x0000,
 /* Reported by Hans de Goede <hdegoede@redhat.com>
  * These Appotech controllers are found in Picture Frames, they provide a
  * (buggy) emulation of a cdrom drive which contains the windows software
- * Uploading of pictures happens over the corresponding /dev/sg device. */
+ * Uploading of pictures happens over the corresponding /devel/sg device. */
 UNUSUAL_DEV( 0x1908, 0x1315, 0x0000, 0x0000,
 		"BUILDWIN",
 		"Photo Frame",

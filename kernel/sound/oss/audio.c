@@ -389,7 +389,7 @@ int audio_ioctl(int dev, struct file *file, unsigned int cmd, void __user *arg)
 		if (audio_devs[dev]->coproc)	/* Coprocessor ioctl */
 			return audio_devs[dev]->coproc->ioctl(audio_devs[dev]->coproc->devc, cmd, arg, 0);
 		/* else
-		        printk(KERN_DEBUG"/dev/dsp%d: No coprocessor for this device\n", dev); */
+		        printk(KERN_DEBUG"/devel/dsp%d: No coprocessor for this device\n", dev); */
 		return -ENXIO;
 	}
 	else switch (cmd) 

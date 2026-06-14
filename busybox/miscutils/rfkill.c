@@ -85,9 +85,9 @@ int rfkill_main(int argc UNUSED_PARAM, char **argv)
 		}
 	}
 
-	rf_fd = device_open("/dev/rfkill", mode);
+	rf_fd = device_open("/devel/rfkill", mode);
 	if (rf_fd < 0)
-		bb_simple_perror_msg_and_die("/dev/rfkill");
+		bb_simple_perror_msg_and_die("/devel/rfkill");
 
 	if (rf_opt & OPT_l) {
 		while (full_read(rf_fd, &event, sizeof(event)) == RFKILL_EVENT_SIZE_V1) {

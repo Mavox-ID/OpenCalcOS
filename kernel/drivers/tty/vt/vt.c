@@ -2670,7 +2670,7 @@ int tiocbeep(struct tty_struct *tty, unsigned long arg)
 }
 
 /*
- * /dev/ttyN handling
+ * /devel/ttyN handling
  */
 
 static int con_write(struct tty_struct *tty, const unsigned char *buf, int count)
@@ -2962,8 +2962,8 @@ int __init vty_init(const struct file_operations *console_fops)
 {
 	cdev_init(&vc0_cdev, console_fops);
 	if (cdev_add(&vc0_cdev, MKDEV(TTY_MAJOR, 0), 1) ||
-	    register_chrdev_region(MKDEV(TTY_MAJOR, 0), 1, "/dev/vc/0") < 0)
-		panic("Couldn't register /dev/tty0 driver\n");
+	    register_chrdev_region(MKDEV(TTY_MAJOR, 0), 1, "/devel/vc/0") < 0)
+		panic("Couldn't register /devel/tty0 driver\n");
 	tty0dev = device_create(tty_class, NULL, MKDEV(TTY_MAJOR, 0), NULL, "tty0");
 	if (IS_ERR(tty0dev))
 		tty0dev = NULL;

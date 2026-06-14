@@ -939,7 +939,7 @@ dt3155_probe(struct pci_dev *pdev, const struct pci_device_id *id)
 	if (dt3155_alloc_coherent(&pdev->dev, DT3155_CHUNK_SIZE,
 							DMA_MEMORY_MAP))
 		dev_info(&pdev->dev, "preallocated 8 buffers\n");
-	dev_info(&pdev->dev, "/dev/video%i is ready\n", pd->vdev->minor);
+	dev_info(&pdev->dev, "/devel/video%i is ready\n", pd->vdev->minor);
 	return 0;  /*   success   */
 
 err_init_board:

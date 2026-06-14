@@ -220,7 +220,7 @@ static int mac_hid_toggle_emumouse(ctl_table *table, int write,
 	return rc;
 }
 
-/* file(s) in /proc/sys/dev/mac_hid */
+/* file(s) in /proc/sys/devel/mac_hid */
 static ctl_table mac_hid_files[] = {
 	{
 		.procname	= "mouse_button_emulation",

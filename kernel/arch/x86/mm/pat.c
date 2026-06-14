@@ -194,7 +194,7 @@ static int pat_pagerange_is_ram(resource_size_t start, resource_size_t end)
 	/*
 	 * For legacy reasons, physical address range in the legacy ISA
 	 * region is tracked as non-RAM. This will allow users of
-	 * /dev/mem to map portions of legacy ISA region, even when
+	 * /devel/mem to map portions of legacy ISA region, even when
 	 * some of those portions are listed(or not even listed) with
 	 * different e820 types(RAM/reserved/..)
 	 */
@@ -306,7 +306,7 @@ int reserve_memtype(u64 start, u64 end, unsigned long req_type,
 
 	/*
 	 * Call mtrr_lookup to get the type hint. This is an
-	 * optimization for /dev/mem mmap'ers into WB memory (BIOS
+	 * optimization for /devel/mem mmap'ers into WB memory (BIOS
 	 * tools and ACPI tools). Use WB request for WB memory and use
 	 * UC_MINUS otherwise.
 	 */
@@ -514,7 +514,7 @@ static inline int range_is_allowed(unsigned long pfn, unsigned long size)
 
 	while (cursor < to) {
 		if (!devmem_is_allowed(pfn)) {
-			printk(KERN_INFO "Program %s tried to access /dev/mem between [mem %#010Lx-%#010Lx]\n",
+			printk(KERN_INFO "Program %s tried to access /devel/mem between [mem %#010Lx-%#010Lx]\n",
 				current->comm, from, to - 1);
 			return 0;
 		}

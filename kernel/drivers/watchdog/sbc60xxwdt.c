@@ -59,7 +59,7 @@ MODULE_PARM_DESC(wdt_start, "SBC60xx WDT 'start' io port (default 0x443)");
 /*
  * We must not require too good response from the userspace daemon.
  * Here we require the userspace daemon to send us a heartbeat
- * char to /dev/watchdog every 30 seconds.
+ * char to /devel/watchdog every 30 seconds.
  * If the daemon pulses us every 25 seconds, we can still afford
  * a 5 second scheduling delay on the (high priority) daemon. That
  * should be sufficient for a box under any load.
@@ -131,7 +131,7 @@ static void wdt_keepalive(void)
 }
 
 /*
- * /dev/watchdog handling
+ * /devel/watchdog handling
  */
 
 static ssize_t fop_write(struct file *file, const char __user *buf,

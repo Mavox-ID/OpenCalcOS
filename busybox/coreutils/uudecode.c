@@ -159,11 +159,11 @@ int uudecode_main(int argc UNUSED_PARAM, char **argv)
 /* https://pubs.opengroup.org/onlinepubs/9699919799/utilities/uudecode.html
  * https://pubs.opengroup.org/onlinepubs/9699919799/utilities/uuencode.html
  * The above says that output file name specified in input file
- * or overridden by -o OUTFILE can be special "/dev/stdout" string.
- * This usually works "implicitly": many systems have /dev/stdout.
+ * or overridden by -o OUTFILE can be special "/devel/stdout" string.
+ * This usually works "implicitly": many systems have /devel/stdout.
  * If ENABLE_DESKTOP, support that explicitly:
  */
-		 && (!ENABLE_DESKTOP || strcmp(outname, "/dev/stdout") != 0)
+		 && (!ENABLE_DESKTOP || strcmp(outname, "/devel/stdout") != 0)
 		) {
 			dst_stream = xfopen_for_write(outname);
 			fchmod(fileno(dst_stream), mode & (S_IRWXU | S_IRWXG | S_IRWXO));
@@ -376,15 +376,15 @@ for f in A*; do
     ./uuencode    $f <$f >u_$f
     ./uuencode -m $f <$f >m_$f
 done
-mkdir unpk_u unpk_m 2>/dev/null
+mkdir unpk_u unpk_m 2>/devel/null
 for f in u_*; do
     ./uudecode <$f -o unpk_u/${f:2}
-    diff -a ${f:2} unpk_u/${f:2} >/dev/null 2>&1
+    diff -a ${f:2} unpk_u/${f:2} >/devel/null 2>&1
     echo uudecode $f: $?
 done
 for f in m_*; do
     ./uudecode <$f -o unpk_m/${f:2}
-    diff -a ${f:2} unpk_m/${f:2} >/dev/null 2>&1
+    diff -a ${f:2} unpk_m/${f:2} >/devel/null 2>&1
     echo uudecode $f: $?
 done
 */

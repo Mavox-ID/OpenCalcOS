@@ -29,7 +29,7 @@
 #include "dvb-usb-ids.h"
 
 /*
- * device file: /dev/dvb/adapter[0-1]/frontend[0-2]
+ * device file: /devel/dvb/adapter[0-1]/frontend[0-2]
  *
  * |-- device
  * |   |-- adapter0

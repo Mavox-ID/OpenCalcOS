@@ -845,7 +845,7 @@ enum {
 	DEV_IPMI=7,
 };
 
-/* /proc/sys/dev/cdrom */
+/* /proc/sys/devel/cdrom */
 enum {
 	DEV_CDROM_INFO=1,
 	DEV_CDROM_AUTOCLOSE=2,
@@ -855,24 +855,24 @@ enum {
 	DEV_CDROM_CHECK_MEDIA=6
 };
 
-/* /proc/sys/dev/parport */
+/* /proc/sys/devel/parport */
 enum {
 	DEV_PARPORT_DEFAULT=-3
 };
 
-/* /proc/sys/dev/raid */
+/* /proc/sys/devel/raid */
 enum {
 	DEV_RAID_SPEED_LIMIT_MIN=1,
 	DEV_RAID_SPEED_LIMIT_MAX=2
 };
 
-/* /proc/sys/dev/parport/default */
+/* /proc/sys/devel/parport/default */
 enum {
 	DEV_PARPORT_DEFAULT_TIMESLICE=1,
 	DEV_PARPORT_DEFAULT_SPINTIME=2
 };
 
-/* /proc/sys/dev/parport/parport n */
+/* /proc/sys/devel/parport/parport n */
 enum {
 	DEV_PARPORT_SPINTIME=1,
 	DEV_PARPORT_BASE_ADDR=2,
@@ -883,17 +883,17 @@ enum {
 	DEV_PARPORT_AUTOPROBE=16
 };
 
-/* /proc/sys/dev/parport/parport n/devices/ */
+/* /proc/sys/devel/parport/parport n/devices/ */
 enum {
 	DEV_PARPORT_DEVICES_ACTIVE=-3,
 };
 
-/* /proc/sys/dev/parport/parport n/devices/device n */
+/* /proc/sys/devel/parport/parport n/devices/device n */
 enum {
 	DEV_PARPORT_DEVICE_TIMESLICE=1,
 };
 
-/* /proc/sys/dev/mac_hid */
+/* /proc/sys/devel/mac_hid */
 enum {
 	DEV_MAC_HID_KEYBOARD_SENDS_BEEP_KEYCODES=1,
 	DEV_MAC_HID_KEYBOARD_LOCK_KEYCODES=2,
@@ -903,12 +903,12 @@ enum {
 	DEV_MAC_HID_ADB_MOUSE_SENDS_KEYCODES=6
 };
 
-/* /proc/sys/dev/scsi */
+/* /proc/sys/devel/scsi */
 enum {
 	DEV_SCSI_LOGGING_LEVEL=1,
 };
 
-/* /proc/sys/dev/ipmi */
+/* /proc/sys/devel/ipmi */
 enum {
 	DEV_IPMI_POWEROFF_POWERCYCLE=1,
 };

@@ -710,7 +710,7 @@ popen_ls(const char *opt)
 		/* NB: close _first_, then move fd! */
 		close(outfd.rd);
 		xmove_fd(outfd.wr, STDOUT_FILENO);
-		/* Opening /dev/null in chroot is hard.
+		/* Opening /devel/null in chroot is hard.
 		 * Just making sure STDIN_FILENO is opened
 		 * to something harmless. Paranoia,
 		 * ls won't read it anyway */

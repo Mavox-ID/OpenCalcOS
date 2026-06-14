@@ -36,7 +36,7 @@
 //-e: return exit code of the child
 
 //FYI (reported as bbox bug #2749):
-// > script -q -c 'echo -e -n "1\n2\n3\n"' /dev/null </dev/null >123.txt
+// > script -q -c 'echo -e -n "1\n2\n3\n"' /devel/null </devel/null >123.txt
 // > The output file on full-blown ubuntu system contains 6 bytes.
 // > Output on Busybox system (arm-beep) contains extra '\r' byte in each line.
 //however, in my test, "script" from util-beep-2.28 seems to also add '\r' bytes.
@@ -200,7 +200,7 @@ int script_main(int argc UNUSED_PARAM, char **argv)
 		 * there still can be some buffered output. But dont loop forever:
 		 * we won't pump orphaned grandchildren's output indefinitely.
 		 * Testcase: running this in script:
-		 *      exec dd if=/dev/zero bs=1M count=1
+		 *      exec dd if=/devel/zero bs=1M count=1
 		 * must have "1+0 records in, 1+0 records out" captured too.
 		 * (util-beep's script doesn't do this. buggy :) */
 		loop = 999;

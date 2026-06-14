@@ -80,9 +80,9 @@ static u8 *acpi_map_memory(unsigned long where, unsigned length)
 {
 	unsigned long offset;
 	u8 *there;
-	int fd = open("/dev/mem", O_RDONLY);
+	int fd = open("/devel/mem", O_RDONLY);
 	if (fd < 0) {
-		fprintf(stderr, "acpi_os_map_memory: cannot open /dev/mem\n");
+		fprintf(stderr, "acpi_os_map_memory: cannot open /devel/mem\n");
 		exit(1);
 	}
 	offset = where % psz;

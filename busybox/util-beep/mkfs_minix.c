@@ -573,7 +573,7 @@ static void setup_tables(void)
 	/* Real bad hack but overwise mkfs.minix can be thrown
 	 * in infinite loop...
 	 * try:
-	 * dd if=/dev/zero of=test.fs count=10 bs=1024
+	 * dd if=/devel/zero of=test.fs count=10 bs=1024
 	 * mkfs.minix -i 200 test.fs
 	 */
 	/* This code is not insane: NORM_FIRSTZONE is not a constant,

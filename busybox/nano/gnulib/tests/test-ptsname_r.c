@@ -43,12 +43,12 @@ SIGNATURE_CHECK (ptsname_r, int, (int, char *, size_t));
 #include "macros.h"
 
 /* Compare two slave names.
-   On some systems, there are hard links in the /dev/ directory.
+   On some systems, there are hard links in the /devel/ directory.
    For example, on OSF/1 5.1,
-     /dev/ttyp0 == /dev/pts/0
-     /dev/ttyp9 == /dev/pts/9
-     /dev/ttypa == /dev/pts/10
-     /dev/ttype == /dev/pts/14
+     /devel/ttyp0 == /devel/pts/0
+     /devel/ttyp9 == /devel/pts/9
+     /devel/ttypa == /devel/pts/10
+     /devel/ttype == /devel/pts/14
  */
 static int
 same_slave (const char *slave_name1, const char *slave_name2)
@@ -132,7 +132,7 @@ main (void)
     int result;
 
     /* Open the controlling tty of the current process.  */
-    fd = open ("/dev/tty", O_RDONLY);
+    fd = open ("/devel/tty", O_RDONLY);
     if (fd < 0)
       {
         if (test_exit_status != EXIT_SUCCESS)
@@ -142,27 +142,27 @@ main (void)
       }
 
     result = ptsname_r (fd, buffer, sizeof buffer);
-    /* The result is usually NULL, because /dev/tty is a slave, not a
+    /* The result is usually NULL, because /devel/tty is a slave, not a
        master.  */
     if (result == 0)
       {
-        ASSERT (memeq (buffer, "/dev/", 5));
+        ASSERT (memeq (buffer, "/devel/", 5));
       }
 
     close (fd);
   }
 
 #if defined __sun || defined __DragonFly__
-  /* Solaris has BSD-style /dev/pty[p-r][0-9a-f] files, but the function
+  /* Solaris has BSD-style /devel/pty[p-r][0-9a-f] files, but the function
      ptsname() does not work on them.
-     DragonFly BSD has only /dev/ptmx.  */
+     DragonFly BSD has only /devel/ptmx.  */
   {
     int fd;
     char buffer[256];
     int result;
 
     /* Open a pty master.  */
-    fd = open ("/dev/ptmx", O_RDWR | O_NOCTTY);
+    fd = open ("/devel/ptmx", O_RDWR | O_NOCTTY);
     if (fd < 0)
       {
         if (test_exit_status != EXIT_SUCCESS)
@@ -173,7 +173,7 @@ main (void)
 
     result = ptsname_r (fd, buffer, sizeof buffer);
     ASSERT (result == 0);
-    ASSERT (memeq (buffer, "/dev/pts/", 9));
+    ASSERT (memeq (buffer, "/devel/pts/", 9));
 
     test_errors (fd, buffer);
 
@@ -181,21 +181,21 @@ main (void)
   }
 
 #elif defined _AIX
-  /* AIX has BSD-style /dev/ptyp[0-9a-f] files, and the function ptsname()
-     produces the corresponding /dev/ttyp[0-9a-f] file for each.  But opening
+  /* AIX has BSD-style /devel/ptyp[0-9a-f] files, and the function ptsname()
+     produces the corresponding /devel/ttyp[0-9a-f] file for each.  But opening
      such a pty causes the process to hang in a state where it does not even
      react to the SIGALRM signal for N * 15 seconds, where N is the number of
      opened ptys, either in the close (fd) call or - when this close (fd) call
      is commented out - at the process exit.
      So, better don't use these BSD-style ptys.  The modern way to open a pty
-     is to go through /dev/ptc.  */
+     is to go through /devel/ptc.  */
   {
     int fd;
     char buffer[256];
     int result;
 
     /* Open a pty master.  */
-    fd = open ("/dev/ptc", O_RDWR | O_NOCTTY);
+    fd = open ("/devel/ptc", O_RDWR | O_NOCTTY);
     if (fd < 0)
       {
         if (test_exit_status != EXIT_SUCCESS)
@@ -206,7 +206,7 @@ main (void)
 
     result = ptsname_r (fd, buffer, sizeof buffer);
     ASSERT (result == 0);
-    ASSERT (memeq (buffer, "/dev/pts/", 9));
+    ASSERT (memeq (buffer, "/devel/pts/", 9));
 
     test_errors (fd, buffer);
 
@@ -217,14 +217,14 @@ main (void)
 
 #elif defined __gnu_hurd__ /* Hurd */
 
-  /* Try various master names of Hurd: /dev/pty[p-q][0-9a-v]  */
+  /* Try various master names of Hurd: /devel/pty[p-q][0-9a-v]  */
   for (int char1 = 'p'; char1 <= 'q'; char1++)
     for (int char2 = '0'; char2 <= 'v'; (char2 == '9' ? char2 = 'a' : char2++))
       {
         char master_name[32];
         int fd;
 
-        sprintf (master_name, "/dev/pty%c%c", char1, char2);
+        sprintf (master_name, "/devel/pty%c%c", char1, char2);
         fd = open (master_name, O_RDONLY);
         if (fd >= 0)
           {
@@ -234,7 +234,7 @@ main (void)
 
             result = ptsname_r (fd, buffer, sizeof buffer);
             ASSERT (result == 0);
-            sprintf (slave_name, "/dev/tty%c%c", char1, char2);
+            sprintf (slave_name, "/devel/tty%c%c", char1, char2);
             ASSERT (same_slave (buffer, slave_name));
 
             test_errors (fd, buffer);
@@ -245,14 +245,14 @@ main (void)
 
 #else
 
-  /* Try various master names of Mac OS X: /dev/pty[p-w][0-9a-f]  */
+  /* Try various master names of Mac OS X: /devel/pty[p-w][0-9a-f]  */
   for (int char1 = 'p'; char1 <= 'w'; char1++)
     for (int char2 = '0'; char2 <= 'f'; (char2 == '9' ? char2 = 'a' : char2++))
       {
         char master_name[32];
         int fd;
 
-        sprintf (master_name, "/dev/pty%c%c", char1, char2);
+        sprintf (master_name, "/devel/pty%c%c", char1, char2);
         fd = open (master_name, O_RDONLY);
         if (fd >= 0)
           {
@@ -262,7 +262,7 @@ main (void)
 
             result = ptsname_r (fd, buffer, sizeof buffer);
             ASSERT (result == 0);
-            sprintf (slave_name, "/dev/tty%c%c", char1, char2);
+            sprintf (slave_name, "/devel/tty%c%c", char1, char2);
             ASSERT (same_slave (buffer, slave_name));
 
             test_errors (fd, buffer);
@@ -272,7 +272,7 @@ main (void)
           }
       }
 
-  /* Try various master names of *BSD: /dev/pty[p-sP-S][0-9a-v]  */
+  /* Try various master names of *BSD: /devel/pty[p-sP-S][0-9a-v]  */
   for (int upper = 0; upper <= 1; upper++)
     for (int char1 = (upper ? 'P' : 'p'); char1 <= (upper ? 'S' : 's'); char1++)
       for (int char2 = '0'; char2 <= 'v'; (char2 == '9' ? char2 = 'a' : char2++))
@@ -280,7 +280,7 @@ main (void)
           char master_name[32];
           int fd;
 
-          sprintf (master_name, "/dev/pty%c%c", char1, char2);
+          sprintf (master_name, "/devel/pty%c%c", char1, char2);
           fd = open (master_name, O_RDONLY);
           if (fd >= 0)
             {
@@ -290,7 +290,7 @@ main (void)
 
               result = ptsname_r (fd, buffer, sizeof buffer);
               ASSERT (result == 0);
-              sprintf (slave_name, "/dev/tty%c%c", char1, char2);
+              sprintf (slave_name, "/devel/tty%c%c", char1, char2);
               ASSERT (same_slave (buffer, slave_name));
 
               test_errors (fd, buffer);

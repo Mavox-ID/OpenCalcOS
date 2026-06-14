@@ -2837,7 +2837,7 @@ static void sd_probe_async(void *data, async_cookie_t cookie)
  *	Note: this function is invoked from the scsi mid-level.
  *	This function sets up the mapping between a given 
  *	<host,channel,id,lun> (found in sdp) and new device name 
- *	(e.g. /dev/sda). More precisely it is the block device major 
+ *	(e.g. /devel/sda). More precisely it is the block device major 
  *	and minor number that is chosen here.
  *
  *	Assume sd_probe is not re-entrant (for time being)
@@ -2937,7 +2937,7 @@ static int sd_probe(struct device *dev)
  *	@sdp: pointer to mid level scsi device object
  *
  *	Note: this function is invoked from the scsi mid-level.
- *	This function potentially frees up a device name (e.g. /dev/sdc)
+ *	This function potentially frees up a device name (e.g. /devel/sdc)
  *	that could be re-used by a subsequent sd_probe().
  *	This function is not called when the built-in sd driver is "exit-ed".
  **/

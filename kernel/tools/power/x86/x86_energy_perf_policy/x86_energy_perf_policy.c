@@ -204,7 +204,7 @@ unsigned long long get_msr(int cpu, int offset)
 	int retval;
 	int fd;
 
-	sprintf(msr_path, "/dev/cpu/%d/msr", cpu);
+	sprintf(msr_path, "/devel/cpu/%d/msr", cpu);
 	fd = open(msr_path, O_RDONLY);
 	if (fd < 0) {
 		printf("Try \"# modprobe msr\"\n");
@@ -229,7 +229,7 @@ unsigned long long  put_msr(int cpu, unsigned long long new_msr, int offset)
 	int retval;
 	int fd;
 
-	sprintf(msr_path, "/dev/cpu/%d/msr", cpu);
+	sprintf(msr_path, "/devel/cpu/%d/msr", cpu);
 	fd = open(msr_path, O_RDWR);
 	if (fd < 0) {
 		perror(msr_path);
@@ -276,7 +276,7 @@ void update_msr(int cpu)
 
 char *proc_stat = "/proc/stat";
 /*
- * run func() on every cpu in /dev/cpu
+ * run func() on every cpu in /devel/cpu
  */
 void for_every_cpu(void (func)(int))
 {

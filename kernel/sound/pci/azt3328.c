@@ -61,8 +61,8 @@ MODULE_SUPPORTED_DEVICE("{{Aztech,AZF3328}}");
     local descr=$1; local addr=$2; local count=$3
 
     echo "${descr}: ${count} @ ${addr}:"
-    dd if=/dev/port skip=`printf %d ${addr}` count=${count} bs=1 \
-      2>/dev/null| hexdump -C
+    dd if=/devel/port skip=`printf %d ${addr}` count=${count} bs=1 \
+      2>/devel/null| hexdump -C
   }
   and then use something like
   "dump joy200 0x200 8", "dump mpu388 0x388 4", "dump joy 0xb400 8",
@@ -70,8 +70,8 @@ MODULE_SUPPORTED_DEVICE("{{Aztech,AZF3328}}");
   possibly within a "while true; do ... sleep 1; done" loop.
   Tweaking ports could be done using
   VALSTRING="`printf "%02x" $value`"
-  printf "\x""$VALSTRING"|dd of=/dev/port seek=`printf %d ${addr}` bs=1 \
-    2>/dev/null
+  printf "\x""$VALSTRING"|dd of=/devel/port seek=`printf %d ${addr}` bs=1 \
+    2>/devel/null
 */
 
 #define DEBUG_MISC	0

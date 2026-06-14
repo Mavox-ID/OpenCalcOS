@@ -1690,7 +1690,7 @@ int tty_release(struct inode *inode, struct file *filp)
 	 */
 	while (1) {
 		/* Guard against races with tty->count changes elsewhere and
-		   opens on /dev/tty */
+		   opens on /devel/tty */
 
 		mutex_lock(&tty_mutex);
 		tty_lock_pair(tty, o_tty);
@@ -1819,7 +1819,7 @@ int tty_release(struct inode *inode, struct file *filp)
  *	tty_open_current_tty - get tty of current task for open
  *	@device: device number
  *	@filp: file pointer to tty
- *	@return: tty of the current task iff @device is /dev/tty
+ *	@return: tty of the current task iff @device is /devel/tty
  *
  *	We cannot return driver and index like for the other nodes because
  *	devpts will not work then. It expects inodes to be from devpts FS.
@@ -1838,7 +1838,7 @@ static struct tty_struct *tty_open_current_tty(dev_t device, struct file *filp)
 	if (!tty)
 		return ERR_PTR(-ENXIO);
 
-	filp->f_flags |= O_NONBLOCK; /* Don't let /dev/tty block */
+	filp->f_flags |= O_NONBLOCK; /* Don't let /devel/tty block */
 	/* noctty = 1; */
 	tty_kref_put(tty);
 	/* FIXME: we put a reference and return a TTY! */
@@ -1879,7 +1879,7 @@ static struct tty_driver *tty_lookup_driver(dev_t device, struct file *filp,
 		if (console_driver) {
 			driver = tty_driver_kref_get(console_driver);
 			if (driver) {
-				/* Don't let /dev/console block */
+				/* Don't let /devel/console block */
 				filp->f_flags |= O_NONBLOCK;
 				*noctty = 1;
 				break;
@@ -3500,14 +3500,14 @@ int __init tty_init(void)
 {
 	cdev_init(&tty_cdev, &tty_fops);
 	if (cdev_add(&tty_cdev, MKDEV(TTYAUX_MAJOR, 0), 1) ||
-	    register_chrdev_region(MKDEV(TTYAUX_MAJOR, 0), 1, "/dev/tty") < 0)
-		panic("Couldn't register /dev/tty driver\n");
+	    register_chrdev_region(MKDEV(TTYAUX_MAJOR, 0), 1, "/devel/tty") < 0)
+		panic("Couldn't register /devel/tty driver\n");
 	device_create(tty_class, NULL, MKDEV(TTYAUX_MAJOR, 0), NULL, "tty");
 
 	cdev_init(&console_cdev, &console_fops);
 	if (cdev_add(&console_cdev, MKDEV(TTYAUX_MAJOR, 1), 1) ||
-	    register_chrdev_region(MKDEV(TTYAUX_MAJOR, 1), 1, "/dev/console") < 0)
-		panic("Couldn't register /dev/console driver\n");
+	    register_chrdev_region(MKDEV(TTYAUX_MAJOR, 1), 1, "/devel/console") < 0)
+		panic("Couldn't register /devel/console driver\n");
 	consdev = device_create(tty_class, NULL, MKDEV(TTYAUX_MAJOR, 1), NULL,
 			      "console");
 	if (IS_ERR(consdev))

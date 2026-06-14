@@ -695,7 +695,7 @@ int DMAbuf_get_buffer_pointer(int dev, struct dma_buffparms *dmap, int direction
 }
 
 /*
- *	DMAbuf_start_devices() is called by the /dev/music driver to start
+ *	DMAbuf_start_devices() is called by the /devel/music driver to start
  *	one or more audio devices at desired moment.
  */
 

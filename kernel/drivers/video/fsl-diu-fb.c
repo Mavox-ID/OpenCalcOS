@@ -1237,7 +1237,7 @@ static int fsl_diu_open(struct fb_info *info, int user)
 	struct mfb_info *mfbi = info->par;
 	int res = 0;
 
-	/* free boot splash memory on first /dev/fb0 open */
+	/* free boot splash memory on first /devel/fb0 open */
 	if ((mfbi->index == PLANE0) && diu_ops.release_bootmem)
 		diu_ops.release_bootmem();
 

@@ -576,7 +576,7 @@ DEFINE_PER_CPU(unsigned, mce_poll_count);
 
 /*
  * Poll for corrected events or events that happened before reset.
- * Those are just logged through /dev/mcelog.
+ * Those are just logged through /devel/mcelog.
  *
  * This is executed in standard interrupt context.
  *
@@ -1355,7 +1355,7 @@ int mce_notify_irq(void)
 	static DEFINE_RATELIMIT_STATE(ratelimit, 60*HZ, 2);
 
 	if (test_and_clear_bit(0, &mce_need_notify)) {
-		/* wake processes polling /dev/mcelog */
+		/* wake processes polling /devel/mcelog */
 		wake_up_interruptible(&mce_chrdev_wait);
 
 		/*
@@ -1702,7 +1702,7 @@ void __cpuinit mcheck_cpu_init(struct cpuinfo_x86 *c)
 }
 
 /*
- * mce_chrdev: Character device /dev/mcelog to read and clear the MCE log.
+ * mce_chrdev: Character device /devel/mcelog to read and clear the MCE log.
  */
 
 static DEFINE_SPINLOCK(mce_chrdev_state_lock);
@@ -2426,7 +2426,7 @@ static __init int mcheck_init_device(void)
 	register_syscore_ops(&mce_syscore_ops);
 	register_hotcpu_notifier(&mce_cpu_notifier);
 
-	/* register character device /dev/mcelog */
+	/* register character device /devel/mcelog */
 	misc_register(&mce_chrdev_device);
 
 	return err;

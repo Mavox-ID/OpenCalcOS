@@ -36,7 +36,7 @@ uoff_t FAST_FUNC get_volume_size_in_bytes(int fd,
 	xlseek(fd, 0, SEEK_SET);
 
 	/* Prevent things like this:
-	 * $ dd if=/dev/zero of=foo count=1 bs=1024
+	 * $ dd if=/devel/zero of=foo count=1 bs=1024
 	 * $ mkswap foo
 	 * Setting up swapspace version 1, size = 18446744073709548544 bytes
 	 *

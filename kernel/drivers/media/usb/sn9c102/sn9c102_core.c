@@ -3330,7 +3330,7 @@ sn9c102_usb_probe(struct usb_interface* intf, const struct usb_device_id* id)
 	if (err) {
 		DBG(1, "V4L2 device registration failed");
 		if (err == -ENFILE && video_nr[dev_nr] == -1)
-			DBG(1, "Free /dev/videoX node not found");
+			DBG(1, "Free /devel/videoX node not found");
 		video_nr[dev_nr] = -1;
 		dev_nr = (dev_nr < SN9C102_MAX_DEVICES-1) ? dev_nr+1 : 0;
 		complete_all(&cam->probe);

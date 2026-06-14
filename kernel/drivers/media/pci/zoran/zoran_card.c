@@ -82,7 +82,7 @@ static int default_norm;	/* default 0 = PAL, 1 = NTSC 2 = SECAM */
 module_param(default_norm, int, 0444);
 MODULE_PARM_DESC(default_norm, "Default norm (0=PAL, 1=NTSC, 2=SECAM)");
 
-/* /dev/videoN, -1 for autodetect */
+/* /devel/videoN, -1 for autodetect */
 static int video_nr[BUZ_MAX] = { [0 ... (BUZ_MAX-1)] = -1 };
 module_param_array(video_nr, int, NULL, 0444);
 MODULE_PARM_DESC(video_nr, "Video device number (-1=Auto)");

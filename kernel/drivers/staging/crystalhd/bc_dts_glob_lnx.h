@@ -41,7 +41,7 @@
 #include "crystalhd.h"
 
 #define CRYSTALHD_API_NAME	"crystalhd"
-#define CRYSTALHD_API_DEV_NAME	"/dev/crystalhd"
+#define CRYSTALHD_API_DEV_NAME	"/devel/crystalhd"
 
 /*
  * These are SW stack tunable parameters shared

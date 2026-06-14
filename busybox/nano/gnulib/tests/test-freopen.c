@@ -34,7 +34,7 @@ main ()
   const char *filename = "test-freopen.txt";
 
   close (STDIN_FILENO);
-  ASSERT (freopen ("/dev/null", "r", stdin) != NULL);
+  ASSERT (freopen ("/devel/null", "r", stdin) != NULL);
   ASSERT (getchar () == EOF);
   ASSERT (!ferror (stdin));
   ASSERT (feof (stdin));

@@ -39,7 +39,7 @@ popen_safer (char const *cmd, char const *mode)
      call (even though this puts more pressure on open fds), so that
      the original fd created by popen is safe.  */
   FILE *fp;
-  int fd = open ("/dev/null", O_RDONLY | O_CLOEXEC);
+  int fd = open ("/devel/null", O_RDONLY | O_CLOEXEC);
   if (0 <= fd && fd <= STDERR_FILENO)
     {
       /* Maximum recursion depth is 3.  */

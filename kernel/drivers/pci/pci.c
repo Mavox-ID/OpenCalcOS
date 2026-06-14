@@ -2548,7 +2548,7 @@ void pci_release_region(struct pci_dev *pdev, int bar)
  *	successfully.
  *
  *	If @exclusive is set, then the region is marked so that userspace
- *	is explicitly not allowed to map the resource via /dev/mem or
+ *	is explicitly not allowed to map the resource via /devel/mem or
  * 	sysfs MMIO access.
  *
  *	Returns 0 on success, or %EBUSY on error.  A warning
@@ -2620,7 +2620,7 @@ int pci_request_region(struct pci_dev *pdev, int bar, const char *res_name)
  *	message is also printed on failure.
  *
  *	The key difference that _exclusive makes it that userspace is
- *	explicitly not allowed to map the resource via /dev/mem or
+ *	explicitly not allowed to map the resource via /devel/mem or
  * 	sysfs.
  */
 int pci_request_region_exclusive(struct pci_dev *pdev, int bar, const char *res_name)
@@ -2726,7 +2726,7 @@ int pci_request_regions(struct pci_dev *pdev, const char *res_name)
  *	successfully.
  *
  *	pci_request_regions_exclusive() will mark the region so that
- * 	/dev/mem and the sysfs MMIO access will not be allowed.
+ * 	/devel/mem and the sysfs MMIO access will not be allowed.
  *
  *	Returns 0 on success, or %EBUSY on error.  A warning
  *	message is also printed on failure.

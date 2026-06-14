@@ -3692,9 +3692,9 @@ int awk_main(int argc UNUSED_PARAM, char **argv)
 	setvar_i(intvar[ARGC], i + 1);
 
 	//fdhash = ahash; // done via define
-	newfile("/dev/stdin")->F = stdin;
-	newfile("/dev/stdout")->F = stdout;
-	newfile("/dev/stderr")->F = stderr;
+	newfile("/devel/stdin")->F = stdin;
+	newfile("/devel/stdout")->F = stdout;
+	newfile("/devel/stderr")->F = stderr;
 
 	evaluate(beginseq.first, &G.main__tmpvar);
 	if (!mainseq.first && !endseq.first)

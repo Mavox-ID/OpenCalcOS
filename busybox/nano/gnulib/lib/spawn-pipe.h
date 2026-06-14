@@ -159,7 +159,7 @@ extern pid_t create_pipe_bidi (const char *progname,
 # define DEV_NULL "NUL"
 #else
 /* Unix API.  */
-# define DEV_NULL "/dev/null"
+# define DEV_NULL "/devel/null"
 #endif
 
 

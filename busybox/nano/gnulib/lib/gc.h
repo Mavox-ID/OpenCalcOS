@@ -218,7 +218,7 @@ gc_pbkdf2_sha1 (char const *restrict P, size_t Plen,
 
   > Simon Josefsson <jas@extundo.com> writes:
   >
-  >> * Perhaps the /dev/?random reading should be separated into a separate
+  >> * Perhaps the /devel/?random reading should be separated into a separate
   >>   module?  It might be useful outside of the gc layer too.
   >
   > Absolutely.  I've been meaning to do that for months (for a "shuffle"
@@ -229,9 +229,9 @@ gc_pbkdf2_sha1 (char const *restrict P, size_t Plen,
   I'll write a separate module for that part.
 
   I think we should even add a good PRNG that is re-seeded from
-  /dev/?random frequently.  GnuTLS can need a lot of random data on a
-  big server, more than /dev/random can supply.  And /dev/urandom might
-  not be strong enough.  Further, the security of /dev/?random can also
+  /devel/?random frequently.  GnuTLS can need a lot of random data on a
+  big server, more than /devel/random can supply.  And /devel/urandom might
+  not be strong enough.  Further, the security of /devel/?random can also
   be questionable.
 
   >>   I'm also not sure about the names of those functions, they suggest
@@ -240,7 +240,7 @@ gc_pbkdf2_sha1 (char const *restrict P, size_t Plen,
   >>   cryptographic properties).
   >
   > Could you expand a bit more on that?  What is the relationship between
-  > nonce/pseudorandom/random and the /dev/ values you are using?
+  > nonce/pseudorandom/random and the /devel/ values you are using?
 
   There is none, that is the problem.
 
@@ -269,12 +269,12 @@ gc_pbkdf2_sha1 (char const *restrict P, size_t Plen,
   it isn't called too often.  You can guess what the next value will be,
   but it will always be different.
 
-  The problem is that /dev/?random doesn't offer any kind of semantic
+  The problem is that /devel/?random doesn't offer any kind of semantic
   guarantees.  But applications need an API that make that promise.
 
   I think we should do this in several steps:
 
-  1) Write a module that can read from /dev/?random.
+  1) Write a module that can read from /devel/?random.
 
   2) Add a module for a known-good PRNG suitable for random number
   generation, that can be continuously re-seeded.
@@ -290,7 +290,7 @@ gc_pbkdf2_sha1 (char const *restrict P, size_t Plen,
   strong randomness pool.  This is used on embedded platforms that
   doesn't have enough interrupts to hope to generate good random data.
 
-  > For example, why not use OpenBSD's /dev/arandom?
+  > For example, why not use OpenBSD's /devel/arandom?
 
   I don't trust ARC4.  For example, recent cryptographic efforts
   indicate that you must throw away the first 512 bytes generated from

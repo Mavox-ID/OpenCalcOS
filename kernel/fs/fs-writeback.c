@@ -1136,7 +1136,7 @@ static noinline void block_dump___mark_inode_dirty(struct inode *inode)
  * them dirty.
  *
  * Note that for blockdevs, inode->dirtied_when represents the dirtying time of
- * the block-special inode (/dev/hda1) itself.  And the ->dirtied_when field of
+ * the block-special inode (/devel/hda1) itself.  And the ->dirtied_when field of
  * the kernel-internal blockdev inode represents the dirtying time of the
  * blockdev's pages.  This is why for I_DIRTY_PAGES we always use
  * page->mapping->host, so the page-dirtying time is recorded in the internal

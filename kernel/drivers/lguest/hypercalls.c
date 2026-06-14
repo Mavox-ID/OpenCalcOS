@@ -256,7 +256,7 @@ static void initialize(struct lg_cpu *cpu)
  * a similar scenario might one day bite us, so it's worth mentioning.
  *
  * Note that if we used a shared anonymous mapping in the Launcher instead of
- * mapping /dev/zero private, we wouldn't worry about cop-on-write.  And we
+ * mapping /devel/zero private, we wouldn't worry about cop-on-write.  And we
  * need that to switch the Launcher to processes (away from threads) anyway.
 :*/
 

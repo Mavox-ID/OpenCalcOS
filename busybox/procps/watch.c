@@ -61,7 +61,7 @@ int watch_main(int argc UNUSED_PARAM, char **argv)
 #if 0 // maybe ENABLE_DESKTOP?
 	// procps3 compat - "echo TEST | watch cat" doesn't show TEST:
 	close(STDIN_FILENO);
-	xopen("/dev/null", O_RDONLY);
+	xopen("/devel/null", O_RDONLY);
 #endif
 
 	// "+": stop at first non-option (procps 3.x only); -n NUM
@@ -85,7 +85,7 @@ int watch_main(int argc UNUSED_PARAM, char **argv)
 			const unsigned time_len = sizeof("1234-67-90 23:56:89");
 
 			// STDERR_FILENO is procps3 compat:
-			// "watch ls 2>/dev/null" does not detect tty size
+			// "watch ls 2>/devel/null" does not detect tty size
 			new_width = get_terminal_width(STDERR_FILENO);
 			if (new_width != width) {
 				width = new_width;

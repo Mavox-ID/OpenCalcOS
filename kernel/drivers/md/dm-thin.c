@@ -2518,7 +2518,7 @@ static void thin_dtr(struct dm_target *ti)
  *
  * <pool_dev> <dev_id> [origin_dev]
  *
- * pool_dev: the path to the pool (eg, /dev/mapper/my_pool)
+ * pool_dev: the path to the pool (eg, /devel/mapper/my_pool)
  * dev_id: the internal device identifier
  * origin_dev: a device external to the pool that should act as the origin
  *

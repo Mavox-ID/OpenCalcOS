@@ -34,7 +34,7 @@ extern "C" {
 /* A mount table entry. */
 struct mount_entry
 {
-  char *me_devname;             /* Device node name, including "/dev/". */
+  char *me_devname;             /* Device node name, including "/devel/". */
   char *me_mountdir;            /* Mount point directory name. */
   char *me_mntroot;             /* Directory on filesystem of device used */
                                 /* as root for the (bind) mount. */

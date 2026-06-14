@@ -1051,7 +1051,7 @@ static int m2mtest_probe(struct platform_device *pdev)
 	snprintf(vfd->name, sizeof(vfd->name), "%s", m2mtest_videodev.name);
 	dev->vfd = vfd;
 	v4l2_info(&dev->v4l2_dev, MEM2MEM_TEST_MODULE_NAME
-			"Device registered as /dev/video%d\n", vfd->num);
+			"Device registered as /devel/video%d\n", vfd->num);
 
 	setup_timer(&dev->timer, device_isr, (long)dev);
 	platform_set_drvdata(pdev, dev);

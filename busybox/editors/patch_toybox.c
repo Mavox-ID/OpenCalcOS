@@ -42,7 +42,7 @@ config PATCH
 	  a file when all all hunks to that file apply.  Patch prints failed
 	  hunks to stderr, and exits with nonzero status if any hunks fail.
 
-	  A file compared against /dev/null (or with a date <= the epoch) is
+	  A file compared against /devel/null (or with a date <= the epoch) is
 	  created/deleted as appropriate.
 */
 #include "libbb.h"
@@ -494,7 +494,7 @@ int patch_main(int argc UNUSED_PARAM, char **argv)
 				if (*s == '\\' && s[1]) s++;
 			i = atoi(s);
 			if (i > 1900 && i <= 1970)
-				*name = xstrdup("/dev/null");
+				*name = xstrdup("/devel/null");
 			else {
 				*s = 0;
 				*name = xstrdup(patchline+4);
@@ -527,9 +527,9 @@ int patch_main(int argc UNUSED_PARAM, char **argv)
 
 				name = reverse ? oldname : newname;
 
-				// We're deleting oldname if new file is /dev/null (before -p)
+				// We're deleting oldname if new file is /devel/null (before -p)
 				// or if new hunk is empty (zero context) after patching
-				if (strcmp(name, "/dev/null") == 0 || !(reverse ? oldsum : newsum)) {
+				if (strcmp(name, "/devel/null") == 0 || !(reverse ? oldsum : newsum)) {
 					name = reverse ? newname : oldname;
 					del++;
 				}
@@ -550,7 +550,7 @@ int patch_main(int argc UNUSED_PARAM, char **argv)
 				// If we've got a file to open, do so.
 				} else if (!(option_mask32 & FLAG_PATHLEN) || i <= TT.prefix) {
 					// If the old file was null, we're creating a new one.
-					if (strcmp(oldname, "/dev/null") == 0 || !oldsum) {
+					if (strcmp(oldname, "/devel/null") == 0 || !oldsum) {
 						printf("creating %s\n", name);
 						s = strrchr(name, '/');
 						if (s) {

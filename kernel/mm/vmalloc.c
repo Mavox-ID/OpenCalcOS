@@ -2003,7 +2003,7 @@ static int aligned_vwrite(char *buf, char *addr, unsigned long count)
  *	Note: In usual ops, vread() is never necessary because the caller
  *	should know vmalloc() area is valid and can use memcpy().
  *	This is for routines which have to access vmalloc area without
- *	any informaion, as /dev/kmem.
+ *	any informaion, as /devel/kmem.
  *
  */
 
@@ -2077,7 +2077,7 @@ finished:
  *	Note: In usual ops, vwrite() is never necessary because the caller
  *	should know vmalloc() area is valid and can use memcpy().
  *	This is for routines which have to access vmalloc area without
- *	any informaion, as /dev/kmem.
+ *	any informaion, as /devel/kmem.
  */
 
 long vwrite(char *buf, char *addr, unsigned long count)

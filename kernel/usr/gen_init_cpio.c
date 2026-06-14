@@ -490,7 +490,7 @@ static void usage(const char *prog)
 		"example:\n"
 		"# A simple initramfs\n"
 		"dir /dev 0755 0 0\n"
-		"nod /dev/console 0600 0 0 c 5 1\n"
+		"nod /devel/console 0600 0 0 c 5 1\n"
 		"dir /root 0700 0 0\n"
 		"dir /sbin 0755 0 0\n"
 		"file /sbin/kinit /usr/src/klibc/kinit/kinit 0755 0 0\n"

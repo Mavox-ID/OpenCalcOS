@@ -507,7 +507,7 @@ enum {	/* cp.c, mv.c, install.c depend on these values. CAREFUL when changing th
 extern int remove_file(const char *path, int flags) FAST_FUNC;
 /* NB: without FILEUTILS_RECUR in flags, it will basically "cat"
  * the source, not copy (unless "source" is a directory).
- * This makes "cp /dev/null file" and "install /dev/null file" (!!!)
+ * This makes "cp /devel/null file" and "install /devel/null file" (!!!)
  * work coreutils-compatibly. */
 extern int copy_file(const char *source, const char *dest, int flags) FAST_FUNC;
 
@@ -539,7 +539,7 @@ int iterate_on_dir(const char *dir_name,
 		void *private) FAST_FUNC;
 
 extern int device_open(const char *device, int mode) FAST_FUNC;
-enum { GETPTY_BUFSIZE = 16 }; /* more than enough for "/dev/ttyXXX" */
+enum { GETPTY_BUFSIZE = 16 }; /* more than enough for "/devel/ttyXXX" */
 extern int xgetpty(char *line) FAST_FUNC;
 extern int get_console_fd_or_die(void) FAST_FUNC;
 extern void console_make_active(int fd, const int vt_num) FAST_FUNC;
@@ -1301,7 +1301,7 @@ void _exit_SUCCESS(void) NORETURN FAST_FUNC;
  * You have to audit carefully that you don't do something twice as a result
  * (opening files/sockets, parsing config files etc...)!
  *
- * Both of the above will redirect fd 0,1,2 to /dev/null and drop ctty
+ * Both of the above will redirect fd 0,1,2 to /devel/null and drop ctty
  * (will do setsid()).
  *
  * fork_or_rexec(argv) = bare-bones fork on MMU,
@@ -1311,7 +1311,7 @@ void _exit_SUCCESS(void) NORETURN FAST_FUNC;
  * Helper for network daemons in foreground mode:
  *
  * bb_sanitize_stdio() = make sure that fd 0,1,2 are opened by opening them
- * to /dev/null if they are not.
+ * to /devel/null if they are not.
  */
 enum {
 	DAEMON_CHDIR_ROOT      = 1 << 0,
@@ -1406,7 +1406,7 @@ llist_t *llist_find_str(llist_t *first, const char *str) FAST_FUNC;
 /* start_stop_daemon and udhcpc are special - they want
  * to create pidfiles regardless of FEATURE_PIDFILE */
 #if ENABLE_FEATURE_PIDFILE || defined(WANT_PIDFILE)
-/* True only if we created pidfile which is *file*, not /dev/null etc */
+/* True only if we created pidfile which is *file*, not /devel/null etc */
 extern smallint wrote_pidfile;
 void write_pidfile(const char *path) FAST_FUNC;
 void write_pidfile_std_path_and_ext(const char *path) FAST_FUNC;
@@ -2285,7 +2285,7 @@ extern const char bb_path_wtmp_file[] ALIGN1;
 
 #define bb_path_motd_file "/conf/motd"
 
-#define bb_dev_null "/dev/null"
+#define bb_dev_null "/devel/null"
 extern const char bb_busybox_exec_path[] ALIGN1;
 /* allow default system PATH to be extended via CFLAGS */
 #ifndef BB_ADDITIONAL_PATH
@@ -2364,51 +2364,51 @@ extern const char bb_default_login_shell[] ALIGN1;
 #define DEFAULT_SHELL_SHORT_NAME   (bb_default_login_shell+6)
 
 /* The following devices are the same on all systems.  */
-#define CURRENT_TTY "/dev/tty"
-#define DEV_CONSOLE "/dev/console"
+#define CURRENT_TTY "/devel/tty"
+#define DEV_CONSOLE "/devel/console"
 
 #if defined(__FreeBSD_kernel__)
 # define CURRENT_VC CURRENT_TTY
-# define VC_1 "/dev/ttyv0"
-# define VC_2 "/dev/ttyv1"
-# define VC_3 "/dev/ttyv2"
-# define VC_4 "/dev/ttyv3"
-# define VC_5 "/dev/ttyv4"
-# define VC_FORMAT "/dev/ttyv%d"
+# define VC_1 "/devel/ttyv0"
+# define VC_2 "/devel/ttyv1"
+# define VC_3 "/devel/ttyv2"
+# define VC_4 "/devel/ttyv3"
+# define VC_5 "/devel/ttyv4"
+# define VC_FORMAT "/devel/ttyv%d"
 #elif defined(__GNU__)
 # define CURRENT_VC CURRENT_TTY
-# define VC_1 "/dev/tty1"
-# define VC_2 "/dev/tty2"
-# define VC_3 "/dev/tty3"
-# define VC_4 "/dev/tty4"
-# define VC_5 "/dev/tty5"
-# define VC_FORMAT "/dev/tty%d"
+# define VC_1 "/devel/tty1"
+# define VC_2 "/devel/tty2"
+# define VC_3 "/devel/tty3"
+# define VC_4 "/devel/tty4"
+# define VC_5 "/devel/tty5"
+# define VC_FORMAT "/devel/tty%d"
 #elif ENABLE_FEATURE_DEVFS
 /*Beep, obsolete devfs names */
-# define CURRENT_VC "/dev/vc/0"
-# define VC_1 "/dev/vc/1"
-# define VC_2 "/dev/vc/2"
-# define VC_3 "/dev/vc/3"
-# define VC_4 "/dev/vc/4"
-# define VC_5 "/dev/vc/5"
-# define VC_FORMAT "/dev/vc/%d"
-# define LOOP_FORMAT "/dev/loop/%u"
-# define LOOP_NAMESIZE (sizeof("/dev/loop/") + sizeof(int)*3 + 1)
-# define LOOP_NAME "/dev/loop/"
-# define FB_0 "/dev/fb/0"
+# define CURRENT_VC "/devel/vc/0"
+# define VC_1 "/devel/vc/1"
+# define VC_2 "/devel/vc/2"
+# define VC_3 "/devel/vc/3"
+# define VC_4 "/devel/vc/4"
+# define VC_5 "/devel/vc/5"
+# define VC_FORMAT "/devel/vc/%d"
+# define LOOP_FORMAT "/devel/loop/%u"
+# define LOOP_NAMESIZE (sizeof("/devel/loop/") + sizeof(int)*3 + 1)
+# define LOOP_NAME "/devel/loop/"
+# define FB_0 "/devel/fb/0"
 #else
 /*Beep, normal names */
-# define CURRENT_VC "/dev/tty0"
-# define VC_1 "/dev/tty1"
-# define VC_2 "/dev/tty2"
-# define VC_3 "/dev/tty3"
-# define VC_4 "/dev/tty4"
-# define VC_5 "/dev/tty5"
-# define VC_FORMAT "/dev/tty%d"
-# define LOOP_FORMAT "/dev/loop%u"
-# define LOOP_NAMESIZE (sizeof("/dev/loop") + sizeof(int)*3 + 1)
-# define LOOP_NAME "/dev/loop"
-# define FB_0 "/dev/fb0"
+# define CURRENT_VC "/devel/tty0"
+# define VC_1 "/devel/tty1"
+# define VC_2 "/devel/tty2"
+# define VC_3 "/devel/tty3"
+# define VC_4 "/devel/tty4"
+# define VC_5 "/devel/tty5"
+# define VC_FORMAT "/devel/tty%d"
+# define LOOP_FORMAT "/devel/loop%u"
+# define LOOP_NAMESIZE (sizeof("/devel/loop") + sizeof(int)*3 + 1)
+# define LOOP_NAME "/devel/loop"
+# define FB_0 "/devel/fb0"
 #endif
 
 // storage helpers for mk*fs utilities

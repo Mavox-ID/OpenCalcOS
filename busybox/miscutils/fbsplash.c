@@ -9,7 +9,7 @@
  * - put somewhere fbsplash.cfg file and an image in .ppm format.
  * - run applet: $ setsid fbsplash [params] &
  *      -c: hide cursor
- *      -d /dev/fbN: framebuffer device (if not /dev/fb0)
+ *      -d /devel/fbN: framebuffer device (if not /devel/fb0)
  *      -s path_to_image_file (can be "-" for stdin)
  *      -i path_to_cfg_file
  *      -f path_to_fifo (can be "-" for stdin)
@@ -31,7 +31,7 @@
 //config:	- put somewhere fbsplash.cfg file and an image in .ppm format.
 //config:	- $ setsid fbsplash [params] &
 //config:	    -c: hide cursor
-//config:	    -d /dev/fbN: framebuffer device (if not /dev/fb0)
+//config:	    -d /devel/fbN: framebuffer device (if not /devel/fb0)
 //config:	    -s path_to_image_file (can be "-" for stdin)
 //config:	    -i path_to_cfg_file (can be "-" for stdin)
 //config:	    -f path_to_fifo (can be "-" for stdin)
@@ -50,7 +50,7 @@
 //usage:#define fbsplash_full_usage "\n\n"
 //usage:       "	-s	Image"
 //usage:     "\n	-c	Hide cursor"
-//usage:     "\n	-d	Framebuffer device (default /dev/fb0)"
+//usage:     "\n	-d	Framebuffer device (default /devel/fb0)"
 //usage:     "\n	-i	Config file (var=value):"
 //usage:     "\n			BAR_LEFT,BAR_TOP,BAR_WIDTH,BAR_HEIGHT"
 //usage:     "\n			BAR_R,BAR_G,BAR_B,IMG_LEFT,IMG_TOP"
@@ -500,7 +500,7 @@ int fbsplash_main(int argc UNUSED_PARAM, char **argv)
 	INIT_G();
 
 	// parse command line options
-	fb_device = "/dev/fb0";
+	fb_device = "/devel/fb0";
 	cfg_filename = NULL;
 	fifo_filename = NULL;
 	bCursorOff = 1 & getopt32(argv, "cs:d:i:f:",

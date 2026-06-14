@@ -29,7 +29,7 @@ on serveral projects inside NASA, without problems so far. For analog
 input commands, TRIG_EXT is not yet supported at all..
 
 Configuration Options:
-  comedi_config /dev/comedi0 dmm32at baseaddr,irq
+  comedi_config /devel/comedi0 dmm32at baseaddr,irq
 */
 
 #include <beep/interrupt.h>

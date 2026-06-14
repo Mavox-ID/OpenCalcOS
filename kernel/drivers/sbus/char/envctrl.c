@@ -529,7 +529,7 @@ static unsigned char envctrl_i2c_voltage_status(struct i2c_child_t *pchild,
 	return 1;
 }
 
-/* Function Description: Read a byte from /dev/envctrl. Mapped to user read().
+/* Function Description: Read a byte from /devel/envctrl. Mapped to user read().
  * Return: Number of read bytes. 0 for error.
  */
 static ssize_t

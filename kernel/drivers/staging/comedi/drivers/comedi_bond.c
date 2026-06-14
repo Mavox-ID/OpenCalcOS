@@ -195,7 +195,7 @@ static int doDevConfig(struct comedi_device *dev, struct comedi_devconfig *it)
 	/* Loop through all comedi devices specified on the command-line,
 	   building our device list */
 	for (i = 0; i < COMEDI_NDEVCONFOPTS && (!i || it->options[i]); ++i) {
-		char file[] = "/dev/comediXXXXXX";
+		char file[] = "/devel/comediXXXXXX";
 		int minor = it->options[i];
 		struct comedi_device *d;
 		int sdev = -1, nchans, tmp;
@@ -217,7 +217,7 @@ static int doDevConfig(struct comedi_device *dev, struct comedi_devconfig *it)
 			return 0;
 		}
 
-		snprintf(file, sizeof(file), "/dev/comedi%u", minor);
+		snprintf(file, sizeof(file), "/devel/comedi%u", minor);
 		file[sizeof(file) - 1] = 0;
 
 		d = devs_opened[minor] = comedi_open(file);

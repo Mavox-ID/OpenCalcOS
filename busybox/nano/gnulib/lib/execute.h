@@ -24,7 +24,7 @@ extern "C" {
 
 
 /* Execute a command, optionally redirecting any of the three standard file
-   descriptors to /dev/null.  Return its exit code.
+   descriptors to /devel/null.  Return its exit code.
    If it didn't terminate correctly, exit if exit_on_error is true, otherwise
    return 127.
 

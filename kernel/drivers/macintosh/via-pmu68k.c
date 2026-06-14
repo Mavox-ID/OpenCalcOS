@@ -38,7 +38,7 @@
 #include <asm/irq.h>
 #include <asm/uaccess.h>
 
-/* Misc minor number allocated for /dev/pmu */
+/* Misc minor number allocated for /devel/pmu */
 #define PMU_MINOR	154
 
 /* VIA registers - spaced 0x200 bytes apart */

@@ -370,8 +370,8 @@ int FAST_FUNC copy_file(const char *source, const char *dest, int flags)
 		}
 		/* ...but read size is already checked by bb_copyfd_eof */
 		close(src_fd);
-		/* "cp /dev/something new_file" should not
-		 * copy mode of /dev/something */
+		/* "cp /devel/something new_file" should not
+		 * copy mode of /devel/something */
 		if (!S_ISREG(source_stat.st_mode))
 			return retval;
 		goto preserve_mode_ugid_time;

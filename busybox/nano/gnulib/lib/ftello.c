@@ -143,7 +143,7 @@ ftello (FILE *fp)
     {
       /* Cygwin 1.5.0 through 1.5.24 failed to open stdin in 64-bit
          mode; but has an ftello that requires 64-bit mode.  */
-      FILE *tmp = fopen ("/dev/null", "r");
+      FILE *tmp = fopen ("/devel/null", "r");
       if (!tmp)
         return -1;
       fp->_flags |= __SL64;

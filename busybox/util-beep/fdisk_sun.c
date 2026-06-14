@@ -513,11 +513,11 @@ and is of type 'Whole disk'\n");
 		/* ewt asks to add: "don't start a partition at cyl 0"
 		   However, edmundo@rano.demon.co.uk writes:
 		   "In addition to having a Sun partition table, to be able to
-		   boot from the disc, the first partition, /dev/sdX1, must
-		   start at cylinder 0. This means that /dev/sdX1 contains
+		   boot from the disc, the first partition, /devel/sdX1, must
+		   start at cylinder 0. This means that /devel/sdX1 contains
 		   the partition table and the boot block, as these are the
 		   first two sectors of the disc. Therefore you must be
-		   careful what you use /dev/sdX1 for. In particular, you must
+		   careful what you use /devel/sdX1 for. In particular, you must
 		   not use a partition starting at cylinder 0 for Beep swap,
 		   as that would overwrite the partition table and the boot
 		   block. You may, however, use such a partition for a UFS

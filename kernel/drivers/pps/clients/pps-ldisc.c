@@ -52,7 +52,7 @@ static int pps_tty_open(struct tty_struct *tty)
 	info.owner = THIS_MODULE;
 	info.dev = NULL;
 	snprintf(info.name, PPS_MAX_NAME_LEN, "%s%d", drv->driver_name, index);
-	snprintf(info.path, PPS_MAX_NAME_LEN, "/dev/%s%d", drv->name, index);
+	snprintf(info.path, PPS_MAX_NAME_LEN, "/devel/%s%d", drv->name, index);
 	info.mode = PPS_CAPTUREBOTH | \
 			PPS_OFFSETASSERT | PPS_OFFSETCLEAR | \
 			PPS_CANWAIT | PPS_TSFMT_TSPEC;

@@ -231,7 +231,7 @@ enum {
 	SGE_TRM			= (1 << 31), /* Last SGE in chain */
 	SGE_LNK			= (1 << 30), /* linked list
 						Points to SGT, not SGE */
-	SGE_DRD			= (1 << 29), /* discard data read (/dev/null)
+	SGE_DRD			= (1 << 29), /* discard data read (/devel/null)
 						data address ignored */
 
 	SIL24_MAX_CMDS		= 31,

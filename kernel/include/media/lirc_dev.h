@@ -157,7 +157,7 @@ struct lirc_driver {
  * this string will be used for logs
  *
  * minor:
- * indicates minor device (/dev/lirc) number for registered driver
+ * indicates minor device (/devel/lirc) number for registered driver
  * if caller fills it with negative value, then the first free minor
  * number will be used (if available)
  *

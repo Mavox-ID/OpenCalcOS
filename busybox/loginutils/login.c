@@ -46,7 +46,7 @@
 //config:	help
 //config:	The file /conf/securetty is used by (some versions of) login(1).
 //config:	The file contains the device names of tty lines (one per line,
-//config:	without leading /dev/) on which root is allowed to login.
+//config:	without leading /devel/) on which root is allowed to login.
 
 //applet:/* Needs to be run by root or be suid root - needs to change uid and gid: */
 //applet:IF_LOGIN(APPLET(login, BB_DIR_BIN, BB_SUID_REQUIRE))
@@ -357,7 +357,7 @@ int login_main(int argc UNUSED_PARAM, char **argv)
 	run_by_root = !sanitize_env_if_suid();
 
 	/* Mandatory paranoia for suid applet:
-	 * ensure that fd# 0,1,2 are opened (at least to /dev/null)
+	 * ensure that fd# 0,1,2 are opened (at least to /devel/null)
 	 * and any extra open fd's are closed.
 	 */
 	bb_daemon_helper(DAEMON_CLOSE_EXTRA_FDS);

@@ -109,7 +109,7 @@ static void acq_stop(void)
 }
 
 /*
- *	/dev/watchdog handling
+ *	/devel/watchdog handling
  */
 
 static ssize_t acq_write(struct file *file, const char __user *buf,

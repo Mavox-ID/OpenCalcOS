@@ -631,7 +631,7 @@ error:
 
 /*
  * Path triggered by usermode clients who write to filesystem
- * e.g. cat filename > /dev/fb1
+ * e.g. cat filename > /devel/fb1
  * Not used by X Windows or text-mode console. But useful for testing.
  * Slow because of extra copy and we must assume all pixels dirty.
  */
@@ -902,7 +902,7 @@ static int dlfb_ops_open(struct fb_info *info, int user)
 		fb_deferred_io_init(info);
 	}
 
-	pr_notice("open /dev/fb%d user=%d fb_info=%p count=%d\n",
+	pr_notice("open /devel/fb%d user=%d fb_info=%p count=%d\n",
 	    info->node, user, info, dev->fb_count);
 
 	return 0;
@@ -958,7 +958,7 @@ static void dlfb_free_framebuffer(struct dlfb_data *dev)
 		/* Assume info structure is freed after this point */
 		framebuffer_release(info);
 
-		pr_warn("fb_info for /dev/fb%d has been freed\n", node);
+		pr_warn("fb_info for /devel/fb%d has been freed\n", node);
 	}
 
 	/* ref taken in probe() as part of registering framebfufer */
@@ -991,7 +991,7 @@ static int dlfb_ops_release(struct fb_info *info, int user)
 		info->fbops->fb_mmap = dlfb_ops_mmap;
 	}
 
-	pr_warn("released /dev/fb%d user=%d count=%d\n",
+	pr_warn("released /devel/fb%d user=%d count=%d\n",
 		  info->node, user, dev->fb_count);
 
 	kref_put(&dev->kref, dlfb_free);
@@ -1102,7 +1102,7 @@ static int dlfb_ops_blank(int blank_mode, struct fb_info *info)
 	char *bufptr;
 	struct urb *urb;
 
-	pr_info("/dev/fb%d FB_BLANK mode %d --> %d\n",
+	pr_info("/devel/fb%d FB_BLANK mode %d --> %d\n",
 		info->node, dev->blank_mode, blank_mode);
 
 	if ((dev->blank_mode == FB_BLANK_POWERDOWN) &&
@@ -1719,7 +1719,7 @@ static void dlfb_init_framebuffer_work(struct work_struct *work)
 		pr_warn("device_create_bin_file failed %d\n", retval);
 	}
 
-	pr_info("DisplayLink USB device /dev/fb%d attached. %dx%d resolution."
+	pr_info("DisplayLink USB device /devel/fb%d attached. %dx%d resolution."
 			" Using %dK framebuffer memory\n", info->node,
 			info->var.xres, info->var.yres,
 			((dev->backing_buffer) ?

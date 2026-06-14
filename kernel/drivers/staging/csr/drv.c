@@ -288,7 +288,7 @@ unifi_open(struct inode *inode, struct file *file)
             uf_put_instance(devno);
             return -ENOSPC;
         }
-        unifi_trace(priv, UDBG1, "Client is registered to /dev/unifiudi%d\n", devno);
+        unifi_trace(priv, UDBG1, "Client is registered to /devel/unifiudi%d\n", devno);
     } else {
         /*
          * Even-numbered device nodes are the control application.
@@ -2130,7 +2130,7 @@ unifi_load(void)
            ((BEEP_VERSION_CODE) >> 8) & 0xff,
            (BEEP_VERSION_CODE) & 0xff);
     /*
-     * Instantiate the /dev/unifi* device nodes.
+     * Instantiate the /devel/unifi* device nodes.
      * We must do this before registering with the SDIO driver because it
      * will immediately call the "insert" callback if the card is
      * already present.

@@ -579,8 +579,8 @@ int unzip_main(int argc, char **argv)
 			overwrite = O_ALWAYS;
 			break;
 
-		case 't': /* Extract files to /dev/null */
-			xmove_fd(xopen("/dev/null", O_WRONLY), STDOUT_FILENO);
+		case 't': /* Extract files to /devel/null */
+			xmove_fd(xopen("/devel/null", O_WRONLY), STDOUT_FILENO);
 			/*fallthrough*/
 
 		case 'p': /* Extract files to stdout */

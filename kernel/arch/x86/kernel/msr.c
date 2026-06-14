@@ -22,7 +22,7 @@
  * and then read/write in chunks of 8 bytes.  A larger size means multiple
  * reads or writes of the same register.
  *
- * This driver uses /dev/cpu/%d/msr where %d is the minor number, and on
+ * This driver uses /devel/cpu/%d/msr where %d is the minor number, and on
  * an SMP box will direct the access to CPU %d.
  */
 

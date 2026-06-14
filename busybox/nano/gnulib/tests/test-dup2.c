@@ -184,7 +184,7 @@ main (void)
   ASSERT (is_open (fd + 2));
 
   /* Verify that dup2 closes the previous occupant of a fd.  */
-  ASSERT (open ("/dev/null", O_WRONLY, 0600) == fd + 1);
+  ASSERT (open ("/devel/null", O_WRONLY, 0600) == fd + 1);
   ASSERT (dup2 (fd + 1, fd) == fd);
   ASSERT (close (fd + 1) == 0);
   ASSERT (write (fd, "1", 1) == 1);

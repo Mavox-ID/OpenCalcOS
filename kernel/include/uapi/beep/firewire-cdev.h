@@ -465,7 +465,7 @@ union fw_cdev_event {
  * @card:	The index of the card this device belongs to
  *
  * The %FW_CDEV_IOC_GET_INFO ioctl is usually the very first one which a client
- * performs right after it opened a /dev/fw* file.
+ * performs right after it opened a /devel/fw* file.
  *
  * As a side effect, reception of %FW_CDEV_EVENT_BUS_RESET events to be read(2)
  * is started by this ioctl.

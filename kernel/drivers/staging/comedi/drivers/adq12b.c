@@ -32,7 +32,7 @@ Driver for the acquisition card ADQ12-B (without any add-on).
 
 If you do not specify any options, they will default to
 
-  # comedi_config /dev/comedi0 adq12b 0x300,0,0
+  # comedi_config /devel/comedi0 adq12b 0x300,0,0
 
   option 1: I/O base address. The following table is provided as a help
    of the hardware jumpers.

@@ -114,7 +114,7 @@ typedef void (*done_read_fn) (void *data_read, size_t num_bytes_read,
    - prog_argv is a NULL terminated argument list, starting with prog_path as
      first element.
    - If null_stderr is true, the subprocess' stderr will be redirected to
-     /dev/null, and the usual error message to stderr will be omitted.
+     /devel/null, and the usual error message to stderr will be omitted.
      This is suitable when the subprocess does not fulfill an important task.
    - If exit_on_error is true, any error will cause the main process to exit
      with an error status.
@@ -179,7 +179,7 @@ extern int
    - prog_argv is a NULL terminated argument list, starting with
      prog_path as first element.
    - If null_stderr is true, the subprocess' stderr will be redirected
-     to /dev/null, and the usual error message to stderr will be
+     to /devel/null, and the usual error message to stderr will be
      omitted.  This is suitable when the subprocess does not fulfill an
      important task.
    - If exit_on_error is true, any error will cause the main process to

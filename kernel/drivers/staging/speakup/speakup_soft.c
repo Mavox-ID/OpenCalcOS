@@ -24,7 +24,7 @@
 #include "speakup.h"
 
 #define DRV_VERSION "2.6"
-#define SOFTSYNTH_MINOR 26 /* might as well give it one more than /dev/synth */
+#define SOFTSYNTH_MINOR 26 /* might as well give it one more than /devel/synth */
 #define PROCSPEECH 0x0d
 #define CLEAR_SYNTH 0x18
 
@@ -314,12 +314,12 @@ static int softsynth_probe(struct spk_synth *synth)
 	synth_device.name = "softsynth";
 	synth_device.fops = &softsynth_fops;
 	if (misc_register(&synth_device)) {
-		pr_warn("Couldn't initialize miscdevice /dev/softsynth.\n");
+		pr_warn("Couldn't initialize miscdevice /devel/softsynth.\n");
 		return -ENODEV;
 	}
 
 	misc_registered = 1;
-	pr_info("initialized device: /dev/softsynth, node (MAJOR 10, MINOR 26)\n");
+	pr_info("initialized device: /devel/softsynth, node (MAJOR 10, MINOR 26)\n");
 	return 0;
 }
 
@@ -327,7 +327,7 @@ static void softsynth_release(void)
 {
 	misc_deregister(&synth_device);
 	misc_registered = 0;
-	pr_info("unregistered /dev/softsynth\n");
+	pr_info("unregistered /devel/softsynth\n");
 }
 
 static int softsynth_is_alive(struct spk_synth *synth)

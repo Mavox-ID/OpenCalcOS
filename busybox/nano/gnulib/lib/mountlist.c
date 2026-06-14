@@ -1014,7 +1014,7 @@ read_file_system_list (bool need_fs_type)
 
 #ifdef MOUNTED_INTERIX_STATVFS  /* Interix */
   {
-    DIR *dirp = opendir ("/dev/fs");
+    DIR *dirp = opendir ("/devel/fs");
     if (!dirp)
       goto free_then_fail;
 
@@ -1028,7 +1028,7 @@ read_file_system_list (bool need_fs_type)
           break;
 
         char node[9 + NAME_MAX];
-        strcpy (node, "/dev/fs/");
+        strcpy (node, "/devel/fs/");
         strcat (node, entry.d_name);
 
         struct statvfs dev;

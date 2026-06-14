@@ -172,7 +172,7 @@ drm_ioctl_compat_t *r128_compat_ioctls[] = {
 
 /**
  * Called whenever a 32-bit process running under a 64-bit kernel
- * performs an ioctl on /dev/dri/card<n>.
+ * performs an ioctl on /devel/dri/card<n>.
  *
  * \param filp file pointer.
  * \param cmd command.

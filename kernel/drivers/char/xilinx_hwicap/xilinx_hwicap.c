@@ -16,7 +16,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 /*
- * This is the code behind /dev/icap* -- it allows a user-space
+ * This is the code behind /devel/icap* -- it allows a user-space
  * application to use the Xilinx ICAP subsystem.
  *
  * The following operations are possible:
@@ -47,7 +47,7 @@
  * user-space application code that uses this device.  The simplest
  * way to use this interface is simply:
  *
- * cp foo.bit /dev/icap0
+ * cp foo.bit /devel/icap0
  *
  * Note that unless foo.bit is an appropriately constructed partial
  * bitstream, this has a high likelihood of overwriting the design

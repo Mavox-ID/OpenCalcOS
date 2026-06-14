@@ -49,13 +49,13 @@
  * The other type is for each IN or OUT endpoint.  In both cases, the
  * user mode driver must configure the hardware before using it.
  *
- * - First, dev_config() is called when /dev/gadget/$CHIP is configured
+ * - First, dev_config() is called when /devel/gadget/$CHIP is configured
  *   (by writing configuration and device descriptors).  Afterwards it
  *   may serve as a source of device events, used to handle all control
  *   requests other than basic enumeration.
  *
  * - Then, after a SET_CONFIGURATION control request, ep_config() is
- *   called when each /dev/gadget/ep* file is configured (by writing
+ *   called when each /devel/gadget/ep* file is configured (by writing
  *   endpoint descriptors).  Afterwards these files are used to write()
  *   IN data or to read() OUT data.  To halt the endpoint, a "wrong
  *   direction" request is issued (like reading an IN endpoint).
@@ -81,13 +81,13 @@ MODULE_LICENSE ("GPL");
 
 #define GADGETFS_MAGIC		0xaee71ee7
 
-/* /dev/gadget/$CHIP represents ep0 and the whole device */
+/* /devel/gadget/$CHIP represents ep0 and the whole device */
 enum ep0_state {
 	/* DISBLED is the initial state.
 	 */
 	STATE_DEV_DISABLED = 0,
 
-	/* Only one open() of /dev/gadget/$CHIP; only one file tracks
+	/* Only one open() of /devel/gadget/$CHIP; only one file tracks
 	 * ep0/device i/o modes and binding to the controller.  Driver
 	 * must always write descriptors to initialize the device, then
 	 * the device becomes UNCONNECTED until enumeration.
@@ -178,7 +178,7 @@ static struct dev_data *dev_new (void)
 
 /*----------------------------------------------------------------------*/
 
-/* other /dev/gadget/$ENDPOINT files represent endpoints */
+/* other /devel/gadget/$ENDPOINT files represent endpoints */
 enum ep_state {
 	STATE_EP_DISABLED = 0,
 	STATE_EP_READY,
@@ -745,7 +745,7 @@ static const struct file_operations ep_io_operations = {
 
 /* ENDPOINT INITIALIZATION
  *
- *     fd = open ("/dev/gadget/$ENDPOINT", O_RDWR)
+ *     fd = open ("/devel/gadget/$ENDPOINT", O_RDWR)
  *     status = write (fd, descriptors, sizeof descriptors)
  *
  * That write establishes the endpoint configuration, configuring
@@ -1795,7 +1795,7 @@ static struct usb_gadget_driver probe_driver = {
 
 /* DEVICE INITIALIZATION
  *
- *     fd = open ("/dev/gadget/$CHIP", O_RDWR)
+ *     fd = open ("/devel/gadget/$CHIP", O_RDWR)
  *     status = write (fd, descriptors, sizeof descriptors)
  *
  * That write establishes the device configuration, so the kernel can
@@ -2083,7 +2083,7 @@ Enomem:
 	return -ENOMEM;
 }
 
-/* "mount -t gadgetfs path /dev/gadget" ends up here */
+/* "mount -t gadgetfs path /devel/gadget" ends up here */
 static struct dentry *
 gadgetfs_mount (struct file_system_type *t, int flags,
 		const char *path, void *opts)

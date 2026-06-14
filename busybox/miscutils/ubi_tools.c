@@ -314,8 +314,8 @@ int ubi_tools_main(int argc UNUSED_PARAM, char **argv)
 
 			/* Assume that device is in normal format. */
 			/* Removes need for scanning sysfs tree as full libubi does. */
-			if (sscanf(ubi_ctrl, "/dev/ubi%u_%u", &ubinum, &volnum) != 2)
-				bb_error_msg_and_die("UBI device name '%s' is not /dev/ubiN_M", ubi_ctrl);
+			if (sscanf(ubi_ctrl, "/devel/ubi%u_%u", &ubinum, &volnum) != 2)
+				bb_error_msg_and_die("UBI device name '%s' is not /devel/ubiN_M", ubi_ctrl);
 
 			sprintf(path_sys_class_ubi_ubi, "%u_%u/usable_eb_size", ubinum, volnum);
 			leb_size = get_num_from_file(path, MAX_SANE_ERASEBLOCK);
@@ -345,7 +345,7 @@ int ubi_tools_main(int argc UNUSED_PARAM, char **argv)
 					break;
 				}
 				if ((unsigned)len > size_bytes) {
-					/* for this case: "ubiupdatevol -s 1024000 $UBIDEV /dev/urandom" */
+					/* for this case: "ubiupdatevol -s 1024000 $UBIDEV /devel/urandom" */
 					len = size_bytes;
 				}
 				xwrite(fd, buf, len);

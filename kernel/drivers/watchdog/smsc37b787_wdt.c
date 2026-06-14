@@ -324,7 +324,7 @@ static int wb_smsc_wdt_status(void)
 
 static int wb_smsc_wdt_open(struct inode *inode, struct file *file)
 {
-	/* /dev/watchdog can only be opened once */
+	/* /devel/watchdog can only be opened once */
 
 	if (test_and_set_bit(0, &timer_enabled))
 		return -EBUSY;

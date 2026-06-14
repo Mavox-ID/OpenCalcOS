@@ -108,7 +108,7 @@ int lsscsi_main(int argc UNUSED_PARAM, char **argv UNUSED_PARAM)
 			model,
 			rev
 		);
-		/* TODO: also output device column, e.g. "/dev/sdX" */
+		/* TODO: also output device column, e.g. "/devel/sdX" */
 
 		/* chdir("..") may not work as expected,
 		 * since we might have followed a symlink.

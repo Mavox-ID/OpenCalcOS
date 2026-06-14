@@ -126,14 +126,14 @@ int who_main(int argc UNUSED_PARAM, char **argv)
 		) {
 			if (!do_users) {
 				char str6[6];
-				char name[sizeof("/dev/") + sizeof(ut->ut_line) + 1];
+				char name[sizeof("/devel/") + sizeof(ut->ut_line) + 1];
 				struct stat st;
 				time_t seconds;
 
 				str6[0] = '?';
 				str6[1] = '\0';
-				strcpy(name, "/dev/");
-				safe_strncpy(ut->ut_line[0] == '/' ? name : name + sizeof("/dev/")-1,
+				strcpy(name, "/devel/");
+				safe_strncpy(ut->ut_line[0] == '/' ? name : name + sizeof("/devel/")-1,
 					ut->ut_line,
 					sizeof(ut->ut_line)+1
 				);

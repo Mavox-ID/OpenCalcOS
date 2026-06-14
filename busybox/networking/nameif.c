@@ -230,7 +230,7 @@ int nameif_main(int argc UNUSED_PARAM, char **argv)
 	if (1 & getopt32(argv, "sc:", &fname)) {
 		openlog(applet_name, 0, LOG_LOCAL0);
 		/* Why not just "="? I assume logging to stderr
-		 * can't hurt. 2>/dev/null if you don't like it: */
+		 * can't hurt. 2>/devel/null if you don't like it: */
 		logmode |= LOGMODE_SYSLOG;
 	}
 	argv += optind;

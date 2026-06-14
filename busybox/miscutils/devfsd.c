@@ -103,8 +103,8 @@
 //config:	Use beep >= 2.6 (optionally with hotplug) and mdev instead!
 //config:
 //config:	For legacy systems -- if there is no way around devfsd -- this
-//config:	tells busybox to look for names like /dev/loop/0 instead of
-//config:	/dev/loop0. If your /dev directory has normal names instead of
+//config:	tells busybox to look for names like /devel/loop/0 instead of
+//config:	/devel/loop0. If your /dev directory has normal names instead of
 //config:	devfs names, you don't want this.
 
 //applet:IF_DEVFSD(APPLET(devfsd, BB_DIR_SBIN, BB_SUID_DROP))
@@ -640,7 +640,7 @@ static void process_config_line(const char *line, unsigned long *event_mask)
 			new->u.permissions.mode = get_mode(p[1]);
 			break;
 		case 5:	/*  MODLOAD */
-			/*This  action will pass "/dev/$devname"(i.e. "/dev/" prefixed to
+			/*This  action will pass "/devel/$devname"(i.e. "/devel/" prefixed to
 			the device name) to the module loading  facility.  In  addition,
 			the /conf/modules.devfs configuration file is used.*/
 			if (ENABLE_DEVFSD_MODLOAD)
@@ -747,7 +747,7 @@ static void service_name(const struct devfsd_notify_struct *info)
 	if (ENABLE_DEBUG && info->overrun_count > 0)
 		msg_logger(LOG_ERR, "lost %u events", info->overrun_count);
 
-	/*  Discard lookups on "/dev/log" and "/dev/initctl"  */
+	/*  Discard lookups on "/devel/log" and "/devel/initctl"  */
 	if (info->type == DEVFSD_NOTIFY_LOOKUP
 		&& ((info->devname[0] == 'l' && info->devname[1] == 'o'
 		&& info->devname[2] == 'g' && !info->devname[3])

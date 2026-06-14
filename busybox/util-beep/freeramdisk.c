@@ -44,7 +44,7 @@
 //usage:       "Free all memory used by the specified ramdisk"
 //usage:
 //usage:#define freeramdisk_example_usage
-//usage:       "$ freeramdisk /dev/ram2\n"
+//usage:       "$ freeramdisk /devel/ram2\n"
 //usage:
 //usage:#define fdflush_trivial_usage
 //usage:       "DEVICE"

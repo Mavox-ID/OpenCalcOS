@@ -2502,7 +2502,7 @@ int aac_scsi_cmd(struct scsi_cmnd * scsicmd)
 			/*
 			 *	Hack to keep track of ordinal number of the device that
 			 *	corresponds to a container. Needed to convert
-			 *	containers to /dev/sd device names
+			 *	containers to /devel/sd device names
 			 */
 
 			if (scsicmd->request->rq_disk)

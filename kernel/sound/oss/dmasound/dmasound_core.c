@@ -24,8 +24,8 @@
   * However, if the driver is opened O_RDWR there is no way (in the current OSS
   * API) to specify their values independently for the record and playback
   * channels.  Since the only common factor between the input & output is the
-  * sample rate (on pmac) it should be possible to open /dev/dspX O_WRONLY and
-  * /dev/dspY O_RDONLY.  The input & output channels could then have different
+  * sample rate (on pmac) it should be possible to open /devel/dspX O_WRONLY and
+  * /devel/dspY O_RDONLY.  The input & output channels could then have different
   * characteristics (other than the first that sets sample rate claiming the
   * right to set it for ever).  As it stands, the format, channels, number of
   * bits & sample rate are assumed to be common.  In the future perhaps these
@@ -193,7 +193,7 @@ static ssize_t sound_copy_translate(TRANS *trans, const u_char __user *userPtr,
 }
 
     /*
-     *  /dev/mixer abstraction
+     *  /devel/mixer abstraction
      */
 
 static struct {
@@ -671,7 +671,7 @@ static int sq_open(struct inode *inode, struct file *file)
 
 #ifndef DMASOUND_STRICT_OSS_COMPLIANCE
 	/* none of the current LL drivers can actually do this "native" at the moment
-	   OSS does not really require us to supply /dev/audio if we can't do it.
+	   OSS does not really require us to supply /devel/audio if we can't do it.
 	*/
 	if (dmasound.minDev == SND_DEV_AUDIO) {
 		sound_set_speed(8000);
@@ -1070,7 +1070,7 @@ static int sq_init(void)
 
 
     /*
-     *  /dev/sndstat
+     *  /devel/sndstat
      */
 
 /* we allow more space for record-enabled because there are extra output lines.
@@ -1271,17 +1271,17 @@ int dmasound_init(void)
 		return -EBUSY;
 #endif
 
-	/* Set up sound queue, /dev/audio and /dev/dsp. */
+	/* Set up sound queue, /devel/audio and /devel/dsp. */
 
 	/* Set default settings. */
 	if ((res = sq_init()) < 0)
 		return res ;
 
-	/* Set up /dev/sndstat. */
+	/* Set up /devel/sndstat. */
 	if ((res = state_init()) < 0)
 		return res ;
 
-	/* Set up /dev/mixer. */
+	/* Set up /devel/mixer. */
 	mixer_init();
 
 	if (!dmasound.mach.irqinit()) {

@@ -1197,7 +1197,7 @@ void sequencer_release(int dev, struct file *file)
 	}
 
 	if (obsolete_api_used)
-		printk(KERN_WARNING "/dev/music: Obsolete (4 byte) API was used by %s\n", current->comm);
+		printk(KERN_WARNING "/devel/music: Obsolete (4 byte) API was used by %s\n", current->comm);
 	sequencer_busy = 0;
 }
 

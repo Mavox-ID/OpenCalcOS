@@ -828,7 +828,7 @@ int fimc_register_m2m_device(struct fimc_dev *fimc,
 	if (ret)
 		goto err_vd;
 
-	v4l2_info(v4l2_dev, "Registered %s as /dev/%s\n",
+	v4l2_info(v4l2_dev, "Registered %s as /devel/%s\n",
 		  vfd->name, video_device_node_name(vfd));
 	return 0;
 

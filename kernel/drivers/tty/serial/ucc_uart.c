@@ -1443,18 +1443,18 @@ static int ucc_uart_probe(struct platform_device *ofdev)
 	 */
 	ret = uart_add_one_port(&ucc_uart_driver, &qe_port->port);
 	if (ret) {
-		dev_err(&ofdev->dev, "could not add /dev/ttyQE%u\n",
+		dev_err(&ofdev->dev, "could not add /devel/ttyQE%u\n",
 		       qe_port->port.line);
 		goto out_np;
 	}
 
 	dev_set_drvdata(&ofdev->dev, qe_port);
 
-	dev_info(&ofdev->dev, "UCC%u assigned to /dev/ttyQE%u\n",
+	dev_info(&ofdev->dev, "UCC%u assigned to /devel/ttyQE%u\n",
 		qe_port->ucc_num + 1, qe_port->port.line);
 
 	/* Display the mknod command for this device */
-	dev_dbg(&ofdev->dev, "mknod command is 'mknod /dev/ttyQE%u c %u %u'\n",
+	dev_dbg(&ofdev->dev, "mknod command is 'mknod /devel/ttyQE%u c %u %u'\n",
 	       qe_port->port.line, SERIAL_QE_MAJOR,
 	       SERIAL_QE_MINOR + qe_port->port.line);
 
@@ -1470,7 +1470,7 @@ static int ucc_uart_remove(struct platform_device *ofdev)
 {
 	struct uart_qe_port *qe_port = dev_get_drvdata(&ofdev->dev);
 
-	dev_info(&ofdev->dev, "removing /dev/ttyQE%u\n", qe_port->port.line);
+	dev_info(&ofdev->dev, "removing /devel/ttyQE%u\n", qe_port->port.line);
 
 	uart_remove_one_port(&ucc_uart_driver, &qe_port->port);
 

@@ -359,7 +359,7 @@ static struct usb_driver s2255_driver;
 static unsigned int vid_limit = 16;	/* Video memory limit, in Mb */
 
 /* start video number */
-static int video_nr = -1;	/* /dev/videoN, -1 for autodetect */
+static int video_nr = -1;	/* /devel/videoN, -1 for autodetect */
 
 /* Enable jpeg capture. */
 static int jpeg_enable = 1;

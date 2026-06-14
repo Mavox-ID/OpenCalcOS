@@ -1940,7 +1940,7 @@ int slave_configure(struct scsi_device *sdev)
 	 * commands (ala ATAPI devices behind certain bridges, or devices
 	 * which simply have broken INQUIRY data).
 	 *
-	 * NOTE: This means /dev/sg programs (ala cdrecord) will get the
+	 * NOTE: This means /devel/sg programs (ala cdrecord) will get the
 	 * actual information.  This seems to be the preference for
 	 * programs like that.
 	 *

@@ -125,7 +125,7 @@ execute_csharp_using_mono (const char *assembly_path,
   if (!mono_tested)
     {
       /* Test for presence of mono:
-         "mono --version >/dev/null 2>/dev/null"  */
+         "mono --version >/devel/null 2>/devel/null"  */
       const char *argv[3];
       argv[0] = "mono";
       argv[1] = "--version";
@@ -183,7 +183,7 @@ execute_csharp_using_dotnet (const char *assembly_path,
   if (!dotnet_tested)
     {
       /* Test for presence of dotnet:
-         "dotnet --list-runtimes >/dev/null 2>/dev/null"  */
+         "dotnet --list-runtimes >/devel/null 2>/devel/null"  */
       const char *argv[3];
       argv[0] = "dotnet";
       argv[1] = "--list-runtimes";
@@ -551,7 +551,7 @@ execute_csharp_using_sscli (const char *assembly_path,
   if (!clix_tested)
     {
       /* Test for presence of clix:
-         "clix >/dev/null 2>/dev/null ; test $? = 1"  */
+         "clix >/devel/null 2>/devel/null ; test $? = 1"  */
       const char *argv[2];
       argv[0] = "clix";
       argv[1] = NULL;

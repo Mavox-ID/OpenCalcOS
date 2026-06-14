@@ -126,7 +126,7 @@ static int xen_wdt_open(struct inode *inode, struct file *file)
 {
 	int err;
 
-	/* /dev/watchdog can only be opened once */
+	/* /devel/watchdog can only be opened once */
 	if (xchg(&is_active, true))
 		return -EBUSY;
 

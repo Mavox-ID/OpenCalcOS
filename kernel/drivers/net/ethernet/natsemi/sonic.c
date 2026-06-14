@@ -22,7 +22,7 @@
  *
  * Additional sources: Nat Semi data sheet for the DP83932C and Nat Semi
  * Application Note AN-746, the files "lance.c" and "ibmlana.c". See also
- * the NetBSD file "sys/arch/mac68k/dev/if_sn.c".
+ * the NetBSD file "sys/arch/mac68k/devel/if_sn.c".
  */
 
 

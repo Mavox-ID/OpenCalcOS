@@ -1192,7 +1192,7 @@ int lis3lv02d_init_device(struct lis3lv02d *lis3)
 
 	/* bail if we did not get an IRQ from the bus layer */
 	if (!lis3->irq) {
-		pr_debug("No IRQ. Disabling /dev/freefall\n");
+		pr_debug("No IRQ. Disabling /devel/freefall\n");
 		goto out;
 	}
 

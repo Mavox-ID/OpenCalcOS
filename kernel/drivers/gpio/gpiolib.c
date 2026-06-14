@@ -817,7 +817,7 @@ static int match_export(struct device *dev, void *data)
  * @name: name of the symlink
  * @gpio: gpio to create symlink to, already exported
  *
- * Set up a symlink from /sys/.../dev/name to /sys/class/gpio/gpioN
+ * Set up a symlink from /sys/.../devel/name to /sys/class/gpio/gpioN
  * node. Caller is responsible for unlinking.
  *
  * Returns zero on success, else an error.

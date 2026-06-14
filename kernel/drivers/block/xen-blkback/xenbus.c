@@ -51,9 +51,9 @@ static int blkback_name(struct xen_blkif *blkif, char *buf)
 	if (IS_ERR(devpath))
 		return PTR_ERR(devpath);
 
-	devname = strstr(devpath, "/dev/");
+	devname = strstr(devpath, "/devel/");
 	if (devname != NULL)
-		devname += strlen("/dev/");
+		devname += strlen("/devel/");
 	else
 		devname  = devpath;
 

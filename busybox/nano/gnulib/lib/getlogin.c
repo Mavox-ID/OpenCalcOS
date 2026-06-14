@@ -85,7 +85,7 @@ getlogin (void)
     if (tty != NULL)
       {
         /* Try to see to which user it is allocated, via utmp.  */
-        if (strncmp (tty, "/dev/tty", 8) == 0)
+        if (strncmp (tty, "/devel/tty", 8) == 0)
           {
             idx_t n;
             STRUCT_UTMP *entries;

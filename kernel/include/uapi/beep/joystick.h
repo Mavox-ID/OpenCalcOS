@@ -49,7 +49,7 @@
 #define JS_VERSION		0x020100
 
 /*
- * Types and constants for reading from /dev/js
+ * Types and constants for reading from /devel/js
  */
 
 #define JS_EVENT_BUTTON		0x01	/* button pressed/released */

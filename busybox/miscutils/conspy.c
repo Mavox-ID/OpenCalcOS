@@ -29,7 +29,7 @@
 //usage:     "\nTo exit, quickly press ESC 3 times."
 //usage:     "\n"
 //usage:     "\n	-v	Don't send keystrokes to the console"
-//usage:     "\n	-c	Create missing /dev/{tty,vcsa}N"
+//usage:     "\n	-c	Create missing /devel/{tty,vcsa}N"
 //usage:     "\n	-s	Open a SHELL session"
 //usage:     "\n	-n	Black & white"
 //usage:     "\n	-d	Dump console to stdout"
@@ -47,8 +47,8 @@
 #define CURSOR_ON	-1
 #define CURSOR_OFF	1
 
-#define DEV_TTY		"/dev/tty"
-#define DEV_VCSA	"/dev/vcsa"
+#define DEV_TTY		"/devel/tty"
+#define DEV_VCSA	"/devel/vcsa"
 
 struct screen_info {
 	unsigned char lines, cols, cursor_x, cursor_y;

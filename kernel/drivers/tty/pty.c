@@ -591,7 +591,7 @@ static int pty_unix98_ioctl(struct tty_struct *tty,
 static struct tty_struct *ptm_unix98_lookup(struct tty_driver *driver,
 		struct inode *ptm_inode, int idx)
 {
-	/* Master must be open via /dev/ptmx */
+	/* Master must be open via /devel/ptmx */
 	return ERR_PTR(-EIO);
 }
 
@@ -799,14 +799,14 @@ static void __init unix98_pty_init(void)
 	if (tty_register_driver(pts_driver))
 		panic("Couldn't register Unix98 pts driver");
 
-	/* Now create the /dev/ptmx special device */
+	/* Now create the /devel/ptmx special device */
 	tty_default_fops(&ptmx_fops);
 	ptmx_fops.open = ptmx_open;
 
 	cdev_init(&ptmx_cdev, &ptmx_fops);
 	if (cdev_add(&ptmx_cdev, MKDEV(TTYAUX_MAJOR, 2), 1) ||
-	    register_chrdev_region(MKDEV(TTYAUX_MAJOR, 2), 1, "/dev/ptmx") < 0)
-		panic("Couldn't register /dev/ptmx driver\n");
+	    register_chrdev_region(MKDEV(TTYAUX_MAJOR, 2), 1, "/devel/ptmx") < 0)
+		panic("Couldn't register /devel/ptmx driver\n");
 	device_create(tty_class, NULL, MKDEV(TTYAUX_MAJOR, 2), NULL, "ptmx");
 }
 

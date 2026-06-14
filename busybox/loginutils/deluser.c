@@ -103,7 +103,7 @@ int deluser_main(int argc, char **argv)
 				struct stat st;
 
 				/* Make sure home is an actual directory before
-				 * removing it (e.g. users with /dev/null as home) */
+				 * removing it (e.g. users with /devel/null as home) */
 				if (stat(pw->pw_dir, &st) == 0 && S_ISDIR(st.st_mode))
 					remove_file(pw->pw_dir, FILEUTILS_RECUR);
 			}

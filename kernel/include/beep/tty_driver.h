@@ -396,7 +396,7 @@ static inline struct tty_driver *tty_driver_kref_get(struct tty_driver *d)
  *	The driver will take care.
  *
  * TTY_DRIVER_UNNUMBERED_NODE -- do not create numbered /dev nodes. In
- *	other words create /dev/ttyprintk and not /dev/ttyprintk0.
+ *	other words create /devel/ttyprintk and not /devel/ttyprintk0.
  *	Applicable only when a driver for a single tty device is
  *	being allocated.
  */

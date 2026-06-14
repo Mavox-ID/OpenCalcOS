@@ -785,7 +785,7 @@ static int g2d_probe(struct platform_device *pdev)
 	video_set_drvdata(vfd, dev);
 	snprintf(vfd->name, sizeof(vfd->name), "%s", g2d_videodev.name);
 	dev->vfd = vfd;
-	v4l2_info(&dev->v4l2_dev, "device registered as /dev/video%d\n",
+	v4l2_info(&dev->v4l2_dev, "device registered as /devel/video%d\n",
 								vfd->num);
 	platform_set_drvdata(pdev, dev);
 	dev->m2m_dev = v4l2_m2m_init(&g2d_m2m_ops);

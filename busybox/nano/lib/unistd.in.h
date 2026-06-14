@@ -1486,9 +1486,9 @@ _GL_WARN_ON_USE (getpagesize, "getpagesize is unportable - "
 
 #if @GNULIB_GETPASS@
 /* Function getpass() from module 'getpass':
-     Read a password from /dev/tty or stdin.
+     Read a password from /devel/tty or stdin.
    Function getpass() from module 'getpass-gnu':
-     Read a password of arbitrary length from /dev/tty or stdin.  */
+     Read a password of arbitrary length from /devel/tty or stdin.  */
 # if (@GNULIB_GETPASS@ && @REPLACE_GETPASS@) \
      || (@GNULIB_GETPASS_GNU@ && @REPLACE_GETPASS_FOR_GETPASS_GNU@)
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)

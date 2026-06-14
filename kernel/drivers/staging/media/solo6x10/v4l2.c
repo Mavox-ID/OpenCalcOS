@@ -931,7 +931,7 @@ int solo_v4l2_init(struct solo_dev *solo_dev)
 	if (video_nr != -1)
 		video_nr++;
 
-	dev_info(&solo_dev->pdev->dev, "Display as /dev/video%d with "
+	dev_info(&solo_dev->pdev->dev, "Display as /devel/video%d with "
 		 "%d inputs (%d extended)\n", solo_dev->vfd->num,
 		 solo_dev->nr_chans, solo_dev->nr_ext);
 

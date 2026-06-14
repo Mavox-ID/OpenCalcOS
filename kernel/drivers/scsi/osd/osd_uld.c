@@ -270,7 +270,7 @@ int _mach_odi(struct device *dev, void *find_data)
 /* osduld_info_lookup - Loop through all devices, return the requested osd_dev.
  *
  * if @odi->systemid_len and/or @odi->osdname_len are zero, they act as a don't
- * care. .e.g if they're both zero /dev/osd0 is returned.
+ * care. .e.g if they're both zero /devel/osd0 is returned.
  */
 struct osd_dev *osduld_info_lookup(const struct osd_dev_info *odi)
 {

@@ -1125,7 +1125,7 @@ static int cpqhpc_probe(struct pci_dev *pdev, const struct pci_device_id *ent)
 
 	/* Get slot won't work for devices behind bridges, but
 	 * in this case it will always be called for the "base"
-	 * bus/dev/func of a slot.
+	 * bus/devel/func of a slot.
 	 * CS: this is leveraging the PCIIRQ routing code from the kernel
 	 * (pci-pc.c: get_irq_routing_table) */
 	rc = get_slot_mapping(ctrl->pci_bus, pdev->bus->number,

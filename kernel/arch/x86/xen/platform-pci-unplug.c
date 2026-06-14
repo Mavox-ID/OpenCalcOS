@@ -94,7 +94,7 @@ void xen_unplug_emulated_devices(void)
 			printk(KERN_INFO "Blkfront and the Xen platform PCI driver have "
 					"been compiled for this kernel: unplug emulated disks.\n"
 					"You might have to change the root device\n"
-					"from /dev/hd[a-d] to /dev/xvd[a-d]\n"
+					"from /devel/hd[a-d] to /devel/xvd[a-d]\n"
 					"in your root= kernel command line option\n");
 			xen_emul_unplug |= XEN_UNPLUG_ALL_IDE_DISKS;
 		}

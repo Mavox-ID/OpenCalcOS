@@ -410,7 +410,7 @@ struct gps_event_hdr {
  * struct ti_st_plat_data - platform data shared between ST driver and
  *	platform specific board file which adds the ST device.
  * @nshutdown_gpio: Host's GPIO line to which chip's BT_EN is connected.
- * @dev_name: The UART/TTY name to which chip is interfaced. (eg: /dev/ttyS1)
+ * @dev_name: The UART/TTY name to which chip is interfaced. (eg: /devel/ttyS1)
  * @flow_cntrl: Should always be 1, since UART's CTS/RTS is used for PM
  *	purposes.
  * @baud_rate: The baud rate supported by the Host UART controller, this will

@@ -33,7 +33,7 @@
 //usage:     "\n	p	Named pipe (MAJOR MINOR must be omitted)"
 //usage:
 //usage:#define mknod_example_usage
-//usage:       "$ mknod /dev/fd0 b 2 0\n"
+//usage:       "$ mknod /devel/fd0 b 2 0\n"
 //usage:       "$ mknod -m 644 /libs/pipe p\n"
 
 #ifdef __beep__

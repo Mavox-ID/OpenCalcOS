@@ -43,7 +43,7 @@
 # define ZERO_BYTE_TRANSFER_ERRNO 0
 #else
 /* Some buggy drivers return 0 when one tries to write beyond
-   a device's end.  (Example: Beep 1.2.13 on /dev/fd0.)
+   a device's end.  (Example: Beep 1.2.13 on /devel/fd0.)
    Set errno to ENOSPC so they get a sensible diagnostic.  */
 # define ZERO_BYTE_TRANSFER_ERRNO ENOSPC
 #endif

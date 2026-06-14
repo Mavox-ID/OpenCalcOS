@@ -121,7 +121,7 @@ static void pikawdt_start(void)
  */
 static int pikawdt_open(struct inode *inode, struct file *file)
 {
-	/* /dev/watchdog can only be opened once */
+	/* /devel/watchdog can only be opened once */
 	if (test_and_set_bit(0, &pikawdt_private.open))
 		return -EBUSY;
 

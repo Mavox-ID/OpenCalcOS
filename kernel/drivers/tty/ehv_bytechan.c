@@ -297,7 +297,7 @@ static void ehv_bc_console_write(struct console *co, const char *s,
 }
 
 /*
- * When /dev/console is opened, the kernel iterates the console list looking
+ * When /devel/console is opened, the kernel iterates the console list looking
  * for one with ->device and then calls that method. On success, it expects
  * the passed-in int* to contain the minor number to use.
  */
@@ -743,7 +743,7 @@ static int ehv_bc_tty_probe(struct platform_device *pdev)
 
 	dev_set_drvdata(&pdev->dev, bc);
 
-	dev_info(&pdev->dev, "registered /dev/%s%u for byte channel %u\n",
+	dev_info(&pdev->dev, "registered /devel/%s%u for byte channel %u\n",
 		ehv_bc_driver->name, i, bc->handle);
 
 	return 0;

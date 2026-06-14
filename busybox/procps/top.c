@@ -783,7 +783,7 @@ typedef unsigned long mem_t;
 typedef struct topmem_status_t {
 	unsigned pid;
 	char comm[COMM_LEN];
-	/* vsz doesn't count /dev/xxx mappings except /dev/zero */
+	/* vsz doesn't count /devel/xxx mappings except /devel/zero */
 	mem_t vsz     ;
 	mem_t vszrw   ;
 	mem_t rss     ;
@@ -935,7 +935,7 @@ enum {
 static unsigned handle_input(unsigned scan_mask, duration_t interval)
 {
 	if (option_mask32 & OPT_EOF) {
-		/* EOF on stdin ("top </dev/null") */
+		/* EOF on stdin ("top </devel/null") */
 		sleep_for_duration(interval);
 		return scan_mask;
 	}

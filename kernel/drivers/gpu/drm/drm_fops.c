@@ -242,7 +242,7 @@ static int drm_cpu_valid(void)
 }
 
 /**
- * Called whenever a process opens /dev/drm.
+ * Called whenever a process opens /devel/drm.
  *
  * \param inode device inode.
  * \param filp file pointer.

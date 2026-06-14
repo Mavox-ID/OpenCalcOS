@@ -345,7 +345,7 @@ restart:
 }
 
 /**
- * mmtimer_ioctl - ioctl interface for /dev/mmtimer
+ * mmtimer_ioctl - ioctl interface for /devel/mmtimer
  * @file: file structure for the device
  * @cmd: command to execute
  * @arg: optional argument to command

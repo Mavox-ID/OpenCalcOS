@@ -1350,7 +1350,7 @@ static u32 board_replaced(struct pci_func *func, struct controller *ctrl)
 			/* If configuration fails, turn it off
 			 * Get slot won't work for devices behind
 			 * bridges, but in this case it will always be
-			 * called for the "base" bus/dev/func of an
+			 * called for the "base" bus/devel/func of an
 			 * adapter.
 			 */
 
@@ -1377,7 +1377,7 @@ static u32 board_replaced(struct pci_func *func, struct controller *ctrl)
 
 			 * Get slot won't work for devices behind bridges, but
 			 * in this case it will always be called for the "base"
-			 * bus/dev/func of an adapter.
+			 * bus/devel/func of an adapter.
 			 */
 
 			mutex_lock(&ctrl->crit_sect);

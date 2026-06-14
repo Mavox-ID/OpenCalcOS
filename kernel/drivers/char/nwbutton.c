@@ -134,7 +134,7 @@ static void button_consume_callbacks (int bpcount)
  * This function is called when the button_timer times out.
  * ie. When you don't press the button for bdelay jiffies, this is taken to
  * mean you have ended the sequence of key presses, and this function is
- * called to wind things up (write the press_count out to /dev/button, call
+ * called to wind things up (write the press_count out to /devel/button, call
  * any matching registered function callbacks, initiate reboot, etc.).
  */
 
@@ -168,7 +168,7 @@ static irqreturn_t button_handler (int irq, void *dev_id)
 
 /*
  * This function is called when a user space program attempts to read
- * /dev/nwbutton. It puts the device to sleep on the wait queue until
+ * /devel/nwbutton. It puts the device to sleep on the wait queue until
  * button_sequence_finished writes some data to the buffer and flushes
  * the queue, at which point it writes the data out to the device and
  * returns the number of characters it has written. This function is

@@ -496,7 +496,7 @@ static ssize_t ipath_diag_read(struct file *fp, char __user *data,
 		/* address or length is not 32-bit aligned, hence invalid */
 		ret = -EINVAL;
 	else if (ipath_diag_inuse < 1 && (*off || count != 8))
-		ret = -EINVAL;  /* prevent cat /dev/ipath_diag* */
+		ret = -EINVAL;  /* prevent cat /devel/ipath_diag* */
 	else if ((count % 8) || (*off % 8))
 		/* address or length not 64-bit aligned; do 32-bit reads */
 		ret = ipath_read_umem32(dd, data, kreg_base + *off, count);

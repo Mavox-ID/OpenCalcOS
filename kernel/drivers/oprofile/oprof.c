@@ -161,7 +161,7 @@ static inline void stop_switch_worker(void) { }
 
 #endif
 
-/* Actually start profiling (echo 1>/dev/oprofile/enable) */
+/* Actually start profiling (echo 1>/devel/oprofile/enable) */
 int oprofile_start(void)
 {
 	int err = -EINVAL;
@@ -190,7 +190,7 @@ out:
 }
 
 
-/* echo 0>/dev/oprofile/enable */
+/* echo 0>/devel/oprofile/enable */
 void oprofile_stop(void)
 {
 	mutex_lock(&start_mutex);

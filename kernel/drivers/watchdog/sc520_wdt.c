@@ -48,7 +48,7 @@
 /*
  * We must not require too good response from the userspace daemon.
  * Here we require the userspace daemon to send us a heartbeat
- * char to /dev/watchdog every 30 seconds.
+ * char to /devel/watchdog every 30 seconds.
  */
 
 #define WATCHDOG_TIMEOUT 30		/* 30 sec default timeout */
@@ -180,7 +180,7 @@ static int wdt_set_heartbeat(int t)
 }
 
 /*
- *	/dev/watchdog handling
+ *	/devel/watchdog handling
  */
 
 static ssize_t fop_write(struct file *file, const char __user *buf,

@@ -230,8 +230,8 @@ static int qcprobe(struct usb_serial *serial, const struct usb_device_id *id)
 		case 3:
 			/*
 			 * NMEA (serial line 9600 8N1)
-			 * # echo "\$GPS_START" > /dev/ttyUSBx
-			 * # echo "\$GPS_STOP"  > /dev/ttyUSBx
+			 * # echo "\$GPS_START" > /devel/ttyUSBx
+			 * # echo "\$GPS_STOP"  > /devel/ttyUSBx
 			 */
 			dev_dbg(dev, "Gobi 2K+ NMEA GPS interface found\n");
 			break;

@@ -2294,7 +2294,7 @@ static int __init speakup_init(void)
 	speakup_register_devsynth();
 	/*
 	 * register_devsynth might fail, but this error is not fatal.
-	 * /dev/synth is an extra feature; the rest of Speakup
+	 * /devel/synth is an extra feature; the rest of Speakup
 	 * will work fine without it.
 	 */
 

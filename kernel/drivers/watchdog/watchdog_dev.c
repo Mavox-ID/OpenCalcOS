@@ -31,7 +31,7 @@
 
 /* the dev_t structure to store the dynamically allocated watchdog devices */
 static dev_t watchdog_devt;
-/* the watchdog device behind /dev/watchdog */
+/* the watchdog device behind /devel/watchdog */
 static struct watchdog_device *old_wdd;
 
 /*
@@ -385,12 +385,12 @@ static long watchdog_ioctl(struct file *file, unsigned int cmd,
 }
 
 /*
- *	watchdog_open: open the /dev/watchdog* devices.
+ *	watchdog_open: open the /devel/watchdog* devices.
  *	@inode: inode of device
  *	@file: file handle to device
  *
- *	When the /dev/watchdog* device gets opened, we start the watchdog.
- *	Watch out: the /dev/watchdog device is single open, so we make sure
+ *	When the /devel/watchdog* device gets opened, we start the watchdog.
+ *	Watch out: the /devel/watchdog device is single open, so we make sure
  *	it can only be opened once.
  */
 
@@ -410,7 +410,7 @@ static int watchdog_open(struct inode *inode, struct file *file)
 		return -EBUSY;
 
 	/*
-	 * If the /dev/watchdog device is open, we don't want the module
+	 * If the /devel/watchdog device is open, we don't want the module
 	 * to be unloaded.
 	 */
 	if (!try_module_get(wdd->ops->owner))
@@ -440,7 +440,7 @@ out:
  *	@inode: inode of device
  *	@file: file handle to device
  *
- *	This is the code for when /dev/watchdog gets closed. We will only
+ *	This is the code for when /devel/watchdog gets closed. We will only
  *	stop the watchdog when we have received the magic char (and nowayout
  *	was not set), else the watchdog will keep running.
  */
@@ -471,7 +471,7 @@ static int watchdog_release(struct inode *inode, struct file *file)
 	/* Allow the owner module to be unloaded again */
 	module_put(wdd->ops->owner);
 
-	/* make sure that /dev/watchdog can be re-opened */
+	/* make sure that /devel/watchdog can be re-opened */
 	clear_bit(WDOG_DEV_OPEN, &wdd->status);
 
 	/* Note wdd may be gone after this, do not use after this! */
@@ -500,7 +500,7 @@ static struct miscdevice watchdog_miscdev = {
  *	@watchdog: watchdog device
  *
  *	Register a watchdog device including handling the legacy
- *	/dev/watchdog node. /dev/watchdog is actually a miscdevice and
+ *	/devel/watchdog node. /devel/watchdog is actually a miscdevice and
  *	thus we set it up like that.
  */
 
@@ -544,7 +544,7 @@ int watchdog_dev_register(struct watchdog_device *watchdog)
  *	watchdog_dev_unregister: unregister a watchdog device
  *	@watchdog: watchdog device
  *
- *	Unregister the watchdog and if needed the legacy /dev/watchdog device.
+ *	Unregister the watchdog and if needed the legacy /devel/watchdog device.
  */
 
 int watchdog_dev_unregister(struct watchdog_device *watchdog)

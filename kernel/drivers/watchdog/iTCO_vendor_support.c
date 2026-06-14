@@ -137,7 +137,7 @@ static void supermicro_old_pre_stop(struct resource *smires)
  *
  *	NOTE: You may leave the Watchdog function disabled in the SuperMicro
  *	BIOS to avoid a "boot-race"... This driver will enable watchdog
- *	functionality even if it's disabled in the BIOS once the /dev/watchdog
+ *	functionality even if it's disabled in the BIOS once the /devel/watchdog
  *	file is opened.
  */
 

@@ -44,7 +44,7 @@
  *
  * SPI has a character major number assigned.  We allocate minor numbers
  * dynamically using a bitmask.  You must use hotplug tools, such as udev
- * (or mdev with busybox) to create and destroy the /dev/spidevB.C device
+ * (or mdev with busybox) to create and destroy the /devel/spidevB.C device
  * nodes, since there is no fixed association of minor numbers with any
  * particular SPI bus or device.
  */
@@ -560,7 +560,7 @@ static const struct file_operations spidev_fops = {
 /*-------------------------------------------------------------------------*/
 
 /* The main reason to have this class is to make mdev/udev create the
- * /dev/spidevB.C character device nodes exposing our userspace API.
+ * /devel/spidevB.C character device nodes exposing our userspace API.
  * It also simplifies memory management.
  */
 

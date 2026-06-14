@@ -202,7 +202,7 @@ int __init rd_load_image(char *from)
 	char rotator[4] = { '|' , '/' , '-' , '\\' };
 #endif
 
-	out_fd = sys_open("/dev/ram", O_RDWR, 0);
+	out_fd = sys_open("/devel/ram", O_RDWR, 0);
 	if (out_fd < 0)
 		goto out;
 
@@ -301,7 +301,7 @@ noclose_input:
 	sys_close(out_fd);
 out:
 	kfree(buf);
-	sys_unlink("/dev/ram");
+	sys_unlink("/devel/ram");
 	return res;
 }
 
@@ -309,9 +309,9 @@ int __init rd_load_disk(int n)
 {
 	if (rd_prompt)
 		change_floppy("root floppy disk to be loaded into RAM disk");
-	create_dev("/dev/root", ROOT_DEV);
-	create_dev("/dev/ram", MKDEV(RAMDISK_MAJOR, n));
-	return rd_load_image("/dev/root");
+	create_dev("/devel/root", ROOT_DEV);
+	create_dev("/devel/ram", MKDEV(RAMDISK_MAJOR, n));
+	return rd_load_image("/devel/root");
 }
 
 static int exit_code;

@@ -724,7 +724,7 @@ static inline bool can_support_cdc(struct usb_configuration *c)
 /**
  * acm_bind_config - add a CDC ACM function to a configuration
  * @c: the configuration to support the CDC ACM instance
- * @port_num: /dev/ttyGS* port this interface will use
+ * @port_num: /devel/ttyGS* port this interface will use
  * Context: single threaded during gadget setup
  *
  * Returns zero on success, else negative errno.

@@ -536,7 +536,7 @@ static int __init igafb_init(void)
 
 #ifdef CONFIG_SPARC
 	    /*
-	     * Add /dev/fb mmap values.
+	     * Add /devel/fb mmap values.
 	     */
 	    
 	    /* First region is for video memory */

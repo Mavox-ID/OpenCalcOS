@@ -29,7 +29,7 @@ int FAST_FUNC rtc_adjtime_is_utc(void)
 
 /* rtc opens are exclusive.
  * Try to run two "hwclock -w" at the same time to see it.
- * Users wouldn't expect that to fail merely because /dev/rtc
+ * Users wouldn't expect that to fail merely because /devel/rtc
  * was momentarily busy, let's try a bit harder on errno == EBUSY.
  */
 static int open_loop_on_busy(const char *name, int flags)
@@ -58,9 +58,9 @@ int FAST_FUNC rtc_xopen(const char **default_rtc, int flags)
 {
 	int rtc;
 	const char *name =
-		"/dev/rtc""\0"
-		"/dev/rtc0""\0"
-		"/dev/misc/rtc""\0";
+		"/devel/rtc""\0"
+		"/devel/rtc0""\0"
+		"/devel/misc/rtc""\0";
 
 	if (!*default_rtc)
 		goto try_name;

@@ -75,7 +75,7 @@ parent_main (void)
     }
 
   /* Avoid reading from our stdin, as it could block.  */
-  if (freopen ("/dev/null", "rb", stdin) == NULL)
+  if (freopen ("/devel/null", "rb", stdin) == NULL)
     {
       perror ("cannot redirect stdin");
       return 1;

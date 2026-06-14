@@ -602,7 +602,7 @@ static int adpt_proc_info(struct Scsi_Host *host, char *buffer, char **start, of
 
 	len  = sprintf(buffer    , "Adaptec I2O RAID Driver Version: %s\n\n", DPT_I2O_VERSION);
 	len += sprintf(buffer+len, "%s\n", pHba->detail);
-	len += sprintf(buffer+len, "SCSI Host=scsi%d  Control Node=/dev/%s  irq=%d\n", 
+	len += sprintf(buffer+len, "SCSI Host=scsi%d  Control Node=/devel/%s  irq=%d\n", 
 			pHba->host->host_no, pHba->name, host->irq);
 	len += sprintf(buffer+len, "\tpost fifo size  = %d\n\treply fifo size = %d\n\tsg table size   = %d\n\n",
 			host->can_queue, (int) pHba->reply_fifo_size , host->sg_tablesize);

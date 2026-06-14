@@ -86,7 +86,7 @@ static inline void wdt_reset(void)
 /*
  * Timer tick: the timer will make sure that the watchdog timer hardware
  * is being reset in time. The conditions to do this are:
- *  1) the watchog timer has been started and /dev/watchdog is open
+ *  1) the watchog timer has been started and /devel/watchdog is open
  *     and there is still time left before userspace should send the
  *     next heartbeat/ping. (note: the internal heartbeat is much smaller
  *     then the external/userspace heartbeat).

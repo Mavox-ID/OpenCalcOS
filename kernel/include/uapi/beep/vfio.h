@@ -44,7 +44,7 @@
 #define VFIO_TYPE	(';')
 #define VFIO_BASE	100
 
-/* -------- IOCTLs for VFIO file descriptor (/dev/vfio/vfio) -------- */
+/* -------- IOCTLs for VFIO file descriptor (/devel/vfio/vfio) -------- */
 
 /**
  * VFIO_GET_API_VERSION - _IO(VFIO_TYPE, VFIO_BASE + 0)
@@ -79,7 +79,7 @@
  */
 #define VFIO_SET_IOMMU			_IO(VFIO_TYPE, VFIO_BASE + 2)
 
-/* -------- IOCTLs for GROUP file descriptors (/dev/vfio/$GROUP) -------- */
+/* -------- IOCTLs for GROUP file descriptors (/devel/vfio/$GROUP) -------- */
 
 /**
  * VFIO_GROUP_GET_STATUS - _IOR(VFIO_TYPE, VFIO_BASE + 3,

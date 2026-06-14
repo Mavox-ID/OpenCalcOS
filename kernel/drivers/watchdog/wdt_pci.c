@@ -37,7 +37,7 @@
 #define WDT_IS_PCI
 #include "wd501p.h"
 
-/* We can only use 1 card due to the /dev/watchdog restriction */
+/* We can only use 1 card due to the /devel/watchdog restriction */
 static int dev_count;
 
 static unsigned long open_lock;

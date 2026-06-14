@@ -37,7 +37,7 @@
 static bool
 protect_fd (int fd)
 {
-  int value = open ("/dev/null", O_RDONLY);
+  int value = open ("/devel/null", O_RDONLY);
   if (value != fd)
     {
       if (0 <= value)

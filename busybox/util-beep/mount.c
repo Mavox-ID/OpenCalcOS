@@ -172,10 +172,10 @@
 //usage:
 //usage:#define mount_example_usage
 //usage:       "$ mount\n"
-//usage:       "/dev/hda3 on / type minix (rw)\n"
+//usage:       "/devel/hda3 on / type minix (rw)\n"
 //usage:       "proc on /proc type proc (rw)\n"
-//usage:       "devpts on /dev/pts type devpts (rw)\n"
-//usage:       "$ mount /dev/fd0 /mnt -t msdos -o ro\n"
+//usage:       "devpts on /devel/pts type devpts (rw)\n"
+//usage:       "$ mount /devel/fd0 /mnt -t msdos -o ro\n"
 //usage:       "$ mount /libs/diskimage /opt -t ext2 -o loop\n"
 //usage:       "$ mount cd_image.iso mydir\n"
 //usage:#define mount_notes_usage
@@ -326,7 +326,7 @@ enum {
 // If any user should be able to unmount, then use users instead of user
 // in the fstab line.  The owner option is similar to the user option,
 // with the restriction that the user must be the owner of the special file.
-// This may be useful e.g. for /dev/fd if a login script makes
+// This may be useful e.g. for /devel/fd if a login script makes
 // the console user owner of this device.
 
 // Standard mount options (from -o options or --options),
@@ -2457,8 +2457,8 @@ int mount_main(int argc UNUSED_PARAM, char **argv)
 			// (otherwise repeated "mount -a" mounts everything again)
 			mp = find_mount_point(mtcur->mnt_dir, /*subdir_too:*/ 0);
 			// We do not check fsname match of found mount point -
-			// "/" may have fsname of "/dev/root" while fstab
-			// says "/dev/something_else".
+			// "/" may have fsname of "/devel/root" while fstab
+			// says "/devel/something_else".
 			if (mp) {
 				if (verbose) {
 					bb_error_msg("according to %s, "

@@ -71,7 +71,7 @@
 /* Sound card numbers 27 to N are reserved. Don't add more numbers here. */
 
 /***********************************
- * IOCTL Commands for /dev/sequencer
+ * IOCTL Commands for /devel/sequencer
  */
 
 #ifndef _SIOWR
@@ -195,7 +195,7 @@ typedef struct seq_event_rec {
 #endif
 
 /*
- *	Sample loading mechanism for internal synthesizers (/dev/sequencer)
+ *	Sample loading mechanism for internal synthesizers (/devel/sequencer)
  *	The following patch_info structure has been designed to support
  *	Gravis UltraSound. It tries to be universal format for uploading
  *	sample based patches but is probably too limited.
@@ -303,9 +303,9 @@ struct sysex_info {
 	};
 
 /*
- * /dev/sequencer input events.
+ * /devel/sequencer input events.
  *
- * The data written to the /dev/sequencer is a stream of events. Events
+ * The data written to the /devel/sequencer is a stream of events. Events
  * are records of 4 or 8 bytes. The first byte defines the size. 
  * Any number of events can be written with a write call. There
  * is a set of macros for sending these events. Use these macros if you
@@ -446,7 +446,7 @@ struct sysex_info {
  *	be mixed to the same write.
  *	
  *	For FM synths (YM3812/OPL3) use struct sbi_instrument and write it to the 
- *	/dev/sequencer. Don't write other data together with the instrument structure
+ *	/devel/sequencer. Don't write other data together with the instrument structure
  *	Set the key field of the structure to FM_PATCH. The device field is used to
  *	route the patch to the corresponding device.
  *
@@ -515,7 +515,7 @@ struct midi_info {
 	};
 
 /********************************************
- * ioctl commands for the /dev/midi##
+ * ioctl commands for the /devel/midi##
  */
 typedef struct {
 		unsigned char cmd;
@@ -528,7 +528,7 @@ typedef struct {
 #define SNDCTL_MIDI_MPUCMD		_SIOWR('m', 2, mpu_command_rec)
 
 /********************************************
- * IOCTL commands for /dev/dsp and /dev/audio
+ * IOCTL commands for /devel/dsp and /devel/audio
  */
 
 #define SNDCTL_DSP_RESET		_SIO  ('P', 0)
@@ -725,7 +725,7 @@ typedef struct copr_msg {
 #define SNDCTL_COPR_RCVMSG	      _SIOR ('C',  9, copr_msg)
 
 /*********************************************
- * IOCTL commands for /dev/mixer
+ * IOCTL commands for /devel/mixer
  */
 	
 /* 
@@ -966,7 +966,7 @@ typedef struct mixer_vol_table {
 #define OSS_GETVERSION			_SIOR ('M', 118, int)
 
 /*
- * Level 2 event types for /dev/sequencer
+ * Level 2 event types for /devel/sequencer
  */
 
 /*
@@ -1034,7 +1034,7 @@ typedef struct mixer_vol_table {
 #if !defined(__KERNEL__) || defined(USE_SEQ_MACROS)
 /*
  *	Some convenience macros to simplify programming of the
- *	/dev/sequencer interface
+ *	/devel/sequencer interface
  *
  *	This is a legacy interface for applications written against
  *	the OSSlib-3.8 style interface. It is no longer possible
@@ -1067,7 +1067,7 @@ void seqbuf_dump(void);	/* This function must be provided by programs */
  *
  *	SEQ_DEFINEBUF (2048);	-- Defines a buffer for 2048 bytes
  *
- *	int seqfd;		-- The file descriptor for /dev/sequencer.
+ *	int seqfd;		-- The file descriptor for /devel/sequencer.
  *
  *	void
  *	seqbuf_dump ()
@@ -1075,7 +1075,7 @@ void seqbuf_dump(void);	/* This function must be provided by programs */
  *	  if (_seqbufptr)
  *	    if (write (seqfd, _seqbuf, _seqbufptr) == -1)
  *	      {
- *		perror ("write /dev/sequencer");
+ *		perror ("write /devel/sequencer");
  *		exit (-1);
  *	      }
  *	  _seqbufptr = 0;
@@ -1268,7 +1268,7 @@ void seqbuf_dump(void);	/* This function must be provided by programs */
 #define SEQ_WRPATCH(patchx, len) \
 		{if (_seqbufptr) SEQ_DUMPBUF();\
 		 if (write(seqfd, (char*)(patchx), len)==-1) \
-		    perror("Write patch: /dev/sequencer");}
+		    perror("Write patch: /devel/sequencer");}
 #define SEQ_WRPATCH2(patchx, len) \
 		(SEQ_DUMPBUF(), write(seqfd, (char*)(patchx), len))
 

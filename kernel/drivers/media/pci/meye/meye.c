@@ -50,10 +50,10 @@ module_param(gbufsize, int, 0444);
 MODULE_PARM_DESC(gbufsize, "size of the capture buffers, default is 614400"
 		 " (will be rounded up to a page multiple)");
 
-/* /dev/videoX registration number */
+/* /devel/videoX registration number */
 static int video_nr = -1;
 module_param(video_nr, int, 0444);
-MODULE_PARM_DESC(video_nr, "video device to register (0=/dev/video0, etc)");
+MODULE_PARM_DESC(video_nr, "video device to register (0=/devel/video0, etc)");
 
 /* driver structure - only one possible */
 static struct meye meye;

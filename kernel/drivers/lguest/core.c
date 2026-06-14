@@ -213,7 +213,7 @@ void __lgwrite(struct lg_cpu *cpu, unsigned long addr, const void *b,
 
 /*H:030
  * Let's jump straight to the the main loop which runs the Guest.
- * Remember, this is called by the Launcher reading /dev/lguest, and we keep
+ * Remember, this is called by the Launcher reading /devel/lguest, and we keep
  * going around and around until something interesting happens.
  */
 int run_guest(struct lg_cpu *cpu, unsigned long __user *user)
@@ -345,7 +345,7 @@ static int __init init(void)
 	if (err)
 		goto free_pgtables;
 
-	/* /dev/lguest needs to be registered. */
+	/* /devel/lguest needs to be registered. */
 	err = lguest_device_init();
 	if (err)
 		goto free_interrupts;

@@ -26,7 +26,7 @@
 //////////////// -f: accepted but is a nop (we do no check anyway)
 //usage:
 //usage:#define blkdiscard_example_usage
-//usage:	"$ blkdiscard -o 0 -l 1G /dev/sdb"
+//usage:	"$ blkdiscard -o 0 -l 1G /devel/sdb"
 
 #include "libbb.h"
 #include <linux/fs.h>

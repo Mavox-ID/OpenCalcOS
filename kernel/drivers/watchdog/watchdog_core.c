@@ -125,7 +125,7 @@ void watchdog_unregister_device(struct watchdog_device *wdd)
 	devno = wdd->cdev.dev;
 	ret = watchdog_dev_unregister(wdd);
 	if (ret)
-		pr_err("error unregistering /dev/watchdog (err=%d)\n", ret);
+		pr_err("error unregistering /devel/watchdog (err=%d)\n", ret);
 	device_destroy(watchdog_class, devno);
 	ida_simple_remove(&watchdog_ida, wdd->id);
 	wdd->dev = NULL;

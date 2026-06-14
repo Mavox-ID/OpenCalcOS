@@ -69,7 +69,7 @@ void add_event_entry(unsigned long value)
 
 
 /* Wake up the waiting process if any. This happens
- * on "echo 0 >/dev/oprofile/enable" so the daemon
+ * on "echo 0 >/devel/oprofile/enable" so the daemon
  * processes the data remaining in the event buffer.
  */
 void wake_up_buffer_waiter(void)
@@ -135,7 +135,7 @@ static int event_buffer_open(struct inode *inode, struct file *file)
 		goto fail;
 
 	/* NB: the actual start happens from userspace
-	 * echo 1 >/dev/oprofile/enable
+	 * echo 1 >/devel/oprofile/enable
 	 */
 
 	return nonseekable_open(inode, file);

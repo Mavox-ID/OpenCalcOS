@@ -41,8 +41,8 @@
  *	OUTSRC while thread B changes gain -- both write to the same
  *	ad1843 register.
  *
- *	What happens if a client opens /dev/audio then forks?
- *	Do two procs have /dev/audio open?  Test.
+ *	What happens if a client opens /devel/audio then forks?
+ *	Do two procs have /devel/audio open?  Test.
  *
  *	Pump audio through the CD, MIC and line inputs and verify that
  *	they mix/mute into the output.
@@ -85,7 +85,7 @@
  *	is true.
  *
  *	devc->open_lock is a semaphore that is used to enforce the
- *	single reader/single writer rule for /dev/audio.  The rule is
+ *	single reader/single writer rule for /devel/audio.  The rule is
  *	that each device may have at most one reader and one writer.
  *	Open will block until the previous client has closed the
  *	device, unless O_NONBLOCK is specified.

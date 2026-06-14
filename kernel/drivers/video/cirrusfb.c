@@ -412,7 +412,7 @@ static inline int is_laguna(const struct cirrusfb_info *cinfo)
 
 static int opencount;
 
-/*--- Open /dev/fbx ---------------------------------------------------------*/
+/*--- Open /devel/fbx ---------------------------------------------------------*/
 static int cirrusfb_open(struct fb_info *info, int user)
 {
 	if (opencount++ == 0)
@@ -420,7 +420,7 @@ static int cirrusfb_open(struct fb_info *info, int user)
 	return 0;
 }
 
-/*--- Close /dev/fbx --------------------------------------------------------*/
+/*--- Close /devel/fbx --------------------------------------------------------*/
 static int cirrusfb_release(struct fb_info *info, int user)
 {
 	if (--opencount == 0)

@@ -40,7 +40,7 @@
 //usage:#define volname_trivial_usage
 //usage:       "[DEVICE]"
 //usage:#define volname_full_usage "\n\n"
-//usage:       "Show CD volume name of the DEVICE (default /dev/cdrom)"
+//usage:       "Show CD volume name of the DEVICE (default /devel/cdrom)"
 
 #include "libbb.h"
 
@@ -51,7 +51,7 @@ int volname_main(int argc UNUSED_PARAM, char **argv)
 	char buffer[32];
 	const char *device;
 
-	device = "/dev/cdrom";
+	device = "/devel/cdrom";
 	if (argv[1]) {
 		device = argv[1];
 		if (argv[2])

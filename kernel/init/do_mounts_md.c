@@ -67,7 +67,7 @@ static int md_setup_ents __initdata;
  *             md=n,-1,factor,fault,device-list  uses LINEAR for device n
  *             md=n,device-list      reads a RAID superblock from the devices
  *             elements in device-list are read by name_to_kdev_t so can be
- *             a hex number or something like /dev/hda1 /dev/sdb
+ *             a hex number or something like /devel/hda1 /devel/sdb
  * 2001-06-03: Dave Cinege <dcinege@psychosis.com>
  *		Shifted name_to_kdev_t() and related operations to md_set_drive()
  *		for later execution. Rewrote section to make devfs compatible.
@@ -152,7 +152,7 @@ static void __init md_setup_drive(void)
 		partitioned = md_setup_args[ent].partitioned;
 		devname = md_setup_args[ent].device_names;
 
-		sprintf(name, "/dev/md%s%d", partitioned?"_d":"", minor);
+		sprintf(name, "/devel/md%s%d", partitioned?"_d":"", minor);
 		if (partitioned)
 			dev = MKDEV(mdp_major, minor << MdpMinorShift);
 		else
@@ -168,9 +168,9 @@ static void __init md_setup_drive(void)
 				*p++ = 0;
 
 			dev = name_to_dev_t(devname);
-			if (strncmp(devname, "/dev/", 5) == 0)
+			if (strncmp(devname, "/devel/", 5) == 0)
 				devname += 5;
-			snprintf(comp_name, 63, "/dev/%s", devname);
+			snprintf(comp_name, 63, "/devel/%s", devname);
 			rdev = bstat(comp_name);
 			if (rdev)
 				dev = new_decode_dev(rdev);
@@ -305,7 +305,7 @@ static void __init autodetect_raid(void)
 
 	wait_for_device_probe();
 
-	fd = sys_open("/dev/md0", 0, 0);
+	fd = sys_open("/devel/md0", 0, 0);
 	if (fd >= 0) {
 		sys_ioctl(fd, RAID_AUTORUN, raid_autopart);
 		sys_close(fd);
@@ -314,7 +314,7 @@ static void __init autodetect_raid(void)
 
 void __init md_run_setup(void)
 {
-	create_dev("/dev/md0", MKDEV(MD_MAJOR, 0));
+	create_dev("/devel/md0", MKDEV(MD_MAJOR, 0));
 
 	if (raid_noautodetect)
 		printk(KERN_INFO "md: Skipping autodetection of RAID arrays. (raid=autodetect will force)\n");

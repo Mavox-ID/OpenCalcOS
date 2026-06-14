@@ -47,7 +47,7 @@ static void decode_link_packet(struct link_packet *packet, size_t length,
 static int run = 1;
 sig_t sys_sigint_handler;
 
-static char *option_nosy_device = "/dev/nosy";
+static char *option_nosy_device = "/devel/nosy";
 static char *option_view = "packet";
 static char *option_output;
 static char *option_input;

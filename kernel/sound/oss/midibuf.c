@@ -382,7 +382,7 @@ int MIDIbuf_ioctl(int dev, struct file *file,
 	{
 		if (midi_devs[dev]->coproc)	/* Coprocessor ioctl */
 			return midi_devs[dev]->coproc->ioctl(midi_devs[dev]->coproc->devc, cmd, arg, 0);
-/*		printk("/dev/midi%d: No coprocessor for this device\n", dev);*/
+/*		printk("/devel/midi%d: No coprocessor for this device\n", dev);*/
 		return -ENXIO;
 	}
 	else

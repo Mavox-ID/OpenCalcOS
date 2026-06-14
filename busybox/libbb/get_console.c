@@ -32,8 +32,8 @@ static int open_a_console(const char *fnam)
 
 /*
  * Get an fd for use with kbd/console ioctls.
- * We try several things because opening /dev/console will fail
- * if someone else used X (which does a chown on /dev/console).
+ * We try several things because opening /devel/console will fail
+ * if someone else used X (which does a chown on /devel/console).
  */
 int FAST_FUNC get_console_fd_or_die(void)
 {

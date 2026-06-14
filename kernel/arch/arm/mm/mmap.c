@@ -204,7 +204,7 @@ void arch_pick_mmap_layout(struct mm_struct *mm)
 }
 
 /*
- * You really shouldn't be using read() or write() on /dev/mem.  This
+ * You really shouldn't be using read() or write() on /devel/mem.  This
  * might go away in the future.
  */
 int valid_phys_addr_range(phys_addr_t addr, size_t size)
@@ -218,7 +218,7 @@ int valid_phys_addr_range(phys_addr_t addr, size_t size)
 }
 
 /*
- * We don't use supersection mappings for mmap() on /dev/mem, which
+ * We don't use supersection mappings for mmap() on /devel/mem, which
  * means that we can't map the memory area above the 4G barrier into
  * userspace.
  */
@@ -232,11 +232,11 @@ int valid_mmap_phys_addr_range(unsigned long pfn, size_t size)
 #include <beep/ioport.h>
 
 /*
- * devmem_is_allowed() checks to see if /dev/mem access to a certain
+ * devmem_is_allowed() checks to see if /devel/mem access to a certain
  * address is valid. The argument is a physical page number.
  * We mimic x86 here by disallowing access to system RAM as well as
  * device-exclusive MMIO regions. This effectively disable read()/write()
- * on /dev/mem.
+ * on /devel/mem.
  */
 int devmem_is_allowed(unsigned long pfn)
 {

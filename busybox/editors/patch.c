@@ -472,7 +472,7 @@ int patch_main(int argc UNUSED_PARAM, char **argv)
 					if (*s == '\\' && s[1]) s++;
 				i = atoi(s);
 				if (i > 1900 && i <= 1970)
-					*name = xstrdup("/dev/null");
+					*name = xstrdup("/devel/null");
 				else {
 					*s = 0;
 					*name = xstrdup(patchline+4);
@@ -522,9 +522,9 @@ int patch_main(int argc UNUSED_PARAM, char **argv)
 
 				name = reverse ? oldname : newname;
 
-				// We're deleting oldname if new file is /dev/null (before -p)
+				// We're deleting oldname if new file is /devel/null (before -p)
 				// or if new hunk is empty (zero context) after patching
-				if (strcmp(name, "/dev/null") == 0 || !(reverse ? oldsum : newsum)) {
+				if (strcmp(name, "/devel/null") == 0 || !(reverse ? oldsum : newsum)) {
 					name = reverse ? newname : oldname;
 					empty = 1;
 				}
@@ -562,7 +562,7 @@ int patch_main(int argc UNUSED_PARAM, char **argv)
 					struct stat statbuf;
 
 					// If the old file was null, we're creating a new one.
-					if (strcmp(oldname, "/dev/null") == 0 || !oldsum) {
+					if (strcmp(oldname, "/devel/null") == 0 || !oldsum) {
 						printf("creating %s\n", name);
 						if (!(opts & FLAG_dry_run)) {
 							s = strrchr(name, '/');
@@ -573,7 +573,7 @@ int patch_main(int argc UNUSED_PARAM, char **argv)
 							}
 							TT.filein = xopen(name, O_CREAT|O_EXCL|O_RDWR);
 						} else {
-							TT.filein = xopen("/dev/null", O_RDONLY);
+							TT.filein = xopen("/devel/null", O_RDONLY);
 						}
 					} else {
 						printf("patching file %s\n", name);
@@ -588,7 +588,7 @@ int patch_main(int argc UNUSED_PARAM, char **argv)
 						fchmod(TT.fileout, statbuf.st_mode);
 					} else {
 						TT.tempname = (char*)"";
-						TT.fileout = xopen("/dev/null", O_WRONLY);
+						TT.fileout = xopen("/devel/null", O_WRONLY);
 					}
 					TT.linenum = 0;
 					TT.hunknum = 0;

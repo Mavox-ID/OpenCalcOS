@@ -936,7 +936,7 @@ static int emmaprp_probe(struct platform_device *pdev)
 	snprintf(vfd->name, sizeof(vfd->name), "%s", emmaprp_videodev.name);
 	pcdev->vfd = vfd;
 	v4l2_info(&pcdev->v4l2_dev, EMMAPRP_MODULE_NAME
-			" Device registered as /dev/video%d\n", vfd->num);
+			" Device registered as /devel/video%d\n", vfd->num);
 
 	platform_set_drvdata(pdev, pcdev);
 

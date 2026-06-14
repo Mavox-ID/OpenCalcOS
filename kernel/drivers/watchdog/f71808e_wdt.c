@@ -455,7 +455,7 @@ exit_unlock:
 	return is_running;
 }
 
-/* /dev/watchdog api */
+/* /devel/watchdog api */
 
 static int watchdog_open(struct inode *inode, struct file *file)
 {

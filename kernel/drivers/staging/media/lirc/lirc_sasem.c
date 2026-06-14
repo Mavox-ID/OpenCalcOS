@@ -187,7 +187,7 @@ static void deregister_from_lirc(struct sasem_context *context)
 }
 
 /**
- * Called when the VFD device (e.g. /dev/usb/lcd)
+ * Called when the VFD device (e.g. /devel/usb/lcd)
  * is opened by the application.
  */
 static int vfd_open(struct inode *inode, struct file *file)
@@ -239,7 +239,7 @@ exit:
 }
 
 /**
- * Called when the VFD device (e.g. /dev/usb/lcd)
+ * Called when the VFD device (e.g. /devel/usb/lcd)
  * is closed by the application.
  */
 static long vfd_ioctl(struct file *file, unsigned cmd, unsigned long arg)
@@ -273,7 +273,7 @@ static long vfd_ioctl(struct file *file, unsigned cmd, unsigned long arg)
 }
 
 /**
- * Called when the VFD device (e.g. /dev/usb/lcd)
+ * Called when the VFD device (e.g. /devel/usb/lcd)
  * is closed by the application.
  */
 static int vfd_close(struct inode *inode, struct file *file)
@@ -481,7 +481,7 @@ static void usb_tx_callback(struct urb *urb)
 }
 
 /**
- * Called by lirc_dev when the application opens /dev/lirc
+ * Called by lirc_dev when the application opens /devel/lirc
  */
 static int ir_open(void *data)
 {
@@ -527,7 +527,7 @@ exit:
 }
 
 /**
- * Called by lirc_dev when the application closes /dev/lirc
+ * Called by lirc_dev when the application closes /devel/lirc
  */
 static void ir_close(void *data)
 {

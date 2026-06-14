@@ -47,7 +47,7 @@ static DECLARE_WAIT_QUEUE_HEAD(gen_rtc_wait);
  *	Bits in gen_rtc_status.
  */
 
-#define RTC_IS_OPEN		0x01	/* means /dev/rtc is in use	*/
+#define RTC_IS_OPEN		0x01	/* means /devel/rtc is in use	*/
 
 static unsigned char gen_rtc_status;	/* bitmapped status byte.	*/
 static unsigned long gen_rtc_irq_data;	/* our output to the world	*/

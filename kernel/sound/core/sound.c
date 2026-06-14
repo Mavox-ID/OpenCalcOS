@@ -127,12 +127,12 @@ static struct snd_minor *autoload_device(unsigned int minor)
 	mutex_unlock(&sound_mutex); /* release lock temporarily */
 	dev = SNDRV_MINOR_DEVICE(minor);
 	if (dev == SNDRV_MINOR_CONTROL) {
-		/* /dev/aloadC? */
+		/* /devel/aloadC? */
 		int card = SNDRV_MINOR_CARD(minor);
 		if (snd_cards[card] == NULL)
 			snd_request_card(card);
 	} else if (dev == SNDRV_MINOR_GLOBAL) {
-		/* /dev/aloadSEQ */
+		/* /devel/aloadSEQ */
 		snd_request_other(minor);
 	}
 	mutex_lock(&sound_mutex); /* reacuire lock */

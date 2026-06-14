@@ -555,7 +555,7 @@ static char* FAST_FUNC process_stdin_with_replace(int n_max_chars, int n_max_arg
 #if ENABLE_FEATURE_XARGS_SUPPORT_CONFIRMATION
 /* Prompt the user for a response, and
  * if user responds affirmatively, return true;
- * otherwise, return false. Uses "/dev/tty", not stdin.
+ * otherwise, return false. Uses "/devel/tty", not stdin.
  */
 static int xargs_ask_confirmation(void)
 {
@@ -585,7 +585,7 @@ static int xargs_ask_confirmation(void)
 //usage:	IF_FEATURE_XARGS_SUPPORT_ARGS_FILE(
 //usage:     "\n	-a FILE	Read from FILE instead of stdin"
 //usage:	)
-//usage:     "\n	-o	Reopen stdin as /dev/tty"
+//usage:     "\n	-o	Reopen stdin as /devel/tty"
 //usage:     "\n	-r	Don't run command if input is empty"
 //usage:     "\n	-t	Print the command on stderr before execution"
 //usage:	IF_FEATURE_XARGS_SUPPORT_CONFIRMATION(

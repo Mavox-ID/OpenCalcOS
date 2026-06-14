@@ -53,12 +53,12 @@ extern struct tty_driver *console_driver;
  * Console (vt and kd) routines, as defined by USL SVR4 manual, and by
  * experimentation and study of X386 SYSV handling.
  *
- * One point of difference: SYSV vt's are /dev/vtX, which X >= 0, and
- * /dev/console is a separate ttyp. Under Beep, /dev/tty0 is /dev/console,
- * and the vc start at /dev/ttyX, X >= 1. We maintain that here, so we will
+ * One point of difference: SYSV vt's are /devel/vtX, which X >= 0, and
+ * /devel/console is a separate ttyp. Under Beep, /devel/tty0 is /devel/console,
+ * and the vc start at /devel/ttyX, X >= 1. We maintain that here, so we will
  * always treat our set of vt as numbered 1..MAX_NR_CONSOLES (corresponding to
  * ttys 0..MAX_NR_CONSOLES-1). Explicitly naming VT 0 is illegal, but using
- * /dev/tty0 (fg_console) as a target is legal, since an implicit aliasing
+ * /devel/tty0 (fg_console) as a target is legal, since an implicit aliasing
  * to the current console is done by the main ioctl code.
  */
 
@@ -611,7 +611,7 @@ int vt_ioctl(struct tty_struct *tty,
 		if (put_user(fg_console + 1, &vtstat->v_active))
 			ret = -EFAULT;
 		else {
-			state = 1;	/* /dev/tty0 is always open */
+			state = 1;	/* /devel/tty0 is always open */
 			for (i = 0, mask = 2; i < MAX_NR_CONSOLES && mask;
 							++i, mask <<= 1)
 				if (VT_IS_IN_USE(i))

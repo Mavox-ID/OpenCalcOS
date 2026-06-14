@@ -64,8 +64,8 @@
    Program  from        A  C               O  g  T
 
    $JAVAC   unknown     N  n/a            -O -g  true
-   javac    JDK 1.1.8   Y  -classpath P   -O -g  javac 2>/dev/null; test $? = 1
-   javac    JDK 1.3.0   Y  -classpath P   -O -g  javac 2>/dev/null; test $? -le 2
+   javac    JDK 1.1.8   Y  -classpath P   -O -g  javac 2>/devel/null; test $? = 1
+   javac    JDK 1.3.0   Y  -classpath P   -O -g  javac 2>/devel/null; test $? -le 2
 
    All compilers support the option "-d DIRECTORY" for the base directory
    of the classes to be written.
@@ -731,7 +731,7 @@ is_javac_present (void)
 
   if (!javac_tested)
     {
-      /* Test for presence of javac: "javac 2> /dev/null ; test $? -le 2"  */
+      /* Test for presence of javac: "javac 2> /devel/null ; test $? -le 2"  */
       const char *argv[2];
       argv[0] = "javac";
       argv[1] = NULL;

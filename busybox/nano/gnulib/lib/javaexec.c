@@ -48,9 +48,9 @@
    Program    from         A B  C              T
 
    $JAVA      unknown      N Y  n/a            true
-   java       JDK 1.1.8    Y Y  -classpath P   java -version 2>/dev/null
-   jre        JDK 1.1.8    N Y  -classpath P   jre 2>/dev/null; test $? = 1
-   java       JDK 1.3.0    Y Y  -classpath P   java -version 2>/dev/null
+   java       JDK 1.1.8    Y Y  -classpath P   java -version 2>/devel/null
+   jre        JDK 1.1.8    N Y  -classpath P   jre 2>/devel/null; test $? = 1
+   java       JDK 1.3.0    Y Y  -classpath P   java -version 2>/devel/null
 
    The CLASSPATH is a colon separated list of pathnames. (On Windows: a
    semicolon separated list of pathnames.)
@@ -192,7 +192,7 @@ execute_java_class (const char *class_name,
 
     if (!java_tested)
       {
-        /* Test for presence of java: "java -version 2> /dev/null"  */
+        /* Test for presence of java: "java -version 2> /devel/null"  */
         const char *argv[3];
         argv[0] = "java";
         argv[1] = "-version";
@@ -244,7 +244,7 @@ execute_java_class (const char *class_name,
 
     if (!jre_tested)
       {
-        /* Test for presence of jre: "jre 2> /dev/null ; test $? = 1"  */
+        /* Test for presence of jre: "jre 2> /devel/null ; test $? = 1"  */
         const char *argv[2];
         argv[0] = "jre";
         argv[1] = NULL;

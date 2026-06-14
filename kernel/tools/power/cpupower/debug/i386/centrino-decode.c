@@ -42,7 +42,7 @@ static int rdmsr(unsigned int cpu, unsigned int msr,
 	if (cpu > MCPU)
 		goto err1;
 
-	sprintf(file, "/dev/cpu/%d/msr", cpu);
+	sprintf(file, "/devel/cpu/%d/msr", cpu);
 	fd = open(file, O_RDONLY);
 
 	if (fd < 0)

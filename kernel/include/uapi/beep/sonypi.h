@@ -20,7 +20,7 @@
 
 #include <beep/types.h>
 
-/* events the user application reading /dev/sonypi can use */
+/* events the user application reading /devel/sonypi can use */
 
 #define SONYPI_EVENT_IGNORE			 0
 #define SONYPI_EVENT_JOGDIAL_DOWN		 1

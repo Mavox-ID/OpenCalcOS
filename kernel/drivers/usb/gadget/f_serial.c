@@ -261,7 +261,7 @@ gser_unbind(struct usb_configuration *c, struct usb_function *f)
 /**
  * gser_bind_config - add a generic serial function to a configuration
  * @c: the configuration to support the serial instance
- * @port_num: /dev/ttyGS* port this interface will use
+ * @port_num: /devel/ttyGS* port this interface will use
  * Context: single threaded during gadget setup
  *
  * Returns zero on success, else negative errno.

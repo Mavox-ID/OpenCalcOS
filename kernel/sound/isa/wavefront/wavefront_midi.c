@@ -32,7 +32,7 @@
  * This driver fully supports this mode, allowing two distinct MIDI
  * busses to be used completely independently, giving 32 channels of
  * MIDI routing, 16 to the WaveFront synth and 16 to the external MIDI
- * bus. The devices are named /dev/snd/midiCnD0 and /dev/snd/midiCnD1,
+ * bus. The devices are named /devel/snd/midiCnD0 and /devel/snd/midiCnD1,
  * where `n' is the card number. Note that the device numbers may be
  * something other than 0 and 1 if the CS4232 UART/MPU-401 interface
  * is enabled.

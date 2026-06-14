@@ -270,7 +270,7 @@ static void pc87413_refresh(void)
 
 static int pc87413_open(struct inode *inode, struct file *file)
 {
-	/* /dev/watchdog can only be opened once */
+	/* /devel/watchdog can only be opened once */
 
 	if (test_and_set_bit(0, &timer_enabled))
 		return -EBUSY;

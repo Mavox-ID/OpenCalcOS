@@ -27,7 +27,7 @@ void FAST_FUNC write_pidfile(const char *path)
 	if (pid_fd < 0)
 		return;
 
-	/* path can be "/dev/null"! Test for such cases */
+	/* path can be "/devel/null"! Test for such cases */
 	wrote_pidfile = (fstat(pid_fd, &sb) == 0) && S_ISREG(sb.st_mode);
 
 	if (wrote_pidfile) {

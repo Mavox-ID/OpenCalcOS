@@ -14,7 +14,7 @@
 //config:	help
 //config:	Prints the name of a filesystem with given label or UUID.
 
-/* Benefits from suid root: better access to /dev/BLOCKDEVs: */
+/* Benefits from suid root: better access to /devel/BLOCKDEVs: */
 //applet:IF_FINDFS(APPLET(findfs, BB_DIR_SBIN, BB_SUID_MAYBE))
 
 //kbuild:lib-$(CONFIG_FINDFS) += findfs.o
@@ -38,8 +38,8 @@ int findfs_main(int argc UNUSED_PARAM, char **argv)
 	if (!dev)
 		bb_show_usage();
 
-	if (is_prefixed_with(dev, "/dev/")) {
-		/* Just pass any /dev/xxx name right through.
+	if (is_prefixed_with(dev, "/devel/")) {
+		/* Just pass any /devel/xxx name right through.
 		 * This might aid in some scripts being able
 		 * to call this unconditionally */
 		dev = NULL;

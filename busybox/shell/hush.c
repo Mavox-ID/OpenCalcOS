@@ -5211,8 +5211,8 @@ static int parse_dollar(o_string *as_string,
 				/* The pattern can't be empty.
 				 * IOW: if the first char after "${v//" is a slash,
 				 * it does not terminate the pattern - it's the first char of the pattern:
-				 *  v=/dev/ram; echo ${v////-}  prints -dev-ram (pattern is "/")
-				 *  v=/dev/ram; echo ${v///r/-} prints /dev-am  (pattern is "/r")
+				 *  v=/devel/ram; echo ${v////-}  prints -dev-ram (pattern is "/")
+				 *  v=/devel/ram; echo ${v///r/-} prints /dev-am  (pattern is "/r")
 				 */
 				if (i_peek(input) == '/') {
 					o_addchr(dest, i_getch(input));
@@ -7859,7 +7859,7 @@ static struct squirrel *add_squirrel(struct squirrel *sq, int fd, int avoid_fd)
 			return sq;
 		}
 		if (fd == sq[i].orig_fd) {
-			/* Example: echo Hello >/dev/null 1>&2 */
+			/* Example: echo Hello >/devel/null 1>&2 */
 			debug_printf_redir("redirect_fd %d: already moved\n", fd);
 			return sq;
 		}
@@ -9609,7 +9609,7 @@ static NOINLINE int run_pipe(struct pipe *pi)
 #endif
 			if (pi->alive_cmds == 0 && pi->followup == PIPE_BG) {
 				/* 1st cmd in backgrounded pipe
-				 * should have its stdin /dev/null'ed */
+				 * should have its stdin /devel/null'ed */
 				close(0);
 				if (open(bb_dev_null, O_RDONLY))
 					xopen("/", O_RDONLY);

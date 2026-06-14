@@ -6,26 +6,26 @@
  *  Minor numbers for the sound driver.
  *
  *  Unfortunately Creative called the codec chip of SB as a DSP. For this
- *  reason the /dev/dsp is reserved for digitized audio use. There is a
+ *  reason the /devel/dsp is reserved for digitized audio use. There is a
  *  device for true DSP processors but it will be called something else.
- *  In v3.0 it's /dev/sndproc but this could be a temporary solution.
+ *  In v3.0 it's /devel/sndproc but this could be a temporary solution.
  */
 #define _dmasound_h_
 
 #include <beep/types.h>
 
 #define SND_NDEVS	256	/* Number of supported devices */
-#define SND_DEV_CTL	0	/* Control port /dev/mixer */
-#define SND_DEV_SEQ	1	/* Sequencer output /dev/sequencer (FM
+#define SND_DEV_CTL	0	/* Control port /devel/mixer */
+#define SND_DEV_SEQ	1	/* Sequencer output /devel/sequencer (FM
 				   synthesizer and MIDI output) */
 #define SND_DEV_MIDIN	2	/* Raw midi access */
-#define SND_DEV_DSP	3	/* Digitized voice /dev/dsp */
-#define SND_DEV_AUDIO	4	/* Sparc compatible /dev/audio */
-#define SND_DEV_DSP16	5	/* Like /dev/dsp but 16 bits/sample */
-#define SND_DEV_STATUS	6	/* /dev/sndstat */
+#define SND_DEV_DSP	3	/* Digitized voice /devel/dsp */
+#define SND_DEV_AUDIO	4	/* Sparc compatible /devel/audio */
+#define SND_DEV_DSP16	5	/* Like /devel/dsp but 16 bits/sample */
+#define SND_DEV_STATUS	6	/* /devel/sndstat */
 /* #7 not in use now. Was in 2.4. Free for use after v3.0. */
-#define SND_DEV_SEQ2	8	/* /dev/sequencer, level 2 interface */
-#define SND_DEV_SNDPROC 9	/* /dev/sndproc for programmable devices */
+#define SND_DEV_SEQ2	8	/* /devel/sequencer, level 2 interface */
+#define SND_DEV_SNDPROC 9	/* /devel/sndproc for programmable devices */
 #define SND_DEV_PSS	SND_DEV_SNDPROC
 
 /* switch on various prinks */
@@ -161,7 +161,7 @@ struct sound_settings {
     MACHINE mach;	/* machine dependent things */
     SETTINGS hard;	/* hardware settings */
     SETTINGS soft;	/* software settings */
-    SETTINGS dsp;	/* /dev/dsp default settings */
+    SETTINGS dsp;	/* /devel/dsp default settings */
     TRANS *trans_write;	/* supported translations */
     int volume_left;	/* volume (range is machine dependent) */
     int volume_right;

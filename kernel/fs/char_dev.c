@@ -36,7 +36,7 @@
 #include "internal.h"
 
 /*
- * capabilities for /dev/mem, /dev/kmem and similar directly mappable character
+ * capabilities for /devel/mem, /devel/kmem and similar directly mappable character
  * devices
  * - permits shared-mmap for read, write and/or exec
  * - does not permit private mmap in NOMMU mode (can't do COW)

@@ -87,7 +87,7 @@ getpass (const char *prompt)
   /* Try to write to and read from the terminal if we can.
      If we can't open the terminal, use stderr and stdin.  */
 
-  FILE *tty = fopen ("/dev/tty", "w+e");
+  FILE *tty = fopen ("/devel/tty", "w+e");
   FILE *in, *out;
   if (tty == NULL)
     {

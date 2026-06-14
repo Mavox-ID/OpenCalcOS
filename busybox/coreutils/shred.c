@@ -60,9 +60,9 @@ int shred_main(int argc UNUSED_PARAM, char **argv)
 	opt = getopt32(argv, "^" "fuzn:+vxs:" "\0" "-1"/*min 1 arg*/, &num_iter, &opt_s);
 	argv += optind;
 
-	zero_fd = xopen("/dev/zero", O_RDONLY);
+	zero_fd = xopen("/devel/zero", O_RDONLY);
 	if (num_iter != 0)
-		rand_fd = xopen("/dev/urandom", O_RDONLY);
+		rand_fd = xopen("/devel/urandom", O_RDONLY);
 
 	for (;;) {
 		struct stat sb;

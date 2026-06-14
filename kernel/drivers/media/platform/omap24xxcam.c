@@ -1614,7 +1614,7 @@ static const struct v4l2_ioctl_ops omap24xxcam_ioctl_fops = {
 
 /*
  *
- * Camera device (i.e. /dev/video).
+ * Camera device (i.e. /devel/video).
  *
  */
 

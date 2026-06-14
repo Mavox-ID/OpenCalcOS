@@ -723,7 +723,7 @@ static int diffreg(char *file[2])
 				/* -N: if some file does not exist compare it like empty */
 				fd = open(file[i], O_RDONLY);
 				if (fd == -1)
-					fd = xopen("/dev/null", O_RDONLY);
+					fd = xopen("/devel/null", O_RDONLY);
 			}
 		}
 		/* Our diff implementation is using seek.
@@ -998,7 +998,7 @@ int diff_main(int argc UNUSED_PARAM, char **argv)
 			gotstdin++;
 		} else if (option_mask32 & FLAG(N)) {
 			if (stat(file[i], &stb[i]))
-				xstat("/dev/null", &stb[i]);
+				xstat("/devel/null", &stb[i]);
 		} else {
 			xstat(file[i], &stb[i]);
 		}

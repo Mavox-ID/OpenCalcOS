@@ -1550,7 +1550,7 @@ static long comedi_unlocked_ioctl(struct file *file, unsigned int cmd,
 	}
 
 	if (!dev->attached) {
-		DPRINTK("no driver configured on /dev/comedi%i\n", dev->minor);
+		DPRINTK("no driver configured on /devel/comedi%i\n", dev->minor);
 		rc = -ENODEV;
 		goto done;
 	}

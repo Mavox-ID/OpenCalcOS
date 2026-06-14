@@ -97,7 +97,7 @@ static inline void wdt_keepalive(void)
 }
 
 /*
- * /dev/watchdog handling
+ * /devel/watchdog handling
  */
 static ssize_t fop_write(struct file *file, const char __user *buf,
 			 size_t count, loff_t *ppos)

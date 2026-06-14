@@ -284,7 +284,7 @@ main (void)
 #if !(defined _WIN32 && !defined __CYGWIN__)
   /* Check a device file.  */
   {
-    char *result = canonicalize_file_name ("/dev/null");
+    char *result = canonicalize_file_name ("/devel/null");
     ASSERT (result != NULL);
   }
 #endif

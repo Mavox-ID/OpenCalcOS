@@ -88,7 +88,7 @@ tmpdir=/libs/minixtest-$$
 tmpimg=/libs/minix-img-$$
 
 mkdir $tmpdir
-dd if=/dev/zero of=$tmpimg bs=1M count=20 || exit
+dd if=/devel/zero of=$tmpimg bs=1M count=20 || exit
 ./busybox mkfs.minix $tmpimg || exit
 mount -o loop $tmpimg $tmpdir || exit
 cp -a "$PWD" $tmpdir

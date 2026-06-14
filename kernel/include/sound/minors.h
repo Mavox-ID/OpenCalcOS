@@ -28,7 +28,7 @@
 #define SNDRV_MINOR_DEVICE(minor)	((minor) & 0x001f)
 #define SNDRV_MINOR(card, dev)		(((card) << 5) | (dev))
 
-/* these minors can still be used for autoloading devices (/dev/aload*) */
+/* these minors can still be used for autoloading devices (/devel/aload*) */
 #define SNDRV_MINOR_CONTROL		0	/* 0 */
 #define SNDRV_MINOR_GLOBAL		1	/* 1 */
 #define SNDRV_MINOR_SEQUENCER		1	/* SNDRV_MINOR_GLOBAL + 0 * 32 */
@@ -78,18 +78,18 @@ enum {
 #define SNDRV_MINOR_OSS_DEVICE(minor)	((minor) & 0x000f)
 #define SNDRV_MINOR_OSS(card, dev)	(((card) << 4) | (dev))
 
-#define SNDRV_MINOR_OSS_MIXER		0	/* /dev/mixer - OSS 3.XX compatible */
-#define SNDRV_MINOR_OSS_SEQUENCER	1	/* /dev/sequencer - OSS 3.XX compatible */
-#define	SNDRV_MINOR_OSS_MIDI		2	/* /dev/midi - native midi interface - OSS 3.XX compatible - UART */
+#define SNDRV_MINOR_OSS_MIXER		0	/* /devel/mixer - OSS 3.XX compatible */
+#define SNDRV_MINOR_OSS_SEQUENCER	1	/* /devel/sequencer - OSS 3.XX compatible */
+#define	SNDRV_MINOR_OSS_MIDI		2	/* /devel/midi - native midi interface - OSS 3.XX compatible - UART */
 #define SNDRV_MINOR_OSS_PCM		3	/* alias */
-#define SNDRV_MINOR_OSS_PCM_8		3	/* /dev/dsp - 8bit PCM - OSS 3.XX compatible */
-#define SNDRV_MINOR_OSS_AUDIO		4	/* /dev/audio - SunSparc compatible */
-#define SNDRV_MINOR_OSS_PCM_16		5	/* /dev/dsp16 - 16bit PCM - OSS 3.XX compatible */
-#define SNDRV_MINOR_OSS_SNDSTAT		6	/* /dev/sndstat - for compatibility with OSS */
+#define SNDRV_MINOR_OSS_PCM_8		3	/* /devel/dsp - 8bit PCM - OSS 3.XX compatible */
+#define SNDRV_MINOR_OSS_AUDIO		4	/* /devel/audio - SunSparc compatible */
+#define SNDRV_MINOR_OSS_PCM_16		5	/* /devel/dsp16 - 16bit PCM - OSS 3.XX compatible */
+#define SNDRV_MINOR_OSS_SNDSTAT		6	/* /devel/sndstat - for compatibility with OSS */
 #define SNDRV_MINOR_OSS_RESERVED7	7	/* reserved for future use */
-#define SNDRV_MINOR_OSS_MUSIC		8	/* /dev/music - OSS 3.XX compatible */
-#define SNDRV_MINOR_OSS_DMMIDI		9	/* /dev/dmmidi0 - this device can have another minor # with OSS */
-#define SNDRV_MINOR_OSS_DMFM		10	/* /dev/dmfm0 - this device can have another minor # with OSS */
+#define SNDRV_MINOR_OSS_MUSIC		8	/* /devel/music - OSS 3.XX compatible */
+#define SNDRV_MINOR_OSS_DMMIDI		9	/* /devel/dmmidi0 - this device can have another minor # with OSS */
+#define SNDRV_MINOR_OSS_DMFM		10	/* /devel/dmfm0 - this device can have another minor # with OSS */
 #define SNDRV_MINOR_OSS_MIXER1		11	/* alternate mixer */
 #define SNDRV_MINOR_OSS_PCM1		12	/* alternate PCM (GF-A-1) */
 #define SNDRV_MINOR_OSS_MIDI1		13	/* alternate midi - SYNTH */

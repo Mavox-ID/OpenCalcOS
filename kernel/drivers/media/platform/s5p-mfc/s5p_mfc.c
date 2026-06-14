@@ -1128,7 +1128,7 @@ static int s5p_mfc_probe(struct platform_device *pdev)
 		goto err_dec_reg;
 	}
 	v4l2_info(&dev->v4l2_dev,
-		  "decoder registered as /dev/video%d\n", vfd->num);
+		  "decoder registered as /devel/video%d\n", vfd->num);
 	video_set_drvdata(vfd, dev);
 
 	/* encoder */
@@ -1153,7 +1153,7 @@ static int s5p_mfc_probe(struct platform_device *pdev)
 		goto err_enc_reg;
 	}
 	v4l2_info(&dev->v4l2_dev,
-		  "encoder registered as /dev/video%d\n", vfd->num);
+		  "encoder registered as /devel/video%d\n", vfd->num);
 	video_set_drvdata(vfd, dev);
 	platform_set_drvdata(pdev, dev);
 

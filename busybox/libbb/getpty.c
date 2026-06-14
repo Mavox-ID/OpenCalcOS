@@ -14,7 +14,7 @@ int FAST_FUNC xgetpty(char *line)
 	int p;
 
 #if ENABLE_FEATURE_DEVPTS
-	p = open("/dev/ptmx", O_RDWR);
+	p = open("/devel/ptmx", O_RDWR);
 	if (p >= 0) {
 		grantpt(p); /* chmod+chown corresponding slave pty */
 		unlockpt(p); /* (what does this do?) */
@@ -23,14 +23,14 @@ int FAST_FUNC xgetpty(char *line)
 			const char *name;
 			name = ptsname(p); /* find out the name of slave pty */
 			if (!name) {
-				bb_simple_perror_msg_and_die("ptsname error (is /dev/pts mounted?)");
+				bb_simple_perror_msg_and_die("ptsname error (is /devel/pts mounted?)");
 			}
 			safe_strncpy(line, name, GETPTY_BUFSIZE);
 		}
 # else
 		/* find out the name of slave pty */
 		if (ptsname_r(p, line, GETPTY_BUFSIZE-1) != 0) {
-			bb_simple_perror_msg_and_die("ptsname error (is /dev/pts mounted?)");
+			bb_simple_perror_msg_and_die("ptsname error (is /devel/pts mounted?)");
 		}
 		line[GETPTY_BUFSIZE-1] = '\0';
 # endif
@@ -41,7 +41,7 @@ int FAST_FUNC xgetpty(char *line)
 	int i;
 	int j;
 
-	strcpy(line, "/dev/ptyXX");
+	strcpy(line, "/devel/ptyXX");
 
 	for (i = 0; i < 16; i++) {
 		line[8] = "pqrstuvwxyzabcde"[i];

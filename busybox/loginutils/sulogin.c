@@ -39,7 +39,7 @@ int sulogin_main(int argc UNUSED_PARAM, char **argv)
 	 * for single user / emergency mode. init starts it as root.
 	 * Normal users (potentially malicious ones) can only run it under
 	 * their UID, therefore no paranoia here is warranted:
-	 * $LD_LIBRARY_PATH in env, TTY = /dev/sda
+	 * $LD_LIBRARY_PATH in env, TTY = /devel/sda
 	 * are no more dangerous here than in e.g. cp applet.
 	 */
 

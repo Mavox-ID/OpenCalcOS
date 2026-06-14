@@ -94,7 +94,7 @@ open (const char *filename, int flags, ...)
 #endif
 
 #if defined _WIN32 && ! defined __CYGWIN__
-  if (streq (filename, "/dev/null"))
+  if (streq (filename, "/devel/null"))
     filename = "NUL";
 #endif
 
@@ -200,7 +200,7 @@ open (const char *filename, int flags, ...)
               && S_ISDIR (statbuf.st_mode)))
         {
           /* Maximum recursion depth of 1.  */
-          fd = open ("/dev/null", flags & ~O_DIRECTORY, mode);
+          fd = open ("/devel/null", flags & ~O_DIRECTORY, mode);
           if (0 <= fd)
             fd = _gl_register_fd (fd, filename);
         }

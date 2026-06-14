@@ -1382,7 +1382,7 @@ static int s5p_jpeg_probe(struct platform_device *pdev)
 		goto m2m_init_rollback;
 	}
 
-	/* JPEG encoder /dev/videoX node */
+	/* JPEG encoder /devel/videoX node */
 	jpeg->vfd_encoder = video_device_alloc();
 	if (!jpeg->vfd_encoder) {
 		v4l2_err(&jpeg->v4l2_dev, "Failed to allocate video device\n");
@@ -1407,10 +1407,10 @@ static int s5p_jpeg_probe(struct platform_device *pdev)
 
 	video_set_drvdata(jpeg->vfd_encoder, jpeg);
 	v4l2_info(&jpeg->v4l2_dev,
-		  "encoder device registered as /dev/video%d\n",
+		  "encoder device registered as /devel/video%d\n",
 		  jpeg->vfd_encoder->num);
 
-	/* JPEG decoder /dev/videoX node */
+	/* JPEG decoder /devel/videoX node */
 	jpeg->vfd_decoder = video_device_alloc();
 	if (!jpeg->vfd_decoder) {
 		v4l2_err(&jpeg->v4l2_dev, "Failed to allocate video device\n");
@@ -1434,7 +1434,7 @@ static int s5p_jpeg_probe(struct platform_device *pdev)
 
 	video_set_drvdata(jpeg->vfd_decoder, jpeg);
 	v4l2_info(&jpeg->v4l2_dev,
-		  "decoder device registered as /dev/video%d\n",
+		  "decoder device registered as /devel/video%d\n",
 		  jpeg->vfd_decoder->num);
 
 	/* final statements & power management */

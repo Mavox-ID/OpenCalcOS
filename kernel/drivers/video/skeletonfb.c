@@ -132,7 +132,7 @@ static int xxxfb_open(struct fb_info *info, int user)
  *	@user: tell us if the userland (value=1) or the console is accessing
  *	       the framebuffer. 
  *	
- *	Thus function is called when we close /dev/fb or the framebuffer 
+ *	Thus function is called when we close /devel/fb or the framebuffer 
  *	console system is released. Usually you don't need this function.
  *	The case where it is usually used is to go from a graphics state
  *	to a text mode state.

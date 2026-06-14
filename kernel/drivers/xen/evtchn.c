@@ -40,7 +40,7 @@
 struct per_user_data {
 	struct mutex bind_mutex; /* serialize bind/unbind operations */
 
-	/* Notification ring, accessed via /dev/xen/evtchn. */
+	/* Notification ring, accessed via /devel/xen/evtchn. */
 #define EVTCHN_RING_SIZE     (PAGE_SIZE / sizeof(evtchn_port_t))
 #define EVTCHN_RING_MASK(_i) ((_i)&(EVTCHN_RING_SIZE-1))
 	evtchn_port_t *ring;
@@ -518,10 +518,10 @@ static int __init evtchn_init(void)
 
 	spin_lock_init(&port_user_lock);
 
-	/* Create '/dev/misc/evtchn'. */
+	/* Create '/devel/misc/evtchn'. */
 	err = misc_register(&evtchn_miscdev);
 	if (err != 0) {
-		printk(KERN_ALERT "Could not register /dev/misc/evtchn\n");
+		printk(KERN_ALERT "Could not register /devel/misc/evtchn\n");
 		return err;
 	}
 

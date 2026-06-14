@@ -2308,7 +2308,7 @@ static bool DAC960_V1_ReportDeviceConfiguration(DAC960_Controller_T
     {
       DAC960_V1_LogicalDriveInformation_T *LogicalDriveInformation =
 	&Controller->V1.LogicalDriveInformation[LogicalDriveNumber];
-      DAC960_Info("    /dev/rd/c%dd%d: RAID-%d, %s, %u blocks, %s\n",
+      DAC960_Info("    /devel/rd/c%dd%d: RAID-%d, %s, %u blocks, %s\n",
 		  Controller, Controller->ControllerNumber, LogicalDriveNumber,
 		  LogicalDriveInformation->RAIDLevel,
 		  (LogicalDriveInformation->LogicalDriveState
@@ -2454,7 +2454,7 @@ static bool DAC960_V2_ReportDeviceConfiguration(DAC960_Controller_T
 		       Controller, LogicalDeviceInfo->DriveGeometry);
 	  break;
 	}
-      DAC960_Info("    /dev/rd/c%dd%d: RAID-%d, %s, %u blocks\n",
+      DAC960_Info("    /devel/rd/c%dd%d: RAID-%d, %s, %u blocks\n",
 		  Controller, Controller->ControllerNumber, LogicalDriveNumber,
 		  LogicalDeviceInfo->RAIDLevel,
 		  (LogicalDeviceInfo->LogicalDeviceState
@@ -3523,7 +3523,7 @@ static void DAC960_V1_ReadWriteError(DAC960_Command_T *Command)
 		   Controller, Command->V1.CommandStatus, CommandName);
       break;
     }
-  DAC960_Error("  /dev/rd/c%dd%d:   absolute blocks %u..%u\n",
+  DAC960_Error("  /devel/rd/c%dd%d:   absolute blocks %u..%u\n",
 	       Controller, Controller->ControllerNumber,
 	       Command->LogicalDriveNumber, Command->BlockNumber,
 	       Command->BlockNumber + Command->BlockCount - 1);
@@ -3623,7 +3623,7 @@ static void DAC960_V1_ProcessCompletedCommand(DAC960_Command_T *Command)
 	    {
 	      int LogicalDriveNumber = Controller->LogicalDriveCount - 1;
 	      while (++LogicalDriveNumber < NewEnquiry->NumberOfLogicalDrives)
-		DAC960_Critical("Logical Drive %d (/dev/rd/c%dd%d) "
+		DAC960_Critical("Logical Drive %d (/devel/rd/c%dd%d) "
 				"Now Exists\n", Controller,
 				LogicalDriveNumber,
 				Controller->ControllerNumber,
@@ -3635,7 +3635,7 @@ static void DAC960_V1_ProcessCompletedCommand(DAC960_Command_T *Command)
 	    {
 	      int LogicalDriveNumber = NewEnquiry->NumberOfLogicalDrives - 1;
 	      while (++LogicalDriveNumber < Controller->LogicalDriveCount)
-		DAC960_Critical("Logical Drive %d (/dev/rd/c%dd%d) "
+		DAC960_Critical("Logical Drive %d (/devel/rd/c%dd%d) "
 				"No Longer Exists\n", Controller,
 				LogicalDriveNumber,
 				Controller->ControllerNumber,
@@ -3884,7 +3884,7 @@ static void DAC960_V1_ProcessCompletedCommand(DAC960_Command_T *Command)
 		&(*Controller->V1.NewLogicalDriveInformation)[LogicalDriveNumber];
 	      if (NewLogicalDriveInformation->LogicalDriveState !=
 		  OldLogicalDriveInformation->LogicalDriveState)
-		DAC960_Critical("Logical Drive %d (/dev/rd/c%dd%d) "
+		DAC960_Critical("Logical Drive %d (/devel/rd/c%dd%d) "
 				"is now %s\n", Controller,
 				LogicalDriveNumber,
 				Controller->ControllerNumber,
@@ -3897,7 +3897,7 @@ static void DAC960_V1_ProcessCompletedCommand(DAC960_Command_T *Command)
 				   ? "CRITICAL" : "OFFLINE"));
 	      if (NewLogicalDriveInformation->WriteBack !=
 		  OldLogicalDriveInformation->WriteBack)
-		DAC960_Critical("Logical Drive %d (/dev/rd/c%dd%d) "
+		DAC960_Critical("Logical Drive %d (/devel/rd/c%dd%d) "
 				"is now %s\n", Controller,
 				LogicalDriveNumber,
 				Controller->ControllerNumber,
@@ -3925,7 +3925,7 @@ static void DAC960_V1_ProcessCompletedCommand(DAC960_Command_T *Command)
 	    case DAC960_V1_NormalCompletion:
 	      Controller->EphemeralProgressMessage = true;
 	      DAC960_Progress("Rebuild in Progress: "
-			      "Logical Drive %d (/dev/rd/c%dd%d) "
+			      "Logical Drive %d (/devel/rd/c%dd%d) "
 			      "%d%% completed\n",
 			      Controller, LogicalDriveNumber,
 			      Controller->ControllerNumber,
@@ -3982,7 +3982,7 @@ static void DAC960_V1_ProcessCompletedCommand(DAC960_Command_T *Command)
 	    {
 	      Controller->EphemeralProgressMessage = true;
 	      DAC960_Progress("Consistency Check in Progress: "
-			      "Logical Drive %d (/dev/rd/c%dd%d) "
+			      "Logical Drive %d (/devel/rd/c%dd%d) "
 			      "%d%% completed\n",
 			      Controller, LogicalDriveNumber,
 			      Controller->ControllerNumber,
@@ -4021,7 +4021,7 @@ static void DAC960_V1_ProcessCompletedCommand(DAC960_Command_T *Command)
 		    break;
 		  Controller->EphemeralProgressMessage = true;
 		  DAC960_Progress("Background Initialization in Progress: "
-				  "Logical Drive %d (/dev/rd/c%dd%d) "
+				  "Logical Drive %d (/devel/rd/c%dd%d) "
 				  "%d%% completed\n",
 				  Controller, LogicalDriveNumber,
 				  Controller->ControllerNumber,
@@ -4367,7 +4367,7 @@ static void DAC960_V2_ReadWriteError(DAC960_Command_T *Command)
     }
   DAC960_Error("Error Condition %s on %s:\n", Controller,
 	       SenseErrors[Command->V2.RequestSense->SenseKey], CommandName);
-  DAC960_Error("  /dev/rd/c%dd%d:   absolute blocks %u..%u\n",
+  DAC960_Error("  /devel/rd/c%dd%d:   absolute blocks %u..%u\n",
 	       Controller, Controller->ControllerNumber,
 	       Command->LogicalDriveNumber, Command->BlockNumber,
 	       Command->BlockNumber + Command->BlockCount - 1);
@@ -4535,12 +4535,12 @@ static void DAC960_V2_ReportEvent(DAC960_Controller_T *Controller,
 		      Event->Channel, Event->TargetID, EventMessage);
       break;
     case 'L':
-      DAC960_Critical("Logical Drive %d (/dev/rd/c%dd%d) %s\n", Controller,
+      DAC960_Critical("Logical Drive %d (/devel/rd/c%dd%d) %s\n", Controller,
 		      Event->LogicalUnit, Controller->ControllerNumber,
 		      Event->LogicalUnit, EventMessage);
       break;
     case 'M':
-      DAC960_Progress("Logical Drive %d (/dev/rd/c%dd%d) %s\n", Controller,
+      DAC960_Progress("Logical Drive %d (/devel/rd/c%dd%d) %s\n", Controller,
 		      Event->LogicalUnit, Controller->ControllerNumber,
 		      Event->LogicalUnit, EventMessage);
       break;
@@ -4605,7 +4605,7 @@ static void DAC960_V2_ReportProgress(DAC960_Controller_T *Controller,
 				     unsigned long LogicalDeviceSize)
 {
   Controller->EphemeralProgressMessage = true;
-  DAC960_Progress("%s in Progress: Logical Drive %d (/dev/rd/c%dd%d) "
+  DAC960_Progress("%s in Progress: Logical Drive %d (/devel/rd/c%dd%d) "
 		  "%d%% completed\n", Controller,
 		  MessageString,
 		  LogicalDeviceNumber,
@@ -4960,7 +4960,7 @@ static void DAC960_V2_ProcessCompletedCommand(DAC960_Command_T *Command)
 					  GFP_ATOMIC);
 	      Controller->V2.LogicalDeviceInformation[LogicalDeviceNumber] =
 		LogicalDeviceInfo;
-	      DAC960_Critical("Logical Drive %d (/dev/rd/c%dd%d) "
+	      DAC960_Critical("Logical Drive %d (/devel/rd/c%dd%d) "
 			      "Now Exists%s\n", Controller,
 			      LogicalDeviceNumber,
 			      Controller->ControllerNumber,
@@ -4980,7 +4980,7 @@ static void DAC960_V2_ProcessCompletedCommand(DAC960_Command_T *Command)
 		NewLogicalDeviceInfo->ConfigurableDeviceSize;
 	      if (NewLogicalDeviceInfo->LogicalDeviceState !=
 		  LogicalDeviceInfo->LogicalDeviceState)
-		DAC960_Critical("Logical Drive %d (/dev/rd/c%dd%d) "
+		DAC960_Critical("Logical Drive %d (/devel/rd/c%dd%d) "
 				"is now %s\n", Controller,
 				LogicalDeviceNumber,
 				Controller->ControllerNumber,
@@ -4997,7 +4997,7 @@ static void DAC960_V2_ProcessCompletedCommand(DAC960_Command_T *Command)
 		   LogicalDeviceInfo->CommandsFailed) ||
 		  (NewLogicalDeviceInfo->DeferredWriteErrors !=
 		   LogicalDeviceInfo->DeferredWriteErrors))
-		DAC960_Critical("Logical Drive %d (/dev/rd/c%dd%d) Errors: "
+		DAC960_Critical("Logical Drive %d (/devel/rd/c%dd%d) Errors: "
 				"Soft = %d, Failed = %d, Deferred Write = %d\n",
 				Controller, LogicalDeviceNumber,
 				Controller->ControllerNumber,
@@ -5049,7 +5049,7 @@ static void DAC960_V2_ProcessCompletedCommand(DAC960_Command_T *Command)
 					 LogicalDeviceSize);
 	      if (LogicalDeviceInfo->BackgroundInitializationInProgress &&
 		  !NewLogicalDeviceInfo->BackgroundInitializationInProgress)
-		DAC960_Progress("Logical Drive %d (/dev/rd/c%dd%d) "
+		DAC960_Progress("Logical Drive %d (/devel/rd/c%dd%d) "
 				"Background Initialization %s\n",
 				Controller,
 				LogicalDeviceNumber,
@@ -5078,7 +5078,7 @@ static void DAC960_V2_ProcessCompletedCommand(DAC960_Command_T *Command)
 		  Controller->V2.LogicalDriveFoundDuringScan
 				 [LogicalDriveNumber])
 		continue;
-	      DAC960_Critical("Logical Drive %d (/dev/rd/c%dd%d) "
+	      DAC960_Critical("Logical Drive %d (/devel/rd/c%dd%d) "
 			      "No Longer Exists\n", Controller,
 			      LogicalDriveNumber,
 			      Controller->ControllerNumber,
@@ -6078,14 +6078,14 @@ static bool DAC960_V1_ExecuteUserCommand(DAC960_Controller_T *Controller,
 	{
 	case DAC960_V1_NormalCompletion:
 	  DAC960_UserCritical("Consistency Check of Logical Drive %d "
-			      "(/dev/rd/c%dd%d) Initiated\n",
+			      "(/devel/rd/c%dd%d) Initiated\n",
 			      Controller, LogicalDriveNumber,
 			      Controller->ControllerNumber,
 			      LogicalDriveNumber);
 	  break;
 	case DAC960_V1_DependentDiskIsDead:
 	  DAC960_UserCritical("Consistency Check of Logical Drive %d "
-			      "(/dev/rd/c%dd%d) Failed - "
+			      "(/devel/rd/c%dd%d) Failed - "
 			      "Dependent Physical Device is DEAD\n",
 			      Controller, LogicalDriveNumber,
 			      Controller->ControllerNumber,
@@ -6093,7 +6093,7 @@ static bool DAC960_V1_ExecuteUserCommand(DAC960_Controller_T *Controller,
 	  break;
 	case DAC960_V1_InvalidOrNonredundantLogicalDrive:
 	  DAC960_UserCritical("Consistency Check of Logical Drive %d "
-			      "(/dev/rd/c%dd%d) Failed - "
+			      "(/devel/rd/c%dd%d) Failed - "
 			      "Invalid or Nonredundant Logical Drive\n",
 			      Controller, LogicalDriveNumber,
 			      Controller->ControllerNumber,
@@ -6101,7 +6101,7 @@ static bool DAC960_V1_ExecuteUserCommand(DAC960_Controller_T *Controller,
 	  break;
 	case DAC960_V1_RebuildOrCheckAlreadyInProgress:
 	  DAC960_UserCritical("Consistency Check of Logical Drive %d "
-			      "(/dev/rd/c%dd%d) Failed - Rebuild or "
+			      "(/devel/rd/c%dd%d) Failed - Rebuild or "
 			      "Consistency Check Already in Progress\n",
 			      Controller, LogicalDriveNumber,
 			      Controller->ControllerNumber,
@@ -6109,7 +6109,7 @@ static bool DAC960_V1_ExecuteUserCommand(DAC960_Controller_T *Controller,
 	  break;
 	default:
 	  DAC960_UserCritical("Consistency Check of Logical Drive %d "
-			      "(/dev/rd/c%dd%d) Failed - "
+			      "(/devel/rd/c%dd%d) Failed - "
 			      "Unexpected Status %04X\n",
 			      Controller, LogicalDriveNumber,
 			      Controller->ControllerNumber,
@@ -6351,7 +6351,7 @@ static bool DAC960_V2_ExecuteUserCommand(DAC960_Controller_T *Controller,
       CommandMailbox->ConsistencyCheck.InitializedAreaOnly = false;
       DAC960_ExecuteCommand(Command);
       DAC960_UserCritical("Consistency Check of Logical Drive %d "
-			  "(/dev/rd/c%dd%d) %s\n",
+			  "(/devel/rd/c%dd%d) %s\n",
 			  Controller, LogicalDriveNumber,
 			  Controller->ControllerNumber,
 			  LogicalDriveNumber,
@@ -6369,7 +6369,7 @@ static bool DAC960_V2_ExecuteUserCommand(DAC960_Controller_T *Controller,
 	DAC960_V2_ConsistencyCheckStop;
       DAC960_ExecuteCommand(Command);
       DAC960_UserCritical("Consistency Check of Logical Drive %d "
-			  "(/dev/rd/c%dd%d) %s\n",
+			  "(/devel/rd/c%dd%d) %s\n",
 			  Controller, LogicalDriveNumber,
 			  Controller->ControllerNumber,
 			  LogicalDriveNumber,

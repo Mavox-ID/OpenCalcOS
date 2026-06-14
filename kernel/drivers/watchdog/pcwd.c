@@ -134,7 +134,7 @@ static const int heartbeat_tbl[] = {
 
 #define WDT_INTERVAL (HZ/2+1)
 
-/* We can only use 1 card due to the /dev/watchdog restriction */
+/* We can only use 1 card due to the /devel/watchdog restriction */
 static int cards_found;
 
 /* internal variables */
@@ -549,7 +549,7 @@ static int pcwd_get_temperature(int *temperature)
 }
 
 /*
- *	/dev/watchdog handling
+ *	/devel/watchdog handling
  */
 
 static long pcwd_ioctl(struct file *file, unsigned int cmd, unsigned long arg)
@@ -682,7 +682,7 @@ static int pcwd_close(struct inode *inode, struct file *file)
 }
 
 /*
- *	/dev/temperature handling
+ *	/devel/temperature handling
  */
 
 static ssize_t pcwd_temp_read(struct file *file, char __user *buf, size_t count,

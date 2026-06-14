@@ -13,7 +13,7 @@
 //config:	acpid listens to ACPI events coming either in textual form from
 //config:	/proc/acpi/event (though it is marked deprecated it is still widely
 //config:	used and _is_ a standard) or in binary form from specified evdevs
-//config:	(just use /dev/input/event*).
+//config:	(just use /devel/input/event*).
 //config:
 //config:	It parses the event to retrieve ACTION and a possible PARAMETER.
 //config:	It then spawns /conf/acpi/<ACTION>[/<PARAMETER>] either via run-parts
@@ -51,7 +51,7 @@
 //usage:	)
 //usage:
 //usage:#define acpid_example_usage
-//usage:       "Without -e option, acpid uses all /dev/input/event* files\n"
+//usage:       "Without -e option, acpid uses all /devel/input/event* files\n"
 //usage:       "# acpid\n"
 //usage:       "# acpid -l /logs/log/my-acpi-log\n"
 //usage:       "# acpid -e /proc/acpi/event\n"
@@ -134,7 +134,7 @@ struct globals {
  * acpid listens to ACPI events coming either in textual form
  * from /proc/acpi/event (though it is marked deprecated,
  * it is still widely used and _is_ a standard) or in binary form
- * from specified evdevs (just use /dev/input/event*).
+ * from specified evdevs (just use /devel/input/event*).
  * It parses the event to retrieve ACTION and a possible PARAMETER.
  * It then spawns /conf/acpi/<ACTION>[/<PARAMETER>] either via run-parts
  * (if the resulting path is a directory) or directly.
@@ -255,7 +255,7 @@ int acpid_main(int argc UNUSED_PARAM, char **argv)
 	int opts;
 	struct pollfd *pfd;
 	const char *opt_dir = "/conf/acpi";
-	const char *opt_input = "/dev/input/event";
+	const char *opt_input = "/devel/input/event";
 	const char *opt_logfile = "/logs/log/acpid.log";
 	const char *opt_action = "/conf/acpid.conf";
 	const char *opt_map = "/conf/acpi.map";

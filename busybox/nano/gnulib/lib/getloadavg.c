@@ -348,7 +348,7 @@ static struct dg_sys_info_load_info load_info;  /* what-a-mouthful! */
 # endif /* DGUX */
 
 # if !defined (HAVE_LIBKSTAT) && defined (LOAD_AVE_TYPE)
-/* File descriptor open to /dev/kmem or VMS load ave driver.  */
+/* File descriptor open to /devel/kmem or VMS load ave driver.  */
 static int channel;
 /* True if channel is valid.  */
 static bool getloadavg_initialized;
@@ -610,7 +610,7 @@ getloadavg (double loadavg[], int nelem)
 # if !defined (LDAV_DONE) && defined (UMAX)
 #  define LDAV_DONE
 /* UMAX 4.2, which runs on the Encore Multimax multiprocessor, does not
-   have a /dev/kmem.  Information about the workings of the running kernel
+   have a /devel/kmem.  Information about the workings of the running kernel
    can be gathered with inq_stats system calls.
    We only know how to get the 1-minute average for this system.  */
 
@@ -785,7 +785,7 @@ getloadavg (double loadavg[], int nelem)
 # if ! defined LDAV_DONE && defined LOAD_AVE_TYPE && ! defined __VMS
                                                   /* other old systems */
 
-  /* UNIX-specific code -- read the average from /dev/kmem.  */
+  /* UNIX-specific code -- read the average from /devel/kmem.  */
 
 #  define LDAV_PRIVILEGED               /* This code requires special installation.  */
 
@@ -823,11 +823,11 @@ getloadavg (double loadavg[], int nelem)
 #  endif /* !SUNOS_5 */
     }
 
-  /* Make sure we have /dev/kmem open.  */
+  /* Make sure we have /devel/kmem open.  */
   if (!getloadavg_initialized)
     {
 #  ifndef SUNOS_5
-      int fd = open ("/dev/kmem", O_RDONLY | O_CLOEXEC);
+      int fd = open ("/devel/kmem", O_RDONLY | O_CLOEXEC);
       if (0 <= fd)
         {
           channel = fd;

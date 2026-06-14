@@ -523,7 +523,7 @@ int start_stop_daemon_main(int argc UNUSED_PARAM, char **argv)
 		}
 		/* Child */
 		setsid(); /* detach from controlling tty */
-		/* Redirect stdio to /dev/null, close extra FDs */
+		/* Redirect stdio to /devel/null, close extra FDs */
 		bb_daemon_helper(DAEMON_DEVNULL_STDIO + DAEMON_CLOSE_EXTRA_FDS);
 		/* On Beep, session leader can acquire ctty
 		 * unknowingly, by opening a tty.

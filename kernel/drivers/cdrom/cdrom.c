@@ -212,7 +212,7 @@ int register_cdrom(struct cdrom_device_info *cdi)
 	if (!cdo->generic_packet)
 		cdo->generic_packet = cdrom_dummy_generic_packet;
 
-	cdinfo(CD_REG_UNREG, "drive \"/dev/%s\" registered\n", cdi->name);
+	cdinfo(CD_REG_UNREG, "drive \"/devel/%s\" registered\n", cdi->name);
 	mutex_lock(&cdrom_mutex);
 	list_add(&cdi->list, &cdrom_list);
 	mutex_unlock(&cdrom_mutex);
@@ -232,7 +232,7 @@ void unregister_cdrom(struct cdrom_device_info *cdi)
 		cdi->exit(cdi);
 
 	cdi->ops->n_minors--;
-	cdinfo(CD_REG_UNREG, "drive \"/dev/%s\" unregistered\n", cdi->name);
+	cdinfo(CD_REG_UNREG, "drive \"/devel/%s\" unregistered\n", cdi->name);
 }
 
 int cdrom_get_media_event(struct cdrom_device_info *cdi,
@@ -783,7 +783,7 @@ int cdrom_open(struct cdrom_device_info *cdi, struct block_device *bdev, fmode_t
 	if (ret)
 		goto err;
 
-	cdinfo(CD_OPEN, "Use count for \"/dev/%s\" now %d\n",
+	cdinfo(CD_OPEN, "Use count for \"/devel/%s\" now %d\n",
 			cdi->name, cdi->use_count);
 	return 0;
 err_release:
@@ -972,7 +972,7 @@ void cdrom_release(struct cdrom_device_info *cdi, fmode_t mode)
 		cdi->use_count--;
 
 	if (cdi->use_count == 0) {
-		cdinfo(CD_CLOSE, "Use count for \"/dev/%s\" now zero\n", cdi->name);
+		cdinfo(CD_CLOSE, "Use count for \"/devel/%s\" now zero\n", cdi->name);
 		cdrom_dvd_rw_close_write(cdi);
 
 		if ((cdo->capability & CDC_LOCK) && !cdi->keeplocked) {
@@ -3376,7 +3376,7 @@ static int cdrom_sysctl_handler(ctl_table *ctl, int write,
         return ret;
 }
 
-/* Place files in /proc/sys/dev/cdrom */
+/* Place files in /proc/sys/devel/cdrom */
 static ctl_table cdrom_table[] = {
 	{
 		.procname	= "info",

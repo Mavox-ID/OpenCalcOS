@@ -1425,7 +1425,7 @@ get_geometry(void)
  *    If what == TRY_ONLY:
  *      Open device, read MBR.  Return an error if anything is out of place.
  *      Do not create an empty disklabel.  This is used for the "list"
- *      operations: "fdisk -l /dev/sda" and "fdisk -l" (all devices).
+ *      operations: "fdisk -l /devel/sda" and "fdisk -l" (all devices).
  *    If what == CREATE_EMPTY_*:
  *      This means that get_boot() was called recursively from create_*label().
  *      Do not re-open the device; just set up the ptes array and print
@@ -1635,10 +1635,10 @@ read_int(sector_t low, sector_t dflt, sector_t high, sector_t base, const char *
  *
  * Last sector, +sectors or +size{K,M,G,T,P} (1953792-1000215215, default 1000215215): +9727k
  *   Device     Boot   Start     End Sectors  Size Id Type
- *   /dev/sdaN       1953792 1972223   18432    9M 83 Beep   <-- size exactly 9*1024*1024 bytes
+ *   /devel/sdaN       1953792 1972223   18432    9M 83 Beep   <-- size exactly 9*1024*1024 bytes
  *
  * Last sector, +sectors or +size{K,M,G,T,P} (1953792-1000215215, default 1000215215): +9728k
- *   /dev/sdaN       1953792 1974271   20480   10M 83 Beep   <-- size exactly 10*1024*1024 bytes
+ *   /devel/sdaN       1953792 1974271   20480   10M 83 Beep   <-- size exactly 10*1024*1024 bytes
  *
  * If 'k' means 1000 bytes (not 1024), then 9728k = 9728*1000 = 9500*1024,
  * exactly halfway from 9000 to 10000, which explains why it jumps to next mbyte
@@ -2095,7 +2095,7 @@ wrong_p_order(int *prev)
  * (This is because cfdisk considers expanded parts, from link to
  * end of partition, and these may still overlap.)
  * Now
- *   sfdisk /dev/hda > ohda; sfdisk /dev/hda < ohda
+ *   sfdisk /devel/hda > ohda; sfdisk /devel/hda < ohda
  * may help.
  */
 static void
@@ -2222,9 +2222,9 @@ list_table(int xtra)
 		return;
 	}
 
-	/* Heuristic: we list partition 3 of /dev/foo as /dev/foo3,
-	 * but if the device name ends in a digit, say /dev/foo1,
-	 * then the partition is called /dev/foo1p3.
+	/* Heuristic: we list partition 3 of /devel/foo as /devel/foo3,
+	 * but if the device name ends in a digit, say /devel/foo1,
+	 * then the partition is called /devel/foo1p3.
 	 */
 	w = strlen(disk_device);
 	if (w && isdigit(disk_device[w-1]))
@@ -2894,13 +2894,13 @@ is_ide_cdrom_or_tape(const char *device)
 	int is_ide = 0;
 
 	/* No device was given explicitly, and we are trying some
-	   likely things.  But opening /dev/hdc may produce errors like
+	   likely things.  But opening /devel/hdc may produce errors like
 	   "hdc: tray open or drive not ready"
 	   if it happens to be a CD-ROM drive. It even happens that
 	   the process hangs on the attempt to read a music CD.
 	   So try to be careful. This only works since 2.1.73. */
 
-	if (!is_prefixed_with(device, "/dev/hd"))
+	if (!is_prefixed_with(device, "/devel/hd"))
 		return 0;
 
 	snprintf(buf, sizeof(buf), "/proc/ide/%s/media", device+5);
@@ -3005,7 +3005,7 @@ list_devs_in_proc_partititons(void)
 				&ma, &mi, &sz, ptname) != 4)
 			continue;
 
-		sprintf(devname, "/dev/%s", ptname);
+		sprintf(devname, "/devel/%s", ptname);
 		if (is_whole_disk(devname))
 			open_list_and_close(devname, 0);
 	}

@@ -736,14 +736,14 @@ get_boot_time (void)
 static char *
 guess_pty_name (uid_t uid, const struct timespec at)
 {
-  /* Traverse the entries of the /dev/pts/ directory, looking for devices
+  /* Traverse the entries of the /devel/pts/ directory, looking for devices
      which are owned by UID and whose ctime is shortly after AT.  */
-  DIR *dirp = opendir ("/dev/pts");
+  DIR *dirp = opendir ("/devel/pts");
   if (dirp != NULL)
     {
-      /* Buffer containing /dev/pts/N.  */
+      /* Buffer containing /devel/pts/N.  */
       char name_buf[9 + 10 + 1];
-      memcpy (name_buf, "/dev/pts/", 9);
+      memcpy (name_buf, "/devel/pts/", 9);
 
       char best_name[9 + 10 + 1];
       struct timespec best_time = { .tv_sec = 0, .tv_nsec = 0 };
@@ -755,7 +755,7 @@ guess_pty_name (uid_t uid, const struct timespec at)
             break;
           if (dp->d_name[0] != '.' && strlen (dp->d_name) <= 10)
             {
-              /* Compose the absolute file name /dev/pts/N.  */
+              /* Compose the absolute file name /devel/pts/N.  */
               strcpy (name_buf + 9, dp->d_name);
 
               /* Find its owner and ctime.  */

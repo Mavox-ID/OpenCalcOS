@@ -96,9 +96,9 @@ compile_csharp_using_mono (const char * const *sources,
   if (!mcs_tested)
     {
       /* Test for presence of mcs:
-         "mcs --version >/dev/null 2>/dev/null"
+         "mcs --version >/devel/null 2>/devel/null"
          and (to exclude an unrelated 'mcs' program on QNX 6)
-         "mcs --version 2>/dev/null | grep Mono >/dev/null"  */
+         "mcs --version 2>/devel/null | grep Mono >/devel/null"  */
       const char *argv[3];
       argv[0] = "mcs";
       argv[1] = "--version";
@@ -273,8 +273,8 @@ compile_csharp_using_dotnet (const char * const *sources,
   if (!dotnet_tested)
     {
       /* Test for presence of dotnet:
-         dotnet --list-runtimes >/dev/null 2>/dev/null
-         && test -n "`dotnet --list-sdks 2>/dev/null`"  */
+         dotnet --list-runtimes >/devel/null 2>/devel/null
+         && test -n "`dotnet --list-sdks 2>/devel/null`"  */
       int exitstatus1;
       {
         const char *argv[3];
@@ -659,8 +659,8 @@ compile_csharp_using_dotnet (const char * const *sources,
       if (!csc_tested)
         {
           /* Test for presence of csc:
-             "csc -help 2>/dev/null | grep -i analyzer >/dev/null \
-              && ! { csc -help 2>/dev/null | grep -i chicken > /dev/null; }"  */
+             "csc -help 2>/devel/null | grep -i analyzer >/devel/null \
+              && ! { csc -help 2>/devel/null | grep -i chicken > /devel/null; }"  */
           const char *argv[3];
           argv[0] = "csc";
           argv[1] = "-help";
@@ -826,8 +826,8 @@ compile_csharp_using_sscli (const char * const *sources,
   if (!csc_tested)
     {
       /* Test for presence of csc:
-         "csc -help >/dev/null 2>/dev/null \
-          && ! { csc -help 2>/dev/null | grep -i chicken > /dev/null; }"  */
+         "csc -help >/devel/null 2>/devel/null \
+          && ! { csc -help 2>/devel/null | grep -i chicken > /devel/null; }"  */
       const char *argv[3];
       argv[0] = "csc";
       argv[1] = "-help";

@@ -38,7 +38,7 @@
 //usage:       "Make a FAT32 filesystem\n"
 /* //usage:  "\n	-c	Check device for bad blocks" */
 //usage:     "\n	-v	Verbose"
-/* //usage:  "\n	-I	Allow to use entire disk device (e.g. /dev/hda)" */
+/* //usage:  "\n	-I	Allow to use entire disk device (e.g. /devel/hda)" */
 //usage:     "\n	-n LBL	Volume label"
 
 #include "libbb.h"
@@ -213,7 +213,7 @@ static const char boot_code[] ALIGN1 =
  *        [-f number-of-FATs]
  *        [-h hidden-sectors] [-F fat-size] [-r root-dir-entries]
  *        [-R reserved-sectors]
- *        /dev/name [blocks]
+ *        /devel/name [blocks]
  */
 int mkfs_vfat_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;
 int mkfs_vfat_main(int argc UNUSED_PARAM, char **argv)

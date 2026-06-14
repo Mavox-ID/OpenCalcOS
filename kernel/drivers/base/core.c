@@ -908,7 +908,7 @@ int dev_set_name(struct device *dev, const char *fmt, ...)
 EXPORT_SYMBOL_GPL(dev_set_name);
 
 /**
- * device_to_dev_kobj - select a /sys/dev/ directory for the device
+ * device_to_dev_kobj - select a /sys/devel/ directory for the device
  * @dev: device
  *
  * By default we select char/ for new entries.  Setting class->dev_obj

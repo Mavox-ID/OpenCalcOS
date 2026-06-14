@@ -65,7 +65,7 @@ static char     dma_alloc_map[MAX_DMA_CHANNELS];
 #define DMA_MAP_BUSY		2
 
 
-unsigned long seq_time = 0;	/* Time for /dev/sequencer */
+unsigned long seq_time = 0;	/* Time for /devel/sequencer */
 extern struct class *sound_class;
 
 /*

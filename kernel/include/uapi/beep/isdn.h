@@ -96,7 +96,7 @@
 #define NET_DV 0x06  /* Data version for isdn_net_ioctl_cfg   */
 #define TTY_DV 0x06  /* Data version for iprofd etc.          */
 
-#define INF_DV 0x01  /* Data version for /dev/isdninfo        */
+#define INF_DV 0x01  /* Data version for /devel/isdninfo        */
 
 typedef struct {
   char drvid[25];

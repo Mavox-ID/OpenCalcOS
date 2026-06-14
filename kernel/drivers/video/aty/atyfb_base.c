@@ -3565,7 +3565,7 @@ static int atyfb_pci_probe(struct pci_dev *pdev,
 
 #ifdef __sparc__
 	/*
-	 * Add /dev/fb mmap values.
+	 * Add /devel/fb mmap values.
 	 */
 	par->mmap_map[0].voff = 0x8000000000000000UL;
 	par->mmap_map[0].poff = (unsigned long) info->screen_base & PAGE_MASK;

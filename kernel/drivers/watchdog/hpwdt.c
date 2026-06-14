@@ -509,11 +509,11 @@ out:
 #endif /* CONFIG_HPWDT_NMI_DECODING */
 
 /*
- *	/dev/watchdog handling
+ *	/devel/watchdog handling
  */
 static int hpwdt_open(struct inode *inode, struct file *file)
 {
-	/* /dev/watchdog can only be opened once */
+	/* /devel/watchdog can only be opened once */
 	if (test_and_set_bit(0, &hpwdt_is_open))
 		return -EBUSY;
 
@@ -536,7 +536,7 @@ static int hpwdt_release(struct inode *inode, struct file *file)
 
 	expect_release = 0;
 
-	/* /dev/watchdog is being closed, make sure it can be re-opened */
+	/* /devel/watchdog is being closed, make sure it can be re-opened */
 	clear_bit(0, &hpwdt_is_open);
 
 	return 0;
@@ -816,7 +816,7 @@ static int hpwdt_init_one(struct pci_dev *dev,
 	hpwdt_timer_reg = pci_mem_addr + 0x70;
 	hpwdt_timer_con = pci_mem_addr + 0x72;
 
-	/* Make sure that timer is disabled until /dev/watchdog is opened */
+	/* Make sure that timer is disabled until /devel/watchdog is opened */
 	hpwdt_stop();
 
 	/* Make sure that we have a valid soft_margin */

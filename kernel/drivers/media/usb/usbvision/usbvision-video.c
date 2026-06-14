@@ -111,8 +111,8 @@ module_param(radio_nr, int, 0444);
 MODULE_PARM_DESC(isoc_mode, " Set the default format for ISOC endpoint.  Default: 0x60 (Compression On)");
 MODULE_PARM_DESC(video_debug, " Set the default Debug Mode of the device driver.  Default: 0 (Off)");
 MODULE_PARM_DESC(power_on_at_open, " Set the default device to power on when device is opened.  Default: 1 (On)");
-MODULE_PARM_DESC(video_nr, "Set video device number (/dev/videoX).  Default: -1 (autodetect)");
-MODULE_PARM_DESC(radio_nr, "Set radio device number (/dev/radioX).  Default: -1 (autodetect)");
+MODULE_PARM_DESC(video_nr, "Set video device number (/devel/videoX).  Default: -1 (autodetect)");
+MODULE_PARM_DESC(radio_nr, "Set radio device number (/devel/radioX).  Default: -1 (autodetect)");
 
 
 /* Misc stuff */

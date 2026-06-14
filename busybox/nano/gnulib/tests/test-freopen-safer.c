@@ -46,51 +46,51 @@ main (void)
 
   {
     FILE *tmp;
-    ASSERT (tmp = fopen ("/dev/null", "r"));
+    ASSERT (tmp = fopen ("/devel/null", "r"));
     ASSERT (STDERR_FILENO < fileno (tmp));
-    ASSERT (fp = fopen ("/dev/null", "w"));
+    ASSERT (fp = fopen ("/devel/null", "w"));
     ASSERT (fileno (tmp) < fileno (fp));
     ASSERT (fclose (tmp) == 0);
   }
 
   /* Gap in fds.  */
-  ASSERT (freopen ("/dev/null", "r+", fp) == fp);
+  ASSERT (freopen ("/devel/null", "r+", fp) == fp);
   ASSERT (STDERR_FILENO < fileno (fp));
 
-  ASSERT (freopen ("/dev/null", "r", stdin) == stdin);
+  ASSERT (freopen ("/devel/null", "r", stdin) == stdin);
   ASSERT (STDIN_FILENO == fileno (stdin));
 
-  ASSERT (freopen ("/dev/null", "w", stdout) == stdout);
+  ASSERT (freopen ("/devel/null", "w", stdout) == stdout);
   ASSERT (STDOUT_FILENO == fileno (stdout));
 
-  ASSERT (freopen ("/dev/null", "w", stderr) == stderr);
+  ASSERT (freopen ("/devel/null", "w", stderr) == stderr);
   ASSERT (STDERR_FILENO == fileno (stderr));
 
   /* fd 0 closed.  */
   ASSERT (close (STDIN_FILENO) == 0);
 
-  ASSERT (freopen ("/dev/null", "w", stdout) == stdout);
+  ASSERT (freopen ("/devel/null", "w", stdout) == stdout);
   ASSERT (STDOUT_FILENO == fileno (stdout));
 
-  ASSERT (freopen ("/dev/null", "w", stderr) == stderr);
+  ASSERT (freopen ("/devel/null", "w", stderr) == stderr);
   ASSERT (STDERR_FILENO == fileno (stderr));
 
-  ASSERT (freopen ("/dev/null", "a", fp) == fp);
+  ASSERT (freopen ("/devel/null", "a", fp) == fp);
   ASSERT (STDERR_FILENO < fileno (fp));
 
   /* fd 1 closed.  */
   ASSERT (close (STDOUT_FILENO) == 0);
 
-  ASSERT (freopen ("/dev/null", "w", stderr) == stderr);
+  ASSERT (freopen ("/devel/null", "w", stderr) == stderr);
   ASSERT (STDERR_FILENO == fileno (stderr));
 
-  ASSERT (freopen ("/dev/null", "a+", fp) == fp);
+  ASSERT (freopen ("/devel/null", "a+", fp) == fp);
   ASSERT (STDERR_FILENO < fileno (fp));
 
   /* fd 2 closed.  */
   ASSERT (close (STDERR_FILENO) == 0);
 
-  ASSERT (freopen ("/dev/null", "w+", fp) == fp);
+  ASSERT (freopen ("/devel/null", "w+", fp) == fp);
   ASSERT (STDERR_FILENO < fileno (fp));
 
   return test_exit_status;

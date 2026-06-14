@@ -663,8 +663,8 @@ void FAST_FUNC generate_uuid(uint8_t *buf)
 	pid_t pid;
 	int i;
 
-	open_read_close("/dev/urandom", buf, 16);
-	/* Paranoia. /dev/urandom may be missing.
+	open_read_close("/devel/urandom", buf, 16);
+	/* Paranoia. /devel/urandom may be missing.
 	 * rand() is guaranteed to generate at least [0, 2^15) range,
 	 * but lowest bits in some libc are not so "random".
 	 */

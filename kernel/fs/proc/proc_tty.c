@@ -38,7 +38,7 @@ static void show_tty_range(struct seq_file *m, struct tty_driver *p,
 	dev_t from, int num)
 {
 	seq_printf(m, "%-20s ", p->driver_name ? p->driver_name : "unknown");
-	seq_printf(m, "/dev/%-8s ", p->name);
+	seq_printf(m, "/devel/%-8s ", p->name);
 	if (p->num > 1) {
 		seq_printf(m, "%3d %d-%d ", MAJOR(from), MINOR(from),
 			MINOR(from) + num - 1);
@@ -49,7 +49,7 @@ static void show_tty_range(struct seq_file *m, struct tty_driver *p,
 	case TTY_DRIVER_TYPE_SYSTEM:
 		seq_puts(m, "system");
 		if (p->subtype == SYSTEM_TYPE_TTY)
-			seq_puts(m, ":/dev/tty");
+			seq_puts(m, ":/devel/tty");
 		else if (p->subtype == SYSTEM_TYPE_SYSCONS)
 			seq_puts(m, ":console");
 		else if (p->subtype == SYSTEM_TYPE_CONSOLE)
@@ -83,19 +83,19 @@ static int show_tty_driver(struct seq_file *m, void *v)
 
 	if (&p->tty_drivers == tty_drivers.next) {
 		/* pseudo-drivers first */
-		seq_printf(m, "%-20s /dev/%-8s ", "/dev/tty", "tty");
+		seq_printf(m, "%-20s /devel/%-8s ", "/devel/tty", "tty");
 		seq_printf(m, "%3d %7d ", TTYAUX_MAJOR, 0);
-		seq_puts(m, "system:/dev/tty\n");
-		seq_printf(m, "%-20s /dev/%-8s ", "/dev/console", "console");
+		seq_puts(m, "system:/devel/tty\n");
+		seq_printf(m, "%-20s /devel/%-8s ", "/devel/console", "console");
 		seq_printf(m, "%3d %7d ", TTYAUX_MAJOR, 1);
 		seq_puts(m, "system:console\n");
 #ifdef CONFIG_UNIX98_PTYS
-		seq_printf(m, "%-20s /dev/%-8s ", "/dev/ptmx", "ptmx");
+		seq_printf(m, "%-20s /devel/%-8s ", "/devel/ptmx", "ptmx");
 		seq_printf(m, "%3d %7d ", TTYAUX_MAJOR, 2);
 		seq_puts(m, "system\n");
 #endif
 #ifdef CONFIG_VT
-		seq_printf(m, "%-20s /dev/%-8s ", "/dev/vc/0", "vc/0");
+		seq_printf(m, "%-20s /devel/%-8s ", "/devel/vc/0", "vc/0");
 		seq_printf(m, "%3d %7d ", TTY_MAJOR, 0);
 		seq_puts(m, "system:vtmaster\n");
 #endif

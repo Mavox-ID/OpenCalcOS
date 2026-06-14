@@ -141,7 +141,7 @@ static int mpcore_wdt_set_heartbeat(int t)
 }
 
 /*
- *	/dev/watchdog handling
+ *	/devel/watchdog handling
  */
 static int mpcore_wdt_open(struct inode *inode, struct file *file)
 {

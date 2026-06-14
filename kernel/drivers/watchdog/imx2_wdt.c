@@ -128,7 +128,7 @@ static void imx2_wdt_start(void)
 static void imx2_wdt_stop(void)
 {
 	/* we don't need a clk_disable, it cannot be disabled once started.
-	 * We use a timer to ping the watchdog while /dev/watchdog is closed */
+	 * We use a timer to ping the watchdog while /devel/watchdog is closed */
 	imx2_wdt_timer_ping(0);
 }
 

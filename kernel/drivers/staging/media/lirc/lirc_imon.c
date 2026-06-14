@@ -210,7 +210,7 @@ static void deregister_from_lirc(struct imon_context *context)
 }
 
 /**
- * Called when the Display device (e.g. /dev/lcd0)
+ * Called when the Display device (e.g. /devel/lcd0)
  * is opened by the application.
  */
 static int display_open(struct inode *inode, struct file *file)
@@ -266,7 +266,7 @@ exit:
 }
 
 /**
- * Called when the display device (e.g. /dev/lcd0)
+ * Called when the display device (e.g. /devel/lcd0)
  * is closed by the application.
  */
 static int display_close(struct inode *inode, struct file *file)
@@ -483,7 +483,7 @@ static void usb_tx_callback(struct urb *urb)
 }
 
 /**
- * Called by lirc_dev when the application opens /dev/lirc
+ * Called by lirc_dev when the application opens /devel/lirc
  */
 static int ir_open(void *data)
 {
@@ -508,7 +508,7 @@ static int ir_open(void *data)
 }
 
 /**
- * Called by lirc_dev when the application closes /dev/lirc
+ * Called by lirc_dev when the application closes /devel/lirc
  */
 static void ir_close(void *data)
 {

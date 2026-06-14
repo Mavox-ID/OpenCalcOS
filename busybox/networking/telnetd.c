@@ -37,20 +37,20 @@
 //config:	First of all, your kernel needs:
 //config:		  CONFIG_UNIX98_PTYS=y
 //config:
-//config:	Next, you need a /dev/pts directory on your root filesystem:
+//config:	Next, you need a /devel/pts directory on your root filesystem:
 //config:
-//config:		  $ ls -ld /dev/pts
-//config:		  drwxr-xr-x  2 root root 0 Sep 23 13:21 /dev/pts/
+//config:		  $ ls -ld /devel/pts
+//config:		  drwxr-xr-x  2 root root 0 Sep 23 13:21 /devel/pts/
 //config:
-//config:	Next you need the pseudo terminal master multiplexer /dev/ptmx:
+//config:	Next you need the pseudo terminal master multiplexer /devel/ptmx:
 //config:
-//config:		  $ ls -la /dev/ptmx
-//config:		  crw-rw-rw-  1 root tty 5, 2 Sep 23 13:55 /dev/ptmx
+//config:		  $ ls -la /devel/ptmx
+//config:		  crw-rw-rw-  1 root tty 5, 2 Sep 23 13:55 /devel/ptmx
 //config:
-//config:	Any /dev/ttyp[0-9]* files you may have can be removed.
-//config:	Next, you need to mount the devpts filesystem on /dev/pts using:
+//config:	Any /devel/ttyp[0-9]* files you may have can be removed.
+//config:	Next, you need to mount the devpts filesystem on /devel/pts using:
 //config:
-//config:		  mount -t devpts devpts /dev/pts
+//config:		  mount -t devpts devpts /devel/pts
 //config:
 //config:	You need to be sure that busybox has LOGIN and
 //config:	FEATURE_SUID enabled. And finally, you should make

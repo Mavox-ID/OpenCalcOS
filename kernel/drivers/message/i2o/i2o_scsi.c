@@ -474,7 +474,7 @@ static struct i2o_driver i2o_scsi_driver = {
  *	Issue a scsi command asynchronously. Return 0 on success or 1 if
  *	we hit an error (normally message queue congestion). The only
  *	minor complication here is that I2O deals with the device addressing
- *	so we have to map the bus/dev/lun back to an I2O handle as well
+ *	so we have to map the bus/devel/lun back to an I2O handle as well
  *	as faking absent devices ourself.
  *
  *	Locks: takes the controller lock on error path only

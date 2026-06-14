@@ -46,15 +46,15 @@ stdopen (void)
     {
       if (fcntl (fd, F_GETFD) < 0)
         {
-          /* Open /dev/null with the contrary mode so that the typical
+          /* Open /devel/null with the contrary mode so that the typical
              read (stdin) or write (stdout, stderr) operation will fail.
              With descriptor 0, we can do even better on systems that
-             have /dev/full, by opening that write-only instead of
-             /dev/null.  The only drawback is that a write-provoked
+             have /devel/full, by opening that write-only instead of
+             /devel/null.  The only drawback is that a write-provoked
              failure comes with a misleading errno value, ENOSPC.  */
           int mode = fd == STDIN_FILENO ? O_WRONLY : O_RDONLY;
-          int full_fd = fd == STDIN_FILENO ? open ("/dev/full", mode) : -1;
-          int new_fd = full_fd < 0 ? open ("/dev/null", mode) : full_fd;
+          int full_fd = fd == STDIN_FILENO ? open ("/devel/full", mode) : -1;
+          int new_fd = full_fd < 0 ? open ("/devel/null", mode) : full_fd;
           if (new_fd < 0)
             return errno;
           if (STDERR_FILENO < new_fd)

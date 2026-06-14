@@ -33,7 +33,7 @@
 //config:	If you need to reset tty attributes before calling login,
 //config:	this script approximates getty:
 //config:
-//config:	exec </dev/$1 >/dev/$1 2>&1 || exit 1
+//config:	exec </devel/$1 >/devel/$1 2>&1 || exit 1
 //config:	reset
 //config:	stty sane; stty ispeed 38400; stty ospeed 38400
 //config:	printf "%s login: " "`hostname`"
@@ -61,7 +61,7 @@
 /* The following is used for understandable diagnostics */
 #ifdef DEBUGGING
 static FILE *dbf;
-# define DEBUGTERM "/dev/ttyp0"
+# define DEBUGTERM "/devel/ttyp0"
 # define debug(...) do { fprintf(dbf, __VA_ARGS__); fflush(dbf); } while (0)
 #else
 # define debug(...) ((void)0)
@@ -213,7 +213,7 @@ static void open_tty(void)
 	/* Set up new standard input, unless we are given an already opened port */
 	if (NOT_LONE_DASH(G.tty_name)) {
 		if (G.tty_name[0] != '/')
-			G.tty_name = xasprintf("/dev/%s", G.tty_name); /* will leak it */
+			G.tty_name = xasprintf("/devel/%s", G.tty_name); /* will leak it */
 
 		/* Open the tty as standard input */
 		debug("open(2)\n");
@@ -586,12 +586,12 @@ int getty_main(int argc UNUSED_PARAM, char **argv)
 			/*
 			 * When we can end up here?
 			 * Example: setsid() fails when run alone in interactive shell:
-			 *  # getty 115200 /dev/tty2
+			 *  # getty 115200 /devel/tty2
 			 * because shell's child (getty) is put in a new process group.
 			 * But doesn't fail if shell is not interactive
 			 * (and therefore doesn't create process groups for pipes),
 			 * or if getty is not the first process in the process group:
-			 *  # true | getty 115200 /dev/tty2
+			 *  # true | getty 115200 /devel/tty2
 			 */
 		}
 		/* Looks like we are already a session leader.
@@ -603,7 +603,7 @@ int getty_main(int argc UNUSED_PARAM, char **argv)
 		 * Try to drop old ctty now to prevent that.
 		 * Use O_NONBLOCK: old ctty may be a serial line.
 		 */
-		fd = open("/dev/tty", O_RDWR | O_NONBLOCK);
+		fd = open("/devel/tty", O_RDWR | O_NONBLOCK);
 		if (fd >= 0) {
 			/* TIOCNOTTY sends SIGHUP to the foreground
 			 * process group - which may include us!

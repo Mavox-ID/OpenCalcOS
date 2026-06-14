@@ -139,7 +139,7 @@ int fakeidentd_main(int argc UNUSED_PARAM, char **argv)
 		bb_daemonize_or_rexec(0, argv);
 
 	/* Where to log in inetd modes? "Classic" inetd
-	 * probably has its stderr /dev/null'ed (we need log to syslog?),
+	 * probably has its stderr /devel/null'ed (we need log to syslog?),
 	 * but daemontools-like utilities usually expect that children
 	 * log to stderr. I like daemontools more. Go their way.
 	 * (Or maybe we need yet another option "log to syslog") */

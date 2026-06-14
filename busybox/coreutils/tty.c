@@ -30,7 +30,7 @@
 //usage:
 //usage:#define tty_example_usage
 //usage:       "$ tty\n"
-//usage:       "/dev/tty2\n"
+//usage:       "/devel/tty2\n"
 
 #include "libbb.h"
 

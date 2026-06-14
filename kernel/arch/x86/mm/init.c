@@ -312,7 +312,7 @@ unsigned long __init_refok init_memory_mapping(unsigned long start,
 
 
 /*
- * devmem_is_allowed() checks to see if /dev/mem access to a certain address
+ * devmem_is_allowed() checks to see if /devel/mem access to a certain address
  * is valid. The argument is a physical page number.
  *
  *

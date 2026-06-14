@@ -28,7 +28,7 @@ int read_msr(int cpu, unsigned int idx, unsigned long long *val)
 	int fd;
 	char msr_file_name[64];
 
-	sprintf(msr_file_name, "/dev/cpu/%d/msr", cpu);
+	sprintf(msr_file_name, "/devel/cpu/%d/msr", cpu);
 	fd = open(msr_file_name, O_RDONLY);
 	if (fd < 0)
 		return -1;
@@ -57,7 +57,7 @@ int write_msr(int cpu, unsigned int idx, unsigned long long val)
 	int fd;
 	char msr_file_name[64];
 
-	sprintf(msr_file_name, "/dev/cpu/%d/msr", cpu);
+	sprintf(msr_file_name, "/devel/cpu/%d/msr", cpu);
 	fd = open(msr_file_name, O_WRONLY);
 	if (fd < 0)
 		return -1;

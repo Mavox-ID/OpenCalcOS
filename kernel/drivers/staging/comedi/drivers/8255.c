@@ -40,7 +40,7 @@ multiple 8255 chips.  To configure the driver for such a card, the
 option list should be a list of the I/O port bases for each of the
 8255 chips.  For example,
 
-  comedi_config /dev/comedi0 8255 0x200,0x204,0x208,0x20c
+  comedi_config /devel/comedi0 8255 0x200,0x204,0x208,0x20c
 
 Note that most PCI 8255 boards do NOT work with this driver, and
 need a separate driver as a wrapper.  For those that do work, the

@@ -40,7 +40,7 @@ struct comedi_device *comedi_open(const char *filename)
 	struct comedi_device *dev;
 	unsigned int minor;
 
-	if (strncmp(filename, "/dev/comedi", 11) != 0)
+	if (strncmp(filename, "/devel/comedi", 11) != 0)
 		return NULL;
 
 	minor = simple_strtoul(filename + 11, NULL, 0);

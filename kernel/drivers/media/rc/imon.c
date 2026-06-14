@@ -365,7 +365,7 @@ static void free_imon_context(struct imon_context *ictx)
 }
 
 /**
- * Called when the Display device (e.g. /dev/lcd0)
+ * Called when the Display device (e.g. /devel/lcd0)
  * is opened by the application.
  */
 static int display_open(struct inode *inode, struct file *file)
@@ -415,7 +415,7 @@ exit:
 }
 
 /**
- * Called when the display device (e.g. /dev/lcd0)
+ * Called when the display device (e.g. /devel/lcd0)
  * is closed by the application.
  */
 static int display_close(struct inode *inode, struct file *file)
@@ -2068,7 +2068,7 @@ static bool imon_find_endpoints(struct imon_context *ictx,
 
 	/*
 	 * iMON Touch devices have a VGA touchscreen, but no "display", as
-	 * that refers to e.g. /dev/lcd0 (a character device LCD or VFD).
+	 * that refers to e.g. /devel/lcd0 (a character device LCD or VFD).
 	 */
 	if (ictx->display_type == IMON_DISPLAY_TYPE_VGA) {
 		display_ep_found = false;

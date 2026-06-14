@@ -37,10 +37,10 @@
      AIX 5.1, HP-UX 11.23, Solaris 9,
      Cygwin 1.5.x, mingw, MSVC 9, Interix 3.5, BeOS.
    Among these:
-     - AIX has /dev/ptc.
-     - HP-UX 10..11, Solaris 2.6..9, Cygwin 1.5 have /dev/ptmx.
-     - HP-UX 10..11 also has /dev/ptym/clone, but this should not be needed.
-     - OpenBSD 4.9 has /dev/ptm and the PTMGET ioctl.
+     - AIX has /devel/ptc.
+     - HP-UX 10..11, Solaris 2.6..9, Cygwin 1.5 have /devel/ptmx.
+     - HP-UX 10..11 also has /devel/ptym/clone, but this should not be needed.
+     - OpenBSD 4.9 has /devel/ptm and the PTMGET ioctl.
      - Minix 3.1.8 have a list of pseudo-terminal devices in /dev.
      - On native Windows, there are no ttys at all.  */
 
@@ -51,7 +51,7 @@ posix_openpt (int flags)
 
 #ifdef _AIX /* AIX */
 
-  master = open ("/dev/ptc", flags);
+  master = open ("/devel/ptc", flags);
 
 #elif defined _WIN32 && !defined __CYGWIN__ /* mingw */
 
@@ -62,7 +62,7 @@ posix_openpt (int flags)
 #elif defined __OpenBSD__
 
   /* On OpenBSD, master and slave of a pseudo-terminal are allocated together,
-     by opening /dev/ptm and applying the PTMGET ioctl to it.  */
+     by opening /devel/ptm and applying the PTMGET ioctl to it.  */
   int fd = open (PATH_PTMDEV, O_RDWR);
   if (fd >= 0)
     {
@@ -86,16 +86,16 @@ posix_openpt (int flags)
 
 #else /* Mac OS X, Minix, HP-UX, Solaris 9, Cygwin 1.5 */
 
-  /* Most systems that lack posix_openpt() have /dev/ptmx.  */
-  master = open ("/dev/ptmx", flags);
+  /* Most systems that lack posix_openpt() have /devel/ptmx.  */
+  master = open ("/devel/ptmx", flags);
 
   /* If all this does not work, we could try to open, one by one:
-     - On Mac OS X: /dev/pty[p-w][0-9a-f]
-     - On *BSD:     /dev/pty[p-sP-S][0-9a-v]
-     - On Minix:    /dev/pty[p-q][0-9a-f]
-     - On AIX:      /dev/ptyp[0-9a-f]
-     - On HP-UX:    /dev/pty[p-r][0-9a-f]
-     - On Solaris:  /dev/pty[p-r][0-9a-f]
+     - On Mac OS X: /devel/pty[p-w][0-9a-f]
+     - On *BSD:     /devel/pty[p-sP-S][0-9a-v]
+     - On Minix:    /devel/pty[p-q][0-9a-f]
+     - On AIX:      /devel/ptyp[0-9a-f]
+     - On HP-UX:    /devel/pty[p-r][0-9a-f]
+     - On Solaris:  /devel/pty[p-r][0-9a-f]
    */
 
 #endif

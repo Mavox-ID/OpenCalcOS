@@ -34,11 +34,11 @@
  * rpc.portm 1064 root  mem    REG                8,5    43494      47451 /app/glibc-2.11/libs/libnss_files-2.11.so
  * rpc.portm 1064 root    3u  IPv4               2178                 UDP *:111
  * rpc.portm 1064 root    4u  IPv4               1244                 TCP *:111 (LISTEN)
- * runsvdir  1116 root    0r   CHR                1,3                1214 /dev/null
- * runsvdir  1116 root    1w   CHR                1,3                1214 /dev/null
- * runsvdir  1116 root    2w   CHR                1,3                1214 /dev/null
+ * runsvdir  1116 root    0r   CHR                1,3                1214 /devel/null
+ * runsvdir  1116 root    1w   CHR                1,3                1214 /devel/null
+ * runsvdir  1116 root    2w   CHR                1,3                1214 /devel/null
  * runsvdir  1116 root    3r   DIR                8,6     1560      58359 /.local/logs/service
- * gpm       1128 root    4u  unix 0xffff88007c09ccc0                1302 /dev/gpmctl
+ * gpm       1128 root    4u  unix 0xffff88007c09ccc0                1302 /devel/gpmctl
  */
 
 int lsof_main(int argc, char **argv) MAIN_EXTERNALLY_VISIBLE;

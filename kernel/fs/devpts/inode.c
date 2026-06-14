@@ -33,7 +33,7 @@
 
 #define DEVPTS_DEFAULT_MODE 0600
 /*
- * ptmx is a new node in /dev/pts and will be unused in legacy (single-
+ * ptmx is a new node in /devel/pts and will be unused in legacy (single-
  * instance) mode. To prevent surprises in user space, set permissions of
  * ptmx to 0. Use 'chmod' or remount with '-o ptmxmode' to set meaningful
  * permissions.
@@ -43,7 +43,7 @@
 
 /*
  * sysctl support for setting limits on the number of Unix98 ptys allocated.
- * Otherwise one can eat up all kernel memory by opening /dev/ptmx repeatedly.
+ * Otherwise one can eat up all kernel memory by opening /devel/ptmx repeatedly.
  */
 static int pty_limit = NR_UNIX98_PTY_DEFAULT;
 static int pty_reserve = NR_UNIX98_PTY_RESERVE;
@@ -499,7 +499,7 @@ static struct file_system_type devpts_fs_type = {
 };
 
 /*
- * The normal naming convention is simply /dev/pts/<number>; this conforms
+ * The normal naming convention is simply /devel/pts/<number>; this conforms
  * to the System V naming convention
  */
 
@@ -551,13 +551,13 @@ void devpts_kill_index(struct inode *ptmx_inode, int idx)
 }
 
 /**
- * devpts_pty_new -- create a new inode in /dev/pts/
+ * devpts_pty_new -- create a new inode in /devel/pts/
  * @ptmx_inode: inode of the master
  * @device: major+minor of the node to be created
  * @index: used as a name of the node
  * @priv: what's given back by devpts_get_priv
  *
- * The created inode is returned. Remove it from /dev/pts/ by devpts_pty_kill.
+ * The created inode is returned. Remove it from /devel/pts/ by devpts_pty_kill.
  */
 struct inode *devpts_pty_new(struct inode *ptmx_inode, dev_t device, int index,
 		void *priv)
@@ -626,7 +626,7 @@ void *devpts_get_priv(struct inode *pts_inode)
 }
 
 /**
- * devpts_pty_kill -- remove inode form /dev/pts/
+ * devpts_pty_kill -- remove inode form /devel/pts/
  * @inode: inode of the slave to be removed
  *
  * This is an inverse operation of devpts_pty_new.

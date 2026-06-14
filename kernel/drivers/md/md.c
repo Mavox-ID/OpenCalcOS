@@ -72,7 +72,7 @@ static struct workqueue_struct *md_misc_wq;
  * speed limit - in case reconstruction slows down your system despite
  * idle IO detection.
  *
- * you can change it via /proc/sys/dev/raid/speed_limit_min and _max.
+ * you can change it via /proc/sys/devel/raid/speed_limit_min and _max.
  * or /sys/block/mdX/md/sync_speed_{min,max}
  */
 
@@ -6047,7 +6047,7 @@ static int set_array_info(struct mddev * mddev, mdu_array_info_t *info)
 	mddev->clevel[0]     = 0;
 	mddev->dev_sectors   = 2 * (sector_t)info->size;
 	mddev->raid_disks    = info->raid_disks;
-	/* don't set md_minor, it is determined by which /dev/md* was
+	/* don't set md_minor, it is determined by which /devel/md* was
 	 * openned
 	 */
 	if (info->state & (1<<MD_SB_CLEAN))

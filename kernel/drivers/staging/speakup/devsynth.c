@@ -77,9 +77,9 @@ void speakup_register_devsynth(void)
 		return;
 /* zero it so if register fails, deregister will not ref invalid ptrs */
 	if (misc_register(&synth_device))
-		pr_warn("Couldn't initialize miscdevice /dev/synth.\n");
+		pr_warn("Couldn't initialize miscdevice /devel/synth.\n");
 	else {
-		pr_info("initialized device: /dev/synth, node (MAJOR %d, MINOR %d)\n",
+		pr_info("initialized device: /devel/synth, node (MAJOR %d, MINOR %d)\n",
 			MISC_MAJOR, SYNTH_MINOR);
 		misc_registered = 1;
 	}
@@ -89,7 +89,7 @@ void speakup_unregister_devsynth(void)
 {
 	if (!misc_registered)
 		return;
-	pr_info("speakup: unregistering synth device /dev/synth\n");
+	pr_info("speakup: unregistering synth device /devel/synth\n");
 	misc_deregister(&synth_device);
 	misc_registered = 0;
 }

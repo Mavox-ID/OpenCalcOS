@@ -47,7 +47,7 @@ grantpt (int fd)
 {
 #if defined __OpenBSD__ || defined _WIN32
   /* On OpenBSD, master and slave of a pseudo-terminal are allocated together,
-     through an ioctl on /dev/ptm.  On Windows there are no ptys.
+     through an ioctl on /devel/ptm.  On Windows there are no ptys.
      Therefore in either case there is no need for grantpt().  */
   return 0;
 #else

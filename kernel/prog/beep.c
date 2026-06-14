@@ -30,9 +30,9 @@ __asm__(
 extern const char beep_raw_start[];
 
 int main(void) {
-    int fb = open("/dev/fb0", O_WRONLY);
+    int fb = open("/devel/fb0", O_WRONLY);
     if (fb < 0) {
-        printf("Error: Cannot open /dev/fb0\n");
+        printf("Error: Cannot open /devel/fb0\n");
         return 1;
     }
 

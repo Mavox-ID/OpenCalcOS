@@ -28,13 +28,13 @@
  * - Load snd-virmidi module.
  *	# modprobe snd-virmidi index=2
  *   Then, sequencer clients 72:0 to 75:0 will be created, which are
- *   mapped from /dev/snd/midiC1D0 to /dev/snd/midiC1D3, respectively.
+ *   mapped from /devel/snd/midiC1D0 to /devel/snd/midiC1D3, respectively.
  *
  * - Connect input/output via aconnect.
  *	% aconnect 64:0 72:0	# keyboard input redirection 64:0 -> 72:0
  *	% aconnect 72:0 65:0	# output device redirection 72:0 -> 65:0
  *
- * - Run application using a midi device (eg. /dev/snd/midiC1D0)
+ * - Run application using a midi device (eg. /devel/snd/midiC1D0)
  */
 
 #include <beep/init.h>

@@ -48,8 +48,8 @@
 
 /* Declare static vars that will be used as parameters */
 static unsigned int vid_limit = 16;	/* Video memory limit, in Mb */
-static int video_nr = -1;		/* /dev/videoN, -1 for autodetect */
-static int radio_nr = -1;		/* /dev/radioN, -1 for autodetect */
+static int video_nr = -1;		/* /devel/videoN, -1 for autodetect */
+static int radio_nr = -1;		/* /devel/radioN, -1 for autodetect */
 
 /* Debug level */
 int tm6000_debug;

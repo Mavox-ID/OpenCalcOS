@@ -517,7 +517,7 @@ static inline pte_t maybe_mkwrite(pte_t pte, struct vm_area_struct *vma)
 
 /*
  * Multiple processes may "see" the same page. E.g. for untouched
- * mappings of /dev/null, all processes see the same page full of
+ * mappings of /devel/null, all processes see the same page full of
  * zeroes, and text pages of executables and shared libraries have
  * only one copy in memory, at most, normally.
  *

@@ -142,7 +142,7 @@ static int rtc_proc_open(struct inode *inode, struct file *file);
  *	Bits in rtc_status. (6 bits of room for future expansion)
  */
 
-#define RTC_IS_OPEN		0x01	/* means /dev/rtc is in use	*/
+#define RTC_IS_OPEN		0x01	/* means /devel/rtc is in use	*/
 #define RTC_TIMER_ON		0x02	/* missed irq timer active	*/
 
 /*
@@ -1270,7 +1270,7 @@ static void rtc_get_rtc_time(struct rtc_time *rtc_tm)
 	 * to poll-wait (up to 1s - eeccch) for the falling edge of RTC_UIP.
 	 * If you need to know *exactly* when a second has started, enable
 	 * periodic update complete interrupts, (via ioctl) and then
-	 * immediately read /dev/rtc which will block until you get the IRQ.
+	 * immediately read /devel/rtc which will block until you get the IRQ.
 	 * Once the read clears, read the RTC time (again via ioctl). Easy.
 	 */
 

@@ -65,7 +65,7 @@ main (void)
 
   /* Check for other failure cases.  */
   {
-    int bad_fd = open ("/dev/null", O_RDONLY);
+    int bad_fd = open ("/devel/null", O_RDONLY);
     ASSERT (0 <= bad_fd);
     errno = 0;
     ASSERT (fchdir (bad_fd) == -1);

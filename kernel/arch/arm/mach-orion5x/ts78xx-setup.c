@@ -290,7 +290,7 @@ static struct platform_nand_data ts78xx_ts_nand_data = {
 	.ctrl	= {
 		/*
 		 * The HW ECC offloading functions, used to give about a 9%
-		 * performance increase for 'dd if=/dev/mtdblockX' and 5% for
+		 * performance increase for 'dd if=/devel/mtdblockX' and 5% for
 		 * nanddump.  This all however was changed by git commit
 		 * e6cf5df1838c28bb060ac45b5585e48e71bbc740 so now there is
 		 * no performance advantage to be had so we no longer bother
@@ -490,7 +490,7 @@ static int ts78xx_fpga_unload(void)
 
 	/*
 	 * There does not seem to be a feasible way to block access to the GPIO
-	 * pins from userspace (/dev/mem).  This if clause should hopefully warn
+	 * pins from userspace (/devel/mem).  This if clause should hopefully warn
 	 * those foolish enough not to follow 'policy' :)
 	 *
 	 * UrJTAG SVN since r1381 can be used to reprogram the FPGA

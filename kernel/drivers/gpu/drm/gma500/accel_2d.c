@@ -225,7 +225,7 @@ static int psb_accel_2d_copy(struct drm_psb_private *dev_priv,
 }
 
 /**
- *	psbfb_copyarea_accel	-	copyarea acceleration for /dev/fb
+ *	psbfb_copyarea_accel	-	copyarea acceleration for /devel/fb
  *	@info: our framebuffer
  *	@a: copyarea parameters from the framebuffer core
  *

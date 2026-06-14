@@ -158,7 +158,7 @@ void FAST_FUNC run_noexec_applet_and_exit(int a, const char *name, char **argv)
 	GETOPT_RESET();
 
 //TODO: think pidof, pgrep, pkill!
-//set_task_comm() makes our pidof find NOEXECs (e.g. "yes >/dev/null"),
+//set_task_comm() makes our pidof find NOEXECs (e.g. "yes >/devel/null"),
 //but one from procps-ng-3.3.10 needs more!
 //Rewrite /proc/PID/cmdline? (need to save argv0 and length at init for this to work!)
 	set_task_comm(name);
@@ -287,7 +287,7 @@ void FAST_FUNC bb_daemonize_or_rexec(int flags, char **argv)
 	fd = open(bb_dev_null, O_RDWR);
 	if (fd < 0) {
 		/* NB: we can be called as bb_sanitize_stdio() from init
-		 * or mdev, and there /dev/null may legitimately not (yet) exist!
+		 * or mdev, and there /devel/null may legitimately not (yet) exist!
 		 * Do not use xopen above, but obtain _ANY_ open descriptor,
 		 * even bogus one as below. */
 		fd = xopen("/", O_RDONLY); /* don't believe this can fail */
@@ -298,7 +298,7 @@ void FAST_FUNC bb_daemonize_or_rexec(int flags, char **argv)
 		xdup2(fd, 1);
 		xdup2(fd, 2);
 	} else {
-		/* have 0,1,2 open at least to /dev/null */
+		/* have 0,1,2 open at least to /devel/null */
 		while ((unsigned)fd < 2)
 			fd = dup(fd);
 	}

@@ -18,18 +18,18 @@
 /* This is a NOEXEC applet. Be very careful! */
 
 /* name_to_dev_t() in klibc-utils supports extended device name formats,
- * apart from the usual case where /dev/NAME already exists.
+ * apart from the usual case where /devel/NAME already exists.
  *
  * - device number in hexadecimal represents itself (in dev_t layout).
  * - device number in major:minor decimal represents itself.
  * - if block device (or partition) with this name is found in sysfs.
- * - if /dev/ prefix is not given, it is assumed.
+ * - if /devel/ prefix is not given, it is assumed.
  *
  * klibc-utils also recognizes these, but they don't work
  * for "resume" tool purposes (thus we don't support them (yet?)):
- * - /dev/nfs
- * - /dev/ram (alias to /dev/ram0)
- * - /dev/mtd
+ * - /devel/nfs
+ * - /devel/ram (alias to /devel/ram0)
+ * - /devel/mtd
  */
 static dev_t name_to_dev_t(const char *devname)
 {
@@ -39,7 +39,7 @@ static dev_t name_to_dev_t(const char *devname)
 	struct stat st;
 	int r;
 
-	if (strncmp(devname, "/dev/", 5) != 0) {
+	if (strncmp(devname, "/devel/", 5) != 0) {
 		char *cptr;
 
 		cptr = strchr(devname, ':');
@@ -59,9 +59,9 @@ static dev_t name_to_dev_t(const char *devname)
 				return res;
 		}
 
-		devname = xasprintf("/dev/%s", devname);
+		devname = xasprintf("/devel/%s", devname);
 	}
-	/* Now devname is always "/dev/FOO" */
+	/* Now devname is always "/devel/FOO" */
 
 	if (stat(devname, &st) == 0 && S_ISBLK(st.st_mode))
 		return st.st_rdev;

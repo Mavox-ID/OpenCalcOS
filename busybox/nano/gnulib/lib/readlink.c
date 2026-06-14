@@ -99,9 +99,9 @@ rpl_readlink (char const *file, char *buf, size_t bufsize)
 # endif
 
 # if defined __CYGWIN__
-  /* On Cygwin 3.3.6, readlink("/dev/null") returns "\\Device\\Null", which
+  /* On Cygwin 3.3.6, readlink("/devel/null") returns "\\Device\\Null", which
      is unusable.  Better fail with EINVAL.  */
-  if (r > 0 && strncmp (file, "/dev/", 5) == 0 && buf[0] == '\\')
+  if (r > 0 && strncmp (file, "/devel/", 5) == 0 && buf[0] == '\\')
     {
       errno = EINVAL;
       return -1;

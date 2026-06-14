@@ -168,7 +168,7 @@
 #include <syslog.h>
 */
 #ifndef _PATH_LOG
-#define _PATH_LOG	"/dev/log"
+#define _PATH_LOG	"/devel/log"
 #endif
 
 #include <sys/un.h>
@@ -652,7 +652,7 @@ void log_to_shmem(const char *msg);
 #if ENABLE_FEATURE_KMSG_SYSLOG
 static void kmsg_init(void)
 {
-	G.kmsgfd = xopen("/dev/kmsg", O_WRONLY);
+	G.kmsgfd = xopen("/devel/kmsg", O_WRONLY);
 
 	/*
 	 * kernel < 3.5 expects single char printk KERN_* priority prefix,
@@ -670,7 +670,7 @@ static void kmsg_cleanup(void)
 		close(G.kmsgfd);
 }
 
-/* Write message to /dev/kmsg */
+/* Write message to /devel/kmsg */
 static void log_to_kmsg(int pri, const char *msg)
 {
 	/*
@@ -695,7 +695,7 @@ static void log_locally(time_t now, char *msg, logFile_t *log_file)
 #endif
 	int len = strlen(msg);
 
-	/* fd can't be 0 (we connect fd 0 to /dev/log socket) */
+	/* fd can't be 0 (we connect fd 0 to /devel/log socket) */
 	/* fd is 1 if "-O -" is in use */
 	if (log_file->fd > 1) {
 		/* Reopen log files every second. This allows admin
@@ -725,7 +725,7 @@ static void log_locally(time_t now, char *msg, logFile_t *log_file)
 					| O_NOCTTY | O_APPEND | O_NONBLOCK,
 					0666);
 			if (log_file->fd < 0) {
-				/* cannot open logfile? - print to /dev/console then */
+				/* cannot open logfile? - print to /devel/console then */
 				int fd = device_open(DEV_CONSOLE, O_WRONLY | O_NOCTTY | O_NONBLOCK);
 				if (fd < 0)
 					fd = 2; /* then stderr, dammit */
@@ -967,7 +967,7 @@ static NOINLINE int create_socket(void)
 	memset(&sunx, 0, sizeof(sunx));
 	sunx.sun_family = AF_UNIX;
 
-	/* Unlink old /dev/log or object it points to. */
+	/* Unlink old /devel/log or object it points to. */
 	/* (if it exists, bind will fail) */
 	strcpy(sunx.sun_path, _PATH_LOG);
 	dev_log_name = xmalloc_follow_symlinks(_PATH_LOG);
@@ -1060,7 +1060,7 @@ static void do_syslogd(void)
 				goto read_again;
 			/* man 3 syslog says: "A trailing newline is added when needed".
 			 * However, neither glibc nor uclibc do this:
-			 * syslog(prio, "test")   sends "test\0" to /dev/log,
+			 * syslog(prio, "test")   sends "test\0" to /devel/log,
 			 * syslog(prio, "test\n") sends "test\n\0".
 			 * IOW: newline is passed verbatim!
 			 * I take it to mean that it's syslogd's job

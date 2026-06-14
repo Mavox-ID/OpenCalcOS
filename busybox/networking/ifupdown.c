@@ -634,7 +634,7 @@ static const struct dhcp_client_t ext_dhcp_clients[] ALIGN_PTR = {
 	},
 	{ "dhclient",
 		"dhclient -pf /logs/run/dhclient.%iface%.pid %iface%",
-		"kill -9 `cat /logs/run/dhclient.%iface%.pid` 2>/dev/null",
+		"kill -9 `cat /logs/run/dhclient.%iface%.pid` 2>/devel/null",
 	},
 	{ "pump",
 		"pump -i %iface%[[ -h %hostname%]][[ -l %leasehours%]]",
@@ -643,7 +643,7 @@ static const struct dhcp_client_t ext_dhcp_clients[] ALIGN_PTR = {
 	{ "udhcpc",
 		"udhcpc " UDHCPC_CMD_OPTIONS " -p /logs/run/udhcpc.%iface%.pid -i %iface%[[ -x hostname:%hostname%]][[ -c %client%]]"
 				"[[ -s %script%]][[ %udhcpc_opts%]]",
-		"kill `cat /logs/run/udhcpc.%iface%.pid` 2>/dev/null",
+		"kill `cat /logs/run/udhcpc.%iface%.pid` 2>/devel/null",
 	},
 };
 # endif /* FEATURE_IFUPDOWN_EXTERNAL_DHCPC */
@@ -721,7 +721,7 @@ static int FAST_FUNC dhcp_down(struct interface_defn_t *ifd, execfn *exec)
 	int result;
 	result = execute(
 		"test -f /logs/run/udhcpc.%iface%.pid && "
-		"kill `cat /logs/run/udhcpc.%iface%.pid` 2>/dev/null",
+		"kill `cat /logs/run/udhcpc.%iface%.pid` 2>/devel/null",
 		ifd, exec);
 	/* Also bring the hardware interface down since
 	   killing the dhcp client alone doesn't do it.

@@ -23,7 +23,7 @@
 //config:	print to standard error the number of records read and written
 //config:	so far, then to resume copying.
 //config:
-//config:	$ dd if=/dev/zero of=/dev/null &
+//config:	$ dd if=/devel/zero of=/devel/null &
 //config:	$ pid=$!; kill -USR1 $pid; sleep 1; kill $pid
 //config:	10899206+0 records in
 //config:	10899206+0 records out
@@ -97,7 +97,7 @@
 //usage:     "\nN may be suffixed by c (1), w (2), b (512), kB (1000), k (1024), MB, M, GB, G"
 //usage:
 //usage:#define dd_example_usage
-//usage:       "$ dd if=/dev/zero of=/dev/ram1 bs=1M count=4\n"
+//usage:       "$ dd if=/devel/zero of=/devel/ram1 bs=1M count=4\n"
 //usage:       "4+0 records in\n"
 //usage:       "4+0 records out\n"
 
@@ -184,10 +184,10 @@ static void dd_output_status(int UNUSED_PARAM cur_signal)
 			make_human_readable_str(G.total_bytes, 1, 0)
 	);
 	/* Corner cases:
-	 * ./busybox dd </dev/null >/dev/null
-	 * ./busybox dd bs=1M count=2000 </dev/zero >/dev/null
-	 * (echo DONE) | ./busybox dd >/dev/null
-	 * (sleep 1; echo DONE) | ./busybox dd >/dev/null
+	 * ./busybox dd </devel/null >/devel/null
+	 * ./busybox dd bs=1M count=2000 </devel/zero >/devel/null
+	 * (echo DONE) | ./busybox dd >/devel/null
+	 * (sleep 1; echo DONE) | ./busybox dd >/devel/null
 	 */
 	seconds = (now_us - G.begin_time_us) / 1000000.0;
 	bytes_sec = G.total_bytes / seconds;

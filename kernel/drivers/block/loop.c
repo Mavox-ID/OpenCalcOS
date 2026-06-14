@@ -1835,7 +1835,7 @@ static int __init loop_init(void)
 	 * This also becomes a hard limit. If max_loop is not specified,
 	 * create CONFIG_BLK_DEV_LOOP_MIN_COUNT loop devices at module
 	 * init time. Loop devices can be requested on-demand with the
-	 * /dev/loop-control interface, or be instantiated by accessing
+	 * /devel/loop-control interface, or be instantiated by accessing
 	 * a 'dead' device node.
 	 */
 	if (max_loop) {

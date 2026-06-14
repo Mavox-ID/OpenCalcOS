@@ -37,7 +37,7 @@ cd ../calcfs/bin
 ./busybox --install -s .
 for f in *; do
     if [ -L "$f" ] && [ "$f" != "busybox" ]; then
-        ln -sf busybox "$f"
+        ln -sf /bin/busybox "$f"
     fi
 done
 cd ../..

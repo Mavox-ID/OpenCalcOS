@@ -62,7 +62,7 @@
  *
  */
 #define MPT_MISCDEV_BASENAME            "mptctl"
-#define MPT_MISCDEV_PATHNAME            "/dev/" MPT_MISCDEV_BASENAME
+#define MPT_MISCDEV_PATHNAME            "/devel/" MPT_MISCDEV_BASENAME
 
 #define MPT_PRODUCT_LENGTH              12
 

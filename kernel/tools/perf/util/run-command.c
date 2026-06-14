@@ -10,7 +10,7 @@ static inline void close_pair(int fd[2])
 
 static inline void dup_devnull(int to)
 {
-	int fd = open("/dev/null", O_RDWR);
+	int fd = open("/devel/null", O_RDWR);
 	dup2(fd, to);
 	close(fd);
 }

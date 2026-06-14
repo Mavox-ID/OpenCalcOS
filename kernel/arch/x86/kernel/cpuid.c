@@ -26,7 +26,7 @@
  * and the upper 32 bits of the file position as the incoming %ecx,
  * the latter intended for "counting" eax levels like eax=4.
  *
- * This driver uses /dev/cpu/%d/cpuid where %d is the minor number, and on
+ * This driver uses /devel/cpu/%d/cpuid where %d is the minor number, and on
  * an SMP box will direct the access to CPU %d.
  */
 

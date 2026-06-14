@@ -187,9 +187,9 @@ main(int argc, char *argv[])
 
 	} while(cont);
 
-	fd = open("/dev/mem", O_RDONLY);
+	fd = open("/devel/mem", O_RDONLY);
 	if (fd < 0) {
-		printf ("Couldn't open /dev/mem. Are you root?\n");
+		printf ("Couldn't open /devel/mem. Are you root?\n");
 		exit(1);
 	}
 
