@@ -1,0 +1,1 @@
+cmd_drivers/usb/chipidea/built-in.o :=  arm-none-eabi-ld -EL   -r -o drivers/usb/chipidea/built-in.o drivers/usb/chipidea/ci_hdrc.o drivers/usb/chipidea/ci13xxx_msm.o drivers/usb/chipidea/ci13xxx_imx.o drivers/usb/chipidea/usbmisc_imx6q.o 
