@@ -128,7 +128,7 @@ The project uses other projects, such as BusyBox and NDless, and they are distri
 
 - OpenCalcOS (Includes Beep kernel, CalcFS, and Loader): [GNU GPL v2.0](https://github.com/Mavox-ID/OpenCalcOS/blob/main/LICENSE)
 - BusyBox: [GNU GPL v2.0](https://github.com/Mavox-ID/OpenCalcOS/blob/main/busybox/LICENSE)
-- NDless: [Mozilla PL v1.1](https://github.com/Mavox-ID/OpenCalcOS/blob/main/ndless/Mozilla-Public-License-v1.1.html) (Download HTML & Open)
+- NDless: [Mozilla PL v1.1](https://github.com/Mavox-ID/OpenCalcOS/blob/main/ndless/Mozilla-Public-License-v1.1)
 
 ---
 
