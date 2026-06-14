@@ -1,0 +1,1378 @@
+Output of:
+arm-beep-gnueabi-gcc -isystem /home/runner/work/OpenCalcOS/OpenCalcOS/kernel/include -w -Wall -Wshadow -Wwrite-strings -Wundef -Wstrict-prototypes -Wunused -Wunused-parameter -Wunused-function -Wunused-value -Wmissing-prototypes -Wmissing-declarations -Wno-format-security -Wdeclaration-after-statement -Wold-style-definition -finline-limit=0 -fno-builtin-strlen -fomit-frame-pointer -ffunction-sections -fdata-sections -fno-guess-branch-probability -funsigned-char -falign-functions=1 -falign-jumps=1 -falign-labels=1 -falign-loops=1 -fno-unwind-tables -fno-asynchronous-unwind-tables -fno-builtin-printf -Oz -Wno-strict-prototypes -Wno-unused-function -Wno-discarded-qualifiers -Wno-overflow -D__UCLIBC__ -D_GNU_SOURCE -D__beep__ -fno-PIE -static -Wl,--no-warnings -o busybox_unstripped -Wl,--sort-common -Wl,--sort-section,alignment -Wl,--gc-sections -Wl,--start-group applets/built-in.o archival/libs.a archival/libarchive/libs.a console-tools/libs.a coreutils/libs.a coreutils/libcoreutils/libs.a debianutils/libs.a klibc-utils/libs.a e2fsprogs/libs.a editors/libs.a findutils/libs.a init/libs.a libbb/libs.a libpwdgrp/libs.a loginutils/libs.a mailutils/libs.a miscutils/libs.a modutils/libs.a networking/libs.a networking/libiproute/libs.a networking/udhcp/libs.a printutils/libs.a procps/libs.a runit/libs.a sebeep/libs.a shell/libs.a sysklogd/libs.a util-beep/libs.a util-beep/volume_id/libs.a archival/built-in.o archival/libarchive/built-in.o console-tools/built-in.o coreutils/built-in.o coreutils/libcoreutils/built-in.o debianutils/built-in.o klibc-utils/built-in.o e2fsprogs/built-in.o editors/built-in.o findutils/built-in.o init/built-in.o libbb/built-in.o libpwdgrp/built-in.o loginutils/built-in.o mailutils/built-in.o miscutils/built-in.o modutils/built-in.o networking/built-in.o networking/libiproute/built-in.o networking/udhcp/built-in.o printutils/built-in.o procps/built-in.o runit/built-in.o sebeep/built-in.o shell/built-in.o sysklogd/built-in.o util-beep/built-in.o util-beep/volume_id/built-in.o -Wl,--end-group -Wl,--start-group -lcrypt -Wl,--end-group -Wl,--warn-common -Wl,-Map,busybox_unstripped.map -Wl,--verbose
+==========
+GNU ld (Arm GNU Toolchain 14.2.Rel1 (Build arm-14.52)) 2.43.1.20241119
+  Supported emulations:
+   armelf_linux_eabi
+   armelfb_linux_eabi
+   armelf
+   armelfb
+using internal linker script:
+==================================================
+/* Script for -z combreloc */
+/* Copyright (C) 2014-2024 Free Software Foundation, Inc.
+   Copying and distribution of this script, with or without modification,
+   are permitted in any medium without royalty provided the copyright
+   notice and this notice are preserved.  */
+OUTPUT_FORMAT("elf32-littlearm", "elf32-bigarm",
+	      "elf32-littlearm")
+OUTPUT_ARCH(arm)
+ENTRY(_start)
+SEARCH_DIR("=/arm-none-linux-gnueabihf/lib"); SEARCH_DIR("=/usr/local/lib"); SEARCH_DIR("=/lib"); SEARCH_DIR("=/usr/lib");
+SECTIONS
+{
+  /* Read-only sections, merged into text segment: */
+  PROVIDE (__executable_start = SEGMENT_START("text-segment", 0x00010000)); . = SEGMENT_START("text-segment", 0x00010000) + SIZEOF_HEADERS;
+  .interp         : { *(.interp) }
+  .hash           : { *(.hash) }
+  .gnu.hash       : { *(.gnu.hash) }
+  .dynsym         : { *(.dynsym) }
+  .dynstr         : { *(.dynstr) }
+  .gnu.version    : { *(.gnu.version) }
+  .gnu.version_d  : { *(.gnu.version_d) }
+  .gnu.version_r  : { *(.gnu.version_r) }
+  .rel.dyn        :
+    {
+      *(.rel.init)
+      *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+      *(.rel.fini)
+      *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+      *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+      *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+      *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+      *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+      *(.rel.ctors)
+      *(.rel.dtors)
+      *(.rel.got)
+      *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+      PROVIDE_HIDDEN (__rel_iplt_start = .);
+      *(.rel.iplt)
+      PROVIDE_HIDDEN (__rel_iplt_end = .);
+    }
+  .rela.dyn       :
+    {
+      *(.rela.init)
+      *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+      *(.rela.fini)
+      *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+      *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+      *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+      *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+      *(.rela.ctors)
+      *(.rela.dtors)
+      *(.rela.got)
+      *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+      PROVIDE_HIDDEN (__rela_iplt_start = .);
+      *(.rela.iplt)
+      PROVIDE_HIDDEN (__rela_iplt_end = .);
+    }
+  .rel.plt        :
+    {
+      *(.rel.plt)
+    }
+  .rela.plt       :
+    {
+      *(.rela.plt)
+    }
+  .init           :
+  {
+    KEEP (*(SORT_NONE(.init)))
+  }
+  .plt            : { *(.plt) }
+  .iplt           : { *(.iplt) }
+  .text           :
+  {
+    *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+    *(.text.exit .text.exit.*)
+    *(.text.startup .text.startup.*)
+    *(.text.hot .text.hot.*)
+    *(SORT(.text.sorted.*))
+    *(.text .stub .text.* .gnu.linkonce.t.*)
+    /* .gnu.warning sections are handled specially by elf.em.  */
+    *(.gnu.warning)
+    *(.glue_7t) *(.glue_7) *(.vfp11_veneer) *(.v4_bx)
+  }
+  .fini           :
+  {
+    KEEP (*(SORT_NONE(.fini)))
+  }
+  PROVIDE (__etext = .);
+  PROVIDE (_etext = .);
+  PROVIDE (etext = .);
+  .rodata         : { *(.rodata .rodata.* .gnu.linkonce.r.*) }
+  .rodata1        : { *(.rodata1) }
+  .ARM.extab   : { *(.ARM.extab* .gnu.linkonce.armextab.*) }
+  .ARM.exidx   :
+    {
+      PROVIDE_HIDDEN (__exidx_start = .);
+      *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+      PROVIDE_HIDDEN (__exidx_end = .);
+    }
+  .eh_frame_hdr   : { *(.eh_frame_hdr) *(.eh_frame_entry .eh_frame_entry.*) }
+  .eh_frame       : ONLY_IF_RO { KEEP (*(.eh_frame)) *(.eh_frame.*) }
+  .sframe         : ONLY_IF_RO { *(.sframe) *(.sframe.*) }
+  .gcc_except_table   : ONLY_IF_RO { *(.gcc_except_table .gcc_except_table.*) }
+  .gnu_extab   : ONLY_IF_RO { *(.gnu_extab*) }
+  /* These sections are generated by the Sun/Oracle C++ compiler.  */
+  .exception_ranges   : ONLY_IF_RO { *(.exception_ranges*) }
+  /* Adjust the address for the data segment.  We want to adjust up to
+     the same address within the page on the next page up.  */
+  . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE));
+  /* Exception handling  */
+  .eh_frame       : ONLY_IF_RW { KEEP (*(.eh_frame)) *(.eh_frame.*) }
+  .sframe         : ONLY_IF_RW { *(.sframe) *(.sframe.*) }
+  .gnu_extab      : ONLY_IF_RW { *(.gnu_extab) }
+  .gcc_except_table   : ONLY_IF_RW { *(.gcc_except_table .gcc_except_table.*) }
+  .exception_ranges   : ONLY_IF_RW { *(.exception_ranges*) }
+  /* Thread Local Storage sections  */
+  .tdata	  :
+   {
+     PROVIDE_HIDDEN (__tdata_start = .);
+     *(.tdata .tdata.* .gnu.linkonce.td.*)
+   }
+  .tbss		  : { *(.tbss .tbss.* .gnu.linkonce.tb.*) *(.tcommon) }
+  .preinit_array    :
+  {
+    PROVIDE_HIDDEN (__preinit_array_start = .);
+    KEEP (*(.preinit_array))
+    PROVIDE_HIDDEN (__preinit_array_end = .);
+  }
+  .init_array    :
+  {
+    PROVIDE_HIDDEN (__init_array_start = .);
+    KEEP (*(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*)))
+    KEEP (*(.init_array EXCLUDE_FILE (*crtbegin.o *crtbegin?.o *crtend.o *crtend?.o ) .ctors))
+    PROVIDE_HIDDEN (__init_array_end = .);
+  }
+  .fini_array    :
+  {
+    PROVIDE_HIDDEN (__fini_array_start = .);
+    KEEP (*(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*)))
+    KEEP (*(.fini_array EXCLUDE_FILE (*crtbegin.o *crtbegin?.o *crtend.o *crtend?.o ) .dtors))
+    PROVIDE_HIDDEN (__fini_array_end = .);
+  }
+  .ctors          :
+  {
+    /* gcc uses crtbegin.o to find the start of
+       the constructors, so we make sure it is
+       first.  Because this is a wildcard, it
+       doesn't matter if the user does not
+       actually link against crtbegin.o; the
+       linker won't look for a file to match a
+       wildcard.  The wildcard also means that it
+       doesn't matter which directory crtbegin.o
+       is in.  */
+    KEEP (*crtbegin.o(.ctors))
+    KEEP (*crtbegin?.o(.ctors))
+    /* We don't want to include the .ctor section from
+       the crtend.o file until after the sorted ctors.
+       The .ctor section from the crtend file contains the
+       end of ctors marker and it must be last */
+    KEEP (*(EXCLUDE_FILE (*crtend.o *crtend?.o ) .ctors))
+    KEEP (*(SORT(.ctors.*)))
+    KEEP (*(.ctors))
+  }
+  .dtors          :
+  {
+    KEEP (*crtbegin.o(.dtors))
+    KEEP (*crtbegin?.o(.dtors))
+    KEEP (*(EXCLUDE_FILE (*crtend.o *crtend?.o ) .dtors))
+    KEEP (*(SORT(.dtors.*)))
+    KEEP (*(.dtors))
+  }
+  .jcr            : { KEEP (*(.jcr)) }
+  .data.rel.ro : { *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*) *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*) }
+  .dynamic        : { *(.dynamic) }
+  . = DATA_SEGMENT_RELRO_END (0, .);
+  .got            : { *(.got.plt) *(.igot.plt) *(.got) *(.igot) }
+  .data           :
+  {
+    PROVIDE (__data_start = .);
+    *(.data .data.* .gnu.linkonce.d.*)
+    SORT(CONSTRUCTORS)
+  }
+  .data1          : { *(.data1) }
+  _edata = .; PROVIDE (edata = .);
+  . = ALIGN(ALIGNOF(NEXT_SECTION));
+  __bss_start = .;
+  __bss_start__ = .;
+  .bss            :
+  {
+   *(.dynbss)
+   *(.bss .bss.* .gnu.linkonce.b.*)
+   *(COMMON)
+   /* Align here to ensure that the .bss section occupies space up to
+      _end.  Align after .bss to ensure correct alignment even if the
+      .bss section disappears because there are no input sections.
+      FIXME: Why do we need it? When there is no .bss section, we do not
+      pad the .data section.  */
+   . = ALIGN(. != 0 ? 32 / 8 : 1);
+  }
+  _bss_end__ = .; __bss_end__ = .;
+  . = ALIGN(32 / 8);
+  . = SEGMENT_START("ldata-segment", .);
+  . = ALIGN(32 / 8);
+  __end__ = .;
+  _end = .; PROVIDE (end = .);
+  . = DATA_SEGMENT_END (.);
+  /* Stabs debugging sections.  */
+  .stab          0 : { *(.stab) }
+  .stabstr       0 : { *(.stabstr) }
+  .stab.excl     0 : { *(.stab.excl) }
+  .stab.exclstr  0 : { *(.stab.exclstr) }
+  .stab.index    0 : { *(.stab.index) }
+  .stab.indexstr 0 : { *(.stab.indexstr) }
+  .comment 0 (INFO) : { *(.comment); LINKER_VERSION; }
+  .gnu.build.attributes : { *(.gnu.build.attributes .gnu.build.attributes.*) }
+  /* DWARF debug sections.
+     Symbols in the DWARF debugging sections are relative to the beginning
+     of the section so we begin them at 0.  */
+  /* DWARF 1.  */
+  .debug          0 : { *(.debug) }
+  .line           0 : { *(.line) }
+  /* GNU DWARF 1 extensions.  */
+  .debug_srcinfo  0 : { *(.debug_srcinfo) }
+  .debug_sfnames  0 : { *(.debug_sfnames) }
+  /* DWARF 1.1 and DWARF 2.  */
+  .debug_aranges  0 : { *(.debug_aranges) }
+  .debug_pubnames 0 : { *(.debug_pubnames) }
+  /* DWARF 2.  */
+  .debug_info     0 : { *(.debug_info .gnu.linkonce.wi.*) }
+  .debug_abbrev   0 : { *(.debug_abbrev) }
+  .debug_line     0 : { *(.debug_line .debug_line.* .debug_line_end) }
+  .debug_frame    0 : { *(.debug_frame) }
+  .debug_str      0 : { *(.debug_str) }
+  .debug_loc      0 : { *(.debug_loc) }
+  .debug_macinfo  0 : { *(.debug_macinfo) }
+  /* SGI/MIPS DWARF 2 extensions.  */
+  .debug_weaknames 0 : { *(.debug_weaknames) }
+  .debug_funcnames 0 : { *(.debug_funcnames) }
+  .debug_typenames 0 : { *(.debug_typenames) }
+  .debug_varnames  0 : { *(.debug_varnames) }
+  /* DWARF 3.  */
+  .debug_pubtypes 0 : { *(.debug_pubtypes) }
+  .debug_ranges   0 : { *(.debug_ranges) }
+  /* DWARF 5.  */
+  .debug_addr     0 : { *(.debug_addr) }
+  .debug_line_str 0 : { *(.debug_line_str) }
+  .debug_loclists 0 : { *(.debug_loclists) }
+  .debug_macro    0 : { *(.debug_macro) }
+  .debug_names    0 : { *(.debug_names) }
+  .debug_rnglists 0 : { *(.debug_rnglists) }
+  .debug_str_offsets 0 : { *(.debug_str_offsets) }
+  .debug_sup      0 : { *(.debug_sup) }
+  .gnu.attributes 0 : { KEEP (*(.gnu.attributes)) }
+  .note.gnu.arm.ident 0 : { KEEP (*(.note.gnu.arm.ident)) }
+  /DISCARD/ : { *(.note.GNU-stack) *(.gnu_debuglink) *(.gnu.lto_*) }
+}
+
+
+==================================================
+/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/../../../../arm-none-linux-gnueabihf/bin/ld: mode armelf_linux_eabi
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/crt1.o succeeded
+/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/crt1.o
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/crti.o succeeded
+/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/crti.o
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/crtbeginT.o succeeded
+/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/crtbeginT.o
+attempt to open applets/built-in.o succeeded
+applets/built-in.o
+attempt to open archival/libs.a succeeded
+archival/libs.a
+attempt to open archival/libarchive/libs.a succeeded
+archival/libarchive/libs.a
+attempt to open console-tools/libs.a succeeded
+console-tools/libs.a
+attempt to open coreutils/libs.a succeeded
+coreutils/libs.a
+attempt to open coreutils/libcoreutils/libs.a succeeded
+coreutils/libcoreutils/libs.a
+attempt to open debianutils/libs.a succeeded
+debianutils/libs.a
+attempt to open klibc-utils/libs.a succeeded
+klibc-utils/libs.a
+attempt to open e2fsprogs/libs.a succeeded
+e2fsprogs/libs.a
+attempt to open editors/libs.a succeeded
+editors/libs.a
+attempt to open findutils/libs.a succeeded
+findutils/libs.a
+attempt to open init/libs.a succeeded
+init/libs.a
+attempt to open libbb/libs.a succeeded
+libbb/libs.a
+(libbb/libs.a)appletlib.o
+(libbb/libs.a)compare_string_array.o
+(libbb/libs.a)concat_path_file.o
+(libbb/libs.a)default_error_retval.o
+(libbb/libs.a)get_last_path_component.o
+(libbb/libs.a)last_char_is.o
+(libbb/libs.a)llist.o
+(libbb/libs.a)messages.o
+(libbb/libs.a)perror_msg.o
+(libbb/libs.a)ptr_to_globals.o
+(libbb/libs.a)skip_whitespace.o
+(libbb/libs.a)verror_msg.o
+(libbb/libs.a)vfork_daemon_rexec.o
+(libbb/libs.a)wfopen.o
+(libbb/libs.a)xfunc_die.o
+(libbb/libs.a)xfuncs.o
+(libbb/libs.a)xfuncs_printf.o
+(libbb/libs.a)xreadlink.o
+(libbb/libs.a)copyfd.o
+(libbb/libs.a)full_write.o
+(libbb/libs.a)read.o
+(libbb/libs.a)safe_write.o
+(libbb/libs.a)signals.o
+(libbb/libs.a)time.o
+(libbb/libs.a)xgetcwd.o
+(libbb/libs.a)bb_strtonum.o
+attempt to open libpwdgrp/libs.a succeeded
+libpwdgrp/libs.a
+(libpwdgrp/libs.a)uidgid_get.o
+attempt to open loginutils/libs.a succeeded
+loginutils/libs.a
+attempt to open mailutils/libs.a succeeded
+mailutils/libs.a
+attempt to open miscutils/libs.a succeeded
+miscutils/libs.a
+(miscutils/libs.a)hexedit.o
+attempt to open modutils/libs.a succeeded
+modutils/libs.a
+attempt to open networking/libs.a succeeded
+networking/libs.a
+attempt to open networking/libiproute/libs.a succeeded
+networking/libiproute/libs.a
+attempt to open networking/udhcp/libs.a succeeded
+networking/udhcp/libs.a
+attempt to open printutils/libs.a succeeded
+printutils/libs.a
+attempt to open procps/libs.a succeeded
+procps/libs.a
+(procps/libs.a)free.o
+(procps/libs.a)kill.o
+(procps/libs.a)top.o
+(procps/libs.a)uptime.o
+(procps/libs.a)watch.o
+attempt to open runit/libs.a succeeded
+runit/libs.a
+attempt to open sebeep/libs.a succeeded
+sebeep/libs.a
+attempt to open shell/libs.a succeeded
+shell/libs.a
+(shell/libs.a)hush.o
+(shell/libs.a)match.o
+(shell/libs.a)math.o
+(shell/libs.a)random.o
+(shell/libs.a)shell_common.o
+attempt to open sysklogd/libs.a succeeded
+sysklogd/libs.a
+attempt to open util-beep/libs.a succeeded
+util-beep/libs.a
+(util-beep/libs.a)dmesg.o
+(util-beep/libs.a)hexdump.o
+(util-beep/libs.a)mount.o
+(util-beep/libs.a)mountpoint.o
+(util-beep/libs.a)umount.o
+attempt to open util-beep/volume_id/libs.a succeeded
+util-beep/volume_id/libs.a
+(util-beep/volume_id/libs.a)get_devname.o
+(util-beep/volume_id/libs.a)volume_id.o
+(util-beep/volume_id/libs.a)exfat.o
+(util-beep/volume_id/libs.a)ext.o
+(util-beep/volume_id/libs.a)fat.o
+(util-beep/volume_id/libs.a)util.o
+attempt to open archival/built-in.o succeeded
+archival/built-in.o
+attempt to open archival/libarchive/built-in.o succeeded
+archival/libarchive/built-in.o
+attempt to open console-tools/built-in.o succeeded
+console-tools/built-in.o
+attempt to open coreutils/built-in.o succeeded
+coreutils/built-in.o
+attempt to open coreutils/libcoreutils/built-in.o succeeded
+coreutils/libcoreutils/built-in.o
+attempt to open debianutils/built-in.o succeeded
+debianutils/built-in.o
+attempt to open klibc-utils/built-in.o succeeded
+klibc-utils/built-in.o
+attempt to open e2fsprogs/built-in.o succeeded
+e2fsprogs/built-in.o
+attempt to open editors/built-in.o succeeded
+editors/built-in.o
+attempt to open findutils/built-in.o succeeded
+findutils/built-in.o
+attempt to open init/built-in.o succeeded
+init/built-in.o
+attempt to open libbb/built-in.o succeeded
+libbb/built-in.o
+attempt to open libpwdgrp/built-in.o succeeded
+libpwdgrp/built-in.o
+attempt to open loginutils/built-in.o succeeded
+loginutils/built-in.o
+attempt to open mailutils/built-in.o succeeded
+mailutils/built-in.o
+attempt to open miscutils/built-in.o succeeded
+miscutils/built-in.o
+attempt to open modutils/built-in.o succeeded
+modutils/built-in.o
+attempt to open networking/built-in.o succeeded
+networking/built-in.o
+attempt to open networking/libiproute/built-in.o succeeded
+networking/libiproute/built-in.o
+attempt to open networking/udhcp/built-in.o succeeded
+networking/udhcp/built-in.o
+attempt to open printutils/built-in.o succeeded
+printutils/built-in.o
+attempt to open procps/built-in.o succeeded
+procps/built-in.o
+attempt to open runit/built-in.o succeeded
+runit/built-in.o
+attempt to open sebeep/built-in.o succeeded
+sebeep/built-in.o
+attempt to open shell/built-in.o succeeded
+shell/built-in.o
+attempt to open sysklogd/built-in.o succeeded
+sysklogd/built-in.o
+attempt to open util-beep/built-in.o succeeded
+util-beep/built-in.o
+attempt to open util-beep/volume_id/built-in.o succeeded
+util-beep/volume_id/built-in.o
+archival/libs.a
+archival/libarchive/libs.a
+console-tools/libs.a
+(console-tools/libs.a)clear.o
+coreutils/libs.a
+(coreutils/libs.a)cat.o
+(coreutils/libs.a)chmod.o
+(coreutils/libs.a)cp.o
+(coreutils/libs.a)dd.o
+(coreutils/libs.a)echo.o
+(coreutils/libs.a)ln.o
+(coreutils/libs.a)ls.o
+(coreutils/libs.a)md5_sha1_sum.o
+(coreutils/libs.a)mkdir.o
+(coreutils/libs.a)mv.o
+(coreutils/libs.a)printf.o
+(coreutils/libs.a)pwd.o
+(coreutils/libs.a)rm.o
+(coreutils/libs.a)rmdir.o
+(coreutils/libs.a)sleep.o
+(coreutils/libs.a)test.o
+(coreutils/libs.a)test_ptr_hack.o
+(coreutils/libs.a)touch.o
+(coreutils/libs.a)uname.o
+coreutils/libcoreutils/libs.a
+(coreutils/libcoreutils/libs.a)cp_mv_stat.o
+debianutils/libs.a
+klibc-utils/libs.a
+e2fsprogs/libs.a
+editors/libs.a
+findutils/libs.a
+init/libs.a
+(init/libs.a)halt.o
+(init/libs.a)init.o
+libbb/libs.a
+(libbb/libs.a)ask_confirmation.o
+(libbb/libs.a)bb_cat.o
+(libbb/libs.a)bb_do_delay.o
+(libbb/libs.a)bb_getgroups.o
+(libbb/libs.a)bb_pwd.o
+(libbb/libs.a)common_bufsiz.o
+(libbb/libs.a)copy_file.o
+(libbb/libs.a)device_open.o
+(libbb/libs.a)dump.o
+(libbb/libs.a)duration.o
+(libbb/libs.a)endofname.o
+(libbb/libs.a)executable.o
+(libbb/libs.a)fclose_nonstdin.o
+(libbb/libs.a)fflush_stdout_and_exit.o
+(libbb/libs.a)find_mount_point.o
+(libbb/libs.a)find_pid_by_name.o
+(libbb/libs.a)find_root_device.o
+(libbb/libs.a)get_line_from_file.o
+(libbb/libs.a)getopt32.o
+(libbb/libs.a)getopt_allopts.o
+(libbb/libs.a)hash_md5_sha.o
+(libbb/libs.a)human_readable.o
+(libbb/libs.a)inode_hash.o
+(libbb/libs.a)isdirectory.o
+(libbb/libs.a)lineedit.o
+(libbb/libs.a)lineedit_ptr_hack.o
+(libbb/libs.a)login.o
+(libbb/libs.a)loop.o
+(libbb/libs.a)make_directory.o
+(libbb/libs.a)makedev.o
+(libbb/libs.a)match_fstype.o
+(libbb/libs.a)mode_string.o
+(libbb/libs.a)nuke_str.o
+(libbb/libs.a)parse_config.o
+(libbb/libs.a)parse_mode.o
+(libbb/libs.a)perror_nomsg_and_die.o
+(libbb/libs.a)platform.o
+(libbb/libs.a)print_numbered_lines.o
+(libbb/libs.a)printable.o
+(libbb/libs.a)printable_string.o
+(libbb/libs.a)process_escape_sequence.o
+(libbb/libs.a)procps.o
+(libbb/libs.a)read_key.o
+(libbb/libs.a)recursive_action.o
+(libbb/libs.a)remove_file.o
+(libbb/libs.a)safe_gethostname.o
+(libbb/libs.a)safe_poll.o
+(libbb/libs.a)safe_strncpy.o
+(libbb/libs.a)simplify_path.o
+(libbb/libs.a)sysconf.o
+(libbb/libs.a)u_signal_names.o
+(libbb/libs.a)utmp.o
+(libbb/libs.a)wfopen_input.o
+(libbb/libs.a)xatonum.o
+(libbb/libs.a)xrealloc_vector.o
+(libbb/libs.a)auto_string.o
+(libbb/libs.a)bb_bswap_64.o
+(libbb/libs.a)bb_qsort.o
+(libbb/libs.a)concat_subpath_file.o
+libpwdgrp/libs.a
+loginutils/libs.a
+mailutils/libs.a
+miscutils/libs.a
+modutils/libs.a
+networking/libs.a
+networking/libiproute/libs.a
+networking/udhcp/libs.a
+printutils/libs.a
+procps/libs.a
+runit/libs.a
+sebeep/libs.a
+shell/libs.a
+sysklogd/libs.a
+util-beep/libs.a
+util-beep/volume_id/libs.a
+archival/built-in.o
+archival/libarchive/built-in.o
+console-tools/built-in.o
+coreutils/built-in.o
+coreutils/libcoreutils/built-in.o
+debianutils/built-in.o
+klibc-utils/built-in.o
+e2fsprogs/built-in.o
+editors/built-in.o
+findutils/built-in.o
+init/built-in.o
+libbb/built-in.o
+libpwdgrp/built-in.o
+loginutils/built-in.o
+mailutils/built-in.o
+miscutils/built-in.o
+modutils/built-in.o
+networking/built-in.o
+networking/libiproute/built-in.o
+networking/udhcp/built-in.o
+printutils/built-in.o
+procps/built-in.o
+runit/built-in.o
+sebeep/built-in.o
+shell/built-in.o
+sysklogd/built-in.o
+util-beep/built-in.o
+util-beep/volume_id/built-in.o
+archival/libs.a
+archival/libarchive/libs.a
+console-tools/libs.a
+coreutils/libs.a
+coreutils/libcoreutils/libs.a
+debianutils/libs.a
+klibc-utils/libs.a
+e2fsprogs/libs.a
+editors/libs.a
+findutils/libs.a
+init/libs.a
+libbb/libs.a
+libpwdgrp/libs.a
+loginutils/libs.a
+mailutils/libs.a
+miscutils/libs.a
+modutils/libs.a
+networking/libs.a
+networking/libiproute/libs.a
+networking/udhcp/libs.a
+printutils/libs.a
+procps/libs.a
+runit/libs.a
+sebeep/libs.a
+shell/libs.a
+sysklogd/libs.a
+util-beep/libs.a
+util-beep/volume_id/libs.a
+archival/built-in.o
+archival/libarchive/built-in.o
+console-tools/built-in.o
+coreutils/built-in.o
+coreutils/libcoreutils/built-in.o
+debianutils/built-in.o
+klibc-utils/built-in.o
+e2fsprogs/built-in.o
+editors/built-in.o
+findutils/built-in.o
+init/built-in.o
+libbb/built-in.o
+libpwdgrp/built-in.o
+loginutils/built-in.o
+mailutils/built-in.o
+miscutils/built-in.o
+modutils/built-in.o
+networking/built-in.o
+networking/libiproute/built-in.o
+networking/udhcp/built-in.o
+printutils/built-in.o
+procps/built-in.o
+runit/built-in.o
+sebeep/built-in.o
+shell/built-in.o
+sysklogd/built-in.o
+util-beep/built-in.o
+util-beep/volume_id/built-in.o
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/libcrypt.a failed
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/libcrypt.a failed
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/../../../../arm-none-linux-gnueabihf/lib/libcrypt.a failed
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/lib/libcrypt.a failed
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libcrypt.a failed
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/arm-none-linux-gnueabihf/lib/libcrypt.a failed
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/local/lib/libcrypt.a failed
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/lib/libcrypt.a failed
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libcrypt.a failed
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/crypt.a failed
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/crypt.a failed
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/../../../../arm-none-linux-gnueabihf/lib/crypt.a failed
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/lib/crypt.a failed
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/crypt.a failed
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/arm-none-linux-gnueabihf/lib/crypt.a failed
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/local/lib/crypt.a failed
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/lib/crypt.a failed
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/crypt.a failed
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/libgcc.a succeeded
+/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/libgcc.a
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/libgcc.a)_udivsi3.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/libgcc.a)_divsi3.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/libgcc.a)_arm_addsubdf3.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/libgcc.a)_aeabi_ldivmod.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/libgcc.a)_aeabi_uldivmod.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/libgcc.a)_dvmd_lnx.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/libgcc.a)_fixunsdfdi.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/libgcc.a)_udivmoddi4.o
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/libgcc_eh.a succeeded
+/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/libgcc_eh.a
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/libc.a failed
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/libc.a failed
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/../../../../arm-none-linux-gnueabihf/lib/libc.a failed
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/lib/libc.a failed
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a succeeded
+/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)libc-start.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)libc-tls.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)libc-do-syscall.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)errno-loc.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)bsd-_setjmp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)longjmp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)__longjmp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)jmp-unwind.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)signal.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)raise.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sigaction.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)libc_sigaction.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sigprocmask.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)kill.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sigsuspend.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sigempty.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sigfillset.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sigaddset.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sigdelset.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sigismem.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sigisempty.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)allocrtsig.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sigtimedwait.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sigrestorer.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)abort.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)atoi.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)canonicalize.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)cxa_atexit.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)div.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)exit.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getenv.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)putenv.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)qsort.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)rand.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)random.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)random_r.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)setenv.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strtod.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strtod_l.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strtod_nan.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strtol.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strtol_l.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strtoll.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strtoll_l.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strtoul.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strtoul_l.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strtoull.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strtoull_l.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)system.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)add_n.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)cmp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)lshift.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)mul.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)mul_1.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)mul_n.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)rshift.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sub_n.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)submul_1.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)mpn2dbl.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)grouping.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)tens_in_limb.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)fpioconst.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)fprintf.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getline.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)isoc23_sscanf.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)printf.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)rename.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)snprintf.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sprintf.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)vfprintf-internal.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)vfscanf-internal.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)errname.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)printf-parsemb.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)iofclose.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)iofdopen.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)iofflush.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)iofopen.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)iofread.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)iogetdelim.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ioputs.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)iosetvbuf.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)iovsprintf.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)putchar_u.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)fileno.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)freopen.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)vasprintf.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)vsnprintf.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)fseeko.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)libc_fatal.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)vtables.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)feof_u.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ferror_u.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getc_u.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)putc_u.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)iofgets_u.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)iofputs_u.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)fileops.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)genops.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)stdfiles.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)stdio.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strops.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)alloca_cutoff.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)cancellation.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)libc-cleanup.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)lowlevellock.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)nptl_deallocate_tsd.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)nptl_nthreads.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)pthread_cleanup_upto.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)pthread_keys.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)pthread_kill.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)pthread_self.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)pthread_setcancelstate.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)pthread_sigmask.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)malloc.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)scratch_buffer_grow.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)scratch_buffer_grow_preserve.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)scratch_buffer_set_array_size.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)_strerror.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)memcmp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)memmove.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)memset.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strcasecmp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strcat.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strchr.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strchrnul.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strcmp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strcpy.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strcspn.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strdup.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strerror.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strerror_l.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strlen.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strncase.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strncase_l.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strncmp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strncpy.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strndup.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strnlen.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strpbrk.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strrchr.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strsep.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strsignal.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strspn.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strstr.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strverscmp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)memcpy_neon.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)memchr_neon.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)mbrlen.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)mbrtowc.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wcrtomb.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wcsmbsload.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wcsrtombs.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ctime.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)localtime.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)mktime.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)time.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)gettimeofday.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)settimeofday.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)settimezone.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)tzset.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)tzfile.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strftime.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strftime_l.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)clock_gettime.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)clock_settime.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)era.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)alt_digit.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)closedir.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)opendir.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)readdir.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)_exit.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)execv.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)execve.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)execvp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)execvpe.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)fnmatch.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getegid.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)geteuid.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getgid.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getgroups.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getopt.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getpgrp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getpid.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getppid.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getuid.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)glob.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)globfree.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)nanosleep.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)regex.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)setgid.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)setpgid.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)setpgrp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)setresgid.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)setresuid.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)setsid.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)setuid.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)spawn.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)spawnattr_destroy.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)spawnattr_init.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)spawnattr_setdefault.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)spawnattr_setflags.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)spawnattr_setsigmask.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)spawni.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sysconf.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)times.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)uname.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)vfork.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wait.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)waitid.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)waitpid.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)environ.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)access.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)chdir.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)chmod.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)chown.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)close.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dup.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dup2.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dup3.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)faccessat.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)fchdir.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)fcntl.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)fstat.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)fstat64.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)fstatat.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)fstatat64.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)futimens.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getcwd.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)isatty.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)lchown.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)link.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)lseek.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)lseek64.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)lstat.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)lstat64.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)mkdir.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)mknod.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)mknodat.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)open.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)openat64.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)pipe.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)poll.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)read.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)readlink.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)rmdir.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sendfile.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)stat.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)stat64.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)symlink.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ttyname_r.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)umask.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)unlink.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)utimensat.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)write.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)close_nocancel.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)fcntl_nocancel.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)open_nocancel.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)openat_nocancel.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)read_nocancel.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)stat_t64_cp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)write_nocancel.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)tcsetattr.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)tcgetattr.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)tcgetpgrp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)tcsetpgrp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getrlimit.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)setrlimit.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getrlimit64.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)brk.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)chroot.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dirname.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)fd_to_filename.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)fsync.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ftruncate.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getclktck.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getdtsz.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getpagesize.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getsysstats.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ioctl.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)madvise.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)makedev.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)mkstemp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)mmap.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)mmap64.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)mntent.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)mntent_r.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)mprotect.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)munmap.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)reboot.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sbrk.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)setegid.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)seteuid.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)single_threaded.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sync.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)syslog.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)tsearch.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)utimes.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)init-misc.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)clone-internal.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)clone-pidfd-support.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)clone3.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)closefrom_fallback.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)mremap.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)prctl.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)setvmaname.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)umount2.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)klogctl.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)mount.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sysinfo.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)malloc-hugepages.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)bind.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)connect.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)listen.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)send.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sendto.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)socket.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wcfuncs.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wctype.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)iswctype.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wctrans.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)towctrans.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)chk_fail.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)fortify_fail.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)readonly-area.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getgrgid.o
+/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/../../../../arm-none-linux-gnueabihf/bin/ld: libbb/libs.a(appletlib.o): note: the message above does not take linker garbage collection into account
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getgrgid_r.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getgrnam.o
+/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/../../../../arm-none-linux-gnueabihf/bin/ld: libpwdgrp/libs.a(uidgid_get.o): note: the message above does not take linker garbage collection into account
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getgrnam_r.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)grp-merge.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getpwent.o
+/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/../../../../arm-none-linux-gnueabihf/bin/ld: libbb/libs.a(lineedit.o): note: the message above does not take linker garbage collection into account
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getpwent_r.o
+/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/../../../../arm-none-linux-gnueabihf/bin/ld: libbb/libs.a(lineedit.o): note: the message above does not take linker garbage collection into account
+/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/../../../../arm-none-linux-gnueabihf/bin/ld: libbb/libs.a(lineedit.o): note: the message above does not take linker garbage collection into account
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getpwnam.o
+/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/../../../../arm-none-linux-gnueabihf/bin/ld: libbb/libs.a(appletlib.o): note: the message above does not take linker garbage collection into account
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getpwnam_r.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getpwuid.o
+/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/../../../../arm-none-linux-gnueabihf/bin/ld: libpwdgrp/libs.a(uidgid_get.o): note: the message above does not take linker garbage collection into account
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getpwuid_r.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)nscd_getpw_r.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)nscd_getgr_r.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)nscd_helper.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getlogin_r.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getutent.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getutent_r.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)utmp_file.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)utmpname.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)updwtmp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-debug.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-debug-symbols.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-tls.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-tls_init_tp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-tunables.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-rseq-symbols.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-early_allocate.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-support.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)enbl-secure.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)libc_early_init.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)check_fds.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)init-first.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sysdep.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)errno.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)gconv_db.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)gconv_conf.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)gconv_builtin.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)gconv_simple.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)gconv_trans.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)gconv_cache.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)gconv_dl.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)setlocale.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)uselocale.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)lc-collate.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)lc-ctype.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)lc-numeric.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)C_name.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)SYS_libc.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)coll-lookup.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)global-locale.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)xlocale.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)__libc_assert_fail.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ctype-info.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dcgettext.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dcigettext.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)finddomain.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)loadmsgcat.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)localealias.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)l10nflist.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)explodename.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)plural.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)plural-exp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)hash-string.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)setjmp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sigjmp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strtof.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strtof_l.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strtof_nan.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strtold.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strtold_l.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)addmul_1.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)mpn2flt.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)_itoa.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)asprintf.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dprintf.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)funlockfile.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)grouping_iterator.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)itoa-digits.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)itoa-udigits.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)printf_buffer_done.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)printf_buffer_pad_1.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)printf_buffer_putc_1.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)printf_buffer_puts_1.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)printf_buffer_to_file.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)printf_buffer_write.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)printf_fp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)printf_fphex.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)printf_function_invoke.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)reg-modifier.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)reg-printf.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)reg-type.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)tempname.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)translated_number_width.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wprintf_buffer_putc_1.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wprintf_buffer_to_file.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)errlist.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)errlist-data.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)fxprintf.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)filedoalloc.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)iofputs.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)iofwrite.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)iogetline.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ioseekoff.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wgenops.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wfileops.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)iofwide.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)fseek.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)iovdprintf.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ftello.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)iofread_u.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)nptl_setxid.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)pthread_mutex_conf.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)pthread_mutex_lock.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)pthread_mutex_unlock.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)pthread_once.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)pthread_rwlock_init.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)pthread_rwlock_rdlock.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)pthread_rwlock_unlock.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)pthread_rwlock_wrlock.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)tpp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)vars.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dynarray_at_failure.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dynarray_emplace_enlarge.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dynarray_resize.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)alloc_buffer_alloc_array.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)alloc_buffer_create_failure.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)argz-addsep.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)argz-ctsep.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)memrchr.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sigdescr_np.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)stpncpy.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strcasecmp_l.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strcoll.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strcoll_l.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)strtok_r.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)btowc.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)mbsrtowcs.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)mbsrtowcs_l.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wcscat.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wcschr.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wcscpy.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wcslen.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wcsnlen.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wmemchr.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wmemcmp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wmemcpy.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wmemmove.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wmempcpy.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)offtime.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)asctime.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)clock_nanosleep.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dirfd.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)fdopendir.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getdents.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getdents64.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)readdir64.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)rewinddir.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)alarm.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)get_child_max.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getpgid.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)group_member.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sched_cpucount.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sched_getp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sched_gets.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sched_primax.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sched_primin.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sched_setp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sched_sets.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wait4.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)open64_nocancel.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)pread64_nocancel.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)allocate_once.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ftruncate64.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)readv.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)clone.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)recvmsg.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)grp-lookup.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)pwd-lookup.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getnssent.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getnssent_r.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)nss_database.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)nss_hash.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)nsswitch.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-catch.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-exception.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-load.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-lookup.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-misc.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-object.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-origin.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-printf.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-reloc.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-scope.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-setup_hash.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-thread_gscope_wait.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-trampoline.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-cache.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-tlsdesc.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-libc.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)gconv_open.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)gconv.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)gconv_close.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)gconv_charset.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)findlocale.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)loadarchive.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)loadlocale.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)C-address.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)C-collate.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)C-ctype.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)C-identification.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)C-measurement.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)C-messages.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)C-monetary.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)C-name.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)C-numeric.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)C-paper.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)C-telephone.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)C-time.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)localename.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getrandom.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)divrem.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dbl2mpn.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)printf_buffer_as_file.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)printf_buffer_flush.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)vfwprintf-internal.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wprintf_buffer_done.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wprintf_buffer_flush.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wprintf_buffer_pad_1.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wprintf_buffer_write.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wprintf_function_invoke.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)printf-parsewc.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)siglist.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)cleanup_compat.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)futex-internal.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)nptl-stack.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)memmem.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wcschrnul.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wmemset.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)setitimer.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)lc-time-cleanup.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)file_change_detection.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)convert_scm_timestamps.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)herrno.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)resolv_context.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)nss_action_parse.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)nss_module.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-close.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-execstack.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-open.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-runtime.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-sort-maps.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-version.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)tlsdesc.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-addr-obj.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-find_object.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)rtld_static_init.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)_itowa.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)itowa-digits.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)wprintf_buffer_as_file.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dladdr.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dladdr1.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dlclose.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dlerror.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dlinfo.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dlmopen.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dlopen.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dlsym.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dlvsym.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)libc_dlerror_result.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)atomic_wide_counter.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)nss_dns_functions.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)res-close.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)res_init.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)res_libc.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)res_randomid.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)resolv_conf.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)nss_action.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)nss_files_functions.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)files-alias.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)files-ethers.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)files-grp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)files-hosts.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)files-netgrp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)files-network.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)files-proto.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)files-pwd.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)files-service.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)files-sgrp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)files-spwd.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)files-rpc.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)files-initgroups.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-call-libc-early-init.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-call_fini.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-deps.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-init.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-lookup-direct.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-addr.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dl-sym.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)iofgetpos.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)iofsetpos.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ioseekpos.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ioungetc.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)alloc_buffer_allocate.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)alloc_buffer_copy_string.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)gethostname.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)inet6_scopeid_pton.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)inet_mkadr.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)inet_net.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dns-canon.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dns-host.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dns-network.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)inet_addr.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)inet_pton.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ns_name_ntop.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ns_name_unpack.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ns_rr_cursor_init.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ns_rr_cursor_next.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ns_samebinaryname.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)res-name-checking.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)res_context_hostalias.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)res_hconf.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)res_query.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)res_send.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)nss_files_data.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)nss_files_fopen.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)nss_parse_line_result.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)nss_readline.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)fgetgrent_r.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sgetsgent_r.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)fgetpwent_r.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sgetspent_r.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)rewind.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)fseeko64.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ftello64.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)alloc_buffer_copy_bytes.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)writev.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getpeername.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)recvfrom.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)sendmmsg.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)if_index.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ifaddrs.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ifreq.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)netlink_assert_response.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dn_expand.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)dn_skipname.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ns_name_length_uncompressed.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ns_name_pton.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ns_name_skip.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ns_name_uncompress.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ns_samename.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)res-noaaaa.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)res_enable_icmp.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)res_get_nsaddr.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)res_mkquery.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)res_queriesmatch.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)nss_fgetent_r.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)getsockname.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)opensock.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)setsockopt.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ns_makecanon.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ns_name_compress.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)ns_name_pack.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a)res_nameinquery.o
+/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/libgcc.a
+/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/libgcc_eh.a
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/libgcc_eh.a)unwind-arm.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/libgcc_eh.a)libunwind.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/libgcc_eh.a)pr-support.o
+(/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/libgcc_eh.a)unwind-c.o
+/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a
+/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/libgcc.a
+/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/libgcc_eh.a
+/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/libc.a
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/crtend.o succeeded
+/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../lib/gcc/arm-none-linux-gnueabihf/14.2.1/crtend.o
+attempt to open /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/crtn.o succeeded
+/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/../arm-none-linux-gnueabihf/libc/usr/lib/crtn.o
