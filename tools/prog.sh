@@ -32,7 +32,7 @@ echo -e "${YELLOW}Starting Beep...${NC}"
 arm-beep-gnueabi-gcc -Os -marm \
     -Wa,-I,"$PROJECT_ROOT/kernel/prog" \
     prog/beep.c -o prog/build/beep \
-    -Wl,-dynamic-linker=/libs/ld-beep-armhf.so.3 -Wl,-rpath,/libs
+    -Wl,-dynamic-linker=/libs/ld-beep-armhf.so.3 -Wl,-rpath,/libs -static
 arm-beep-gnueabi-strip --strip-all prog/build/beep
 cp prog/build/beep ../calcfs/bin/beep
 chmod +x ../calcfs/bin/beep
@@ -42,7 +42,7 @@ echo -e "${YELLOW}Starting Calc...${NC}"
 arm-beep-gnueabi-gcc -Os -marm -I../ndless/ncurses/dest/include -I../ndless/ncurses/dest/include/ncurses \
 prog/calc.c -o prog/build/calc \
 -L../ndless/ncurses/dest/libs -lncurses -lm \
--Wl,-dynamic-linker=/libs/ld-beep-armhf.so.3 -Wl,-rpath,/libs
+-Wl,-dynamic-linker=/libs/ld-beep-armhf.so.3 -Wl,-rpath,/libs -static
 arm-beep-gnueabi-strip --strip-all prog/build/calc
 cp prog/build/calc ../calcfs/bin/calc
 chmod +x ../calcfs/bin/calc
@@ -52,7 +52,7 @@ echo -e "${YELLOW}Starting Pipes...${NC}"
 arm-beep-gnueabi-gcc -Os -marm \
     -Wa,-I,"$PROJECT_ROOT/kernel/prog" \
     prog/pipes.c -o prog/build/pipes \
-    -Wl,-dynamic-linker=/libs/ld-beep-armhf.so.3 -Wl,-rpath,/libs
+    -Wl,-dynamic-linker=/libs/ld-beep-armhf.so.3 -Wl,-rpath,/libs -static
 arm-beep-gnueabi-strip --strip-all prog/build/pipes
 cp prog/build/pipes ../calcfs/bin/pipes
 chmod +x ../calcfs/bin/pipes
