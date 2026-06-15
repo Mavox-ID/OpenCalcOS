@@ -49,6 +49,16 @@ chmod +x ../calcfs/bin/calc
 echo -e "${GREEN}Done calc programm in${NC} ${YELLOW}calcfs/bin/calc${NC}"
 
 echo -e "${YELLOW}Starting Pipes...${NC}"
-cp prog/pipes ../calcfs/bin/pipes
+arm-beep-gnueabi-gcc -Os -marm \
+    -Wa,-I,"$PROJECT_ROOT/kernel/prog" \
+    prog/pipes.c -o prog/build/pipes \
+    -Wl,-dynamic-linker=/libs/ld-beep-armhf.so.3 -Wl,-rpath,/libs
+arm-beep-gnueabi-strip --strip-all prog/build/pipes
+cp prog/build/pipes ../calcfs/bin/pipes
 chmod +x ../calcfs/bin/pipes
 echo -e "${GREEN}Done pipes programm in${NC} ${YELLOW}calcfs/bin/pipes${NC}"
+
+#echo -e "${YELLOW}Starting Pipes...${NC}"
+#cp prog/pipes ../calcfs/bin/pipes
+#chmod +x ../calcfs/bin/pipes
+#echo -e "${GREEN}Done pipes programm in${NC} ${YELLOW}calcfs/bin/pipes${NC}"
