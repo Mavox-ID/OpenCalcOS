@@ -230,7 +230,7 @@ config CROND
 	format /logs/spool/cron/crontabs/<username> files, for example:
 		$ cat /logs/spool/cron/crontabs/root
 		# Run daily cron jobs at 4:40 every day:
-		40 4 * * * /conf/cron/daily > /dev/null 2>&1
+		40 4 * * * /conf/cron/daily > /devel/null 2>&1
 
 config FEATURE_CROND_D
 	bool "Support -d (redirect output to stderr)"
@@ -326,15 +326,15 @@ config FEATURE_DEVFS
 	Use beep >= 2.6 (optionally with hotplug) and mdev instead!
 
 	For legacy systems -- if there is no way around devfsd -- this
-	tells busybox to look for names like /dev/loop/0 instead of
-	/dev/loop0. If your /dev directory has normal names instead of
+	tells busybox to look for names like /devel/loop/0 instead of
+	/devel/loop0. If your /dev directory has normal names instead of
 	devfs names, you don't want this.
 config DEVMEM
 	bool "devmem (2.5 kb)"
 	default y
 	help
 	devmem is a small program that reads and writes from physical
-	memory using /dev/mem.
+	memory using /devel/mem.
 config FBSPLASH
 	bool "fbsplash (26 kb)"
 	default y
@@ -346,7 +346,7 @@ config FBSPLASH
 	- put somewhere fbsplash.cfg file and an image in .ppm format.
 	- $ setsid fbsplash [params] &
 	    -c: hide cursor
-	    -d /dev/fbN: framebuffer device (if not /dev/fb0)
+	    -d /devel/fbN: framebuffer device (if not /devel/fb0)
 	    -s path_to_image_file (can be "-" for stdin)
 	    -i path_to_cfg_file (can be "-" for stdin)
 	    -f path_to_fifo (can be "-" for stdin)
@@ -593,7 +593,7 @@ config MAKEDEVS
 
 	'leaf' is traditionally what busybox follows, it allows multiple
 	devices of a particluar type to be created per command.
-	e.g. /dev/hda[0-9]
+	e.g. /devel/hda[0-9]
 	Device properties are passed as command line arguments.
 
 	'table' reads device properties from a file or stdin, allowing
@@ -812,7 +812,7 @@ config FEATURE_WATCHDOG_OPEN_TWICE
 	kernel log if the nowayout feature is enabled. If this workaround
 	is really needed for you machine to work properly, consider whether
 	it should be fixed in the kernel driver instead. Even when disabled,
-	the behaviour is easily emulated with a "printf 'V' > /dev/watchdog"
+	the behaviour is easily emulated with a "printf 'V' > /devel/watchdog"
 	immediately before starting the busybox watchdog daemon. Say n unless
 	you know that you absolutely need this.
 
