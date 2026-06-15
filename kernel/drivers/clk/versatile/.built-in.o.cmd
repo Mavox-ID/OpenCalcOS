@@ -1,0 +1,1 @@
+cmd_drivers/clk/versatile/built-in.o :=  arm-none-eabi-ld -EL   -r -o drivers/clk/versatile/built-in.o drivers/clk/versatile/clk-icst.o drivers/clk/versatile/clk-vexpress.o drivers/clk/versatile/clk-vexpress-osc.o 
