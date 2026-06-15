@@ -940,20 +940,20 @@ config TELNETD
 	First of all, your kernel needs:
 		  CONFIG_UNIX98_PTYS=y
 
-	Next, you need a /dev/pts directory on your root filesystem:
+	Next, you need a /devel/pts directory on your root filesystem:
 
-		  $ ls -ld /dev/pts
-		  drwxr-xr-x  2 root root 0 Sep 23 13:21 /dev/pts/
+		  $ ls -ld /devel/pts
+		  drwxr-xr-x  2 root root 0 Sep 23 13:21 /devel/pts/
 
-	Next you need the pseudo terminal master multiplexer /dev/ptmx:
+	Next you need the pseudo terminal master multiplexer /devel/ptmx:
 
-		  $ ls -la /dev/ptmx
-		  crw-rw-rw-  1 root tty 5, 2 Sep 23 13:55 /dev/ptmx
+		  $ ls -la /devel/ptmx
+		  crw-rw-rw-  1 root tty 5, 2 Sep 23 13:55 /devel/ptmx
 
-	Any /dev/ttyp[0-9]* files you may have can be removed.
-	Next, you need to mount the devpts filesystem on /dev/pts using:
+	Any /devel/ttyp[0-9]* files you may have can be removed.
+	Next, you need to mount the devpts filesystem on /devel/pts using:
 
-		  mount -t devpts devpts /dev/pts
+		  mount -t devpts devpts /devel/pts
 
 	You need to be sure that busybox has LOGIN and
 	FEATURE_SUID enabled. And finally, you should make
@@ -1210,7 +1210,7 @@ config FEATURE_WGET_OPENSSL
 	OpenSSL has a simple SSL client for debug purposes.
 	If you select this option, wget will effectively run:
 	"openssl s_client -quiet -connect hostname:443
-	-servername hostname 2>/dev/null" and pipe its data
+	-servername hostname 2>/devel/null" and pipe its data
 	through it. -servername is not used if hostname is numeric.
 	Note inconvenient API: host resolution is done twice,
 	and there is no guarantee openssl's idea of IPv6 address
