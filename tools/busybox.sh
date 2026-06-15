@@ -34,11 +34,8 @@ make -j"$(nproc)" CROSS_COMPILE=arm-beep-gnueabi- \
 
 cp busybox ../calcfs/bin/busybox
 cd ../calcfs/bin
-./busybox --install -s .
-for f in *; do
-    if [ -L "$f" ] && [ "$f" != "busybox" ]; then
-        ln -sf /bin/busybox "$f"
-    fi
+for applet in $(./busybox --list); do
+    ln -sf busybox "$applet"
 done
 cd ../..
 

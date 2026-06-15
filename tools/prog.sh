@@ -57,8 +57,3 @@ arm-beep-gnueabi-strip --strip-all prog/build/pipes
 cp prog/build/pipes ../calcfs/bin/pipes
 chmod +x ../calcfs/bin/pipes
 echo -e "${GREEN}Done pipes programm in${NC} ${YELLOW}calcfs/bin/pipes${NC}"
-
-#echo -e "${YELLOW}Starting Pipes...${NC}"
-#cp prog/pipes ../calcfs/bin/pipes
-#chmod +x ../calcfs/bin/pipes
-#echo -e "${GREEN}Done pipes programm in${NC} ${YELLOW}calcfs/bin/pipes${NC}"
