@@ -1,0 +1,78 @@
+To install OpenCalcOS (OCOS) on your TI-Nspire CX calculator with TI-Nspire OS firmware versions 3.6 to 6.4.0.74, you need to follow these steps:
+
+1) Install NDless to run other programs:
+
+==> For version: 3.6
+
+Place the ndless_installer.tns and ndless_resources.tns files in the ndless folder on your calculator, and run ndless_installer.tns. Wait for the message that NDless has been installed successfully.
+
+==> For version: 3.9.0
+
+Place the ndless_installer_3.9.0_classic_new.tns and ndless_resources.tns files in the ndless folder on your calculator, and run ndless_installer.tns. Wait for the message that NDless has been installed successfully, then press Ctrl+W to exit. Successfully installed
+
+==> For version: 3.9.1
+
+Place the ndless_installer_3.9.1.tns and ndless_resources.tns files in the ndless folder on your calculator, disconnect the USB data cable, then run ndless_installer_3.9.1.tns, and wait for NDless to install.
+
+==> For version: 4.0.3
+
+Place the ndless_installer_4.0.3_cx.tns and ndless_installer.tns files in the ndless folder on your calculator, and run ndless_installer_4.0.3_cx.tns. Wait for the message that NDless has been installed successfully, then press Ctrl+W to exit.
+
+==> For version: 4.2.0
+
+Place the ndless_installer_4.2.0_cx.tns and ndless_installer.tns files in ndless folder on your calculator, and run ndless_installer_4.2.0_cx.tns. Wait for the message that NDless has been installed successfully, then press Ctrl+W to exit.
+
+==> For version: 4.4.0
+
+Place the ndless_installer_4.4.0.tns and ndless_installer.tns files in the ndless folder on your calculator, and run ndless_installer_4.4.0.tns. Wait for the message that NDless has been installed successfully, then press Ctrl+W to exit.
+
+==> For version: 4.5.0
+
+Place the ndless_installer_4.5.0.tns and ndless_installer.tns files in the ndless folder on your calculator, and run ndless_installer_4.5.0.tns. Wait for the message that NDless has been installed successfully, then press Ctrl+W to exit. Exit
+
+==> For version: 4.5.3.14 + 4.5.4.48
+
+Place the ndless_installer_4.5.3-4.5.4.tns and ndless_installer.tns files in the ndless folder on your calculator, and run ndless_installer_4.5.3-4.5.4.tns. Wait for the message that NDless was installed successfully.
+
+==> For version: 5.2.0.771 + 5.3.0.564
+
+Place the ndless_installer_5.2.0-5.3.0.tns and ndless_installer.tns files in the ndless folder on your calculator, and run ndless_installer_5.2.0-5.3.0.tns. Wait for the message that NDless was installed successfully.
+
+==> For version: 4.5.5.79
+
+Set your language to English through the Settings menu
+Press [Home] > [5] (Settings) > [1] (Change Language) -> English
+Determine your "boot1" version (needed later).
+Press [Home] > [5] (Settings) > [4] (Status) > About button.
+Here is a YouTube video for this.
+Transfer ndless_installer_4.5.5-6.2.0-6.4.0.tns into a folder named "ndless" (top-level)
+Transfer ndless_resources.tns into the same folder
+Open the installer, press the corresponding key for your boot1 version and wait
+If it fails or reboots, try again until it works
+
+==> For version: 6.2.0.333 + 6.4.0.74
+
+Set your language to English through the Settings menu
+Press [Home] > [5] (Settings) > [1] (Change Language) -> English
+Transfer ndless_installer_4.5.5-6.2.0-6.4.0.tns into a folder named "ndless" (top-level)
+Transfer ndless_resources.tns into the same folder
+Open the installer, press any alphanumeric key and wait
+If it fails or reboots, try Again until it works
+
+2) After you've installed NDless, you need to download the latest version of OCOS to your calculator. To do this, follow these steps:
+
+==> Installing OCOS
+
+You currently have the files zCalc.tns, CalcFS.tns, and Loader.tns in this folder. You need to place all of these files in the Docs folder:
+
+Create a Docs folder on your calculator and place the following files in this folder:
+
+- zCalc.tns - Beep kernel
+- CalcFS.tns - Temporary file system with Init and a ready-made system for the Beep kernel
+- Loader.tns - Loads zCalc.tns and CalcFS.tns into RAM and runs zCalc.tns, specifying the Calc file system unpacked into RAM.
+
+==> Launching
+
+Once all the files have been placed, run Loader.tns. It will successfully load the entire system, and you'll be in OCOS!
+
+Good luck with installing and using OCOS!

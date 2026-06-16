@@ -70,9 +70,13 @@ bne 0b
 mov r0, #0
 mcr p15, 0, r0, c7, c7, 0
 
+@ build argv quickly
+adr r0, argv_0
+str r0, argv
+
 @ Finally, call ndless_resources
-mov	r0, #0
-adr	r1, endos
+mov r0, #1
+adr	r1, argv
 mov	lr, pc
 add	pc, r5, #4 @ sizeof("PRG")
 
@@ -81,32 +85,18 @@ add	sp, sp, #0x40
 pop {r4-r12, pc}
 
 osdata:
-.word 0x103B18E0 @ 4.5.5.79 CX
-os_stat:
-.word 0x104418D0 @ stat
-os_malloc:
-.word 0x10433D68 @ malloc
-os_fopen:
-.word 0x10439658 @ fopen
-os_fread:
-.word 0x104397FC @ fread
-os_fclose:
-.word 0x10438E78 @ fclose
-nextos:
-
-.word 0x103B1F80 @ 4.5.5.79 CX CAS
-.word 0x10441FB8 @ stat
-.word 0x10434408 @ malloc
-.word 0x10439CF8 @ fopen
-.word 0x10439E9C @ fread
-.word 0x10439518 @ fclose
-
 .word 0x10429E10 @ 6.2.0.333 CX II
+os_stat:
 .word 0x10493508 @ stat
+os_malloc:
 .word 0x1009A244 @ malloc
+os_fopen:
 .word 0x104234EC @ fopen
+os_fread:
 .word 0x10423690 @ fread
+os_fclose:
 .word 0x10422F6C @ fclose
+nextos:
 
 .word 0x1042A580 @ 6.2.0 CX II-T
 .word 0x10493c78 @ stat
@@ -149,14 +139,19 @@ nextos:
 endos:
 .word 0x0
 
+@ will be filled in by shellcode above
+argv:
+.word 0x0
+.word 0x0
+
+argv_0:
+.asciz "PER" @ for alignment, only P is checked for
+
 respath:
 .asciz "ndless/ndless_resources.tns"
 
 oflags:
 .asciz "rb"
-
-@ result variable is periodically read by the installer through a hardcoded offset.
-@ will be used to determine the success
 
 .align 2
 result:

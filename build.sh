@@ -100,4 +100,6 @@ cp -r ndless/ndless/calcbin build/NDless
 echo -e "${GREEN}Copyed NDless${NC}"
 mv Loader.tns build/Loader.tns
 echo -e "${GREEN}Moved Loader${NC}"
+cp -r docs/HOWTOINSTALL build/HOWTOINSTALL
+echo -e "${GREEN}Copyed Docs${NC}"
 echo -e "\n${GREEN}Done. All in build folder${NC}"
