@@ -40,7 +40,7 @@ all: $(EXE)
 $(EXE): $(OBJS)
 	$(LD) $^ -o $(@:.tns=.elf) $(LDFLAGS)
 	mkdir -p $(DISTDIR)
-	$(OBJCOPY) -O binary $(@:.tns=.elf) $(DISTDIR)/$@
+	genzehn -i $(@:.tns=.elf) -o $(DISTDIR)/$@
 
 clean:
 	rm -f *.o *.elf

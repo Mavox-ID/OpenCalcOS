@@ -63,9 +63,9 @@ If it fails or reboots, try Again until it works
 
 ==> Installing OCOS
 
-You currently have the files zCalc.tns, CalcFS.tns, and Loader.tns in this folder. You need to place all of these files in the Docs folder:
+You currently have the files zCalc.tns, CalcFS.tns, and Loader.tns in this folder. You need to place all of these files in the OCOS folder:
 
-Create a Docs folder on your calculator and place the following files in this folder:
+Create a "OCOS" folder on your calculator and place the following files in this folder:
 
 - zCalc.tns - Beep kernel
 - CalcFS.tns - Temporary file system with Init and a ready-made system for the Beep kernel
