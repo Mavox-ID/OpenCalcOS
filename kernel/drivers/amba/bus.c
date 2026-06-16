@@ -474,11 +474,6 @@ int amba_device_add(struct amba_device *dev, struct resource *parent)
 	u32 size;
 	void __iomem *tmp;
 	int i, ret;
-	
-	if (dev->res.start == 0x90060000) {
-		dev->periphid = 0x00041805;
-		goto skip_hardware_id_read; 
-	}
 
 	WARN_ON(dev->irq[0] == (unsigned int)-1);
 	WARN_ON(dev->irq[1] == (unsigned int)-1);
@@ -500,6 +495,15 @@ int amba_device_add(struct amba_device *dev, struct resource *parent)
 	if (!tmp) {
 		ret = -ENOMEM;
 		goto err_release;
+	}
+	
+	if (dev->res.start == 0x90060000) {
+		dev->periphid = 0x00041805; 
+	} else {
+		for (i = 0; i < 4; i++)
+			dev->periphid |= (readl_relaxed(tmp + size - 0x20 + 4 * i) & 255) << (i * 8);
+		for (i = 0; i < 4; i++)
+			dev->periphid |= (readl_relaxed(tmp + size - 0x10 + 4 * i) & 255) << ((i + 4) * 8);
 	}
 
 	ret = amba_get_enable_pclk(dev);
