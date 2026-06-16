@@ -21,20 +21,24 @@
 
 .global mmu_trampoline
 .global mmu_trampoline_end
+.global flush_loader_caches
+
+flush_loader_caches:
+    mov r0, #0
+1:  mrc p15, 0, r15, c7, c10, 3
+    bne 1b
+    mcr p15, 0, r0, c7, c10, 4
+    mcr p15, 0, r0, c7, c5, 0
+    bx lr
 
 mmu_trampoline:
-flush_dcache_loop:
-    mrc p15, 0, r15, c7, c14, 3
-    bne flush_dcache_loop
-
-    mov r3, #0
-    mcr p15, 0, r3, c7, c5, 0
-    mcr p15, 0, r3, c7, c10, 4
-
     mrc p15, 0, r3, c1, c0, 0
     bic r3, r3, #0x0005
     bic r3, r3, #0x1000
     mcr p15, 0, r3, c1, c0, 0
+    
+    mov r3, #0
+    mcr p15, 0, r3, c7, c5, 4
 
     mov r3, r0
     mov r0, #0

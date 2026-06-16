@@ -33,6 +33,7 @@
 #define PAGE_SIZE   4096
 extern void mmu_trampoline(void (*entry)(int, int, void*), int mach_id, void *atags);
 extern char mmu_trampoline_end[];
+extern void flush_loader_caches(void);
 
 void wait_key_pressed(void);
 void refresh_osscr(void);
@@ -168,14 +169,21 @@ int main(int argc, char *argv[]) {
     printk("OK, let's go!" NEWLINE);
 
     size_t tramp_size = (size_t)(mmu_trampoline_end - (char*)mmu_trampoline);
+    printk("Trampoline size: %d" NEWLINE, (int)tramp_size);
+
     void *tramp_alloc = malloc(tramp_size);
     if (!tramp_alloc) {
-        printk("Panic: Could not allocate memory for MMU trampoline!" NEWLINE);
+        printk("Panic: No memory for trampoline!" NEWLINE);
         exit(-1);
     }
+    printk("Allocated at: %p" NEWLINE, tramp_alloc);
 
     reloc((char*)tramp_alloc, (char*)mmu_trampoline, tramp_size);
-    clear_cache();
+    
+    printk("Flushing loader caches..." NEWLINE);
+    flush_loader_caches();
+
+    printk("Jumping to trampoline..." NEWLINE);
 
     void (*run_trampoline)(void (*)(int, int, void*), int, void*) = 
         (void (*)(void (*)(int, int, void*), int, void*))tramp_alloc;
