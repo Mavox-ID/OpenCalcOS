@@ -514,7 +514,13 @@ int amba_device_add(struct amba_device *dev, struct resource *parent)
 		 * Read pid and cid based on size of resource
 		 * they are located at end of region
 		 */
-		for (pid = 0, i = 0; i < 4; i++)
+		if (dev->res.start == 0x90060000) {
+                      printk(KERN_INFO "Skipping probe of bad address 0x%08x\n", dev->res.start);
+                      amba_put_disable_pclk(dev);
+                      return -ENODEV;
+                  }
+
+                  for (pid = 0, i = 0; i < 4; i++)
 			pid |= (readl(tmp + size - 0x20 + 4 * i) & 255) <<
 				(i * 8);
 		for (cid = 0, i = 0; i < 4; i++)
