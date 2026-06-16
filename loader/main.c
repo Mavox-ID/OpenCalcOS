@@ -24,8 +24,8 @@
 #include "mmu.h"
 #include "debug.h"
 
-#define DEFAULT_KERNEL_LOCATION "/zCalc.tns"
-#define DEFAULT_FILESYSTEM_LOCATION "/CalcFS.tns"
+#define DEFAULT_KERNEL_LOCATION "/Docs/zCalc.tns"
+#define DEFAULT_FILESYSTEM_LOCATION "/Docs/CalcFS.tns"
 #define DEFAULT_CMDLINE "earlyprintk debug keep_bootcon"
 #define MACHINE_ID  3503
 #define MAX_KERNEL_SIZE 0x400000
