@@ -71,14 +71,14 @@ static int vic_id;
 */
 static void vic_init2(void __iomem *base)
 {
-	int i;
+	// int i;
 
-	for (i = 0; i < 16; i++) {
-		void __iomem *reg = base + VIC_VECT_CNTL0 + (i * 4);
-		writel(VIC_VECT_CNTL_ENABLE | i, reg);
-	}
+	// for (i = 0; i < 16; i++) {
+	// 	void __iomem *reg = base + VIC_VECT_CNTL0 + (i * 4);
+	// 	writel(VIC_VECT_CNTL_ENABLE | i, reg);
+	// }
 
-	writel(32, base + VIC_PL190_DEF_VECT_ADDR);
+	// writel(32, base + VIC_PL190_DEF_VECT_ADDR);
 }
 
 #ifdef CONFIG_PM
@@ -303,15 +303,15 @@ static void __init vic_disable(void __iomem *base)
 
 static void __init vic_clear_interrupts(void __iomem *base)
 {
-	unsigned int i;
+	// unsigned int i;
 
-	writel(0, base + VIC_PL190_VECT_ADDR);
-	for (i = 0; i < 19; i++) {
-		unsigned int value;
+	// writel(0, base + VIC_PL190_VECT_ADDR);
+	// for (i = 0; i < 19; i++) {
+	// 	unsigned int value;
 
-		value = readl(base + VIC_PL190_VECT_ADDR);
-		writel(value, base + VIC_PL190_VECT_ADDR);
-	}
+	// 	value = readl(base + VIC_PL190_VECT_ADDR);
+	// 	writel(value, base + VIC_PL190_VECT_ADDR);
+	// }
 }
 
 /*
@@ -340,12 +340,12 @@ static void __init vic_init_st(void __iomem *base, unsigned int irq_start,
 		vic_clear_interrupts(base);
 
 		/* ST has 16 vectors as well, but we don't enable them by now */
-		for (i = 0; i < 16; i++) {
-			void __iomem *reg = base + VIC_VECT_CNTL0 + (i * 4);
-			writel(0, reg);
-		}
+		// for (i = 0; i < 16; i++) {
+		// 	void __iomem *reg = base + VIC_VECT_CNTL0 + (i * 4);
+		// 	writel(0, reg);
+		// }
 
-		writel(32, base + VIC_PL190_DEF_VECT_ADDR);
+		// writel(32, base + VIC_PL190_DEF_VECT_ADDR);
 	}
 
 	vic_register(base, irq_start, vic_sources, 0, node);
