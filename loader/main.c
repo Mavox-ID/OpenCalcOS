@@ -31,6 +31,8 @@
 #define MAX_KERNEL_SIZE 0x400000
 #define MAX_RAMDISK_SIZE 0x400000
 #define PAGE_SIZE   4096
+extern void mmu_trampoline(void (*entry)(int, int, void*), int mach_id, void *atags);
+extern char mmu_trampoline_end[];
 
 void wait_key_pressed(void);
 void refresh_osscr(void);
@@ -164,9 +166,21 @@ int main(int argc, char *argv[]) {
     }
 
     printk("OK, let's go!" NEWLINE);
-    clear_cache();
-    disableDcacheAndMmu();
 
-    entry(0, MACHINE_ID, (void*)0x10000100);
+    size_t tramp_size = (size_t)(mmu_trampoline_end - (char*)mmu_trampoline);
+    void *tramp_alloc = malloc(tramp_size);
+    if (!tramp_alloc) {
+        printk("Panic: Could not allocate memory for MMU trampoline!" NEWLINE);
+        exit(-1);
+    }
+
+    reloc((char*)tramp_alloc, (char*)mmu_trampoline, tramp_size);
+    clear_cache();
+
+    void (*run_trampoline)(void (*)(int, int, void*), int, void*) = 
+        (void (*)(void (*)(int, int, void*), int, void*))tramp_alloc;
+
+    run_trampoline(entry, MACHINE_ID, (void*)0x10000100);
+
     __builtin_unreachable();
 }
