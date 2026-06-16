@@ -41,17 +41,6 @@
 #define S_OLD_R0 68 /* offsetof(struct pt_regs, ARM_ORIG_r0)	@ */
 #define S_FRAME_SIZE 72 /* sizeof(struct pt_regs)	@ */
 	
-#define L2X0_R_PHY_BASE 0 /* offsetof(struct l2x0_regs, phy_base)	@ */
-#define L2X0_R_AUX_CTRL 4 /* offsetof(struct l2x0_regs, aux_ctrl)	@ */
-#define L2X0_R_TAG_LATENCY 8 /* offsetof(struct l2x0_regs, tag_latency)	@ */
-#define L2X0_R_DATA_LATENCY 12 /* offsetof(struct l2x0_regs, data_latency)	@ */
-#define L2X0_R_FILTER_START 16 /* offsetof(struct l2x0_regs, filter_start)	@ */
-#define L2X0_R_FILTER_END 20 /* offsetof(struct l2x0_regs, filter_end)	@ */
-#define L2X0_R_PREFETCH_CTRL 24 /* offsetof(struct l2x0_regs, prefetch_ctrl)	@ */
-#define L2X0_R_PWR_CTRL 28 /* offsetof(struct l2x0_regs, pwr_ctrl)	@ */
-	
-#define MM_CONTEXT_ID 340 /* offsetof(struct mm_struct, context.id)	@ */
-	
 #define VMA_VM_MM 32 /* offsetof(struct vm_area_struct, vm_mm)	@ */
 #define VMA_VM_FLAGS 40 /* offsetof(struct vm_area_struct, vm_flags)	@ */
 	
