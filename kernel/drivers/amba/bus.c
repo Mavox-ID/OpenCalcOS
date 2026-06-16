@@ -164,10 +164,6 @@ static int amba_pm_resume(struct device *dev)
 
 #endif /* !CONFIG_SUSPEND */
 
-if (res->start == 0x90060000) {
-    return 0; 
-}
-
 #ifdef CONFIG_HIBERNATE_CALLBACKS
 
 static int amba_pm_freeze(struct device *dev)
@@ -478,6 +474,11 @@ int amba_device_add(struct amba_device *dev, struct resource *parent)
 	u32 size;
 	void __iomem *tmp;
 	int i, ret;
+	
+	if (dev->res.start == 0x90060000) {
+		dev->periphid = 0x00041805;
+		goto skip_hardware_id_read; 
+	}
 
 	WARN_ON(dev->irq[0] == (unsigned int)-1);
 	WARN_ON(dev->irq[1] == (unsigned int)-1);
