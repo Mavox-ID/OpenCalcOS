@@ -164,6 +164,10 @@ static int amba_pm_resume(struct device *dev)
 
 #endif /* !CONFIG_SUSPEND */
 
+if (res->start == 0x90060000) {
+    return 0; 
+}
+
 #ifdef CONFIG_HIBERNATE_CALLBACKS
 
 static int amba_pm_freeze(struct device *dev)
