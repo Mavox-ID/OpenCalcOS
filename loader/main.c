@@ -80,27 +80,34 @@ static void loadRamdisk(const char * filename) {
     ramdiskSize = size;
 }
 
-static void* loadKernel(const char * filename) {
+void *loadKernel(const char *filename) {
     FILE *f = fopen(filename, "rb");
-    int size;
     if (!f) {
-        printk("Could not open kernel at %s" NEWLINE, filename);
-        exit(-1);
+        printk("Failed to open kernel file" NEWLINE);
+        return NULL;
     }
-    if ( (size = fileSize(filename)) < 1 || size > MAX_KERNEL_SIZE) {
-        printk("Could not determine file size of %s" NEWLINE, filename);
+    fseek(f, 0, SEEK_END);
+    size_t size = ftell(f);
+    fseek(f, 0, SEEK_SET);
+
+    if (size > MAX_KERNEL_SIZE) {
+        printk("Kernel file too big" NEWLINE);
         fclose(f);
-        exit(-1);
+        return NULL;
     }
 
-    void * data = malloc(size);
-    if (!data) {
+    void * raw_data = malloc(size + 65536);
+    if (!raw_data) {
+        printk("Failed to allocate memory for kernel" NEWLINE);
         fclose(f);
-        printk("Could allocate %x bytes for kernel" NEWLINE, size);
-        exit(-1);
+        return NULL;
     }
+    
+    void * data = (void *)(((uintptr_t)raw_data + 65535) & ~65535);
+
     fread(data, 1, size, f);
     fclose(f);
+
     unsigned start = ((unsigned*)data)[10], end = ((unsigned*)data)[11];
     if ((unsigned int)(end - start) != (unsigned int)size) {
         ramdisk = (char*)data + (end - start);

@@ -16,8 +16,22 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-disableDcacheAndMmu: .global disableDcacheAndMmu
+.text
+.align 4
+
+.global disableDcacheAndMmu
+disableDcacheAndMmu:
+flush_dcache_loop:
+    mrc p15, 0, r15, c7, c10, 3
+    bne flush_dcache_loop
+
+    mov r0, #0
+    mcr p15, 0, r0, c7, c7, 0
+    mcr p15, 0, r0, c7, c10, 4
+
     mrc p15, 0, r0, c1, c0, 0
-    bic r0, r0, #0x5
-    mcr p15, 0, r0, c1, c0,0
+    bic r0, r0, #0x0005
+    bic r0, r0, #0x1000
+    mcr p15, 0, r0, c1, c0, 0
+    
     bx lr
