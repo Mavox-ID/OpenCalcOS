@@ -37,8 +37,9 @@ mmu_trampoline:
     bic r3, r3, #0x1000
     mcr p15, 0, r3, c1, c0, 0
     
-    mov r3, #0
-    mcr p15, 0, r3, c7, c5, 4
+    nop
+    nop
+    nop
 
     mov r3, r0
     mov r0, #0
