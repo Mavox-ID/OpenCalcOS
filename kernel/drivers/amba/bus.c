@@ -497,14 +497,14 @@ int amba_device_add(struct amba_device *dev, struct resource *parent)
 		goto err_release;
 	}
 	
-	if (dev->res.start == 0x90060000) {
-		dev->periphid = 0x00041805; 
-	} else {
-		for (i = 0; i < 4; i++)
-			dev->periphid |= (readl_relaxed(tmp + size - 0x20 + 4 * i) & 255) << (i * 8);
-		for (i = 0; i < 4; i++)
-			dev->periphid |= (readl_relaxed(tmp + size - 0x10 + 4 * i) & 255) << ((i + 4) * 8);
-	}
+        if (dev->res.start >= 0x90060000 && dev->res.start <= 0x90060fff) {
+            dev->periphid = 0x00041805;
+        } else {
+            for (i = 0; i < 4; i++)
+                dev->periphid |= (readl_relaxed(tmp + size - 0x20 + 4 * i) & 255) << (i * 8);
+            for (i = 0; i < 4; i++)
+                dev->periphid |= (readl_relaxed(tmp + size - 0x10 + 4 * i) & 255) << ((i + 4) * 8);
+        }
 
 	ret = amba_get_enable_pclk(dev);
 	if (ret == 0) {
