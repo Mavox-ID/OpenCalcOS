@@ -253,7 +253,11 @@ static inline int check_valid_pointer(struct kmem_cache *s,
 
 static inline void *get_freepointer(struct kmem_cache *s, void *object)
 {
-	return *(void **)(object + s->offset);
+    if (!object) {
+        printk(KERN_ERR "!!! NULL object passed to get_freepointer !!!\n");
+        dump_stack();
+    }
+    return *(void **)(object + s->offset);
 }
 
 static void prefetch_freepointer(const struct kmem_cache *s, void *object)
