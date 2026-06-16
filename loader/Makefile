@@ -40,7 +40,7 @@ all: $(EXE)
 $(EXE): $(OBJS)
 	$(LD) $^ -o $(@:.tns=.elf) $(LDFLAGS)
 	mkdir -p $(DISTDIR)
-	genzehn -i $(@:.tns=.elf) -o $(DISTDIR)/$@
+	genzehn $(@:.tns=.elf) $(DISTDIR)/$@
 
 clean:
 	rm -f *.o *.elf
