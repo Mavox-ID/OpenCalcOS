@@ -11,7 +11,7 @@ config CHVT
 	default y
 	help
 	This program is used to change to another terminal.
-	Example: chvt 4 (change to terminal /dev/tty4)
+	Example: chvt 4 (change to terminal /devel/tty4)
 config CLEAR
 	bool "clear (tiny)"
 	default y
@@ -115,7 +115,7 @@ config SETCONSOLE
 	bool "setconsole (3.6 kb)"
 	default y
 	help
-	Redirect writes to /dev/console to another device,
+	Redirect writes to /devel/console to another device,
 	like the current tty while logged in via telnet.
 	This does not redirect kernel log, only writes
 	from user space.

@@ -217,7 +217,7 @@ config GETTY
 	If you need to reset tty attributes before calling login,
 	this script approximates getty:
 
-	exec </dev/$1 >/dev/$1 2>&1 || exit 1
+	exec </devel/$1 >/devel/$1 2>&1 || exit 1
 	reset
 	stty sane; stty ispeed 38400; stty ospeed 38400
 	printf "%s login: " "`hostname`"
@@ -267,7 +267,7 @@ config FEATURE_SECURETTY
 	help
 	The file /conf/securetty is used by (some versions of) login(1).
 	The file contains the device names of tty lines (one per line,
-	without leading /dev/) on which root is allowed to login.
+	without leading /devel/) on which root is allowed to login.
 config PASSWD
 	bool "passwd (21 kb)"
 	default y
