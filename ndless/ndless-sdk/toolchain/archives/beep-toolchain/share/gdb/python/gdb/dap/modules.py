@@ -1,4 +1,4 @@
-# Copyright 2023-2024 Free Software Foundation, Inc.
+# Copyright 2023 Free Software Foundation, Inc.
 
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -45,17 +45,22 @@ def make_module(objf):
     return result
 
 
-@capability("supportsModulesRequest")
-@request("modules")
-def modules(*, startModule: int = 0, moduleCount: int = 0, **args):
+@in_gdb_thread
+def _modules(start, count):
     # Don't count invalid objfiles or separate debug objfiles.
     objfiles = [x for x in gdb.objfiles() if is_module(x)]
-    if moduleCount == 0:
+    if count == 0:
         # Use all items.
         last = len(objfiles)
     else:
-        last = startModule + moduleCount
+        last = start + count
     return {
-        "modules": [make_module(x) for x in objfiles[startModule:last]],
+        "modules": [make_module(x) for x in objfiles[start:last]],
         "totalModules": len(objfiles),
     }
+
+
+@capability("supportsModulesRequest")
+@request("modules")
+def modules(*, startModule: int = 0, moduleCount: int = 0, **args):
+    return _modules(startModule, moduleCount)

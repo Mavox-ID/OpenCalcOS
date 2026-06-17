@@ -52,11 +52,11 @@ if [ ! -d "$TOOLCHAIN_ROOT/bin" ]; then
 fi
 
 echo "Creating aliases..."
-for tool in "$TOOLCHAIN_ROOT/bin"/arm-none-linux-gnueabihf-*; do
+for tool in "$TOOLCHAIN_ROOT/bin"/arm-buildroot-linux-gnueabi-*; do
     [ -e "$tool" ] || continue 
     
     base_name=$(basename "$tool")
-    beep_name=${base_name/arm-none-linux-gnueabihf-/arm-beep-gnueabi-}
+    beep_name=${base_name/arm-none-linux-gnueabi-/arm-beep-gnueabi-}
     target_path="$BEEP_BIN_DIR/$beep_name"
     
     if [ ! -f "$target_path" ]; then

@@ -1,4 +1,4 @@
-# Copyright (C) 2021-2024 Free Software Foundation, Inc.
+# Copyright (C) 2021-2023 Free Software Foundation, Inc.
 
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -15,14 +15,12 @@
 
 """Disassembler related module."""
 
+import gdb
 import _gdb.disassembler
 
 # Re-export everything from the _gdb.disassembler module, which is
-# defined within GDB's C++ code.  Note that two indicators are needed
-# here to silence flake8.
-from _gdb.disassembler import *  # noqa: F401,F403
-
-import gdb
+# defined within GDB's C++ code.
+from _gdb.disassembler import *
 
 # Module global dictionary of gdb.disassembler.Disassembler objects.
 # The keys of this dictionary are bfd architecture names, or the
@@ -95,14 +93,21 @@ def _print_insn(info):
     disassembled."""
 
     def lookup_disassembler(arch):
-        name = arch.name()
-        if name is None:
+        try:
+            name = arch.name()
+            if name is None:
+                return None
+            if name in _disassemblers_dict:
+                return _disassemblers_dict[name]
+            if None in _disassemblers_dict:
+                return _disassemblers_dict[None]
             return None
-        if name in _disassemblers_dict:
-            return _disassemblers_dict[name]
-        if None in _disassemblers_dict:
-            return _disassemblers_dict[None]
-        return None
+        except:
+            # It's pretty unlikely this exception case will ever
+            # trigger, one situation would be if the user somehow
+            # corrupted the _disassemblers_dict variable such that it
+            # was no longer a dictionary.
+            return None
 
     disassembler = lookup_disassembler(info.architecture)
     if disassembler is None:

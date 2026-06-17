@@ -1,4 +1,4 @@
-# Copyright 2023-2024 Free Software Foundation, Inc.
+# Copyright 2023 Free Software Foundation, Inc.
 
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -17,8 +17,9 @@ import os
 
 import gdb
 
-from .server import capability, request
-from .startup import DAPException, in_gdb_thread
+from .server import request, capability
+from .startup import in_gdb_thread
+
 
 # The next available source reference ID.  Must be greater than 0.
 _next_source = 1
@@ -32,20 +33,16 @@ _id_map = {}
 
 
 @in_gdb_thread
-def make_source(fullname, filename=None):
+def make_source(fullname, filename):
     """Return the Source for a given file name.
 
     FULLNAME is the full name.  This is used as the key.
-    FILENAME is the base name; if None (the default), then it is
-    computed from FULLNAME.
+    FILENAME is the base name.
     """
     global _source_map
     if fullname in _source_map:
         result = _source_map[fullname]
     else:
-        if filename is None:
-            filename = os.path.basename(fullname)
-
         result = {
             "name": filename,
             "path": fullname,
@@ -71,11 +68,11 @@ def decode_source(source):
     if "path" in source:
         return source["path"]
     if "sourceReference" not in source:
-        raise DAPException("either 'path' or 'sourceReference' must appear in Source")
+        raise Exception("either 'path' or 'sourceReference' must appear in Source")
     ref = source["sourceReference"]
     global _id_map
     if ref not in _id_map:
-        raise DAPException("no sourceReference " + str(ref))
+        raise Exception("no sourceReference " + str(ref))
     return _id_map[ref]["path"]
 
 
