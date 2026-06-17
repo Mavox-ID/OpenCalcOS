@@ -71,12 +71,12 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: ndless/ndless-sdk/toolchain/install
-          key: Linux-ndless-toolchain-v2-sf-${{ hashFiles('ndless/ndless-sdk/toolchain') }}
+          key: Linux-ndless-toolchain-v2-sf-${{ hashFiles('ndless/ndless-sdk/toolchain/') }}
 
       - name: Toolchain Hash Value
         id: lock-hash
         run: |
-          CLEAN_HASH="${{ hashFiles('ndless/ndless-sdk/toolchain') }}"
+          CLEAN_HASH="${{ hashFiles('ndless/ndless-sdk/toolchain/') }}"
           echo "hash=$CLEAN_HASH" >> $GITHUB_OUTPUT
 
       - name: Build OpenCalcOS
