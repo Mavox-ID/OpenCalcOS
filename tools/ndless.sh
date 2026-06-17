@@ -94,6 +94,8 @@ echo -e "${GREEN}Building ncurses...${NC}"
     
     echo -e "${GREEN}Deploying ncurses libraries...${NC}"
     cp -d "$ABS_DEST/libs/"lib*.so* ../../calcfs/libs/
+    
+    echo -e "${YELLOW}Patching library's...${NC}"
 
     echo -e "${GREEN}Deploying system dependencies...${NC}"
     LD_PATH=$(arm-beep-gnueabi-gcc -print-file-name=ld-linux-armhf.so.3)
@@ -121,6 +123,13 @@ echo -e "${GREEN}Building ncurses...${NC}"
     
     arm-beep-gnueabi-strip --strip-all ../../calcfs/bin/cterm
     arm-beep-gnueabi-strip --strip-all ../../calcfs/bin/gterm
+    
+    find ../../calcfs/libs/ -type f -name "*.so*" | while read -r file; do
+        if grep -q "/lib/ld-linux-armhf.so.3" "$file"; then
+            echo -e "  ${YELLOW}Patching interpreter in library:${NC} $(basename "$file")"
+            perl -pi -e 's|/lib/ld-linux-armhf.so.3|/libs/ld-beep-armhf.so.3|g' "$file"
+        fi
+    done
 
     echo -e "${GREEN}Ncurses done. All in $ABS_DEST${NC}"
 )
