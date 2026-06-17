@@ -253,10 +253,12 @@ static inline int check_valid_pointer(struct kmem_cache *s,
 
 static inline void *get_freepointer(struct kmem_cache *s, void *object)
 {
-    if (!object) {
-        printk(KERN_ERR "!!! NULL object passed to get_freepointer !!!\n");
+    if (!object || (unsigned long)object < 0x1000) {
+        printk(KERN_ERR "!!! DANGER: Invalid object %p in cache %s !!!\n", object, s->name);
         dump_stack();
+        return NULL;
     }
+    
     return *(void **)(object + s->offset);
 }
 
