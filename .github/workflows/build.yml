@@ -75,7 +75,7 @@ jobs:
       - name: Toolchain Hash Value
         id: lock-hash
         run: |
-          CLEAN_HASH="${{ hashFiles('ndless/ndless-sdk/toolchain/**') }}"
+          CLEAN_HASH="${{ hashFiles('ndless/ndless-sdk/toolchain/toolchain.sh') }}"
           echo "hash=$CLEAN_HASH" >> $GITHUB_OUTPUT
 
       - name: Build OpenCalcOS
