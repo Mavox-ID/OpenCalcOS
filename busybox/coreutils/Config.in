@@ -199,7 +199,7 @@ config FEATURE_DD_SIGNAL_HANDLING
 	print to standard error the number of records read and written
 	so far, then to resume copying.
 
-	$ dd if=/dev/zero of=/dev/null &
+	$ dd if=/devel/zero of=/devel/null &
 	$ pid=$!; kill -USR1 $pid; sleep 1; kill $pid
 	10899206+0 records in
 	10899206+0 records out

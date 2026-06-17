@@ -65,7 +65,7 @@ else
     irix5* | irix6* | nonstopux*)
       wl='-Wl,'
       ;;
-    beep* | k*bsd*-gnu | kopensolaris*-gnu)
+    linux* | k*bsd*-gnu | kopensolaris*-gnu)
       case $cc_basename in
         ecc*)
           wl='-Wl,'
@@ -214,7 +214,7 @@ if test "$with_gnu_ld" = yes; then
       hardcode_direct=no
       hardcode_libdir_flag_spec='${wl}-rpath,$libdir'
       ;;
-    gnu* | beep* | tpf* | k*bsd*-gnu | kopensolaris*-gnu)
+    gnu* | linux* | tpf* | k*bsd*-gnu | kopensolaris*-gnu)
       if $LD --help 2>&1 | grep ': supported targets:.* elf' > /dev/null; then
         :
       else
@@ -589,9 +589,9 @@ case "$host_os" in
         ;;
     esac
     ;;
-  beep*oldld* | beep*aout* | beep*coff*)
+  linux*oldld* | linux*aout* | linux*coff*)
     ;;
-  beep* | k*bsd*-gnu | kopensolaris*-gnu)
+  linux* | k*bsd*-gnu | kopensolaris*-gnu)
     library_names_spec='$libname$shrext'
     ;;
   knetbsd*-gnu)

@@ -13,7 +13,7 @@ config ACPID
 	acpid listens to ACPI events coming either in textual form from
 	/proc/acpi/event (though it is marked deprecated it is still widely
 	used and _is_ a standard) or in binary form from specified evdevs
-	(just use /dev/input/event*).
+	(just use /devel/input/event*).
 
 	It parses the event to retrieve ACTION and a possible PARAMETER.
 	It then spawns /conf/acpi/<ACTION>[/<PARAMETER>] either via run-parts
@@ -97,7 +97,7 @@ config EJECT
 	bool "eject (4 kb)"
 	default y
 	help
-	Used to eject cdroms. (defaults to /dev/cdrom)
+	Used to eject cdroms. (defaults to /devel/cdrom)
 
 config FEATURE_EJECT_SCSI
 	bool "SCSI support"

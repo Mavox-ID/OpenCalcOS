@@ -1,0 +1,2 @@
+#!/bin/sh
+exec "/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/arm-none-linux-gnueabihf-gcc-ar" "$@"
