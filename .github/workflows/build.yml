@@ -70,7 +70,7 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: ndless/ndless-sdk/toolchain/install
-          key: Linux-ndless-toolchain-${{ hashFiles('ndless/ndless-sdk/toolchain/**') }}
+          key: Linux-ndless-toolchain-v2-sf-${{ hashFiles('ndless/ndless-sdk/toolchain/toolchain.sh') }}
 
       - name: Toolchain Hash Value
         id: lock-hash
