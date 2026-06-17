@@ -175,11 +175,9 @@ static __init int cx_usb_init(void)
 
 	if (!hostusb_addr) {
 		pr_warn("Could not allocate enough memory to initialize NSPIRE host USB\n");
-		err = -ENOMEM;
-		goto out;
+		return -ENOMEM;
 	}
 
-	/* Disable OTG interrupts */
 	pr_info("Disable OTG interrupts\n");
 	val	 = readl(hostusb_addr + 0x1a4);
 	val &= ~(0x7f<<24);
@@ -187,11 +185,8 @@ static __init int cx_usb_init(void)
 
 	iounmap(hostusb_addr);
 
-	pr_info("Adding USB controller as platform device\n");
-	err = platform_device_register(&nspire_cxusbhost_device);
-out:
-
-	return err;
+    pr_info("USB host controller registration skipped\n");
+	return 0;
 }
 
 static __init int cx_usb_workaround(void)
