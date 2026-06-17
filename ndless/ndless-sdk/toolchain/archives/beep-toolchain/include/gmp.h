@@ -2332,7 +2332,7 @@ enum
 
 /* Define CC and CFLAGS which were used to build this version of GMP */
 #define __GMP_CC "/usr/bin/gcc"
-#define __GMP_CFLAGS "-O2 -I/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2024.05-1/include"
+#define __GMP_CFLAGS "-O2 -I/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/include"
 
 /* Major version number is the value of __GNU_MP__ too, above. */
 #define __GNU_MP_VERSION            6

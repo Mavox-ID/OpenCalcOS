@@ -17,7 +17,7 @@ old_library='libubsan.a'
 inherited_linker_flags=''
 
 # Libraries that this one depends upon.
-dependency_libs=' -ldl -lrt -lpthread /builds/buildroot.org/toolchains-builder/build/output/build/host-gcc-final-13.3.0/build/arm-buildroot-linux-gnueabi/libstdc++-v3/src/libstdc++.la -lm'
+dependency_libs=' -ldl -lrt -lpthread /builds/buildroot.org/toolchains-builder/build/output/build/host-gcc-final-14.3.0/build/arm-buildroot-linux-gnueabi/libstdc++-v3/src/libstdc++.la -lm'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''
@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2024.05-1/arm-buildroot-linux-gnueabi/lib'
+libdir='/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/arm-buildroot-linux-gnueabi/lib'

@@ -64,6 +64,7 @@ jobs:
           git rm -rf -q . || rm -rf * > /dev/null 2>&1
           git checkout -q main -- .
           unzip -o calcfs.zip
+          cd ndless/ndless-sdk/toolchain/archives/beep-toolchain && ./relocate-sdk.sh && cd ../../../../..
 
       - name: Restore Ndless Toolchain Cache
         id: cache-toolchain

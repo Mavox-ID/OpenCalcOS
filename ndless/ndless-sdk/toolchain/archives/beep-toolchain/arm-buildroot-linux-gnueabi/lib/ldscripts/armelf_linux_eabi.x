@@ -1,5 +1,5 @@
 /* Default linker script, for normal executables */
-/* Copyright (C) 2014-2023 Free Software Foundation, Inc.
+/* Copyright (C) 2014-2024 Free Software Foundation, Inc.
    Copying and distribution of this script, with or without modification,
    are permitted in any medium without royalty provided the copyright
    notice and this notice are preserved.  */
@@ -7,7 +7,7 @@ OUTPUT_FORMAT("elf32-littlearm", "elf32-bigarm",
 	      "elf32-littlearm")
 OUTPUT_ARCH(arm)
 ENTRY(_start)
-SEARCH_DIR("=/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2024.05-1/arm-buildroot-linux-gnueabi/lib"); SEARCH_DIR("=/usr/local/lib"); SEARCH_DIR("=/lib"); SEARCH_DIR("=/usr/lib");
+SEARCH_DIR("=/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/arm-buildroot-linux-gnueabi/lib"); SEARCH_DIR("=/usr/local/lib"); SEARCH_DIR("=/lib"); SEARCH_DIR("=/usr/lib");
 SECTIONS
 {
   /* Read-only sections, merged into text segment: */
@@ -184,7 +184,7 @@ SECTIONS
   }
   .data1          : { *(.data1) }
   _edata = .; PROVIDE (edata = .);
-  . = .;
+  . = ALIGN(ALIGNOF(NEXT_SECTION));
   __bss_start = .;
   __bss_start__ = .;
   .bss            :
