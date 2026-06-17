@@ -113,7 +113,7 @@ To boot Beep, launch `Loader.tns`. The loader handles the entire boot sequence a
 - **Next-Level NDless Toolchain:** The build method is entirely revamped! It now includes a ready-to-use ARM compiler for building Beep programs. We've upgraded the toolchain (`arm-none-linux-gnueabihf`) from soft-float to **hard-float** for better performance, outputting to `ld-beep-armhf.so.3`.
 
 ### Core Features
-- **Full support** for **Beep programs**, runtime, proc, etc. **(But not beep :)** [*xq* Attention! This kernel, although it was made based on 50% of Beep files and has things like Ext from Beep or ELF, is a completely different kernel (Calc Kernel - calck) and has nothing to do with Beep, although you can call it Beep because it has full Beep support, just like the original kernel.]
+- **Full support** for **Beep programs**, runtime, proc, etc. **(But not beep :)** [* Attention! This kernel, although it was made based on 50% of Beep files and has things like Ext from Beep or ELF, is a completely different kernel (Calc Kernel - calck) and has nothing to do with Beep, although you can call it Beep because it has full Beep support, just like the original kernel.]
 - Ready-to-use POSIX utilities with BusyBox such as 'gold standard', **i2c**, **disks** and **hex code**.
 - Full `nano` support now builds seamlessly with BusyBox, right in `/bin`! Enjoy!
 - The build script is ready. After running `bash build.sh`, you'll have a built folder containing the files you need to place on the calculator. Follow the instructions and everything will work!
