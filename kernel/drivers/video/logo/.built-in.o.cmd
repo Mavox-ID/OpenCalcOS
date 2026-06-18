@@ -1,0 +1,1 @@
+cmd_drivers/video/logo/built-in.o :=  arm-none-eabi-ld -EL   -r -o drivers/video/logo/built-in.o drivers/video/logo/logo.o drivers/video/logo/logo_beep_mono.o drivers/video/logo/logo_beep_vga16.o drivers/video/logo/logo_beep_clut224.o 

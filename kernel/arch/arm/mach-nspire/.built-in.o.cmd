@@ -1,0 +1,1 @@
+cmd_arch/arm/mach-nspire/built-in.o :=  arm-none-eabi-ld -EL   -r -o arch/arm/mach-nspire/built-in.o arch/arm/mach-nspire/common.o arch/arm/mach-nspire/clock.o arch/arm/mach-nspire/boot1.o arch/arm/mach-nspire/contrast.o arch/arm/mach-nspire/sram.o arch/arm/mach-nspire/keypad.o arch/arm/mach-nspire/nspire_cx.o arch/arm/mach-nspire/touchpad.o 

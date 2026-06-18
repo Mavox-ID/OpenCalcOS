@@ -2,7 +2,7 @@
 
     It has been auto-edited by fixincludes from:
 
-	"/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/arm-buildroot-linux-gnueabi/sysroot/usr/include/pthread.h"
+	"/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/arm-buildroot-linux-gnueabi/sysroot/usr/include/pthread.h"
 
     This had to be done to correct non-standard usages in the
     original, manufacturer supplied header file.  */
