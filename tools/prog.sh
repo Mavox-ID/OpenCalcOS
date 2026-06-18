@@ -36,7 +36,7 @@ arm-beep-gnueabi-gcc -Os -marm \
 arm-beep-gnueabi-strip --strip-all prog/build/beep
 cp prog/build/beep ../calcfs/bin/beep
 chmod +x ../calcfs/bin/beep
-echo -e "${GREEN}Done beep programm in${NC} ${YELLOW}calcfs/bin/beep${NC}"
+echo -e "${GREEN}Done beep program in${NC} ${YELLOW}calcfs/bin/beep${NC}"
 
 echo -e "${YELLOW}Starting Calc...${NC}"
 arm-beep-gnueabi-gcc -Os -marm -I../ndless/ncurses/dest/include -I../ndless/ncurses/dest/include/ncurses \
@@ -46,7 +46,7 @@ prog/calc.c -o prog/build/calc \
 arm-beep-gnueabi-strip --strip-all prog/build/calc
 cp prog/build/calc ../calcfs/bin/calc
 chmod +x ../calcfs/bin/calc
-echo -e "${GREEN}Done calc programm in${NC} ${YELLOW}calcfs/bin/calc${NC}"
+echo -e "${GREEN}Done calc program in${NC} ${YELLOW}calcfs/bin/calc${NC}"
 
 echo -e "${YELLOW}Starting Pipes...${NC}"
 arm-beep-gnueabi-gcc -Os -marm \
@@ -56,4 +56,19 @@ arm-beep-gnueabi-gcc -Os -marm \
 arm-beep-gnueabi-strip --strip-all prog/build/pipes
 cp prog/build/pipes ../calcfs/bin/pipes
 chmod +x ../calcfs/bin/pipes
-echo -e "${GREEN}Done pipes programm in${NC} ${YELLOW}calcfs/bin/pipes${NC}"
+echo -e "${GREEN}Done pipes program in${NC} ${YELLOW}calcfs/bin/pipes${NC}"
+
+# Wait for new update one?
+#
+#echo -e "${YELLOW}Starting Fetch...${NC}"
+#arm-beep-gnueabi-gcc -Os -marm \
+#    -Wa,-I,"$PROJECT_ROOT/kernel/prog" \
+#    prog/fetch.c -o prog/build/fetch \
+#    -Wl,-dynamic-linker=/libs/ld-beep.so.3 -Wl,-rpath,/libs -static
+#arm-beep-gnueabi-strip --strip-all prog/build/fetch
+#cp prog/build/fetch ../calcfs/bin/fetch
+#chmod +x ../calcfs/bin/fetch
+#echo -e "${GREEN}Done fetch program in${NC} ${YELLOW}calcfs/bin/fetch${NC}"
+#
+#
+# By Mavox-ID

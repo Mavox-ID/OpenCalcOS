@@ -279,7 +279,7 @@ end
 -- Text Content --
 ------------------
 
-local s_credits      = "Ndless brought to you by the Ndless team! @Vogtinator, @Satyamedh, @sasdallas, @icosahedr.n, @timmycraft, @cherpixel, @jimbauwens - Many thanks to all past contributors and testers: geogeo, ExtendeD, bsl, critor, Excale, Goplat, hoffa, Legimet, Levak, debrouxl, lkj, tangrs, Adriweb, drakeerv, NightHawk, NspireUartLover and others! ndless.me - github.com/ndless-nspire      "
+local s_credits      = "Ndless brought to you by the Ndless team! OCOS created by Mavox-ID, build supported by Mavox-ID      "
 
 local s_ndless_cxii_a =  bI([[
         /----------\ 

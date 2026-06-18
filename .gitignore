@@ -1,3 +1,13 @@
 # Github
 .git
 .github
+
+# Docs
+docs
+busybox/docs
+ndless/ndless-sdk/thirdparty/freetype2/docs
+
+# Configs for Mavox-ID
+
+busybox/.config.txt
+kernel/.config.txt

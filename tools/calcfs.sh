@@ -30,6 +30,12 @@ fi
 
 echo -e "${GREEN}Cleaning...${NC}"
 rm -rf CalcFS.tns
+
+echo -e "${GREEN}Creating device nodes...${NC}"
+mkdir -p calcfs/devel
+mknod -m 600 calcfs/devel/console c 5 1 2>/dev/null || true
+mknod -m 666 calcfs/devel/null    c 1 3 2>/dev/null || true
+
 echo -e "${GREEN}Packing TNS...${NC}"
 cd calcfs && find . | cpio -o -H newc 2>/dev/null | gzip -9 > ../CalcFS.tns
 cd ..

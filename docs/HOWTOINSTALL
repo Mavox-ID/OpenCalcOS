@@ -1,3 +1,6 @@
+# How to install OCOS to your TI-Nspire CX
+# Documentation by Mavox-ID
+
 To install OpenCalcOS (OCOS) on your TI-Nspire CX calculator with TI-Nspire OS firmware versions 3.6 to 6.4.0.74, you need to follow these steps:
 
 1) Install NDless to run other programs:
@@ -38,32 +41,23 @@ Place the ndless_installer_4.5.3-4.5.4.tns and ndless_installer.tns files in the
 
 Place the ndless_installer_5.2.0-5.3.0.tns and ndless_installer.tns files in the ndless folder on your calculator, and run ndless_installer_5.2.0-5.3.0.tns. Wait for the message that NDless was installed successfully.
 
-==> For version: 4.5.5.79
+==> For version: 4.5.5.79-6.2.0-6.4.0 (ONLY FOR TI-NSPIRE CX!!! NOT CAS & CX ||)
 
-Set your language to English through the Settings menu
-Press [Home] > [5] (Settings) > [1] (Change Language) -> English
-Determine your "boot1" version (needed later).
-Press [Home] > [5] (Settings) > [4] (Status) > About button.
-Here is a YouTube video for this.
-Transfer ndless_installer_4.5.5-6.2.0-6.4.0.tns into a folder named "ndless" (top-level)
-Transfer ndless_resources.tns into the same folder
-Open the installer, press the corresponding key for your boot1 version and wait
-If it fails or reboots, try again until it works
+- Set your language to English through the Settings menu
+- Press [Home] > [5] (Settings) > [1] (Change Language) -> English
+- Determine your "boot1" version (needed later).
+- Press [Home] > [5] (Settings) > [4] (Status) > About button.
+* Here is a YouTube video for this: https://youtu.be/htr106_ggjg
+- Transfer ndless_installer_4.5.5-6.2.0-6.4.0.tns into a folder named "ndless" (top-level)
+- Transfer ndless_resources.tns into the same folder (ndless)
+- Open the installer, press the corresponding key for your boot1 version and wait
+* If it fails or reboots, try again until it works
 
-==> For version: 6.2.0.333 + 6.4.0.74
-
-Set your language to English through the Settings menu
-Press [Home] > [5] (Settings) > [1] (Change Language) -> English
-Transfer ndless_installer_4.5.5-6.2.0-6.4.0.tns into a folder named "ndless" (top-level)
-Transfer ndless_resources.tns into the same folder
-Open the installer, press any alphanumeric key and wait
-If it fails or reboots, try Again until it works
-
-2) After you've installed NDless, you need to download the latest version of OCOS to your calculator. To do this, follow these steps:
+2) After you've installed NDless, you need use latest version of OCOS to your calculator. To do this, follow these steps:
 
 ==> Installing OCOS
 
-You currently have the files zCalc.tns, CalcFS.tns, and Loader.tns in this folder. You need to place all of these files in the OCOS folder:
+You currently folder have the files zCalc.tns, CalcFS.tns, and Loader.tns in this folder. You need to place all of these files in the OCOS folder:
 
 Create a "OCOS" folder on your calculator and place the following files in this folder:
 
