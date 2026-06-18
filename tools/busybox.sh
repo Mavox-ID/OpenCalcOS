@@ -77,7 +77,7 @@ echo -e "\033[1;33mBuilding nano...\033[0m"
         --disable-color
 
     make -j"$(nproc)" \
-        LDFLAGS="-L$(pwd)/../../ndless/ncurses/dest/libs -Wl,-rpath,/libs -Wl,-dynamic-linker=/libs/ld-beep-armhf.so.3 -Wl,--no-warnings -Wl,--gc-sections" \
+        LDFLAGS="-L$(pwd)/../../ndless/ncurses/dest/libs -Wl,-rpath,/libs -Wl,-dynamic-linker=/libs/ld-beep.so.3 -Wl,--no-warnings -Wl,--gc-sections" \
         LIBS="-lncurses"
     
     cp src/nano ../../calcfs/bin/nano

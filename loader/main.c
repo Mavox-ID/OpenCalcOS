@@ -149,7 +149,7 @@ int main(int argc, char *argv[]) {
     void (*entry)(int, int, void*);
 
     printk("==== TI-NSPIRE OCOS Loader ====" NEWLINE);
-    printk("==== By Mavox-ID! | V582.3 ====" NEWLINE);
+    printk("==== By Mavox-ID! | V582.4 ====" NEWLINE);
     if (argc > 1 && argv[1]) kernel = argv[1];
     entry = (void (*)(int, int, void*))loadKernel(kernel);
     printk("Kernel loaded to 0x%p" NEWLINE, (void*)entry);
