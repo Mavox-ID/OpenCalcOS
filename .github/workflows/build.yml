@@ -87,7 +87,7 @@ jobs:
         uses: actions/cache/save@v4
         with:
           path: ndless/ndless-sdk/toolchain/install
-          key: Linux-ndless-toolchain-${{ steps.lock-hash.outputs.hash }}
+          key: Linux-ndless-toolchain-v2-sf-${{ steps.lock-hash.outputs.hash }}
 
       - name: Process version and pack build folder
         run: |

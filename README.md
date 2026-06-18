@@ -110,7 +110,7 @@ To boot Beep, launch `Loader.tns`. The loader handles the entire boot sequence a
   - **Bloat-free CalcFS & BusyBox:** We stripped out unnecessary libraries and utilities (like internet tools), leaving only the pure, essential system tools.
   - Added `/dev` (devfs) mounting and switched the default shell from `ash` to the smoother `hush`.
   - **Slim Nano Editor:** We shaved off ~250 KB by removing heavy syntax highlighting, keeping it incredibly fast and efficient for the calculator!
-- **Next-Level NDless Toolchain:** The build method is entirely revamped! It now includes a ready-to-use ARM compiler for building Beep programs. We've upgraded the toolchain (`arm-none-linux-gnueabihf`) from soft-float to **hard-float** for better performance, outputting to `ld-beep-armhf.so.3`.
+- **Next-Level NDless Toolchain:** The build method is entirely revamped! It now includes a ready-to-use ARM compiler for building Beep programs.
 
 ### Core Features
 - **Full support** for **Beep programs**, runtime, proc, etc. **(But not beep :)** [* Attention! This kernel, although it was made based on 50% of Beep files and has things like Ext from Beep or ELF, is a completely different kernel (Calc Kernel - calck) and has nothing to do with Beep, although you can call it Beep because it has full Beep support, just like the original kernel.]
