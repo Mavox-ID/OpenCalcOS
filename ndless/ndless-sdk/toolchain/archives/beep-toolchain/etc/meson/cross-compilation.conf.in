@@ -4,15 +4,15 @@
 # - Buildroot's 'target' is Meson's 'host'
 
 [binaries]
-c = '/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/bin/arm-buildroot-linux-gnueabi-gcc'
-cpp = '/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/bin/arm-buildroot-linux-gnueabi-g++'
-ar = '/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/bin/arm-buildroot-linux-gnueabi-gcc-ar'
-strip = '/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/bin/arm-buildroot-linux-gnueabi-strip'
+c = '/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/arm-buildroot-linux-gnueabi-gcc'
+cpp = '/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/arm-buildroot-linux-gnueabi-g++'
+ar = '/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/arm-buildroot-linux-gnueabi-gcc-ar'
+strip = '/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/arm-buildroot-linux-gnueabi-strip'
 cmake = '/usr/bin/cmake'
 fortran = '/bin/false'
-pkg-config = '/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/bin/pkgconf'
-g-ir-compiler = '/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/arm-buildroot-linux-gnueabi/sysroot/usr/bin/g-ir-compiler'
-g-ir-scanner = '/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/arm-buildroot-linux-gnueabi/sysroot/usr/bin/g-ir-scanner'
+pkg-config = '/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/pkgconf'
+g-ir-compiler = '/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/arm-buildroot-linux-gnueabi/sysroot/usr/bin/g-ir-compiler'
+g-ir-scanner = '/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/arm-buildroot-linux-gnueabi/sysroot/usr/bin/g-ir-scanner'
 
 [built-in options]
 c_args = ['-D_LARGEFILE_SOURCE', '-D_LARGEFILE64_SOURCE', '-D_FILE_OFFSET_BITS=64', '-O2', '-g0', '-D_FORTIFY_SOURCE=1'@PKG_TARGET_CFLAGS@]
@@ -22,15 +22,15 @@ cpp_link_args = [@PKG_TARGET_LDFLAGS@]
 fortran_args = ['-O2', '-g0'@PKG_TARGET_FCFLAGS@]
 fortran_link_args = [@PKG_TARGET_LDFLAGS@]
 wrap_mode = 'nodownload'
-cmake_prefix_path = '/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/arm-buildroot-linux-gnueabi/sysroot/usr/lib/cmake'
+cmake_prefix_path = '/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/arm-buildroot-linux-gnueabi/sysroot/usr/lib/cmake'
 
 [properties]
 needs_exe_wrapper = true
-sys_root = '/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/arm-buildroot-linux-gnueabi/sysroot'
-pkg_config_libdir = '/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/arm-buildroot-linux-gnueabi/sysroot/usr/lib/pkgconfig:/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/arm-buildroot-linux-gnueabi/sysroot/usr/share/pkgconfig'
+sys_root = '/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/arm-buildroot-linux-gnueabi/sysroot'
+pkg_config_libdir = '/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/arm-buildroot-linux-gnueabi/sysroot/usr/lib/pkgconfig:/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/arm-buildroot-linux-gnueabi/sysroot/usr/share/pkgconfig'
 pkg_config_static = 'false'
 # enable meson build to pass a toolchain file to cmake
-cmake_toolchain_file = '/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/share/buildroot/toolchainfile.cmake'
+cmake_toolchain_file = '/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/share/buildroot/toolchainfile.cmake'
 cmake_defaults = false
 
 [host_machine]

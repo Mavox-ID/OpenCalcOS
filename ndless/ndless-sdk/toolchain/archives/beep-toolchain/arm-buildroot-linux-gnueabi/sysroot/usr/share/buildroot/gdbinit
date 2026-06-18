@@ -1,2 +1,2 @@
-add-auto-load-safe-path /builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/arm-buildroot-linux-gnueabi/sysroot
-set sysroot /builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/arm-buildroot-linux-gnueabi/sysroot
+add-auto-load-safe-path /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/arm-buildroot-linux-gnueabi/sysroot
+set sysroot /home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/arm-buildroot-linux-gnueabi/sysroot

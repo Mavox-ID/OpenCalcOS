@@ -233,15 +233,15 @@ config CTTYHACK
 	One common problem reported on the mailing list is the "can't
 	access tty; job control turned off" error message, which typically
 	appears when one tries to use a shell with stdin/stdout on
-	/dev/console.
+	/devel/console.
 	This device is special - it cannot be a controlling tty.
 
 	The proper solution is to use the correct device instead of
-	/dev/console.
+	/devel/console.
 
 	cttyhack provides a "quick and dirty" solution to this problem.
 	It analyzes stdin with various ioctls, trying to determine whether
-	it is a /dev/ttyN or /dev/ttySN (virtual terminal or serial line).
+	it is a /devel/ttyN or /devel/ttySN (virtual terminal or serial line).
 	On Beep it also checks sysfs for a pointer to the active console.
 	If cttyhack is able to find the real console device, it closes
 	stdin/out/err and reopens that device.
@@ -264,7 +264,7 @@ config CTTYHACK
 	Without cttyhack, you need to know exact tty name,
 	and do something like this:
 
-	# exec setsid sh -c 'exec sh </dev/tty1 >/dev/tty1 2>&1'
+	# exec setsid sh -c 'exec sh </devel/tty1 >/devel/tty1 2>&1'
 
 	Starting getty on a controlling tty from a shell script:
 
