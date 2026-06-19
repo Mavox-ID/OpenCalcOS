@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
 # Busybox version: 1.36.1
-# Thu Jun 11 16:15:19 2026
+# Thu Jun 18 23:58:29 2026
 #
 CONFIG_HAVE_DOT_CONFIG=y
 
@@ -49,7 +49,7 @@ CONFIG_STATIC=y
 # CONFIG_FEATURE_SHARED_BUSYBOX is not set
 CONFIG_CROSS_COMPILER_PREFIX="arm-beep-gnueabi-"
 CONFIG_SYSROOT=""
-CONFIG_EXTRA_CFLAGS="-Wno-strict-prototypes -Wno-unused-function -Wno-discarded-qualifiers -Wno-overflow -D__UCLIBC__ -D_GNU_SOURCE -D__beep__ -fno-PIE -mfloat-abi=soft -mfpu=none"
+CONFIG_EXTRA_CFLAGS="-Wno-strict-prototypes -Wno-unused-function -Wno-discarded-qualifiers -Wno-overflow -D__UCLIBC__ -D_GNU_SOURCE -D__beep__ -fno-PIE"
 CONFIG_EXTRA_LDFLAGS="-L../ndless/ndless-sdk/lib -no-pie"
 CONFIG_EXTRA_LDLIBS="ndls"
 # CONFIG_USE_PORTABLE_CODE is not set
