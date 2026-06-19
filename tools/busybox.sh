@@ -25,8 +25,8 @@ KERNEL_INC="$PROJECT_ROOT/kernel/include"
 cd "$PROJECT_ROOT"
 
 cd busybox && make clean
-export CFLAGS="-isystem $KERNEL_INC -w"
-export CPPFLAGS="-isystem $KERNEL_INC -w"
+export CFLAGS="-isystem $KERNEL_INC -D__ARCH_USE_MMU__ -w"
+export CPPFLAGS="-isystem $KERNEL_INC -D__ARCH_USE_MMU__ -w"
 
 make -j"$(nproc)" CROSS_COMPILE=arm-beep-gnueabi- \
     CONFIG_EXTRA_LDLIBS="crypt" \
