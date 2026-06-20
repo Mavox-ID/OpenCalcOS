@@ -26,7 +26,7 @@
 
 #define DEFAULT_KERNEL_LOCATION "/documents/OCOS/zCalc.tns"
 #define DEFAULT_FILESYSTEM_LOCATION "/documents/OCOS/CalcFS.tns"
-#define DEFAULT_CMDLINE "earlyprintk debug keep_bootcon user_debug=31 slub_debug=FZPU"
+#define DEFAULT_CMDLINE "earlyprintk debug keep_bootcon user_debug=31 slub_debug=FZPU,kmalloc-"
 #define MACHINE_ID  4443
 #define MAX_KERNEL_SIZE 0x400000
 #define MAX_RAMDISK_SIZE 0x400000
