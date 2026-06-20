@@ -26,7 +26,7 @@
 
 #define DEFAULT_KERNEL_LOCATION "/documents/OCOS/zCalc.tns"
 #define DEFAULT_FILESYSTEM_LOCATION "/documents/OCOS/CalcFS.tns"
-#define DEFAULT_CMDLINE "earlyprintk debug keep_bootcon user_debug=31 slub_debug=FZPU,kmalloc-"
+#define DEFAULT_CMDLINE "earlyprintk debug keep_bootcon user_debug=31"
 #define MACHINE_ID  4443
 #define MAX_KERNEL_SIZE 0x400000
 #define MAX_RAMDISK_SIZE 0x400000
@@ -149,7 +149,7 @@ int main(int argc, char *argv[]) {
     void (*entry)(int, int, void*);
 
     printk("==== TI-NSPIRE OCOS Loader ====" NEWLINE);
-    printk("==== By Mavox-ID! | V582.8 ====" NEWLINE);
+    printk("==== By Mavox-ID! | V582.9 ====" NEWLINE);
     if (argc > 1 && argv[1]) kernel = argv[1];
     entry = (void (*)(int, int, void*))loadKernel(kernel);
     printk("Kernel loaded to 0x%p" NEWLINE, (void*)entry);
