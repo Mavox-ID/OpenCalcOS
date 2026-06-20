@@ -8083,7 +8083,7 @@ static int setup_redirects(struct command *prog, struct squirrel **sqp)
 				 */
 				return 1;
 			}
-			if (newfd == redir->rd_fd && sqp) {
+			if (newfd == redir->rd_fd && sqp && sqp != ERR_PTR) {
 				/* open() gave us precisely the fd we wanted.
 				 * This means that this fd was not busy
 				 * (not opened to anywhere).
