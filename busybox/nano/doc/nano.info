@@ -1,4 +1,4 @@
-This is nano.info, produced by makeinfo version 7.3 from nano.texi.
+This is nano.info, produced by makeinfo version 7.1 from nano.texi.
 
 INFO-DIR-SECTION Editors
 START-INFO-DIR-ENTRY
@@ -2160,6 +2160,7 @@ compiling programs with autoconf support:
 ‘--enable-altrcname=NAME’
      Use the file with the given NAME (in the user's home directory) as
      nano's settings file, instead of the default ‘.nanorc’.
+
 
 
 Tag Table:

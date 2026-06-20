@@ -85,7 +85,7 @@ MAKESETUP=      $(srcdir)/Modules/makesetup
 OPT=		-DNDEBUG -g -O3 -Wall
 BASECFLAGS=	 -fno-strict-overflow -Wsign-compare
 BASECPPFLAGS=	
-CONFIGURE_CFLAGS=	-O2 -I/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/include
+CONFIGURE_CFLAGS=	-O2 -I/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/include
 # CFLAGS_NODIST is used for building the interpreter and stdlib C extensions.
 # Use it when a compiler flag should _not_ be part of the distutils CFLAGS
 # once Python is installed (Issue #21121).
@@ -97,8 +97,8 @@ CONFIGURE_LDFLAGS_NODIST=
 # LDFLAGS_NOLTO is an extra flag to disable lto. It is used to speed up building
 # of _bootstrap_python and _freeze_module tools, which don't need LTO.
 CONFIGURE_LDFLAGS_NOLTO=
-CONFIGURE_CPPFLAGS=	-I/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/include
-CONFIGURE_LDFLAGS=	-L/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/lib -Wl,-rpath,/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/lib -Wl,--enable-new-dtags
+CONFIGURE_CPPFLAGS=	-I/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/include
+CONFIGURE_LDFLAGS=	-L/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/lib -Wl,-rpath,/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/lib -Wl,--enable-new-dtags
 # Avoid assigning CFLAGS, LDFLAGS, etc. so users can use them on the
 # command line to append to these values without stomping the pre-set
 # values.
@@ -137,7 +137,7 @@ MULTIARCH=	x86_64-linux-gnu
 MULTIARCH_CPPFLAGS = -DMULTIARCH=\"x86_64-linux-gnu\"
 
 # Install prefix for architecture-independent files
-prefix=		/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1
+prefix=		/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain
 
 # Install prefix for architecture-dependent files
 exec_prefix=	${prefix}
@@ -304,8 +304,8 @@ MODULE__BLAKE2_STATE=yes
 MODULE__BLAKE2_CFLAGS=
 MODULE__BLAKE2_LDFLAGS=
 MODULE__CTYPES_STATE=yes
-MODULE__CTYPES_CFLAGS=-fno-strict-overflow -I/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/include
-MODULE__CTYPES_LDFLAGS=-L/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/lib/../lib -lffi -ldl
+MODULE__CTYPES_CFLAGS=-fno-strict-overflow -I/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/include
+MODULE__CTYPES_LDFLAGS=-L/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/lib/../lib -lffi -ldl
 MODULE__CURSES_STATE=n/a
 MODULE__CURSES_PANEL_STATE=n/a
 MODULE__DECIMAL_STATE=yes
@@ -318,11 +318,11 @@ MODULE__SQLITE3_STATE=n/a
 MODULE__TKINTER_STATE=n/a
 MODULE__UUID_STATE=n/a
 MODULE_ZLIB_STATE=yes
-MODULE_ZLIB_CFLAGS=-I/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/include
-MODULE_ZLIB_LDFLAGS=-L/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/lib -lz
+MODULE_ZLIB_CFLAGS=-I/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/include
+MODULE_ZLIB_LDFLAGS=-L/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/lib -lz
 MODULE_BINASCII_STATE=yes
-MODULE_BINASCII_CFLAGS=-DUSE_ZLIB_CRC32 -I/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/include
-MODULE_BINASCII_LDFLAGS=-L/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/lib -lz
+MODULE_BINASCII_CFLAGS=-DUSE_ZLIB_CRC32 -I/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/include
+MODULE_BINASCII_LDFLAGS=-L/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/lib -lz
 MODULE__BZ2_STATE=n/a
 MODULE__LZMA_STATE=n/a
 MODULE__SSL_STATE=n/a
@@ -357,7 +357,7 @@ EXEMODE=	755
 FILEMODE=	644
 
 # configure script arguments
-CONFIG_ARGS=	 '--prefix=/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1' '--sysconfdir=/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/etc' '--localstatedir=/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/var' '--enable-shared' '--disable-static' '--disable-gtk-doc' '--disable-gtk-doc-html' '--disable-doc' '--disable-docs' '--disable-documentation' '--disable-debug' '--with-xmlto=no' '--with-fop=no' '--disable-nls' '--disable-dependency-tracking' '--without-ensurepip' '--without-cxx-main' '--disable-sqlite3' '--disable-tk' '--with-expat=system' '--disable-test-modules' '--disable-idle3' '--disable-curses' 'PKG_CONFIG=/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/bin/pkg-config' 'PKG_CONFIG_LIBDIR=/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/lib/pkgconfig:/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/share/pkgconfig' 'CC=/usr/bin/gcc' 'CFLAGS=-O2 -I/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/include' 'LDFLAGS=-L/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/lib -Wl,-rpath,/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/lib -Wl,--enable-new-dtags' 'CPPFLAGS=-I/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/include' 'CPP=/usr/bin/cpp'
+CONFIG_ARGS=	 '--prefix=/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain' '--sysconfdir=/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/etc' '--localstatedir=/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/var' '--enable-shared' '--disable-static' '--disable-gtk-doc' '--disable-gtk-doc-html' '--disable-doc' '--disable-docs' '--disable-documentation' '--disable-debug' '--with-xmlto=no' '--with-fop=no' '--disable-nls' '--disable-dependency-tracking' '--without-ensurepip' '--without-cxx-main' '--disable-sqlite3' '--disable-tk' '--with-expat=system' '--disable-test-modules' '--disable-idle3' '--disable-curses' 'PKG_CONFIG=/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/pkg-config' 'PKG_CONFIG_LIBDIR=/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/lib/pkgconfig:/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/share/pkgconfig' 'CC=/usr/bin/gcc' 'CFLAGS=-O2 -I/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/include' 'LDFLAGS=-L/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/lib -Wl,-rpath,/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/lib -Wl,--enable-new-dtags' 'CPPFLAGS=-I/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/include' 'CPP=/usr/bin/cpp'
 
 
 # Subdirectories with code
