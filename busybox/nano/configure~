@@ -568,7 +568,7 @@ test -n "$DJDIR" || exec 7<&0 </dev/null
 exec 6>&1
 
 # Name of the host.
-# hostname on some systems (SVR3.2, old GNU/Beep) returns a bogus exit status,
+# hostname on some systems (SVR3.2, old GNU/Linux) returns a bogus exit status,
 # so uname gets run too.
 ac_hostname=`(hostname || uname -n) 2>/dev/null | sed 1q`
 
@@ -6293,7 +6293,7 @@ fi
 
 
 
-
+(1.14 foreign)
 
 { printf '%s\n' "$as_me:${as_lineno-$LINENO}: checking whether to enable maintainer-specific portions of Makefiles" >&5
 printf %s "checking whether to enable maintainer-specific portions of Makefiles... " >&6; }
@@ -9644,7 +9644,7 @@ if ac_fn_c_try_compile "$LINENO"
 then :
   if test x"$ac_opt" = x"none needed"
 then :
-  # GNU/Beep s390x and alpha need _FILE_OFFSET_BITS=64 for wide ino_t.
+  # GNU/Linux s390x and alpha need _FILE_OFFSET_BITS=64 for wide ino_t.
 	 CPPFLAGS="$CPPFLAGS -DFTYPE=ino_t"
 	 if ac_fn_c_try_compile "$LINENO"
 then :
@@ -52036,7 +52036,7 @@ if ac_fn_c_try_compile "$LINENO"
 then :
   if test x"$ac_opt" = x"none needed"
 then :
-  # GNU/Beep s390x and alpha need _FILE_OFFSET_BITS=64 for wide ino_t.
+  # GNU/Linux s390x and alpha need _FILE_OFFSET_BITS=64 for wide ino_t.
 	 CPPFLAGS="$CPPFLAGS -DFTYPE=ino_t"
 	 if ac_fn_c_try_compile "$LINENO"
 then :

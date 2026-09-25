@@ -53,7 +53,7 @@ if [ x$1 != x ] ; then
   prefix=$1
   shift
 else
-  prefix=/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1
+  prefix=/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain
 fi
 
 # Allow for alternate isysroot in which to find headers

@@ -1,4 +1,4 @@
-#!/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/bin/python3.13
+#!/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/bin/python3.13
 # -*- python -*-
 
 # Keep this script in sync with python-config.sh.in

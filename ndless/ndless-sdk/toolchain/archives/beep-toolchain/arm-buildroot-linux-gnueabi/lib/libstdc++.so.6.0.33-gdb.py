@@ -19,8 +19,8 @@ import gdb
 import os
 import os.path
 
-pythondir = '/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/share/gcc-14.3.0/python'
-libdir = '/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/arm-buildroot-linux-gnueabi/lib'
+pythondir = '/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/share/gcc-14.3.0/python'
+libdir = '/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/arm-buildroot-linux-gnueabi/lib'
 
 # This file might be loaded when there is no current objfile.  This
 # can happen if the user loads it manually.  In this case we don't

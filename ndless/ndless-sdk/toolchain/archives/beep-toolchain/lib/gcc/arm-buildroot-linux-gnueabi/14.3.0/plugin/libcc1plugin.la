@@ -17,7 +17,7 @@ old_library='libcc1plugin.a'
 inherited_linker_flags=''
 
 # Libraries that this one depends upon.
-dependency_libs=' -L/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/lib'
+dependency_libs=' -L/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/lib'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''
@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/builds/buildroot.org/toolchains-builder/build/armv5-eabi--glibc--stable-2025.08-1/lib/gcc/arm-buildroot-linux-gnueabi/14.3.0/plugin'
+libdir='/home/runner/work/OpenCalcOS/OpenCalcOS/ndless/ndless-sdk/toolchain/archives/beep-toolchain/lib/gcc/arm-buildroot-linux-gnueabi/14.3.0/plugin'

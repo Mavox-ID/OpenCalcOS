@@ -1,0 +1,1 @@
+cmd_util-beep/volume_id/libs.a := rm -f util-beep/volume_id/libs.a; arm-beep-gnueabi-ar  rcs util-beep/volume_id/libs.a util-beep/volume_id/exfat.o util-beep/volume_id/ext.o util-beep/volume_id/fat.o util-beep/volume_id/get_devname.o util-beep/volume_id/util.o util-beep/volume_id/volume_id.o
